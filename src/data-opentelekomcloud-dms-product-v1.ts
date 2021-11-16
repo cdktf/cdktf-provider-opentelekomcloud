@@ -1,0 +1,277 @@
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataOpentelekomcloudDmsProductV1Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#bandwidth DataOpentelekomcloudDmsProductV1#bandwidth}
+  */
+  readonly bandwidth?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#engine DataOpentelekomcloudDmsProductV1#engine}
+  */
+  readonly engine: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#instance_type DataOpentelekomcloudDmsProductV1#instance_type}
+  */
+  readonly instanceType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#io_type DataOpentelekomcloudDmsProductV1#io_type}
+  */
+  readonly ioType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#node_num DataOpentelekomcloudDmsProductV1#node_num}
+  */
+  readonly nodeNum?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#partition_num DataOpentelekomcloudDmsProductV1#partition_num}
+  */
+  readonly partitionNum?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#storage DataOpentelekomcloudDmsProductV1#storage}
+  */
+  readonly storage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#storage_spec_code DataOpentelekomcloudDmsProductV1#storage_spec_code}
+  */
+  readonly storageSpecCode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#version DataOpentelekomcloudDmsProductV1#version}
+  */
+  readonly version?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#vm_specification DataOpentelekomcloudDmsProductV1#vm_specification}
+  */
+  readonly vmSpecification?: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html opentelekomcloud_dms_product_v1}
+*/
+export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "opentelekomcloud_dms_product_v1";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html opentelekomcloud_dms_product_v1} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataOpentelekomcloudDmsProductV1Config
+  */
+  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudDmsProductV1Config) {
+    super(scope, id, {
+      terraformResourceType: 'opentelekomcloud_dms_product_v1',
+      terraformGeneratorMetadata: {
+        providerName: 'opentelekomcloud'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._bandwidth = config.bandwidth;
+    this._engine = config.engine;
+    this._instanceType = config.instanceType;
+    this._ioType = config.ioType;
+    this._nodeNum = config.nodeNum;
+    this._partitionNum = config.partitionNum;
+    this._storage = config.storage;
+    this._storageSpecCode = config.storageSpecCode;
+    this._version = config.version;
+    this._vmSpecification = config.vmSpecification;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // bandwidth - computed: false, optional: true, required: false
+  private _bandwidth?: string | undefined; 
+  public get bandwidth() {
+    return this.getStringAttribute('bandwidth');
+  }
+  public set bandwidth(value: string | undefined) {
+    this._bandwidth = value;
+  }
+  public resetBandwidth() {
+    this._bandwidth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthInput() {
+    return this._bandwidth
+  }
+
+  // engine - computed: false, optional: false, required: true
+  private _engine?: string; 
+  public get engine() {
+    return this.getStringAttribute('engine');
+  }
+  public set engine(value: string) {
+    this._engine = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get engineInput() {
+    return this._engine
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // instance_type - computed: false, optional: false, required: true
+  private _instanceType?: string; 
+  public get instanceType() {
+    return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType
+  }
+
+  // io_type - computed: true, optional: true, required: false
+  private _ioType?: string | undefined; 
+  public get ioType() {
+    return this.getStringAttribute('io_type');
+  }
+  public set ioType(value: string | undefined) {
+    this._ioType = value;
+  }
+  public resetIoType() {
+    this._ioType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ioTypeInput() {
+    return this._ioType
+  }
+
+  // node_num - computed: true, optional: true, required: false
+  private _nodeNum?: string | undefined; 
+  public get nodeNum() {
+    return this.getStringAttribute('node_num');
+  }
+  public set nodeNum(value: string | undefined) {
+    this._nodeNum = value;
+  }
+  public resetNodeNum() {
+    this._nodeNum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeNumInput() {
+    return this._nodeNum
+  }
+
+  // partition_num - computed: false, optional: true, required: false
+  private _partitionNum?: string | undefined; 
+  public get partitionNum() {
+    return this.getStringAttribute('partition_num');
+  }
+  public set partitionNum(value: string | undefined) {
+    this._partitionNum = value;
+  }
+  public resetPartitionNum() {
+    this._partitionNum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partitionNumInput() {
+    return this._partitionNum
+  }
+
+  // storage - computed: true, optional: true, required: false
+  private _storage?: string | undefined; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string | undefined) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage
+  }
+
+  // storage_spec_code - computed: true, optional: true, required: false
+  private _storageSpecCode?: string | undefined; 
+  public get storageSpecCode() {
+    return this.getStringAttribute('storage_spec_code');
+  }
+  public set storageSpecCode(value: string | undefined) {
+    this._storageSpecCode = value;
+  }
+  public resetStorageSpecCode() {
+    this._storageSpecCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageSpecCodeInput() {
+    return this._storageSpecCode
+  }
+
+  // version - computed: true, optional: true, required: false
+  private _version?: string | undefined; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string | undefined) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version
+  }
+
+  // vm_specification - computed: true, optional: true, required: false
+  private _vmSpecification?: string | undefined; 
+  public get vmSpecification() {
+    return this.getStringAttribute('vm_specification');
+  }
+  public set vmSpecification(value: string | undefined) {
+    this._vmSpecification = value;
+  }
+  public resetVmSpecification() {
+    this._vmSpecification = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vmSpecificationInput() {
+    return this._vmSpecification
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      bandwidth: cdktf.stringToTerraform(this._bandwidth),
+      engine: cdktf.stringToTerraform(this._engine),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
+      io_type: cdktf.stringToTerraform(this._ioType),
+      node_num: cdktf.stringToTerraform(this._nodeNum),
+      partition_num: cdktf.stringToTerraform(this._partitionNum),
+      storage: cdktf.stringToTerraform(this._storage),
+      storage_spec_code: cdktf.stringToTerraform(this._storageSpecCode),
+      version: cdktf.stringToTerraform(this._version),
+      vm_specification: cdktf.stringToTerraform(this._vmSpecification),
+    };
+  }
+}

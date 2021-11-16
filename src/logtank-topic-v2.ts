@@ -1,0 +1,106 @@
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface LogtankTopicV2Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html#group_id LogtankTopicV2#group_id}
+  */
+  readonly groupId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html#topic_name LogtankTopicV2#topic_name}
+  */
+  readonly topicName: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html opentelekomcloud_logtank_topic_v2}
+*/
+export class LogtankTopicV2 extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "opentelekomcloud_logtank_topic_v2";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html opentelekomcloud_logtank_topic_v2} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options LogtankTopicV2Config
+  */
+  public constructor(scope: Construct, id: string, config: LogtankTopicV2Config) {
+    super(scope, id, {
+      terraformResourceType: 'opentelekomcloud_logtank_topic_v2',
+      terraformGeneratorMetadata: {
+        providerName: 'opentelekomcloud'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._groupId = config.groupId;
+    this._topicName = config.topicName;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // group_id - computed: false, optional: false, required: true
+  private _groupId?: string; 
+  public get groupId() {
+    return this.getStringAttribute('group_id');
+  }
+  public set groupId(value: string) {
+    this._groupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // index_enabled - computed: true, optional: false, required: false
+  public get indexEnabled() {
+    return this.getBooleanAttribute('index_enabled') as any;
+  }
+
+  // topic_name - computed: false, optional: false, required: true
+  private _topicName?: string; 
+  public get topicName() {
+    return this.getStringAttribute('topic_name');
+  }
+  public set topicName(value: string) {
+    this._topicName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicNameInput() {
+    return this._topicName
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      group_id: cdktf.stringToTerraform(this._groupId),
+      topic_name: cdktf.stringToTerraform(this._topicName),
+    };
+  }
+}
