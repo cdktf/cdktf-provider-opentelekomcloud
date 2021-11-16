@@ -1,0 +1,240 @@
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataOpentelekomcloudDehHostV1Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}
+  */
+  readonly availabilityZone?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#id DataOpentelekomcloudDehHostV1#id}
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#name DataOpentelekomcloudDehHostV1#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#region DataOpentelekomcloudDehHostV1#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#status DataOpentelekomcloudDehHostV1#status}
+  */
+  readonly status?: string;
+}
+export class DataOpentelekomcloudDehHostV1AvailableInstanceCapacities extends cdktf.ComplexComputedList {
+
+  // flavor - computed: true, optional: false, required: false
+  public get flavor() {
+    return this.getStringAttribute('flavor');
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html opentelekomcloud_deh_host_v1}
+*/
+export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "opentelekomcloud_deh_host_v1";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html opentelekomcloud_deh_host_v1} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataOpentelekomcloudDehHostV1Config = {}
+  */
+  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudDehHostV1Config = {}) {
+    super(scope, id, {
+      terraformResourceType: 'opentelekomcloud_deh_host_v1',
+      terraformGeneratorMetadata: {
+        providerName: 'opentelekomcloud'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._availabilityZone = config.availabilityZone;
+    this._id = config.id;
+    this._name = config.name;
+    this._region = config.region;
+    this._status = config.status;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // auto_placement - computed: true, optional: false, required: false
+  public get autoPlacement() {
+    return this.getStringAttribute('auto_placement');
+  }
+
+  // availability_zone - computed: false, optional: true, required: false
+  private _availabilityZone?: string | undefined; 
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+  public set availabilityZone(value: string | undefined) {
+    this._availabilityZone = value;
+  }
+  public resetAvailabilityZone() {
+    this._availabilityZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityZoneInput() {
+    return this._availabilityZone
+  }
+
+  // available_instance_capacities - computed: true, optional: false, required: false
+  public availableInstanceCapacities(index: string) {
+    return new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(this, 'available_instance_capacities', index);
+  }
+
+  // available_memory - computed: true, optional: false, required: false
+  public get availableMemory() {
+    return this.getNumberAttribute('available_memory');
+  }
+
+  // available_vcpus - computed: true, optional: false, required: false
+  public get availableVcpus() {
+    return this.getNumberAttribute('available_vcpus');
+  }
+
+  // cores - computed: true, optional: false, required: false
+  public get cores() {
+    return this.getNumberAttribute('cores');
+  }
+
+  // host_type - computed: true, optional: false, required: false
+  public get hostType() {
+    return this.getStringAttribute('host_type');
+  }
+
+  // host_type_name - computed: true, optional: false, required: false
+  public get hostTypeName() {
+    return this.getStringAttribute('host_type_name');
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string | undefined; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string | undefined) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id
+  }
+
+  // instance_total - computed: true, optional: false, required: false
+  public get instanceTotal() {
+    return this.getNumberAttribute('instance_total');
+  }
+
+  // instance_uuids - computed: true, optional: false, required: false
+  public get instanceUuids() {
+    return this.getListAttribute('instance_uuids');
+  }
+
+  // memory - computed: true, optional: false, required: false
+  public get memory() {
+    return this.getNumberAttribute('memory');
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string | undefined; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string | undefined) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string | undefined; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string | undefined) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
+  }
+
+  // sockets - computed: true, optional: false, required: false
+  public get sockets() {
+    return this.getNumberAttribute('sockets');
+  }
+
+  // status - computed: false, optional: true, required: false
+  private _status?: string | undefined; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string | undefined) {
+    this._status = value;
+  }
+  public resetStatus() {
+    this._status = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status
+  }
+
+  // tenant_id - computed: true, optional: false, required: false
+  public get tenantId() {
+    return this.getStringAttribute('tenant_id');
+  }
+
+  // vcpus - computed: true, optional: false, required: false
+  public get vcpus() {
+    return this.getNumberAttribute('vcpus');
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      availability_zone: cdktf.stringToTerraform(this._availabilityZone),
+      id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
+      region: cdktf.stringToTerraform(this._region),
+      status: cdktf.stringToTerraform(this._status),
+    };
+  }
+}

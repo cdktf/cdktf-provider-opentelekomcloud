@@ -1,0 +1,309 @@
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface AntiddosV1Config extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#app_type_id AntiddosV1#app_type_id}
+  */
+  readonly appTypeId: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#cleaning_access_pos_id AntiddosV1#cleaning_access_pos_id}
+  */
+  readonly cleaningAccessPosId: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#enable_l7 AntiddosV1#enable_l7}
+  */
+  readonly enableL7: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#floating_ip_id AntiddosV1#floating_ip_id}
+  */
+  readonly floatingIpId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#http_request_pos_id AntiddosV1#http_request_pos_id}
+  */
+  readonly httpRequestPosId: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#region AntiddosV1#region}
+  */
+  readonly region?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#traffic_pos_id AntiddosV1#traffic_pos_id}
+  */
+  readonly trafficPosId: number;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#timeouts AntiddosV1#timeouts}
+  */
+  readonly timeouts?: AntiddosV1Timeouts;
+}
+export interface AntiddosV1Timeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#create AntiddosV1#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#delete AntiddosV1#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#update AntiddosV1#update}
+  */
+  readonly update?: string;
+}
+
+function antiddosV1TimeoutsToTerraform(struct?: AntiddosV1TimeoutsOutputReference | AntiddosV1Timeouts): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string | undefined; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string | undefined) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string | undefined; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string | undefined) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string | undefined; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string | undefined) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html opentelekomcloud_antiddos_v1}
+*/
+export class AntiddosV1 extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "opentelekomcloud_antiddos_v1";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html opentelekomcloud_antiddos_v1} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AntiddosV1Config
+  */
+  public constructor(scope: Construct, id: string, config: AntiddosV1Config) {
+    super(scope, id, {
+      terraformResourceType: 'opentelekomcloud_antiddos_v1',
+      terraformGeneratorMetadata: {
+        providerName: 'opentelekomcloud'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._appTypeId = config.appTypeId;
+    this._cleaningAccessPosId = config.cleaningAccessPosId;
+    this._enableL7 = config.enableL7;
+    this._floatingIpId = config.floatingIpId;
+    this._httpRequestPosId = config.httpRequestPosId;
+    this._region = config.region;
+    this._trafficPosId = config.trafficPosId;
+    this._timeouts = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // app_type_id - computed: false, optional: false, required: true
+  private _appTypeId?: number; 
+  public get appTypeId() {
+    return this.getNumberAttribute('app_type_id');
+  }
+  public set appTypeId(value: number) {
+    this._appTypeId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appTypeIdInput() {
+    return this._appTypeId
+  }
+
+  // cleaning_access_pos_id - computed: false, optional: false, required: true
+  private _cleaningAccessPosId?: number; 
+  public get cleaningAccessPosId() {
+    return this.getNumberAttribute('cleaning_access_pos_id');
+  }
+  public set cleaningAccessPosId(value: number) {
+    this._cleaningAccessPosId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cleaningAccessPosIdInput() {
+    return this._cleaningAccessPosId
+  }
+
+  // enable_l7 - computed: false, optional: false, required: true
+  private _enableL7?: boolean | cdktf.IResolvable; 
+  public get enableL7() {
+    return this.getBooleanAttribute('enable_l7') as any;
+  }
+  public set enableL7(value: boolean | cdktf.IResolvable) {
+    this._enableL7 = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableL7Input() {
+    return this._enableL7
+  }
+
+  // floating_ip_id - computed: false, optional: false, required: true
+  private _floatingIpId?: string; 
+  public get floatingIpId() {
+    return this.getStringAttribute('floating_ip_id');
+  }
+  public set floatingIpId(value: string) {
+    this._floatingIpId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatingIpIdInput() {
+    return this._floatingIpId
+  }
+
+  // http_request_pos_id - computed: false, optional: false, required: true
+  private _httpRequestPosId?: number; 
+  public get httpRequestPosId() {
+    return this.getNumberAttribute('http_request_pos_id');
+  }
+  public set httpRequestPosId(value: number) {
+    this._httpRequestPosId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpRequestPosIdInput() {
+    return this._httpRequestPosId
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string | undefined; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string | undefined) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region
+  }
+
+  // traffic_pos_id - computed: false, optional: false, required: true
+  private _trafficPosId?: number; 
+  public get trafficPosId() {
+    return this.getNumberAttribute('traffic_pos_id');
+  }
+  public set trafficPosId(value: number) {
+    this._trafficPosId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trafficPosIdInput() {
+    return this._trafficPosId
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts?: AntiddosV1Timeouts | undefined; 
+  private __timeoutsOutput = new AntiddosV1TimeoutsOutputReference(this as any, "timeouts", true);
+  public get timeouts() {
+    return this.__timeoutsOutput;
+  }
+  public putTimeouts(value: AntiddosV1Timeouts | undefined) {
+    this._timeouts = value;
+  }
+  public resetTimeouts() {
+    this._timeouts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      app_type_id: cdktf.numberToTerraform(this._appTypeId),
+      cleaning_access_pos_id: cdktf.numberToTerraform(this._cleaningAccessPosId),
+      enable_l7: cdktf.booleanToTerraform(this._enableL7),
+      floating_ip_id: cdktf.stringToTerraform(this._floatingIpId),
+      http_request_pos_id: cdktf.numberToTerraform(this._httpRequestPosId),
+      region: cdktf.stringToTerraform(this._region),
+      traffic_pos_id: cdktf.numberToTerraform(this._trafficPosId),
+      timeouts: antiddosV1TimeoutsToTerraform(this._timeouts),
+    };
+  }
+}
