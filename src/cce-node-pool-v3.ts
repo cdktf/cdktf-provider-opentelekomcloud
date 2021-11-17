@@ -16,6 +16,14 @@ export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#docker_base_size CceNodePoolV3#docker_base_size}
+  */
+  readonly dockerBaseSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#docker_lvm_config_override CceNodePoolV3#docker_lvm_config_override}
+  */
+  readonly dockerLvmConfigOverride?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#flavor CceNodePoolV3#flavor}
   */
   readonly flavor: string;
@@ -35,6 +43,10 @@ export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#max_node_count CceNodePoolV3#max_node_count}
   */
   readonly maxNodeCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#max_pods CceNodePoolV3#max_pods}
+  */
+  readonly maxPods?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#min_node_count CceNodePoolV3#min_node_count}
   */
@@ -387,11 +399,14 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
     });
     this._availabilityZone = config.availabilityZone;
     this._clusterId = config.clusterId;
+    this._dockerBaseSize = config.dockerBaseSize;
+    this._dockerLvmConfigOverride = config.dockerLvmConfigOverride;
     this._flavor = config.flavor;
     this._initialNodeCount = config.initialNodeCount;
     this._k8STags = config.k8STags;
     this._keyPair = config.keyPair;
     this._maxNodeCount = config.maxNodeCount;
+    this._maxPods = config.maxPods;
     this._minNodeCount = config.minNodeCount;
     this._name = config.name;
     this._os = config.os;
@@ -441,6 +456,38 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId
+  }
+
+  // docker_base_size - computed: false, optional: true, required: false
+  private _dockerBaseSize?: number | undefined; 
+  public get dockerBaseSize() {
+    return this.getNumberAttribute('docker_base_size');
+  }
+  public set dockerBaseSize(value: number | undefined) {
+    this._dockerBaseSize = value;
+  }
+  public resetDockerBaseSize() {
+    this._dockerBaseSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerBaseSizeInput() {
+    return this._dockerBaseSize
+  }
+
+  // docker_lvm_config_override - computed: false, optional: true, required: false
+  private _dockerLvmConfigOverride?: string | undefined; 
+  public get dockerLvmConfigOverride() {
+    return this.getStringAttribute('docker_lvm_config_override');
+  }
+  public set dockerLvmConfigOverride(value: string | undefined) {
+    this._dockerLvmConfigOverride = value;
+  }
+  public resetDockerLvmConfigOverride() {
+    this._dockerLvmConfigOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerLvmConfigOverrideInput() {
+    return this._dockerLvmConfigOverride
   }
 
   // flavor - computed: false, optional: false, required: true
@@ -521,6 +568,22 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get maxNodeCountInput() {
     return this._maxNodeCount
+  }
+
+  // max_pods - computed: false, optional: true, required: false
+  private _maxPods?: number | undefined; 
+  public get maxPods() {
+    return this.getNumberAttribute('max_pods');
+  }
+  public set maxPods(value: number | undefined) {
+    this._maxPods = value;
+  }
+  public resetMaxPods() {
+    this._maxPods = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxPodsInput() {
+    return this._maxPods
   }
 
   // min_node_count - computed: false, optional: true, required: false
@@ -788,11 +851,14 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      docker_base_size: cdktf.numberToTerraform(this._dockerBaseSize),
+      docker_lvm_config_override: cdktf.stringToTerraform(this._dockerLvmConfigOverride),
       flavor: cdktf.stringToTerraform(this._flavor),
       initial_node_count: cdktf.numberToTerraform(this._initialNodeCount),
       k8s_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._k8STags),
       key_pair: cdktf.stringToTerraform(this._keyPair),
       max_node_count: cdktf.numberToTerraform(this._maxNodeCount),
+      max_pods: cdktf.numberToTerraform(this._maxPods),
       min_node_count: cdktf.numberToTerraform(this._minNodeCount),
       name: cdktf.stringToTerraform(this._name),
       os: cdktf.stringToTerraform(this._os),

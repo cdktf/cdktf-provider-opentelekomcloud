@@ -32,6 +32,14 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#docker_base_size CceNodeV3#docker_base_size}
+  */
+  readonly dockerBaseSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#docker_lvm_config_override CceNodeV3#docker_lvm_config_override}
+  */
+  readonly dockerLvmConfigOverride?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#ecs_performance_type CceNodeV3#ecs_performance_type}
   */
   readonly ecsPerformanceType?: string;
@@ -385,6 +393,8 @@ export class CceNodeV3 extends cdktf.TerraformResource {
     this._bandwidthSize = config.bandwidthSize;
     this._billingMode = config.billingMode;
     this._clusterId = config.clusterId;
+    this._dockerBaseSize = config.dockerBaseSize;
+    this._dockerLvmConfigOverride = config.dockerLvmConfigOverride;
     this._ecsPerformanceType = config.ecsPerformanceType;
     this._eipCount = config.eipCount;
     this._eipIds = config.eipIds;
@@ -506,6 +516,38 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId
+  }
+
+  // docker_base_size - computed: false, optional: true, required: false
+  private _dockerBaseSize?: number | undefined; 
+  public get dockerBaseSize() {
+    return this.getNumberAttribute('docker_base_size');
+  }
+  public set dockerBaseSize(value: number | undefined) {
+    this._dockerBaseSize = value;
+  }
+  public resetDockerBaseSize() {
+    this._dockerBaseSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerBaseSizeInput() {
+    return this._dockerBaseSize
+  }
+
+  // docker_lvm_config_override - computed: false, optional: true, required: false
+  private _dockerLvmConfigOverride?: string | undefined; 
+  public get dockerLvmConfigOverride() {
+    return this.getStringAttribute('docker_lvm_config_override');
+  }
+  public set dockerLvmConfigOverride(value: string | undefined) {
+    this._dockerLvmConfigOverride = value;
+  }
+  public resetDockerLvmConfigOverride() {
+    this._dockerLvmConfigOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerLvmConfigOverrideInput() {
+    return this._dockerLvmConfigOverride
   }
 
   // ecs_performance_type - computed: false, optional: true, required: false
@@ -951,6 +993,8 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       bandwidth_size: cdktf.numberToTerraform(this._bandwidthSize),
       billing_mode: cdktf.numberToTerraform(this._billingMode),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      docker_base_size: cdktf.numberToTerraform(this._dockerBaseSize),
+      docker_lvm_config_override: cdktf.stringToTerraform(this._dockerLvmConfigOverride),
       ecs_performance_type: cdktf.stringToTerraform(this._ecsPerformanceType),
       eip_count: cdktf.numberToTerraform(this._eipCount),
       eip_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eipIds),
