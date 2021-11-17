@@ -3720,6 +3720,18 @@ public putTimeouts(value?: CceNodePoolV3Timeouts)
 public resetAvailabilityZone()
 ```
 
+##### `resetDockerBaseSize` <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.resetDockerBaseSize"></a>
+
+```typescript
+public resetDockerBaseSize()
+```
+
+##### `resetDockerLvmConfigOverride` <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.resetDockerLvmConfigOverride"></a>
+
+```typescript
+public resetDockerLvmConfigOverride()
+```
+
 ##### `resetK8STags` <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.resetK8STags"></a>
 
 ```typescript
@@ -3736,6 +3748,12 @@ public resetKeyPair()
 
 ```typescript
 public resetMaxNodeCount()
+```
+
+##### `resetMaxPods` <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.resetMaxPods"></a>
+
+```typescript
+public resetMaxPods()
 ```
 
 ##### `resetMinNodeCount` <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.resetMinNodeCount"></a>
@@ -3889,6 +3907,26 @@ public readonly dataVolumesInput: CceNodePoolV3DataVolumes[];
 
 ---
 
+##### `dockerBaseSizeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dockerBaseSizeInput"></a>
+
+```typescript
+public readonly dockerBaseSizeInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dockerLvmConfigOverrideInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dockerLvmConfigOverrideInput"></a>
+
+```typescript
+public readonly dockerLvmConfigOverrideInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `flavorInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.flavorInput"></a>
 
 ```typescript
@@ -3933,6 +3971,16 @@ public readonly keyPairInput: string;
 
 ```typescript
 public readonly maxNodeCountInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `maxPodsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.maxPodsInput"></a>
+
+```typescript
+public readonly maxPodsInput: number;
 ```
 
 - *Type:* `number`
@@ -4149,6 +4197,26 @@ public readonly availabilityZone: string;
 
 ---
 
+##### `dockerBaseSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dockerBaseSize"></a>
+
+```typescript
+public readonly dockerBaseSize: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dockerLvmConfigOverride`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dockerLvmConfigOverride"></a>
+
+```typescript
+public readonly dockerLvmConfigOverride: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `k8STags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.k8STags"></a>
 
 ```typescript
@@ -4173,6 +4241,16 @@ public readonly keyPair: string;
 
 ```typescript
 public readonly maxNodeCount: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `maxPods`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.maxPods"></a>
+
+```typescript
+public readonly maxPods: number;
 ```
 
 - *Type:* `number`
@@ -4391,6 +4469,18 @@ public resetBandwidthSize()
 
 ```typescript
 public resetBillingMode()
+```
+
+##### `resetDockerBaseSize` <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.resetDockerBaseSize"></a>
+
+```typescript
+public resetDockerBaseSize()
+```
+
+##### `resetDockerLvmConfigOverride` <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.resetDockerLvmConfigOverride"></a>
+
+```typescript
+public resetDockerLvmConfigOverride()
 ```
 
 ##### `resetEcsPerformanceType` <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.resetEcsPerformanceType"></a>
@@ -4655,6 +4745,26 @@ public readonly dataVolumesInput: CceNodeV3DataVolumes[];
 ```
 
 - *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
+
+---
+
+##### `dockerBaseSizeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dockerBaseSizeInput"></a>
+
+```typescript
+public readonly dockerBaseSizeInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dockerLvmConfigOverrideInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dockerLvmConfigOverrideInput"></a>
+
+```typescript
+public readonly dockerLvmConfigOverrideInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -4995,6 +5105,26 @@ public readonly billingMode: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `dockerBaseSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dockerBaseSize"></a>
+
+```typescript
+public readonly dockerBaseSize: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dockerLvmConfigOverride`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dockerLvmConfigOverride"></a>
+
+```typescript
+public readonly dockerLvmConfigOverride: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -17583,6 +17713,203 @@ public readonly realm: string;
 
 ---
 
+### DataOpentelekomcloudLbCertificateV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html opentelekomcloud_lb_certificate_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbCertificateV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbCertificateV3(scope: Construct, id: string, config?: DataOpentelekomcloudLbCertificateV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetDomain` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.resetDomain"></a>
+
+```typescript
+public resetDomain()
+```
+
+##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.resetName"></a>
+
+```typescript
+public resetName()
+```
+
+##### `resetType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.resetType"></a>
+
+```typescript
+public resetType()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `certificate`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.certificate"></a>
+
+```typescript
+public readonly certificate: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `expireTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.expireTime"></a>
+
+```typescript
+public readonly expireTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `privateKey`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.privateKey"></a>
+
+```typescript
+public readonly privateKey: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.domainInput"></a>
+
+```typescript
+public readonly domainInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DataOpentelekomcloudLbFlavorV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbFlavorV3"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavor_v3.html opentelekomcloud_lb_flavor_v3}.
@@ -17723,6 +18050,884 @@ public readonly name: string;
 #### Constants <a name="Constants"></a>
 
 ##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbFlavorV3.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataOpentelekomcloudLbListenerV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html opentelekomcloud_lb_listener_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbListenerV3(scope: Construct, id: string, config?: DataOpentelekomcloudLbListenerV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `insertHeaders` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.insertHeaders"></a>
+
+```typescript
+public insertHeaders(index: string)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.index"></a>
+
+- *Type:* `string`
+
+---
+
+##### `resetClientCaTlsContainerRef` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetClientCaTlsContainerRef"></a>
+
+```typescript
+public resetClientCaTlsContainerRef()
+```
+
+##### `resetClientTimeout` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetClientTimeout"></a>
+
+```typescript
+public resetClientTimeout()
+```
+
+##### `resetDefaultPoolId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetDefaultPoolId"></a>
+
+```typescript
+public resetDefaultPoolId()
+```
+
+##### `resetDefaultTlsContainerRef` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetDefaultTlsContainerRef"></a>
+
+```typescript
+public resetDefaultTlsContainerRef()
+```
+
+##### `resetDescription` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetDescription"></a>
+
+```typescript
+public resetDescription()
+```
+
+##### `resetId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetId"></a>
+
+```typescript
+public resetId()
+```
+
+##### `resetKeepAliveTimeout` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetKeepAliveTimeout"></a>
+
+```typescript
+public resetKeepAliveTimeout()
+```
+
+##### `resetLoadbalancerId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetLoadbalancerId"></a>
+
+```typescript
+public resetLoadbalancerId()
+```
+
+##### `resetMemberAddress` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetMemberAddress"></a>
+
+```typescript
+public resetMemberAddress()
+```
+
+##### `resetMemberDeviceId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetMemberDeviceId"></a>
+
+```typescript
+public resetMemberDeviceId()
+```
+
+##### `resetMemberTimeout` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetMemberTimeout"></a>
+
+```typescript
+public resetMemberTimeout()
+```
+
+##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetName"></a>
+
+```typescript
+public resetName()
+```
+
+##### `resetProtocol` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetProtocol"></a>
+
+```typescript
+public resetProtocol()
+```
+
+##### `resetProtocolPort` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetProtocolPort"></a>
+
+```typescript
+public resetProtocolPort()
+```
+
+##### `resetTlsCiphersPolicy` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetTlsCiphersPolicy"></a>
+
+```typescript
+public resetTlsCiphersPolicy()
+```
+
+##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.tags"></a>
+
+```typescript
+public tags(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.key"></a>
+
+- *Type:* `string`
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `adminStateUp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.adminStateUp"></a>
+
+```typescript
+public readonly adminStateUp: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `http2Enable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.http2Enable"></a>
+
+```typescript
+public readonly http2Enable: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `memberRetryEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberRetryEnable"></a>
+
+```typescript
+public readonly memberRetryEnable: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `memoryRetryEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memoryRetryEnable"></a>
+
+```typescript
+public readonly memoryRetryEnable: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `projectId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.projectId"></a>
+
+```typescript
+public readonly projectId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sniContainerRefs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.sniContainerRefs"></a>
+
+```typescript
+public readonly sniContainerRefs: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientCaTlsContainerRefInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.clientCaTlsContainerRefInput"></a>
+
+```typescript
+public readonly clientCaTlsContainerRefInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.clientTimeoutInput"></a>
+
+```typescript
+public readonly clientTimeoutInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `defaultPoolIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.defaultPoolIdInput"></a>
+
+```typescript
+public readonly defaultPoolIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `defaultTlsContainerRefInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.defaultTlsContainerRefInput"></a>
+
+```typescript
+public readonly defaultTlsContainerRefInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keepAliveTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.keepAliveTimeoutInput"></a>
+
+```typescript
+public readonly keepAliveTimeoutInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `loadbalancerIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.loadbalancerIdInput"></a>
+
+```typescript
+public readonly loadbalancerIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberAddressInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberAddressInput"></a>
+
+```typescript
+public readonly memberAddressInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberDeviceIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberDeviceIdInput"></a>
+
+```typescript
+public readonly memberDeviceIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberTimeoutInput"></a>
+
+```typescript
+public readonly memberTimeoutInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `protocolInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.protocolInput"></a>
+
+```typescript
+public readonly protocolInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `protocolPortInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.protocolPortInput"></a>
+
+```typescript
+public readonly protocolPortInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tlsCiphersPolicyInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.tlsCiphersPolicyInput"></a>
+
+```typescript
+public readonly tlsCiphersPolicyInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientCaTlsContainerRef`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.clientCaTlsContainerRef"></a>
+
+```typescript
+public readonly clientCaTlsContainerRef: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clientTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.clientTimeout"></a>
+
+```typescript
+public readonly clientTimeout: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `defaultPoolId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.defaultPoolId"></a>
+
+```typescript
+public readonly defaultPoolId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `defaultTlsContainerRef`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.defaultTlsContainerRef"></a>
+
+```typescript
+public readonly defaultTlsContainerRef: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `keepAliveTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.keepAliveTimeout"></a>
+
+```typescript
+public readonly keepAliveTimeout: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `loadbalancerId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.loadbalancerId"></a>
+
+```typescript
+public readonly loadbalancerId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberAddress`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberAddress"></a>
+
+```typescript
+public readonly memberAddress: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberDeviceId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberDeviceId"></a>
+
+```typescript
+public readonly memberDeviceId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `memberTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberTimeout"></a>
+
+```typescript
+public readonly memberTimeout: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `protocol`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `protocolPort`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.protocolPort"></a>
+
+```typescript
+public readonly protocolPort: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `tlsCiphersPolicy`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.tlsCiphersPolicy"></a>
+
+```typescript
+public readonly tlsCiphersPolicy: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataOpentelekomcloudLbLoadbalancerV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html opentelekomcloud_lb_loadbalancer_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbLoadbalancerV3(scope: Construct, id: string, config?: DataOpentelekomcloudLbLoadbalancerV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `publicIp` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.publicIp"></a>
+
+```typescript
+public publicIp(index: string)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.index"></a>
+
+- *Type:* `string`
+
+---
+
+##### `resetL4Flavor` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetL4Flavor"></a>
+
+```typescript
+public resetL4Flavor()
+```
+
+##### `resetL7Flavor` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetL7Flavor"></a>
+
+```typescript
+public resetL7Flavor()
+```
+
+##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetName"></a>
+
+```typescript
+public resetName()
+```
+
+##### `resetRouterId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetRouterId"></a>
+
+```typescript
+public resetRouterId()
+```
+
+##### `resetSubnetId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetSubnetId"></a>
+
+```typescript
+public resetSubnetId()
+```
+
+##### `resetVipAddress` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetVipAddress"></a>
+
+```typescript
+public resetVipAddress()
+```
+
+##### `resetVipPortId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetVipPortId"></a>
+
+```typescript
+public resetVipPortId()
+```
+
+##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.tags"></a>
+
+```typescript
+public tags(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.key"></a>
+
+- *Type:* `string`
+
+---
+
+
+#### Properties <a name="Properties"></a>
+
+##### `adminStateUp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.adminStateUp"></a>
+
+```typescript
+public readonly adminStateUp: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `availabilityZones`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.availabilityZones"></a>
+
+```typescript
+public readonly availabilityZones: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ipTargetEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.ipTargetEnable"></a>
+
+```typescript
+public readonly ipTargetEnable: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `networkIds`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.networkIds"></a>
+
+```typescript
+public readonly networkIds: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `updatedAt`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.updatedAt"></a>
+
+```typescript
+public readonly updatedAt: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `l4FlavorInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.l4FlavorInput"></a>
+
+```typescript
+public readonly l4FlavorInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `l7FlavorInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.l7FlavorInput"></a>
+
+```typescript
+public readonly l7FlavorInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `routerIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.routerIdInput"></a>
+
+```typescript
+public readonly routerIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subnetIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.subnetIdInput"></a>
+
+```typescript
+public readonly subnetIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vipAddressInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.vipAddressInput"></a>
+
+```typescript
+public readonly vipAddressInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vipPortIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.vipPortIdInput"></a>
+
+```typescript
+public readonly vipPortIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `l4Flavor`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.l4Flavor"></a>
+
+```typescript
+public readonly l4Flavor: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `l7Flavor`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.l7Flavor"></a>
+
+```typescript
+public readonly l7Flavor: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `routerId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.routerId"></a>
+
+```typescript
+public readonly routerId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `subnetId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.subnetId"></a>
+
+```typescript
+public readonly subnetId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vipAddress`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.vipAddress"></a>
+
+```typescript
+public readonly vipAddress: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `vipPortId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.vipPortId"></a>
+
+```typescript
+public readonly vipPortId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.tfResourceType"></a>
 
 - *Type:* `string`
 
@@ -37143,16 +38348,16 @@ public resetInsertHeaders()
 public resetKeepAliveTimeout()
 ```
 
+##### `resetMemberRetryEnable` <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.resetMemberRetryEnable"></a>
+
+```typescript
+public resetMemberRetryEnable()
+```
+
 ##### `resetMemberTimeout` <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.resetMemberTimeout"></a>
 
 ```typescript
 public resetMemberTimeout()
-```
-
-##### `resetMemoryRetryEnable` <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.resetMemoryRetryEnable"></a>
-
-```typescript
-public resetMemoryRetryEnable()
 ```
 
 ##### `resetName` <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.resetName"></a>
@@ -37322,6 +38527,16 @@ public readonly loadbalancerIdInput: string;
 
 ---
 
+##### `memberRetryEnableInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memberRetryEnableInput"></a>
+
+```typescript
+public readonly memberRetryEnableInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `memberTimeoutInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memberTimeoutInput"></a>
 
 ```typescript
@@ -37329,16 +38544,6 @@ public readonly memberTimeoutInput: number;
 ```
 
 - *Type:* `number`
-
----
-
-##### `memoryRetryEnableInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memoryRetryEnableInput"></a>
-
-```typescript
-public readonly memoryRetryEnableInput: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -37512,6 +38717,16 @@ public readonly keepAliveTimeout: number;
 
 ---
 
+##### `memberRetryEnable`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memberRetryEnable"></a>
+
+```typescript
+public readonly memberRetryEnable: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `memberTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memberTimeout"></a>
 
 ```typescript
@@ -37519,16 +38734,6 @@ public readonly memberTimeout: number;
 ```
 
 - *Type:* `number`
-
----
-
-##### `memoryRetryEnable`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.memoryRetryEnable"></a>
-
-```typescript
-public readonly memoryRetryEnable: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -65574,6 +66779,30 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `dockerBaseSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.dockerBaseSize"></a>
+
+```typescript
+public readonly dockerBaseSize: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#docker_base_size CceNodePoolV3#docker_base_size}.
+
+---
+
+##### `dockerLvmConfigOverride`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.dockerLvmConfigOverride"></a>
+
+```typescript
+public readonly dockerLvmConfigOverride: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#docker_lvm_config_override CceNodePoolV3#docker_lvm_config_override}.
+
+---
+
 ##### `k8STags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.k8STags"></a>
 
 ```typescript
@@ -65607,6 +66836,18 @@ public readonly maxNodeCount: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#max_node_count CceNodePoolV3#max_node_count}.
+
+---
+
+##### `maxPods`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.maxPods"></a>
+
+```typescript
+public readonly maxPods: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3.html#max_pods CceNodePoolV3#max_pods}.
 
 ---
 
@@ -66149,6 +67390,30 @@ public readonly billingMode: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#billing_mode CceNodeV3#billing_mode}.
+
+---
+
+##### `dockerBaseSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.dockerBaseSize"></a>
+
+```typescript
+public readonly dockerBaseSize: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#docker_base_size CceNodeV3#docker_base_size}.
+
+---
+
+##### `dockerLvmConfigOverride`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.dockerLvmConfigOverride"></a>
+
+```typescript
+public readonly dockerLvmConfigOverride: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3.html#docker_lvm_config_override CceNodeV3#docker_lvm_config_override}.
 
 ---
 
@@ -74478,6 +75743,92 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudLbCertificateV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbCertificateV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudLbCertificateV3Config: DataOpentelekomcloudLbCertificateV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `domain`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#domain DataOpentelekomcloudLbCertificateV3#domain}.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#name DataOpentelekomcloudLbCertificateV3#name}.
+
+---
+
+##### `type`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#type DataOpentelekomcloudLbCertificateV3#type}.
+
+---
+
 ### DataOpentelekomcloudLbFlavorV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbFlavorV3Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -74537,6 +75888,370 @@ public readonly name: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavor_v3.html#name DataOpentelekomcloudLbFlavorV3#name}.
+
+---
+
+### DataOpentelekomcloudLbListenerV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudLbListenerV3Config: DataOpentelekomcloudLbListenerV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `clientCaTlsContainerRef`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.clientCaTlsContainerRef"></a>
+
+```typescript
+public readonly clientCaTlsContainerRef: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#client_ca_tls_container_ref DataOpentelekomcloudLbListenerV3#client_ca_tls_container_ref}.
+
+---
+
+##### `clientTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.clientTimeout"></a>
+
+```typescript
+public readonly clientTimeout: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#client_timeout DataOpentelekomcloudLbListenerV3#client_timeout}.
+
+---
+
+##### `defaultPoolId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.defaultPoolId"></a>
+
+```typescript
+public readonly defaultPoolId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#default_pool_id DataOpentelekomcloudLbListenerV3#default_pool_id}.
+
+---
+
+##### `defaultTlsContainerRef`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.defaultTlsContainerRef"></a>
+
+```typescript
+public readonly defaultTlsContainerRef: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#default_tls_container_ref DataOpentelekomcloudLbListenerV3#default_tls_container_ref}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#description DataOpentelekomcloudLbListenerV3#description}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#id DataOpentelekomcloudLbListenerV3#id}.
+
+---
+
+##### `keepAliveTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.keepAliveTimeout"></a>
+
+```typescript
+public readonly keepAliveTimeout: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#keep_alive_timeout DataOpentelekomcloudLbListenerV3#keep_alive_timeout}.
+
+---
+
+##### `loadbalancerId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.loadbalancerId"></a>
+
+```typescript
+public readonly loadbalancerId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#loadbalancer_id DataOpentelekomcloudLbListenerV3#loadbalancer_id}.
+
+---
+
+##### `memberAddress`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.memberAddress"></a>
+
+```typescript
+public readonly memberAddress: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#member_address DataOpentelekomcloudLbListenerV3#member_address}.
+
+---
+
+##### `memberDeviceId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.memberDeviceId"></a>
+
+```typescript
+public readonly memberDeviceId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#member_device_id DataOpentelekomcloudLbListenerV3#member_device_id}.
+
+---
+
+##### `memberTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.memberTimeout"></a>
+
+```typescript
+public readonly memberTimeout: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#member_timeout DataOpentelekomcloudLbListenerV3#member_timeout}.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#name DataOpentelekomcloudLbListenerV3#name}.
+
+---
+
+##### `protocol`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#protocol DataOpentelekomcloudLbListenerV3#protocol}.
+
+---
+
+##### `protocolPort`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.protocolPort"></a>
+
+```typescript
+public readonly protocolPort: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#protocol_port DataOpentelekomcloudLbListenerV3#protocol_port}.
+
+---
+
+##### `tlsCiphersPolicy`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.tlsCiphersPolicy"></a>
+
+```typescript
+public readonly tlsCiphersPolicy: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3.html#tls_ciphers_policy DataOpentelekomcloudLbListenerV3#tls_ciphers_policy}.
+
+---
+
+### DataOpentelekomcloudLbLoadbalancerV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudLbLoadbalancerV3Config: DataOpentelekomcloudLbLoadbalancerV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `l4Flavor`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.l4Flavor"></a>
+
+```typescript
+public readonly l4Flavor: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#l4_flavor DataOpentelekomcloudLbLoadbalancerV3#l4_flavor}.
+
+---
+
+##### `l7Flavor`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.l7Flavor"></a>
+
+```typescript
+public readonly l7Flavor: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#l7_flavor DataOpentelekomcloudLbLoadbalancerV3#l7_flavor}.
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#name DataOpentelekomcloudLbLoadbalancerV3#name}.
+
+---
+
+##### `routerId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.routerId"></a>
+
+```typescript
+public readonly routerId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#router_id DataOpentelekomcloudLbLoadbalancerV3#router_id}.
+
+---
+
+##### `subnetId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.subnetId"></a>
+
+```typescript
+public readonly subnetId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#subnet_id DataOpentelekomcloudLbLoadbalancerV3#subnet_id}.
+
+---
+
+##### `vipAddress`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.vipAddress"></a>
+
+```typescript
+public readonly vipAddress: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#vip_address DataOpentelekomcloudLbLoadbalancerV3#vip_address}.
+
+---
+
+##### `vipPortId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.vipPortId"></a>
+
+```typescript
+public readonly vipPortId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#vip_port_id DataOpentelekomcloudLbLoadbalancerV3#vip_port_id}.
 
 ---
 
@@ -85886,6 +87601,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `memberRetryEnable`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3Config.property.memberRetryEnable"></a>
+
+```typescript
+public readonly memberRetryEnable: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#member_retry_enable LbListenerV3#member_retry_enable}.
+
+---
+
 ##### `memberTimeout`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3Config.property.memberTimeout"></a>
 
 ```typescript
@@ -85895,18 +87622,6 @@ public readonly memberTimeout: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#member_timeout LbListenerV3#member_timeout}.
-
----
-
-##### `memoryRetryEnable`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3Config.property.memoryRetryEnable"></a>
-
-```typescript
-public readonly memoryRetryEnable: boolean | IResolvable;
-```
-
-- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#memory_retry_enable LbListenerV3#memory_retry_enable}.
 
 ---
 
@@ -110684,6 +112399,182 @@ public readonly status: string;
 
 ```typescript
 public readonly userId: string;
+```
+
+- *Type:* `string`
+
+---
+
+
+### DataOpentelekomcloudLbListenerV3InsertHeaders <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3InsertHeaders } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `forwardedForPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedForPort"></a>
+
+```typescript
+public readonly forwardedForPort: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `forwardedHost`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedHost"></a>
+
+```typescript
+public readonly forwardedHost: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `forwardedPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedPort"></a>
+
+```typescript
+public readonly forwardedPort: any;
+```
+
+- *Type:* `any`
+
+---
+
+##### `forwardElbIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardElbIp"></a>
+
+```typescript
+public readonly forwardElbIp: any;
+```
+
+- *Type:* `any`
+
+---
+
+
+### DataOpentelekomcloudLbLoadbalancerV3PublicIp <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3PublicIp } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+---
+
+##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.complexComputedListIndex"></a>
+
+- *Type:* `string`
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `address`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `bandwidthChargeMode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthChargeMode"></a>
+
+```typescript
+public readonly bandwidthChargeMode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `bandwidthName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthName"></a>
+
+```typescript
+public readonly bandwidthName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthShareType"></a>
+
+```typescript
+public readonly bandwidthShareType: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `bandwidthSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthSize"></a>
+
+```typescript
+public readonly bandwidthSize: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `ipType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.ipType"></a>
+
+```typescript
+public readonly ipType: string;
 ```
 
 - *Type:* `string`

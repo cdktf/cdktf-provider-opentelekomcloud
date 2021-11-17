@@ -44,13 +44,13 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly loadbalancerId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#member_retry_enable LbListenerV3#member_retry_enable}
+  */
+  readonly memberRetryEnable?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#member_timeout LbListenerV3#member_timeout}
   */
   readonly memberTimeout?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#memory_retry_enable LbListenerV3#memory_retry_enable}
-  */
-  readonly memoryRetryEnable?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3.html#name LbListenerV3#name}
   */
@@ -230,8 +230,8 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     this._http2Enable = config.http2Enable;
     this._keepAliveTimeout = config.keepAliveTimeout;
     this._loadbalancerId = config.loadbalancerId;
+    this._memberRetryEnable = config.memberRetryEnable;
     this._memberTimeout = config.memberTimeout;
-    this._memoryRetryEnable = config.memoryRetryEnable;
     this._name = config.name;
     this._protocol = config.protocol;
     this._protocolPort = config.protocolPort;
@@ -396,6 +396,22 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     return this._loadbalancerId
   }
 
+  // member_retry_enable - computed: false, optional: true, required: false
+  private _memberRetryEnable?: boolean | cdktf.IResolvable | undefined; 
+  public get memberRetryEnable() {
+    return this.getBooleanAttribute('member_retry_enable') as any;
+  }
+  public set memberRetryEnable(value: boolean | cdktf.IResolvable | undefined) {
+    this._memberRetryEnable = value;
+  }
+  public resetMemberRetryEnable() {
+    this._memberRetryEnable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberRetryEnableInput() {
+    return this._memberRetryEnable
+  }
+
   // member_timeout - computed: true, optional: true, required: false
   private _memberTimeout?: number | undefined; 
   public get memberTimeout() {
@@ -410,22 +426,6 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get memberTimeoutInput() {
     return this._memberTimeout
-  }
-
-  // memory_retry_enable - computed: false, optional: true, required: false
-  private _memoryRetryEnable?: boolean | cdktf.IResolvable | undefined; 
-  public get memoryRetryEnable() {
-    return this.getBooleanAttribute('memory_retry_enable') as any;
-  }
-  public set memoryRetryEnable(value: boolean | cdktf.IResolvable | undefined) {
-    this._memoryRetryEnable = value;
-  }
-  public resetMemoryRetryEnable() {
-    this._memoryRetryEnable = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get memoryRetryEnableInput() {
-    return this._memoryRetryEnable
   }
 
   // name - computed: false, optional: true, required: false
@@ -556,8 +556,8 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       http2_enable: cdktf.booleanToTerraform(this._http2Enable),
       keep_alive_timeout: cdktf.numberToTerraform(this._keepAliveTimeout),
       loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
+      member_retry_enable: cdktf.booleanToTerraform(this._memberRetryEnable),
       member_timeout: cdktf.numberToTerraform(this._memberTimeout),
-      memory_retry_enable: cdktf.booleanToTerraform(this._memoryRetryEnable),
       name: cdktf.stringToTerraform(this._name),
       protocol: cdktf.stringToTerraform(this._protocol),
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
