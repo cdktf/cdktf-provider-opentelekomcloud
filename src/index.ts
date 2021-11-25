@@ -127,6 +127,8 @@ export * from './swr-repository-v2';
 export * from './vbs-backup-policy-v2';
 export * from './vbs-backup-share-v2';
 export * from './vbs-backup-v2';
+export * from './vpc-bandwidth-associate-v2';
+export * from './vpc-bandwidth-v2';
 export * from './vpc-eip-v1';
 export * from './vpc-flow-log-v1';
 export * from './vpc-peering-connection-accepter-v2';
