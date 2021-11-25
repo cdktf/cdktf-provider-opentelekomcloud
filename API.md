@@ -56609,6 +56609,265 @@ public readonly tags: VbsBackupV2Tags[];
 
 ---
 
+### VpcBandwidthAssociateV2 <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2.html opentelekomcloud_vpc_bandwidth_associate_v2}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.Initializer"></a>
+
+```typescript
+import { VpcBandwidthAssociateV2 } from '@cdktf/provider-opentelekomcloud'
+
+new VpcBandwidthAssociateV2(scope: Construct, id: string, config: VpcBandwidthAssociateV2Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config`](#@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetBackupChargeMode` <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.resetBackupChargeMode"></a>
+
+```typescript
+public resetBackupChargeMode()
+```
+
+##### `resetBackupSize` <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.resetBackupSize"></a>
+
+```typescript
+public resetBackupSize()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `backupChargeModeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.backupChargeModeInput"></a>
+
+```typescript
+public readonly backupChargeModeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `backupSizeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.backupSizeInput"></a>
+
+```typescript
+public readonly backupSizeInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `bandwidthInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.bandwidthInput"></a>
+
+```typescript
+public readonly bandwidthInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `floatingIpsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.floatingIpsInput"></a>
+
+```typescript
+public readonly floatingIpsInput: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `bandwidth`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.bandwidth"></a>
+
+```typescript
+public readonly bandwidth: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `floatingIps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.floatingIps"></a>
+
+```typescript
+public readonly floatingIps: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `backupChargeMode`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.backupChargeMode"></a>
+
+```typescript
+public readonly backupChargeMode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `backupSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.backupSize"></a>
+
+```typescript
+public readonly backupSize: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### VpcBandwidthV2 <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html opentelekomcloud_vpc_bandwidth_v2}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.Initializer"></a>
+
+```typescript
+import { VpcBandwidthV2 } from '@cdktf/provider-opentelekomcloud'
+
+new VpcBandwidthV2(scope: Construct, id: string, config: VpcBandwidthV2Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config`](#@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config)
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `sizeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.sizeInput"></a>
+
+```typescript
+public readonly sizeInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### VpcEipV1 <a name="@cdktf/provider-opentelekomcloud.VpcEipV1"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1.html opentelekomcloud_vpc_eip_v1}.
@@ -100228,6 +100487,178 @@ public readonly delete: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_v2.html#delete VbsBackupV2#delete}.
+
+---
+
+### VpcBandwidthAssociateV2Config <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { VpcBandwidthAssociateV2Config } from '@cdktf/provider-opentelekomcloud'
+
+const vpcBandwidthAssociateV2Config: VpcBandwidthAssociateV2Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `bandwidth`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.bandwidth"></a>
+
+```typescript
+public readonly bandwidth: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2.html#bandwidth VpcBandwidthAssociateV2#bandwidth}.
+
+---
+
+##### `floatingIps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.floatingIps"></a>
+
+```typescript
+public readonly floatingIps: string[];
+```
+
+- *Type:* `string`[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2.html#floating_ips VpcBandwidthAssociateV2#floating_ips}.
+
+---
+
+##### `backupChargeMode`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.backupChargeMode"></a>
+
+```typescript
+public readonly backupChargeMode: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2.html#backup_charge_mode VpcBandwidthAssociateV2#backup_charge_mode}.
+
+---
+
+##### `backupSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.backupSize"></a>
+
+```typescript
+public readonly backupSize: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2.html#backup_size VpcBandwidthAssociateV2#backup_size}.
+
+---
+
+### VpcBandwidthV2Config <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { VpcBandwidthV2Config } from '@cdktf/provider-opentelekomcloud'
+
+const vpcBandwidthV2Config: VpcBandwidthV2Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.count"></a>
+
+```typescript
+public readonly count: number | IResolvable;
+```
+
+- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html#name VpcBandwidthV2#name}.
+
+---
+
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html#size VpcBandwidthV2#size}.
 
 ---
 

@@ -521,7 +521,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
     return this._initialNodeCount
   }
 
-  // k8s_tags - computed: false, optional: true, required: false
+  // k8s_tags - computed: true, optional: true, required: false
   private _k8STags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get k8STags() {
     // Getting the computed value is not yet implemented
