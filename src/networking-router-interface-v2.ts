@@ -41,7 +41,7 @@ export interface NetworkingRouterInterfaceV2Timeouts {
   readonly delete?: string;
 }
 
-function networkingRouterInterfaceV2TimeoutsToTerraform(struct?: NetworkingRouterInterfaceV2TimeoutsOutputReference | NetworkingRouterInterfaceV2Timeouts): any {
+export function networkingRouterInterfaceV2TimeoutsToTerraform(struct?: NetworkingRouterInterfaceV2TimeoutsOutputReference | NetworkingRouterInterfaceV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -62,12 +62,37 @@ export class NetworkingRouterInterfaceV2TimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NetworkingRouterInterfaceV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingRouterInterfaceV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -75,15 +100,15 @@ export class NetworkingRouterInterfaceV2TimeoutsOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -91,7 +116,7 @@ export class NetworkingRouterInterfaceV2TimeoutsOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -131,7 +156,7 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
     this._region = config.region;
     this._routerId = config.routerId;
     this._subnetId = config.subnetId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -144,11 +169,11 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   }
 
   // port_id - computed: false, optional: true, required: false
-  private _portId?: string | undefined; 
+  private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
   }
-  public set portId(value: string | undefined) {
+  public set portId(value: string) {
     this._portId = value;
   }
   public resetPortId() {
@@ -156,15 +181,15 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -172,7 +197,7 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // router_id - computed: false, optional: false, required: true
@@ -185,15 +210,15 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get routerIdInput() {
-    return this._routerId
+    return this._routerId;
   }
 
   // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -201,24 +226,23 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NetworkingRouterInterfaceV2Timeouts | undefined; 
-  private __timeoutsOutput = new NetworkingRouterInterfaceV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingRouterInterfaceV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NetworkingRouterInterfaceV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NetworkingRouterInterfaceV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -231,7 +255,7 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       router_id: cdktf.stringToTerraform(this._routerId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      timeouts: networkingRouterInterfaceV2TimeoutsToTerraform(this._timeouts),
+      timeouts: networkingRouterInterfaceV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

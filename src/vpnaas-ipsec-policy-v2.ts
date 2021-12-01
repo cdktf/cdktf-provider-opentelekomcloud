@@ -71,7 +71,7 @@ export interface VpnaasIpsecPolicyV2Lifetime {
   readonly value?: number;
 }
 
-function vpnaasIpsecPolicyV2LifetimeToTerraform(struct?: VpnaasIpsecPolicyV2Lifetime): any {
+export function vpnaasIpsecPolicyV2LifetimeToTerraform(struct?: VpnaasIpsecPolicyV2Lifetime): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -89,7 +89,7 @@ export interface VpnaasIpsecPolicyV2Timeouts {
   readonly create?: string;
 }
 
-function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolicyV2TimeoutsOutputReference | VpnaasIpsecPolicyV2Timeouts): any {
+export function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolicyV2TimeoutsOutputReference | VpnaasIpsecPolicyV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -109,12 +109,31 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpnaasIpsecPolicyV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnaasIpsecPolicyV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+    }
+    else {
+      this._create = value.create;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -122,7 +141,7 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 }
 
@@ -169,7 +188,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
     this._transformProtocol = config.transformProtocol;
     this._valueSpecs = config.valueSpecs;
     this._lifetime = config.lifetime;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -177,11 +196,11 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   // ==========
 
   // auth_algorithm - computed: true, optional: true, required: false
-  private _authAlgorithm?: string | undefined; 
+  private _authAlgorithm?: string; 
   public get authAlgorithm() {
     return this.getStringAttribute('auth_algorithm');
   }
-  public set authAlgorithm(value: string | undefined) {
+  public set authAlgorithm(value: string) {
     this._authAlgorithm = value;
   }
   public resetAuthAlgorithm() {
@@ -189,15 +208,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get authAlgorithmInput() {
-    return this._authAlgorithm
+    return this._authAlgorithm;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -205,15 +224,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // encapsulation_mode - computed: true, optional: true, required: false
-  private _encapsulationMode?: string | undefined; 
+  private _encapsulationMode?: string; 
   public get encapsulationMode() {
     return this.getStringAttribute('encapsulation_mode');
   }
-  public set encapsulationMode(value: string | undefined) {
+  public set encapsulationMode(value: string) {
     this._encapsulationMode = value;
   }
   public resetEncapsulationMode() {
@@ -221,15 +240,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encapsulationModeInput() {
-    return this._encapsulationMode
+    return this._encapsulationMode;
   }
 
   // encryption_algorithm - computed: true, optional: true, required: false
-  private _encryptionAlgorithm?: string | undefined; 
+  private _encryptionAlgorithm?: string; 
   public get encryptionAlgorithm() {
     return this.getStringAttribute('encryption_algorithm');
   }
-  public set encryptionAlgorithm(value: string | undefined) {
+  public set encryptionAlgorithm(value: string) {
     this._encryptionAlgorithm = value;
   }
   public resetEncryptionAlgorithm() {
@@ -237,7 +256,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionAlgorithmInput() {
-    return this._encryptionAlgorithm
+    return this._encryptionAlgorithm;
   }
 
   // id - computed: true, optional: true, required: false
@@ -246,11 +265,11 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -258,15 +277,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // pfs - computed: true, optional: true, required: false
-  private _pfs?: string | undefined; 
+  private _pfs?: string; 
   public get pfs() {
     return this.getStringAttribute('pfs');
   }
-  public set pfs(value: string | undefined) {
+  public set pfs(value: string) {
     this._pfs = value;
   }
   public resetPfs() {
@@ -274,15 +293,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pfsInput() {
-    return this._pfs
+    return this._pfs;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -290,15 +309,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -306,15 +325,15 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // transform_protocol - computed: true, optional: true, required: false
-  private _transformProtocol?: string | undefined; 
+  private _transformProtocol?: string; 
   public get transformProtocol() {
     return this.getStringAttribute('transform_protocol');
   }
-  public set transformProtocol(value: string | undefined) {
+  public set transformProtocol(value: string) {
     this._transformProtocol = value;
   }
   public resetTransformProtocol() {
@@ -322,16 +341,16 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get transformProtocolInput() {
-    return this._transformProtocol
+    return this._transformProtocol;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -339,16 +358,16 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // lifetime - computed: false, optional: true, required: false
-  private _lifetime?: VpnaasIpsecPolicyV2Lifetime[] | undefined; 
+  private _lifetime?: VpnaasIpsecPolicyV2Lifetime[]; 
   public get lifetime() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('lifetime') as any;
   }
-  public set lifetime(value: VpnaasIpsecPolicyV2Lifetime[] | undefined) {
+  public set lifetime(value: VpnaasIpsecPolicyV2Lifetime[]) {
     this._lifetime = value;
   }
   public resetLifetime() {
@@ -356,24 +375,23 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lifetimeInput() {
-    return this._lifetime
+    return this._lifetime;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpnaasIpsecPolicyV2Timeouts | undefined; 
-  private __timeoutsOutput = new VpnaasIpsecPolicyV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpnaasIpsecPolicyV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpnaasIpsecPolicyV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpnaasIpsecPolicyV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -393,7 +411,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
       transform_protocol: cdktf.stringToTerraform(this._transformProtocol),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform)(this._lifetime),
-      timeouts: vpnaasIpsecPolicyV2TimeoutsToTerraform(this._timeouts),
+      timeouts: vpnaasIpsecPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

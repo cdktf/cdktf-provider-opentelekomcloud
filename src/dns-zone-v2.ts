@@ -63,7 +63,7 @@ export interface DnsZoneV2Router {
   readonly routerRegion: string;
 }
 
-function dnsZoneV2RouterToTerraform(struct?: DnsZoneV2Router): any {
+export function dnsZoneV2RouterToTerraform(struct?: DnsZoneV2Router): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -89,7 +89,7 @@ export interface DnsZoneV2Timeouts {
   readonly update?: string;
 }
 
-function dnsZoneV2TimeoutsToTerraform(struct?: DnsZoneV2TimeoutsOutputReference | DnsZoneV2Timeouts): any {
+export function dnsZoneV2TimeoutsToTerraform(struct?: DnsZoneV2TimeoutsOutputReference | DnsZoneV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -111,12 +111,43 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DnsZoneV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DnsZoneV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -124,15 +155,15 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -140,15 +171,15 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -156,7 +187,7 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -201,7 +232,7 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
     this._type = config.type;
     this._valueSpecs = config.valueSpecs;
     this._router = config.router;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -209,11 +240,11 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -221,15 +252,15 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // email - computed: false, optional: true, required: false
-  private _email?: string | undefined; 
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
-  public set email(value: string | undefined) {
+  public set email(value: string) {
     this._email = value;
   }
   public resetEmail() {
@@ -237,7 +268,7 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
-    return this._email
+    return this._email;
   }
 
   // id - computed: true, optional: true, required: false
@@ -260,15 +291,15 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -276,16 +307,16 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -293,15 +324,15 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // ttl - computed: false, optional: true, required: false
-  private _ttl?: number | undefined; 
+  private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
   }
-  public set ttl(value: number | undefined) {
+  public set ttl(value: number) {
     this._ttl = value;
   }
   public resetTtl() {
@@ -309,15 +340,15 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ttlInput() {
-    return this._ttl
+    return this._ttl;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -325,16 +356,16 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -342,16 +373,16 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // router - computed: false, optional: true, required: false
-  private _router?: DnsZoneV2Router[] | undefined; 
+  private _router?: DnsZoneV2Router[]; 
   public get router() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('router') as any;
   }
-  public set router(value: DnsZoneV2Router[] | undefined) {
+  public set router(value: DnsZoneV2Router[]) {
     this._router = value;
   }
   public resetRouter() {
@@ -359,24 +390,23 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get routerInput() {
-    return this._router
+    return this._router;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DnsZoneV2Timeouts | undefined; 
-  private __timeoutsOutput = new DnsZoneV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DnsZoneV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DnsZoneV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DnsZoneV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -394,7 +424,7 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       router: cdktf.listMapper(dnsZoneV2RouterToTerraform)(this._router),
-      timeouts: dnsZoneV2TimeoutsToTerraform(this._timeouts),
+      timeouts: dnsZoneV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

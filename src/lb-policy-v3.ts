@@ -61,7 +61,7 @@ export interface LbPolicyV3Rules {
   readonly value: string;
 }
 
-function lbPolicyV3RulesToTerraform(struct?: LbPolicyV3Rules): any {
+export function lbPolicyV3RulesToTerraform(struct?: LbPolicyV3Rules): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -131,15 +131,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action;
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -147,7 +147,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -165,15 +165,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get listenerIdInput() {
-    return this._listenerId
+    return this._listenerId;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -181,15 +181,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // position - computed: false, optional: true, required: false
-  private _position?: number | undefined; 
+  private _position?: number; 
   public get position() {
     return this.getNumberAttribute('position');
   }
-  public set position(value: number | undefined) {
+  public set position(value: number) {
     this._position = value;
   }
   public resetPosition() {
@@ -197,15 +197,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get positionInput() {
-    return this._position
+    return this._position;
   }
 
   // project_id - computed: true, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -213,15 +213,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // redirect_listener_id - computed: false, optional: true, required: false
-  private _redirectListenerId?: string | undefined; 
+  private _redirectListenerId?: string; 
   public get redirectListenerId() {
     return this.getStringAttribute('redirect_listener_id');
   }
-  public set redirectListenerId(value: string | undefined) {
+  public set redirectListenerId(value: string) {
     this._redirectListenerId = value;
   }
   public resetRedirectListenerId() {
@@ -229,15 +229,15 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get redirectListenerIdInput() {
-    return this._redirectListenerId
+    return this._redirectListenerId;
   }
 
   // redirect_pool_id - computed: false, optional: true, required: false
-  private _redirectPoolId?: string | undefined; 
+  private _redirectPoolId?: string; 
   public get redirectPoolId() {
     return this.getStringAttribute('redirect_pool_id');
   }
-  public set redirectPoolId(value: string | undefined) {
+  public set redirectPoolId(value: string) {
     this._redirectPoolId = value;
   }
   public resetRedirectPoolId() {
@@ -245,7 +245,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get redirectPoolIdInput() {
-    return this._redirectPoolId
+    return this._redirectPoolId;
   }
 
   // status - computed: true, optional: false, required: false
@@ -254,12 +254,12 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: LbPolicyV3Rules[] | undefined; 
+  private _rules?: LbPolicyV3Rules[]; 
   public get rules() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('rules') as any;
   }
-  public set rules(value: LbPolicyV3Rules[] | undefined) {
+  public set rules(value: LbPolicyV3Rules[]) {
     this._rules = value;
   }
   public resetRules() {
@@ -267,7 +267,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules
+    return this._rules;
   }
 
   // =========

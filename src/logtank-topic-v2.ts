@@ -67,7 +67,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
-    return this._groupId
+    return this._groupId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,7 +90,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicNameInput() {
-    return this._topicName
+    return this._topicName;
   }
 
   // =========

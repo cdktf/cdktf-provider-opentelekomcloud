@@ -71,7 +71,7 @@ export interface VbsBackupPolicyV2Tags {
   readonly value: string;
 }
 
-function vbsBackupPolicyV2TagsToTerraform(struct?: VbsBackupPolicyV2Tags): any {
+export function vbsBackupPolicyV2TagsToTerraform(struct?: VbsBackupPolicyV2Tags): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -93,7 +93,7 @@ export interface VbsBackupPolicyV2Timeouts {
   readonly delete?: string;
 }
 
-function vbsBackupPolicyV2TimeoutsToTerraform(struct?: VbsBackupPolicyV2TimeoutsOutputReference | VbsBackupPolicyV2Timeouts): any {
+export function vbsBackupPolicyV2TimeoutsToTerraform(struct?: VbsBackupPolicyV2TimeoutsOutputReference | VbsBackupPolicyV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -114,12 +114,37 @@ export class VbsBackupPolicyV2TimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VbsBackupPolicyV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VbsBackupPolicyV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -127,15 +152,15 @@ export class VbsBackupPolicyV2TimeoutsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -143,7 +168,7 @@ export class VbsBackupPolicyV2TimeoutsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -190,7 +215,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
     this._status = config.status;
     this._weekFrequency = config.weekFrequency;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -198,11 +223,11 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   // ==========
 
   // frequency - computed: false, optional: true, required: false
-  private _frequency?: number | undefined; 
+  private _frequency?: number; 
   public get frequency() {
     return this.getNumberAttribute('frequency');
   }
-  public set frequency(value: number | undefined) {
+  public set frequency(value: number) {
     this._frequency = value;
   }
   public resetFrequency() {
@@ -210,7 +235,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get frequencyInput() {
-    return this._frequency
+    return this._frequency;
   }
 
   // id - computed: true, optional: true, required: false
@@ -228,7 +253,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_resource_count - computed: true, optional: false, required: false
@@ -237,11 +262,11 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -249,15 +274,15 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // rentention_day - computed: false, optional: true, required: false
-  private _rententionDay?: number | undefined; 
+  private _rententionDay?: number; 
   public get rententionDay() {
     return this.getNumberAttribute('rentention_day');
   }
-  public set rententionDay(value: number | undefined) {
+  public set rententionDay(value: number) {
     this._rententionDay = value;
   }
   public resetRententionDay() {
@@ -265,15 +290,15 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rententionDayInput() {
-    return this._rententionDay
+    return this._rententionDay;
   }
 
   // rentention_num - computed: false, optional: true, required: false
-  private _rententionNum?: number | undefined; 
+  private _rententionNum?: number; 
   public get rententionNum() {
     return this.getNumberAttribute('rentention_num');
   }
-  public set rententionNum(value: number | undefined) {
+  public set rententionNum(value: number) {
     this._rententionNum = value;
   }
   public resetRententionNum() {
@@ -281,15 +306,15 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rententionNumInput() {
-    return this._rententionNum
+    return this._rententionNum;
   }
 
   // resources - computed: false, optional: true, required: false
-  private _resources?: string[] | undefined; 
+  private _resources?: string[]; 
   public get resources() {
     return this.getListAttribute('resources');
   }
-  public set resources(value: string[] | undefined) {
+  public set resources(value: string[]) {
     this._resources = value;
   }
   public resetResources() {
@@ -297,7 +322,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourcesInput() {
-    return this._resources
+    return this._resources;
   }
 
   // retain_first_backup - computed: false, optional: false, required: true
@@ -310,7 +335,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get retainFirstBackupInput() {
-    return this._retainFirstBackup
+    return this._retainFirstBackup;
   }
 
   // start_time - computed: false, optional: false, required: true
@@ -323,15 +348,15 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -339,15 +364,15 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // week_frequency - computed: false, optional: true, required: false
-  private _weekFrequency?: string[] | undefined; 
+  private _weekFrequency?: string[]; 
   public get weekFrequency() {
     return this.getListAttribute('week_frequency');
   }
-  public set weekFrequency(value: string[] | undefined) {
+  public set weekFrequency(value: string[]) {
     this._weekFrequency = value;
   }
   public resetWeekFrequency() {
@@ -355,16 +380,16 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get weekFrequencyInput() {
-    return this._weekFrequency
+    return this._weekFrequency;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: VbsBackupPolicyV2Tags[] | undefined; 
+  private _tags?: VbsBackupPolicyV2Tags[]; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: VbsBackupPolicyV2Tags[] | undefined) {
+  public set tags(value: VbsBackupPolicyV2Tags[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -372,24 +397,23 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VbsBackupPolicyV2Timeouts | undefined; 
-  private __timeoutsOutput = new VbsBackupPolicyV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VbsBackupPolicyV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VbsBackupPolicyV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VbsBackupPolicyV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -409,7 +433,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       week_frequency: cdktf.listMapper(cdktf.stringToTerraform)(this._weekFrequency),
       tags: cdktf.listMapper(vbsBackupPolicyV2TagsToTerraform)(this._tags),
-      timeouts: vbsBackupPolicyV2TimeoutsToTerraform(this._timeouts),
+      timeouts: vbsBackupPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

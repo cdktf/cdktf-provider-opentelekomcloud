@@ -61,7 +61,7 @@ export interface CbrPolicyV3OperationDefinition {
   readonly yearBackups?: number;
 }
 
-function cbrPolicyV3OperationDefinitionToTerraform(struct?: CbrPolicyV3OperationDefinitionOutputReference | CbrPolicyV3OperationDefinition): any {
+export function cbrPolicyV3OperationDefinitionToTerraform(struct?: CbrPolicyV3OperationDefinitionOutputReference | CbrPolicyV3OperationDefinition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -87,12 +87,67 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CbrPolicyV3OperationDefinition | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._dayBackups) {
+      hasAnyValues = true;
+      internalValueResult.dayBackups = this._dayBackups;
+    }
+    if (this._maxBackups) {
+      hasAnyValues = true;
+      internalValueResult.maxBackups = this._maxBackups;
+    }
+    if (this._monthBackups) {
+      hasAnyValues = true;
+      internalValueResult.monthBackups = this._monthBackups;
+    }
+    if (this._retentionDurationDays) {
+      hasAnyValues = true;
+      internalValueResult.retentionDurationDays = this._retentionDurationDays;
+    }
+    if (this._timezone) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    if (this._weekBackups) {
+      hasAnyValues = true;
+      internalValueResult.weekBackups = this._weekBackups;
+    }
+    if (this._yearBackups) {
+      hasAnyValues = true;
+      internalValueResult.yearBackups = this._yearBackups;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CbrPolicyV3OperationDefinition | undefined) {
+    if (value === undefined) {
+      this._dayBackups = undefined;
+      this._maxBackups = undefined;
+      this._monthBackups = undefined;
+      this._retentionDurationDays = undefined;
+      this._timezone = undefined;
+      this._weekBackups = undefined;
+      this._yearBackups = undefined;
+    }
+    else {
+      this._dayBackups = value.dayBackups;
+      this._maxBackups = value.maxBackups;
+      this._monthBackups = value.monthBackups;
+      this._retentionDurationDays = value.retentionDurationDays;
+      this._timezone = value.timezone;
+      this._weekBackups = value.weekBackups;
+      this._yearBackups = value.yearBackups;
+    }
+  }
+
   // day_backups - computed: true, optional: true, required: false
-  private _dayBackups?: number | undefined; 
+  private _dayBackups?: number; 
   public get dayBackups() {
     return this.getNumberAttribute('day_backups');
   }
-  public set dayBackups(value: number | undefined) {
+  public set dayBackups(value: number) {
     this._dayBackups = value;
   }
   public resetDayBackups() {
@@ -100,15 +155,15 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get dayBackupsInput() {
-    return this._dayBackups
+    return this._dayBackups;
   }
 
   // max_backups - computed: true, optional: true, required: false
-  private _maxBackups?: number | undefined; 
+  private _maxBackups?: number; 
   public get maxBackups() {
     return this.getNumberAttribute('max_backups');
   }
-  public set maxBackups(value: number | undefined) {
+  public set maxBackups(value: number) {
     this._maxBackups = value;
   }
   public resetMaxBackups() {
@@ -116,15 +171,15 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get maxBackupsInput() {
-    return this._maxBackups
+    return this._maxBackups;
   }
 
   // month_backups - computed: true, optional: true, required: false
-  private _monthBackups?: number | undefined; 
+  private _monthBackups?: number; 
   public get monthBackups() {
     return this.getNumberAttribute('month_backups');
   }
-  public set monthBackups(value: number | undefined) {
+  public set monthBackups(value: number) {
     this._monthBackups = value;
   }
   public resetMonthBackups() {
@@ -132,15 +187,15 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get monthBackupsInput() {
-    return this._monthBackups
+    return this._monthBackups;
   }
 
   // retention_duration_days - computed: true, optional: true, required: false
-  private _retentionDurationDays?: number | undefined; 
+  private _retentionDurationDays?: number; 
   public get retentionDurationDays() {
     return this.getNumberAttribute('retention_duration_days');
   }
-  public set retentionDurationDays(value: number | undefined) {
+  public set retentionDurationDays(value: number) {
     this._retentionDurationDays = value;
   }
   public resetRetentionDurationDays() {
@@ -148,7 +203,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get retentionDurationDaysInput() {
-    return this._retentionDurationDays
+    return this._retentionDurationDays;
   }
 
   // timezone - computed: false, optional: false, required: true
@@ -161,15 +216,15 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get timezoneInput() {
-    return this._timezone
+    return this._timezone;
   }
 
   // week_backups - computed: true, optional: true, required: false
-  private _weekBackups?: number | undefined; 
+  private _weekBackups?: number; 
   public get weekBackups() {
     return this.getNumberAttribute('week_backups');
   }
-  public set weekBackups(value: number | undefined) {
+  public set weekBackups(value: number) {
     this._weekBackups = value;
   }
   public resetWeekBackups() {
@@ -177,15 +232,15 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get weekBackupsInput() {
-    return this._weekBackups
+    return this._weekBackups;
   }
 
   // year_backups - computed: true, optional: true, required: false
-  private _yearBackups?: number | undefined; 
+  private _yearBackups?: number; 
   public get yearBackups() {
     return this.getNumberAttribute('year_backups');
   }
-  public set yearBackups(value: number | undefined) {
+  public set yearBackups(value: number) {
     this._yearBackups = value;
   }
   public resetYearBackups() {
@@ -193,7 +248,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get yearBackupsInput() {
-    return this._yearBackups
+    return this._yearBackups;
   }
 }
 
@@ -233,7 +288,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
     this._name = config.name;
     this._operationType = config.operationType;
     this._triggerPattern = config.triggerPattern;
-    this._operationDefinition = config.operationDefinition;
+    this._operationDefinition.internalValue = config.operationDefinition;
   }
 
   // ==========
@@ -241,11 +296,11 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -253,7 +308,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -271,7 +326,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // operation_type - computed: false, optional: false, required: true
@@ -284,7 +339,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get operationTypeInput() {
-    return this._operationType
+    return this._operationType;
   }
 
   // region - computed: true, optional: false, required: false
@@ -302,24 +357,23 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get triggerPatternInput() {
-    return this._triggerPattern
+    return this._triggerPattern;
   }
 
   // operation_definition - computed: false, optional: true, required: false
-  private _operationDefinition?: CbrPolicyV3OperationDefinition | undefined; 
-  private __operationDefinitionOutput = new CbrPolicyV3OperationDefinitionOutputReference(this as any, "operation_definition", true);
+  private _operationDefinition = new CbrPolicyV3OperationDefinitionOutputReference(this as any, "operation_definition", true);
   public get operationDefinition() {
-    return this.__operationDefinitionOutput;
+    return this._operationDefinition;
   }
-  public putOperationDefinition(value: CbrPolicyV3OperationDefinition | undefined) {
-    this._operationDefinition = value;
+  public putOperationDefinition(value: CbrPolicyV3OperationDefinition) {
+    this._operationDefinition.internalValue = value;
   }
   public resetOperationDefinition() {
-    this._operationDefinition = undefined;
+    this._operationDefinition.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get operationDefinitionInput() {
-    return this._operationDefinition
+    return this._operationDefinition.internalValue;
   }
 
   // =========
@@ -332,7 +386,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       operation_type: cdktf.stringToTerraform(this._operationType),
       trigger_pattern: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPattern),
-      operation_definition: cbrPolicyV3OperationDefinitionToTerraform(this._operationDefinition),
+      operation_definition: cbrPolicyV3OperationDefinitionToTerraform(this._operationDefinition.internalValue),
     };
   }
 }

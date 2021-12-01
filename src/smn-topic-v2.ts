@@ -68,11 +68,11 @@ export class SmnTopicV2 extends cdktf.TerraformResource {
   }
 
   // display_name - computed: false, optional: true, required: false
-  private _displayName?: string | undefined; 
+  private _displayName?: string; 
   public get displayName() {
     return this.getStringAttribute('display_name');
   }
-  public set displayName(value: string | undefined) {
+  public set displayName(value: string) {
     this._displayName = value;
   }
   public resetDisplayName() {
@@ -80,7 +80,7 @@ export class SmnTopicV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -98,15 +98,15 @@ export class SmnTopicV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_name - computed: true, optional: true, required: false
-  private _projectName?: string | undefined; 
+  private _projectName?: string; 
   public get projectName() {
     return this.getStringAttribute('project_name');
   }
-  public set projectName(value: string | undefined) {
+  public set projectName(value: string) {
     this._projectName = value;
   }
   public resetProjectName() {
@@ -114,7 +114,7 @@ export class SmnTopicV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectNameInput() {
-    return this._projectName
+    return this._projectName;
   }
 
   // push_policy - computed: true, optional: false, required: false

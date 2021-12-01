@@ -74,7 +74,7 @@ export interface CssClusterV1Datastore {
   readonly version?: string;
 }
 
-function cssClusterV1DatastoreToTerraform(struct?: CssClusterV1DatastoreOutputReference | CssClusterV1Datastore): any {
+export function cssClusterV1DatastoreToTerraform(struct?: CssClusterV1DatastoreOutputReference | CssClusterV1Datastore): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,12 +95,37 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssClusterV1Datastore | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._version) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1Datastore | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._version = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._version = value.version;
+    }
+  }
+
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -108,15 +133,15 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // version - computed: true, optional: true, required: false
-  private _version?: string | undefined; 
+  private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
   public resetVersion() {
@@ -124,7 +149,7 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 }
 export interface CssClusterV1NodeConfigNetworkInfo {
@@ -142,7 +167,7 @@ export interface CssClusterV1NodeConfigNetworkInfo {
   readonly vpcId: string;
 }
 
-function cssClusterV1NodeConfigNetworkInfoToTerraform(struct?: CssClusterV1NodeConfigNetworkInfoOutputReference | CssClusterV1NodeConfigNetworkInfo): any {
+export function cssClusterV1NodeConfigNetworkInfoToTerraform(struct?: CssClusterV1NodeConfigNetworkInfoOutputReference | CssClusterV1NodeConfigNetworkInfo): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -164,6 +189,37 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssClusterV1NodeConfigNetworkInfo | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._networkId) {
+      hasAnyValues = true;
+      internalValueResult.networkId = this._networkId;
+    }
+    if (this._securityGroupId) {
+      hasAnyValues = true;
+      internalValueResult.securityGroupId = this._securityGroupId;
+    }
+    if (this._vpcId) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1NodeConfigNetworkInfo | undefined) {
+    if (value === undefined) {
+      this._networkId = undefined;
+      this._securityGroupId = undefined;
+      this._vpcId = undefined;
+    }
+    else {
+      this._networkId = value.networkId;
+      this._securityGroupId = value.securityGroupId;
+      this._vpcId = value.vpcId;
+    }
+  }
+
   // network_id - computed: false, optional: false, required: true
   private _networkId?: string; 
   public get networkId() {
@@ -174,7 +230,7 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   }
   // Temporarily expose input value. Use with caution.
   public get networkIdInput() {
-    return this._networkId
+    return this._networkId;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -187,7 +243,7 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -200,7 +256,7 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 }
 export interface CssClusterV1NodeConfigVolume {
@@ -218,7 +274,7 @@ export interface CssClusterV1NodeConfigVolume {
   readonly volumeType: string;
 }
 
-function cssClusterV1NodeConfigVolumeToTerraform(struct?: CssClusterV1NodeConfigVolumeOutputReference | CssClusterV1NodeConfigVolume): any {
+export function cssClusterV1NodeConfigVolumeToTerraform(struct?: CssClusterV1NodeConfigVolumeOutputReference | CssClusterV1NodeConfigVolume): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -240,12 +296,43 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssClusterV1NodeConfigVolume | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._encryptionKey) {
+      hasAnyValues = true;
+      internalValueResult.encryptionKey = this._encryptionKey;
+    }
+    if (this._size) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._volumeType) {
+      hasAnyValues = true;
+      internalValueResult.volumeType = this._volumeType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1NodeConfigVolume | undefined) {
+    if (value === undefined) {
+      this._encryptionKey = undefined;
+      this._size = undefined;
+      this._volumeType = undefined;
+    }
+    else {
+      this._encryptionKey = value.encryptionKey;
+      this._size = value.size;
+      this._volumeType = value.volumeType;
+    }
+  }
+
   // encryption_key - computed: true, optional: true, required: false
-  private _encryptionKey?: string | undefined; 
+  private _encryptionKey?: string; 
   public get encryptionKey() {
     return this.getStringAttribute('encryption_key');
   }
-  public set encryptionKey(value: string | undefined) {
+  public set encryptionKey(value: string) {
     this._encryptionKey = value;
   }
   public resetEncryptionKey() {
@@ -253,7 +340,7 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionKeyInput() {
-    return this._encryptionKey
+    return this._encryptionKey;
   }
 
   // size - computed: false, optional: false, required: true
@@ -266,7 +353,7 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 
   // volume_type - computed: false, optional: false, required: true
@@ -279,7 +366,7 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get volumeTypeInput() {
-    return this._volumeType
+    return this._volumeType;
   }
 }
 export interface CssClusterV1NodeConfig {
@@ -305,7 +392,7 @@ export interface CssClusterV1NodeConfig {
   readonly volume: CssClusterV1NodeConfigVolume;
 }
 
-function cssClusterV1NodeConfigToTerraform(struct?: CssClusterV1NodeConfigOutputReference | CssClusterV1NodeConfig): any {
+export function cssClusterV1NodeConfigToTerraform(struct?: CssClusterV1NodeConfigOutputReference | CssClusterV1NodeConfig): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -328,12 +415,49 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssClusterV1NodeConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._availabilityZone) {
+      hasAnyValues = true;
+      internalValueResult.availabilityZone = this._availabilityZone;
+    }
+    if (this._flavor) {
+      hasAnyValues = true;
+      internalValueResult.flavor = this._flavor;
+    }
+    if (this._networkInfo) {
+      hasAnyValues = true;
+      internalValueResult.networkInfo = this._networkInfo?.internalValue;
+    }
+    if (this._volume) {
+      hasAnyValues = true;
+      internalValueResult.volume = this._volume?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1NodeConfig | undefined) {
+    if (value === undefined) {
+      this._availabilityZone = undefined;
+      this._flavor = undefined;
+      this._networkInfo.internalValue = undefined;
+      this._volume.internalValue = undefined;
+    }
+    else {
+      this._availabilityZone = value.availabilityZone;
+      this._flavor = value.flavor;
+      this._networkInfo.internalValue = value.networkInfo;
+      this._volume.internalValue = value.volume;
+    }
+  }
+
   // availability_zone - computed: false, optional: true, required: false
-  private _availabilityZone?: string | undefined; 
+  private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
   }
   public resetAvailabilityZone() {
@@ -341,7 +465,7 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // flavor - computed: false, optional: false, required: true
@@ -354,35 +478,33 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get flavorInput() {
-    return this._flavor
+    return this._flavor;
   }
 
   // network_info - computed: false, optional: false, required: true
-  private _networkInfo?: CssClusterV1NodeConfigNetworkInfo; 
-  private __networkInfoOutput = new CssClusterV1NodeConfigNetworkInfoOutputReference(this as any, "network_info", true);
+  private _networkInfo = new CssClusterV1NodeConfigNetworkInfoOutputReference(this as any, "network_info", true);
   public get networkInfo() {
-    return this.__networkInfoOutput;
+    return this._networkInfo;
   }
   public putNetworkInfo(value: CssClusterV1NodeConfigNetworkInfo) {
-    this._networkInfo = value;
+    this._networkInfo.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get networkInfoInput() {
-    return this._networkInfo
+    return this._networkInfo.internalValue;
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume?: CssClusterV1NodeConfigVolume; 
-  private __volumeOutput = new CssClusterV1NodeConfigVolumeOutputReference(this as any, "volume", true);
+  private _volume = new CssClusterV1NodeConfigVolumeOutputReference(this as any, "volume", true);
   public get volume() {
-    return this.__volumeOutput;
+    return this._volume;
   }
   public putVolume(value: CssClusterV1NodeConfigVolume) {
-    this._volume = value;
+    this._volume.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get volumeInput() {
-    return this._volume
+    return this._volume.internalValue;
   }
 }
 export interface CssClusterV1Timeouts {
@@ -396,7 +518,7 @@ export interface CssClusterV1Timeouts {
   readonly update?: string;
 }
 
-function cssClusterV1TimeoutsToTerraform(struct?: CssClusterV1TimeoutsOutputReference | CssClusterV1Timeouts): any {
+export function cssClusterV1TimeoutsToTerraform(struct?: CssClusterV1TimeoutsOutputReference | CssClusterV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -417,12 +539,37 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssClusterV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -430,15 +577,15 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -446,7 +593,7 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -487,9 +634,9 @@ export class CssClusterV1 extends cdktf.TerraformResource {
     this._enableHttps = config.enableHttps;
     this._expectNodeNum = config.expectNodeNum;
     this._name = config.name;
-    this._datastore = config.datastore;
-    this._nodeConfig = config.nodeConfig;
-    this._timeouts = config.timeouts;
+    this._datastore.internalValue = config.datastore;
+    this._nodeConfig.internalValue = config.nodeConfig;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -497,11 +644,11 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // ==========
 
   // admin_pass - computed: false, optional: true, required: false
-  private _adminPass?: string | undefined; 
+  private _adminPass?: string; 
   public get adminPass() {
     return this.getStringAttribute('admin_pass');
   }
-  public set adminPass(value: string | undefined) {
+  public set adminPass(value: string) {
     this._adminPass = value;
   }
   public resetAdminPass() {
@@ -509,7 +656,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminPassInput() {
-    return this._adminPass
+    return this._adminPass;
   }
 
   // created - computed: true, optional: false, required: false
@@ -518,11 +665,11 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // enable_authority - computed: true, optional: true, required: false
-  private _enableAuthority?: boolean | cdktf.IResolvable | undefined; 
+  private _enableAuthority?: boolean | cdktf.IResolvable; 
   public get enableAuthority() {
     return this.getBooleanAttribute('enable_authority') as any;
   }
-  public set enableAuthority(value: boolean | cdktf.IResolvable | undefined) {
+  public set enableAuthority(value: boolean | cdktf.IResolvable) {
     this._enableAuthority = value;
   }
   public resetEnableAuthority() {
@@ -530,15 +677,15 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enableAuthorityInput() {
-    return this._enableAuthority
+    return this._enableAuthority;
   }
 
   // enable_https - computed: true, optional: true, required: false
-  private _enableHttps?: boolean | cdktf.IResolvable | undefined; 
+  private _enableHttps?: boolean | cdktf.IResolvable; 
   public get enableHttps() {
     return this.getBooleanAttribute('enable_https') as any;
   }
-  public set enableHttps(value: boolean | cdktf.IResolvable | undefined) {
+  public set enableHttps(value: boolean | cdktf.IResolvable) {
     this._enableHttps = value;
   }
   public resetEnableHttps() {
@@ -546,7 +693,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enableHttpsInput() {
-    return this._enableHttps
+    return this._enableHttps;
   }
 
   // endpoint - computed: true, optional: false, required: false
@@ -555,11 +702,11 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // expect_node_num - computed: false, optional: true, required: false
-  private _expectNodeNum?: number | undefined; 
+  private _expectNodeNum?: number; 
   public get expectNodeNum() {
     return this.getNumberAttribute('expect_node_num');
   }
-  public set expectNodeNum(value: number | undefined) {
+  public set expectNodeNum(value: number) {
     this._expectNodeNum = value;
   }
   public resetExpectNodeNum() {
@@ -567,7 +714,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get expectNodeNumInput() {
-    return this._expectNodeNum
+    return this._expectNodeNum;
   }
 
   // id - computed: true, optional: true, required: false
@@ -585,7 +732,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // nodes - computed: true, optional: false, required: false
@@ -599,51 +746,48 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: true, required: false
-  private _datastore?: CssClusterV1Datastore | undefined; 
-  private __datastoreOutput = new CssClusterV1DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new CssClusterV1DatastoreOutputReference(this as any, "datastore", true);
   public get datastore() {
-    return this.__datastoreOutput;
+    return this._datastore;
   }
-  public putDatastore(value: CssClusterV1Datastore | undefined) {
-    this._datastore = value;
+  public putDatastore(value: CssClusterV1Datastore) {
+    this._datastore.internalValue = value;
   }
   public resetDatastore() {
-    this._datastore = undefined;
+    this._datastore.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get datastoreInput() {
-    return this._datastore
+    return this._datastore.internalValue;
   }
 
   // node_config - computed: false, optional: false, required: true
-  private _nodeConfig?: CssClusterV1NodeConfig; 
-  private __nodeConfigOutput = new CssClusterV1NodeConfigOutputReference(this as any, "node_config", true);
+  private _nodeConfig = new CssClusterV1NodeConfigOutputReference(this as any, "node_config", true);
   public get nodeConfig() {
-    return this.__nodeConfigOutput;
+    return this._nodeConfig;
   }
   public putNodeConfig(value: CssClusterV1NodeConfig) {
-    this._nodeConfig = value;
+    this._nodeConfig.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get nodeConfigInput() {
-    return this._nodeConfig
+    return this._nodeConfig.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CssClusterV1Timeouts | undefined; 
-  private __timeoutsOutput = new CssClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CssClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CssClusterV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CssClusterV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -657,9 +801,9 @@ export class CssClusterV1 extends cdktf.TerraformResource {
       enable_https: cdktf.booleanToTerraform(this._enableHttps),
       expect_node_num: cdktf.numberToTerraform(this._expectNodeNum),
       name: cdktf.stringToTerraform(this._name),
-      datastore: cssClusterV1DatastoreToTerraform(this._datastore),
-      node_config: cssClusterV1NodeConfigToTerraform(this._nodeConfig),
-      timeouts: cssClusterV1TimeoutsToTerraform(this._timeouts),
+      datastore: cssClusterV1DatastoreToTerraform(this._datastore.internalValue),
+      node_config: cssClusterV1NodeConfigToTerraform(this._nodeConfig.internalValue),
+      timeouts: cssClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

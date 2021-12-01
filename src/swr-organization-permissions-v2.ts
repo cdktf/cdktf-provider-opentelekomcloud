@@ -37,7 +37,7 @@ export interface SwrOrganizationPermissionsV2Timeouts {
   readonly default?: string;
 }
 
-function swrOrganizationPermissionsV2TimeoutsToTerraform(struct?: SwrOrganizationPermissionsV2TimeoutsOutputReference | SwrOrganizationPermissionsV2Timeouts): any {
+export function swrOrganizationPermissionsV2TimeoutsToTerraform(struct?: SwrOrganizationPermissionsV2TimeoutsOutputReference | SwrOrganizationPermissionsV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -57,12 +57,31 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SwrOrganizationPermissionsV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._default) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SwrOrganizationPermissionsV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._default = undefined;
+    }
+    else {
+      this._default = value.default;
+    }
+  }
+
   // default - computed: false, optional: true, required: false
-  private _default?: string | undefined; 
+  private _default?: string; 
   public get default() {
     return this.getStringAttribute('default');
   }
-  public set default(value: string | undefined) {
+  public set default(value: string) {
     this._default = value;
   }
   public resetDefault() {
@@ -70,7 +89,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get defaultInput() {
-    return this._default
+    return this._default;
   }
 }
 
@@ -110,7 +129,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
     this._organization = config.organization;
     this._userId = config.userId;
     this._username = config.username;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -127,7 +146,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get authInput() {
-    return this._auth
+    return this._auth;
   }
 
   // id - computed: true, optional: true, required: false
@@ -145,7 +164,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
-    return this._organization
+    return this._organization;
   }
 
   // user_id - computed: false, optional: false, required: true
@@ -158,7 +177,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // username - computed: false, optional: false, required: true
@@ -171,24 +190,23 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
-    return this._username
+    return this._username;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: SwrOrganizationPermissionsV2Timeouts | undefined; 
-  private __timeoutsOutput = new SwrOrganizationPermissionsV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SwrOrganizationPermissionsV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: SwrOrganizationPermissionsV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: SwrOrganizationPermissionsV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -201,7 +219,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
       user_id: cdktf.stringToTerraform(this._userId),
       username: cdktf.stringToTerraform(this._username),
-      timeouts: swrOrganizationPermissionsV2TimeoutsToTerraform(this._timeouts),
+      timeouts: swrOrganizationPermissionsV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

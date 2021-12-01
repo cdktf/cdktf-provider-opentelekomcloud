@@ -49,7 +49,7 @@ export interface CssSnapshotConfigurationV1Configuration {
   readonly kmsId?: string;
 }
 
-function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssSnapshotConfigurationV1ConfigurationOutputReference | CssSnapshotConfigurationV1Configuration): any {
+export function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssSnapshotConfigurationV1ConfigurationOutputReference | CssSnapshotConfigurationV1Configuration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -71,6 +71,37 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssSnapshotConfigurationV1Configuration | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._agency) {
+      hasAnyValues = true;
+      internalValueResult.agency = this._agency;
+    }
+    if (this._bucket) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._kmsId) {
+      hasAnyValues = true;
+      internalValueResult.kmsId = this._kmsId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssSnapshotConfigurationV1Configuration | undefined) {
+    if (value === undefined) {
+      this._agency = undefined;
+      this._bucket = undefined;
+      this._kmsId = undefined;
+    }
+    else {
+      this._agency = value.agency;
+      this._bucket = value.bucket;
+      this._kmsId = value.kmsId;
+    }
+  }
+
   // agency - computed: false, optional: false, required: true
   private _agency?: string; 
   public get agency() {
@@ -81,7 +112,7 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get agencyInput() {
-    return this._agency
+    return this._agency;
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -94,15 +125,15 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // kms_id - computed: false, optional: true, required: false
-  private _kmsId?: string | undefined; 
+  private _kmsId?: string; 
   public get kmsId() {
     return this.getStringAttribute('kms_id');
   }
-  public set kmsId(value: string | undefined) {
+  public set kmsId(value: string) {
     this._kmsId = value;
   }
   public resetKmsId() {
@@ -110,7 +141,7 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   }
   // Temporarily expose input value. Use with caution.
   public get kmsIdInput() {
-    return this._kmsId
+    return this._kmsId;
   }
 }
 export interface CssSnapshotConfigurationV1CreationPolicy {
@@ -136,7 +167,7 @@ export interface CssSnapshotConfigurationV1CreationPolicy {
   readonly prefix: string;
 }
 
-function cssSnapshotConfigurationV1CreationPolicyToTerraform(struct?: CssSnapshotConfigurationV1CreationPolicyOutputReference | CssSnapshotConfigurationV1CreationPolicy): any {
+export function cssSnapshotConfigurationV1CreationPolicyToTerraform(struct?: CssSnapshotConfigurationV1CreationPolicyOutputReference | CssSnapshotConfigurationV1CreationPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -160,12 +191,55 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssSnapshotConfigurationV1CreationPolicy | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._deleteAuto) {
+      hasAnyValues = true;
+      internalValueResult.deleteAuto = this._deleteAuto;
+    }
+    if (this._enable) {
+      hasAnyValues = true;
+      internalValueResult.enable = this._enable;
+    }
+    if (this._keepday) {
+      hasAnyValues = true;
+      internalValueResult.keepday = this._keepday;
+    }
+    if (this._period) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
+    if (this._prefix) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssSnapshotConfigurationV1CreationPolicy | undefined) {
+    if (value === undefined) {
+      this._deleteAuto = undefined;
+      this._enable = undefined;
+      this._keepday = undefined;
+      this._period = undefined;
+      this._prefix = undefined;
+    }
+    else {
+      this._deleteAuto = value.deleteAuto;
+      this._enable = value.enable;
+      this._keepday = value.keepday;
+      this._period = value.period;
+      this._prefix = value.prefix;
+    }
+  }
+
   // delete_auto - computed: false, optional: true, required: false
-  private _deleteAuto?: boolean | cdktf.IResolvable | undefined; 
+  private _deleteAuto?: boolean | cdktf.IResolvable; 
   public get deleteAuto() {
     return this.getBooleanAttribute('delete_auto') as any;
   }
-  public set deleteAuto(value: boolean | cdktf.IResolvable | undefined) {
+  public set deleteAuto(value: boolean | cdktf.IResolvable) {
     this._deleteAuto = value;
   }
   public resetDeleteAuto() {
@@ -173,7 +247,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get deleteAutoInput() {
-    return this._deleteAuto
+    return this._deleteAuto;
   }
 
   // enable - computed: false, optional: false, required: true
@@ -186,7 +260,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get enableInput() {
-    return this._enable
+    return this._enable;
   }
 
   // keepday - computed: false, optional: false, required: true
@@ -199,7 +273,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get keepdayInput() {
-    return this._keepday
+    return this._keepday;
   }
 
   // period - computed: false, optional: false, required: true
@@ -212,7 +286,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get periodInput() {
-    return this._period
+    return this._period;
   }
 
   // prefix - computed: false, optional: false, required: true
@@ -225,7 +299,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
-    return this._prefix
+    return this._prefix;
   }
 }
 export interface CssSnapshotConfigurationV1Timeouts {
@@ -239,7 +313,7 @@ export interface CssSnapshotConfigurationV1Timeouts {
   readonly update?: string;
 }
 
-function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapshotConfigurationV1TimeoutsOutputReference | CssSnapshotConfigurationV1Timeouts): any {
+export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapshotConfigurationV1TimeoutsOutputReference | CssSnapshotConfigurationV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -260,12 +334,37 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CssSnapshotConfigurationV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssSnapshotConfigurationV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -273,15 +372,15 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -289,7 +388,7 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -327,9 +426,9 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
     });
     this._automatic = config.automatic;
     this._clusterId = config.clusterId;
-    this._configuration = config.configuration;
-    this._creationPolicy = config.creationPolicy;
-    this._timeouts = config.timeouts;
+    this._configuration.internalValue = config.configuration;
+    this._creationPolicy.internalValue = config.creationPolicy;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -337,11 +436,11 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // ==========
 
   // automatic - computed: false, optional: true, required: false
-  private _automatic?: boolean | cdktf.IResolvable | undefined; 
+  private _automatic?: boolean | cdktf.IResolvable; 
   public get automatic() {
     return this.getBooleanAttribute('automatic') as any;
   }
-  public set automatic(value: boolean | cdktf.IResolvable | undefined) {
+  public set automatic(value: boolean | cdktf.IResolvable) {
     this._automatic = value;
   }
   public resetAutomatic() {
@@ -349,7 +448,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get automaticInput() {
-    return this._automatic
+    return this._automatic;
   }
 
   // base_path - computed: true, optional: false, required: false
@@ -367,7 +466,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
-    return this._clusterId
+    return this._clusterId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -376,54 +475,51 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: CssSnapshotConfigurationV1Configuration | undefined; 
-  private __configurationOutput = new CssSnapshotConfigurationV1ConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new CssSnapshotConfigurationV1ConfigurationOutputReference(this as any, "configuration", true);
   public get configuration() {
-    return this.__configurationOutput;
+    return this._configuration;
   }
-  public putConfiguration(value: CssSnapshotConfigurationV1Configuration | undefined) {
-    this._configuration = value;
+  public putConfiguration(value: CssSnapshotConfigurationV1Configuration) {
+    this._configuration.internalValue = value;
   }
   public resetConfiguration() {
-    this._configuration = undefined;
+    this._configuration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configurationInput() {
-    return this._configuration
+    return this._configuration.internalValue;
   }
 
   // creation_policy - computed: false, optional: true, required: false
-  private _creationPolicy?: CssSnapshotConfigurationV1CreationPolicy | undefined; 
-  private __creationPolicyOutput = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this as any, "creation_policy", true);
+  private _creationPolicy = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this as any, "creation_policy", true);
   public get creationPolicy() {
-    return this.__creationPolicyOutput;
+    return this._creationPolicy;
   }
-  public putCreationPolicy(value: CssSnapshotConfigurationV1CreationPolicy | undefined) {
-    this._creationPolicy = value;
+  public putCreationPolicy(value: CssSnapshotConfigurationV1CreationPolicy) {
+    this._creationPolicy.internalValue = value;
   }
   public resetCreationPolicy() {
-    this._creationPolicy = undefined;
+    this._creationPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get creationPolicyInput() {
-    return this._creationPolicy
+    return this._creationPolicy.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CssSnapshotConfigurationV1Timeouts | undefined; 
-  private __timeoutsOutput = new CssSnapshotConfigurationV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CssSnapshotConfigurationV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CssSnapshotConfigurationV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CssSnapshotConfigurationV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -434,9 +530,9 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
     return {
       automatic: cdktf.booleanToTerraform(this._automatic),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
-      configuration: cssSnapshotConfigurationV1ConfigurationToTerraform(this._configuration),
-      creation_policy: cssSnapshotConfigurationV1CreationPolicyToTerraform(this._creationPolicy),
-      timeouts: cssSnapshotConfigurationV1TimeoutsToTerraform(this._timeouts),
+      configuration: cssSnapshotConfigurationV1ConfigurationToTerraform(this._configuration.internalValue),
+      creation_policy: cssSnapshotConfigurationV1CreationPolicyToTerraform(this._creationPolicy.internalValue),
+      timeouts: cssSnapshotConfigurationV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

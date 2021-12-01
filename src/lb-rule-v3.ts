@@ -82,7 +82,7 @@ export class LbRuleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get compareTypeInput() {
-    return this._compareType
+    return this._compareType;
   }
 
   // id - computed: true, optional: true, required: false
@@ -100,15 +100,15 @@ export class LbRuleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // project_id - computed: true, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -116,7 +116,7 @@ export class LbRuleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // rule_id - computed: true, optional: false, required: false
@@ -134,7 +134,7 @@ export class LbRuleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // value - computed: false, optional: false, required: true
@@ -147,7 +147,7 @@ export class LbRuleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 
   // =========

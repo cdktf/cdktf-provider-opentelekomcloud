@@ -75,7 +75,7 @@ export interface VpcepServiceV1Port {
   readonly serverPort: number;
 }
 
-function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port): any {
+export function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,7 +94,7 @@ export interface VpcepServiceV1Timeouts {
   readonly default?: string;
 }
 
-function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1TimeoutsOutputReference | VpcepServiceV1Timeouts): any {
+export function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1TimeoutsOutputReference | VpcepServiceV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -114,12 +114,31 @@ export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcepServiceV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._default) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcepServiceV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._default = undefined;
+    }
+    else {
+      this._default = value.default;
+    }
+  }
+
   // default - computed: false, optional: true, required: false
-  private _default?: string | undefined; 
+  private _default?: string; 
   public get default() {
     return this.getStringAttribute('default');
   }
-  public set default(value: string | undefined) {
+  public set default(value: string) {
     this._default = value;
   }
   public resetDefault() {
@@ -127,7 +146,7 @@ export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get defaultInput() {
-    return this._default
+    return this._default;
   }
 }
 
@@ -174,7 +193,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
     this._vipPortId = config.vipPortId;
     this._vpcId = config.vpcId;
     this._port = config.port;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -182,11 +201,11 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   // ==========
 
   // approval_enabled - computed: false, optional: true, required: false
-  private _approvalEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _approvalEnabled?: boolean | cdktf.IResolvable; 
   public get approvalEnabled() {
     return this.getBooleanAttribute('approval_enabled') as any;
   }
-  public set approvalEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set approvalEnabled(value: boolean | cdktf.IResolvable) {
     this._approvalEnabled = value;
   }
   public resetApprovalEnabled() {
@@ -194,7 +213,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get approvalEnabledInput() {
-    return this._approvalEnabled
+    return this._approvalEnabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -203,11 +222,11 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -215,15 +234,15 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // pool_id - computed: true, optional: true, required: false
-  private _poolId?: string | undefined; 
+  private _poolId?: string; 
   public get poolId() {
     return this.getStringAttribute('pool_id');
   }
-  public set poolId(value: string | undefined) {
+  public set poolId(value: string) {
     this._poolId = value;
   }
   public resetPoolId() {
@@ -231,7 +250,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get poolIdInput() {
-    return this._poolId
+    return this._poolId;
   }
 
   // port_id - computed: false, optional: false, required: true
@@ -244,7 +263,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // server_type - computed: false, optional: false, required: true
@@ -257,15 +276,15 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverTypeInput() {
-    return this._serverType
+    return this._serverType;
   }
 
   // service_type - computed: true, optional: true, required: false
-  private _serviceType?: string | undefined; 
+  private _serviceType?: string; 
   public get serviceType() {
     return this.getStringAttribute('service_type');
   }
-  public set serviceType(value: string | undefined) {
+  public set serviceType(value: string) {
     this._serviceType = value;
   }
   public resetServiceType() {
@@ -273,16 +292,16 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serviceTypeInput() {
-    return this._serviceType
+    return this._serviceType;
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -290,15 +309,15 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tcp_proxy - computed: true, optional: true, required: false
-  private _tcpProxy?: string | undefined; 
+  private _tcpProxy?: string; 
   public get tcpProxy() {
     return this.getStringAttribute('tcp_proxy');
   }
-  public set tcpProxy(value: string | undefined) {
+  public set tcpProxy(value: string) {
     this._tcpProxy = value;
   }
   public resetTcpProxy() {
@@ -306,15 +325,15 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tcpProxyInput() {
-    return this._tcpProxy
+    return this._tcpProxy;
   }
 
   // vip_port_id - computed: true, optional: true, required: false
-  private _vipPortId?: string | undefined; 
+  private _vipPortId?: string; 
   public get vipPortId() {
     return this.getStringAttribute('vip_port_id');
   }
-  public set vipPortId(value: string | undefined) {
+  public set vipPortId(value: string) {
     this._vipPortId = value;
   }
   public resetVipPortId() {
@@ -322,7 +341,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vipPortIdInput() {
-    return this._vipPortId
+    return this._vipPortId;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -335,7 +354,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // port - computed: false, optional: false, required: true
@@ -349,24 +368,23 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {
-    return this._port
+    return this._port;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpcepServiceV1Timeouts | undefined; 
-  private __timeoutsOutput = new VpcepServiceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcepServiceV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpcepServiceV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpcepServiceV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -386,7 +404,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       vip_port_id: cdktf.stringToTerraform(this._vipPortId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       port: cdktf.listMapper(vpcepServiceV1PortToTerraform)(this._port),
-      timeouts: vpcepServiceV1TimeoutsToTerraform(this._timeouts),
+      timeouts: vpcepServiceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

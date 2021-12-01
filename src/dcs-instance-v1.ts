@@ -125,7 +125,7 @@ export interface DcsInstanceV1BackupPolicy {
   readonly saveDays?: number;
 }
 
-function dcsInstanceV1BackupPolicyToTerraform(struct?: DcsInstanceV1BackupPolicyOutputReference | DcsInstanceV1BackupPolicy): any {
+export function dcsInstanceV1BackupPolicyToTerraform(struct?: DcsInstanceV1BackupPolicyOutputReference | DcsInstanceV1BackupPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -149,6 +149,49 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DcsInstanceV1BackupPolicy | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._backupAt) {
+      hasAnyValues = true;
+      internalValueResult.backupAt = this._backupAt;
+    }
+    if (this._backupType) {
+      hasAnyValues = true;
+      internalValueResult.backupType = this._backupType;
+    }
+    if (this._beginAt) {
+      hasAnyValues = true;
+      internalValueResult.beginAt = this._beginAt;
+    }
+    if (this._periodType) {
+      hasAnyValues = true;
+      internalValueResult.periodType = this._periodType;
+    }
+    if (this._saveDays) {
+      hasAnyValues = true;
+      internalValueResult.saveDays = this._saveDays;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DcsInstanceV1BackupPolicy | undefined) {
+    if (value === undefined) {
+      this._backupAt = undefined;
+      this._backupType = undefined;
+      this._beginAt = undefined;
+      this._periodType = undefined;
+      this._saveDays = undefined;
+    }
+    else {
+      this._backupAt = value.backupAt;
+      this._backupType = value.backupType;
+      this._beginAt = value.beginAt;
+      this._periodType = value.periodType;
+      this._saveDays = value.saveDays;
+    }
+  }
+
   // backup_at - computed: false, optional: false, required: true
   private _backupAt?: number[]; 
   public get backupAt() {
@@ -160,15 +203,15 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get backupAtInput() {
-    return this._backupAt
+    return this._backupAt;
   }
 
   // backup_type - computed: false, optional: true, required: false
-  private _backupType?: string | undefined; 
+  private _backupType?: string; 
   public get backupType() {
     return this.getStringAttribute('backup_type');
   }
-  public set backupType(value: string | undefined) {
+  public set backupType(value: string) {
     this._backupType = value;
   }
   public resetBackupType() {
@@ -176,7 +219,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get backupTypeInput() {
-    return this._backupType
+    return this._backupType;
   }
 
   // begin_at - computed: false, optional: false, required: true
@@ -189,7 +232,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get beginAtInput() {
-    return this._beginAt
+    return this._beginAt;
   }
 
   // period_type - computed: false, optional: false, required: true
@@ -202,15 +245,15 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get periodTypeInput() {
-    return this._periodType
+    return this._periodType;
   }
 
   // save_days - computed: false, optional: true, required: false
-  private _saveDays?: number | undefined; 
+  private _saveDays?: number; 
   public get saveDays() {
     return this.getNumberAttribute('save_days');
   }
-  public set saveDays(value: number | undefined) {
+  public set saveDays(value: number) {
     this._saveDays = value;
   }
   public resetSaveDays() {
@@ -218,7 +261,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get saveDaysInput() {
-    return this._saveDays
+    return this._saveDays;
   }
 }
 export interface DcsInstanceV1Configuration {
@@ -236,7 +279,7 @@ export interface DcsInstanceV1Configuration {
   readonly parameterValue: string;
 }
 
-function dcsInstanceV1ConfigurationToTerraform(struct?: DcsInstanceV1Configuration): any {
+export function dcsInstanceV1ConfigurationToTerraform(struct?: DcsInstanceV1Configuration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -263,7 +306,7 @@ export interface DcsInstanceV1Timeouts {
   readonly update?: string;
 }
 
-function dcsInstanceV1TimeoutsToTerraform(struct?: DcsInstanceV1TimeoutsOutputReference | DcsInstanceV1Timeouts): any {
+export function dcsInstanceV1TimeoutsToTerraform(struct?: DcsInstanceV1TimeoutsOutputReference | DcsInstanceV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -285,12 +328,43 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DcsInstanceV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DcsInstanceV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -298,15 +372,15 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -314,15 +388,15 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -330,7 +404,7 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -385,9 +459,9 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
     this._securityGroupId = config.securityGroupId;
     this._subnetId = config.subnetId;
     this._vpcId = config.vpcId;
-    this._backupPolicy = config.backupPolicy;
+    this._backupPolicy.internalValue = config.backupPolicy;
     this._configuration = config.configuration;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -395,11 +469,11 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   // ==========
 
   // access_user - computed: true, optional: true, required: false
-  private _accessUser?: string | undefined; 
+  private _accessUser?: string; 
   public get accessUser() {
     return this.getStringAttribute('access_user');
   }
-  public set accessUser(value: string | undefined) {
+  public set accessUser(value: string) {
     this._accessUser = value;
   }
   public resetAccessUser() {
@@ -407,7 +481,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessUserInput() {
-    return this._accessUser
+    return this._accessUser;
   }
 
   // available_zones - computed: false, optional: false, required: true
@@ -420,16 +494,16 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableZonesInput() {
-    return this._availableZones
+    return this._availableZones;
   }
 
   // backup_at - computed: false, optional: true, required: false
-  private _backupAt?: number[] | undefined; 
+  private _backupAt?: number[]; 
   public get backupAt() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('backup_at') as any;
   }
-  public set backupAt(value: number[] | undefined) {
+  public set backupAt(value: number[]) {
     this._backupAt = value;
   }
   public resetBackupAt() {
@@ -437,15 +511,15 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupAtInput() {
-    return this._backupAt
+    return this._backupAt;
   }
 
   // backup_type - computed: false, optional: true, required: false
-  private _backupType?: string | undefined; 
+  private _backupType?: string; 
   public get backupType() {
     return this.getStringAttribute('backup_type');
   }
-  public set backupType(value: string | undefined) {
+  public set backupType(value: string) {
     this._backupType = value;
   }
   public resetBackupType() {
@@ -453,15 +527,15 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupTypeInput() {
-    return this._backupType
+    return this._backupType;
   }
 
   // begin_at - computed: false, optional: true, required: false
-  private _beginAt?: string | undefined; 
+  private _beginAt?: string; 
   public get beginAt() {
     return this.getStringAttribute('begin_at');
   }
-  public set beginAt(value: string | undefined) {
+  public set beginAt(value: string) {
     this._beginAt = value;
   }
   public resetBeginAt() {
@@ -469,7 +543,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get beginAtInput() {
-    return this._beginAt
+    return this._beginAt;
   }
 
   // capacity - computed: false, optional: false, required: true
@@ -482,7 +556,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get capacityInput() {
-    return this._capacity
+    return this._capacity;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -491,11 +565,11 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -503,7 +577,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -516,7 +590,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get engineInput() {
-    return this._engine
+    return this._engine;
   }
 
   // engine_version - computed: false, optional: false, required: true
@@ -529,7 +603,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
-    return this._engineVersion
+    return this._engineVersion;
   }
 
   // id - computed: true, optional: true, required: false
@@ -548,11 +622,11 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // maintain_begin - computed: true, optional: true, required: false
-  private _maintainBegin?: string | undefined; 
+  private _maintainBegin?: string; 
   public get maintainBegin() {
     return this.getStringAttribute('maintain_begin');
   }
-  public set maintainBegin(value: string | undefined) {
+  public set maintainBegin(value: string) {
     this._maintainBegin = value;
   }
   public resetMaintainBegin() {
@@ -560,15 +634,15 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maintainBeginInput() {
-    return this._maintainBegin
+    return this._maintainBegin;
   }
 
   // maintain_end - computed: true, optional: true, required: false
-  private _maintainEnd?: string | undefined; 
+  private _maintainEnd?: string; 
   public get maintainEnd() {
     return this.getStringAttribute('maintain_end');
   }
-  public set maintainEnd(value: string | undefined) {
+  public set maintainEnd(value: string) {
     this._maintainEnd = value;
   }
   public resetMaintainEnd() {
@@ -576,7 +650,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maintainEndInput() {
-    return this._maintainEnd
+    return this._maintainEnd;
   }
 
   // max_memory - computed: true, optional: false, required: false
@@ -594,7 +668,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // order_id - computed: true, optional: false, required: false
@@ -612,15 +686,15 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // period_type - computed: false, optional: true, required: false
-  private _periodType?: string | undefined; 
+  private _periodType?: string; 
   public get periodType() {
     return this.getStringAttribute('period_type');
   }
-  public set periodType(value: string | undefined) {
+  public set periodType(value: string) {
     this._periodType = value;
   }
   public resetPeriodType() {
@@ -628,7 +702,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get periodTypeInput() {
-    return this._periodType
+    return this._periodType;
   }
 
   // port - computed: true, optional: false, required: false
@@ -646,7 +720,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get productIdInput() {
-    return this._productId
+    return this._productId;
   }
 
   // resource_spec_code - computed: true, optional: false, required: false
@@ -655,11 +729,11 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // save_days - computed: false, optional: true, required: false
-  private _saveDays?: number | undefined; 
+  private _saveDays?: number; 
   public get saveDays() {
     return this.getNumberAttribute('save_days');
   }
-  public set saveDays(value: number | undefined) {
+  public set saveDays(value: number) {
     this._saveDays = value;
   }
   public resetSaveDays() {
@@ -667,7 +741,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get saveDaysInput() {
-    return this._saveDays
+    return this._saveDays;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -680,7 +754,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // security_group_name - computed: true, optional: false, required: false
@@ -703,7 +777,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // subnet_name - computed: true, optional: false, required: false
@@ -736,7 +810,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // vpc_name - computed: true, optional: false, required: false
@@ -745,29 +819,28 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // backup_policy - computed: false, optional: true, required: false
-  private _backupPolicy?: DcsInstanceV1BackupPolicy | undefined; 
-  private __backupPolicyOutput = new DcsInstanceV1BackupPolicyOutputReference(this as any, "backup_policy", true);
+  private _backupPolicy = new DcsInstanceV1BackupPolicyOutputReference(this as any, "backup_policy", true);
   public get backupPolicy() {
-    return this.__backupPolicyOutput;
+    return this._backupPolicy;
   }
-  public putBackupPolicy(value: DcsInstanceV1BackupPolicy | undefined) {
-    this._backupPolicy = value;
+  public putBackupPolicy(value: DcsInstanceV1BackupPolicy) {
+    this._backupPolicy.internalValue = value;
   }
   public resetBackupPolicy() {
-    this._backupPolicy = undefined;
+    this._backupPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get backupPolicyInput() {
-    return this._backupPolicy
+    return this._backupPolicy.internalValue;
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: DcsInstanceV1Configuration[] | undefined; 
+  private _configuration?: DcsInstanceV1Configuration[]; 
   public get configuration() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('configuration') as any;
   }
-  public set configuration(value: DcsInstanceV1Configuration[] | undefined) {
+  public set configuration(value: DcsInstanceV1Configuration[]) {
     this._configuration = value;
   }
   public resetConfiguration() {
@@ -775,24 +848,23 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get configurationInput() {
-    return this._configuration
+    return this._configuration;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DcsInstanceV1Timeouts | undefined; 
-  private __timeoutsOutput = new DcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DcsInstanceV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DcsInstanceV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -820,9 +892,9 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      backup_policy: dcsInstanceV1BackupPolicyToTerraform(this._backupPolicy),
+      backup_policy: dcsInstanceV1BackupPolicyToTerraform(this._backupPolicy.internalValue),
       configuration: cdktf.listMapper(dcsInstanceV1ConfigurationToTerraform)(this._configuration),
-      timeouts: dcsInstanceV1TimeoutsToTerraform(this._timeouts),
+      timeouts: dcsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

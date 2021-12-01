@@ -90,11 +90,11 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
   }
 
   // user_id - computed: false, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -102,7 +102,7 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

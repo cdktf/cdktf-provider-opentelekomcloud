@@ -67,7 +67,7 @@ export interface CsbsBackupPolicyV1Resource {
   readonly type: string;
 }
 
-function csbsBackupPolicyV1ResourceToTerraform(struct?: CsbsBackupPolicyV1Resource): any {
+export function csbsBackupPolicyV1ResourceToTerraform(struct?: CsbsBackupPolicyV1Resource): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -134,7 +134,7 @@ export interface CsbsBackupPolicyV1ScheduledOperation {
   readonly yearBackups?: number;
 }
 
-function csbsBackupPolicyV1ScheduledOperationToTerraform(struct?: CsbsBackupPolicyV1ScheduledOperationOutputReference | CsbsBackupPolicyV1ScheduledOperation): any {
+export function csbsBackupPolicyV1ScheduledOperationToTerraform(struct?: CsbsBackupPolicyV1ScheduledOperationOutputReference | CsbsBackupPolicyV1ScheduledOperation): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -166,12 +166,103 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CsbsBackupPolicyV1ScheduledOperation | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._dayBackups) {
+      hasAnyValues = true;
+      internalValueResult.dayBackups = this._dayBackups;
+    }
+    if (this._description) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._enabled) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._maxBackups) {
+      hasAnyValues = true;
+      internalValueResult.maxBackups = this._maxBackups;
+    }
+    if (this._monthBackups) {
+      hasAnyValues = true;
+      internalValueResult.monthBackups = this._monthBackups;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._operationType) {
+      hasAnyValues = true;
+      internalValueResult.operationType = this._operationType;
+    }
+    if (this._permanent) {
+      hasAnyValues = true;
+      internalValueResult.permanent = this._permanent;
+    }
+    if (this._retentionDurationDays) {
+      hasAnyValues = true;
+      internalValueResult.retentionDurationDays = this._retentionDurationDays;
+    }
+    if (this._timezone) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
+    if (this._triggerPattern) {
+      hasAnyValues = true;
+      internalValueResult.triggerPattern = this._triggerPattern;
+    }
+    if (this._weekBackups) {
+      hasAnyValues = true;
+      internalValueResult.weekBackups = this._weekBackups;
+    }
+    if (this._yearBackups) {
+      hasAnyValues = true;
+      internalValueResult.yearBackups = this._yearBackups;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupPolicyV1ScheduledOperation | undefined) {
+    if (value === undefined) {
+      this._dayBackups = undefined;
+      this._description = undefined;
+      this._enabled = undefined;
+      this._maxBackups = undefined;
+      this._monthBackups = undefined;
+      this._name = undefined;
+      this._operationType = undefined;
+      this._permanent = undefined;
+      this._retentionDurationDays = undefined;
+      this._timezone = undefined;
+      this._triggerPattern = undefined;
+      this._weekBackups = undefined;
+      this._yearBackups = undefined;
+    }
+    else {
+      this._dayBackups = value.dayBackups;
+      this._description = value.description;
+      this._enabled = value.enabled;
+      this._maxBackups = value.maxBackups;
+      this._monthBackups = value.monthBackups;
+      this._name = value.name;
+      this._operationType = value.operationType;
+      this._permanent = value.permanent;
+      this._retentionDurationDays = value.retentionDurationDays;
+      this._timezone = value.timezone;
+      this._triggerPattern = value.triggerPattern;
+      this._weekBackups = value.weekBackups;
+      this._yearBackups = value.yearBackups;
+    }
+  }
+
   // day_backups - computed: false, optional: true, required: false
-  private _dayBackups?: number | undefined; 
+  private _dayBackups?: number; 
   public get dayBackups() {
     return this.getNumberAttribute('day_backups');
   }
-  public set dayBackups(value: number | undefined) {
+  public set dayBackups(value: number) {
     this._dayBackups = value;
   }
   public resetDayBackups() {
@@ -179,15 +270,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get dayBackupsInput() {
-    return this._dayBackups
+    return this._dayBackups;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -195,15 +286,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -211,15 +302,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // max_backups - computed: false, optional: true, required: false
-  private _maxBackups?: number | undefined; 
+  private _maxBackups?: number; 
   public get maxBackups() {
     return this.getNumberAttribute('max_backups');
   }
-  public set maxBackups(value: number | undefined) {
+  public set maxBackups(value: number) {
     this._maxBackups = value;
   }
   public resetMaxBackups() {
@@ -227,15 +318,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get maxBackupsInput() {
-    return this._maxBackups
+    return this._maxBackups;
   }
 
   // month_backups - computed: false, optional: true, required: false
-  private _monthBackups?: number | undefined; 
+  private _monthBackups?: number; 
   public get monthBackups() {
     return this.getNumberAttribute('month_backups');
   }
-  public set monthBackups(value: number | undefined) {
+  public set monthBackups(value: number) {
     this._monthBackups = value;
   }
   public resetMonthBackups() {
@@ -243,15 +334,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get monthBackupsInput() {
-    return this._monthBackups
+    return this._monthBackups;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -259,7 +350,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // operation_type - computed: false, optional: false, required: true
@@ -272,15 +363,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get operationTypeInput() {
-    return this._operationType
+    return this._operationType;
   }
 
   // permanent - computed: true, optional: true, required: false
-  private _permanent?: boolean | cdktf.IResolvable | undefined; 
+  private _permanent?: boolean | cdktf.IResolvable; 
   public get permanent() {
     return this.getBooleanAttribute('permanent') as any;
   }
-  public set permanent(value: boolean | cdktf.IResolvable | undefined) {
+  public set permanent(value: boolean | cdktf.IResolvable) {
     this._permanent = value;
   }
   public resetPermanent() {
@@ -288,15 +379,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get permanentInput() {
-    return this._permanent
+    return this._permanent;
   }
 
   // retention_duration_days - computed: false, optional: true, required: false
-  private _retentionDurationDays?: number | undefined; 
+  private _retentionDurationDays?: number; 
   public get retentionDurationDays() {
     return this.getNumberAttribute('retention_duration_days');
   }
-  public set retentionDurationDays(value: number | undefined) {
+  public set retentionDurationDays(value: number) {
     this._retentionDurationDays = value;
   }
   public resetRetentionDurationDays() {
@@ -304,15 +395,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get retentionDurationDaysInput() {
-    return this._retentionDurationDays
+    return this._retentionDurationDays;
   }
 
   // timezone - computed: false, optional: true, required: false
-  private _timezone?: string | undefined; 
+  private _timezone?: string; 
   public get timezone() {
     return this.getStringAttribute('timezone');
   }
-  public set timezone(value: string | undefined) {
+  public set timezone(value: string) {
     this._timezone = value;
   }
   public resetTimezone() {
@@ -320,7 +411,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get timezoneInput() {
-    return this._timezone
+    return this._timezone;
   }
 
   // trigger_pattern - computed: false, optional: false, required: true
@@ -333,15 +424,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get triggerPatternInput() {
-    return this._triggerPattern
+    return this._triggerPattern;
   }
 
   // week_backups - computed: false, optional: true, required: false
-  private _weekBackups?: number | undefined; 
+  private _weekBackups?: number; 
   public get weekBackups() {
     return this.getNumberAttribute('week_backups');
   }
-  public set weekBackups(value: number | undefined) {
+  public set weekBackups(value: number) {
     this._weekBackups = value;
   }
   public resetWeekBackups() {
@@ -349,15 +440,15 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get weekBackupsInput() {
-    return this._weekBackups
+    return this._weekBackups;
   }
 
   // year_backups - computed: false, optional: true, required: false
-  private _yearBackups?: number | undefined; 
+  private _yearBackups?: number; 
   public get yearBackups() {
     return this.getNumberAttribute('year_backups');
   }
-  public set yearBackups(value: number | undefined) {
+  public set yearBackups(value: number) {
     this._yearBackups = value;
   }
   public resetYearBackups() {
@@ -365,7 +456,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
   // Temporarily expose input value. Use with caution.
   public get yearBackupsInput() {
-    return this._yearBackups
+    return this._yearBackups;
   }
 }
 export interface CsbsBackupPolicyV1Tags {
@@ -379,7 +470,7 @@ export interface CsbsBackupPolicyV1Tags {
   readonly value: string;
 }
 
-function csbsBackupPolicyV1TagsToTerraform(struct?: CsbsBackupPolicyV1Tags): any {
+export function csbsBackupPolicyV1TagsToTerraform(struct?: CsbsBackupPolicyV1Tags): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -401,7 +492,7 @@ export interface CsbsBackupPolicyV1Timeouts {
   readonly delete?: string;
 }
 
-function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV1TimeoutsOutputReference | CsbsBackupPolicyV1Timeouts): any {
+export function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV1TimeoutsOutputReference | CsbsBackupPolicyV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -422,12 +513,37 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CsbsBackupPolicyV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupPolicyV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -435,15 +551,15 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -451,7 +567,7 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -493,9 +609,9 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
     this._providerId = config.providerId;
     this._region = config.region;
     this._resource = config.resource;
-    this._scheduledOperation = config.scheduledOperation;
+    this._scheduledOperation.internalValue = config.scheduledOperation;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -503,12 +619,12 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   // ==========
 
   // common - computed: false, optional: true, required: false
-  private _common?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _common?: { [key: string]: string } | cdktf.IResolvable; 
   public get common() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('common') as any;
   }
-  public set common(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set common(value: { [key: string]: string } | cdktf.IResolvable) {
     this._common = value;
   }
   public resetCommon() {
@@ -516,7 +632,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get commonInput() {
-    return this._common
+    return this._common;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -525,11 +641,11 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -537,7 +653,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -555,15 +671,15 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // provider_id - computed: false, optional: true, required: false
-  private _providerId?: string | undefined; 
+  private _providerId?: string; 
   public get providerId() {
     return this.getStringAttribute('provider_id');
   }
-  public set providerId(value: string | undefined) {
+  public set providerId(value: string) {
     this._providerId = value;
   }
   public resetProviderId() {
@@ -571,15 +687,15 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get providerIdInput() {
-    return this._providerId
+    return this._providerId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -587,7 +703,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: false, required: false
@@ -606,30 +722,29 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceInput() {
-    return this._resource
+    return this._resource;
   }
 
   // scheduled_operation - computed: false, optional: false, required: true
-  private _scheduledOperation?: CsbsBackupPolicyV1ScheduledOperation; 
-  private __scheduledOperationOutput = new CsbsBackupPolicyV1ScheduledOperationOutputReference(this as any, "scheduled_operation", true);
+  private _scheduledOperation = new CsbsBackupPolicyV1ScheduledOperationOutputReference(this as any, "scheduled_operation", true);
   public get scheduledOperation() {
-    return this.__scheduledOperationOutput;
+    return this._scheduledOperation;
   }
   public putScheduledOperation(value: CsbsBackupPolicyV1ScheduledOperation) {
-    this._scheduledOperation = value;
+    this._scheduledOperation.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledOperationInput() {
-    return this._scheduledOperation
+    return this._scheduledOperation.internalValue;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: CsbsBackupPolicyV1Tags[] | undefined; 
+  private _tags?: CsbsBackupPolicyV1Tags[]; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: CsbsBackupPolicyV1Tags[] | undefined) {
+  public set tags(value: CsbsBackupPolicyV1Tags[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -637,24 +752,23 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CsbsBackupPolicyV1Timeouts | undefined; 
-  private __timeoutsOutput = new CsbsBackupPolicyV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CsbsBackupPolicyV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CsbsBackupPolicyV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CsbsBackupPolicyV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -669,9 +783,9 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
       provider_id: cdktf.stringToTerraform(this._providerId),
       region: cdktf.stringToTerraform(this._region),
       resource: cdktf.listMapper(csbsBackupPolicyV1ResourceToTerraform)(this._resource),
-      scheduled_operation: csbsBackupPolicyV1ScheduledOperationToTerraform(this._scheduledOperation),
+      scheduled_operation: csbsBackupPolicyV1ScheduledOperationToTerraform(this._scheduledOperation.internalValue),
       tags: cdktf.listMapper(csbsBackupPolicyV1TagsToTerraform)(this._tags),
-      timeouts: csbsBackupPolicyV1TimeoutsToTerraform(this._timeouts),
+      timeouts: csbsBackupPolicyV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

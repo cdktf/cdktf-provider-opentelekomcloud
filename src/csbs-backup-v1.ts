@@ -160,7 +160,7 @@ export interface CsbsBackupV1Tags {
   readonly value: string;
 }
 
-function csbsBackupV1TagsToTerraform(struct?: CsbsBackupV1Tags): any {
+export function csbsBackupV1TagsToTerraform(struct?: CsbsBackupV1Tags): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -182,7 +182,7 @@ export interface CsbsBackupV1Timeouts {
   readonly delete?: string;
 }
 
-function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1TimeoutsOutputReference | CsbsBackupV1Timeouts): any {
+export function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1TimeoutsOutputReference | CsbsBackupV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -203,12 +203,37 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CsbsBackupV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -216,15 +241,15 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -232,7 +257,7 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -274,7 +299,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
     this._resourceId = config.resourceId;
     this._resourceType = config.resourceType;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -282,11 +307,11 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   // ==========
 
   // backup_name - computed: true, optional: true, required: false
-  private _backupName?: string | undefined; 
+  private _backupName?: string; 
   public get backupName() {
     return this.getStringAttribute('backup_name');
   }
-  public set backupName(value: string | undefined) {
+  public set backupName(value: string) {
     this._backupName = value;
   }
   public resetBackupName() {
@@ -294,7 +319,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupNameInput() {
-    return this._backupName
+    return this._backupName;
   }
 
   // backup_record_id - computed: true, optional: false, required: false
@@ -303,11 +328,11 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -315,7 +340,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -324,11 +349,11 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -336,7 +361,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // resource_id - computed: false, optional: false, required: true
@@ -349,15 +374,15 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceIdInput() {
-    return this._resourceId
+    return this._resourceId;
   }
 
   // resource_type - computed: false, optional: true, required: false
-  private _resourceType?: string | undefined; 
+  private _resourceType?: string; 
   public get resourceType() {
     return this.getStringAttribute('resource_type');
   }
-  public set resourceType(value: string | undefined) {
+  public set resourceType(value: string) {
     this._resourceType = value;
   }
   public resetResourceType() {
@@ -365,7 +390,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeInput() {
-    return this._resourceType
+    return this._resourceType;
   }
 
   // status - computed: true, optional: false, required: false
@@ -384,12 +409,12 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: CsbsBackupV1Tags[] | undefined; 
+  private _tags?: CsbsBackupV1Tags[]; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: CsbsBackupV1Tags[] | undefined) {
+  public set tags(value: CsbsBackupV1Tags[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -397,24 +422,23 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CsbsBackupV1Timeouts | undefined; 
-  private __timeoutsOutput = new CsbsBackupV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CsbsBackupV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CsbsBackupV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CsbsBackupV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -429,7 +453,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
       resource_id: cdktf.stringToTerraform(this._resourceId),
       resource_type: cdktf.stringToTerraform(this._resourceType),
       tags: cdktf.listMapper(csbsBackupV1TagsToTerraform)(this._tags),
-      timeouts: csbsBackupV1TimeoutsToTerraform(this._timeouts),
+      timeouts: csbsBackupV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

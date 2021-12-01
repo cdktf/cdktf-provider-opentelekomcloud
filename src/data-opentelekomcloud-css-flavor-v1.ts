@@ -45,7 +45,7 @@ export interface DataOpentelekomcloudCssFlavorV1DiskRange {
   readonly minTo?: number;
 }
 
-function dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(struct?: DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference | DataOpentelekomcloudCssFlavorV1DiskRange): any {
+export function dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(struct?: DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference | DataOpentelekomcloudCssFlavorV1DiskRange): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -66,12 +66,37 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DataOpentelekomcloudCssFlavorV1DiskRange | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._minFrom) {
+      hasAnyValues = true;
+      internalValueResult.minFrom = this._minFrom;
+    }
+    if (this._minTo) {
+      hasAnyValues = true;
+      internalValueResult.minTo = this._minTo;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudCssFlavorV1DiskRange | undefined) {
+    if (value === undefined) {
+      this._minFrom = undefined;
+      this._minTo = undefined;
+    }
+    else {
+      this._minFrom = value.minFrom;
+      this._minTo = value.minTo;
+    }
+  }
+
   // min_from - computed: false, optional: true, required: false
-  private _minFrom?: number | undefined; 
+  private _minFrom?: number; 
   public get minFrom() {
     return this.getNumberAttribute('min_from');
   }
-  public set minFrom(value: number | undefined) {
+  public set minFrom(value: number) {
     this._minFrom = value;
   }
   public resetMinFrom() {
@@ -79,15 +104,15 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get minFromInput() {
-    return this._minFrom
+    return this._minFrom;
   }
 
   // min_to - computed: false, optional: true, required: false
-  private _minTo?: number | undefined; 
+  private _minTo?: number; 
   public get minTo() {
     return this.getNumberAttribute('min_to');
   }
-  public set minTo(value: number | undefined) {
+  public set minTo(value: number) {
     this._minTo = value;
   }
   public resetMinTo() {
@@ -95,7 +120,7 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   }
   // Temporarily expose input value. Use with caution.
   public get minToInput() {
-    return this._minTo
+    return this._minTo;
   }
 }
 
@@ -136,7 +161,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
     this._name = config.name;
     this._type = config.type;
     this._version = config.version;
-    this._diskRange = config.diskRange;
+    this._diskRange.internalValue = config.diskRange;
   }
 
   // ==========
@@ -154,11 +179,11 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
 
   // min_cpu - computed: false, optional: true, required: false
-  private _minCpu?: number | undefined; 
+  private _minCpu?: number; 
   public get minCpu() {
     return this.getNumberAttribute('min_cpu');
   }
-  public set minCpu(value: number | undefined) {
+  public set minCpu(value: number) {
     this._minCpu = value;
   }
   public resetMinCpu() {
@@ -166,15 +191,15 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get minCpuInput() {
-    return this._minCpu
+    return this._minCpu;
   }
 
   // min_ram - computed: false, optional: true, required: false
-  private _minRam?: number | undefined; 
+  private _minRam?: number; 
   public get minRam() {
     return this.getNumberAttribute('min_ram');
   }
-  public set minRam(value: number | undefined) {
+  public set minRam(value: number) {
     this._minRam = value;
   }
   public resetMinRam() {
@@ -182,15 +207,15 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get minRamInput() {
-    return this._minRam
+    return this._minRam;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -198,7 +223,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // ram - computed: true, optional: false, required: false
@@ -212,11 +237,11 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -224,15 +249,15 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // version - computed: true, optional: true, required: false
-  private _version?: string | undefined; 
+  private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
   public resetVersion() {
@@ -240,24 +265,23 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 
   // disk_range - computed: false, optional: true, required: false
-  private _diskRange?: DataOpentelekomcloudCssFlavorV1DiskRange | undefined; 
-  private __diskRangeOutput = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this as any, "disk_range", true);
+  private _diskRange = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this as any, "disk_range", true);
   public get diskRange() {
-    return this.__diskRangeOutput;
+    return this._diskRange;
   }
-  public putDiskRange(value: DataOpentelekomcloudCssFlavorV1DiskRange | undefined) {
-    this._diskRange = value;
+  public putDiskRange(value: DataOpentelekomcloudCssFlavorV1DiskRange) {
+    this._diskRange.internalValue = value;
   }
   public resetDiskRange() {
-    this._diskRange = undefined;
+    this._diskRange.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get diskRangeInput() {
-    return this._diskRange
+    return this._diskRange.internalValue;
   }
 
   // =========
@@ -271,7 +295,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),
       version: cdktf.stringToTerraform(this._version),
-      disk_range: dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(this._diskRange),
+      disk_range: dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(this._diskRange.internalValue),
     };
   }
 }

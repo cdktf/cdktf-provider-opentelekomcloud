@@ -118,11 +118,11 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -130,7 +130,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // delay - computed: false, optional: false, required: true
@@ -143,15 +143,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get delayInput() {
-    return this._delay
+    return this._delay;
   }
 
   // domain_name - computed: true, optional: true, required: false
-  private _domainName?: string | undefined; 
+  private _domainName?: string; 
   public get domainName() {
     return this.getStringAttribute('domain_name');
   }
-  public set domainName(value: string | undefined) {
+  public set domainName(value: string) {
     this._domainName = value;
   }
   public resetDomainName() {
@@ -159,15 +159,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainNameInput() {
-    return this._domainName
+    return this._domainName;
   }
 
   // expected_codes - computed: true, optional: true, required: false
-  private _expectedCodes?: string | undefined; 
+  private _expectedCodes?: string; 
   public get expectedCodes() {
     return this.getStringAttribute('expected_codes');
   }
-  public set expectedCodes(value: string | undefined) {
+  public set expectedCodes(value: string) {
     this._expectedCodes = value;
   }
   public resetExpectedCodes() {
@@ -175,15 +175,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get expectedCodesInput() {
-    return this._expectedCodes
+    return this._expectedCodes;
   }
 
   // http_method - computed: true, optional: true, required: false
-  private _httpMethod?: string | undefined; 
+  private _httpMethod?: string; 
   public get httpMethod() {
     return this.getStringAttribute('http_method');
   }
-  public set httpMethod(value: string | undefined) {
+  public set httpMethod(value: string) {
     this._httpMethod = value;
   }
   public resetHttpMethod() {
@@ -191,7 +191,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get httpMethodInput() {
-    return this._httpMethod
+    return this._httpMethod;
   }
 
   // id - computed: true, optional: true, required: false
@@ -209,15 +209,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maxRetriesInput() {
-    return this._maxRetries
+    return this._maxRetries;
   }
 
   // max_retries_down - computed: true, optional: true, required: false
-  private _maxRetriesDown?: number | undefined; 
+  private _maxRetriesDown?: number; 
   public get maxRetriesDown() {
     return this.getNumberAttribute('max_retries_down');
   }
-  public set maxRetriesDown(value: number | undefined) {
+  public set maxRetriesDown(value: number) {
     this._maxRetriesDown = value;
   }
   public resetMaxRetriesDown() {
@@ -225,15 +225,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maxRetriesDownInput() {
-    return this._maxRetriesDown
+    return this._maxRetriesDown;
   }
 
   // monitor_port - computed: true, optional: true, required: false
-  private _monitorPort?: number | undefined; 
+  private _monitorPort?: number; 
   public get monitorPort() {
     return this.getNumberAttribute('monitor_port');
   }
-  public set monitorPort(value: number | undefined) {
+  public set monitorPort(value: number) {
     this._monitorPort = value;
   }
   public resetMonitorPort() {
@@ -241,15 +241,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get monitorPortInput() {
-    return this._monitorPort
+    return this._monitorPort;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -257,7 +257,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // pool_id - computed: false, optional: false, required: true
@@ -270,15 +270,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get poolIdInput() {
-    return this._poolId
+    return this._poolId;
   }
 
   // project_id - computed: true, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -286,7 +286,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // timeout - computed: false, optional: false, required: true
@@ -299,7 +299,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutInput() {
-    return this._timeout
+    return this._timeout;
   }
 
   // type - computed: false, optional: false, required: true
@@ -312,15 +312,15 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // url_path - computed: true, optional: true, required: false
-  private _urlPath?: string | undefined; 
+  private _urlPath?: string; 
   public get urlPath() {
     return this.getStringAttribute('url_path');
   }
-  public set urlPath(value: string | undefined) {
+  public set urlPath(value: string) {
     this._urlPath = value;
   }
   public resetUrlPath() {
@@ -328,7 +328,7 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get urlPathInput() {
-    return this._urlPath
+    return this._urlPath;
   }
 
   // =========

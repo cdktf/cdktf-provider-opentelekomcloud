@@ -85,7 +85,7 @@ export interface LbLoadbalancerV3PublicIp {
   readonly ipType: string;
 }
 
-function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3PublicIpOutputReference | LbLoadbalancerV3PublicIp): any {
+export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3PublicIpOutputReference | LbLoadbalancerV3PublicIp): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -109,12 +109,55 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LbLoadbalancerV3PublicIp | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._bandwidthChargeMode) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthChargeMode = this._bandwidthChargeMode;
+    }
+    if (this._bandwidthName) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthName = this._bandwidthName;
+    }
+    if (this._bandwidthShareType) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthShareType = this._bandwidthShareType;
+    }
+    if (this._bandwidthSize) {
+      hasAnyValues = true;
+      internalValueResult.bandwidthSize = this._bandwidthSize;
+    }
+    if (this._ipType) {
+      hasAnyValues = true;
+      internalValueResult.ipType = this._ipType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbLoadbalancerV3PublicIp | undefined) {
+    if (value === undefined) {
+      this._bandwidthChargeMode = undefined;
+      this._bandwidthName = undefined;
+      this._bandwidthShareType = undefined;
+      this._bandwidthSize = undefined;
+      this._ipType = undefined;
+    }
+    else {
+      this._bandwidthChargeMode = value.bandwidthChargeMode;
+      this._bandwidthName = value.bandwidthName;
+      this._bandwidthShareType = value.bandwidthShareType;
+      this._bandwidthSize = value.bandwidthSize;
+      this._ipType = value.ipType;
+    }
+  }
+
   // bandwidth_charge_mode - computed: false, optional: true, required: false
-  private _bandwidthChargeMode?: string | undefined; 
+  private _bandwidthChargeMode?: string; 
   public get bandwidthChargeMode() {
     return this.getStringAttribute('bandwidth_charge_mode');
   }
-  public set bandwidthChargeMode(value: string | undefined) {
+  public set bandwidthChargeMode(value: string) {
     this._bandwidthChargeMode = value;
   }
   public resetBandwidthChargeMode() {
@@ -122,7 +165,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthChargeModeInput() {
-    return this._bandwidthChargeMode
+    return this._bandwidthChargeMode;
   }
 
   // bandwidth_name - computed: false, optional: false, required: true
@@ -135,7 +178,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthNameInput() {
-    return this._bandwidthName
+    return this._bandwidthName;
   }
 
   // bandwidth_share_type - computed: false, optional: false, required: true
@@ -148,7 +191,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthShareTypeInput() {
-    return this._bandwidthShareType
+    return this._bandwidthShareType;
   }
 
   // bandwidth_size - computed: false, optional: false, required: true
@@ -161,7 +204,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthSizeInput() {
-    return this._bandwidthSize
+    return this._bandwidthSize;
   }
 
   // ip_type - computed: false, optional: false, required: true
@@ -174,7 +217,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get ipTypeInput() {
-    return this._ipType
+    return this._ipType;
   }
 }
 
@@ -222,7 +265,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
     this._subnetId = config.subnetId;
     this._tags = config.tags;
     this._vipAddress = config.vipAddress;
-    this._publicIp = config.publicIp;
+    this._publicIp.internalValue = config.publicIp;
   }
 
   // ==========
@@ -230,11 +273,11 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -242,7 +285,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // availability_zones - computed: false, optional: false, required: true
@@ -255,7 +298,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZonesInput() {
-    return this._availabilityZones
+    return this._availabilityZones;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -264,11 +307,11 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -276,7 +319,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -285,11 +328,11 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // ip_target_enable - computed: true, optional: true, required: false
-  private _ipTargetEnable?: boolean | cdktf.IResolvable | undefined; 
+  private _ipTargetEnable?: boolean | cdktf.IResolvable; 
   public get ipTargetEnable() {
     return this.getBooleanAttribute('ip_target_enable') as any;
   }
-  public set ipTargetEnable(value: boolean | cdktf.IResolvable | undefined) {
+  public set ipTargetEnable(value: boolean | cdktf.IResolvable) {
     this._ipTargetEnable = value;
   }
   public resetIpTargetEnable() {
@@ -297,15 +340,15 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ipTargetEnableInput() {
-    return this._ipTargetEnable
+    return this._ipTargetEnable;
   }
 
   // l4_flavor - computed: true, optional: true, required: false
-  private _l4Flavor?: string | undefined; 
+  private _l4Flavor?: string; 
   public get l4Flavor() {
     return this.getStringAttribute('l4_flavor');
   }
-  public set l4Flavor(value: string | undefined) {
+  public set l4Flavor(value: string) {
     this._l4Flavor = value;
   }
   public resetL4Flavor() {
@@ -313,15 +356,15 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get l4FlavorInput() {
-    return this._l4Flavor
+    return this._l4Flavor;
   }
 
   // l7_flavor - computed: true, optional: true, required: false
-  private _l7Flavor?: string | undefined; 
+  private _l7Flavor?: string; 
   public get l7Flavor() {
     return this.getStringAttribute('l7_flavor');
   }
-  public set l7Flavor(value: string | undefined) {
+  public set l7Flavor(value: string) {
     this._l7Flavor = value;
   }
   public resetL7Flavor() {
@@ -329,15 +372,15 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get l7FlavorInput() {
-    return this._l7Flavor
+    return this._l7Flavor;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -345,7 +388,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network_ids - computed: false, optional: false, required: true
@@ -358,15 +401,15 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get networkIdsInput() {
-    return this._networkIds
+    return this._networkIds;
   }
 
   // router_id - computed: false, optional: true, required: false
-  private _routerId?: string | undefined; 
+  private _routerId?: string; 
   public get routerId() {
     return this.getStringAttribute('router_id');
   }
-  public set routerId(value: string | undefined) {
+  public set routerId(value: string) {
     this._routerId = value;
   }
   public resetRouterId() {
@@ -374,15 +417,15 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get routerIdInput() {
-    return this._routerId
+    return this._routerId;
   }
 
   // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -390,16 +433,16 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -407,7 +450,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -416,11 +459,11 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // vip_address - computed: true, optional: true, required: false
-  private _vipAddress?: string | undefined; 
+  private _vipAddress?: string; 
   public get vipAddress() {
     return this.getStringAttribute('vip_address');
   }
-  public set vipAddress(value: string | undefined) {
+  public set vipAddress(value: string) {
     this._vipAddress = value;
   }
   public resetVipAddress() {
@@ -428,7 +471,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vipAddressInput() {
-    return this._vipAddress
+    return this._vipAddress;
   }
 
   // vip_port_id - computed: true, optional: false, required: false
@@ -437,20 +480,19 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp?: LbLoadbalancerV3PublicIp | undefined; 
-  private __publicIpOutput = new LbLoadbalancerV3PublicIpOutputReference(this as any, "public_ip", true);
+  private _publicIp = new LbLoadbalancerV3PublicIpOutputReference(this as any, "public_ip", true);
   public get publicIp() {
-    return this.__publicIpOutput;
+    return this._publicIp;
   }
-  public putPublicIp(value: LbLoadbalancerV3PublicIp | undefined) {
-    this._publicIp = value;
+  public putPublicIp(value: LbLoadbalancerV3PublicIp) {
+    this._publicIp.internalValue = value;
   }
   public resetPublicIp() {
-    this._publicIp = undefined;
+    this._publicIp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get publicIpInput() {
-    return this._publicIp
+    return this._publicIp.internalValue;
   }
 
   // =========
@@ -471,7 +513,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       vip_address: cdktf.stringToTerraform(this._vipAddress),
-      public_ip: lbLoadbalancerV3PublicIpToTerraform(this._publicIp),
+      public_ip: lbLoadbalancerV3PublicIpToTerraform(this._publicIp.internalValue),
     };
   }
 }

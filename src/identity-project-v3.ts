@@ -73,11 +73,11 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -85,15 +85,15 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -101,7 +101,7 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // enabled - computed: true, optional: false, required: false
@@ -129,15 +129,15 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // parent_id - computed: true, optional: true, required: false
-  private _parentId?: string | undefined; 
+  private _parentId?: string; 
   public get parentId() {
     return this.getStringAttribute('parent_id');
   }
-  public set parentId(value: string | undefined) {
+  public set parentId(value: string) {
     this._parentId = value;
   }
   public resetParentId() {
@@ -145,15 +145,15 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get parentIdInput() {
-    return this._parentId
+    return this._parentId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -161,7 +161,7 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

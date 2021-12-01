@@ -63,11 +63,11 @@ export class DataOpentelekomcloudIdentityRoleV3 extends cdktf.TerraformDataSourc
   // ==========
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -75,7 +75,7 @@ export class DataOpentelekomcloudIdentityRoleV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -93,15 +93,15 @@ export class DataOpentelekomcloudIdentityRoleV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -109,7 +109,7 @@ export class DataOpentelekomcloudIdentityRoleV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

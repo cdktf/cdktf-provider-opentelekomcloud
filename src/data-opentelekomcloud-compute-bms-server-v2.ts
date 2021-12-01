@@ -152,11 +152,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // flavor_id - computed: false, optional: true, required: false
-  private _flavorId?: string | undefined; 
+  private _flavorId?: string; 
   public get flavorId() {
     return this.getStringAttribute('flavor_id');
   }
-  public set flavorId(value: string | undefined) {
+  public set flavorId(value: string) {
     this._flavorId = value;
   }
   public resetFlavorId() {
@@ -164,7 +164,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get flavorIdInput() {
-    return this._flavorId
+    return this._flavorId;
   }
 
   // host_id - computed: true, optional: false, required: false
@@ -173,11 +173,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // host_status - computed: false, optional: true, required: false
-  private _hostStatus?: string | undefined; 
+  private _hostStatus?: string; 
   public get hostStatus() {
     return this.getStringAttribute('host_status');
   }
-  public set hostStatus(value: string | undefined) {
+  public set hostStatus(value: string) {
     this._hostStatus = value;
   }
   public resetHostStatus() {
@@ -185,7 +185,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get hostStatusInput() {
-    return this._hostStatus
+    return this._hostStatus;
   }
 
   // hypervisor_hostname - computed: true, optional: false, required: false
@@ -194,11 +194,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -206,15 +206,15 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // image_id - computed: false, optional: true, required: false
-  private _imageId?: string | undefined; 
+  private _imageId?: string; 
   public get imageId() {
     return this.getStringAttribute('image_id');
   }
-  public set imageId(value: string | undefined) {
+  public set imageId(value: string) {
     this._imageId = value;
   }
   public resetImageId() {
@@ -222,7 +222,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get imageIdInput() {
-    return this._imageId
+    return this._imageId;
   }
 
   // instance_name - computed: true, optional: false, required: false
@@ -236,11 +236,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // key_name - computed: false, optional: true, required: false
-  private _keyName?: string | undefined; 
+  private _keyName?: string; 
   public get keyName() {
     return this.getStringAttribute('key_name');
   }
-  public set keyName(value: string | undefined) {
+  public set keyName(value: string) {
     this._keyName = value;
   }
   public resetKeyName() {
@@ -248,7 +248,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get keyNameInput() {
-    return this._keyName
+    return this._keyName;
   }
 
   // locked - computed: true, optional: false, required: false
@@ -262,11 +262,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -274,7 +274,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network - computed: true, optional: false, required: false
@@ -288,11 +288,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -300,7 +300,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // security_groups - computed: true, optional: false, required: false
@@ -309,11 +309,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -321,7 +321,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -335,11 +335,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // user_id - computed: false, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -347,7 +347,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

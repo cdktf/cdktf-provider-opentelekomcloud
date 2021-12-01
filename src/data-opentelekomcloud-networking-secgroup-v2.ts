@@ -78,11 +78,11 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -90,15 +90,15 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -106,15 +106,15 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // secgroup_id - computed: false, optional: true, required: false
-  private _secgroupId?: string | undefined; 
+  private _secgroupId?: string; 
   public get secgroupId() {
     return this.getStringAttribute('secgroup_id');
   }
-  public set secgroupId(value: string | undefined) {
+  public set secgroupId(value: string) {
     this._secgroupId = value;
   }
   public resetSecgroupId() {
@@ -122,15 +122,15 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   }
   // Temporarily expose input value. Use with caution.
   public get secgroupIdInput() {
-    return this._secgroupId
+    return this._secgroupId;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -138,7 +138,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // =========

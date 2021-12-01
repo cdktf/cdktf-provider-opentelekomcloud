@@ -101,7 +101,7 @@ export interface EcsInstanceV1DataDisks {
   readonly type: string;
 }
 
-function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisks): any {
+export function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisks): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -125,7 +125,7 @@ export interface EcsInstanceV1Nics {
   readonly networkId: string;
 }
 
-function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics): any {
+export function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -151,7 +151,7 @@ export interface EcsInstanceV1Timeouts {
   readonly update?: string;
 }
 
-function ecsInstanceV1TimeoutsToTerraform(struct?: EcsInstanceV1TimeoutsOutputReference | EcsInstanceV1Timeouts): any {
+export function ecsInstanceV1TimeoutsToTerraform(struct?: EcsInstanceV1TimeoutsOutputReference | EcsInstanceV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -173,12 +173,43 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): EcsInstanceV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsInstanceV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -186,15 +217,15 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -202,15 +233,15 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -218,7 +249,7 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -270,7 +301,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
     this._vpcId = config.vpcId;
     this._dataDisks = config.dataDisks;
     this._nics = config.nics;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -278,11 +309,11 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // ==========
 
   // auto_recovery - computed: true, optional: true, required: false
-  private _autoRecovery?: boolean | cdktf.IResolvable | undefined; 
+  private _autoRecovery?: boolean | cdktf.IResolvable; 
   public get autoRecovery() {
     return this.getBooleanAttribute('auto_recovery') as any;
   }
-  public set autoRecovery(value: boolean | cdktf.IResolvable | undefined) {
+  public set autoRecovery(value: boolean | cdktf.IResolvable) {
     this._autoRecovery = value;
   }
   public resetAutoRecovery() {
@@ -290,7 +321,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get autoRecoveryInput() {
-    return this._autoRecovery
+    return this._autoRecovery;
   }
 
   // availability_zone - computed: false, optional: false, required: true
@@ -303,15 +334,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // delete_disks_on_termination - computed: false, optional: true, required: false
-  private _deleteDisksOnTermination?: boolean | cdktf.IResolvable | undefined; 
+  private _deleteDisksOnTermination?: boolean | cdktf.IResolvable; 
   public get deleteDisksOnTermination() {
     return this.getBooleanAttribute('delete_disks_on_termination') as any;
   }
-  public set deleteDisksOnTermination(value: boolean | cdktf.IResolvable | undefined) {
+  public set deleteDisksOnTermination(value: boolean | cdktf.IResolvable) {
     this._deleteDisksOnTermination = value;
   }
   public resetDeleteDisksOnTermination() {
@@ -319,7 +350,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteDisksOnTerminationInput() {
-    return this._deleteDisksOnTermination
+    return this._deleteDisksOnTermination;
   }
 
   // flavor - computed: false, optional: false, required: true
@@ -332,7 +363,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get flavorInput() {
-    return this._flavor
+    return this._flavor;
   }
 
   // id - computed: true, optional: true, required: false
@@ -350,15 +381,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get imageIdInput() {
-    return this._imageId
+    return this._imageId;
   }
 
   // key_name - computed: false, optional: true, required: false
-  private _keyName?: string | undefined; 
+  private _keyName?: string; 
   public get keyName() {
     return this.getStringAttribute('key_name');
   }
-  public set keyName(value: string | undefined) {
+  public set keyName(value: string) {
     this._keyName = value;
   }
   public resetKeyName() {
@@ -366,7 +397,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyNameInput() {
-    return this._keyName
+    return this._keyName;
   }
 
   // name - computed: false, optional: false, required: true
@@ -379,15 +410,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string) {
     this._password = value;
   }
   public resetPassword() {
@@ -395,15 +426,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // security_groups - computed: true, optional: true, required: false
-  private _securityGroups?: string[] | undefined; 
+  private _securityGroups?: string[]; 
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
   }
   public resetSecurityGroups() {
@@ -411,15 +442,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
-    return this._securityGroups
+    return this._securityGroups;
   }
 
   // system_disk_size - computed: true, optional: true, required: false
-  private _systemDiskSize?: number | undefined; 
+  private _systemDiskSize?: number; 
   public get systemDiskSize() {
     return this.getNumberAttribute('system_disk_size');
   }
-  public set systemDiskSize(value: number | undefined) {
+  public set systemDiskSize(value: number) {
     this._systemDiskSize = value;
   }
   public resetSystemDiskSize() {
@@ -427,15 +458,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get systemDiskSizeInput() {
-    return this._systemDiskSize
+    return this._systemDiskSize;
   }
 
   // system_disk_type - computed: true, optional: true, required: false
-  private _systemDiskType?: string | undefined; 
+  private _systemDiskType?: string; 
   public get systemDiskType() {
     return this.getStringAttribute('system_disk_type');
   }
-  public set systemDiskType(value: string | undefined) {
+  public set systemDiskType(value: string) {
     this._systemDiskType = value;
   }
   public resetSystemDiskType() {
@@ -443,16 +474,16 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get systemDiskTypeInput() {
-    return this._systemDiskType
+    return this._systemDiskType;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -460,15 +491,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // user_data - computed: false, optional: true, required: false
-  private _userData?: string | undefined; 
+  private _userData?: string; 
   public get userData() {
     return this.getStringAttribute('user_data');
   }
-  public set userData(value: string | undefined) {
+  public set userData(value: string) {
     this._userData = value;
   }
   public resetUserData() {
@@ -476,7 +507,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userDataInput() {
-    return this._userData
+    return this._userData;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -489,16 +520,16 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // data_disks - computed: false, optional: true, required: false
-  private _dataDisks?: EcsInstanceV1DataDisks[] | undefined; 
+  private _dataDisks?: EcsInstanceV1DataDisks[]; 
   public get dataDisks() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('data_disks') as any;
   }
-  public set dataDisks(value: EcsInstanceV1DataDisks[] | undefined) {
+  public set dataDisks(value: EcsInstanceV1DataDisks[]) {
     this._dataDisks = value;
   }
   public resetDataDisks() {
@@ -506,7 +537,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dataDisksInput() {
-    return this._dataDisks
+    return this._dataDisks;
   }
 
   // nics - computed: false, optional: false, required: true
@@ -520,24 +551,23 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nicsInput() {
-    return this._nics
+    return this._nics;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: EcsInstanceV1Timeouts | undefined; 
-  private __timeoutsOutput = new EcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: EcsInstanceV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: EcsInstanceV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -562,7 +592,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform)(this._dataDisks),
       nics: cdktf.listMapper(ecsInstanceV1NicsToTerraform)(this._nics),
-      timeouts: ecsInstanceV1TimeoutsToTerraform(this._timeouts),
+      timeouts: ecsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

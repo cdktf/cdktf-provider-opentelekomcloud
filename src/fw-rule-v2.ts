@@ -122,15 +122,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -138,15 +138,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // destination_ip_address - computed: false, optional: true, required: false
-  private _destinationIpAddress?: string | undefined; 
+  private _destinationIpAddress?: string; 
   public get destinationIpAddress() {
     return this.getStringAttribute('destination_ip_address');
   }
-  public set destinationIpAddress(value: string | undefined) {
+  public set destinationIpAddress(value: string) {
     this._destinationIpAddress = value;
   }
   public resetDestinationIpAddress() {
@@ -154,15 +154,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get destinationIpAddressInput() {
-    return this._destinationIpAddress
+    return this._destinationIpAddress;
   }
 
   // destination_port - computed: false, optional: true, required: false
-  private _destinationPort?: string | undefined; 
+  private _destinationPort?: string; 
   public get destinationPort() {
     return this.getStringAttribute('destination_port');
   }
-  public set destinationPort(value: string | undefined) {
+  public set destinationPort(value: string) {
     this._destinationPort = value;
   }
   public resetDestinationPort() {
@@ -170,15 +170,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get destinationPortInput() {
-    return this._destinationPort
+    return this._destinationPort;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -186,7 +186,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -195,11 +195,11 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
 
   // ip_version - computed: false, optional: true, required: false
-  private _ipVersion?: number | undefined; 
+  private _ipVersion?: number; 
   public get ipVersion() {
     return this.getNumberAttribute('ip_version');
   }
-  public set ipVersion(value: number | undefined) {
+  public set ipVersion(value: number) {
     this._ipVersion = value;
   }
   public resetIpVersion() {
@@ -207,15 +207,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ipVersionInput() {
-    return this._ipVersion
+    return this._ipVersion;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -223,7 +223,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -236,15 +236,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -252,15 +252,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // source_ip_address - computed: false, optional: true, required: false
-  private _sourceIpAddress?: string | undefined; 
+  private _sourceIpAddress?: string; 
   public get sourceIpAddress() {
     return this.getStringAttribute('source_ip_address');
   }
-  public set sourceIpAddress(value: string | undefined) {
+  public set sourceIpAddress(value: string) {
     this._sourceIpAddress = value;
   }
   public resetSourceIpAddress() {
@@ -268,15 +268,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceIpAddressInput() {
-    return this._sourceIpAddress
+    return this._sourceIpAddress;
   }
 
   // source_port - computed: false, optional: true, required: false
-  private _sourcePort?: string | undefined; 
+  private _sourcePort?: string; 
   public get sourcePort() {
     return this.getStringAttribute('source_port');
   }
-  public set sourcePort(value: string | undefined) {
+  public set sourcePort(value: string) {
     this._sourcePort = value;
   }
   public resetSourcePort() {
@@ -284,15 +284,15 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourcePortInput() {
-    return this._sourcePort
+    return this._sourcePort;
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -300,16 +300,16 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -317,7 +317,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // =========

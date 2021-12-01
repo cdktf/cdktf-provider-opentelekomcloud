@@ -63,11 +63,11 @@ export class DataOpentelekomcloudDmsAzV1 extends cdktf.TerraformDataSource {
   // ==========
 
   // code - computed: true, optional: true, required: false
-  private _code?: string | undefined; 
+  private _code?: string; 
   public get code() {
     return this.getStringAttribute('code');
   }
-  public set code(value: string | undefined) {
+  public set code(value: string) {
     this._code = value;
   }
   public resetCode() {
@@ -75,7 +75,7 @@ export class DataOpentelekomcloudDmsAzV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get codeInput() {
-    return this._code
+    return this._code;
   }
 
   // id - computed: true, optional: true, required: false
@@ -84,11 +84,11 @@ export class DataOpentelekomcloudDmsAzV1 extends cdktf.TerraformDataSource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -96,15 +96,15 @@ export class DataOpentelekomcloudDmsAzV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // port - computed: true, optional: true, required: false
-  private _port?: string | undefined; 
+  private _port?: string; 
   public get port() {
     return this.getStringAttribute('port');
   }
-  public set port(value: string | undefined) {
+  public set port(value: string) {
     this._port = value;
   }
   public resetPort() {
@@ -112,7 +112,7 @@ export class DataOpentelekomcloudDmsAzV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {
-    return this._port
+    return this._port;
   }
 
   // =========

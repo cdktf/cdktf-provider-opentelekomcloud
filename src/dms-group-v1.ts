@@ -87,7 +87,7 @@ export class DmsGroupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // produced_deadletters - computed: true, optional: false, required: false
@@ -110,7 +110,7 @@ export class DmsGroupV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get queueIdInput() {
-    return this._queueId
+    return this._queueId;
   }
 
   // =========

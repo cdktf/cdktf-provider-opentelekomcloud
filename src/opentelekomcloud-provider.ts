@@ -231,11 +231,11 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   // ==========
 
   // access_key - computed: false, optional: true, required: false
-  private _accessKey?: string | undefined; 
+  private _accessKey?: string; 
   public get accessKey() {
     return this._accessKey;
   }
-  public set accessKey(value: string | undefined| undefined) {
+  public set accessKey(value: string | undefined) {
     this._accessKey = value;
   }
   public resetAccessKey() {
@@ -243,15 +243,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get accessKeyInput() {
-    return this._accessKey
+    return this._accessKey;
   }
 
   // agency_domain_name - computed: false, optional: true, required: false
-  private _agencyDomainName?: string | undefined; 
+  private _agencyDomainName?: string; 
   public get agencyDomainName() {
     return this._agencyDomainName;
   }
-  public set agencyDomainName(value: string | undefined| undefined) {
+  public set agencyDomainName(value: string | undefined) {
     this._agencyDomainName = value;
   }
   public resetAgencyDomainName() {
@@ -259,15 +259,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get agencyDomainNameInput() {
-    return this._agencyDomainName
+    return this._agencyDomainName;
   }
 
   // agency_name - computed: false, optional: true, required: false
-  private _agencyName?: string | undefined; 
+  private _agencyName?: string; 
   public get agencyName() {
     return this._agencyName;
   }
-  public set agencyName(value: string | undefined| undefined) {
+  public set agencyName(value: string | undefined) {
     this._agencyName = value;
   }
   public resetAgencyName() {
@@ -275,15 +275,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get agencyNameInput() {
-    return this._agencyName
+    return this._agencyName;
   }
 
   // auth_url - computed: false, optional: true, required: false
-  private _authUrl?: string | undefined; 
+  private _authUrl?: string; 
   public get authUrl() {
     return this._authUrl;
   }
-  public set authUrl(value: string | undefined| undefined) {
+  public set authUrl(value: string | undefined) {
     this._authUrl = value;
   }
   public resetAuthUrl() {
@@ -291,15 +291,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get authUrlInput() {
-    return this._authUrl
+    return this._authUrl;
   }
 
   // cacert_file - computed: false, optional: true, required: false
-  private _cacertFile?: string | undefined; 
+  private _cacertFile?: string; 
   public get cacertFile() {
     return this._cacertFile;
   }
-  public set cacertFile(value: string | undefined| undefined) {
+  public set cacertFile(value: string | undefined) {
     this._cacertFile = value;
   }
   public resetCacertFile() {
@@ -307,15 +307,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get cacertFileInput() {
-    return this._cacertFile
+    return this._cacertFile;
   }
 
   // cert - computed: false, optional: true, required: false
-  private _cert?: string | undefined; 
+  private _cert?: string; 
   public get cert() {
     return this._cert;
   }
-  public set cert(value: string | undefined| undefined) {
+  public set cert(value: string | undefined) {
     this._cert = value;
   }
   public resetCert() {
@@ -323,15 +323,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get certInput() {
-    return this._cert
+    return this._cert;
   }
 
   // cloud - computed: false, optional: true, required: false
-  private _cloud?: string | undefined; 
+  private _cloud?: string; 
   public get cloud() {
     return this._cloud;
   }
-  public set cloud(value: string | undefined| undefined) {
+  public set cloud(value: string | undefined) {
     this._cloud = value;
   }
   public resetCloud() {
@@ -339,15 +339,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get cloudInput() {
-    return this._cloud
+    return this._cloud;
   }
 
   // delegated_project - computed: false, optional: true, required: false
-  private _delegatedProject?: string | undefined; 
+  private _delegatedProject?: string; 
   public get delegatedProject() {
     return this._delegatedProject;
   }
-  public set delegatedProject(value: string | undefined| undefined) {
+  public set delegatedProject(value: string | undefined) {
     this._delegatedProject = value;
   }
   public resetDelegatedProject() {
@@ -355,15 +355,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get delegatedProjectInput() {
-    return this._delegatedProject
+    return this._delegatedProject;
   }
 
   // domain_id - computed: false, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this._domainId;
   }
-  public set domainId(value: string | undefined| undefined) {
+  public set domainId(value: string | undefined) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -371,15 +371,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // domain_name - computed: false, optional: true, required: false
-  private _domainName?: string | undefined; 
+  private _domainName?: string; 
   public get domainName() {
     return this._domainName;
   }
-  public set domainName(value: string | undefined| undefined) {
+  public set domainName(value: string | undefined) {
     this._domainName = value;
   }
   public resetDomainName() {
@@ -387,15 +387,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get domainNameInput() {
-    return this._domainName
+    return this._domainName;
   }
 
   // endpoint_type - computed: false, optional: true, required: false
-  private _endpointType?: string | undefined; 
+  private _endpointType?: string; 
   public get endpointType() {
     return this._endpointType;
   }
-  public set endpointType(value: string | undefined| undefined) {
+  public set endpointType(value: string | undefined) {
     this._endpointType = value;
   }
   public resetEndpointType() {
@@ -403,15 +403,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get endpointTypeInput() {
-    return this._endpointType
+    return this._endpointType;
   }
 
   // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean | cdktf.IResolvable | undefined; 
+  private _insecure?: boolean | cdktf.IResolvable; 
   public get insecure() {
     return this._insecure;
   }
-  public set insecure(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set insecure(value: boolean | cdktf.IResolvable | undefined) {
     this._insecure = value;
   }
   public resetInsecure() {
@@ -419,15 +419,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insecureInput() {
-    return this._insecure
+    return this._insecure;
   }
 
   // key - computed: false, optional: true, required: false
-  private _key?: string | undefined; 
+  private _key?: string; 
   public get key() {
     return this._key;
   }
-  public set key(value: string | undefined| undefined) {
+  public set key(value: string | undefined) {
     this._key = value;
   }
   public resetKey() {
@@ -435,15 +435,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // max_retries - computed: false, optional: true, required: false
-  private _maxRetries?: number | undefined; 
+  private _maxRetries?: number; 
   public get maxRetries() {
     return this._maxRetries;
   }
-  public set maxRetries(value: number | undefined| undefined) {
+  public set maxRetries(value: number | undefined) {
     this._maxRetries = value;
   }
   public resetMaxRetries() {
@@ -451,15 +451,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get maxRetriesInput() {
-    return this._maxRetries
+    return this._maxRetries;
   }
 
   // passcode - computed: false, optional: true, required: false
-  private _passcode?: string | undefined; 
+  private _passcode?: string; 
   public get passcode() {
     return this._passcode;
   }
-  public set passcode(value: string | undefined| undefined) {
+  public set passcode(value: string | undefined) {
     this._passcode = value;
   }
   public resetPasscode() {
@@ -467,15 +467,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get passcodeInput() {
-    return this._passcode
+    return this._passcode;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this._password;
   }
-  public set password(value: string | undefined| undefined) {
+  public set password(value: string | undefined) {
     this._password = value;
   }
   public resetPassword() {
@@ -483,15 +483,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // region - computed: false, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this._region;
   }
-  public set region(value: string | undefined| undefined) {
+  public set region(value: string | undefined) {
     this._region = value;
   }
   public resetRegion() {
@@ -499,15 +499,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // secret_key - computed: false, optional: true, required: false
-  private _secretKey?: string | undefined; 
+  private _secretKey?: string; 
   public get secretKey() {
     return this._secretKey;
   }
-  public set secretKey(value: string | undefined| undefined) {
+  public set secretKey(value: string | undefined) {
     this._secretKey = value;
   }
   public resetSecretKey() {
@@ -515,15 +515,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get secretKeyInput() {
-    return this._secretKey
+    return this._secretKey;
   }
 
   // security_token - computed: false, optional: true, required: false
-  private _securityToken?: string | undefined; 
+  private _securityToken?: string; 
   public get securityToken() {
     return this._securityToken;
   }
-  public set securityToken(value: string | undefined| undefined) {
+  public set securityToken(value: string | undefined) {
     this._securityToken = value;
   }
   public resetSecurityToken() {
@@ -531,15 +531,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get securityTokenInput() {
-    return this._securityToken
+    return this._securityToken;
   }
 
   // swauth - computed: false, optional: true, required: false
-  private _swauth?: boolean | cdktf.IResolvable | undefined; 
+  private _swauth?: boolean | cdktf.IResolvable; 
   public get swauth() {
     return this._swauth;
   }
-  public set swauth(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set swauth(value: boolean | cdktf.IResolvable | undefined) {
     this._swauth = value;
   }
   public resetSwauth() {
@@ -547,15 +547,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get swauthInput() {
-    return this._swauth
+    return this._swauth;
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this._tenantId;
   }
-  public set tenantId(value: string | undefined| undefined) {
+  public set tenantId(value: string | undefined) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -563,15 +563,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // tenant_name - computed: false, optional: true, required: false
-  private _tenantName?: string | undefined; 
+  private _tenantName?: string; 
   public get tenantName() {
     return this._tenantName;
   }
-  public set tenantName(value: string | undefined| undefined) {
+  public set tenantName(value: string | undefined) {
     this._tenantName = value;
   }
   public resetTenantName() {
@@ -579,15 +579,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantNameInput() {
-    return this._tenantName
+    return this._tenantName;
   }
 
   // token - computed: false, optional: true, required: false
-  private _token?: string | undefined; 
+  private _token?: string; 
   public get token() {
     return this._token;
   }
-  public set token(value: string | undefined| undefined) {
+  public set token(value: string | undefined) {
     this._token = value;
   }
   public resetToken() {
@@ -595,15 +595,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
-    return this._token
+    return this._token;
   }
 
   // user_id - computed: false, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this._userId;
   }
-  public set userId(value: string | undefined| undefined) {
+  public set userId(value: string | undefined) {
     this._userId = value;
   }
   public resetUserId() {
@@ -611,15 +611,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // user_name - computed: false, optional: true, required: false
-  private _userName?: string | undefined; 
+  private _userName?: string; 
   public get userName() {
     return this._userName;
   }
-  public set userName(value: string | undefined| undefined) {
+  public set userName(value: string | undefined) {
     this._userName = value;
   }
   public resetUserName() {
@@ -627,15 +627,15 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get userNameInput() {
-    return this._userName
+    return this._userName;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -643,7 +643,7 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // =========

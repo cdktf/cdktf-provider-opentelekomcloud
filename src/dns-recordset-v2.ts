@@ -65,7 +65,7 @@ export interface DnsRecordsetV2Timeouts {
   readonly update?: string;
 }
 
-function dnsRecordsetV2TimeoutsToTerraform(struct?: DnsRecordsetV2TimeoutsOutputReference | DnsRecordsetV2Timeouts): any {
+export function dnsRecordsetV2TimeoutsToTerraform(struct?: DnsRecordsetV2TimeoutsOutputReference | DnsRecordsetV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -87,12 +87,43 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DnsRecordsetV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DnsRecordsetV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -100,15 +131,15 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -116,15 +147,15 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -132,7 +163,7 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -177,7 +208,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
     this._type = config.type;
     this._valueSpecs = config.valueSpecs;
     this._zoneId = config.zoneId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -185,11 +216,11 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -197,7 +228,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -215,7 +246,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // records - computed: false, optional: false, required: true
@@ -228,15 +259,15 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get recordsInput() {
-    return this._records
+    return this._records;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -244,7 +275,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // shared - computed: true, optional: false, required: false
@@ -253,12 +284,12 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -266,15 +297,15 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // ttl - computed: false, optional: true, required: false
-  private _ttl?: number | undefined; 
+  private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
   }
-  public set ttl(value: number | undefined) {
+  public set ttl(value: number) {
     this._ttl = value;
   }
   public resetTtl() {
@@ -282,7 +313,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ttlInput() {
-    return this._ttl
+    return this._ttl;
   }
 
   // type - computed: false, optional: false, required: true
@@ -295,16 +326,16 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -312,7 +343,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // zone_id - computed: false, optional: false, required: true
@@ -325,24 +356,23 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
-    return this._zoneId
+    return this._zoneId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DnsRecordsetV2Timeouts | undefined; 
-  private __timeoutsOutput = new DnsRecordsetV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DnsRecordsetV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DnsRecordsetV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DnsRecordsetV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -360,7 +390,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      timeouts: dnsRecordsetV2TimeoutsToTerraform(this._timeouts),
+      timeouts: dnsRecordsetV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -49,7 +49,7 @@ export interface WafPolicyV1Action {
   readonly category: string;
 }
 
-function wafPolicyV1ActionToTerraform(struct?: WafPolicyV1ActionOutputReference | WafPolicyV1Action): any {
+export function wafPolicyV1ActionToTerraform(struct?: WafPolicyV1ActionOutputReference | WafPolicyV1Action): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -69,6 +69,25 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafPolicyV1Action | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._category) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafPolicyV1Action | undefined) {
+    if (value === undefined) {
+      this._category = undefined;
+    }
+    else {
+      this._category = value.category;
+    }
+  }
+
   // category - computed: false, optional: false, required: true
   private _category?: string; 
   public get category() {
@@ -79,7 +98,7 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get categoryInput() {
-    return this._category
+    return this._category;
   }
 }
 export interface WafPolicyV1Options {
@@ -141,7 +160,7 @@ export interface WafPolicyV1Options {
   readonly whiteblackip?: boolean | cdktf.IResolvable;
 }
 
-function wafPolicyV1OptionsToTerraform(struct?: WafPolicyV1OptionsOutputReference | WafPolicyV1Options): any {
+export function wafPolicyV1OptionsToTerraform(struct?: WafPolicyV1OptionsOutputReference | WafPolicyV1Options): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -174,12 +193,109 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafPolicyV1Options | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._antitamper) {
+      hasAnyValues = true;
+      internalValueResult.antitamper = this._antitamper;
+    }
+    if (this._cc) {
+      hasAnyValues = true;
+      internalValueResult.cc = this._cc;
+    }
+    if (this._common) {
+      hasAnyValues = true;
+      internalValueResult.common = this._common;
+    }
+    if (this._crawler) {
+      hasAnyValues = true;
+      internalValueResult.crawler = this._crawler;
+    }
+    if (this._crawlerEngine) {
+      hasAnyValues = true;
+      internalValueResult.crawlerEngine = this._crawlerEngine;
+    }
+    if (this._crawlerOther) {
+      hasAnyValues = true;
+      internalValueResult.crawlerOther = this._crawlerOther;
+    }
+    if (this._crawlerScanner) {
+      hasAnyValues = true;
+      internalValueResult.crawlerScanner = this._crawlerScanner;
+    }
+    if (this._crawlerScript) {
+      hasAnyValues = true;
+      internalValueResult.crawlerScript = this._crawlerScript;
+    }
+    if (this._custom) {
+      hasAnyValues = true;
+      internalValueResult.custom = this._custom;
+    }
+    if (this._ignore) {
+      hasAnyValues = true;
+      internalValueResult.ignore = this._ignore;
+    }
+    if (this._privacy) {
+      hasAnyValues = true;
+      internalValueResult.privacy = this._privacy;
+    }
+    if (this._webattack) {
+      hasAnyValues = true;
+      internalValueResult.webattack = this._webattack;
+    }
+    if (this._webshell) {
+      hasAnyValues = true;
+      internalValueResult.webshell = this._webshell;
+    }
+    if (this._whiteblackip) {
+      hasAnyValues = true;
+      internalValueResult.whiteblackip = this._whiteblackip;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafPolicyV1Options | undefined) {
+    if (value === undefined) {
+      this._antitamper = undefined;
+      this._cc = undefined;
+      this._common = undefined;
+      this._crawler = undefined;
+      this._crawlerEngine = undefined;
+      this._crawlerOther = undefined;
+      this._crawlerScanner = undefined;
+      this._crawlerScript = undefined;
+      this._custom = undefined;
+      this._ignore = undefined;
+      this._privacy = undefined;
+      this._webattack = undefined;
+      this._webshell = undefined;
+      this._whiteblackip = undefined;
+    }
+    else {
+      this._antitamper = value.antitamper;
+      this._cc = value.cc;
+      this._common = value.common;
+      this._crawler = value.crawler;
+      this._crawlerEngine = value.crawlerEngine;
+      this._crawlerOther = value.crawlerOther;
+      this._crawlerScanner = value.crawlerScanner;
+      this._crawlerScript = value.crawlerScript;
+      this._custom = value.custom;
+      this._ignore = value.ignore;
+      this._privacy = value.privacy;
+      this._webattack = value.webattack;
+      this._webshell = value.webshell;
+      this._whiteblackip = value.whiteblackip;
+    }
+  }
+
   // antitamper - computed: true, optional: true, required: false
-  private _antitamper?: boolean | cdktf.IResolvable | undefined; 
+  private _antitamper?: boolean | cdktf.IResolvable; 
   public get antitamper() {
     return this.getBooleanAttribute('antitamper') as any;
   }
-  public set antitamper(value: boolean | cdktf.IResolvable | undefined) {
+  public set antitamper(value: boolean | cdktf.IResolvable) {
     this._antitamper = value;
   }
   public resetAntitamper() {
@@ -187,15 +303,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get antitamperInput() {
-    return this._antitamper
+    return this._antitamper;
   }
 
   // cc - computed: true, optional: true, required: false
-  private _cc?: boolean | cdktf.IResolvable | undefined; 
+  private _cc?: boolean | cdktf.IResolvable; 
   public get cc() {
     return this.getBooleanAttribute('cc') as any;
   }
-  public set cc(value: boolean | cdktf.IResolvable | undefined) {
+  public set cc(value: boolean | cdktf.IResolvable) {
     this._cc = value;
   }
   public resetCc() {
@@ -203,15 +319,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get ccInput() {
-    return this._cc
+    return this._cc;
   }
 
   // common - computed: true, optional: true, required: false
-  private _common?: boolean | cdktf.IResolvable | undefined; 
+  private _common?: boolean | cdktf.IResolvable; 
   public get common() {
     return this.getBooleanAttribute('common') as any;
   }
-  public set common(value: boolean | cdktf.IResolvable | undefined) {
+  public set common(value: boolean | cdktf.IResolvable) {
     this._common = value;
   }
   public resetCommon() {
@@ -219,15 +335,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get commonInput() {
-    return this._common
+    return this._common;
   }
 
   // crawler - computed: true, optional: true, required: false
-  private _crawler?: boolean | cdktf.IResolvable | undefined; 
+  private _crawler?: boolean | cdktf.IResolvable; 
   public get crawler() {
     return this.getBooleanAttribute('crawler') as any;
   }
-  public set crawler(value: boolean | cdktf.IResolvable | undefined) {
+  public set crawler(value: boolean | cdktf.IResolvable) {
     this._crawler = value;
   }
   public resetCrawler() {
@@ -235,15 +351,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get crawlerInput() {
-    return this._crawler
+    return this._crawler;
   }
 
   // crawler_engine - computed: true, optional: true, required: false
-  private _crawlerEngine?: boolean | cdktf.IResolvable | undefined; 
+  private _crawlerEngine?: boolean | cdktf.IResolvable; 
   public get crawlerEngine() {
     return this.getBooleanAttribute('crawler_engine') as any;
   }
-  public set crawlerEngine(value: boolean | cdktf.IResolvable | undefined) {
+  public set crawlerEngine(value: boolean | cdktf.IResolvable) {
     this._crawlerEngine = value;
   }
   public resetCrawlerEngine() {
@@ -251,15 +367,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get crawlerEngineInput() {
-    return this._crawlerEngine
+    return this._crawlerEngine;
   }
 
   // crawler_other - computed: true, optional: true, required: false
-  private _crawlerOther?: boolean | cdktf.IResolvable | undefined; 
+  private _crawlerOther?: boolean | cdktf.IResolvable; 
   public get crawlerOther() {
     return this.getBooleanAttribute('crawler_other') as any;
   }
-  public set crawlerOther(value: boolean | cdktf.IResolvable | undefined) {
+  public set crawlerOther(value: boolean | cdktf.IResolvable) {
     this._crawlerOther = value;
   }
   public resetCrawlerOther() {
@@ -267,15 +383,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get crawlerOtherInput() {
-    return this._crawlerOther
+    return this._crawlerOther;
   }
 
   // crawler_scanner - computed: true, optional: true, required: false
-  private _crawlerScanner?: boolean | cdktf.IResolvable | undefined; 
+  private _crawlerScanner?: boolean | cdktf.IResolvable; 
   public get crawlerScanner() {
     return this.getBooleanAttribute('crawler_scanner') as any;
   }
-  public set crawlerScanner(value: boolean | cdktf.IResolvable | undefined) {
+  public set crawlerScanner(value: boolean | cdktf.IResolvable) {
     this._crawlerScanner = value;
   }
   public resetCrawlerScanner() {
@@ -283,15 +399,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get crawlerScannerInput() {
-    return this._crawlerScanner
+    return this._crawlerScanner;
   }
 
   // crawler_script - computed: true, optional: true, required: false
-  private _crawlerScript?: boolean | cdktf.IResolvable | undefined; 
+  private _crawlerScript?: boolean | cdktf.IResolvable; 
   public get crawlerScript() {
     return this.getBooleanAttribute('crawler_script') as any;
   }
-  public set crawlerScript(value: boolean | cdktf.IResolvable | undefined) {
+  public set crawlerScript(value: boolean | cdktf.IResolvable) {
     this._crawlerScript = value;
   }
   public resetCrawlerScript() {
@@ -299,15 +415,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get crawlerScriptInput() {
-    return this._crawlerScript
+    return this._crawlerScript;
   }
 
   // custom - computed: true, optional: true, required: false
-  private _custom?: boolean | cdktf.IResolvable | undefined; 
+  private _custom?: boolean | cdktf.IResolvable; 
   public get custom() {
     return this.getBooleanAttribute('custom') as any;
   }
-  public set custom(value: boolean | cdktf.IResolvable | undefined) {
+  public set custom(value: boolean | cdktf.IResolvable) {
     this._custom = value;
   }
   public resetCustom() {
@@ -315,15 +431,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get customInput() {
-    return this._custom
+    return this._custom;
   }
 
   // ignore - computed: true, optional: true, required: false
-  private _ignore?: boolean | cdktf.IResolvable | undefined; 
+  private _ignore?: boolean | cdktf.IResolvable; 
   public get ignore() {
     return this.getBooleanAttribute('ignore') as any;
   }
-  public set ignore(value: boolean | cdktf.IResolvable | undefined) {
+  public set ignore(value: boolean | cdktf.IResolvable) {
     this._ignore = value;
   }
   public resetIgnore() {
@@ -331,15 +447,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get ignoreInput() {
-    return this._ignore
+    return this._ignore;
   }
 
   // privacy - computed: true, optional: true, required: false
-  private _privacy?: boolean | cdktf.IResolvable | undefined; 
+  private _privacy?: boolean | cdktf.IResolvable; 
   public get privacy() {
     return this.getBooleanAttribute('privacy') as any;
   }
-  public set privacy(value: boolean | cdktf.IResolvable | undefined) {
+  public set privacy(value: boolean | cdktf.IResolvable) {
     this._privacy = value;
   }
   public resetPrivacy() {
@@ -347,15 +463,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get privacyInput() {
-    return this._privacy
+    return this._privacy;
   }
 
   // webattack - computed: true, optional: true, required: false
-  private _webattack?: boolean | cdktf.IResolvable | undefined; 
+  private _webattack?: boolean | cdktf.IResolvable; 
   public get webattack() {
     return this.getBooleanAttribute('webattack') as any;
   }
-  public set webattack(value: boolean | cdktf.IResolvable | undefined) {
+  public set webattack(value: boolean | cdktf.IResolvable) {
     this._webattack = value;
   }
   public resetWebattack() {
@@ -363,15 +479,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get webattackInput() {
-    return this._webattack
+    return this._webattack;
   }
 
   // webshell - computed: true, optional: true, required: false
-  private _webshell?: boolean | cdktf.IResolvable | undefined; 
+  private _webshell?: boolean | cdktf.IResolvable; 
   public get webshell() {
     return this.getBooleanAttribute('webshell') as any;
   }
-  public set webshell(value: boolean | cdktf.IResolvable | undefined) {
+  public set webshell(value: boolean | cdktf.IResolvable) {
     this._webshell = value;
   }
   public resetWebshell() {
@@ -379,15 +495,15 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get webshellInput() {
-    return this._webshell
+    return this._webshell;
   }
 
   // whiteblackip - computed: true, optional: true, required: false
-  private _whiteblackip?: boolean | cdktf.IResolvable | undefined; 
+  private _whiteblackip?: boolean | cdktf.IResolvable; 
   public get whiteblackip() {
     return this.getBooleanAttribute('whiteblackip') as any;
   }
-  public set whiteblackip(value: boolean | cdktf.IResolvable | undefined) {
+  public set whiteblackip(value: boolean | cdktf.IResolvable) {
     this._whiteblackip = value;
   }
   public resetWhiteblackip() {
@@ -395,7 +511,7 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get whiteblackipInput() {
-    return this._whiteblackip
+    return this._whiteblackip;
   }
 }
 export interface WafPolicyV1Timeouts {
@@ -409,7 +525,7 @@ export interface WafPolicyV1Timeouts {
   readonly delete?: string;
 }
 
-function wafPolicyV1TimeoutsToTerraform(struct?: WafPolicyV1TimeoutsOutputReference | WafPolicyV1Timeouts): any {
+export function wafPolicyV1TimeoutsToTerraform(struct?: WafPolicyV1TimeoutsOutputReference | WafPolicyV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -430,12 +546,37 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafPolicyV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafPolicyV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -443,15 +584,15 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -459,7 +600,7 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -499,9 +640,9 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
     this._hosts = config.hosts;
     this._level = config.level;
     this._name = config.name;
-    this._action = config.action;
-    this._options = config.options;
-    this._timeouts = config.timeouts;
+    this._action.internalValue = config.action;
+    this._options.internalValue = config.options;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -509,11 +650,11 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   // ==========
 
   // full_detection - computed: true, optional: true, required: false
-  private _fullDetection?: boolean | cdktf.IResolvable | undefined; 
+  private _fullDetection?: boolean | cdktf.IResolvable; 
   public get fullDetection() {
     return this.getBooleanAttribute('full_detection') as any;
   }
-  public set fullDetection(value: boolean | cdktf.IResolvable | undefined) {
+  public set fullDetection(value: boolean | cdktf.IResolvable) {
     this._fullDetection = value;
   }
   public resetFullDetection() {
@@ -521,15 +662,15 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fullDetectionInput() {
-    return this._fullDetection
+    return this._fullDetection;
   }
 
   // hosts - computed: true, optional: true, required: false
-  private _hosts?: string[] | undefined; 
+  private _hosts?: string[]; 
   public get hosts() {
     return this.getListAttribute('hosts');
   }
-  public set hosts(value: string[] | undefined) {
+  public set hosts(value: string[]) {
     this._hosts = value;
   }
   public resetHosts() {
@@ -537,7 +678,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostsInput() {
-    return this._hosts
+    return this._hosts;
   }
 
   // id - computed: true, optional: true, required: false
@@ -546,11 +687,11 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
 
   // level - computed: true, optional: true, required: false
-  private _level?: number | undefined; 
+  private _level?: number; 
   public get level() {
     return this.getNumberAttribute('level');
   }
-  public set level(value: number | undefined) {
+  public set level(value: number) {
     this._level = value;
   }
   public resetLevel() {
@@ -558,7 +699,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get levelInput() {
-    return this._level
+    return this._level;
   }
 
   // name - computed: false, optional: false, required: true
@@ -571,58 +712,55 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // action - computed: false, optional: true, required: false
-  private _action?: WafPolicyV1Action | undefined; 
-  private __actionOutput = new WafPolicyV1ActionOutputReference(this as any, "action", true);
+  private _action = new WafPolicyV1ActionOutputReference(this as any, "action", true);
   public get action() {
-    return this.__actionOutput;
+    return this._action;
   }
-  public putAction(value: WafPolicyV1Action | undefined) {
-    this._action = value;
+  public putAction(value: WafPolicyV1Action) {
+    this._action.internalValue = value;
   }
   public resetAction() {
-    this._action = undefined;
+    this._action.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action.internalValue;
   }
 
   // options - computed: false, optional: true, required: false
-  private _options?: WafPolicyV1Options | undefined; 
-  private __optionsOutput = new WafPolicyV1OptionsOutputReference(this as any, "options", true);
+  private _options = new WafPolicyV1OptionsOutputReference(this as any, "options", true);
   public get options() {
-    return this.__optionsOutput;
+    return this._options;
   }
-  public putOptions(value: WafPolicyV1Options | undefined) {
-    this._options = value;
+  public putOptions(value: WafPolicyV1Options) {
+    this._options.internalValue = value;
   }
   public resetOptions() {
-    this._options = undefined;
+    this._options.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get optionsInput() {
-    return this._options
+    return this._options.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: WafPolicyV1Timeouts | undefined; 
-  private __timeoutsOutput = new WafPolicyV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafPolicyV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: WafPolicyV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: WafPolicyV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -635,9 +773,9 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
       hosts: cdktf.listMapper(cdktf.stringToTerraform)(this._hosts),
       level: cdktf.numberToTerraform(this._level),
       name: cdktf.stringToTerraform(this._name),
-      action: wafPolicyV1ActionToTerraform(this._action),
-      options: wafPolicyV1OptionsToTerraform(this._options),
-      timeouts: wafPolicyV1TimeoutsToTerraform(this._timeouts),
+      action: wafPolicyV1ActionToTerraform(this._action.internalValue),
+      options: wafPolicyV1OptionsToTerraform(this._options.internalValue),
+      timeouts: wafPolicyV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

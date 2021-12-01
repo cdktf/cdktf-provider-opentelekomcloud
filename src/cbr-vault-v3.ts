@@ -87,7 +87,7 @@ export interface CbrVaultV3Resource {
   readonly type?: string;
 }
 
-function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource): any {
+export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -154,7 +154,7 @@ export interface CbrVaultV3Billing {
   readonly size: number;
 }
 
-function cbrVaultV3BillingToTerraform(struct?: CbrVaultV3BillingOutputReference | CbrVaultV3Billing): any {
+export function cbrVaultV3BillingToTerraform(struct?: CbrVaultV3BillingOutputReference | CbrVaultV3Billing): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -185,12 +185,97 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CbrVaultV3Billing | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._chargingMode) {
+      hasAnyValues = true;
+      internalValueResult.chargingMode = this._chargingMode;
+    }
+    if (this._cloudType) {
+      hasAnyValues = true;
+      internalValueResult.cloudType = this._cloudType;
+    }
+    if (this._consistentLevel) {
+      hasAnyValues = true;
+      internalValueResult.consistentLevel = this._consistentLevel;
+    }
+    if (this._consoleUrl) {
+      hasAnyValues = true;
+      internalValueResult.consoleUrl = this._consoleUrl;
+    }
+    if (this._extraInfo) {
+      hasAnyValues = true;
+      internalValueResult.extraInfo = this._extraInfo;
+    }
+    if (this._isAutoPay) {
+      hasAnyValues = true;
+      internalValueResult.isAutoPay = this._isAutoPay;
+    }
+    if (this._isAutoRenew) {
+      hasAnyValues = true;
+      internalValueResult.isAutoRenew = this._isAutoRenew;
+    }
+    if (this._objectType) {
+      hasAnyValues = true;
+      internalValueResult.objectType = this._objectType;
+    }
+    if (this._periodNum) {
+      hasAnyValues = true;
+      internalValueResult.periodNum = this._periodNum;
+    }
+    if (this._periodType) {
+      hasAnyValues = true;
+      internalValueResult.periodType = this._periodType;
+    }
+    if (this._protectType) {
+      hasAnyValues = true;
+      internalValueResult.protectType = this._protectType;
+    }
+    if (this._size) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CbrVaultV3Billing | undefined) {
+    if (value === undefined) {
+      this._chargingMode = undefined;
+      this._cloudType = undefined;
+      this._consistentLevel = undefined;
+      this._consoleUrl = undefined;
+      this._extraInfo = undefined;
+      this._isAutoPay = undefined;
+      this._isAutoRenew = undefined;
+      this._objectType = undefined;
+      this._periodNum = undefined;
+      this._periodType = undefined;
+      this._protectType = undefined;
+      this._size = undefined;
+    }
+    else {
+      this._chargingMode = value.chargingMode;
+      this._cloudType = value.cloudType;
+      this._consistentLevel = value.consistentLevel;
+      this._consoleUrl = value.consoleUrl;
+      this._extraInfo = value.extraInfo;
+      this._isAutoPay = value.isAutoPay;
+      this._isAutoRenew = value.isAutoRenew;
+      this._objectType = value.objectType;
+      this._periodNum = value.periodNum;
+      this._periodType = value.periodType;
+      this._protectType = value.protectType;
+      this._size = value.size;
+    }
+  }
+
   // charging_mode - computed: false, optional: true, required: false
-  private _chargingMode?: string | undefined; 
+  private _chargingMode?: string; 
   public get chargingMode() {
     return this.getStringAttribute('charging_mode');
   }
-  public set chargingMode(value: string | undefined) {
+  public set chargingMode(value: string) {
     this._chargingMode = value;
   }
   public resetChargingMode() {
@@ -198,15 +283,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get chargingModeInput() {
-    return this._chargingMode
+    return this._chargingMode;
   }
 
   // cloud_type - computed: false, optional: true, required: false
-  private _cloudType?: string | undefined; 
+  private _cloudType?: string; 
   public get cloudType() {
     return this.getStringAttribute('cloud_type');
   }
-  public set cloudType(value: string | undefined) {
+  public set cloudType(value: string) {
     this._cloudType = value;
   }
   public resetCloudType() {
@@ -214,15 +299,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get cloudTypeInput() {
-    return this._cloudType
+    return this._cloudType;
   }
 
   // consistent_level - computed: false, optional: true, required: false
-  private _consistentLevel?: string | undefined; 
+  private _consistentLevel?: string; 
   public get consistentLevel() {
     return this.getStringAttribute('consistent_level');
   }
-  public set consistentLevel(value: string | undefined) {
+  public set consistentLevel(value: string) {
     this._consistentLevel = value;
   }
   public resetConsistentLevel() {
@@ -230,15 +315,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get consistentLevelInput() {
-    return this._consistentLevel
+    return this._consistentLevel;
   }
 
   // console_url - computed: false, optional: true, required: false
-  private _consoleUrl?: string | undefined; 
+  private _consoleUrl?: string; 
   public get consoleUrl() {
     return this.getStringAttribute('console_url');
   }
-  public set consoleUrl(value: string | undefined) {
+  public set consoleUrl(value: string) {
     this._consoleUrl = value;
   }
   public resetConsoleUrl() {
@@ -246,16 +331,16 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get consoleUrlInput() {
-    return this._consoleUrl
+    return this._consoleUrl;
   }
 
   // extra_info - computed: false, optional: true, required: false
-  private _extraInfo?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _extraInfo?: { [key: string]: string } | cdktf.IResolvable; 
   public get extraInfo() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('extra_info') as any;
   }
-  public set extraInfo(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set extraInfo(value: { [key: string]: string } | cdktf.IResolvable) {
     this._extraInfo = value;
   }
   public resetExtraInfo() {
@@ -263,15 +348,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get extraInfoInput() {
-    return this._extraInfo
+    return this._extraInfo;
   }
 
   // is_auto_pay - computed: false, optional: true, required: false
-  private _isAutoPay?: boolean | cdktf.IResolvable | undefined; 
+  private _isAutoPay?: boolean | cdktf.IResolvable; 
   public get isAutoPay() {
     return this.getBooleanAttribute('is_auto_pay') as any;
   }
-  public set isAutoPay(value: boolean | cdktf.IResolvable | undefined) {
+  public set isAutoPay(value: boolean | cdktf.IResolvable) {
     this._isAutoPay = value;
   }
   public resetIsAutoPay() {
@@ -279,15 +364,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get isAutoPayInput() {
-    return this._isAutoPay
+    return this._isAutoPay;
   }
 
   // is_auto_renew - computed: false, optional: true, required: false
-  private _isAutoRenew?: boolean | cdktf.IResolvable | undefined; 
+  private _isAutoRenew?: boolean | cdktf.IResolvable; 
   public get isAutoRenew() {
     return this.getBooleanAttribute('is_auto_renew') as any;
   }
-  public set isAutoRenew(value: boolean | cdktf.IResolvable | undefined) {
+  public set isAutoRenew(value: boolean | cdktf.IResolvable) {
     this._isAutoRenew = value;
   }
   public resetIsAutoRenew() {
@@ -295,7 +380,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get isAutoRenewInput() {
-    return this._isAutoRenew
+    return this._isAutoRenew;
   }
 
   // object_type - computed: false, optional: false, required: true
@@ -308,15 +393,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get objectTypeInput() {
-    return this._objectType
+    return this._objectType;
   }
 
   // period_num - computed: false, optional: true, required: false
-  private _periodNum?: number | undefined; 
+  private _periodNum?: number; 
   public get periodNum() {
     return this.getNumberAttribute('period_num');
   }
-  public set periodNum(value: number | undefined) {
+  public set periodNum(value: number) {
     this._periodNum = value;
   }
   public resetPeriodNum() {
@@ -324,15 +409,15 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get periodNumInput() {
-    return this._periodNum
+    return this._periodNum;
   }
 
   // period_type - computed: false, optional: true, required: false
-  private _periodType?: string | undefined; 
+  private _periodType?: string; 
   public get periodType() {
     return this.getStringAttribute('period_type');
   }
-  public set periodType(value: string | undefined) {
+  public set periodType(value: string) {
     this._periodType = value;
   }
   public resetPeriodType() {
@@ -340,7 +425,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get periodTypeInput() {
-    return this._periodType
+    return this._periodType;
   }
 
   // protect_type - computed: false, optional: false, required: true
@@ -353,7 +438,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get protectTypeInput() {
-    return this._protectType
+    return this._protectType;
   }
 
   // size - computed: false, optional: false, required: true
@@ -366,7 +451,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 }
 export interface CbrVaultV3BindRules {
@@ -380,7 +465,7 @@ export interface CbrVaultV3BindRules {
   readonly value: string;
 }
 
-function cbrVaultV3BindRulesToTerraform(struct?: CbrVaultV3BindRules): any {
+export function cbrVaultV3BindRulesToTerraform(struct?: CbrVaultV3BindRules): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -432,7 +517,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     this._name = config.name;
     this._resource = config.resource;
     this._tags = config.tags;
-    this._billing = config.billing;
+    this._billing.internalValue = config.billing;
     this._bindRules = config.bindRules;
   }
 
@@ -441,11 +526,11 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   // ==========
 
   // auto_bind - computed: true, optional: true, required: false
-  private _autoBind?: boolean | cdktf.IResolvable | undefined; 
+  private _autoBind?: boolean | cdktf.IResolvable; 
   public get autoBind() {
     return this.getBooleanAttribute('auto_bind') as any;
   }
-  public set autoBind(value: boolean | cdktf.IResolvable | undefined) {
+  public set autoBind(value: boolean | cdktf.IResolvable) {
     this._autoBind = value;
   }
   public resetAutoBind() {
@@ -453,15 +538,15 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get autoBindInput() {
-    return this._autoBind
+    return this._autoBind;
   }
 
   // auto_expand - computed: true, optional: true, required: false
-  private _autoExpand?: boolean | cdktf.IResolvable | undefined; 
+  private _autoExpand?: boolean | cdktf.IResolvable; 
   public get autoExpand() {
     return this.getBooleanAttribute('auto_expand') as any;
   }
-  public set autoExpand(value: boolean | cdktf.IResolvable | undefined) {
+  public set autoExpand(value: boolean | cdktf.IResolvable) {
     this._autoExpand = value;
   }
   public resetAutoExpand() {
@@ -469,15 +554,15 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get autoExpandInput() {
-    return this._autoExpand
+    return this._autoExpand;
   }
 
   // backup_policy_id - computed: false, optional: true, required: false
-  private _backupPolicyId?: string | undefined; 
+  private _backupPolicyId?: string; 
   public get backupPolicyId() {
     return this.getStringAttribute('backup_policy_id');
   }
-  public set backupPolicyId(value: string | undefined) {
+  public set backupPolicyId(value: string) {
     this._backupPolicyId = value;
   }
   public resetBackupPolicyId() {
@@ -485,7 +570,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupPolicyIdInput() {
-    return this._backupPolicyId
+    return this._backupPolicyId;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -494,11 +579,11 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -506,15 +591,15 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enterprise_project_id - computed: true, optional: true, required: false
-  private _enterpriseProjectId?: string | undefined; 
+  private _enterpriseProjectId?: string; 
   public get enterpriseProjectId() {
     return this.getStringAttribute('enterprise_project_id');
   }
-  public set enterpriseProjectId(value: string | undefined) {
+  public set enterpriseProjectId(value: string) {
     this._enterpriseProjectId = value;
   }
   public resetEnterpriseProjectId() {
@@ -522,7 +607,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enterpriseProjectIdInput() {
-    return this._enterpriseProjectId
+    return this._enterpriseProjectId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -540,7 +625,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_id - computed: true, optional: false, required: false
@@ -554,12 +639,12 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // resource - computed: true, optional: true, required: false
-  private _resource?: CbrVaultV3Resource[] | undefined; 
+  private _resource?: CbrVaultV3Resource[]; 
   public get resource() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('resource') as any;
   }
-  public set resource(value: CbrVaultV3Resource[] | undefined) {
+  public set resource(value: CbrVaultV3Resource[]) {
     this._resource = value;
   }
   public resetResource() {
@@ -567,16 +652,16 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceInput() {
-    return this._resource
+    return this._resource;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -584,7 +669,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // user_id - computed: true, optional: false, required: false
@@ -593,26 +678,25 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // billing - computed: false, optional: false, required: true
-  private _billing?: CbrVaultV3Billing; 
-  private __billingOutput = new CbrVaultV3BillingOutputReference(this as any, "billing", true);
+  private _billing = new CbrVaultV3BillingOutputReference(this as any, "billing", true);
   public get billing() {
-    return this.__billingOutput;
+    return this._billing;
   }
   public putBilling(value: CbrVaultV3Billing) {
-    this._billing = value;
+    this._billing.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get billingInput() {
-    return this._billing
+    return this._billing.internalValue;
   }
 
   // bind_rules - computed: false, optional: true, required: false
-  private _bindRules?: CbrVaultV3BindRules[] | undefined; 
+  private _bindRules?: CbrVaultV3BindRules[]; 
   public get bindRules() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('bind_rules') as any;
   }
-  public set bindRules(value: CbrVaultV3BindRules[] | undefined) {
+  public set bindRules(value: CbrVaultV3BindRules[]) {
     this._bindRules = value;
   }
   public resetBindRules() {
@@ -620,7 +704,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bindRulesInput() {
-    return this._bindRules
+    return this._bindRules;
   }
 
   // =========
@@ -637,7 +721,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       resource: cdktf.listMapper(cbrVaultV3ResourceToTerraform)(this._resource),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      billing: cbrVaultV3BillingToTerraform(this._billing),
+      billing: cbrVaultV3BillingToTerraform(this._billing.internalValue),
       bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform)(this._bindRules),
     };
   }

@@ -73,11 +73,11 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -85,15 +85,15 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -101,7 +101,7 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -110,11 +110,11 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -122,7 +122,7 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // password_expires_at - computed: true, optional: false, required: false
@@ -131,11 +131,11 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
 
   // region - computed: false, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -143,7 +143,7 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

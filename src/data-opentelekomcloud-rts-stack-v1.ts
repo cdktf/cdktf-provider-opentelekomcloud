@@ -82,7 +82,7 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // notification_topics - computed: true, optional: false, required: false
@@ -101,11 +101,11 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -113,7 +113,7 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: false, required: false

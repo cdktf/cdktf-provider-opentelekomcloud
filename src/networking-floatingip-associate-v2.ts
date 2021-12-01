@@ -72,7 +72,7 @@ export class NetworkingFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpInput() {
-    return this._floatingIp
+    return this._floatingIp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,15 +90,15 @@ export class NetworkingFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -106,7 +106,7 @@ export class NetworkingFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

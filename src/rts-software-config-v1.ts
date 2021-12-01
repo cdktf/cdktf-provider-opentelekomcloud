@@ -53,7 +53,7 @@ export interface RtsSoftwareConfigV1Timeouts {
   readonly delete?: string;
 }
 
-function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1TimeoutsOutputReference | RtsSoftwareConfigV1Timeouts): any {
+export function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1TimeoutsOutputReference | RtsSoftwareConfigV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -74,12 +74,37 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RtsSoftwareConfigV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RtsSoftwareConfigV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -87,15 +112,15 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -103,7 +128,7 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -146,7 +171,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
     this._options = config.options;
     this._outputValues = config.outputValues;
     this._region = config.region;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -154,11 +179,11 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   // ==========
 
   // config - computed: false, optional: true, required: false
-  private _config?: string | undefined; 
+  private _config?: string; 
   public get config() {
     return this.getStringAttribute('config');
   }
-  public set config(value: string | undefined) {
+  public set config(value: string) {
     this._config = value;
   }
   public resetConfig() {
@@ -166,15 +191,15 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get configInput() {
-    return this._config
+    return this._config;
   }
 
   // group - computed: false, optional: true, required: false
-  private _group?: string | undefined; 
+  private _group?: string; 
   public get group() {
     return this.getStringAttribute('group');
   }
-  public set group(value: string | undefined) {
+  public set group(value: string) {
     this._group = value;
   }
   public resetGroup() {
@@ -182,7 +207,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupInput() {
-    return this._group
+    return this._group;
   }
 
   // id - computed: true, optional: true, required: false
@@ -191,12 +216,12 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
 
   // input_values - computed: false, optional: true, required: false
-  private _inputValues?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _inputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get inputValues() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('input_values') as any;
   }
-  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._inputValues = value;
   }
   public resetInputValues() {
@@ -204,7 +229,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get inputValuesInput() {
-    return this._inputValues
+    return this._inputValues;
   }
 
   // name - computed: false, optional: false, required: true
@@ -217,16 +242,16 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // options - computed: false, optional: true, required: false
-  private _options?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _options?: { [key: string]: string } | cdktf.IResolvable; 
   public get options() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('options') as any;
   }
-  public set options(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set options(value: { [key: string]: string } | cdktf.IResolvable) {
     this._options = value;
   }
   public resetOptions() {
@@ -234,16 +259,16 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get optionsInput() {
-    return this._options
+    return this._options;
   }
 
   // output_values - computed: false, optional: true, required: false
-  private _outputValues?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _outputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get outputValues() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('output_values') as any;
   }
-  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._outputValues = value;
   }
   public resetOutputValues() {
@@ -251,15 +276,15 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get outputValuesInput() {
-    return this._outputValues
+    return this._outputValues;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -267,24 +292,23 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: RtsSoftwareConfigV1Timeouts | undefined; 
-  private __timeoutsOutput = new RtsSoftwareConfigV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsSoftwareConfigV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: RtsSoftwareConfigV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: RtsSoftwareConfigV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -300,7 +324,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
       options: cdktf.hashMapper(cdktf.anyToTerraform)(this._options),
       output_values: cdktf.listMapper(cdktf.hashMapper(cdktf.anyToTerraform))(this._outputValues),
       region: cdktf.stringToTerraform(this._region),
-      timeouts: rtsSoftwareConfigV1TimeoutsToTerraform(this._timeouts),
+      timeouts: rtsSoftwareConfigV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

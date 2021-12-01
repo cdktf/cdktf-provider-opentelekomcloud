@@ -39,7 +39,7 @@ export interface CceAddonV3Timeouts {
   readonly delete?: string;
 }
 
-function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3TimeoutsOutputReference | CceAddonV3Timeouts): any {
+export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3TimeoutsOutputReference | CceAddonV3Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -59,12 +59,31 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CceAddonV3Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceAddonV3Timeouts | undefined) {
+    if (value === undefined) {
+      this._delete = undefined;
+    }
+    else {
+      this._delete = value.delete;
+    }
+  }
+
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -72,7 +91,7 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 export interface CceAddonV3Values {
@@ -86,7 +105,7 @@ export interface CceAddonV3Values {
   readonly custom: { [key: string]: string } | cdktf.IResolvable;
 }
 
-function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputReference | CceAddonV3Values): any {
+export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputReference | CceAddonV3Values): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -107,6 +126,31 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CceAddonV3Values | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._basic) {
+      hasAnyValues = true;
+      internalValueResult.basic = this._basic;
+    }
+    if (this._custom) {
+      hasAnyValues = true;
+      internalValueResult.custom = this._custom;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceAddonV3Values | undefined) {
+    if (value === undefined) {
+      this._basic = undefined;
+      this._custom = undefined;
+    }
+    else {
+      this._basic = value.basic;
+      this._custom = value.custom;
+    }
+  }
+
   // basic - computed: false, optional: false, required: true
   private _basic?: { [key: string]: string } | cdktf.IResolvable; 
   public get basic() {
@@ -118,7 +162,7 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get basicInput() {
-    return this._basic
+    return this._basic;
   }
 
   // custom - computed: false, optional: false, required: true
@@ -132,7 +176,7 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get customInput() {
-    return this._custom
+    return this._custom;
   }
 }
 
@@ -171,8 +215,8 @@ export class CceAddonV3 extends cdktf.TerraformResource {
     this._clusterId = config.clusterId;
     this._templateName = config.templateName;
     this._templateVersion = config.templateVersion;
-    this._timeouts = config.timeouts;
-    this._values = config.values;
+    this._timeouts.internalValue = config.timeouts;
+    this._values.internalValue = config.values;
   }
 
   // ==========
@@ -189,7 +233,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
-    return this._clusterId
+    return this._clusterId;
   }
 
   // description - computed: true, optional: false, required: false
@@ -217,7 +261,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateNameInput() {
-    return this._templateName
+    return this._templateName;
   }
 
   // template_version - computed: false, optional: false, required: true
@@ -230,38 +274,36 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateVersionInput() {
-    return this._templateVersion
+    return this._templateVersion;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CceAddonV3Timeouts | undefined; 
-  private __timeoutsOutput = new CceAddonV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CceAddonV3TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CceAddonV3Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CceAddonV3Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // values - computed: false, optional: false, required: true
-  private _values?: CceAddonV3Values; 
-  private __valuesOutput = new CceAddonV3ValuesOutputReference(this as any, "values", true);
+  private _values = new CceAddonV3ValuesOutputReference(this as any, "values", true);
   public get values() {
-    return this.__valuesOutput;
+    return this._values;
   }
   public putValues(value: CceAddonV3Values) {
-    this._values = value;
+    this._values.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get valuesInput() {
-    return this._values
+    return this._values.internalValue;
   }
 
   // =========
@@ -273,8 +315,8 @@ export class CceAddonV3 extends cdktf.TerraformResource {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       template_name: cdktf.stringToTerraform(this._templateName),
       template_version: cdktf.stringToTerraform(this._templateVersion),
-      timeouts: cceAddonV3TimeoutsToTerraform(this._timeouts),
-      values: cceAddonV3ValuesToTerraform(this._values),
+      timeouts: cceAddonV3TimeoutsToTerraform(this._timeouts.internalValue),
+      values: cceAddonV3ValuesToTerraform(this._values.internalValue),
     };
   }
 }

@@ -83,11 +83,11 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
 
   // physical_resource_id - computed: false, optional: true, required: false
-  private _physicalResourceId?: string | undefined; 
+  private _physicalResourceId?: string; 
   public get physicalResourceId() {
     return this.getStringAttribute('physical_resource_id');
   }
-  public set physicalResourceId(value: string | undefined) {
+  public set physicalResourceId(value: string) {
     this._physicalResourceId = value;
   }
   public resetPhysicalResourceId() {
@@ -95,15 +95,15 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get physicalResourceIdInput() {
-    return this._physicalResourceId
+    return this._physicalResourceId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -111,7 +111,7 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // required_by - computed: true, optional: false, required: false
@@ -120,11 +120,11 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
 
   // resource_name - computed: false, optional: true, required: false
-  private _resourceName?: string | undefined; 
+  private _resourceName?: string; 
   public get resourceName() {
     return this.getStringAttribute('resource_name');
   }
-  public set resourceName(value: string | undefined) {
+  public set resourceName(value: string) {
     this._resourceName = value;
   }
   public resetResourceName() {
@@ -132,7 +132,7 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get resourceNameInput() {
-    return this._resourceName
+    return this._resourceName;
   }
 
   // resource_status - computed: true, optional: false, required: false
@@ -146,11 +146,11 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
 
   // resource_type - computed: false, optional: true, required: false
-  private _resourceType?: string | undefined; 
+  private _resourceType?: string; 
   public get resourceType() {
     return this.getStringAttribute('resource_type');
   }
-  public set resourceType(value: string | undefined) {
+  public set resourceType(value: string) {
     this._resourceType = value;
   }
   public resetResourceType() {
@@ -158,7 +158,7 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeInput() {
-    return this._resourceType
+    return this._resourceType;
   }
 
   // stack_name - computed: false, optional: false, required: true
@@ -171,7 +171,7 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get stackNameInput() {
-    return this._stackName
+    return this._stackName;
   }
 
   // =========

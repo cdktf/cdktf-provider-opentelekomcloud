@@ -77,7 +77,7 @@ export class IdentityMappingV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mappingIdInput() {
-    return this._mappingId
+    return this._mappingId;
   }
 
   // rules - computed: false, optional: false, required: true
@@ -90,7 +90,7 @@ export class IdentityMappingV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules
+    return this._rules;
   }
 
   // =========

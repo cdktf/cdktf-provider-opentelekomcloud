@@ -169,11 +169,11 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -181,7 +181,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // provider_id - computed: true, optional: false, required: false
@@ -190,11 +190,11 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -202,7 +202,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // resource - computed: true, optional: false, required: false
@@ -216,11 +216,11 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -228,7 +228,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: true, optional: false, required: false

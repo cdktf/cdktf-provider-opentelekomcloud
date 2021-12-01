@@ -65,7 +65,7 @@ export interface CtsTrackerV1Timeouts {
   readonly delete?: string;
 }
 
-function ctsTrackerV1TimeoutsToTerraform(struct?: CtsTrackerV1TimeoutsOutputReference | CtsTrackerV1Timeouts): any {
+export function ctsTrackerV1TimeoutsToTerraform(struct?: CtsTrackerV1TimeoutsOutputReference | CtsTrackerV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -86,12 +86,37 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CtsTrackerV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CtsTrackerV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -99,15 +124,15 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -115,7 +140,7 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -161,7 +186,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
     this._region = config.region;
     this._status = config.status;
     this._topicId = config.topicId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -178,15 +203,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bucketNameInput() {
-    return this._bucketName
+    return this._bucketName;
   }
 
   // file_prefix_name - computed: true, optional: true, required: false
-  private _filePrefixName?: string | undefined; 
+  private _filePrefixName?: string; 
   public get filePrefixName() {
     return this.getStringAttribute('file_prefix_name');
   }
-  public set filePrefixName(value: string | undefined) {
+  public set filePrefixName(value: string) {
     this._filePrefixName = value;
   }
   public resetFilePrefixName() {
@@ -194,7 +219,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filePrefixNameInput() {
-    return this._filePrefixName
+    return this._filePrefixName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -203,11 +228,11 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
 
   // is_send_all_key_operation - computed: false, optional: true, required: false
-  private _isSendAllKeyOperation?: boolean | cdktf.IResolvable | undefined; 
+  private _isSendAllKeyOperation?: boolean | cdktf.IResolvable; 
   public get isSendAllKeyOperation() {
     return this.getBooleanAttribute('is_send_all_key_operation') as any;
   }
-  public set isSendAllKeyOperation(value: boolean | cdktf.IResolvable | undefined) {
+  public set isSendAllKeyOperation(value: boolean | cdktf.IResolvable) {
     this._isSendAllKeyOperation = value;
   }
   public resetIsSendAllKeyOperation() {
@@ -215,7 +240,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isSendAllKeyOperationInput() {
-    return this._isSendAllKeyOperation
+    return this._isSendAllKeyOperation;
   }
 
   // is_support_smn - computed: false, optional: false, required: true
@@ -228,15 +253,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isSupportSmnInput() {
-    return this._isSupportSmn
+    return this._isSupportSmn;
   }
 
   // need_notify_user_list - computed: true, optional: true, required: false
-  private _needNotifyUserList?: string[] | undefined; 
+  private _needNotifyUserList?: string[]; 
   public get needNotifyUserList() {
     return this.getListAttribute('need_notify_user_list');
   }
-  public set needNotifyUserList(value: string[] | undefined) {
+  public set needNotifyUserList(value: string[]) {
     this._needNotifyUserList = value;
   }
   public resetNeedNotifyUserList() {
@@ -244,15 +269,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get needNotifyUserListInput() {
-    return this._needNotifyUserList
+    return this._needNotifyUserList;
   }
 
   // operations - computed: false, optional: true, required: false
-  private _operations?: string[] | undefined; 
+  private _operations?: string[]; 
   public get operations() {
     return this.getListAttribute('operations');
   }
-  public set operations(value: string[] | undefined) {
+  public set operations(value: string[]) {
     this._operations = value;
   }
   public resetOperations() {
@@ -260,15 +285,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get operationsInput() {
-    return this._operations
+    return this._operations;
   }
 
   // project_name - computed: true, optional: true, required: false
-  private _projectName?: string | undefined; 
+  private _projectName?: string; 
   public get projectName() {
     return this.getStringAttribute('project_name');
   }
-  public set projectName(value: string | undefined) {
+  public set projectName(value: string) {
     this._projectName = value;
   }
   public resetProjectName() {
@@ -276,15 +301,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectNameInput() {
-    return this._projectName
+    return this._projectName;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -292,15 +317,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -308,15 +333,15 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // topic_id - computed: false, optional: true, required: false
-  private _topicId?: string | undefined; 
+  private _topicId?: string; 
   public get topicId() {
     return this.getStringAttribute('topic_id');
   }
-  public set topicId(value: string | undefined) {
+  public set topicId(value: string) {
     this._topicId = value;
   }
   public resetTopicId() {
@@ -324,7 +349,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicIdInput() {
-    return this._topicId
+    return this._topicId;
   }
 
   // tracker_name - computed: true, optional: false, required: false
@@ -333,20 +358,19 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CtsTrackerV1Timeouts | undefined; 
-  private __timeoutsOutput = new CtsTrackerV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CtsTrackerV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CtsTrackerV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CtsTrackerV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -365,7 +389,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
       topic_id: cdktf.stringToTerraform(this._topicId),
-      timeouts: ctsTrackerV1TimeoutsToTerraform(this._timeouts),
+      timeouts: ctsTrackerV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

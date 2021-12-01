@@ -78,11 +78,11 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   // ==========
 
   // action - computed: false, optional: true, required: false
-  private _action?: string | undefined; 
+  private _action?: string; 
   public get action() {
     return this.getStringAttribute('action');
   }
-  public set action(value: string | undefined) {
+  public set action(value: string) {
     this._action = value;
   }
   public resetAction() {
@@ -90,15 +90,15 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action;
   }
 
   // config_id - computed: false, optional: true, required: false
-  private _configId?: string | undefined; 
+  private _configId?: string; 
   public get configId() {
     return this.getStringAttribute('config_id');
   }
-  public set configId(value: string | undefined) {
+  public set configId(value: string) {
     this._configId = value;
   }
   public resetConfigId() {
@@ -106,15 +106,15 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get configIdInput() {
-    return this._configId
+    return this._configId;
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -122,7 +122,7 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // input_values - computed: true, optional: false, required: false
@@ -136,11 +136,11 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -148,15 +148,15 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // server_id - computed: false, optional: true, required: false
-  private _serverId?: string | undefined; 
+  private _serverId?: string; 
   public get serverId() {
     return this.getStringAttribute('server_id');
   }
-  public set serverId(value: string | undefined) {
+  public set serverId(value: string) {
     this._serverId = value;
   }
   public resetServerId() {
@@ -164,15 +164,15 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -180,7 +180,7 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // status_reason - computed: true, optional: false, required: false

@@ -59,7 +59,7 @@ export interface NetworkingNetworkV2Segments {
   readonly segmentationId?: number;
 }
 
-function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetworkV2Segments): any {
+export function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetworkV2Segments): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,7 +82,7 @@ export interface NetworkingNetworkV2Timeouts {
   readonly delete?: string;
 }
 
-function networkingNetworkV2TimeoutsToTerraform(struct?: NetworkingNetworkV2TimeoutsOutputReference | NetworkingNetworkV2Timeouts): any {
+export function networkingNetworkV2TimeoutsToTerraform(struct?: NetworkingNetworkV2TimeoutsOutputReference | NetworkingNetworkV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -103,12 +103,37 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NetworkingNetworkV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingNetworkV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -116,15 +141,15 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -132,7 +157,7 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -175,7 +200,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
     this._tenantId = config.tenantId;
     this._valueSpecs = config.valueSpecs;
     this._segments = config.segments;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -183,11 +208,11 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: true, optional: true, required: false
-  private _adminStateUp?: string | undefined; 
+  private _adminStateUp?: string; 
   public get adminStateUp() {
     return this.getStringAttribute('admin_state_up');
   }
-  public set adminStateUp(value: string | undefined) {
+  public set adminStateUp(value: string) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -195,7 +220,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -204,11 +229,11 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -216,15 +241,15 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -232,15 +257,15 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // shared - computed: true, optional: true, required: false
-  private _shared?: string | undefined; 
+  private _shared?: string; 
   public get shared() {
     return this.getStringAttribute('shared');
   }
-  public set shared(value: string | undefined) {
+  public set shared(value: string) {
     this._shared = value;
   }
   public resetShared() {
@@ -248,15 +273,15 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sharedInput() {
-    return this._shared
+    return this._shared;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -264,16 +289,16 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -281,16 +306,16 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // segments - computed: false, optional: true, required: false
-  private _segments?: NetworkingNetworkV2Segments[] | undefined; 
+  private _segments?: NetworkingNetworkV2Segments[]; 
   public get segments() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('segments') as any;
   }
-  public set segments(value: NetworkingNetworkV2Segments[] | undefined) {
+  public set segments(value: NetworkingNetworkV2Segments[]) {
     this._segments = value;
   }
   public resetSegments() {
@@ -298,24 +323,23 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get segmentsInput() {
-    return this._segments
+    return this._segments;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NetworkingNetworkV2Timeouts | undefined; 
-  private __timeoutsOutput = new NetworkingNetworkV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingNetworkV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NetworkingNetworkV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NetworkingNetworkV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -331,7 +355,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform)(this._segments),
-      timeouts: networkingNetworkV2TimeoutsToTerraform(this._timeouts),
+      timeouts: networkingNetworkV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

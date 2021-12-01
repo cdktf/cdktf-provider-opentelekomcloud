@@ -45,7 +45,7 @@ export interface VpcV1Timeouts {
   readonly delete?: string;
 }
 
-function vpcV1TimeoutsToTerraform(struct?: VpcV1TimeoutsOutputReference | VpcV1Timeouts): any {
+export function vpcV1TimeoutsToTerraform(struct?: VpcV1TimeoutsOutputReference | VpcV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -66,12 +66,37 @@ export class VpcV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -79,15 +104,15 @@ export class VpcV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -95,7 +120,7 @@ export class VpcV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -136,7 +161,7 @@ export class VpcV1 extends cdktf.TerraformResource {
     this._region = config.region;
     this._shared = config.shared;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -153,7 +178,7 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cidrInput() {
-    return this._cidr
+    return this._cidr;
   }
 
   // id - computed: true, optional: true, required: false
@@ -171,15 +196,15 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -187,15 +212,15 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // shared - computed: true, optional: true, required: false
-  private _shared?: boolean | cdktf.IResolvable | undefined; 
+  private _shared?: boolean | cdktf.IResolvable; 
   public get shared() {
     return this.getBooleanAttribute('shared') as any;
   }
-  public set shared(value: boolean | cdktf.IResolvable | undefined) {
+  public set shared(value: boolean | cdktf.IResolvable) {
     this._shared = value;
   }
   public resetShared() {
@@ -203,7 +228,7 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sharedInput() {
-    return this._shared
+    return this._shared;
   }
 
   // status - computed: true, optional: false, required: false
@@ -212,12 +237,12 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -225,24 +250,23 @@ export class VpcV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpcV1Timeouts | undefined; 
-  private __timeoutsOutput = new VpcV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpcV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpcV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -256,7 +280,7 @@ export class VpcV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       shared: cdktf.booleanToTerraform(this._shared),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: vpcV1TimeoutsToTerraform(this._timeouts),
+      timeouts: vpcV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

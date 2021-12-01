@@ -95,7 +95,7 @@ export interface ObsBucketCorsRule {
   readonly maxAgeSeconds?: number;
 }
 
-function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule): any {
+export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -120,7 +120,7 @@ export interface ObsBucketEventNotificationsFilterRule {
   readonly value?: string;
 }
 
-function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBucketEventNotificationsFilterRule): any {
+export function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBucketEventNotificationsFilterRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -152,7 +152,7 @@ export interface ObsBucketEventNotifications {
   readonly filterRule?: ObsBucketEventNotificationsFilterRule[];
 }
 
-function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNotifications): any {
+export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNotifications): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -171,7 +171,7 @@ export interface ObsBucketLifecycleRuleExpiration {
   readonly days: number;
 }
 
-function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLifecycleRuleExpiration): any {
+export function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLifecycleRuleExpiration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -188,7 +188,7 @@ export interface ObsBucketLifecycleRuleNoncurrentVersionExpiration {
   readonly days: number;
 }
 
-function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionExpiration): any {
+export function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionExpiration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -209,7 +209,7 @@ export interface ObsBucketLifecycleRuleNoncurrentVersionTransition {
   readonly storageClass: string;
 }
 
-function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionTransition): any {
+export function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionTransition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -231,7 +231,7 @@ export interface ObsBucketLifecycleRuleTransition {
   readonly storageClass: string;
 }
 
-function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLifecycleRuleTransition): any {
+export function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLifecycleRuleTransition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -281,7 +281,7 @@ export interface ObsBucketLifecycleRule {
   readonly transition?: ObsBucketLifecycleRuleTransition[];
 }
 
-function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRule): any {
+export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -308,7 +308,7 @@ export interface ObsBucketLogging {
   readonly targetPrefix?: string;
 }
 
-function obsBucketLoggingToTerraform(struct?: ObsBucketLogging): any {
+export function obsBucketLoggingToTerraform(struct?: ObsBucketLogging): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -330,7 +330,7 @@ export interface ObsBucketServerSideEncryption {
   readonly kmsKeyId: string;
 }
 
-function obsBucketServerSideEncryptionToTerraform(struct?: ObsBucketServerSideEncryptionOutputReference | ObsBucketServerSideEncryption): any {
+export function obsBucketServerSideEncryptionToTerraform(struct?: ObsBucketServerSideEncryptionOutputReference | ObsBucketServerSideEncryption): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -351,6 +351,31 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ObsBucketServerSideEncryption | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._algorithm) {
+      hasAnyValues = true;
+      internalValueResult.algorithm = this._algorithm;
+    }
+    if (this._kmsKeyId) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyId = this._kmsKeyId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketServerSideEncryption | undefined) {
+    if (value === undefined) {
+      this._algorithm = undefined;
+      this._kmsKeyId = undefined;
+    }
+    else {
+      this._algorithm = value.algorithm;
+      this._kmsKeyId = value.kmsKeyId;
+    }
+  }
+
   // algorithm - computed: false, optional: false, required: true
   private _algorithm?: string; 
   public get algorithm() {
@@ -361,7 +386,7 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get algorithmInput() {
-    return this._algorithm
+    return this._algorithm;
   }
 
   // kms_key_id - computed: false, optional: false, required: true
@@ -374,7 +399,7 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get kmsKeyIdInput() {
-    return this._kmsKeyId
+    return this._kmsKeyId;
   }
 }
 export interface ObsBucketWebsite {
@@ -396,7 +421,7 @@ export interface ObsBucketWebsite {
   readonly routingRules?: string;
 }
 
-function obsBucketWebsiteToTerraform(struct?: ObsBucketWebsiteOutputReference | ObsBucketWebsite): any {
+export function obsBucketWebsiteToTerraform(struct?: ObsBucketWebsiteOutputReference | ObsBucketWebsite): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -419,12 +444,49 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ObsBucketWebsite | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._errorDocument) {
+      hasAnyValues = true;
+      internalValueResult.errorDocument = this._errorDocument;
+    }
+    if (this._indexDocument) {
+      hasAnyValues = true;
+      internalValueResult.indexDocument = this._indexDocument;
+    }
+    if (this._redirectAllRequestsTo) {
+      hasAnyValues = true;
+      internalValueResult.redirectAllRequestsTo = this._redirectAllRequestsTo;
+    }
+    if (this._routingRules) {
+      hasAnyValues = true;
+      internalValueResult.routingRules = this._routingRules;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketWebsite | undefined) {
+    if (value === undefined) {
+      this._errorDocument = undefined;
+      this._indexDocument = undefined;
+      this._redirectAllRequestsTo = undefined;
+      this._routingRules = undefined;
+    }
+    else {
+      this._errorDocument = value.errorDocument;
+      this._indexDocument = value.indexDocument;
+      this._redirectAllRequestsTo = value.redirectAllRequestsTo;
+      this._routingRules = value.routingRules;
+    }
+  }
+
   // error_document - computed: false, optional: true, required: false
-  private _errorDocument?: string | undefined; 
+  private _errorDocument?: string; 
   public get errorDocument() {
     return this.getStringAttribute('error_document');
   }
-  public set errorDocument(value: string | undefined) {
+  public set errorDocument(value: string) {
     this._errorDocument = value;
   }
   public resetErrorDocument() {
@@ -432,15 +494,15 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get errorDocumentInput() {
-    return this._errorDocument
+    return this._errorDocument;
   }
 
   // index_document - computed: false, optional: true, required: false
-  private _indexDocument?: string | undefined; 
+  private _indexDocument?: string; 
   public get indexDocument() {
     return this.getStringAttribute('index_document');
   }
-  public set indexDocument(value: string | undefined) {
+  public set indexDocument(value: string) {
     this._indexDocument = value;
   }
   public resetIndexDocument() {
@@ -448,15 +510,15 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get indexDocumentInput() {
-    return this._indexDocument
+    return this._indexDocument;
   }
 
   // redirect_all_requests_to - computed: false, optional: true, required: false
-  private _redirectAllRequestsTo?: string | undefined; 
+  private _redirectAllRequestsTo?: string; 
   public get redirectAllRequestsTo() {
     return this.getStringAttribute('redirect_all_requests_to');
   }
-  public set redirectAllRequestsTo(value: string | undefined) {
+  public set redirectAllRequestsTo(value: string) {
     this._redirectAllRequestsTo = value;
   }
   public resetRedirectAllRequestsTo() {
@@ -464,15 +526,15 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get redirectAllRequestsToInput() {
-    return this._redirectAllRequestsTo
+    return this._redirectAllRequestsTo;
   }
 
   // routing_rules - computed: false, optional: true, required: false
-  private _routingRules?: string | undefined; 
+  private _routingRules?: string; 
   public get routingRules() {
     return this.getStringAttribute('routing_rules');
   }
-  public set routingRules(value: string | undefined) {
+  public set routingRules(value: string) {
     this._routingRules = value;
   }
   public resetRoutingRules() {
@@ -480,7 +542,7 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get routingRulesInput() {
-    return this._routingRules
+    return this._routingRules;
   }
 }
 
@@ -527,8 +589,8 @@ export class ObsBucket extends cdktf.TerraformResource {
     this._eventNotifications = config.eventNotifications;
     this._lifecycleRule = config.lifecycleRule;
     this._logging = config.logging;
-    this._serverSideEncryption = config.serverSideEncryption;
-    this._website = config.website;
+    this._serverSideEncryption.internalValue = config.serverSideEncryption;
+    this._website.internalValue = config.website;
   }
 
   // ==========
@@ -536,11 +598,11 @@ export class ObsBucket extends cdktf.TerraformResource {
   // ==========
 
   // acl - computed: false, optional: true, required: false
-  private _acl?: string | undefined; 
+  private _acl?: string; 
   public get acl() {
     return this.getStringAttribute('acl');
   }
-  public set acl(value: string | undefined) {
+  public set acl(value: string) {
     this._acl = value;
   }
   public resetAcl() {
@@ -548,7 +610,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aclInput() {
-    return this._acl
+    return this._acl;
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -561,7 +623,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // bucket_domain_name - computed: true, optional: false, required: false
@@ -570,11 +632,11 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // force_destroy - computed: false, optional: true, required: false
-  private _forceDestroy?: boolean | cdktf.IResolvable | undefined; 
+  private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
     return this.getBooleanAttribute('force_destroy') as any;
   }
-  public set forceDestroy(value: boolean | cdktf.IResolvable | undefined) {
+  public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
   }
   public resetForceDestroy() {
@@ -582,7 +644,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get forceDestroyInput() {
-    return this._forceDestroy
+    return this._forceDestroy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -591,11 +653,11 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -603,15 +665,15 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // storage_class - computed: false, optional: true, required: false
-  private _storageClass?: string | undefined; 
+  private _storageClass?: string; 
   public get storageClass() {
     return this.getStringAttribute('storage_class');
   }
-  public set storageClass(value: string | undefined) {
+  public set storageClass(value: string) {
     this._storageClass = value;
   }
   public resetStorageClass() {
@@ -619,16 +681,16 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get storageClassInput() {
-    return this._storageClass
+    return this._storageClass;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -636,15 +698,15 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // versioning - computed: false, optional: true, required: false
-  private _versioning?: boolean | cdktf.IResolvable | undefined; 
+  private _versioning?: boolean | cdktf.IResolvable; 
   public get versioning() {
     return this.getBooleanAttribute('versioning') as any;
   }
-  public set versioning(value: boolean | cdktf.IResolvable | undefined) {
+  public set versioning(value: boolean | cdktf.IResolvable) {
     this._versioning = value;
   }
   public resetVersioning() {
@@ -652,16 +714,16 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get versioningInput() {
-    return this._versioning
+    return this._versioning;
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule?: ObsBucketCorsRule[] | undefined; 
+  private _corsRule?: ObsBucketCorsRule[]; 
   public get corsRule() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('cors_rule') as any;
   }
-  public set corsRule(value: ObsBucketCorsRule[] | undefined) {
+  public set corsRule(value: ObsBucketCorsRule[]) {
     this._corsRule = value;
   }
   public resetCorsRule() {
@@ -669,16 +731,16 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get corsRuleInput() {
-    return this._corsRule
+    return this._corsRule;
   }
 
   // event_notifications - computed: false, optional: true, required: false
-  private _eventNotifications?: ObsBucketEventNotifications[] | undefined; 
+  private _eventNotifications?: ObsBucketEventNotifications[]; 
   public get eventNotifications() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('event_notifications') as any;
   }
-  public set eventNotifications(value: ObsBucketEventNotifications[] | undefined) {
+  public set eventNotifications(value: ObsBucketEventNotifications[]) {
     this._eventNotifications = value;
   }
   public resetEventNotifications() {
@@ -686,16 +748,16 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get eventNotificationsInput() {
-    return this._eventNotifications
+    return this._eventNotifications;
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
-  private _lifecycleRule?: ObsBucketLifecycleRule[] | undefined; 
+  private _lifecycleRule?: ObsBucketLifecycleRule[]; 
   public get lifecycleRule() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('lifecycle_rule') as any;
   }
-  public set lifecycleRule(value: ObsBucketLifecycleRule[] | undefined) {
+  public set lifecycleRule(value: ObsBucketLifecycleRule[]) {
     this._lifecycleRule = value;
   }
   public resetLifecycleRule() {
@@ -703,16 +765,16 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lifecycleRuleInput() {
-    return this._lifecycleRule
+    return this._lifecycleRule;
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging?: ObsBucketLogging[] | undefined; 
+  private _logging?: ObsBucketLogging[]; 
   public get logging() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('logging') as any;
   }
-  public set logging(value: ObsBucketLogging[] | undefined) {
+  public set logging(value: ObsBucketLogging[]) {
     this._logging = value;
   }
   public resetLogging() {
@@ -720,41 +782,39 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loggingInput() {
-    return this._logging
+    return this._logging;
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
-  private _serverSideEncryption?: ObsBucketServerSideEncryption | undefined; 
-  private __serverSideEncryptionOutput = new ObsBucketServerSideEncryptionOutputReference(this as any, "server_side_encryption", true);
+  private _serverSideEncryption = new ObsBucketServerSideEncryptionOutputReference(this as any, "server_side_encryption", true);
   public get serverSideEncryption() {
-    return this.__serverSideEncryptionOutput;
+    return this._serverSideEncryption;
   }
-  public putServerSideEncryption(value: ObsBucketServerSideEncryption | undefined) {
-    this._serverSideEncryption = value;
+  public putServerSideEncryption(value: ObsBucketServerSideEncryption) {
+    this._serverSideEncryption.internalValue = value;
   }
   public resetServerSideEncryption() {
-    this._serverSideEncryption = undefined;
+    this._serverSideEncryption.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get serverSideEncryptionInput() {
-    return this._serverSideEncryption
+    return this._serverSideEncryption.internalValue;
   }
 
   // website - computed: false, optional: true, required: false
-  private _website?: ObsBucketWebsite | undefined; 
-  private __websiteOutput = new ObsBucketWebsiteOutputReference(this as any, "website", true);
+  private _website = new ObsBucketWebsiteOutputReference(this as any, "website", true);
   public get website() {
-    return this.__websiteOutput;
+    return this._website;
   }
-  public putWebsite(value: ObsBucketWebsite | undefined) {
-    this._website = value;
+  public putWebsite(value: ObsBucketWebsite) {
+    this._website.internalValue = value;
   }
   public resetWebsite() {
-    this._website = undefined;
+    this._website.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get websiteInput() {
-    return this._website
+    return this._website.internalValue;
   }
 
   // =========
@@ -774,8 +834,8 @@ export class ObsBucket extends cdktf.TerraformResource {
       event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform)(this._eventNotifications),
       lifecycle_rule: cdktf.listMapper(obsBucketLifecycleRuleToTerraform)(this._lifecycleRule),
       logging: cdktf.listMapper(obsBucketLoggingToTerraform)(this._logging),
-      server_side_encryption: obsBucketServerSideEncryptionToTerraform(this._serverSideEncryption),
-      website: obsBucketWebsiteToTerraform(this._website),
+      server_side_encryption: obsBucketServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
+      website: obsBucketWebsiteToTerraform(this._website.internalValue),
     };
   }
 }

@@ -57,7 +57,7 @@ export interface VpcEipV1Bandwidth {
   readonly size: number;
 }
 
-function vpcEipV1BandwidthToTerraform(struct?: VpcEipV1BandwidthOutputReference | VpcEipV1Bandwidth): any {
+export function vpcEipV1BandwidthToTerraform(struct?: VpcEipV1BandwidthOutputReference | VpcEipV1Bandwidth): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,12 +80,49 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcEipV1Bandwidth | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._chargeMode) {
+      hasAnyValues = true;
+      internalValueResult.chargeMode = this._chargeMode;
+    }
+    if (this._name) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._shareType) {
+      hasAnyValues = true;
+      internalValueResult.shareType = this._shareType;
+    }
+    if (this._size) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcEipV1Bandwidth | undefined) {
+    if (value === undefined) {
+      this._chargeMode = undefined;
+      this._name = undefined;
+      this._shareType = undefined;
+      this._size = undefined;
+    }
+    else {
+      this._chargeMode = value.chargeMode;
+      this._name = value.name;
+      this._shareType = value.shareType;
+      this._size = value.size;
+    }
+  }
+
   // charge_mode - computed: true, optional: true, required: false
-  private _chargeMode?: string | undefined; 
+  private _chargeMode?: string; 
   public get chargeMode() {
     return this.getStringAttribute('charge_mode');
   }
-  public set chargeMode(value: string | undefined) {
+  public set chargeMode(value: string) {
     this._chargeMode = value;
   }
   public resetChargeMode() {
@@ -93,7 +130,7 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get chargeModeInput() {
-    return this._chargeMode
+    return this._chargeMode;
   }
 
   // name - computed: false, optional: false, required: true
@@ -106,7 +143,7 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // share_type - computed: false, optional: false, required: true
@@ -119,7 +156,7 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get shareTypeInput() {
-    return this._shareType
+    return this._shareType;
   }
 
   // size - computed: false, optional: false, required: true
@@ -132,7 +169,7 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 }
 export interface VpcEipV1Publicip {
@@ -150,7 +187,7 @@ export interface VpcEipV1Publicip {
   readonly type: string;
 }
 
-function vpcEipV1PublicipToTerraform(struct?: VpcEipV1PublicipOutputReference | VpcEipV1Publicip): any {
+export function vpcEipV1PublicipToTerraform(struct?: VpcEipV1PublicipOutputReference | VpcEipV1Publicip): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -172,12 +209,43 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcEipV1Publicip | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._ipAddress) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._portId) {
+      hasAnyValues = true;
+      internalValueResult.portId = this._portId;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcEipV1Publicip | undefined) {
+    if (value === undefined) {
+      this._ipAddress = undefined;
+      this._portId = undefined;
+      this._type = undefined;
+    }
+    else {
+      this._ipAddress = value.ipAddress;
+      this._portId = value.portId;
+      this._type = value.type;
+    }
+  }
+
   // ip_address - computed: true, optional: true, required: false
-  private _ipAddress?: string | undefined; 
+  private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string | undefined) {
+  public set ipAddress(value: string) {
     this._ipAddress = value;
   }
   public resetIpAddress() {
@@ -185,15 +253,15 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {
-    return this._ipAddress
+    return this._ipAddress;
   }
 
   // port_id - computed: true, optional: true, required: false
-  private _portId?: string | undefined; 
+  private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
   }
-  public set portId(value: string | undefined) {
+  public set portId(value: string) {
     this._portId = value;
   }
   public resetPortId() {
@@ -201,7 +269,7 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // type - computed: false, optional: false, required: true
@@ -214,7 +282,7 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 }
 export interface VpcEipV1Timeouts {
@@ -228,7 +296,7 @@ export interface VpcEipV1Timeouts {
   readonly delete?: string;
 }
 
-function vpcEipV1TimeoutsToTerraform(struct?: VpcEipV1TimeoutsOutputReference | VpcEipV1Timeouts): any {
+export function vpcEipV1TimeoutsToTerraform(struct?: VpcEipV1TimeoutsOutputReference | VpcEipV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -249,12 +317,37 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcEipV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcEipV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -262,15 +355,15 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -278,7 +371,7 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -317,9 +410,9 @@ export class VpcEipV1 extends cdktf.TerraformResource {
     this._region = config.region;
     this._tags = config.tags;
     this._valueSpecs = config.valueSpecs;
-    this._bandwidth = config.bandwidth;
-    this._publicip = config.publicip;
-    this._timeouts = config.timeouts;
+    this._bandwidth.internalValue = config.bandwidth;
+    this._publicip.internalValue = config.publicip;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -332,11 +425,11 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -344,16 +437,16 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -361,16 +454,16 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -378,52 +471,49 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth?: VpcEipV1Bandwidth; 
-  private __bandwidthOutput = new VpcEipV1BandwidthOutputReference(this as any, "bandwidth", true);
+  private _bandwidth = new VpcEipV1BandwidthOutputReference(this as any, "bandwidth", true);
   public get bandwidth() {
-    return this.__bandwidthOutput;
+    return this._bandwidth;
   }
   public putBandwidth(value: VpcEipV1Bandwidth) {
-    this._bandwidth = value;
+    this._bandwidth.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
-    return this._bandwidth
+    return this._bandwidth.internalValue;
   }
 
   // publicip - computed: false, optional: false, required: true
-  private _publicip?: VpcEipV1Publicip; 
-  private __publicipOutput = new VpcEipV1PublicipOutputReference(this as any, "publicip", true);
+  private _publicip = new VpcEipV1PublicipOutputReference(this as any, "publicip", true);
   public get publicip() {
-    return this.__publicipOutput;
+    return this._publicip;
   }
   public putPublicip(value: VpcEipV1Publicip) {
-    this._publicip = value;
+    this._publicip.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get publicipInput() {
-    return this._publicip
+    return this._publicip.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpcEipV1Timeouts | undefined; 
-  private __timeoutsOutput = new VpcEipV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcEipV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpcEipV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpcEipV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -435,9 +525,9 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
-      bandwidth: vpcEipV1BandwidthToTerraform(this._bandwidth),
-      publicip: vpcEipV1PublicipToTerraform(this._publicip),
-      timeouts: vpcEipV1TimeoutsToTerraform(this._timeouts),
+      bandwidth: vpcEipV1BandwidthToTerraform(this._bandwidth.internalValue),
+      publicip: vpcEipV1PublicipToTerraform(this._publicip.internalValue),
+      timeouts: vpcEipV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

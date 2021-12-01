@@ -61,7 +61,7 @@ export interface VpcFlowLogV1Timeouts {
   readonly delete?: string;
 }
 
-function vpcFlowLogV1TimeoutsToTerraform(struct?: VpcFlowLogV1TimeoutsOutputReference | VpcFlowLogV1Timeouts): any {
+export function vpcFlowLogV1TimeoutsToTerraform(struct?: VpcFlowLogV1TimeoutsOutputReference | VpcFlowLogV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,12 +82,37 @@ export class VpcFlowLogV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcFlowLogV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcFlowLogV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -95,15 +120,15 @@ export class VpcFlowLogV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -111,7 +136,7 @@ export class VpcFlowLogV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -156,7 +181,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
     this._resourceType = config.resourceType;
     this._status = config.status;
     this._trafficType = config.trafficType;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -164,11 +189,11 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state - computed: true, optional: true, required: false
-  private _adminState?: boolean | cdktf.IResolvable | undefined; 
+  private _adminState?: boolean | cdktf.IResolvable; 
   public get adminState() {
     return this.getBooleanAttribute('admin_state') as any;
   }
-  public set adminState(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminState(value: boolean | cdktf.IResolvable) {
     this._adminState = value;
   }
   public resetAdminState() {
@@ -176,15 +201,15 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateInput() {
-    return this._adminState
+    return this._adminState;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -192,7 +217,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -210,7 +235,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get logGroupIdInput() {
-    return this._logGroupId
+    return this._logGroupId;
   }
 
   // log_topic_id - computed: false, optional: false, required: true
@@ -223,15 +248,15 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get logTopicIdInput() {
-    return this._logTopicId
+    return this._logTopicId;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -239,7 +264,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // resource_id - computed: false, optional: false, required: true
@@ -252,7 +277,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceIdInput() {
-    return this._resourceId
+    return this._resourceId;
   }
 
   // resource_type - computed: false, optional: false, required: true
@@ -265,15 +290,15 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeInput() {
-    return this._resourceType
+    return this._resourceType;
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -281,7 +306,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // traffic_type - computed: false, optional: false, required: true
@@ -294,24 +319,23 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get trafficTypeInput() {
-    return this._trafficType
+    return this._trafficType;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpcFlowLogV1Timeouts | undefined; 
-  private __timeoutsOutput = new VpcFlowLogV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcFlowLogV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpcFlowLogV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpcFlowLogV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -329,7 +353,7 @@ export class VpcFlowLogV1 extends cdktf.TerraformResource {
       resource_type: cdktf.stringToTerraform(this._resourceType),
       status: cdktf.stringToTerraform(this._status),
       traffic_type: cdktf.stringToTerraform(this._trafficType),
-      timeouts: vpcFlowLogV1TimeoutsToTerraform(this._timeouts),
+      timeouts: vpcFlowLogV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

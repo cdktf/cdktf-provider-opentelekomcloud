@@ -53,7 +53,7 @@ export interface NatDnatRuleV2Timeouts {
   readonly delete?: string;
 }
 
-function natDnatRuleV2TimeoutsToTerraform(struct?: NatDnatRuleV2TimeoutsOutputReference | NatDnatRuleV2Timeouts): any {
+export function natDnatRuleV2TimeoutsToTerraform(struct?: NatDnatRuleV2TimeoutsOutputReference | NatDnatRuleV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -74,12 +74,37 @@ export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NatDnatRuleV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NatDnatRuleV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -87,15 +112,15 @@ export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -103,7 +128,7 @@ export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -146,7 +171,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
     this._portId = config.portId;
     this._privateIp = config.privateIp;
     this._protocol = config.protocol;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -168,7 +193,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get externalServicePortInput() {
-    return this._externalServicePort
+    return this._externalServicePort;
   }
 
   // floating_ip_address - computed: true, optional: false, required: false
@@ -186,7 +211,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpIdInput() {
-    return this._floatingIpId
+    return this._floatingIpId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -204,7 +229,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get internalServicePortInput() {
-    return this._internalServicePort
+    return this._internalServicePort;
   }
 
   // nat_gateway_id - computed: false, optional: false, required: true
@@ -217,15 +242,15 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get natGatewayIdInput() {
-    return this._natGatewayId
+    return this._natGatewayId;
   }
 
   // port_id - computed: false, optional: true, required: false
-  private _portId?: string | undefined; 
+  private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
   }
-  public set portId(value: string | undefined) {
+  public set portId(value: string) {
     this._portId = value;
   }
   public resetPortId() {
@@ -233,15 +258,15 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // private_ip - computed: false, optional: true, required: false
-  private _privateIp?: string | undefined; 
+  private _privateIp?: string; 
   public get privateIp() {
     return this.getStringAttribute('private_ip');
   }
-  public set privateIp(value: string | undefined) {
+  public set privateIp(value: string) {
     this._privateIp = value;
   }
   public resetPrivateIp() {
@@ -249,7 +274,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privateIpInput() {
-    return this._privateIp
+    return this._privateIp;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -262,7 +287,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // status - computed: true, optional: false, required: false
@@ -276,20 +301,19 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NatDnatRuleV2Timeouts | undefined; 
-  private __timeoutsOutput = new NatDnatRuleV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NatDnatRuleV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NatDnatRuleV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NatDnatRuleV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -305,7 +329,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
       port_id: cdktf.stringToTerraform(this._portId),
       private_ip: cdktf.stringToTerraform(this._privateIp),
       protocol: cdktf.stringToTerraform(this._protocol),
-      timeouts: natDnatRuleV2TimeoutsToTerraform(this._timeouts),
+      timeouts: natDnatRuleV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

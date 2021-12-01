@@ -88,11 +88,11 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -100,15 +100,15 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // min_disk - computed: false, optional: true, required: false
-  private _minDisk?: number | undefined; 
+  private _minDisk?: number; 
   public get minDisk() {
     return this.getNumberAttribute('min_disk');
   }
-  public set minDisk(value: number | undefined) {
+  public set minDisk(value: number) {
     this._minDisk = value;
   }
   public resetMinDisk() {
@@ -116,15 +116,15 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get minDiskInput() {
-    return this._minDisk
+    return this._minDisk;
   }
 
   // min_ram - computed: false, optional: true, required: false
-  private _minRam?: number | undefined; 
+  private _minRam?: number; 
   public get minRam() {
     return this.getNumberAttribute('min_ram');
   }
-  public set minRam(value: number | undefined) {
+  public set minRam(value: number) {
     this._minRam = value;
   }
   public resetMinRam() {
@@ -132,15 +132,15 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get minRamInput() {
-    return this._minRam
+    return this._minRam;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -148,7 +148,7 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // ram - computed: true, optional: false, required: false
@@ -157,11 +157,11 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -169,7 +169,7 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // rx_tx_factor - computed: true, optional: false, required: false
@@ -178,11 +178,11 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
 
   // sort_dir - computed: false, optional: true, required: false
-  private _sortDir?: string | undefined; 
+  private _sortDir?: string; 
   public get sortDir() {
     return this.getStringAttribute('sort_dir');
   }
-  public set sortDir(value: string | undefined) {
+  public set sortDir(value: string) {
     this._sortDir = value;
   }
   public resetSortDir() {
@@ -190,15 +190,15 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get sortDirInput() {
-    return this._sortDir
+    return this._sortDir;
   }
 
   // sort_key - computed: false, optional: true, required: false
-  private _sortKey?: string | undefined; 
+  private _sortKey?: string; 
   public get sortKey() {
     return this.getStringAttribute('sort_key');
   }
-  public set sortKey(value: string | undefined) {
+  public set sortKey(value: string) {
     this._sortKey = value;
   }
   public resetSortKey() {
@@ -206,7 +206,7 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get sortKeyInput() {
-    return this._sortKey
+    return this._sortKey;
   }
 
   // swap - computed: true, optional: false, required: false

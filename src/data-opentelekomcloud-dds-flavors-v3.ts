@@ -110,7 +110,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get engineNameInput() {
-    return this._engineName
+    return this._engineName;
   }
 
   // flavors - computed: true, optional: false, required: false
@@ -124,11 +124,11 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
 
   // memory - computed: false, optional: true, required: false
-  private _memory?: string | undefined; 
+  private _memory?: string; 
   public get memory() {
     return this.getStringAttribute('memory');
   }
-  public set memory(value: string | undefined) {
+  public set memory(value: string) {
     this._memory = value;
   }
   public resetMemory() {
@@ -136,15 +136,15 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get memoryInput() {
-    return this._memory
+    return this._memory;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -152,15 +152,15 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -168,15 +168,15 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // vcpus - computed: false, optional: true, required: false
-  private _vcpus?: string | undefined; 
+  private _vcpus?: string; 
   public get vcpus() {
     return this.getStringAttribute('vcpus');
   }
-  public set vcpus(value: string | undefined) {
+  public set vcpus(value: string) {
     this._vcpus = value;
   }
   public resetVcpus() {
@@ -184,7 +184,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get vcpusInput() {
-    return this._vcpus
+    return this._vcpus;
   }
 
   // =========

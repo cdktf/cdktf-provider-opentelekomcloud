@@ -82,7 +82,7 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endpointInput() {
-    return this._endpoint
+    return this._endpoint;
   }
 
   // id - computed: true, optional: true, required: false
@@ -96,11 +96,11 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
 
   // project_name - computed: true, optional: true, required: false
-  private _projectName?: string | undefined; 
+  private _projectName?: string; 
   public get projectName() {
     return this.getStringAttribute('project_name');
   }
-  public set projectName(value: string | undefined) {
+  public set projectName(value: string) {
     this._projectName = value;
   }
   public resetProjectName() {
@@ -108,7 +108,7 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectNameInput() {
-    return this._projectName
+    return this._projectName;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -121,15 +121,15 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // remark - computed: false, optional: true, required: false
-  private _remark?: string | undefined; 
+  private _remark?: string; 
   public get remark() {
     return this.getStringAttribute('remark');
   }
-  public set remark(value: string | undefined) {
+  public set remark(value: string) {
     this._remark = value;
   }
   public resetRemark() {
@@ -137,7 +137,7 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get remarkInput() {
-    return this._remark
+    return this._remark;
   }
 
   // status - computed: true, optional: false, required: false
@@ -160,7 +160,7 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicUrnInput() {
-    return this._topicUrn
+    return this._topicUrn;
   }
 
   // =========

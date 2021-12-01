@@ -100,7 +100,7 @@ export class DataOpentelekomcloudRdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get dbTypeInput() {
-    return this._dbType
+    return this._dbType;
   }
 
   // db_version - computed: false, optional: false, required: true
@@ -113,7 +113,7 @@ export class DataOpentelekomcloudRdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get dbVersionInput() {
-    return this._dbVersion
+    return this._dbVersion;
   }
 
   // flavors - computed: true, optional: false, required: false
@@ -136,7 +136,7 @@ export class DataOpentelekomcloudRdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get instanceModeInput() {
-    return this._instanceMode
+    return this._instanceMode;
   }
 
   // =========

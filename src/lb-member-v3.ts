@@ -92,7 +92,7 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get addressInput() {
-    return this._address
+    return this._address;
   }
 
   // id - computed: true, optional: true, required: false
@@ -111,11 +111,11 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -123,7 +123,7 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // operating_status - computed: true, optional: false, required: false
@@ -141,15 +141,15 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get poolIdInput() {
-    return this._poolId
+    return this._poolId;
   }
 
   // project_id - computed: true, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -157,7 +157,7 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // protocol_port - computed: false, optional: false, required: true
@@ -170,15 +170,15 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolPortInput() {
-    return this._protocolPort
+    return this._protocolPort;
   }
 
   // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -186,15 +186,15 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // weight - computed: true, optional: true, required: false
-  private _weight?: number | undefined; 
+  private _weight?: number; 
   public get weight() {
     return this.getNumberAttribute('weight');
   }
-  public set weight(value: number | undefined) {
+  public set weight(value: number) {
     this._weight = value;
   }
   public resetWeight() {
@@ -202,7 +202,7 @@ export class LbMemberV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get weightInput() {
-    return this._weight
+    return this._weight;
   }
 
   // =========

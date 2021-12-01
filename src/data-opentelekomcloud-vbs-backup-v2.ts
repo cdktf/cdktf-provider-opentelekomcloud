@@ -93,11 +93,11 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -105,15 +105,15 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -121,15 +121,15 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -137,7 +137,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // service_metadata - computed: true, optional: false, required: false
@@ -156,11 +156,11 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
 
   // snapshot_id - computed: false, optional: true, required: false
-  private _snapshotId?: string | undefined; 
+  private _snapshotId?: string; 
   public get snapshotId() {
     return this.getStringAttribute('snapshot_id');
   }
-  public set snapshotId(value: string | undefined) {
+  public set snapshotId(value: string) {
     this._snapshotId = value;
   }
   public resetSnapshotId() {
@@ -168,15 +168,15 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get snapshotIdInput() {
-    return this._snapshotId
+    return this._snapshotId;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -184,7 +184,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // to_project_ids - computed: true, optional: false, required: false
@@ -193,11 +193,11 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
 
   // volume_id - computed: false, optional: true, required: false
-  private _volumeId?: string | undefined; 
+  private _volumeId?: string; 
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
-  public set volumeId(value: string | undefined) {
+  public set volumeId(value: string) {
     this._volumeId = value;
   }
   public resetVolumeId() {
@@ -205,7 +205,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get volumeIdInput() {
-    return this._volumeId
+    return this._volumeId;
   }
 
   // =========

@@ -74,7 +74,7 @@ export interface RdsParametergroupV3Datastore {
   readonly version: string;
 }
 
-function rdsParametergroupV3DatastoreToTerraform(struct?: RdsParametergroupV3DatastoreOutputReference | RdsParametergroupV3Datastore): any {
+export function rdsParametergroupV3DatastoreToTerraform(struct?: RdsParametergroupV3DatastoreOutputReference | RdsParametergroupV3Datastore): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,6 +95,31 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RdsParametergroupV3Datastore | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._version) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsParametergroupV3Datastore | undefined) {
+    if (value === undefined) {
+      this._type = undefined;
+      this._version = undefined;
+    }
+    else {
+      this._type = value.type;
+      this._version = value.version;
+    }
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -105,7 +130,7 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // version - computed: false, optional: false, required: true
@@ -118,7 +143,7 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 }
 
@@ -157,7 +182,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
     this._description = config.description;
     this._name = config.name;
     this._values = config.values;
-    this._datastore = config.datastore;
+    this._datastore.internalValue = config.datastore;
   }
 
   // ==========
@@ -175,11 +200,11 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -187,7 +212,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -205,7 +230,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // updated - computed: true, optional: false, required: false
@@ -214,12 +239,12 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
 
   // values - computed: false, optional: true, required: false
-  private _values?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _values?: { [key: string]: string } | cdktf.IResolvable; 
   public get values() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('values') as any;
   }
-  public set values(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set values(value: { [key: string]: string } | cdktf.IResolvable) {
     this._values = value;
   }
   public resetValues() {
@@ -227,21 +252,20 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valuesInput() {
-    return this._values
+    return this._values;
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore?: RdsParametergroupV3Datastore; 
-  private __datastoreOutput = new RdsParametergroupV3DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new RdsParametergroupV3DatastoreOutputReference(this as any, "datastore", true);
   public get datastore() {
-    return this.__datastoreOutput;
+    return this._datastore;
   }
   public putDatastore(value: RdsParametergroupV3Datastore) {
-    this._datastore = value;
+    this._datastore.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get datastoreInput() {
-    return this._datastore
+    return this._datastore.internalValue;
   }
 
   // =========
@@ -253,7 +277,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       values: cdktf.hashMapper(cdktf.anyToTerraform)(this._values),
-      datastore: rdsParametergroupV3DatastoreToTerraform(this._datastore),
+      datastore: rdsParametergroupV3DatastoreToTerraform(this._datastore.internalValue),
     };
   }
 }

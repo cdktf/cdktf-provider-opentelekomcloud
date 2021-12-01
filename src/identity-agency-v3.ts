@@ -47,7 +47,7 @@ export interface IdentityAgencyV3ProjectRole {
   readonly roles: string[];
 }
 
-function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3ProjectRole): any {
+export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3ProjectRole): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -73,7 +73,7 @@ export interface IdentityAgencyV3Timeouts {
   readonly update?: string;
 }
 
-function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3TimeoutsOutputReference | IdentityAgencyV3Timeouts): any {
+export function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3TimeoutsOutputReference | IdentityAgencyV3Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,12 +95,43 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): IdentityAgencyV3Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityAgencyV3Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -108,15 +139,15 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -124,15 +155,15 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -140,7 +171,7 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -181,7 +212,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
     this._domainRoles = config.domainRoles;
     this._name = config.name;
     this._projectRole = config.projectRole;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -203,15 +234,15 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get delegatedDomainNameInput() {
-    return this._delegatedDomainName
+    return this._delegatedDomainName;
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -219,15 +250,15 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // domain_roles - computed: false, optional: true, required: false
-  private _domainRoles?: string[] | undefined; 
+  private _domainRoles?: string[]; 
   public get domainRoles() {
     return this.getListAttribute('domain_roles');
   }
-  public set domainRoles(value: string[] | undefined) {
+  public set domainRoles(value: string[]) {
     this._domainRoles = value;
   }
   public resetDomainRoles() {
@@ -235,7 +266,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainRolesInput() {
-    return this._domainRoles
+    return this._domainRoles;
   }
 
   // duration - computed: true, optional: false, required: false
@@ -263,16 +294,16 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_role - computed: false, optional: true, required: false
-  private _projectRole?: IdentityAgencyV3ProjectRole[] | undefined; 
+  private _projectRole?: IdentityAgencyV3ProjectRole[]; 
   public get projectRole() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('project_role') as any;
   }
-  public set projectRole(value: IdentityAgencyV3ProjectRole[] | undefined) {
+  public set projectRole(value: IdentityAgencyV3ProjectRole[]) {
     this._projectRole = value;
   }
   public resetProjectRole() {
@@ -280,24 +311,23 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectRoleInput() {
-    return this._projectRole
+    return this._projectRole;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: IdentityAgencyV3Timeouts | undefined; 
-  private __timeoutsOutput = new IdentityAgencyV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new IdentityAgencyV3TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: IdentityAgencyV3Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: IdentityAgencyV3Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -311,7 +341,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
       domain_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._domainRoles),
       name: cdktf.stringToTerraform(this._name),
       project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform)(this._projectRole),
-      timeouts: identityAgencyV3TimeoutsToTerraform(this._timeouts),
+      timeouts: identityAgencyV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

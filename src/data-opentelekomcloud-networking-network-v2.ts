@@ -86,11 +86,11 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
 
   // matching_subnet_cidr - computed: false, optional: true, required: false
-  private _matchingSubnetCidr?: string | undefined; 
+  private _matchingSubnetCidr?: string; 
   public get matchingSubnetCidr() {
     return this.getStringAttribute('matching_subnet_cidr');
   }
-  public set matchingSubnetCidr(value: string | undefined) {
+  public set matchingSubnetCidr(value: string) {
     this._matchingSubnetCidr = value;
   }
   public resetMatchingSubnetCidr() {
@@ -98,15 +98,15 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get matchingSubnetCidrInput() {
-    return this._matchingSubnetCidr
+    return this._matchingSubnetCidr;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -114,15 +114,15 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network_id - computed: false, optional: true, required: false
-  private _networkId?: string | undefined; 
+  private _networkId?: string; 
   public get networkId() {
     return this.getStringAttribute('network_id');
   }
-  public set networkId(value: string | undefined) {
+  public set networkId(value: string) {
     this._networkId = value;
   }
   public resetNetworkId() {
@@ -130,15 +130,15 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get networkIdInput() {
-    return this._networkId
+    return this._networkId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -146,7 +146,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // shared - computed: true, optional: false, required: false
@@ -155,11 +155,11 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -167,7 +167,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // =========

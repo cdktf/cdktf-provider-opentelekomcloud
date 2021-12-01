@@ -72,7 +72,7 @@ export class VpcBandwidthV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // size - computed: false, optional: false, required: true
@@ -85,7 +85,7 @@ export class VpcBandwidthV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 
   // status - computed: true, optional: false, required: false

@@ -120,7 +120,7 @@ export interface DdsInstanceV3BackupStrategy {
   readonly startTime: string;
 }
 
-function ddsInstanceV3BackupStrategyToTerraform(struct?: DdsInstanceV3BackupStrategyOutputReference | DdsInstanceV3BackupStrategy): any {
+export function ddsInstanceV3BackupStrategyToTerraform(struct?: DdsInstanceV3BackupStrategyOutputReference | DdsInstanceV3BackupStrategy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -141,6 +141,31 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DdsInstanceV3BackupStrategy | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._keepDays) {
+      hasAnyValues = true;
+      internalValueResult.keepDays = this._keepDays;
+    }
+    if (this._startTime) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DdsInstanceV3BackupStrategy | undefined) {
+    if (value === undefined) {
+      this._keepDays = undefined;
+      this._startTime = undefined;
+    }
+    else {
+      this._keepDays = value.keepDays;
+      this._startTime = value.startTime;
+    }
+  }
+
   // keep_days - computed: false, optional: false, required: true
   private _keepDays?: number; 
   public get keepDays() {
@@ -151,7 +176,7 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get keepDaysInput() {
-    return this._keepDays
+    return this._keepDays;
   }
 
   // start_time - computed: false, optional: false, required: true
@@ -164,7 +189,7 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 }
 export interface DdsInstanceV3Datastore {
@@ -182,7 +207,7 @@ export interface DdsInstanceV3Datastore {
   readonly version: string;
 }
 
-function ddsInstanceV3DatastoreToTerraform(struct?: DdsInstanceV3DatastoreOutputReference | DdsInstanceV3Datastore): any {
+export function ddsInstanceV3DatastoreToTerraform(struct?: DdsInstanceV3DatastoreOutputReference | DdsInstanceV3Datastore): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -204,12 +229,43 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DdsInstanceV3Datastore | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._storageEngine) {
+      hasAnyValues = true;
+      internalValueResult.storageEngine = this._storageEngine;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    if (this._version) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DdsInstanceV3Datastore | undefined) {
+    if (value === undefined) {
+      this._storageEngine = undefined;
+      this._type = undefined;
+      this._version = undefined;
+    }
+    else {
+      this._storageEngine = value.storageEngine;
+      this._type = value.type;
+      this._version = value.version;
+    }
+  }
+
   // storage_engine - computed: false, optional: true, required: false
-  private _storageEngine?: string | undefined; 
+  private _storageEngine?: string; 
   public get storageEngine() {
     return this.getStringAttribute('storage_engine');
   }
-  public set storageEngine(value: string | undefined) {
+  public set storageEngine(value: string) {
     this._storageEngine = value;
   }
   public resetStorageEngine() {
@@ -217,7 +273,7 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get storageEngineInput() {
-    return this._storageEngine
+    return this._storageEngine;
   }
 
   // type - computed: false, optional: false, required: true
@@ -230,7 +286,7 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // version - computed: false, optional: false, required: true
@@ -243,7 +299,7 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 }
 export interface DdsInstanceV3Flavor {
@@ -269,7 +325,7 @@ export interface DdsInstanceV3Flavor {
   readonly type: string;
 }
 
-function ddsInstanceV3FlavorToTerraform(struct?: DdsInstanceV3Flavor): any {
+export function ddsInstanceV3FlavorToTerraform(struct?: DdsInstanceV3Flavor): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -294,7 +350,7 @@ export interface DdsInstanceV3Timeouts {
   readonly delete?: string;
 }
 
-function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsOutputReference | DdsInstanceV3Timeouts): any {
+export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsOutputReference | DdsInstanceV3Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -315,12 +371,37 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DdsInstanceV3Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DdsInstanceV3Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -328,15 +409,15 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -344,7 +425,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -390,10 +471,10 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     this._ssl = config.ssl;
     this._subnetId = config.subnetId;
     this._vpcId = config.vpcId;
-    this._backupStrategy = config.backupStrategy;
-    this._datastore = config.datastore;
+    this._backupStrategy.internalValue = config.backupStrategy;
+    this._datastore.internalValue = config.datastore;
     this._flavor = config.flavor;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -410,7 +491,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // db_username - computed: true, optional: false, required: false
@@ -419,11 +500,11 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // disk_encryption_id - computed: false, optional: true, required: false
-  private _diskEncryptionId?: string | undefined; 
+  private _diskEncryptionId?: string; 
   public get diskEncryptionId() {
     return this.getStringAttribute('disk_encryption_id');
   }
-  public set diskEncryptionId(value: string | undefined) {
+  public set diskEncryptionId(value: string) {
     this._diskEncryptionId = value;
   }
   public resetDiskEncryptionId() {
@@ -431,7 +512,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get diskEncryptionIdInput() {
-    return this._diskEncryptionId
+    return this._diskEncryptionId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -449,7 +530,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get modeInput() {
-    return this._mode
+    return this._mode;
   }
 
   // name - computed: false, optional: false, required: true
@@ -462,7 +543,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // nodes - computed: true, optional: false, required: false
@@ -480,7 +561,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // pay_mode - computed: true, optional: false, required: false
@@ -494,11 +575,11 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -506,7 +587,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -519,15 +600,15 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // ssl - computed: false, optional: true, required: false
-  private _ssl?: boolean | cdktf.IResolvable | undefined; 
+  private _ssl?: boolean | cdktf.IResolvable; 
   public get ssl() {
     return this.getBooleanAttribute('ssl') as any;
   }
-  public set ssl(value: boolean | cdktf.IResolvable | undefined) {
+  public set ssl(value: boolean | cdktf.IResolvable) {
     this._ssl = value;
   }
   public resetSsl() {
@@ -535,7 +616,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sslInput() {
-    return this._ssl
+    return this._ssl;
   }
 
   // status - computed: true, optional: false, required: false
@@ -553,7 +634,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -566,38 +647,36 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // backup_strategy - computed: false, optional: true, required: false
-  private _backupStrategy?: DdsInstanceV3BackupStrategy | undefined; 
-  private __backupStrategyOutput = new DdsInstanceV3BackupStrategyOutputReference(this as any, "backup_strategy", true);
+  private _backupStrategy = new DdsInstanceV3BackupStrategyOutputReference(this as any, "backup_strategy", true);
   public get backupStrategy() {
-    return this.__backupStrategyOutput;
+    return this._backupStrategy;
   }
-  public putBackupStrategy(value: DdsInstanceV3BackupStrategy | undefined) {
-    this._backupStrategy = value;
+  public putBackupStrategy(value: DdsInstanceV3BackupStrategy) {
+    this._backupStrategy.internalValue = value;
   }
   public resetBackupStrategy() {
-    this._backupStrategy = undefined;
+    this._backupStrategy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get backupStrategyInput() {
-    return this._backupStrategy
+    return this._backupStrategy.internalValue;
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore?: DdsInstanceV3Datastore; 
-  private __datastoreOutput = new DdsInstanceV3DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new DdsInstanceV3DatastoreOutputReference(this as any, "datastore", true);
   public get datastore() {
-    return this.__datastoreOutput;
+    return this._datastore;
   }
   public putDatastore(value: DdsInstanceV3Datastore) {
-    this._datastore = value;
+    this._datastore.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get datastoreInput() {
-    return this._datastore
+    return this._datastore.internalValue;
   }
 
   // flavor - computed: false, optional: false, required: true
@@ -611,24 +690,23 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get flavorInput() {
-    return this._flavor
+    return this._flavor;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DdsInstanceV3Timeouts | undefined; 
-  private __timeoutsOutput = new DdsInstanceV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DdsInstanceV3TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DdsInstanceV3Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DdsInstanceV3Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -647,10 +725,10 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       ssl: cdktf.booleanToTerraform(this._ssl),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      backup_strategy: ddsInstanceV3BackupStrategyToTerraform(this._backupStrategy),
-      datastore: ddsInstanceV3DatastoreToTerraform(this._datastore),
+      backup_strategy: ddsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
+      datastore: ddsInstanceV3DatastoreToTerraform(this._datastore.internalValue),
       flavor: cdktf.listMapper(ddsInstanceV3FlavorToTerraform)(this._flavor),
-      timeouts: ddsInstanceV3TimeoutsToTerraform(this._timeouts),
+      timeouts: ddsInstanceV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

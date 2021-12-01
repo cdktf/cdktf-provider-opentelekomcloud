@@ -82,7 +82,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // cache_control - computed: true, optional: false, required: false
@@ -145,7 +145,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // last_modified - computed: true, optional: false, required: false
@@ -159,11 +159,11 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
 
   // range - computed: false, optional: true, required: false
-  private _range?: string | undefined; 
+  private _range?: string; 
   public get range() {
     return this.getStringAttribute('range');
   }
-  public set range(value: string | undefined) {
+  public set range(value: string) {
     this._range = value;
   }
   public resetRange() {
@@ -171,7 +171,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get rangeInput() {
-    return this._range
+    return this._range;
   }
 
   // server_side_encryption - computed: true, optional: false, required: false
@@ -185,11 +185,11 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
 
   // version_id - computed: true, optional: true, required: false
-  private _versionId?: string | undefined; 
+  private _versionId?: string; 
   public get versionId() {
     return this.getStringAttribute('version_id');
   }
-  public set versionId(value: string | undefined) {
+  public set versionId(value: string) {
     this._versionId = value;
   }
   public resetVersionId() {
@@ -197,7 +197,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get versionIdInput() {
-    return this._versionId
+    return this._versionId;
   }
 
   // website_redirect_location - computed: true, optional: false, required: false

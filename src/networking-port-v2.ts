@@ -85,7 +85,7 @@ export interface NetworkingPortV2AllowedAddressPairs {
   readonly macAddress?: string;
 }
 
-function networkingPortV2AllowedAddressPairsToTerraform(struct?: NetworkingPortV2AllowedAddressPairs): any {
+export function networkingPortV2AllowedAddressPairsToTerraform(struct?: NetworkingPortV2AllowedAddressPairs): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -107,7 +107,7 @@ export interface NetworkingPortV2FixedIp {
   readonly subnetId: string;
 }
 
-function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIp): any {
+export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIp): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -129,7 +129,7 @@ export interface NetworkingPortV2Timeouts {
   readonly delete?: string;
 }
 
-function networkingPortV2TimeoutsToTerraform(struct?: NetworkingPortV2TimeoutsOutputReference | NetworkingPortV2Timeouts): any {
+export function networkingPortV2TimeoutsToTerraform(struct?: NetworkingPortV2TimeoutsOutputReference | NetworkingPortV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -150,12 +150,37 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NetworkingPortV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingPortV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -163,15 +188,15 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -179,7 +204,7 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -229,7 +254,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
     this._valueSpecs = config.valueSpecs;
     this._allowedAddressPairs = config.allowedAddressPairs;
     this._fixedIp = config.fixedIp;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -237,11 +262,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: true, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -249,7 +274,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // all_fixed_ips - computed: true, optional: false, required: false
@@ -258,11 +283,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // device_id - computed: true, optional: true, required: false
-  private _deviceId?: string | undefined; 
+  private _deviceId?: string; 
   public get deviceId() {
     return this.getStringAttribute('device_id');
   }
-  public set deviceId(value: string | undefined) {
+  public set deviceId(value: string) {
     this._deviceId = value;
   }
   public resetDeviceId() {
@@ -270,15 +295,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deviceIdInput() {
-    return this._deviceId
+    return this._deviceId;
   }
 
   // device_owner - computed: true, optional: true, required: false
-  private _deviceOwner?: string | undefined; 
+  private _deviceOwner?: string; 
   public get deviceOwner() {
     return this.getStringAttribute('device_owner');
   }
-  public set deviceOwner(value: string | undefined) {
+  public set deviceOwner(value: string) {
     this._deviceOwner = value;
   }
   public resetDeviceOwner() {
@@ -286,7 +311,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deviceOwnerInput() {
-    return this._deviceOwner
+    return this._deviceOwner;
   }
 
   // id - computed: true, optional: true, required: false
@@ -295,11 +320,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // mac_address - computed: true, optional: true, required: false
-  private _macAddress?: string | undefined; 
+  private _macAddress?: string; 
   public get macAddress() {
     return this.getStringAttribute('mac_address');
   }
-  public set macAddress(value: string | undefined) {
+  public set macAddress(value: string) {
     this._macAddress = value;
   }
   public resetMacAddress() {
@@ -307,15 +332,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get macAddressInput() {
-    return this._macAddress
+    return this._macAddress;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -323,7 +348,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network_id - computed: false, optional: false, required: true
@@ -336,15 +361,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get networkIdInput() {
-    return this._networkId
+    return this._networkId;
   }
 
   // no_security_groups - computed: false, optional: true, required: false
-  private _noSecurityGroups?: boolean | cdktf.IResolvable | undefined; 
+  private _noSecurityGroups?: boolean | cdktf.IResolvable; 
   public get noSecurityGroups() {
     return this.getBooleanAttribute('no_security_groups') as any;
   }
-  public set noSecurityGroups(value: boolean | cdktf.IResolvable | undefined) {
+  public set noSecurityGroups(value: boolean | cdktf.IResolvable) {
     this._noSecurityGroups = value;
   }
   public resetNoSecurityGroups() {
@@ -352,15 +377,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get noSecurityGroupsInput() {
-    return this._noSecurityGroups
+    return this._noSecurityGroups;
   }
 
   // port_security_enabled - computed: true, optional: true, required: false
-  private _portSecurityEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _portSecurityEnabled?: boolean | cdktf.IResolvable; 
   public get portSecurityEnabled() {
     return this.getBooleanAttribute('port_security_enabled') as any;
   }
-  public set portSecurityEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set portSecurityEnabled(value: boolean | cdktf.IResolvable) {
     this._portSecurityEnabled = value;
   }
   public resetPortSecurityEnabled() {
@@ -368,15 +393,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portSecurityEnabledInput() {
-    return this._portSecurityEnabled
+    return this._portSecurityEnabled;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -384,15 +409,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // security_group_ids - computed: true, optional: true, required: false
-  private _securityGroupIds?: string[] | undefined; 
+  private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
     return this.getListAttribute('security_group_ids');
   }
-  public set securityGroupIds(value: string[] | undefined) {
+  public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
   }
   public resetSecurityGroupIds() {
@@ -400,15 +425,15 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdsInput() {
-    return this._securityGroupIds
+    return this._securityGroupIds;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -416,16 +441,16 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -433,16 +458,16 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // allowed_address_pairs - computed: false, optional: true, required: false
-  private _allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | undefined; 
+  private _allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[]; 
   public get allowedAddressPairs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('allowed_address_pairs') as any;
   }
-  public set allowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[] | undefined) {
+  public set allowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[]) {
     this._allowedAddressPairs = value;
   }
   public resetAllowedAddressPairs() {
@@ -450,16 +475,16 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get allowedAddressPairsInput() {
-    return this._allowedAddressPairs
+    return this._allowedAddressPairs;
   }
 
   // fixed_ip - computed: false, optional: true, required: false
-  private _fixedIp?: NetworkingPortV2FixedIp[] | undefined; 
+  private _fixedIp?: NetworkingPortV2FixedIp[]; 
   public get fixedIp() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('fixed_ip') as any;
   }
-  public set fixedIp(value: NetworkingPortV2FixedIp[] | undefined) {
+  public set fixedIp(value: NetworkingPortV2FixedIp[]) {
     this._fixedIp = value;
   }
   public resetFixedIp() {
@@ -467,24 +492,23 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fixedIpInput() {
-    return this._fixedIp
+    return this._fixedIp;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NetworkingPortV2Timeouts | undefined; 
-  private __timeoutsOutput = new NetworkingPortV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingPortV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NetworkingPortV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NetworkingPortV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -507,7 +531,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform)(this._allowedAddressPairs),
       fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform)(this._fixedIp),
-      timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts),
+      timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

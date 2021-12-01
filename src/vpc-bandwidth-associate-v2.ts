@@ -68,11 +68,11 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   // ==========
 
   // backup_charge_mode - computed: false, optional: true, required: false
-  private _backupChargeMode?: string | undefined; 
+  private _backupChargeMode?: string; 
   public get backupChargeMode() {
     return this.getStringAttribute('backup_charge_mode');
   }
-  public set backupChargeMode(value: string | undefined) {
+  public set backupChargeMode(value: string) {
     this._backupChargeMode = value;
   }
   public resetBackupChargeMode() {
@@ -80,15 +80,15 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupChargeModeInput() {
-    return this._backupChargeMode
+    return this._backupChargeMode;
   }
 
   // backup_size - computed: false, optional: true, required: false
-  private _backupSize?: number | undefined; 
+  private _backupSize?: number; 
   public get backupSize() {
     return this.getNumberAttribute('backup_size');
   }
-  public set backupSize(value: number | undefined) {
+  public set backupSize(value: number) {
     this._backupSize = value;
   }
   public resetBackupSize() {
@@ -96,7 +96,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupSizeInput() {
-    return this._backupSize
+    return this._backupSize;
   }
 
   // bandwidth - computed: false, optional: false, required: true
@@ -109,7 +109,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
-    return this._bandwidth
+    return this._bandwidth;
   }
 
   // floating_ips - computed: false, optional: false, required: true
@@ -122,7 +122,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpsInput() {
-    return this._floatingIps
+    return this._floatingIps;
   }
 
   // id - computed: true, optional: true, required: false

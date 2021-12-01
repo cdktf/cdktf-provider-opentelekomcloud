@@ -84,7 +84,7 @@ export interface AsPolicyV2ScalingPolicyAction {
   readonly size?: number;
 }
 
-function asPolicyV2ScalingPolicyActionToTerraform(struct?: AsPolicyV2ScalingPolicyAction): any {
+export function asPolicyV2ScalingPolicyActionToTerraform(struct?: AsPolicyV2ScalingPolicyAction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -120,7 +120,7 @@ export interface AsPolicyV2ScheduledPolicy {
   readonly startTime?: string;
 }
 
-function asPolicyV2ScheduledPolicyToTerraform(struct?: AsPolicyV2ScheduledPolicy): any {
+export function asPolicyV2ScheduledPolicyToTerraform(struct?: AsPolicyV2ScheduledPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -183,11 +183,11 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   // ==========
 
   // alarm_id - computed: false, optional: true, required: false
-  private _alarmId?: string | undefined; 
+  private _alarmId?: string; 
   public get alarmId() {
     return this.getStringAttribute('alarm_id');
   }
-  public set alarmId(value: string | undefined) {
+  public set alarmId(value: string) {
     this._alarmId = value;
   }
   public resetAlarmId() {
@@ -195,15 +195,15 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmIdInput() {
-    return this._alarmId
+    return this._alarmId;
   }
 
   // cool_down_time - computed: true, optional: true, required: false
-  private _coolDownTime?: number | undefined; 
+  private _coolDownTime?: number; 
   public get coolDownTime() {
     return this.getNumberAttribute('cool_down_time');
   }
-  public set coolDownTime(value: number | undefined) {
+  public set coolDownTime(value: number) {
     this._coolDownTime = value;
   }
   public resetCoolDownTime() {
@@ -211,7 +211,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coolDownTimeInput() {
-    return this._coolDownTime
+    return this._coolDownTime;
   }
 
   // create_time - computed: true, optional: false, required: false
@@ -230,11 +230,11 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -242,7 +242,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // scaling_policy_name - computed: false, optional: false, required: true
@@ -255,7 +255,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyNameInput() {
-    return this._scalingPolicyName
+    return this._scalingPolicyName;
   }
 
   // scaling_policy_type - computed: false, optional: false, required: true
@@ -268,7 +268,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyTypeInput() {
-    return this._scalingPolicyType
+    return this._scalingPolicyType;
   }
 
   // scaling_resource_id - computed: false, optional: false, required: true
@@ -281,7 +281,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingResourceIdInput() {
-    return this._scalingResourceId
+    return this._scalingResourceId;
   }
 
   // scaling_resource_type - computed: false, optional: false, required: true
@@ -294,16 +294,16 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingResourceTypeInput() {
-    return this._scalingResourceType
+    return this._scalingResourceType;
   }
 
   // scaling_policy_action - computed: false, optional: true, required: false
-  private _scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[] | undefined; 
+  private _scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[]; 
   public get scalingPolicyAction() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('scaling_policy_action') as any;
   }
-  public set scalingPolicyAction(value: AsPolicyV2ScalingPolicyAction[] | undefined) {
+  public set scalingPolicyAction(value: AsPolicyV2ScalingPolicyAction[]) {
     this._scalingPolicyAction = value;
   }
   public resetScalingPolicyAction() {
@@ -311,16 +311,16 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyActionInput() {
-    return this._scalingPolicyAction
+    return this._scalingPolicyAction;
   }
 
   // scheduled_policy - computed: false, optional: true, required: false
-  private _scheduledPolicy?: AsPolicyV2ScheduledPolicy[] | undefined; 
+  private _scheduledPolicy?: AsPolicyV2ScheduledPolicy[]; 
   public get scheduledPolicy() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('scheduled_policy') as any;
   }
-  public set scheduledPolicy(value: AsPolicyV2ScheduledPolicy[] | undefined) {
+  public set scheduledPolicy(value: AsPolicyV2ScheduledPolicy[]) {
     this._scheduledPolicy = value;
   }
   public resetScheduledPolicy() {
@@ -328,7 +328,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledPolicyInput() {
-    return this._scheduledPolicy
+    return this._scheduledPolicy;
   }
 
   // =========

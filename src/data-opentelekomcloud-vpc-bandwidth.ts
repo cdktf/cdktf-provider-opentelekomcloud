@@ -78,11 +78,11 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
 
   // enterprise_project_id - computed: false, optional: true, required: false
-  private _enterpriseProjectId?: string | undefined; 
+  private _enterpriseProjectId?: string; 
   public get enterpriseProjectId() {
     return this.getStringAttribute('enterprise_project_id');
   }
-  public set enterpriseProjectId(value: string | undefined) {
+  public set enterpriseProjectId(value: string) {
     this._enterpriseProjectId = value;
   }
   public resetEnterpriseProjectId() {
@@ -90,7 +90,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get enterpriseProjectIdInput() {
-    return this._enterpriseProjectId
+    return this._enterpriseProjectId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -108,15 +108,15 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -124,7 +124,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // share_type - computed: true, optional: false, required: false
@@ -133,11 +133,11 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
 
   // size - computed: false, optional: true, required: false
-  private _size?: number | undefined; 
+  private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
   }
-  public set size(value: number | undefined) {
+  public set size(value: number) {
     this._size = value;
   }
   public resetSize() {
@@ -145,7 +145,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 
   // status - computed: true, optional: false, required: false

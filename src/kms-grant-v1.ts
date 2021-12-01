@@ -87,7 +87,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get granteePrincipalInput() {
-    return this._granteePrincipal
+    return this._granteePrincipal;
   }
 
   // id - computed: true, optional: true, required: false
@@ -110,15 +110,15 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyIdInput() {
-    return this._keyId
+    return this._keyId;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -126,15 +126,15 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // operations - computed: false, optional: true, required: false
-  private _operations?: string[] | undefined; 
+  private _operations?: string[]; 
   public get operations() {
     return this.getListAttribute('operations');
   }
-  public set operations(value: string[] | undefined) {
+  public set operations(value: string[]) {
     this._operations = value;
   }
   public resetOperations() {
@@ -142,15 +142,15 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get operationsInput() {
-    return this._operations
+    return this._operations;
   }
 
   // retiring_principal - computed: false, optional: true, required: false
-  private _retiringPrincipal?: string | undefined; 
+  private _retiringPrincipal?: string; 
   public get retiringPrincipal() {
     return this.getStringAttribute('retiring_principal');
   }
-  public set retiringPrincipal(value: string | undefined) {
+  public set retiringPrincipal(value: string) {
     this._retiringPrincipal = value;
   }
   public resetRetiringPrincipal() {
@@ -158,7 +158,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get retiringPrincipalInput() {
-    return this._retiringPrincipal
+    return this._retiringPrincipal;
   }
 
   // =========

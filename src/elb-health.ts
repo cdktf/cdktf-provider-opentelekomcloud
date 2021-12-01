@@ -65,7 +65,7 @@ export interface ElbHealthTimeouts {
   readonly update?: string;
 }
 
-function elbHealthTimeoutsToTerraform(struct?: ElbHealthTimeoutsOutputReference | ElbHealthTimeouts): any {
+export function elbHealthTimeoutsToTerraform(struct?: ElbHealthTimeoutsOutputReference | ElbHealthTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -87,12 +87,43 @@ export class ElbHealthTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ElbHealthTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElbHealthTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -100,15 +131,15 @@ export class ElbHealthTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -116,15 +147,15 @@ export class ElbHealthTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -132,7 +163,7 @@ export class ElbHealthTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -177,7 +208,7 @@ export class ElbHealth extends cdktf.TerraformResource {
     this._listenerId = config.listenerId;
     this._region = config.region;
     this._unhealthyThreshold = config.unhealthyThreshold;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -185,11 +216,11 @@ export class ElbHealth extends cdktf.TerraformResource {
   // ==========
 
   // healthcheck_connect_port - computed: true, optional: true, required: false
-  private _healthcheckConnectPort?: number | undefined; 
+  private _healthcheckConnectPort?: number; 
   public get healthcheckConnectPort() {
     return this.getNumberAttribute('healthcheck_connect_port');
   }
-  public set healthcheckConnectPort(value: number | undefined) {
+  public set healthcheckConnectPort(value: number) {
     this._healthcheckConnectPort = value;
   }
   public resetHealthcheckConnectPort() {
@@ -197,15 +228,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthcheckConnectPortInput() {
-    return this._healthcheckConnectPort
+    return this._healthcheckConnectPort;
   }
 
   // healthcheck_interval - computed: true, optional: true, required: false
-  private _healthcheckInterval?: number | undefined; 
+  private _healthcheckInterval?: number; 
   public get healthcheckInterval() {
     return this.getNumberAttribute('healthcheck_interval');
   }
-  public set healthcheckInterval(value: number | undefined) {
+  public set healthcheckInterval(value: number) {
     this._healthcheckInterval = value;
   }
   public resetHealthcheckInterval() {
@@ -213,15 +244,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthcheckIntervalInput() {
-    return this._healthcheckInterval
+    return this._healthcheckInterval;
   }
 
   // healthcheck_protocol - computed: true, optional: true, required: false
-  private _healthcheckProtocol?: string | undefined; 
+  private _healthcheckProtocol?: string; 
   public get healthcheckProtocol() {
     return this.getStringAttribute('healthcheck_protocol');
   }
-  public set healthcheckProtocol(value: string | undefined) {
+  public set healthcheckProtocol(value: string) {
     this._healthcheckProtocol = value;
   }
   public resetHealthcheckProtocol() {
@@ -229,15 +260,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthcheckProtocolInput() {
-    return this._healthcheckProtocol
+    return this._healthcheckProtocol;
   }
 
   // healthcheck_timeout - computed: true, optional: true, required: false
-  private _healthcheckTimeout?: number | undefined; 
+  private _healthcheckTimeout?: number; 
   public get healthcheckTimeout() {
     return this.getNumberAttribute('healthcheck_timeout');
   }
-  public set healthcheckTimeout(value: number | undefined) {
+  public set healthcheckTimeout(value: number) {
     this._healthcheckTimeout = value;
   }
   public resetHealthcheckTimeout() {
@@ -245,15 +276,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthcheckTimeoutInput() {
-    return this._healthcheckTimeout
+    return this._healthcheckTimeout;
   }
 
   // healthcheck_uri - computed: false, optional: true, required: false
-  private _healthcheckUri?: string | undefined; 
+  private _healthcheckUri?: string; 
   public get healthcheckUri() {
     return this.getStringAttribute('healthcheck_uri');
   }
-  public set healthcheckUri(value: string | undefined) {
+  public set healthcheckUri(value: string) {
     this._healthcheckUri = value;
   }
   public resetHealthcheckUri() {
@@ -261,15 +292,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthcheckUriInput() {
-    return this._healthcheckUri
+    return this._healthcheckUri;
   }
 
   // healthy_threshold - computed: true, optional: true, required: false
-  private _healthyThreshold?: number | undefined; 
+  private _healthyThreshold?: number; 
   public get healthyThreshold() {
     return this.getNumberAttribute('healthy_threshold');
   }
-  public set healthyThreshold(value: number | undefined) {
+  public set healthyThreshold(value: number) {
     this._healthyThreshold = value;
   }
   public resetHealthyThreshold() {
@@ -277,7 +308,7 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get healthyThresholdInput() {
-    return this._healthyThreshold
+    return this._healthyThreshold;
   }
 
   // id - computed: true, optional: true, required: false
@@ -295,15 +326,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get listenerIdInput() {
-    return this._listenerId
+    return this._listenerId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -311,15 +342,15 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // unhealthy_threshold - computed: true, optional: true, required: false
-  private _unhealthyThreshold?: number | undefined; 
+  private _unhealthyThreshold?: number; 
   public get unhealthyThreshold() {
     return this.getNumberAttribute('unhealthy_threshold');
   }
-  public set unhealthyThreshold(value: number | undefined) {
+  public set unhealthyThreshold(value: number) {
     this._unhealthyThreshold = value;
   }
   public resetUnhealthyThreshold() {
@@ -327,24 +358,23 @@ export class ElbHealth extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get unhealthyThresholdInput() {
-    return this._unhealthyThreshold
+    return this._unhealthyThreshold;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ElbHealthTimeouts | undefined; 
-  private __timeoutsOutput = new ElbHealthTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ElbHealthTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ElbHealthTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ElbHealthTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -362,7 +392,7 @@ export class ElbHealth extends cdktf.TerraformResource {
       listener_id: cdktf.stringToTerraform(this._listenerId),
       region: cdktf.stringToTerraform(this._region),
       unhealthy_threshold: cdktf.numberToTerraform(this._unhealthyThreshold),
-      timeouts: elbHealthTimeoutsToTerraform(this._timeouts),
+      timeouts: elbHealthTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -101,7 +101,7 @@ export interface LbListenerV3InsertHeaders {
   readonly forwardedPort?: boolean | cdktf.IResolvable;
 }
 
-function lbListenerV3InsertHeadersToTerraform(struct?: LbListenerV3InsertHeadersOutputReference | LbListenerV3InsertHeaders): any {
+export function lbListenerV3InsertHeadersToTerraform(struct?: LbListenerV3InsertHeadersOutputReference | LbListenerV3InsertHeaders): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -124,12 +124,49 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LbListenerV3InsertHeaders | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._forwardElbIp) {
+      hasAnyValues = true;
+      internalValueResult.forwardElbIp = this._forwardElbIp;
+    }
+    if (this._forwardedForPort) {
+      hasAnyValues = true;
+      internalValueResult.forwardedForPort = this._forwardedForPort;
+    }
+    if (this._forwardedHost) {
+      hasAnyValues = true;
+      internalValueResult.forwardedHost = this._forwardedHost;
+    }
+    if (this._forwardedPort) {
+      hasAnyValues = true;
+      internalValueResult.forwardedPort = this._forwardedPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerV3InsertHeaders | undefined) {
+    if (value === undefined) {
+      this._forwardElbIp = undefined;
+      this._forwardedForPort = undefined;
+      this._forwardedHost = undefined;
+      this._forwardedPort = undefined;
+    }
+    else {
+      this._forwardElbIp = value.forwardElbIp;
+      this._forwardedForPort = value.forwardedForPort;
+      this._forwardedHost = value.forwardedHost;
+      this._forwardedPort = value.forwardedPort;
+    }
+  }
+
   // forward_elb_ip - computed: true, optional: true, required: false
-  private _forwardElbIp?: boolean | cdktf.IResolvable | undefined; 
+  private _forwardElbIp?: boolean | cdktf.IResolvable; 
   public get forwardElbIp() {
     return this.getBooleanAttribute('forward_elb_ip') as any;
   }
-  public set forwardElbIp(value: boolean | cdktf.IResolvable | undefined) {
+  public set forwardElbIp(value: boolean | cdktf.IResolvable) {
     this._forwardElbIp = value;
   }
   public resetForwardElbIp() {
@@ -137,15 +174,15 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get forwardElbIpInput() {
-    return this._forwardElbIp
+    return this._forwardElbIp;
   }
 
   // forwarded_for_port - computed: true, optional: true, required: false
-  private _forwardedForPort?: boolean | cdktf.IResolvable | undefined; 
+  private _forwardedForPort?: boolean | cdktf.IResolvable; 
   public get forwardedForPort() {
     return this.getBooleanAttribute('forwarded_for_port') as any;
   }
-  public set forwardedForPort(value: boolean | cdktf.IResolvable | undefined) {
+  public set forwardedForPort(value: boolean | cdktf.IResolvable) {
     this._forwardedForPort = value;
   }
   public resetForwardedForPort() {
@@ -153,15 +190,15 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get forwardedForPortInput() {
-    return this._forwardedForPort
+    return this._forwardedForPort;
   }
 
   // forwarded_host - computed: true, optional: true, required: false
-  private _forwardedHost?: boolean | cdktf.IResolvable | undefined; 
+  private _forwardedHost?: boolean | cdktf.IResolvable; 
   public get forwardedHost() {
     return this.getBooleanAttribute('forwarded_host') as any;
   }
-  public set forwardedHost(value: boolean | cdktf.IResolvable | undefined) {
+  public set forwardedHost(value: boolean | cdktf.IResolvable) {
     this._forwardedHost = value;
   }
   public resetForwardedHost() {
@@ -169,15 +206,15 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get forwardedHostInput() {
-    return this._forwardedHost
+    return this._forwardedHost;
   }
 
   // forwarded_port - computed: true, optional: true, required: false
-  private _forwardedPort?: boolean | cdktf.IResolvable | undefined; 
+  private _forwardedPort?: boolean | cdktf.IResolvable; 
   public get forwardedPort() {
     return this.getBooleanAttribute('forwarded_port') as any;
   }
-  public set forwardedPort(value: boolean | cdktf.IResolvable | undefined) {
+  public set forwardedPort(value: boolean | cdktf.IResolvable) {
     this._forwardedPort = value;
   }
   public resetForwardedPort() {
@@ -185,7 +222,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get forwardedPortInput() {
-    return this._forwardedPort
+    return this._forwardedPort;
   }
 }
 
@@ -238,7 +275,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     this._sniContainerRefs = config.sniContainerRefs;
     this._tags = config.tags;
     this._tlsCiphersPolicy = config.tlsCiphersPolicy;
-    this._insertHeaders = config.insertHeaders;
+    this._insertHeaders.internalValue = config.insertHeaders;
   }
 
   // ==========
@@ -246,11 +283,11 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -258,15 +295,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // client_ca_tls_container_ref - computed: false, optional: true, required: false
-  private _clientCaTlsContainerRef?: string | undefined; 
+  private _clientCaTlsContainerRef?: string; 
   public get clientCaTlsContainerRef() {
     return this.getStringAttribute('client_ca_tls_container_ref');
   }
-  public set clientCaTlsContainerRef(value: string | undefined) {
+  public set clientCaTlsContainerRef(value: string) {
     this._clientCaTlsContainerRef = value;
   }
   public resetClientCaTlsContainerRef() {
@@ -274,15 +311,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientCaTlsContainerRefInput() {
-    return this._clientCaTlsContainerRef
+    return this._clientCaTlsContainerRef;
   }
 
   // client_timeout - computed: true, optional: true, required: false
-  private _clientTimeout?: number | undefined; 
+  private _clientTimeout?: number; 
   public get clientTimeout() {
     return this.getNumberAttribute('client_timeout');
   }
-  public set clientTimeout(value: number | undefined) {
+  public set clientTimeout(value: number) {
     this._clientTimeout = value;
   }
   public resetClientTimeout() {
@@ -290,7 +327,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clientTimeoutInput() {
-    return this._clientTimeout
+    return this._clientTimeout;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -299,11 +336,11 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // default_pool_id - computed: false, optional: true, required: false
-  private _defaultPoolId?: string | undefined; 
+  private _defaultPoolId?: string; 
   public get defaultPoolId() {
     return this.getStringAttribute('default_pool_id');
   }
-  public set defaultPoolId(value: string | undefined) {
+  public set defaultPoolId(value: string) {
     this._defaultPoolId = value;
   }
   public resetDefaultPoolId() {
@@ -311,15 +348,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get defaultPoolIdInput() {
-    return this._defaultPoolId
+    return this._defaultPoolId;
   }
 
   // default_tls_container_ref - computed: false, optional: true, required: false
-  private _defaultTlsContainerRef?: string | undefined; 
+  private _defaultTlsContainerRef?: string; 
   public get defaultTlsContainerRef() {
     return this.getStringAttribute('default_tls_container_ref');
   }
-  public set defaultTlsContainerRef(value: string | undefined) {
+  public set defaultTlsContainerRef(value: string) {
     this._defaultTlsContainerRef = value;
   }
   public resetDefaultTlsContainerRef() {
@@ -327,15 +364,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get defaultTlsContainerRefInput() {
-    return this._defaultTlsContainerRef
+    return this._defaultTlsContainerRef;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -343,15 +380,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // http2_enable - computed: false, optional: true, required: false
-  private _http2Enable?: boolean | cdktf.IResolvable | undefined; 
+  private _http2Enable?: boolean | cdktf.IResolvable; 
   public get http2Enable() {
     return this.getBooleanAttribute('http2_enable') as any;
   }
-  public set http2Enable(value: boolean | cdktf.IResolvable | undefined) {
+  public set http2Enable(value: boolean | cdktf.IResolvable) {
     this._http2Enable = value;
   }
   public resetHttp2Enable() {
@@ -359,7 +396,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get http2EnableInput() {
-    return this._http2Enable
+    return this._http2Enable;
   }
 
   // id - computed: true, optional: true, required: false
@@ -368,11 +405,11 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // keep_alive_timeout - computed: true, optional: true, required: false
-  private _keepAliveTimeout?: number | undefined; 
+  private _keepAliveTimeout?: number; 
   public get keepAliveTimeout() {
     return this.getNumberAttribute('keep_alive_timeout');
   }
-  public set keepAliveTimeout(value: number | undefined) {
+  public set keepAliveTimeout(value: number) {
     this._keepAliveTimeout = value;
   }
   public resetKeepAliveTimeout() {
@@ -380,7 +417,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keepAliveTimeoutInput() {
-    return this._keepAliveTimeout
+    return this._keepAliveTimeout;
   }
 
   // loadbalancer_id - computed: false, optional: false, required: true
@@ -393,15 +430,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loadbalancerIdInput() {
-    return this._loadbalancerId
+    return this._loadbalancerId;
   }
 
   // member_retry_enable - computed: false, optional: true, required: false
-  private _memberRetryEnable?: boolean | cdktf.IResolvable | undefined; 
+  private _memberRetryEnable?: boolean | cdktf.IResolvable; 
   public get memberRetryEnable() {
     return this.getBooleanAttribute('member_retry_enable') as any;
   }
-  public set memberRetryEnable(value: boolean | cdktf.IResolvable | undefined) {
+  public set memberRetryEnable(value: boolean | cdktf.IResolvable) {
     this._memberRetryEnable = value;
   }
   public resetMemberRetryEnable() {
@@ -409,15 +446,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get memberRetryEnableInput() {
-    return this._memberRetryEnable
+    return this._memberRetryEnable;
   }
 
   // member_timeout - computed: true, optional: true, required: false
-  private _memberTimeout?: number | undefined; 
+  private _memberTimeout?: number; 
   public get memberTimeout() {
     return this.getNumberAttribute('member_timeout');
   }
-  public set memberTimeout(value: number | undefined) {
+  public set memberTimeout(value: number) {
     this._memberTimeout = value;
   }
   public resetMemberTimeout() {
@@ -425,15 +462,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get memberTimeoutInput() {
-    return this._memberTimeout
+    return this._memberTimeout;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -441,7 +478,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -454,7 +491,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // protocol_port - computed: false, optional: false, required: true
@@ -467,15 +504,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolPortInput() {
-    return this._protocolPort
+    return this._protocolPort;
   }
 
   // sni_container_refs - computed: false, optional: true, required: false
-  private _sniContainerRefs?: string[] | undefined; 
+  private _sniContainerRefs?: string[]; 
   public get sniContainerRefs() {
     return this.getListAttribute('sni_container_refs');
   }
-  public set sniContainerRefs(value: string[] | undefined) {
+  public set sniContainerRefs(value: string[]) {
     this._sniContainerRefs = value;
   }
   public resetSniContainerRefs() {
@@ -483,16 +520,16 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sniContainerRefsInput() {
-    return this._sniContainerRefs
+    return this._sniContainerRefs;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -500,15 +537,15 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tls_ciphers_policy - computed: true, optional: true, required: false
-  private _tlsCiphersPolicy?: string | undefined; 
+  private _tlsCiphersPolicy?: string; 
   public get tlsCiphersPolicy() {
     return this.getStringAttribute('tls_ciphers_policy');
   }
-  public set tlsCiphersPolicy(value: string | undefined) {
+  public set tlsCiphersPolicy(value: string) {
     this._tlsCiphersPolicy = value;
   }
   public resetTlsCiphersPolicy() {
@@ -516,7 +553,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tlsCiphersPolicyInput() {
-    return this._tlsCiphersPolicy
+    return this._tlsCiphersPolicy;
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -525,20 +562,19 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // insert_headers - computed: false, optional: true, required: false
-  private _insertHeaders?: LbListenerV3InsertHeaders | undefined; 
-  private __insertHeadersOutput = new LbListenerV3InsertHeadersOutputReference(this as any, "insert_headers", true);
+  private _insertHeaders = new LbListenerV3InsertHeadersOutputReference(this as any, "insert_headers", true);
   public get insertHeaders() {
-    return this.__insertHeadersOutput;
+    return this._insertHeaders;
   }
-  public putInsertHeaders(value: LbListenerV3InsertHeaders | undefined) {
-    this._insertHeaders = value;
+  public putInsertHeaders(value: LbListenerV3InsertHeaders) {
+    this._insertHeaders.internalValue = value;
   }
   public resetInsertHeaders() {
-    this._insertHeaders = undefined;
+    this._insertHeaders.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get insertHeadersInput() {
-    return this._insertHeaders
+    return this._insertHeaders.internalValue;
   }
 
   // =========
@@ -564,7 +600,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform)(this._sniContainerRefs),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
-      insert_headers: lbListenerV3InsertHeadersToTerraform(this._insertHeaders),
+      insert_headers: lbListenerV3InsertHeadersToTerraform(this._insertHeaders.internalValue),
     };
   }
 }

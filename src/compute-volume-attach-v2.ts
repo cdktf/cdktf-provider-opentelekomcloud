@@ -41,7 +41,7 @@ export interface ComputeVolumeAttachV2Timeouts {
   readonly delete?: string;
 }
 
-function computeVolumeAttachV2TimeoutsToTerraform(struct?: ComputeVolumeAttachV2TimeoutsOutputReference | ComputeVolumeAttachV2Timeouts): any {
+export function computeVolumeAttachV2TimeoutsToTerraform(struct?: ComputeVolumeAttachV2TimeoutsOutputReference | ComputeVolumeAttachV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -62,12 +62,37 @@ export class ComputeVolumeAttachV2TimeoutsOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ComputeVolumeAttachV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeVolumeAttachV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -75,15 +100,15 @@ export class ComputeVolumeAttachV2TimeoutsOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -91,7 +116,7 @@ export class ComputeVolumeAttachV2TimeoutsOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -131,7 +156,7 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
     this._instanceId = config.instanceId;
     this._region = config.region;
     this._volumeId = config.volumeId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -139,11 +164,11 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   // ==========
 
   // device - computed: true, optional: true, required: false
-  private _device?: string | undefined; 
+  private _device?: string; 
   public get device() {
     return this.getStringAttribute('device');
   }
-  public set device(value: string | undefined) {
+  public set device(value: string) {
     this._device = value;
   }
   public resetDevice() {
@@ -151,7 +176,7 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deviceInput() {
-    return this._device
+    return this._device;
   }
 
   // id - computed: true, optional: true, required: false
@@ -169,15 +194,15 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get instanceIdInput() {
-    return this._instanceId
+    return this._instanceId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -185,7 +210,7 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // volume_id - computed: false, optional: false, required: true
@@ -198,24 +223,23 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get volumeIdInput() {
-    return this._volumeId
+    return this._volumeId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ComputeVolumeAttachV2Timeouts | undefined; 
-  private __timeoutsOutput = new ComputeVolumeAttachV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ComputeVolumeAttachV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ComputeVolumeAttachV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ComputeVolumeAttachV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -228,7 +252,7 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
       instance_id: cdktf.stringToTerraform(this._instanceId),
       region: cdktf.stringToTerraform(this._region),
       volume_id: cdktf.stringToTerraform(this._volumeId),
-      timeouts: computeVolumeAttachV2TimeoutsToTerraform(this._timeouts),
+      timeouts: computeVolumeAttachV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

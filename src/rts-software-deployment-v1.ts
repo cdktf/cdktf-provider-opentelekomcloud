@@ -61,7 +61,7 @@ export interface RtsSoftwareDeploymentV1Timeouts {
   readonly delete?: string;
 }
 
-function rtsSoftwareDeploymentV1TimeoutsToTerraform(struct?: RtsSoftwareDeploymentV1TimeoutsOutputReference | RtsSoftwareDeploymentV1Timeouts): any {
+export function rtsSoftwareDeploymentV1TimeoutsToTerraform(struct?: RtsSoftwareDeploymentV1TimeoutsOutputReference | RtsSoftwareDeploymentV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,12 +82,37 @@ export class RtsSoftwareDeploymentV1TimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RtsSoftwareDeploymentV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RtsSoftwareDeploymentV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -95,15 +120,15 @@ export class RtsSoftwareDeploymentV1TimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -111,7 +136,7 @@ export class RtsSoftwareDeploymentV1TimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -156,7 +181,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
     this._status = config.status;
     this._statusReason = config.statusReason;
     this._tenantId = config.tenantId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -164,11 +189,11 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   // ==========
 
   // action - computed: true, optional: true, required: false
-  private _action?: string | undefined; 
+  private _action?: string; 
   public get action() {
     return this.getStringAttribute('action');
   }
-  public set action(value: string | undefined) {
+  public set action(value: string) {
     this._action = value;
   }
   public resetAction() {
@@ -176,7 +201,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
-    return this._action
+    return this._action;
   }
 
   // config_id - computed: false, optional: false, required: true
@@ -189,7 +214,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get configIdInput() {
-    return this._configId
+    return this._configId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -198,12 +223,12 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
 
   // input_values - computed: true, optional: true, required: false
-  private _inputValues?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _inputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get inputValues() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('input_values') as any;
   }
-  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._inputValues = value;
   }
   public resetInputValues() {
@@ -211,16 +236,16 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get inputValuesInput() {
-    return this._inputValues
+    return this._inputValues;
   }
 
   // output_values - computed: true, optional: true, required: false
-  private _outputValues?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _outputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get outputValues() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('output_values') as any;
   }
-  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._outputValues = value;
   }
   public resetOutputValues() {
@@ -228,15 +253,15 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get outputValuesInput() {
-    return this._outputValues
+    return this._outputValues;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -244,7 +269,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // server_id - computed: false, optional: false, required: true
@@ -257,15 +282,15 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -273,15 +298,15 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // status_reason - computed: true, optional: true, required: false
-  private _statusReason?: string | undefined; 
+  private _statusReason?: string; 
   public get statusReason() {
     return this.getStringAttribute('status_reason');
   }
-  public set statusReason(value: string | undefined) {
+  public set statusReason(value: string) {
     this._statusReason = value;
   }
   public resetStatusReason() {
@@ -289,15 +314,15 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusReasonInput() {
-    return this._statusReason
+    return this._statusReason;
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -305,24 +330,23 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: RtsSoftwareDeploymentV1Timeouts | undefined; 
-  private __timeoutsOutput = new RtsSoftwareDeploymentV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsSoftwareDeploymentV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: RtsSoftwareDeploymentV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: RtsSoftwareDeploymentV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -340,7 +364,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       status_reason: cdktf.stringToTerraform(this._statusReason),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      timeouts: rtsSoftwareDeploymentV1TimeoutsToTerraform(this._timeouts),
+      timeouts: rtsSoftwareDeploymentV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

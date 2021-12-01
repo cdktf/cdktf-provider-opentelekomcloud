@@ -83,11 +83,11 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   // ==========
 
   // destination - computed: false, optional: true, required: false
-  private _destination?: string | undefined; 
+  private _destination?: string; 
   public get destination() {
     return this.getStringAttribute('destination');
   }
-  public set destination(value: string | undefined) {
+  public set destination(value: string) {
     this._destination = value;
   }
   public resetDestination() {
@@ -95,15 +95,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get destinationInput() {
-    return this._destination
+    return this._destination;
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -111,15 +111,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // nexthop - computed: false, optional: true, required: false
-  private _nexthop?: string | undefined; 
+  private _nexthop?: string; 
   public get nexthop() {
     return this.getStringAttribute('nexthop');
   }
-  public set nexthop(value: string | undefined) {
+  public set nexthop(value: string) {
     this._nexthop = value;
   }
   public resetNexthop() {
@@ -127,15 +127,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nexthopInput() {
-    return this._nexthop
+    return this._nexthop;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -143,15 +143,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -159,15 +159,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // type - computed: false, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -175,15 +175,15 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // vpc_id - computed: false, optional: true, required: false
-  private _vpcId?: string | undefined; 
+  private _vpcId?: string; 
   public get vpcId() {
     return this.getStringAttribute('vpc_id');
   }
-  public set vpcId(value: string | undefined) {
+  public set vpcId(value: string) {
     this._vpcId = value;
   }
   public resetVpcId() {
@@ -191,7 +191,7 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // =========

@@ -73,7 +73,7 @@ export interface WafCcattackprotectionRuleV1Timeouts {
   readonly delete?: string;
 }
 
-function wafCcattackprotectionRuleV1TimeoutsToTerraform(struct?: WafCcattackprotectionRuleV1TimeoutsOutputReference | WafCcattackprotectionRuleV1Timeouts): any {
+export function wafCcattackprotectionRuleV1TimeoutsToTerraform(struct?: WafCcattackprotectionRuleV1TimeoutsOutputReference | WafCcattackprotectionRuleV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,12 +94,37 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafCcattackprotectionRuleV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafCcattackprotectionRuleV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -107,15 +132,15 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -123,7 +148,7 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -171,7 +196,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
     this._tagIndex = config.tagIndex;
     this._tagType = config.tagType;
     this._url = config.url;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -188,15 +213,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionCategoryInput() {
-    return this._actionCategory
+    return this._actionCategory;
   }
 
   // block_content - computed: false, optional: true, required: false
-  private _blockContent?: string | undefined; 
+  private _blockContent?: string; 
   public get blockContent() {
     return this.getStringAttribute('block_content');
   }
-  public set blockContent(value: string | undefined) {
+  public set blockContent(value: string) {
     this._blockContent = value;
   }
   public resetBlockContent() {
@@ -204,15 +229,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get blockContentInput() {
-    return this._blockContent
+    return this._blockContent;
   }
 
   // block_content_type - computed: false, optional: true, required: false
-  private _blockContentType?: string | undefined; 
+  private _blockContentType?: string; 
   public get blockContentType() {
     return this.getStringAttribute('block_content_type');
   }
-  public set blockContentType(value: string | undefined) {
+  public set blockContentType(value: string) {
     this._blockContentType = value;
   }
   public resetBlockContentType() {
@@ -220,7 +245,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get blockContentTypeInput() {
-    return this._blockContentType
+    return this._blockContentType;
   }
 
   // default - computed: true, optional: false, required: false
@@ -243,7 +268,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get limitNumInput() {
-    return this._limitNum
+    return this._limitNum;
   }
 
   // limit_period - computed: false, optional: false, required: true
@@ -256,15 +281,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get limitPeriodInput() {
-    return this._limitPeriod
+    return this._limitPeriod;
   }
 
   // lock_time - computed: false, optional: true, required: false
-  private _lockTime?: number | undefined; 
+  private _lockTime?: number; 
   public get lockTime() {
     return this.getNumberAttribute('lock_time');
   }
-  public set lockTime(value: number | undefined) {
+  public set lockTime(value: number) {
     this._lockTime = value;
   }
   public resetLockTime() {
@@ -272,7 +297,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lockTimeInput() {
-    return this._lockTime
+    return this._lockTime;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -285,15 +310,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // tag_category - computed: false, optional: true, required: false
-  private _tagCategory?: string | undefined; 
+  private _tagCategory?: string; 
   public get tagCategory() {
     return this.getStringAttribute('tag_category');
   }
-  public set tagCategory(value: string | undefined) {
+  public set tagCategory(value: string) {
     this._tagCategory = value;
   }
   public resetTagCategory() {
@@ -301,15 +326,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagCategoryInput() {
-    return this._tagCategory
+    return this._tagCategory;
   }
 
   // tag_contents - computed: false, optional: true, required: false
-  private _tagContents?: string[] | undefined; 
+  private _tagContents?: string[]; 
   public get tagContents() {
     return this.getListAttribute('tag_contents');
   }
-  public set tagContents(value: string[] | undefined) {
+  public set tagContents(value: string[]) {
     this._tagContents = value;
   }
   public resetTagContents() {
@@ -317,15 +342,15 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagContentsInput() {
-    return this._tagContents
+    return this._tagContents;
   }
 
   // tag_index - computed: false, optional: true, required: false
-  private _tagIndex?: string | undefined; 
+  private _tagIndex?: string; 
   public get tagIndex() {
     return this.getStringAttribute('tag_index');
   }
-  public set tagIndex(value: string | undefined) {
+  public set tagIndex(value: string) {
     this._tagIndex = value;
   }
   public resetTagIndex() {
@@ -333,7 +358,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagIndexInput() {
-    return this._tagIndex
+    return this._tagIndex;
   }
 
   // tag_type - computed: false, optional: false, required: true
@@ -346,7 +371,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagTypeInput() {
-    return this._tagType
+    return this._tagType;
   }
 
   // url - computed: false, optional: false, required: true
@@ -359,24 +384,23 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: WafCcattackprotectionRuleV1Timeouts | undefined; 
-  private __timeoutsOutput = new WafCcattackprotectionRuleV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafCcattackprotectionRuleV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: WafCcattackprotectionRuleV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: WafCcattackprotectionRuleV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -397,7 +421,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
       tag_index: cdktf.stringToTerraform(this._tagIndex),
       tag_type: cdktf.stringToTerraform(this._tagType),
       url: cdktf.stringToTerraform(this._url),
-      timeouts: wafCcattackprotectionRuleV1TimeoutsToTerraform(this._timeouts),
+      timeouts: wafCcattackprotectionRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -83,11 +83,11 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -95,7 +95,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // group_count - computed: true, optional: false, required: false
@@ -109,11 +109,11 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
 
   // max_consume_count - computed: true, optional: true, required: false
-  private _maxConsumeCount?: number | undefined; 
+  private _maxConsumeCount?: number; 
   public get maxConsumeCount() {
     return this.getNumberAttribute('max_consume_count');
   }
-  public set maxConsumeCount(value: number | undefined) {
+  public set maxConsumeCount(value: number) {
     this._maxConsumeCount = value;
   }
   public resetMaxConsumeCount() {
@@ -121,7 +121,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maxConsumeCountInput() {
-    return this._maxConsumeCount
+    return this._maxConsumeCount;
   }
 
   // max_msg_size_byte - computed: true, optional: false, required: false
@@ -139,7 +139,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // produced_messages - computed: true, optional: false, required: false
@@ -148,11 +148,11 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
 
   // queue_mode - computed: true, optional: true, required: false
-  private _queueMode?: string | undefined; 
+  private _queueMode?: string; 
   public get queueMode() {
     return this.getStringAttribute('queue_mode');
   }
-  public set queueMode(value: string | undefined) {
+  public set queueMode(value: string) {
     this._queueMode = value;
   }
   public resetQueueMode() {
@@ -160,15 +160,15 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get queueModeInput() {
-    return this._queueMode
+    return this._queueMode;
   }
 
   // redrive_policy - computed: true, optional: true, required: false
-  private _redrivePolicy?: string | undefined; 
+  private _redrivePolicy?: string; 
   public get redrivePolicy() {
     return this.getStringAttribute('redrive_policy');
   }
-  public set redrivePolicy(value: string | undefined) {
+  public set redrivePolicy(value: string) {
     this._redrivePolicy = value;
   }
   public resetRedrivePolicy() {
@@ -176,7 +176,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get redrivePolicyInput() {
-    return this._redrivePolicy
+    return this._redrivePolicy;
   }
 
   // reservation - computed: true, optional: false, required: false
@@ -185,11 +185,11 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
 
   // retention_hours - computed: true, optional: true, required: false
-  private _retentionHours?: number | undefined; 
+  private _retentionHours?: number; 
   public get retentionHours() {
     return this.getNumberAttribute('retention_hours');
   }
-  public set retentionHours(value: number | undefined) {
+  public set retentionHours(value: number) {
     this._retentionHours = value;
   }
   public resetRetentionHours() {
@@ -197,7 +197,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get retentionHoursInput() {
-    return this._retentionHours
+    return this._retentionHours;
   }
 
   // =========
