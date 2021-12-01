@@ -124,7 +124,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
-    return this._clusterId
+    return this._clusterId;
   }
 
   // data_volumes - computed: true, optional: false, required: false
@@ -168,11 +168,11 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -180,15 +180,15 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // node_id - computed: false, optional: true, required: false
-  private _nodeId?: string | undefined; 
+  private _nodeId?: string; 
   public get nodeId() {
     return this.getStringAttribute('node_id');
   }
-  public set nodeId(value: string | undefined) {
+  public set nodeId(value: string) {
     this._nodeId = value;
   }
   public resetNodeId() {
@@ -196,7 +196,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nodeIdInput() {
-    return this._nodeId
+    return this._nodeId;
   }
 
   // private_ip - computed: true, optional: false, required: false
@@ -210,11 +210,11 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -222,7 +222,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // server_id - computed: true, optional: false, required: false
@@ -236,11 +236,11 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -248,7 +248,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // volume_type - computed: true, optional: false, required: false

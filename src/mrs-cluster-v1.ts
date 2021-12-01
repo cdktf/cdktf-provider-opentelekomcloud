@@ -183,7 +183,7 @@ export interface MrsClusterV1AddJobs {
   readonly submitJobOnceClusterRun: boolean | cdktf.IResolvable;
 }
 
-function mrsClusterV1AddJobsToTerraform(struct?: MrsClusterV1AddJobs): any {
+export function mrsClusterV1AddJobsToTerraform(struct?: MrsClusterV1AddJobs): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -235,7 +235,7 @@ export interface MrsClusterV1BootstrapScripts {
   readonly uri: string;
 }
 
-function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1BootstrapScripts): any {
+export function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1BootstrapScripts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -258,7 +258,7 @@ export interface MrsClusterV1ComponentList {
   readonly componentName: string;
 }
 
-function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1ComponentList): any {
+export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1ComponentList): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -279,7 +279,7 @@ export interface MrsClusterV1Timeouts {
   readonly delete?: string;
 }
 
-function mrsClusterV1TimeoutsToTerraform(struct?: MrsClusterV1TimeoutsOutputReference | MrsClusterV1Timeouts): any {
+export function mrsClusterV1TimeoutsToTerraform(struct?: MrsClusterV1TimeoutsOutputReference | MrsClusterV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -300,12 +300,37 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): MrsClusterV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MrsClusterV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -313,15 +338,15 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -329,7 +354,7 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -393,7 +418,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
     this._addJobs = config.addJobs;
     this._bootstrapScripts = config.bootstrapScripts;
     this._componentList = config.componentList;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -410,7 +435,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableZoneIdInput() {
-    return this._availableZoneId
+    return this._availableZoneId;
   }
 
   // available_zone_name - computed: true, optional: false, required: false
@@ -428,7 +453,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get billingTypeInput() {
-    return this._billingType
+    return this._billingType;
   }
 
   // charging_start_time - computed: true, optional: false, required: false
@@ -437,11 +462,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // cluster_admin_secret - computed: true, optional: true, required: false
-  private _clusterAdminSecret?: string | undefined; 
+  private _clusterAdminSecret?: string; 
   public get clusterAdminSecret() {
     return this.getStringAttribute('cluster_admin_secret');
   }
-  public set clusterAdminSecret(value: string | undefined) {
+  public set clusterAdminSecret(value: string) {
     this._clusterAdminSecret = value;
   }
   public resetClusterAdminSecret() {
@@ -449,7 +474,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterAdminSecretInput() {
-    return this._clusterAdminSecret
+    return this._clusterAdminSecret;
   }
 
   // cluster_id - computed: true, optional: false, required: false
@@ -467,7 +492,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterNameInput() {
-    return this._clusterName
+    return this._clusterName;
   }
 
   // cluster_state - computed: true, optional: false, required: false
@@ -476,11 +501,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // cluster_type - computed: true, optional: true, required: false
-  private _clusterType?: number | undefined; 
+  private _clusterType?: number; 
   public get clusterType() {
     return this.getNumberAttribute('cluster_type');
   }
-  public set clusterType(value: number | undefined) {
+  public set clusterType(value: number) {
     this._clusterType = value;
   }
   public resetClusterType() {
@@ -488,15 +513,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterTypeInput() {
-    return this._clusterType
+    return this._clusterType;
   }
 
   // cluster_version - computed: true, optional: true, required: false
-  private _clusterVersion?: string | undefined; 
+  private _clusterVersion?: string; 
   public get clusterVersion() {
     return this.getStringAttribute('cluster_version');
   }
-  public set clusterVersion(value: string | undefined) {
+  public set clusterVersion(value: string) {
     this._clusterVersion = value;
   }
   public resetClusterVersion() {
@@ -504,15 +529,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterVersionInput() {
-    return this._clusterVersion
+    return this._clusterVersion;
   }
 
   // core_data_volume_count - computed: true, optional: true, required: false
-  private _coreDataVolumeCount?: number | undefined; 
+  private _coreDataVolumeCount?: number; 
   public get coreDataVolumeCount() {
     return this.getNumberAttribute('core_data_volume_count');
   }
-  public set coreDataVolumeCount(value: number | undefined) {
+  public set coreDataVolumeCount(value: number) {
     this._coreDataVolumeCount = value;
   }
   public resetCoreDataVolumeCount() {
@@ -520,15 +545,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coreDataVolumeCountInput() {
-    return this._coreDataVolumeCount
+    return this._coreDataVolumeCount;
   }
 
   // core_data_volume_size - computed: true, optional: true, required: false
-  private _coreDataVolumeSize?: number | undefined; 
+  private _coreDataVolumeSize?: number; 
   public get coreDataVolumeSize() {
     return this.getNumberAttribute('core_data_volume_size');
   }
-  public set coreDataVolumeSize(value: number | undefined) {
+  public set coreDataVolumeSize(value: number) {
     this._coreDataVolumeSize = value;
   }
   public resetCoreDataVolumeSize() {
@@ -536,15 +561,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coreDataVolumeSizeInput() {
-    return this._coreDataVolumeSize
+    return this._coreDataVolumeSize;
   }
 
   // core_data_volume_type - computed: true, optional: true, required: false
-  private _coreDataVolumeType?: string | undefined; 
+  private _coreDataVolumeType?: string; 
   public get coreDataVolumeType() {
     return this.getStringAttribute('core_data_volume_type');
   }
-  public set coreDataVolumeType(value: string | undefined) {
+  public set coreDataVolumeType(value: string) {
     this._coreDataVolumeType = value;
   }
   public resetCoreDataVolumeType() {
@@ -552,7 +577,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coreDataVolumeTypeInput() {
-    return this._coreDataVolumeType
+    return this._coreDataVolumeType;
   }
 
   // core_node_num - computed: false, optional: false, required: true
@@ -565,7 +590,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coreNodeNumInput() {
-    return this._coreNodeNum
+    return this._coreNodeNum;
   }
 
   // core_node_product_id - computed: true, optional: false, required: false
@@ -583,7 +608,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coreNodeSizeInput() {
-    return this._coreNodeSize
+    return this._coreNodeSize;
   }
 
   // core_node_spec_id - computed: true, optional: false, required: false
@@ -647,11 +672,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // log_collection - computed: true, optional: true, required: false
-  private _logCollection?: number | undefined; 
+  private _logCollection?: number; 
   public get logCollection() {
     return this.getNumberAttribute('log_collection');
   }
-  public set logCollection(value: number | undefined) {
+  public set logCollection(value: number) {
     this._logCollection = value;
   }
   public resetLogCollection() {
@@ -659,15 +684,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get logCollectionInput() {
-    return this._logCollection
+    return this._logCollection;
   }
 
   // master_data_volume_count - computed: true, optional: true, required: false
-  private _masterDataVolumeCount?: number | undefined; 
+  private _masterDataVolumeCount?: number; 
   public get masterDataVolumeCount() {
     return this.getNumberAttribute('master_data_volume_count');
   }
-  public set masterDataVolumeCount(value: number | undefined) {
+  public set masterDataVolumeCount(value: number) {
     this._masterDataVolumeCount = value;
   }
   public resetMasterDataVolumeCount() {
@@ -675,15 +700,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get masterDataVolumeCountInput() {
-    return this._masterDataVolumeCount
+    return this._masterDataVolumeCount;
   }
 
   // master_data_volume_size - computed: true, optional: true, required: false
-  private _masterDataVolumeSize?: number | undefined; 
+  private _masterDataVolumeSize?: number; 
   public get masterDataVolumeSize() {
     return this.getNumberAttribute('master_data_volume_size');
   }
-  public set masterDataVolumeSize(value: number | undefined) {
+  public set masterDataVolumeSize(value: number) {
     this._masterDataVolumeSize = value;
   }
   public resetMasterDataVolumeSize() {
@@ -691,15 +716,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get masterDataVolumeSizeInput() {
-    return this._masterDataVolumeSize
+    return this._masterDataVolumeSize;
   }
 
   // master_data_volume_type - computed: true, optional: true, required: false
-  private _masterDataVolumeType?: string | undefined; 
+  private _masterDataVolumeType?: string; 
   public get masterDataVolumeType() {
     return this.getStringAttribute('master_data_volume_type');
   }
-  public set masterDataVolumeType(value: string | undefined) {
+  public set masterDataVolumeType(value: string) {
     this._masterDataVolumeType = value;
   }
   public resetMasterDataVolumeType() {
@@ -707,7 +732,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get masterDataVolumeTypeInput() {
-    return this._masterDataVolumeType
+    return this._masterDataVolumeType;
   }
 
   // master_node_ip - computed: true, optional: false, required: false
@@ -725,7 +750,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get masterNodeNumInput() {
-    return this._masterNodeNum
+    return this._masterNodeNum;
   }
 
   // master_node_product_id - computed: true, optional: false, required: false
@@ -743,7 +768,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get masterNodeSizeInput() {
-    return this._masterNodeSize
+    return this._masterNodeSize;
   }
 
   // master_node_spec_id - computed: true, optional: false, required: false
@@ -761,7 +786,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nodePublicCertNameInput() {
-    return this._nodePublicCertName
+    return this._nodePublicCertName;
   }
 
   // order_id - computed: true, optional: false, required: false
@@ -775,11 +800,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -787,7 +812,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // remark - computed: true, optional: false, required: false
@@ -805,7 +830,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get safeModeInput() {
-    return this._safeMode
+    return this._safeMode;
   }
 
   // security_groups_id - computed: true, optional: false, required: false
@@ -828,16 +853,16 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -845,7 +870,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tenant_id - computed: true, optional: false, required: false
@@ -864,11 +889,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // volume_size - computed: true, optional: true, required: false
-  private _volumeSize?: number | undefined; 
+  private _volumeSize?: number; 
   public get volumeSize() {
     return this.getNumberAttribute('volume_size');
   }
-  public set volumeSize(value: number | undefined) {
+  public set volumeSize(value: number) {
     this._volumeSize = value;
   }
   public resetVolumeSize() {
@@ -876,15 +901,15 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get volumeSizeInput() {
-    return this._volumeSize
+    return this._volumeSize;
   }
 
   // volume_type - computed: true, optional: true, required: false
-  private _volumeType?: string | undefined; 
+  private _volumeType?: string; 
   public get volumeType() {
     return this.getStringAttribute('volume_type');
   }
-  public set volumeType(value: string | undefined) {
+  public set volumeType(value: string) {
     this._volumeType = value;
   }
   public resetVolumeType() {
@@ -892,7 +917,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get volumeTypeInput() {
-    return this._volumeType
+    return this._volumeType;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -905,16 +930,16 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // add_jobs - computed: false, optional: true, required: false
-  private _addJobs?: MrsClusterV1AddJobs[] | undefined; 
+  private _addJobs?: MrsClusterV1AddJobs[]; 
   public get addJobs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('add_jobs') as any;
   }
-  public set addJobs(value: MrsClusterV1AddJobs[] | undefined) {
+  public set addJobs(value: MrsClusterV1AddJobs[]) {
     this._addJobs = value;
   }
   public resetAddJobs() {
@@ -922,16 +947,16 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get addJobsInput() {
-    return this._addJobs
+    return this._addJobs;
   }
 
   // bootstrap_scripts - computed: false, optional: true, required: false
-  private _bootstrapScripts?: MrsClusterV1BootstrapScripts[] | undefined; 
+  private _bootstrapScripts?: MrsClusterV1BootstrapScripts[]; 
   public get bootstrapScripts() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('bootstrap_scripts') as any;
   }
-  public set bootstrapScripts(value: MrsClusterV1BootstrapScripts[] | undefined) {
+  public set bootstrapScripts(value: MrsClusterV1BootstrapScripts[]) {
     this._bootstrapScripts = value;
   }
   public resetBootstrapScripts() {
@@ -939,7 +964,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bootstrapScriptsInput() {
-    return this._bootstrapScripts
+    return this._bootstrapScripts;
   }
 
   // component_list - computed: false, optional: false, required: true
@@ -953,24 +978,23 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get componentListInput() {
-    return this._componentList
+    return this._componentList;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: MrsClusterV1Timeouts | undefined; 
-  private __timeoutsOutput = new MrsClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new MrsClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: MrsClusterV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: MrsClusterV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -1007,7 +1031,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform)(this._addJobs),
       bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform)(this._bootstrapScripts),
       component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform)(this._componentList),
-      timeouts: mrsClusterV1TimeoutsToTerraform(this._timeouts),
+      timeouts: mrsClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

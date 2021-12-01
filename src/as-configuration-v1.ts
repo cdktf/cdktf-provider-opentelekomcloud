@@ -41,7 +41,7 @@ export interface AsConfigurationV1InstanceConfigDisk {
   readonly volumeType: string;
 }
 
-function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfigurationV1InstanceConfigDisk): any {
+export function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfigurationV1InstanceConfigDisk): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,7 +65,7 @@ export interface AsConfigurationV1InstanceConfigPersonality {
   readonly path: string;
 }
 
-function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: AsConfigurationV1InstanceConfigPersonality): any {
+export function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: AsConfigurationV1InstanceConfigPersonality): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -91,7 +91,7 @@ export interface AsConfigurationV1InstanceConfigPublicIpEipBandwidth {
   readonly size: number;
 }
 
-function asConfigurationV1InstanceConfigPublicIpEipBandwidthToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference | AsConfigurationV1InstanceConfigPublicIpEipBandwidth): any {
+export function asConfigurationV1InstanceConfigPublicIpEipBandwidthToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference | AsConfigurationV1InstanceConfigPublicIpEipBandwidth): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -113,6 +113,37 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._chargingMode) {
+      hasAnyValues = true;
+      internalValueResult.chargingMode = this._chargingMode;
+    }
+    if (this._shareType) {
+      hasAnyValues = true;
+      internalValueResult.shareType = this._shareType;
+    }
+    if (this._size) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined) {
+    if (value === undefined) {
+      this._chargingMode = undefined;
+      this._shareType = undefined;
+      this._size = undefined;
+    }
+    else {
+      this._chargingMode = value.chargingMode;
+      this._shareType = value.shareType;
+      this._size = value.size;
+    }
+  }
+
   // charging_mode - computed: false, optional: false, required: true
   private _chargingMode?: string; 
   public get chargingMode() {
@@ -123,7 +154,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   }
   // Temporarily expose input value. Use with caution.
   public get chargingModeInput() {
-    return this._chargingMode
+    return this._chargingMode;
   }
 
   // share_type - computed: false, optional: false, required: true
@@ -136,7 +167,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   }
   // Temporarily expose input value. Use with caution.
   public get shareTypeInput() {
-    return this._shareType
+    return this._shareType;
   }
 
   // size - computed: false, optional: false, required: true
@@ -149,7 +180,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 }
 export interface AsConfigurationV1InstanceConfigPublicIpEip {
@@ -165,7 +196,7 @@ export interface AsConfigurationV1InstanceConfigPublicIpEip {
   readonly bandwidth: AsConfigurationV1InstanceConfigPublicIpEipBandwidth;
 }
 
-function asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipOutputReference | AsConfigurationV1InstanceConfigPublicIpEip): any {
+export function asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipOutputReference | AsConfigurationV1InstanceConfigPublicIpEip): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -186,6 +217,31 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEip | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._ipType) {
+      hasAnyValues = true;
+      internalValueResult.ipType = this._ipType;
+    }
+    if (this._bandwidth) {
+      hasAnyValues = true;
+      internalValueResult.bandwidth = this._bandwidth?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfigPublicIpEip | undefined) {
+    if (value === undefined) {
+      this._ipType = undefined;
+      this._bandwidth.internalValue = undefined;
+    }
+    else {
+      this._ipType = value.ipType;
+      this._bandwidth.internalValue = value.bandwidth;
+    }
+  }
+
   // ip_type - computed: false, optional: false, required: true
   private _ipType?: string; 
   public get ipType() {
@@ -196,21 +252,20 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   }
   // Temporarily expose input value. Use with caution.
   public get ipTypeInput() {
-    return this._ipType
+    return this._ipType;
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth?: AsConfigurationV1InstanceConfigPublicIpEipBandwidth; 
-  private __bandwidthOutput = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this as any, "bandwidth", true);
+  private _bandwidth = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this as any, "bandwidth", true);
   public get bandwidth() {
-    return this.__bandwidthOutput;
+    return this._bandwidth;
   }
   public putBandwidth(value: AsConfigurationV1InstanceConfigPublicIpEipBandwidth) {
-    this._bandwidth = value;
+    this._bandwidth.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
-    return this._bandwidth
+    return this._bandwidth.internalValue;
   }
 }
 export interface AsConfigurationV1InstanceConfigPublicIp {
@@ -222,7 +277,7 @@ export interface AsConfigurationV1InstanceConfigPublicIp {
   readonly eip: AsConfigurationV1InstanceConfigPublicIpEip;
 }
 
-function asConfigurationV1InstanceConfigPublicIpToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpOutputReference | AsConfigurationV1InstanceConfigPublicIp): any {
+export function asConfigurationV1InstanceConfigPublicIpToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpOutputReference | AsConfigurationV1InstanceConfigPublicIp): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -242,18 +297,36 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsConfigurationV1InstanceConfigPublicIp | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._eip) {
+      hasAnyValues = true;
+      internalValueResult.eip = this._eip?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfigPublicIp | undefined) {
+    if (value === undefined) {
+      this._eip.internalValue = undefined;
+    }
+    else {
+      this._eip.internalValue = value.eip;
+    }
+  }
+
   // eip - computed: false, optional: false, required: true
-  private _eip?: AsConfigurationV1InstanceConfigPublicIpEip; 
-  private __eipOutput = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this as any, "eip", true);
+  private _eip = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this as any, "eip", true);
   public get eip() {
-    return this.__eipOutput;
+    return this._eip;
   }
   public putEip(value: AsConfigurationV1InstanceConfigPublicIpEip) {
-    this._eip = value;
+    this._eip.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get eipInput() {
-    return this._eip
+    return this._eip.internalValue;
   }
 }
 export interface AsConfigurationV1InstanceConfig {
@@ -305,7 +378,7 @@ export interface AsConfigurationV1InstanceConfig {
   readonly publicIp?: AsConfigurationV1InstanceConfigPublicIp;
 }
 
-function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurationV1InstanceConfigOutputReference | AsConfigurationV1InstanceConfig): any {
+export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurationV1InstanceConfigOutputReference | AsConfigurationV1InstanceConfig): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -334,12 +407,85 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsConfigurationV1InstanceConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._flavor) {
+      hasAnyValues = true;
+      internalValueResult.flavor = this._flavor;
+    }
+    if (this._image) {
+      hasAnyValues = true;
+      internalValueResult.image = this._image;
+    }
+    if (this._instanceId) {
+      hasAnyValues = true;
+      internalValueResult.instanceId = this._instanceId;
+    }
+    if (this._keyName) {
+      hasAnyValues = true;
+      internalValueResult.keyName = this._keyName;
+    }
+    if (this._metadata) {
+      hasAnyValues = true;
+      internalValueResult.metadata = this._metadata;
+    }
+    if (this._securityGroups) {
+      hasAnyValues = true;
+      internalValueResult.securityGroups = this._securityGroups;
+    }
+    if (this._userData) {
+      hasAnyValues = true;
+      internalValueResult.userData = this._userData;
+    }
+    if (this._disk) {
+      hasAnyValues = true;
+      internalValueResult.disk = this._disk;
+    }
+    if (this._personality) {
+      hasAnyValues = true;
+      internalValueResult.personality = this._personality;
+    }
+    if (this._publicIp) {
+      hasAnyValues = true;
+      internalValueResult.publicIp = this._publicIp?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfig | undefined) {
+    if (value === undefined) {
+      this._flavor = undefined;
+      this._image = undefined;
+      this._instanceId = undefined;
+      this._keyName = undefined;
+      this._metadata = undefined;
+      this._securityGroups = undefined;
+      this._userData = undefined;
+      this._disk = undefined;
+      this._personality = undefined;
+      this._publicIp.internalValue = undefined;
+    }
+    else {
+      this._flavor = value.flavor;
+      this._image = value.image;
+      this._instanceId = value.instanceId;
+      this._keyName = value.keyName;
+      this._metadata = value.metadata;
+      this._securityGroups = value.securityGroups;
+      this._userData = value.userData;
+      this._disk = value.disk;
+      this._personality = value.personality;
+      this._publicIp.internalValue = value.publicIp;
+    }
+  }
+
   // flavor - computed: false, optional: true, required: false
-  private _flavor?: string | undefined; 
+  private _flavor?: string; 
   public get flavor() {
     return this.getStringAttribute('flavor');
   }
-  public set flavor(value: string | undefined) {
+  public set flavor(value: string) {
     this._flavor = value;
   }
   public resetFlavor() {
@@ -347,15 +493,15 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get flavorInput() {
-    return this._flavor
+    return this._flavor;
   }
 
   // image - computed: false, optional: true, required: false
-  private _image?: string | undefined; 
+  private _image?: string; 
   public get image() {
     return this.getStringAttribute('image');
   }
-  public set image(value: string | undefined) {
+  public set image(value: string) {
     this._image = value;
   }
   public resetImage() {
@@ -363,15 +509,15 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get imageInput() {
-    return this._image
+    return this._image;
   }
 
   // instance_id - computed: false, optional: true, required: false
-  private _instanceId?: string | undefined; 
+  private _instanceId?: string; 
   public get instanceId() {
     return this.getStringAttribute('instance_id');
   }
-  public set instanceId(value: string | undefined) {
+  public set instanceId(value: string) {
     this._instanceId = value;
   }
   public resetInstanceId() {
@@ -379,7 +525,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get instanceIdInput() {
-    return this._instanceId
+    return this._instanceId;
   }
 
   // key_name - computed: false, optional: false, required: true
@@ -392,16 +538,16 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get keyNameInput() {
-    return this._keyName
+    return this._keyName;
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
   public get metadata() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('metadata') as any;
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -409,15 +555,15 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
-    return this._metadata
+    return this._metadata;
   }
 
   // security_groups - computed: false, optional: true, required: false
-  private _securityGroups?: string[] | undefined; 
+  private _securityGroups?: string[]; 
   public get securityGroups() {
     return this.getListAttribute('security_groups');
   }
-  public set securityGroups(value: string[] | undefined) {
+  public set securityGroups(value: string[]) {
     this._securityGroups = value;
   }
   public resetSecurityGroups() {
@@ -425,15 +571,15 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
-    return this._securityGroups
+    return this._securityGroups;
   }
 
   // user_data - computed: false, optional: true, required: false
-  private _userData?: string | undefined; 
+  private _userData?: string; 
   public get userData() {
     return this.getStringAttribute('user_data');
   }
-  public set userData(value: string | undefined) {
+  public set userData(value: string) {
     this._userData = value;
   }
   public resetUserData() {
@@ -441,16 +587,16 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get userDataInput() {
-    return this._userData
+    return this._userData;
   }
 
   // disk - computed: false, optional: true, required: false
-  private _disk?: AsConfigurationV1InstanceConfigDisk[] | undefined; 
+  private _disk?: AsConfigurationV1InstanceConfigDisk[]; 
   public get disk() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('disk') as any;
   }
-  public set disk(value: AsConfigurationV1InstanceConfigDisk[] | undefined) {
+  public set disk(value: AsConfigurationV1InstanceConfigDisk[]) {
     this._disk = value;
   }
   public resetDisk() {
@@ -458,16 +604,16 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get diskInput() {
-    return this._disk
+    return this._disk;
   }
 
   // personality - computed: false, optional: true, required: false
-  private _personality?: AsConfigurationV1InstanceConfigPersonality[] | undefined; 
+  private _personality?: AsConfigurationV1InstanceConfigPersonality[]; 
   public get personality() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('personality') as any;
   }
-  public set personality(value: AsConfigurationV1InstanceConfigPersonality[] | undefined) {
+  public set personality(value: AsConfigurationV1InstanceConfigPersonality[]) {
     this._personality = value;
   }
   public resetPersonality() {
@@ -475,24 +621,23 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get personalityInput() {
-    return this._personality
+    return this._personality;
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp?: AsConfigurationV1InstanceConfigPublicIp | undefined; 
-  private __publicIpOutput = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this as any, "public_ip", true);
+  private _publicIp = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this as any, "public_ip", true);
   public get publicIp() {
-    return this.__publicIpOutput;
+    return this._publicIp;
   }
-  public putPublicIp(value: AsConfigurationV1InstanceConfigPublicIp | undefined) {
-    this._publicIp = value;
+  public putPublicIp(value: AsConfigurationV1InstanceConfigPublicIp) {
+    this._publicIp.internalValue = value;
   }
   public resetPublicIp() {
-    this._publicIp = undefined;
+    this._publicIp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get publicIpInput() {
-    return this._publicIp
+    return this._publicIp.internalValue;
   }
 }
 
@@ -530,7 +675,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
     });
     this._region = config.region;
     this._scalingConfigurationName = config.scalingConfigurationName;
-    this._instanceConfig = config.instanceConfig;
+    this._instanceConfig.internalValue = config.instanceConfig;
   }
 
   // ==========
@@ -543,11 +688,11 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -555,7 +700,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // scaling_configuration_name - computed: false, optional: false, required: true
@@ -568,21 +713,20 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingConfigurationNameInput() {
-    return this._scalingConfigurationName
+    return this._scalingConfigurationName;
   }
 
   // instance_config - computed: false, optional: false, required: true
-  private _instanceConfig?: AsConfigurationV1InstanceConfig; 
-  private __instanceConfigOutput = new AsConfigurationV1InstanceConfigOutputReference(this as any, "instance_config", true);
+  private _instanceConfig = new AsConfigurationV1InstanceConfigOutputReference(this as any, "instance_config", true);
   public get instanceConfig() {
-    return this.__instanceConfigOutput;
+    return this._instanceConfig;
   }
   public putInstanceConfig(value: AsConfigurationV1InstanceConfig) {
-    this._instanceConfig = value;
+    this._instanceConfig.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceConfigInput() {
-    return this._instanceConfig
+    return this._instanceConfig.internalValue;
   }
 
   // =========
@@ -593,7 +737,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
     return {
       region: cdktf.stringToTerraform(this._region),
       scaling_configuration_name: cdktf.stringToTerraform(this._scalingConfigurationName),
-      instance_config: asConfigurationV1InstanceConfigToTerraform(this._instanceConfig),
+      instance_config: asConfigurationV1InstanceConfigToTerraform(this._instanceConfig.internalValue),
     };
   }
 }

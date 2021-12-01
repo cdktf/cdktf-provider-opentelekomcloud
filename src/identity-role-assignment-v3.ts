@@ -73,11 +73,11 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   // ==========
 
   // domain_id - computed: false, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -85,15 +85,15 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // group_id - computed: false, optional: true, required: false
-  private _groupId?: string | undefined; 
+  private _groupId?: string; 
   public get groupId() {
     return this.getStringAttribute('group_id');
   }
-  public set groupId(value: string | undefined) {
+  public set groupId(value: string) {
     this._groupId = value;
   }
   public resetGroupId() {
@@ -101,7 +101,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
-    return this._groupId
+    return this._groupId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -110,11 +110,11 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
 
   // project_id - computed: false, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -122,7 +122,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // role_id - computed: false, optional: false, required: true
@@ -135,15 +135,15 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get roleIdInput() {
-    return this._roleId
+    return this._roleId;
   }
 
   // user_id - computed: false, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -151,7 +151,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

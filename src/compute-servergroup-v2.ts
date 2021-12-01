@@ -87,15 +87,15 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policies - computed: false, optional: true, required: false
-  private _policies?: string[] | undefined; 
+  private _policies?: string[]; 
   public get policies() {
     return this.getListAttribute('policies');
   }
-  public set policies(value: string[] | undefined) {
+  public set policies(value: string[]) {
     this._policies = value;
   }
   public resetPolicies() {
@@ -103,15 +103,15 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policiesInput() {
-    return this._policies
+    return this._policies;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -119,16 +119,16 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -136,7 +136,7 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // =========

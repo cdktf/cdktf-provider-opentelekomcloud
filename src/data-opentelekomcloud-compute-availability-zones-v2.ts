@@ -68,11 +68,11 @@ export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.Terraf
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -80,15 +80,15 @@ export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.Terraf
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string | undefined; 
+  private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
   }
   public resetState() {
@@ -96,7 +96,7 @@ export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.Terraf
   }
   // Temporarily expose input value. Use with caution.
   public get stateInput() {
-    return this._state
+    return this._state;
   }
 
   // =========

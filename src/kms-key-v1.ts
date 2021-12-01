@@ -103,11 +103,11 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled') as any;
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -115,7 +115,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isEnabledInput() {
-    return this._isEnabled
+    return this._isEnabled;
   }
 
   // key_alias - computed: false, optional: false, required: true
@@ -128,15 +128,15 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyAliasInput() {
-    return this._keyAlias
+    return this._keyAlias;
   }
 
   // key_description - computed: false, optional: true, required: false
-  private _keyDescription?: string | undefined; 
+  private _keyDescription?: string; 
   public get keyDescription() {
     return this.getStringAttribute('key_description');
   }
-  public set keyDescription(value: string | undefined) {
+  public set keyDescription(value: string) {
     this._keyDescription = value;
   }
   public resetKeyDescription() {
@@ -144,7 +144,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyDescriptionInput() {
-    return this._keyDescription
+    return this._keyDescription;
   }
 
   // origin - computed: true, optional: false, required: false
@@ -153,11 +153,11 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
 
   // pending_days - computed: false, optional: true, required: false
-  private _pendingDays?: string | undefined; 
+  private _pendingDays?: string; 
   public get pendingDays() {
     return this.getStringAttribute('pending_days');
   }
-  public set pendingDays(value: string | undefined) {
+  public set pendingDays(value: string) {
     this._pendingDays = value;
   }
   public resetPendingDays() {
@@ -165,15 +165,15 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pendingDaysInput() {
-    return this._pendingDays
+    return this._pendingDays;
   }
 
   // realm - computed: true, optional: true, required: false
-  private _realm?: string | undefined; 
+  private _realm?: string; 
   public get realm() {
     return this.getStringAttribute('realm');
   }
-  public set realm(value: string | undefined) {
+  public set realm(value: string) {
     this._realm = value;
   }
   public resetRealm() {
@@ -181,7 +181,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get realmInput() {
-    return this._realm
+    return this._realm;
   }
 
   // scheduled_deletion_date - computed: true, optional: false, required: false
@@ -190,12 +190,12 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -203,7 +203,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // =========

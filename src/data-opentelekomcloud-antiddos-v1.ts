@@ -86,11 +86,11 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
 
   // floating_ip_address - computed: true, optional: true, required: false
-  private _floatingIpAddress?: string | undefined; 
+  private _floatingIpAddress?: string; 
   public get floatingIpAddress() {
     return this.getStringAttribute('floating_ip_address');
   }
-  public set floatingIpAddress(value: string | undefined) {
+  public set floatingIpAddress(value: string) {
     this._floatingIpAddress = value;
   }
   public resetFloatingIpAddress() {
@@ -98,15 +98,15 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpAddressInput() {
-    return this._floatingIpAddress
+    return this._floatingIpAddress;
   }
 
   // floating_ip_id - computed: true, optional: true, required: false
-  private _floatingIpId?: string | undefined; 
+  private _floatingIpId?: string; 
   public get floatingIpId() {
     return this.getStringAttribute('floating_ip_id');
   }
-  public set floatingIpId(value: string | undefined) {
+  public set floatingIpId(value: string) {
     this._floatingIpId = value;
   }
   public resetFloatingIpId() {
@@ -114,7 +114,7 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpIdInput() {
-    return this._floatingIpId
+    return this._floatingIpId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -146,11 +146,11 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -158,7 +158,7 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // start_time - computed: true, optional: false, required: false
@@ -168,11 +168,11 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -180,7 +180,7 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // total_bps - computed: true, optional: false, required: false

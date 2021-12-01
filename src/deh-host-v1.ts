@@ -83,7 +83,7 @@ export interface DehHostV1Config extends cdktf.TerraformMetaArguments {
 export interface DehHostV1AvailableInstanceCapacities {
 }
 
-function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHostV1AvailableInstanceCapacities): any {
+export function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHostV1AvailableInstanceCapacities): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -103,7 +103,7 @@ export interface DehHostV1Timeouts {
   readonly delete?: string;
 }
 
-function dehHostV1TimeoutsToTerraform(struct?: DehHostV1TimeoutsOutputReference | DehHostV1Timeouts): any {
+export function dehHostV1TimeoutsToTerraform(struct?: DehHostV1TimeoutsOutputReference | DehHostV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -124,12 +124,37 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): DehHostV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DehHostV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -137,15 +162,15 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -153,7 +178,7 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -205,7 +230,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
     this._status = config.status;
     this._vcpus = config.vcpus;
     this._availableInstanceCapacities = config.availableInstanceCapacities;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -213,11 +238,11 @@ export class DehHostV1 extends cdktf.TerraformResource {
   // ==========
 
   // auto_placement - computed: false, optional: true, required: false
-  private _autoPlacement?: string | undefined; 
+  private _autoPlacement?: string; 
   public get autoPlacement() {
     return this.getStringAttribute('auto_placement');
   }
-  public set autoPlacement(value: string | undefined) {
+  public set autoPlacement(value: string) {
     this._autoPlacement = value;
   }
   public resetAutoPlacement() {
@@ -225,7 +250,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get autoPlacementInput() {
-    return this._autoPlacement
+    return this._autoPlacement;
   }
 
   // availability_zone - computed: false, optional: false, required: true
@@ -238,15 +263,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // available_memory - computed: true, optional: true, required: false
-  private _availableMemory?: number | undefined; 
+  private _availableMemory?: number; 
   public get availableMemory() {
     return this.getNumberAttribute('available_memory');
   }
-  public set availableMemory(value: number | undefined) {
+  public set availableMemory(value: number) {
     this._availableMemory = value;
   }
   public resetAvailableMemory() {
@@ -254,15 +279,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableMemoryInput() {
-    return this._availableMemory
+    return this._availableMemory;
   }
 
   // available_vcpus - computed: true, optional: true, required: false
-  private _availableVcpus?: number | undefined; 
+  private _availableVcpus?: number; 
   public get availableVcpus() {
     return this.getNumberAttribute('available_vcpus');
   }
-  public set availableVcpus(value: number | undefined) {
+  public set availableVcpus(value: number) {
     this._availableVcpus = value;
   }
   public resetAvailableVcpus() {
@@ -270,15 +295,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableVcpusInput() {
-    return this._availableVcpus
+    return this._availableVcpus;
   }
 
   // cores - computed: true, optional: true, required: false
-  private _cores?: number | undefined; 
+  private _cores?: number; 
   public get cores() {
     return this.getNumberAttribute('cores');
   }
-  public set cores(value: number | undefined) {
+  public set cores(value: number) {
     this._cores = value;
   }
   public resetCores() {
@@ -286,7 +311,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coresInput() {
-    return this._cores
+    return this._cores;
   }
 
   // host_type - computed: false, optional: false, required: true
@@ -299,15 +324,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostTypeInput() {
-    return this._hostType
+    return this._hostType;
   }
 
   // host_type_name - computed: true, optional: true, required: false
-  private _hostTypeName?: string | undefined; 
+  private _hostTypeName?: string; 
   public get hostTypeName() {
     return this.getStringAttribute('host_type_name');
   }
-  public set hostTypeName(value: string | undefined) {
+  public set hostTypeName(value: string) {
     this._hostTypeName = value;
   }
   public resetHostTypeName() {
@@ -315,7 +340,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostTypeNameInput() {
-    return this._hostTypeName
+    return this._hostTypeName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -324,11 +349,11 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
 
   // instance_total - computed: true, optional: true, required: false
-  private _instanceTotal?: number | undefined; 
+  private _instanceTotal?: number; 
   public get instanceTotal() {
     return this.getNumberAttribute('instance_total');
   }
-  public set instanceTotal(value: number | undefined) {
+  public set instanceTotal(value: number) {
     this._instanceTotal = value;
   }
   public resetInstanceTotal() {
@@ -336,15 +361,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTotalInput() {
-    return this._instanceTotal
+    return this._instanceTotal;
   }
 
   // instance_uuids - computed: true, optional: true, required: false
-  private _instanceUuids?: string[] | undefined; 
+  private _instanceUuids?: string[]; 
   public get instanceUuids() {
     return this.getListAttribute('instance_uuids');
   }
-  public set instanceUuids(value: string[] | undefined) {
+  public set instanceUuids(value: string[]) {
     this._instanceUuids = value;
   }
   public resetInstanceUuids() {
@@ -352,15 +377,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get instanceUuidsInput() {
-    return this._instanceUuids
+    return this._instanceUuids;
   }
 
   // memory - computed: true, optional: true, required: false
-  private _memory?: number | undefined; 
+  private _memory?: number; 
   public get memory() {
     return this.getNumberAttribute('memory');
   }
-  public set memory(value: number | undefined) {
+  public set memory(value: number) {
     this._memory = value;
   }
   public resetMemory() {
@@ -368,7 +393,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get memoryInput() {
-    return this._memory
+    return this._memory;
   }
 
   // name - computed: false, optional: false, required: true
@@ -381,15 +406,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -397,15 +422,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // sockets - computed: true, optional: true, required: false
-  private _sockets?: number | undefined; 
+  private _sockets?: number; 
   public get sockets() {
     return this.getNumberAttribute('sockets');
   }
-  public set sockets(value: number | undefined) {
+  public set sockets(value: number) {
     this._sockets = value;
   }
   public resetSockets() {
@@ -413,15 +438,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get socketsInput() {
-    return this._sockets
+    return this._sockets;
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -429,15 +454,15 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // vcpus - computed: true, optional: true, required: false
-  private _vcpus?: number | undefined; 
+  private _vcpus?: number; 
   public get vcpus() {
     return this.getNumberAttribute('vcpus');
   }
-  public set vcpus(value: number | undefined) {
+  public set vcpus(value: number) {
     this._vcpus = value;
   }
   public resetVcpus() {
@@ -445,16 +470,16 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vcpusInput() {
-    return this._vcpus
+    return this._vcpus;
   }
 
   // available_instance_capacities - computed: false, optional: true, required: false
-  private _availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[] | undefined; 
+  private _availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[]; 
   public get availableInstanceCapacities() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('available_instance_capacities') as any;
   }
-  public set availableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[] | undefined) {
+  public set availableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[]) {
     this._availableInstanceCapacities = value;
   }
   public resetAvailableInstanceCapacities() {
@@ -462,24 +487,23 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableInstanceCapacitiesInput() {
-    return this._availableInstanceCapacities
+    return this._availableInstanceCapacities;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: DehHostV1Timeouts | undefined; 
-  private __timeoutsOutput = new DehHostV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DehHostV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: DehHostV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: DehHostV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -504,7 +528,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       vcpus: cdktf.numberToTerraform(this._vcpus),
       available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform)(this._availableInstanceCapacities),
-      timeouts: dehHostV1TimeoutsToTerraform(this._timeouts),
+      timeouts: dehHostV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

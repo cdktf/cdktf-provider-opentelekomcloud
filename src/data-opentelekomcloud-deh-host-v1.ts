@@ -85,11 +85,11 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
 
   // availability_zone - computed: false, optional: true, required: false
-  private _availabilityZone?: string | undefined; 
+  private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
   }
   public resetAvailabilityZone() {
@@ -97,7 +97,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // available_instance_capacities - computed: true, optional: false, required: false
@@ -131,11 +131,11 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -143,7 +143,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // instance_total - computed: true, optional: false, required: false
@@ -162,11 +162,11 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -174,15 +174,15 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -190,7 +190,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // sockets - computed: true, optional: false, required: false
@@ -199,11 +199,11 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -211,7 +211,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tenant_id - computed: true, optional: false, required: false

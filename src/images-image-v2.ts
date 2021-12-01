@@ -69,7 +69,7 @@ export interface ImagesImageV2Timeouts {
   readonly create?: string;
 }
 
-function imagesImageV2TimeoutsToTerraform(struct?: ImagesImageV2TimeoutsOutputReference | ImagesImageV2Timeouts): any {
+export function imagesImageV2TimeoutsToTerraform(struct?: ImagesImageV2TimeoutsOutputReference | ImagesImageV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -89,12 +89,31 @@ export class ImagesImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ImagesImageV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImagesImageV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+    }
+    else {
+      this._create = value.create;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -102,7 +121,7 @@ export class ImagesImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 }
 
@@ -150,7 +169,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
     this._region = config.region;
     this._tags = config.tags;
     this._visibility = config.visibility;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -172,7 +191,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get containerFormatInput() {
-    return this._containerFormat
+    return this._containerFormat;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -190,7 +209,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get diskFormatInput() {
-    return this._diskFormat
+    return this._diskFormat;
   }
 
   // file - computed: true, optional: false, required: false
@@ -204,11 +223,11 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
 
   // image_cache_path - computed: false, optional: true, required: false
-  private _imageCachePath?: string | undefined; 
+  private _imageCachePath?: string; 
   public get imageCachePath() {
     return this.getStringAttribute('image_cache_path');
   }
-  public set imageCachePath(value: string | undefined) {
+  public set imageCachePath(value: string) {
     this._imageCachePath = value;
   }
   public resetImageCachePath() {
@@ -216,15 +235,15 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get imageCachePathInput() {
-    return this._imageCachePath
+    return this._imageCachePath;
   }
 
   // image_source_url - computed: false, optional: true, required: false
-  private _imageSourceUrl?: string | undefined; 
+  private _imageSourceUrl?: string; 
   public get imageSourceUrl() {
     return this.getStringAttribute('image_source_url');
   }
-  public set imageSourceUrl(value: string | undefined) {
+  public set imageSourceUrl(value: string) {
     this._imageSourceUrl = value;
   }
   public resetImageSourceUrl() {
@@ -232,15 +251,15 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get imageSourceUrlInput() {
-    return this._imageSourceUrl
+    return this._imageSourceUrl;
   }
 
   // local_file_path - computed: false, optional: true, required: false
-  private _localFilePath?: string | undefined; 
+  private _localFilePath?: string; 
   public get localFilePath() {
     return this.getStringAttribute('local_file_path');
   }
-  public set localFilePath(value: string | undefined) {
+  public set localFilePath(value: string) {
     this._localFilePath = value;
   }
   public resetLocalFilePath() {
@@ -248,7 +267,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get localFilePathInput() {
-    return this._localFilePath
+    return this._localFilePath;
   }
 
   // metadata - computed: true, optional: false, required: false
@@ -257,11 +276,11 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
 
   // min_disk_gb - computed: false, optional: true, required: false
-  private _minDiskGb?: number | undefined; 
+  private _minDiskGb?: number; 
   public get minDiskGb() {
     return this.getNumberAttribute('min_disk_gb');
   }
-  public set minDiskGb(value: number | undefined) {
+  public set minDiskGb(value: number) {
     this._minDiskGb = value;
   }
   public resetMinDiskGb() {
@@ -269,15 +288,15 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get minDiskGbInput() {
-    return this._minDiskGb
+    return this._minDiskGb;
   }
 
   // min_ram_mb - computed: false, optional: true, required: false
-  private _minRamMb?: number | undefined; 
+  private _minRamMb?: number; 
   public get minRamMb() {
     return this.getNumberAttribute('min_ram_mb');
   }
-  public set minRamMb(value: number | undefined) {
+  public set minRamMb(value: number) {
     this._minRamMb = value;
   }
   public resetMinRamMb() {
@@ -285,7 +304,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get minRamMbInput() {
-    return this._minRamMb
+    return this._minRamMb;
   }
 
   // name - computed: false, optional: false, required: true
@@ -298,7 +317,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // owner - computed: true, optional: false, required: false
@@ -307,11 +326,11 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
 
   // protected - computed: false, optional: true, required: false
-  private _protected?: boolean | cdktf.IResolvable | undefined; 
+  private _protected?: boolean | cdktf.IResolvable; 
   public get protected() {
     return this.getBooleanAttribute('protected') as any;
   }
-  public set protected(value: boolean | cdktf.IResolvable | undefined) {
+  public set protected(value: boolean | cdktf.IResolvable) {
     this._protected = value;
   }
   public resetProtected() {
@@ -319,15 +338,15 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protectedInput() {
-    return this._protected
+    return this._protected;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -335,7 +354,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // schema - computed: true, optional: false, required: false
@@ -354,11 +373,11 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: string[] | undefined; 
+  private _tags?: string[]; 
   public get tags() {
     return this.getListAttribute('tags');
   }
-  public set tags(value: string[] | undefined) {
+  public set tags(value: string[]) {
     this._tags = value;
   }
   public resetTags() {
@@ -366,7 +385,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // update_at - computed: true, optional: false, required: false
@@ -375,11 +394,11 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
 
   // visibility - computed: false, optional: true, required: false
-  private _visibility?: string | undefined; 
+  private _visibility?: string; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }
-  public set visibility(value: string | undefined) {
+  public set visibility(value: string) {
     this._visibility = value;
   }
   public resetVisibility() {
@@ -387,24 +406,23 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get visibilityInput() {
-    return this._visibility
+    return this._visibility;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ImagesImageV2Timeouts | undefined; 
-  private __timeoutsOutput = new ImagesImageV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ImagesImageV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ImagesImageV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ImagesImageV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -425,7 +443,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       visibility: cdktf.stringToTerraform(this._visibility),
-      timeouts: imagesImageV2TimeoutsToTerraform(this._timeouts),
+      timeouts: imagesImageV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

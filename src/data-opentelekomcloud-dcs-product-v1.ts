@@ -58,11 +58,11 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
   }
 
   // spec_code - computed: true, optional: true, required: false
-  private _specCode?: string | undefined; 
+  private _specCode?: string; 
   public get specCode() {
     return this.getStringAttribute('spec_code');
   }
-  public set specCode(value: string | undefined) {
+  public set specCode(value: string) {
     this._specCode = value;
   }
   public resetSpecCode() {
@@ -70,7 +70,7 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get specCodeInput() {
-    return this._specCode
+    return this._specCode;
   }
 
   // =========

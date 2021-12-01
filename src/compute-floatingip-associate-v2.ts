@@ -68,11 +68,11 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   // ==========
 
   // fixed_ip - computed: false, optional: true, required: false
-  private _fixedIp?: string | undefined; 
+  private _fixedIp?: string; 
   public get fixedIp() {
     return this.getStringAttribute('fixed_ip');
   }
-  public set fixedIp(value: string | undefined) {
+  public set fixedIp(value: string) {
     this._fixedIp = value;
   }
   public resetFixedIp() {
@@ -80,7 +80,7 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fixedIpInput() {
-    return this._fixedIp
+    return this._fixedIp;
   }
 
   // floating_ip - computed: false, optional: false, required: true
@@ -93,7 +93,7 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get floatingIpInput() {
-    return this._floatingIp
+    return this._floatingIp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -111,15 +111,15 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get instanceIdInput() {
-    return this._instanceId
+    return this._instanceId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -127,7 +127,7 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

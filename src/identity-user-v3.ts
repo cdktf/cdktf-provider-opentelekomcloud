@@ -88,11 +88,11 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   // ==========
 
   // default_project_id - computed: true, optional: true, required: false
-  private _defaultProjectId?: string | undefined; 
+  private _defaultProjectId?: string; 
   public get defaultProjectId() {
     return this.getStringAttribute('default_project_id');
   }
-  public set defaultProjectId(value: string | undefined) {
+  public set defaultProjectId(value: string) {
     this._defaultProjectId = value;
   }
   public resetDefaultProjectId() {
@@ -100,15 +100,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get defaultProjectIdInput() {
-    return this._defaultProjectId
+    return this._defaultProjectId;
   }
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -116,15 +116,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // email - computed: false, optional: true, required: false
-  private _email?: string | undefined; 
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
-  public set email(value: string | undefined) {
+  public set email(value: string) {
     this._email = value;
   }
   public resetEmail() {
@@ -132,15 +132,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
-    return this._email
+    return this._email;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -148,7 +148,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -157,11 +157,11 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -169,15 +169,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string) {
     this._password = value;
   }
   public resetPassword() {
@@ -185,15 +185,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -201,15 +201,15 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // send_welcome_email - computed: false, optional: true, required: false
-  private _sendWelcomeEmail?: boolean | cdktf.IResolvable | undefined; 
+  private _sendWelcomeEmail?: boolean | cdktf.IResolvable; 
   public get sendWelcomeEmail() {
     return this.getBooleanAttribute('send_welcome_email') as any;
   }
-  public set sendWelcomeEmail(value: boolean | cdktf.IResolvable | undefined) {
+  public set sendWelcomeEmail(value: boolean | cdktf.IResolvable) {
     this._sendWelcomeEmail = value;
   }
   public resetSendWelcomeEmail() {
@@ -217,7 +217,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sendWelcomeEmailInput() {
-    return this._sendWelcomeEmail
+    return this._sendWelcomeEmail;
   }
 
   // =========

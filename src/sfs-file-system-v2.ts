@@ -73,7 +73,7 @@ export interface SfsFileSystemV2Timeouts {
   readonly delete?: string;
 }
 
-function sfsFileSystemV2TimeoutsToTerraform(struct?: SfsFileSystemV2TimeoutsOutputReference | SfsFileSystemV2Timeouts): any {
+export function sfsFileSystemV2TimeoutsToTerraform(struct?: SfsFileSystemV2TimeoutsOutputReference | SfsFileSystemV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,12 +94,37 @@ export class SfsFileSystemV2TimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SfsFileSystemV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SfsFileSystemV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -107,15 +132,15 @@ export class SfsFileSystemV2TimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -123,7 +148,7 @@ export class SfsFileSystemV2TimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -171,7 +196,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
     this._shareProto = config.shareProto;
     this._size = config.size;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -179,11 +204,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   // ==========
 
   // access_level - computed: false, optional: true, required: false
-  private _accessLevel?: string | undefined; 
+  private _accessLevel?: string; 
   public get accessLevel() {
     return this.getStringAttribute('access_level');
   }
-  public set accessLevel(value: string | undefined) {
+  public set accessLevel(value: string) {
     this._accessLevel = value;
   }
   public resetAccessLevel() {
@@ -191,7 +216,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessLevelInput() {
-    return this._accessLevel
+    return this._accessLevel;
   }
 
   // access_rule_status - computed: true, optional: false, required: false
@@ -200,11 +225,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // access_to - computed: false, optional: true, required: false
-  private _accessTo?: string | undefined; 
+  private _accessTo?: string; 
   public get accessTo() {
     return this.getStringAttribute('access_to');
   }
-  public set accessTo(value: string | undefined) {
+  public set accessTo(value: string) {
     this._accessTo = value;
   }
   public resetAccessTo() {
@@ -212,15 +237,15 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessToInput() {
-    return this._accessTo
+    return this._accessTo;
   }
 
   // access_type - computed: false, optional: true, required: false
-  private _accessType?: string | undefined; 
+  private _accessType?: string; 
   public get accessType() {
     return this.getStringAttribute('access_type');
   }
-  public set accessType(value: string | undefined) {
+  public set accessType(value: string) {
     this._accessType = value;
   }
   public resetAccessType() {
@@ -228,15 +253,15 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessTypeInput() {
-    return this._accessType
+    return this._accessType;
   }
 
   // availability_zone - computed: true, optional: true, required: false
-  private _availabilityZone?: string | undefined; 
+  private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
   }
   public resetAvailabilityZone() {
@@ -244,15 +269,15 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -260,7 +285,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // export_location - computed: true, optional: false, required: false
@@ -279,11 +304,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // is_public - computed: false, optional: true, required: false
-  private _isPublic?: boolean | cdktf.IResolvable | undefined; 
+  private _isPublic?: boolean | cdktf.IResolvable; 
   public get isPublic() {
     return this.getBooleanAttribute('is_public') as any;
   }
-  public set isPublic(value: boolean | cdktf.IResolvable | undefined) {
+  public set isPublic(value: boolean | cdktf.IResolvable) {
     this._isPublic = value;
   }
   public resetIsPublic() {
@@ -291,16 +316,16 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isPublicInput() {
-    return this._isPublic
+    return this._isPublic;
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
   public get metadata() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('metadata') as any;
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -308,15 +333,15 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
-    return this._metadata
+    return this._metadata;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -324,15 +349,15 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -340,7 +365,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // share_access_id - computed: true, optional: false, required: false
@@ -349,11 +374,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // share_proto - computed: false, optional: true, required: false
-  private _shareProto?: string | undefined; 
+  private _shareProto?: string; 
   public get shareProto() {
     return this.getStringAttribute('share_proto');
   }
-  public set shareProto(value: string | undefined) {
+  public set shareProto(value: string) {
     this._shareProto = value;
   }
   public resetShareProto() {
@@ -361,7 +386,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get shareProtoInput() {
-    return this._shareProto
+    return this._shareProto;
   }
 
   // share_type - computed: true, optional: false, required: false
@@ -379,7 +404,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 
   // status - computed: true, optional: false, required: false
@@ -388,12 +413,12 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -401,7 +426,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // volume_type - computed: true, optional: false, required: false
@@ -410,20 +435,19 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: SfsFileSystemV2Timeouts | undefined; 
-  private __timeoutsOutput = new SfsFileSystemV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SfsFileSystemV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: SfsFileSystemV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: SfsFileSystemV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -444,7 +468,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
       share_proto: cdktf.stringToTerraform(this._shareProto),
       size: cdktf.numberToTerraform(this._size),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: sfsFileSystemV2TimeoutsToTerraform(this._timeouts),
+      timeouts: sfsFileSystemV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

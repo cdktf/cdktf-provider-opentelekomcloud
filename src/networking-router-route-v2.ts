@@ -77,7 +77,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get destinationCidrInput() {
-    return this._destinationCidr
+    return this._destinationCidr;
   }
 
   // id - computed: true, optional: true, required: false
@@ -95,15 +95,15 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nextHopInput() {
-    return this._nextHop
+    return this._nextHop;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -111,7 +111,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // router_id - computed: false, optional: false, required: true
@@ -124,7 +124,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get routerIdInput() {
-    return this._routerId
+    return this._routerId;
   }
 
   // =========

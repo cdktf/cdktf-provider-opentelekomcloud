@@ -77,7 +77,7 @@ export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // cache_control - computed: true, optional: false, required: false
@@ -140,7 +140,7 @@ export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // last_modified - computed: true, optional: false, required: false
@@ -154,11 +154,11 @@ export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSour
   }
 
   // version_id - computed: true, optional: true, required: false
-  private _versionId?: string | undefined; 
+  private _versionId?: string; 
   public get versionId() {
     return this.getStringAttribute('version_id');
   }
-  public set versionId(value: string | undefined) {
+  public set versionId(value: string) {
     this._versionId = value;
   }
   public resetVersionId() {
@@ -166,7 +166,7 @@ export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get versionIdInput() {
-    return this._versionId
+    return this._versionId;
   }
 
   // website_redirect_location - computed: true, optional: false, required: false

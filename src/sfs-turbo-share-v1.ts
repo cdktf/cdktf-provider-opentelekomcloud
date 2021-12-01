@@ -65,7 +65,7 @@ export interface SfsTurboShareV1Timeouts {
   readonly delete?: string;
 }
 
-function sfsTurboShareV1TimeoutsToTerraform(struct?: SfsTurboShareV1TimeoutsOutputReference | SfsTurboShareV1Timeouts): any {
+export function sfsTurboShareV1TimeoutsToTerraform(struct?: SfsTurboShareV1TimeoutsOutputReference | SfsTurboShareV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -86,12 +86,37 @@ export class SfsTurboShareV1TimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SfsTurboShareV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SfsTurboShareV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -99,15 +124,15 @@ export class SfsTurboShareV1TimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -115,7 +140,7 @@ export class SfsTurboShareV1TimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -161,7 +186,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
     this._size = config.size;
     this._subnetId = config.subnetId;
     this._vpcId = config.vpcId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -178,7 +203,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // available_capacity - computed: true, optional: false, required: false
@@ -187,11 +212,11 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
 
   // crypt_key_id - computed: false, optional: true, required: false
-  private _cryptKeyId?: string | undefined; 
+  private _cryptKeyId?: string; 
   public get cryptKeyId() {
     return this.getStringAttribute('crypt_key_id');
   }
-  public set cryptKeyId(value: string | undefined) {
+  public set cryptKeyId(value: string) {
     this._cryptKeyId = value;
   }
   public resetCryptKeyId() {
@@ -199,7 +224,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cryptKeyIdInput() {
-    return this._cryptKeyId
+    return this._cryptKeyId;
   }
 
   // export_location - computed: true, optional: false, required: false
@@ -222,15 +247,15 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -238,7 +263,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -251,15 +276,15 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // share_proto - computed: false, optional: true, required: false
-  private _shareProto?: string | undefined; 
+  private _shareProto?: string; 
   public get shareProto() {
     return this.getStringAttribute('share_proto');
   }
-  public set shareProto(value: string | undefined) {
+  public set shareProto(value: string) {
     this._shareProto = value;
   }
   public resetShareProto() {
@@ -267,15 +292,15 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get shareProtoInput() {
-    return this._shareProto
+    return this._shareProto;
   }
 
   // share_type - computed: false, optional: true, required: false
-  private _shareType?: string | undefined; 
+  private _shareType?: string; 
   public get shareType() {
     return this.getStringAttribute('share_type');
   }
-  public set shareType(value: string | undefined) {
+  public set shareType(value: string) {
     this._shareType = value;
   }
   public resetShareType() {
@@ -283,7 +308,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get shareTypeInput() {
-    return this._shareType
+    return this._shareType;
   }
 
   // size - computed: false, optional: false, required: true
@@ -296,7 +321,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
-    return this._size
+    return this._size;
   }
 
   // subnet_id - computed: false, optional: false, required: true
@@ -309,7 +334,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // version - computed: true, optional: false, required: false
@@ -327,24 +352,23 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: SfsTurboShareV1Timeouts | undefined; 
-  private __timeoutsOutput = new SfsTurboShareV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SfsTurboShareV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: SfsTurboShareV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: SfsTurboShareV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -363,7 +387,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
       size: cdktf.numberToTerraform(this._size),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      timeouts: sfsTurboShareV1TimeoutsToTerraform(this._timeouts),
+      timeouts: sfsTurboShareV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

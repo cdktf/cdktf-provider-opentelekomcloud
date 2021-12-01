@@ -41,7 +41,7 @@ export interface IdentityProtocolV3Metadata {
   readonly xaccountType?: string;
 }
 
-function identityProtocolV3MetadataToTerraform(struct?: IdentityProtocolV3MetadataOutputReference | IdentityProtocolV3Metadata): any {
+export function identityProtocolV3MetadataToTerraform(struct?: IdentityProtocolV3MetadataOutputReference | IdentityProtocolV3Metadata): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -63,6 +63,37 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): IdentityProtocolV3Metadata | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._domainId) {
+      hasAnyValues = true;
+      internalValueResult.domainId = this._domainId;
+    }
+    if (this._metadata) {
+      hasAnyValues = true;
+      internalValueResult.metadata = this._metadata;
+    }
+    if (this._xaccountType) {
+      hasAnyValues = true;
+      internalValueResult.xaccountType = this._xaccountType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityProtocolV3Metadata | undefined) {
+    if (value === undefined) {
+      this._domainId = undefined;
+      this._metadata = undefined;
+      this._xaccountType = undefined;
+    }
+    else {
+      this._domainId = value.domainId;
+      this._metadata = value.metadata;
+      this._xaccountType = value.xaccountType;
+    }
+  }
+
   // domain_id - computed: false, optional: false, required: true
   private _domainId?: string; 
   public get domainId() {
@@ -73,7 +104,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // metadata - computed: false, optional: false, required: true
@@ -86,15 +117,15 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
-    return this._metadata
+    return this._metadata;
   }
 
   // xaccount_type - computed: false, optional: true, required: false
-  private _xaccountType?: string | undefined; 
+  private _xaccountType?: string; 
   public get xaccountType() {
     return this.getStringAttribute('xaccount_type');
   }
-  public set xaccountType(value: string | undefined) {
+  public set xaccountType(value: string) {
     this._xaccountType = value;
   }
   public resetXaccountType() {
@@ -102,7 +133,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get xaccountTypeInput() {
-    return this._xaccountType
+    return this._xaccountType;
   }
 }
 
@@ -141,7 +172,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
     this._mappingId = config.mappingId;
     this._protocol = config.protocol;
     this._providerId = config.providerId;
-    this._metadata = config.metadata;
+    this._metadata.internalValue = config.metadata;
   }
 
   // ==========
@@ -168,7 +199,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mappingIdInput() {
-    return this._mappingId
+    return this._mappingId;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -181,7 +212,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // provider_id - computed: false, optional: false, required: true
@@ -194,24 +225,23 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get providerIdInput() {
-    return this._providerId
+    return this._providerId;
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: IdentityProtocolV3Metadata | undefined; 
-  private __metadataOutput = new IdentityProtocolV3MetadataOutputReference(this as any, "metadata", true);
+  private _metadata = new IdentityProtocolV3MetadataOutputReference(this as any, "metadata", true);
   public get metadata() {
-    return this.__metadataOutput;
+    return this._metadata;
   }
-  public putMetadata(value: IdentityProtocolV3Metadata | undefined) {
-    this._metadata = value;
+  public putMetadata(value: IdentityProtocolV3Metadata) {
+    this._metadata.internalValue = value;
   }
   public resetMetadata() {
-    this._metadata = undefined;
+    this._metadata.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataInput() {
-    return this._metadata
+    return this._metadata.internalValue;
   }
 
   // =========
@@ -223,7 +253,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       mapping_id: cdktf.stringToTerraform(this._mappingId),
       protocol: cdktf.stringToTerraform(this._protocol),
       provider_id: cdktf.stringToTerraform(this._providerId),
-      metadata: identityProtocolV3MetadataToTerraform(this._metadata),
+      metadata: identityProtocolV3MetadataToTerraform(this._metadata.internalValue),
     };
   }
 }

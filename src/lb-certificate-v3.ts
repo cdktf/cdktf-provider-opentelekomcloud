@@ -92,7 +92,7 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get certificateInput() {
-    return this._certificate
+    return this._certificate;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -101,11 +101,11 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -113,15 +113,15 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // domain - computed: true, optional: true, required: false
-  private _domain?: string | undefined; 
+  private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
-  public set domain(value: string | undefined) {
+  public set domain(value: string) {
     this._domain = value;
   }
   public resetDomain() {
@@ -129,7 +129,7 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainInput() {
-    return this._domain
+    return this._domain;
   }
 
   // expire_time - computed: true, optional: false, required: false
@@ -143,11 +143,11 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -155,15 +155,15 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // private_key - computed: false, optional: true, required: false
-  private _privateKey?: string | undefined; 
+  private _privateKey?: string; 
   public get privateKey() {
     return this.getStringAttribute('private_key');
   }
-  public set privateKey(value: string | undefined) {
+  public set privateKey(value: string) {
     this._privateKey = value;
   }
   public resetPrivateKey() {
@@ -171,15 +171,15 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privateKeyInput() {
-    return this._privateKey
+    return this._privateKey;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -187,15 +187,15 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -203,7 +203,7 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // updated_at - computed: true, optional: false, required: false

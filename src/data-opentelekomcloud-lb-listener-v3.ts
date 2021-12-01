@@ -150,11 +150,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // client_ca_tls_container_ref - computed: false, optional: true, required: false
-  private _clientCaTlsContainerRef?: string | undefined; 
+  private _clientCaTlsContainerRef?: string; 
   public get clientCaTlsContainerRef() {
     return this.getStringAttribute('client_ca_tls_container_ref');
   }
-  public set clientCaTlsContainerRef(value: string | undefined) {
+  public set clientCaTlsContainerRef(value: string) {
     this._clientCaTlsContainerRef = value;
   }
   public resetClientCaTlsContainerRef() {
@@ -162,15 +162,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get clientCaTlsContainerRefInput() {
-    return this._clientCaTlsContainerRef
+    return this._clientCaTlsContainerRef;
   }
 
   // client_timeout - computed: false, optional: true, required: false
-  private _clientTimeout?: number | undefined; 
+  private _clientTimeout?: number; 
   public get clientTimeout() {
     return this.getNumberAttribute('client_timeout');
   }
-  public set clientTimeout(value: number | undefined) {
+  public set clientTimeout(value: number) {
     this._clientTimeout = value;
   }
   public resetClientTimeout() {
@@ -178,7 +178,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get clientTimeoutInput() {
-    return this._clientTimeout
+    return this._clientTimeout;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -187,11 +187,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // default_pool_id - computed: false, optional: true, required: false
-  private _defaultPoolId?: string | undefined; 
+  private _defaultPoolId?: string; 
   public get defaultPoolId() {
     return this.getStringAttribute('default_pool_id');
   }
-  public set defaultPoolId(value: string | undefined) {
+  public set defaultPoolId(value: string) {
     this._defaultPoolId = value;
   }
   public resetDefaultPoolId() {
@@ -199,15 +199,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get defaultPoolIdInput() {
-    return this._defaultPoolId
+    return this._defaultPoolId;
   }
 
   // default_tls_container_ref - computed: false, optional: true, required: false
-  private _defaultTlsContainerRef?: string | undefined; 
+  private _defaultTlsContainerRef?: string; 
   public get defaultTlsContainerRef() {
     return this.getStringAttribute('default_tls_container_ref');
   }
-  public set defaultTlsContainerRef(value: string | undefined) {
+  public set defaultTlsContainerRef(value: string) {
     this._defaultTlsContainerRef = value;
   }
   public resetDefaultTlsContainerRef() {
@@ -215,15 +215,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get defaultTlsContainerRefInput() {
-    return this._defaultTlsContainerRef
+    return this._defaultTlsContainerRef;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -231,7 +231,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // http2_enable - computed: true, optional: false, required: false
@@ -240,11 +240,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -252,7 +252,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // insert_headers - computed: true, optional: false, required: false
@@ -261,11 +261,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // keep_alive_timeout - computed: false, optional: true, required: false
-  private _keepAliveTimeout?: number | undefined; 
+  private _keepAliveTimeout?: number; 
   public get keepAliveTimeout() {
     return this.getNumberAttribute('keep_alive_timeout');
   }
-  public set keepAliveTimeout(value: number | undefined) {
+  public set keepAliveTimeout(value: number) {
     this._keepAliveTimeout = value;
   }
   public resetKeepAliveTimeout() {
@@ -273,15 +273,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get keepAliveTimeoutInput() {
-    return this._keepAliveTimeout
+    return this._keepAliveTimeout;
   }
 
   // loadbalancer_id - computed: false, optional: true, required: false
-  private _loadbalancerId?: string | undefined; 
+  private _loadbalancerId?: string; 
   public get loadbalancerId() {
     return this.getStringAttribute('loadbalancer_id');
   }
-  public set loadbalancerId(value: string | undefined) {
+  public set loadbalancerId(value: string) {
     this._loadbalancerId = value;
   }
   public resetLoadbalancerId() {
@@ -289,15 +289,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get loadbalancerIdInput() {
-    return this._loadbalancerId
+    return this._loadbalancerId;
   }
 
   // member_address - computed: false, optional: true, required: false
-  private _memberAddress?: string | undefined; 
+  private _memberAddress?: string; 
   public get memberAddress() {
     return this.getStringAttribute('member_address');
   }
-  public set memberAddress(value: string | undefined) {
+  public set memberAddress(value: string) {
     this._memberAddress = value;
   }
   public resetMemberAddress() {
@@ -305,15 +305,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get memberAddressInput() {
-    return this._memberAddress
+    return this._memberAddress;
   }
 
   // member_device_id - computed: false, optional: true, required: false
-  private _memberDeviceId?: string | undefined; 
+  private _memberDeviceId?: string; 
   public get memberDeviceId() {
     return this.getStringAttribute('member_device_id');
   }
-  public set memberDeviceId(value: string | undefined) {
+  public set memberDeviceId(value: string) {
     this._memberDeviceId = value;
   }
   public resetMemberDeviceId() {
@@ -321,7 +321,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get memberDeviceIdInput() {
-    return this._memberDeviceId
+    return this._memberDeviceId;
   }
 
   // member_retry_enable - computed: true, optional: false, required: false
@@ -330,11 +330,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // member_timeout - computed: false, optional: true, required: false
-  private _memberTimeout?: number | undefined; 
+  private _memberTimeout?: number; 
   public get memberTimeout() {
     return this.getNumberAttribute('member_timeout');
   }
-  public set memberTimeout(value: number | undefined) {
+  public set memberTimeout(value: number) {
     this._memberTimeout = value;
   }
   public resetMemberTimeout() {
@@ -342,7 +342,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get memberTimeoutInput() {
-    return this._memberTimeout
+    return this._memberTimeout;
   }
 
   // memory_retry_enable - computed: true, optional: false, required: false
@@ -351,11 +351,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -363,7 +363,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_id - computed: true, optional: false, required: false
@@ -372,11 +372,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // protocol - computed: false, optional: true, required: false
-  private _protocol?: string | undefined; 
+  private _protocol?: string; 
   public get protocol() {
     return this.getStringAttribute('protocol');
   }
-  public set protocol(value: string | undefined) {
+  public set protocol(value: string) {
     this._protocol = value;
   }
   public resetProtocol() {
@@ -384,15 +384,15 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // protocol_port - computed: false, optional: true, required: false
-  private _protocolPort?: number | undefined; 
+  private _protocolPort?: number; 
   public get protocolPort() {
     return this.getNumberAttribute('protocol_port');
   }
-  public set protocolPort(value: number | undefined) {
+  public set protocolPort(value: number) {
     this._protocolPort = value;
   }
   public resetProtocolPort() {
@@ -400,7 +400,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get protocolPortInput() {
-    return this._protocolPort
+    return this._protocolPort;
   }
 
   // sni_container_refs - computed: true, optional: false, required: false
@@ -414,11 +414,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // tls_ciphers_policy - computed: false, optional: true, required: false
-  private _tlsCiphersPolicy?: string | undefined; 
+  private _tlsCiphersPolicy?: string; 
   public get tlsCiphersPolicy() {
     return this.getStringAttribute('tls_ciphers_policy');
   }
-  public set tlsCiphersPolicy(value: string | undefined) {
+  public set tlsCiphersPolicy(value: string) {
     this._tlsCiphersPolicy = value;
   }
   public resetTlsCiphersPolicy() {
@@ -426,7 +426,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get tlsCiphersPolicyInput() {
-    return this._tlsCiphersPolicy
+    return this._tlsCiphersPolicy;
   }
 
   // updated_at - computed: true, optional: false, required: false

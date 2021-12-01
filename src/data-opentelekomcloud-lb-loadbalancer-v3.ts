@@ -150,11 +150,11 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
 
   // l4_flavor - computed: true, optional: true, required: false
-  private _l4Flavor?: string | undefined; 
+  private _l4Flavor?: string; 
   public get l4Flavor() {
     return this.getStringAttribute('l4_flavor');
   }
-  public set l4Flavor(value: string | undefined) {
+  public set l4Flavor(value: string) {
     this._l4Flavor = value;
   }
   public resetL4Flavor() {
@@ -162,15 +162,15 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get l4FlavorInput() {
-    return this._l4Flavor
+    return this._l4Flavor;
   }
 
   // l7_flavor - computed: true, optional: true, required: false
-  private _l7Flavor?: string | undefined; 
+  private _l7Flavor?: string; 
   public get l7Flavor() {
     return this.getStringAttribute('l7_flavor');
   }
-  public set l7Flavor(value: string | undefined) {
+  public set l7Flavor(value: string) {
     this._l7Flavor = value;
   }
   public resetL7Flavor() {
@@ -178,15 +178,15 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get l7FlavorInput() {
-    return this._l7Flavor
+    return this._l7Flavor;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -194,7 +194,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network_ids - computed: true, optional: false, required: false
@@ -208,11 +208,11 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
 
   // router_id - computed: true, optional: true, required: false
-  private _routerId?: string | undefined; 
+  private _routerId?: string; 
   public get routerId() {
     return this.getStringAttribute('router_id');
   }
-  public set routerId(value: string | undefined) {
+  public set routerId(value: string) {
     this._routerId = value;
   }
   public resetRouterId() {
@@ -220,15 +220,15 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get routerIdInput() {
-    return this._routerId
+    return this._routerId;
   }
 
   // subnet_id - computed: true, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -236,7 +236,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -250,11 +250,11 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
 
   // vip_address - computed: true, optional: true, required: false
-  private _vipAddress?: string | undefined; 
+  private _vipAddress?: string; 
   public get vipAddress() {
     return this.getStringAttribute('vip_address');
   }
-  public set vipAddress(value: string | undefined) {
+  public set vipAddress(value: string) {
     this._vipAddress = value;
   }
   public resetVipAddress() {
@@ -262,15 +262,15 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get vipAddressInput() {
-    return this._vipAddress
+    return this._vipAddress;
   }
 
   // vip_port_id - computed: true, optional: true, required: false
-  private _vipPortId?: string | undefined; 
+  private _vipPortId?: string; 
   public get vipPortId() {
     return this.getStringAttribute('vip_port_id');
   }
-  public set vipPortId(value: string | undefined) {
+  public set vipPortId(value: string) {
     this._vipPortId = value;
   }
   public resetVipPortId() {
@@ -278,7 +278,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
   // Temporarily expose input value. Use with caution.
   public get vipPortIdInput() {
-    return this._vipPortId
+    return this._vipPortId;
   }
 
   // =========

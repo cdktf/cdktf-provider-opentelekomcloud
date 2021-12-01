@@ -78,11 +78,11 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -90,15 +90,15 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -106,7 +106,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -115,11 +115,11 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
 
   // is_domain - computed: true, optional: true, required: false
-  private _isDomain?: boolean | cdktf.IResolvable | undefined; 
+  private _isDomain?: boolean | cdktf.IResolvable; 
   public get isDomain() {
     return this.getBooleanAttribute('is_domain') as any;
   }
-  public set isDomain(value: boolean | cdktf.IResolvable | undefined) {
+  public set isDomain(value: boolean | cdktf.IResolvable) {
     this._isDomain = value;
   }
   public resetIsDomain() {
@@ -127,15 +127,15 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get isDomainInput() {
-    return this._isDomain
+    return this._isDomain;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -143,15 +143,15 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // parent_id - computed: false, optional: true, required: false
-  private _parentId?: string | undefined; 
+  private _parentId?: string; 
   public get parentId() {
     return this.getStringAttribute('parent_id');
   }
-  public set parentId(value: string | undefined) {
+  public set parentId(value: string) {
     this._parentId = value;
   }
   public resetParentId() {
@@ -159,7 +159,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   }
   // Temporarily expose input value. Use with caution.
   public get parentIdInput() {
-    return this._parentId
+    return this._parentId;
   }
 
   // region - computed: true, optional: false, required: false

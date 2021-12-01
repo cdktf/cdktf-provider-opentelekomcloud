@@ -229,11 +229,11 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
 
   // backup_name - computed: true, optional: true, required: false
-  private _backupName?: string | undefined; 
+  private _backupName?: string; 
   public get backupName() {
     return this.getStringAttribute('backup_name');
   }
-  public set backupName(value: string | undefined) {
+  public set backupName(value: string) {
     this._backupName = value;
   }
   public resetBackupName() {
@@ -241,15 +241,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get backupNameInput() {
-    return this._backupName
+    return this._backupName;
   }
 
   // backup_record_id - computed: true, optional: true, required: false
-  private _backupRecordId?: string | undefined; 
+  private _backupRecordId?: string; 
   public get backupRecordId() {
     return this.getStringAttribute('backup_record_id');
   }
-  public set backupRecordId(value: string | undefined) {
+  public set backupRecordId(value: string) {
     this._backupRecordId = value;
   }
   public resetBackupRecordId() {
@@ -257,7 +257,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get backupRecordIdInput() {
-    return this._backupRecordId
+    return this._backupRecordId;
   }
 
   // description - computed: true, optional: false, required: false
@@ -266,11 +266,11 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -278,15 +278,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // policy_id - computed: false, optional: true, required: false
-  private _policyId?: string | undefined; 
+  private _policyId?: string; 
   public get policyId() {
     return this.getStringAttribute('policy_id');
   }
-  public set policyId(value: string | undefined) {
+  public set policyId(value: string) {
     this._policyId = value;
   }
   public resetPolicyId() {
@@ -294,15 +294,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -310,15 +310,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // resource_id - computed: true, optional: true, required: false
-  private _resourceId?: string | undefined; 
+  private _resourceId?: string; 
   public get resourceId() {
     return this.getStringAttribute('resource_id');
   }
-  public set resourceId(value: string | undefined) {
+  public set resourceId(value: string) {
     this._resourceId = value;
   }
   public resetResourceId() {
@@ -326,15 +326,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get resourceIdInput() {
-    return this._resourceId
+    return this._resourceId;
   }
 
   // resource_name - computed: true, optional: true, required: false
-  private _resourceName?: string | undefined; 
+  private _resourceName?: string; 
   public get resourceName() {
     return this.getStringAttribute('resource_name');
   }
-  public set resourceName(value: string | undefined) {
+  public set resourceName(value: string) {
     this._resourceName = value;
   }
   public resetResourceName() {
@@ -342,15 +342,15 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get resourceNameInput() {
-    return this._resourceName
+    return this._resourceName;
   }
 
   // resource_type - computed: true, optional: true, required: false
-  private _resourceType?: string | undefined; 
+  private _resourceType?: string; 
   public get resourceType() {
     return this.getStringAttribute('resource_type');
   }
-  public set resourceType(value: string | undefined) {
+  public set resourceType(value: string) {
     this._resourceType = value;
   }
   public resetResourceType() {
@@ -358,7 +358,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeInput() {
-    return this._resourceType
+    return this._resourceType;
   }
 
   // size - computed: true, optional: false, required: false
@@ -367,11 +367,11 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -379,7 +379,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -388,11 +388,11 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
 
   // vm_ip - computed: false, optional: true, required: false
-  private _vmIp?: string | undefined; 
+  private _vmIp?: string; 
   public get vmIp() {
     return this.getStringAttribute('vm_ip');
   }
-  public set vmIp(value: string | undefined) {
+  public set vmIp(value: string) {
     this._vmIp = value;
   }
   public resetVmIp() {
@@ -400,7 +400,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get vmIpInput() {
-    return this._vmIp
+    return this._vmIp;
   }
 
   // vm_metadata - computed: true, optional: false, required: false

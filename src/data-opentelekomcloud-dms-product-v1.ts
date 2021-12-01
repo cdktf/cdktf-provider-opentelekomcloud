@@ -98,11 +98,11 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   // ==========
 
   // bandwidth - computed: false, optional: true, required: false
-  private _bandwidth?: string | undefined; 
+  private _bandwidth?: string; 
   public get bandwidth() {
     return this.getStringAttribute('bandwidth');
   }
-  public set bandwidth(value: string | undefined) {
+  public set bandwidth(value: string) {
     this._bandwidth = value;
   }
   public resetBandwidth() {
@@ -110,7 +110,7 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
-    return this._bandwidth
+    return this._bandwidth;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -123,7 +123,7 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get engineInput() {
-    return this._engine
+    return this._engine;
   }
 
   // id - computed: true, optional: true, required: false
@@ -141,15 +141,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get instanceTypeInput() {
-    return this._instanceType
+    return this._instanceType;
   }
 
   // io_type - computed: true, optional: true, required: false
-  private _ioType?: string | undefined; 
+  private _ioType?: string; 
   public get ioType() {
     return this.getStringAttribute('io_type');
   }
-  public set ioType(value: string | undefined) {
+  public set ioType(value: string) {
     this._ioType = value;
   }
   public resetIoType() {
@@ -157,15 +157,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get ioTypeInput() {
-    return this._ioType
+    return this._ioType;
   }
 
   // node_num - computed: true, optional: true, required: false
-  private _nodeNum?: string | undefined; 
+  private _nodeNum?: string; 
   public get nodeNum() {
     return this.getStringAttribute('node_num');
   }
-  public set nodeNum(value: string | undefined) {
+  public set nodeNum(value: string) {
     this._nodeNum = value;
   }
   public resetNodeNum() {
@@ -173,15 +173,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get nodeNumInput() {
-    return this._nodeNum
+    return this._nodeNum;
   }
 
   // partition_num - computed: false, optional: true, required: false
-  private _partitionNum?: string | undefined; 
+  private _partitionNum?: string; 
   public get partitionNum() {
     return this.getStringAttribute('partition_num');
   }
-  public set partitionNum(value: string | undefined) {
+  public set partitionNum(value: string) {
     this._partitionNum = value;
   }
   public resetPartitionNum() {
@@ -189,15 +189,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get partitionNumInput() {
-    return this._partitionNum
+    return this._partitionNum;
   }
 
   // storage - computed: true, optional: true, required: false
-  private _storage?: string | undefined; 
+  private _storage?: string; 
   public get storage() {
     return this.getStringAttribute('storage');
   }
-  public set storage(value: string | undefined) {
+  public set storage(value: string) {
     this._storage = value;
   }
   public resetStorage() {
@@ -205,15 +205,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get storageInput() {
-    return this._storage
+    return this._storage;
   }
 
   // storage_spec_code - computed: true, optional: true, required: false
-  private _storageSpecCode?: string | undefined; 
+  private _storageSpecCode?: string; 
   public get storageSpecCode() {
     return this.getStringAttribute('storage_spec_code');
   }
-  public set storageSpecCode(value: string | undefined) {
+  public set storageSpecCode(value: string) {
     this._storageSpecCode = value;
   }
   public resetStorageSpecCode() {
@@ -221,15 +221,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get storageSpecCodeInput() {
-    return this._storageSpecCode
+    return this._storageSpecCode;
   }
 
   // version - computed: true, optional: true, required: false
-  private _version?: string | undefined; 
+  private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
   }
-  public set version(value: string | undefined) {
+  public set version(value: string) {
     this._version = value;
   }
   public resetVersion() {
@@ -237,15 +237,15 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version
+    return this._version;
   }
 
   // vm_specification - computed: true, optional: true, required: false
-  private _vmSpecification?: string | undefined; 
+  private _vmSpecification?: string; 
   public get vmSpecification() {
     return this.getStringAttribute('vm_specification');
   }
-  public set vmSpecification(value: string | undefined) {
+  public set vmSpecification(value: string) {
     this._vmSpecification = value;
   }
   public resetVmSpecification() {
@@ -253,7 +253,7 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get vmSpecificationInput() {
-    return this._vmSpecification
+    return this._vmSpecification;
   }
 
   // =========

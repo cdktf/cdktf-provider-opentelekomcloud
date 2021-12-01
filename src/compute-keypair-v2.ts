@@ -82,7 +82,7 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // private_key - computed: true, optional: false, required: false
@@ -91,11 +91,11 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
 
   // public_key - computed: true, optional: true, required: false
-  private _publicKey?: string | undefined; 
+  private _publicKey?: string; 
   public get publicKey() {
     return this.getStringAttribute('public_key');
   }
-  public set publicKey(value: string | undefined) {
+  public set publicKey(value: string) {
     this._publicKey = value;
   }
   public resetPublicKey() {
@@ -103,15 +103,15 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get publicKeyInput() {
-    return this._publicKey
+    return this._publicKey;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -119,7 +119,7 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // shared - computed: true, optional: false, required: false
@@ -128,12 +128,12 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -141,7 +141,7 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // =========

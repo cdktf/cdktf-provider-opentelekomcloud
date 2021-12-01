@@ -82,7 +82,7 @@ export class ImagesImageAccessAcceptV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get imageIdInput() {
-    return this._imageId
+    return this._imageId;
   }
 
   // member_id - computed: false, optional: false, required: true
@@ -95,7 +95,7 @@ export class ImagesImageAccessAcceptV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get memberIdInput() {
-    return this._memberId
+    return this._memberId;
   }
 
   // schema - computed: true, optional: false, required: false
@@ -113,7 +113,7 @@ export class ImagesImageAccessAcceptV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // updated_at - computed: true, optional: false, required: false

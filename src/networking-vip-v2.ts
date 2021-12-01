@@ -78,11 +78,11 @@ export class NetworkingVipV2 extends cdktf.TerraformResource {
   }
 
   // ip_address - computed: true, optional: true, required: false
-  private _ipAddress?: string | undefined; 
+  private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string | undefined) {
+  public set ipAddress(value: string) {
     this._ipAddress = value;
   }
   public resetIpAddress() {
@@ -90,15 +90,15 @@ export class NetworkingVipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {
-    return this._ipAddress
+    return this._ipAddress;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -106,7 +106,7 @@ export class NetworkingVipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // network_id - computed: false, optional: false, required: true
@@ -119,7 +119,7 @@ export class NetworkingVipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get networkIdInput() {
-    return this._networkId
+    return this._networkId;
   }
 
   // status - computed: true, optional: false, required: false
@@ -137,7 +137,7 @@ export class NetworkingVipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tenant_id - computed: true, optional: false, required: false

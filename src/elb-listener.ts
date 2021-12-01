@@ -109,7 +109,7 @@ export interface ElbListenerTimeouts {
   readonly update?: string;
 }
 
-function elbListenerTimeoutsToTerraform(struct?: ElbListenerTimeoutsOutputReference | ElbListenerTimeouts): any {
+export function elbListenerTimeoutsToTerraform(struct?: ElbListenerTimeoutsOutputReference | ElbListenerTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -131,12 +131,43 @@ export class ElbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ElbListenerTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElbListenerTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -144,15 +175,15 @@ export class ElbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -160,15 +191,15 @@ export class ElbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -176,7 +207,7 @@ export class ElbListenerTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -232,7 +263,7 @@ export class ElbListener extends cdktf.TerraformResource {
     this._tcpDrainingTimeout = config.tcpDrainingTimeout;
     this._tcpTimeout = config.tcpTimeout;
     this._udpTimeout = config.udpTimeout;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -249,7 +280,7 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backendPortInput() {
-    return this._backendPort
+    return this._backendPort;
   }
 
   // backend_protocol - computed: false, optional: false, required: true
@@ -262,15 +293,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backendProtocolInput() {
-    return this._backendProtocol
+    return this._backendProtocol;
   }
 
   // certificate_id - computed: false, optional: true, required: false
-  private _certificateId?: string | undefined; 
+  private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
   }
-  public set certificateId(value: string | undefined) {
+  public set certificateId(value: string) {
     this._certificateId = value;
   }
   public resetCertificateId() {
@@ -278,15 +309,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get certificateIdInput() {
-    return this._certificateId
+    return this._certificateId;
   }
 
   // certificates - computed: false, optional: true, required: false
-  private _certificates?: string[] | undefined; 
+  private _certificates?: string[]; 
   public get certificates() {
     return this.getListAttribute('certificates');
   }
-  public set certificates(value: string[] | undefined) {
+  public set certificates(value: string[]) {
     this._certificates = value;
   }
   public resetCertificates() {
@@ -294,15 +325,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get certificatesInput() {
-    return this._certificates
+    return this._certificates;
   }
 
   // cookie_timeout - computed: true, optional: true, required: false
-  private _cookieTimeout?: number | undefined; 
+  private _cookieTimeout?: number; 
   public get cookieTimeout() {
     return this.getNumberAttribute('cookie_timeout');
   }
-  public set cookieTimeout(value: number | undefined) {
+  public set cookieTimeout(value: number) {
     this._cookieTimeout = value;
   }
   public resetCookieTimeout() {
@@ -310,15 +341,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cookieTimeoutInput() {
-    return this._cookieTimeout
+    return this._cookieTimeout;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -326,7 +357,7 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -344,7 +375,7 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lbAlgorithmInput() {
-    return this._lbAlgorithm
+    return this._lbAlgorithm;
   }
 
   // loadbalancer_id - computed: false, optional: false, required: true
@@ -357,15 +388,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loadbalancerIdInput() {
-    return this._loadbalancerId
+    return this._loadbalancerId;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -373,7 +404,7 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -386,7 +417,7 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // protocol_port - computed: false, optional: false, required: true
@@ -399,15 +430,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolPortInput() {
-    return this._protocolPort
+    return this._protocolPort;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -415,15 +446,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // session_sticky - computed: false, optional: true, required: false
-  private _sessionSticky?: boolean | cdktf.IResolvable | undefined; 
+  private _sessionSticky?: boolean | cdktf.IResolvable; 
   public get sessionSticky() {
     return this.getBooleanAttribute('session_sticky') as any;
   }
-  public set sessionSticky(value: boolean | cdktf.IResolvable | undefined) {
+  public set sessionSticky(value: boolean | cdktf.IResolvable) {
     this._sessionSticky = value;
   }
   public resetSessionSticky() {
@@ -431,15 +462,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sessionStickyInput() {
-    return this._sessionSticky
+    return this._sessionSticky;
   }
 
   // session_sticky_type - computed: false, optional: true, required: false
-  private _sessionStickyType?: string | undefined; 
+  private _sessionStickyType?: string; 
   public get sessionStickyType() {
     return this.getStringAttribute('session_sticky_type');
   }
-  public set sessionStickyType(value: string | undefined) {
+  public set sessionStickyType(value: string) {
     this._sessionStickyType = value;
   }
   public resetSessionStickyType() {
@@ -447,15 +478,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sessionStickyTypeInput() {
-    return this._sessionStickyType
+    return this._sessionStickyType;
   }
 
   // ssl_ciphers - computed: true, optional: true, required: false
-  private _sslCiphers?: string | undefined; 
+  private _sslCiphers?: string; 
   public get sslCiphers() {
     return this.getStringAttribute('ssl_ciphers');
   }
-  public set sslCiphers(value: string | undefined) {
+  public set sslCiphers(value: string) {
     this._sslCiphers = value;
   }
   public resetSslCiphers() {
@@ -463,15 +494,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sslCiphersInput() {
-    return this._sslCiphers
+    return this._sslCiphers;
   }
 
   // ssl_protocols - computed: true, optional: true, required: false
-  private _sslProtocols?: string | undefined; 
+  private _sslProtocols?: string; 
   public get sslProtocols() {
     return this.getStringAttribute('ssl_protocols');
   }
-  public set sslProtocols(value: string | undefined) {
+  public set sslProtocols(value: string) {
     this._sslProtocols = value;
   }
   public resetSslProtocols() {
@@ -479,15 +510,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sslProtocolsInput() {
-    return this._sslProtocols
+    return this._sslProtocols;
   }
 
   // tcp_draining - computed: false, optional: true, required: false
-  private _tcpDraining?: boolean | cdktf.IResolvable | undefined; 
+  private _tcpDraining?: boolean | cdktf.IResolvable; 
   public get tcpDraining() {
     return this.getBooleanAttribute('tcp_draining') as any;
   }
-  public set tcpDraining(value: boolean | cdktf.IResolvable | undefined) {
+  public set tcpDraining(value: boolean | cdktf.IResolvable) {
     this._tcpDraining = value;
   }
   public resetTcpDraining() {
@@ -495,15 +526,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tcpDrainingInput() {
-    return this._tcpDraining
+    return this._tcpDraining;
   }
 
   // tcp_draining_timeout - computed: false, optional: true, required: false
-  private _tcpDrainingTimeout?: number | undefined; 
+  private _tcpDrainingTimeout?: number; 
   public get tcpDrainingTimeout() {
     return this.getNumberAttribute('tcp_draining_timeout');
   }
-  public set tcpDrainingTimeout(value: number | undefined) {
+  public set tcpDrainingTimeout(value: number) {
     this._tcpDrainingTimeout = value;
   }
   public resetTcpDrainingTimeout() {
@@ -511,15 +542,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tcpDrainingTimeoutInput() {
-    return this._tcpDrainingTimeout
+    return this._tcpDrainingTimeout;
   }
 
   // tcp_timeout - computed: true, optional: true, required: false
-  private _tcpTimeout?: number | undefined; 
+  private _tcpTimeout?: number; 
   public get tcpTimeout() {
     return this.getNumberAttribute('tcp_timeout');
   }
-  public set tcpTimeout(value: number | undefined) {
+  public set tcpTimeout(value: number) {
     this._tcpTimeout = value;
   }
   public resetTcpTimeout() {
@@ -527,15 +558,15 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tcpTimeoutInput() {
-    return this._tcpTimeout
+    return this._tcpTimeout;
   }
 
   // udp_timeout - computed: false, optional: true, required: false
-  private _udpTimeout?: number | undefined; 
+  private _udpTimeout?: number; 
   public get udpTimeout() {
     return this.getNumberAttribute('udp_timeout');
   }
-  public set udpTimeout(value: number | undefined) {
+  public set udpTimeout(value: number) {
     this._udpTimeout = value;
   }
   public resetUdpTimeout() {
@@ -543,24 +574,23 @@ export class ElbListener extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get udpTimeoutInput() {
-    return this._udpTimeout
+    return this._udpTimeout;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ElbListenerTimeouts | undefined; 
-  private __timeoutsOutput = new ElbListenerTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ElbListenerTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ElbListenerTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ElbListenerTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -589,7 +619,7 @@ export class ElbListener extends cdktf.TerraformResource {
       tcp_draining_timeout: cdktf.numberToTerraform(this._tcpDrainingTimeout),
       tcp_timeout: cdktf.numberToTerraform(this._tcpTimeout),
       udp_timeout: cdktf.numberToTerraform(this._udpTimeout),
-      timeouts: elbListenerTimeoutsToTerraform(this._timeouts),
+      timeouts: elbListenerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

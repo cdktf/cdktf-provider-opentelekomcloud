@@ -79,7 +79,7 @@ export interface WafDomainV1Server {
   readonly serverProtocol?: string;
 }
 
-function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server): any {
+export function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -105,7 +105,7 @@ export interface WafDomainV1Timeouts {
   readonly delete?: string;
 }
 
-function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1TimeoutsOutputReference | WafDomainV1Timeouts): any {
+export function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1TimeoutsOutputReference | WafDomainV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -126,12 +126,37 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafDomainV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafDomainV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -139,15 +164,15 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -155,7 +180,7 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -200,7 +225,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
     this._sipHeaderName = config.sipHeaderName;
     this._tls = config.tls;
     this._server = config.server;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -218,11 +243,11 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // certificate_id - computed: false, optional: true, required: false
-  private _certificateId?: string | undefined; 
+  private _certificateId?: string; 
   public get certificateId() {
     return this.getStringAttribute('certificate_id');
   }
-  public set certificateId(value: string | undefined) {
+  public set certificateId(value: string) {
     this._certificateId = value;
   }
   public resetCertificateId() {
@@ -230,15 +255,15 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get certificateIdInput() {
-    return this._certificateId
+    return this._certificateId;
   }
 
   // cipher - computed: true, optional: true, required: false
-  private _cipher?: string | undefined; 
+  private _cipher?: string; 
   public get cipher() {
     return this.getStringAttribute('cipher');
   }
-  public set cipher(value: string | undefined) {
+  public set cipher(value: string) {
     this._cipher = value;
   }
   public resetCipher() {
@@ -246,7 +271,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cipherInput() {
-    return this._cipher
+    return this._cipher;
   }
 
   // cname - computed: true, optional: false, required: false
@@ -264,7 +289,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hostnameInput() {
-    return this._hostname
+    return this._hostname;
   }
 
   // id - computed: true, optional: true, required: false
@@ -273,11 +298,11 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // policy_id - computed: true, optional: true, required: false
-  private _policyId?: string | undefined; 
+  private _policyId?: string; 
   public get policyId() {
     return this.getStringAttribute('policy_id');
   }
-  public set policyId(value: string | undefined) {
+  public set policyId(value: string) {
     this._policyId = value;
   }
   public resetPolicyId() {
@@ -285,7 +310,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // protect_status - computed: true, optional: false, required: false
@@ -308,15 +333,15 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get proxyInput() {
-    return this._proxy
+    return this._proxy;
   }
 
   // sip_header_list - computed: false, optional: true, required: false
-  private _sipHeaderList?: string[] | undefined; 
+  private _sipHeaderList?: string[]; 
   public get sipHeaderList() {
     return this.getListAttribute('sip_header_list');
   }
-  public set sipHeaderList(value: string[] | undefined) {
+  public set sipHeaderList(value: string[]) {
     this._sipHeaderList = value;
   }
   public resetSipHeaderList() {
@@ -324,15 +349,15 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sipHeaderListInput() {
-    return this._sipHeaderList
+    return this._sipHeaderList;
   }
 
   // sip_header_name - computed: false, optional: true, required: false
-  private _sipHeaderName?: string | undefined; 
+  private _sipHeaderName?: string; 
   public get sipHeaderName() {
     return this.getStringAttribute('sip_header_name');
   }
-  public set sipHeaderName(value: string | undefined) {
+  public set sipHeaderName(value: string) {
     this._sipHeaderName = value;
   }
   public resetSipHeaderName() {
@@ -340,7 +365,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sipHeaderNameInput() {
-    return this._sipHeaderName
+    return this._sipHeaderName;
   }
 
   // sub_domain - computed: true, optional: false, required: false
@@ -349,11 +374,11 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // tls - computed: true, optional: true, required: false
-  private _tls?: string | undefined; 
+  private _tls?: string; 
   public get tls() {
     return this.getStringAttribute('tls');
   }
-  public set tls(value: string | undefined) {
+  public set tls(value: string) {
     this._tls = value;
   }
   public resetTls() {
@@ -361,7 +386,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tlsInput() {
-    return this._tls
+    return this._tls;
   }
 
   // txt_code - computed: true, optional: false, required: false
@@ -380,24 +405,23 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverInput() {
-    return this._server
+    return this._server;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: WafDomainV1Timeouts | undefined; 
-  private __timeoutsOutput = new WafDomainV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafDomainV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: WafDomainV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: WafDomainV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -415,7 +439,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       sip_header_name: cdktf.stringToTerraform(this._sipHeaderName),
       tls: cdktf.stringToTerraform(this._tls),
       server: cdktf.listMapper(wafDomainV1ServerToTerraform)(this._server),
-      timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts),
+      timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

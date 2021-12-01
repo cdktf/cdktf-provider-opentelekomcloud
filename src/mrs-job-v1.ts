@@ -77,7 +77,7 @@ export interface MrsJobV1Timeouts {
   readonly update?: string;
 }
 
-function mrsJobV1TimeoutsToTerraform(struct?: MrsJobV1TimeoutsOutputReference | MrsJobV1Timeouts): any {
+export function mrsJobV1TimeoutsToTerraform(struct?: MrsJobV1TimeoutsOutputReference | MrsJobV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -99,12 +99,43 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): MrsJobV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MrsJobV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -112,15 +143,15 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -128,15 +159,15 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -144,7 +175,7 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -192,7 +223,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
     this._jobType = config.jobType;
     this._output = config.output;
     this._region = config.region;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -200,11 +231,11 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   // ==========
 
   // arguments - computed: true, optional: true, required: false
-  private _arguments?: string | undefined; 
+  private _arguments?: string; 
   public get arguments() {
     return this.getStringAttribute('arguments');
   }
-  public set arguments(value: string | undefined) {
+  public set arguments(value: string) {
     this._arguments = value;
   }
   public resetArguments() {
@@ -212,7 +243,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get argumentsInput() {
-    return this._arguments
+    return this._arguments;
   }
 
   // cluster_id - computed: false, optional: false, required: true
@@ -225,15 +256,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
-    return this._clusterId
+    return this._clusterId;
   }
 
   // hive_script_path - computed: true, optional: true, required: false
-  private _hiveScriptPath?: string | undefined; 
+  private _hiveScriptPath?: string; 
   public get hiveScriptPath() {
     return this.getStringAttribute('hive_script_path');
   }
-  public set hiveScriptPath(value: string | undefined) {
+  public set hiveScriptPath(value: string) {
     this._hiveScriptPath = value;
   }
   public resetHiveScriptPath() {
@@ -241,7 +272,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get hiveScriptPathInput() {
-    return this._hiveScriptPath
+    return this._hiveScriptPath;
   }
 
   // id - computed: true, optional: true, required: false
@@ -250,11 +281,11 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
 
   // input - computed: true, optional: true, required: false
-  private _input?: string | undefined; 
+  private _input?: string; 
   public get input() {
     return this.getStringAttribute('input');
   }
-  public set input(value: string | undefined) {
+  public set input(value: string) {
     this._input = value;
   }
   public resetInput() {
@@ -262,15 +293,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get inputInput() {
-    return this._input
+    return this._input;
   }
 
   // is_protected - computed: true, optional: true, required: false
-  private _isProtected?: boolean | cdktf.IResolvable | undefined; 
+  private _isProtected?: boolean | cdktf.IResolvable; 
   public get isProtected() {
     return this.getBooleanAttribute('is_protected') as any;
   }
-  public set isProtected(value: boolean | cdktf.IResolvable | undefined) {
+  public set isProtected(value: boolean | cdktf.IResolvable) {
     this._isProtected = value;
   }
   public resetIsProtected() {
@@ -278,15 +309,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isProtectedInput() {
-    return this._isProtected
+    return this._isProtected;
   }
 
   // is_public - computed: true, optional: true, required: false
-  private _isPublic?: boolean | cdktf.IResolvable | undefined; 
+  private _isPublic?: boolean | cdktf.IResolvable; 
   public get isPublic() {
     return this.getBooleanAttribute('is_public') as any;
   }
-  public set isPublic(value: boolean | cdktf.IResolvable | undefined) {
+  public set isPublic(value: boolean | cdktf.IResolvable) {
     this._isPublic = value;
   }
   public resetIsPublic() {
@@ -294,7 +325,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get isPublicInput() {
-    return this._isPublic
+    return this._isPublic;
   }
 
   // jar_path - computed: false, optional: false, required: true
@@ -307,15 +338,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jarPathInput() {
-    return this._jarPath
+    return this._jarPath;
   }
 
   // job_log - computed: true, optional: true, required: false
-  private _jobLog?: string | undefined; 
+  private _jobLog?: string; 
   public get jobLog() {
     return this.getStringAttribute('job_log');
   }
-  public set jobLog(value: string | undefined) {
+  public set jobLog(value: string) {
     this._jobLog = value;
   }
   public resetJobLog() {
@@ -323,7 +354,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jobLogInput() {
-    return this._jobLog
+    return this._jobLog;
   }
 
   // job_name - computed: false, optional: false, required: true
@@ -336,7 +367,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jobNameInput() {
-    return this._jobName
+    return this._jobName;
   }
 
   // job_state - computed: true, optional: false, required: false
@@ -354,15 +385,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get jobTypeInput() {
-    return this._jobType
+    return this._jobType;
   }
 
   // output - computed: true, optional: true, required: false
-  private _output?: string | undefined; 
+  private _output?: string; 
   public get output() {
     return this.getStringAttribute('output');
   }
-  public set output(value: string | undefined) {
+  public set output(value: string) {
     this._output = value;
   }
   public resetOutput() {
@@ -370,15 +401,15 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get outputInput() {
-    return this._output
+    return this._output;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -386,24 +417,23 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: MrsJobV1Timeouts | undefined; 
-  private __timeoutsOutput = new MrsJobV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new MrsJobV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: MrsJobV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: MrsJobV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -424,7 +454,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
       job_type: cdktf.numberToTerraform(this._jobType),
       output: cdktf.stringToTerraform(this._output),
       region: cdktf.stringToTerraform(this._region),
-      timeouts: mrsJobV1TimeoutsToTerraform(this._timeouts),
+      timeouts: mrsJobV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

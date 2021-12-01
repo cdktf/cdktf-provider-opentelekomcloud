@@ -37,7 +37,7 @@ export interface VbsBackupShareV2Timeouts {
   readonly delete?: string;
 }
 
-function vbsBackupShareV2TimeoutsToTerraform(struct?: VbsBackupShareV2TimeoutsOutputReference | VbsBackupShareV2Timeouts): any {
+export function vbsBackupShareV2TimeoutsToTerraform(struct?: VbsBackupShareV2TimeoutsOutputReference | VbsBackupShareV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -58,12 +58,37 @@ export class VbsBackupShareV2TimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VbsBackupShareV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VbsBackupShareV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -71,15 +96,15 @@ export class VbsBackupShareV2TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -87,7 +112,7 @@ export class VbsBackupShareV2TimeoutsOutputReference extends cdktf.ComplexObject
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -126,7 +151,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
     this._backupId = config.backupId;
     this._region = config.region;
     this._toProjectIds = config.toProjectIds;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -148,7 +173,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get backupIdInput() {
-    return this._backupId
+    return this._backupId;
   }
 
   // backup_name - computed: true, optional: false, required: false
@@ -177,11 +202,11 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -189,7 +214,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // service_metadata - computed: true, optional: false, required: false
@@ -222,7 +247,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get toProjectIdsInput() {
-    return this._toProjectIds
+    return this._toProjectIds;
   }
 
   // volume_id - computed: true, optional: false, required: false
@@ -231,20 +256,19 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VbsBackupShareV2Timeouts | undefined; 
-  private __timeoutsOutput = new VbsBackupShareV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VbsBackupShareV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VbsBackupShareV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VbsBackupShareV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -256,7 +280,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
       backup_id: cdktf.stringToTerraform(this._backupId),
       region: cdktf.stringToTerraform(this._region),
       to_project_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._toProjectIds),
-      timeouts: vbsBackupShareV2TimeoutsToTerraform(this._timeouts),
+      timeouts: vbsBackupShareV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

@@ -113,11 +113,11 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -125,15 +125,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -141,15 +141,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // external_v4_ip - computed: false, optional: true, required: false
-  private _externalV4Ip?: string | undefined; 
+  private _externalV4Ip?: string; 
   public get externalV4Ip() {
     return this.getStringAttribute('external_v4_ip');
   }
-  public set externalV4Ip(value: string | undefined) {
+  public set externalV4Ip(value: string) {
     this._externalV4Ip = value;
   }
   public resetExternalV4Ip() {
@@ -157,15 +157,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get externalV4IpInput() {
-    return this._externalV4Ip
+    return this._externalV4Ip;
   }
 
   // external_v6_ip - computed: false, optional: true, required: false
-  private _externalV6Ip?: string | undefined; 
+  private _externalV6Ip?: string; 
   public get externalV6Ip() {
     return this.getStringAttribute('external_v6_ip');
   }
-  public set externalV6Ip(value: string | undefined) {
+  public set externalV6Ip(value: string) {
     this._externalV6Ip = value;
   }
   public resetExternalV6Ip() {
@@ -173,15 +173,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get externalV6IpInput() {
-    return this._externalV6Ip
+    return this._externalV6Ip;
   }
 
   // flavor_id - computed: false, optional: true, required: false
-  private _flavorId?: string | undefined; 
+  private _flavorId?: string; 
   public get flavorId() {
     return this.getStringAttribute('flavor_id');
   }
-  public set flavorId(value: string | undefined) {
+  public set flavorId(value: string) {
     this._flavorId = value;
   }
   public resetFlavorId() {
@@ -189,15 +189,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get flavorIdInput() {
-    return this._flavorId
+    return this._flavorId;
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -205,15 +205,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -221,15 +221,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_id - computed: false, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -237,15 +237,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -253,15 +253,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // router_id - computed: false, optional: true, required: false
-  private _routerId?: string | undefined; 
+  private _routerId?: string; 
   public get routerId() {
     return this.getStringAttribute('router_id');
   }
-  public set routerId(value: string | undefined) {
+  public set routerId(value: string) {
     this._routerId = value;
   }
   public resetRouterId() {
@@ -269,15 +269,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get routerIdInput() {
-    return this._routerId
+    return this._routerId;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -285,15 +285,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -301,15 +301,15 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tenant_id - computed: false, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -317,7 +317,7 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // =========

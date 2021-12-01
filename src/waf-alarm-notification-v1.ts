@@ -87,7 +87,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -96,11 +96,11 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
 
   // locale - computed: true, optional: true, required: false
-  private _locale?: string | undefined; 
+  private _locale?: string; 
   public get locale() {
     return this.getStringAttribute('locale');
   }
-  public set locale(value: string | undefined) {
+  public set locale(value: string) {
     this._locale = value;
   }
   public resetLocale() {
@@ -108,7 +108,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get localeInput() {
-    return this._locale
+    return this._locale;
   }
 
   // send_frequency - computed: false, optional: false, required: true
@@ -121,7 +121,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sendFrequencyInput() {
-    return this._sendFrequency
+    return this._sendFrequency;
   }
 
   // threat - computed: false, optional: false, required: true
@@ -134,7 +134,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get threatInput() {
-    return this._threat
+    return this._threat;
   }
 
   // times - computed: false, optional: false, required: true
@@ -147,7 +147,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timesInput() {
-    return this._times
+    return this._times;
   }
 
   // topic_urn - computed: false, optional: false, required: true
@@ -160,7 +160,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicUrnInput() {
-    return this._topicUrn
+    return this._topicUrn;
   }
 
   // =========

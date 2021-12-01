@@ -77,7 +77,7 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get datastoreNameInput() {
-    return this._datastoreName
+    return this._datastoreName;
   }
 
   // datastore_version - computed: false, optional: false, required: true
@@ -90,7 +90,7 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get datastoreVersionInput() {
-    return this._datastoreVersion
+    return this._datastoreVersion;
   }
 
   // id - computed: true, optional: true, required: false
@@ -109,11 +109,11 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -121,15 +121,15 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // speccode - computed: true, optional: true, required: false
-  private _speccode?: string | undefined; 
+  private _speccode?: string; 
   public get speccode() {
     return this.getStringAttribute('speccode');
   }
-  public set speccode(value: string | undefined) {
+  public set speccode(value: string) {
     this._speccode = value;
   }
   public resetSpeccode() {
@@ -137,7 +137,7 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get speccodeInput() {
-    return this._speccode
+    return this._speccode;
   }
 
   // =========

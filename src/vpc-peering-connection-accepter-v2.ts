@@ -37,7 +37,7 @@ export interface VpcPeeringConnectionAccepterV2Timeouts {
   readonly delete?: string;
 }
 
-function vpcPeeringConnectionAccepterV2TimeoutsToTerraform(struct?: VpcPeeringConnectionAccepterV2TimeoutsOutputReference | VpcPeeringConnectionAccepterV2Timeouts): any {
+export function vpcPeeringConnectionAccepterV2TimeoutsToTerraform(struct?: VpcPeeringConnectionAccepterV2TimeoutsOutputReference | VpcPeeringConnectionAccepterV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -58,12 +58,37 @@ export class VpcPeeringConnectionAccepterV2TimeoutsOutputReference extends cdktf
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpcPeeringConnectionAccepterV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcPeeringConnectionAccepterV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -71,15 +96,15 @@ export class VpcPeeringConnectionAccepterV2TimeoutsOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -87,7 +112,7 @@ export class VpcPeeringConnectionAccepterV2TimeoutsOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -126,7 +151,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
     this._accept = config.accept;
     this._region = config.region;
     this._vpcPeeringConnectionId = config.vpcPeeringConnectionId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -134,11 +159,11 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   // ==========
 
   // accept - computed: false, optional: true, required: false
-  private _accept?: boolean | cdktf.IResolvable | undefined; 
+  private _accept?: boolean | cdktf.IResolvable; 
   public get accept() {
     return this.getBooleanAttribute('accept') as any;
   }
-  public set accept(value: boolean | cdktf.IResolvable | undefined) {
+  public set accept(value: boolean | cdktf.IResolvable) {
     this._accept = value;
   }
   public resetAccept() {
@@ -146,7 +171,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get acceptInput() {
-    return this._accept
+    return this._accept;
   }
 
   // id - computed: true, optional: true, required: false
@@ -170,11 +195,11 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -182,7 +207,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: false, required: false
@@ -205,24 +230,23 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcPeeringConnectionIdInput() {
-    return this._vpcPeeringConnectionId
+    return this._vpcPeeringConnectionId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpcPeeringConnectionAccepterV2Timeouts | undefined; 
-  private __timeoutsOutput = new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpcPeeringConnectionAccepterV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpcPeeringConnectionAccepterV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -234,7 +258,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
       accept: cdktf.booleanToTerraform(this._accept),
       region: cdktf.stringToTerraform(this._region),
       vpc_peering_connection_id: cdktf.stringToTerraform(this._vpcPeeringConnectionId),
-      timeouts: vpcPeeringConnectionAccepterV2TimeoutsToTerraform(this._timeouts),
+      timeouts: vpcPeeringConnectionAccepterV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

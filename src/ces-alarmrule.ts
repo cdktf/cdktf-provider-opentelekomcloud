@@ -75,7 +75,7 @@ export interface CesAlarmruleAlarmActions {
   readonly type: string;
 }
 
-function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmActions): any {
+export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -113,7 +113,7 @@ export interface CesAlarmruleCondition {
   readonly value: number;
 }
 
-function cesAlarmruleConditionToTerraform(struct?: CesAlarmruleConditionOutputReference | CesAlarmruleCondition): any {
+export function cesAlarmruleConditionToTerraform(struct?: CesAlarmruleConditionOutputReference | CesAlarmruleCondition): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -138,6 +138,55 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CesAlarmruleCondition | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._comparisonOperator) {
+      hasAnyValues = true;
+      internalValueResult.comparisonOperator = this._comparisonOperator;
+    }
+    if (this._count) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._filter) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    if (this._period) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
+    if (this._unit) {
+      hasAnyValues = true;
+      internalValueResult.unit = this._unit;
+    }
+    if (this._value) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleCondition | undefined) {
+    if (value === undefined) {
+      this._comparisonOperator = undefined;
+      this._count = undefined;
+      this._filter = undefined;
+      this._period = undefined;
+      this._unit = undefined;
+      this._value = undefined;
+    }
+    else {
+      this._comparisonOperator = value.comparisonOperator;
+      this._count = value.count;
+      this._filter = value.filter;
+      this._period = value.period;
+      this._unit = value.unit;
+      this._value = value.value;
+    }
+  }
+
   // comparison_operator - computed: false, optional: false, required: true
   private _comparisonOperator?: string; 
   public get comparisonOperator() {
@@ -148,7 +197,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get comparisonOperatorInput() {
-    return this._comparisonOperator
+    return this._comparisonOperator;
   }
 
   // count - computed: false, optional: false, required: true
@@ -161,7 +210,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get countInput() {
-    return this._count
+    return this._count;
   }
 
   // filter - computed: false, optional: false, required: true
@@ -174,7 +223,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
-    return this._filter
+    return this._filter;
   }
 
   // period - computed: false, optional: false, required: true
@@ -187,15 +236,15 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get periodInput() {
-    return this._period
+    return this._period;
   }
 
   // unit - computed: false, optional: true, required: false
-  private _unit?: string | undefined; 
+  private _unit?: string; 
   public get unit() {
     return this.getStringAttribute('unit');
   }
-  public set unit(value: string | undefined) {
+  public set unit(value: string) {
     this._unit = value;
   }
   public resetUnit() {
@@ -203,7 +252,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get unitInput() {
-    return this._unit
+    return this._unit;
   }
 
   // value - computed: false, optional: false, required: true
@@ -216,7 +265,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
-    return this._value
+    return this._value;
   }
 }
 export interface CesAlarmruleInsufficientdataActions {
@@ -230,7 +279,7 @@ export interface CesAlarmruleInsufficientdataActions {
   readonly type: string;
 }
 
-function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarmruleInsufficientdataActions): any {
+export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarmruleInsufficientdataActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -252,7 +301,7 @@ export interface CesAlarmruleMetricDimensions {
   readonly value: string;
 }
 
-function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMetricDimensions): any {
+export function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMetricDimensions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -280,7 +329,7 @@ export interface CesAlarmruleMetric {
   readonly dimensions: CesAlarmruleMetricDimensions[];
 }
 
-function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputReference | CesAlarmruleMetric): any {
+export function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputReference | CesAlarmruleMetric): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -302,6 +351,37 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CesAlarmruleMetric | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._metricName) {
+      hasAnyValues = true;
+      internalValueResult.metricName = this._metricName;
+    }
+    if (this._namespace) {
+      hasAnyValues = true;
+      internalValueResult.namespace = this._namespace;
+    }
+    if (this._dimensions) {
+      hasAnyValues = true;
+      internalValueResult.dimensions = this._dimensions;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleMetric | undefined) {
+    if (value === undefined) {
+      this._metricName = undefined;
+      this._namespace = undefined;
+      this._dimensions = undefined;
+    }
+    else {
+      this._metricName = value.metricName;
+      this._namespace = value.namespace;
+      this._dimensions = value.dimensions;
+    }
+  }
+
   // metric_name - computed: false, optional: false, required: true
   private _metricName?: string; 
   public get metricName() {
@@ -312,7 +392,7 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get metricNameInput() {
-    return this._metricName
+    return this._metricName;
   }
 
   // namespace - computed: false, optional: false, required: true
@@ -325,7 +405,7 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get namespaceInput() {
-    return this._namespace
+    return this._namespace;
   }
 
   // dimensions - computed: false, optional: false, required: true
@@ -339,7 +419,7 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionsInput() {
-    return this._dimensions
+    return this._dimensions;
   }
 }
 export interface CesAlarmruleOkActions {
@@ -353,7 +433,7 @@ export interface CesAlarmruleOkActions {
   readonly type: string;
 }
 
-function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions): any {
+export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -379,7 +459,7 @@ export interface CesAlarmruleTimeouts {
   readonly update?: string;
 }
 
-function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOutputReference | CesAlarmruleTimeouts): any {
+export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOutputReference | CesAlarmruleTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -401,12 +481,43 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): CesAlarmruleTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -414,15 +525,15 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -430,15 +541,15 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -446,7 +557,7 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -488,11 +599,11 @@ export class CesAlarmrule extends cdktf.TerraformResource {
     this._alarmLevel = config.alarmLevel;
     this._alarmName = config.alarmName;
     this._alarmActions = config.alarmActions;
-    this._condition = config.condition;
+    this._condition.internalValue = config.condition;
     this._insufficientdataActions = config.insufficientdataActions;
-    this._metric = config.metric;
+    this._metric.internalValue = config.metric;
     this._okActions = config.okActions;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -500,11 +611,11 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   // ==========
 
   // alarm_action_enabled - computed: false, optional: true, required: false
-  private _alarmActionEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _alarmActionEnabled?: boolean | cdktf.IResolvable; 
   public get alarmActionEnabled() {
     return this.getBooleanAttribute('alarm_action_enabled') as any;
   }
-  public set alarmActionEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set alarmActionEnabled(value: boolean | cdktf.IResolvable) {
     this._alarmActionEnabled = value;
   }
   public resetAlarmActionEnabled() {
@@ -512,15 +623,15 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmActionEnabledInput() {
-    return this._alarmActionEnabled
+    return this._alarmActionEnabled;
   }
 
   // alarm_description - computed: false, optional: true, required: false
-  private _alarmDescription?: string | undefined; 
+  private _alarmDescription?: string; 
   public get alarmDescription() {
     return this.getStringAttribute('alarm_description');
   }
-  public set alarmDescription(value: string | undefined) {
+  public set alarmDescription(value: string) {
     this._alarmDescription = value;
   }
   public resetAlarmDescription() {
@@ -528,15 +639,15 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmDescriptionInput() {
-    return this._alarmDescription
+    return this._alarmDescription;
   }
 
   // alarm_enabled - computed: false, optional: true, required: false
-  private _alarmEnabled?: boolean | cdktf.IResolvable | undefined; 
+  private _alarmEnabled?: boolean | cdktf.IResolvable; 
   public get alarmEnabled() {
     return this.getBooleanAttribute('alarm_enabled') as any;
   }
-  public set alarmEnabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set alarmEnabled(value: boolean | cdktf.IResolvable) {
     this._alarmEnabled = value;
   }
   public resetAlarmEnabled() {
@@ -544,15 +655,15 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmEnabledInput() {
-    return this._alarmEnabled
+    return this._alarmEnabled;
   }
 
   // alarm_level - computed: false, optional: true, required: false
-  private _alarmLevel?: number | undefined; 
+  private _alarmLevel?: number; 
   public get alarmLevel() {
     return this.getNumberAttribute('alarm_level');
   }
-  public set alarmLevel(value: number | undefined) {
+  public set alarmLevel(value: number) {
     this._alarmLevel = value;
   }
   public resetAlarmLevel() {
@@ -560,7 +671,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmLevelInput() {
-    return this._alarmLevel
+    return this._alarmLevel;
   }
 
   // alarm_name - computed: false, optional: false, required: true
@@ -573,7 +684,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmNameInput() {
-    return this._alarmName
+    return this._alarmName;
   }
 
   // alarm_state - computed: true, optional: false, required: false
@@ -592,12 +703,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // alarm_actions - computed: false, optional: true, required: false
-  private _alarmActions?: CesAlarmruleAlarmActions[] | undefined; 
+  private _alarmActions?: CesAlarmruleAlarmActions[]; 
   public get alarmActions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('alarm_actions') as any;
   }
-  public set alarmActions(value: CesAlarmruleAlarmActions[] | undefined) {
+  public set alarmActions(value: CesAlarmruleAlarmActions[]) {
     this._alarmActions = value;
   }
   public resetAlarmActions() {
@@ -605,30 +716,29 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmActionsInput() {
-    return this._alarmActions
+    return this._alarmActions;
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition?: CesAlarmruleCondition; 
-  private __conditionOutput = new CesAlarmruleConditionOutputReference(this as any, "condition", true);
+  private _condition = new CesAlarmruleConditionOutputReference(this as any, "condition", true);
   public get condition() {
-    return this.__conditionOutput;
+    return this._condition;
   }
   public putCondition(value: CesAlarmruleCondition) {
-    this._condition = value;
+    this._condition.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionInput() {
-    return this._condition
+    return this._condition.internalValue;
   }
 
   // insufficientdata_actions - computed: false, optional: true, required: false
-  private _insufficientdataActions?: CesAlarmruleInsufficientdataActions[] | undefined; 
+  private _insufficientdataActions?: CesAlarmruleInsufficientdataActions[]; 
   public get insufficientdataActions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('insufficientdata_actions') as any;
   }
-  public set insufficientdataActions(value: CesAlarmruleInsufficientdataActions[] | undefined) {
+  public set insufficientdataActions(value: CesAlarmruleInsufficientdataActions[]) {
     this._insufficientdataActions = value;
   }
   public resetInsufficientdataActions() {
@@ -636,30 +746,29 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get insufficientdataActionsInput() {
-    return this._insufficientdataActions
+    return this._insufficientdataActions;
   }
 
   // metric - computed: false, optional: false, required: true
-  private _metric?: CesAlarmruleMetric; 
-  private __metricOutput = new CesAlarmruleMetricOutputReference(this as any, "metric", true);
+  private _metric = new CesAlarmruleMetricOutputReference(this as any, "metric", true);
   public get metric() {
-    return this.__metricOutput;
+    return this._metric;
   }
   public putMetric(value: CesAlarmruleMetric) {
-    this._metric = value;
+    this._metric.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get metricInput() {
-    return this._metric
+    return this._metric.internalValue;
   }
 
   // ok_actions - computed: false, optional: true, required: false
-  private _okActions?: CesAlarmruleOkActions[] | undefined; 
+  private _okActions?: CesAlarmruleOkActions[]; 
   public get okActions() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('ok_actions') as any;
   }
-  public set okActions(value: CesAlarmruleOkActions[] | undefined) {
+  public set okActions(value: CesAlarmruleOkActions[]) {
     this._okActions = value;
   }
   public resetOkActions() {
@@ -667,24 +776,23 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get okActionsInput() {
-    return this._okActions
+    return this._okActions;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: CesAlarmruleTimeouts | undefined; 
-  private __timeoutsOutput = new CesAlarmruleTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CesAlarmruleTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: CesAlarmruleTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: CesAlarmruleTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -699,11 +807,11 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       alarm_level: cdktf.numberToTerraform(this._alarmLevel),
       alarm_name: cdktf.stringToTerraform(this._alarmName),
       alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform)(this._alarmActions),
-      condition: cesAlarmruleConditionToTerraform(this._condition),
+      condition: cesAlarmruleConditionToTerraform(this._condition.internalValue),
       insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform)(this._insufficientdataActions),
-      metric: cesAlarmruleMetricToTerraform(this._metric),
+      metric: cesAlarmruleMetricToTerraform(this._metric.internalValue),
       ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform)(this._okActions),
-      timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts),
+      timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

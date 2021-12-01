@@ -73,11 +73,11 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -85,7 +85,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -104,11 +104,11 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -116,15 +116,15 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // user_id - computed: true, optional: true, required: false
-  private _userId?: string | undefined; 
+  private _userId?: string; 
   public get userId() {
     return this.getStringAttribute('user_id');
   }
-  public set userId(value: string | undefined) {
+  public set userId(value: string) {
     this._userId = value;
   }
   public resetUserId() {
@@ -132,7 +132,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get userIdInput() {
-    return this._userId
+    return this._userId;
   }
 
   // =========

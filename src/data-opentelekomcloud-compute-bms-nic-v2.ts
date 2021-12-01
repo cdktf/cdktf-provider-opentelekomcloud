@@ -85,11 +85,11 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -97,7 +97,7 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // mac_address - computed: true, optional: false, required: false
@@ -111,11 +111,11 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -123,7 +123,7 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // server_id - computed: false, optional: false, required: true
@@ -136,15 +136,15 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -152,7 +152,7 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // =========

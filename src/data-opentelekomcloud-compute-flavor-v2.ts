@@ -108,11 +108,11 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   // ==========
 
   // availability_zone - computed: false, optional: true, required: false
-  private _availabilityZone?: string | undefined; 
+  private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
   }
-  public set availabilityZone(value: string | undefined) {
+  public set availabilityZone(value: string) {
     this._availabilityZone = value;
   }
   public resetAvailabilityZone() {
@@ -120,15 +120,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
-    return this._availabilityZone
+    return this._availabilityZone;
   }
 
   // disk - computed: false, optional: true, required: false
-  private _disk?: number | undefined; 
+  private _disk?: number; 
   public get disk() {
     return this.getNumberAttribute('disk');
   }
-  public set disk(value: number | undefined) {
+  public set disk(value: number) {
     this._disk = value;
   }
   public resetDisk() {
@@ -136,7 +136,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get diskInput() {
-    return this._disk
+    return this._disk;
   }
 
   // extra_specs - computed: true, optional: false, required: false
@@ -145,11 +145,11 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
 
   // flavor_id - computed: false, optional: true, required: false
-  private _flavorId?: string | undefined; 
+  private _flavorId?: string; 
   public get flavorId() {
     return this.getStringAttribute('flavor_id');
   }
-  public set flavorId(value: string | undefined) {
+  public set flavorId(value: string) {
     this._flavorId = value;
   }
   public resetFlavorId() {
@@ -157,7 +157,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get flavorIdInput() {
-    return this._flavorId
+    return this._flavorId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -166,11 +166,11 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
 
   // min_disk - computed: false, optional: true, required: false
-  private _minDisk?: number | undefined; 
+  private _minDisk?: number; 
   public get minDisk() {
     return this.getNumberAttribute('min_disk');
   }
-  public set minDisk(value: number | undefined) {
+  public set minDisk(value: number) {
     this._minDisk = value;
   }
   public resetMinDisk() {
@@ -178,15 +178,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get minDiskInput() {
-    return this._minDisk
+    return this._minDisk;
   }
 
   // min_ram - computed: false, optional: true, required: false
-  private _minRam?: number | undefined; 
+  private _minRam?: number; 
   public get minRam() {
     return this.getNumberAttribute('min_ram');
   }
-  public set minRam(value: number | undefined) {
+  public set minRam(value: number) {
     this._minRam = value;
   }
   public resetMinRam() {
@@ -194,15 +194,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get minRamInput() {
-    return this._minRam
+    return this._minRam;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -210,15 +210,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // ram - computed: false, optional: true, required: false
-  private _ram?: number | undefined; 
+  private _ram?: number; 
   public get ram() {
     return this.getNumberAttribute('ram');
   }
-  public set ram(value: number | undefined) {
+  public set ram(value: number) {
     this._ram = value;
   }
   public resetRam() {
@@ -226,15 +226,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get ramInput() {
-    return this._ram
+    return this._ram;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -242,15 +242,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // resource_type - computed: false, optional: true, required: false
-  private _resourceType?: string | undefined; 
+  private _resourceType?: string; 
   public get resourceType() {
     return this.getStringAttribute('resource_type');
   }
-  public set resourceType(value: string | undefined) {
+  public set resourceType(value: string) {
     this._resourceType = value;
   }
   public resetResourceType() {
@@ -258,15 +258,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get resourceTypeInput() {
-    return this._resourceType
+    return this._resourceType;
   }
 
   // rx_tx_factor - computed: false, optional: true, required: false
-  private _rxTxFactor?: number | undefined; 
+  private _rxTxFactor?: number; 
   public get rxTxFactor() {
     return this.getNumberAttribute('rx_tx_factor');
   }
-  public set rxTxFactor(value: number | undefined) {
+  public set rxTxFactor(value: number) {
     this._rxTxFactor = value;
   }
   public resetRxTxFactor() {
@@ -274,15 +274,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get rxTxFactorInput() {
-    return this._rxTxFactor
+    return this._rxTxFactor;
   }
 
   // swap - computed: false, optional: true, required: false
-  private _swap?: number | undefined; 
+  private _swap?: number; 
   public get swap() {
     return this.getNumberAttribute('swap');
   }
-  public set swap(value: number | undefined) {
+  public set swap(value: number) {
     this._swap = value;
   }
   public resetSwap() {
@@ -290,15 +290,15 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get swapInput() {
-    return this._swap
+    return this._swap;
   }
 
   // vcpus - computed: false, optional: true, required: false
-  private _vcpus?: number | undefined; 
+  private _vcpus?: number; 
   public get vcpus() {
     return this.getNumberAttribute('vcpus');
   }
-  public set vcpus(value: number | undefined) {
+  public set vcpus(value: number) {
     this._vcpus = value;
   }
   public resetVcpus() {
@@ -306,7 +306,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get vcpusInput() {
-    return this._vcpus
+    return this._vcpus;
   }
 
   // =========

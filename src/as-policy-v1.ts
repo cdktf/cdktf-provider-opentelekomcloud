@@ -55,7 +55,7 @@ export interface AsPolicyV1ScalingPolicyAction {
   readonly operation?: string;
 }
 
-function asPolicyV1ScalingPolicyActionToTerraform(struct?: AsPolicyV1ScalingPolicyActionOutputReference | AsPolicyV1ScalingPolicyAction): any {
+export function asPolicyV1ScalingPolicyActionToTerraform(struct?: AsPolicyV1ScalingPolicyActionOutputReference | AsPolicyV1ScalingPolicyAction): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,12 +76,37 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsPolicyV1ScalingPolicyAction | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._instanceNumber) {
+      hasAnyValues = true;
+      internalValueResult.instanceNumber = this._instanceNumber;
+    }
+    if (this._operation) {
+      hasAnyValues = true;
+      internalValueResult.operation = this._operation;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsPolicyV1ScalingPolicyAction | undefined) {
+    if (value === undefined) {
+      this._instanceNumber = undefined;
+      this._operation = undefined;
+    }
+    else {
+      this._instanceNumber = value.instanceNumber;
+      this._operation = value.operation;
+    }
+  }
+
   // instance_number - computed: false, optional: true, required: false
-  private _instanceNumber?: number | undefined; 
+  private _instanceNumber?: number; 
   public get instanceNumber() {
     return this.getNumberAttribute('instance_number');
   }
-  public set instanceNumber(value: number | undefined) {
+  public set instanceNumber(value: number) {
     this._instanceNumber = value;
   }
   public resetInstanceNumber() {
@@ -89,15 +114,15 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get instanceNumberInput() {
-    return this._instanceNumber
+    return this._instanceNumber;
   }
 
   // operation - computed: false, optional: true, required: false
-  private _operation?: string | undefined; 
+  private _operation?: string; 
   public get operation() {
     return this.getStringAttribute('operation');
   }
-  public set operation(value: string | undefined) {
+  public set operation(value: string) {
     this._operation = value;
   }
   public resetOperation() {
@@ -105,7 +130,7 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   }
   // Temporarily expose input value. Use with caution.
   public get operationInput() {
-    return this._operation
+    return this._operation;
   }
 }
 export interface AsPolicyV1ScheduledPolicy {
@@ -131,7 +156,7 @@ export interface AsPolicyV1ScheduledPolicy {
   readonly startTime?: string;
 }
 
-function asPolicyV1ScheduledPolicyToTerraform(struct?: AsPolicyV1ScheduledPolicyOutputReference | AsPolicyV1ScheduledPolicy): any {
+export function asPolicyV1ScheduledPolicyToTerraform(struct?: AsPolicyV1ScheduledPolicyOutputReference | AsPolicyV1ScheduledPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -155,12 +180,55 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): AsPolicyV1ScheduledPolicy | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._endTime) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._launchTime) {
+      hasAnyValues = true;
+      internalValueResult.launchTime = this._launchTime;
+    }
+    if (this._recurrenceType) {
+      hasAnyValues = true;
+      internalValueResult.recurrenceType = this._recurrenceType;
+    }
+    if (this._recurrenceValue) {
+      hasAnyValues = true;
+      internalValueResult.recurrenceValue = this._recurrenceValue;
+    }
+    if (this._startTime) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsPolicyV1ScheduledPolicy | undefined) {
+    if (value === undefined) {
+      this._endTime = undefined;
+      this._launchTime = undefined;
+      this._recurrenceType = undefined;
+      this._recurrenceValue = undefined;
+      this._startTime = undefined;
+    }
+    else {
+      this._endTime = value.endTime;
+      this._launchTime = value.launchTime;
+      this._recurrenceType = value.recurrenceType;
+      this._recurrenceValue = value.recurrenceValue;
+      this._startTime = value.startTime;
+    }
+  }
+
   // end_time - computed: false, optional: true, required: false
-  private _endTime?: string | undefined; 
+  private _endTime?: string; 
   public get endTime() {
     return this.getStringAttribute('end_time');
   }
-  public set endTime(value: string | undefined) {
+  public set endTime(value: string) {
     this._endTime = value;
   }
   public resetEndTime() {
@@ -168,7 +236,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get endTimeInput() {
-    return this._endTime
+    return this._endTime;
   }
 
   // launch_time - computed: false, optional: false, required: true
@@ -181,15 +249,15 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get launchTimeInput() {
-    return this._launchTime
+    return this._launchTime;
   }
 
   // recurrence_type - computed: false, optional: true, required: false
-  private _recurrenceType?: string | undefined; 
+  private _recurrenceType?: string; 
   public get recurrenceType() {
     return this.getStringAttribute('recurrence_type');
   }
-  public set recurrenceType(value: string | undefined) {
+  public set recurrenceType(value: string) {
     this._recurrenceType = value;
   }
   public resetRecurrenceType() {
@@ -197,15 +265,15 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get recurrenceTypeInput() {
-    return this._recurrenceType
+    return this._recurrenceType;
   }
 
   // recurrence_value - computed: false, optional: true, required: false
-  private _recurrenceValue?: string | undefined; 
+  private _recurrenceValue?: string; 
   public get recurrenceValue() {
     return this.getStringAttribute('recurrence_value');
   }
-  public set recurrenceValue(value: string | undefined) {
+  public set recurrenceValue(value: string) {
     this._recurrenceValue = value;
   }
   public resetRecurrenceValue() {
@@ -213,15 +281,15 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get recurrenceValueInput() {
-    return this._recurrenceValue
+    return this._recurrenceValue;
   }
 
   // start_time - computed: false, optional: true, required: false
-  private _startTime?: string | undefined; 
+  private _startTime?: string; 
   public get startTime() {
     return this.getStringAttribute('start_time');
   }
-  public set startTime(value: string | undefined) {
+  public set startTime(value: string) {
     this._startTime = value;
   }
   public resetStartTime() {
@@ -229,7 +297,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get startTimeInput() {
-    return this._startTime
+    return this._startTime;
   }
 }
 
@@ -271,8 +339,8 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
     this._scalingGroupId = config.scalingGroupId;
     this._scalingPolicyName = config.scalingPolicyName;
     this._scalingPolicyType = config.scalingPolicyType;
-    this._scalingPolicyAction = config.scalingPolicyAction;
-    this._scheduledPolicy = config.scheduledPolicy;
+    this._scalingPolicyAction.internalValue = config.scalingPolicyAction;
+    this._scheduledPolicy.internalValue = config.scheduledPolicy;
   }
 
   // ==========
@@ -280,11 +348,11 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   // ==========
 
   // alarm_id - computed: false, optional: true, required: false
-  private _alarmId?: string | undefined; 
+  private _alarmId?: string; 
   public get alarmId() {
     return this.getStringAttribute('alarm_id');
   }
-  public set alarmId(value: string | undefined) {
+  public set alarmId(value: string) {
     this._alarmId = value;
   }
   public resetAlarmId() {
@@ -292,15 +360,15 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get alarmIdInput() {
-    return this._alarmId
+    return this._alarmId;
   }
 
   // cool_down_time - computed: false, optional: true, required: false
-  private _coolDownTime?: number | undefined; 
+  private _coolDownTime?: number; 
   public get coolDownTime() {
     return this.getNumberAttribute('cool_down_time');
   }
-  public set coolDownTime(value: number | undefined) {
+  public set coolDownTime(value: number) {
     this._coolDownTime = value;
   }
   public resetCoolDownTime() {
@@ -308,7 +376,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get coolDownTimeInput() {
-    return this._coolDownTime
+    return this._coolDownTime;
   }
 
   // id - computed: true, optional: true, required: false
@@ -317,11 +385,11 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -329,7 +397,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // scaling_group_id - computed: false, optional: false, required: true
@@ -342,7 +410,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingGroupIdInput() {
-    return this._scalingGroupId
+    return this._scalingGroupId;
   }
 
   // scaling_policy_name - computed: false, optional: false, required: true
@@ -355,7 +423,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyNameInput() {
-    return this._scalingPolicyName
+    return this._scalingPolicyName;
   }
 
   // scaling_policy_type - computed: false, optional: false, required: true
@@ -368,41 +436,39 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyTypeInput() {
-    return this._scalingPolicyType
+    return this._scalingPolicyType;
   }
 
   // scaling_policy_action - computed: false, optional: true, required: false
-  private _scalingPolicyAction?: AsPolicyV1ScalingPolicyAction | undefined; 
-  private __scalingPolicyActionOutput = new AsPolicyV1ScalingPolicyActionOutputReference(this as any, "scaling_policy_action", true);
+  private _scalingPolicyAction = new AsPolicyV1ScalingPolicyActionOutputReference(this as any, "scaling_policy_action", true);
   public get scalingPolicyAction() {
-    return this.__scalingPolicyActionOutput;
+    return this._scalingPolicyAction;
   }
-  public putScalingPolicyAction(value: AsPolicyV1ScalingPolicyAction | undefined) {
-    this._scalingPolicyAction = value;
+  public putScalingPolicyAction(value: AsPolicyV1ScalingPolicyAction) {
+    this._scalingPolicyAction.internalValue = value;
   }
   public resetScalingPolicyAction() {
-    this._scalingPolicyAction = undefined;
+    this._scalingPolicyAction.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scalingPolicyActionInput() {
-    return this._scalingPolicyAction
+    return this._scalingPolicyAction.internalValue;
   }
 
   // scheduled_policy - computed: false, optional: true, required: false
-  private _scheduledPolicy?: AsPolicyV1ScheduledPolicy | undefined; 
-  private __scheduledPolicyOutput = new AsPolicyV1ScheduledPolicyOutputReference(this as any, "scheduled_policy", true);
+  private _scheduledPolicy = new AsPolicyV1ScheduledPolicyOutputReference(this as any, "scheduled_policy", true);
   public get scheduledPolicy() {
-    return this.__scheduledPolicyOutput;
+    return this._scheduledPolicy;
   }
-  public putScheduledPolicy(value: AsPolicyV1ScheduledPolicy | undefined) {
-    this._scheduledPolicy = value;
+  public putScheduledPolicy(value: AsPolicyV1ScheduledPolicy) {
+    this._scheduledPolicy.internalValue = value;
   }
   public resetScheduledPolicy() {
-    this._scheduledPolicy = undefined;
+    this._scheduledPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scheduledPolicyInput() {
-    return this._scheduledPolicy
+    return this._scheduledPolicy.internalValue;
   }
 
   // =========
@@ -417,8 +483,8 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
       scaling_group_id: cdktf.stringToTerraform(this._scalingGroupId),
       scaling_policy_name: cdktf.stringToTerraform(this._scalingPolicyName),
       scaling_policy_type: cdktf.stringToTerraform(this._scalingPolicyType),
-      scaling_policy_action: asPolicyV1ScalingPolicyActionToTerraform(this._scalingPolicyAction),
-      scheduled_policy: asPolicyV1ScheduledPolicyToTerraform(this._scheduledPolicy),
+      scaling_policy_action: asPolicyV1ScalingPolicyActionToTerraform(this._scalingPolicyAction.internalValue),
+      scheduled_policy: asPolicyV1ScheduledPolicyToTerraform(this._scheduledPolicy.internalValue),
     };
   }
 }

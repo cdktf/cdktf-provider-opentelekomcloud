@@ -63,11 +63,11 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -75,15 +75,15 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable | undefined; 
+  private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled') as any;
   }
-  public set enabled(value: boolean | cdktf.IResolvable | undefined) {
+  public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -91,7 +91,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
-    return this._enabled
+    return this._enabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -114,7 +114,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // remote_ids - computed: true, optional: false, required: false

@@ -111,7 +111,7 @@ export interface VpnaasSiteConnectionV2Dpd {
   readonly timeout?: number;
 }
 
-function vpnaasSiteConnectionV2DpdToTerraform(struct?: VpnaasSiteConnectionV2Dpd): any {
+export function vpnaasSiteConnectionV2DpdToTerraform(struct?: VpnaasSiteConnectionV2Dpd): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -138,7 +138,7 @@ export interface VpnaasSiteConnectionV2Timeouts {
   readonly update?: string;
 }
 
-function vpnaasSiteConnectionV2TimeoutsToTerraform(struct?: VpnaasSiteConnectionV2TimeoutsOutputReference | VpnaasSiteConnectionV2Timeouts): any {
+export function vpnaasSiteConnectionV2TimeoutsToTerraform(struct?: VpnaasSiteConnectionV2TimeoutsOutputReference | VpnaasSiteConnectionV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -160,12 +160,43 @@ export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): VpnaasSiteConnectionV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnaasSiteConnectionV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -173,15 +204,15 @@ export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -189,15 +220,15 @@ export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -205,7 +236,7 @@ export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -261,7 +292,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
     this._valueSpecs = config.valueSpecs;
     this._vpnserviceId = config.vpnserviceId;
     this._dpd = config.dpd;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -269,11 +300,11 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -281,15 +312,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -297,7 +328,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -315,15 +346,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ikepolicyIdInput() {
-    return this._ikepolicyId
+    return this._ikepolicyId;
   }
 
   // initiator - computed: true, optional: true, required: false
-  private _initiator?: string | undefined; 
+  private _initiator?: string; 
   public get initiator() {
     return this.getStringAttribute('initiator');
   }
-  public set initiator(value: string | undefined) {
+  public set initiator(value: string) {
     this._initiator = value;
   }
   public resetInitiator() {
@@ -331,7 +362,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get initiatorInput() {
-    return this._initiator
+    return this._initiator;
   }
 
   // ipsecpolicy_id - computed: false, optional: false, required: true
@@ -344,15 +375,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ipsecpolicyIdInput() {
-    return this._ipsecpolicyId
+    return this._ipsecpolicyId;
   }
 
   // local_ep_group_id - computed: false, optional: true, required: false
-  private _localEpGroupId?: string | undefined; 
+  private _localEpGroupId?: string; 
   public get localEpGroupId() {
     return this.getStringAttribute('local_ep_group_id');
   }
-  public set localEpGroupId(value: string | undefined) {
+  public set localEpGroupId(value: string) {
     this._localEpGroupId = value;
   }
   public resetLocalEpGroupId() {
@@ -360,15 +391,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get localEpGroupIdInput() {
-    return this._localEpGroupId
+    return this._localEpGroupId;
   }
 
   // local_id - computed: false, optional: true, required: false
-  private _localId?: string | undefined; 
+  private _localId?: string; 
   public get localId() {
     return this.getStringAttribute('local_id');
   }
-  public set localId(value: string | undefined) {
+  public set localId(value: string) {
     this._localId = value;
   }
   public resetLocalId() {
@@ -376,15 +407,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get localIdInput() {
-    return this._localId
+    return this._localId;
   }
 
   // mtu - computed: true, optional: true, required: false
-  private _mtu?: number | undefined; 
+  private _mtu?: number; 
   public get mtu() {
     return this.getNumberAttribute('mtu');
   }
-  public set mtu(value: number | undefined) {
+  public set mtu(value: number) {
     this._mtu = value;
   }
   public resetMtu() {
@@ -392,15 +423,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get mtuInput() {
-    return this._mtu
+    return this._mtu;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -408,7 +439,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // peer_address - computed: false, optional: false, required: true
@@ -421,15 +452,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get peerAddressInput() {
-    return this._peerAddress
+    return this._peerAddress;
   }
 
   // peer_cidrs - computed: false, optional: true, required: false
-  private _peerCidrs?: string[] | undefined; 
+  private _peerCidrs?: string[]; 
   public get peerCidrs() {
     return this.getListAttribute('peer_cidrs');
   }
-  public set peerCidrs(value: string[] | undefined) {
+  public set peerCidrs(value: string[]) {
     this._peerCidrs = value;
   }
   public resetPeerCidrs() {
@@ -437,15 +468,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get peerCidrsInput() {
-    return this._peerCidrs
+    return this._peerCidrs;
   }
 
   // peer_ep_group_id - computed: false, optional: true, required: false
-  private _peerEpGroupId?: string | undefined; 
+  private _peerEpGroupId?: string; 
   public get peerEpGroupId() {
     return this.getStringAttribute('peer_ep_group_id');
   }
-  public set peerEpGroupId(value: string | undefined) {
+  public set peerEpGroupId(value: string) {
     this._peerEpGroupId = value;
   }
   public resetPeerEpGroupId() {
@@ -453,7 +484,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get peerEpGroupIdInput() {
-    return this._peerEpGroupId
+    return this._peerEpGroupId;
   }
 
   // peer_id - computed: false, optional: false, required: true
@@ -466,7 +497,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get peerIdInput() {
-    return this._peerId
+    return this._peerId;
   }
 
   // psk - computed: false, optional: false, required: true
@@ -479,15 +510,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get pskInput() {
-    return this._psk
+    return this._psk;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -495,16 +526,16 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -512,15 +543,15 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -528,16 +559,16 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -545,7 +576,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // vpnservice_id - computed: false, optional: false, required: true
@@ -558,16 +589,16 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpnserviceIdInput() {
-    return this._vpnserviceId
+    return this._vpnserviceId;
   }
 
   // dpd - computed: false, optional: true, required: false
-  private _dpd?: VpnaasSiteConnectionV2Dpd[] | undefined; 
+  private _dpd?: VpnaasSiteConnectionV2Dpd[]; 
   public get dpd() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('dpd') as any;
   }
-  public set dpd(value: VpnaasSiteConnectionV2Dpd[] | undefined) {
+  public set dpd(value: VpnaasSiteConnectionV2Dpd[]) {
     this._dpd = value;
   }
   public resetDpd() {
@@ -575,24 +606,23 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dpdInput() {
-    return this._dpd
+    return this._dpd;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: VpnaasSiteConnectionV2Timeouts | undefined; 
-  private __timeoutsOutput = new VpnaasSiteConnectionV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpnaasSiteConnectionV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: VpnaasSiteConnectionV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: VpnaasSiteConnectionV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -621,7 +651,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
       vpnservice_id: cdktf.stringToTerraform(this._vpnserviceId),
       dpd: cdktf.listMapper(vpnaasSiteConnectionV2DpdToTerraform)(this._dpd),
-      timeouts: vpnaasSiteConnectionV2TimeoutsToTerraform(this._timeouts),
+      timeouts: vpnaasSiteConnectionV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

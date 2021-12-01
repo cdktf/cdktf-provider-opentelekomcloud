@@ -88,11 +88,11 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -100,15 +100,15 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // email - computed: true, optional: true, required: false
-  private _email?: string | undefined; 
+  private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');
   }
-  public set email(value: string | undefined) {
+  public set email(value: string) {
     this._email = value;
   }
   public resetEmail() {
@@ -116,7 +116,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get emailInput() {
-    return this._email
+    return this._email;
   }
 
   // id - computed: true, optional: true, required: false
@@ -135,11 +135,11 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -147,7 +147,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // pool_id - computed: true, optional: false, required: false
@@ -166,11 +166,11 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -178,16 +178,16 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -195,15 +195,15 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // ttl - computed: true, optional: true, required: false
-  private _ttl?: number | undefined; 
+  private _ttl?: number; 
   public get ttl() {
     return this.getNumberAttribute('ttl');
   }
-  public set ttl(value: number | undefined) {
+  public set ttl(value: number) {
     this._ttl = value;
   }
   public resetTtl() {
@@ -211,7 +211,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ttlInput() {
-    return this._ttl
+    return this._ttl;
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -220,11 +220,11 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // zone_type - computed: true, optional: true, required: false
-  private _zoneType?: string | undefined; 
+  private _zoneType?: string; 
   public get zoneType() {
     return this.getStringAttribute('zone_type');
   }
-  public set zoneType(value: string | undefined) {
+  public set zoneType(value: string) {
     this._zoneType = value;
   }
   public resetZoneType() {
@@ -232,7 +232,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get zoneTypeInput() {
-    return this._zoneType
+    return this._zoneType;
   }
 
   // =========

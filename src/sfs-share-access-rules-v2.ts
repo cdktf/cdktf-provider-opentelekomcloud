@@ -33,7 +33,7 @@ export interface SfsShareAccessRulesV2AccessRule {
   readonly accessType?: string;
 }
 
-function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAccessRulesV2AccessRule): any {
+export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAccessRulesV2AccessRule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,7 +101,7 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get shareIdInput() {
-    return this._shareId
+    return this._shareId;
   }
 
   // access_rule - computed: false, optional: false, required: true
@@ -115,7 +115,7 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessRuleInput() {
-    return this._accessRule
+    return this._accessRule;
   }
 
   // =========

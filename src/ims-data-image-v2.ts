@@ -57,7 +57,7 @@ export interface ImsDataImageV2Timeouts {
   readonly delete?: string;
 }
 
-function imsDataImageV2TimeoutsToTerraform(struct?: ImsDataImageV2TimeoutsOutputReference | ImsDataImageV2Timeouts): any {
+export function imsDataImageV2TimeoutsToTerraform(struct?: ImsDataImageV2TimeoutsOutputReference | ImsDataImageV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -78,12 +78,37 @@ export class ImsDataImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ImsDataImageV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ImsDataImageV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -91,15 +116,15 @@ export class ImsDataImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -107,7 +132,7 @@ export class ImsDataImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -151,7 +176,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
     this._osType = config.osType;
     this._tags = config.tags;
     this._volumeId = config.volumeId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -159,11 +184,11 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   // ==========
 
   // cmk_id - computed: false, optional: true, required: false
-  private _cmkId?: string | undefined; 
+  private _cmkId?: string; 
   public get cmkId() {
     return this.getStringAttribute('cmk_id');
   }
-  public set cmkId(value: string | undefined) {
+  public set cmkId(value: string) {
     this._cmkId = value;
   }
   public resetCmkId() {
@@ -171,7 +196,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get cmkIdInput() {
-    return this._cmkId
+    return this._cmkId;
   }
 
   // data_origin - computed: true, optional: false, required: false
@@ -180,11 +205,11 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -192,7 +217,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // disk_format - computed: true, optional: false, required: false
@@ -211,11 +236,11 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
 
   // image_url - computed: false, optional: true, required: false
-  private _imageUrl?: string | undefined; 
+  private _imageUrl?: string; 
   public get imageUrl() {
     return this.getStringAttribute('image_url');
   }
-  public set imageUrl(value: string | undefined) {
+  public set imageUrl(value: string) {
     this._imageUrl = value;
   }
   public resetImageUrl() {
@@ -223,15 +248,15 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get imageUrlInput() {
-    return this._imageUrl
+    return this._imageUrl;
   }
 
   // min_disk - computed: false, optional: true, required: false
-  private _minDisk?: number | undefined; 
+  private _minDisk?: number; 
   public get minDisk() {
     return this.getNumberAttribute('min_disk');
   }
-  public set minDisk(value: number | undefined) {
+  public set minDisk(value: number) {
     this._minDisk = value;
   }
   public resetMinDisk() {
@@ -239,7 +264,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get minDiskInput() {
-    return this._minDisk
+    return this._minDisk;
   }
 
   // name - computed: false, optional: false, required: true
@@ -252,15 +277,15 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // os_type - computed: false, optional: true, required: false
-  private _osType?: string | undefined; 
+  private _osType?: string; 
   public get osType() {
     return this.getStringAttribute('os_type');
   }
-  public set osType(value: string | undefined) {
+  public set osType(value: string) {
     this._osType = value;
   }
   public resetOsType() {
@@ -268,16 +293,16 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get osTypeInput() {
-    return this._osType
+    return this._osType;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -285,7 +310,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // visibility - computed: true, optional: false, required: false
@@ -294,11 +319,11 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
 
   // volume_id - computed: false, optional: true, required: false
-  private _volumeId?: string | undefined; 
+  private _volumeId?: string; 
   public get volumeId() {
     return this.getStringAttribute('volume_id');
   }
-  public set volumeId(value: string | undefined) {
+  public set volumeId(value: string) {
     this._volumeId = value;
   }
   public resetVolumeId() {
@@ -306,24 +331,23 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get volumeIdInput() {
-    return this._volumeId
+    return this._volumeId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ImsDataImageV2Timeouts | undefined; 
-  private __timeoutsOutput = new ImsDataImageV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ImsDataImageV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ImsDataImageV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ImsDataImageV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -340,7 +364,7 @@ export class ImsDataImageV2 extends cdktf.TerraformResource {
       os_type: cdktf.stringToTerraform(this._osType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
       volume_id: cdktf.stringToTerraform(this._volumeId),
-      timeouts: imsDataImageV2TimeoutsToTerraform(this._timeouts),
+      timeouts: imsDataImageV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

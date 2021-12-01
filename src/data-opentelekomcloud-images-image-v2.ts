@@ -153,11 +153,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // most_recent - computed: false, optional: true, required: false
-  private _mostRecent?: boolean | cdktf.IResolvable | undefined; 
+  private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
     return this.getBooleanAttribute('most_recent') as any;
   }
-  public set mostRecent(value: boolean | cdktf.IResolvable | undefined) {
+  public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
   }
   public resetMostRecent() {
@@ -165,15 +165,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get mostRecentInput() {
-    return this._mostRecent
+    return this._mostRecent;
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -181,15 +181,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // name_regex - computed: false, optional: true, required: false
-  private _nameRegex?: string | undefined; 
+  private _nameRegex?: string; 
   public get nameRegex() {
     return this.getStringAttribute('name_regex');
   }
-  public set nameRegex(value: string | undefined) {
+  public set nameRegex(value: string) {
     this._nameRegex = value;
   }
   public resetNameRegex() {
@@ -197,15 +197,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get nameRegexInput() {
-    return this._nameRegex
+    return this._nameRegex;
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -213,16 +213,16 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _properties?: { [key: string]: string } | cdktf.IResolvable; 
   public get properties() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('properties') as any;
   }
-  public set properties(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set properties(value: { [key: string]: string } | cdktf.IResolvable) {
     this._properties = value;
   }
   public resetProperties() {
@@ -230,7 +230,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get propertiesInput() {
-    return this._properties
+    return this._properties;
   }
 
   // protected - computed: true, optional: false, required: false
@@ -239,11 +239,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -251,7 +251,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // schema - computed: true, optional: false, required: false
@@ -265,11 +265,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // size_max - computed: false, optional: true, required: false
-  private _sizeMax?: number | undefined; 
+  private _sizeMax?: number; 
   public get sizeMax() {
     return this.getNumberAttribute('size_max');
   }
-  public set sizeMax(value: number | undefined) {
+  public set sizeMax(value: number) {
     this._sizeMax = value;
   }
   public resetSizeMax() {
@@ -277,15 +277,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get sizeMaxInput() {
-    return this._sizeMax
+    return this._sizeMax;
   }
 
   // size_min - computed: false, optional: true, required: false
-  private _sizeMin?: number | undefined; 
+  private _sizeMin?: number; 
   public get sizeMin() {
     return this.getNumberAttribute('size_min');
   }
-  public set sizeMin(value: number | undefined) {
+  public set sizeMin(value: number) {
     this._sizeMin = value;
   }
   public resetSizeMin() {
@@ -293,15 +293,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get sizeMinInput() {
-    return this._sizeMin
+    return this._sizeMin;
   }
 
   // sort_direction - computed: false, optional: true, required: false
-  private _sortDirection?: string | undefined; 
+  private _sortDirection?: string; 
   public get sortDirection() {
     return this.getStringAttribute('sort_direction');
   }
-  public set sortDirection(value: string | undefined) {
+  public set sortDirection(value: string) {
     this._sortDirection = value;
   }
   public resetSortDirection() {
@@ -309,15 +309,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get sortDirectionInput() {
-    return this._sortDirection
+    return this._sortDirection;
   }
 
   // sort_key - computed: false, optional: true, required: false
-  private _sortKey?: string | undefined; 
+  private _sortKey?: string; 
   public get sortKey() {
     return this.getStringAttribute('sort_key');
   }
-  public set sortKey(value: string | undefined) {
+  public set sortKey(value: string) {
     this._sortKey = value;
   }
   public resetSortKey() {
@@ -325,15 +325,15 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get sortKeyInput() {
-    return this._sortKey
+    return this._sortKey;
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: string | undefined; 
+  private _tag?: string; 
   public get tag() {
     return this.getStringAttribute('tag');
   }
-  public set tag(value: string | undefined) {
+  public set tag(value: string) {
     this._tag = value;
   }
   public resetTag() {
@@ -341,7 +341,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
-    return this._tag
+    return this._tag;
   }
 
   // tags - computed: true, optional: false, required: false
@@ -355,11 +355,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // visibility - computed: false, optional: true, required: false
-  private _visibility?: string | undefined; 
+  private _visibility?: string; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }
-  public set visibility(value: string | undefined) {
+  public set visibility(value: string) {
     this._visibility = value;
   }
   public resetVisibility() {
@@ -367,7 +367,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get visibilityInput() {
-    return this._visibility
+    return this._visibility;
   }
 
   // =========

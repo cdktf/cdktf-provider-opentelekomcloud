@@ -78,11 +78,11 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
 
   // domain - computed: true, optional: true, required: false
-  private _domain?: string | undefined; 
+  private _domain?: string; 
   public get domain() {
     return this.getStringAttribute('domain');
   }
-  public set domain(value: string | undefined) {
+  public set domain(value: string) {
     this._domain = value;
   }
   public resetDomain() {
@@ -90,7 +90,7 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get domainInput() {
-    return this._domain
+    return this._domain;
   }
 
   // expire_time - computed: true, optional: false, required: false
@@ -104,11 +104,11 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -116,7 +116,7 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // private_key - computed: true, optional: false, required: false
@@ -125,11 +125,11 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
 
   // type - computed: true, optional: true, required: false
-  private _type?: string | undefined; 
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
-  public set type(value: string | undefined) {
+  public set type(value: string) {
     this._type = value;
   }
   public resetType() {
@@ -137,7 +137,7 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // updated_at - computed: true, optional: false, required: false

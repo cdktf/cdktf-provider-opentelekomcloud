@@ -37,7 +37,7 @@ export interface IdentityRoleV3Statement {
   readonly effect: string;
 }
 
-function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statement): any {
+export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statement): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -106,7 +106,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // display_layer - computed: false, optional: false, required: true
@@ -119,7 +119,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayLayerInput() {
-    return this._displayLayer
+    return this._displayLayer;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -132,7 +132,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
-    return this._displayName
+    return this._displayName;
   }
 
   // domain_id - computed: true, optional: false, required: false
@@ -161,7 +161,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get statementInput() {
-    return this._statement
+    return this._statement;
   }
 
   // =========

@@ -72,7 +72,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get attributeNameInput() {
-    return this._attributeName
+    return this._attributeName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -90,7 +90,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicAttributeInput() {
-    return this._topicAttribute
+    return this._topicAttribute;
   }
 
   // topic_urn - computed: false, optional: false, required: true
@@ -103,7 +103,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get topicUrnInput() {
-    return this._topicUrn
+    return this._topicUrn;
   }
 
   // =========

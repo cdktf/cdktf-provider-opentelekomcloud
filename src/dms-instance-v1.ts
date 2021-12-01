@@ -138,11 +138,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   // ==========
 
   // access_user - computed: false, optional: true, required: false
-  private _accessUser?: string | undefined; 
+  private _accessUser?: string; 
   public get accessUser() {
     return this.getStringAttribute('access_user');
   }
-  public set accessUser(value: string | undefined) {
+  public set accessUser(value: string) {
     this._accessUser = value;
   }
   public resetAccessUser() {
@@ -150,7 +150,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get accessUserInput() {
-    return this._accessUser
+    return this._accessUser;
   }
 
   // available_zones - computed: false, optional: false, required: true
@@ -163,7 +163,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get availableZonesInput() {
-    return this._availableZones
+    return this._availableZones;
   }
 
   // connect_address - computed: true, optional: false, required: false
@@ -177,11 +177,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -189,7 +189,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -202,7 +202,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get engineInput() {
-    return this._engine
+    return this._engine;
   }
 
   // engine_version - computed: false, optional: false, required: true
@@ -215,7 +215,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get engineVersionInput() {
-    return this._engineVersion
+    return this._engineVersion;
   }
 
   // id - computed: true, optional: true, required: false
@@ -224,11 +224,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // maintain_begin - computed: true, optional: true, required: false
-  private _maintainBegin?: string | undefined; 
+  private _maintainBegin?: string; 
   public get maintainBegin() {
     return this.getStringAttribute('maintain_begin');
   }
-  public set maintainBegin(value: string | undefined) {
+  public set maintainBegin(value: string) {
     this._maintainBegin = value;
   }
   public resetMaintainBegin() {
@@ -236,15 +236,15 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maintainBeginInput() {
-    return this._maintainBegin
+    return this._maintainBegin;
   }
 
   // maintain_end - computed: true, optional: true, required: false
-  private _maintainEnd?: string | undefined; 
+  private _maintainEnd?: string; 
   public get maintainEnd() {
     return this.getStringAttribute('maintain_end');
   }
-  public set maintainEnd(value: string | undefined) {
+  public set maintainEnd(value: string) {
     this._maintainEnd = value;
   }
   public resetMaintainEnd() {
@@ -252,7 +252,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maintainEndInput() {
-    return this._maintainEnd
+    return this._maintainEnd;
   }
 
   // name - computed: false, optional: false, required: true
@@ -265,7 +265,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // order_id - computed: true, optional: false, required: false
@@ -274,11 +274,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // partition_num - computed: false, optional: true, required: false
-  private _partitionNum?: number | undefined; 
+  private _partitionNum?: number; 
   public get partitionNum() {
     return this.getNumberAttribute('partition_num');
   }
-  public set partitionNum(value: number | undefined) {
+  public set partitionNum(value: number) {
     this._partitionNum = value;
   }
   public resetPartitionNum() {
@@ -286,15 +286,15 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get partitionNumInput() {
-    return this._partitionNum
+    return this._partitionNum;
   }
 
   // password - computed: false, optional: true, required: false
-  private _password?: string | undefined; 
+  private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
   }
-  public set password(value: string | undefined) {
+  public set password(value: string) {
     this._password = value;
   }
   public resetPassword() {
@@ -302,7 +302,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
-    return this._password
+    return this._password;
   }
 
   // port - computed: true, optional: false, required: false
@@ -320,7 +320,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get productIdInput() {
-    return this._productId
+    return this._productId;
   }
 
   // resource_spec_code - computed: true, optional: false, required: false
@@ -329,11 +329,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // retention_policy - computed: true, optional: true, required: false
-  private _retentionPolicy?: string | undefined; 
+  private _retentionPolicy?: string; 
   public get retentionPolicy() {
     return this.getStringAttribute('retention_policy');
   }
-  public set retentionPolicy(value: string | undefined) {
+  public set retentionPolicy(value: string) {
     this._retentionPolicy = value;
   }
   public resetRetentionPolicy() {
@@ -341,7 +341,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get retentionPolicyInput() {
-    return this._retentionPolicy
+    return this._retentionPolicy;
   }
 
   // security_group_id - computed: false, optional: false, required: true
@@ -354,7 +354,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // security_group_name - computed: true, optional: false, required: false
@@ -363,11 +363,11 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // specification - computed: true, optional: true, required: false
-  private _specification?: string | undefined; 
+  private _specification?: string; 
   public get specification() {
     return this.getStringAttribute('specification');
   }
-  public set specification(value: string | undefined) {
+  public set specification(value: string) {
     this._specification = value;
   }
   public resetSpecification() {
@@ -375,7 +375,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get specificationInput() {
-    return this._specification
+    return this._specification;
   }
 
   // status - computed: true, optional: false, required: false
@@ -393,7 +393,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get storageSpaceInput() {
-    return this._storageSpace
+    return this._storageSpace;
   }
 
   // storage_spec_code - computed: false, optional: false, required: true
@@ -406,7 +406,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get storageSpecCodeInput() {
-    return this._storageSpecCode
+    return this._storageSpecCode;
   }
 
   // subnet_id - computed: false, optional: false, required: true
@@ -419,7 +419,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // subnet_name - computed: true, optional: false, required: false
@@ -457,7 +457,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // vpc_name - computed: true, optional: false, required: false

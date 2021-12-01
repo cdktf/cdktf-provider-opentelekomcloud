@@ -72,7 +72,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdsInput() {
-    return this._portIds
+    return this._portIds;
   }
 
   // vip_id - computed: false, optional: false, required: true
@@ -85,7 +85,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vipIdInput() {
-    return this._vipId
+    return this._vipId;
   }
 
   // vip_ip_address - computed: true, optional: false, required: false

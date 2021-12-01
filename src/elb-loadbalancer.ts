@@ -73,7 +73,7 @@ export interface ElbLoadbalancerTimeouts {
   readonly update?: string;
 }
 
-function elbLoadbalancerTimeoutsToTerraform(struct?: ElbLoadbalancerTimeoutsOutputReference | ElbLoadbalancerTimeouts): any {
+export function elbLoadbalancerTimeoutsToTerraform(struct?: ElbLoadbalancerTimeoutsOutputReference | ElbLoadbalancerTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -95,12 +95,43 @@ export class ElbLoadbalancerTimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ElbLoadbalancerTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElbLoadbalancerTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -108,15 +139,15 @@ export class ElbLoadbalancerTimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -124,15 +155,15 @@ export class ElbLoadbalancerTimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -140,7 +171,7 @@ export class ElbLoadbalancerTimeoutsOutputReference extends cdktf.ComplexObject 
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -187,7 +218,7 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
     this._vipAddress = config.vipAddress;
     this._vipSubnetId = config.vipSubnetId;
     this._vpcId = config.vpcId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -195,11 +226,11 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   // ==========
 
   // admin_state_up - computed: false, optional: true, required: false
-  private _adminStateUp?: boolean | cdktf.IResolvable | undefined; 
+  private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up') as any;
   }
-  public set adminStateUp(value: boolean | cdktf.IResolvable | undefined) {
+  public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
   }
   public resetAdminStateUp() {
@@ -207,15 +238,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
-    return this._adminStateUp
+    return this._adminStateUp;
   }
 
   // az - computed: false, optional: true, required: false
-  private _az?: string | undefined; 
+  private _az?: string; 
   public get az() {
     return this.getStringAttribute('az');
   }
-  public set az(value: string | undefined) {
+  public set az(value: string) {
     this._az = value;
   }
   public resetAz() {
@@ -223,15 +254,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get azInput() {
-    return this._az
+    return this._az;
   }
 
   // bandwidth - computed: false, optional: true, required: false
-  private _bandwidth?: number | undefined; 
+  private _bandwidth?: number; 
   public get bandwidth() {
     return this.getNumberAttribute('bandwidth');
   }
-  public set bandwidth(value: number | undefined) {
+  public set bandwidth(value: number) {
     this._bandwidth = value;
   }
   public resetBandwidth() {
@@ -239,15 +270,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthInput() {
-    return this._bandwidth
+    return this._bandwidth;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -255,7 +286,7 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -264,11 +295,11 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -276,15 +307,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -292,15 +323,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // security_group_id - computed: true, optional: true, required: false
-  private _securityGroupId?: string | undefined; 
+  private _securityGroupId?: string; 
   public get securityGroupId() {
     return this.getStringAttribute('security_group_id');
   }
-  public set securityGroupId(value: string | undefined) {
+  public set securityGroupId(value: string) {
     this._securityGroupId = value;
   }
   public resetSecurityGroupId() {
@@ -308,7 +339,7 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
-    return this._securityGroupId
+    return this._securityGroupId;
   }
 
   // type - computed: false, optional: false, required: true
@@ -321,15 +352,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 
   // vip_address - computed: true, optional: true, required: false
-  private _vipAddress?: string | undefined; 
+  private _vipAddress?: string; 
   public get vipAddress() {
     return this.getStringAttribute('vip_address');
   }
-  public set vipAddress(value: string | undefined) {
+  public set vipAddress(value: string) {
     this._vipAddress = value;
   }
   public resetVipAddress() {
@@ -337,15 +368,15 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vipAddressInput() {
-    return this._vipAddress
+    return this._vipAddress;
   }
 
   // vip_subnet_id - computed: false, optional: true, required: false
-  private _vipSubnetId?: string | undefined; 
+  private _vipSubnetId?: string; 
   public get vipSubnetId() {
     return this.getStringAttribute('vip_subnet_id');
   }
-  public set vipSubnetId(value: string | undefined) {
+  public set vipSubnetId(value: string) {
     this._vipSubnetId = value;
   }
   public resetVipSubnetId() {
@@ -353,7 +384,7 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vipSubnetIdInput() {
-    return this._vipSubnetId
+    return this._vipSubnetId;
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -366,24 +397,23 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get vpcIdInput() {
-    return this._vpcId
+    return this._vpcId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ElbLoadbalancerTimeouts | undefined; 
-  private __timeoutsOutput = new ElbLoadbalancerTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ElbLoadbalancerTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ElbLoadbalancerTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ElbLoadbalancerTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -403,7 +433,7 @@ export class ElbLoadbalancer extends cdktf.TerraformResource {
       vip_address: cdktf.stringToTerraform(this._vipAddress),
       vip_subnet_id: cdktf.stringToTerraform(this._vipSubnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      timeouts: elbLoadbalancerTimeoutsToTerraform(this._timeouts),
+      timeouts: elbLoadbalancerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

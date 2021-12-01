@@ -62,7 +62,7 @@ export class DataOpentelekomcloudRdsVersionsV3 extends cdktf.TerraformDataSource
   }
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
-    return this._databaseName
+    return this._databaseName;
   }
 
   // id - computed: true, optional: true, required: false

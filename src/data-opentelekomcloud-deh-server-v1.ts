@@ -37,7 +37,7 @@ export interface DataOpentelekomcloudDehServerV1Addresses {
   readonly name?: string;
 }
 
-function dataOpentelekomcloudDehServerV1AddressesToTerraform(struct?: DataOpentelekomcloudDehServerV1Addresses): any {
+export function dataOpentelekomcloudDehServerV1AddressesToTerraform(struct?: DataOpentelekomcloudDehServerV1Addresses): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -92,11 +92,11 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   // ==========
 
   // dedicated_host_id - computed: false, optional: true, required: false
-  private _dedicatedHostId?: string | undefined; 
+  private _dedicatedHostId?: string; 
   public get dedicatedHostId() {
     return this.getStringAttribute('dedicated_host_id');
   }
-  public set dedicatedHostId(value: string | undefined) {
+  public set dedicatedHostId(value: string) {
     this._dedicatedHostId = value;
   }
   public resetDedicatedHostId() {
@@ -104,7 +104,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get dedicatedHostIdInput() {
-    return this._dedicatedHostId
+    return this._dedicatedHostId;
   }
 
   // flavor - computed: true, optional: false, required: false
@@ -128,11 +128,11 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -140,15 +140,15 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // server_id - computed: false, optional: true, required: false
-  private _serverId?: string | undefined; 
+  private _serverId?: string; 
   public get serverId() {
     return this.getStringAttribute('server_id');
   }
-  public set serverId(value: string | undefined) {
+  public set serverId(value: string) {
     this._serverId = value;
   }
   public resetServerId() {
@@ -156,7 +156,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // status - computed: true, optional: false, required: false
@@ -175,12 +175,12 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
 
   // addresses - computed: false, optional: true, required: false
-  private _addresses?: DataOpentelekomcloudDehServerV1Addresses[] | undefined; 
+  private _addresses?: DataOpentelekomcloudDehServerV1Addresses[]; 
   public get addresses() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('addresses') as any;
   }
-  public set addresses(value: DataOpentelekomcloudDehServerV1Addresses[] | undefined) {
+  public set addresses(value: DataOpentelekomcloudDehServerV1Addresses[]) {
     this._addresses = value;
   }
   public resetAddresses() {
@@ -188,7 +188,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get addressesInput() {
-    return this._addresses
+    return this._addresses;
   }
 
   // =========

@@ -98,11 +98,11 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   // ==========
 
   // acl - computed: false, optional: true, required: false
-  private _acl?: string | undefined; 
+  private _acl?: string; 
   public get acl() {
     return this.getStringAttribute('acl');
   }
-  public set acl(value: string | undefined) {
+  public set acl(value: string) {
     this._acl = value;
   }
   public resetAcl() {
@@ -110,7 +110,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get aclInput() {
-    return this._acl
+    return this._acl;
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -123,15 +123,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
-    return this._bucket
+    return this._bucket;
   }
 
   // content - computed: false, optional: true, required: false
-  private _content?: string | undefined; 
+  private _content?: string; 
   public get content() {
     return this.getStringAttribute('content');
   }
-  public set content(value: string | undefined) {
+  public set content(value: string) {
     this._content = value;
   }
   public resetContent() {
@@ -139,15 +139,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contentInput() {
-    return this._content
+    return this._content;
   }
 
   // content_type - computed: false, optional: true, required: false
-  private _contentType?: string | undefined; 
+  private _contentType?: string; 
   public get contentType() {
     return this.getStringAttribute('content_type');
   }
-  public set contentType(value: string | undefined) {
+  public set contentType(value: string) {
     this._contentType = value;
   }
   public resetContentType() {
@@ -155,15 +155,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contentTypeInput() {
-    return this._contentType
+    return this._contentType;
   }
 
   // encryption - computed: false, optional: true, required: false
-  private _encryption?: boolean | cdktf.IResolvable | undefined; 
+  private _encryption?: boolean | cdktf.IResolvable; 
   public get encryption() {
     return this.getBooleanAttribute('encryption') as any;
   }
-  public set encryption(value: boolean | cdktf.IResolvable | undefined) {
+  public set encryption(value: boolean | cdktf.IResolvable) {
     this._encryption = value;
   }
   public resetEncryption() {
@@ -171,15 +171,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionInput() {
-    return this._encryption
+    return this._encryption;
   }
 
   // etag - computed: true, optional: true, required: false
-  private _etag?: string | undefined; 
+  private _etag?: string; 
   public get etag() {
     return this.getStringAttribute('etag');
   }
-  public set etag(value: string | undefined) {
+  public set etag(value: string) {
     this._etag = value;
   }
   public resetEtag() {
@@ -187,7 +187,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get etagInput() {
-    return this._etag
+    return this._etag;
   }
 
   // id - computed: true, optional: true, required: false
@@ -205,15 +205,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // kms_key_id - computed: false, optional: true, required: false
-  private _kmsKeyId?: string | undefined; 
+  private _kmsKeyId?: string; 
   public get kmsKeyId() {
     return this.getStringAttribute('kms_key_id');
   }
-  public set kmsKeyId(value: string | undefined) {
+  public set kmsKeyId(value: string) {
     this._kmsKeyId = value;
   }
   public resetKmsKeyId() {
@@ -221,7 +221,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get kmsKeyIdInput() {
-    return this._kmsKeyId
+    return this._kmsKeyId;
   }
 
   // size - computed: true, optional: false, required: false
@@ -230,11 +230,11 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
 
   // source - computed: false, optional: true, required: false
-  private _source?: string | undefined; 
+  private _source?: string; 
   public get source() {
     return this.getStringAttribute('source');
   }
-  public set source(value: string | undefined) {
+  public set source(value: string) {
     this._source = value;
   }
   public resetSource() {
@@ -242,15 +242,15 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceInput() {
-    return this._source
+    return this._source;
   }
 
   // storage_class - computed: true, optional: true, required: false
-  private _storageClass?: string | undefined; 
+  private _storageClass?: string; 
   public get storageClass() {
     return this.getStringAttribute('storage_class');
   }
-  public set storageClass(value: string | undefined) {
+  public set storageClass(value: string) {
     this._storageClass = value;
   }
   public resetStorageClass() {
@@ -258,7 +258,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get storageClassInput() {
-    return this._storageClass
+    return this._storageClass;
   }
 
   // version_id - computed: true, optional: false, required: false

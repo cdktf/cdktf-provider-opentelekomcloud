@@ -88,11 +88,11 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   // ==========
 
   // bandwidth_id - computed: false, optional: true, required: false
-  private _bandwidthId?: string | undefined; 
+  private _bandwidthId?: string; 
   public get bandwidthId() {
     return this.getStringAttribute('bandwidth_id');
   }
-  public set bandwidthId(value: string | undefined) {
+  public set bandwidthId(value: string) {
     this._bandwidthId = value;
   }
   public resetBandwidthId() {
@@ -100,7 +100,7 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get bandwidthIdInput() {
-    return this._bandwidthId
+    return this._bandwidthId;
   }
 
   // bandwidth_share_type - computed: true, optional: false, required: false
@@ -119,11 +119,11 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
 
   // id - computed: false, optional: true, required: false
-  private _id?: string | undefined; 
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string | undefined) {
+  public set id(value: string) {
     this._id = value;
   }
   public resetId() {
@@ -131,7 +131,7 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
-    return this._id
+    return this._id;
   }
 
   // ip_version - computed: true, optional: false, required: false
@@ -140,11 +140,11 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
 
   // port_id - computed: false, optional: true, required: false
-  private _portId?: string | undefined; 
+  private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
   }
-  public set portId(value: string | undefined) {
+  public set portId(value: string) {
     this._portId = value;
   }
   public resetPortId() {
@@ -152,15 +152,15 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // private_ip_address - computed: false, optional: true, required: false
-  private _privateIpAddress?: string | undefined; 
+  private _privateIpAddress?: string; 
   public get privateIpAddress() {
     return this.getStringAttribute('private_ip_address');
   }
-  public set privateIpAddress(value: string | undefined) {
+  public set privateIpAddress(value: string) {
     this._privateIpAddress = value;
   }
   public resetPrivateIpAddress() {
@@ -168,15 +168,15 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get privateIpAddressInput() {
-    return this._privateIpAddress
+    return this._privateIpAddress;
   }
 
   // public_ip_address - computed: false, optional: true, required: false
-  private _publicIpAddress?: string | undefined; 
+  private _publicIpAddress?: string; 
   public get publicIpAddress() {
     return this.getStringAttribute('public_ip_address');
   }
-  public set publicIpAddress(value: string | undefined) {
+  public set publicIpAddress(value: string) {
     this._publicIpAddress = value;
   }
   public resetPublicIpAddress() {
@@ -184,15 +184,15 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get publicIpAddressInput() {
-    return this._publicIpAddress
+    return this._publicIpAddress;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -200,15 +200,15 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: false, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -216,16 +216,16 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -233,7 +233,7 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tenant_id - computed: true, optional: false, required: false

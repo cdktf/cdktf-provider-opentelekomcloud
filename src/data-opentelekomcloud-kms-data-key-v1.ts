@@ -77,15 +77,15 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get datakeyLengthInput() {
-    return this._datakeyLength
+    return this._datakeyLength;
   }
 
   // encryption_context - computed: false, optional: true, required: false
-  private _encryptionContext?: string | undefined; 
+  private _encryptionContext?: string; 
   public get encryptionContext() {
     return this.getStringAttribute('encryption_context');
   }
-  public set encryptionContext(value: string | undefined) {
+  public set encryptionContext(value: string) {
     this._encryptionContext = value;
   }
   public resetEncryptionContext() {
@@ -93,7 +93,7 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get encryptionContextInput() {
-    return this._encryptionContext
+    return this._encryptionContext;
   }
 
   // id - computed: true, optional: true, required: false
@@ -111,7 +111,7 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get keyIdInput() {
-    return this._keyId
+    return this._keyId;
   }
 
   // plain_text - computed: true, optional: false, required: false

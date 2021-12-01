@@ -68,11 +68,11 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   // ==========
 
   // begin - computed: true, optional: true, required: false
-  private _begin?: string | undefined; 
+  private _begin?: string; 
   public get begin() {
     return this.getStringAttribute('begin');
   }
-  public set begin(value: string | undefined) {
+  public set begin(value: string) {
     this._begin = value;
   }
   public resetBegin() {
@@ -80,15 +80,15 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get beginInput() {
-    return this._begin
+    return this._begin;
   }
 
   // default - computed: true, optional: true, required: false
-  private _default?: boolean | cdktf.IResolvable | undefined; 
+  private _default?: boolean | cdktf.IResolvable; 
   public get default() {
     return this.getBooleanAttribute('default') as any;
   }
-  public set default(value: boolean | cdktf.IResolvable | undefined) {
+  public set default(value: boolean | cdktf.IResolvable) {
     this._default = value;
   }
   public resetDefault() {
@@ -96,15 +96,15 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get defaultInput() {
-    return this._default
+    return this._default;
   }
 
   // end - computed: true, optional: true, required: false
-  private _end?: string | undefined; 
+  private _end?: string; 
   public get end() {
     return this.getStringAttribute('end');
   }
-  public set end(value: string | undefined) {
+  public set end(value: string) {
     this._end = value;
   }
   public resetEnd() {
@@ -112,7 +112,7 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get endInput() {
-    return this._end
+    return this._end;
   }
 
   // id - computed: true, optional: true, required: false
@@ -121,11 +121,11 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   }
 
   // seq - computed: true, optional: true, required: false
-  private _seq?: number | undefined; 
+  private _seq?: number; 
   public get seq() {
     return this.getNumberAttribute('seq');
   }
-  public set seq(value: number | undefined) {
+  public set seq(value: number) {
     this._seq = value;
   }
   public resetSeq() {
@@ -133,7 +133,7 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   }
   // Temporarily expose input value. Use with caution.
   public get seqInput() {
-    return this._seq
+    return this._seq;
   }
 
   // =========

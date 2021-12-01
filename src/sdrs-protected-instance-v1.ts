@@ -61,7 +61,7 @@ export interface SdrsProtectedInstanceV1Timeouts {
   readonly delete?: string;
 }
 
-function sdrsProtectedInstanceV1TimeoutsToTerraform(struct?: SdrsProtectedInstanceV1TimeoutsOutputReference | SdrsProtectedInstanceV1Timeouts): any {
+export function sdrsProtectedInstanceV1TimeoutsToTerraform(struct?: SdrsProtectedInstanceV1TimeoutsOutputReference | SdrsProtectedInstanceV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -82,12 +82,37 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): SdrsProtectedInstanceV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SdrsProtectedInstanceV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -95,15 +120,15 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -111,7 +136,7 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -156,7 +181,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
     this._serverId = config.serverId;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -169,11 +194,11 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // delete_target_eip - computed: false, optional: true, required: false
-  private _deleteTargetEip?: boolean | cdktf.IResolvable | undefined; 
+  private _deleteTargetEip?: boolean | cdktf.IResolvable; 
   public get deleteTargetEip() {
     return this.getBooleanAttribute('delete_target_eip') as any;
   }
-  public set deleteTargetEip(value: boolean | cdktf.IResolvable | undefined) {
+  public set deleteTargetEip(value: boolean | cdktf.IResolvable) {
     this._deleteTargetEip = value;
   }
   public resetDeleteTargetEip() {
@@ -181,15 +206,15 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteTargetEipInput() {
-    return this._deleteTargetEip
+    return this._deleteTargetEip;
   }
 
   // delete_target_server - computed: false, optional: true, required: false
-  private _deleteTargetServer?: boolean | cdktf.IResolvable | undefined; 
+  private _deleteTargetServer?: boolean | cdktf.IResolvable; 
   public get deleteTargetServer() {
     return this.getBooleanAttribute('delete_target_server') as any;
   }
-  public set deleteTargetServer(value: boolean | cdktf.IResolvable | undefined) {
+  public set deleteTargetServer(value: boolean | cdktf.IResolvable) {
     this._deleteTargetServer = value;
   }
   public resetDeleteTargetServer() {
@@ -197,15 +222,15 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteTargetServerInput() {
-    return this._deleteTargetServer
+    return this._deleteTargetServer;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -213,7 +238,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // group_id - computed: false, optional: false, required: true
@@ -226,7 +251,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
-    return this._groupId
+    return this._groupId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -235,11 +260,11 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // ip_address - computed: false, optional: true, required: false
-  private _ipAddress?: string | undefined; 
+  private _ipAddress?: string; 
   public get ipAddress() {
     return this.getStringAttribute('ip_address');
   }
-  public set ipAddress(value: string | undefined) {
+  public set ipAddress(value: string) {
     this._ipAddress = value;
   }
   public resetIpAddress() {
@@ -247,7 +272,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {
-    return this._ipAddress
+    return this._ipAddress;
   }
 
   // name - computed: false, optional: false, required: true
@@ -260,7 +285,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // priority_station - computed: true, optional: false, required: false
@@ -278,15 +303,15 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // subnet_id - computed: false, optional: true, required: false
-  private _subnetId?: string | undefined; 
+  private _subnetId?: string; 
   public get subnetId() {
     return this.getStringAttribute('subnet_id');
   }
-  public set subnetId(value: string | undefined) {
+  public set subnetId(value: string) {
     this._subnetId = value;
   }
   public resetSubnetId() {
@@ -294,16 +319,16 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get subnetIdInput() {
-    return this._subnetId
+    return this._subnetId;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -311,7 +336,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // target_id - computed: true, optional: false, required: false
@@ -325,20 +350,19 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: SdrsProtectedInstanceV1Timeouts | undefined; 
-  private __timeoutsOutput = new SdrsProtectedInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SdrsProtectedInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: SdrsProtectedInstanceV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: SdrsProtectedInstanceV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -356,7 +380,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
       server_id: cdktf.stringToTerraform(this._serverId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      timeouts: sdrsProtectedInstanceV1TimeoutsToTerraform(this._timeouts),
+      timeouts: sdrsProtectedInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

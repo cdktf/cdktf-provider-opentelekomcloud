@@ -78,11 +78,11 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   // ==========
 
   // bucket_name - computed: true, optional: true, required: false
-  private _bucketName?: string | undefined; 
+  private _bucketName?: string; 
   public get bucketName() {
     return this.getStringAttribute('bucket_name');
   }
-  public set bucketName(value: string | undefined) {
+  public set bucketName(value: string) {
     this._bucketName = value;
   }
   public resetBucketName() {
@@ -90,15 +90,15 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get bucketNameInput() {
-    return this._bucketName
+    return this._bucketName;
   }
 
   // file_prefix_name - computed: true, optional: true, required: false
-  private _filePrefixName?: string | undefined; 
+  private _filePrefixName?: string; 
   public get filePrefixName() {
     return this.getStringAttribute('file_prefix_name');
   }
-  public set filePrefixName(value: string | undefined) {
+  public set filePrefixName(value: string) {
     this._filePrefixName = value;
   }
   public resetFilePrefixName() {
@@ -106,7 +106,7 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get filePrefixNameInput() {
-    return this._filePrefixName
+    return this._filePrefixName;
   }
 
   // id - computed: true, optional: true, required: false
@@ -135,11 +135,11 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
 
   // project_name - computed: true, optional: true, required: false
-  private _projectName?: string | undefined; 
+  private _projectName?: string; 
   public get projectName() {
     return this.getStringAttribute('project_name');
   }
-  public set projectName(value: string | undefined) {
+  public set projectName(value: string) {
     this._projectName = value;
   }
   public resetProjectName() {
@@ -147,15 +147,15 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get projectNameInput() {
-    return this._projectName
+    return this._projectName;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -163,15 +163,15 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -179,7 +179,7 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // topic_id - computed: true, optional: false, required: false
@@ -188,11 +188,11 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
 
   // tracker_name - computed: true, optional: true, required: false
-  private _trackerName?: string | undefined; 
+  private _trackerName?: string; 
   public get trackerName() {
     return this.getStringAttribute('tracker_name');
   }
-  public set trackerName(value: string | undefined) {
+  public set trackerName(value: string) {
     this._trackerName = value;
   }
   public resetTrackerName() {
@@ -200,7 +200,7 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get trackerNameInput() {
-    return this._trackerName
+    return this._trackerName;
   }
 
   // =========

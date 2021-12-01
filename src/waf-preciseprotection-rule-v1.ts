@@ -67,7 +67,7 @@ export interface WafPreciseprotectionRuleV1Conditions {
   readonly logic: string;
 }
 
-function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPreciseprotectionRuleV1Conditions): any {
+export function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPreciseprotectionRuleV1Conditions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -91,7 +91,7 @@ export interface WafPreciseprotectionRuleV1Timeouts {
   readonly delete?: string;
 }
 
-function wafPreciseprotectionRuleV1TimeoutsToTerraform(struct?: WafPreciseprotectionRuleV1TimeoutsOutputReference | WafPreciseprotectionRuleV1Timeouts): any {
+export function wafPreciseprotectionRuleV1TimeoutsToTerraform(struct?: WafPreciseprotectionRuleV1TimeoutsOutputReference | WafPreciseprotectionRuleV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -112,12 +112,37 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): WafPreciseprotectionRuleV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafPreciseprotectionRuleV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -125,15 +150,15 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -141,7 +166,7 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -185,7 +210,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
     this._start = config.start;
     this._time = config.time;
     this._conditions = config.conditions;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -202,15 +227,15 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get actionCategoryInput() {
-    return this._actionCategory
+    return this._actionCategory;
   }
 
   // end - computed: true, optional: true, required: false
-  private _end?: string | undefined; 
+  private _end?: string; 
   public get end() {
     return this.getStringAttribute('end');
   }
-  public set end(value: string | undefined) {
+  public set end(value: string) {
     this._end = value;
   }
   public resetEnd() {
@@ -218,7 +243,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get endInput() {
-    return this._end
+    return this._end;
   }
 
   // id - computed: true, optional: true, required: false
@@ -236,7 +261,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -249,15 +274,15 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get policyIdInput() {
-    return this._policyId
+    return this._policyId;
   }
 
   // priority - computed: false, optional: true, required: false
-  private _priority?: number | undefined; 
+  private _priority?: number; 
   public get priority() {
     return this.getNumberAttribute('priority');
   }
-  public set priority(value: number | undefined) {
+  public set priority(value: number) {
     this._priority = value;
   }
   public resetPriority() {
@@ -265,15 +290,15 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get priorityInput() {
-    return this._priority
+    return this._priority;
   }
 
   // start - computed: true, optional: true, required: false
-  private _start?: string | undefined; 
+  private _start?: string; 
   public get start() {
     return this.getStringAttribute('start');
   }
-  public set start(value: string | undefined) {
+  public set start(value: string) {
     this._start = value;
   }
   public resetStart() {
@@ -281,15 +306,15 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get startInput() {
-    return this._start
+    return this._start;
   }
 
   // time - computed: false, optional: true, required: false
-  private _time?: boolean | cdktf.IResolvable | undefined; 
+  private _time?: boolean | cdktf.IResolvable; 
   public get time() {
     return this.getBooleanAttribute('time') as any;
   }
-  public set time(value: boolean | cdktf.IResolvable | undefined) {
+  public set time(value: boolean | cdktf.IResolvable) {
     this._time = value;
   }
   public resetTime() {
@@ -297,7 +322,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timeInput() {
-    return this._time
+    return this._time;
   }
 
   // conditions - computed: false, optional: false, required: true
@@ -311,24 +336,23 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get conditionsInput() {
-    return this._conditions
+    return this._conditions;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: WafPreciseprotectionRuleV1Timeouts | undefined; 
-  private __timeoutsOutput = new WafPreciseprotectionRuleV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafPreciseprotectionRuleV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: WafPreciseprotectionRuleV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: WafPreciseprotectionRuleV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -345,7 +369,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
       start: cdktf.stringToTerraform(this._start),
       time: cdktf.booleanToTerraform(this._time),
       conditions: cdktf.listMapper(wafPreciseprotectionRuleV1ConditionsToTerraform)(this._conditions),
-      timeouts: wafPreciseprotectionRuleV1TimeoutsToTerraform(this._timeouts),
+      timeouts: wafPreciseprotectionRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

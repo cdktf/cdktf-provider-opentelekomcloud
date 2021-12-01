@@ -65,7 +65,7 @@ export interface RtsStackV1Timeouts {
   readonly update?: string;
 }
 
-function rtsStackV1TimeoutsToTerraform(struct?: RtsStackV1TimeoutsOutputReference | RtsStackV1Timeouts): any {
+export function rtsStackV1TimeoutsToTerraform(struct?: RtsStackV1TimeoutsOutputReference | RtsStackV1Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -87,12 +87,43 @@ export class RtsStackV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RtsStackV1Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RtsStackV1Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -100,15 +131,15 @@ export class RtsStackV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -116,15 +147,15 @@ export class RtsStackV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: string | undefined; 
+  private _update?: string; 
   public get update() {
     return this.getStringAttribute('update');
   }
-  public set update(value: string | undefined) {
+  public set update(value: string) {
     this._update = value;
   }
   public resetUpdate() {
@@ -132,7 +163,7 @@ export class RtsStackV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
-    return this._update
+    return this._update;
   }
 }
 
@@ -177,7 +208,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
     this._templateBody = config.templateBody;
     this._templateUrl = config.templateUrl;
     this._timeoutMins = config.timeoutMins;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -190,11 +221,11 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
 
   // disable_rollback - computed: true, optional: true, required: false
-  private _disableRollback?: boolean | cdktf.IResolvable | undefined; 
+  private _disableRollback?: boolean | cdktf.IResolvable; 
   public get disableRollback() {
     return this.getBooleanAttribute('disable_rollback') as any;
   }
-  public set disableRollback(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableRollback(value: boolean | cdktf.IResolvable) {
     this._disableRollback = value;
   }
   public resetDisableRollback() {
@@ -202,15 +233,15 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get disableRollbackInput() {
-    return this._disableRollback
+    return this._disableRollback;
   }
 
   // environment - computed: false, optional: true, required: false
-  private _environment?: string | undefined; 
+  private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
   }
-  public set environment(value: string | undefined) {
+  public set environment(value: string) {
     this._environment = value;
   }
   public resetEnvironment() {
@@ -218,16 +249,16 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get environmentInput() {
-    return this._environment
+    return this._environment;
   }
 
   // files - computed: false, optional: true, required: false
-  private _files?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _files?: { [key: string]: string } | cdktf.IResolvable; 
   public get files() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('files') as any;
   }
-  public set files(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set files(value: { [key: string]: string } | cdktf.IResolvable) {
     this._files = value;
   }
   public resetFiles() {
@@ -235,7 +266,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get filesInput() {
-    return this._files
+    return this._files;
   }
 
   // id - computed: true, optional: true, required: false
@@ -253,7 +284,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // notification_topics - computed: true, optional: false, required: false
@@ -267,12 +298,12 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _parameters?: { [key: string]: string } | cdktf.IResolvable; 
   public get parameters() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('parameters') as any;
   }
-  public set parameters(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -280,15 +311,15 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
-    return this._parameters
+    return this._parameters;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -296,7 +327,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // status - computed: true, optional: false, required: false
@@ -310,11 +341,11 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
 
   // template_body - computed: true, optional: true, required: false
-  private _templateBody?: string | undefined; 
+  private _templateBody?: string; 
   public get templateBody() {
     return this.getStringAttribute('template_body');
   }
-  public set templateBody(value: string | undefined) {
+  public set templateBody(value: string) {
     this._templateBody = value;
   }
   public resetTemplateBody() {
@@ -322,15 +353,15 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateBodyInput() {
-    return this._templateBody
+    return this._templateBody;
   }
 
   // template_url - computed: false, optional: true, required: false
-  private _templateUrl?: string | undefined; 
+  private _templateUrl?: string; 
   public get templateUrl() {
     return this.getStringAttribute('template_url');
   }
-  public set templateUrl(value: string | undefined) {
+  public set templateUrl(value: string) {
     this._templateUrl = value;
   }
   public resetTemplateUrl() {
@@ -338,15 +369,15 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get templateUrlInput() {
-    return this._templateUrl
+    return this._templateUrl;
   }
 
   // timeout_mins - computed: true, optional: true, required: false
-  private _timeoutMins?: number | undefined; 
+  private _timeoutMins?: number; 
   public get timeoutMins() {
     return this.getNumberAttribute('timeout_mins');
   }
-  public set timeoutMins(value: number | undefined) {
+  public set timeoutMins(value: number) {
     this._timeoutMins = value;
   }
   public resetTimeoutMins() {
@@ -354,24 +385,23 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutMinsInput() {
-    return this._timeoutMins
+    return this._timeoutMins;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: RtsStackV1Timeouts | undefined; 
-  private __timeoutsOutput = new RtsStackV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsStackV1TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: RtsStackV1Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: RtsStackV1Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -389,7 +419,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_url: cdktf.stringToTerraform(this._templateUrl),
       timeout_mins: cdktf.numberToTerraform(this._timeoutMins),
-      timeouts: rtsStackV1TimeoutsToTerraform(this._timeouts),
+      timeouts: rtsStackV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

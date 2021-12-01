@@ -100,11 +100,11 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -112,7 +112,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // port - computed: true, optional: false, required: false
@@ -141,11 +141,11 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
 
   // status - computed: true, optional: true, required: false
-  private _status?: string | undefined; 
+  private _status?: string; 
   public get status() {
     return this.getStringAttribute('status');
   }
-  public set status(value: string | undefined) {
+  public set status(value: string) {
     this._status = value;
   }
   public resetStatus() {
@@ -153,16 +153,16 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get statusInput() {
-    return this._status
+    return this._status;
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('tags') as any;
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -170,7 +170,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags
+    return this._tags;
   }
 
   // tcp_proxy - computed: true, optional: false, required: false

@@ -37,7 +37,7 @@ export interface ElbBackendTimeouts {
   readonly delete?: string;
 }
 
-function elbBackendTimeoutsToTerraform(struct?: ElbBackendTimeoutsOutputReference | ElbBackendTimeouts): any {
+export function elbBackendTimeoutsToTerraform(struct?: ElbBackendTimeoutsOutputReference | ElbBackendTimeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -58,12 +58,37 @@ export class ElbBackendTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ElbBackendTimeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ElbBackendTimeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -71,15 +96,15 @@ export class ElbBackendTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -87,7 +112,7 @@ export class ElbBackendTimeoutsOutputReference extends cdktf.ComplexObject {
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -126,7 +151,7 @@ export class ElbBackend extends cdktf.TerraformResource {
     this._address = config.address;
     this._listenerId = config.listenerId;
     this._serverId = config.serverId;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -143,7 +168,7 @@ export class ElbBackend extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get addressInput() {
-    return this._address
+    return this._address;
   }
 
   // id - computed: true, optional: true, required: false
@@ -161,7 +186,7 @@ export class ElbBackend extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get listenerIdInput() {
-    return this._listenerId
+    return this._listenerId;
   }
 
   // server_id - computed: false, optional: false, required: true
@@ -174,24 +199,23 @@ export class ElbBackend extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get serverIdInput() {
-    return this._serverId
+    return this._serverId;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ElbBackendTimeouts | undefined; 
-  private __timeoutsOutput = new ElbBackendTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ElbBackendTimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ElbBackendTimeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ElbBackendTimeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -203,7 +227,7 @@ export class ElbBackend extends cdktf.TerraformResource {
       address: cdktf.stringToTerraform(this._address),
       listener_id: cdktf.stringToTerraform(this._listenerId),
       server_id: cdktf.stringToTerraform(this._serverId),
-      timeouts: elbBackendTimeoutsToTerraform(this._timeouts),
+      timeouts: elbBackendTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

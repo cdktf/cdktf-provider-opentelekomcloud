@@ -78,11 +78,11 @@ export class ComputeFloatingipV2 extends cdktf.TerraformResource {
   }
 
   // pool - computed: false, optional: true, required: false
-  private _pool?: string | undefined; 
+  private _pool?: string; 
   public get pool() {
     return this.getStringAttribute('pool');
   }
-  public set pool(value: string | undefined) {
+  public set pool(value: string) {
     this._pool = value;
   }
   public resetPool() {
@@ -90,15 +90,15 @@ export class ComputeFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get poolInput() {
-    return this._pool
+    return this._pool;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -106,7 +106,7 @@ export class ComputeFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // =========

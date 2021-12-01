@@ -59,7 +59,7 @@ export interface ComputeSecgroupV2Rule {
   readonly toPort: number;
 }
 
-function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule): any {
+export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -81,7 +81,7 @@ export interface ComputeSecgroupV2Timeouts {
   readonly delete?: string;
 }
 
-function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2TimeoutsOutputReference | ComputeSecgroupV2Timeouts): any {
+export function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2TimeoutsOutputReference | ComputeSecgroupV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -101,12 +101,31 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ComputeSecgroupV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeSecgroupV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._delete = undefined;
+    }
+    else {
+      this._delete = value.delete;
+    }
+  }
+
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -114,7 +133,7 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -154,7 +173,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
     this._name = config.name;
     this._region = config.region;
     this._rule = config.rule;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -171,7 +190,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -189,15 +208,15 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -205,16 +224,16 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: ComputeSecgroupV2Rule[] | undefined; 
+  private _rule?: ComputeSecgroupV2Rule[]; 
   public get rule() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('rule') as any;
   }
-  public set rule(value: ComputeSecgroupV2Rule[] | undefined) {
+  public set rule(value: ComputeSecgroupV2Rule[]) {
     this._rule = value;
   }
   public resetRule() {
@@ -222,24 +241,23 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule
+    return this._rule;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: ComputeSecgroupV2Timeouts | undefined; 
-  private __timeoutsOutput = new ComputeSecgroupV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ComputeSecgroupV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: ComputeSecgroupV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: ComputeSecgroupV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -252,7 +270,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform)(this._rule),
-      timeouts: computeSecgroupV2TimeoutsToTerraform(this._timeouts),
+      timeouts: computeSecgroupV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

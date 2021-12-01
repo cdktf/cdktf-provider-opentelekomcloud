@@ -93,11 +93,11 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
 
   // default_key_flag - computed: true, optional: true, required: false
-  private _defaultKeyFlag?: string | undefined; 
+  private _defaultKeyFlag?: string; 
   public get defaultKeyFlag() {
     return this.getStringAttribute('default_key_flag');
   }
-  public set defaultKeyFlag(value: string | undefined) {
+  public set defaultKeyFlag(value: string) {
     this._defaultKeyFlag = value;
   }
   public resetDefaultKeyFlag() {
@@ -105,15 +105,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get defaultKeyFlagInput() {
-    return this._defaultKeyFlag
+    return this._defaultKeyFlag;
   }
 
   // domain_id - computed: true, optional: true, required: false
-  private _domainId?: string | undefined; 
+  private _domainId?: string; 
   public get domainId() {
     return this.getStringAttribute('domain_id');
   }
-  public set domainId(value: string | undefined) {
+  public set domainId(value: string) {
     this._domainId = value;
   }
   public resetDomainId() {
@@ -121,7 +121,7 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get domainIdInput() {
-    return this._domainId
+    return this._domainId;
   }
 
   // expiration_time - computed: true, optional: false, required: false
@@ -135,11 +135,11 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
 
   // key_alias - computed: true, optional: true, required: false
-  private _keyAlias?: string | undefined; 
+  private _keyAlias?: string; 
   public get keyAlias() {
     return this.getStringAttribute('key_alias');
   }
-  public set keyAlias(value: string | undefined) {
+  public set keyAlias(value: string) {
     this._keyAlias = value;
   }
   public resetKeyAlias() {
@@ -147,15 +147,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyAliasInput() {
-    return this._keyAlias
+    return this._keyAlias;
   }
 
   // key_description - computed: true, optional: true, required: false
-  private _keyDescription?: string | undefined; 
+  private _keyDescription?: string; 
   public get keyDescription() {
     return this.getStringAttribute('key_description');
   }
-  public set keyDescription(value: string | undefined) {
+  public set keyDescription(value: string) {
     this._keyDescription = value;
   }
   public resetKeyDescription() {
@@ -163,15 +163,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyDescriptionInput() {
-    return this._keyDescription
+    return this._keyDescription;
   }
 
   // key_id - computed: true, optional: true, required: false
-  private _keyId?: string | undefined; 
+  private _keyId?: string; 
   public get keyId() {
     return this.getStringAttribute('key_id');
   }
-  public set keyId(value: string | undefined) {
+  public set keyId(value: string) {
     this._keyId = value;
   }
   public resetKeyId() {
@@ -179,15 +179,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyIdInput() {
-    return this._keyId
+    return this._keyId;
   }
 
   // key_state - computed: true, optional: true, required: false
-  private _keyState?: string | undefined; 
+  private _keyState?: string; 
   public get keyState() {
     return this.getStringAttribute('key_state');
   }
-  public set keyState(value: string | undefined) {
+  public set keyState(value: string) {
     this._keyState = value;
   }
   public resetKeyState() {
@@ -195,15 +195,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyStateInput() {
-    return this._keyState
+    return this._keyState;
   }
 
   // origin - computed: true, optional: true, required: false
-  private _origin?: string | undefined; 
+  private _origin?: string; 
   public get origin() {
     return this.getStringAttribute('origin');
   }
-  public set origin(value: string | undefined) {
+  public set origin(value: string) {
     this._origin = value;
   }
   public resetOrigin() {
@@ -211,15 +211,15 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get originInput() {
-    return this._origin
+    return this._origin;
   }
 
   // realm - computed: true, optional: true, required: false
-  private _realm?: string | undefined; 
+  private _realm?: string; 
   public get realm() {
     return this.getStringAttribute('realm');
   }
-  public set realm(value: string | undefined) {
+  public set realm(value: string) {
     this._realm = value;
   }
   public resetRealm() {
@@ -227,7 +227,7 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get realmInput() {
-    return this._realm
+    return this._realm;
   }
 
   // scheduled_deletion_date - computed: true, optional: false, required: false

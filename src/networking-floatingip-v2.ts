@@ -49,7 +49,7 @@ export interface NetworkingFloatingipV2Timeouts {
   readonly delete?: string;
 }
 
-function networkingFloatingipV2TimeoutsToTerraform(struct?: NetworkingFloatingipV2TimeoutsOutputReference | NetworkingFloatingipV2Timeouts): any {
+export function networkingFloatingipV2TimeoutsToTerraform(struct?: NetworkingFloatingipV2TimeoutsOutputReference | NetworkingFloatingipV2Timeouts): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -70,12 +70,37 @@ export class NetworkingFloatingipV2TimeoutsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): NetworkingFloatingipV2Timeouts | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._create) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingFloatingipV2Timeouts | undefined) {
+    if (value === undefined) {
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
   // create - computed: false, optional: true, required: false
-  private _create?: string | undefined; 
+  private _create?: string; 
   public get create() {
     return this.getStringAttribute('create');
   }
-  public set create(value: string | undefined) {
+  public set create(value: string) {
     this._create = value;
   }
   public resetCreate() {
@@ -83,15 +108,15 @@ export class NetworkingFloatingipV2TimeoutsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
-    return this._create
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
-  private _delete?: string | undefined; 
+  private _delete?: string; 
   public get delete() {
     return this.getStringAttribute('delete');
   }
-  public set delete(value: string | undefined) {
+  public set delete(value: string) {
     this._delete = value;
   }
   public resetDelete() {
@@ -99,7 +124,7 @@ export class NetworkingFloatingipV2TimeoutsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
-    return this._delete
+    return this._delete;
   }
 }
 
@@ -141,7 +166,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
     this._region = config.region;
     this._tenantId = config.tenantId;
     this._valueSpecs = config.valueSpecs;
-    this._timeouts = config.timeouts;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -154,11 +179,11 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
 
   // fixed_ip - computed: true, optional: true, required: false
-  private _fixedIp?: string | undefined; 
+  private _fixedIp?: string; 
   public get fixedIp() {
     return this.getStringAttribute('fixed_ip');
   }
-  public set fixedIp(value: string | undefined) {
+  public set fixedIp(value: string) {
     this._fixedIp = value;
   }
   public resetFixedIp() {
@@ -166,7 +191,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fixedIpInput() {
-    return this._fixedIp
+    return this._fixedIp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -175,11 +200,11 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
 
   // pool - computed: false, optional: true, required: false
-  private _pool?: string | undefined; 
+  private _pool?: string; 
   public get pool() {
     return this.getStringAttribute('pool');
   }
-  public set pool(value: string | undefined) {
+  public set pool(value: string) {
     this._pool = value;
   }
   public resetPool() {
@@ -187,15 +212,15 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get poolInput() {
-    return this._pool
+    return this._pool;
   }
 
   // port_id - computed: true, optional: true, required: false
-  private _portId?: string | undefined; 
+  private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
   }
-  public set portId(value: string | undefined) {
+  public set portId(value: string) {
     this._portId = value;
   }
   public resetPortId() {
@@ -203,15 +228,15 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get portIdInput() {
-    return this._portId
+    return this._portId;
   }
 
   // region - computed: true, optional: true, required: false
-  private _region?: string | undefined; 
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string | undefined) {
+  public set region(value: string) {
     this._region = value;
   }
   public resetRegion() {
@@ -219,15 +244,15 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
-    return this._region
+    return this._region;
   }
 
   // tenant_id - computed: true, optional: true, required: false
-  private _tenantId?: string | undefined; 
+  private _tenantId?: string; 
   public get tenantId() {
     return this.getStringAttribute('tenant_id');
   }
-  public set tenantId(value: string | undefined) {
+  public set tenantId(value: string) {
     this._tenantId = value;
   }
   public resetTenantId() {
@@ -235,16 +260,16 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get tenantIdInput() {
-    return this._tenantId
+    return this._tenantId;
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable | undefined; 
+  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
   public get valueSpecs() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('value_specs') as any;
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
+  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -252,24 +277,23 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get valueSpecsInput() {
-    return this._valueSpecs
+    return this._valueSpecs;
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts?: NetworkingFloatingipV2Timeouts | undefined; 
-  private __timeoutsOutput = new NetworkingFloatingipV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingFloatingipV2TimeoutsOutputReference(this as any, "timeouts", true);
   public get timeouts() {
-    return this.__timeoutsOutput;
+    return this._timeouts;
   }
-  public putTimeouts(value: NetworkingFloatingipV2Timeouts | undefined) {
-    this._timeouts = value;
+  public putTimeouts(value: NetworkingFloatingipV2Timeouts) {
+    this._timeouts.internalValue = value;
   }
   public resetTimeouts() {
-    this._timeouts = undefined;
+    this._timeouts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get timeoutsInput() {
-    return this._timeouts
+    return this._timeouts.internalValue;
   }
 
   // =========
@@ -284,7 +308,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
-      timeouts: networkingFloatingipV2TimeoutsToTerraform(this._timeouts),
+      timeouts: networkingFloatingipV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

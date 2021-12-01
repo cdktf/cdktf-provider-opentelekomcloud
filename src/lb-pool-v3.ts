@@ -57,7 +57,7 @@ export interface LbPoolV3SessionPersistence {
   readonly type: string;
 }
 
-function lbPoolV3SessionPersistenceToTerraform(struct?: LbPoolV3SessionPersistenceOutputReference | LbPoolV3SessionPersistence): any {
+export function lbPoolV3SessionPersistenceToTerraform(struct?: LbPoolV3SessionPersistenceOutputReference | LbPoolV3SessionPersistence): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -79,12 +79,43 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): LbPoolV3SessionPersistence | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._cookieName) {
+      hasAnyValues = true;
+      internalValueResult.cookieName = this._cookieName;
+    }
+    if (this._persistenceTimeout) {
+      hasAnyValues = true;
+      internalValueResult.persistenceTimeout = this._persistenceTimeout;
+    }
+    if (this._type) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbPoolV3SessionPersistence | undefined) {
+    if (value === undefined) {
+      this._cookieName = undefined;
+      this._persistenceTimeout = undefined;
+      this._type = undefined;
+    }
+    else {
+      this._cookieName = value.cookieName;
+      this._persistenceTimeout = value.persistenceTimeout;
+      this._type = value.type;
+    }
+  }
+
   // cookie_name - computed: true, optional: true, required: false
-  private _cookieName?: string | undefined; 
+  private _cookieName?: string; 
   public get cookieName() {
     return this.getStringAttribute('cookie_name');
   }
-  public set cookieName(value: string | undefined) {
+  public set cookieName(value: string) {
     this._cookieName = value;
   }
   public resetCookieName() {
@@ -92,15 +123,15 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get cookieNameInput() {
-    return this._cookieName
+    return this._cookieName;
   }
 
   // persistence_timeout - computed: true, optional: true, required: false
-  private _persistenceTimeout?: number | undefined; 
+  private _persistenceTimeout?: number; 
   public get persistenceTimeout() {
     return this.getNumberAttribute('persistence_timeout');
   }
-  public set persistenceTimeout(value: number | undefined) {
+  public set persistenceTimeout(value: number) {
     this._persistenceTimeout = value;
   }
   public resetPersistenceTimeout() {
@@ -108,7 +139,7 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get persistenceTimeoutInput() {
-    return this._persistenceTimeout
+    return this._persistenceTimeout;
   }
 
   // type - computed: false, optional: false, required: true
@@ -121,7 +152,7 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
-    return this._type
+    return this._type;
   }
 }
 
@@ -164,7 +195,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
     this._name = config.name;
     this._projectId = config.projectId;
     this._protocol = config.protocol;
-    this._sessionPersistence = config.sessionPersistence;
+    this._sessionPersistence.internalValue = config.sessionPersistence;
   }
 
   // ==========
@@ -172,11 +203,11 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: true, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -184,7 +215,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -207,15 +238,15 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get lbAlgorithmInput() {
-    return this._lbAlgorithm
+    return this._lbAlgorithm;
   }
 
   // listener_id - computed: true, optional: true, required: false
-  private _listenerId?: string | undefined; 
+  private _listenerId?: string; 
   public get listenerId() {
     return this.getStringAttribute('listener_id');
   }
-  public set listenerId(value: string | undefined) {
+  public set listenerId(value: string) {
     this._listenerId = value;
   }
   public resetListenerId() {
@@ -223,15 +254,15 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get listenerIdInput() {
-    return this._listenerId
+    return this._listenerId;
   }
 
   // loadbalancer_id - computed: true, optional: true, required: false
-  private _loadbalancerId?: string | undefined; 
+  private _loadbalancerId?: string; 
   public get loadbalancerId() {
     return this.getStringAttribute('loadbalancer_id');
   }
-  public set loadbalancerId(value: string | undefined) {
+  public set loadbalancerId(value: string) {
     this._loadbalancerId = value;
   }
   public resetLoadbalancerId() {
@@ -239,15 +270,15 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get loadbalancerIdInput() {
-    return this._loadbalancerId
+    return this._loadbalancerId;
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -255,15 +286,15 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // project_id - computed: true, optional: true, required: false
-  private _projectId?: string | undefined; 
+  private _projectId?: string; 
   public get projectId() {
     return this.getStringAttribute('project_id');
   }
-  public set projectId(value: string | undefined) {
+  public set projectId(value: string) {
     this._projectId = value;
   }
   public resetProjectId() {
@@ -271,7 +302,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get projectIdInput() {
-    return this._projectId
+    return this._projectId;
   }
 
   // protocol - computed: false, optional: false, required: true
@@ -284,24 +315,23 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get protocolInput() {
-    return this._protocol
+    return this._protocol;
   }
 
   // session_persistence - computed: false, optional: true, required: false
-  private _sessionPersistence?: LbPoolV3SessionPersistence | undefined; 
-  private __sessionPersistenceOutput = new LbPoolV3SessionPersistenceOutputReference(this as any, "session_persistence", true);
+  private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this as any, "session_persistence", true);
   public get sessionPersistence() {
-    return this.__sessionPersistenceOutput;
+    return this._sessionPersistence;
   }
-  public putSessionPersistence(value: LbPoolV3SessionPersistence | undefined) {
-    this._sessionPersistence = value;
+  public putSessionPersistence(value: LbPoolV3SessionPersistence) {
+    this._sessionPersistence.internalValue = value;
   }
   public resetSessionPersistence() {
-    this._sessionPersistence = undefined;
+    this._sessionPersistence.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sessionPersistenceInput() {
-    return this._sessionPersistence
+    return this._sessionPersistence.internalValue;
   }
 
   // =========
@@ -317,7 +347,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
       protocol: cdktf.stringToTerraform(this._protocol),
-      session_persistence: lbPoolV3SessionPersistenceToTerraform(this._sessionPersistence),
+      session_persistence: lbPoolV3SessionPersistenceToTerraform(this._sessionPersistence.internalValue),
     };
   }
 }
