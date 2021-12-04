@@ -132,6 +132,8 @@ export function ddsInstanceV3BackupStrategyToTerraform(struct?: DdsInstanceV3Bac
 }
 
 export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -142,7 +144,7 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): DdsInstanceV3BackupStrategy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._keepDays) {
       hasAnyValues = true;
@@ -157,10 +159,12 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: DdsInstanceV3BackupStrategy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._keepDays = undefined;
       this._startTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._keepDays = value.keepDays;
       this._startTime = value.startTime;
     }
@@ -220,6 +224,8 @@ export function ddsInstanceV3DatastoreToTerraform(struct?: DdsInstanceV3Datastor
 }
 
 export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -230,7 +236,7 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DdsInstanceV3Datastore | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._storageEngine) {
       hasAnyValues = true;
@@ -249,11 +255,13 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DdsInstanceV3Datastore | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._storageEngine = undefined;
       this._type = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._storageEngine = value.storageEngine;
       this._type = value.type;
       this._version = value.version;
@@ -362,6 +370,8 @@ export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsO
 }
 
 export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -372,7 +382,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DdsInstanceV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -387,10 +397,12 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DdsInstanceV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

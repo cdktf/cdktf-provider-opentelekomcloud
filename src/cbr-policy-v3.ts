@@ -78,6 +78,8 @@ export function cbrPolicyV3OperationDefinitionToTerraform(struct?: CbrPolicyV3Op
 }
 
 export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -88,7 +90,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): CbrPolicyV3OperationDefinition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dayBackups) {
       hasAnyValues = true;
@@ -123,6 +125,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
 
   public set internalValue(value: CbrPolicyV3OperationDefinition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dayBackups = undefined;
       this._maxBackups = undefined;
       this._monthBackups = undefined;
@@ -132,6 +135,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
       this._yearBackups = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dayBackups = value.dayBackups;
       this._maxBackups = value.maxBackups;
       this._monthBackups = value.monthBackups;

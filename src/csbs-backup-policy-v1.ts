@@ -157,6 +157,8 @@ export function csbsBackupPolicyV1ScheduledOperationToTerraform(struct?: CsbsBac
 }
 
 export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -167,7 +169,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   }
 
   public get internalValue(): CsbsBackupPolicyV1ScheduledOperation | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dayBackups) {
       hasAnyValues = true;
@@ -226,6 +228,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
 
   public set internalValue(value: CsbsBackupPolicyV1ScheduledOperation | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dayBackups = undefined;
       this._description = undefined;
       this._enabled = undefined;
@@ -241,6 +244,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
       this._yearBackups = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dayBackups = value.dayBackups;
       this._description = value.description;
       this._enabled = value.enabled;
@@ -504,6 +508,8 @@ export function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV
 }
 
 export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -514,7 +520,7 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): CsbsBackupPolicyV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -529,10 +535,12 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: CsbsBackupPolicyV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

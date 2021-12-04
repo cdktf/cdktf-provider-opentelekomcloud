@@ -104,6 +104,8 @@ export function asConfigurationV1InstanceConfigPublicIpEipBandwidthToTerraform(s
 }
 
 export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -114,7 +116,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._chargingMode) {
       hasAnyValues = true;
@@ -133,11 +135,13 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
 
   public set internalValue(value: AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._chargingMode = undefined;
       this._shareType = undefined;
       this._size = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._chargingMode = value.chargingMode;
       this._shareType = value.shareType;
       this._size = value.size;
@@ -208,6 +212,8 @@ export function asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct?: A
 }
 
 export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -218,13 +224,13 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEip | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ipType) {
       hasAnyValues = true;
       internalValueResult.ipType = this._ipType;
     }
-    if (this._bandwidth) {
+    if (this._bandwidth?.internalValue) {
       hasAnyValues = true;
       internalValueResult.bandwidth = this._bandwidth?.internalValue;
     }
@@ -233,10 +239,12 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
 
   public set internalValue(value: AsConfigurationV1InstanceConfigPublicIpEip | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ipType = undefined;
       this._bandwidth.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ipType = value.ipType;
       this._bandwidth.internalValue = value.bandwidth;
     }
@@ -288,6 +296,8 @@ export function asConfigurationV1InstanceConfigPublicIpToTerraform(struct?: AsCo
 }
 
 export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -298,9 +308,9 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._eip) {
+    if (this._eip?.internalValue) {
       hasAnyValues = true;
       internalValueResult.eip = this._eip?.internalValue;
     }
@@ -309,9 +319,11 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
 
   public set internalValue(value: AsConfigurationV1InstanceConfigPublicIp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._eip.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._eip.internalValue = value.eip;
     }
   }
@@ -398,6 +410,8 @@ export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurat
 }
 
 export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -408,7 +422,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._flavor) {
       hasAnyValues = true;
@@ -446,7 +460,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.personality = this._personality;
     }
-    if (this._publicIp) {
+    if (this._publicIp?.internalValue) {
       hasAnyValues = true;
       internalValueResult.publicIp = this._publicIp?.internalValue;
     }
@@ -455,6 +469,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
 
   public set internalValue(value: AsConfigurationV1InstanceConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._flavor = undefined;
       this._image = undefined;
       this._instanceId = undefined;
@@ -467,6 +482,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
       this._publicIp.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._flavor = value.flavor;
       this._image = value.image;
       this._instanceId = value.instanceId;

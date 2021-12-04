@@ -249,6 +249,8 @@ export function s3BucketVersioningToTerraform(struct?: S3BucketVersioningOutputR
 }
 
 export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -259,7 +261,7 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): S3BucketVersioning | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enabled) {
       hasAnyValues = true;
@@ -274,10 +276,12 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: S3BucketVersioning | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._enabled = undefined;
       this._mfaDelete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._mfaDelete = value.mfaDelete;
     }
@@ -348,6 +352,8 @@ export function s3BucketWebsiteToTerraform(struct?: S3BucketWebsiteOutputReferen
 }
 
 export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -358,7 +364,7 @@ export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): S3BucketWebsite | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._errorDocument) {
       hasAnyValues = true;
@@ -381,12 +387,14 @@ export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: S3BucketWebsite | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._errorDocument = undefined;
       this._indexDocument = undefined;
       this._redirectAllRequestsTo = undefined;
       this._routingRules = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._errorDocument = value.errorDocument;
       this._indexDocument = value.indexDocument;
       this._redirectAllRequestsTo = value.redirectAllRequestsTo;

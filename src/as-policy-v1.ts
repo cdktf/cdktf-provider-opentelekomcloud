@@ -67,6 +67,8 @@ export function asPolicyV1ScalingPolicyActionToTerraform(struct?: AsPolicyV1Scal
 }
 
 export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -77,7 +79,7 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): AsPolicyV1ScalingPolicyAction | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._instanceNumber) {
       hasAnyValues = true;
@@ -92,10 +94,12 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: AsPolicyV1ScalingPolicyAction | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._instanceNumber = undefined;
       this._operation = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceNumber = value.instanceNumber;
       this._operation = value.operation;
     }
@@ -171,6 +175,8 @@ export function asPolicyV1ScheduledPolicyToTerraform(struct?: AsPolicyV1Schedule
 }
 
 export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -181,7 +187,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): AsPolicyV1ScheduledPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._endTime) {
       hasAnyValues = true;
@@ -208,6 +214,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: AsPolicyV1ScheduledPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._endTime = undefined;
       this._launchTime = undefined;
       this._recurrenceType = undefined;
@@ -215,6 +222,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
       this._startTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._endTime = value.endTime;
       this._launchTime = value.launchTime;
       this._recurrenceType = value.recurrenceType;

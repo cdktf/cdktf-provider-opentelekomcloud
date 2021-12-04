@@ -57,6 +57,8 @@ export function dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(struct?: Dat
 }
 
 export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -67,7 +69,7 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   }
 
   public get internalValue(): DataOpentelekomcloudCssFlavorV1DiskRange | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._minFrom) {
       hasAnyValues = true;
@@ -82,10 +84,12 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
 
   public set internalValue(value: DataOpentelekomcloudCssFlavorV1DiskRange | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._minFrom = undefined;
       this._minTo = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._minFrom = value.minFrom;
       this._minTo = value.minTo;
     }

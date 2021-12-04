@@ -342,6 +342,8 @@ export function obsBucketServerSideEncryptionToTerraform(struct?: ObsBucketServe
 }
 
 export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -352,7 +354,7 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   }
 
   public get internalValue(): ObsBucketServerSideEncryption | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._algorithm) {
       hasAnyValues = true;
@@ -367,10 +369,12 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
 
   public set internalValue(value: ObsBucketServerSideEncryption | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._algorithm = undefined;
       this._kmsKeyId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._algorithm = value.algorithm;
       this._kmsKeyId = value.kmsKeyId;
     }
@@ -435,6 +439,8 @@ export function obsBucketWebsiteToTerraform(struct?: ObsBucketWebsiteOutputRefer
 }
 
 export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -445,7 +451,7 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): ObsBucketWebsite | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._errorDocument) {
       hasAnyValues = true;
@@ -468,12 +474,14 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: ObsBucketWebsite | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._errorDocument = undefined;
       this._indexDocument = undefined;
       this._redirectAllRequestsTo = undefined;
       this._routingRules = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._errorDocument = value.errorDocument;
       this._indexDocument = value.indexDocument;
       this._redirectAllRequestsTo = value.redirectAllRequestsTo;

@@ -170,6 +170,8 @@ export function cceClusterV3AuthenticatingProxyToTerraform(struct?: CceClusterV3
 }
 
 export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -180,7 +182,7 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
   }
 
   public get internalValue(): CceClusterV3AuthenticatingProxy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ca) {
       hasAnyValues = true;
@@ -199,11 +201,13 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
 
   public set internalValue(value: CceClusterV3AuthenticatingProxy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._ca = undefined;
       this._cert = undefined;
       this._privateKey = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._ca = value.ca;
       this._cert = value.cert;
       this._privateKey = value.privateKey;
@@ -272,6 +276,8 @@ export function cceClusterV3TimeoutsToTerraform(struct?: CceClusterV3TimeoutsOut
 }
 
 export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -282,7 +288,7 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceClusterV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -297,10 +303,12 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceClusterV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

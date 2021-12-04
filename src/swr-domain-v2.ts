@@ -56,6 +56,8 @@ export function swrDomainV2TimeoutsToTerraform(struct?: SwrDomainV2TimeoutsOutpu
 }
 
 export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): SwrDomainV2Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default) {
       hasAnyValues = true;
@@ -77,9 +79,11 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: SwrDomainV2Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._default = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._default = value.default;
     }
   }

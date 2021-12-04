@@ -115,6 +115,8 @@ export function lbListenerV3InsertHeadersToTerraform(struct?: LbListenerV3Insert
 }
 
 export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -125,7 +127,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): LbListenerV3InsertHeaders | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._forwardElbIp) {
       hasAnyValues = true;
@@ -148,12 +150,14 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: LbListenerV3InsertHeaders | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._forwardElbIp = undefined;
       this._forwardedForPort = undefined;
       this._forwardedHost = undefined;
       this._forwardedPort = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._forwardElbIp = value.forwardElbIp;
       this._forwardedForPort = value.forwardedForPort;
       this._forwardedHost = value.forwardedHost;

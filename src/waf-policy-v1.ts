@@ -60,6 +60,8 @@ export function wafPolicyV1ActionToTerraform(struct?: WafPolicyV1ActionOutputRef
 }
 
 export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -70,7 +72,7 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): WafPolicyV1Action | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._category) {
       hasAnyValues = true;
@@ -81,9 +83,11 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: WafPolicyV1Action | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._category = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._category = value.category;
     }
   }
@@ -184,6 +188,8 @@ export function wafPolicyV1OptionsToTerraform(struct?: WafPolicyV1OptionsOutputR
 }
 
 export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -194,7 +200,7 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): WafPolicyV1Options | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._antitamper) {
       hasAnyValues = true;
@@ -257,6 +263,7 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: WafPolicyV1Options | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._antitamper = undefined;
       this._cc = undefined;
       this._common = undefined;
@@ -273,6 +280,7 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
       this._whiteblackip = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._antitamper = value.antitamper;
       this._cc = value.cc;
       this._common = value.common;
@@ -537,6 +545,8 @@ export function wafPolicyV1TimeoutsToTerraform(struct?: WafPolicyV1TimeoutsOutpu
 }
 
 export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -547,7 +557,7 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): WafPolicyV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -562,10 +572,12 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: WafPolicyV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

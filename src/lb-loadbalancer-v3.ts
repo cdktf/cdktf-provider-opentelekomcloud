@@ -100,6 +100,8 @@ export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3Pub
 }
 
 export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -110,7 +112,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): LbLoadbalancerV3PublicIp | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._bandwidthChargeMode) {
       hasAnyValues = true;
@@ -137,6 +139,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: LbLoadbalancerV3PublicIp | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._bandwidthChargeMode = undefined;
       this._bandwidthName = undefined;
       this._bandwidthShareType = undefined;
@@ -144,6 +147,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
       this._ipType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._bandwidthChargeMode = value.bandwidthChargeMode;
       this._bandwidthName = value.bandwidthName;
       this._bandwidthShareType = value.bandwidthShareType;

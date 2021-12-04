@@ -86,6 +86,8 @@ export function rdsParametergroupV3DatastoreToTerraform(struct?: RdsParametergro
 }
 
 export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -96,7 +98,7 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): RdsParametergroupV3Datastore | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -111,10 +113,12 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: RdsParametergroupV3Datastore | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._version = value.version;
     }

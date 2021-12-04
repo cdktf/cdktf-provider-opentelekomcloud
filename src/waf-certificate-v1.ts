@@ -53,6 +53,8 @@ export function wafCertificateV1TimeoutsToTerraform(struct?: WafCertificateV1Tim
 }
 
 export class WafCertificateV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -63,7 +65,7 @@ export class WafCertificateV1TimeoutsOutputReference extends cdktf.ComplexObject
   }
 
   public get internalValue(): WafCertificateV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -78,10 +80,12 @@ export class WafCertificateV1TimeoutsOutputReference extends cdktf.ComplexObject
 
   public set internalValue(value: WafCertificateV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

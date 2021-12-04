@@ -176,6 +176,8 @@ export function cbrVaultV3BillingToTerraform(struct?: CbrVaultV3BillingOutputRef
 }
 
 export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -186,7 +188,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CbrVaultV3Billing | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._chargingMode) {
       hasAnyValues = true;
@@ -241,6 +243,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CbrVaultV3Billing | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._chargingMode = undefined;
       this._cloudType = undefined;
       this._consistentLevel = undefined;
@@ -255,6 +258,7 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
       this._size = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._chargingMode = value.chargingMode;
       this._cloudType = value.cloudType;
       this._consistentLevel = value.consistentLevel;

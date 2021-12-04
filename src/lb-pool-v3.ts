@@ -70,6 +70,8 @@ export function lbPoolV3SessionPersistenceToTerraform(struct?: LbPoolV3SessionPe
 }
 
 export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -80,7 +82,7 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): LbPoolV3SessionPersistence | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cookieName) {
       hasAnyValues = true;
@@ -99,11 +101,13 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: LbPoolV3SessionPersistence | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cookieName = undefined;
       this._persistenceTimeout = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cookieName = value.cookieName;
       this._persistenceTimeout = value.persistenceTimeout;
       this._type = value.type;
