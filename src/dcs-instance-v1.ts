@@ -140,6 +140,8 @@ export function dcsInstanceV1BackupPolicyToTerraform(struct?: DcsInstanceV1Backu
 }
 
 export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -150,7 +152,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   }
 
   public get internalValue(): DcsInstanceV1BackupPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._backupAt) {
       hasAnyValues = true;
@@ -177,6 +179,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
 
   public set internalValue(value: DcsInstanceV1BackupPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._backupAt = undefined;
       this._backupType = undefined;
       this._beginAt = undefined;
@@ -184,6 +187,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
       this._saveDays = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._backupAt = value.backupAt;
       this._backupType = value.backupType;
       this._beginAt = value.beginAt;
@@ -319,6 +323,8 @@ export function dcsInstanceV1TimeoutsToTerraform(struct?: DcsInstanceV1TimeoutsO
 }
 
 export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -329,7 +335,7 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): DcsInstanceV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -348,11 +354,13 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: DcsInstanceV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

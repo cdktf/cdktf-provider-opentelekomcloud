@@ -62,6 +62,8 @@ export function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssS
 }
 
 export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -72,7 +74,7 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   }
 
   public get internalValue(): CssSnapshotConfigurationV1Configuration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._agency) {
       hasAnyValues = true;
@@ -91,11 +93,13 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
 
   public set internalValue(value: CssSnapshotConfigurationV1Configuration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._agency = undefined;
       this._bucket = undefined;
       this._kmsId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._agency = value.agency;
       this._bucket = value.bucket;
       this._kmsId = value.kmsId;
@@ -182,6 +186,8 @@ export function cssSnapshotConfigurationV1CreationPolicyToTerraform(struct?: Css
 }
 
 export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -192,7 +198,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   }
 
   public get internalValue(): CssSnapshotConfigurationV1CreationPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._deleteAuto) {
       hasAnyValues = true;
@@ -219,6 +225,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
 
   public set internalValue(value: CssSnapshotConfigurationV1CreationPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._deleteAuto = undefined;
       this._enable = undefined;
       this._keepday = undefined;
@@ -226,6 +233,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
       this._prefix = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._deleteAuto = value.deleteAuto;
       this._enable = value.enable;
       this._keepday = value.keepday;
@@ -325,6 +333,8 @@ export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapsh
 }
 
 export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -335,7 +345,7 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   }
 
   public get internalValue(): CssSnapshotConfigurationV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -350,10 +360,12 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
 
   public set internalValue(value: CssSnapshotConfigurationV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }

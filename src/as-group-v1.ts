@@ -176,6 +176,8 @@ export function asGroupV1SecurityGroupsToTerraform(struct?: AsGroupV1SecurityGro
 }
 
 export class AsGroupV1SecurityGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -186,7 +188,7 @@ export class AsGroupV1SecurityGroupsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): AsGroupV1SecurityGroups | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._id) {
       hasAnyValues = true;
@@ -197,9 +199,11 @@ export class AsGroupV1SecurityGroupsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: AsGroupV1SecurityGroups | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._id = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._id = value.id;
     }
   }
@@ -240,6 +244,8 @@ export function asGroupV1TimeoutsToTerraform(struct?: AsGroupV1TimeoutsOutputRef
 }
 
 export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -250,7 +256,7 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): AsGroupV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -265,10 +271,12 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: AsGroupV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

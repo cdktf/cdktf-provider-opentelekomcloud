@@ -54,6 +54,8 @@ export function identityProtocolV3MetadataToTerraform(struct?: IdentityProtocolV
 }
 
 export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -64,7 +66,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   }
 
   public get internalValue(): IdentityProtocolV3Metadata | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._domainId) {
       hasAnyValues = true;
@@ -83,11 +85,13 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
 
   public set internalValue(value: IdentityProtocolV3Metadata | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._domainId = undefined;
       this._metadata = undefined;
       this._xaccountType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._domainId = value.domainId;
       this._metadata = value.metadata;
       this._xaccountType = value.xaccountType;

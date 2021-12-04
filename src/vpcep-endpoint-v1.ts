@@ -68,6 +68,8 @@ export function vpcepEndpointV1TimeoutsToTerraform(struct?: VpcepEndpointV1Timeo
 }
 
 export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -78,7 +80,7 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): VpcepEndpointV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default) {
       hasAnyValues = true;
@@ -89,9 +91,11 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: VpcepEndpointV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._default = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._default = value.default;
     }
   }

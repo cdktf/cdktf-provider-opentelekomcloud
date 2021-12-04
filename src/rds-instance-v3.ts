@@ -130,6 +130,8 @@ export function rdsInstanceV3BackupStrategyToTerraform(struct?: RdsInstanceV3Bac
 }
 
 export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -140,7 +142,7 @@ export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): RdsInstanceV3BackupStrategy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._keepDays) {
       hasAnyValues = true;
@@ -155,10 +157,12 @@ export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: RdsInstanceV3BackupStrategy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._keepDays = undefined;
       this._startTime = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._keepDays = value.keepDays;
       this._startTime = value.startTime;
     }
@@ -226,6 +230,8 @@ export function rdsInstanceV3DbToTerraform(struct?: RdsInstanceV3DbOutputReferen
 }
 
 export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -236,7 +242,7 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RdsInstanceV3Db | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._password) {
       hasAnyValues = true;
@@ -259,12 +265,14 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RdsInstanceV3Db | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._password = undefined;
       this._port = undefined;
       this._type = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._password = value.password;
       this._port = value.port;
       this._type = value.type;
@@ -350,6 +358,8 @@ export function rdsInstanceV3TimeoutsToTerraform(struct?: RdsInstanceV3TimeoutsO
 }
 
 export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -360,7 +370,7 @@ export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RdsInstanceV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -375,10 +385,12 @@ export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RdsInstanceV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }
@@ -444,6 +456,8 @@ export function rdsInstanceV3VolumeToTerraform(struct?: RdsInstanceV3VolumeOutpu
 }
 
 export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -454,7 +468,7 @@ export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RdsInstanceV3Volume | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._diskEncryptionId) {
       hasAnyValues = true;
@@ -473,11 +487,13 @@ export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RdsInstanceV3Volume | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._diskEncryptionId = undefined;
       this._size = undefined;
       this._type = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._diskEncryptionId = value.diskEncryptionId;
       this._size = value.size;
       this._type = value.type;

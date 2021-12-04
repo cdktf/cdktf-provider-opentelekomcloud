@@ -129,6 +129,8 @@ export function cesAlarmruleConditionToTerraform(struct?: CesAlarmruleConditionO
 }
 
 export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -139,7 +141,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CesAlarmruleCondition | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._comparisonOperator) {
       hasAnyValues = true;
@@ -170,6 +172,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CesAlarmruleCondition | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._comparisonOperator = undefined;
       this._count = undefined;
       this._filter = undefined;
@@ -178,6 +181,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
       this._value = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._comparisonOperator = value.comparisonOperator;
       this._count = value.count;
       this._filter = value.filter;
@@ -342,6 +346,8 @@ export function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputR
 }
 
 export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -352,7 +358,7 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CesAlarmruleMetric | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._metricName) {
       hasAnyValues = true;
@@ -371,11 +377,13 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CesAlarmruleMetric | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
       this._dimensions = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
       this._dimensions = value.dimensions;
@@ -472,6 +480,8 @@ export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOut
 }
 
 export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -482,7 +492,7 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CesAlarmruleTimeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -501,11 +511,13 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CesAlarmruleTimeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;

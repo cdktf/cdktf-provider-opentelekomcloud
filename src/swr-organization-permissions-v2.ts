@@ -48,6 +48,8 @@ export function swrOrganizationPermissionsV2TimeoutsToTerraform(struct?: SwrOrga
 }
 
 export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -58,7 +60,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
   }
 
   public get internalValue(): SwrOrganizationPermissionsV2Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default) {
       hasAnyValues = true;
@@ -69,9 +71,11 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
 
   public set internalValue(value: SwrOrganizationPermissionsV2Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._default = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._default = value.default;
     }
   }

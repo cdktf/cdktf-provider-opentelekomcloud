@@ -100,6 +100,8 @@ export function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolic
 }
 
 export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -110,7 +112,7 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
   }
 
   public get internalValue(): VpnaasIpsecPolicyV2Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -121,9 +123,11 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
 
   public set internalValue(value: VpnaasIpsecPolicyV2Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
     }
   }

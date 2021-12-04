@@ -50,6 +50,8 @@ export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3TimeoutsOutputR
 }
 
 export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -60,7 +62,7 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceAddonV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete) {
       hasAnyValues = true;
@@ -71,9 +73,11 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceAddonV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._delete = value.delete;
     }
   }
@@ -117,6 +121,8 @@ export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputRefer
 }
 
 export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -127,7 +133,7 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceAddonV3Values | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._basic) {
       hasAnyValues = true;
@@ -142,10 +148,12 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceAddonV3Values | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._basic = undefined;
       this._custom = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._basic = value.basic;
       this._custom = value.custom;
     }

@@ -212,6 +212,8 @@ export function cceNodeV3RootVolumeToTerraform(struct?: CceNodeV3RootVolumeOutpu
 }
 
 export class CceNodeV3RootVolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -222,7 +224,7 @@ export class CceNodeV3RootVolumeOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceNodeV3RootVolume | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._extendParam) {
       hasAnyValues = true;
@@ -241,11 +243,13 @@ export class CceNodeV3RootVolumeOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceNodeV3RootVolume | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._extendParam = undefined;
       this._size = undefined;
       this._volumetype = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._extendParam = value.extendParam;
       this._size = value.size;
       this._volumetype = value.volumetype;
@@ -344,6 +348,8 @@ export function cceNodeV3TimeoutsToTerraform(struct?: CceNodeV3TimeoutsOutputRef
 }
 
 export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -354,7 +360,7 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceNodeV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -369,10 +375,12 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceNodeV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._delete = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._delete = value.delete;
     }

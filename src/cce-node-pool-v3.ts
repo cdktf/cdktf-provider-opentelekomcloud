@@ -180,6 +180,8 @@ export function cceNodePoolV3RootVolumeToTerraform(struct?: CceNodePoolV3RootVol
 }
 
 export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -190,7 +192,7 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
   }
 
   public get internalValue(): CceNodePoolV3RootVolume | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._extendParam) {
       hasAnyValues = true;
@@ -209,11 +211,13 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
 
   public set internalValue(value: CceNodePoolV3RootVolume | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._extendParam = undefined;
       this._size = undefined;
       this._volumetype = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._extendParam = value.extendParam;
       this._size = value.size;
       this._volumetype = value.volumetype;
@@ -322,6 +326,8 @@ export function cceNodePoolV3TimeoutsToTerraform(struct?: CceNodePoolV3TimeoutsO
 }
 
 export class CceNodePoolV3TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -332,7 +338,7 @@ export class CceNodePoolV3TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CceNodePoolV3Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -355,12 +361,14 @@ export class CceNodePoolV3TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CceNodePoolV3Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;

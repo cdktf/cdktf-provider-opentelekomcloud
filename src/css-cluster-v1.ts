@@ -86,6 +86,8 @@ export function cssClusterV1DatastoreToTerraform(struct?: CssClusterV1DatastoreO
 }
 
 export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -96,7 +98,7 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CssClusterV1Datastore | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._type) {
       hasAnyValues = true;
@@ -111,10 +113,12 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CssClusterV1Datastore | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._type = undefined;
       this._version = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._type = value.type;
       this._version = value.version;
     }
@@ -180,6 +184,8 @@ export function cssClusterV1NodeConfigNetworkInfoToTerraform(struct?: CssCluster
 }
 
 export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -190,7 +196,7 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   }
 
   public get internalValue(): CssClusterV1NodeConfigNetworkInfo | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._networkId) {
       hasAnyValues = true;
@@ -209,11 +215,13 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
 
   public set internalValue(value: CssClusterV1NodeConfigNetworkInfo | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._networkId = undefined;
       this._securityGroupId = undefined;
       this._vpcId = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._networkId = value.networkId;
       this._securityGroupId = value.securityGroupId;
       this._vpcId = value.vpcId;
@@ -287,6 +295,8 @@ export function cssClusterV1NodeConfigVolumeToTerraform(struct?: CssClusterV1Nod
 }
 
 export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -297,7 +307,7 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   }
 
   public get internalValue(): CssClusterV1NodeConfigVolume | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._encryptionKey) {
       hasAnyValues = true;
@@ -316,11 +326,13 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
 
   public set internalValue(value: CssClusterV1NodeConfigVolume | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._encryptionKey = undefined;
       this._size = undefined;
       this._volumeType = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._encryptionKey = value.encryptionKey;
       this._size = value.size;
       this._volumeType = value.volumeType;
@@ -406,6 +418,8 @@ export function cssClusterV1NodeConfigToTerraform(struct?: CssClusterV1NodeConfi
 }
 
 export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -416,7 +430,7 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CssClusterV1NodeConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._availabilityZone) {
       hasAnyValues = true;
@@ -426,11 +440,11 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.flavor = this._flavor;
     }
-    if (this._networkInfo) {
+    if (this._networkInfo?.internalValue) {
       hasAnyValues = true;
       internalValueResult.networkInfo = this._networkInfo?.internalValue;
     }
-    if (this._volume) {
+    if (this._volume?.internalValue) {
       hasAnyValues = true;
       internalValueResult.volume = this._volume?.internalValue;
     }
@@ -439,12 +453,14 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CssClusterV1NodeConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._availabilityZone = undefined;
       this._flavor = undefined;
       this._networkInfo.internalValue = undefined;
       this._volume.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._availabilityZone = value.availabilityZone;
       this._flavor = value.flavor;
       this._networkInfo.internalValue = value.networkInfo;
@@ -530,6 +546,8 @@ export function cssClusterV1TimeoutsToTerraform(struct?: CssClusterV1TimeoutsOut
 }
 
 export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -540,7 +558,7 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): CssClusterV1Timeouts | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create) {
       hasAnyValues = true;
@@ -555,10 +573,12 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: CssClusterV1Timeouts | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._create = undefined;
       this._update = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._create = value.create;
       this._update = value.update;
     }
