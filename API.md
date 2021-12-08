@@ -35403,6 +35403,16 @@ public readonly createTime: string;
 
 ---
 
+##### `expireTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2.property.expireTime"></a>
+
+```typescript
+public readonly expireTime: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2.property.id"></a>
 
 ```typescript

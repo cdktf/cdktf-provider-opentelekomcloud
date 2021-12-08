@@ -259,6 +259,11 @@ export class LbCertificateV2 extends cdktf.TerraformResource {
     return this._domain;
   }
 
+  // expire_time - computed: true, optional: false, required: false
+  public get expireTime() {
+    return this.getStringAttribute('expire_time');
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
