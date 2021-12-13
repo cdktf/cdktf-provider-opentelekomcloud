@@ -44,6 +44,10 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly securityGroups?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}
+  */
+  readonly systemDiskKmsId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_size EcsInstanceV1#system_disk_size}
   */
   readonly systemDiskSize?: number;
@@ -298,6 +302,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
     this._name = config.name;
     this._password = config.password;
     this._securityGroups = config.securityGroups;
+    this._systemDiskKmsId = config.systemDiskKmsId;
     this._systemDiskSize = config.systemDiskSize;
     this._systemDiskType = config.systemDiskType;
     this._tags = config.tags;
@@ -449,6 +454,22 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
     return this._securityGroups;
   }
 
+  // system_disk_kms_id - computed: false, optional: true, required: false
+  private _systemDiskKmsId?: string; 
+  public get systemDiskKmsId() {
+    return this.getStringAttribute('system_disk_kms_id');
+  }
+  public set systemDiskKmsId(value: string) {
+    this._systemDiskKmsId = value;
+  }
+  public resetSystemDiskKmsId() {
+    this._systemDiskKmsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get systemDiskKmsIdInput() {
+    return this._systemDiskKmsId;
+  }
+
   // system_disk_size - computed: true, optional: true, required: false
   private _systemDiskSize?: number; 
   public get systemDiskSize() {
@@ -589,6 +610,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      system_disk_kms_id: cdktf.stringToTerraform(this._systemDiskKmsId),
       system_disk_size: cdktf.numberToTerraform(this._systemDiskSize),
       system_disk_type: cdktf.stringToTerraform(this._systemDiskType),
       tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),

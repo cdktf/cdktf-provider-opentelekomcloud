@@ -29368,6 +29368,12 @@ public resetPassword()
 public resetSecurityGroups()
 ```
 
+##### `resetSystemDiskKmsId` <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.resetSystemDiskKmsId"></a>
+
+```typescript
+public resetSystemDiskKmsId()
+```
+
 ##### `resetSystemDiskSize` <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.resetSystemDiskSize"></a>
 
 ```typescript
@@ -29528,6 +29534,16 @@ public readonly securityGroupsInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `systemDiskKmsIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.systemDiskKmsIdInput"></a>
+
+```typescript
+public readonly systemDiskKmsIdInput: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -29698,6 +29714,16 @@ public readonly securityGroups: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `systemDiskKmsId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.systemDiskKmsId"></a>
+
+```typescript
+public readonly systemDiskKmsId: string;
+```
+
+- *Type:* `string`
 
 ---
 
@@ -80978,6 +81004,18 @@ public readonly securityGroups: string[];
 - *Type:* `string`[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#security_groups EcsInstanceV1#security_groups}.
+
+---
+
+##### `systemDiskKmsId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1Config.property.systemDiskKmsId"></a>
+
+```typescript
+public readonly systemDiskKmsId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}.
 
 ---
 
