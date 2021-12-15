@@ -71,11 +71,11 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   public get internalValue(): DataOpentelekomcloudCssFlavorV1DiskRange | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._minFrom) {
+    if (this._minFrom !== undefined) {
       hasAnyValues = true;
       internalValueResult.minFrom = this._minFrom;
     }
-    if (this._minTo) {
+    if (this._minTo !== undefined) {
       hasAnyValues = true;
       internalValueResult.minTo = this._minTo;
     }

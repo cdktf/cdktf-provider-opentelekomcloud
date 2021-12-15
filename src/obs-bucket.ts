@@ -356,11 +356,11 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   public get internalValue(): ObsBucketServerSideEncryption | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._algorithm) {
+    if (this._algorithm !== undefined) {
       hasAnyValues = true;
       internalValueResult.algorithm = this._algorithm;
     }
-    if (this._kmsKeyId) {
+    if (this._kmsKeyId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsKeyId = this._kmsKeyId;
     }
@@ -453,19 +453,19 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ObsBucketWebsite | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._errorDocument) {
+    if (this._errorDocument !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorDocument = this._errorDocument;
     }
-    if (this._indexDocument) {
+    if (this._indexDocument !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexDocument = this._indexDocument;
     }
-    if (this._redirectAllRequestsTo) {
+    if (this._redirectAllRequestsTo !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectAllRequestsTo = this._redirectAllRequestsTo;
     }
-    if (this._routingRules) {
+    if (this._routingRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.routingRules = this._routingRules;
     }

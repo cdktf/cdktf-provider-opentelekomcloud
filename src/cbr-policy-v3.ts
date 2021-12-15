@@ -92,31 +92,31 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
   public get internalValue(): CbrPolicyV3OperationDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dayBackups) {
+    if (this._dayBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.dayBackups = this._dayBackups;
     }
-    if (this._maxBackups) {
+    if (this._maxBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxBackups = this._maxBackups;
     }
-    if (this._monthBackups) {
+    if (this._monthBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.monthBackups = this._monthBackups;
     }
-    if (this._retentionDurationDays) {
+    if (this._retentionDurationDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.retentionDurationDays = this._retentionDurationDays;
     }
-    if (this._timezone) {
+    if (this._timezone !== undefined) {
       hasAnyValues = true;
       internalValueResult.timezone = this._timezone;
     }
-    if (this._weekBackups) {
+    if (this._weekBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.weekBackups = this._weekBackups;
     }
-    if (this._yearBackups) {
+    if (this._yearBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.yearBackups = this._yearBackups;
     }

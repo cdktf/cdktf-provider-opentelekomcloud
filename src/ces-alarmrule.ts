@@ -143,27 +143,27 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CesAlarmruleCondition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._comparisonOperator) {
+    if (this._comparisonOperator !== undefined) {
       hasAnyValues = true;
       internalValueResult.comparisonOperator = this._comparisonOperator;
     }
-    if (this._count) {
+    if (this._count !== undefined) {
       hasAnyValues = true;
       internalValueResult.count = this._count;
     }
-    if (this._filter) {
+    if (this._filter !== undefined) {
       hasAnyValues = true;
       internalValueResult.filter = this._filter;
     }
-    if (this._period) {
+    if (this._period !== undefined) {
       hasAnyValues = true;
       internalValueResult.period = this._period;
     }
-    if (this._unit) {
+    if (this._unit !== undefined) {
       hasAnyValues = true;
       internalValueResult.unit = this._unit;
     }
-    if (this._value) {
+    if (this._value !== undefined) {
       hasAnyValues = true;
       internalValueResult.value = this._value;
     }
@@ -360,15 +360,15 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CesAlarmruleMetric | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._metricName) {
+    if (this._metricName !== undefined) {
       hasAnyValues = true;
       internalValueResult.metricName = this._metricName;
     }
-    if (this._namespace) {
+    if (this._namespace !== undefined) {
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._dimensions) {
+    if (this._dimensions !== undefined) {
       hasAnyValues = true;
       internalValueResult.dimensions = this._dimensions;
     }
@@ -494,15 +494,15 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CesAlarmruleTimeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }

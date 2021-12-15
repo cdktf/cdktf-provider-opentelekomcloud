@@ -146,11 +146,11 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   public get internalValue(): DdsInstanceV3BackupStrategy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keepDays) {
+    if (this._keepDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.keepDays = this._keepDays;
     }
-    if (this._startTime) {
+    if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
     }
@@ -238,15 +238,15 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DdsInstanceV3Datastore | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._storageEngine) {
+    if (this._storageEngine !== undefined) {
       hasAnyValues = true;
       internalValueResult.storageEngine = this._storageEngine;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
@@ -384,11 +384,11 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DdsInstanceV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

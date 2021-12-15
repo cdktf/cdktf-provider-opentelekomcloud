@@ -190,7 +190,7 @@ export class AsGroupV1SecurityGroupsOutputReference extends cdktf.ComplexObject 
   public get internalValue(): AsGroupV1SecurityGroups | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._id) {
+    if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
@@ -258,11 +258,11 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): AsGroupV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

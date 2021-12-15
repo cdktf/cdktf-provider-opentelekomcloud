@@ -85,19 +85,19 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   public get internalValue(): VpcEipV1Bandwidth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._chargeMode) {
+    if (this._chargeMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.chargeMode = this._chargeMode;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._shareType) {
+    if (this._shareType !== undefined) {
       hasAnyValues = true;
       internalValueResult.shareType = this._shareType;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
@@ -218,15 +218,15 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   public get internalValue(): VpcEipV1Publicip | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ipAddress) {
+    if (this._ipAddress !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipAddress = this._ipAddress;
     }
-    if (this._portId) {
+    if (this._portId !== undefined) {
       hasAnyValues = true;
       internalValueResult.portId = this._portId;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
@@ -330,11 +330,11 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): VpcEipV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

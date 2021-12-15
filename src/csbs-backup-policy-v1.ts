@@ -171,55 +171,55 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   public get internalValue(): CsbsBackupPolicyV1ScheduledOperation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dayBackups) {
+    if (this._dayBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.dayBackups = this._dayBackups;
     }
-    if (this._description) {
+    if (this._description !== undefined) {
       hasAnyValues = true;
       internalValueResult.description = this._description;
     }
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._maxBackups) {
+    if (this._maxBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxBackups = this._maxBackups;
     }
-    if (this._monthBackups) {
+    if (this._monthBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.monthBackups = this._monthBackups;
     }
-    if (this._name) {
+    if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
-    if (this._operationType) {
+    if (this._operationType !== undefined) {
       hasAnyValues = true;
       internalValueResult.operationType = this._operationType;
     }
-    if (this._permanent) {
+    if (this._permanent !== undefined) {
       hasAnyValues = true;
       internalValueResult.permanent = this._permanent;
     }
-    if (this._retentionDurationDays) {
+    if (this._retentionDurationDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.retentionDurationDays = this._retentionDurationDays;
     }
-    if (this._timezone) {
+    if (this._timezone !== undefined) {
       hasAnyValues = true;
       internalValueResult.timezone = this._timezone;
     }
-    if (this._triggerPattern) {
+    if (this._triggerPattern !== undefined) {
       hasAnyValues = true;
       internalValueResult.triggerPattern = this._triggerPattern;
     }
-    if (this._weekBackups) {
+    if (this._weekBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.weekBackups = this._weekBackups;
     }
-    if (this._yearBackups) {
+    if (this._yearBackups !== undefined) {
       hasAnyValues = true;
       internalValueResult.yearBackups = this._yearBackups;
     }
@@ -522,11 +522,11 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
   public get internalValue(): CsbsBackupPolicyV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

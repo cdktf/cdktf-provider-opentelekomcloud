@@ -74,7 +74,7 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
   public get internalValue(): WafPolicyV1Action | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._category) {
+    if (this._category !== undefined) {
       hasAnyValues = true;
       internalValueResult.category = this._category;
     }
@@ -202,59 +202,59 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): WafPolicyV1Options | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._antitamper) {
+    if (this._antitamper !== undefined) {
       hasAnyValues = true;
       internalValueResult.antitamper = this._antitamper;
     }
-    if (this._cc) {
+    if (this._cc !== undefined) {
       hasAnyValues = true;
       internalValueResult.cc = this._cc;
     }
-    if (this._common) {
+    if (this._common !== undefined) {
       hasAnyValues = true;
       internalValueResult.common = this._common;
     }
-    if (this._crawler) {
+    if (this._crawler !== undefined) {
       hasAnyValues = true;
       internalValueResult.crawler = this._crawler;
     }
-    if (this._crawlerEngine) {
+    if (this._crawlerEngine !== undefined) {
       hasAnyValues = true;
       internalValueResult.crawlerEngine = this._crawlerEngine;
     }
-    if (this._crawlerOther) {
+    if (this._crawlerOther !== undefined) {
       hasAnyValues = true;
       internalValueResult.crawlerOther = this._crawlerOther;
     }
-    if (this._crawlerScanner) {
+    if (this._crawlerScanner !== undefined) {
       hasAnyValues = true;
       internalValueResult.crawlerScanner = this._crawlerScanner;
     }
-    if (this._crawlerScript) {
+    if (this._crawlerScript !== undefined) {
       hasAnyValues = true;
       internalValueResult.crawlerScript = this._crawlerScript;
     }
-    if (this._custom) {
+    if (this._custom !== undefined) {
       hasAnyValues = true;
       internalValueResult.custom = this._custom;
     }
-    if (this._ignore) {
+    if (this._ignore !== undefined) {
       hasAnyValues = true;
       internalValueResult.ignore = this._ignore;
     }
-    if (this._privacy) {
+    if (this._privacy !== undefined) {
       hasAnyValues = true;
       internalValueResult.privacy = this._privacy;
     }
-    if (this._webattack) {
+    if (this._webattack !== undefined) {
       hasAnyValues = true;
       internalValueResult.webattack = this._webattack;
     }
-    if (this._webshell) {
+    if (this._webshell !== undefined) {
       hasAnyValues = true;
       internalValueResult.webshell = this._webshell;
     }
-    if (this._whiteblackip) {
+    if (this._whiteblackip !== undefined) {
       hasAnyValues = true;
       internalValueResult.whiteblackip = this._whiteblackip;
     }
@@ -559,11 +559,11 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): WafPolicyV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

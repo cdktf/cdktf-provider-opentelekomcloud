@@ -119,11 +119,11 @@ export class RdsInstanceV1BackupstrategyOutputReference extends cdktf.ComplexObj
   public get internalValue(): RdsInstanceV1Backupstrategy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keepdays) {
+    if (this._keepdays !== undefined) {
       hasAnyValues = true;
       internalValueResult.keepdays = this._keepdays;
     }
-    if (this._starttime) {
+    if (this._starttime !== undefined) {
       hasAnyValues = true;
       internalValueResult.starttime = this._starttime;
     }
@@ -212,11 +212,11 @@ export class RdsInstanceV1DatastoreOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV1Datastore | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
@@ -299,11 +299,11 @@ export class RdsInstanceV1HaOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV1Ha | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enable) {
+    if (this._enable !== undefined) {
       hasAnyValues = true;
       internalValueResult.enable = this._enable;
     }
-    if (this._replicationmode) {
+    if (this._replicationmode !== undefined) {
       hasAnyValues = true;
       internalValueResult.replicationmode = this._replicationmode;
     }
@@ -387,7 +387,7 @@ export class RdsInstanceV1NicsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV1Nics | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._subnetid) {
+    if (this._subnetid !== undefined) {
       hasAnyValues = true;
       internalValueResult.subnetid = this._subnetid;
     }
@@ -450,7 +450,7 @@ export class RdsInstanceV1SecuritygroupOutputReference extends cdktf.ComplexObje
   public get internalValue(): RdsInstanceV1Securitygroup | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._id) {
+    if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
     }
@@ -518,11 +518,11 @@ export class RdsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
@@ -611,11 +611,11 @@ export class RdsInstanceV1VolumeOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV1Volume | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }

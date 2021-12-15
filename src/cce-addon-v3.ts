@@ -64,7 +64,7 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CceAddonV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
@@ -135,11 +135,11 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CceAddonV3Values | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._basic) {
+    if (this._basic !== undefined) {
       hasAnyValues = true;
       internalValueResult.basic = this._basic;
     }
-    if (this._custom) {
+    if (this._custom !== undefined) {
       hasAnyValues = true;
       internalValueResult.custom = this._custom;
     }

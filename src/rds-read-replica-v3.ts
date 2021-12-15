@@ -103,11 +103,11 @@ export class RdsReadReplicaV3TimeoutsOutputReference extends cdktf.ComplexObject
   public get internalValue(): RdsReadReplicaV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -196,11 +196,11 @@ export class RdsReadReplicaV3VolumeOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsReadReplicaV3Volume | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._diskEncryptionId) {
+    if (this._diskEncryptionId !== undefined) {
       hasAnyValues = true;
       internalValueResult.diskEncryptionId = this._diskEncryptionId;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }

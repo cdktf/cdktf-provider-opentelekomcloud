@@ -129,19 +129,19 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   public get internalValue(): LbListenerV3InsertHeaders | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._forwardElbIp) {
+    if (this._forwardElbIp !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardElbIp = this._forwardElbIp;
     }
-    if (this._forwardedForPort) {
+    if (this._forwardedForPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardedForPort = this._forwardedForPort;
     }
-    if (this._forwardedHost) {
+    if (this._forwardedHost !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardedHost = this._forwardedHost;
     }
-    if (this._forwardedPort) {
+    if (this._forwardedPort !== undefined) {
       hasAnyValues = true;
       internalValueResult.forwardedPort = this._forwardedPort;
     }

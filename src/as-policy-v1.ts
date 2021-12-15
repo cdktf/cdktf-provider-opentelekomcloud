@@ -81,11 +81,11 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   public get internalValue(): AsPolicyV1ScalingPolicyAction | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._instanceNumber) {
+    if (this._instanceNumber !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceNumber = this._instanceNumber;
     }
-    if (this._operation) {
+    if (this._operation !== undefined) {
       hasAnyValues = true;
       internalValueResult.operation = this._operation;
     }
@@ -189,23 +189,23 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   public get internalValue(): AsPolicyV1ScheduledPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._endTime) {
+    if (this._endTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.endTime = this._endTime;
     }
-    if (this._launchTime) {
+    if (this._launchTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.launchTime = this._launchTime;
     }
-    if (this._recurrenceType) {
+    if (this._recurrenceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.recurrenceType = this._recurrenceType;
     }
-    if (this._recurrenceValue) {
+    if (this._recurrenceValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.recurrenceValue = this._recurrenceValue;
     }
-    if (this._startTime) {
+    if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
     }

@@ -76,15 +76,15 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   public get internalValue(): CssSnapshotConfigurationV1Configuration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._agency) {
+    if (this._agency !== undefined) {
       hasAnyValues = true;
       internalValueResult.agency = this._agency;
     }
-    if (this._bucket) {
+    if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
-    if (this._kmsId) {
+    if (this._kmsId !== undefined) {
       hasAnyValues = true;
       internalValueResult.kmsId = this._kmsId;
     }
@@ -200,23 +200,23 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   public get internalValue(): CssSnapshotConfigurationV1CreationPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._deleteAuto) {
+    if (this._deleteAuto !== undefined) {
       hasAnyValues = true;
       internalValueResult.deleteAuto = this._deleteAuto;
     }
-    if (this._enable) {
+    if (this._enable !== undefined) {
       hasAnyValues = true;
       internalValueResult.enable = this._enable;
     }
-    if (this._keepday) {
+    if (this._keepday !== undefined) {
       hasAnyValues = true;
       internalValueResult.keepday = this._keepday;
     }
-    if (this._period) {
+    if (this._period !== undefined) {
       hasAnyValues = true;
       internalValueResult.period = this._period;
     }
-    if (this._prefix) {
+    if (this._prefix !== undefined) {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
@@ -347,11 +347,11 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   public get internalValue(): CssSnapshotConfigurationV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }

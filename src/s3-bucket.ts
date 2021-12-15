@@ -263,11 +263,11 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
   public get internalValue(): S3BucketVersioning | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._enabled) {
+    if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._mfaDelete) {
+    if (this._mfaDelete !== undefined) {
       hasAnyValues = true;
       internalValueResult.mfaDelete = this._mfaDelete;
     }
@@ -366,19 +366,19 @@ export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
   public get internalValue(): S3BucketWebsite | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._errorDocument) {
+    if (this._errorDocument !== undefined) {
       hasAnyValues = true;
       internalValueResult.errorDocument = this._errorDocument;
     }
-    if (this._indexDocument) {
+    if (this._indexDocument !== undefined) {
       hasAnyValues = true;
       internalValueResult.indexDocument = this._indexDocument;
     }
-    if (this._redirectAllRequestsTo) {
+    if (this._redirectAllRequestsTo !== undefined) {
       hasAnyValues = true;
       internalValueResult.redirectAllRequestsTo = this._redirectAllRequestsTo;
     }
-    if (this._routingRules) {
+    if (this._routingRules !== undefined) {
       hasAnyValues = true;
       internalValueResult.routingRules = this._routingRules;
     }

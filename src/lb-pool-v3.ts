@@ -84,15 +84,15 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   public get internalValue(): LbPoolV3SessionPersistence | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cookieName) {
+    if (this._cookieName !== undefined) {
       hasAnyValues = true;
       internalValueResult.cookieName = this._cookieName;
     }
-    if (this._persistenceTimeout) {
+    if (this._persistenceTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.persistenceTimeout = this._persistenceTimeout;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }

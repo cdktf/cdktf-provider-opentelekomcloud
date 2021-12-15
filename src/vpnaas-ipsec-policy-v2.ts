@@ -114,7 +114,7 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
   public get internalValue(): VpnaasIpsecPolicyV2Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }

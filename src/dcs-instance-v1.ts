@@ -154,23 +154,23 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   public get internalValue(): DcsInstanceV1BackupPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._backupAt) {
+    if (this._backupAt !== undefined) {
       hasAnyValues = true;
       internalValueResult.backupAt = this._backupAt;
     }
-    if (this._backupType) {
+    if (this._backupType !== undefined) {
       hasAnyValues = true;
       internalValueResult.backupType = this._backupType;
     }
-    if (this._beginAt) {
+    if (this._beginAt !== undefined) {
       hasAnyValues = true;
       internalValueResult.beginAt = this._beginAt;
     }
-    if (this._periodType) {
+    if (this._periodType !== undefined) {
       hasAnyValues = true;
       internalValueResult.periodType = this._periodType;
     }
-    if (this._saveDays) {
+    if (this._saveDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.saveDays = this._saveDays;
     }
@@ -337,15 +337,15 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): DcsInstanceV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
