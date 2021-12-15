@@ -94,7 +94,7 @@ export class ImagesImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): ImagesImageV2Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }

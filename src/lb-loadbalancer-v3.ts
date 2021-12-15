@@ -114,23 +114,23 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   public get internalValue(): LbLoadbalancerV3PublicIp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._bandwidthChargeMode) {
+    if (this._bandwidthChargeMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.bandwidthChargeMode = this._bandwidthChargeMode;
     }
-    if (this._bandwidthName) {
+    if (this._bandwidthName !== undefined) {
       hasAnyValues = true;
       internalValueResult.bandwidthName = this._bandwidthName;
     }
-    if (this._bandwidthShareType) {
+    if (this._bandwidthShareType !== undefined) {
       hasAnyValues = true;
       internalValueResult.bandwidthShareType = this._bandwidthShareType;
     }
-    if (this._bandwidthSize) {
+    if (this._bandwidthSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.bandwidthSize = this._bandwidthSize;
     }
-    if (this._ipType) {
+    if (this._ipType !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipType = this._ipType;
     }

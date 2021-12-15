@@ -70,7 +70,7 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): SwrDomainV2Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._default) {
+    if (this._default !== undefined) {
       hasAnyValues = true;
       internalValueResult.default = this._default;
     }

@@ -184,15 +184,15 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
   public get internalValue(): CceClusterV3AuthenticatingProxy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ca) {
+    if (this._ca !== undefined) {
       hasAnyValues = true;
       internalValueResult.ca = this._ca;
     }
-    if (this._cert) {
+    if (this._cert !== undefined) {
       hasAnyValues = true;
       internalValueResult.cert = this._cert;
     }
-    if (this._privateKey) {
+    if (this._privateKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.privateKey = this._privateKey;
     }
@@ -290,11 +290,11 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CceClusterV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

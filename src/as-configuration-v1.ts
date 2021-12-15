@@ -118,15 +118,15 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._chargingMode) {
+    if (this._chargingMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.chargingMode = this._chargingMode;
     }
-    if (this._shareType) {
+    if (this._shareType !== undefined) {
       hasAnyValues = true;
       internalValueResult.shareType = this._shareType;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
@@ -226,11 +226,11 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEip | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._ipType) {
+    if (this._ipType !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipType = this._ipType;
     }
-    if (this._bandwidth?.internalValue) {
+    if (this._bandwidth?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.bandwidth = this._bandwidth?.internalValue;
     }
@@ -310,7 +310,7 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._eip?.internalValue) {
+    if (this._eip?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.eip = this._eip?.internalValue;
     }
@@ -424,43 +424,43 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   public get internalValue(): AsConfigurationV1InstanceConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._flavor) {
+    if (this._flavor !== undefined) {
       hasAnyValues = true;
       internalValueResult.flavor = this._flavor;
     }
-    if (this._image) {
+    if (this._image !== undefined) {
       hasAnyValues = true;
       internalValueResult.image = this._image;
     }
-    if (this._instanceId) {
+    if (this._instanceId !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceId = this._instanceId;
     }
-    if (this._keyName) {
+    if (this._keyName !== undefined) {
       hasAnyValues = true;
       internalValueResult.keyName = this._keyName;
     }
-    if (this._metadata) {
+    if (this._metadata !== undefined) {
       hasAnyValues = true;
       internalValueResult.metadata = this._metadata;
     }
-    if (this._securityGroups) {
+    if (this._securityGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroups = this._securityGroups;
     }
-    if (this._userData) {
+    if (this._userData !== undefined) {
       hasAnyValues = true;
       internalValueResult.userData = this._userData;
     }
-    if (this._disk) {
+    if (this._disk !== undefined) {
       hasAnyValues = true;
       internalValueResult.disk = this._disk;
     }
-    if (this._personality) {
+    if (this._personality !== undefined) {
       hasAnyValues = true;
       internalValueResult.personality = this._personality;
     }
-    if (this._publicIp?.internalValue) {
+    if (this._publicIp?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.publicIp = this._publicIp?.internalValue;
     }

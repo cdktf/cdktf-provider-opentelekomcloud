@@ -100,11 +100,11 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   public get internalValue(): RdsParametergroupV3Datastore | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }

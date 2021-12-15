@@ -90,7 +90,7 @@ export class NetworkingSecgroupRuleV2TimeoutsOutputReference extends cdktf.Compl
   public get internalValue(): NetworkingSecgroupRuleV2Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

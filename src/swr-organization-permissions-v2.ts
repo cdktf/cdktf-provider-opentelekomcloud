@@ -62,7 +62,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
   public get internalValue(): SwrOrganizationPermissionsV2Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._default) {
+    if (this._default !== undefined) {
       hasAnyValues = true;
       internalValueResult.default = this._default;
     }

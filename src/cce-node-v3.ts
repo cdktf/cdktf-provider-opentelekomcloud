@@ -226,15 +226,15 @@ export class CceNodeV3RootVolumeOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CceNodeV3RootVolume | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._extendParam) {
+    if (this._extendParam !== undefined) {
       hasAnyValues = true;
       internalValueResult.extendParam = this._extendParam;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._volumetype) {
+    if (this._volumetype !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumetype = this._volumetype;
     }
@@ -362,11 +362,11 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CceNodeV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._delete) {
+    if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }

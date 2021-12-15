@@ -100,11 +100,11 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CssClusterV1Datastore | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
@@ -198,15 +198,15 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   public get internalValue(): CssClusterV1NodeConfigNetworkInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._networkId) {
+    if (this._networkId !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkId = this._networkId;
     }
-    if (this._securityGroupId) {
+    if (this._securityGroupId !== undefined) {
       hasAnyValues = true;
       internalValueResult.securityGroupId = this._securityGroupId;
     }
-    if (this._vpcId) {
+    if (this._vpcId !== undefined) {
       hasAnyValues = true;
       internalValueResult.vpcId = this._vpcId;
     }
@@ -309,15 +309,15 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   public get internalValue(): CssClusterV1NodeConfigVolume | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._encryptionKey) {
+    if (this._encryptionKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.encryptionKey = this._encryptionKey;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._volumeType) {
+    if (this._volumeType !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeType = this._volumeType;
     }
@@ -432,19 +432,19 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CssClusterV1NodeConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._availabilityZone) {
+    if (this._availabilityZone !== undefined) {
       hasAnyValues = true;
       internalValueResult.availabilityZone = this._availabilityZone;
     }
-    if (this._flavor) {
+    if (this._flavor !== undefined) {
       hasAnyValues = true;
       internalValueResult.flavor = this._flavor;
     }
-    if (this._networkInfo?.internalValue) {
+    if (this._networkInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.networkInfo = this._networkInfo?.internalValue;
     }
-    if (this._volume?.internalValue) {
+    if (this._volume?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.volume = this._volume?.internalValue;
     }
@@ -560,11 +560,11 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CssClusterV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }

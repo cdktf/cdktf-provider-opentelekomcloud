@@ -82,7 +82,7 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
   public get internalValue(): VpcepEndpointV1Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._default) {
+    if (this._default !== undefined) {
       hasAnyValues = true;
       internalValueResult.default = this._default;
     }

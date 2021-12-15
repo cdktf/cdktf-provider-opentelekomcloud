@@ -68,15 +68,15 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   public get internalValue(): IdentityProtocolV3Metadata | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._domainId) {
+    if (this._domainId !== undefined) {
       hasAnyValues = true;
       internalValueResult.domainId = this._domainId;
     }
-    if (this._metadata) {
+    if (this._metadata !== undefined) {
       hasAnyValues = true;
       internalValueResult.metadata = this._metadata;
     }
-    if (this._xaccountType) {
+    if (this._xaccountType !== undefined) {
       hasAnyValues = true;
       internalValueResult.xaccountType = this._xaccountType;
     }

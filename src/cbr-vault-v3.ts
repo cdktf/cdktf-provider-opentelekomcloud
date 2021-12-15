@@ -190,51 +190,51 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   public get internalValue(): CbrVaultV3Billing | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._chargingMode) {
+    if (this._chargingMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.chargingMode = this._chargingMode;
     }
-    if (this._cloudType) {
+    if (this._cloudType !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudType = this._cloudType;
     }
-    if (this._consistentLevel) {
+    if (this._consistentLevel !== undefined) {
       hasAnyValues = true;
       internalValueResult.consistentLevel = this._consistentLevel;
     }
-    if (this._consoleUrl) {
+    if (this._consoleUrl !== undefined) {
       hasAnyValues = true;
       internalValueResult.consoleUrl = this._consoleUrl;
     }
-    if (this._extraInfo) {
+    if (this._extraInfo !== undefined) {
       hasAnyValues = true;
       internalValueResult.extraInfo = this._extraInfo;
     }
-    if (this._isAutoPay) {
+    if (this._isAutoPay !== undefined) {
       hasAnyValues = true;
       internalValueResult.isAutoPay = this._isAutoPay;
     }
-    if (this._isAutoRenew) {
+    if (this._isAutoRenew !== undefined) {
       hasAnyValues = true;
       internalValueResult.isAutoRenew = this._isAutoRenew;
     }
-    if (this._objectType) {
+    if (this._objectType !== undefined) {
       hasAnyValues = true;
       internalValueResult.objectType = this._objectType;
     }
-    if (this._periodNum) {
+    if (this._periodNum !== undefined) {
       hasAnyValues = true;
       internalValueResult.periodNum = this._periodNum;
     }
-    if (this._periodType) {
+    if (this._periodType !== undefined) {
       hasAnyValues = true;
       internalValueResult.periodType = this._periodType;
     }
-    if (this._protectType) {
+    if (this._protectType !== undefined) {
       hasAnyValues = true;
       internalValueResult.protectType = this._protectType;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }

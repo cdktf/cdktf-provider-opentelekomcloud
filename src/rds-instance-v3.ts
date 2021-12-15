@@ -144,11 +144,11 @@ export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   public get internalValue(): RdsInstanceV3BackupStrategy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._keepDays) {
+    if (this._keepDays !== undefined) {
       hasAnyValues = true;
       internalValueResult.keepDays = this._keepDays;
     }
-    if (this._startTime) {
+    if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
     }
@@ -244,19 +244,19 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV3Db | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._password) {
+    if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
-    if (this._port) {
+    if (this._port !== undefined) {
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
-    if (this._version) {
+    if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
@@ -372,11 +372,11 @@ export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV3Timeouts | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._create) {
+    if (this._create !== undefined) {
       hasAnyValues = true;
       internalValueResult.create = this._create;
     }
-    if (this._update) {
+    if (this._update !== undefined) {
       hasAnyValues = true;
       internalValueResult.update = this._update;
     }
@@ -470,15 +470,15 @@ export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RdsInstanceV3Volume | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._diskEncryptionId) {
+    if (this._diskEncryptionId !== undefined) {
       hasAnyValues = true;
       internalValueResult.diskEncryptionId = this._diskEncryptionId;
     }
-    if (this._size) {
+    if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
     }
-    if (this._type) {
+    if (this._type !== undefined) {
       hasAnyValues = true;
       internalValueResult.type = this._type;
     }
