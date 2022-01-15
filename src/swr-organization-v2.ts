@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface SwrOrganizationV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html#name SwrOrganizationV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2#name SwrOrganizationV2#name}
   */
   readonly name: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html#timeouts SwrOrganizationV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2#timeouts SwrOrganizationV2#timeouts}
   */
   readonly timeouts?: SwrOrganizationV2Timeouts;
 }
 export interface SwrOrganizationV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html#create SwrOrganizationV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2#create SwrOrganizationV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html#delete SwrOrganizationV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2#delete SwrOrganizationV2#delete}
   */
   readonly delete?: string;
 }
@@ -113,7 +113,7 @@ export class SwrOrganizationV2TimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html opentelekomcloud_swr_organization_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2 opentelekomcloud_swr_organization_v2}
 */
 export class SwrOrganizationV2 extends cdktf.TerraformResource {
 
@@ -127,7 +127,7 @@ export class SwrOrganizationV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2.html opentelekomcloud_swr_organization_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_v2 opentelekomcloud_swr_organization_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

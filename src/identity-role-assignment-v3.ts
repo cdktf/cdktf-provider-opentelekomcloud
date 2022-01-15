@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityRoleAssignmentV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html#domain_id IdentityRoleAssignmentV3#domain_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#domain_id IdentityRoleAssignmentV3#domain_id}
   */
   readonly domainId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html#group_id IdentityRoleAssignmentV3#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}
   */
   readonly groupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html#project_id IdentityRoleAssignmentV3#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#project_id IdentityRoleAssignmentV3#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html#role_id IdentityRoleAssignmentV3#role_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}
   */
   readonly roleId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html#user_id IdentityRoleAssignmentV3#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#user_id IdentityRoleAssignmentV3#user_id}
   */
   readonly userId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html opentelekomcloud_identity_role_assignment_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3}
 */
 export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3.html opentelekomcloud_identity_role_assignment_v3} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

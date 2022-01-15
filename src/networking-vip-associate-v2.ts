@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingVipAssociateV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2.html#port_ids NetworkingVipAssociateV2#port_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}
   */
   readonly portIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2.html#vip_id NetworkingVipAssociateV2#vip_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}
   */
   readonly vipId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2.html opentelekomcloud_networking_vip_associate_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2}
 */
 export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2.html opentelekomcloud_networking_vip_associate_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

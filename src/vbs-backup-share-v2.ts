@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface VbsBackupShareV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#backup_id VbsBackupShareV2#backup_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#backup_id VbsBackupShareV2#backup_id}
   */
   readonly backupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#region VbsBackupShareV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#region VbsBackupShareV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#to_project_ids VbsBackupShareV2#to_project_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#to_project_ids VbsBackupShareV2#to_project_ids}
   */
   readonly toProjectIds: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#timeouts VbsBackupShareV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#timeouts VbsBackupShareV2#timeouts}
   */
   readonly timeouts?: VbsBackupShareV2Timeouts;
 }
 export interface VbsBackupShareV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#create VbsBackupShareV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#create VbsBackupShareV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html#delete VbsBackupShareV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2#delete VbsBackupShareV2#delete}
   */
   readonly delete?: string;
 }
@@ -121,7 +121,7 @@ export class VbsBackupShareV2TimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html opentelekomcloud_vbs_backup_share_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2 opentelekomcloud_vbs_backup_share_v2}
 */
 export class VbsBackupShareV2 extends cdktf.TerraformResource {
 
@@ -135,7 +135,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2.html opentelekomcloud_vbs_backup_share_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_share_v2 opentelekomcloud_vbs_backup_share_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

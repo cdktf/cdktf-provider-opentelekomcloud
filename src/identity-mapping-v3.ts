@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityMappingV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3.html#mapping_id IdentityMappingV3#mapping_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3#mapping_id IdentityMappingV3#mapping_id}
   */
   readonly mappingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3.html#rules IdentityMappingV3#rules}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3#rules IdentityMappingV3#rules}
   */
   readonly rules: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3.html opentelekomcloud_identity_mapping_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3 opentelekomcloud_identity_mapping_v3}
 */
 export class IdentityMappingV3 extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class IdentityMappingV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3.html opentelekomcloud_identity_mapping_v3} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3 opentelekomcloud_identity_mapping_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

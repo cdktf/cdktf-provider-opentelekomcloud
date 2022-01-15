@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface WafAlarmNotificationV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#enabled WafAlarmNotificationV1#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#enabled WafAlarmNotificationV1#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#locale WafAlarmNotificationV1#locale}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#locale WafAlarmNotificationV1#locale}
   */
   readonly locale?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#send_frequency WafAlarmNotificationV1#send_frequency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#send_frequency WafAlarmNotificationV1#send_frequency}
   */
   readonly sendFrequency: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#threat WafAlarmNotificationV1#threat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#threat WafAlarmNotificationV1#threat}
   */
   readonly threat: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#times WafAlarmNotificationV1#times}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#times WafAlarmNotificationV1#times}
   */
   readonly times: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html#topic_urn WafAlarmNotificationV1#topic_urn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1#topic_urn WafAlarmNotificationV1#topic_urn}
   */
   readonly topicUrn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html opentelekomcloud_waf_alarm_notification_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1}
 */
 export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1.html opentelekomcloud_waf_alarm_notification_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_alarm_notification_v1 opentelekomcloud_waf_alarm_notification_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

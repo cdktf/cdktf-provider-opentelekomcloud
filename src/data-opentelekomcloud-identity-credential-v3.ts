@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudIdentityCredentialV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3.html#user_id DataOpentelekomcloudIdentityCredentialV3#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3#user_id DataOpentelekomcloudIdentityCredentialV3#user_id}
   */
   readonly userId?: string;
 }
@@ -41,7 +41,7 @@ export class DataOpentelekomcloudIdentityCredentialV3Credentials extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3.html opentelekomcloud_identity_credential_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3 opentelekomcloud_identity_credential_v3}
 */
 export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDataSource {
 
@@ -55,7 +55,7 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3.html opentelekomcloud_identity_credential_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3 opentelekomcloud_identity_credential_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

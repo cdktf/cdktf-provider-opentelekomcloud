@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface NatSnatRuleV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#cidr NatSnatRuleV2#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}
   */
   readonly cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#floating_ip_id NatSnatRuleV2#floating_ip_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}
   */
   readonly floatingIpId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#nat_gateway_id NatSnatRuleV2#nat_gateway_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}
   */
   readonly natGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#network_id NatSnatRuleV2#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#region NatSnatRuleV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#region NatSnatRuleV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#source_type NatSnatRuleV2#source_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}
   */
   readonly sourceType?: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#timeouts NatSnatRuleV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
   */
   readonly timeouts?: NatSnatRuleV2Timeouts;
 }
 export interface NatSnatRuleV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#create NatSnatRuleV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#create NatSnatRuleV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html#delete NatSnatRuleV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2#delete NatSnatRuleV2#delete}
   */
   readonly delete?: string;
 }
@@ -133,7 +133,7 @@ export class NatSnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html opentelekomcloud_nat_snat_rule_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2 opentelekomcloud_nat_snat_rule_v2}
 */
 export class NatSnatRuleV2 extends cdktf.TerraformResource {
 
@@ -147,7 +147,7 @@ export class NatSnatRuleV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2.html opentelekomcloud_nat_snat_rule_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_snat_rule_v2 opentelekomcloud_nat_snat_rule_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

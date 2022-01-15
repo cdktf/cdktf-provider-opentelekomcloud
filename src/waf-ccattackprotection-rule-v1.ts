@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,67 +8,67 @@ import * as cdktf from 'cdktf';
 
 export interface WafCcattackprotectionRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#action_category WafCcattackprotectionRuleV1#action_category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#action_category WafCcattackprotectionRuleV1#action_category}
   */
   readonly actionCategory: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#block_content WafCcattackprotectionRuleV1#block_content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#block_content WafCcattackprotectionRuleV1#block_content}
   */
   readonly blockContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#block_content_type WafCcattackprotectionRuleV1#block_content_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#block_content_type WafCcattackprotectionRuleV1#block_content_type}
   */
   readonly blockContentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#limit_num WafCcattackprotectionRuleV1#limit_num}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#limit_num WafCcattackprotectionRuleV1#limit_num}
   */
   readonly limitNum: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#limit_period WafCcattackprotectionRuleV1#limit_period}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#limit_period WafCcattackprotectionRuleV1#limit_period}
   */
   readonly limitPeriod: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#lock_time WafCcattackprotectionRuleV1#lock_time}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#lock_time WafCcattackprotectionRuleV1#lock_time}
   */
   readonly lockTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#policy_id WafCcattackprotectionRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#policy_id WafCcattackprotectionRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#tag_category WafCcattackprotectionRuleV1#tag_category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#tag_category WafCcattackprotectionRuleV1#tag_category}
   */
   readonly tagCategory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#tag_contents WafCcattackprotectionRuleV1#tag_contents}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#tag_contents WafCcattackprotectionRuleV1#tag_contents}
   */
   readonly tagContents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#tag_index WafCcattackprotectionRuleV1#tag_index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#tag_index WafCcattackprotectionRuleV1#tag_index}
   */
   readonly tagIndex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#tag_type WafCcattackprotectionRuleV1#tag_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#tag_type WafCcattackprotectionRuleV1#tag_type}
   */
   readonly tagType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#url WafCcattackprotectionRuleV1#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#url WafCcattackprotectionRuleV1#url}
   */
   readonly url: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#timeouts WafCcattackprotectionRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#timeouts WafCcattackprotectionRuleV1#timeouts}
   */
   readonly timeouts?: WafCcattackprotectionRuleV1Timeouts;
 }
 export interface WafCcattackprotectionRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#create WafCcattackprotectionRuleV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#create WafCcattackprotectionRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html#delete WafCcattackprotectionRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#delete WafCcattackprotectionRuleV1#delete}
   */
   readonly delete?: string;
 }
@@ -157,7 +157,7 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html opentelekomcloud_waf_ccattackprotection_rule_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1}
 */
 export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
 
@@ -171,7 +171,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1.html opentelekomcloud_waf_ccattackprotection_rule_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1 opentelekomcloud_waf_ccattackprotection_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

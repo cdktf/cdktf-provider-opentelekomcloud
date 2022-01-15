@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudObsBucketObjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html#bucket DataOpentelekomcloudObsBucketObject#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object#bucket DataOpentelekomcloudObsBucketObject#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html#key DataOpentelekomcloudObsBucketObject#key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object#key DataOpentelekomcloudObsBucketObject#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html#version_id DataOpentelekomcloudObsBucketObject#version_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object#version_id DataOpentelekomcloudObsBucketObject#version_id}
   */
   readonly versionId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html opentelekomcloud_obs_bucket_object}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object opentelekomcloud_obs_bucket_object}
 */
 export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOpentelekomcloudObsBucketObject extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object.html opentelekomcloud_obs_bucket_object} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object opentelekomcloud_obs_bucket_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

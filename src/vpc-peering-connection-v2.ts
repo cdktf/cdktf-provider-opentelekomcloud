@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface VpcPeeringConnectionV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#name VpcPeeringConnectionV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}
   */
   readonly peerTenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}
   */
   readonly peerVpcId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#region VpcPeeringConnectionV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#vpc_id VpcPeeringConnectionV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#timeouts VpcPeeringConnectionV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionV2Timeouts;
 }
 export interface VpcPeeringConnectionV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#create VpcPeeringConnectionV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html#delete VpcPeeringConnectionV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}
   */
   readonly delete?: string;
 }
@@ -129,7 +129,7 @@ export class VpcPeeringConnectionV2TimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html opentelekomcloud_vpc_peering_connection_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}
 */
 export class VpcPeeringConnectionV2 extends cdktf.TerraformResource {
 
@@ -143,7 +143,7 @@ export class VpcPeeringConnectionV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2.html opentelekomcloud_vpc_peering_connection_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

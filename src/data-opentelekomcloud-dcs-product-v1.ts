@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDcsProductV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1.html#spec_code DataOpentelekomcloudDcsProductV1#spec_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1#spec_code DataOpentelekomcloudDcsProductV1#spec_code}
   */
   readonly specCode?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1.html opentelekomcloud_dcs_product_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1 opentelekomcloud_dcs_product_v1}
 */
 export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1.html opentelekomcloud_dcs_product_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_product_v1 opentelekomcloud_dcs_product_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

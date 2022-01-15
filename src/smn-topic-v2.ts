@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface SmnTopicV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html#display_name SmnTopicV2#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2#display_name SmnTopicV2#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html#name SmnTopicV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2#name SmnTopicV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html#project_name SmnTopicV2#project_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2#project_name SmnTopicV2#project_name}
   */
   readonly projectName?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html opentelekomcloud_smn_topic_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2 opentelekomcloud_smn_topic_v2}
 */
 export class SmnTopicV2 extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class SmnTopicV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2.html opentelekomcloud_smn_topic_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2 opentelekomcloud_smn_topic_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

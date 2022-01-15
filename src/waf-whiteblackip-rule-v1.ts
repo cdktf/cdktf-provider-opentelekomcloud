@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface WafWhiteblackipRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#addr WafWhiteblackipRuleV1#addr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#addr WafWhiteblackipRuleV1#addr}
   */
   readonly addr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#policy_id WafWhiteblackipRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#policy_id WafWhiteblackipRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#white WafWhiteblackipRuleV1#white}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#white WafWhiteblackipRuleV1#white}
   */
   readonly white?: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#timeouts WafWhiteblackipRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#timeouts WafWhiteblackipRuleV1#timeouts}
   */
   readonly timeouts?: WafWhiteblackipRuleV1Timeouts;
 }
 export interface WafWhiteblackipRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#create WafWhiteblackipRuleV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#create WafWhiteblackipRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html#delete WafWhiteblackipRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1#delete WafWhiteblackipRuleV1#delete}
   */
   readonly delete?: string;
 }
@@ -121,7 +121,7 @@ export class WafWhiteblackipRuleV1TimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html opentelekomcloud_waf_whiteblackip_rule_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1}
 */
 export class WafWhiteblackipRuleV1 extends cdktf.TerraformResource {
 
@@ -135,7 +135,7 @@ export class WafWhiteblackipRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1.html opentelekomcloud_waf_whiteblackip_rule_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

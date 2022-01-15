@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingNetworkV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#admin_state_up NetworkingNetworkV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#admin_state_up NetworkingNetworkV2#admin_state_up}
   */
   readonly adminStateUp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#name NetworkingNetworkV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#name NetworkingNetworkV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#region NetworkingNetworkV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#region NetworkingNetworkV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#shared NetworkingNetworkV2#shared}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#shared NetworkingNetworkV2#shared}
   */
   readonly shared?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#tenant_id NetworkingNetworkV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#tenant_id NetworkingNetworkV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#value_specs NetworkingNetworkV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#value_specs NetworkingNetworkV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * segments block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#segments NetworkingNetworkV2#segments}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#segments NetworkingNetworkV2#segments}
   */
   readonly segments?: NetworkingNetworkV2Segments[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#timeouts NetworkingNetworkV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#timeouts NetworkingNetworkV2#timeouts}
   */
   readonly timeouts?: NetworkingNetworkV2Timeouts;
 }
 export interface NetworkingNetworkV2Segments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#network_type NetworkingNetworkV2#network_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#network_type NetworkingNetworkV2#network_type}
   */
   readonly networkType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#physical_network NetworkingNetworkV2#physical_network}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#physical_network NetworkingNetworkV2#physical_network}
   */
   readonly physicalNetwork?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#segmentation_id NetworkingNetworkV2#segmentation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#segmentation_id NetworkingNetworkV2#segmentation_id}
   */
   readonly segmentationId?: number;
 }
@@ -73,11 +73,11 @@ export function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetwor
 
 export interface NetworkingNetworkV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#create NetworkingNetworkV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#create NetworkingNetworkV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html#delete NetworkingNetworkV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#delete NetworkingNetworkV2#delete}
   */
   readonly delete?: string;
 }
@@ -166,7 +166,7 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html opentelekomcloud_networking_network_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2 opentelekomcloud_networking_network_v2}
 */
 export class NetworkingNetworkV2 extends cdktf.TerraformResource {
 
@@ -180,7 +180,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2.html opentelekomcloud_networking_network_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2 opentelekomcloud_networking_network_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

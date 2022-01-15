@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingRouterInterfaceV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#port_id NetworkingRouterInterfaceV2#port_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#port_id NetworkingRouterInterfaceV2#port_id}
   */
   readonly portId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#region NetworkingRouterInterfaceV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#region NetworkingRouterInterfaceV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#router_id NetworkingRouterInterfaceV2#router_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#router_id NetworkingRouterInterfaceV2#router_id}
   */
   readonly routerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#subnet_id NetworkingRouterInterfaceV2#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#subnet_id NetworkingRouterInterfaceV2#subnet_id}
   */
   readonly subnetId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#timeouts NetworkingRouterInterfaceV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#timeouts NetworkingRouterInterfaceV2#timeouts}
   */
   readonly timeouts?: NetworkingRouterInterfaceV2Timeouts;
 }
 export interface NetworkingRouterInterfaceV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#create NetworkingRouterInterfaceV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#create NetworkingRouterInterfaceV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html#delete NetworkingRouterInterfaceV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2#delete NetworkingRouterInterfaceV2#delete}
   */
   readonly delete?: string;
 }
@@ -125,7 +125,7 @@ export class NetworkingRouterInterfaceV2TimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html opentelekomcloud_networking_router_interface_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2}
 */
 export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
 
@@ -139,7 +139,7 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2.html opentelekomcloud_networking_router_interface_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudComputeBmsServerV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#flavor_id DataOpentelekomcloudComputeBmsServerV2#flavor_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#flavor_id DataOpentelekomcloudComputeBmsServerV2#flavor_id}
   */
   readonly flavorId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#host_status DataOpentelekomcloudComputeBmsServerV2#host_status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#host_status DataOpentelekomcloudComputeBmsServerV2#host_status}
   */
   readonly hostStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#id DataOpentelekomcloudComputeBmsServerV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#id DataOpentelekomcloudComputeBmsServerV2#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#image_id DataOpentelekomcloudComputeBmsServerV2#image_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#image_id DataOpentelekomcloudComputeBmsServerV2#image_id}
   */
   readonly imageId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#key_name DataOpentelekomcloudComputeBmsServerV2#key_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#key_name DataOpentelekomcloudComputeBmsServerV2#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#name DataOpentelekomcloudComputeBmsServerV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#name DataOpentelekomcloudComputeBmsServerV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#region DataOpentelekomcloudComputeBmsServerV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#region DataOpentelekomcloudComputeBmsServerV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#status DataOpentelekomcloudComputeBmsServerV2#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#status DataOpentelekomcloudComputeBmsServerV2#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html#user_id DataOpentelekomcloudComputeBmsServerV2#user_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#user_id DataOpentelekomcloudComputeBmsServerV2#user_id}
   */
   readonly userId?: string;
 }
@@ -80,7 +80,7 @@ export class DataOpentelekomcloudComputeBmsServerV2SecurityGroups extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html opentelekomcloud_compute_bms_server_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2}
 */
 export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataSource {
 
@@ -94,7 +94,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2.html opentelekomcloud_compute_bms_server_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2 opentelekomcloud_compute_bms_server_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

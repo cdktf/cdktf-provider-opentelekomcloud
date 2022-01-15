@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface LogtankTopicV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html#group_id LogtankTopicV2#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2#group_id LogtankTopicV2#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html#topic_name LogtankTopicV2#topic_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}
   */
   readonly topicName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html opentelekomcloud_logtank_topic_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2 opentelekomcloud_logtank_topic_v2}
 */
 export class LogtankTopicV2 extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2.html opentelekomcloud_logtank_topic_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_topic_v2 opentelekomcloud_logtank_topic_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

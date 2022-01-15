@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface VpcPeeringConnectionAccepterV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#accept VpcPeeringConnectionAccepterV2#accept}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}
   */
   readonly accept?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#region VpcPeeringConnectionAccepterV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}
   */
   readonly vpcPeeringConnectionId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#timeouts VpcPeeringConnectionAccepterV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#timeouts VpcPeeringConnectionAccepterV2#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionAccepterV2Timeouts;
 }
 export interface VpcPeeringConnectionAccepterV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#create VpcPeeringConnectionAccepterV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html#delete VpcPeeringConnectionAccepterV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}
   */
   readonly delete?: string;
 }
@@ -121,7 +121,7 @@ export class VpcPeeringConnectionAccepterV2TimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html opentelekomcloud_vpc_peering_connection_accepter_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2}
 */
 export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
 
@@ -135,7 +135,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2.html opentelekomcloud_vpc_peering_connection_accepter_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

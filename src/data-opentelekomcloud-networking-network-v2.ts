@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudNetworkingNetworkV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html#matching_subnet_cidr DataOpentelekomcloudNetworkingNetworkV2#matching_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#matching_subnet_cidr DataOpentelekomcloudNetworkingNetworkV2#matching_subnet_cidr}
   */
   readonly matchingSubnetCidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html#name DataOpentelekomcloudNetworkingNetworkV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#name DataOpentelekomcloudNetworkingNetworkV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html#network_id DataOpentelekomcloudNetworkingNetworkV2#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#network_id DataOpentelekomcloudNetworkingNetworkV2#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html#region DataOpentelekomcloudNetworkingNetworkV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#region DataOpentelekomcloudNetworkingNetworkV2#region}
   */
   readonly region?: string;
   /**
   * The ID of the Tenant (Identity v2) or Project (Identity v3)
 to login with.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html#tenant_id DataOpentelekomcloudNetworkingNetworkV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#tenant_id DataOpentelekomcloudNetworkingNetworkV2#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html opentelekomcloud_networking_network_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2 opentelekomcloud_networking_network_v2}
 */
 export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformDataSource {
 
@@ -47,7 +47,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2.html opentelekomcloud_networking_network_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2 opentelekomcloud_networking_network_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingRouterRouteV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html#destination_cidr NetworkingRouterRouteV2#destination_cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}
   */
   readonly destinationCidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html#next_hop NetworkingRouterRouteV2#next_hop}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}
   */
   readonly nextHop: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html#region NetworkingRouterRouteV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#region NetworkingRouterRouteV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html#router_id NetworkingRouterRouteV2#router_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}
   */
   readonly routerId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html opentelekomcloud_networking_router_route_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}
 */
 export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2.html opentelekomcloud_networking_router_route_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

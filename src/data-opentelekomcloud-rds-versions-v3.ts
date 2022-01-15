@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudRdsVersionsV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3.html#database_name DataOpentelekomcloudRdsVersionsV3#database_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3#database_name DataOpentelekomcloudRdsVersionsV3#database_name}
   */
   readonly databaseName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3.html opentelekomcloud_rds_versions_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3 opentelekomcloud_rds_versions_v3}
 */
 export class DataOpentelekomcloudRdsVersionsV3 extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataOpentelekomcloudRdsVersionsV3 extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3.html opentelekomcloud_rds_versions_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_versions_v3 opentelekomcloud_rds_versions_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

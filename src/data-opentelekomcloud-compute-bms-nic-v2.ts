@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,19 +8,19 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudComputeBmsNicV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html#id DataOpentelekomcloudComputeBmsNicV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2#id DataOpentelekomcloudComputeBmsNicV2#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html#region DataOpentelekomcloudComputeBmsNicV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2#region DataOpentelekomcloudComputeBmsNicV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}
   */
   readonly serverId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html#status DataOpentelekomcloudComputeBmsNicV2#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2#status DataOpentelekomcloudComputeBmsNicV2#status}
   */
   readonly status?: string;
 }
@@ -38,7 +38,7 @@ export class DataOpentelekomcloudComputeBmsNicV2FixedIps extends cdktf.ComplexCo
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html opentelekomcloud_compute_bms_nic_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2}
 */
 export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2.html opentelekomcloud_compute_bms_nic_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

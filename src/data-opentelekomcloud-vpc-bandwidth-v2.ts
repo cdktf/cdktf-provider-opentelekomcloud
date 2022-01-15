@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcBandwidthV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2.html#name DataOpentelekomcloudVpcBandwidthV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2#name DataOpentelekomcloudVpcBandwidthV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2.html#size DataOpentelekomcloudVpcBandwidthV2#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2#size DataOpentelekomcloudVpcBandwidthV2#size}
   */
   readonly size?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2.html opentelekomcloud_vpc_bandwidth_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}
 */
 export class DataOpentelekomcloudVpcBandwidthV2 extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOpentelekomcloudVpcBandwidthV2 extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2.html opentelekomcloud_vpc_bandwidth_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

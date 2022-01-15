@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface FwFirewallGroupV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#admin_state_up FwFirewallGroupV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#description FwFirewallGroupV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#description FwFirewallGroupV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#egress_policy_id FwFirewallGroupV2#egress_policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}
   */
   readonly egressPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}
   */
   readonly ingressPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#name FwFirewallGroupV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#name FwFirewallGroupV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#ports FwFirewallGroupV2#ports}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}
   */
   readonly ports?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#region FwFirewallGroupV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#region FwFirewallGroupV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#tenant_id FwFirewallGroupV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#value_specs FwFirewallGroupV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#timeouts FwFirewallGroupV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
   */
   readonly timeouts?: FwFirewallGroupV2Timeouts;
 }
 export interface FwFirewallGroupV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#create FwFirewallGroupV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#create FwFirewallGroupV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#delete FwFirewallGroupV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html#update FwFirewallGroupV2#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#update FwFirewallGroupV2#update}
   */
   readonly update?: string;
 }
@@ -172,7 +172,7 @@ export class FwFirewallGroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html opentelekomcloud_fw_firewall_group_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2}
 */
 export class FwFirewallGroupV2 extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class FwFirewallGroupV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2.html opentelekomcloud_fw_firewall_group_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

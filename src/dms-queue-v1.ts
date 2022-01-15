@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface DmsQueueV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#description DmsQueueV1#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#description DmsQueueV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#max_consume_count DmsQueueV1#max_consume_count}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#max_consume_count DmsQueueV1#max_consume_count}
   */
   readonly maxConsumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#name DmsQueueV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#name DmsQueueV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#queue_mode DmsQueueV1#queue_mode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#queue_mode DmsQueueV1#queue_mode}
   */
   readonly queueMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#redrive_policy DmsQueueV1#redrive_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#redrive_policy DmsQueueV1#redrive_policy}
   */
   readonly redrivePolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html#retention_hours DmsQueueV1#retention_hours}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1#retention_hours DmsQueueV1#retention_hours}
   */
   readonly retentionHours?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html opentelekomcloud_dms_queue_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1 opentelekomcloud_dms_queue_v1}
 */
 export class DmsQueueV1 extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class DmsQueueV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1.html opentelekomcloud_dms_queue_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_queue_v1 opentelekomcloud_dms_queue_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

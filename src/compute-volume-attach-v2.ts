@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeVolumeAttachV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#device ComputeVolumeAttachV2#device}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}
   */
   readonly device?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#instance_id ComputeVolumeAttachV2#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#region ComputeVolumeAttachV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#volume_id ComputeVolumeAttachV2#volume_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}
   */
   readonly volumeId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#timeouts ComputeVolumeAttachV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
   */
   readonly timeouts?: ComputeVolumeAttachV2Timeouts;
 }
 export interface ComputeVolumeAttachV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#create ComputeVolumeAttachV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html#delete ComputeVolumeAttachV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}
   */
   readonly delete?: string;
 }
@@ -125,7 +125,7 @@ export class ComputeVolumeAttachV2TimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html opentelekomcloud_compute_volume_attach_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}
 */
 export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
 
@@ -139,7 +139,7 @@ export class ComputeVolumeAttachV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2.html opentelekomcloud_compute_volume_attach_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

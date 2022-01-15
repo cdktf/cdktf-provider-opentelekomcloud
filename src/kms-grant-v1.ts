@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface KmsGrantV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html#grantee_principal KmsGrantV1#grantee_principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#grantee_principal KmsGrantV1#grantee_principal}
   */
   readonly granteePrincipal: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html#key_id KmsGrantV1#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#key_id KmsGrantV1#key_id}
   */
   readonly keyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html#name KmsGrantV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#name KmsGrantV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html#operations KmsGrantV1#operations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#operations KmsGrantV1#operations}
   */
   readonly operations?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html#retiring_principal KmsGrantV1#retiring_principal}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#retiring_principal KmsGrantV1#retiring_principal}
   */
   readonly retiringPrincipal?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html opentelekomcloud_kms_grant_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1 opentelekomcloud_kms_grant_v1}
 */
 export class KmsGrantV1 extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1.html opentelekomcloud_kms_grant_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1 opentelekomcloud_kms_grant_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,51 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface AntiddosV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#app_type_id AntiddosV1#app_type_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#app_type_id AntiddosV1#app_type_id}
   */
   readonly appTypeId: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#cleaning_access_pos_id AntiddosV1#cleaning_access_pos_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#cleaning_access_pos_id AntiddosV1#cleaning_access_pos_id}
   */
   readonly cleaningAccessPosId: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#enable_l7 AntiddosV1#enable_l7}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#enable_l7 AntiddosV1#enable_l7}
   */
   readonly enableL7: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#floating_ip_id AntiddosV1#floating_ip_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#floating_ip_id AntiddosV1#floating_ip_id}
   */
   readonly floatingIpId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#http_request_pos_id AntiddosV1#http_request_pos_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#http_request_pos_id AntiddosV1#http_request_pos_id}
   */
   readonly httpRequestPosId: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#region AntiddosV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#region AntiddosV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#traffic_pos_id AntiddosV1#traffic_pos_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#traffic_pos_id AntiddosV1#traffic_pos_id}
   */
   readonly trafficPosId: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#timeouts AntiddosV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#timeouts AntiddosV1#timeouts}
   */
   readonly timeouts?: AntiddosV1Timeouts;
 }
 export interface AntiddosV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#create AntiddosV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#create AntiddosV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#delete AntiddosV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#delete AntiddosV1#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html#update AntiddosV1#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#update AntiddosV1#update}
   */
   readonly update?: string;
 }
@@ -164,7 +164,7 @@ export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html opentelekomcloud_antiddos_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1 opentelekomcloud_antiddos_v1}
 */
 export class AntiddosV1 extends cdktf.TerraformResource {
 
@@ -178,7 +178,7 @@ export class AntiddosV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1.html opentelekomcloud_antiddos_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1 opentelekomcloud_antiddos_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

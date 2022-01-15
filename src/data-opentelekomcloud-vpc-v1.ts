@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#cidr DataOpentelekomcloudVpcV1#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#cidr DataOpentelekomcloudVpcV1#cidr}
   */
   readonly cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#id DataOpentelekomcloudVpcV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#id DataOpentelekomcloudVpcV1#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#name DataOpentelekomcloudVpcV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#name DataOpentelekomcloudVpcV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#region DataOpentelekomcloudVpcV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#region DataOpentelekomcloudVpcV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#shared DataOpentelekomcloudVpcV1#shared}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#shared DataOpentelekomcloudVpcV1#shared}
   */
   readonly shared?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html#status DataOpentelekomcloudVpcV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#status DataOpentelekomcloudVpcV1#status}
   */
   readonly status?: string;
 }
@@ -46,7 +46,7 @@ export class DataOpentelekomcloudVpcV1Routes extends cdktf.ComplexComputedList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html opentelekomcloud_vpc_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1 opentelekomcloud_vpc_v1}
 */
 export class DataOpentelekomcloudVpcV1 extends cdktf.TerraformDataSource {
 
@@ -60,7 +60,7 @@ export class DataOpentelekomcloudVpcV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1.html opentelekomcloud_vpc_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1 opentelekomcloud_vpc_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

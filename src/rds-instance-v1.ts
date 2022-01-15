@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,87 +8,87 @@ import * as cdktf from 'cdktf';
 
 export interface RdsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#availabilityzone RdsInstanceV1#availabilityzone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#availabilityzone RdsInstanceV1#availabilityzone}
   */
   readonly availabilityzone: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#dbport RdsInstanceV1#dbport}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#dbport RdsInstanceV1#dbport}
   */
   readonly dbport?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#dbrtpd RdsInstanceV1#dbrtpd}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#dbrtpd RdsInstanceV1#dbrtpd}
   */
   readonly dbrtpd: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#flavorref RdsInstanceV1#flavorref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#flavorref RdsInstanceV1#flavorref}
   */
   readonly flavorref: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#name RdsInstanceV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#name RdsInstanceV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#region RdsInstanceV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#region RdsInstanceV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#tag RdsInstanceV1#tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#tag RdsInstanceV1#tag}
   */
   readonly tag?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#vpc RdsInstanceV1#vpc}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#vpc RdsInstanceV1#vpc}
   */
   readonly vpc: string;
   /**
   * backupstrategy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#backupstrategy RdsInstanceV1#backupstrategy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#backupstrategy RdsInstanceV1#backupstrategy}
   */
   readonly backupstrategy?: RdsInstanceV1Backupstrategy;
   /**
   * datastore block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#datastore RdsInstanceV1#datastore}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#datastore RdsInstanceV1#datastore}
   */
   readonly datastore: RdsInstanceV1Datastore;
   /**
   * ha block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#ha RdsInstanceV1#ha}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#ha RdsInstanceV1#ha}
   */
   readonly ha?: RdsInstanceV1Ha;
   /**
   * nics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#nics RdsInstanceV1#nics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#nics RdsInstanceV1#nics}
   */
   readonly nics: RdsInstanceV1Nics;
   /**
   * securitygroup block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#securitygroup RdsInstanceV1#securitygroup}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#securitygroup RdsInstanceV1#securitygroup}
   */
   readonly securitygroup: RdsInstanceV1Securitygroup;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#timeouts RdsInstanceV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#timeouts RdsInstanceV1#timeouts}
   */
   readonly timeouts?: RdsInstanceV1Timeouts;
   /**
   * volume block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#volume RdsInstanceV1#volume}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#volume RdsInstanceV1#volume}
   */
   readonly volume: RdsInstanceV1Volume;
 }
 export interface RdsInstanceV1Backupstrategy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#keepdays RdsInstanceV1#keepdays}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#keepdays RdsInstanceV1#keepdays}
   */
   readonly keepdays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#starttime RdsInstanceV1#starttime}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#starttime RdsInstanceV1#starttime}
   */
   readonly starttime?: string;
 }
@@ -177,11 +177,11 @@ export class RdsInstanceV1BackupstrategyOutputReference extends cdktf.ComplexObj
 }
 export interface RdsInstanceV1Datastore {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#type RdsInstanceV1#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#type RdsInstanceV1#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#version RdsInstanceV1#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#version RdsInstanceV1#version}
   */
   readonly version: string;
 }
@@ -264,11 +264,11 @@ export class RdsInstanceV1DatastoreOutputReference extends cdktf.ComplexObject {
 }
 export interface RdsInstanceV1Ha {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#enable RdsInstanceV1#enable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#enable RdsInstanceV1#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#replicationmode RdsInstanceV1#replicationmode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#replicationmode RdsInstanceV1#replicationmode}
   */
   readonly replicationmode?: string;
 }
@@ -357,7 +357,7 @@ export class RdsInstanceV1HaOutputReference extends cdktf.ComplexObject {
 }
 export interface RdsInstanceV1Nics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#subnetid RdsInstanceV1#subnetid}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#subnetid RdsInstanceV1#subnetid}
   */
   readonly subnetid: string;
 }
@@ -420,7 +420,7 @@ export class RdsInstanceV1NicsOutputReference extends cdktf.ComplexObject {
 }
 export interface RdsInstanceV1Securitygroup {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#id RdsInstanceV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#id RdsInstanceV1#id}
   */
   readonly id: string;
 }
@@ -483,11 +483,11 @@ export class RdsInstanceV1SecuritygroupOutputReference extends cdktf.ComplexObje
 }
 export interface RdsInstanceV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#create RdsInstanceV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#create RdsInstanceV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#delete RdsInstanceV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#delete RdsInstanceV1#delete}
   */
   readonly delete?: string;
 }
@@ -576,11 +576,11 @@ export class RdsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface RdsInstanceV1Volume {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#size RdsInstanceV1#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#size RdsInstanceV1#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html#type RdsInstanceV1#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#type RdsInstanceV1#type}
   */
   readonly type: string;
 }
@@ -663,7 +663,7 @@ export class RdsInstanceV1VolumeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html opentelekomcloud_rds_instance_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1 opentelekomcloud_rds_instance_v1}
 */
 export class RdsInstanceV1 extends cdktf.TerraformResource {
 
@@ -677,7 +677,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1.html opentelekomcloud_rds_instance_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1 opentelekomcloud_rds_instance_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DmsGroupV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1.html#name DmsGroupV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1#name DmsGroupV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1.html#queue_id DmsGroupV1#queue_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1#queue_id DmsGroupV1#queue_id}
   */
   readonly queueId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1.html opentelekomcloud_dms_group_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1 opentelekomcloud_dms_group_v1}
 */
 export class DmsGroupV1 extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class DmsGroupV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1.html opentelekomcloud_dms_group_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_group_v1 opentelekomcloud_dms_group_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,41 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface CssClusterV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#admin_pass CssClusterV1#admin_pass}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#admin_pass CssClusterV1#admin_pass}
   */
   readonly adminPass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#enable_authority CssClusterV1#enable_authority}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#enable_authority CssClusterV1#enable_authority}
   */
   readonly enableAuthority?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#enable_https CssClusterV1#enable_https}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#enable_https CssClusterV1#enable_https}
   */
   readonly enableHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#expect_node_num CssClusterV1#expect_node_num}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}
   */
   readonly expectNodeNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#name CssClusterV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#name CssClusterV1#name}
   */
   readonly name: string;
   /**
   * datastore block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#datastore CssClusterV1#datastore}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#datastore CssClusterV1#datastore}
   */
   readonly datastore?: CssClusterV1Datastore;
   /**
   * node_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#node_config CssClusterV1#node_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#node_config CssClusterV1#node_config}
   */
   readonly nodeConfig: CssClusterV1NodeConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#timeouts CssClusterV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#timeouts CssClusterV1#timeouts}
   */
   readonly timeouts?: CssClusterV1Timeouts;
 }
@@ -65,11 +65,11 @@ export class CssClusterV1Nodes extends cdktf.ComplexComputedList {
 }
 export interface CssClusterV1Datastore {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#type CssClusterV1#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#type CssClusterV1#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#version CssClusterV1#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#version CssClusterV1#version}
   */
   readonly version?: string;
 }
@@ -158,15 +158,15 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
 }
 export interface CssClusterV1NodeConfigNetworkInfo {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#network_id CssClusterV1#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#network_id CssClusterV1#network_id}
   */
   readonly networkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#security_group_id CssClusterV1#security_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#security_group_id CssClusterV1#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#vpc_id CssClusterV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#vpc_id CssClusterV1#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -269,15 +269,15 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
 }
 export interface CssClusterV1NodeConfigVolume {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#encryption_key CssClusterV1#encryption_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#encryption_key CssClusterV1#encryption_key}
   */
   readonly encryptionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#size CssClusterV1#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#size CssClusterV1#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#volume_type CssClusterV1#volume_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#volume_type CssClusterV1#volume_type}
   */
   readonly volumeType: string;
 }
@@ -383,23 +383,23 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
 }
 export interface CssClusterV1NodeConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#availability_zone CssClusterV1#availability_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#availability_zone CssClusterV1#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#flavor CssClusterV1#flavor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#flavor CssClusterV1#flavor}
   */
   readonly flavor: string;
   /**
   * network_info block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#network_info CssClusterV1#network_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#network_info CssClusterV1#network_info}
   */
   readonly networkInfo: CssClusterV1NodeConfigNetworkInfo;
   /**
   * volume block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#volume CssClusterV1#volume}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#volume CssClusterV1#volume}
   */
   readonly volume: CssClusterV1NodeConfigVolume;
 }
@@ -525,11 +525,11 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
 }
 export interface CssClusterV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#create CssClusterV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#create CssClusterV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html#update CssClusterV1#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#update CssClusterV1#update}
   */
   readonly update?: string;
 }
@@ -618,7 +618,7 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html opentelekomcloud_css_cluster_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1 opentelekomcloud_css_cluster_v1}
 */
 export class CssClusterV1 extends cdktf.TerraformResource {
 
@@ -632,7 +632,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1.html opentelekomcloud_css_cluster_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

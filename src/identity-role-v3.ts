@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityRoleV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#description IdentityRoleV3#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#description IdentityRoleV3#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#display_layer IdentityRoleV3#display_layer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#display_layer IdentityRoleV3#display_layer}
   */
   readonly displayLayer: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#display_name IdentityRoleV3#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#display_name IdentityRoleV3#display_name}
   */
   readonly displayName: string;
   /**
   * statement block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#statement IdentityRoleV3#statement}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#statement IdentityRoleV3#statement}
   */
   readonly statement: IdentityRoleV3Statement[];
 }
 export interface IdentityRoleV3Statement {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#action IdentityRoleV3#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#action IdentityRoleV3#action}
   */
   readonly action: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html#effect IdentityRoleV3#effect}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#effect IdentityRoleV3#effect}
   */
   readonly effect: string;
 }
@@ -50,7 +50,7 @@ export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statem
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html opentelekomcloud_identity_role_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3 opentelekomcloud_identity_role_v3}
 */
 export class IdentityRoleV3 extends cdktf.TerraformResource {
 
@@ -64,7 +64,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3.html opentelekomcloud_identity_role_v3} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3 opentelekomcloud_identity_role_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

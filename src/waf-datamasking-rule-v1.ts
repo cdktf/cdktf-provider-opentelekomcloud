@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface WafDatamaskingRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#category WafDatamaskingRuleV1#category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#category WafDatamaskingRuleV1#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#index WafDatamaskingRuleV1#index}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#index WafDatamaskingRuleV1#index}
   */
   readonly index: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#policy_id WafDatamaskingRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#policy_id WafDatamaskingRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#url WafDatamaskingRuleV1#url}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#url WafDatamaskingRuleV1#url}
   */
   readonly url: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#timeouts WafDatamaskingRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#timeouts WafDatamaskingRuleV1#timeouts}
   */
   readonly timeouts?: WafDatamaskingRuleV1Timeouts;
 }
 export interface WafDatamaskingRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#create WafDatamaskingRuleV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#create WafDatamaskingRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html#delete WafDatamaskingRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1#delete WafDatamaskingRuleV1#delete}
   */
   readonly delete?: string;
 }
@@ -125,7 +125,7 @@ export class WafDatamaskingRuleV1TimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html opentelekomcloud_waf_datamasking_rule_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1}
 */
 export class WafDatamaskingRuleV1 extends cdktf.TerraformResource {
 
@@ -139,7 +139,7 @@ export class WafDatamaskingRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1.html opentelekomcloud_waf_datamasking_rule_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudLbLoadbalancerV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#l4_flavor DataOpentelekomcloudLbLoadbalancerV3#l4_flavor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#l4_flavor DataOpentelekomcloudLbLoadbalancerV3#l4_flavor}
   */
   readonly l4Flavor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#l7_flavor DataOpentelekomcloudLbLoadbalancerV3#l7_flavor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#l7_flavor DataOpentelekomcloudLbLoadbalancerV3#l7_flavor}
   */
   readonly l7Flavor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#name DataOpentelekomcloudLbLoadbalancerV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#name DataOpentelekomcloudLbLoadbalancerV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#router_id DataOpentelekomcloudLbLoadbalancerV3#router_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#router_id DataOpentelekomcloudLbLoadbalancerV3#router_id}
   */
   readonly routerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#subnet_id DataOpentelekomcloudLbLoadbalancerV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#subnet_id DataOpentelekomcloudLbLoadbalancerV3#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#vip_address DataOpentelekomcloudLbLoadbalancerV3#vip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#vip_address DataOpentelekomcloudLbLoadbalancerV3#vip_address}
   */
   readonly vipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html#vip_port_id DataOpentelekomcloudLbLoadbalancerV3#vip_port_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#vip_port_id DataOpentelekomcloudLbLoadbalancerV3#vip_port_id}
   */
   readonly vipPortId?: string;
 }
@@ -75,7 +75,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3PublicIp extends cdktf.ComplexC
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html opentelekomcloud_lb_loadbalancer_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3}
 */
 export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSource {
 
@@ -89,7 +89,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3.html opentelekomcloud_lb_loadbalancer_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3 opentelekomcloud_lb_loadbalancer_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

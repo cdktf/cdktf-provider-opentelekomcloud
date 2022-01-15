@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingSecgroupV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#delete_default_rules NetworkingSecgroupV2#delete_default_rules}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#delete_default_rules NetworkingSecgroupV2#delete_default_rules}
   */
   readonly deleteDefaultRules?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#description NetworkingSecgroupV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#description NetworkingSecgroupV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#name NetworkingSecgroupV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#name NetworkingSecgroupV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#region NetworkingSecgroupV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#region NetworkingSecgroupV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#tenant_id NetworkingSecgroupV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#tenant_id NetworkingSecgroupV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#timeouts NetworkingSecgroupV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#timeouts NetworkingSecgroupV2#timeouts}
   */
   readonly timeouts?: NetworkingSecgroupV2Timeouts;
 }
 export interface NetworkingSecgroupV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html#delete NetworkingSecgroupV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2#delete NetworkingSecgroupV2#delete}
   */
   readonly delete?: string;
 }
@@ -102,7 +102,7 @@ export class NetworkingSecgroupV2TimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html opentelekomcloud_networking_secgroup_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}
 */
 export class NetworkingSecgroupV2 extends cdktf.TerraformResource {
 
@@ -116,7 +116,7 @@ export class NetworkingSecgroupV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2.html opentelekomcloud_networking_secgroup_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
