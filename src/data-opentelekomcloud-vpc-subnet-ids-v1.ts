@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcSubnetIdsV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1.html#region DataOpentelekomcloudVpcSubnetIdsV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1.html#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1.html opentelekomcloud_vpc_subnet_ids_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1}
 */
 export class DataOpentelekomcloudVpcSubnetIdsV1 extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOpentelekomcloudVpcSubnetIdsV1 extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1.html opentelekomcloud_vpc_subnet_ids_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

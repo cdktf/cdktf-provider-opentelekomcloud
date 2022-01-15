@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudKmsDataKeyV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}
   */
   readonly datakeyLength: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}
   */
   readonly encryptionContext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}
   */
   readonly keyId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html opentelekomcloud_kms_data_key_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1 opentelekomcloud_kms_data_key_v1}
 */
 export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1.html opentelekomcloud_kms_data_key_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/kms_data_key_v1 opentelekomcloud_kms_data_key_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

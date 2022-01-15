@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudIdentityProjectV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}
   */
   readonly domainId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html#enabled DataOpentelekomcloudIdentityProjectV3#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3#enabled DataOpentelekomcloudIdentityProjectV3#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}
   */
   readonly isDomain?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html#name DataOpentelekomcloudIdentityProjectV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3#name DataOpentelekomcloudIdentityProjectV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}
   */
   readonly parentId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html opentelekomcloud_identity_project_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3 opentelekomcloud_identity_project_v3}
 */
 export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3.html opentelekomcloud_identity_project_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_project_v3 opentelekomcloud_identity_project_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

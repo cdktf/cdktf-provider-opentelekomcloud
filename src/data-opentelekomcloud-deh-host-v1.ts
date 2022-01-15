@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDehHostV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#id DataOpentelekomcloudDehHostV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1#id DataOpentelekomcloudDehHostV1#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#name DataOpentelekomcloudDehHostV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1#name DataOpentelekomcloudDehHostV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#region DataOpentelekomcloudDehHostV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1#region DataOpentelekomcloudDehHostV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html#status DataOpentelekomcloudDehHostV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1#status DataOpentelekomcloudDehHostV1#status}
   */
   readonly status?: string;
 }
@@ -37,7 +37,7 @@ export class DataOpentelekomcloudDehHostV1AvailableInstanceCapacities extends cd
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html opentelekomcloud_deh_host_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1 opentelekomcloud_deh_host_v1}
 */
 export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
 
@@ -51,7 +51,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1.html opentelekomcloud_deh_host_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1 opentelekomcloud_deh_host_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

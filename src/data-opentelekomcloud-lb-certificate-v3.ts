@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudLbCertificateV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#domain DataOpentelekomcloudLbCertificateV3#domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3#domain DataOpentelekomcloudLbCertificateV3#domain}
   */
   readonly domain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#name DataOpentelekomcloudLbCertificateV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3#name DataOpentelekomcloudLbCertificateV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html#type DataOpentelekomcloudLbCertificateV3#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3#type DataOpentelekomcloudLbCertificateV3#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html opentelekomcloud_lb_certificate_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3 opentelekomcloud_lb_certificate_v3}
 */
 export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOpentelekomcloudLbCertificateV3 extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3.html opentelekomcloud_lb_certificate_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_certificate_v3 opentelekomcloud_lb_certificate_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

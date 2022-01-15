@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,51 +8,51 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingRouterV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#admin_state_up NetworkingRouterV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#admin_state_up NetworkingRouterV2#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#distributed NetworkingRouterV2#distributed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#distributed NetworkingRouterV2#distributed}
   */
   readonly distributed?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#enable_snat NetworkingRouterV2#enable_snat}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#enable_snat NetworkingRouterV2#enable_snat}
   */
   readonly enableSnat?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#external_gateway NetworkingRouterV2#external_gateway}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#external_gateway NetworkingRouterV2#external_gateway}
   */
   readonly externalGateway?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#name NetworkingRouterV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#name NetworkingRouterV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#region NetworkingRouterV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#region NetworkingRouterV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#tenant_id NetworkingRouterV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#tenant_id NetworkingRouterV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#value_specs NetworkingRouterV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#value_specs NetworkingRouterV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#timeouts NetworkingRouterV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#timeouts NetworkingRouterV2#timeouts}
   */
   readonly timeouts?: NetworkingRouterV2Timeouts;
 }
 export interface NetworkingRouterV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#create NetworkingRouterV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#create NetworkingRouterV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html#delete NetworkingRouterV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#delete NetworkingRouterV2#delete}
   */
   readonly delete?: string;
 }
@@ -141,7 +141,7 @@ export class NetworkingRouterV2TimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html opentelekomcloud_networking_router_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2 opentelekomcloud_networking_router_v2}
 */
 export class NetworkingRouterV2 extends cdktf.TerraformResource {
 
@@ -155,7 +155,7 @@ export class NetworkingRouterV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2.html opentelekomcloud_networking_router_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2 opentelekomcloud_networking_router_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

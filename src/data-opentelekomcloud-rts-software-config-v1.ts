@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudRtsSoftwareConfigV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html#id DataOpentelekomcloudRtsSoftwareConfigV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html#name DataOpentelekomcloudRtsSoftwareConfigV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html#region DataOpentelekomcloudRtsSoftwareConfigV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html opentelekomcloud_rts_software_config_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}
 */
 export class DataOpentelekomcloudRtsSoftwareConfigV1 extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOpentelekomcloudRtsSoftwareConfigV1 extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1.html opentelekomcloud_rts_software_config_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

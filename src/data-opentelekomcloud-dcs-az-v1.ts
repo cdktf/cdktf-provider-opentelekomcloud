@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDcsAzV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html#code DataOpentelekomcloudDcsAzV1#code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1#code DataOpentelekomcloudDcsAzV1#code}
   */
   readonly code?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html#name DataOpentelekomcloudDcsAzV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1#name DataOpentelekomcloudDcsAzV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html#port DataOpentelekomcloudDcsAzV1#port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1#port DataOpentelekomcloudDcsAzV1#port}
   */
   readonly port?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html opentelekomcloud_dcs_az_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1 opentelekomcloud_dcs_az_v1}
 */
 export class DataOpentelekomcloudDcsAzV1 extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataOpentelekomcloudDcsAzV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1.html opentelekomcloud_dcs_az_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dcs_az_v1 opentelekomcloud_dcs_az_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

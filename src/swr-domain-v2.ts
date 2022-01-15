@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface SwrDomainV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#access_domain SwrDomainV2#access_domain}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#access_domain SwrDomainV2#access_domain}
   */
   readonly accessDomain: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#deadline SwrDomainV2#deadline}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#deadline SwrDomainV2#deadline}
   */
   readonly deadline: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#description SwrDomainV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#description SwrDomainV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#organization SwrDomainV2#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#organization SwrDomainV2#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#permission SwrDomainV2#permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#permission SwrDomainV2#permission}
   */
   readonly permission: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#repository SwrDomainV2#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#repository SwrDomainV2#repository}
   */
   readonly repository: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#timeouts SwrDomainV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#timeouts SwrDomainV2#timeouts}
   */
   readonly timeouts?: SwrDomainV2Timeouts;
 }
 export interface SwrDomainV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html#default SwrDomainV2#default}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#default SwrDomainV2#default}
   */
   readonly default?: string;
 }
@@ -106,7 +106,7 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html opentelekomcloud_swr_domain_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2 opentelekomcloud_swr_domain_v2}
 */
 export class SwrDomainV2 extends cdktf.TerraformResource {
 
@@ -120,7 +120,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2.html opentelekomcloud_swr_domain_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2 opentelekomcloud_swr_domain_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

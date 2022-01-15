@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,49 +8,49 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDmsProductV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#bandwidth DataOpentelekomcloudDmsProductV1#bandwidth}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#bandwidth DataOpentelekomcloudDmsProductV1#bandwidth}
   */
   readonly bandwidth?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#engine DataOpentelekomcloudDmsProductV1#engine}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#engine DataOpentelekomcloudDmsProductV1#engine}
   */
   readonly engine: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#instance_type DataOpentelekomcloudDmsProductV1#instance_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#instance_type DataOpentelekomcloudDmsProductV1#instance_type}
   */
   readonly instanceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#io_type DataOpentelekomcloudDmsProductV1#io_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#io_type DataOpentelekomcloudDmsProductV1#io_type}
   */
   readonly ioType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#node_num DataOpentelekomcloudDmsProductV1#node_num}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#node_num DataOpentelekomcloudDmsProductV1#node_num}
   */
   readonly nodeNum?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#partition_num DataOpentelekomcloudDmsProductV1#partition_num}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#partition_num DataOpentelekomcloudDmsProductV1#partition_num}
   */
   readonly partitionNum?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#storage DataOpentelekomcloudDmsProductV1#storage}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#storage DataOpentelekomcloudDmsProductV1#storage}
   */
   readonly storage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#storage_spec_code DataOpentelekomcloudDmsProductV1#storage_spec_code}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#storage_spec_code DataOpentelekomcloudDmsProductV1#storage_spec_code}
   */
   readonly storageSpecCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#version DataOpentelekomcloudDmsProductV1#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#version DataOpentelekomcloudDmsProductV1#version}
   */
   readonly version?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html#vm_specification DataOpentelekomcloudDmsProductV1#vm_specification}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1#vm_specification DataOpentelekomcloudDmsProductV1#vm_specification}
   */
   readonly vmSpecification?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html opentelekomcloud_dms_product_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1 opentelekomcloud_dms_product_v1}
 */
 export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource {
 
@@ -64,7 +64,7 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1.html opentelekomcloud_dms_product_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_product_v1 opentelekomcloud_dms_product_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

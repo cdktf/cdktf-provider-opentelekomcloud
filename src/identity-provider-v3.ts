@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProviderV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html#description IdentityProviderV3#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3#description IdentityProviderV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html#enabled IdentityProviderV3#enabled}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3#enabled IdentityProviderV3#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html#name IdentityProviderV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3#name IdentityProviderV3#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html opentelekomcloud_identity_provider_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3 opentelekomcloud_identity_provider_v3}
 */
 export class IdentityProviderV3 extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3.html opentelekomcloud_identity_provider_v3} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_provider_v3 opentelekomcloud_identity_provider_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface DnsRecordsetV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#description DnsRecordsetV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#description DnsRecordsetV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#name DnsRecordsetV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#name DnsRecordsetV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#records DnsRecordsetV2#records}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#records DnsRecordsetV2#records}
   */
   readonly records: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#region DnsRecordsetV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#region DnsRecordsetV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#tags DnsRecordsetV2#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#tags DnsRecordsetV2#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#ttl DnsRecordsetV2#ttl}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#ttl DnsRecordsetV2#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#type DnsRecordsetV2#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#type DnsRecordsetV2#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#value_specs DnsRecordsetV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#zone_id DnsRecordsetV2#zone_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}
   */
   readonly zoneId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#timeouts DnsRecordsetV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
   */
   readonly timeouts?: DnsRecordsetV2Timeouts;
 }
 export interface DnsRecordsetV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#create DnsRecordsetV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#create DnsRecordsetV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#delete DnsRecordsetV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#delete DnsRecordsetV2#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html#update DnsRecordsetV2#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#update DnsRecordsetV2#update}
   */
   readonly update?: string;
 }
@@ -172,7 +172,7 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html opentelekomcloud_dns_recordset_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2 opentelekomcloud_dns_recordset_v2}
 */
 export class DnsRecordsetV2 extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2.html opentelekomcloud_dns_recordset_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2 opentelekomcloud_dns_recordset_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

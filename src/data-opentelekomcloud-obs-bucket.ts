@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudObsBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket.html#bucket DataOpentelekomcloudObsBucket#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket#bucket DataOpentelekomcloudObsBucket#bucket}
   */
   readonly bucket: string;
 }
@@ -201,7 +201,7 @@ export class DataOpentelekomcloudObsBucketWebsite extends cdktf.ComplexComputedL
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket.html opentelekomcloud_obs_bucket}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket opentelekomcloud_obs_bucket}
 */
 export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
 
@@ -215,7 +215,7 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket.html opentelekomcloud_obs_bucket} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket opentelekomcloud_obs_bucket} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,53 +8,53 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeSecgroupV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#description ComputeSecgroupV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#description ComputeSecgroupV2#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#name ComputeSecgroupV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#name ComputeSecgroupV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#region ComputeSecgroupV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#region ComputeSecgroupV2#region}
   */
   readonly region?: string;
   /**
   * rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#rule ComputeSecgroupV2#rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#rule ComputeSecgroupV2#rule}
   */
   readonly rule?: ComputeSecgroupV2Rule[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#timeouts ComputeSecgroupV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#timeouts ComputeSecgroupV2#timeouts}
   */
   readonly timeouts?: ComputeSecgroupV2Timeouts;
 }
 export interface ComputeSecgroupV2Rule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#cidr ComputeSecgroupV2#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#cidr ComputeSecgroupV2#cidr}
   */
   readonly cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#from_group_id ComputeSecgroupV2#from_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#from_group_id ComputeSecgroupV2#from_group_id}
   */
   readonly fromGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#from_port ComputeSecgroupV2#from_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#from_port ComputeSecgroupV2#from_port}
   */
   readonly fromPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#ip_protocol ComputeSecgroupV2#ip_protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#ip_protocol ComputeSecgroupV2#ip_protocol}
   */
   readonly ipProtocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#self ComputeSecgroupV2#self}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#self ComputeSecgroupV2#self}
   */
   readonly selfAttribute?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#to_port ComputeSecgroupV2#to_port}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#to_port ComputeSecgroupV2#to_port}
   */
   readonly toPort: number;
 }
@@ -76,7 +76,7 @@ export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule)
 
 export interface ComputeSecgroupV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html#delete ComputeSecgroupV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#delete ComputeSecgroupV2#delete}
   */
   readonly delete?: string;
 }
@@ -142,7 +142,7 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html opentelekomcloud_compute_secgroup_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2}
 */
 export class ComputeSecgroupV2 extends cdktf.TerraformResource {
 
@@ -156,7 +156,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2.html opentelekomcloud_compute_secgroup_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2 opentelekomcloud_compute_secgroup_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

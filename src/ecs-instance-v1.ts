@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,99 +8,99 @@ import * as cdktf from 'cdktf';
 
 export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#auto_recovery EcsInstanceV1#auto_recovery}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#auto_recovery EcsInstanceV1#auto_recovery}
   */
   readonly autoRecovery?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#availability_zone EcsInstanceV1#availability_zone}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#availability_zone EcsInstanceV1#availability_zone}
   */
   readonly availabilityZone: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}
   */
   readonly deleteDisksOnTermination?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#flavor EcsInstanceV1#flavor}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#flavor EcsInstanceV1#flavor}
   */
   readonly flavor: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#image_id EcsInstanceV1#image_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#image_id EcsInstanceV1#image_id}
   */
   readonly imageId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#key_name EcsInstanceV1#key_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#key_name EcsInstanceV1#key_name}
   */
   readonly keyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#name EcsInstanceV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#name EcsInstanceV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#password EcsInstanceV1#password}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#password EcsInstanceV1#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#security_groups EcsInstanceV1#security_groups}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#security_groups EcsInstanceV1#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}
   */
   readonly systemDiskKmsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_size EcsInstanceV1#system_disk_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#system_disk_size EcsInstanceV1#system_disk_size}
   */
   readonly systemDiskSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#system_disk_type EcsInstanceV1#system_disk_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#system_disk_type EcsInstanceV1#system_disk_type}
   */
   readonly systemDiskType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#tags EcsInstanceV1#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#tags EcsInstanceV1#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#user_data EcsInstanceV1#user_data}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#user_data EcsInstanceV1#user_data}
   */
   readonly userData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#vpc_id EcsInstanceV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#vpc_id EcsInstanceV1#vpc_id}
   */
   readonly vpcId: string;
   /**
   * data_disks block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#data_disks EcsInstanceV1#data_disks}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#data_disks EcsInstanceV1#data_disks}
   */
   readonly dataDisks?: EcsInstanceV1DataDisks[];
   /**
   * nics block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#nics EcsInstanceV1#nics}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#nics EcsInstanceV1#nics}
   */
   readonly nics: EcsInstanceV1Nics[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#timeouts EcsInstanceV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#timeouts EcsInstanceV1#timeouts}
   */
   readonly timeouts?: EcsInstanceV1Timeouts;
 }
 export interface EcsInstanceV1DataDisks {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#kms_id EcsInstanceV1#kms_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}
   */
   readonly kmsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#size EcsInstanceV1#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#size EcsInstanceV1#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#snapshot_id EcsInstanceV1#snapshot_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#snapshot_id EcsInstanceV1#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#type EcsInstanceV1#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#type EcsInstanceV1#type}
   */
   readonly type: string;
 }
@@ -120,11 +120,11 @@ export function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisk
 
 export interface EcsInstanceV1Nics {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#ip_address EcsInstanceV1#ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#network_id EcsInstanceV1#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#network_id EcsInstanceV1#network_id}
   */
   readonly networkId: string;
 }
@@ -142,15 +142,15 @@ export function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics): any {
 
 export interface EcsInstanceV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#create EcsInstanceV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#create EcsInstanceV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#delete EcsInstanceV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#delete EcsInstanceV1#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html#update EcsInstanceV1#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#update EcsInstanceV1#update}
   */
   readonly update?: string;
 }
@@ -262,7 +262,7 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html opentelekomcloud_ecs_instance_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}
 */
 export class EcsInstanceV1 extends cdktf.TerraformResource {
 
@@ -276,7 +276,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1.html opentelekomcloud_ecs_instance_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1 opentelekomcloud_ecs_instance_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

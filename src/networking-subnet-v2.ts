@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,75 +8,75 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingSubnetV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#cidr NetworkingSubnetV2#cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#cidr NetworkingSubnetV2#cidr}
   */
   readonly cidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#dns_nameservers NetworkingSubnetV2#dns_nameservers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#dns_nameservers NetworkingSubnetV2#dns_nameservers}
   */
   readonly dnsNameservers?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#enable_dhcp NetworkingSubnetV2#enable_dhcp}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#enable_dhcp NetworkingSubnetV2#enable_dhcp}
   */
   readonly enableDhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#gateway_ip NetworkingSubnetV2#gateway_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#gateway_ip NetworkingSubnetV2#gateway_ip}
   */
   readonly gatewayIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#ip_version NetworkingSubnetV2#ip_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#ip_version NetworkingSubnetV2#ip_version}
   */
   readonly ipVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#name NetworkingSubnetV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#name NetworkingSubnetV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#network_id NetworkingSubnetV2#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#network_id NetworkingSubnetV2#network_id}
   */
   readonly networkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#no_gateway NetworkingSubnetV2#no_gateway}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#no_gateway NetworkingSubnetV2#no_gateway}
   */
   readonly noGateway?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#region NetworkingSubnetV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#region NetworkingSubnetV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#tenant_id NetworkingSubnetV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#tenant_id NetworkingSubnetV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#value_specs NetworkingSubnetV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#value_specs NetworkingSubnetV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * allocation_pools block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#allocation_pools NetworkingSubnetV2#allocation_pools}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#allocation_pools NetworkingSubnetV2#allocation_pools}
   */
   readonly allocationPools?: NetworkingSubnetV2AllocationPools[];
   /**
   * host_routes block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#host_routes NetworkingSubnetV2#host_routes}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#host_routes NetworkingSubnetV2#host_routes}
   */
   readonly hostRoutes?: NetworkingSubnetV2HostRoutes[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#timeouts NetworkingSubnetV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#timeouts NetworkingSubnetV2#timeouts}
   */
   readonly timeouts?: NetworkingSubnetV2Timeouts;
 }
 export interface NetworkingSubnetV2AllocationPools {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#end NetworkingSubnetV2#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#end NetworkingSubnetV2#end}
   */
   readonly end: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#start NetworkingSubnetV2#start}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#start NetworkingSubnetV2#start}
   */
   readonly start: string;
 }
@@ -94,11 +94,11 @@ export function networkingSubnetV2AllocationPoolsToTerraform(struct?: Networking
 
 export interface NetworkingSubnetV2HostRoutes {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#destination_cidr NetworkingSubnetV2#destination_cidr}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#destination_cidr NetworkingSubnetV2#destination_cidr}
   */
   readonly destinationCidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#next_hop NetworkingSubnetV2#next_hop}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#next_hop NetworkingSubnetV2#next_hop}
   */
   readonly nextHop: string;
 }
@@ -116,11 +116,11 @@ export function networkingSubnetV2HostRoutesToTerraform(struct?: NetworkingSubne
 
 export interface NetworkingSubnetV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#create NetworkingSubnetV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#create NetworkingSubnetV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html#delete NetworkingSubnetV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#delete NetworkingSubnetV2#delete}
   */
   readonly delete?: string;
 }
@@ -209,7 +209,7 @@ export class NetworkingSubnetV2TimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html opentelekomcloud_networking_subnet_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2 opentelekomcloud_networking_subnet_v2}
 */
 export class NetworkingSubnetV2 extends cdktf.TerraformResource {
 
@@ -223,7 +223,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2.html opentelekomcloud_networking_subnet_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2 opentelekomcloud_networking_subnet_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

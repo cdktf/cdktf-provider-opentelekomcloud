@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudRdsFlavorsV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}
   */
   readonly datastoreName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}
   */
   readonly datastoreVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html#region DataOpentelekomcloudRdsFlavorsV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}
   */
   readonly speccode?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html opentelekomcloud_rds_flavors_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}
 */
 export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1.html opentelekomcloud_rds_flavors_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1 opentelekomcloud_rds_flavors_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,41 +8,41 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcEipV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#bandwidth_id DataOpentelekomcloudVpcEipV1#bandwidth_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#bandwidth_id DataOpentelekomcloudVpcEipV1#bandwidth_id}
   */
   readonly bandwidthId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#id DataOpentelekomcloudVpcEipV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#id DataOpentelekomcloudVpcEipV1#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#port_id DataOpentelekomcloudVpcEipV1#port_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#port_id DataOpentelekomcloudVpcEipV1#port_id}
   */
   readonly portId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#private_ip_address DataOpentelekomcloudVpcEipV1#private_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#private_ip_address DataOpentelekomcloudVpcEipV1#private_ip_address}
   */
   readonly privateIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#public_ip_address DataOpentelekomcloudVpcEipV1#public_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#public_ip_address DataOpentelekomcloudVpcEipV1#public_ip_address}
   */
   readonly publicIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#region DataOpentelekomcloudVpcEipV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#region DataOpentelekomcloudVpcEipV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#status DataOpentelekomcloudVpcEipV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#status DataOpentelekomcloudVpcEipV1#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html#tags DataOpentelekomcloudVpcEipV1#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#tags DataOpentelekomcloudVpcEipV1#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html opentelekomcloud_vpc_eip_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}
 */
 export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
 
@@ -56,7 +56,7 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1.html opentelekomcloud_vpc_eip_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

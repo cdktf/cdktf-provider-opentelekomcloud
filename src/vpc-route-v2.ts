@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface VpcRouteV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#destination VpcRouteV2#destination}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#destination VpcRouteV2#destination}
   */
   readonly destination: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#nexthop VpcRouteV2#nexthop}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#nexthop VpcRouteV2#nexthop}
   */
   readonly nexthop: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#region VpcRouteV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#region VpcRouteV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#tenant_id VpcRouteV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#tenant_id VpcRouteV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#type VpcRouteV2#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#type VpcRouteV2#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#vpc_id VpcRouteV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#vpc_id VpcRouteV2#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#timeouts VpcRouteV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#timeouts VpcRouteV2#timeouts}
   */
   readonly timeouts?: VpcRouteV2Timeouts;
 }
 export interface VpcRouteV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#create VpcRouteV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#create VpcRouteV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html#delete VpcRouteV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2#delete VpcRouteV2#delete}
   */
   readonly delete?: string;
 }
@@ -133,7 +133,7 @@ export class VpcRouteV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html opentelekomcloud_vpc_route_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2 opentelekomcloud_vpc_route_v2}
 */
 export class VpcRouteV2 extends cdktf.TerraformResource {
 
@@ -147,7 +147,7 @@ export class VpcRouteV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2.html opentelekomcloud_vpc_route_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_route_v2 opentelekomcloud_vpc_route_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

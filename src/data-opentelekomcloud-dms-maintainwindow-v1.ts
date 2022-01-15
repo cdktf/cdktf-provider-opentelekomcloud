@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDmsMaintainwindowV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}
   */
   readonly begin?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html#default DataOpentelekomcloudDmsMaintainwindowV1#default}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html#end DataOpentelekomcloudDmsMaintainwindowV1#end}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}
   */
   readonly end?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}
   */
   readonly seq?: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html opentelekomcloud_dms_maintainwindow_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}
 */
 export class DataOpentelekomcloudDmsMaintainwindowV1 extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataOpentelekomcloudDmsMaintainwindowV1 extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1.html opentelekomcloud_dms_maintainwindow_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

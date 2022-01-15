@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface CssSnapshotConfigurationV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#automatic CssSnapshotConfigurationV1#automatic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#automatic CssSnapshotConfigurationV1#automatic}
   */
   readonly automatic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#cluster_id CssSnapshotConfigurationV1#cluster_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#cluster_id CssSnapshotConfigurationV1#cluster_id}
   */
   readonly clusterId: string;
   /**
   * configuration block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#configuration CssSnapshotConfigurationV1#configuration}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#configuration CssSnapshotConfigurationV1#configuration}
   */
   readonly configuration?: CssSnapshotConfigurationV1Configuration;
   /**
   * creation_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#creation_policy CssSnapshotConfigurationV1#creation_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#creation_policy CssSnapshotConfigurationV1#creation_policy}
   */
   readonly creationPolicy?: CssSnapshotConfigurationV1CreationPolicy;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#timeouts CssSnapshotConfigurationV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#timeouts CssSnapshotConfigurationV1#timeouts}
   */
   readonly timeouts?: CssSnapshotConfigurationV1Timeouts;
 }
 export interface CssSnapshotConfigurationV1Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#agency CssSnapshotConfigurationV1#agency}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#agency CssSnapshotConfigurationV1#agency}
   */
   readonly agency: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#bucket CssSnapshotConfigurationV1#bucket}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#bucket CssSnapshotConfigurationV1#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#kms_id CssSnapshotConfigurationV1#kms_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#kms_id CssSnapshotConfigurationV1#kms_id}
   */
   readonly kmsId?: string;
 }
@@ -150,23 +150,23 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
 }
 export interface CssSnapshotConfigurationV1CreationPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#delete_auto CssSnapshotConfigurationV1#delete_auto}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#delete_auto CssSnapshotConfigurationV1#delete_auto}
   */
   readonly deleteAuto?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#enable CssSnapshotConfigurationV1#enable}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#enable CssSnapshotConfigurationV1#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#keepday CssSnapshotConfigurationV1#keepday}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#keepday CssSnapshotConfigurationV1#keepday}
   */
   readonly keepday: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#period CssSnapshotConfigurationV1#period}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#period CssSnapshotConfigurationV1#period}
   */
   readonly period: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#prefix CssSnapshotConfigurationV1#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#prefix CssSnapshotConfigurationV1#prefix}
   */
   readonly prefix: string;
 }
@@ -312,11 +312,11 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
 }
 export interface CssSnapshotConfigurationV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#create CssSnapshotConfigurationV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#create CssSnapshotConfigurationV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html#update CssSnapshotConfigurationV1#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#update CssSnapshotConfigurationV1#update}
   */
   readonly update?: string;
 }
@@ -405,7 +405,7 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html opentelekomcloud_css_snapshot_configuration_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1}
 */
 export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
 
@@ -419,7 +419,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1.html opentelekomcloud_css_snapshot_configuration_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

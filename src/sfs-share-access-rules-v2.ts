@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,27 +8,27 @@ import * as cdktf from 'cdktf';
 
 export interface SfsShareAccessRulesV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html#share_id SfsShareAccessRulesV2#share_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#share_id SfsShareAccessRulesV2#share_id}
   */
   readonly shareId: string;
   /**
   * access_rule block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html#access_rule SfsShareAccessRulesV2#access_rule}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#access_rule SfsShareAccessRulesV2#access_rule}
   */
   readonly accessRule: SfsShareAccessRulesV2AccessRule[];
 }
 export interface SfsShareAccessRulesV2AccessRule {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html#access_level SfsShareAccessRulesV2#access_level}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#access_level SfsShareAccessRulesV2#access_level}
   */
   readonly accessLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html#access_to SfsShareAccessRulesV2#access_to}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#access_to SfsShareAccessRulesV2#access_to}
   */
   readonly accessTo: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html#access_type SfsShareAccessRulesV2#access_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#access_type SfsShareAccessRulesV2#access_type}
   */
   readonly accessType?: string;
 }
@@ -47,7 +47,7 @@ export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAcce
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html opentelekomcloud_sfs_share_access_rules_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2}
 */
 export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
 
@@ -61,7 +61,7 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2.html opentelekomcloud_sfs_share_access_rules_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

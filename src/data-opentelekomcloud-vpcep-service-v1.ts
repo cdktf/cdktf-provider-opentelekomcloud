@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcepServiceV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html#name DataOpentelekomcloudVpcepServiceV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#name DataOpentelekomcloudVpcepServiceV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html#status DataOpentelekomcloudVpcepServiceV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#status DataOpentelekomcloudVpcepServiceV1#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html#tags DataOpentelekomcloudVpcepServiceV1#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#tags DataOpentelekomcloudVpcepServiceV1#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
 }
@@ -39,7 +39,7 @@ export class DataOpentelekomcloudVpcepServiceV1Port extends cdktf.ComplexCompute
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html opentelekomcloud_vpcep_service_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}
 */
 export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSource {
 
@@ -53,7 +53,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1.html opentelekomcloud_vpcep_service_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1 opentelekomcloud_vpcep_service_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

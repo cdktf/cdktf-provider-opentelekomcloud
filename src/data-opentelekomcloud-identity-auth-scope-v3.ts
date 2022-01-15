@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudIdentityAuthScopeV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3.html#name DataOpentelekomcloudIdentityAuthScopeV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3.html#region DataOpentelekomcloudIdentityAuthScopeV3#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}
   */
   readonly region?: string;
 }
@@ -30,7 +30,7 @@ export class DataOpentelekomcloudIdentityAuthScopeV3Roles extends cdktf.ComplexC
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3.html opentelekomcloud_identity_auth_scope_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3}
 */
 export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3.html opentelekomcloud_identity_auth_scope_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

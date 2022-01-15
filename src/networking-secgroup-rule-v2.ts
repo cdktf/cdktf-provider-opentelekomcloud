@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingSecgroupRuleV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#description NetworkingSecgroupRuleV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#description NetworkingSecgroupRuleV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#direction NetworkingSecgroupRuleV2#direction}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#direction NetworkingSecgroupRuleV2#direction}
   */
   readonly direction: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#ethertype NetworkingSecgroupRuleV2#ethertype}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#ethertype NetworkingSecgroupRuleV2#ethertype}
   */
   readonly ethertype: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#port_range_max NetworkingSecgroupRuleV2#port_range_max}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#port_range_max NetworkingSecgroupRuleV2#port_range_max}
   */
   readonly portRangeMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#port_range_min NetworkingSecgroupRuleV2#port_range_min}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#port_range_min NetworkingSecgroupRuleV2#port_range_min}
   */
   readonly portRangeMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#protocol NetworkingSecgroupRuleV2#protocol}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#protocol NetworkingSecgroupRuleV2#protocol}
   */
   readonly protocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#region NetworkingSecgroupRuleV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#region NetworkingSecgroupRuleV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#remote_group_id NetworkingSecgroupRuleV2#remote_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#remote_group_id NetworkingSecgroupRuleV2#remote_group_id}
   */
   readonly remoteGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#remote_ip_prefix NetworkingSecgroupRuleV2#remote_ip_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#remote_ip_prefix NetworkingSecgroupRuleV2#remote_ip_prefix}
   */
   readonly remoteIpPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#security_group_id NetworkingSecgroupRuleV2#security_group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#security_group_id NetworkingSecgroupRuleV2#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#tenant_id NetworkingSecgroupRuleV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#tenant_id NetworkingSecgroupRuleV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#timeouts NetworkingSecgroupRuleV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#timeouts NetworkingSecgroupRuleV2#timeouts}
   */
   readonly timeouts?: NetworkingSecgroupRuleV2Timeouts;
 }
 export interface NetworkingSecgroupRuleV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html#delete NetworkingSecgroupRuleV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2#delete NetworkingSecgroupRuleV2#delete}
   */
   readonly delete?: string;
 }
@@ -126,7 +126,7 @@ export class NetworkingSecgroupRuleV2TimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html opentelekomcloud_networking_secgroup_rule_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2}
 */
 export class NetworkingSecgroupRuleV2 extends cdktf.TerraformResource {
 
@@ -140,7 +140,7 @@ export class NetworkingSecgroupRuleV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2.html opentelekomcloud_networking_secgroup_rule_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_secgroup_rule_v2 opentelekomcloud_networking_secgroup_rule_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

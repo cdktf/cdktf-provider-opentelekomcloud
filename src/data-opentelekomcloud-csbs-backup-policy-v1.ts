@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudCsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html#name DataOpentelekomcloudCsbsBackupPolicyV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1#name DataOpentelekomcloudCsbsBackupPolicyV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html#region DataOpentelekomcloudCsbsBackupPolicyV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1#region DataOpentelekomcloudCsbsBackupPolicyV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html#status DataOpentelekomcloudCsbsBackupPolicyV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1#status DataOpentelekomcloudCsbsBackupPolicyV1#status}
   */
   readonly status?: string;
 }
@@ -113,7 +113,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1Tags extends cdktf.ComplexCom
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html opentelekomcloud_csbs_backup_policy_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1}
 */
 export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataSource {
 
@@ -127,7 +127,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1.html opentelekomcloud_csbs_backup_policy_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_policy_v1 opentelekomcloud_csbs_backup_policy_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

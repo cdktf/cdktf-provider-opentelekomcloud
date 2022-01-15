@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcRouteIdsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2.html#region DataOpentelekomcloudVpcRouteIdsV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2#region DataOpentelekomcloudVpcRouteIdsV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2.html#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2.html opentelekomcloud_vpc_route_ids_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2 opentelekomcloud_vpc_route_ids_v2}
 */
 export class DataOpentelekomcloudVpcRouteIdsV2 extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOpentelekomcloudVpcRouteIdsV2 extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2.html opentelekomcloud_vpc_route_ids_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_route_ids_v2 opentelekomcloud_vpc_route_ids_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

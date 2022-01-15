@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface ImagesImageAccessAcceptV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html#image_id ImagesImageAccessAcceptV2#image_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2#image_id ImagesImageAccessAcceptV2#image_id}
   */
   readonly imageId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html#member_id ImagesImageAccessAcceptV2#member_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2#member_id ImagesImageAccessAcceptV2#member_id}
   */
   readonly memberId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html#status ImagesImageAccessAcceptV2#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2#status ImagesImageAccessAcceptV2#status}
   */
   readonly status: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html opentelekomcloud_images_image_access_accept_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2}
 */
 export class ImagesImageAccessAcceptV2 extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class ImagesImageAccessAcceptV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2.html opentelekomcloud_images_image_access_accept_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_accept_v2 opentelekomcloud_images_image_access_accept_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface VpcBandwidthV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html#name VpcBandwidthV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2#name VpcBandwidthV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html#size VpcBandwidthV2#size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2#size VpcBandwidthV2#size}
   */
   readonly size: number;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html opentelekomcloud_vpc_bandwidth_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}
 */
 export class VpcBandwidthV2 extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class VpcBandwidthV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2.html opentelekomcloud_vpc_bandwidth_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

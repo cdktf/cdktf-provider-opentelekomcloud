@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudRtsSoftwareDeploymentV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#action DataOpentelekomcloudRtsSoftwareDeploymentV1#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#action DataOpentelekomcloudRtsSoftwareDeploymentV1#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#config_id DataOpentelekomcloudRtsSoftwareDeploymentV1#config_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#config_id DataOpentelekomcloudRtsSoftwareDeploymentV1#config_id}
   */
   readonly configId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#id DataOpentelekomcloudRtsSoftwareDeploymentV1#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#id DataOpentelekomcloudRtsSoftwareDeploymentV1#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#region DataOpentelekomcloudRtsSoftwareDeploymentV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#region DataOpentelekomcloudRtsSoftwareDeploymentV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#server_id DataOpentelekomcloudRtsSoftwareDeploymentV1#server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#server_id DataOpentelekomcloudRtsSoftwareDeploymentV1#server_id}
   */
   readonly serverId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html#status DataOpentelekomcloudRtsSoftwareDeploymentV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1#status DataOpentelekomcloudRtsSoftwareDeploymentV1#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html opentelekomcloud_rts_software_deployment_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1}
 */
 export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.TerraformDataSource {
 
@@ -48,7 +48,7 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1.html opentelekomcloud_rts_software_deployment_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_deployment_v1 opentelekomcloud_rts_software_deployment_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

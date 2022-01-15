@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html#datastore_type DataOpentelekomcloudDdsInstanceV3#datastore_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#datastore_type DataOpentelekomcloudDdsInstanceV3#datastore_type}
   */
   readonly datastoreType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html#instance_id DataOpentelekomcloudDdsInstanceV3#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#instance_id DataOpentelekomcloudDdsInstanceV3#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html#name DataOpentelekomcloudDdsInstanceV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#name DataOpentelekomcloudDdsInstanceV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html#subnet_id DataOpentelekomcloudDdsInstanceV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#subnet_id DataOpentelekomcloudDdsInstanceV3#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html#vpc_id DataOpentelekomcloudDdsInstanceV3#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#vpc_id DataOpentelekomcloudDdsInstanceV3#vpc_id}
   */
   readonly vpcId?: string;
 }
@@ -96,7 +96,7 @@ export class DataOpentelekomcloudDdsInstanceV3Nodes extends cdktf.ComplexCompute
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html opentelekomcloud_dds_instance_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3 opentelekomcloud_dds_instance_v3}
 */
 export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource {
 
@@ -110,7 +110,7 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3.html opentelekomcloud_dds_instance_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3 opentelekomcloud_dds_instance_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

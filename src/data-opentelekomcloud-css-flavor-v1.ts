@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,39 +8,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudCssFlavorV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#min_cpu DataOpentelekomcloudCssFlavorV1#min_cpu}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#min_cpu DataOpentelekomcloudCssFlavorV1#min_cpu}
   */
   readonly minCpu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#min_ram DataOpentelekomcloudCssFlavorV1#min_ram}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#min_ram DataOpentelekomcloudCssFlavorV1#min_ram}
   */
   readonly minRam?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#name DataOpentelekomcloudCssFlavorV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#name DataOpentelekomcloudCssFlavorV1#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#type DataOpentelekomcloudCssFlavorV1#type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#type DataOpentelekomcloudCssFlavorV1#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#version DataOpentelekomcloudCssFlavorV1#version}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#version DataOpentelekomcloudCssFlavorV1#version}
   */
   readonly version?: string;
   /**
   * disk_range block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#disk_range DataOpentelekomcloudCssFlavorV1#disk_range}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#disk_range DataOpentelekomcloudCssFlavorV1#disk_range}
   */
   readonly diskRange?: DataOpentelekomcloudCssFlavorV1DiskRange;
 }
 export interface DataOpentelekomcloudCssFlavorV1DiskRange {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#min_from DataOpentelekomcloudCssFlavorV1#min_from}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#min_from DataOpentelekomcloudCssFlavorV1#min_from}
   */
   readonly minFrom?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html#min_to DataOpentelekomcloudCssFlavorV1#min_to}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1#min_to DataOpentelekomcloudCssFlavorV1#min_to}
   */
   readonly minTo?: number;
 }
@@ -129,7 +129,7 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html opentelekomcloud_css_flavor_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1 opentelekomcloud_css_flavor_v1}
 */
 export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
 
@@ -143,7 +143,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1.html opentelekomcloud_css_flavor_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/css_flavor_v1 opentelekomcloud_css_flavor_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudAntiddosV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html#floating_ip_address DataOpentelekomcloudAntiddosV1#floating_ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1#floating_ip_address DataOpentelekomcloudAntiddosV1#floating_ip_address}
   */
   readonly floatingIpAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html#floating_ip_id DataOpentelekomcloudAntiddosV1#floating_ip_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1#floating_ip_id DataOpentelekomcloudAntiddosV1#floating_ip_id}
   */
   readonly floatingIpId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html#region DataOpentelekomcloudAntiddosV1#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1#region DataOpentelekomcloudAntiddosV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html#status DataOpentelekomcloudAntiddosV1#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1#status DataOpentelekomcloudAntiddosV1#status}
   */
   readonly status?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html opentelekomcloud_antiddos_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1 opentelekomcloud_antiddos_v1}
 */
 export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1.html opentelekomcloud_antiddos_v1} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1 opentelekomcloud_antiddos_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

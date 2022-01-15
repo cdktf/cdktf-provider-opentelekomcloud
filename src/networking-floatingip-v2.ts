@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingFloatingipV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#fixed_ip NetworkingFloatingipV2#fixed_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}
   */
   readonly fixedIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#pool NetworkingFloatingipV2#pool}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}
   */
   readonly pool?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#port_id NetworkingFloatingipV2#port_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}
   */
   readonly portId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#region NetworkingFloatingipV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#region NetworkingFloatingipV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#tenant_id NetworkingFloatingipV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#value_specs NetworkingFloatingipV2#value_specs}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#timeouts NetworkingFloatingipV2#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#timeouts NetworkingFloatingipV2#timeouts}
   */
   readonly timeouts?: NetworkingFloatingipV2Timeouts;
 }
 export interface NetworkingFloatingipV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#create NetworkingFloatingipV2#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#create NetworkingFloatingipV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html#delete NetworkingFloatingipV2#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}
   */
   readonly delete?: string;
 }
@@ -133,7 +133,7 @@ export class NetworkingFloatingipV2TimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html opentelekomcloud_networking_floatingip_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}
 */
 export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
 
@@ -147,7 +147,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2.html opentelekomcloud_networking_floatingip_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

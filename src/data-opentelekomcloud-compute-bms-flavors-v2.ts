@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudComputeBmsFlavorsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#id DataOpentelekomcloudComputeBmsFlavorsV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#id DataOpentelekomcloudComputeBmsFlavorsV2#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#min_disk DataOpentelekomcloudComputeBmsFlavorsV2#min_disk}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#min_disk DataOpentelekomcloudComputeBmsFlavorsV2#min_disk}
   */
   readonly minDisk?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#min_ram DataOpentelekomcloudComputeBmsFlavorsV2#min_ram}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#min_ram DataOpentelekomcloudComputeBmsFlavorsV2#min_ram}
   */
   readonly minRam?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#name DataOpentelekomcloudComputeBmsFlavorsV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#name DataOpentelekomcloudComputeBmsFlavorsV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#region DataOpentelekomcloudComputeBmsFlavorsV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#region DataOpentelekomcloudComputeBmsFlavorsV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#sort_dir DataOpentelekomcloudComputeBmsFlavorsV2#sort_dir}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#sort_dir DataOpentelekomcloudComputeBmsFlavorsV2#sort_dir}
   */
   readonly sortDir?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html#sort_key DataOpentelekomcloudComputeBmsFlavorsV2#sort_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2#sort_key DataOpentelekomcloudComputeBmsFlavorsV2#sort_key}
   */
   readonly sortKey?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html opentelekomcloud_compute_bms_flavors_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2 opentelekomcloud_compute_bms_flavors_v2}
 */
 export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2.html opentelekomcloud_compute_bms_flavors_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_flavors_v2 opentelekomcloud_compute_bms_flavors_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

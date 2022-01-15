@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,61 +8,61 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpnaasServiceV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#admin_state_up DataOpentelekomcloudVpnaasServiceV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#admin_state_up DataOpentelekomcloudVpnaasServiceV2#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#description DataOpentelekomcloudVpnaasServiceV2#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#description DataOpentelekomcloudVpnaasServiceV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#external_v4_ip DataOpentelekomcloudVpnaasServiceV2#external_v4_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#external_v4_ip DataOpentelekomcloudVpnaasServiceV2#external_v4_ip}
   */
   readonly externalV4Ip?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#external_v6_ip DataOpentelekomcloudVpnaasServiceV2#external_v6_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#external_v6_ip DataOpentelekomcloudVpnaasServiceV2#external_v6_ip}
   */
   readonly externalV6Ip?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#flavor_id DataOpentelekomcloudVpnaasServiceV2#flavor_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#flavor_id DataOpentelekomcloudVpnaasServiceV2#flavor_id}
   */
   readonly flavorId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#id DataOpentelekomcloudVpnaasServiceV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#id DataOpentelekomcloudVpnaasServiceV2#id}
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#name DataOpentelekomcloudVpnaasServiceV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#name DataOpentelekomcloudVpnaasServiceV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#project_id DataOpentelekomcloudVpnaasServiceV2#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#project_id DataOpentelekomcloudVpnaasServiceV2#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#region DataOpentelekomcloudVpnaasServiceV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#region DataOpentelekomcloudVpnaasServiceV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#router_id DataOpentelekomcloudVpnaasServiceV2#router_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#router_id DataOpentelekomcloudVpnaasServiceV2#router_id}
   */
   readonly routerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#status DataOpentelekomcloudVpnaasServiceV2#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#status DataOpentelekomcloudVpnaasServiceV2#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#subnet_id DataOpentelekomcloudVpnaasServiceV2#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#subnet_id DataOpentelekomcloudVpnaasServiceV2#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html#tenant_id DataOpentelekomcloudVpnaasServiceV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2#tenant_id DataOpentelekomcloudVpnaasServiceV2#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html opentelekomcloud_vpnaas_service_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}
 */
 export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSource {
 
@@ -76,7 +76,7 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2.html opentelekomcloud_vpnaas_service_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

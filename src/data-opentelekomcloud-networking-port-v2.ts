@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,61 +8,61 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudNetworkingPortV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#admin_state_up DataOpentelekomcloudNetworkingPortV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#admin_state_up DataOpentelekomcloudNetworkingPortV2#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#device_id DataOpentelekomcloudNetworkingPortV2#device_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#device_id DataOpentelekomcloudNetworkingPortV2#device_id}
   */
   readonly deviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#device_owner DataOpentelekomcloudNetworkingPortV2#device_owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#device_owner DataOpentelekomcloudNetworkingPortV2#device_owner}
   */
   readonly deviceOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#fixed_ip DataOpentelekomcloudNetworkingPortV2#fixed_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#fixed_ip DataOpentelekomcloudNetworkingPortV2#fixed_ip}
   */
   readonly fixedIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#mac_address DataOpentelekomcloudNetworkingPortV2#mac_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#mac_address DataOpentelekomcloudNetworkingPortV2#mac_address}
   */
   readonly macAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#name DataOpentelekomcloudNetworkingPortV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#name DataOpentelekomcloudNetworkingPortV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#network_id DataOpentelekomcloudNetworkingPortV2#network_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#network_id DataOpentelekomcloudNetworkingPortV2#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#port_id DataOpentelekomcloudNetworkingPortV2#port_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#port_id DataOpentelekomcloudNetworkingPortV2#port_id}
   */
   readonly portId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#project_id DataOpentelekomcloudNetworkingPortV2#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#project_id DataOpentelekomcloudNetworkingPortV2#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#region DataOpentelekomcloudNetworkingPortV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#region DataOpentelekomcloudNetworkingPortV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#security_group_ids DataOpentelekomcloudNetworkingPortV2#security_group_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#security_group_ids DataOpentelekomcloudNetworkingPortV2#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#status DataOpentelekomcloudNetworkingPortV2#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#status DataOpentelekomcloudNetworkingPortV2#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html#tenant_id DataOpentelekomcloudNetworkingPortV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2#tenant_id DataOpentelekomcloudNetworkingPortV2#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html opentelekomcloud_networking_port_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2 opentelekomcloud_networking_port_v2}
 */
 export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSource {
 
@@ -76,7 +76,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2.html opentelekomcloud_networking_port_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2 opentelekomcloud_networking_port_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

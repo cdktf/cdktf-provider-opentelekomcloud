@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudCceClusterV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html#cluster_type DataOpentelekomcloudCceClusterV3#cluster_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3#cluster_type DataOpentelekomcloudCceClusterV3#cluster_type}
   */
   readonly clusterType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html#name DataOpentelekomcloudCceClusterV3#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3#name DataOpentelekomcloudCceClusterV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html#region DataOpentelekomcloudCceClusterV3#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3#region DataOpentelekomcloudCceClusterV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html#status DataOpentelekomcloudCceClusterV3#status}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3#status DataOpentelekomcloudCceClusterV3#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html#vpc_id DataOpentelekomcloudCceClusterV3#vpc_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3#vpc_id DataOpentelekomcloudCceClusterV3#vpc_id}
   */
   readonly vpcId?: string;
 }
@@ -64,7 +64,7 @@ export class DataOpentelekomcloudCceClusterV3CertificateUsers extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html opentelekomcloud_cce_cluster_v3}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}
 */
 export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource {
 
@@ -78,7 +78,7 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3.html opentelekomcloud_cce_cluster_v3} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

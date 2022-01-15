@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudComputeAvailabilityZonesV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2.html#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2.html#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}
   */
   readonly state?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2.html opentelekomcloud_compute_availability_zones_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2 opentelekomcloud_compute_availability_zones_v2}
 */
 export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2.html opentelekomcloud_compute_availability_zones_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_availability_zones_v2 opentelekomcloud_compute_availability_zones_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

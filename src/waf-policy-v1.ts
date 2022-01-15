@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface WafPolicyV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#full_detection WafPolicyV1#full_detection}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#full_detection WafPolicyV1#full_detection}
   */
   readonly fullDetection?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#hosts WafPolicyV1#hosts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#hosts WafPolicyV1#hosts}
   */
   readonly hosts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#level WafPolicyV1#level}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#level WafPolicyV1#level}
   */
   readonly level?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#name WafPolicyV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#name WafPolicyV1#name}
   */
   readonly name: string;
   /**
   * action block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#action WafPolicyV1#action}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#action WafPolicyV1#action}
   */
   readonly action?: WafPolicyV1Action;
   /**
   * options block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#options WafPolicyV1#options}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#options WafPolicyV1#options}
   */
   readonly options?: WafPolicyV1Options;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#timeouts WafPolicyV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#timeouts WafPolicyV1#timeouts}
   */
   readonly timeouts?: WafPolicyV1Timeouts;
 }
 export interface WafPolicyV1Action {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#category WafPolicyV1#category}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#category WafPolicyV1#category}
   */
   readonly category: string;
 }
@@ -107,59 +107,59 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
 }
 export interface WafPolicyV1Options {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#antitamper WafPolicyV1#antitamper}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#antitamper WafPolicyV1#antitamper}
   */
   readonly antitamper?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#cc WafPolicyV1#cc}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#cc WafPolicyV1#cc}
   */
   readonly cc?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#common WafPolicyV1#common}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#common WafPolicyV1#common}
   */
   readonly common?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#crawler WafPolicyV1#crawler}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#crawler WafPolicyV1#crawler}
   */
   readonly crawler?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#crawler_engine WafPolicyV1#crawler_engine}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#crawler_engine WafPolicyV1#crawler_engine}
   */
   readonly crawlerEngine?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#crawler_other WafPolicyV1#crawler_other}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#crawler_other WafPolicyV1#crawler_other}
   */
   readonly crawlerOther?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#crawler_scanner WafPolicyV1#crawler_scanner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#crawler_scanner WafPolicyV1#crawler_scanner}
   */
   readonly crawlerScanner?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#crawler_script WafPolicyV1#crawler_script}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#crawler_script WafPolicyV1#crawler_script}
   */
   readonly crawlerScript?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#custom WafPolicyV1#custom}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#custom WafPolicyV1#custom}
   */
   readonly custom?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#ignore WafPolicyV1#ignore}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#ignore WafPolicyV1#ignore}
   */
   readonly ignore?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#privacy WafPolicyV1#privacy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#privacy WafPolicyV1#privacy}
   */
   readonly privacy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#webattack WafPolicyV1#webattack}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#webattack WafPolicyV1#webattack}
   */
   readonly webattack?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#webshell WafPolicyV1#webshell}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#webshell WafPolicyV1#webshell}
   */
   readonly webshell?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#whiteblackip WafPolicyV1#whiteblackip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#whiteblackip WafPolicyV1#whiteblackip}
   */
   readonly whiteblackip?: boolean | cdktf.IResolvable;
 }
@@ -524,11 +524,11 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
 }
 export interface WafPolicyV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#create WafPolicyV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#create WafPolicyV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html#delete WafPolicyV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1#delete WafPolicyV1#delete}
   */
   readonly delete?: string;
 }
@@ -617,7 +617,7 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html opentelekomcloud_waf_policy_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1 opentelekomcloud_waf_policy_v1}
 */
 export class WafPolicyV1 extends cdktf.TerraformResource {
 
@@ -631,7 +631,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1.html opentelekomcloud_waf_policy_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_policy_v1 opentelekomcloud_waf_policy_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

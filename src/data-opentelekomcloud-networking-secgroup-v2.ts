@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudNetworkingSecgroupV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html#name DataOpentelekomcloudNetworkingSecgroupV2#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#name DataOpentelekomcloudNetworkingSecgroupV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html#region DataOpentelekomcloudNetworkingSecgroupV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#region DataOpentelekomcloudNetworkingSecgroupV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html#secgroup_id DataOpentelekomcloudNetworkingSecgroupV2#secgroup_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#secgroup_id DataOpentelekomcloudNetworkingSecgroupV2#secgroup_id}
   */
   readonly secgroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html#tenant_id DataOpentelekomcloudNetworkingSecgroupV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#tenant_id DataOpentelekomcloudNetworkingSecgroupV2#tenant_id}
   */
   readonly tenantId?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html opentelekomcloud_networking_secgroup_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}
 */
 export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2.html opentelekomcloud_networking_secgroup_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

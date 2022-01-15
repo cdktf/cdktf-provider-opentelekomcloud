@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface SmnTopicAttributeV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html#attribute_name SmnTopicAttributeV2#attribute_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}
   */
   readonly attributeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html#topic_attribute SmnTopicAttributeV2#topic_attribute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}
   */
   readonly topicAttribute: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html#topic_urn SmnTopicAttributeV2#topic_urn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}
   */
   readonly topicUrn: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html opentelekomcloud_smn_topic_attribute_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2}
 */
 export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2.html opentelekomcloud_smn_topic_attribute_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

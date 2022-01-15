@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface ComputeFloatingipAssociateV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}
   */
   readonly fixedIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html#floating_ip ComputeFloatingipAssociateV2#floating_ip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#floating_ip ComputeFloatingipAssociateV2#floating_ip}
   */
   readonly floatingIp: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html#instance_id ComputeFloatingipAssociateV2#instance_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#instance_id ComputeFloatingipAssociateV2#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html#region ComputeFloatingipAssociateV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#region ComputeFloatingipAssociateV2#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html opentelekomcloud_compute_floatingip_associate_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2}
 */
 export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2.html opentelekomcloud_compute_floatingip_associate_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

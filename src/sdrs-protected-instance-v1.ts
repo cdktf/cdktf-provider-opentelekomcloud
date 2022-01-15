@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html
+// https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,55 +8,55 @@ import * as cdktf from 'cdktf';
 
 export interface SdrsProtectedInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}
   */
   readonly deleteTargetEip?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#delete_target_server SdrsProtectedInstanceV1#delete_target_server}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}
   */
   readonly deleteTargetServer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#description SdrsProtectedInstanceV1#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#group_id SdrsProtectedInstanceV1#group_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#ip_address SdrsProtectedInstanceV1#ip_address}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#name SdrsProtectedInstanceV1#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#server_id SdrsProtectedInstanceV1#server_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}
   */
   readonly serverId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#subnet_id SdrsProtectedInstanceV1#subnet_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#tags SdrsProtectedInstanceV1#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}
   */
   readonly tags?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#timeouts SdrsProtectedInstanceV1#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
   */
   readonly timeouts?: SdrsProtectedInstanceV1Timeouts;
 }
 export interface SdrsProtectedInstanceV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#create SdrsProtectedInstanceV1#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#create SdrsProtectedInstanceV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html#delete SdrsProtectedInstanceV1#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#delete SdrsProtectedInstanceV1#delete}
   */
   readonly delete?: string;
 }
@@ -145,7 +145,7 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html opentelekomcloud_sdrs_protected_instance_v1}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1 opentelekomcloud_sdrs_protected_instance_v1}
 */
 export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
 
@@ -159,7 +159,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1.html opentelekomcloud_sdrs_protected_instance_v1} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1 opentelekomcloud_sdrs_protected_instance_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
