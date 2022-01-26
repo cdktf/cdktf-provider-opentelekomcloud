@@ -65,8 +65,8 @@ export interface CtsTrackerV1Timeouts {
   readonly delete?: string;
 }
 
-export function ctsTrackerV1TimeoutsToTerraform(struct?: CtsTrackerV1TimeoutsOutputReference | CtsTrackerV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ctsTrackerV1TimeoutsToTerraform(struct?: CtsTrackerV1TimeoutsOutputReference | CtsTrackerV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -84,7 +84,7 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -234,7 +234,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   // is_send_all_key_operation - computed: false, optional: true, required: false
   private _isSendAllKeyOperation?: boolean | cdktf.IResolvable; 
   public get isSendAllKeyOperation() {
-    return this.getBooleanAttribute('is_send_all_key_operation') as any;
+    return this.getBooleanAttribute('is_send_all_key_operation');
   }
   public set isSendAllKeyOperation(value: boolean | cdktf.IResolvable) {
     this._isSendAllKeyOperation = value;
@@ -250,7 +250,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   // is_support_smn - computed: false, optional: false, required: true
   private _isSupportSmn?: boolean | cdktf.IResolvable; 
   public get isSupportSmn() {
-    return this.getBooleanAttribute('is_support_smn') as any;
+    return this.getBooleanAttribute('is_support_smn');
   }
   public set isSupportSmn(value: boolean | cdktf.IResolvable) {
     this._isSupportSmn = value;
@@ -263,7 +263,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   // need_notify_user_list - computed: true, optional: true, required: false
   private _needNotifyUserList?: string[]; 
   public get needNotifyUserList() {
-    return this.getListAttribute('need_notify_user_list');
+    return cdktf.Fn.tolist(this.getListAttribute('need_notify_user_list'));
   }
   public set needNotifyUserList(value: string[]) {
     this._needNotifyUserList = value;
@@ -279,7 +279,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   // operations - computed: false, optional: true, required: false
   private _operations?: string[]; 
   public get operations() {
-    return this.getListAttribute('operations');
+    return cdktf.Fn.tolist(this.getListAttribute('operations'));
   }
   public set operations(value: string[]) {
     this._operations = value;
@@ -362,7 +362,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CtsTrackerV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CtsTrackerV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

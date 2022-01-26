@@ -50,7 +50,7 @@ export interface LbLoadbalancerV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#tags LbLoadbalancerV3#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#vip_address LbLoadbalancerV3#vip_address}
   */
@@ -86,7 +86,7 @@ export interface LbLoadbalancerV3PublicIp {
 }
 
 export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3PublicIpOutputReference | LbLoadbalancerV3PublicIp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,7 +107,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -154,6 +154,11 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
       this._bandwidthSize = value.bandwidthSize;
       this._ipType = value.ipType;
     }
+  }
+
+  // address - computed: true, optional: false, required: false
+  public get address() {
+    return this.getStringAttribute('address');
   }
 
   // bandwidth_charge_mode - computed: false, optional: true, required: false
@@ -209,6 +214,11 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get bandwidthSizeInput() {
     return this._bandwidthSize;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // ip_type - computed: false, optional: false, required: true
@@ -279,7 +289,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -295,7 +305,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // availability_zones - computed: false, optional: false, required: true
   private _availabilityZones?: string[]; 
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
   public set availabilityZones(value: string[]) {
     this._availabilityZones = value;
@@ -334,7 +344,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // ip_target_enable - computed: true, optional: true, required: false
   private _ipTargetEnable?: boolean | cdktf.IResolvable; 
   public get ipTargetEnable() {
-    return this.getBooleanAttribute('ip_target_enable') as any;
+    return this.getBooleanAttribute('ip_target_enable');
   }
   public set ipTargetEnable(value: boolean | cdktf.IResolvable) {
     this._ipTargetEnable = value;
@@ -398,7 +408,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // network_ids - computed: false, optional: false, required: true
   private _networkIds?: string[]; 
   public get networkIds() {
-    return this.getListAttribute('network_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('network_ids'));
   }
   public set networkIds(value: string[]) {
     this._networkIds = value;
@@ -441,12 +451,11 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -484,7 +493,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp = new LbLoadbalancerV3PublicIpOutputReference(this as any, "public_ip", true);
+  private _publicIp = new LbLoadbalancerV3PublicIpOutputReference(this, "public_ip", true);
   public get publicIp() {
     return this._publicIp;
   }
@@ -515,7 +524,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       network_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIds),
       router_id: cdktf.stringToTerraform(this._routerId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vip_address: cdktf.stringToTerraform(this._vipAddress),
       public_ip: lbLoadbalancerV3PublicIpToTerraform(this._publicIp.internalValue),
     };

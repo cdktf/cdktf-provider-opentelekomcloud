@@ -116,22 +116,22 @@ export class DataOpentelekomcloudCtsTrackerV1 extends cdktf.TerraformDataSource 
 
   // is_send_all_key_operation - computed: true, optional: false, required: false
   public get isSendAllKeyOperation() {
-    return this.getBooleanAttribute('is_send_all_key_operation') as any;
+    return this.getBooleanAttribute('is_send_all_key_operation');
   }
 
   // is_support_smn - computed: true, optional: false, required: false
   public get isSupportSmn() {
-    return this.getBooleanAttribute('is_support_smn') as any;
+    return this.getBooleanAttribute('is_support_smn');
   }
 
   // need_notify_user_list - computed: true, optional: false, required: false
   public get needNotifyUserList() {
-    return this.getListAttribute('need_notify_user_list');
+    return cdktf.Fn.tolist(this.getListAttribute('need_notify_user_list'));
   }
 
   // operations - computed: true, optional: false, required: false
   public get operations() {
-    return this.getListAttribute('operations');
+    return cdktf.Fn.tolist(this.getListAttribute('operations'));
   }
 
   // project_name - computed: true, optional: true, required: false

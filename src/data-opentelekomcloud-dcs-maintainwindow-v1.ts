@@ -86,7 +86,7 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
   // default - computed: true, optional: true, required: false
   private _default?: boolean | cdktf.IResolvable; 
   public get default() {
-    return this.getBooleanAttribute('default') as any;
+    return this.getBooleanAttribute('default');
   }
   public set default(value: boolean | cdktf.IResolvable) {
     this._default = value;

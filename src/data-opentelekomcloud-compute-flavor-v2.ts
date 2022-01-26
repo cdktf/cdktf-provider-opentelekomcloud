@@ -140,7 +140,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
 
   // extra_specs - computed: true, optional: false, required: false
-  public extraSpecs(key: string): string {
+  public extraSpecs(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'extra_specs').lookup(key);
   }
 

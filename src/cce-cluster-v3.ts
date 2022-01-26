@@ -10,7 +10,7 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#annotations CceClusterV3#annotations}
   */
-  readonly annotations?: { [key: string]: string } | cdktf.IResolvable;
+  readonly annotations?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#authenticating_proxy_ca CceClusterV3#authenticating_proxy_ca}
   */
@@ -50,7 +50,7 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#extend_param CceClusterV3#extend_param}
   */
-  readonly extendParam?: { [key: string]: string } | cdktf.IResolvable;
+  readonly extendParam?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#flavor_id CceClusterV3#flavor_id}
   */
@@ -70,7 +70,7 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#labels CceClusterV3#labels}
   */
-  readonly labels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly labels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#multi_az CceClusterV3#multi_az}
   */
@@ -158,7 +158,7 @@ export interface CceClusterV3AuthenticatingProxy {
 }
 
 export function cceClusterV3AuthenticatingProxyToTerraform(struct?: CceClusterV3AuthenticatingProxyOutputReference | CceClusterV3AuthenticatingProxy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -177,7 +177,7 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -264,8 +264,8 @@ export interface CceClusterV3Timeouts {
   readonly delete?: string;
 }
 
-export function cceClusterV3TimeoutsToTerraform(struct?: CceClusterV3TimeoutsOutputReference | CceClusterV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceClusterV3TimeoutsToTerraform(struct?: CceClusterV3TimeoutsOutputReference | CceClusterV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -283,7 +283,7 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -410,12 +410,11 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // ==========
 
   // annotations - computed: false, optional: true, required: false
-  private _annotations?: { [key: string]: string } | cdktf.IResolvable; 
+  private _annotations?: { [key: string]: string }; 
   public get annotations() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('annotations') as any;
+    return this.getStringMapAttribute('annotations');
   }
-  public set annotations(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set annotations(value: { [key: string]: string }) {
     this._annotations = value;
   }
   public resetAnnotations() {
@@ -476,12 +475,12 @@ export class CceClusterV3 extends cdktf.TerraformResource {
 
   // certificate_clusters - computed: true, optional: false, required: false
   public certificateClusters(index: string) {
-    return new CceClusterV3CertificateClusters(this, 'certificate_clusters', index);
+    return new CceClusterV3CertificateClusters(this, 'certificate_clusters', index, false);
   }
 
   // certificate_users - computed: true, optional: false, required: false
   public certificateUsers(index: string) {
-    return new CceClusterV3CertificateUsers(this, 'certificate_users', index);
+    return new CceClusterV3CertificateUsers(this, 'certificate_users', index, false);
   }
 
   // cluster_type - computed: false, optional: false, required: true
@@ -575,12 +574,11 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // extend_param - computed: false, optional: true, required: false
-  private _extendParam?: { [key: string]: string } | cdktf.IResolvable; 
+  private _extendParam?: { [key: string]: string }; 
   public get extendParam() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('extend_param') as any;
+    return this.getStringMapAttribute('extend_param');
   }
-  public set extendParam(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set extendParam(value: { [key: string]: string }) {
     this._extendParam = value;
   }
   public resetExtendParam() {
@@ -638,7 +636,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // ignore_addons - computed: false, optional: true, required: false
   private _ignoreAddons?: boolean | cdktf.IResolvable; 
   public get ignoreAddons() {
-    return this.getBooleanAttribute('ignore_addons') as any;
+    return this.getBooleanAttribute('ignore_addons');
   }
   public set ignoreAddons(value: boolean | cdktf.IResolvable) {
     this._ignoreAddons = value;
@@ -653,7 +651,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
 
   // installed_addons - computed: true, optional: false, required: false
   public get installedAddons() {
-    return this.getListAttribute('installed_addons');
+    return cdktf.Fn.tolist(this.getListAttribute('installed_addons'));
   }
 
   // internal - computed: true, optional: false, required: false
@@ -683,12 +681,11 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // labels - computed: false, optional: true, required: false
-  private _labels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _labels?: { [key: string]: string }; 
   public get labels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('labels') as any;
+    return this.getStringMapAttribute('labels');
   }
-  public set labels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set labels(value: { [key: string]: string }) {
     this._labels = value;
   }
   public resetLabels() {
@@ -702,7 +699,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // multi_az - computed: false, optional: true, required: false
   private _multiAz?: boolean | cdktf.IResolvable; 
   public get multiAz() {
-    return this.getBooleanAttribute('multi_az') as any;
+    return this.getBooleanAttribute('multi_az');
   }
   public set multiAz(value: boolean | cdktf.IResolvable) {
     this._multiAz = value;
@@ -731,7 +728,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // no_addons - computed: false, optional: true, required: false
   private _noAddons?: boolean | cdktf.IResolvable; 
   public get noAddons() {
-    return this.getBooleanAttribute('no_addons') as any;
+    return this.getBooleanAttribute('no_addons');
   }
   public set noAddons(value: boolean | cdktf.IResolvable) {
     this._noAddons = value;
@@ -802,7 +799,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // authenticating_proxy - computed: false, optional: true, required: false
-  private _authenticatingProxy = new CceClusterV3AuthenticatingProxyOutputReference(this as any, "authenticating_proxy", true);
+  private _authenticatingProxy = new CceClusterV3AuthenticatingProxyOutputReference(this, "authenticating_proxy", true);
   public get authenticatingProxy() {
     return this._authenticatingProxy;
   }
@@ -818,7 +815,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceClusterV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CceClusterV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -839,7 +836,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.anyToTerraform)(this._annotations),
+      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
       authenticating_proxy_ca: cdktf.stringToTerraform(this._authenticatingProxyCa),
       authentication_mode: cdktf.stringToTerraform(this._authenticationMode),
       billing_mode: cdktf.numberToTerraform(this._billingMode),
@@ -849,12 +846,12 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       container_network_type: cdktf.stringToTerraform(this._containerNetworkType),
       description: cdktf.stringToTerraform(this._description),
       eip: cdktf.stringToTerraform(this._eip),
-      extend_param: cdktf.hashMapper(cdktf.anyToTerraform)(this._extendParam),
+      extend_param: cdktf.hashMapper(cdktf.stringToTerraform)(this._extendParam),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
       highway_subnet_id: cdktf.stringToTerraform(this._highwaySubnetId),
       ignore_addons: cdktf.booleanToTerraform(this._ignoreAddons),
       kubernetes_svc_ip_range: cdktf.stringToTerraform(this._kubernetesSvcIpRange),
-      labels: cdktf.hashMapper(cdktf.anyToTerraform)(this._labels),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       multi_az: cdktf.booleanToTerraform(this._multiAz),
       name: cdktf.stringToTerraform(this._name),
       no_addons: cdktf.booleanToTerraform(this._noAddons),

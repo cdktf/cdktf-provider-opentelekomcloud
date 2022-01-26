@@ -32,8 +32,7 @@ export class DataOpentelekomcloudDdsFlavorsV3Flavors extends cdktf.ComplexComput
 
   // az_status - computed: true, optional: false, required: false
   public get azStatus() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('az_status') as any;
+    return this.getStringMapAttribute('az_status');
   }
 
   // memory - computed: true, optional: false, required: false
@@ -115,7 +114,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
 
   // flavors - computed: true, optional: false, required: false
   public flavors(index: string) {
-    return new DataOpentelekomcloudDdsFlavorsV3Flavors(this, 'flavors', index);
+    return new DataOpentelekomcloudDdsFlavorsV3Flavors(this, 'flavors', index, false);
   }
 
   // id - computed: true, optional: true, required: false

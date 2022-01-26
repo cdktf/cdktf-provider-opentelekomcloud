@@ -58,7 +58,7 @@ export interface LbPoolV3SessionPersistence {
 }
 
 export function lbPoolV3SessionPersistenceToTerraform(struct?: LbPoolV3SessionPersistenceOutputReference | LbPoolV3SessionPersistence): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -77,7 +77,7 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -323,7 +323,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
 
   // session_persistence - computed: false, optional: true, required: false
-  private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this as any, "session_persistence", true);
+  private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this, "session_persistence", true);
   public get sessionPersistence() {
     return this._sessionPersistence;
   }

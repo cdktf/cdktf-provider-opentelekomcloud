@@ -32,7 +32,7 @@ export interface DataOpentelekomcloudVbsBackupPolicyV2Config extends cdktf.Terra
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_policy_v2#filter_tags DataOpentelekomcloudVbsBackupPolicyV2#filter_tags}
   */
-  readonly filterTags?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
+  readonly filterTags?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[] | cdktf.IResolvable;
 }
 export class DataOpentelekomcloudVbsBackupPolicyV2Tags extends cdktf.ComplexComputedList {
 
@@ -57,8 +57,8 @@ export interface DataOpentelekomcloudVbsBackupPolicyV2FilterTags {
   readonly values: string[];
 }
 
-export function dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform(struct?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform(struct?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -215,16 +215,16 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
 
   // tags - computed: true, optional: false, required: false
   public tags(index: string) {
-    return new DataOpentelekomcloudVbsBackupPolicyV2Tags(this, 'tags', index);
+    return new DataOpentelekomcloudVbsBackupPolicyV2Tags(this, 'tags', index, true);
   }
 
   // filter_tags - computed: false, optional: true, required: false
-  private _filterTags?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[]; 
+  private _filterTags?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[] | cdktf.IResolvable; 
   public get filterTags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter_tags') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter_tags')));
   }
-  public set filterTags(value: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[]) {
+  public set filterTags(value: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[] | cdktf.IResolvable) {
     this._filterTags = value;
   }
   public resetFilterTags() {

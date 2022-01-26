@@ -140,12 +140,12 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
 
   // backup_strategy - computed: true, optional: false, required: false
   public backupStrategy(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3BackupStrategy(this, 'backup_strategy', index);
+    return new DataOpentelekomcloudDdsInstanceV3BackupStrategy(this, 'backup_strategy', index, false);
   }
 
   // datastore - computed: true, optional: false, required: false
   public datastore(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3Datastore(this, 'datastore', index);
+    return new DataOpentelekomcloudDdsInstanceV3Datastore(this, 'datastore', index, false);
   }
 
   // datastore_type - computed: false, optional: true, required: false
@@ -218,7 +218,7 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
 
   // nodes - computed: true, optional: false, required: false
   public nodes(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3Nodes(this, 'nodes', index);
+    return new DataOpentelekomcloudDdsInstanceV3Nodes(this, 'nodes', index, false);
   }
 
   // pay_mode - computed: true, optional: false, required: false
@@ -243,7 +243,7 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
 
   // ssl - computed: true, optional: false, required: false
   public get ssl() {
-    return this.getBooleanAttribute('ssl') as any;
+    return this.getBooleanAttribute('ssl');
   }
 
   // status - computed: true, optional: false, required: false

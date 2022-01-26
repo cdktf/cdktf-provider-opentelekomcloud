@@ -115,7 +115,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
   // floating_ips - computed: false, optional: false, required: true
   private _floatingIps?: string[]; 
   public get floatingIps() {
-    return this.getListAttribute('floating_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('floating_ips'));
   }
   public set floatingIps(value: string[]) {
     this._floatingIps = value;

@@ -94,7 +94,7 @@ export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#tags MrsClusterV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#volume_size MrsClusterV1#volume_size}
   */
@@ -112,19 +112,19 @@ export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#add_jobs MrsClusterV1#add_jobs}
   */
-  readonly addJobs?: MrsClusterV1AddJobs[];
+  readonly addJobs?: MrsClusterV1AddJobs[] | cdktf.IResolvable;
   /**
   * bootstrap_scripts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#bootstrap_scripts MrsClusterV1#bootstrap_scripts}
   */
-  readonly bootstrapScripts?: MrsClusterV1BootstrapScripts[];
+  readonly bootstrapScripts?: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable;
   /**
   * component_list block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#component_list MrsClusterV1#component_list}
   */
-  readonly componentList: MrsClusterV1ComponentList[];
+  readonly componentList: MrsClusterV1ComponentList[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -183,8 +183,8 @@ export interface MrsClusterV1AddJobs {
   readonly submitJobOnceClusterRun: boolean | cdktf.IResolvable;
 }
 
-export function mrsClusterV1AddJobsToTerraform(struct?: MrsClusterV1AddJobs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mrsClusterV1AddJobsToTerraform(struct?: MrsClusterV1AddJobs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -235,8 +235,8 @@ export interface MrsClusterV1BootstrapScripts {
   readonly uri: string;
 }
 
-export function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1BootstrapScripts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1BootstrapScripts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -258,8 +258,8 @@ export interface MrsClusterV1ComponentList {
   readonly componentName: string;
 }
 
-export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1ComponentList): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1ComponentList | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -279,8 +279,8 @@ export interface MrsClusterV1Timeouts {
   readonly delete?: string;
 }
 
-export function mrsClusterV1TimeoutsToTerraform(struct?: MrsClusterV1TimeoutsOutputReference | MrsClusterV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function mrsClusterV1TimeoutsToTerraform(struct?: MrsClusterV1TimeoutsOutputReference | MrsClusterV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -298,7 +298,7 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -861,12 +861,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -938,12 +937,12 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // add_jobs - computed: false, optional: true, required: false
-  private _addJobs?: MrsClusterV1AddJobs[]; 
+  private _addJobs?: MrsClusterV1AddJobs[] | cdktf.IResolvable; 
   public get addJobs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('add_jobs') as any;
+    return this.interpolationForAttribute('add_jobs');
   }
-  public set addJobs(value: MrsClusterV1AddJobs[]) {
+  public set addJobs(value: MrsClusterV1AddJobs[] | cdktf.IResolvable) {
     this._addJobs = value;
   }
   public resetAddJobs() {
@@ -955,12 +954,12 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // bootstrap_scripts - computed: false, optional: true, required: false
-  private _bootstrapScripts?: MrsClusterV1BootstrapScripts[]; 
+  private _bootstrapScripts?: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable; 
   public get bootstrapScripts() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bootstrap_scripts') as any;
+    return this.interpolationForAttribute('bootstrap_scripts');
   }
-  public set bootstrapScripts(value: MrsClusterV1BootstrapScripts[]) {
+  public set bootstrapScripts(value: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable) {
     this._bootstrapScripts = value;
   }
   public resetBootstrapScripts() {
@@ -972,12 +971,12 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // component_list - computed: false, optional: false, required: true
-  private _componentList?: MrsClusterV1ComponentList[]; 
+  private _componentList?: MrsClusterV1ComponentList[] | cdktf.IResolvable; 
   public get componentList() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('component_list') as any;
+    return this.interpolationForAttribute('component_list');
   }
-  public set componentList(value: MrsClusterV1ComponentList[]) {
+  public set componentList(value: MrsClusterV1ComponentList[] | cdktf.IResolvable) {
     this._componentList = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -986,7 +985,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new MrsClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new MrsClusterV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1028,7 +1027,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       safe_mode: cdktf.numberToTerraform(this._safeMode),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       volume_size: cdktf.numberToTerraform(this._volumeSize),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

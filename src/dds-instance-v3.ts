@@ -64,7 +64,7 @@ export interface DdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#flavor DdsInstanceV3#flavor}
   */
-  readonly flavor: DdsInstanceV3Flavor[];
+  readonly flavor: DdsInstanceV3Flavor[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -121,7 +121,7 @@ export interface DdsInstanceV3BackupStrategy {
 }
 
 export function ddsInstanceV3BackupStrategyToTerraform(struct?: DdsInstanceV3BackupStrategyOutputReference | DdsInstanceV3BackupStrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -139,7 +139,7 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -212,7 +212,7 @@ export interface DdsInstanceV3Datastore {
 }
 
 export function ddsInstanceV3DatastoreToTerraform(struct?: DdsInstanceV3DatastoreOutputReference | DdsInstanceV3Datastore): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -231,7 +231,7 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -333,8 +333,8 @@ export interface DdsInstanceV3Flavor {
   readonly type: string;
 }
 
-export function ddsInstanceV3FlavorToTerraform(struct?: DdsInstanceV3Flavor): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ddsInstanceV3FlavorToTerraform(struct?: DdsInstanceV3Flavor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -358,8 +358,8 @@ export interface DdsInstanceV3Timeouts {
   readonly delete?: string;
 }
 
-export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsOutputReference | DdsInstanceV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsOutputReference | DdsInstanceV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -377,7 +377,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -560,7 +560,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
 
   // nodes - computed: true, optional: false, required: false
   public nodes(index: string) {
-    return new DdsInstanceV3Nodes(this, 'nodes', index);
+    return new DdsInstanceV3Nodes(this, 'nodes', index, false);
   }
 
   // password - computed: false, optional: false, required: true
@@ -618,7 +618,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   // ssl - computed: false, optional: true, required: false
   private _ssl?: boolean | cdktf.IResolvable; 
   public get ssl() {
-    return this.getBooleanAttribute('ssl') as any;
+    return this.getBooleanAttribute('ssl');
   }
   public set ssl(value: boolean | cdktf.IResolvable) {
     this._ssl = value;
@@ -663,7 +663,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // backup_strategy - computed: false, optional: true, required: false
-  private _backupStrategy = new DdsInstanceV3BackupStrategyOutputReference(this as any, "backup_strategy", true);
+  private _backupStrategy = new DdsInstanceV3BackupStrategyOutputReference(this, "backup_strategy", true);
   public get backupStrategy() {
     return this._backupStrategy;
   }
@@ -679,7 +679,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore = new DdsInstanceV3DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new DdsInstanceV3DatastoreOutputReference(this, "datastore", true);
   public get datastore() {
     return this._datastore;
   }
@@ -692,12 +692,12 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // flavor - computed: false, optional: false, required: true
-  private _flavor?: DdsInstanceV3Flavor[]; 
+  private _flavor?: DdsInstanceV3Flavor[] | cdktf.IResolvable; 
   public get flavor() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('flavor') as any;
+    return this.interpolationForAttribute('flavor');
   }
-  public set flavor(value: DdsInstanceV3Flavor[]) {
+  public set flavor(value: DdsInstanceV3Flavor[] | cdktf.IResolvable) {
     this._flavor = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -706,7 +706,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DdsInstanceV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DdsInstanceV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

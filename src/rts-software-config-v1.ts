@@ -26,7 +26,7 @@ export interface RtsSoftwareConfigV1Config extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#options RtsSoftwareConfigV1#options}
   */
-  readonly options?: { [key: string]: string } | cdktf.IResolvable;
+  readonly options?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#output_values RtsSoftwareConfigV1#output_values}
   */
@@ -53,8 +53,8 @@ export interface RtsSoftwareConfigV1Timeouts {
   readonly delete?: string;
 }
 
-export function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1TimeoutsOutputReference | RtsSoftwareConfigV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1TimeoutsOutputReference | RtsSoftwareConfigV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -72,7 +72,7 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -222,8 +222,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   // input_values - computed: false, optional: true, required: false
   private _inputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get inputValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_values') as any;
+    return this.getStringMapAttribute('input_values');
   }
   public set inputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._inputValues = value;
@@ -250,12 +249,11 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
 
   // options - computed: false, optional: true, required: false
-  private _options?: { [key: string]: string } | cdktf.IResolvable; 
+  private _options?: { [key: string]: string }; 
   public get options() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('options') as any;
+    return this.getStringMapAttribute('options');
   }
-  public set options(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set options(value: { [key: string]: string }) {
     this._options = value;
   }
   public resetOptions() {
@@ -269,8 +267,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   // output_values - computed: false, optional: true, required: false
   private _outputValues?: { [key: string]: string } | cdktf.IResolvable; 
   public get outputValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('output_values') as any;
+    return this.getStringMapAttribute('output_values');
   }
   public set outputValues(value: { [key: string]: string } | cdktf.IResolvable) {
     this._outputValues = value;
@@ -300,7 +297,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RtsSoftwareConfigV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsSoftwareConfigV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -323,10 +320,10 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
     return {
       config: cdktf.stringToTerraform(this._config),
       group: cdktf.stringToTerraform(this._group),
-      input_values: cdktf.listMapper(cdktf.hashMapper(cdktf.anyToTerraform))(this._inputValues),
+      input_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._inputValues),
       name: cdktf.stringToTerraform(this._name),
-      options: cdktf.hashMapper(cdktf.anyToTerraform)(this._options),
-      output_values: cdktf.listMapper(cdktf.hashMapper(cdktf.anyToTerraform))(this._outputValues),
+      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      output_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._outputValues),
       region: cdktf.stringToTerraform(this._region),
       timeouts: rtsSoftwareConfigV1TimeoutsToTerraform(this._timeouts.internalValue),
     };

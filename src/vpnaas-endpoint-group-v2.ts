@@ -34,7 +34,7 @@ export interface VpnaasEndpointGroupV2Config extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -57,8 +57,8 @@ export interface VpnaasEndpointGroupV2Timeouts {
   readonly update?: string;
 }
 
-export function vpnaasEndpointGroupV2TimeoutsToTerraform(struct?: VpnaasEndpointGroupV2TimeoutsOutputReference | VpnaasEndpointGroupV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpnaasEndpointGroupV2TimeoutsToTerraform(struct?: VpnaasEndpointGroupV2TimeoutsOutputReference | VpnaasEndpointGroupV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -77,7 +77,7 @@ export class VpnaasEndpointGroupV2TimeoutsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -311,12 +311,11 @@ export class VpnaasEndpointGroupV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -328,7 +327,7 @@ export class VpnaasEndpointGroupV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpnaasEndpointGroupV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpnaasEndpointGroupV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -355,7 +354,7 @@ export class VpnaasEndpointGroupV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       type: cdktf.stringToTerraform(this._type),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       timeouts: vpnaasEndpointGroupV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

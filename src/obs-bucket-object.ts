@@ -161,7 +161,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   // encryption - computed: false, optional: true, required: false
   private _encryption?: boolean | cdktf.IResolvable; 
   public get encryption() {
-    return this.getBooleanAttribute('encryption') as any;
+    return this.getBooleanAttribute('encryption');
   }
   public set encryption(value: boolean | cdktf.IResolvable) {
     this._encryption = value;

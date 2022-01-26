@@ -129,7 +129,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
 
   // data_volumes - computed: true, optional: false, required: false
   public dataVolumes(index: string) {
-    return new DataOpentelekomcloudCceNodeV3DataVolumes(this, 'data_volumes', index);
+    return new DataOpentelekomcloudCceNodeV3DataVolumes(this, 'data_volumes', index, false);
   }
 
   // disk_size - computed: true, optional: false, required: false
@@ -144,7 +144,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
 
   // eip_ids - computed: true, optional: false, required: false
   public get eipIds() {
-    return this.getListAttribute('eip_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('eip_ids'));
   }
 
   // flavor_id - computed: true, optional: false, required: false

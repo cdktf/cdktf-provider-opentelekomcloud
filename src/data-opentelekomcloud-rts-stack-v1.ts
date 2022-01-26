@@ -59,12 +59,12 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
 
   // capabilities - computed: true, optional: false, required: false
   public get capabilities() {
-    return this.getListAttribute('capabilities');
+    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
   }
 
   // disable_rollback - computed: true, optional: false, required: false
   public get disableRollback() {
-    return this.getBooleanAttribute('disable_rollback') as any;
+    return this.getBooleanAttribute('disable_rollback');
   }
 
   // id - computed: true, optional: true, required: false
@@ -87,16 +87,16 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
 
   // notification_topics - computed: true, optional: false, required: false
   public get notificationTopics() {
-    return this.getListAttribute('notification_topics');
+    return cdktf.Fn.tolist(this.getListAttribute('notification_topics'));
   }
 
   // outputs - computed: true, optional: false, required: false
-  public outputs(key: string): string {
+  public outputs(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: false, required: false
-  public parameters(key: string): string {
+  public parameters(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'parameters').lookup(key);
   }
 

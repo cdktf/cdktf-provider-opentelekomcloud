@@ -44,7 +44,7 @@ export interface LbPolicyV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#rules LbPolicyV3#rules}
   */
-  readonly rules?: LbPolicyV3Rules[];
+  readonly rules?: LbPolicyV3Rules[] | cdktf.IResolvable;
 }
 export interface LbPolicyV3Rules {
   /**
@@ -61,8 +61,8 @@ export interface LbPolicyV3Rules {
   readonly value: string;
 }
 
-export function lbPolicyV3RulesToTerraform(struct?: LbPolicyV3Rules): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lbPolicyV3RulesToTerraform(struct?: LbPolicyV3Rules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -254,12 +254,12 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   }
 
   // rules - computed: false, optional: true, required: false
-  private _rules?: LbPolicyV3Rules[]; 
+  private _rules?: LbPolicyV3Rules[] | cdktf.IResolvable; 
   public get rules() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rules')));
   }
-  public set rules(value: LbPolicyV3Rules[]) {
+  public set rules(value: LbPolicyV3Rules[] | cdktf.IResolvable) {
     this._rules = value;
   }
   public resetRules() {

@@ -32,7 +32,7 @@ export interface CsbsBackupV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#tags CsbsBackupV1#tags}
   */
-  readonly tags?: CsbsBackupV1Tags[];
+  readonly tags?: CsbsBackupV1Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -91,7 +91,7 @@ export class CsbsBackupV1VolumeBackups extends cdktf.ComplexComputedList {
 
   // bootable - computed: true, optional: false, required: false
   public get bootable() {
-    return this.getBooleanAttribute('bootable') as any;
+    return this.getBooleanAttribute('bootable');
   }
 
   // id - computed: true, optional: false, required: false
@@ -106,7 +106,7 @@ export class CsbsBackupV1VolumeBackups extends cdktf.ComplexComputedList {
 
   // incremental - computed: true, optional: false, required: false
   public get incremental() {
-    return this.getBooleanAttribute('incremental') as any;
+    return this.getBooleanAttribute('incremental');
   }
 
   // name - computed: true, optional: false, required: false
@@ -160,8 +160,8 @@ export interface CsbsBackupV1Tags {
   readonly value: string;
 }
 
-export function csbsBackupV1TagsToTerraform(struct?: CsbsBackupV1Tags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupV1TagsToTerraform(struct?: CsbsBackupV1Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,8 +182,8 @@ export interface CsbsBackupV1Timeouts {
   readonly delete?: string;
 }
 
-export function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1TimeoutsOutputReference | CsbsBackupV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1TimeoutsOutputReference | CsbsBackupV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -201,7 +201,7 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -404,21 +404,21 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
 
   // vm_metadata - computed: true, optional: false, required: false
   public vmMetadata(index: string) {
-    return new CsbsBackupV1VmMetadata(this, 'vm_metadata', index);
+    return new CsbsBackupV1VmMetadata(this, 'vm_metadata', index, true);
   }
 
   // volume_backups - computed: true, optional: false, required: false
   public volumeBackups(index: string) {
-    return new CsbsBackupV1VolumeBackups(this, 'volume_backups', index);
+    return new CsbsBackupV1VolumeBackups(this, 'volume_backups', index, true);
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: CsbsBackupV1Tags[]; 
+  private _tags?: CsbsBackupV1Tags[] | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tags')));
   }
-  public set tags(value: CsbsBackupV1Tags[]) {
+  public set tags(value: CsbsBackupV1Tags[] | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -430,7 +430,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CsbsBackupV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CsbsBackupV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

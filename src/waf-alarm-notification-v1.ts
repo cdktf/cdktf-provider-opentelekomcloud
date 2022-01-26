@@ -80,7 +80,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   // enabled - computed: false, optional: false, required: true
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -127,7 +127,7 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
   // threat - computed: false, optional: false, required: true
   private _threat?: string[]; 
   public get threat() {
-    return this.getListAttribute('threat');
+    return cdktf.Fn.tolist(this.getListAttribute('threat'));
   }
   public set threat(value: string[]) {
     this._threat = value;

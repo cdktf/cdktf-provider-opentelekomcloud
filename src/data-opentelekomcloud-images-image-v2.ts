@@ -26,7 +26,7 @@ export interface DataOpentelekomcloudImagesImageV2Config extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/images_image_v2#properties DataOpentelekomcloudImagesImageV2#properties}
   */
-  readonly properties?: { [key: string]: string } | cdktf.IResolvable;
+  readonly properties?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/images_image_v2#region DataOpentelekomcloudImagesImageV2#region}
   */
@@ -138,7 +138,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
@@ -155,7 +155,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   // most_recent - computed: false, optional: true, required: false
   private _mostRecent?: boolean | cdktf.IResolvable; 
   public get mostRecent() {
-    return this.getBooleanAttribute('most_recent') as any;
+    return this.getBooleanAttribute('most_recent');
   }
   public set mostRecent(value: boolean | cdktf.IResolvable) {
     this._mostRecent = value;
@@ -217,12 +217,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // properties - computed: false, optional: true, required: false
-  private _properties?: { [key: string]: string } | cdktf.IResolvable; 
+  private _properties?: { [key: string]: string }; 
   public get properties() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('properties') as any;
+    return this.getStringMapAttribute('properties');
   }
-  public set properties(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set properties(value: { [key: string]: string }) {
     this._properties = value;
   }
   public resetProperties() {
@@ -235,7 +234,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
 
   // protected - computed: true, optional: false, required: false
   public get protected() {
-    return this.getBooleanAttribute('protected') as any;
+    return this.getBooleanAttribute('protected');
   }
 
   // region - computed: true, optional: true, required: false
@@ -346,7 +345,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -380,7 +379,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       name: cdktf.stringToTerraform(this._name),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.anyToTerraform)(this._properties),
+      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
       region: cdktf.stringToTerraform(this._region),
       size_max: cdktf.numberToTerraform(this._sizeMax),
       size_min: cdktf.numberToTerraform(this._sizeMin),

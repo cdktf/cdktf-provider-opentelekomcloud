@@ -24,7 +24,7 @@ export interface DataOpentelekomcloudDehServerV1Config extends cdktf.TerraformMe
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_server_v1#addresses DataOpentelekomcloudDehServerV1#addresses}
   */
-  readonly addresses?: DataOpentelekomcloudDehServerV1Addresses[];
+  readonly addresses?: DataOpentelekomcloudDehServerV1Addresses[] | cdktf.IResolvable;
 }
 export interface DataOpentelekomcloudDehServerV1Addresses {
   /**
@@ -37,8 +37,8 @@ export interface DataOpentelekomcloudDehServerV1Addresses {
   readonly name?: string;
 }
 
-export function dataOpentelekomcloudDehServerV1AddressesToTerraform(struct?: DataOpentelekomcloudDehServerV1Addresses): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dataOpentelekomcloudDehServerV1AddressesToTerraform(struct?: DataOpentelekomcloudDehServerV1Addresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -108,7 +108,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
 
   // flavor - computed: true, optional: false, required: false
-  public flavor(key: string): string {
+  public flavor(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'flavor').lookup(key);
   }
 
@@ -118,7 +118,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
@@ -175,12 +175,12 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
   }
 
   // addresses - computed: false, optional: true, required: false
-  private _addresses?: DataOpentelekomcloudDehServerV1Addresses[]; 
+  private _addresses?: DataOpentelekomcloudDehServerV1Addresses[] | cdktf.IResolvable; 
   public get addresses() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('addresses') as any;
+    return this.interpolationForAttribute('addresses');
   }
-  public set addresses(value: DataOpentelekomcloudDehServerV1Addresses[]) {
+  public set addresses(value: DataOpentelekomcloudDehServerV1Addresses[] | cdktf.IResolvable) {
     this._addresses = value;
   }
   public resetAddresses() {

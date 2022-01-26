@@ -89,7 +89,7 @@ export class DataOpentelekomcloudRtsSoftwareConfigV1 extends cdktf.TerraformData
   }
 
   // input_values - computed: true, optional: false, required: false
-  public inputValues(index: string, key: string): string {
+  public inputValues(index: string, key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, `input_values.${index}`).lookup(key);
   }
 
@@ -110,12 +110,12 @@ export class DataOpentelekomcloudRtsSoftwareConfigV1 extends cdktf.TerraformData
   }
 
   // options - computed: true, optional: false, required: false
-  public options(key: string): string {
+  public options(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'options').lookup(key);
   }
 
   // output_values - computed: true, optional: false, required: false
-  public outputValues(index: string, key: string): string {
+  public outputValues(index: string, key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, `output_values.${index}`).lookup(key);
   }
 

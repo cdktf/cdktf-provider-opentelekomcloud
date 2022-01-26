@@ -34,7 +34,7 @@ export interface VpcepServiceV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#tags VpcepServiceV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#tcp_proxy VpcepServiceV1#tcp_proxy}
   */
@@ -52,7 +52,7 @@ export interface VpcepServiceV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#port VpcepServiceV1#port}
   */
-  readonly port: VpcepServiceV1Port[];
+  readonly port: VpcepServiceV1Port[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -75,8 +75,8 @@ export interface VpcepServiceV1Port {
   readonly serverPort: number;
 }
 
-export function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -94,8 +94,8 @@ export interface VpcepServiceV1Timeouts {
   readonly default?: string;
 }
 
-export function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1TimeoutsOutputReference | VpcepServiceV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1TimeoutsOutputReference | VpcepServiceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,7 +112,7 @@ export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -207,7 +207,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   // approval_enabled - computed: false, optional: true, required: false
   private _approvalEnabled?: boolean | cdktf.IResolvable; 
   public get approvalEnabled() {
-    return this.getBooleanAttribute('approval_enabled') as any;
+    return this.getBooleanAttribute('approval_enabled');
   }
   public set approvalEnabled(value: boolean | cdktf.IResolvable) {
     this._approvalEnabled = value;
@@ -300,12 +300,11 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -362,12 +361,12 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // port - computed: false, optional: false, required: true
-  private _port?: VpcepServiceV1Port[]; 
+  private _port?: VpcepServiceV1Port[] | cdktf.IResolvable; 
   public get port() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('port') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port')));
   }
-  public set port(value: VpcepServiceV1Port[]) {
+  public set port(value: VpcepServiceV1Port[] | cdktf.IResolvable) {
     this._port = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -376,7 +375,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcepServiceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcepServiceV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -403,7 +402,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       port_id: cdktf.stringToTerraform(this._portId),
       server_type: cdktf.stringToTerraform(this._serverType),
       service_type: cdktf.stringToTerraform(this._serviceType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tcp_proxy: cdktf.stringToTerraform(this._tcpProxy),
       vip_port_id: cdktf.stringToTerraform(this._vipPortId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),

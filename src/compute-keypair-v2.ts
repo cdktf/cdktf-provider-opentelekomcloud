@@ -22,7 +22,7 @@ export interface ComputeKeypairV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
 }
 
 /**
@@ -124,16 +124,15 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
 
   // shared - computed: true, optional: false, required: false
   public get shared() {
-    return this.getBooleanAttribute('shared') as any;
+    return this.getBooleanAttribute('shared');
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -153,7 +152,7 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       public_key: cdktf.stringToTerraform(this._publicKey),
       region: cdktf.stringToTerraform(this._region),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
     };
   }
 }

@@ -81,7 +81,7 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
 
   // credentials - computed: true, optional: false, required: false
   public credentials(index: string) {
-    return new DataOpentelekomcloudIdentityCredentialV3Credentials(this, 'credentials', index);
+    return new DataOpentelekomcloudIdentityCredentialV3Credentials(this, 'credentials', index, false);
   }
 
   // id - computed: true, optional: true, required: false

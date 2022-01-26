@@ -34,7 +34,7 @@ export interface BlockstorageVolumeV2Config extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#metadata BlockstorageVolumeV2#metadata}
   */
-  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
+  readonly metadata?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#name BlockstorageVolumeV2#name}
   */
@@ -62,7 +62,7 @@ export interface BlockstorageVolumeV2Config extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#tags BlockstorageVolumeV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#volume_type BlockstorageVolumeV2#volume_type}
   */
@@ -102,8 +102,8 @@ export interface BlockstorageVolumeV2Timeouts {
   readonly delete?: string;
 }
 
-export function blockstorageVolumeV2TimeoutsToTerraform(struct?: BlockstorageVolumeV2TimeoutsOutputReference | BlockstorageVolumeV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function blockstorageVolumeV2TimeoutsToTerraform(struct?: BlockstorageVolumeV2TimeoutsOutputReference | BlockstorageVolumeV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -121,7 +121,7 @@ export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -241,7 +241,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
 
   // attachment - computed: true, optional: false, required: false
   public attachment(index: string) {
-    return new BlockstorageVolumeV2Attachment(this, 'attachment', index);
+    return new BlockstorageVolumeV2Attachment(this, 'attachment', index, true);
   }
 
   // availability_zone - computed: true, optional: true, required: false
@@ -263,7 +263,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   // cascade - computed: false, optional: true, required: false
   private _cascade?: boolean | cdktf.IResolvable; 
   public get cascade() {
-    return this.getBooleanAttribute('cascade') as any;
+    return this.getBooleanAttribute('cascade');
   }
   public set cascade(value: boolean | cdktf.IResolvable) {
     this._cascade = value;
@@ -346,12 +346,11 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
+  private _metadata?: { [key: string]: string }; 
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata') as any;
+    return this.getStringMapAttribute('metadata');
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set metadata(value: { [key: string]: string }) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -456,12 +455,11 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -494,7 +492,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new BlockstorageVolumeV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new BlockstorageVolumeV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -521,14 +519,14 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       device_type: cdktf.stringToTerraform(this._deviceType),
       image_id: cdktf.stringToTerraform(this._imageId),
-      metadata: cdktf.hashMapper(cdktf.anyToTerraform)(this._metadata),
+      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       size: cdktf.numberToTerraform(this._size),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
       source_replica: cdktf.stringToTerraform(this._sourceReplica),
       source_vol_id: cdktf.stringToTerraform(this._sourceVolId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       timeouts: blockstorageVolumeV2TimeoutsToTerraform(this._timeouts.internalValue),
     };

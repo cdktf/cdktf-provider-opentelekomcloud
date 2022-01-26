@@ -95,7 +95,7 @@ export class DataOpentelekomcloudLbFlavorV3 extends cdktf.TerraformDataSource {
 
   // shared - computed: true, optional: false, required: false
   public get shared() {
-    return this.getBooleanAttribute('shared') as any;
+    return this.getBooleanAttribute('shared');
   }
 
   // type - computed: true, optional: false, required: false

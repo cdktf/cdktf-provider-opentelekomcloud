@@ -18,7 +18,7 @@ export interface RdsParametergroupV3Config extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3#values RdsParametergroupV3#values}
   */
-  readonly values?: { [key: string]: string } | cdktf.IResolvable;
+  readonly values?: { [key: string]: string };
   /**
   * datastore block
   * 
@@ -40,12 +40,12 @@ export class RdsParametergroupV3ConfigurationParameters extends cdktf.ComplexCom
 
   // readonly - computed: true, optional: false, required: false
   public get readonly() {
-    return this.getBooleanAttribute('readonly') as any;
+    return this.getBooleanAttribute('readonly');
   }
 
   // restart_required - computed: true, optional: false, required: false
   public get restartRequired() {
-    return this.getBooleanAttribute('restart_required') as any;
+    return this.getBooleanAttribute('restart_required');
   }
 
   // type - computed: true, optional: false, required: false
@@ -75,7 +75,7 @@ export interface RdsParametergroupV3Datastore {
 }
 
 export function rdsParametergroupV3DatastoreToTerraform(struct?: RdsParametergroupV3DatastoreOutputReference | RdsParametergroupV3Datastore): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -93,7 +93,7 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -195,7 +195,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
 
   // configuration_parameters - computed: true, optional: false, required: false
   public configurationParameters(index: string) {
-    return new RdsParametergroupV3ConfigurationParameters(this, 'configuration_parameters', index);
+    return new RdsParametergroupV3ConfigurationParameters(this, 'configuration_parameters', index, false);
   }
 
   // created - computed: true, optional: false, required: false
@@ -243,12 +243,11 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
 
   // values - computed: false, optional: true, required: false
-  private _values?: { [key: string]: string } | cdktf.IResolvable; 
+  private _values?: { [key: string]: string }; 
   public get values() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('values') as any;
+    return this.getStringMapAttribute('values');
   }
-  public set values(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set values(value: { [key: string]: string }) {
     this._values = value;
   }
   public resetValues() {
@@ -260,7 +259,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore = new RdsParametergroupV3DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new RdsParametergroupV3DatastoreOutputReference(this, "datastore", true);
   public get datastore() {
     return this._datastore;
   }
@@ -280,7 +279,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
-      values: cdktf.hashMapper(cdktf.anyToTerraform)(this._values),
+      values: cdktf.hashMapper(cdktf.stringToTerraform)(this._values),
       datastore: rdsParametergroupV3DatastoreToTerraform(this._datastore.internalValue),
     };
   }

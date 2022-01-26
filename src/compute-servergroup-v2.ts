@@ -22,7 +22,7 @@ export interface ComputeServergroupV2Config extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
 }
 
 /**
@@ -123,12 +123,11 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -148,7 +147,7 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       policies: cdktf.listMapper(cdktf.stringToTerraform)(this._policies),
       region: cdktf.stringToTerraform(this._region),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
     };
   }
 }

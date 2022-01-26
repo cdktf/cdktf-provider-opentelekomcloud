@@ -24,7 +24,7 @@ export interface ComputeSecgroupV2Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#rule ComputeSecgroupV2#rule}
   */
-  readonly rule?: ComputeSecgroupV2Rule[];
+  readonly rule?: ComputeSecgroupV2Rule[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -59,8 +59,8 @@ export interface ComputeSecgroupV2Rule {
   readonly toPort: number;
 }
 
-export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -81,8 +81,8 @@ export interface ComputeSecgroupV2Timeouts {
   readonly delete?: string;
 }
 
-export function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2TimeoutsOutputReference | ComputeSecgroupV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2TimeoutsOutputReference | ComputeSecgroupV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -99,7 +99,7 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -232,12 +232,12 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: ComputeSecgroupV2Rule[]; 
+  private _rule?: ComputeSecgroupV2Rule[] | cdktf.IResolvable; 
   public get rule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
   }
-  public set rule(value: ComputeSecgroupV2Rule[]) {
+  public set rule(value: ComputeSecgroupV2Rule[] | cdktf.IResolvable) {
     this._rule = value;
   }
   public resetRule() {
@@ -249,7 +249,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ComputeSecgroupV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ComputeSecgroupV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -72,7 +72,7 @@ export interface DehHostV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/deh_host_v1#available_instance_capacities DehHostV1#available_instance_capacities}
   */
-  readonly availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[];
+  readonly availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -83,8 +83,8 @@ export interface DehHostV1Config extends cdktf.TerraformMetaArguments {
 export interface DehHostV1AvailableInstanceCapacities {
 }
 
-export function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHostV1AvailableInstanceCapacities): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHostV1AvailableInstanceCapacities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -103,8 +103,8 @@ export interface DehHostV1Timeouts {
   readonly delete?: string;
 }
 
-export function dehHostV1TimeoutsToTerraform(struct?: DehHostV1TimeoutsOutputReference | DehHostV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dehHostV1TimeoutsToTerraform(struct?: DehHostV1TimeoutsOutputReference | DehHostV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,7 +122,7 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -478,12 +478,12 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
 
   // available_instance_capacities - computed: false, optional: true, required: false
-  private _availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[]; 
+  private _availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable; 
   public get availableInstanceCapacities() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('available_instance_capacities') as any;
+    return this.interpolationForAttribute('available_instance_capacities');
   }
-  public set availableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[]) {
+  public set availableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable) {
     this._availableInstanceCapacities = value;
   }
   public resetAvailableInstanceCapacities() {
@@ -495,7 +495,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DehHostV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DehHostV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -58,7 +58,7 @@ export interface FwRuleV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_rule_v2#value_specs FwRuleV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
 }
 
 /**
@@ -176,7 +176,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -304,12 +304,11 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -338,7 +337,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
       source_ip_address: cdktf.stringToTerraform(this._sourceIpAddress),
       source_port: cdktf.stringToTerraform(this._sourcePort),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
     };
   }
 }

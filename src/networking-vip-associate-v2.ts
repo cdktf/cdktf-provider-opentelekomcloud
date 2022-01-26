@@ -65,7 +65,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   // port_ids - computed: false, optional: false, required: true
   private _portIds?: string[]; 
   public get portIds() {
-    return this.getListAttribute('port_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('port_ids'));
   }
   public set portIds(value: string[]) {
     this._portIds = value;

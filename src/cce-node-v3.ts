@@ -10,7 +10,7 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#annotations CceNodeV3#annotations}
   */
-  readonly annotations?: { [key: string]: string } | cdktf.IResolvable;
+  readonly annotations?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#availability_zone CceNodeV3#availability_zone}
   */
@@ -66,7 +66,7 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#k8s_tags CceNodeV3#k8s_tags}
   */
-  readonly k8STags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly k8STags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#key_pair CceNodeV3#key_pair}
   */
@@ -74,7 +74,7 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#labels CceNodeV3#labels}
   */
-  readonly labels?: { [key: string]: string } | cdktf.IResolvable;
+  readonly labels?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#max_pods CceNodeV3#max_pods}
   */
@@ -126,13 +126,13 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#tags CceNodeV3#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * data_volumes block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#data_volumes CceNodeV3#data_volumes}
   */
-  readonly dataVolumes: CceNodeV3DataVolumes[];
+  readonly dataVolumes: CceNodeV3DataVolumes[] | cdktf.IResolvable;
   /**
   * root_volume block
   * 
@@ -144,7 +144,7 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#taints CceNodeV3#taints}
   */
-  readonly taints?: CceNodeV3Taints[];
+  readonly taints?: CceNodeV3Taints[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -171,8 +171,8 @@ export interface CceNodeV3DataVolumes {
   readonly volumetype: string;
 }
 
-export function cceNodeV3DataVolumesToTerraform(struct?: CceNodeV3DataVolumes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodeV3DataVolumesToTerraform(struct?: CceNodeV3DataVolumes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -200,7 +200,7 @@ export interface CceNodeV3RootVolume {
 }
 
 export function cceNodeV3RootVolumeToTerraform(struct?: CceNodeV3RootVolumeOutputReference | CceNodeV3RootVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -219,7 +219,7 @@ export class CceNodeV3RootVolumeOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -313,8 +313,8 @@ export interface CceNodeV3Taints {
   readonly value: string;
 }
 
-export function cceNodeV3TaintsToTerraform(struct?: CceNodeV3Taints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodeV3TaintsToTerraform(struct?: CceNodeV3Taints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -336,8 +336,8 @@ export interface CceNodeV3Timeouts {
   readonly delete?: string;
 }
 
-export function cceNodeV3TimeoutsToTerraform(struct?: CceNodeV3TimeoutsOutputReference | CceNodeV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodeV3TimeoutsToTerraform(struct?: CceNodeV3TimeoutsOutputReference | CceNodeV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -355,7 +355,7 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -492,12 +492,11 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   // ==========
 
   // annotations - computed: false, optional: true, required: false
-  private _annotations?: { [key: string]: string } | cdktf.IResolvable; 
+  private _annotations?: { [key: string]: string }; 
   public get annotations() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('annotations') as any;
+    return this.getStringMapAttribute('annotations');
   }
-  public set annotations(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set annotations(value: { [key: string]: string }) {
     this._annotations = value;
   }
   public resetAnnotations() {
@@ -649,7 +648,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   // eip_ids - computed: false, optional: true, required: false
   private _eipIds?: string[]; 
   public get eipIds() {
-    return this.getListAttribute('eip_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('eip_ids'));
   }
   public set eipIds(value: string[]) {
     this._eipIds = value;
@@ -713,12 +712,11 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // k8s_tags - computed: true, optional: true, required: false
-  private _k8STags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _k8STags?: { [key: string]: string }; 
   public get k8STags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('k8s_tags') as any;
+    return this.getStringMapAttribute('k8s_tags');
   }
-  public set k8STags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set k8STags(value: { [key: string]: string }) {
     this._k8STags = value;
   }
   public resetK8STags() {
@@ -743,12 +741,11 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // labels - computed: false, optional: true, required: false
-  private _labels?: { [key: string]: string } | cdktf.IResolvable; 
+  private _labels?: { [key: string]: string }; 
   public get labels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('labels') as any;
+    return this.getStringMapAttribute('labels');
   }
-  public set labels(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set labels(value: { [key: string]: string }) {
     this._labels = value;
   }
   public resetLabels() {
@@ -967,12 +964,11 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -984,12 +980,12 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // data_volumes - computed: false, optional: false, required: true
-  private _dataVolumes?: CceNodeV3DataVolumes[]; 
+  private _dataVolumes?: CceNodeV3DataVolumes[] | cdktf.IResolvable; 
   public get dataVolumes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('data_volumes') as any;
+    return this.interpolationForAttribute('data_volumes');
   }
-  public set dataVolumes(value: CceNodeV3DataVolumes[]) {
+  public set dataVolumes(value: CceNodeV3DataVolumes[] | cdktf.IResolvable) {
     this._dataVolumes = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -998,7 +994,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // root_volume - computed: false, optional: false, required: true
-  private _rootVolume = new CceNodeV3RootVolumeOutputReference(this as any, "root_volume", true);
+  private _rootVolume = new CceNodeV3RootVolumeOutputReference(this, "root_volume", true);
   public get rootVolume() {
     return this._rootVolume;
   }
@@ -1011,12 +1007,12 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // taints - computed: false, optional: true, required: false
-  private _taints?: CceNodeV3Taints[]; 
+  private _taints?: CceNodeV3Taints[] | cdktf.IResolvable; 
   public get taints() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('taints') as any;
+    return this.interpolationForAttribute('taints');
   }
-  public set taints(value: CceNodeV3Taints[]) {
+  public set taints(value: CceNodeV3Taints[] | cdktf.IResolvable) {
     this._taints = value;
   }
   public resetTaints() {
@@ -1028,7 +1024,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceNodeV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CceNodeV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -1049,7 +1045,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.anyToTerraform)(this._annotations),
+      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       bandwidth_charge_mode: cdktf.stringToTerraform(this._bandwidthChargeMode),
       bandwidth_size: cdktf.numberToTerraform(this._bandwidthSize),
@@ -1063,9 +1059,9 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       extend_param_charging_mode: cdktf.numberToTerraform(this._extendParamChargingMode),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
       iptype: cdktf.stringToTerraform(this._iptype),
-      k8s_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._k8STags),
+      k8s_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._k8STags),
       key_pair: cdktf.stringToTerraform(this._keyPair),
-      labels: cdktf.hashMapper(cdktf.anyToTerraform)(this._labels),
+      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       max_pods: cdktf.numberToTerraform(this._maxPods),
       name: cdktf.stringToTerraform(this._name),
       order_id: cdktf.stringToTerraform(this._orderId),
@@ -1078,7 +1074,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       sharetype: cdktf.stringToTerraform(this._sharetype),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       data_volumes: cdktf.listMapper(cceNodeV3DataVolumesToTerraform)(this._dataVolumes),
       root_volume: cceNodeV3RootVolumeToTerraform(this._rootVolume.internalValue),
       taints: cdktf.listMapper(cceNodeV3TaintsToTerraform)(this._taints),

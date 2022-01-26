@@ -115,7 +115,7 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;

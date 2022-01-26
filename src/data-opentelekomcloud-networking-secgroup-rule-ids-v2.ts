@@ -64,7 +64,7 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
 
   // ids - computed: true, optional: false, required: false
   public get ids() {
-    return this.getListAttribute('ids');
+    return cdktf.Fn.tolist(this.getListAttribute('ids'));
   }
 
   // region - computed: true, optional: true, required: false

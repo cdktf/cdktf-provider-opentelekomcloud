@@ -58,7 +58,7 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#tags EcsInstanceV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#user_data EcsInstanceV1#user_data}
   */
@@ -72,13 +72,13 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#data_disks EcsInstanceV1#data_disks}
   */
-  readonly dataDisks?: EcsInstanceV1DataDisks[];
+  readonly dataDisks?: EcsInstanceV1DataDisks[] | cdktf.IResolvable;
   /**
   * nics block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#nics EcsInstanceV1#nics}
   */
-  readonly nics: EcsInstanceV1Nics[];
+  readonly nics: EcsInstanceV1Nics[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -105,8 +105,8 @@ export interface EcsInstanceV1DataDisks {
   readonly type: string;
 }
 
-export function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,8 +129,8 @@ export interface EcsInstanceV1Nics {
   readonly networkId: string;
 }
 
-export function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -155,8 +155,8 @@ export interface EcsInstanceV1Timeouts {
   readonly update?: string;
 }
 
-export function ecsInstanceV1TimeoutsToTerraform(struct?: EcsInstanceV1TimeoutsOutputReference | EcsInstanceV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function ecsInstanceV1TimeoutsToTerraform(struct?: EcsInstanceV1TimeoutsOutputReference | EcsInstanceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -175,7 +175,7 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -320,7 +320,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // auto_recovery - computed: true, optional: true, required: false
   private _autoRecovery?: boolean | cdktf.IResolvable; 
   public get autoRecovery() {
-    return this.getBooleanAttribute('auto_recovery') as any;
+    return this.getBooleanAttribute('auto_recovery');
   }
   public set autoRecovery(value: boolean | cdktf.IResolvable) {
     this._autoRecovery = value;
@@ -349,7 +349,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // delete_disks_on_termination - computed: false, optional: true, required: false
   private _deleteDisksOnTermination?: boolean | cdktf.IResolvable; 
   public get deleteDisksOnTermination() {
-    return this.getBooleanAttribute('delete_disks_on_termination') as any;
+    return this.getBooleanAttribute('delete_disks_on_termination');
   }
   public set deleteDisksOnTermination(value: boolean | cdktf.IResolvable) {
     this._deleteDisksOnTermination = value;
@@ -441,7 +441,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -503,12 +503,11 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -549,12 +548,12 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // data_disks - computed: false, optional: true, required: false
-  private _dataDisks?: EcsInstanceV1DataDisks[]; 
+  private _dataDisks?: EcsInstanceV1DataDisks[] | cdktf.IResolvable; 
   public get dataDisks() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('data_disks') as any;
+    return this.interpolationForAttribute('data_disks');
   }
-  public set dataDisks(value: EcsInstanceV1DataDisks[]) {
+  public set dataDisks(value: EcsInstanceV1DataDisks[] | cdktf.IResolvable) {
     this._dataDisks = value;
   }
   public resetDataDisks() {
@@ -566,12 +565,12 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // nics - computed: false, optional: false, required: true
-  private _nics?: EcsInstanceV1Nics[]; 
+  private _nics?: EcsInstanceV1Nics[] | cdktf.IResolvable; 
   public get nics() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('nics') as any;
+    return this.interpolationForAttribute('nics');
   }
-  public set nics(value: EcsInstanceV1Nics[]) {
+  public set nics(value: EcsInstanceV1Nics[] | cdktf.IResolvable) {
     this._nics = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -580,7 +579,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EcsInstanceV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -613,7 +612,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       system_disk_kms_id: cdktf.stringToTerraform(this._systemDiskKmsId),
       system_disk_size: cdktf.numberToTerraform(this._systemDiskSize),
       system_disk_type: cdktf.stringToTerraform(this._systemDiskType),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform)(this._dataDisks),

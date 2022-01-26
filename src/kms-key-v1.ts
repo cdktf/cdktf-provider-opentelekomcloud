@@ -30,7 +30,7 @@ export interface KmsKeyV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#tags KmsKeyV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 
 /**
@@ -105,7 +105,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   // is_enabled - computed: false, optional: true, required: false
   private _isEnabled?: boolean | cdktf.IResolvable; 
   public get isEnabled() {
-    return this.getBooleanAttribute('is_enabled') as any;
+    return this.getBooleanAttribute('is_enabled');
   }
   public set isEnabled(value: boolean | cdktf.IResolvable) {
     this._isEnabled = value;
@@ -190,12 +190,11 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -217,7 +216,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       key_description: cdktf.stringToTerraform(this._keyDescription),
       pending_days: cdktf.stringToTerraform(this._pendingDays),
       realm: cdktf.stringToTerraform(this._realm),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

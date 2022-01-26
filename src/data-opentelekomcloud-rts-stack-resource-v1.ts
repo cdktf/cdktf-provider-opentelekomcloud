@@ -116,7 +116,7 @@ export class DataOpentelekomcloudRtsStackResourceV1 extends cdktf.TerraformDataS
 
   // required_by - computed: true, optional: false, required: false
   public get requiredBy() {
-    return this.getListAttribute('required_by');
+    return cdktf.Fn.tolist(this.getListAttribute('required_by'));
   }
 
   // resource_name - computed: false, optional: true, required: false

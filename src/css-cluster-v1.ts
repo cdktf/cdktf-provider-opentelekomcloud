@@ -75,7 +75,7 @@ export interface CssClusterV1Datastore {
 }
 
 export function cssClusterV1DatastoreToTerraform(struct?: CssClusterV1DatastoreOutputReference | CssClusterV1Datastore): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -93,7 +93,7 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -172,7 +172,7 @@ export interface CssClusterV1NodeConfigNetworkInfo {
 }
 
 export function cssClusterV1NodeConfigNetworkInfoToTerraform(struct?: CssClusterV1NodeConfigNetworkInfoOutputReference | CssClusterV1NodeConfigNetworkInfo): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -191,7 +191,7 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -283,7 +283,7 @@ export interface CssClusterV1NodeConfigVolume {
 }
 
 export function cssClusterV1NodeConfigVolumeToTerraform(struct?: CssClusterV1NodeConfigVolumeOutputReference | CssClusterV1NodeConfigVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -302,7 +302,7 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -405,7 +405,7 @@ export interface CssClusterV1NodeConfig {
 }
 
 export function cssClusterV1NodeConfigToTerraform(struct?: CssClusterV1NodeConfigOutputReference | CssClusterV1NodeConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -425,7 +425,7 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -498,7 +498,7 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // network_info - computed: false, optional: false, required: true
-  private _networkInfo = new CssClusterV1NodeConfigNetworkInfoOutputReference(this as any, "network_info", true);
+  private _networkInfo = new CssClusterV1NodeConfigNetworkInfoOutputReference(this, "network_info", true);
   public get networkInfo() {
     return this._networkInfo;
   }
@@ -511,7 +511,7 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new CssClusterV1NodeConfigVolumeOutputReference(this as any, "volume", true);
+  private _volume = new CssClusterV1NodeConfigVolumeOutputReference(this, "volume", true);
   public get volume() {
     return this._volume;
   }
@@ -534,8 +534,8 @@ export interface CssClusterV1Timeouts {
   readonly update?: string;
 }
 
-export function cssClusterV1TimeoutsToTerraform(struct?: CssClusterV1TimeoutsOutputReference | CssClusterV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cssClusterV1TimeoutsToTerraform(struct?: CssClusterV1TimeoutsOutputReference | CssClusterV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -553,7 +553,7 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -687,7 +687,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // enable_authority - computed: true, optional: true, required: false
   private _enableAuthority?: boolean | cdktf.IResolvable; 
   public get enableAuthority() {
-    return this.getBooleanAttribute('enable_authority') as any;
+    return this.getBooleanAttribute('enable_authority');
   }
   public set enableAuthority(value: boolean | cdktf.IResolvable) {
     this._enableAuthority = value;
@@ -703,7 +703,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // enable_https - computed: true, optional: true, required: false
   private _enableHttps?: boolean | cdktf.IResolvable; 
   public get enableHttps() {
-    return this.getBooleanAttribute('enable_https') as any;
+    return this.getBooleanAttribute('enable_https');
   }
   public set enableHttps(value: boolean | cdktf.IResolvable) {
     this._enableHttps = value;
@@ -757,7 +757,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
 
   // nodes - computed: true, optional: false, required: false
   public nodes(index: string) {
-    return new CssClusterV1Nodes(this, 'nodes', index);
+    return new CssClusterV1Nodes(this, 'nodes', index, false);
   }
 
   // updated - computed: true, optional: false, required: false
@@ -766,7 +766,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: true, required: false
-  private _datastore = new CssClusterV1DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new CssClusterV1DatastoreOutputReference(this, "datastore", true);
   public get datastore() {
     return this._datastore;
   }
@@ -782,7 +782,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // node_config - computed: false, optional: false, required: true
-  private _nodeConfig = new CssClusterV1NodeConfigOutputReference(this as any, "node_config", true);
+  private _nodeConfig = new CssClusterV1NodeConfigOutputReference(this, "node_config", true);
   public get nodeConfig() {
     return this._nodeConfig;
   }
@@ -795,7 +795,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CssClusterV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CssClusterV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -30,7 +30,7 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#parameters RdsInstanceV3#parameters}
   */
-  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
+  readonly parameters?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#public_ips RdsInstanceV3#public_ips}
   */
@@ -46,11 +46,11 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tag RdsInstanceV3#tag}
   */
-  readonly tag?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tag?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tags RdsInstanceV3#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#vpc_id RdsInstanceV3#vpc_id}
   */
@@ -119,7 +119,7 @@ export interface RdsInstanceV3BackupStrategy {
 }
 
 export function rdsInstanceV3BackupStrategyToTerraform(struct?: RdsInstanceV3BackupStrategyOutputReference | RdsInstanceV3BackupStrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -137,7 +137,7 @@ export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -217,7 +217,7 @@ export interface RdsInstanceV3Db {
 }
 
 export function rdsInstanceV3DbToTerraform(struct?: RdsInstanceV3DbOutputReference | RdsInstanceV3Db): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -237,7 +237,7 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -322,6 +322,11 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
+  // user_name - computed: true, optional: false, required: false
+  public get userName() {
+    return this.getStringAttribute('user_name');
+  }
+
   // version - computed: false, optional: false, required: true
   private _version?: string; 
   public get version() {
@@ -346,8 +351,8 @@ export interface RdsInstanceV3Timeouts {
   readonly update?: string;
 }
 
-export function rdsInstanceV3TimeoutsToTerraform(struct?: RdsInstanceV3TimeoutsOutputReference | RdsInstanceV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rdsInstanceV3TimeoutsToTerraform(struct?: RdsInstanceV3TimeoutsOutputReference | RdsInstanceV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -365,7 +370,7 @@ export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -444,7 +449,7 @@ export interface RdsInstanceV3Volume {
 }
 
 export function rdsInstanceV3VolumeToTerraform(struct?: RdsInstanceV3VolumeOutputReference | RdsInstanceV3Volume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -463,7 +468,7 @@ export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -664,7 +669,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
 
   // nodes - computed: true, optional: false, required: false
   public nodes(index: string) {
-    return new RdsInstanceV3Nodes(this, 'nodes', index);
+    return new RdsInstanceV3Nodes(this, 'nodes', index, false);
   }
 
   // param_group_id - computed: false, optional: true, required: false
@@ -684,12 +689,11 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: { [key: string]: string } | cdktf.IResolvable; 
+  private _parameters?: { [key: string]: string }; 
   public get parameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters') as any;
+    return this.getStringMapAttribute('parameters');
   }
-  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set parameters(value: { [key: string]: string }) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -748,12 +752,11 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tag?: { [key: string]: string }; 
   public get tag() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag') as any;
+    return this.getStringMapAttribute('tag');
   }
-  public set tag(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tag(value: { [key: string]: string }) {
     this._tag = value;
   }
   public resetTag() {
@@ -765,12 +768,11 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -795,7 +797,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // backup_strategy - computed: false, optional: true, required: false
-  private _backupStrategy = new RdsInstanceV3BackupStrategyOutputReference(this as any, "backup_strategy", true);
+  private _backupStrategy = new RdsInstanceV3BackupStrategyOutputReference(this, "backup_strategy", true);
   public get backupStrategy() {
     return this._backupStrategy;
   }
@@ -811,7 +813,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // db - computed: false, optional: false, required: true
-  private _db = new RdsInstanceV3DbOutputReference(this as any, "db", true);
+  private _db = new RdsInstanceV3DbOutputReference(this, "db", true);
   public get db() {
     return this._db;
   }
@@ -824,7 +826,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsInstanceV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RdsInstanceV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -840,7 +842,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new RdsInstanceV3VolumeOutputReference(this as any, "volume", true);
+  private _volume = new RdsInstanceV3VolumeOutputReference(this, "volume", true);
   public get volume() {
     return this._volume;
   }
@@ -863,12 +865,12 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       ha_replication_mode: cdktf.stringToTerraform(this._haReplicationMode),
       name: cdktf.stringToTerraform(this._name),
       param_group_id: cdktf.stringToTerraform(this._paramGroupId),
-      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       public_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._publicIps),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tag: cdktf.hashMapper(cdktf.anyToTerraform)(this._tag),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tag: cdktf.hashMapper(cdktf.stringToTerraform)(this._tag),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_strategy: rdsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
       db: rdsInstanceV3DbToTerraform(this._db.internalValue),

@@ -111,7 +111,7 @@ export class DataOpentelekomcloudCsbsBackupV1VolumeBackups extends cdktf.Complex
 
   // bootable - computed: true, optional: false, required: false
   public get bootable() {
-    return this.getBooleanAttribute('bootable') as any;
+    return this.getBooleanAttribute('bootable');
   }
 
   // id - computed: true, optional: false, required: false
@@ -126,7 +126,7 @@ export class DataOpentelekomcloudCsbsBackupV1VolumeBackups extends cdktf.Complex
 
   // incremental - computed: true, optional: false, required: false
   public get incremental() {
-    return this.getBooleanAttribute('incremental') as any;
+    return this.getBooleanAttribute('incremental');
   }
 
   // name - computed: true, optional: false, required: false
@@ -220,7 +220,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
 
   // auto_trigger - computed: true, optional: false, required: false
   public get autoTrigger() {
-    return this.getBooleanAttribute('auto_trigger') as any;
+    return this.getBooleanAttribute('auto_trigger');
   }
 
   // average_speed - computed: true, optional: false, required: false
@@ -384,7 +384,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
 
   // tags - computed: true, optional: false, required: false
   public tags(index: string) {
-    return new DataOpentelekomcloudCsbsBackupV1Tags(this, 'tags', index);
+    return new DataOpentelekomcloudCsbsBackupV1Tags(this, 'tags', index, true);
   }
 
   // vm_ip - computed: false, optional: true, required: false
@@ -405,12 +405,12 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
 
   // vm_metadata - computed: true, optional: false, required: false
   public vmMetadata(index: string) {
-    return new DataOpentelekomcloudCsbsBackupV1VmMetadata(this, 'vm_metadata', index);
+    return new DataOpentelekomcloudCsbsBackupV1VmMetadata(this, 'vm_metadata', index, true);
   }
 
   // volume_backups - computed: true, optional: false, required: false
   public volumeBackups(index: string) {
-    return new DataOpentelekomcloudCsbsBackupV1VolumeBackups(this, 'volume_backups', index);
+    return new DataOpentelekomcloudCsbsBackupV1VolumeBackups(this, 'volume_backups', index, true);
   }
 
   // =========

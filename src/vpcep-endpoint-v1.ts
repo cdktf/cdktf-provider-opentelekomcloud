@@ -34,7 +34,7 @@ export interface VpcepEndpointV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}
   */
@@ -57,8 +57,8 @@ export interface VpcepEndpointV1Timeouts {
   readonly default?: string;
 }
 
-export function vpcepEndpointV1TimeoutsToTerraform(struct?: VpcepEndpointV1TimeoutsOutputReference | VpcepEndpointV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcepEndpointV1TimeoutsToTerraform(struct?: VpcepEndpointV1TimeoutsOutputReference | VpcepEndpointV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -75,7 +75,7 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -167,13 +167,13 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
 
   // dns_names - computed: true, optional: false, required: false
   public get dnsNames() {
-    return this.getListAttribute('dns_names');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_names'));
   }
 
   // enable_dns - computed: true, optional: true, required: false
   private _enableDns?: boolean | cdktf.IResolvable; 
   public get enableDns() {
-    return this.getBooleanAttribute('enable_dns') as any;
+    return this.getBooleanAttribute('enable_dns');
   }
   public set enableDns(value: boolean | cdktf.IResolvable) {
     this._enableDns = value;
@@ -189,7 +189,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // enable_whitelist - computed: true, optional: true, required: false
   private _enableWhitelist?: boolean | cdktf.IResolvable; 
   public get enableWhitelist() {
-    return this.getBooleanAttribute('enable_whitelist') as any;
+    return this.getBooleanAttribute('enable_whitelist');
   }
   public set enableWhitelist(value: boolean | cdktf.IResolvable) {
     this._enableWhitelist = value;
@@ -236,7 +236,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // route_tables - computed: true, optional: true, required: false
   private _routeTables?: string[]; 
   public get routeTables() {
-    return this.getListAttribute('route_tables');
+    return cdktf.Fn.tolist(this.getListAttribute('route_tables'));
   }
   public set routeTables(value: string[]) {
     this._routeTables = value;
@@ -289,12 +289,11 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: true, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -321,7 +320,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // whitelist - computed: true, optional: true, required: false
   private _whitelist?: string[]; 
   public get whitelist() {
-    return this.getListAttribute('whitelist');
+    return cdktf.Fn.tolist(this.getListAttribute('whitelist'));
   }
   public set whitelist(value: string[]) {
     this._whitelist = value;
@@ -335,7 +334,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcepEndpointV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcepEndpointV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -362,7 +361,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       route_tables: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTables),
       service_id: cdktf.stringToTerraform(this._serviceId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._whitelist),
       timeouts: vpcepEndpointV1TimeoutsToTerraform(this._timeouts.internalValue),

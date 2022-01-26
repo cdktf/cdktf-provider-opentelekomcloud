@@ -118,12 +118,12 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
 
   // certificate_clusters - computed: true, optional: false, required: false
   public certificateClusters(index: string) {
-    return new DataOpentelekomcloudCceClusterV3CertificateClusters(this, 'certificate_clusters', index);
+    return new DataOpentelekomcloudCceClusterV3CertificateClusters(this, 'certificate_clusters', index, false);
   }
 
   // certificate_users - computed: true, optional: false, required: false
   public certificateUsers(index: string) {
-    return new DataOpentelekomcloudCceClusterV3CertificateUsers(this, 'certificate_users', index);
+    return new DataOpentelekomcloudCceClusterV3CertificateUsers(this, 'certificate_users', index, false);
   }
 
   // cluster_type - computed: false, optional: true, required: false

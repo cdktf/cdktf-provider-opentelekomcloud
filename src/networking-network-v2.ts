@@ -30,13 +30,13 @@ export interface NetworkingNetworkV2Config extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#value_specs NetworkingNetworkV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * segments block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#segments NetworkingNetworkV2#segments}
   */
-  readonly segments?: NetworkingNetworkV2Segments[];
+  readonly segments?: NetworkingNetworkV2Segments[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -59,8 +59,8 @@ export interface NetworkingNetworkV2Segments {
   readonly segmentationId?: number;
 }
 
-export function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetworkV2Segments): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetworkV2Segments | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -82,8 +82,8 @@ export interface NetworkingNetworkV2Timeouts {
   readonly delete?: string;
 }
 
-export function networkingNetworkV2TimeoutsToTerraform(struct?: NetworkingNetworkV2TimeoutsOutputReference | NetworkingNetworkV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingNetworkV2TimeoutsToTerraform(struct?: NetworkingNetworkV2TimeoutsOutputReference | NetworkingNetworkV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -101,7 +101,7 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -297,12 +297,11 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -314,12 +313,12 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // segments - computed: false, optional: true, required: false
-  private _segments?: NetworkingNetworkV2Segments[]; 
+  private _segments?: NetworkingNetworkV2Segments[] | cdktf.IResolvable; 
   public get segments() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('segments') as any;
+    return this.interpolationForAttribute('segments');
   }
-  public set segments(value: NetworkingNetworkV2Segments[]) {
+  public set segments(value: NetworkingNetworkV2Segments[] | cdktf.IResolvable) {
     this._segments = value;
   }
   public resetSegments() {
@@ -331,7 +330,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NetworkingNetworkV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingNetworkV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -357,7 +356,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       shared: cdktf.stringToTerraform(this._shared),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform)(this._segments),
       timeouts: networkingNetworkV2TimeoutsToTerraform(this._timeouts.internalValue),
     };

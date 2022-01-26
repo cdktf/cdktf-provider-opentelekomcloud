@@ -30,7 +30,7 @@ export interface NetworkingFloatingipV2Config extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -49,8 +49,8 @@ export interface NetworkingFloatingipV2Timeouts {
   readonly delete?: string;
 }
 
-export function networkingFloatingipV2TimeoutsToTerraform(struct?: NetworkingFloatingipV2TimeoutsOutputReference | NetworkingFloatingipV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingFloatingipV2TimeoutsToTerraform(struct?: NetworkingFloatingipV2TimeoutsOutputReference | NetworkingFloatingipV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -68,7 +68,7 @@ export class NetworkingFloatingipV2TimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -268,12 +268,11 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -285,7 +284,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NetworkingFloatingipV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingFloatingipV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -311,7 +310,7 @@ export class NetworkingFloatingipV2 extends cdktf.TerraformResource {
       port_id: cdktf.stringToTerraform(this._portId),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       timeouts: networkingFloatingipV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -126,12 +126,12 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   }
 
   // input_values - computed: true, optional: false, required: false
-  public inputValues(key: string): string {
+  public inputValues(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'input_values').lookup(key);
   }
 
   // output_values - computed: true, optional: false, required: false
-  public outputValues(key: string): string {
+  public outputValues(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'output_values').lookup(key);
   }
 

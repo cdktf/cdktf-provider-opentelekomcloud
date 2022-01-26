@@ -50,19 +50,19 @@ export interface NetworkingSubnetV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#value_specs NetworkingSubnetV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * allocation_pools block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#allocation_pools NetworkingSubnetV2#allocation_pools}
   */
-  readonly allocationPools?: NetworkingSubnetV2AllocationPools[];
+  readonly allocationPools?: NetworkingSubnetV2AllocationPools[] | cdktf.IResolvable;
   /**
   * host_routes block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#host_routes NetworkingSubnetV2#host_routes}
   */
-  readonly hostRoutes?: NetworkingSubnetV2HostRoutes[];
+  readonly hostRoutes?: NetworkingSubnetV2HostRoutes[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -81,8 +81,8 @@ export interface NetworkingSubnetV2AllocationPools {
   readonly start: string;
 }
 
-export function networkingSubnetV2AllocationPoolsToTerraform(struct?: NetworkingSubnetV2AllocationPools): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingSubnetV2AllocationPoolsToTerraform(struct?: NetworkingSubnetV2AllocationPools | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -103,8 +103,8 @@ export interface NetworkingSubnetV2HostRoutes {
   readonly nextHop: string;
 }
 
-export function networkingSubnetV2HostRoutesToTerraform(struct?: NetworkingSubnetV2HostRoutes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingSubnetV2HostRoutesToTerraform(struct?: NetworkingSubnetV2HostRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -125,8 +125,8 @@ export interface NetworkingSubnetV2Timeouts {
   readonly delete?: string;
 }
 
-export function networkingSubnetV2TimeoutsToTerraform(struct?: NetworkingSubnetV2TimeoutsOutputReference | NetworkingSubnetV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingSubnetV2TimeoutsToTerraform(struct?: NetworkingSubnetV2TimeoutsOutputReference | NetworkingSubnetV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -144,7 +144,7 @@ export class NetworkingSubnetV2TimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -276,7 +276,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   // dns_nameservers - computed: false, optional: true, required: false
   private _dnsNameservers?: string[]; 
   public get dnsNameservers() {
-    return this.getListAttribute('dns_nameservers');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_nameservers'));
   }
   public set dnsNameservers(value: string[]) {
     this._dnsNameservers = value;
@@ -292,7 +292,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   // enable_dhcp - computed: false, optional: true, required: false
   private _enableDhcp?: boolean | cdktf.IResolvable; 
   public get enableDhcp() {
-    return this.getBooleanAttribute('enable_dhcp') as any;
+    return this.getBooleanAttribute('enable_dhcp');
   }
   public set enableDhcp(value: boolean | cdktf.IResolvable) {
     this._enableDhcp = value;
@@ -374,7 +374,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   // no_gateway - computed: false, optional: true, required: false
   private _noGateway?: boolean | cdktf.IResolvable; 
   public get noGateway() {
-    return this.getBooleanAttribute('no_gateway') as any;
+    return this.getBooleanAttribute('no_gateway');
   }
   public set noGateway(value: boolean | cdktf.IResolvable) {
     this._noGateway = value;
@@ -420,12 +420,11 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -437,12 +436,12 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   }
 
   // allocation_pools - computed: false, optional: true, required: false
-  private _allocationPools?: NetworkingSubnetV2AllocationPools[]; 
+  private _allocationPools?: NetworkingSubnetV2AllocationPools[] | cdktf.IResolvable; 
   public get allocationPools() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('allocation_pools') as any;
+    return this.interpolationForAttribute('allocation_pools');
   }
-  public set allocationPools(value: NetworkingSubnetV2AllocationPools[]) {
+  public set allocationPools(value: NetworkingSubnetV2AllocationPools[] | cdktf.IResolvable) {
     this._allocationPools = value;
   }
   public resetAllocationPools() {
@@ -454,12 +453,12 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   }
 
   // host_routes - computed: false, optional: true, required: false
-  private _hostRoutes?: NetworkingSubnetV2HostRoutes[]; 
+  private _hostRoutes?: NetworkingSubnetV2HostRoutes[] | cdktf.IResolvable; 
   public get hostRoutes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('host_routes') as any;
+    return this.interpolationForAttribute('host_routes');
   }
-  public set hostRoutes(value: NetworkingSubnetV2HostRoutes[]) {
+  public set hostRoutes(value: NetworkingSubnetV2HostRoutes[] | cdktf.IResolvable) {
     this._hostRoutes = value;
   }
   public resetHostRoutes() {
@@ -471,7 +470,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NetworkingSubnetV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingSubnetV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -502,7 +501,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
       no_gateway: cdktf.booleanToTerraform(this._noGateway),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       allocation_pools: cdktf.listMapper(networkingSubnetV2AllocationPoolsToTerraform)(this._allocationPools),
       host_routes: cdktf.listMapper(networkingSubnetV2HostRoutesToTerraform)(this._hostRoutes),
       timeouts: networkingSubnetV2TimeoutsToTerraform(this._timeouts.internalValue),

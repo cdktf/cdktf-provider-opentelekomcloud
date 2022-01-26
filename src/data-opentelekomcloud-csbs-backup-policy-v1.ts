@@ -46,7 +46,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation extends cd
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: false, required: false
@@ -71,7 +71,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation extends cd
 
   // permanent - computed: true, optional: false, required: false
   public get permanent() {
-    return this.getBooleanAttribute('permanent') as any;
+    return this.getBooleanAttribute('permanent');
   }
 
   // retention_duration_days - computed: true, optional: false, required: false
@@ -154,7 +154,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
   // ==========
 
   // common - computed: true, optional: false, required: false
-  public common(key: string): string {
+  public common(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'common').lookup(key);
   }
 
@@ -207,12 +207,12 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
 
   // resource - computed: true, optional: false, required: false
   public resource(index: string) {
-    return new DataOpentelekomcloudCsbsBackupPolicyV1Resource(this, 'resource', index);
+    return new DataOpentelekomcloudCsbsBackupPolicyV1Resource(this, 'resource', index, true);
   }
 
   // scheduled_operation - computed: true, optional: false, required: false
   public scheduledOperation(index: string) {
-    return new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(this, 'scheduled_operation', index);
+    return new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(this, 'scheduled_operation', index, true);
   }
 
   // status - computed: true, optional: true, required: false
@@ -233,7 +233,7 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
 
   // tags - computed: true, optional: false, required: false
   public tags(index: string) {
-    return new DataOpentelekomcloudCsbsBackupPolicyV1Tags(this, 'tags', index);
+    return new DataOpentelekomcloudCsbsBackupPolicyV1Tags(this, 'tags', index, true);
   }
 
   // =========

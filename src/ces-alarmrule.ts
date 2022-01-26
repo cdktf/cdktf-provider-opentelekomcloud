@@ -32,7 +32,7 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#alarm_actions CesAlarmrule#alarm_actions}
   */
-  readonly alarmActions?: CesAlarmruleAlarmActions[];
+  readonly alarmActions?: CesAlarmruleAlarmActions[] | cdktf.IResolvable;
   /**
   * condition block
   * 
@@ -44,7 +44,7 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#insufficientdata_actions CesAlarmrule#insufficientdata_actions}
   */
-  readonly insufficientdataActions?: CesAlarmruleInsufficientdataActions[];
+  readonly insufficientdataActions?: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable;
   /**
   * metric block
   * 
@@ -56,7 +56,7 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#ok_actions CesAlarmrule#ok_actions}
   */
-  readonly okActions?: CesAlarmruleOkActions[];
+  readonly okActions?: CesAlarmruleOkActions[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -75,8 +75,8 @@ export interface CesAlarmruleAlarmActions {
   readonly type: string;
 }
 
-export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -114,7 +114,7 @@ export interface CesAlarmruleCondition {
 }
 
 export function cesAlarmruleConditionToTerraform(struct?: CesAlarmruleConditionOutputReference | CesAlarmruleCondition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -136,7 +136,7 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -283,8 +283,8 @@ export interface CesAlarmruleInsufficientdataActions {
   readonly type: string;
 }
 
-export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarmruleInsufficientdataActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarmruleInsufficientdataActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -305,8 +305,8 @@ export interface CesAlarmruleMetricDimensions {
   readonly value: string;
 }
 
-export function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMetricDimensions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMetricDimensions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -330,11 +330,11 @@ export interface CesAlarmruleMetric {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#dimensions CesAlarmrule#dimensions}
   */
-  readonly dimensions: CesAlarmruleMetricDimensions[];
+  readonly dimensions: CesAlarmruleMetricDimensions[] | cdktf.IResolvable;
 }
 
 export function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputReference | CesAlarmruleMetric): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -353,7 +353,7 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -417,12 +417,12 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
 
   // dimensions - computed: false, optional: false, required: true
-  private _dimensions?: CesAlarmruleMetricDimensions[]; 
+  private _dimensions?: CesAlarmruleMetricDimensions[] | cdktf.IResolvable; 
   public get dimensions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions') as any;
+    return this.interpolationForAttribute('dimensions');
   }
-  public set dimensions(value: CesAlarmruleMetricDimensions[]) {
+  public set dimensions(value: CesAlarmruleMetricDimensions[] | cdktf.IResolvable) {
     this._dimensions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -441,8 +441,8 @@ export interface CesAlarmruleOkActions {
   readonly type: string;
 }
 
-export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -467,8 +467,8 @@ export interface CesAlarmruleTimeouts {
   readonly update?: string;
 }
 
-export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOutputReference | CesAlarmruleTimeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOutputReference | CesAlarmruleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -487,7 +487,7 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -625,7 +625,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   // alarm_action_enabled - computed: false, optional: true, required: false
   private _alarmActionEnabled?: boolean | cdktf.IResolvable; 
   public get alarmActionEnabled() {
-    return this.getBooleanAttribute('alarm_action_enabled') as any;
+    return this.getBooleanAttribute('alarm_action_enabled');
   }
   public set alarmActionEnabled(value: boolean | cdktf.IResolvable) {
     this._alarmActionEnabled = value;
@@ -657,7 +657,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   // alarm_enabled - computed: false, optional: true, required: false
   private _alarmEnabled?: boolean | cdktf.IResolvable; 
   public get alarmEnabled() {
-    return this.getBooleanAttribute('alarm_enabled') as any;
+    return this.getBooleanAttribute('alarm_enabled');
   }
   public set alarmEnabled(value: boolean | cdktf.IResolvable) {
     this._alarmEnabled = value;
@@ -715,12 +715,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // alarm_actions - computed: false, optional: true, required: false
-  private _alarmActions?: CesAlarmruleAlarmActions[]; 
+  private _alarmActions?: CesAlarmruleAlarmActions[] | cdktf.IResolvable; 
   public get alarmActions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('alarm_actions') as any;
+    return this.interpolationForAttribute('alarm_actions');
   }
-  public set alarmActions(value: CesAlarmruleAlarmActions[]) {
+  public set alarmActions(value: CesAlarmruleAlarmActions[] | cdktf.IResolvable) {
     this._alarmActions = value;
   }
   public resetAlarmActions() {
@@ -732,7 +732,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // condition - computed: false, optional: false, required: true
-  private _condition = new CesAlarmruleConditionOutputReference(this as any, "condition", true);
+  private _condition = new CesAlarmruleConditionOutputReference(this, "condition", true);
   public get condition() {
     return this._condition;
   }
@@ -745,12 +745,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // insufficientdata_actions - computed: false, optional: true, required: false
-  private _insufficientdataActions?: CesAlarmruleInsufficientdataActions[]; 
+  private _insufficientdataActions?: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable; 
   public get insufficientdataActions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('insufficientdata_actions') as any;
+    return this.interpolationForAttribute('insufficientdata_actions');
   }
-  public set insufficientdataActions(value: CesAlarmruleInsufficientdataActions[]) {
+  public set insufficientdataActions(value: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable) {
     this._insufficientdataActions = value;
   }
   public resetInsufficientdataActions() {
@@ -762,7 +762,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // metric - computed: false, optional: false, required: true
-  private _metric = new CesAlarmruleMetricOutputReference(this as any, "metric", true);
+  private _metric = new CesAlarmruleMetricOutputReference(this, "metric", true);
   public get metric() {
     return this._metric;
   }
@@ -775,12 +775,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // ok_actions - computed: false, optional: true, required: false
-  private _okActions?: CesAlarmruleOkActions[]; 
+  private _okActions?: CesAlarmruleOkActions[] | cdktf.IResolvable; 
   public get okActions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ok_actions') as any;
+    return this.interpolationForAttribute('ok_actions');
   }
-  public set okActions(value: CesAlarmruleOkActions[]) {
+  public set okActions(value: CesAlarmruleOkActions[] | cdktf.IResolvable) {
     this._okActions = value;
   }
   public resetOkActions() {
@@ -792,7 +792,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CesAlarmruleTimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CesAlarmruleTimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

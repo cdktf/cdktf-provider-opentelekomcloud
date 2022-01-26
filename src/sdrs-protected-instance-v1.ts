@@ -42,7 +42,7 @@ export interface SdrsProtectedInstanceV1Config extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -61,8 +61,8 @@ export interface SdrsProtectedInstanceV1Timeouts {
   readonly delete?: string;
 }
 
-export function sdrsProtectedInstanceV1TimeoutsToTerraform(struct?: SdrsProtectedInstanceV1TimeoutsOutputReference | SdrsProtectedInstanceV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sdrsProtectedInstanceV1TimeoutsToTerraform(struct?: SdrsProtectedInstanceV1TimeoutsOutputReference | SdrsProtectedInstanceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -80,7 +80,7 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -200,7 +200,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   // delete_target_eip - computed: false, optional: true, required: false
   private _deleteTargetEip?: boolean | cdktf.IResolvable; 
   public get deleteTargetEip() {
-    return this.getBooleanAttribute('delete_target_eip') as any;
+    return this.getBooleanAttribute('delete_target_eip');
   }
   public set deleteTargetEip(value: boolean | cdktf.IResolvable) {
     this._deleteTargetEip = value;
@@ -216,7 +216,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   // delete_target_server - computed: false, optional: true, required: false
   private _deleteTargetServer?: boolean | cdktf.IResolvable; 
   public get deleteTargetServer() {
-    return this.getBooleanAttribute('delete_target_server') as any;
+    return this.getBooleanAttribute('delete_target_server');
   }
   public set deleteTargetServer(value: boolean | cdktf.IResolvable) {
     this._deleteTargetServer = value;
@@ -327,12 +327,11 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -354,7 +353,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SdrsProtectedInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SdrsProtectedInstanceV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -383,7 +382,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: sdrsProtectedInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

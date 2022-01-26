@@ -64,7 +64,7 @@ export class DataOpentelekomcloudVpcepPublicServiceV1 extends cdktf.TerraformDat
 
   // is_charge - computed: true, optional: false, required: false
   public get isCharge() {
-    return this.getBooleanAttribute('is_charge') as any;
+    return this.getBooleanAttribute('is_charge');
   }
 
   // name - computed: true, optional: true, required: false

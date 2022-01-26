@@ -94,7 +94,7 @@ export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#configuration DcsInstanceV1#configuration}
   */
-  readonly configuration?: DcsInstanceV1Configuration[];
+  readonly configuration?: DcsInstanceV1Configuration[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -126,7 +126,7 @@ export interface DcsInstanceV1BackupPolicy {
 }
 
 export function dcsInstanceV1BackupPolicyToTerraform(struct?: DcsInstanceV1BackupPolicyOutputReference | DcsInstanceV1BackupPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -147,7 +147,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -199,8 +199,7 @@ export class DcsInstanceV1BackupPolicyOutputReference extends cdktf.ComplexObjec
   // backup_at - computed: false, optional: false, required: true
   private _backupAt?: number[]; 
   public get backupAt() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('backup_at') as any;
+    return this.getNumberListAttribute('backup_at');
   }
   public set backupAt(value: number[]) {
     this._backupAt = value;
@@ -283,8 +282,8 @@ export interface DcsInstanceV1Configuration {
   readonly parameterValue: string;
 }
 
-export function dcsInstanceV1ConfigurationToTerraform(struct?: DcsInstanceV1Configuration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dcsInstanceV1ConfigurationToTerraform(struct?: DcsInstanceV1Configuration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -310,8 +309,8 @@ export interface DcsInstanceV1Timeouts {
   readonly update?: string;
 }
 
-export function dcsInstanceV1TimeoutsToTerraform(struct?: DcsInstanceV1TimeoutsOutputReference | DcsInstanceV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dcsInstanceV1TimeoutsToTerraform(struct?: DcsInstanceV1TimeoutsOutputReference | DcsInstanceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -330,7 +329,7 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -508,8 +507,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   // backup_at - computed: false, optional: true, required: false
   private _backupAt?: number[]; 
   public get backupAt() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('backup_at') as any;
+    return this.getNumberListAttribute('backup_at');
   }
   public set backupAt(value: number[]) {
     this._backupAt = value;
@@ -827,7 +825,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // backup_policy - computed: false, optional: true, required: false
-  private _backupPolicy = new DcsInstanceV1BackupPolicyOutputReference(this as any, "backup_policy", true);
+  private _backupPolicy = new DcsInstanceV1BackupPolicyOutputReference(this, "backup_policy", true);
   public get backupPolicy() {
     return this._backupPolicy;
   }
@@ -843,12 +841,12 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: DcsInstanceV1Configuration[]; 
+  private _configuration?: DcsInstanceV1Configuration[] | cdktf.IResolvable; 
   public get configuration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('configuration') as any;
+    return this.interpolationForAttribute('configuration');
   }
-  public set configuration(value: DcsInstanceV1Configuration[]) {
+  public set configuration(value: DcsInstanceV1Configuration[] | cdktf.IResolvable) {
     this._configuration = value;
   }
   public resetConfiguration() {
@@ -860,7 +858,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DcsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DcsInstanceV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
