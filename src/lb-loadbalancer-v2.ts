@@ -30,7 +30,7 @@ export interface LbLoadbalancerV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v2#tenant_id LbLoadbalancerV2#tenant_id}
   */
@@ -65,8 +65,8 @@ export interface LbLoadbalancerV2Timeouts {
   readonly update?: string;
 }
 
-export function lbLoadbalancerV2TimeoutsToTerraform(struct?: LbLoadbalancerV2TimeoutsOutputReference | LbLoadbalancerV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lbLoadbalancerV2TimeoutsToTerraform(struct?: LbLoadbalancerV2TimeoutsOutputReference | LbLoadbalancerV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -85,7 +85,7 @@ export class LbLoadbalancerV2TimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -222,7 +222,7 @@ export class LbLoadbalancerV2 extends cdktf.TerraformResource {
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -305,12 +305,11 @@ export class LbLoadbalancerV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -372,7 +371,7 @@ export class LbLoadbalancerV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LbLoadbalancerV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LbLoadbalancerV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -398,7 +397,7 @@ export class LbLoadbalancerV2 extends cdktf.TerraformResource {
       loadbalancer_provider: cdktf.stringToTerraform(this._loadbalancerProvider),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       vip_address: cdktf.stringToTerraform(this._vipAddress),
       vip_subnet_id: cdktf.stringToTerraform(this._vipSubnetId),

@@ -24,7 +24,7 @@ export interface IdentityRoleV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#statement IdentityRoleV3#statement}
   */
-  readonly statement: IdentityRoleV3Statement[];
+  readonly statement: IdentityRoleV3Statement[] | cdktf.IResolvable;
 }
 export interface IdentityRoleV3Statement {
   /**
@@ -37,8 +37,8 @@ export interface IdentityRoleV3Statement {
   readonly effect: string;
 }
 
-export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statement): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statement | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -151,12 +151,12 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
 
   // statement - computed: false, optional: false, required: true
-  private _statement?: IdentityRoleV3Statement[]; 
+  private _statement?: IdentityRoleV3Statement[] | cdktf.IResolvable; 
   public get statement() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('statement') as any;
+    return this.interpolationForAttribute('statement');
   }
-  public set statement(value: IdentityRoleV3Statement[]) {
+  public set statement(value: IdentityRoleV3Statement[] | cdktf.IResolvable) {
     this._statement = value;
   }
   // Temporarily expose input value. Use with caution.

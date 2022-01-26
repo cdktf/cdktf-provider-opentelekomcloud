@@ -40,13 +40,13 @@ export interface AsPolicyV2Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v2#scaling_policy_action AsPolicyV2#scaling_policy_action}
   */
-  readonly scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[];
+  readonly scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[] | cdktf.IResolvable;
   /**
   * scheduled_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v2#scheduled_policy AsPolicyV2#scheduled_policy}
   */
-  readonly scheduledPolicy?: AsPolicyV2ScheduledPolicy[];
+  readonly scheduledPolicy?: AsPolicyV2ScheduledPolicy[] | cdktf.IResolvable;
 }
 export class AsPolicyV2Metadata extends cdktf.ComplexComputedList {
 
@@ -84,8 +84,8 @@ export interface AsPolicyV2ScalingPolicyAction {
   readonly size?: number;
 }
 
-export function asPolicyV2ScalingPolicyActionToTerraform(struct?: AsPolicyV2ScalingPolicyAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asPolicyV2ScalingPolicyActionToTerraform(struct?: AsPolicyV2ScalingPolicyAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -120,8 +120,8 @@ export interface AsPolicyV2ScheduledPolicy {
   readonly startTime?: string;
 }
 
-export function asPolicyV2ScheduledPolicyToTerraform(struct?: AsPolicyV2ScheduledPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asPolicyV2ScheduledPolicyToTerraform(struct?: AsPolicyV2ScheduledPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -226,7 +226,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
 
   // metadata - computed: true, optional: false, required: false
   public metadata(index: string) {
-    return new AsPolicyV2Metadata(this, 'metadata', index);
+    return new AsPolicyV2Metadata(this, 'metadata', index, true);
   }
 
   // region - computed: true, optional: true, required: false
@@ -298,12 +298,12 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
 
   // scaling_policy_action - computed: false, optional: true, required: false
-  private _scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[]; 
+  private _scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[] | cdktf.IResolvable; 
   public get scalingPolicyAction() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scaling_policy_action') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scaling_policy_action')));
   }
-  public set scalingPolicyAction(value: AsPolicyV2ScalingPolicyAction[]) {
+  public set scalingPolicyAction(value: AsPolicyV2ScalingPolicyAction[] | cdktf.IResolvable) {
     this._scalingPolicyAction = value;
   }
   public resetScalingPolicyAction() {
@@ -315,12 +315,12 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
 
   // scheduled_policy - computed: false, optional: true, required: false
-  private _scheduledPolicy?: AsPolicyV2ScheduledPolicy[]; 
+  private _scheduledPolicy?: AsPolicyV2ScheduledPolicy[] | cdktf.IResolvable; 
   public get scheduledPolicy() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scheduled_policy') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scheduled_policy')));
   }
-  public set scheduledPolicy(value: AsPolicyV2ScheduledPolicy[]) {
+  public set scheduledPolicy(value: AsPolicyV2ScheduledPolicy[] | cdktf.IResolvable) {
     this._scheduledPolicy = value;
   }
   public resetScheduledPolicy() {

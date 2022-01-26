@@ -102,7 +102,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
 
   // available_instance_capacities - computed: true, optional: false, required: false
   public availableInstanceCapacities(index: string) {
-    return new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(this, 'available_instance_capacities', index);
+    return new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(this, 'available_instance_capacities', index, false);
   }
 
   // available_memory - computed: true, optional: false, required: false

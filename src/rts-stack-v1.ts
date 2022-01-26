@@ -18,7 +18,7 @@ export interface RtsStackV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#files RtsStackV1#files}
   */
-  readonly files?: { [key: string]: string } | cdktf.IResolvable;
+  readonly files?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#name RtsStackV1#name}
   */
@@ -26,7 +26,7 @@ export interface RtsStackV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#parameters RtsStackV1#parameters}
   */
-  readonly parameters?: { [key: string]: string } | cdktf.IResolvable;
+  readonly parameters?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#region RtsStackV1#region}
   */
@@ -65,8 +65,8 @@ export interface RtsStackV1Timeouts {
   readonly update?: string;
 }
 
-export function rtsStackV1TimeoutsToTerraform(struct?: RtsStackV1TimeoutsOutputReference | RtsStackV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rtsStackV1TimeoutsToTerraform(struct?: RtsStackV1TimeoutsOutputReference | RtsStackV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -85,7 +85,7 @@ export class RtsStackV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -221,13 +221,13 @@ export class RtsStackV1 extends cdktf.TerraformResource {
 
   // capabilities - computed: true, optional: false, required: false
   public get capabilities() {
-    return this.getListAttribute('capabilities');
+    return cdktf.Fn.tolist(this.getListAttribute('capabilities'));
   }
 
   // disable_rollback - computed: true, optional: true, required: false
   private _disableRollback?: boolean | cdktf.IResolvable; 
   public get disableRollback() {
-    return this.getBooleanAttribute('disable_rollback') as any;
+    return this.getBooleanAttribute('disable_rollback');
   }
   public set disableRollback(value: boolean | cdktf.IResolvable) {
     this._disableRollback = value;
@@ -257,12 +257,11 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
 
   // files - computed: false, optional: true, required: false
-  private _files?: { [key: string]: string } | cdktf.IResolvable; 
+  private _files?: { [key: string]: string }; 
   public get files() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('files') as any;
+    return this.getStringMapAttribute('files');
   }
-  public set files(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set files(value: { [key: string]: string }) {
     this._files = value;
   }
   public resetFiles() {
@@ -293,21 +292,20 @@ export class RtsStackV1 extends cdktf.TerraformResource {
 
   // notification_topics - computed: true, optional: false, required: false
   public get notificationTopics() {
-    return this.getListAttribute('notification_topics');
+    return cdktf.Fn.tolist(this.getListAttribute('notification_topics'));
   }
 
   // outputs - computed: true, optional: false, required: false
-  public outputs(key: string): string {
+  public outputs(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'outputs').lookup(key);
   }
 
   // parameters - computed: true, optional: true, required: false
-  private _parameters?: { [key: string]: string } | cdktf.IResolvable; 
+  private _parameters?: { [key: string]: string }; 
   public get parameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters') as any;
+    return this.getStringMapAttribute('parameters');
   }
-  public set parameters(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set parameters(value: { [key: string]: string }) {
     this._parameters = value;
   }
   public resetParameters() {
@@ -393,7 +391,7 @@ export class RtsStackV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RtsStackV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsStackV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -416,9 +414,9 @@ export class RtsStackV1 extends cdktf.TerraformResource {
     return {
       disable_rollback: cdktf.booleanToTerraform(this._disableRollback),
       environment: cdktf.stringToTerraform(this._environment),
-      files: cdktf.hashMapper(cdktf.anyToTerraform)(this._files),
+      files: cdktf.hashMapper(cdktf.stringToTerraform)(this._files),
       name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.anyToTerraform)(this._parameters),
+      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       region: cdktf.stringToTerraform(this._region),
       template_body: cdktf.stringToTerraform(this._templateBody),
       template_url: cdktf.stringToTerraform(this._templateUrl),

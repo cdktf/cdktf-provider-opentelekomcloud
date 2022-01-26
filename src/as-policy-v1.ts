@@ -56,7 +56,7 @@ export interface AsPolicyV1ScalingPolicyAction {
 }
 
 export function asPolicyV1ScalingPolicyActionToTerraform(struct?: AsPolicyV1ScalingPolicyActionOutputReference | AsPolicyV1ScalingPolicyAction): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -74,7 +74,7 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -161,7 +161,7 @@ export interface AsPolicyV1ScheduledPolicy {
 }
 
 export function asPolicyV1ScheduledPolicyToTerraform(struct?: AsPolicyV1ScheduledPolicyOutputReference | AsPolicyV1ScheduledPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -182,7 +182,7 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -448,7 +448,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // scaling_policy_action - computed: false, optional: true, required: false
-  private _scalingPolicyAction = new AsPolicyV1ScalingPolicyActionOutputReference(this as any, "scaling_policy_action", true);
+  private _scalingPolicyAction = new AsPolicyV1ScalingPolicyActionOutputReference(this, "scaling_policy_action", true);
   public get scalingPolicyAction() {
     return this._scalingPolicyAction;
   }
@@ -464,7 +464,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // scheduled_policy - computed: false, optional: true, required: false
-  private _scheduledPolicy = new AsPolicyV1ScheduledPolicyOutputReference(this as any, "scheduled_policy", true);
+  private _scheduledPolicy = new AsPolicyV1ScheduledPolicyOutputReference(this, "scheduled_policy", true);
   public get scheduledPolicy() {
     return this._scheduledPolicy;
   }

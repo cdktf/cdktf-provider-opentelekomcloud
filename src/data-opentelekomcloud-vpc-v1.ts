@@ -155,13 +155,13 @@ export class DataOpentelekomcloudVpcV1 extends cdktf.TerraformDataSource {
 
   // routes - computed: true, optional: false, required: false
   public routes(index: string) {
-    return new DataOpentelekomcloudVpcV1Routes(this, 'routes', index);
+    return new DataOpentelekomcloudVpcV1Routes(this, 'routes', index, false);
   }
 
   // shared - computed: false, optional: true, required: false
   private _shared?: boolean | cdktf.IResolvable; 
   public get shared() {
-    return this.getBooleanAttribute('shared') as any;
+    return this.getBooleanAttribute('shared');
   }
   public set shared(value: boolean | cdktf.IResolvable) {
     this._shared = value;

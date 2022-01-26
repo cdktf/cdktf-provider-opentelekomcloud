@@ -46,7 +46,7 @@ export interface DataOpentelekomcloudCssFlavorV1DiskRange {
 }
 
 export function dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(struct?: DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference | DataOpentelekomcloudCssFlavorV1DiskRange): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -64,7 +64,7 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -93,6 +93,11 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
       this._minFrom = value.minFrom;
       this._minTo = value.minTo;
     }
+  }
+
+  // from - computed: true, optional: false, required: false
+  public get from() {
+    return this.getNumberAttribute('from');
   }
 
   // min_from - computed: false, optional: true, required: false
@@ -125,6 +130,11 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get minToInput() {
     return this._minTo;
+  }
+
+  // to - computed: true, optional: false, required: false
+  public get to() {
+    return this.getNumberAttribute('to');
   }
 }
 
@@ -273,7 +283,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
 
   // disk_range - computed: false, optional: true, required: false
-  private _diskRange = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this as any, "disk_range", true);
+  private _diskRange = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this, "disk_range", true);
   public get diskRange() {
     return this._diskRange;
   }

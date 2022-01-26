@@ -39,8 +39,8 @@ export interface CceAddonV3Timeouts {
   readonly delete?: string;
 }
 
-export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3TimeoutsOutputReference | CceAddonV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3TimeoutsOutputReference | CceAddonV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -57,7 +57,7 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -102,21 +102,21 @@ export interface CceAddonV3Values {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_addon_v3#basic CceAddonV3#basic}
   */
-  readonly basic: { [key: string]: string } | cdktf.IResolvable;
+  readonly basic: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_addon_v3#custom CceAddonV3#custom}
   */
-  readonly custom: { [key: string]: string } | cdktf.IResolvable;
+  readonly custom: { [key: string]: string };
 }
 
 export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputReference | CceAddonV3Values): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    basic: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.basic),
-    custom: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.custom),
+    basic: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.basic),
+    custom: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.custom),
   }
 }
 
@@ -128,7 +128,7 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -160,12 +160,11 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   }
 
   // basic - computed: false, optional: false, required: true
-  private _basic?: { [key: string]: string } | cdktf.IResolvable; 
+  private _basic?: { [key: string]: string }; 
   public get basic() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('basic') as any;
+    return this.getStringMapAttribute('basic');
   }
-  public set basic(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set basic(value: { [key: string]: string }) {
     this._basic = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -174,12 +173,11 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   }
 
   // custom - computed: false, optional: false, required: true
-  private _custom?: { [key: string]: string } | cdktf.IResolvable; 
+  private _custom?: { [key: string]: string }; 
   public get custom() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom') as any;
+    return this.getStringMapAttribute('custom');
   }
-  public set custom(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set custom(value: { [key: string]: string }) {
     this._custom = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -286,7 +284,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceAddonV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CceAddonV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -302,7 +300,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
 
   // values - computed: false, optional: false, required: true
-  private _values = new CceAddonV3ValuesOutputReference(this as any, "values", true);
+  private _values = new CceAddonV3ValuesOutputReference(this, "values", true);
   public get values() {
     return this._values;
   }

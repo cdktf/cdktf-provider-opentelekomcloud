@@ -34,7 +34,7 @@ export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#k8s_tags CceNodePoolV3#k8s_tags}
   */
-  readonly k8STags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly k8STags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#key_pair CceNodePoolV3#key_pair}
   */
@@ -94,13 +94,13 @@ export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#user_tags CceNodePoolV3#user_tags}
   */
-  readonly userTags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly userTags?: { [key: string]: string };
   /**
   * data_volumes block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#data_volumes CceNodePoolV3#data_volumes}
   */
-  readonly dataVolumes: CceNodePoolV3DataVolumes[];
+  readonly dataVolumes: CceNodePoolV3DataVolumes[] | cdktf.IResolvable;
   /**
   * root_volume block
   * 
@@ -112,7 +112,7 @@ export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#taints CceNodePoolV3#taints}
   */
-  readonly taints?: CceNodePoolV3Taints[];
+  readonly taints?: CceNodePoolV3Taints[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -139,8 +139,8 @@ export interface CceNodePoolV3DataVolumes {
   readonly volumetype: string;
 }
 
-export function cceNodePoolV3DataVolumesToTerraform(struct?: CceNodePoolV3DataVolumes): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodePoolV3DataVolumesToTerraform(struct?: CceNodePoolV3DataVolumes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -168,7 +168,7 @@ export interface CceNodePoolV3RootVolume {
 }
 
 export function cceNodePoolV3RootVolumeToTerraform(struct?: CceNodePoolV3RootVolumeOutputReference | CceNodePoolV3RootVolume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -187,7 +187,7 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -281,8 +281,8 @@ export interface CceNodePoolV3Taints {
   readonly value: string;
 }
 
-export function cceNodePoolV3TaintsToTerraform(struct?: CceNodePoolV3Taints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodePoolV3TaintsToTerraform(struct?: CceNodePoolV3Taints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -312,8 +312,8 @@ export interface CceNodePoolV3Timeouts {
   readonly update?: string;
 }
 
-export function cceNodePoolV3TimeoutsToTerraform(struct?: CceNodePoolV3TimeoutsOutputReference | CceNodePoolV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cceNodePoolV3TimeoutsToTerraform(struct?: CceNodePoolV3TimeoutsOutputReference | CceNodePoolV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -333,7 +333,7 @@ export class CceNodePoolV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -598,12 +598,11 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // k8s_tags - computed: true, optional: true, required: false
-  private _k8STags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _k8STags?: { [key: string]: string }; 
   public get k8STags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('k8s_tags') as any;
+    return this.getStringMapAttribute('k8s_tags');
   }
-  public set k8STags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set k8STags(value: { [key: string]: string }) {
     this._k8STags = value;
   }
   public resetK8STags() {
@@ -790,7 +789,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   // scale_enable - computed: false, optional: true, required: false
   private _scaleEnable?: boolean | cdktf.IResolvable; 
   public get scaleEnable() {
-    return this.getBooleanAttribute('scale_enable') as any;
+    return this.getBooleanAttribute('scale_enable');
   }
   public set scaleEnable(value: boolean | cdktf.IResolvable) {
     this._scaleEnable = value;
@@ -841,12 +840,11 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // user_tags - computed: false, optional: true, required: false
-  private _userTags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _userTags?: { [key: string]: string }; 
   public get userTags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('user_tags') as any;
+    return this.getStringMapAttribute('user_tags');
   }
-  public set userTags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set userTags(value: { [key: string]: string }) {
     this._userTags = value;
   }
   public resetUserTags() {
@@ -858,12 +856,12 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // data_volumes - computed: false, optional: false, required: true
-  private _dataVolumes?: CceNodePoolV3DataVolumes[]; 
+  private _dataVolumes?: CceNodePoolV3DataVolumes[] | cdktf.IResolvable; 
   public get dataVolumes() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('data_volumes') as any;
+    return this.interpolationForAttribute('data_volumes');
   }
-  public set dataVolumes(value: CceNodePoolV3DataVolumes[]) {
+  public set dataVolumes(value: CceNodePoolV3DataVolumes[] | cdktf.IResolvable) {
     this._dataVolumes = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -872,7 +870,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // root_volume - computed: false, optional: false, required: true
-  private _rootVolume = new CceNodePoolV3RootVolumeOutputReference(this as any, "root_volume", true);
+  private _rootVolume = new CceNodePoolV3RootVolumeOutputReference(this, "root_volume", true);
   public get rootVolume() {
     return this._rootVolume;
   }
@@ -885,12 +883,12 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // taints - computed: false, optional: true, required: false
-  private _taints?: CceNodePoolV3Taints[]; 
+  private _taints?: CceNodePoolV3Taints[] | cdktf.IResolvable; 
   public get taints() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('taints') as any;
+    return this.interpolationForAttribute('taints');
   }
-  public set taints(value: CceNodePoolV3Taints[]) {
+  public set taints(value: CceNodePoolV3Taints[] | cdktf.IResolvable) {
     this._taints = value;
   }
   public resetTaints() {
@@ -902,7 +900,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceNodePoolV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CceNodePoolV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -929,7 +927,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       docker_lvm_config_override: cdktf.stringToTerraform(this._dockerLvmConfigOverride),
       flavor: cdktf.stringToTerraform(this._flavor),
       initial_node_count: cdktf.numberToTerraform(this._initialNodeCount),
-      k8s_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._k8STags),
+      k8s_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._k8STags),
       key_pair: cdktf.stringToTerraform(this._keyPair),
       max_node_count: cdktf.numberToTerraform(this._maxNodeCount),
       max_pods: cdktf.numberToTerraform(this._maxPods),
@@ -944,7 +942,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       scale_enable: cdktf.booleanToTerraform(this._scaleEnable),
       server_group_reference: cdktf.stringToTerraform(this._serverGroupReference),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
-      user_tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._userTags),
+      user_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._userTags),
       data_volumes: cdktf.listMapper(cceNodePoolV3DataVolumesToTerraform)(this._dataVolumes),
       root_volume: cceNodePoolV3RootVolumeToTerraform(this._rootVolume.internalValue),
       taints: cdktf.listMapper(cceNodePoolV3TaintsToTerraform)(this._taints),

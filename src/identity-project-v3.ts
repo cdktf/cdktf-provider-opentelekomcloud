@@ -106,7 +106,7 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // id - computed: true, optional: true, required: false
@@ -116,7 +116,7 @@ export class IdentityProjectV3 extends cdktf.TerraformResource {
 
   // is_domain - computed: true, optional: false, required: false
   public get isDomain() {
-    return this.getBooleanAttribute('is_domain') as any;
+    return this.getBooleanAttribute('is_domain');
   }
 
   // name - computed: false, optional: false, required: true

@@ -69,20 +69,17 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
 
   // bps_attack - computed: true, optional: false, required: false
   public get bpsAttack() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bps_attack') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('bps_attack')));
   }
 
   // bps_in - computed: true, optional: false, required: false
   public get bpsIn() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bps_in') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('bps_in')));
   }
 
   // end_time - computed: true, optional: false, required: false
   public get endTime() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('end_time') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('end_time')));
   }
 
   // floating_ip_address - computed: true, optional: true, required: false
@@ -129,20 +126,17 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
 
   // period_start - computed: true, optional: false, required: false
   public get periodStart() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('period_start') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('period_start')));
   }
 
   // pps_attack - computed: true, optional: false, required: false
   public get ppsAttack() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('pps_attack') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('pps_attack')));
   }
 
   // pps_in - computed: true, optional: false, required: false
   public get ppsIn() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('pps_in') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('pps_in')));
   }
 
   // region - computed: true, optional: true, required: false
@@ -163,8 +157,7 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
 
   // start_time - computed: true, optional: false, required: false
   public get startTime() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('start_time') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('start_time')));
   }
 
   // status - computed: true, optional: true, required: false
@@ -185,38 +178,32 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
 
   // total_bps - computed: true, optional: false, required: false
   public get totalBps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('total_bps') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('total_bps')));
   }
 
   // total_pps - computed: true, optional: false, required: false
   public get totalPps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('total_pps') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('total_pps')));
   }
 
   // traffic_cleaning_status - computed: true, optional: false, required: false
   public get trafficCleaningStatus() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('traffic_cleaning_status') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('traffic_cleaning_status')));
   }
 
   // trigger_bps - computed: true, optional: false, required: false
   public get triggerBps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('trigger_bps') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('trigger_bps')));
   }
 
   // trigger_http_pps - computed: true, optional: false, required: false
   public get triggerHttpPps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('trigger_http_pps') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('trigger_http_pps')));
   }
 
   // trigger_pps - computed: true, optional: false, required: false
   public get triggerPps() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('trigger_pps') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('trigger_pps')));
   }
 
   // =========

@@ -63,7 +63,7 @@ export class IdentityMappingV3 extends cdktf.TerraformResource {
   }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string {
+  public links(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'links').lookup(key);
   }
 

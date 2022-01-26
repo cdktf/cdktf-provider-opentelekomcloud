@@ -81,7 +81,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -100,7 +100,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string {
+  public links(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'links').lookup(key);
   }
 
@@ -119,7 +119,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
 
   // remote_ids - computed: true, optional: false, required: false
   public get remoteIds() {
-    return this.getListAttribute('remote_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('remote_ids'));
   }
 
   // =========

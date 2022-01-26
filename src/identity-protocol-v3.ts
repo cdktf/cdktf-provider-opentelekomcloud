@@ -42,7 +42,7 @@ export interface IdentityProtocolV3Metadata {
 }
 
 export function identityProtocolV3MetadataToTerraform(struct?: IdentityProtocolV3MetadataOutputReference | IdentityProtocolV3Metadata): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -61,7 +61,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -189,7 +189,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string {
+  public links(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'links').lookup(key);
   }
 
@@ -233,7 +233,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata = new IdentityProtocolV3MetadataOutputReference(this as any, "metadata", true);
+  private _metadata = new IdentityProtocolV3MetadataOutputReference(this, "metadata", true);
   public get metadata() {
     return this._metadata;
   }

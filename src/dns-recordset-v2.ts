@@ -26,7 +26,7 @@ export interface DnsRecordsetV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#tags DnsRecordsetV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#ttl DnsRecordsetV2#ttl}
   */
@@ -38,7 +38,7 @@ export interface DnsRecordsetV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}
   */
@@ -65,8 +65,8 @@ export interface DnsRecordsetV2Timeouts {
   readonly update?: string;
 }
 
-export function dnsRecordsetV2TimeoutsToTerraform(struct?: DnsRecordsetV2TimeoutsOutputReference | DnsRecordsetV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function dnsRecordsetV2TimeoutsToTerraform(struct?: DnsRecordsetV2TimeoutsOutputReference | DnsRecordsetV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -85,7 +85,7 @@ export class DnsRecordsetV2TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -256,7 +256,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   // records - computed: false, optional: false, required: true
   private _records?: string[]; 
   public get records() {
-    return this.getListAttribute('records');
+    return cdktf.Fn.tolist(this.getListAttribute('records'));
   }
   public set records(value: string[]) {
     this._records = value;
@@ -284,16 +284,15 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
 
   // shared - computed: true, optional: false, required: false
   public get shared() {
-    return this.getBooleanAttribute('shared') as any;
+    return this.getBooleanAttribute('shared');
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -334,12 +333,11 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -364,7 +362,7 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new DnsRecordsetV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new DnsRecordsetV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -389,10 +387,10 @@ export class DnsRecordsetV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       records: cdktf.listMapper(cdktf.stringToTerraform)(this._records),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       zone_id: cdktf.stringToTerraform(this._zoneId),
       timeouts: dnsRecordsetV2TimeoutsToTerraform(this._timeouts.internalValue),
     };

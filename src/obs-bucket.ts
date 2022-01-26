@@ -30,7 +30,7 @@ export interface ObsBucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#tags ObsBucket#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#versioning ObsBucket#versioning}
   */
@@ -40,25 +40,25 @@ export interface ObsBucketConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#cors_rule ObsBucket#cors_rule}
   */
-  readonly corsRule?: ObsBucketCorsRule[];
+  readonly corsRule?: ObsBucketCorsRule[] | cdktf.IResolvable;
   /**
   * event_notifications block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#event_notifications ObsBucket#event_notifications}
   */
-  readonly eventNotifications?: ObsBucketEventNotifications[];
+  readonly eventNotifications?: ObsBucketEventNotifications[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
   */
-  readonly lifecycleRule?: ObsBucketLifecycleRule[];
+  readonly lifecycleRule?: ObsBucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#logging ObsBucket#logging}
   */
-  readonly logging?: ObsBucketLogging[];
+  readonly logging?: ObsBucketLogging[] | cdktf.IResolvable;
   /**
   * server_side_encryption block
   * 
@@ -95,8 +95,8 @@ export interface ObsBucketCorsRule {
   readonly maxAgeSeconds?: number;
 }
 
-export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -120,8 +120,8 @@ export interface ObsBucketEventNotificationsFilterRule {
   readonly value?: string;
 }
 
-export function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBucketEventNotificationsFilterRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBucketEventNotificationsFilterRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -149,11 +149,11 @@ export interface ObsBucketEventNotifications {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#filter_rule ObsBucket#filter_rule}
   */
-  readonly filterRule?: ObsBucketEventNotificationsFilterRule[];
+  readonly filterRule?: ObsBucketEventNotificationsFilterRule[] | cdktf.IResolvable;
 }
 
-export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNotifications): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNotifications | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -171,8 +171,8 @@ export interface ObsBucketLifecycleRuleExpiration {
   readonly days: number;
 }
 
-export function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLifecycleRuleExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLifecycleRuleExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -188,8 +188,8 @@ export interface ObsBucketLifecycleRuleNoncurrentVersionExpiration {
   readonly days: number;
 }
 
-export function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -209,8 +209,8 @@ export interface ObsBucketLifecycleRuleNoncurrentVersionTransition {
   readonly storageClass: string;
 }
 
-export function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionTransition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionTransition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -231,8 +231,8 @@ export interface ObsBucketLifecycleRuleTransition {
   readonly storageClass: string;
 }
 
-export function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLifecycleRuleTransition): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLifecycleRuleTransition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -260,29 +260,29 @@ export interface ObsBucketLifecycleRule {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#expiration ObsBucket#expiration}
   */
-  readonly expiration?: ObsBucketLifecycleRuleExpiration[];
+  readonly expiration?: ObsBucketLifecycleRuleExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
   */
-  readonly noncurrentVersionExpiration?: ObsBucketLifecycleRuleNoncurrentVersionExpiration[];
+  readonly noncurrentVersionExpiration?: ObsBucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_transition block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
   */
-  readonly noncurrentVersionTransition?: ObsBucketLifecycleRuleNoncurrentVersionTransition[];
+  readonly noncurrentVersionTransition?: ObsBucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable;
   /**
   * transition block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#transition ObsBucket#transition}
   */
-  readonly transition?: ObsBucketLifecycleRuleTransition[];
+  readonly transition?: ObsBucketLifecycleRuleTransition[] | cdktf.IResolvable;
 }
 
-export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -308,8 +308,8 @@ export interface ObsBucketLogging {
   readonly targetPrefix?: string;
 }
 
-export function obsBucketLoggingToTerraform(struct?: ObsBucketLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function obsBucketLoggingToTerraform(struct?: ObsBucketLogging | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -331,7 +331,7 @@ export interface ObsBucketServerSideEncryption {
 }
 
 export function obsBucketServerSideEncryptionToTerraform(struct?: ObsBucketServerSideEncryptionOutputReference | ObsBucketServerSideEncryption): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -349,7 +349,7 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,7 +426,7 @@ export interface ObsBucketWebsite {
 }
 
 export function obsBucketWebsiteToTerraform(struct?: ObsBucketWebsiteOutputReference | ObsBucketWebsite): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -446,7 +446,7 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -642,7 +642,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -693,12 +693,11 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -712,7 +711,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   // versioning - computed: false, optional: true, required: false
   private _versioning?: boolean | cdktf.IResolvable; 
   public get versioning() {
-    return this.getBooleanAttribute('versioning') as any;
+    return this.getBooleanAttribute('versioning');
   }
   public set versioning(value: boolean | cdktf.IResolvable) {
     this._versioning = value;
@@ -726,12 +725,12 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule?: ObsBucketCorsRule[]; 
+  private _corsRule?: ObsBucketCorsRule[] | cdktf.IResolvable; 
   public get corsRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cors_rule') as any;
+    return this.interpolationForAttribute('cors_rule');
   }
-  public set corsRule(value: ObsBucketCorsRule[]) {
+  public set corsRule(value: ObsBucketCorsRule[] | cdktf.IResolvable) {
     this._corsRule = value;
   }
   public resetCorsRule() {
@@ -743,12 +742,12 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // event_notifications - computed: false, optional: true, required: false
-  private _eventNotifications?: ObsBucketEventNotifications[]; 
+  private _eventNotifications?: ObsBucketEventNotifications[] | cdktf.IResolvable; 
   public get eventNotifications() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event_notifications') as any;
+    return this.interpolationForAttribute('event_notifications');
   }
-  public set eventNotifications(value: ObsBucketEventNotifications[]) {
+  public set eventNotifications(value: ObsBucketEventNotifications[] | cdktf.IResolvable) {
     this._eventNotifications = value;
   }
   public resetEventNotifications() {
@@ -760,12 +759,12 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
-  private _lifecycleRule?: ObsBucketLifecycleRule[]; 
+  private _lifecycleRule?: ObsBucketLifecycleRule[] | cdktf.IResolvable; 
   public get lifecycleRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_rule') as any;
+    return this.interpolationForAttribute('lifecycle_rule');
   }
-  public set lifecycleRule(value: ObsBucketLifecycleRule[]) {
+  public set lifecycleRule(value: ObsBucketLifecycleRule[] | cdktf.IResolvable) {
     this._lifecycleRule = value;
   }
   public resetLifecycleRule() {
@@ -777,12 +776,12 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging?: ObsBucketLogging[]; 
+  private _logging?: ObsBucketLogging[] | cdktf.IResolvable; 
   public get logging() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('logging') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('logging')));
   }
-  public set logging(value: ObsBucketLogging[]) {
+  public set logging(value: ObsBucketLogging[] | cdktf.IResolvable) {
     this._logging = value;
   }
   public resetLogging() {
@@ -794,7 +793,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
-  private _serverSideEncryption = new ObsBucketServerSideEncryptionOutputReference(this as any, "server_side_encryption", true);
+  private _serverSideEncryption = new ObsBucketServerSideEncryptionOutputReference(this, "server_side_encryption", true);
   public get serverSideEncryption() {
     return this._serverSideEncryption;
   }
@@ -810,7 +809,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // website - computed: false, optional: true, required: false
-  private _website = new ObsBucketWebsiteOutputReference(this as any, "website", true);
+  private _website = new ObsBucketWebsiteOutputReference(this, "website", true);
   public get website() {
     return this._website;
   }
@@ -836,7 +835,7 @@ export class ObsBucket extends cdktf.TerraformResource {
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
       region: cdktf.stringToTerraform(this._region),
       storage_class: cdktf.stringToTerraform(this._storageClass),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       versioning: cdktf.booleanToTerraform(this._versioning),
       cors_rule: cdktf.listMapper(obsBucketCorsRuleToTerraform)(this._corsRule),
       event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform)(this._eventNotifications),

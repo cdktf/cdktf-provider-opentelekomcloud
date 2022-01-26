@@ -54,7 +54,7 @@ export interface EvsVolumeV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/evs_volume_v3#tags EvsVolumeV3#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/evs_volume_v3#volume_type EvsVolumeV3#volume_type}
   */
@@ -94,8 +94,8 @@ export interface EvsVolumeV3Timeouts {
   readonly delete?: string;
 }
 
-export function evsVolumeV3TimeoutsToTerraform(struct?: EvsVolumeV3TimeoutsOutputReference | EvsVolumeV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function evsVolumeV3TimeoutsToTerraform(struct?: EvsVolumeV3TimeoutsOutputReference | EvsVolumeV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -113,7 +113,7 @@ export class EvsVolumeV3TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -231,7 +231,7 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
 
   // attachment - computed: true, optional: false, required: false
   public attachment(index: string) {
-    return new EvsVolumeV3Attachment(this, 'attachment', index);
+    return new EvsVolumeV3Attachment(this, 'attachment', index, true);
   }
 
   // availability_zone - computed: false, optional: false, required: true
@@ -266,7 +266,7 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
   // cascade - computed: false, optional: true, required: false
   private _cascade?: boolean | cdktf.IResolvable; 
   public get cascade() {
-    return this.getBooleanAttribute('cascade') as any;
+    return this.getBooleanAttribute('cascade');
   }
   public set cascade(value: boolean | cdktf.IResolvable) {
     this._cascade = value;
@@ -351,7 +351,7 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
   // multiattach - computed: false, optional: true, required: false
   private _multiattach?: boolean | cdktf.IResolvable; 
   public get multiattach() {
-    return this.getBooleanAttribute('multiattach') as any;
+    return this.getBooleanAttribute('multiattach');
   }
   public set multiattach(value: boolean | cdktf.IResolvable) {
     this._multiattach = value;
@@ -413,12 +413,11 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -448,7 +447,7 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new EvsVolumeV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new EvsVolumeV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -480,7 +479,7 @@ export class EvsVolumeV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
       snapshot_id: cdktf.stringToTerraform(this._snapshotId),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       timeouts: evsVolumeV3TimeoutsToTerraform(this._timeouts.internalValue),
     };

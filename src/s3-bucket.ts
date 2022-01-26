@@ -38,7 +38,7 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#tags S3Bucket#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#website_domain S3Bucket#website_domain}
   */
@@ -52,19 +52,19 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#cors_rule S3Bucket#cors_rule}
   */
-  readonly corsRule?: S3BucketCorsRule[];
+  readonly corsRule?: S3BucketCorsRule[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
   */
-  readonly lifecycleRule?: S3BucketLifecycleRule[];
+  readonly lifecycleRule?: S3BucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#logging S3Bucket#logging}
   */
-  readonly logging?: S3BucketLogging[];
+  readonly logging?: S3BucketLogging[] | cdktf.IResolvable;
   /**
   * versioning block
   * 
@@ -101,8 +101,8 @@ export interface S3BucketCorsRule {
   readonly maxAgeSeconds?: number;
 }
 
-export function s3BucketCorsRuleToTerraform(struct?: S3BucketCorsRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketCorsRuleToTerraform(struct?: S3BucketCorsRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -130,8 +130,8 @@ export interface S3BucketLifecycleRuleExpiration {
   readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
 
-export function s3BucketLifecycleRuleExpirationToTerraform(struct?: S3BucketLifecycleRuleExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketLifecycleRuleExpirationToTerraform(struct?: S3BucketLifecycleRuleExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -149,8 +149,8 @@ export interface S3BucketLifecycleRuleNoncurrentVersionExpiration {
   readonly days?: number;
 }
 
-export function s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionExpiration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -181,17 +181,17 @@ export interface S3BucketLifecycleRule {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#expiration S3Bucket#expiration}
   */
-  readonly expiration?: S3BucketLifecycleRuleExpiration[];
+  readonly expiration?: S3BucketLifecycleRuleExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
   */
-  readonly noncurrentVersionExpiration?: S3BucketLifecycleRuleNoncurrentVersionExpiration[];
+  readonly noncurrentVersionExpiration?: S3BucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;
 }
 
-export function s3BucketLifecycleRuleToTerraform(struct?: S3BucketLifecycleRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketLifecycleRuleToTerraform(struct?: S3BucketLifecycleRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -215,8 +215,8 @@ export interface S3BucketLogging {
   readonly targetPrefix?: string;
 }
 
-export function s3BucketLoggingToTerraform(struct?: S3BucketLogging): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function s3BucketLoggingToTerraform(struct?: S3BucketLogging | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -238,7 +238,7 @@ export interface S3BucketVersioning {
 }
 
 export function s3BucketVersioningToTerraform(struct?: S3BucketVersioningOutputReference | S3BucketVersioning): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -256,7 +256,7 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -290,7 +290,7 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -306,7 +306,7 @@ export class S3BucketVersioningOutputReference extends cdktf.ComplexObject {
   // mfa_delete - computed: false, optional: true, required: false
   private _mfaDelete?: boolean | cdktf.IResolvable; 
   public get mfaDelete() {
-    return this.getBooleanAttribute('mfa_delete') as any;
+    return this.getBooleanAttribute('mfa_delete');
   }
   public set mfaDelete(value: boolean | cdktf.IResolvable) {
     this._mfaDelete = value;
@@ -339,7 +339,7 @@ export interface S3BucketWebsite {
 }
 
 export function s3BucketWebsiteToTerraform(struct?: S3BucketWebsiteOutputReference | S3BucketWebsite): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -359,7 +359,7 @@ export class S3BucketWebsiteOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -581,7 +581,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   // force_destroy - computed: false, optional: true, required: false
   private _forceDestroy?: boolean | cdktf.IResolvable; 
   public get forceDestroy() {
-    return this.getBooleanAttribute('force_destroy') as any;
+    return this.getBooleanAttribute('force_destroy');
   }
   public set forceDestroy(value: boolean | cdktf.IResolvable) {
     this._forceDestroy = value;
@@ -648,12 +648,11 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -697,12 +696,12 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule?: S3BucketCorsRule[]; 
+  private _corsRule?: S3BucketCorsRule[] | cdktf.IResolvable; 
   public get corsRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cors_rule') as any;
+    return this.interpolationForAttribute('cors_rule');
   }
-  public set corsRule(value: S3BucketCorsRule[]) {
+  public set corsRule(value: S3BucketCorsRule[] | cdktf.IResolvable) {
     this._corsRule = value;
   }
   public resetCorsRule() {
@@ -714,12 +713,12 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
-  private _lifecycleRule?: S3BucketLifecycleRule[]; 
+  private _lifecycleRule?: S3BucketLifecycleRule[] | cdktf.IResolvable; 
   public get lifecycleRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_rule') as any;
+    return this.interpolationForAttribute('lifecycle_rule');
   }
-  public set lifecycleRule(value: S3BucketLifecycleRule[]) {
+  public set lifecycleRule(value: S3BucketLifecycleRule[] | cdktf.IResolvable) {
     this._lifecycleRule = value;
   }
   public resetLifecycleRule() {
@@ -731,12 +730,12 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging?: S3BucketLogging[]; 
+  private _logging?: S3BucketLogging[] | cdktf.IResolvable; 
   public get logging() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('logging') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('logging')));
   }
-  public set logging(value: S3BucketLogging[]) {
+  public set logging(value: S3BucketLogging[] | cdktf.IResolvable) {
     this._logging = value;
   }
   public resetLogging() {
@@ -748,7 +747,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // versioning - computed: false, optional: true, required: false
-  private _versioning = new S3BucketVersioningOutputReference(this as any, "versioning", true);
+  private _versioning = new S3BucketVersioningOutputReference(this, "versioning", true);
   public get versioning() {
     return this._versioning;
   }
@@ -764,7 +763,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // website - computed: false, optional: true, required: false
-  private _website = new S3BucketWebsiteOutputReference(this as any, "website", true);
+  private _website = new S3BucketWebsiteOutputReference(this, "website", true);
   public get website() {
     return this._website;
   }
@@ -792,7 +791,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       hosted_zone_id: cdktf.stringToTerraform(this._hostedZoneId),
       policy: cdktf.stringToTerraform(this._policy),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       website_domain: cdktf.stringToTerraform(this._websiteDomain),
       website_endpoint: cdktf.stringToTerraform(this._websiteEndpoint),
       cors_rule: cdktf.listMapper(s3BucketCorsRuleToTerraform)(this._corsRule),

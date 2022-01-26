@@ -55,13 +55,13 @@ export class DataOpentelekomcloudObsBucketEventNotifications extends cdktf.Compl
 
   // events - computed: true, optional: false, required: false
   public get events() {
-    return this.getListAttribute('events');
+    return cdktf.Fn.tolist(this.getListAttribute('events'));
   }
 
   // filter_rule - computed: true, optional: false, required: false
   public get filterRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('filter_rule') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter_rule')));
   }
 
   // id - computed: true, optional: false, required: false
@@ -116,13 +116,13 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
 
   // expiration - computed: true, optional: false, required: false
   public get expiration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('expiration') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('expiration')));
   }
 
   // name - computed: true, optional: false, required: false
@@ -133,13 +133,13 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
   // noncurrent_version_expiration - computed: true, optional: false, required: false
   public get noncurrentVersionExpiration() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('noncurrent_version_expiration') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('noncurrent_version_expiration')));
   }
 
   // noncurrent_version_transition - computed: true, optional: false, required: false
   public get noncurrentVersionTransition() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('noncurrent_version_transition') as any;
+    return this.interpolationForAttribute('noncurrent_version_transition');
   }
 
   // prefix - computed: true, optional: false, required: false
@@ -150,7 +150,7 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
   // transition - computed: true, optional: false, required: false
   public get transition() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('transition') as any;
+    return this.interpolationForAttribute('transition');
   }
 }
 export class DataOpentelekomcloudObsBucketLogging extends cdktf.ComplexComputedList {
@@ -259,12 +259,12 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
 
   // cors_rule - computed: true, optional: false, required: false
   public corsRule(index: string) {
-    return new DataOpentelekomcloudObsBucketCorsRule(this, 'cors_rule', index);
+    return new DataOpentelekomcloudObsBucketCorsRule(this, 'cors_rule', index, false);
   }
 
   // event_notifications - computed: true, optional: false, required: false
   public eventNotifications(index: string) {
-    return new DataOpentelekomcloudObsBucketEventNotifications(this, 'event_notifications', index);
+    return new DataOpentelekomcloudObsBucketEventNotifications(this, 'event_notifications', index, false);
   }
 
   // id - computed: true, optional: true, required: false
@@ -274,12 +274,12 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
 
   // lifecycle_rule - computed: true, optional: false, required: false
   public lifecycleRule(index: string) {
-    return new DataOpentelekomcloudObsBucketLifecycleRule(this, 'lifecycle_rule', index);
+    return new DataOpentelekomcloudObsBucketLifecycleRule(this, 'lifecycle_rule', index, false);
   }
 
   // logging - computed: true, optional: false, required: false
   public logging(index: string) {
-    return new DataOpentelekomcloudObsBucketLogging(this, 'logging', index);
+    return new DataOpentelekomcloudObsBucketLogging(this, 'logging', index, true);
   }
 
   // region - computed: true, optional: false, required: false
@@ -289,7 +289,7 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
 
   // server_side_encryption - computed: true, optional: false, required: false
   public serverSideEncryption(index: string) {
-    return new DataOpentelekomcloudObsBucketServerSideEncryption(this, 'server_side_encryption', index);
+    return new DataOpentelekomcloudObsBucketServerSideEncryption(this, 'server_side_encryption', index, false);
   }
 
   // storage_class - computed: true, optional: false, required: false
@@ -298,18 +298,18 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(key: string): string {
+  public tags(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 
   // versioning - computed: true, optional: false, required: false
   public get versioning() {
-    return this.getBooleanAttribute('versioning') as any;
+    return this.getBooleanAttribute('versioning');
   }
 
   // website - computed: true, optional: false, required: false
   public website(index: string) {
-    return new DataOpentelekomcloudObsBucketWebsite(this, 'website', index);
+    return new DataOpentelekomcloudObsBucketWebsite(this, 'website', index, false);
   }
 
   // =========

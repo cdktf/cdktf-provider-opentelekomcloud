@@ -714,10 +714,10 @@ public readonly instanceTerminatePolicyInput: string;
 ##### `lbaasListenersInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.lbaasListenersInput"></a>
 
 ```typescript
-public readonly lbaasListenersInput: AsGroupV1LbaasListeners[];
+public readonly lbaasListenersInput: IResolvable | AsGroupV1LbaasListeners[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
 
 ---
 
@@ -754,10 +754,10 @@ public readonly minInstanceNumberInput: number;
 ##### `networksInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.networksInput"></a>
 
 ```typescript
-public readonly networksInput: AsGroupV1Networks[];
+public readonly networksInput: IResolvable | AsGroupV1Networks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
 
 ---
 
@@ -814,10 +814,10 @@ public readonly securityGroupsInput: AsGroupV1SecurityGroups;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -934,10 +934,10 @@ public readonly instanceTerminatePolicy: string;
 ##### `lbaasListeners`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.lbaasListeners"></a>
 
 ```typescript
-public readonly lbaasListeners: AsGroupV1LbaasListeners[];
+public readonly lbaasListeners: IResolvable | AsGroupV1LbaasListeners[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
 
 ---
 
@@ -974,10 +974,10 @@ public readonly minInstanceNumber: number;
 ##### `networks`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.networks"></a>
 
 ```typescript
-public readonly networks: AsGroupV1Networks[];
+public readonly networks: IResolvable | AsGroupV1Networks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
 
 ---
 
@@ -1024,10 +1024,10 @@ public readonly scalingGroupName: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1458,10 +1458,10 @@ public readonly regionInput: string;
 ##### `scalingPolicyActionInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.property.scalingPolicyActionInput"></a>
 
 ```typescript
-public readonly scalingPolicyActionInput: AsPolicyV2ScalingPolicyAction[];
+public readonly scalingPolicyActionInput: IResolvable | AsPolicyV2ScalingPolicyAction[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
 
 ---
 
@@ -1508,10 +1508,10 @@ public readonly scalingResourceTypeInput: string;
 ##### `scheduledPolicyInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.property.scheduledPolicyInput"></a>
 
 ```typescript
-public readonly scheduledPolicyInput: AsPolicyV2ScheduledPolicy[];
+public readonly scheduledPolicyInput: IResolvable | AsPolicyV2ScheduledPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
 
 ---
 
@@ -1548,10 +1548,10 @@ public readonly region: string;
 ##### `scalingPolicyAction`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.property.scalingPolicyAction"></a>
 
 ```typescript
-public readonly scalingPolicyAction: AsPolicyV2ScalingPolicyAction[];
+public readonly scalingPolicyAction: IResolvable | AsPolicyV2ScalingPolicyAction[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
 
 ---
 
@@ -1598,10 +1598,10 @@ public readonly scalingResourceType: string;
 ##### `scheduledPolicy`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.property.scheduledPolicy"></a>
 
 ```typescript
-public readonly scheduledPolicy: AsPolicyV2ScheduledPolicy[];
+public readonly scheduledPolicy: IResolvable | AsPolicyV2ScheduledPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
 
 ---
 
@@ -1861,10 +1861,10 @@ public readonly imageIdInput: string;
 ##### `metadataInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: IResolvable | {[ key: string ]: string};
+public readonly metadataInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -1931,10 +1931,10 @@ public readonly sourceVolIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -2021,10 +2021,10 @@ public readonly imageId: string;
 ##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -2091,10 +2091,10 @@ public readonly sourceVolId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -2513,10 +2513,10 @@ public readonly billingInput: CbrVaultV3Billing;
 ##### `bindRulesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.bindRulesInput"></a>
 
 ```typescript
-public readonly bindRulesInput: CbrVaultV3BindRules[];
+public readonly bindRulesInput: IResolvable | CbrVaultV3BindRules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
 
 ---
 
@@ -2553,20 +2553,20 @@ public readonly nameInput: string;
 ##### `resourceInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.resourceInput"></a>
 
 ```typescript
-public readonly resourceInput: CbrVaultV3Resource[];
+public readonly resourceInput: IResolvable | CbrVaultV3Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
 
 ---
 
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -2603,10 +2603,10 @@ public readonly backupPolicyId: string;
 ##### `bindRules`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.bindRules"></a>
 
 ```typescript
-public readonly bindRules: CbrVaultV3BindRules[];
+public readonly bindRules: IResolvable | CbrVaultV3BindRules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
 
 ---
 
@@ -2643,20 +2643,20 @@ public readonly name: string;
 ##### `resource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.resource"></a>
 
 ```typescript
-public readonly resource: CbrVaultV3Resource[];
+public readonly resource: IResolvable | CbrVaultV3Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
 
 ---
 
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3187,10 +3187,10 @@ public readonly timeouts: CceClusterV3TimeoutsOutputReference;
 ##### `annotationsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.annotationsInput"></a>
 
 ```typescript
-public readonly annotationsInput: IResolvable | {[ key: string ]: string};
+public readonly annotationsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3297,10 +3297,10 @@ public readonly eipInput: string;
 ##### `extendParamInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.extendParamInput"></a>
 
 ```typescript
-public readonly extendParamInput: IResolvable | {[ key: string ]: string};
+public readonly extendParamInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3347,10 +3347,10 @@ public readonly kubernetesSvcIpRangeInput: string;
 ##### `labelsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.labelsInput"></a>
 
 ```typescript
-public readonly labelsInput: IResolvable | {[ key: string ]: string};
+public readonly labelsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3427,10 +3427,10 @@ public readonly vpcIdInput: string;
 ##### `annotations`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.annotations"></a>
 
 ```typescript
-public readonly annotations: IResolvable | {[ key: string ]: string};
+public readonly annotations: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3527,10 +3527,10 @@ public readonly eip: string;
 ##### `extendParam`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.extendParam"></a>
 
 ```typescript
-public readonly extendParam: IResolvable | {[ key: string ]: string};
+public readonly extendParam: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3577,10 +3577,10 @@ public readonly kubernetesSvcIpRange: string;
 ##### `labels`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.labels"></a>
 
 ```typescript
-public readonly labels: IResolvable | {[ key: string ]: string};
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -3900,10 +3900,10 @@ public readonly clusterIdInput: string;
 ##### `dataVolumesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dataVolumesInput"></a>
 
 ```typescript
-public readonly dataVolumesInput: CceNodePoolV3DataVolumes[];
+public readonly dataVolumesInput: IResolvable | CceNodePoolV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
 
 ---
 
@@ -3950,10 +3950,10 @@ public readonly initialNodeCountInput: number;
 ##### `k8STagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.k8STagsInput"></a>
 
 ```typescript
-public readonly k8STagsInput: IResolvable | {[ key: string ]: string};
+public readonly k8STagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4110,10 +4110,10 @@ public readonly subnetIdInput: string;
 ##### `taintsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.taintsInput"></a>
 
 ```typescript
-public readonly taintsInput: CceNodePoolV3Taints[];
+public readonly taintsInput: IResolvable | CceNodePoolV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
 
 ---
 
@@ -4130,10 +4130,10 @@ public readonly timeoutsInput: CceNodePoolV3Timeouts;
 ##### `userTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.userTagsInput"></a>
 
 ```typescript
-public readonly userTagsInput: IResolvable | {[ key: string ]: string};
+public readonly userTagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4160,10 +4160,10 @@ public readonly clusterId: string;
 ##### `dataVolumes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.dataVolumes"></a>
 
 ```typescript
-public readonly dataVolumes: CceNodePoolV3DataVolumes[];
+public readonly dataVolumes: IResolvable | CceNodePoolV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
 
 ---
 
@@ -4210,10 +4210,10 @@ public readonly initialNodeCount: number;
 ##### `k8STags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.k8STags"></a>
 
 ```typescript
-public readonly k8STags: IResolvable | {[ key: string ]: string};
+public readonly k8STags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4360,20 +4360,20 @@ public readonly subnetId: string;
 ##### `taints`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.taints"></a>
 
 ```typescript
-public readonly taints: CceNodePoolV3Taints[];
+public readonly taints: IResolvable | CceNodePoolV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
 
 ---
 
 ##### `userTags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3.property.userTags"></a>
 
 ```typescript
-public readonly userTags: IResolvable | {[ key: string ]: string};
+public readonly userTags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4681,10 +4681,10 @@ public readonly timeouts: CceNodeV3TimeoutsOutputReference;
 ##### `annotationsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.annotationsInput"></a>
 
 ```typescript
-public readonly annotationsInput: IResolvable | {[ key: string ]: string};
+public readonly annotationsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4741,10 +4741,10 @@ public readonly clusterIdInput: string;
 ##### `dataVolumesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dataVolumesInput"></a>
 
 ```typescript
-public readonly dataVolumesInput: CceNodeV3DataVolumes[];
+public readonly dataVolumesInput: IResolvable | CceNodeV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
 
 ---
 
@@ -4831,10 +4831,10 @@ public readonly iptypeInput: string;
 ##### `k8STagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.k8STagsInput"></a>
 
 ```typescript
-public readonly k8STagsInput: IResolvable | {[ key: string ]: string};
+public readonly k8STagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4851,10 +4851,10 @@ public readonly keyPairInput: string;
 ##### `labelsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.labelsInput"></a>
 
 ```typescript
-public readonly labelsInput: IResolvable | {[ key: string ]: string};
+public readonly labelsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -4991,20 +4991,20 @@ public readonly subnetIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `taintsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.taintsInput"></a>
 
 ```typescript
-public readonly taintsInput: CceNodeV3Taints[];
+public readonly taintsInput: IResolvable | CceNodeV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
 
 ---
 
@@ -5021,10 +5021,10 @@ public readonly timeoutsInput: CceNodeV3Timeouts;
 ##### `annotations`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.annotations"></a>
 
 ```typescript
-public readonly annotations: IResolvable | {[ key: string ]: string};
+public readonly annotations: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -5081,10 +5081,10 @@ public readonly clusterId: string;
 ##### `dataVolumes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.dataVolumes"></a>
 
 ```typescript
-public readonly dataVolumes: CceNodeV3DataVolumes[];
+public readonly dataVolumes: IResolvable | CceNodeV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
 
 ---
 
@@ -5171,10 +5171,10 @@ public readonly iptype: string;
 ##### `k8STags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.k8STags"></a>
 
 ```typescript
-public readonly k8STags: IResolvable | {[ key: string ]: string};
+public readonly k8STags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -5191,10 +5191,10 @@ public readonly keyPair: string;
 ##### `labels`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.labels"></a>
 
 ```typescript
-public readonly labels: IResolvable | {[ key: string ]: string};
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -5321,20 +5321,20 @@ public readonly subnetId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `taints`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3.property.taints"></a>
 
 ```typescript
-public readonly taints: CceNodeV3Taints[];
+public readonly taints: IResolvable | CceNodeV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
 
 ---
 
@@ -5544,10 +5544,10 @@ public readonly alarmActionEnabledInput: boolean | IResolvable;
 ##### `alarmActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.alarmActionsInput"></a>
 
 ```typescript
-public readonly alarmActionsInput: CesAlarmruleAlarmActions[];
+public readonly alarmActionsInput: IResolvable | CesAlarmruleAlarmActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
 
 ---
 
@@ -5604,10 +5604,10 @@ public readonly conditionInput: CesAlarmruleCondition;
 ##### `insufficientdataActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.insufficientdataActionsInput"></a>
 
 ```typescript
-public readonly insufficientdataActionsInput: CesAlarmruleInsufficientdataActions[];
+public readonly insufficientdataActionsInput: IResolvable | CesAlarmruleInsufficientdataActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
 
 ---
 
@@ -5624,10 +5624,10 @@ public readonly metricInput: CesAlarmruleMetric;
 ##### `okActionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.okActionsInput"></a>
 
 ```typescript
-public readonly okActionsInput: CesAlarmruleOkActions[];
+public readonly okActionsInput: IResolvable | CesAlarmruleOkActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
 
 ---
 
@@ -5654,10 +5654,10 @@ public readonly alarmActionEnabled: boolean | IResolvable;
 ##### `alarmActions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.alarmActions"></a>
 
 ```typescript
-public readonly alarmActions: CesAlarmruleAlarmActions[];
+public readonly alarmActions: IResolvable | CesAlarmruleAlarmActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
 
 ---
 
@@ -5704,20 +5704,20 @@ public readonly alarmName: string;
 ##### `insufficientdataActions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.insufficientdataActions"></a>
 
 ```typescript
-public readonly insufficientdataActions: CesAlarmruleInsufficientdataActions[];
+public readonly insufficientdataActions: IResolvable | CesAlarmruleInsufficientdataActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
 
 ---
 
 ##### `okActions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmrule.property.okActions"></a>
 
 ```typescript
-public readonly okActions: CesAlarmruleOkActions[];
+public readonly okActions: IResolvable | CesAlarmruleOkActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
 
 ---
 
@@ -5895,10 +5895,10 @@ public readonly accessIpV6: string;
 ##### `configDrive`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.configDrive"></a>
 
 ```typescript
-public readonly configDrive: any;
+public readonly configDrive: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -5995,10 +5995,10 @@ public readonly availabilityZoneInput: string;
 ##### `blockDeviceInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.blockDeviceInput"></a>
 
 ```typescript
-public readonly blockDeviceInput: ComputeBmsServerV2BlockDevice[];
+public readonly blockDeviceInput: IResolvable | ComputeBmsServerV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
 
 ---
 
@@ -6055,10 +6055,10 @@ public readonly keyPairInput: string;
 ##### `metadataInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: IResolvable | {[ key: string ]: string};
+public readonly metadataInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -6075,10 +6075,10 @@ public readonly nameInput: string;
 ##### `networkInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.networkInput"></a>
 
 ```typescript
-public readonly networkInput: ComputeBmsServerV2Network[];
+public readonly networkInput: IResolvable | ComputeBmsServerV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
 
 ---
 
@@ -6115,10 +6115,10 @@ public readonly stopBeforeDestroyInput: boolean | IResolvable;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -6165,10 +6165,10 @@ public readonly availabilityZone: string;
 ##### `blockDevice`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.blockDevice"></a>
 
 ```typescript
-public readonly blockDevice: ComputeBmsServerV2BlockDevice[];
+public readonly blockDevice: IResolvable | ComputeBmsServerV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
 
 ---
 
@@ -6225,10 +6225,10 @@ public readonly keyPair: string;
 ##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -6245,10 +6245,10 @@ public readonly name: string;
 ##### `network`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.network"></a>
 
 ```typescript
-public readonly network: ComputeBmsServerV2Network[];
+public readonly network: IResolvable | ComputeBmsServerV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
 
 ---
 
@@ -6285,10 +6285,10 @@ public readonly stopBeforeDestroy: boolean | IResolvable;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7047,10 +7047,10 @@ public readonly availabilityZoneInput: string;
 ##### `blockDeviceInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.blockDeviceInput"></a>
 
 ```typescript
-public readonly blockDeviceInput: ComputeInstanceV2BlockDevice[];
+public readonly blockDeviceInput: IResolvable | ComputeInstanceV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
 
 ---
 
@@ -7117,10 +7117,10 @@ public readonly keyPairInput: string;
 ##### `metadataInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: IResolvable | {[ key: string ]: string};
+public readonly metadataInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7137,10 +7137,10 @@ public readonly nameInput: string;
 ##### `networkInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.networkInput"></a>
 
 ```typescript
-public readonly networkInput: ComputeInstanceV2Network[];
+public readonly networkInput: IResolvable | ComputeInstanceV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
 
 ---
 
@@ -7167,10 +7167,10 @@ public readonly regionInput: string;
 ##### `schedulerHintsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.schedulerHintsInput"></a>
 
 ```typescript
-public readonly schedulerHintsInput: ComputeInstanceV2SchedulerHints[];
+public readonly schedulerHintsInput: IResolvable | ComputeInstanceV2SchedulerHints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
 
 ---
 
@@ -7197,10 +7197,10 @@ public readonly stopBeforeDestroyInput: boolean | IResolvable;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7277,10 +7277,10 @@ public readonly availabilityZone: string;
 ##### `blockDevice`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.blockDevice"></a>
 
 ```typescript
-public readonly blockDevice: ComputeInstanceV2BlockDevice[];
+public readonly blockDevice: IResolvable | ComputeInstanceV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
 
 ---
 
@@ -7347,10 +7347,10 @@ public readonly keyPair: string;
 ##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7367,10 +7367,10 @@ public readonly name: string;
 ##### `network`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.network"></a>
 
 ```typescript
-public readonly network: ComputeInstanceV2Network[];
+public readonly network: IResolvable | ComputeInstanceV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
 
 ---
 
@@ -7397,10 +7397,10 @@ public readonly region: string;
 ##### `schedulerHints`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.schedulerHints"></a>
 
 ```typescript
-public readonly schedulerHints: ComputeInstanceV2SchedulerHints[];
+public readonly schedulerHints: IResolvable | ComputeInstanceV2SchedulerHints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
 
 ---
 
@@ -7427,10 +7427,10 @@ public readonly stopBeforeDestroy: boolean | IResolvable;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7534,10 +7534,10 @@ public readonly privateKey: string;
 ##### `shared`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2.property.shared"></a>
 
 ```typescript
-public readonly shared: any;
+public readonly shared: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -7574,10 +7574,10 @@ public readonly regionInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7614,10 +7614,10 @@ public readonly region: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7753,10 +7753,10 @@ public readonly regionInput: string;
 ##### `ruleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2.property.ruleInput"></a>
 
 ```typescript
-public readonly ruleInput: ComputeSecgroupV2Rule[];
+public readonly ruleInput: IResolvable | ComputeSecgroupV2Rule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
 
 ---
 
@@ -7803,10 +7803,10 @@ public readonly region: string;
 ##### `rule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2.property.rule"></a>
 
 ```typescript
-public readonly rule: ComputeSecgroupV2Rule[];
+public readonly rule: IResolvable | ComputeSecgroupV2Rule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
 
 ---
 
@@ -7930,10 +7930,10 @@ public readonly regionInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeServergroupV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -7970,10 +7970,10 @@ public readonly region: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeServergroupV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -8328,10 +8328,10 @@ public readonly timeouts: CsbsBackupPolicyV1TimeoutsOutputReference;
 ##### `commonInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.commonInput"></a>
 
 ```typescript
-public readonly commonInput: IResolvable | {[ key: string ]: string};
+public readonly commonInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -8378,10 +8378,10 @@ public readonly regionInput: string;
 ##### `resourceInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.resourceInput"></a>
 
 ```typescript
-public readonly resourceInput: CsbsBackupPolicyV1Resource[];
+public readonly resourceInput: IResolvable | CsbsBackupPolicyV1Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
 
 ---
 
@@ -8398,10 +8398,10 @@ public readonly scheduledOperationInput: CsbsBackupPolicyV1ScheduledOperation;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: CsbsBackupPolicyV1Tags[];
+public readonly tagsInput: IResolvable | CsbsBackupPolicyV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
 
 ---
 
@@ -8418,10 +8418,10 @@ public readonly timeoutsInput: CsbsBackupPolicyV1Timeouts;
 ##### `common`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.common"></a>
 
 ```typescript
-public readonly common: IResolvable | {[ key: string ]: string};
+public readonly common: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -8468,20 +8468,20 @@ public readonly region: string;
 ##### `resource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.resource"></a>
 
 ```typescript
-public readonly resource: CsbsBackupPolicyV1Resource[];
+public readonly resource: IResolvable | CsbsBackupPolicyV1Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
 
 ---
 
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1.property.tags"></a>
 
 ```typescript
-public readonly tags: CsbsBackupPolicyV1Tags[];
+public readonly tags: IResolvable | CsbsBackupPolicyV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
 
 ---
 
@@ -8699,10 +8699,10 @@ public readonly resourceTypeInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: CsbsBackupV1Tags[];
+public readonly tagsInput: IResolvable | CsbsBackupV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
 
 ---
 
@@ -8769,10 +8769,10 @@ public readonly resourceType: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.property.tags"></a>
 
 ```typescript
-public readonly tags: CsbsBackupV1Tags[];
+public readonly tags: IResolvable | CsbsBackupV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
 
 ---
 
@@ -9769,30 +9769,30 @@ public resetStatus()
 ##### `bpsAttack`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.bpsAttack"></a>
 
 ```typescript
-public readonly bpsAttack: any;
+public readonly bpsAttack: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `bpsIn`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.bpsIn"></a>
 
 ```typescript
-public readonly bpsIn: any;
+public readonly bpsIn: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.endTime"></a>
 
 ```typescript
-public readonly endTime: any;
+public readonly endTime: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
@@ -9819,100 +9819,100 @@ public readonly networkType: string;
 ##### `periodStart`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.periodStart"></a>
 
 ```typescript
-public readonly periodStart: any;
+public readonly periodStart: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `ppsAttack`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.ppsAttack"></a>
 
 ```typescript
-public readonly ppsAttack: any;
+public readonly ppsAttack: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `ppsIn`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.ppsIn"></a>
 
 ```typescript
-public readonly ppsIn: any;
+public readonly ppsIn: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.startTime"></a>
 
 ```typescript
-public readonly startTime: any;
+public readonly startTime: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `totalBps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.totalBps"></a>
 
 ```typescript
-public readonly totalBps: any;
+public readonly totalBps: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `totalPps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.totalPps"></a>
 
 ```typescript
-public readonly totalPps: any;
+public readonly totalPps: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `trafficCleaningStatus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.trafficCleaningStatus"></a>
 
 ```typescript
-public readonly trafficCleaningStatus: any;
+public readonly trafficCleaningStatus: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `triggerBps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.triggerBps"></a>
 
 ```typescript
-public readonly triggerBps: any;
+public readonly triggerBps: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `triggerHttpPps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.triggerHttpPps"></a>
 
 ```typescript
-public readonly triggerHttpPps: any;
+public readonly triggerHttpPps: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
 ##### `triggerPps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.triggerPps"></a>
 
 ```typescript
-public readonly triggerPps: any;
+public readonly triggerPps: number[];
 ```
 
-- *Type:* `any`
+- *Type:* `number`[]
 
 ---
 
@@ -11727,10 +11727,10 @@ public readonly kernelId: string;
 ##### `locked`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.property.locked"></a>
 
 ```typescript
-public readonly locked: any;
+public readonly locked: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -12680,10 +12680,10 @@ public volumeBackups(index: string)
 ##### `autoTrigger`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.property.autoTrigger"></a>
 
 ```typescript
-public readonly autoTrigger: any;
+public readonly autoTrigger: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -13272,20 +13272,20 @@ public readonly id: string;
 ##### `isSendAllKeyOperation`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCtsTrackerV1.property.isSendAllKeyOperation"></a>
 
 ```typescript
-public readonly isSendAllKeyOperation: any;
+public readonly isSendAllKeyOperation: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `isSupportSmn`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCtsTrackerV1.property.isSupportSmn"></a>
 
 ```typescript
-public readonly isSupportSmn: any;
+public readonly isSupportSmn: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -14217,10 +14217,10 @@ public readonly securityGroupId: string;
 ##### `ssl`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.property.ssl"></a>
 
 ```typescript
-public readonly ssl: any;
+public readonly ssl: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -14795,10 +14795,10 @@ public readonly userId: string;
 ##### `addressesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1.property.addressesInput"></a>
 
 ```typescript
-public readonly addressesInput: DataOpentelekomcloudDehServerV1Addresses[];
+public readonly addressesInput: IResolvable | DataOpentelekomcloudDehServerV1Addresses[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
 
 ---
 
@@ -14835,10 +14835,10 @@ public readonly serverIdInput: string;
 ##### `addresses`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1.property.addresses"></a>
 
 ```typescript
-public readonly addresses: DataOpentelekomcloudDehServerV1Addresses[];
+public readonly addresses: IResolvable | DataOpentelekomcloudDehServerV1Addresses[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
 
 ---
 
@@ -15695,10 +15695,10 @@ public readonly statusInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -15765,10 +15765,10 @@ public readonly status: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -16976,10 +16976,10 @@ public readonly minRamMb: number;
 ##### `protected`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudImagesImageV2.property.protected"></a>
 
 ```typescript
-public readonly protected: any;
+public readonly protected: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -17066,10 +17066,10 @@ public readonly ownerInput: string;
 ##### `propertiesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudImagesImageV2.property.propertiesInput"></a>
 
 ```typescript
-public readonly propertiesInput: IResolvable | {[ key: string ]: string};
+public readonly propertiesInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -17186,10 +17186,10 @@ public readonly owner: string;
 ##### `properties`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudImagesImageV2.property.properties"></a>
 
 ```typescript
-public readonly properties: IResolvable | {[ key: string ]: string};
+public readonly properties: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -18010,10 +18010,10 @@ public readonly qps: number;
 ##### `shared`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbFlavorV3.property.shared"></a>
 
 ```typescript
-public readonly shared: any;
+public readonly shared: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18213,10 +18213,10 @@ public tags(key: string)
 ##### `adminStateUp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.adminStateUp"></a>
 
 ```typescript
-public readonly adminStateUp: any;
+public readonly adminStateUp: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18233,30 +18233,30 @@ public readonly createdAt: string;
 ##### `http2Enable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.http2Enable"></a>
 
 ```typescript
-public readonly http2Enable: any;
+public readonly http2Enable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `memberRetryEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memberRetryEnable"></a>
 
 ```typescript
-public readonly memberRetryEnable: any;
+public readonly memberRetryEnable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `memoryRetryEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.memoryRetryEnable"></a>
 
 ```typescript
-public readonly memoryRetryEnable: any;
+public readonly memoryRetryEnable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18708,10 +18708,10 @@ public tags(key: string)
 ##### `adminStateUp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.adminStateUp"></a>
 
 ```typescript
-public readonly adminStateUp: any;
+public readonly adminStateUp: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -18758,10 +18758,10 @@ public readonly id: string;
 ##### `ipTargetEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.ipTargetEnable"></a>
 
 ```typescript
-public readonly ipTargetEnable: any;
+public readonly ipTargetEnable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -20015,10 +20015,10 @@ public readonly storageClass: string;
 ##### `versioning`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.versioning"></a>
 
 ```typescript
-public readonly versioning: any;
+public readonly versioning: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -21438,10 +21438,10 @@ public readonly capabilities: string[];
 ##### `disableRollback`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRtsStackV1.property.disableRollback"></a>
 
 ```typescript
-public readonly disableRollback: any;
+public readonly disableRollback: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22111,10 +22111,10 @@ public readonly host: string;
 ##### `isPublic`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudSfsFileSystemV2.property.isPublic"></a>
 
 ```typescript
-public readonly isPublic: any;
+public readonly isPublic: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22131,10 +22131,10 @@ public readonly mountId: string;
 ##### `preferred`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudSfsFileSystemV2.property.preferred"></a>
 
 ```typescript
-public readonly preferred: any;
+public readonly preferred: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -22636,10 +22636,10 @@ public readonly startTime: string;
 ##### `filterTagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2.property.filterTagsInput"></a>
 
 ```typescript
-public readonly filterTagsInput: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
+public readonly filterTagsInput: IResolvable | DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
 
 ---
 
@@ -22696,10 +22696,10 @@ public readonly statusInput: string;
 ##### `filterTags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2.property.filterTags"></a>
 
 ```typescript
-public readonly filterTags: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
+public readonly filterTags: IResolvable | DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
 
 ---
 
@@ -23606,10 +23606,10 @@ public readonly statusInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcEipV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -23686,10 +23686,10 @@ public readonly status: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcEipV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -23771,10 +23771,10 @@ public readonly id: string;
 ##### `isCharge`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepPublicServiceV1.property.isCharge"></a>
 
 ```typescript
-public readonly isCharge: any;
+public readonly isCharge: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -23900,10 +23900,10 @@ public resetTags()
 ##### `approvalEnabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.property.approvalEnabled"></a>
 
 ```typescript
-public readonly approvalEnabled: any;
+public readonly approvalEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -24040,10 +24040,10 @@ public readonly statusInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -24070,10 +24070,10 @@ public readonly status: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -24875,10 +24875,10 @@ public resetVpcId()
 ##### `dhcpEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcSubnetV1.property.dhcpEnable"></a>
 
 ```typescript
-public readonly dhcpEnable: any;
+public readonly dhcpEnable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -26094,10 +26094,10 @@ public readonly capacityInput: number;
 ##### `configurationInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1.property.configurationInput"></a>
 
 ```typescript
-public readonly configurationInput: DcsInstanceV1Configuration[];
+public readonly configurationInput: IResolvable | DcsInstanceV1Configuration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
 
 ---
 
@@ -26304,10 +26304,10 @@ public readonly capacity: number;
 ##### `configuration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1.property.configuration"></a>
 
 ```typescript
-public readonly configuration: DcsInstanceV1Configuration[];
+public readonly configuration: IResolvable | DcsInstanceV1Configuration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
 
 ---
 
@@ -26691,10 +26691,10 @@ public readonly diskEncryptionIdInput: string;
 ##### `flavorInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.property.flavorInput"></a>
 
 ```typescript
-public readonly flavorInput: DdsInstanceV3Flavor[];
+public readonly flavorInput: IResolvable | DdsInstanceV3Flavor[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
 
 ---
 
@@ -26811,10 +26811,10 @@ public readonly diskEncryptionId: string;
 ##### `flavor`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.property.flavor"></a>
 
 ```typescript
-public readonly flavor: DdsInstanceV3Flavor[];
+public readonly flavor: IResolvable | DdsInstanceV3Flavor[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
 
 ---
 
@@ -27086,10 +27086,10 @@ public readonly availabilityZoneInput: string;
 ##### `availableInstanceCapacitiesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1.property.availableInstanceCapacitiesInput"></a>
 
 ```typescript
-public readonly availableInstanceCapacitiesInput: DehHostV1AvailableInstanceCapacities[];
+public readonly availableInstanceCapacitiesInput: IResolvable | DehHostV1AvailableInstanceCapacities[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
 
 ---
 
@@ -27256,10 +27256,10 @@ public readonly availabilityZone: string;
 ##### `availableInstanceCapacities`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1.property.availableInstanceCapacities"></a>
 
 ```typescript
-public readonly availableInstanceCapacities: DehHostV1AvailableInstanceCapacities[];
+public readonly availableInstanceCapacities: IResolvable | DehHostV1AvailableInstanceCapacities[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
 
 ---
 
@@ -28545,10 +28545,10 @@ public readonly nameInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -28605,10 +28605,10 @@ public readonly name: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -28732,10 +28732,10 @@ public readonly id: string;
 ##### `shared`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2.property.shared"></a>
 
 ```typescript
-public readonly shared: any;
+public readonly shared: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -28792,10 +28792,10 @@ public readonly regionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -28832,10 +28832,10 @@ public readonly typeInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -28892,10 +28892,10 @@ public readonly region: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -28922,10 +28922,10 @@ public readonly type: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29127,20 +29127,20 @@ public readonly regionInput: string;
 ##### `routerInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.routerInput"></a>
 
 ```typescript
-public readonly routerInput: DnsZoneV2Router[];
+public readonly routerInput: IResolvable | DnsZoneV2Router[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
 
 ---
 
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29177,10 +29177,10 @@ public readonly typeInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29227,20 +29227,20 @@ public readonly region: string;
 ##### `router`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.router"></a>
 
 ```typescript
-public readonly router: DnsZoneV2Router[];
+public readonly router: IResolvable | DnsZoneV2Router[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
 
 ---
 
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29267,10 +29267,10 @@ public readonly type: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29450,10 +29450,10 @@ public readonly availabilityZoneInput: string;
 ##### `dataDisksInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.dataDisksInput"></a>
 
 ```typescript
-public readonly dataDisksInput: EcsInstanceV1DataDisks[];
+public readonly dataDisksInput: IResolvable | EcsInstanceV1DataDisks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
 
 ---
 
@@ -29510,10 +29510,10 @@ public readonly nameInput: string;
 ##### `nicsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.nicsInput"></a>
 
 ```typescript
-public readonly nicsInput: EcsInstanceV1Nics[];
+public readonly nicsInput: IResolvable | EcsInstanceV1Nics[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
 
 ---
 
@@ -29570,10 +29570,10 @@ public readonly systemDiskTypeInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -29630,10 +29630,10 @@ public readonly availabilityZone: string;
 ##### `dataDisks`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.dataDisks"></a>
 
 ```typescript
-public readonly dataDisks: EcsInstanceV1DataDisks[];
+public readonly dataDisks: IResolvable | EcsInstanceV1DataDisks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
 
 ---
 
@@ -29690,10 +29690,10 @@ public readonly name: string;
 ##### `nics`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.nics"></a>
 
 ```typescript
-public readonly nics: EcsInstanceV1Nics[];
+public readonly nics: IResolvable | EcsInstanceV1Nics[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
 
 ---
 
@@ -29750,10 +29750,10 @@ public readonly systemDiskType: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30065,10 +30065,10 @@ public readonly snapshotIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30205,10 +30205,10 @@ public readonly snapshotId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30456,10 +30456,10 @@ public readonly timeoutsInput: FwFirewallGroupV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30546,10 +30546,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30771,10 +30771,10 @@ public readonly timeoutsInput: FwPolicyV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -30851,10 +30851,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -31106,10 +31106,10 @@ public readonly tenantIdInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwRuleV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -31236,10 +31236,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwRuleV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -31421,10 +31421,10 @@ public readonly nameInput: string;
 ##### `projectRoleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3.property.projectRoleInput"></a>
 
 ```typescript
-public readonly projectRoleInput: IdentityAgencyV3ProjectRole[];
+public readonly projectRoleInput: IResolvable | IdentityAgencyV3ProjectRole[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
 
 ---
 
@@ -31481,10 +31481,10 @@ public readonly name: string;
 ##### `projectRole`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3.property.projectRole"></a>
 
 ```typescript
-public readonly projectRole: IdentityAgencyV3ProjectRole[];
+public readonly projectRole: IResolvable | IdentityAgencyV3ProjectRole[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
 
 ---
 
@@ -32107,10 +32107,10 @@ public resetRegion()
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProjectV3.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -32127,10 +32127,10 @@ public readonly id: string;
 ##### `isDomain`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProjectV3.property.isDomain"></a>
 
 ```typescript
-public readonly isDomain: any;
+public readonly isDomain: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -32860,10 +32860,10 @@ public readonly displayNameInput: string;
 ##### `statementInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityRoleV3.property.statementInput"></a>
 
 ```typescript
-public readonly statementInput: IdentityRoleV3Statement[];
+public readonly statementInput: IResolvable | IdentityRoleV3Statement[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
 
 ---
 
@@ -32900,10 +32900,10 @@ public readonly displayName: string;
 ##### `statement`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityRoleV3.property.statement"></a>
 
 ```typescript
-public readonly statement: IdentityRoleV3Statement[];
+public readonly statement: IResolvable | IdentityRoleV3Statement[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
 
 ---
 
@@ -34290,10 +34290,10 @@ public readonly osTypeInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -34380,10 +34380,10 @@ public readonly osType: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -34703,10 +34703,10 @@ public readonly osVersionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -34833,10 +34833,10 @@ public readonly osVersion: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -35249,10 +35249,10 @@ public readonly realmInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.KmsKeyV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -35309,10 +35309,10 @@ public readonly realm: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.KmsKeyV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -36802,10 +36802,10 @@ public readonly sniContainerRefsInput: string[];
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -36962,10 +36962,10 @@ public readonly sniContainerRefs: string[];
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -37343,10 +37343,10 @@ public readonly sniContainerRefsInput: string[];
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -37513,10 +37513,10 @@ public readonly sniContainerRefs: string[];
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -37728,10 +37728,10 @@ public readonly regionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -37828,10 +37828,10 @@ public readonly region: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38155,10 +38155,10 @@ public readonly subnetIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -38275,10 +38275,10 @@ public readonly subnetId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -39870,10 +39870,10 @@ public readonly redirectPoolIdInput: string;
 ##### `rulesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPolicyV3.property.rulesInput"></a>
 
 ```typescript
-public readonly rulesInput: LbPolicyV3Rules[];
+public readonly rulesInput: IResolvable | LbPolicyV3Rules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
 
 ---
 
@@ -39960,10 +39960,10 @@ public readonly redirectPoolId: string;
 ##### `rules`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPolicyV3.property.rules"></a>
 
 ```typescript
-public readonly rules: LbPolicyV3Rules[];
+public readonly rules: IResolvable | LbPolicyV3Rules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
 
 ---
 
@@ -40165,10 +40165,10 @@ public readonly nameInput: string;
 ##### `persistenceInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2.property.persistenceInput"></a>
 
 ```typescript
-public readonly persistenceInput: LbPoolV2Persistence[];
+public readonly persistenceInput: IResolvable | LbPoolV2Persistence[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
 
 ---
 
@@ -40275,10 +40275,10 @@ public readonly name: string;
 ##### `persistence`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2.property.persistence"></a>
 
 ```typescript
-public readonly persistence: LbPoolV2Persistence[];
+public readonly persistence: IResolvable | LbPoolV2Persistence[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
 
 ---
 
@@ -41108,10 +41108,10 @@ public readonly id: string;
 ##### `indexEnabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LogtankTopicV2.property.indexEnabled"></a>
 
 ```typescript
-public readonly indexEnabled: any;
+public readonly indexEnabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -41611,10 +41611,10 @@ public readonly vnc: string;
 ##### `addJobsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.addJobsInput"></a>
 
 ```typescript
-public readonly addJobsInput: MrsClusterV1AddJobs[];
+public readonly addJobsInput: IResolvable | MrsClusterV1AddJobs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
 
 ---
 
@@ -41641,10 +41641,10 @@ public readonly billingTypeInput: number;
 ##### `bootstrapScriptsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.bootstrapScriptsInput"></a>
 
 ```typescript
-public readonly bootstrapScriptsInput: MrsClusterV1BootstrapScripts[];
+public readonly bootstrapScriptsInput: IResolvable | MrsClusterV1BootstrapScripts[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
 
 ---
 
@@ -41691,10 +41691,10 @@ public readonly clusterVersionInput: string;
 ##### `componentListInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.componentListInput"></a>
 
 ```typescript
-public readonly componentListInput: MrsClusterV1ComponentList[];
+public readonly componentListInput: IResolvable | MrsClusterV1ComponentList[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
 
 ---
 
@@ -41851,10 +41851,10 @@ public readonly subnetIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -41901,10 +41901,10 @@ public readonly vpcIdInput: string;
 ##### `addJobs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.addJobs"></a>
 
 ```typescript
-public readonly addJobs: MrsClusterV1AddJobs[];
+public readonly addJobs: IResolvable | MrsClusterV1AddJobs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
 
 ---
 
@@ -41931,10 +41931,10 @@ public readonly billingType: number;
 ##### `bootstrapScripts`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.bootstrapScripts"></a>
 
 ```typescript
-public readonly bootstrapScripts: MrsClusterV1BootstrapScripts[];
+public readonly bootstrapScripts: IResolvable | MrsClusterV1BootstrapScripts[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
 
 ---
 
@@ -41981,10 +41981,10 @@ public readonly clusterVersion: string;
 ##### `componentList`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.componentList"></a>
 
 ```typescript
-public readonly componentList: MrsClusterV1ComponentList[];
+public readonly componentList: IResolvable | MrsClusterV1ComponentList[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
 
 ---
 
@@ -42141,10 +42141,10 @@ public readonly subnetId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -43679,10 +43679,10 @@ public readonly timeoutsInput: NetworkingFloatingipV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -43739,10 +43739,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -43908,10 +43908,10 @@ public readonly regionInput: string;
 ##### `segmentsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2.property.segmentsInput"></a>
 
 ```typescript
-public readonly segmentsInput: NetworkingNetworkV2Segments[];
+public readonly segmentsInput: IResolvable | NetworkingNetworkV2Segments[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
 
 ---
 
@@ -43948,10 +43948,10 @@ public readonly timeoutsInput: NetworkingNetworkV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -43988,10 +43988,10 @@ public readonly region: string;
 ##### `segments`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2.property.segments"></a>
 
 ```typescript
-public readonly segments: NetworkingNetworkV2Segments[];
+public readonly segments: IResolvable | NetworkingNetworkV2Segments[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
 
 ---
 
@@ -44018,10 +44018,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -44213,10 +44213,10 @@ public readonly adminStateUpInput: boolean | IResolvable;
 ##### `allowedAddressPairsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.allowedAddressPairsInput"></a>
 
 ```typescript
-public readonly allowedAddressPairsInput: NetworkingPortV2AllowedAddressPairs[];
+public readonly allowedAddressPairsInput: IResolvable | NetworkingPortV2AllowedAddressPairs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
 
 ---
 
@@ -44243,10 +44243,10 @@ public readonly deviceOwnerInput: string;
 ##### `fixedIpInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.fixedIpInput"></a>
 
 ```typescript
-public readonly fixedIpInput: NetworkingPortV2FixedIp[];
+public readonly fixedIpInput: IResolvable | NetworkingPortV2FixedIp[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
 
 ---
 
@@ -44343,10 +44343,10 @@ public readonly timeoutsInput: NetworkingPortV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -44363,10 +44363,10 @@ public readonly adminStateUp: boolean | IResolvable;
 ##### `allowedAddressPairs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.allowedAddressPairs"></a>
 
 ```typescript
-public readonly allowedAddressPairs: NetworkingPortV2AllowedAddressPairs[];
+public readonly allowedAddressPairs: IResolvable | NetworkingPortV2AllowedAddressPairs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
 
 ---
 
@@ -44393,10 +44393,10 @@ public readonly deviceOwner: string;
 ##### `fixedIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.fixedIp"></a>
 
 ```typescript
-public readonly fixedIp: NetworkingPortV2FixedIp[];
+public readonly fixedIp: IResolvable | NetworkingPortV2FixedIp[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
 
 ---
 
@@ -44483,10 +44483,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -45048,10 +45048,10 @@ public readonly timeoutsInput: NetworkingRouterV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -45128,10 +45128,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -45877,10 +45877,10 @@ public readonly timeouts: NetworkingSubnetV2TimeoutsOutputReference;
 ##### `allocationPoolsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.allocationPoolsInput"></a>
 
 ```typescript
-public readonly allocationPoolsInput: NetworkingSubnetV2AllocationPools[];
+public readonly allocationPoolsInput: IResolvable | NetworkingSubnetV2AllocationPools[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
 
 ---
 
@@ -45927,10 +45927,10 @@ public readonly gatewayIpInput: string;
 ##### `hostRoutesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.hostRoutesInput"></a>
 
 ```typescript
-public readonly hostRoutesInput: NetworkingSubnetV2HostRoutes[];
+public readonly hostRoutesInput: IResolvable | NetworkingSubnetV2HostRoutes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
 
 ---
 
@@ -46007,20 +46007,20 @@ public readonly timeoutsInput: NetworkingSubnetV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `allocationPools`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.allocationPools"></a>
 
 ```typescript
-public readonly allocationPools: NetworkingSubnetV2AllocationPools[];
+public readonly allocationPools: IResolvable | NetworkingSubnetV2AllocationPools[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
 
 ---
 
@@ -46067,10 +46067,10 @@ public readonly gatewayIp: string;
 ##### `hostRoutes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.hostRoutes"></a>
 
 ```typescript
-public readonly hostRoutes: NetworkingSubnetV2HostRoutes[];
+public readonly hostRoutes: IResolvable | NetworkingSubnetV2HostRoutes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
 
 ---
 
@@ -46137,10 +46137,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -46651,20 +46651,20 @@ public readonly bucketInput: string;
 ##### `corsRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.corsRuleInput"></a>
 
 ```typescript
-public readonly corsRuleInput: ObsBucketCorsRule[];
+public readonly corsRuleInput: IResolvable | ObsBucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
 
 ---
 
 ##### `eventNotificationsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.eventNotificationsInput"></a>
 
 ```typescript
-public readonly eventNotificationsInput: ObsBucketEventNotifications[];
+public readonly eventNotificationsInput: IResolvable | ObsBucketEventNotifications[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
 
 ---
 
@@ -46681,20 +46681,20 @@ public readonly forceDestroyInput: boolean | IResolvable;
 ##### `lifecycleRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.lifecycleRuleInput"></a>
 
 ```typescript
-public readonly lifecycleRuleInput: ObsBucketLifecycleRule[];
+public readonly lifecycleRuleInput: IResolvable | ObsBucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
 
 ---
 
 ##### `loggingInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.loggingInput"></a>
 
 ```typescript
-public readonly loggingInput: ObsBucketLogging[];
+public readonly loggingInput: IResolvable | ObsBucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
 
 ---
 
@@ -46731,10 +46731,10 @@ public readonly storageClassInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -46781,20 +46781,20 @@ public readonly bucket: string;
 ##### `corsRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.corsRule"></a>
 
 ```typescript
-public readonly corsRule: ObsBucketCorsRule[];
+public readonly corsRule: IResolvable | ObsBucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
 
 ---
 
 ##### `eventNotifications`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.eventNotifications"></a>
 
 ```typescript
-public readonly eventNotifications: ObsBucketEventNotifications[];
+public readonly eventNotifications: IResolvable | ObsBucketEventNotifications[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
 
 ---
 
@@ -46811,20 +46811,20 @@ public readonly forceDestroy: boolean | IResolvable;
 ##### `lifecycleRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.lifecycleRule"></a>
 
 ```typescript
-public readonly lifecycleRule: ObsBucketLifecycleRule[];
+public readonly lifecycleRule: IResolvable | ObsBucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
 
 ---
 
 ##### `logging`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.logging"></a>
 
 ```typescript
-public readonly logging: ObsBucketLogging[];
+public readonly logging: IResolvable | ObsBucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
 
 ---
 
@@ -46851,10 +46851,10 @@ public readonly storageClass: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucket.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -48436,10 +48436,10 @@ public readonly securitygroupInput: RdsInstanceV1Securitygroup;
 ##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1.property.tagInput"></a>
 
 ```typescript
-public readonly tagInput: IResolvable | {[ key: string ]: string};
+public readonly tagInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -48536,10 +48536,10 @@ public readonly region: string;
 ##### `tag`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1.property.tag"></a>
 
 ```typescript
-public readonly tag: IResolvable | {[ key: string ]: string};
+public readonly tag: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -48843,10 +48843,10 @@ public readonly nameInput: string;
 ##### `parametersInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.parametersInput"></a>
 
 ```typescript
-public readonly parametersInput: IResolvable | {[ key: string ]: string};
+public readonly parametersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -48893,20 +48893,20 @@ public readonly subnetIdInput: string;
 ##### `tagInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.tagInput"></a>
 
 ```typescript
-public readonly tagInput: IResolvable | {[ key: string ]: string};
+public readonly tagInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -48983,10 +48983,10 @@ public readonly name: string;
 ##### `parameters`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.parameters"></a>
 
 ```typescript
-public readonly parameters: IResolvable | {[ key: string ]: string};
+public readonly parameters: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49033,20 +49033,20 @@ public readonly subnetId: string;
 ##### `tag`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.tag"></a>
 
 ```typescript
-public readonly tag: IResolvable | {[ key: string ]: string};
+public readonly tag: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49218,10 +49218,10 @@ public readonly nameInput: string;
 ##### `valuesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.property.valuesInput"></a>
 
 ```typescript
-public readonly valuesInput: IResolvable | {[ key: string ]: string};
+public readonly valuesInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49248,10 +49248,10 @@ public readonly name: string;
 ##### `values`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.property.values"></a>
 
 ```typescript
-public readonly values: IResolvable | {[ key: string ]: string};
+public readonly values: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49740,10 +49740,10 @@ public readonly nameInput: string;
 ##### `optionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1.property.optionsInput"></a>
 
 ```typescript
-public readonly optionsInput: IResolvable | {[ key: string ]: string};
+public readonly optionsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49820,10 +49820,10 @@ public readonly name: string;
 ##### `options`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1.property.options"></a>
 
 ```typescript
-public readonly options: IResolvable | {[ key: string ]: string};
+public readonly options: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -49999,20 +49999,20 @@ public readonly configIdInput: string;
 ##### `inputValuesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1.property.inputValuesInput"></a>
 
 ```typescript
-public readonly inputValuesInput: IResolvable | {[ key: string ]: string};
+public readonly inputValuesInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `outputValuesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1.property.outputValuesInput"></a>
 
 ```typescript
-public readonly outputValuesInput: IResolvable | {[ key: string ]: string};
+public readonly outputValuesInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50099,20 +50099,20 @@ public readonly configId: string;
 ##### `inputValues`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1.property.inputValues"></a>
 
 ```typescript
-public readonly inputValues: IResolvable | {[ key: string ]: string};
+public readonly inputValues: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `outputValues`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1.property.outputValues"></a>
 
 ```typescript
-public readonly outputValues: IResolvable | {[ key: string ]: string};
+public readonly outputValues: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50376,10 +50376,10 @@ public readonly environmentInput: string;
 ##### `filesInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1.property.filesInput"></a>
 
 ```typescript
-public readonly filesInput: IResolvable | {[ key: string ]: string};
+public readonly filesInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50396,10 +50396,10 @@ public readonly nameInput: string;
 ##### `parametersInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1.property.parametersInput"></a>
 
 ```typescript
-public readonly parametersInput: IResolvable | {[ key: string ]: string};
+public readonly parametersInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50476,10 +50476,10 @@ public readonly environment: string;
 ##### `files`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1.property.files"></a>
 
 ```typescript
-public readonly files: IResolvable | {[ key: string ]: string};
+public readonly files: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50496,10 +50496,10 @@ public readonly name: string;
 ##### `parameters`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1.property.parameters"></a>
 
 ```typescript
-public readonly parameters: IResolvable | {[ key: string ]: string};
+public readonly parameters: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50789,10 +50789,10 @@ public readonly bucketPrefixInput: string;
 ##### `corsRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.corsRuleInput"></a>
 
 ```typescript
-public readonly corsRuleInput: S3BucketCorsRule[];
+public readonly corsRuleInput: IResolvable | S3BucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
 
 ---
 
@@ -50819,20 +50819,20 @@ public readonly hostedZoneIdInput: string;
 ##### `lifecycleRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.lifecycleRuleInput"></a>
 
 ```typescript
-public readonly lifecycleRuleInput: S3BucketLifecycleRule[];
+public readonly lifecycleRuleInput: IResolvable | S3BucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
 
 ---
 
 ##### `loggingInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.loggingInput"></a>
 
 ```typescript
-public readonly loggingInput: S3BucketLogging[];
+public readonly loggingInput: IResolvable | S3BucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
 
 ---
 
@@ -50859,10 +50859,10 @@ public readonly regionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -50939,10 +50939,10 @@ public readonly bucketPrefix: string;
 ##### `corsRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.corsRule"></a>
 
 ```typescript
-public readonly corsRule: S3BucketCorsRule[];
+public readonly corsRule: IResolvable | S3BucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
 
 ---
 
@@ -50969,20 +50969,20 @@ public readonly hostedZoneId: string;
 ##### `lifecycleRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.lifecycleRule"></a>
 
 ```typescript
-public readonly lifecycleRule: S3BucketLifecycleRule[];
+public readonly lifecycleRule: IResolvable | S3BucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
 
 ---
 
 ##### `logging`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.logging"></a>
 
 ```typescript
-public readonly logging: S3BucketLogging[];
+public readonly logging: IResolvable | S3BucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
 
 ---
 
@@ -51009,10 +51009,10 @@ public readonly region: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -51801,10 +51801,10 @@ public readonly subnetIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -51901,10 +51901,10 @@ public readonly subnetId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -52443,10 +52443,10 @@ public readonly isPublicInput: boolean | IResolvable;
 ##### `metadataInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: IResolvable | {[ key: string ]: string};
+public readonly metadataInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -52493,10 +52493,10 @@ public readonly sizeInput: number;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -52573,10 +52573,10 @@ public readonly isPublic: boolean | IResolvable;
 ##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -52623,10 +52623,10 @@ public readonly size: number;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -52691,10 +52691,10 @@ public readonly id: string;
 ##### `accessRuleInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2.property.accessRuleInput"></a>
 
 ```typescript
-public readonly accessRuleInput: SfsShareAccessRulesV2AccessRule[];
+public readonly accessRuleInput: IResolvable | SfsShareAccessRulesV2AccessRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
 
 ---
 
@@ -52711,10 +52711,10 @@ public readonly shareIdInput: string;
 ##### `accessRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2.property.accessRule"></a>
 
 ```typescript
-public readonly accessRule: SfsShareAccessRulesV2AccessRule[];
+public readonly accessRule: IResolvable | SfsShareAccessRulesV2AccessRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
 
 ---
 
@@ -53685,10 +53685,10 @@ public readonly id: string;
 ##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrDomainV2.property.status"></a>
 
 ```typescript
-public readonly status: any;
+public readonly status: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -54663,10 +54663,10 @@ public readonly statusInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: VbsBackupPolicyV2Tags[];
+public readonly tagsInput: IResolvable | VbsBackupPolicyV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
 
 ---
 
@@ -54783,10 +54783,10 @@ public readonly status: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2.property.tags"></a>
 
 ```typescript
-public readonly tags: VbsBackupPolicyV2Tags[];
+public readonly tags: IResolvable | VbsBackupPolicyV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
 
 ---
 
@@ -55267,10 +55267,10 @@ public readonly snapshotIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: VbsBackupV2Tags[];
+public readonly tagsInput: IResolvable | VbsBackupV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
 
 ---
 
@@ -55337,10 +55337,10 @@ public readonly snapshotId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2.property.tags"></a>
 
 ```typescript
-public readonly tags: VbsBackupV2Tags[];
+public readonly tags: IResolvable | VbsBackupV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
 
 ---
 
@@ -55795,10 +55795,10 @@ public readonly regionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -55815,10 +55815,10 @@ public readonly timeoutsInput: VpcEipV1Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -55835,20 +55835,20 @@ public readonly region: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -56094,10 +56094,10 @@ public readonly subnetIdInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -56194,10 +56194,10 @@ public readonly subnetId: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -56393,10 +56393,10 @@ public readonly portIdInput: string;
 ##### `portInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1.property.portInput"></a>
 
 ```typescript
-public readonly portInput: VpcepServiceV1Port[];
+public readonly portInput: IResolvable | VpcepServiceV1Port[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
 
 ---
 
@@ -56423,10 +56423,10 @@ public readonly serviceTypeInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -56503,10 +56503,10 @@ public readonly poolId: string;
 ##### `port`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1.property.port"></a>
 
 ```typescript
-public readonly port: VpcepServiceV1Port[];
+public readonly port: IResolvable | VpcepServiceV1Port[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
 
 ---
 
@@ -56543,10 +56543,10 @@ public readonly serviceType: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -57806,10 +57806,10 @@ public readonly secondaryDnsInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -57936,10 +57936,10 @@ public readonly secondaryDns: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58111,10 +58111,10 @@ public readonly sharedInput: boolean | IResolvable;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58171,10 +58171,10 @@ public readonly shared: boolean | IResolvable;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58380,10 +58380,10 @@ public readonly typeInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58450,10 +58450,10 @@ public readonly type: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58653,10 +58653,10 @@ public readonly ikeVersionInput: string;
 ##### `lifetimeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2.property.lifetimeInput"></a>
 
 ```typescript
-public readonly lifetimeInput: VpnaasIkePolicyV2Lifetime[];
+public readonly lifetimeInput: IResolvable | VpnaasIkePolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
 
 ---
 
@@ -58723,10 +58723,10 @@ public readonly timeoutsInput: VpnaasIkePolicyV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -58773,10 +58773,10 @@ public readonly ikeVersion: string;
 ##### `lifetime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2.property.lifetime"></a>
 
 ```typescript
-public readonly lifetime: VpnaasIkePolicyV2Lifetime[];
+public readonly lifetime: IResolvable | VpnaasIkePolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
 
 ---
 
@@ -58833,10 +58833,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59036,10 +59036,10 @@ public readonly encryptionAlgorithmInput: string;
 ##### `lifetimeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2.property.lifetimeInput"></a>
 
 ```typescript
-public readonly lifetimeInput: VpnaasIpsecPolicyV2Lifetime[];
+public readonly lifetimeInput: IResolvable | VpnaasIpsecPolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
 
 ---
 
@@ -59106,10 +59106,10 @@ public readonly transformProtocolInput: string;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59156,10 +59156,10 @@ public readonly encryptionAlgorithm: string;
 ##### `lifetime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2.property.lifetime"></a>
 
 ```typescript
-public readonly lifetime: VpnaasIpsecPolicyV2Lifetime[];
+public readonly lifetime: IResolvable | VpnaasIpsecPolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
 
 ---
 
@@ -59216,10 +59216,10 @@ public readonly transformProtocol: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59465,10 +59465,10 @@ public readonly timeoutsInput: VpnaasServiceV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59545,10 +59545,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59746,10 +59746,10 @@ public readonly descriptionInput: string;
 ##### `dpdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.dpdInput"></a>
 
 ```typescript
-public readonly dpdInput: VpnaasSiteConnectionV2Dpd[];
+public readonly dpdInput: IResolvable | VpnaasSiteConnectionV2Dpd[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
 
 ---
 
@@ -59886,10 +59886,10 @@ public readonly regionInput: string;
 ##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.tagsInput"></a>
 
 ```typescript
-public readonly tagsInput: IResolvable | {[ key: string ]: string};
+public readonly tagsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59916,10 +59916,10 @@ public readonly timeoutsInput: VpnaasSiteConnectionV2Timeouts;
 ##### `valueSpecsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.valueSpecsInput"></a>
 
 ```typescript
-public readonly valueSpecsInput: IResolvable | {[ key: string ]: string};
+public readonly valueSpecsInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -59956,10 +59956,10 @@ public readonly description: string;
 ##### `dpd`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.dpd"></a>
 
 ```typescript
-public readonly dpd: VpnaasSiteConnectionV2Dpd[];
+public readonly dpd: IResolvable | VpnaasSiteConnectionV2Dpd[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
 
 ---
 
@@ -60096,10 +60096,10 @@ public readonly region: string;
 ##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -60116,10 +60116,10 @@ public readonly tenantId: string;
 ##### `valueSpecs`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -60424,10 +60424,10 @@ public resetTimeouts()
 ##### `default`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCcattackprotectionRuleV1.property.default"></a>
 
 ```typescript
-public readonly default: any;
+public readonly default: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -61317,10 +61317,10 @@ public readonly proxyInput: boolean | IResolvable;
 ##### `serverInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1.property.serverInput"></a>
 
 ```typescript
-public readonly serverInput: WafDomainV1Server[];
+public readonly serverInput: IResolvable | WafDomainV1Server[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
 
 ---
 
@@ -61417,10 +61417,10 @@ public readonly proxy: boolean | IResolvable;
 ##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1.property.server"></a>
 
 ```typescript
-public readonly server: WafDomainV1Server[];
+public readonly server: IResolvable | WafDomainV1Server[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
 
 ---
 
@@ -62006,10 +62006,10 @@ public readonly actionCategoryInput: string;
 ##### `conditionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1.property.conditionsInput"></a>
 
 ```typescript
-public readonly conditionsInput: WafPreciseprotectionRuleV1Conditions[];
+public readonly conditionsInput: IResolvable | WafPreciseprotectionRuleV1Conditions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
 
 ---
 
@@ -62096,10 +62096,10 @@ public readonly actionCategory: string;
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1.property.conditions"></a>
 
 ```typescript
-public readonly conditions: WafPreciseprotectionRuleV1Conditions[];
+public readonly conditions: IResolvable | WafPreciseprotectionRuleV1Conditions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
 
 ---
 
@@ -62506,10 +62506,10 @@ const antiddosV1Config: AntiddosV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AntiddosV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -62700,10 +62700,10 @@ const asConfigurationV1Config: AsConfigurationV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -62800,10 +62800,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `disk`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfig.property.disk"></a>
 
 ```typescript
-public readonly disk: AsConfigurationV1InstanceConfigDisk[];
+public readonly disk: IResolvable | AsConfigurationV1InstanceConfigDisk[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
 
 disk block.
 
@@ -62850,10 +62850,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `metadata`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfig.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#metadata AsConfigurationV1#metadata}.
 
@@ -62862,10 +62862,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `personality`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfig.property.personality"></a>
 
 ```typescript
-public readonly personality: AsConfigurationV1InstanceConfigPersonality[];
+public readonly personality: IResolvable | AsConfigurationV1InstanceConfigPersonality[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
 
 personality block.
 
@@ -63122,10 +63122,10 @@ const asGroupV1Config: AsGroupV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -63162,10 +63162,10 @@ public readonly provider: TerraformProvider;
 ##### `networks`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1Config.property.networks"></a>
 
 ```typescript
-public readonly networks: AsGroupV1Networks[];
+public readonly networks: IResolvable | AsGroupV1Networks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1Networks`](#@cdktf/provider-opentelekomcloud.AsGroupV1Networks)[]
 
 networks block.
 
@@ -63316,10 +63316,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `lbaasListeners`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1Config.property.lbaasListeners"></a>
 
 ```typescript
-public readonly lbaasListeners: AsGroupV1LbaasListeners[];
+public readonly lbaasListeners: IResolvable | AsGroupV1LbaasListeners[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners`](#@cdktf/provider-opentelekomcloud.AsGroupV1LbaasListeners)[]
 
 lbaas_listeners block.
 
@@ -63418,10 +63418,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#tags AsGroupV1#tags}.
 
@@ -63578,10 +63578,10 @@ const asPolicyV1Config: AsPolicyV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -63832,10 +63832,10 @@ const asPolicyV2Config: AsPolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -63956,10 +63956,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `scalingPolicyAction`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Config.property.scalingPolicyAction"></a>
 
 ```typescript
-public readonly scalingPolicyAction: AsPolicyV2ScalingPolicyAction[];
+public readonly scalingPolicyAction: IResolvable | AsPolicyV2ScalingPolicyAction[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction)[]
 
 scaling_policy_action block.
 
@@ -63970,10 +63970,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `scheduledPolicy`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Config.property.scheduledPolicy"></a>
 
 ```typescript
-public readonly scheduledPolicy: AsPolicyV2ScheduledPolicy[];
+public readonly scheduledPolicy: IResolvable | AsPolicyV2ScheduledPolicy[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy`](#@cdktf/provider-opentelekomcloud.AsPolicyV2ScheduledPolicy)[]
 
 scheduled_policy block.
 
@@ -64122,10 +64122,10 @@ const blockstorageVolumeV2Config: BlockstorageVolumeV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64246,10 +64246,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `metadata`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Config.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#metadata BlockstorageVolumeV2#metadata}.
 
@@ -64318,10 +64318,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#tags BlockstorageVolumeV2#tags}.
 
@@ -64400,10 +64400,10 @@ const cbrPolicyV3Config: CbrPolicyV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrPolicyV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64690,10 +64690,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `extraInfo`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Billing.property.extraInfo"></a>
 
 ```typescript
-public readonly extraInfo: IResolvable | {[ key: string ]: string};
+public readonly extraInfo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#extra_info CbrVaultV3#extra_info}.
 
@@ -64794,10 +64794,10 @@ const cbrVaultV3Config: CbrVaultV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -64896,10 +64896,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `bindRules`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Config.property.bindRules"></a>
 
 ```typescript
-public readonly bindRules: CbrVaultV3BindRules[];
+public readonly bindRules: IResolvable | CbrVaultV3BindRules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules`](#@cdktf/provider-opentelekomcloud.CbrVaultV3BindRules)[]
 
 bind_rules block.
 
@@ -64934,10 +64934,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `resource`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Config.property.resource"></a>
 
 ```typescript
-public readonly resource: CbrVaultV3Resource[];
+public readonly resource: IResolvable | CbrVaultV3Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CbrVaultV3Resource`](#@cdktf/provider-opentelekomcloud.CbrVaultV3Resource)[]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#resource CbrVaultV3#resource}.
 
@@ -64946,10 +64946,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#tags CbrVaultV3#tags}.
 
@@ -64992,10 +64992,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `extraInfo`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3Resource.property.extraInfo"></a>
 
 ```typescript
-public readonly extraInfo: IResolvable | {[ key: string ]: string};
+public readonly extraInfo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#extra_info CbrVaultV3#extra_info}.
 
@@ -65074,10 +65074,10 @@ const cceAddonV3Config: CceAddonV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65210,10 +65210,10 @@ const cceAddonV3Values: CceAddonV3Values = { ... }
 ##### `basic`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3Values.property.basic"></a>
 
 ```typescript
-public readonly basic: {[ key: string ]: string} | IResolvable;
+public readonly basic: {[ key: string ]: string};
 ```
 
-- *Type:* {[ key: string ]: `string`} | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_addon_v3#basic CceAddonV3#basic}.
 
@@ -65222,10 +65222,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `custom`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3Values.property.custom"></a>
 
 ```typescript
-public readonly custom: IResolvable | {[ key: string ]: string};
+public readonly custom: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_addon_v3#custom CceAddonV3#custom}.
 
@@ -65290,10 +65290,10 @@ const cceClusterV3Config: CceClusterV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65402,10 +65402,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `annotations`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.annotations"></a>
 
 ```typescript
-public readonly annotations: IResolvable | {[ key: string ]: string};
+public readonly annotations: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#annotations CceClusterV3#annotations}.
 
@@ -65512,10 +65512,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `extendParam`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.extendParam"></a>
 
 ```typescript
-public readonly extendParam: IResolvable | {[ key: string ]: string};
+public readonly extendParam: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#extend_param CceClusterV3#extend_param}.
 
@@ -65560,10 +65560,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `labels`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.labels"></a>
 
 ```typescript
-public readonly labels: IResolvable | {[ key: string ]: string};
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#labels CceClusterV3#labels}.
 
@@ -65666,10 +65666,10 @@ const cceNodePoolV3Config: CceNodePoolV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -65718,10 +65718,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `dataVolumes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.dataVolumes"></a>
 
 ```typescript
-public readonly dataVolumes: CceNodePoolV3DataVolumes[];
+public readonly dataVolumes: IResolvable | CceNodePoolV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3DataVolumes)[]
 
 data_volumes block.
 
@@ -65818,10 +65818,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `k8STags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.k8STags"></a>
 
 ```typescript
-public readonly k8STags: IResolvable | {[ key: string ]: string};
+public readonly k8STags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#k8s_tags CceNodePoolV3#k8s_tags}.
 
@@ -65986,10 +65986,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `taints`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.taints"></a>
 
 ```typescript
-public readonly taints: CceNodePoolV3Taints[];
+public readonly taints: IResolvable | CceNodePoolV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodePoolV3Taints)[]
 
 taints block.
 
@@ -66014,10 +66014,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `userTags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3Config.property.userTags"></a>
 
 ```typescript
-public readonly userTags: IResolvable | {[ key: string ]: string};
+public readonly userTags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#user_tags CceNodePoolV3#user_tags}.
 
@@ -66244,10 +66244,10 @@ const cceNodeV3Config: CceNodeV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -66308,10 +66308,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `dataVolumes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.dataVolumes"></a>
 
 ```typescript
-public readonly dataVolumes: CceNodeV3DataVolumes[];
+public readonly dataVolumes: IResolvable | CceNodeV3DataVolumes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.CceNodeV3DataVolumes)[]
 
 data_volumes block.
 
@@ -66360,10 +66360,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `annotations`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.annotations"></a>
 
 ```typescript
-public readonly annotations: IResolvable | {[ key: string ]: string};
+public readonly annotations: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#annotations CceNodeV3#annotations}.
 
@@ -66492,10 +66492,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `k8STags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.k8STags"></a>
 
 ```typescript
-public readonly k8STags: IResolvable | {[ key: string ]: string};
+public readonly k8STags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#k8s_tags CceNodeV3#k8s_tags}.
 
@@ -66504,10 +66504,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `labels`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.labels"></a>
 
 ```typescript
-public readonly labels: IResolvable | {[ key: string ]: string};
+public readonly labels: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#labels CceNodeV3#labels}.
 
@@ -66660,10 +66660,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#tags CceNodeV3#tags}.
 
@@ -66672,10 +66672,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `taints`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3Config.property.taints"></a>
 
 ```typescript
-public readonly taints: CceNodeV3Taints[];
+public readonly taints: IResolvable | CceNodeV3Taints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CceNodeV3Taints`](#@cdktf/provider-opentelekomcloud.CceNodeV3Taints)[]
 
 taints block.
 
@@ -67010,10 +67010,10 @@ const cesAlarmruleConfig: CesAlarmruleConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -67102,10 +67102,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `alarmActions`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConfig.property.alarmActions"></a>
 
 ```typescript
-public readonly alarmActions: CesAlarmruleAlarmActions[];
+public readonly alarmActions: IResolvable | CesAlarmruleAlarmActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleAlarmActions)[]
 
 alarm_actions block.
 
@@ -67152,10 +67152,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `insufficientdataActions`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConfig.property.insufficientdataActions"></a>
 
 ```typescript
-public readonly insufficientdataActions: CesAlarmruleInsufficientdataActions[];
+public readonly insufficientdataActions: IResolvable | CesAlarmruleInsufficientdataActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleInsufficientdataActions)[]
 
 insufficientdata_actions block.
 
@@ -67166,10 +67166,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `okActions`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConfig.property.okActions"></a>
 
 ```typescript
-public readonly okActions: CesAlarmruleOkActions[];
+public readonly okActions: IResolvable | CesAlarmruleOkActions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleOkActions)[]
 
 ok_actions block.
 
@@ -67238,10 +67238,10 @@ const cesAlarmruleMetric: CesAlarmruleMetric = { ... }
 ##### `dimensions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetric.property.dimensions"></a>
 
 ```typescript
-public readonly dimensions: CesAlarmruleMetricDimensions[];
+public readonly dimensions: IResolvable | CesAlarmruleMetricDimensions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
 
 dimensions block.
 
@@ -67518,10 +67518,10 @@ const computeBmsServerV2Config: ComputeBmsServerV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -67594,10 +67594,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `blockDevice`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Config.property.blockDevice"></a>
 
 ```typescript
-public readonly blockDevice: ComputeBmsServerV2BlockDevice[];
+public readonly blockDevice: IResolvable | ComputeBmsServerV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2BlockDevice)[]
 
 block_device block.
 
@@ -67668,10 +67668,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `metadata`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Config.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#metadata ComputeBmsServerV2#metadata}.
 
@@ -67680,10 +67680,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `network`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Config.property.network"></a>
 
 ```typescript
-public readonly network: ComputeBmsServerV2Network[];
+public readonly network: IResolvable | ComputeBmsServerV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Network)[]
 
 network block.
 
@@ -67730,10 +67730,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#tags ComputeBmsServerV2#tags}.
 
@@ -67906,10 +67906,10 @@ const computeBmsTagsV2Config: ComputeBmsTagsV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsTagsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68040,10 +68040,10 @@ const computeFloatingipAssociateV2Config: ComputeFloatingipAssociateV2Config = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeFloatingipAssociateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68138,10 +68138,10 @@ const computeFloatingipV2Config: ComputeFloatingipV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeFloatingipV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68330,10 +68330,10 @@ const computeInstanceV2Config: ComputeInstanceV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68442,10 +68442,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `blockDevice`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.blockDevice"></a>
 
 ```typescript
-public readonly blockDevice: ComputeInstanceV2BlockDevice[];
+public readonly blockDevice: IResolvable | ComputeInstanceV2BlockDevice[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2BlockDevice)[]
 
 block_device block.
 
@@ -68528,10 +68528,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `metadata`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#metadata ComputeInstanceV2#metadata}.
 
@@ -68540,10 +68540,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `network`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.network"></a>
 
 ```typescript
-public readonly network: ComputeInstanceV2Network[];
+public readonly network: IResolvable | ComputeInstanceV2Network[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2Network)[]
 
 network block.
 
@@ -68578,10 +68578,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `schedulerHints`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.schedulerHints"></a>
 
 ```typescript
-public readonly schedulerHints: ComputeInstanceV2SchedulerHints[];
+public readonly schedulerHints: IResolvable | ComputeInstanceV2SchedulerHints[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2SchedulerHints)[]
 
 scheduler_hints block.
 
@@ -68616,10 +68616,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#tags ComputeInstanceV2#tags}.
 
@@ -68898,10 +68898,10 @@ const computeKeypairV2Config: ComputeKeypairV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -68974,10 +68974,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}.
 
@@ -68996,10 +68996,10 @@ const computeSecgroupV2Config: ComputeSecgroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69072,10 +69072,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `rule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Config.property.rule"></a>
 
 ```typescript
-public readonly rule: ComputeSecgroupV2Rule[];
+public readonly rule: IResolvable | ComputeSecgroupV2Rule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule`](#@cdktf/provider-opentelekomcloud.ComputeSecgroupV2Rule)[]
 
 rule block.
 
@@ -69214,10 +69214,10 @@ const computeServergroupV2Config: ComputeServergroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeServergroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69290,10 +69290,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeServergroupV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}.
 
@@ -69312,10 +69312,10 @@ const computeVolumeAttachV2Config: ComputeVolumeAttachV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeVolumeAttachV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69458,10 +69458,10 @@ const csbsBackupPolicyV1Config: CsbsBackupPolicyV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -69510,10 +69510,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `resource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Config.property.resource"></a>
 
 ```typescript
-public readonly resource: CsbsBackupPolicyV1Resource[];
+public readonly resource: IResolvable | CsbsBackupPolicyV1Resource[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Resource)[]
 
 resource block.
 
@@ -69538,10 +69538,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `common`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Config.property.common"></a>
 
 ```typescript
-public readonly common: IResolvable | {[ key: string ]: string};
+public readonly common: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#common CsbsBackupPolicyV1#common}.
 
@@ -69586,10 +69586,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: CsbsBackupPolicyV1Tags[];
+public readonly tags: IResolvable | CsbsBackupPolicyV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1Tags)[]
 
 tags block.
 
@@ -69904,10 +69904,10 @@ const csbsBackupV1Config: CsbsBackupV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70004,10 +70004,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: CsbsBackupV1Tags[];
+public readonly tags: IResolvable | CsbsBackupV1Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1Tags)[]
 
 tags block.
 
@@ -70110,10 +70110,10 @@ const cssClusterV1Config: CssClusterV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70484,10 +70484,10 @@ const cssSnapshotConfigurationV1Config: CssSnapshotConfigurationV1Config = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70750,10 +70750,10 @@ const ctsTrackerV1Config: CtsTrackerV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CtsTrackerV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -70968,10 +70968,10 @@ const dataOpentelekomcloudAntiddosV1Config: DataOpentelekomcloudAntiddosV1Config
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71066,10 +71066,10 @@ const dataOpentelekomcloudCceClusterV3Config: DataOpentelekomcloudCceClusterV3Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71176,10 +71176,10 @@ const dataOpentelekomcloudCceNodeIdsV3Config: DataOpentelekomcloudCceNodeIdsV3Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeIdsV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71250,10 +71250,10 @@ const dataOpentelekomcloudCceNodeV3Config: DataOpentelekomcloudCceNodeV3Config =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71360,10 +71360,10 @@ const dataOpentelekomcloudComputeAvailabilityZonesV2Config: DataOpentelekomcloud
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71434,10 +71434,10 @@ const dataOpentelekomcloudComputeBmsFlavorsV2Config: DataOpentelekomcloudCompute
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsFlavorsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71568,10 +71568,10 @@ const dataOpentelekomcloudComputeBmsKeypairsV2Config: DataOpentelekomcloudComput
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsKeypairsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71642,10 +71642,10 @@ const dataOpentelekomcloudComputeBmsNicV2Config: DataOpentelekomcloudComputeBmsN
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71740,10 +71740,10 @@ const dataOpentelekomcloudComputeBmsServerV2Config: DataOpentelekomcloudComputeB
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -71898,10 +71898,10 @@ const dataOpentelekomcloudComputeFlavorV2Config: DataOpentelekomcloudComputeFlav
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeFlavorV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72092,10 +72092,10 @@ const dataOpentelekomcloudCsbsBackupPolicyV1Config: DataOpentelekomcloudCsbsBack
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72178,10 +72178,10 @@ const dataOpentelekomcloudCsbsBackupV1Config: DataOpentelekomcloudCsbsBackupV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72348,10 +72348,10 @@ const dataOpentelekomcloudCssFlavorV1Config: DataOpentelekomcloudCssFlavorV1Conf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72506,10 +72506,10 @@ const dataOpentelekomcloudCtsTrackerV1Config: DataOpentelekomcloudCtsTrackerV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCtsTrackerV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72628,10 +72628,10 @@ const dataOpentelekomcloudDcsAzV1Config: DataOpentelekomcloudDcsAzV1Config = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDcsAzV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72714,10 +72714,10 @@ const dataOpentelekomcloudDcsMaintainwindowV1Config: DataOpentelekomcloudDcsMain
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDcsMaintainwindowV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72812,10 +72812,10 @@ const dataOpentelekomcloudDcsProductV1Config: DataOpentelekomcloudDcsProductV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDcsProductV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72874,10 +72874,10 @@ const dataOpentelekomcloudDdsFlavorsV3Config: DataOpentelekomcloudDdsFlavorsV3Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -72984,10 +72984,10 @@ const dataOpentelekomcloudDdsInstanceV3Config: DataOpentelekomcloudDdsInstanceV3
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73094,10 +73094,10 @@ const dataOpentelekomcloudDehHostV1Config: DataOpentelekomcloudDehHostV1Config =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73238,10 +73238,10 @@ const dataOpentelekomcloudDehServerV1Config: DataOpentelekomcloudDehServerV1Conf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73278,10 +73278,10 @@ public readonly provider: TerraformProvider;
 ##### `addresses`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Config.property.addresses"></a>
 
 ```typescript
-public readonly addresses: DataOpentelekomcloudDehServerV1Addresses[];
+public readonly addresses: IResolvable | DataOpentelekomcloudDehServerV1Addresses[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehServerV1Addresses)[]
 
 addresses block.
 
@@ -73338,10 +73338,10 @@ const dataOpentelekomcloudDmsAzV1Config: DataOpentelekomcloudDmsAzV1Config = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDmsAzV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73424,10 +73424,10 @@ const dataOpentelekomcloudDmsMaintainwindowV1Config: DataOpentelekomcloudDmsMain
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73522,10 +73522,10 @@ const dataOpentelekomcloudDmsProductV1Config: DataOpentelekomcloudDmsProductV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDmsProductV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73692,10 +73692,10 @@ const dataOpentelekomcloudDnsZoneV2Config: DataOpentelekomcloudDnsZoneV2Config =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73780,10 +73780,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}.
 
@@ -73826,10 +73826,10 @@ const dataOpentelekomcloudIdentityAuthScopeV3Config: DataOpentelekomcloudIdentit
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73900,10 +73900,10 @@ const dataOpentelekomcloudIdentityCredentialV3Config: DataOpentelekomcloudIdenti
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -73962,10 +73962,10 @@ const dataOpentelekomcloudIdentityGroupV3Config: DataOpentelekomcloudIdentityGro
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityGroupV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74048,10 +74048,10 @@ const dataOpentelekomcloudIdentityProjectV3Config: DataOpentelekomcloudIdentityP
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityProjectV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74158,10 +74158,10 @@ const dataOpentelekomcloudIdentityRoleV3Config: DataOpentelekomcloudIdentityRole
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityRoleV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74244,10 +74244,10 @@ const dataOpentelekomcloudIdentityUserV3Config: DataOpentelekomcloudIdentityUser
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityUserV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74342,10 +74342,10 @@ const dataOpentelekomcloudImagesImageV2Config: DataOpentelekomcloudImagesImageV2
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudImagesImageV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74430,10 +74430,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `properties`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudImagesImageV2Config.property.properties"></a>
 
 ```typescript
-public readonly properties: IResolvable | {[ key: string ]: string};
+public readonly properties: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/images_image_v2#properties DataOpentelekomcloudImagesImageV2#properties}.
 
@@ -74536,10 +74536,10 @@ const dataOpentelekomcloudKmsDataKeyV1Config: DataOpentelekomcloudKmsDataKeyV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudKmsDataKeyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74622,10 +74622,10 @@ const dataOpentelekomcloudKmsKeyV1Config: DataOpentelekomcloudKmsKeyV1Config = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudKmsKeyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74768,10 +74768,10 @@ const dataOpentelekomcloudLbCertificateV3Config: DataOpentelekomcloudLbCertifica
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbCertificateV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74854,10 +74854,10 @@ const dataOpentelekomcloudLbFlavorV3Config: DataOpentelekomcloudLbFlavorV3Config
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbFlavorV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -74916,10 +74916,10 @@ const dataOpentelekomcloudLbListenerV3Config: DataOpentelekomcloudLbListenerV3Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75146,10 +75146,10 @@ const dataOpentelekomcloudLbLoadbalancerV3Config: DataOpentelekomcloudLbLoadbala
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75280,10 +75280,10 @@ const dataOpentelekomcloudNetworkingNetworkV2Config: DataOpentelekomcloudNetwork
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudNetworkingNetworkV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75392,10 +75392,10 @@ const dataOpentelekomcloudNetworkingPortV2Config: DataOpentelekomcloudNetworking
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudNetworkingPortV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75598,10 +75598,10 @@ const dataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config: DataOpentelekomclou
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75672,10 +75672,10 @@ const dataOpentelekomcloudNetworkingSecgroupV2Config: DataOpentelekomcloudNetwor
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudNetworkingSecgroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75770,10 +75770,10 @@ const dataOpentelekomcloudObsBucketConfig: DataOpentelekomcloudObsBucketConfig =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75832,10 +75832,10 @@ const dataOpentelekomcloudObsBucketObjectConfig: DataOpentelekomcloudObsBucketOb
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketObjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -75918,10 +75918,10 @@ const dataOpentelekomcloudRdsFlavorsV1Config: DataOpentelekomcloudRdsFlavorsV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76016,10 +76016,10 @@ const dataOpentelekomcloudRdsFlavorsV3Config: DataOpentelekomcloudRdsFlavorsV3Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76102,10 +76102,10 @@ const dataOpentelekomcloudRdsVersionsV3Config: DataOpentelekomcloudRdsVersionsV3
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsVersionsV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76164,10 +76164,10 @@ const dataOpentelekomcloudRtsSoftwareConfigV1Config: DataOpentelekomcloudRtsSoft
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76250,10 +76250,10 @@ const dataOpentelekomcloudRtsSoftwareDeploymentV1Config: DataOpentelekomcloudRts
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRtsSoftwareDeploymentV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76372,10 +76372,10 @@ const dataOpentelekomcloudRtsStackResourceV1Config: DataOpentelekomcloudRtsStack
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRtsStackResourceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76482,10 +76482,10 @@ const dataOpentelekomcloudRtsStackV1Config: DataOpentelekomcloudRtsStackV1Config
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRtsStackV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76556,10 +76556,10 @@ const dataOpentelekomcloudS3BucketObjectConfig: DataOpentelekomcloudS3BucketObje
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudS3BucketObjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76654,10 +76654,10 @@ const dataOpentelekomcloudSdrsDomainV1Config: DataOpentelekomcloudSdrsDomainV1Co
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudSdrsDomainV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76716,10 +76716,10 @@ const dataOpentelekomcloudSfsFileSystemV2Config: DataOpentelekomcloudSfsFileSyst
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudSfsFileSystemV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76814,10 +76814,10 @@ const dataOpentelekomcloudSfsTurboShareV1Config: DataOpentelekomcloudSfsTurboSha
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudSfsTurboShareV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76876,10 +76876,10 @@ const dataOpentelekomcloudVbsBackupPolicyV2Config: DataOpentelekomcloudVbsBackup
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -76916,10 +76916,10 @@ public readonly provider: TerraformProvider;
 ##### `filterTags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Config.property.filterTags"></a>
 
 ```typescript
-public readonly filterTags: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
+public readonly filterTags: IResolvable | DataOpentelekomcloudVbsBackupPolicyV2FilterTags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2FilterTags)[]
 
 filter_tags block.
 
@@ -77034,10 +77034,10 @@ const dataOpentelekomcloudVbsBackupV2Config: DataOpentelekomcloudVbsBackupV2Conf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77156,10 +77156,10 @@ const dataOpentelekomcloudVpcBandwidthConfig: DataOpentelekomcloudVpcBandwidthCo
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcBandwidthConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77254,10 +77254,10 @@ const dataOpentelekomcloudVpcBandwidthV2Config: DataOpentelekomcloudVpcBandwidth
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcBandwidthV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77328,10 +77328,10 @@ const dataOpentelekomcloudVpcEipV1Config: DataOpentelekomcloudVpcEipV1Config = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcEipV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77452,10 +77452,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcEipV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1#tags DataOpentelekomcloudVpcEipV1#tags}.
 
@@ -77474,10 +77474,10 @@ const dataOpentelekomcloudVpcepPublicServiceV1Config: DataOpentelekomcloudVpcepP
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepPublicServiceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77536,10 +77536,10 @@ const dataOpentelekomcloudVpcepServiceV1Config: DataOpentelekomcloudVpcepService
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77600,10 +77600,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#tags DataOpentelekomcloudVpcepServiceV1#tags}.
 
@@ -77622,10 +77622,10 @@ const dataOpentelekomcloudVpcPeeringConnectionV2Config: DataOpentelekomcloudVpcP
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcPeeringConnectionV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77756,10 +77756,10 @@ const dataOpentelekomcloudVpcRouteIdsV2Config: DataOpentelekomcloudVpcRouteIdsV2
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcRouteIdsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77830,10 +77830,10 @@ const dataOpentelekomcloudVpcRouteV2Config: DataOpentelekomcloudVpcRouteV2Config
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcRouteV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -77964,10 +77964,10 @@ const dataOpentelekomcloudVpcSubnetIdsV1Config: DataOpentelekomcloudVpcSubnetIds
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcSubnetIdsV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78038,10 +78038,10 @@ const dataOpentelekomcloudVpcSubnetV1Config: DataOpentelekomcloudVpcSubnetV1Conf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcSubnetV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78196,10 +78196,10 @@ const dataOpentelekomcloudVpcV1Config: DataOpentelekomcloudVpcV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78318,10 +78318,10 @@ const dataOpentelekomcloudVpnaasServiceV2Config: DataOpentelekomcloudVpnaasServi
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpnaasServiceV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78594,10 +78594,10 @@ const dcsInstanceV1Config: DcsInstanceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -78816,10 +78816,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `configuration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1Config.property.configuration"></a>
 
 ```typescript
-public readonly configuration: DcsInstanceV1Configuration[];
+public readonly configuration: IResolvable | DcsInstanceV1Configuration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration`](#@cdktf/provider-opentelekomcloud.DcsInstanceV1Configuration)[]
 
 configuration block.
 
@@ -79040,10 +79040,10 @@ const ddsInstanceV3Config: DdsInstanceV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79106,10 +79106,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `flavor`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Config.property.flavor"></a>
 
 ```typescript
-public readonly flavor: DdsInstanceV3Flavor[];
+public readonly flavor: IResolvable | DdsInstanceV3Flavor[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Flavor)[]
 
 flavor block.
 
@@ -79426,10 +79426,10 @@ const dehHostV1Config: DehHostV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79514,10 +79514,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `availableInstanceCapacities`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1Config.property.availableInstanceCapacities"></a>
 
 ```typescript
-public readonly availableInstanceCapacities: DehHostV1AvailableInstanceCapacities[];
+public readonly availableInstanceCapacities: IResolvable | DehHostV1AvailableInstanceCapacities[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DehHostV1AvailableInstanceCapacities)[]
 
 available_instance_capacities block.
 
@@ -79718,10 +79718,10 @@ const dmsGroupV1Config: DmsGroupV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DmsGroupV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -79792,10 +79792,10 @@ const dmsInstanceV1Config: DmsInstanceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DmsInstanceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80058,10 +80058,10 @@ const dmsQueueV1Config: DmsQueueV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DmsQueueV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80180,10 +80180,10 @@ const dnsPtrrecordV2Config: DnsPtrrecordV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80256,10 +80256,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}.
 
@@ -80350,10 +80350,10 @@ const dnsRecordsetV2Config: DnsRecordsetV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80462,10 +80462,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#tags DnsRecordsetV2#tags}.
 
@@ -80500,10 +80500,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}.
 
@@ -80568,10 +80568,10 @@ const dnsZoneV2Config: DnsZoneV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80656,10 +80656,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `router`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2Config.property.router"></a>
 
 ```typescript
-public readonly router: DnsZoneV2Router[];
+public readonly router: IResolvable | DnsZoneV2Router[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DnsZoneV2Router`](#@cdktf/provider-opentelekomcloud.DnsZoneV2Router)[]
 
 router block.
 
@@ -80670,10 +80670,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_zone_v2#tags DnsZoneV2#tags}.
 
@@ -80720,10 +80720,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
 
@@ -80822,10 +80822,10 @@ const ecsInstanceV1Config: EcsInstanceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -80910,10 +80910,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `nics`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1Config.property.nics"></a>
 
 ```typescript
-public readonly nics: EcsInstanceV1Nics[];
+public readonly nics: IResolvable | EcsInstanceV1Nics[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1Nics)[]
 
 nics block.
 
@@ -80948,10 +80948,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `dataDisks`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1Config.property.dataDisks"></a>
 
 ```typescript
-public readonly dataDisks: EcsInstanceV1DataDisks[];
+public readonly dataDisks: IResolvable | EcsInstanceV1DataDisks[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks`](#@cdktf/provider-opentelekomcloud.EcsInstanceV1DataDisks)[]
 
 data_disks block.
 
@@ -81046,10 +81046,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#tags EcsInstanceV1#tags}.
 
@@ -81232,10 +81232,10 @@ const evsVolumeV3Config: EvsVolumeV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81416,10 +81416,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/evs_volume_v3#tags EvsVolumeV3#tags}.
 
@@ -81486,10 +81486,10 @@ const fwFirewallGroupV2Config: FwFirewallGroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81636,10 +81636,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}.
 
@@ -81704,10 +81704,10 @@ const fwPolicyV2Config: FwPolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -81842,10 +81842,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_policy_v2#value_specs FwPolicyV2#value_specs}.
 
@@ -81898,10 +81898,10 @@ const fwRuleV2Config: FwRuleV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwRuleV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82082,10 +82082,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.FwRuleV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_rule_v2#value_specs FwRuleV2#value_specs}.
 
@@ -82104,10 +82104,10 @@ const identityAgencyV3Config: IdentityAgencyV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82192,10 +82192,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `projectRole`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3Config.property.projectRole"></a>
 
 ```typescript
-public readonly projectRole: IdentityAgencyV3ProjectRole[];
+public readonly projectRole: IResolvable | IdentityAgencyV3ProjectRole[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole`](#@cdktf/provider-opentelekomcloud.IdentityAgencyV3ProjectRole)[]
 
 project_role block.
 
@@ -82310,10 +82310,10 @@ const identityCredentialV3Config: IdentityCredentialV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityCredentialV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82396,10 +82396,10 @@ const identityGroupMembershipV3Config: IdentityGroupMembershipV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityGroupMembershipV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82470,10 +82470,10 @@ const identityGroupV3Config: IdentityGroupV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityGroupV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82568,10 +82568,10 @@ const identityMappingV3Config: IdentityMappingV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityMappingV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82642,10 +82642,10 @@ const identityProjectV3Config: IdentityProjectV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProjectV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82752,10 +82752,10 @@ const identityProtocolV3Config: IdentityProtocolV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProtocolV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82898,10 +82898,10 @@ const identityProviderV3Config: IdentityProviderV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProviderV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -82984,10 +82984,10 @@ const identityRoleAssignmentV3Config: IdentityRoleAssignmentV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityRoleAssignmentV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83094,10 +83094,10 @@ const identityRoleV3Config: IdentityRoleV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityRoleV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83170,10 +83170,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `statement`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityRoleV3Config.property.statement"></a>
 
 ```typescript
-public readonly statement: IdentityRoleV3Statement[];
+public readonly statement: IResolvable | IdentityRoleV3Statement[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement`](#@cdktf/provider-opentelekomcloud.IdentityRoleV3Statement)[]
 
 statement block.
 
@@ -83228,10 +83228,10 @@ const identityUserGroupMembershipV3Config: IdentityUserGroupMembershipV3Config =
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityUserGroupMembershipV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83302,10 +83302,10 @@ const identityUserV3Config: IdentityUserV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityUserV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83448,10 +83448,10 @@ const imagesImageAccessAcceptV2Config: ImagesImageAccessAcceptV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageAccessAcceptV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83534,10 +83534,10 @@ const imagesImageAccessV2Config: ImagesImageAccessV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageAccessV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83620,10 +83620,10 @@ const imagesImageV2Config: ImagesImageV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83850,10 +83850,10 @@ const imsDataImageV2Config: ImsDataImageV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -83962,10 +83962,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_data_image_v2#tags ImsDataImageV2#tags}.
 
@@ -84044,10 +84044,10 @@ const imsImageV2Config: ImsImageV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84204,10 +84204,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}.
 
@@ -84286,10 +84286,10 @@ const kmsGrantV1Config: KmsGrantV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.KmsGrantV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84396,10 +84396,10 @@ const kmsKeyV1Config: KmsKeyV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.KmsKeyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84496,10 +84496,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.KmsKeyV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#tags KmsKeyV1#tags}.
 
@@ -84518,10 +84518,10 @@ const lbCertificateV2Config: LbCertificateV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84712,10 +84712,10 @@ const lbCertificateV3Config: LbCertificateV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -84846,10 +84846,10 @@ const lbL7PolicyV2Config: LbL7PolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7PolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85076,10 +85076,10 @@ const lbL7RuleV2Config: LbL7RuleV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7RuleV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85282,10 +85282,10 @@ const lbListenerV2Config: LbListenerV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85466,10 +85466,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#tags LbListenerV2#tags}.
 
@@ -85572,10 +85572,10 @@ const lbListenerV3Config: LbListenerV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -85806,10 +85806,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tags LbListenerV3#tags}.
 
@@ -85898,10 +85898,10 @@ const lbLoadbalancerV2Config: LbLoadbalancerV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86010,10 +86010,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}.
 
@@ -86116,10 +86116,10 @@ const lbLoadbalancerV3Config: LbLoadbalancerV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86290,10 +86290,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#tags LbLoadbalancerV3#tags}.
 
@@ -86394,10 +86394,10 @@ const lbMemberV2Config: LbMemberV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbMemberV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86612,10 +86612,10 @@ const lbMemberV3Config: LbMemberV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbMemberV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -86746,10 +86746,10 @@ const lbMonitorV2Config: LbMonitorV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbMonitorV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87024,10 +87024,10 @@ const lbMonitorV3Config: LbMonitorV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbMonitorV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87242,10 +87242,10 @@ const lbPolicyV3Config: LbPolicyV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPolicyV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87378,10 +87378,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `rules`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPolicyV3Config.property.rules"></a>
 
 ```typescript
-public readonly rules: LbPolicyV3Rules[];
+public readonly rules: IResolvable | LbPolicyV3Rules[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPolicyV3Rules`](#@cdktf/provider-opentelekomcloud.LbPolicyV3Rules)[]
 
 rules block.
 
@@ -87448,10 +87448,10 @@ const lbPoolV2Config: LbPoolV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87572,10 +87572,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `persistence`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2Config.property.persistence"></a>
 
 ```typescript
-public readonly persistence: LbPoolV2Persistence[];
+public readonly persistence: IResolvable | LbPoolV2Persistence[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.LbPoolV2Persistence`](#@cdktf/provider-opentelekomcloud.LbPoolV2Persistence)[]
 
 persistence block.
 
@@ -87714,10 +87714,10 @@ const lbPoolV3Config: LbPoolV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -87908,10 +87908,10 @@ const lbRuleV3Config: LbRuleV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbRuleV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88018,10 +88018,10 @@ const lbWhitelistV2Config: LbWhitelistV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbWhitelistV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88176,10 +88176,10 @@ const logtankGroupV2Config: LogtankGroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LogtankGroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88238,10 +88238,10 @@ const logtankTopicV2Config: LogtankTopicV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LogtankTopicV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88582,10 +88582,10 @@ const mrsClusterV1Config: MrsClusterV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -88658,10 +88658,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `componentList`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.componentList"></a>
 
 ```typescript
-public readonly componentList: MrsClusterV1ComponentList[];
+public readonly componentList: IResolvable | MrsClusterV1ComponentList[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList`](#@cdktf/provider-opentelekomcloud.MrsClusterV1ComponentList)[]
 
 component_list block.
 
@@ -88768,10 +88768,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `addJobs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.addJobs"></a>
 
 ```typescript
-public readonly addJobs: MrsClusterV1AddJobs[];
+public readonly addJobs: IResolvable | MrsClusterV1AddJobs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs`](#@cdktf/provider-opentelekomcloud.MrsClusterV1AddJobs)[]
 
 add_jobs block.
 
@@ -88782,10 +88782,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `bootstrapScripts`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.bootstrapScripts"></a>
 
 ```typescript
-public readonly bootstrapScripts: MrsClusterV1BootstrapScripts[];
+public readonly bootstrapScripts: IResolvable | MrsClusterV1BootstrapScripts[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts`](#@cdktf/provider-opentelekomcloud.MrsClusterV1BootstrapScripts)[]
 
 bootstrap_scripts block.
 
@@ -88928,10 +88928,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#tags MrsClusterV1#tags}.
 
@@ -89022,10 +89022,10 @@ const mrsJobV1Config: MrsJobV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsJobV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89276,10 +89276,10 @@ const natDnatRuleV2Config: NatDnatRuleV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatDnatRuleV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89458,10 +89458,10 @@ const natGatewayV2Config: NatGatewayV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89640,10 +89640,10 @@ const natSnatRuleV2Config: NatSnatRuleV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatSnatRuleV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89810,10 +89810,10 @@ const networkingFloatingipAssociateV2Config: NetworkingFloatingipAssociateV2Conf
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipAssociateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -89896,10 +89896,10 @@ const networkingFloatingipV2Config: NetworkingFloatingipV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90010,10 +90010,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}.
 
@@ -90066,10 +90066,10 @@ const networkingNetworkV2Config: NetworkingNetworkV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90142,10 +90142,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `segments`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Config.property.segments"></a>
 
 ```typescript
-public readonly segments: NetworkingNetworkV2Segments[];
+public readonly segments: IResolvable | NetworkingNetworkV2Segments[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments`](#@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Segments)[]
 
 segments block.
 
@@ -90194,10 +90194,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#value_specs NetworkingNetworkV2#value_specs}.
 
@@ -90330,10 +90330,10 @@ const networkingPortV2Config: NetworkingPortV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90394,10 +90394,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `allowedAddressPairs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2Config.property.allowedAddressPairs"></a>
 
 ```typescript
-public readonly allowedAddressPairs: NetworkingPortV2AllowedAddressPairs[];
+public readonly allowedAddressPairs: IResolvable | NetworkingPortV2AllowedAddressPairs[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2AllowedAddressPairs)[]
 
 allowed_address_pairs block.
 
@@ -90432,10 +90432,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `fixedIp`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2Config.property.fixedIp"></a>
 
 ```typescript
-public readonly fixedIp: NetworkingPortV2FixedIp[];
+public readonly fixedIp: IResolvable | NetworkingPortV2FixedIp[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp`](#@cdktf/provider-opentelekomcloud.NetworkingPortV2FixedIp)[]
 
 fixed_ip block.
 
@@ -90544,10 +90544,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#value_specs NetworkingPortV2#value_specs}.
 
@@ -90634,10 +90634,10 @@ const networkingRouterInterfaceV2Config: NetworkingRouterInterfaceV2Config = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterInterfaceV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90780,10 +90780,10 @@ const networkingRouterRouteV2Config: NetworkingRouterRouteV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterRouteV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -90878,10 +90878,10 @@ const networkingRouterV2Config: NetworkingRouterV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91016,10 +91016,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_v2#value_specs NetworkingRouterV2#value_specs}.
 
@@ -91072,10 +91072,10 @@ const networkingSecgroupRuleV2Config: NetworkingSecgroupRuleV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupRuleV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91290,10 +91290,10 @@ const networkingSecgroupV2Config: NetworkingSecgroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91470,10 +91470,10 @@ const networkingSubnetV2Config: NetworkingSubnetV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91534,10 +91534,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `allocationPools`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2Config.property.allocationPools"></a>
 
 ```typescript
-public readonly allocationPools: NetworkingSubnetV2AllocationPools[];
+public readonly allocationPools: IResolvable | NetworkingSubnetV2AllocationPools[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2AllocationPools)[]
 
 allocation_pools block.
 
@@ -91584,10 +91584,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `hostRoutes`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2Config.property.hostRoutes"></a>
 
 ```typescript
-public readonly hostRoutes: NetworkingSubnetV2HostRoutes[];
+public readonly hostRoutes: IResolvable | NetworkingSubnetV2HostRoutes[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes`](#@cdktf/provider-opentelekomcloud.NetworkingSubnetV2HostRoutes)[]
 
 host_routes block.
 
@@ -91672,10 +91672,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2#value_specs NetworkingSubnetV2#value_specs}.
 
@@ -91762,10 +91762,10 @@ const networkingVipAssociateV2Config: NetworkingVipAssociateV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingVipAssociateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91836,10 +91836,10 @@ const networkingVipV2Config: NetworkingVipV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingVipV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91934,10 +91934,10 @@ const obsBucketConfig: ObsBucketConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -91998,10 +91998,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `corsRule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.corsRule"></a>
 
 ```typescript
-public readonly corsRule: ObsBucketCorsRule[];
+public readonly corsRule: IResolvable | ObsBucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.ObsBucketCorsRule)[]
 
 cors_rule block.
 
@@ -92012,10 +92012,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `eventNotifications`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.eventNotifications"></a>
 
 ```typescript
-public readonly eventNotifications: ObsBucketEventNotifications[];
+public readonly eventNotifications: IResolvable | ObsBucketEventNotifications[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications)[]
 
 event_notifications block.
 
@@ -92038,10 +92038,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `lifecycleRule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.lifecycleRule"></a>
 
 ```typescript
-public readonly lifecycleRule: ObsBucketLifecycleRule[];
+public readonly lifecycleRule: IResolvable | ObsBucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule)[]
 
 lifecycle_rule block.
 
@@ -92052,10 +92052,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `logging`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.logging"></a>
 
 ```typescript
-public readonly logging: ObsBucketLogging[];
+public readonly logging: IResolvable | ObsBucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLogging`](#@cdktf/provider-opentelekomcloud.ObsBucketLogging)[]
 
 logging block.
 
@@ -92104,10 +92104,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketConfig.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#tags ObsBucket#tags}.
 
@@ -92246,10 +92246,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `filterRule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketEventNotifications.property.filterRule"></a>
 
 ```typescript
-public readonly filterRule: ObsBucketEventNotificationsFilterRule[];
+public readonly filterRule: IResolvable | ObsBucketEventNotificationsFilterRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotificationsFilterRule`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotificationsFilterRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketEventNotificationsFilterRule`](#@cdktf/provider-opentelekomcloud.ObsBucketEventNotificationsFilterRule)[]
 
 filter_rule block.
 
@@ -92340,10 +92340,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `expiration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule.property.expiration"></a>
 
 ```typescript
-public readonly expiration: ObsBucketLifecycleRuleExpiration[];
+public readonly expiration: IResolvable | ObsBucketLifecycleRuleExpiration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleExpiration`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleExpiration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleExpiration`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleExpiration)[]
 
 expiration block.
 
@@ -92354,10 +92354,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `noncurrentVersionExpiration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule.property.noncurrentVersionExpiration"></a>
 
 ```typescript
-public readonly noncurrentVersionExpiration: ObsBucketLifecycleRuleNoncurrentVersionExpiration[];
+public readonly noncurrentVersionExpiration: IResolvable | ObsBucketLifecycleRuleNoncurrentVersionExpiration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionExpiration`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionExpiration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionExpiration`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionExpiration)[]
 
 noncurrent_version_expiration block.
 
@@ -92368,10 +92368,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `noncurrentVersionTransition`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule.property.noncurrentVersionTransition"></a>
 
 ```typescript
-public readonly noncurrentVersionTransition: ObsBucketLifecycleRuleNoncurrentVersionTransition[];
+public readonly noncurrentVersionTransition: IResolvable | ObsBucketLifecycleRuleNoncurrentVersionTransition[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionTransition`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionTransition)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionTransition`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleNoncurrentVersionTransition)[]
 
 noncurrent_version_transition block.
 
@@ -92394,10 +92394,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `transition`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRule.property.transition"></a>
 
 ```typescript
-public readonly transition: ObsBucketLifecycleRuleTransition[];
+public readonly transition: IResolvable | ObsBucketLifecycleRuleTransition[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleTransition`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleTransition)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleTransition`](#@cdktf/provider-opentelekomcloud.ObsBucketLifecycleRuleTransition)[]
 
 transition block.
 
@@ -92564,10 +92564,10 @@ const obsBucketObjectConfig: ObsBucketObjectConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketObjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -92734,10 +92734,10 @@ const obsBucketPolicyConfig: ObsBucketPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -93306,10 +93306,10 @@ const rdsInstanceV1Config: RdsInstanceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -93514,10 +93514,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1Config.property.tag"></a>
 
 ```typescript
-public readonly tag: IResolvable | {[ key: string ]: string};
+public readonly tag: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#tag RdsInstanceV1#tag}.
 
@@ -93764,10 +93764,10 @@ const rdsInstanceV3Config: RdsInstanceV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -93930,10 +93930,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.parameters"></a>
 
 ```typescript
-public readonly parameters: IResolvable | {[ key: string ]: string};
+public readonly parameters: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#parameters RdsInstanceV3#parameters}.
 
@@ -93966,10 +93966,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.tag"></a>
 
 ```typescript
-public readonly tag: IResolvable | {[ key: string ]: string};
+public readonly tag: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tag RdsInstanceV3#tag}.
 
@@ -93978,10 +93978,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#tags RdsInstanceV3#tags}.
 
@@ -94152,10 +94152,10 @@ const rdsParametergroupV3Config: RdsParametergroupV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -94230,10 +94230,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `values`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3Config.property.values"></a>
 
 ```typescript
-public readonly values: IResolvable | {[ key: string ]: string};
+public readonly values: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3#values RdsParametergroupV3#values}.
 
@@ -94286,10 +94286,10 @@ const rdsReadReplicaV3Config: RdsReadReplicaV3Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -94504,10 +94504,10 @@ const rtsSoftwareConfigV1Config: RtsSoftwareConfigV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -94592,10 +94592,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `options`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1Config.property.options"></a>
 
 ```typescript
-public readonly options: IResolvable | {[ key: string ]: string};
+public readonly options: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#options RtsSoftwareConfigV1#options}.
 
@@ -94686,10 +94686,10 @@ const rtsSoftwareDeploymentV1Config: RtsSoftwareDeploymentV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -94762,10 +94762,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `inputValues`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1Config.property.inputValues"></a>
 
 ```typescript
-public readonly inputValues: IResolvable | {[ key: string ]: string};
+public readonly inputValues: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_deployment_v1#input_values RtsSoftwareDeploymentV1#input_values}.
 
@@ -94774,10 +94774,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `outputValues`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1Config.property.outputValues"></a>
 
 ```typescript
-public readonly outputValues: IResolvable | {[ key: string ]: string};
+public readonly outputValues: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_deployment_v1#output_values RtsSoftwareDeploymentV1#output_values}.
 
@@ -94892,10 +94892,10 @@ const rtsStackV1Config: RtsStackV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -94968,10 +94968,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `files`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1Config.property.files"></a>
 
 ```typescript
-public readonly files: IResolvable | {[ key: string ]: string};
+public readonly files: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#files RtsStackV1#files}.
 
@@ -94980,10 +94980,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `parameters`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1Config.property.parameters"></a>
 
 ```typescript
-public readonly parameters: IResolvable | {[ key: string ]: string};
+public readonly parameters: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_stack_v1#parameters RtsStackV1#parameters}.
 
@@ -95110,10 +95110,10 @@ const s3BucketConfig: S3BucketConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -95186,10 +95186,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `corsRule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.corsRule"></a>
 
 ```typescript
-public readonly corsRule: S3BucketCorsRule[];
+public readonly corsRule: IResolvable | S3BucketCorsRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketCorsRule`](#@cdktf/provider-opentelekomcloud.S3BucketCorsRule)[]
 
 cors_rule block.
 
@@ -95224,10 +95224,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `lifecycleRule`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.lifecycleRule"></a>
 
 ```typescript
-public readonly lifecycleRule: S3BucketLifecycleRule[];
+public readonly lifecycleRule: IResolvable | S3BucketLifecycleRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule)[]
 
 lifecycle_rule block.
 
@@ -95238,10 +95238,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `logging`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.logging"></a>
 
 ```typescript
-public readonly logging: S3BucketLogging[];
+public readonly logging: IResolvable | S3BucketLogging[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLogging`](#@cdktf/provider-opentelekomcloud.S3BucketLogging)[]
 
 logging block.
 
@@ -95276,10 +95276,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#tags S3Bucket#tags}.
 
@@ -95444,10 +95444,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `expiration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule.property.expiration"></a>
 
 ```typescript
-public readonly expiration: S3BucketLifecycleRuleExpiration[];
+public readonly expiration: IResolvable | S3BucketLifecycleRuleExpiration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleExpiration`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleExpiration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleExpiration`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleExpiration)[]
 
 expiration block.
 
@@ -95470,10 +95470,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `noncurrentVersionExpiration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketLifecycleRule.property.noncurrentVersionExpiration"></a>
 
 ```typescript
-public readonly noncurrentVersionExpiration: S3BucketLifecycleRuleNoncurrentVersionExpiration[];
+public readonly noncurrentVersionExpiration: IResolvable | S3BucketLifecycleRuleNoncurrentVersionExpiration[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleNoncurrentVersionExpiration`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleNoncurrentVersionExpiration)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleNoncurrentVersionExpiration`](#@cdktf/provider-opentelekomcloud.S3BucketLifecycleRuleNoncurrentVersionExpiration)[]
 
 noncurrent_version_expiration block.
 
@@ -95608,10 +95608,10 @@ const s3BucketObjectConfig: S3BucketObjectConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketObjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -95826,10 +95826,10 @@ const s3BucketPolicyConfig: S3BucketPolicyConfig = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -95992,10 +95992,10 @@ const sdrsProtectedInstanceV1Config: SdrsProtectedInstanceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -96128,10 +96128,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}.
 
@@ -96198,10 +96198,10 @@ const sdrsProtectiongroupV1Config: SdrsProtectiongroupV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectiongroupV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -96380,10 +96380,10 @@ const sfsFileSystemV2Config: SfsFileSystemV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -96504,10 +96504,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `metadata`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2Config.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
 
@@ -96552,10 +96552,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
 
@@ -96668,10 +96668,10 @@ const sfsShareAccessRulesV2Config: SfsShareAccessRulesV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -96708,10 +96708,10 @@ public readonly provider: TerraformProvider;
 ##### `accessRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2Config.property.accessRule"></a>
 
 ```typescript
-public readonly accessRule: SfsShareAccessRulesV2AccessRule[];
+public readonly accessRule: IResolvable | SfsShareAccessRulesV2AccessRule[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule`](#@cdktf/provider-opentelekomcloud.SfsShareAccessRulesV2AccessRule)[]
 
 access_rule block.
 
@@ -96744,10 +96744,10 @@ const sfsTurboShareV1Config: SfsTurboShareV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SfsTurboShareV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -96962,10 +96962,10 @@ const smnSubscriptionV2Config: SmnSubscriptionV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SmnSubscriptionV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97072,10 +97072,10 @@ const smnTopicAttributeV2Config: SmnTopicAttributeV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SmnTopicAttributeV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97158,10 +97158,10 @@ const smnTopicV2Config: SmnTopicV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SmnTopicV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97244,10 +97244,10 @@ const swrDomainV2Config: SwrDomainV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SwrDomainV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97402,10 +97402,10 @@ const swrOrganizationPermissionsV2Config: SwrOrganizationPermissionsV2Config = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationPermissionsV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97536,10 +97536,10 @@ const swrOrganizationV2Config: SwrOrganizationV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97646,10 +97646,10 @@ const swrRepositoryV2Config: SwrRepositoryV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.SwrRepositoryV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97792,10 +97792,10 @@ const vbsBackupPolicyV2Config: VbsBackupPolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -97940,10 +97940,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: VbsBackupPolicyV2Tags[];
+public readonly tags: IResolvable | VbsBackupPolicyV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2Tags)[]
 
 tags block.
 
@@ -98058,10 +98058,10 @@ const vbsBackupShareV2Config: VbsBackupShareV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupShareV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98192,10 +98192,10 @@ const vbsBackupV2Config: VbsBackupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98292,10 +98292,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: VbsBackupV2Tags[];
+public readonly tags: IResolvable | VbsBackupV2Tags[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VbsBackupV2Tags`](#@cdktf/provider-opentelekomcloud.VbsBackupV2Tags)[]
 
 tags block.
 
@@ -98398,10 +98398,10 @@ const vpcBandwidthAssociateV2Config: VpcBandwidthAssociateV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthAssociateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98496,10 +98496,10 @@ const vpcBandwidthV2Config: VpcBandwidthV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcBandwidthV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98628,10 +98628,10 @@ const vpcEipV1Config: VpcEipV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98708,10 +98708,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#tags VpcEipV1#tags}.
 
@@ -98734,10 +98734,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#value_specs VpcEipV1#value_specs}.
 
@@ -98836,10 +98836,10 @@ const vpcepEndpointV1Config: VpcepEndpointV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -98960,10 +98960,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}.
 
@@ -99030,10 +99030,10 @@ const vpcepServiceV1Config: VpcepServiceV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -99070,10 +99070,10 @@ public readonly provider: TerraformProvider;
 ##### `port`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1Config.property.port"></a>
 
 ```typescript
-public readonly port: VpcepServiceV1Port[];
+public readonly port: IResolvable | VpcepServiceV1Port[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.VpcepServiceV1Port)[]
 
 port block.
 
@@ -99168,10 +99168,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#tags VpcepServiceV1#tags}.
 
@@ -99296,10 +99296,10 @@ const vpcFlowLogV1Config: VpcFlowLogV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcFlowLogV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -99502,10 +99502,10 @@ const vpcPeeringConnectionAccepterV2Config: VpcPeeringConnectionAccepterV2Config
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionAccepterV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -99636,10 +99636,10 @@ const vpcPeeringConnectionV2Config: VpcPeeringConnectionV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -99794,10 +99794,10 @@ const vpcRouteV2Config: VpcRouteV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcRouteV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -99964,10 +99964,10 @@ const vpcSubnetV1Config: VpcSubnetV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -100136,10 +100136,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_subnet_v1#tags VpcSubnetV1#tags}.
 
@@ -100206,10 +100206,10 @@ const vpcV1Config: VpcV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -100294,10 +100294,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_v1#tags VpcV1#tags}.
 
@@ -100364,10 +100364,10 @@ const vpnaasEndpointGroupV2Config: VpnaasEndpointGroupV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -100490,10 +100490,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}.
 
@@ -100558,10 +100558,10 @@ const vpnaasIkePolicyV2Config: VpnaasIkePolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -100646,10 +100646,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `lifetime`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Config.property.lifetime"></a>
 
 ```typescript
-public readonly lifetime: VpnaasIkePolicyV2Lifetime[];
+public readonly lifetime: IResolvable | VpnaasIkePolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Lifetime)[]
 
 lifetime block.
 
@@ -100734,10 +100734,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ike_policy_v2#value_specs VpnaasIkePolicyV2#value_specs}.
 
@@ -100812,10 +100812,10 @@ const vpnaasIpsecPolicyV2Config: VpnaasIpsecPolicyV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -100900,10 +100900,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `lifetime`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Config.property.lifetime"></a>
 
 ```typescript
-public readonly lifetime: VpnaasIpsecPolicyV2Lifetime[];
+public readonly lifetime: IResolvable | VpnaasIpsecPolicyV2Lifetime[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime`](#@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Lifetime)[]
 
 lifetime block.
 
@@ -100988,10 +100988,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#value_specs VpnaasIpsecPolicyV2#value_specs}.
 
@@ -101066,10 +101066,10 @@ const vpnaasServiceV2Config: VpnaasServiceV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -101204,10 +101204,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}.
 
@@ -101272,10 +101272,10 @@ const vpnaasSiteConnectionV2Config: VpnaasSiteConnectionV2Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -101408,10 +101408,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `dpd`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Config.property.dpd"></a>
 
 ```typescript
-public readonly dpd: VpnaasSiteConnectionV2Dpd[];
+public readonly dpd: IResolvable | VpnaasSiteConnectionV2Dpd[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd`](#@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Dpd)[]
 
 dpd block.
 
@@ -101518,10 +101518,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Config.property.tags"></a>
 
 ```typescript
-public readonly tags: IResolvable | {[ key: string ]: string};
+public readonly tags: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#tags VpnaasSiteConnectionV2#tags}.
 
@@ -101556,10 +101556,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `valueSpecs`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2Config.property.valueSpecs"></a>
 
 ```typescript
-public readonly valueSpecs: IResolvable | {[ key: string ]: string};
+public readonly valueSpecs: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#value_specs VpnaasSiteConnectionV2#value_specs}.
 
@@ -101670,10 +101670,10 @@ const wafAlarmNotificationV1Config: WafAlarmNotificationV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafAlarmNotificationV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -101792,10 +101792,10 @@ const wafCcattackprotectionRuleV1Config: WafCcattackprotectionRuleV1Config = { .
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafCcattackprotectionRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -102034,10 +102034,10 @@ const wafCertificateV1Config: WafCertificateV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafCertificateV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -102180,10 +102180,10 @@ const wafDatamaskingRuleV1Config: WafDatamaskingRuleV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafDatamaskingRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -102326,10 +102326,10 @@ const wafDomainV1Config: WafDomainV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -102390,10 +102390,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1Config.property.server"></a>
 
 ```typescript
-public readonly server: WafDomainV1Server[];
+public readonly server: IResolvable | WafDomainV1Server[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafDomainV1Server`](#@cdktf/provider-opentelekomcloud.WafDomainV1Server)[]
 
 server block.
 
@@ -102616,10 +102616,10 @@ const wafFalsealarmmaskingRuleV1Config: WafFalsealarmmaskingRuleV1Config = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafFalsealarmmaskingRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -102772,10 +102772,10 @@ const wafPolicyV1Config: WafPolicyV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -103182,10 +103182,10 @@ const wafPreciseprotectionRuleV1Config: WafPreciseprotectionRuleV1Config = { ...
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -103234,10 +103234,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ##### `conditions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Config.property.conditions"></a>
 
 ```typescript
-public readonly conditions: WafPreciseprotectionRuleV1Conditions[];
+public readonly conditions: IResolvable | WafPreciseprotectionRuleV1Conditions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions`](#@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1Conditions)[]
 
 conditions block.
 
@@ -103378,10 +103378,10 @@ const wafWebtamperprotectionRuleV1Config: WafWebtamperprotectionRuleV1Config = {
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafWebtamperprotectionRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -103512,10 +103512,10 @@ const wafWhiteblackipRuleV1Config: WafWhiteblackipRuleV1Config = { ... }
 ##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.WafWhiteblackipRuleV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number | IResolvable;
+public readonly count: number;
 ```
 
-- *Type:* `number` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* `number`
 
 ---
 
@@ -103642,12 +103642,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ```typescript
 import { AntiddosV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AntiddosV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AntiddosV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AntiddosV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -103770,12 +103770,12 @@ public readonly internalValue: AntiddosV1Timeouts;
 ```typescript
 import { AsConfigurationV1InstanceConfigOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -103881,10 +103881,10 @@ public readonly publicIp: AsConfigurationV1InstanceConfigPublicIpOutputReference
 ##### `diskInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.diskInput"></a>
 
 ```typescript
-public readonly diskInput: AsConfigurationV1InstanceConfigDisk[];
+public readonly diskInput: IResolvable | AsConfigurationV1InstanceConfigDisk[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
 
 ---
 
@@ -103931,20 +103931,20 @@ public readonly keyNameInput: string;
 ##### `metadataInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.metadataInput"></a>
 
 ```typescript
-public readonly metadataInput: IResolvable | {[ key: string ]: string};
+public readonly metadataInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `personalityInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.personalityInput"></a>
 
 ```typescript
-public readonly personalityInput: AsConfigurationV1InstanceConfigPersonality[];
+public readonly personalityInput: IResolvable | AsConfigurationV1InstanceConfigPersonality[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
 
 ---
 
@@ -103981,10 +103981,10 @@ public readonly userDataInput: string;
 ##### `disk`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.disk"></a>
 
 ```typescript
-public readonly disk: AsConfigurationV1InstanceConfigDisk[];
+public readonly disk: IResolvable | AsConfigurationV1InstanceConfigDisk[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigDisk)[]
 
 ---
 
@@ -104031,20 +104031,20 @@ public readonly keyName: string;
 ##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.metadata"></a>
 
 ```typescript
-public readonly metadata: IResolvable | {[ key: string ]: string};
+public readonly metadata: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `personality`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.property.personality"></a>
 
 ```typescript
-public readonly personality: AsConfigurationV1InstanceConfigPersonality[];
+public readonly personality: IResolvable | AsConfigurationV1InstanceConfigPersonality[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality`](#@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPersonality)[]
 
 ---
 
@@ -104086,12 +104086,12 @@ public readonly internalValue: AsConfigurationV1InstanceConfig;
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104195,12 +104195,12 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIpEipBandwid
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpEipOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104297,12 +104297,12 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIpEip;
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104379,12 +104379,12 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIp;
 ```typescript
 import { AsGroupV1SecurityGroupsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsGroupV1SecurityGroupsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsGroupV1SecurityGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1SecurityGroupsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104448,12 +104448,12 @@ public readonly internalValue: AsGroupV1SecurityGroups;
 ```typescript
 import { AsGroupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsGroupV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsGroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104550,12 +104550,12 @@ public readonly internalValue: AsGroupV1Timeouts;
 ```typescript
 import { AsPolicyV1ScalingPolicyActionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV1ScalingPolicyActionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsPolicyV1ScalingPolicyActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScalingPolicyActionOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104652,12 +104652,12 @@ public readonly internalValue: AsPolicyV1ScalingPolicyAction;
 ```typescript
 import { AsPolicyV1ScheduledPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV1ScheduledPolicyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new AsPolicyV1ScheduledPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScheduledPolicyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -104826,12 +104826,12 @@ public readonly internalValue: AsPolicyV1ScheduledPolicy;
 ```typescript
 import { AsPolicyV2Metadata } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV2Metadata(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new AsPolicyV2Metadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -104844,6 +104844,12 @@ new AsPolicyV2Metadata(terraformResource: ITerraformResource, terraformAttribute
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -104889,12 +104895,12 @@ public readonly eipId: string;
 ```typescript
 import { BlockstorageVolumeV2Attachment } from '@cdktf/provider-opentelekomcloud'
 
-new BlockstorageVolumeV2Attachment(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new BlockstorageVolumeV2Attachment(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -104907,6 +104913,12 @@ new BlockstorageVolumeV2Attachment(terraformResource: ITerraformResource, terraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -104952,12 +104964,12 @@ public readonly instanceId: string;
 ```typescript
 import { BlockstorageVolumeV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new BlockstorageVolumeV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new BlockstorageVolumeV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105054,12 +105066,12 @@ public readonly internalValue: BlockstorageVolumeV2Timeouts;
 ```typescript
 import { CbrPolicyV3OperationDefinitionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CbrPolicyV3OperationDefinitionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CbrPolicyV3OperationDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrPolicyV3OperationDefinitionOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105280,12 +105292,12 @@ public readonly internalValue: CbrPolicyV3OperationDefinition;
 ```typescript
 import { CbrVaultV3BillingOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CbrVaultV3BillingOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CbrVaultV3BillingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105366,6 +105378,86 @@ public resetPeriodType()
 
 #### Properties <a name="Properties"></a>
 
+##### `allocated`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.allocated"></a>
+
+```typescript
+public readonly allocated: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `frozenScene`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.frozenScene"></a>
+
+```typescript
+public readonly frozenScene: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `orderId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.orderId"></a>
+
+```typescript
+public readonly orderId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `productId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.productId"></a>
+
+```typescript
+public readonly productId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `specCode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.specCode"></a>
+
+```typescript
+public readonly specCode: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `storageUnit`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.storageUnit"></a>
+
+```typescript
+public readonly storageUnit: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `used`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.used"></a>
+
+```typescript
+public readonly used: number;
+```
+
+- *Type:* `number`
+
+---
+
 ##### `chargingModeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.chargingModeInput"></a>
 
 ```typescript
@@ -105409,10 +105501,10 @@ public readonly consoleUrlInput: string;
 ##### `extraInfoInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.extraInfoInput"></a>
 
 ```typescript
-public readonly extraInfoInput: IResolvable | {[ key: string ]: string};
+public readonly extraInfoInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -105529,10 +105621,10 @@ public readonly consoleUrl: string;
 ##### `extraInfo`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.property.extraInfo"></a>
 
 ```typescript
-public readonly extraInfo: IResolvable | {[ key: string ]: string};
+public readonly extraInfo: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -105624,12 +105716,12 @@ public readonly internalValue: CbrVaultV3Billing;
 ```typescript
 import { CceAddonV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceAddonV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceAddonV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105700,12 +105792,12 @@ public readonly internalValue: CceAddonV3Timeouts;
 ```typescript
 import { CceAddonV3ValuesOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceAddonV3ValuesOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceAddonV3ValuesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105734,40 +105826,40 @@ True if this is a block, false if it's a list.
 ##### `basicInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.property.basicInput"></a>
 
 ```typescript
-public readonly basicInput: IResolvable | {[ key: string ]: string};
+public readonly basicInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `customInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.property.customInput"></a>
 
 ```typescript
-public readonly customInput: IResolvable | {[ key: string ]: string};
+public readonly customInput: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `basic`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.property.basic"></a>
 
 ```typescript
-public readonly basic: IResolvable | {[ key: string ]: string};
+public readonly basic: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
 ##### `custom`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.property.custom"></a>
 
 ```typescript
-public readonly custom: IResolvable | {[ key: string ]: string};
+public readonly custom: {[ key: string ]: string};
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | {[ key: string ]: `string`}
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -105789,12 +105881,12 @@ public readonly internalValue: CceAddonV3Values;
 ```typescript
 import { CceClusterV3AuthenticatingProxyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3AuthenticatingProxyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceClusterV3AuthenticatingProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3AuthenticatingProxyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -105898,12 +105990,12 @@ public readonly internalValue: CceClusterV3AuthenticatingProxy;
 ```typescript
 import { CceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3CertificateClusters(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new CceClusterV3CertificateClusters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -105916,6 +106008,12 @@ new CceClusterV3CertificateClusters(terraformResource: ITerraformResource, terra
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -105961,12 +106059,12 @@ public readonly server: string;
 ```typescript
 import { CceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3CertificateUsers(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new CceClusterV3CertificateUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -105979,6 +106077,12 @@ new CceClusterV3CertificateUsers(terraformResource: ITerraformResource, terrafor
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -106024,12 +106128,12 @@ public readonly name: string;
 ```typescript
 import { CceClusterV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceClusterV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106126,12 +106230,12 @@ public readonly internalValue: CceClusterV3Timeouts;
 ```typescript
 import { CceNodePoolV3RootVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodePoolV3RootVolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceNodePoolV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3RootVolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106242,12 +106346,12 @@ public readonly internalValue: CceNodePoolV3RootVolume;
 ```typescript
 import { CceNodePoolV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodePoolV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceNodePoolV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106396,12 +106500,12 @@ public readonly internalValue: CceNodePoolV3Timeouts;
 ```typescript
 import { CceNodeV3RootVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodeV3RootVolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceNodeV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3RootVolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106512,12 +106616,12 @@ public readonly internalValue: CceNodeV3RootVolume;
 ```typescript
 import { CceNodeV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodeV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CceNodeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106614,12 +106718,12 @@ public readonly internalValue: CceNodeV3Timeouts;
 ```typescript
 import { CesAlarmruleConditionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleConditionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConditionOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106790,12 +106894,12 @@ public readonly internalValue: CesAlarmruleCondition;
 ```typescript
 import { CesAlarmruleMetricOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleMetricOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleMetricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetricOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -106824,10 +106928,10 @@ True if this is a block, false if it's a list.
 ##### `dimensionsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetricOutputReference.property.dimensionsInput"></a>
 
 ```typescript
-public readonly dimensionsInput: CesAlarmruleMetricDimensions[];
+public readonly dimensionsInput: IResolvable | CesAlarmruleMetricDimensions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
 
 ---
 
@@ -106854,10 +106958,10 @@ public readonly namespaceInput: string;
 ##### `dimensions`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetricOutputReference.property.dimensions"></a>
 
 ```typescript
-public readonly dimensions: CesAlarmruleMetricDimensions[];
+public readonly dimensions: IResolvable | CesAlarmruleMetricDimensions[];
 ```
 
-- *Type:* [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions`](#@cdktf/provider-opentelekomcloud.CesAlarmruleMetricDimensions)[]
 
 ---
 
@@ -106899,12 +107003,12 @@ public readonly internalValue: CesAlarmruleMetric;
 ```typescript
 import { CesAlarmruleTimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleTimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleTimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107027,12 +107131,12 @@ public readonly internalValue: CesAlarmruleTimeouts;
 ```typescript
 import { ComputeBmsServerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeBmsServerV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ComputeBmsServerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107155,12 +107259,12 @@ public readonly internalValue: ComputeBmsServerV2Timeouts;
 ```typescript
 import { ComputeBmsTagsV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeBmsTagsV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ComputeBmsTagsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsTagsV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107257,12 +107361,12 @@ public readonly internalValue: ComputeBmsTagsV2Timeouts;
 ```typescript
 import { ComputeInstanceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeInstanceV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ComputeInstanceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107385,12 +107489,12 @@ public readonly internalValue: ComputeInstanceV2Timeouts;
 ```typescript
 import { ComputeInstanceV2VolumeAttached } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeInstanceV2VolumeAttached(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new ComputeInstanceV2VolumeAttached(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -107403,6 +107507,12 @@ new ComputeInstanceV2VolumeAttached(terraformResource: ITerraformResource, terra
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -107428,12 +107538,12 @@ public readonly id: string;
 ```typescript
 import { ComputeSecgroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeSecgroupV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ComputeSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107504,12 +107614,12 @@ public readonly internalValue: ComputeSecgroupV2Timeouts;
 ```typescript
 import { ComputeVolumeAttachV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeVolumeAttachV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ComputeVolumeAttachV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeVolumeAttachV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107606,12 +107716,12 @@ public readonly internalValue: ComputeVolumeAttachV2Timeouts;
 ```typescript
 import { CsbsBackupPolicyV1ScheduledOperationOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -107703,6 +107813,46 @@ public resetYearBackups()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `triggerId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerId"></a>
+
+```typescript
+public readonly triggerId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `triggerName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerName"></a>
+
+```typescript
+public readonly triggerName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `triggerType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerType"></a>
+
+```typescript
+public readonly triggerType: string;
+```
+
+- *Type:* `string`
+
+---
 
 ##### `dayBackupsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.property.dayBackupsInput"></a>
 
@@ -107982,12 +108132,12 @@ public readonly internalValue: CsbsBackupPolicyV1ScheduledOperation;
 ```typescript
 import { CsbsBackupPolicyV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupPolicyV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108084,12 +108234,12 @@ public readonly internalValue: CsbsBackupPolicyV1Timeouts;
 ```typescript
 import { CsbsBackupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108186,12 +108336,12 @@ public readonly internalValue: CsbsBackupV1Timeouts;
 ```typescript
 import { CsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupV1VmMetadata(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new CsbsBackupV1VmMetadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -108204,6 +108354,12 @@ new CsbsBackupV1VmMetadata(terraformResource: ITerraformResource, terraformAttri
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -108299,12 +108455,12 @@ public readonly vcpus: number;
 ```typescript
 import { CsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupV1VolumeBackups(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new CsbsBackupV1VolumeBackups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -108317,6 +108473,12 @@ new CsbsBackupV1VolumeBackups(terraformResource: ITerraformResource, terraformAt
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -108337,10 +108499,10 @@ public readonly averageSpeed: number;
 ##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.bootable"></a>
 
 ```typescript
-public readonly bootable: any;
+public readonly bootable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -108367,10 +108529,10 @@ public readonly imageType: string;
 ##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.incremental"></a>
 
 ```typescript
-public readonly incremental: any;
+public readonly incremental: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -108462,12 +108624,12 @@ public readonly status: string;
 ```typescript
 import { CssClusterV1DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1DatastoreOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1DatastoreOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108564,12 +108726,12 @@ public readonly internalValue: CssClusterV1Datastore;
 ```typescript
 import { CssClusterV1NodeConfigNetworkInfoOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigNetworkInfoOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108673,12 +108835,12 @@ public readonly internalValue: CssClusterV1NodeConfigNetworkInfo;
 ```typescript
 import { CssClusterV1NodeConfigOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108833,12 +108995,12 @@ public readonly internalValue: CssClusterV1NodeConfig;
 ```typescript
 import { CssClusterV1NodeConfigVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigVolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigVolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -108949,12 +109111,12 @@ public readonly internalValue: CssClusterV1NodeConfigVolume;
 ```typescript
 import { CssClusterV1Nodes } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1Nodes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new CssClusterV1Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -108967,6 +109129,12 @@ new CssClusterV1Nodes(terraformResource: ITerraformResource, terraformAttribute:
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109012,12 +109180,12 @@ public readonly type: string;
 ```typescript
 import { CssClusterV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -109114,12 +109282,12 @@ public readonly internalValue: CssClusterV1Timeouts;
 ```typescript
 import { CssSnapshotConfigurationV1ConfigurationOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1ConfigurationOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -109230,12 +109398,12 @@ public readonly internalValue: CssSnapshotConfigurationV1Configuration;
 ```typescript
 import { CssSnapshotConfigurationV1CreationPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1CreationPolicyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -109386,12 +109554,12 @@ public readonly internalValue: CssSnapshotConfigurationV1CreationPolicy;
 ```typescript
 import { CssSnapshotConfigurationV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -109488,12 +109656,12 @@ public readonly internalValue: CssSnapshotConfigurationV1Timeouts;
 ```typescript
 import { CtsTrackerV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CtsTrackerV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new CtsTrackerV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CtsTrackerV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -109590,12 +109758,12 @@ public readonly internalValue: CtsTrackerV1Timeouts;
 ```typescript
 import { DataOpentelekomcloudCceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCceClusterV3CertificateClusters(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCceClusterV3CertificateClusters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109608,6 +109776,12 @@ new DataOpentelekomcloudCceClusterV3CertificateClusters(terraformResource: ITerr
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109653,12 +109827,12 @@ public readonly server: string;
 ```typescript
 import { DataOpentelekomcloudCceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCceClusterV3CertificateUsers(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCceClusterV3CertificateUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109671,6 +109845,12 @@ new DataOpentelekomcloudCceClusterV3CertificateUsers(terraformResource: ITerrafo
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109716,12 +109896,12 @@ public readonly name: string;
 ```typescript
 import { DataOpentelekomcloudCceNodeV3DataVolumes } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCceNodeV3DataVolumes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCceNodeV3DataVolumes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109734,6 +109914,12 @@ new DataOpentelekomcloudCceNodeV3DataVolumes(terraformResource: ITerraformResour
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109789,12 +109975,12 @@ public readonly volumeType: string;
 ```typescript
 import { DataOpentelekomcloudComputeBmsNicV2FixedIps } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudComputeBmsNicV2FixedIps(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudComputeBmsNicV2FixedIps(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109807,6 +109993,12 @@ new DataOpentelekomcloudComputeBmsNicV2FixedIps(terraformResource: ITerraformRes
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109842,12 +110034,12 @@ public readonly subnetId: string;
 ```typescript
 import { DataOpentelekomcloudComputeBmsServerV2Network } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudComputeBmsServerV2Network(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudComputeBmsServerV2Network(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109860,6 +110052,12 @@ new DataOpentelekomcloudComputeBmsServerV2Network(terraformResource: ITerraformR
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109925,12 +110123,12 @@ public readonly version: number;
 ```typescript
 import { DataOpentelekomcloudComputeBmsServerV2SecurityGroups } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109943,6 +110141,12 @@ new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(terraformResource: ITer
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -109968,12 +110172,12 @@ public readonly name: string;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupPolicyV1Resource } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupPolicyV1Resource(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupPolicyV1Resource(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -109986,6 +110190,12 @@ new DataOpentelekomcloudCsbsBackupPolicyV1Resource(terraformResource: ITerraform
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110031,12 +110241,12 @@ public readonly type: string;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110049,6 +110259,12 @@ new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(terraformResource: 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110069,10 +110285,10 @@ public readonly description: string;
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -110119,10 +110335,10 @@ public readonly operationType: string;
 ##### `permanent`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.permanent"></a>
 
 ```typescript
-public readonly permanent: any;
+public readonly permanent: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -110184,12 +110400,12 @@ public readonly triggerType: string;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupPolicyV1Tags } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupPolicyV1Tags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupPolicyV1Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110202,6 +110418,12 @@ new DataOpentelekomcloudCsbsBackupPolicyV1Tags(terraformResource: ITerraformReso
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110237,12 +110459,12 @@ public readonly value: string;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupV1Tags } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupV1Tags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupV1Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110255,6 +110477,12 @@ new DataOpentelekomcloudCsbsBackupV1Tags(terraformResource: ITerraformResource, 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110290,12 +110518,12 @@ public readonly value: string;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupV1VmMetadata(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupV1VmMetadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110308,6 +110536,12 @@ new DataOpentelekomcloudCsbsBackupV1VmMetadata(terraformResource: ITerraformReso
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110403,12 +110637,12 @@ public readonly vcpus: number;
 ```typescript
 import { DataOpentelekomcloudCsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCsbsBackupV1VolumeBackups(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudCsbsBackupV1VolumeBackups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110421,6 +110655,12 @@ new DataOpentelekomcloudCsbsBackupV1VolumeBackups(terraformResource: ITerraformR
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110441,10 +110681,10 @@ public readonly averageSpeed: number;
 ##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.bootable"></a>
 
 ```typescript
-public readonly bootable: any;
+public readonly bootable: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -110471,10 +110711,10 @@ public readonly imageType: string;
 ##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.incremental"></a>
 
 ```typescript
-public readonly incremental: any;
+public readonly incremental: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -110566,12 +110806,12 @@ public readonly status: string;
 ```typescript
 import { DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -110609,6 +110849,26 @@ public resetMinTo()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `from`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.property.from"></a>
+
+```typescript
+public readonly from: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `to`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.property.to"></a>
+
+```typescript
+public readonly to: number;
+```
+
+- *Type:* `number`
+
+---
 
 ##### `minFromInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.property.minFromInput"></a>
 
@@ -110668,12 +110928,12 @@ public readonly internalValue: DataOpentelekomcloudCssFlavorV1DiskRange;
 ```typescript
 import { DataOpentelekomcloudDdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDdsFlavorsV3Flavors(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudDdsFlavorsV3Flavors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110689,6 +110949,12 @@ new DataOpentelekomcloudDdsFlavorsV3Flavors(terraformResource: ITerraformResourc
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -110696,10 +110962,10 @@ new DataOpentelekomcloudDdsFlavorsV3Flavors(terraformResource: ITerraformResourc
 ##### `azStatus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.azStatus"></a>
 
 ```typescript
-public readonly azStatus: any;
+public readonly azStatus: {[ key: string ]: string};
 ```
 
-- *Type:* `any`
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -110751,12 +111017,12 @@ public readonly vcpus: string;
 ```typescript
 import { DataOpentelekomcloudDdsInstanceV3BackupStrategy } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDdsInstanceV3BackupStrategy(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudDdsInstanceV3BackupStrategy(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110769,6 +111035,12 @@ new DataOpentelekomcloudDdsInstanceV3BackupStrategy(terraformResource: ITerrafor
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110804,12 +111076,12 @@ public readonly startTime: string;
 ```typescript
 import { DataOpentelekomcloudDdsInstanceV3Datastore } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDdsInstanceV3Datastore(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudDdsInstanceV3Datastore(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110822,6 +111094,12 @@ new DataOpentelekomcloudDdsInstanceV3Datastore(terraformResource: ITerraformReso
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110867,12 +111145,12 @@ public readonly version: string;
 ```typescript
 import { DataOpentelekomcloudDdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDdsInstanceV3Nodes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudDdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110885,6 +111163,12 @@ new DataOpentelekomcloudDdsInstanceV3Nodes(terraformResource: ITerraformResource
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -110970,12 +111254,12 @@ public readonly type: string;
 ```typescript
 import { DataOpentelekomcloudDehHostV1AvailableInstanceCapacities } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -110988,6 +111272,12 @@ new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(terraformResource: 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111013,12 +111303,12 @@ public readonly flavor: string;
 ```typescript
 import { DataOpentelekomcloudIdentityAuthScopeV3Roles } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudIdentityAuthScopeV3Roles(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudIdentityAuthScopeV3Roles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111031,6 +111321,12 @@ new DataOpentelekomcloudIdentityAuthScopeV3Roles(terraformResource: ITerraformRe
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111066,12 +111362,12 @@ public readonly roleName: string;
 ```typescript
 import { DataOpentelekomcloudIdentityCredentialV3Credentials } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudIdentityCredentialV3Credentials(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudIdentityCredentialV3Credentials(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111084,6 +111380,12 @@ new DataOpentelekomcloudIdentityCredentialV3Credentials(terraformResource: ITerr
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111149,12 +111451,12 @@ public readonly userId: string;
 ```typescript
 import { DataOpentelekomcloudLbListenerV3InsertHeaders } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111170,6 +111472,12 @@ new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: ITerraformR
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -111177,40 +111485,40 @@ new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: ITerraformR
 ##### `forwardedForPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedForPort"></a>
 
 ```typescript
-public readonly forwardedForPort: any;
+public readonly forwardedForPort: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `forwardedHost`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedHost"></a>
 
 ```typescript
-public readonly forwardedHost: any;
+public readonly forwardedHost: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `forwardedPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedPort"></a>
 
 ```typescript
-public readonly forwardedPort: any;
+public readonly forwardedPort: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `forwardElbIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardElbIp"></a>
 
 ```typescript
-public readonly forwardElbIp: any;
+public readonly forwardElbIp: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -111222,12 +111530,12 @@ public readonly forwardElbIp: any;
 ```typescript
 import { DataOpentelekomcloudLbLoadbalancerV3PublicIp } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111240,6 +111548,12 @@ new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: ITerraformRe
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111325,12 +111639,12 @@ public readonly ipType: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketCorsRule } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketCorsRule(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketCorsRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111343,6 +111657,12 @@ new DataOpentelekomcloudObsBucketCorsRule(terraformResource: ITerraformResource,
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111408,12 +111728,12 @@ public readonly maxAgeSeconds: number;
 ```typescript
 import { DataOpentelekomcloudObsBucketEventNotifications } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketEventNotifications(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketEventNotifications(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111426,6 +111746,12 @@ new DataOpentelekomcloudObsBucketEventNotifications(terraformResource: ITerrafor
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111446,10 +111772,10 @@ public readonly events: string[];
 ##### `filterRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.property.filterRule"></a>
 
 ```typescript
-public readonly filterRule: any;
+public readonly filterRule: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -111481,12 +111807,12 @@ public readonly topic: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketEventNotificationsFilterRule } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketEventNotificationsFilterRule(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketEventNotificationsFilterRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111499,6 +111825,12 @@ new DataOpentelekomcloudObsBucketEventNotificationsFilterRule(terraformResource:
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111534,12 +111866,12 @@ public readonly value: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketLifecycleRule } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111555,6 +111887,12 @@ new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: ITerraformReso
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -111562,20 +111900,20 @@ new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: ITerraformReso
 ##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.enabled"></a>
 
 ```typescript
-public readonly enabled: any;
+public readonly enabled: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `expiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.expiration"></a>
 
 ```typescript
-public readonly expiration: any;
+public readonly expiration: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -111592,20 +111930,20 @@ public readonly name: string;
 ##### `noncurrentVersionExpiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.noncurrentVersionExpiration"></a>
 
 ```typescript
-public readonly noncurrentVersionExpiration: any;
+public readonly noncurrentVersionExpiration: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `noncurrentVersionTransition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.noncurrentVersionTransition"></a>
 
 ```typescript
-public readonly noncurrentVersionTransition: any;
+public readonly noncurrentVersionTransition: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -111622,10 +111960,10 @@ public readonly prefix: string;
 ##### `transition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.transition"></a>
 
 ```typescript
-public readonly transition: any;
+public readonly transition: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -111637,12 +111975,12 @@ public readonly transition: any;
 ```typescript
 import { DataOpentelekomcloudObsBucketLifecycleRuleExpiration } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRuleExpiration(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLifecycleRuleExpiration(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111655,6 +111993,12 @@ new DataOpentelekomcloudObsBucketLifecycleRuleExpiration(terraformResource: ITer
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111680,12 +112024,12 @@ public readonly days: number;
 ```typescript
 import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111698,6 +112042,12 @@ new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration(terraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111723,12 +112073,12 @@ public readonly days: number;
 ```typescript
 import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111741,6 +112091,12 @@ new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition(terraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111776,12 +112132,12 @@ public readonly storageClass: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketLifecycleRuleTransition } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRuleTransition(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLifecycleRuleTransition(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111794,6 +112150,12 @@ new DataOpentelekomcloudObsBucketLifecycleRuleTransition(terraformResource: ITer
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111829,12 +112191,12 @@ public readonly storageClass: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketLogging } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLogging(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketLogging(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111847,6 +112209,12 @@ new DataOpentelekomcloudObsBucketLogging(terraformResource: ITerraformResource, 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111882,12 +112250,12 @@ public readonly targetPrefix: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketServerSideEncryption } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketServerSideEncryption(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketServerSideEncryption(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111900,6 +112268,12 @@ new DataOpentelekomcloudObsBucketServerSideEncryption(terraformResource: ITerraf
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -111935,12 +112309,12 @@ public readonly kmsKeyId: string;
 ```typescript
 import { DataOpentelekomcloudObsBucketWebsite } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketWebsite(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudObsBucketWebsite(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -111953,6 +112327,12 @@ new DataOpentelekomcloudObsBucketWebsite(terraformResource: ITerraformResource, 
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -112008,12 +112388,12 @@ public readonly routingRules: string;
 ```typescript
 import { DataOpentelekomcloudRdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudRdsFlavorsV3Flavors(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudRdsFlavorsV3Flavors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -112029,6 +112409,12 @@ new DataOpentelekomcloudRdsFlavorsV3Flavors(terraformResource: ITerraformResourc
 
 ---
 
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+---
+
 
 
 #### Properties <a name="Properties"></a>
@@ -112036,10 +112422,10 @@ new DataOpentelekomcloudRdsFlavorsV3Flavors(terraformResource: ITerraformResourc
 ##### `azStatus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.azStatus"></a>
 
 ```typescript
-public readonly azStatus: any;
+public readonly azStatus: {[ key: string ]: string};
 ```
 
-- *Type:* `any`
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -112091,12 +112477,12 @@ public readonly vcpus: string;
 ```typescript
 import { DataOpentelekomcloudVbsBackupPolicyV2Tags } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudVbsBackupPolicyV2Tags(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudVbsBackupPolicyV2Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -112109,6 +112495,12 @@ new DataOpentelekomcloudVbsBackupPolicyV2Tags(terraformResource: ITerraformResou
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -112144,12 +112536,12 @@ public readonly value: string;
 ```typescript
 import { DataOpentelekomcloudVpcepServiceV1Port } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudVpcepServiceV1Port(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudVpcepServiceV1Port(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -112162,6 +112554,12 @@ new DataOpentelekomcloudVpcepServiceV1Port(terraformResource: ITerraformResource
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -112207,12 +112605,12 @@ public readonly serverPort: number;
 ```typescript
 import { DataOpentelekomcloudVpcV1Routes } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudVpcV1Routes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DataOpentelekomcloudVpcV1Routes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -112225,6 +112623,12 @@ new DataOpentelekomcloudVpcV1Routes(terraformResource: ITerraformResource, terra
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -112260,12 +112664,12 @@ public readonly nexthop: string;
 ```typescript
 import { DcsInstanceV1BackupPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DcsInstanceV1BackupPolicyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DcsInstanceV1BackupPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1BackupPolicyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -112422,12 +112826,12 @@ public readonly internalValue: DcsInstanceV1BackupPolicy;
 ```typescript
 import { DcsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DcsInstanceV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -112550,12 +112954,12 @@ public readonly internalValue: DcsInstanceV1Timeouts;
 ```typescript
 import { DdsInstanceV3BackupStrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3BackupStrategyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3BackupStrategyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -112639,12 +113043,12 @@ public readonly internalValue: DdsInstanceV3BackupStrategy;
 ```typescript
 import { DdsInstanceV3DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3DatastoreOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3DatastoreOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -112755,12 +113159,12 @@ public readonly internalValue: DdsInstanceV3Datastore;
 ```typescript
 import { DdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3Nodes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new DdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -112773,6 +113177,12 @@ new DdsInstanceV3Nodes(terraformResource: ITerraformResource, terraformAttribute
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -112858,12 +113268,12 @@ public readonly type: string;
 ```typescript
 import { DdsInstanceV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -112960,12 +113370,12 @@ public readonly internalValue: DdsInstanceV3Timeouts;
 ```typescript
 import { DehHostV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DehHostV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DehHostV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113062,12 +113472,12 @@ public readonly internalValue: DehHostV1Timeouts;
 ```typescript
 import { DnsPtrrecordV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsPtrrecordV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DnsPtrrecordV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113190,12 +113600,12 @@ public readonly internalValue: DnsPtrrecordV2Timeouts;
 ```typescript
 import { DnsRecordsetV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsRecordsetV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DnsRecordsetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113318,12 +113728,12 @@ public readonly internalValue: DnsRecordsetV2Timeouts;
 ```typescript
 import { DnsZoneV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsZoneV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new DnsZoneV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113446,12 +113856,12 @@ public readonly internalValue: DnsZoneV2Timeouts;
 ```typescript
 import { EcsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new EcsInstanceV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new EcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113574,12 +113984,12 @@ public readonly internalValue: EcsInstanceV1Timeouts;
 ```typescript
 import { EvsVolumeV3Attachment } from '@cdktf/provider-opentelekomcloud'
 
-new EvsVolumeV3Attachment(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new EvsVolumeV3Attachment(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -113592,6 +114002,12 @@ new EvsVolumeV3Attachment(terraformResource: ITerraformResource, terraformAttrib
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -113637,12 +114053,12 @@ public readonly instanceId: string;
 ```typescript
 import { EvsVolumeV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new EvsVolumeV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new EvsVolumeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113739,12 +114155,12 @@ public readonly internalValue: EvsVolumeV3Timeouts;
 ```typescript
 import { FwFirewallGroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new FwFirewallGroupV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new FwFirewallGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113867,12 +114283,12 @@ public readonly internalValue: FwFirewallGroupV2Timeouts;
 ```typescript
 import { FwPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new FwPolicyV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new FwPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -113969,12 +114385,12 @@ public readonly internalValue: FwPolicyV2Timeouts;
 ```typescript
 import { IdentityAgencyV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new IdentityAgencyV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new IdentityAgencyV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114097,12 +114513,12 @@ public readonly internalValue: IdentityAgencyV3Timeouts;
 ```typescript
 import { IdentityProtocolV3MetadataOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new IdentityProtocolV3MetadataOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new IdentityProtocolV3MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProtocolV3MetadataOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114213,12 +114629,12 @@ public readonly internalValue: IdentityProtocolV3Metadata;
 ```typescript
 import { ImagesImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImagesImageV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ImagesImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114289,12 +114705,12 @@ public readonly internalValue: ImagesImageV2Timeouts;
 ```typescript
 import { ImsDataImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImsDataImageV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ImsDataImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114391,12 +114807,12 @@ public readonly internalValue: ImsDataImageV2Timeouts;
 ```typescript
 import { ImsImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImsImageV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ImsImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114493,12 +114909,12 @@ public readonly internalValue: ImsImageV2Timeouts;
 ```typescript
 import { LbCertificateV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbCertificateV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbCertificateV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114621,12 +115037,12 @@ public readonly internalValue: LbCertificateV2Timeouts;
 ```typescript
 import { LbL7PolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbL7PolicyV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbL7PolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7PolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114749,12 +115165,12 @@ public readonly internalValue: LbL7PolicyV2Timeouts;
 ```typescript
 import { LbL7RuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbL7RuleV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbL7RuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7RuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -114877,12 +115293,12 @@ public readonly internalValue: LbL7RuleV2Timeouts;
 ```typescript
 import { LbListenerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbListenerV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbListenerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115005,12 +115421,12 @@ public readonly internalValue: LbListenerV2Timeouts;
 ```typescript
 import { LbListenerV3InsertHeadersOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbListenerV3InsertHeadersOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbListenerV3InsertHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3InsertHeadersOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115159,12 +115575,12 @@ public readonly internalValue: LbListenerV3InsertHeaders;
 ```typescript
 import { LbLoadbalancerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbLoadbalancerV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbLoadbalancerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115287,12 +115703,12 @@ public readonly internalValue: LbLoadbalancerV2Timeouts;
 ```typescript
 import { LbLoadbalancerV3PublicIpOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbLoadbalancerV3PublicIpOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbLoadbalancerV3PublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115324,6 +115740,26 @@ public resetBandwidthChargeMode()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `address`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.property.address"></a>
+
+```typescript
+public readonly address: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
 
 ##### `bandwidthChargeModeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.property.bandwidthChargeModeInput"></a>
 
@@ -115443,12 +115879,12 @@ public readonly internalValue: LbLoadbalancerV3PublicIp;
 ```typescript
 import { LbMemberV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbMemberV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbMemberV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMemberV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115571,12 +116007,12 @@ public readonly internalValue: LbMemberV2Timeouts;
 ```typescript
 import { LbMonitorV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbMonitorV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbMonitorV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMonitorV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115699,12 +116135,12 @@ public readonly internalValue: LbMonitorV2Timeouts;
 ```typescript
 import { LbPoolV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbPoolV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbPoolV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115827,12 +116263,12 @@ public readonly internalValue: LbPoolV2Timeouts;
 ```typescript
 import { LbPoolV3SessionPersistenceOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbPoolV3SessionPersistenceOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbPoolV3SessionPersistenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV3SessionPersistenceOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -115949,12 +116385,12 @@ public readonly internalValue: LbPoolV3SessionPersistence;
 ```typescript
 import { LbWhitelistV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbWhitelistV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new LbWhitelistV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbWhitelistV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116077,12 +116513,12 @@ public readonly internalValue: LbWhitelistV2Timeouts;
 ```typescript
 import { MrsClusterV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new MrsClusterV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new MrsClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116179,12 +116615,12 @@ public readonly internalValue: MrsClusterV1Timeouts;
 ```typescript
 import { MrsJobV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new MrsJobV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new MrsJobV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsJobV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116307,12 +116743,12 @@ public readonly internalValue: MrsJobV1Timeouts;
 ```typescript
 import { NatDnatRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatDnatRuleV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NatDnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatDnatRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116409,12 +116845,12 @@ public readonly internalValue: NatDnatRuleV2Timeouts;
 ```typescript
 import { NatGatewayV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatGatewayV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NatGatewayV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116511,12 +116947,12 @@ public readonly internalValue: NatGatewayV2Timeouts;
 ```typescript
 import { NatSnatRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatSnatRuleV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NatSnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatSnatRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116613,12 +117049,12 @@ public readonly internalValue: NatSnatRuleV2Timeouts;
 ```typescript
 import { NetworkingFloatingipV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingFloatingipV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingFloatingipV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116715,12 +117151,12 @@ public readonly internalValue: NetworkingFloatingipV2Timeouts;
 ```typescript
 import { NetworkingNetworkV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingNetworkV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingNetworkV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116817,12 +117253,12 @@ public readonly internalValue: NetworkingNetworkV2Timeouts;
 ```typescript
 import { NetworkingPortV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingPortV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingPortV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -116919,12 +117355,12 @@ public readonly internalValue: NetworkingPortV2Timeouts;
 ```typescript
 import { NetworkingRouterInterfaceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingRouterInterfaceV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingRouterInterfaceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterInterfaceV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117021,12 +117457,12 @@ public readonly internalValue: NetworkingRouterInterfaceV2Timeouts;
 ```typescript
 import { NetworkingRouterV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingRouterV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingRouterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117123,12 +117559,12 @@ public readonly internalValue: NetworkingRouterV2Timeouts;
 ```typescript
 import { NetworkingSecgroupRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSecgroupRuleV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSecgroupRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117199,12 +117635,12 @@ public readonly internalValue: NetworkingSecgroupRuleV2Timeouts;
 ```typescript
 import { NetworkingSecgroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSecgroupV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117275,12 +117711,12 @@ public readonly internalValue: NetworkingSecgroupV2Timeouts;
 ```typescript
 import { NetworkingSubnetV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSubnetV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSubnetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117377,12 +117813,12 @@ public readonly internalValue: NetworkingSubnetV2Timeouts;
 ```typescript
 import { ObsBucketServerSideEncryptionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ObsBucketServerSideEncryptionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ObsBucketServerSideEncryptionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketServerSideEncryptionOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117466,12 +117902,12 @@ public readonly internalValue: ObsBucketServerSideEncryption;
 ```typescript
 import { ObsBucketWebsiteOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ObsBucketWebsiteOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new ObsBucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketWebsiteOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117620,12 +118056,12 @@ public readonly internalValue: ObsBucketWebsite;
 ```typescript
 import { RdsInstanceV1BackupstrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1BackupstrategyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1BackupstrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1BackupstrategyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117722,12 +118158,12 @@ public readonly internalValue: RdsInstanceV1Backupstrategy;
 ```typescript
 import { RdsInstanceV1DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1DatastoreOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1DatastoreOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117811,12 +118247,12 @@ public readonly internalValue: RdsInstanceV1Datastore;
 ```typescript
 import { RdsInstanceV1HaOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1HaOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1HaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1HaOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117913,12 +118349,12 @@ public readonly internalValue: RdsInstanceV1Ha;
 ```typescript
 import { RdsInstanceV1NicsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1NicsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1NicsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1NicsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -117982,12 +118418,12 @@ public readonly internalValue: RdsInstanceV1Nics;
 ```typescript
 import { RdsInstanceV1SecuritygroupOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1SecuritygroupOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1SecuritygroupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1SecuritygroupOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118051,12 +118487,12 @@ public readonly internalValue: RdsInstanceV1Securitygroup;
 ```typescript
 import { RdsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118153,12 +118589,12 @@ public readonly internalValue: RdsInstanceV1Timeouts;
 ```typescript
 import { RdsInstanceV1VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1VolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1VolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118242,12 +118678,12 @@ public readonly internalValue: RdsInstanceV1Volume;
 ```typescript
 import { RdsInstanceV3BackupStrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3BackupStrategyOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3BackupStrategyOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118338,12 +118774,12 @@ public readonly internalValue: RdsInstanceV3BackupStrategy;
 ```typescript
 import { RdsInstanceV3DbOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3DbOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3DbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118375,6 +118811,16 @@ public resetPort()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `userName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.property.userName"></a>
+
+```typescript
+public readonly userName: string;
+```
+
+- *Type:* `string`
+
+---
 
 ##### `passwordInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.property.passwordInput"></a>
 
@@ -118474,12 +118920,12 @@ public readonly internalValue: RdsInstanceV3Db;
 ```typescript
 import { RdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3Nodes(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new RdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -118492,6 +118938,12 @@ new RdsInstanceV3Nodes(terraformResource: ITerraformResource, terraformAttribute
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -118557,12 +119009,12 @@ public readonly status: string;
 ```typescript
 import { RdsInstanceV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118659,12 +119111,12 @@ public readonly internalValue: RdsInstanceV3Timeouts;
 ```typescript
 import { RdsInstanceV3VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3VolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3VolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118775,12 +119227,12 @@ public readonly internalValue: RdsInstanceV3Volume;
 ```typescript
 import { RdsParametergroupV3ConfigurationParameters } from '@cdktf/provider-opentelekomcloud'
 
-new RdsParametergroupV3ConfigurationParameters(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new RdsParametergroupV3ConfigurationParameters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -118793,6 +119245,12 @@ new RdsParametergroupV3ConfigurationParameters(terraformResource: ITerraformReso
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -118823,20 +119281,20 @@ public readonly name: string;
 ##### `readonly`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.readonly"></a>
 
 ```typescript
-public readonly readonly: any;
+public readonly readonly: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
 ##### `restartRequired`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.restartRequired"></a>
 
 ```typescript
-public readonly restartRequired: any;
+public readonly restartRequired: IResolvable;
 ```
 
-- *Type:* `any`
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -118878,12 +119336,12 @@ public readonly valueRange: string;
 ```typescript
 import { RdsParametergroupV3DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsParametergroupV3DatastoreOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsParametergroupV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3DatastoreOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -118967,12 +119425,12 @@ public readonly internalValue: RdsParametergroupV3Datastore;
 ```typescript
 import { RdsReadReplicaV3Db } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3Db(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+new RdsReadReplicaV3Db(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 ---
 
@@ -118985,6 +119443,12 @@ new RdsReadReplicaV3Db(terraformResource: ITerraformResource, terraformAttribute
 ##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.complexComputedListIndex"></a>
 
 - *Type:* `string`
+
+---
+
+##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
 
 ---
 
@@ -119040,12 +119504,12 @@ public readonly version: string;
 ```typescript
 import { RdsReadReplicaV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsReadReplicaV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119142,12 +119606,12 @@ public readonly internalValue: RdsReadReplicaV3Timeouts;
 ```typescript
 import { RdsReadReplicaV3VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3VolumeOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RdsReadReplicaV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3VolumeOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119179,6 +119643,16 @@ public resetDiskEncryptionId()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3VolumeOutputReference.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* `number`
+
+---
 
 ##### `diskEncryptionIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3VolumeOutputReference.property.diskEncryptionIdInput"></a>
 
@@ -119238,12 +119712,12 @@ public readonly internalValue: RdsReadReplicaV3Volume;
 ```typescript
 import { RtsSoftwareConfigV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsSoftwareConfigV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RtsSoftwareConfigV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119340,12 +119814,12 @@ public readonly internalValue: RtsSoftwareConfigV1Timeouts;
 ```typescript
 import { RtsSoftwareDeploymentV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsSoftwareDeploymentV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RtsSoftwareDeploymentV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119442,12 +119916,12 @@ public readonly internalValue: RtsSoftwareDeploymentV1Timeouts;
 ```typescript
 import { RtsStackV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsStackV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new RtsStackV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119570,12 +120044,12 @@ public readonly internalValue: RtsStackV1Timeouts;
 ```typescript
 import { S3BucketVersioningOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new S3BucketVersioningOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new S3BucketVersioningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketVersioningOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119672,12 +120146,12 @@ public readonly internalValue: S3BucketVersioning;
 ```typescript
 import { S3BucketWebsiteOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new S3BucketWebsiteOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new S3BucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketWebsiteOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119826,12 +120300,12 @@ public readonly internalValue: S3BucketWebsite;
 ```typescript
 import { SdrsProtectedInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SdrsProtectedInstanceV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SdrsProtectedInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -119928,12 +120402,12 @@ public readonly internalValue: SdrsProtectedInstanceV1Timeouts;
 ```typescript
 import { SdrsProtectiongroupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SdrsProtectiongroupV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SdrsProtectiongroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectiongroupV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120030,12 +120504,12 @@ public readonly internalValue: SdrsProtectiongroupV1Timeouts;
 ```typescript
 import { SfsFileSystemV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SfsFileSystemV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SfsFileSystemV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120132,12 +120606,12 @@ public readonly internalValue: SfsFileSystemV2Timeouts;
 ```typescript
 import { SfsTurboShareV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SfsTurboShareV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SfsTurboShareV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsTurboShareV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120234,12 +120708,12 @@ public readonly internalValue: SfsTurboShareV1Timeouts;
 ```typescript
 import { SwrDomainV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrDomainV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SwrDomainV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrDomainV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120310,12 +120784,12 @@ public readonly internalValue: SwrDomainV2Timeouts;
 ```typescript
 import { SwrOrganizationPermissionsV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrOrganizationPermissionsV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SwrOrganizationPermissionsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationPermissionsV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120386,12 +120860,12 @@ public readonly internalValue: SwrOrganizationPermissionsV2Timeouts;
 ```typescript
 import { SwrOrganizationV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrOrganizationV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SwrOrganizationV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120488,12 +120962,12 @@ public readonly internalValue: SwrOrganizationV2Timeouts;
 ```typescript
 import { SwrRepositoryV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrRepositoryV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new SwrRepositoryV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrRepositoryV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120564,12 +121038,12 @@ public readonly internalValue: SwrRepositoryV2Timeouts;
 ```typescript
 import { VbsBackupPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupPolicyV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120666,12 +121140,12 @@ public readonly internalValue: VbsBackupPolicyV2Timeouts;
 ```typescript
 import { VbsBackupShareV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupShareV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupShareV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupShareV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120768,12 +121242,12 @@ public readonly internalValue: VbsBackupShareV2Timeouts;
 ```typescript
 import { VbsBackupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -120870,12 +121344,12 @@ public readonly internalValue: VbsBackupV2Timeouts;
 ```typescript
 import { VpcEipV1BandwidthOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1BandwidthOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1BandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1BandwidthOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121006,12 +121480,12 @@ public readonly internalValue: VpcEipV1Bandwidth;
 ```typescript
 import { VpcEipV1PublicipOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1PublicipOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1PublicipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1PublicipOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121128,12 +121602,12 @@ public readonly internalValue: VpcEipV1Publicip;
 ```typescript
 import { VpcEipV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121230,12 +121704,12 @@ public readonly internalValue: VpcEipV1Timeouts;
 ```typescript
 import { VpcepEndpointV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcepEndpointV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcepEndpointV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121306,12 +121780,12 @@ public readonly internalValue: VpcepEndpointV1Timeouts;
 ```typescript
 import { VpcepServiceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcepServiceV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcepServiceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121382,12 +121856,12 @@ public readonly internalValue: VpcepServiceV1Timeouts;
 ```typescript
 import { VpcFlowLogV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcFlowLogV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcFlowLogV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcFlowLogV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121484,12 +121958,12 @@ public readonly internalValue: VpcFlowLogV1Timeouts;
 ```typescript
 import { VpcPeeringConnectionAccepterV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121586,12 +122060,12 @@ public readonly internalValue: VpcPeeringConnectionAccepterV2Timeouts;
 ```typescript
 import { VpcPeeringConnectionV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcPeeringConnectionV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcPeeringConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121688,12 +122162,12 @@ public readonly internalValue: VpcPeeringConnectionV2Timeouts;
 ```typescript
 import { VpcRouteV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcRouteV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcRouteV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcRouteV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121790,12 +122264,12 @@ public readonly internalValue: VpcRouteV2Timeouts;
 ```typescript
 import { VpcSubnetV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcSubnetV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcSubnetV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121892,12 +122366,12 @@ public readonly internalValue: VpcSubnetV1Timeouts;
 ```typescript
 import { VpcV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpcV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -121994,12 +122468,12 @@ public readonly internalValue: VpcV1Timeouts;
 ```typescript
 import { VpnaasEndpointGroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasEndpointGroupV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasEndpointGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122122,12 +122596,12 @@ public readonly internalValue: VpnaasEndpointGroupV2Timeouts;
 ```typescript
 import { VpnaasIkePolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasIkePolicyV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasIkePolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122198,12 +122672,12 @@ public readonly internalValue: VpnaasIkePolicyV2Timeouts;
 ```typescript
 import { VpnaasIpsecPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasIpsecPolicyV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasIpsecPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122274,12 +122748,12 @@ public readonly internalValue: VpnaasIpsecPolicyV2Timeouts;
 ```typescript
 import { VpnaasServiceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasServiceV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasServiceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122402,12 +122876,12 @@ public readonly internalValue: VpnaasServiceV2Timeouts;
 ```typescript
 import { VpnaasSiteConnectionV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasSiteConnectionV2TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasSiteConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122530,12 +123004,12 @@ public readonly internalValue: VpnaasSiteConnectionV2Timeouts;
 ```typescript
 import { WafCcattackprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafCcattackprotectionRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafCcattackprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCcattackprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122632,12 +123106,12 @@ public readonly internalValue: WafCcattackprotectionRuleV1Timeouts;
 ```typescript
 import { WafCertificateV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafCertificateV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafCertificateV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCertificateV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122734,12 +123208,12 @@ public readonly internalValue: WafCertificateV1Timeouts;
 ```typescript
 import { WafDatamaskingRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafDatamaskingRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafDatamaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDatamaskingRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122836,12 +123310,12 @@ public readonly internalValue: WafDatamaskingRuleV1Timeouts;
 ```typescript
 import { WafDomainV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafDomainV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafDomainV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -122938,12 +123412,12 @@ public readonly internalValue: WafDomainV1Timeouts;
 ```typescript
 import { WafFalsealarmmaskingRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafFalsealarmmaskingRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafFalsealarmmaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123040,12 +123514,12 @@ public readonly internalValue: WafFalsealarmmaskingRuleV1Timeouts;
 ```typescript
 import { WafPolicyV1ActionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1ActionOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1ActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1ActionOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123109,12 +123583,12 @@ public readonly internalValue: WafPolicyV1Action;
 ```typescript
 import { WafPolicyV1OptionsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1OptionsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1OptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1OptionsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123523,12 +123997,12 @@ public readonly internalValue: WafPolicyV1Options;
 ```typescript
 import { WafPolicyV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123625,12 +124099,12 @@ public readonly internalValue: WafPolicyV1Timeouts;
 ```typescript
 import { WafPreciseprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPreciseprotectionRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafPreciseprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123727,12 +124201,12 @@ public readonly internalValue: WafPreciseprotectionRuleV1Timeouts;
 ```typescript
 import { WafWebtamperprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafWebtamperprotectionRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafWebtamperprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWebtamperprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 
@@ -123829,12 +124303,12 @@ public readonly internalValue: WafWebtamperprotectionRuleV1Timeouts;
 ```typescript
 import { WafWhiteblackipRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafWhiteblackipRuleV1TimeoutsOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+new WafWhiteblackipRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWhiteblackipRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
 
-- *Type:* [`cdktf.ITerraformResource`](#cdktf.ITerraformResource)
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
 The parent resource.
 

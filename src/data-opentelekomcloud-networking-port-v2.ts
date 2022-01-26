@@ -115,7 +115,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -135,7 +135,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
 
   // all_security_group_ids - computed: true, optional: false, required: false
   public get allSecurityGroupIds() {
-    return this.getListAttribute('all_security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('all_security_group_ids'));
   }
 
   // device_id - computed: false, optional: true, required: false
@@ -290,7 +290,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
   // security_group_ids - computed: false, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;

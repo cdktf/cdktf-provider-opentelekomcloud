@@ -40,7 +40,7 @@ export interface WafPreciseprotectionRuleV1Config extends cdktf.TerraformMetaArg
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_preciseprotection_rule_v1#conditions WafPreciseprotectionRuleV1#conditions}
   */
-  readonly conditions: WafPreciseprotectionRuleV1Conditions[];
+  readonly conditions: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -67,8 +67,8 @@ export interface WafPreciseprotectionRuleV1Conditions {
   readonly logic: string;
 }
 
-export function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPreciseprotectionRuleV1Conditions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPreciseprotectionRuleV1Conditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -91,8 +91,8 @@ export interface WafPreciseprotectionRuleV1Timeouts {
   readonly delete?: string;
 }
 
-export function wafPreciseprotectionRuleV1TimeoutsToTerraform(struct?: WafPreciseprotectionRuleV1TimeoutsOutputReference | WafPreciseprotectionRuleV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafPreciseprotectionRuleV1TimeoutsToTerraform(struct?: WafPreciseprotectionRuleV1TimeoutsOutputReference | WafPreciseprotectionRuleV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -110,7 +110,7 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -316,7 +316,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   // time - computed: false, optional: true, required: false
   private _time?: boolean | cdktf.IResolvable; 
   public get time() {
-    return this.getBooleanAttribute('time') as any;
+    return this.getBooleanAttribute('time');
   }
   public set time(value: boolean | cdktf.IResolvable) {
     this._time = value;
@@ -330,12 +330,12 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions?: WafPreciseprotectionRuleV1Conditions[]; 
+  private _conditions?: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable; 
   public get conditions() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('conditions') as any;
+    return this.interpolationForAttribute('conditions');
   }
-  public set conditions(value: WafPreciseprotectionRuleV1Conditions[]) {
+  public set conditions(value: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable) {
     this._conditions = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -344,7 +344,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new WafPreciseprotectionRuleV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafPreciseprotectionRuleV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

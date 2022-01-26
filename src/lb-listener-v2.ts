@@ -58,7 +58,7 @@ export interface LbListenerV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#tags LbListenerV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#tenant_id LbListenerV2#tenant_id}
   */
@@ -89,8 +89,8 @@ export interface LbListenerV2Timeouts {
   readonly update?: string;
 }
 
-export function lbListenerV2TimeoutsToTerraform(struct?: LbListenerV2TimeoutsOutputReference | LbListenerV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lbListenerV2TimeoutsToTerraform(struct?: LbListenerV2TimeoutsOutputReference | LbListenerV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -109,7 +109,7 @@ export class LbListenerV2TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -252,7 +252,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -332,7 +332,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   // http2_enable - computed: false, optional: true, required: false
   private _http2Enable?: boolean | cdktf.IResolvable; 
   public get http2Enable() {
-    return this.getBooleanAttribute('http2_enable') as any;
+    return this.getBooleanAttribute('http2_enable');
   }
   public set http2Enable(value: boolean | cdktf.IResolvable) {
     this._http2Enable = value;
@@ -424,7 +424,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   // sni_container_refs - computed: false, optional: true, required: false
   private _sniContainerRefs?: string[]; 
   public get sniContainerRefs() {
-    return this.getListAttribute('sni_container_refs');
+    return cdktf.Fn.tolist(this.getListAttribute('sni_container_refs'));
   }
   public set sniContainerRefs(value: string[]) {
     this._sniContainerRefs = value;
@@ -438,12 +438,11 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -487,7 +486,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LbListenerV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LbListenerV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -520,7 +519,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
       region: cdktf.stringToTerraform(this._region),
       sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform)(this._sniContainerRefs),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
       timeouts: lbListenerV2TimeoutsToTerraform(this._timeouts.internalValue),

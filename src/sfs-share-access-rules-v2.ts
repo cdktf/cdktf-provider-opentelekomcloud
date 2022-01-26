@@ -16,7 +16,7 @@ export interface SfsShareAccessRulesV2Config extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#access_rule SfsShareAccessRulesV2#access_rule}
   */
-  readonly accessRule: SfsShareAccessRulesV2AccessRule[];
+  readonly accessRule: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable;
 }
 export interface SfsShareAccessRulesV2AccessRule {
   /**
@@ -33,8 +33,8 @@ export interface SfsShareAccessRulesV2AccessRule {
   readonly accessType?: string;
 }
 
-export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAccessRulesV2AccessRule): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAccessRulesV2AccessRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,12 +105,12 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   }
 
   // access_rule - computed: false, optional: false, required: true
-  private _accessRule?: SfsShareAccessRulesV2AccessRule[]; 
+  private _accessRule?: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable; 
   public get accessRule() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('access_rule') as any;
+    return this.interpolationForAttribute('access_rule');
   }
-  public set accessRule(value: SfsShareAccessRulesV2AccessRule[]) {
+  public set accessRule(value: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable) {
     this._accessRule = value;
   }
   // Temporarily expose input value. Use with caution.

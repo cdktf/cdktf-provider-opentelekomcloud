@@ -138,7 +138,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -207,7 +207,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   // send_welcome_email - computed: false, optional: true, required: false
   private _sendWelcomeEmail?: boolean | cdktf.IResolvable; 
   public get sendWelcomeEmail() {
-    return this.getBooleanAttribute('send_welcome_email') as any;
+    return this.getBooleanAttribute('send_welcome_email');
   }
   public set sendWelcomeEmail(value: boolean | cdktf.IResolvable) {
     this._sendWelcomeEmail = value;

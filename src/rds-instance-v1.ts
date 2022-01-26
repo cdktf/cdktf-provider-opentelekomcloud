@@ -34,7 +34,7 @@ export interface RdsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#tag RdsInstanceV1#tag}
   */
-  readonly tag?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tag?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v1#vpc RdsInstanceV1#vpc}
   */
@@ -94,7 +94,7 @@ export interface RdsInstanceV1Backupstrategy {
 }
 
 export function rdsInstanceV1BackupstrategyToTerraform(struct?: RdsInstanceV1BackupstrategyOutputReference | RdsInstanceV1Backupstrategy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -112,7 +112,7 @@ export class RdsInstanceV1BackupstrategyOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -187,7 +187,7 @@ export interface RdsInstanceV1Datastore {
 }
 
 export function rdsInstanceV1DatastoreToTerraform(struct?: RdsInstanceV1DatastoreOutputReference | RdsInstanceV1Datastore): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -205,7 +205,7 @@ export class RdsInstanceV1DatastoreOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -274,7 +274,7 @@ export interface RdsInstanceV1Ha {
 }
 
 export function rdsInstanceV1HaToTerraform(struct?: RdsInstanceV1HaOutputReference | RdsInstanceV1Ha): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -292,7 +292,7 @@ export class RdsInstanceV1HaOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -326,7 +326,7 @@ export class RdsInstanceV1HaOutputReference extends cdktf.ComplexObject {
   // enable - computed: false, optional: true, required: false
   private _enable?: boolean | cdktf.IResolvable; 
   public get enable() {
-    return this.getBooleanAttribute('enable') as any;
+    return this.getBooleanAttribute('enable');
   }
   public set enable(value: boolean | cdktf.IResolvable) {
     this._enable = value;
@@ -363,7 +363,7 @@ export interface RdsInstanceV1Nics {
 }
 
 export function rdsInstanceV1NicsToTerraform(struct?: RdsInstanceV1NicsOutputReference | RdsInstanceV1Nics): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -380,7 +380,7 @@ export class RdsInstanceV1NicsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -426,7 +426,7 @@ export interface RdsInstanceV1Securitygroup {
 }
 
 export function rdsInstanceV1SecuritygroupToTerraform(struct?: RdsInstanceV1SecuritygroupOutputReference | RdsInstanceV1Securitygroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -443,7 +443,7 @@ export class RdsInstanceV1SecuritygroupOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -492,8 +492,8 @@ export interface RdsInstanceV1Timeouts {
   readonly delete?: string;
 }
 
-export function rdsInstanceV1TimeoutsToTerraform(struct?: RdsInstanceV1TimeoutsOutputReference | RdsInstanceV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rdsInstanceV1TimeoutsToTerraform(struct?: RdsInstanceV1TimeoutsOutputReference | RdsInstanceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -511,7 +511,7 @@ export class RdsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -586,7 +586,7 @@ export interface RdsInstanceV1Volume {
 }
 
 export function rdsInstanceV1VolumeToTerraform(struct?: RdsInstanceV1VolumeOutputReference | RdsInstanceV1Volume): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -604,7 +604,7 @@ export class RdsInstanceV1VolumeOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -823,12 +823,11 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // tag - computed: false, optional: true, required: false
-  private _tag?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tag?: { [key: string]: string }; 
   public get tag() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tag') as any;
+    return this.getStringMapAttribute('tag');
   }
-  public set tag(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tag(value: { [key: string]: string }) {
     this._tag = value;
   }
   public resetTag() {
@@ -863,7 +862,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // backupstrategy - computed: false, optional: true, required: false
-  private _backupstrategy = new RdsInstanceV1BackupstrategyOutputReference(this as any, "backupstrategy", true);
+  private _backupstrategy = new RdsInstanceV1BackupstrategyOutputReference(this, "backupstrategy", true);
   public get backupstrategy() {
     return this._backupstrategy;
   }
@@ -879,7 +878,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore = new RdsInstanceV1DatastoreOutputReference(this as any, "datastore", true);
+  private _datastore = new RdsInstanceV1DatastoreOutputReference(this, "datastore", true);
   public get datastore() {
     return this._datastore;
   }
@@ -892,7 +891,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // ha - computed: false, optional: true, required: false
-  private _ha = new RdsInstanceV1HaOutputReference(this as any, "ha", true);
+  private _ha = new RdsInstanceV1HaOutputReference(this, "ha", true);
   public get ha() {
     return this._ha;
   }
@@ -908,7 +907,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // nics - computed: false, optional: false, required: true
-  private _nics = new RdsInstanceV1NicsOutputReference(this as any, "nics", true);
+  private _nics = new RdsInstanceV1NicsOutputReference(this, "nics", true);
   public get nics() {
     return this._nics;
   }
@@ -921,7 +920,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // securitygroup - computed: false, optional: false, required: true
-  private _securitygroup = new RdsInstanceV1SecuritygroupOutputReference(this as any, "securitygroup", true);
+  private _securitygroup = new RdsInstanceV1SecuritygroupOutputReference(this, "securitygroup", true);
   public get securitygroup() {
     return this._securitygroup;
   }
@@ -934,7 +933,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsInstanceV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RdsInstanceV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -950,7 +949,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new RdsInstanceV1VolumeOutputReference(this as any, "volume", true);
+  private _volume = new RdsInstanceV1VolumeOutputReference(this, "volume", true);
   public get volume() {
     return this._volume;
   }
@@ -974,7 +973,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
       flavorref: cdktf.stringToTerraform(this._flavorref),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      tag: cdktf.hashMapper(cdktf.anyToTerraform)(this._tag),
+      tag: cdktf.hashMapper(cdktf.stringToTerraform)(this._tag),
       vpc: cdktf.stringToTerraform(this._vpc),
       backupstrategy: rdsInstanceV1BackupstrategyToTerraform(this._backupstrategy.internalValue),
       datastore: rdsInstanceV1DatastoreToTerraform(this._datastore.internalValue),

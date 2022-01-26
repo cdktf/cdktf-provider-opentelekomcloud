@@ -41,8 +41,8 @@ export interface AsConfigurationV1InstanceConfigDisk {
   readonly volumeType: string;
 }
 
-export function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfigurationV1InstanceConfigDisk): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfigurationV1InstanceConfigDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -65,8 +65,8 @@ export interface AsConfigurationV1InstanceConfigPersonality {
   readonly path: string;
 }
 
-export function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: AsConfigurationV1InstanceConfigPersonality): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: AsConfigurationV1InstanceConfigPersonality | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export interface AsConfigurationV1InstanceConfigPublicIpEipBandwidth {
 }
 
 export function asConfigurationV1InstanceConfigPublicIpEipBandwidthToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference | AsConfigurationV1InstanceConfigPublicIpEipBandwidth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -111,7 +111,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -201,7 +201,7 @@ export interface AsConfigurationV1InstanceConfigPublicIpEip {
 }
 
 export function asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipOutputReference | AsConfigurationV1InstanceConfigPublicIpEip): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -219,7 +219,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -264,7 +264,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this as any, "bandwidth", true);
+  private _bandwidth = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this, "bandwidth", true);
   public get bandwidth() {
     return this._bandwidth;
   }
@@ -286,7 +286,7 @@ export interface AsConfigurationV1InstanceConfigPublicIp {
 }
 
 export function asConfigurationV1InstanceConfigPublicIpToTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpOutputReference | AsConfigurationV1InstanceConfigPublicIp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -303,7 +303,7 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -329,7 +329,7 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   }
 
   // eip - computed: false, optional: false, required: true
-  private _eip = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this as any, "eip", true);
+  private _eip = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this, "eip", true);
   public get eip() {
     return this._eip;
   }
@@ -361,7 +361,7 @@ export interface AsConfigurationV1InstanceConfig {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#metadata AsConfigurationV1#metadata}
   */
-  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
+  readonly metadata?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#security_groups AsConfigurationV1#security_groups}
   */
@@ -375,13 +375,13 @@ export interface AsConfigurationV1InstanceConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#disk AsConfigurationV1#disk}
   */
-  readonly disk?: AsConfigurationV1InstanceConfigDisk[];
+  readonly disk?: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable;
   /**
   * personality block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#personality AsConfigurationV1#personality}
   */
-  readonly personality?: AsConfigurationV1InstanceConfigPersonality[];
+  readonly personality?: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable;
   /**
   * public_ip block
   * 
@@ -391,7 +391,7 @@ export interface AsConfigurationV1InstanceConfig {
 }
 
 export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurationV1InstanceConfigOutputReference | AsConfigurationV1InstanceConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -400,7 +400,7 @@ export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurat
     image: cdktf.stringToTerraform(struct!.image),
     instance_id: cdktf.stringToTerraform(struct!.instanceId),
     key_name: cdktf.stringToTerraform(struct!.keyName),
-    metadata: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.metadata),
+    metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
     security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
     user_data: cdktf.stringToTerraform(struct!.userData),
     disk: cdktf.listMapper(asConfigurationV1InstanceConfigDiskToTerraform)(struct!.disk),
@@ -417,7 +417,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -558,12 +558,11 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
+  private _metadata?: { [key: string]: string }; 
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata') as any;
+    return this.getStringMapAttribute('metadata');
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set metadata(value: { [key: string]: string }) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -577,7 +576,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   // security_groups - computed: false, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -607,12 +606,12 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // disk - computed: false, optional: true, required: false
-  private _disk?: AsConfigurationV1InstanceConfigDisk[]; 
+  private _disk?: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable; 
   public get disk() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('disk') as any;
+    return this.interpolationForAttribute('disk');
   }
-  public set disk(value: AsConfigurationV1InstanceConfigDisk[]) {
+  public set disk(value: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable) {
     this._disk = value;
   }
   public resetDisk() {
@@ -624,12 +623,12 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // personality - computed: false, optional: true, required: false
-  private _personality?: AsConfigurationV1InstanceConfigPersonality[]; 
+  private _personality?: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable; 
   public get personality() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('personality') as any;
+    return this.interpolationForAttribute('personality');
   }
-  public set personality(value: AsConfigurationV1InstanceConfigPersonality[]) {
+  public set personality(value: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable) {
     this._personality = value;
   }
   public resetPersonality() {
@@ -641,7 +640,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this as any, "public_ip", true);
+  private _publicIp = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this, "public_ip", true);
   public get publicIp() {
     return this._publicIp;
   }
@@ -733,7 +732,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // instance_config - computed: false, optional: false, required: true
-  private _instanceConfig = new AsConfigurationV1InstanceConfigOutputReference(this as any, "instance_config", true);
+  private _instanceConfig = new AsConfigurationV1InstanceConfigOutputReference(this, "instance_config", true);
   public get instanceConfig() {
     return this._instanceConfig;
   }

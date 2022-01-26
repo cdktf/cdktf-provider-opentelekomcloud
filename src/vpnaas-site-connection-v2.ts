@@ -70,7 +70,7 @@ export interface VpnaasSiteConnectionV2Config extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#tags VpnaasSiteConnectionV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#tenant_id VpnaasSiteConnectionV2#tenant_id}
   */
@@ -78,7 +78,7 @@ export interface VpnaasSiteConnectionV2Config extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#value_specs VpnaasSiteConnectionV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#vpnservice_id VpnaasSiteConnectionV2#vpnservice_id}
   */
@@ -88,7 +88,7 @@ export interface VpnaasSiteConnectionV2Config extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_site_connection_v2#dpd VpnaasSiteConnectionV2#dpd}
   */
-  readonly dpd?: VpnaasSiteConnectionV2Dpd[];
+  readonly dpd?: VpnaasSiteConnectionV2Dpd[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -111,8 +111,8 @@ export interface VpnaasSiteConnectionV2Dpd {
   readonly timeout?: number;
 }
 
-export function vpnaasSiteConnectionV2DpdToTerraform(struct?: VpnaasSiteConnectionV2Dpd): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpnaasSiteConnectionV2DpdToTerraform(struct?: VpnaasSiteConnectionV2Dpd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -138,8 +138,8 @@ export interface VpnaasSiteConnectionV2Timeouts {
   readonly update?: string;
 }
 
-export function vpnaasSiteConnectionV2TimeoutsToTerraform(struct?: VpnaasSiteConnectionV2TimeoutsOutputReference | VpnaasSiteConnectionV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpnaasSiteConnectionV2TimeoutsToTerraform(struct?: VpnaasSiteConnectionV2TimeoutsOutputReference | VpnaasSiteConnectionV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -158,7 +158,7 @@ export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -306,7 +306,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -534,12 +534,11 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -567,12 +566,11 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -597,12 +595,12 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
 
   // dpd - computed: false, optional: true, required: false
-  private _dpd?: VpnaasSiteConnectionV2Dpd[]; 
+  private _dpd?: VpnaasSiteConnectionV2Dpd[] | cdktf.IResolvable; 
   public get dpd() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dpd') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('dpd')));
   }
-  public set dpd(value: VpnaasSiteConnectionV2Dpd[]) {
+  public set dpd(value: VpnaasSiteConnectionV2Dpd[] | cdktf.IResolvable) {
     this._dpd = value;
   }
   public resetDpd() {
@@ -614,7 +612,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpnaasSiteConnectionV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpnaasSiteConnectionV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -650,9 +648,9 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       peer_id: cdktf.stringToTerraform(this._peerId),
       psk: cdktf.stringToTerraform(this._psk),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       vpnservice_id: cdktf.stringToTerraform(this._vpnserviceId),
       dpd: cdktf.listMapper(vpnaasSiteConnectionV2DpdToTerraform)(this._dpd),
       timeouts: vpnaasSiteConnectionV2TimeoutsToTerraform(this._timeouts.internalValue),

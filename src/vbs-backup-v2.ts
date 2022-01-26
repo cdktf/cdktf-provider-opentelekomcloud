@@ -32,7 +32,7 @@ export interface VbsBackupV2Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_v2#tags VbsBackupV2#tags}
   */
-  readonly tags?: VbsBackupV2Tags[];
+  readonly tags?: VbsBackupV2Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -51,8 +51,8 @@ export interface VbsBackupV2Tags {
   readonly value: string;
 }
 
-export function vbsBackupV2TagsToTerraform(struct?: VbsBackupV2Tags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vbsBackupV2TagsToTerraform(struct?: VbsBackupV2Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -73,8 +73,8 @@ export interface VbsBackupV2Timeouts {
   readonly delete?: string;
 }
 
-export function vbsBackupV2TimeoutsToTerraform(struct?: VbsBackupV2TimeoutsOutputReference | VbsBackupV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vbsBackupV2TimeoutsToTerraform(struct?: VbsBackupV2TimeoutsOutputReference | VbsBackupV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class VbsBackupV2TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -306,12 +306,12 @@ export class VbsBackupV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: VbsBackupV2Tags[]; 
+  private _tags?: VbsBackupV2Tags[] | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tags')));
   }
-  public set tags(value: VbsBackupV2Tags[]) {
+  public set tags(value: VbsBackupV2Tags[] | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -323,7 +323,7 @@ export class VbsBackupV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VbsBackupV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VbsBackupV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

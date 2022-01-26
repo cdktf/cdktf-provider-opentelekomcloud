@@ -72,22 +72,22 @@ export class DataOpentelekomcloudLbListenerV3InsertHeaders extends cdktf.Complex
 
   // forward_elb_ip - computed: true, optional: false, required: false
   public get forwardElbIp() {
-    return this.getBooleanAttribute('forward_elb_ip') as any;
+    return this.getBooleanAttribute('forward_elb_ip');
   }
 
   // forwarded_for_port - computed: true, optional: false, required: false
   public get forwardedForPort() {
-    return this.getBooleanAttribute('forwarded_for_port') as any;
+    return this.getBooleanAttribute('forwarded_for_port');
   }
 
   // forwarded_host - computed: true, optional: false, required: false
   public get forwardedHost() {
-    return this.getBooleanAttribute('forwarded_host') as any;
+    return this.getBooleanAttribute('forwarded_host');
   }
 
   // forwarded_port - computed: true, optional: false, required: false
   public get forwardedPort() {
-    return this.getBooleanAttribute('forwarded_port') as any;
+    return this.getBooleanAttribute('forwarded_port');
   }
 }
 
@@ -146,7 +146,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // admin_state_up - computed: true, optional: false, required: false
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
 
   // client_ca_tls_container_ref - computed: false, optional: true, required: false
@@ -236,7 +236,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // http2_enable - computed: true, optional: false, required: false
   public get http2Enable() {
-    return this.getBooleanAttribute('http2_enable') as any;
+    return this.getBooleanAttribute('http2_enable');
   }
 
   // id - computed: false, optional: true, required: false
@@ -257,7 +257,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // insert_headers - computed: true, optional: false, required: false
   public insertHeaders(index: string) {
-    return new DataOpentelekomcloudLbListenerV3InsertHeaders(this, 'insert_headers', index);
+    return new DataOpentelekomcloudLbListenerV3InsertHeaders(this, 'insert_headers', index, false);
   }
 
   // keep_alive_timeout - computed: false, optional: true, required: false
@@ -326,7 +326,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // member_retry_enable - computed: true, optional: false, required: false
   public get memberRetryEnable() {
-    return this.getBooleanAttribute('member_retry_enable') as any;
+    return this.getBooleanAttribute('member_retry_enable');
   }
 
   // member_timeout - computed: false, optional: true, required: false
@@ -347,7 +347,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // memory_retry_enable - computed: true, optional: false, required: false
   public get memoryRetryEnable() {
-    return this.getBooleanAttribute('memory_retry_enable') as any;
+    return this.getBooleanAttribute('memory_retry_enable');
   }
 
   // name - computed: false, optional: true, required: false
@@ -405,11 +405,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
 
   // sni_container_refs - computed: true, optional: false, required: false
   public get sniContainerRefs() {
-    return this.getListAttribute('sni_container_refs');
+    return cdktf.Fn.tolist(this.getListAttribute('sni_container_refs'));
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(key: string): string {
+  public tags(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 

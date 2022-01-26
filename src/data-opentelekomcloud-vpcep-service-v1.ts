@@ -18,7 +18,7 @@ export interface DataOpentelekomcloudVpcepServiceV1Config extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#tags DataOpentelekomcloudVpcepServiceV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
 }
 export class DataOpentelekomcloudVpcepServiceV1Port extends cdktf.ComplexComputedList {
 
@@ -81,7 +81,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
 
   // approval_enabled - computed: true, optional: false, required: false
   public get approvalEnabled() {
-    return this.getBooleanAttribute('approval_enabled') as any;
+    return this.getBooleanAttribute('approval_enabled');
   }
 
   // connection_count - computed: true, optional: false, required: false
@@ -117,7 +117,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
 
   // port - computed: true, optional: false, required: false
   public port(index: string) {
-    return new DataOpentelekomcloudVpcepServiceV1Port(this, 'port', index);
+    return new DataOpentelekomcloudVpcepServiceV1Port(this, 'port', index, true);
   }
 
   // port_id - computed: true, optional: false, required: false
@@ -157,12 +157,11 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -201,7 +200,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
     return {
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
 }

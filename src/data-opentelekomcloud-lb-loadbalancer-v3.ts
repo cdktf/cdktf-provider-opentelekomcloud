@@ -121,12 +121,12 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
 
   // admin_state_up - computed: true, optional: false, required: false
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
 
   // availability_zones - computed: true, optional: false, required: false
   public get availabilityZones() {
-    return this.getListAttribute('availability_zones');
+    return cdktf.Fn.tolist(this.getListAttribute('availability_zones'));
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -146,7 +146,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
 
   // ip_target_enable - computed: true, optional: false, required: false
   public get ipTargetEnable() {
-    return this.getBooleanAttribute('ip_target_enable') as any;
+    return this.getBooleanAttribute('ip_target_enable');
   }
 
   // l4_flavor - computed: true, optional: true, required: false
@@ -199,12 +199,12 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
 
   // network_ids - computed: true, optional: false, required: false
   public get networkIds() {
-    return this.getListAttribute('network_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('network_ids'));
   }
 
   // public_ip - computed: true, optional: false, required: false
   public publicIp(index: string) {
-    return new DataOpentelekomcloudLbLoadbalancerV3PublicIp(this, 'public_ip', index);
+    return new DataOpentelekomcloudLbLoadbalancerV3PublicIp(this, 'public_ip', index, false);
   }
 
   // router_id - computed: true, optional: true, required: false
@@ -240,7 +240,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(key: string): string {
+  public tags(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'tags').lookup(key);
   }
 

@@ -147,7 +147,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
 
   // share_ids - computed: true, optional: false, required: false
   public get shareIds() {
-    return this.getListAttribute('share_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('share_ids'));
   }
 
   // size - computed: true, optional: false, required: false
@@ -189,7 +189,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
 
   // to_project_ids - computed: true, optional: false, required: false
   public get toProjectIds() {
-    return this.getListAttribute('to_project_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('to_project_ids'));
   }
 
   // volume_id - computed: false, optional: true, required: false

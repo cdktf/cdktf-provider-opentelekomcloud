@@ -28,7 +28,7 @@ export interface IdentityAgencyV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#project_role IdentityAgencyV3#project_role}
   */
-  readonly projectRole?: IdentityAgencyV3ProjectRole[];
+  readonly projectRole?: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -47,8 +47,8 @@ export interface IdentityAgencyV3ProjectRole {
   readonly roles: string[];
 }
 
-export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3ProjectRole): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3ProjectRole | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -73,8 +73,8 @@ export interface IdentityAgencyV3Timeouts {
   readonly update?: string;
 }
 
-export function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3TimeoutsOutputReference | IdentityAgencyV3Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3TimeoutsOutputReference | IdentityAgencyV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -93,7 +93,7 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -260,7 +260,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   // domain_roles - computed: false, optional: true, required: false
   private _domainRoles?: string[]; 
   public get domainRoles() {
-    return this.getListAttribute('domain_roles');
+    return cdktf.Fn.tolist(this.getListAttribute('domain_roles'));
   }
   public set domainRoles(value: string[]) {
     this._domainRoles = value;
@@ -302,12 +302,12 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
 
   // project_role - computed: false, optional: true, required: false
-  private _projectRole?: IdentityAgencyV3ProjectRole[]; 
+  private _projectRole?: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable; 
   public get projectRole() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('project_role') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('project_role')));
   }
-  public set projectRole(value: IdentityAgencyV3ProjectRole[]) {
+  public set projectRole(value: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable) {
     this._projectRole = value;
   }
   public resetProjectRole() {
@@ -319,7 +319,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new IdentityAgencyV3TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new IdentityAgencyV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

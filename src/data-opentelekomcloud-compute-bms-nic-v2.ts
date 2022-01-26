@@ -81,7 +81,7 @@ export class DataOpentelekomcloudComputeBmsNicV2 extends cdktf.TerraformDataSour
 
   // fixed_ips - computed: true, optional: false, required: false
   public fixedIps(index: string) {
-    return new DataOpentelekomcloudComputeBmsNicV2FixedIps(this, 'fixed_ips', index);
+    return new DataOpentelekomcloudComputeBmsNicV2FixedIps(this, 'fixed_ips', index, false);
   }
 
   // id - computed: false, optional: true, required: false

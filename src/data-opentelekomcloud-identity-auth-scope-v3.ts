@@ -135,7 +135,7 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
 
   // roles - computed: true, optional: false, required: false
   public roles(index: string) {
-    return new DataOpentelekomcloudIdentityAuthScopeV3Roles(this, 'roles', index);
+    return new DataOpentelekomcloudIdentityAuthScopeV3Roles(this, 'roles', index, false);
   }
 
   // user_domain_id - computed: true, optional: false, required: false

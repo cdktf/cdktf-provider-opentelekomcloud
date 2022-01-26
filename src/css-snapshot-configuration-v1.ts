@@ -50,7 +50,7 @@ export interface CssSnapshotConfigurationV1Configuration {
 }
 
 export function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssSnapshotConfigurationV1ConfigurationOutputReference | CssSnapshotConfigurationV1Configuration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -69,7 +69,7 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -172,7 +172,7 @@ export interface CssSnapshotConfigurationV1CreationPolicy {
 }
 
 export function cssSnapshotConfigurationV1CreationPolicyToTerraform(struct?: CssSnapshotConfigurationV1CreationPolicyOutputReference | CssSnapshotConfigurationV1CreationPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -193,7 +193,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -245,7 +245,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   // delete_auto - computed: false, optional: true, required: false
   private _deleteAuto?: boolean | cdktf.IResolvable; 
   public get deleteAuto() {
-    return this.getBooleanAttribute('delete_auto') as any;
+    return this.getBooleanAttribute('delete_auto');
   }
   public set deleteAuto(value: boolean | cdktf.IResolvable) {
     this._deleteAuto = value;
@@ -261,7 +261,7 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   // enable - computed: false, optional: false, required: true
   private _enable?: boolean | cdktf.IResolvable; 
   public get enable() {
-    return this.getBooleanAttribute('enable') as any;
+    return this.getBooleanAttribute('enable');
   }
   public set enable(value: boolean | cdktf.IResolvable) {
     this._enable = value;
@@ -321,8 +321,8 @@ export interface CssSnapshotConfigurationV1Timeouts {
   readonly update?: string;
 }
 
-export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapshotConfigurationV1TimeoutsOutputReference | CssSnapshotConfigurationV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapshotConfigurationV1TimeoutsOutputReference | CssSnapshotConfigurationV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -340,7 +340,7 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -450,7 +450,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // automatic - computed: false, optional: true, required: false
   private _automatic?: boolean | cdktf.IResolvable; 
   public get automatic() {
-    return this.getBooleanAttribute('automatic') as any;
+    return this.getBooleanAttribute('automatic');
   }
   public set automatic(value: boolean | cdktf.IResolvable) {
     this._automatic = value;
@@ -487,7 +487,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new CssSnapshotConfigurationV1ConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new CssSnapshotConfigurationV1ConfigurationOutputReference(this, "configuration", true);
   public get configuration() {
     return this._configuration;
   }
@@ -503,7 +503,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // creation_policy - computed: false, optional: true, required: false
-  private _creationPolicy = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this as any, "creation_policy", true);
+  private _creationPolicy = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this, "creation_policy", true);
   public get creationPolicy() {
     return this._creationPolicy;
   }
@@ -519,7 +519,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CssSnapshotConfigurationV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CssSnapshotConfigurationV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

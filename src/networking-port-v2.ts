@@ -54,19 +54,19 @@ export interface NetworkingPortV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#value_specs NetworkingPortV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * allowed_address_pairs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#allowed_address_pairs NetworkingPortV2#allowed_address_pairs}
   */
-  readonly allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[];
+  readonly allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable;
   /**
   * fixed_ip block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#fixed_ip NetworkingPortV2#fixed_ip}
   */
-  readonly fixedIp?: NetworkingPortV2FixedIp[];
+  readonly fixedIp?: NetworkingPortV2FixedIp[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -85,8 +85,8 @@ export interface NetworkingPortV2AllowedAddressPairs {
   readonly macAddress?: string;
 }
 
-export function networkingPortV2AllowedAddressPairsToTerraform(struct?: NetworkingPortV2AllowedAddressPairs): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingPortV2AllowedAddressPairsToTerraform(struct?: NetworkingPortV2AllowedAddressPairs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,8 +107,8 @@ export interface NetworkingPortV2FixedIp {
   readonly subnetId: string;
 }
 
-export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIp): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -129,8 +129,8 @@ export interface NetworkingPortV2Timeouts {
   readonly delete?: string;
 }
 
-export function networkingPortV2TimeoutsToTerraform(struct?: NetworkingPortV2TimeoutsOutputReference | NetworkingPortV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function networkingPortV2TimeoutsToTerraform(struct?: NetworkingPortV2TimeoutsOutputReference | NetworkingPortV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -148,7 +148,7 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -268,7 +268,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // admin_state_up - computed: true, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -371,7 +371,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // no_security_groups - computed: false, optional: true, required: false
   private _noSecurityGroups?: boolean | cdktf.IResolvable; 
   public get noSecurityGroups() {
-    return this.getBooleanAttribute('no_security_groups') as any;
+    return this.getBooleanAttribute('no_security_groups');
   }
   public set noSecurityGroups(value: boolean | cdktf.IResolvable) {
     this._noSecurityGroups = value;
@@ -387,7 +387,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // port_security_enabled - computed: true, optional: true, required: false
   private _portSecurityEnabled?: boolean | cdktf.IResolvable; 
   public get portSecurityEnabled() {
-    return this.getBooleanAttribute('port_security_enabled') as any;
+    return this.getBooleanAttribute('port_security_enabled');
   }
   public set portSecurityEnabled(value: boolean | cdktf.IResolvable) {
     this._portSecurityEnabled = value;
@@ -419,7 +419,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // security_group_ids - computed: true, optional: true, required: false
   private _securityGroupIds?: string[]; 
   public get securityGroupIds() {
-    return this.getListAttribute('security_group_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('security_group_ids'));
   }
   public set securityGroupIds(value: string[]) {
     this._securityGroupIds = value;
@@ -449,12 +449,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -466,12 +465,12 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // allowed_address_pairs - computed: false, optional: true, required: false
-  private _allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[]; 
+  private _allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable; 
   public get allowedAddressPairs() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('allowed_address_pairs') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('allowed_address_pairs')));
   }
-  public set allowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[]) {
+  public set allowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable) {
     this._allowedAddressPairs = value;
   }
   public resetAllowedAddressPairs() {
@@ -483,12 +482,12 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // fixed_ip - computed: false, optional: true, required: false
-  private _fixedIp?: NetworkingPortV2FixedIp[]; 
+  private _fixedIp?: NetworkingPortV2FixedIp[] | cdktf.IResolvable; 
   public get fixedIp() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('fixed_ip') as any;
+    return this.interpolationForAttribute('fixed_ip');
   }
-  public set fixedIp(value: NetworkingPortV2FixedIp[]) {
+  public set fixedIp(value: NetworkingPortV2FixedIp[] | cdktf.IResolvable) {
     this._fixedIp = value;
   }
   public resetFixedIp() {
@@ -500,7 +499,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new NetworkingPortV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new NetworkingPortV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -532,7 +531,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform)(this._allowedAddressPairs),
       fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform)(this._fixedIp),
       timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts.internalValue),

@@ -37,8 +37,8 @@ export interface VbsBackupShareV2Timeouts {
   readonly delete?: string;
 }
 
-export function vbsBackupShareV2TimeoutsToTerraform(struct?: VbsBackupShareV2TimeoutsOutputReference | VbsBackupShareV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vbsBackupShareV2TimeoutsToTerraform(struct?: VbsBackupShareV2TimeoutsOutputReference | VbsBackupShareV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,7 +56,7 @@ export class VbsBackupShareV2TimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -228,7 +228,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
 
   // share_ids - computed: true, optional: false, required: false
   public get shareIds() {
-    return this.getListAttribute('share_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('share_ids'));
   }
 
   // size - computed: true, optional: false, required: false
@@ -244,7 +244,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   // to_project_ids - computed: false, optional: false, required: true
   private _toProjectIds?: string[]; 
   public get toProjectIds() {
-    return this.getListAttribute('to_project_ids');
+    return cdktf.Fn.tolist(this.getListAttribute('to_project_ids'));
   }
   public set toProjectIds(value: string[]) {
     this._toProjectIds = value;
@@ -260,7 +260,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VbsBackupShareV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VbsBackupShareV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

@@ -54,7 +54,7 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#metadata ComputeInstanceV2#metadata}
   */
-  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
+  readonly metadata?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#name ComputeInstanceV2#name}
   */
@@ -78,7 +78,7 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#tags ComputeInstanceV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#user_data ComputeInstanceV2#user_data}
   */
@@ -88,19 +88,19 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#block_device ComputeInstanceV2#block_device}
   */
-  readonly blockDevice?: ComputeInstanceV2BlockDevice[];
+  readonly blockDevice?: ComputeInstanceV2BlockDevice[] | cdktf.IResolvable;
   /**
   * network block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#network ComputeInstanceV2#network}
   */
-  readonly network?: ComputeInstanceV2Network[];
+  readonly network?: ComputeInstanceV2Network[] | cdktf.IResolvable;
   /**
   * scheduler_hints block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#scheduler_hints ComputeInstanceV2#scheduler_hints}
   */
-  readonly schedulerHints?: ComputeInstanceV2SchedulerHints[];
+  readonly schedulerHints?: ComputeInstanceV2SchedulerHints[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -154,8 +154,8 @@ export interface ComputeInstanceV2BlockDevice {
   readonly volumeType?: string;
 }
 
-export function computeInstanceV2BlockDeviceToTerraform(struct?: ComputeInstanceV2BlockDevice): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeInstanceV2BlockDeviceToTerraform(struct?: ComputeInstanceV2BlockDevice | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -199,8 +199,8 @@ export interface ComputeInstanceV2Network {
   readonly uuid?: string;
 }
 
-export function computeInstanceV2NetworkToTerraform(struct?: ComputeInstanceV2Network): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeInstanceV2NetworkToTerraform(struct?: ComputeInstanceV2Network | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -249,8 +249,8 @@ export interface ComputeInstanceV2SchedulerHints {
   readonly tenancy?: string;
 }
 
-export function computeInstanceV2SchedulerHintsToTerraform(struct?: ComputeInstanceV2SchedulerHints): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeInstanceV2SchedulerHintsToTerraform(struct?: ComputeInstanceV2SchedulerHints | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -281,8 +281,8 @@ export interface ComputeInstanceV2Timeouts {
   readonly update?: string;
 }
 
-export function computeInstanceV2TimeoutsToTerraform(struct?: ComputeInstanceV2TimeoutsOutputReference | ComputeInstanceV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function computeInstanceV2TimeoutsToTerraform(struct?: ComputeInstanceV2TimeoutsOutputReference | ComputeInstanceV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -301,7 +301,7 @@ export class ComputeInstanceV2TimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -497,14 +497,14 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // all_metadata - computed: true, optional: false, required: false
-  public allMetadata(key: string): string {
+  public allMetadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'all_metadata').lookup(key);
   }
 
   // auto_recovery - computed: true, optional: true, required: false
   private _autoRecovery?: boolean | cdktf.IResolvable; 
   public get autoRecovery() {
-    return this.getBooleanAttribute('auto_recovery') as any;
+    return this.getBooleanAttribute('auto_recovery');
   }
   public set autoRecovery(value: boolean | cdktf.IResolvable) {
     this._autoRecovery = value;
@@ -536,7 +536,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // config_drive - computed: false, optional: true, required: false
   private _configDrive?: boolean | cdktf.IResolvable; 
   public get configDrive() {
-    return this.getBooleanAttribute('config_drive') as any;
+    return this.getBooleanAttribute('config_drive');
   }
   public set configDrive(value: boolean | cdktf.IResolvable) {
     this._configDrive = value;
@@ -635,12 +635,11 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
+  private _metadata?: { [key: string]: string }; 
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata') as any;
+    return this.getStringMapAttribute('metadata');
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set metadata(value: { [key: string]: string }) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -699,7 +698,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // security_groups - computed: true, optional: true, required: false
   private _securityGroups?: string[]; 
   public get securityGroups() {
-    return this.getListAttribute('security_groups');
+    return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
   }
   public set securityGroups(value: string[]) {
     this._securityGroups = value;
@@ -715,7 +714,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // stop_before_destroy - computed: false, optional: true, required: false
   private _stopBeforeDestroy?: boolean | cdktf.IResolvable; 
   public get stopBeforeDestroy() {
-    return this.getBooleanAttribute('stop_before_destroy') as any;
+    return this.getBooleanAttribute('stop_before_destroy');
   }
   public set stopBeforeDestroy(value: boolean | cdktf.IResolvable) {
     this._stopBeforeDestroy = value;
@@ -729,12 +728,11 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -763,16 +761,16 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
 
   // volume_attached - computed: true, optional: false, required: false
   public volumeAttached(index: string) {
-    return new ComputeInstanceV2VolumeAttached(this, 'volume_attached', index);
+    return new ComputeInstanceV2VolumeAttached(this, 'volume_attached', index, false);
   }
 
   // block_device - computed: false, optional: true, required: false
-  private _blockDevice?: ComputeInstanceV2BlockDevice[]; 
+  private _blockDevice?: ComputeInstanceV2BlockDevice[] | cdktf.IResolvable; 
   public get blockDevice() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('block_device') as any;
+    return this.interpolationForAttribute('block_device');
   }
-  public set blockDevice(value: ComputeInstanceV2BlockDevice[]) {
+  public set blockDevice(value: ComputeInstanceV2BlockDevice[] | cdktf.IResolvable) {
     this._blockDevice = value;
   }
   public resetBlockDevice() {
@@ -784,12 +782,12 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // network - computed: false, optional: true, required: false
-  private _network?: ComputeInstanceV2Network[]; 
+  private _network?: ComputeInstanceV2Network[] | cdktf.IResolvable; 
   public get network() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network') as any;
+    return this.interpolationForAttribute('network');
   }
-  public set network(value: ComputeInstanceV2Network[]) {
+  public set network(value: ComputeInstanceV2Network[] | cdktf.IResolvable) {
     this._network = value;
   }
   public resetNetwork() {
@@ -801,12 +799,12 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // scheduler_hints - computed: false, optional: true, required: false
-  private _schedulerHints?: ComputeInstanceV2SchedulerHints[]; 
+  private _schedulerHints?: ComputeInstanceV2SchedulerHints[] | cdktf.IResolvable; 
   public get schedulerHints() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('scheduler_hints') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scheduler_hints')));
   }
-  public set schedulerHints(value: ComputeInstanceV2SchedulerHints[]) {
+  public set schedulerHints(value: ComputeInstanceV2SchedulerHints[] | cdktf.IResolvable) {
     this._schedulerHints = value;
   }
   public resetSchedulerHints() {
@@ -818,7 +816,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ComputeInstanceV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new ComputeInstanceV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -850,13 +848,13 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       image_id: cdktf.stringToTerraform(this._imageId),
       image_name: cdktf.stringToTerraform(this._imageName),
       key_pair: cdktf.stringToTerraform(this._keyPair),
-      metadata: cdktf.hashMapper(cdktf.anyToTerraform)(this._metadata),
+      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       power_state: cdktf.stringToTerraform(this._powerState),
       region: cdktf.stringToTerraform(this._region),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
       stop_before_destroy: cdktf.booleanToTerraform(this._stopBeforeDestroy),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
       block_device: cdktf.listMapper(computeInstanceV2BlockDeviceToTerraform)(this._blockDevice),
       network: cdktf.listMapper(computeInstanceV2NetworkToTerraform)(this._network),

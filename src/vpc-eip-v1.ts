@@ -14,11 +14,11 @@ export interface VpcEipV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#tags VpcEipV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#value_specs VpcEipV1#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * bandwidth block
   * 
@@ -58,7 +58,7 @@ export interface VpcEipV1Bandwidth {
 }
 
 export function vpcEipV1BandwidthToTerraform(struct?: VpcEipV1BandwidthOutputReference | VpcEipV1Bandwidth): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -78,7 +78,7 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -192,7 +192,7 @@ export interface VpcEipV1Publicip {
 }
 
 export function vpcEipV1PublicipToTerraform(struct?: VpcEipV1PublicipOutputReference | VpcEipV1Publicip): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -211,7 +211,7 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -304,8 +304,8 @@ export interface VpcEipV1Timeouts {
   readonly delete?: string;
 }
 
-export function vpcEipV1TimeoutsToTerraform(struct?: VpcEipV1TimeoutsOutputReference | VpcEipV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcEipV1TimeoutsToTerraform(struct?: VpcEipV1TimeoutsOutputReference | VpcEipV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -323,7 +323,7 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -453,12 +453,11 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -470,12 +469,11 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -487,7 +485,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth = new VpcEipV1BandwidthOutputReference(this as any, "bandwidth", true);
+  private _bandwidth = new VpcEipV1BandwidthOutputReference(this, "bandwidth", true);
   public get bandwidth() {
     return this._bandwidth;
   }
@@ -500,7 +498,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // publicip - computed: false, optional: false, required: true
-  private _publicip = new VpcEipV1PublicipOutputReference(this as any, "publicip", true);
+  private _publicip = new VpcEipV1PublicipOutputReference(this, "publicip", true);
   public get publicip() {
     return this._publicip;
   }
@@ -513,7 +511,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcEipV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcEipV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -535,8 +533,8 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       bandwidth: vpcEipV1BandwidthToTerraform(this._bandwidth.internalValue),
       publicip: vpcEipV1PublicipToTerraform(this._publicip.internalValue),
       timeouts: vpcEipV1TimeoutsToTerraform(this._timeouts.internalValue),

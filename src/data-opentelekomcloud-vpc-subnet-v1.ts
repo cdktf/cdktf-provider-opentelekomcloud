@@ -126,12 +126,12 @@ export class DataOpentelekomcloudVpcSubnetV1 extends cdktf.TerraformDataSource {
 
   // dhcp_enable - computed: true, optional: false, required: false
   public get dhcpEnable() {
-    return this.getBooleanAttribute('dhcp_enable') as any;
+    return this.getBooleanAttribute('dhcp_enable');
   }
 
   // dns_list - computed: true, optional: false, required: false
   public get dnsList() {
-    return this.getListAttribute('dns_list');
+    return cdktf.Fn.tolist(this.getListAttribute('dns_list'));
   }
 
   // gateway_ip - computed: false, optional: true, required: false

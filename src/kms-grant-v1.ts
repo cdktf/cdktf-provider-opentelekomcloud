@@ -132,7 +132,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
   // operations - computed: false, optional: true, required: false
   private _operations?: string[]; 
   public get operations() {
-    return this.getListAttribute('operations');
+    return cdktf.Fn.tolist(this.getListAttribute('operations'));
   }
   public set operations(value: string[]) {
     this._operations = value;

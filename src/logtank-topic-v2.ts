@@ -77,7 +77,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
 
   // index_enabled - computed: true, optional: false, required: false
   public get indexEnabled() {
-    return this.getBooleanAttribute('index_enabled') as any;
+    return this.getBooleanAttribute('index_enabled');
   }
 
   // topic_name - computed: false, optional: false, required: true

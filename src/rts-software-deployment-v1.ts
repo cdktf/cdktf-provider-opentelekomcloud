@@ -18,11 +18,11 @@ export interface RtsSoftwareDeploymentV1Config extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_deployment_v1#input_values RtsSoftwareDeploymentV1#input_values}
   */
-  readonly inputValues?: { [key: string]: string } | cdktf.IResolvable;
+  readonly inputValues?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_deployment_v1#output_values RtsSoftwareDeploymentV1#output_values}
   */
-  readonly outputValues?: { [key: string]: string } | cdktf.IResolvable;
+  readonly outputValues?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_deployment_v1#region RtsSoftwareDeploymentV1#region}
   */
@@ -61,8 +61,8 @@ export interface RtsSoftwareDeploymentV1Timeouts {
   readonly delete?: string;
 }
 
-export function rtsSoftwareDeploymentV1TimeoutsToTerraform(struct?: RtsSoftwareDeploymentV1TimeoutsOutputReference | RtsSoftwareDeploymentV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function rtsSoftwareDeploymentV1TimeoutsToTerraform(struct?: RtsSoftwareDeploymentV1TimeoutsOutputReference | RtsSoftwareDeploymentV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -80,7 +80,7 @@ export class RtsSoftwareDeploymentV1TimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -227,12 +227,11 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
 
   // input_values - computed: true, optional: true, required: false
-  private _inputValues?: { [key: string]: string } | cdktf.IResolvable; 
+  private _inputValues?: { [key: string]: string }; 
   public get inputValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('input_values') as any;
+    return this.getStringMapAttribute('input_values');
   }
-  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set inputValues(value: { [key: string]: string }) {
     this._inputValues = value;
   }
   public resetInputValues() {
@@ -244,12 +243,11 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
 
   // output_values - computed: true, optional: true, required: false
-  private _outputValues?: { [key: string]: string } | cdktf.IResolvable; 
+  private _outputValues?: { [key: string]: string }; 
   public get outputValues() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('output_values') as any;
+    return this.getStringMapAttribute('output_values');
   }
-  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set outputValues(value: { [key: string]: string }) {
     this._outputValues = value;
   }
   public resetOutputValues() {
@@ -338,7 +336,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RtsSoftwareDeploymentV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new RtsSoftwareDeploymentV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -361,8 +359,8 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
     return {
       action: cdktf.stringToTerraform(this._action),
       config_id: cdktf.stringToTerraform(this._configId),
-      input_values: cdktf.hashMapper(cdktf.anyToTerraform)(this._inputValues),
-      output_values: cdktf.hashMapper(cdktf.anyToTerraform)(this._outputValues),
+      input_values: cdktf.hashMapper(cdktf.stringToTerraform)(this._inputValues),
+      output_values: cdktf.hashMapper(cdktf.stringToTerraform)(this._outputValues),
       region: cdktf.stringToTerraform(this._region),
       server_id: cdktf.stringToTerraform(this._serverId),
       status: cdktf.stringToTerraform(this._status),

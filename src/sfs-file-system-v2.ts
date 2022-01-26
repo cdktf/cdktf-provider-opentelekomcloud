@@ -34,7 +34,7 @@ export interface SfsFileSystemV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}
   */
-  readonly metadata?: { [key: string]: string } | cdktf.IResolvable;
+  readonly metadata?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#name SfsFileSystemV2#name}
   */
@@ -54,7 +54,7 @@ export interface SfsFileSystemV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
@@ -73,8 +73,8 @@ export interface SfsFileSystemV2Timeouts {
   readonly delete?: string;
 }
 
-export function sfsFileSystemV2TimeoutsToTerraform(struct?: SfsFileSystemV2TimeoutsOutputReference | SfsFileSystemV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function sfsFileSystemV2TimeoutsToTerraform(struct?: SfsFileSystemV2TimeoutsOutputReference | SfsFileSystemV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -92,7 +92,7 @@ export class SfsFileSystemV2TimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -310,7 +310,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   // is_public - computed: false, optional: true, required: false
   private _isPublic?: boolean | cdktf.IResolvable; 
   public get isPublic() {
-    return this.getBooleanAttribute('is_public') as any;
+    return this.getBooleanAttribute('is_public');
   }
   public set isPublic(value: boolean | cdktf.IResolvable) {
     this._isPublic = value;
@@ -324,12 +324,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata?: { [key: string]: string } | cdktf.IResolvable; 
+  private _metadata?: { [key: string]: string }; 
   public get metadata() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata') as any;
+    return this.getStringMapAttribute('metadata');
   }
-  public set metadata(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set metadata(value: { [key: string]: string }) {
     this._metadata = value;
   }
   public resetMetadata() {
@@ -417,12 +416,11 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -439,7 +437,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SfsFileSystemV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SfsFileSystemV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -466,12 +464,12 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       description: cdktf.stringToTerraform(this._description),
       is_public: cdktf.booleanToTerraform(this._isPublic),
-      metadata: cdktf.hashMapper(cdktf.anyToTerraform)(this._metadata),
+      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       share_proto: cdktf.stringToTerraform(this._shareProto),
       size: cdktf.numberToTerraform(this._size),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: sfsFileSystemV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

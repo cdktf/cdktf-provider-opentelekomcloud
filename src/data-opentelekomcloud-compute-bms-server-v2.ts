@@ -253,11 +253,11 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
 
   // locked - computed: true, optional: false, required: false
   public get locked() {
-    return this.getBooleanAttribute('locked') as any;
+    return this.getBooleanAttribute('locked');
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
@@ -279,7 +279,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
 
   // network - computed: true, optional: false, required: false
   public network(index: string) {
-    return new DataOpentelekomcloudComputeBmsServerV2Network(this, 'network', index);
+    return new DataOpentelekomcloudComputeBmsServerV2Network(this, 'network', index, false);
   }
 
   // progress - computed: true, optional: false, required: false
@@ -305,7 +305,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
 
   // security_groups - computed: true, optional: false, required: false
   public securityGroups(index: string) {
-    return new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(this, 'security_groups', index);
+    return new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(this, 'security_groups', index, false);
   }
 
   // status - computed: false, optional: true, required: false
@@ -326,7 +326,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return this.getListAttribute('tags');
+    return cdktf.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // tenant_id - computed: true, optional: false, required: false

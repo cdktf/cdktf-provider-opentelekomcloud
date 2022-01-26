@@ -154,7 +154,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 

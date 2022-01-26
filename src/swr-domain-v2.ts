@@ -45,8 +45,8 @@ export interface SwrDomainV2Timeouts {
   readonly default?: string;
 }
 
-export function swrDomainV2TimeoutsToTerraform(struct?: SwrDomainV2TimeoutsOutputReference | SwrDomainV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function swrDomainV2TimeoutsToTerraform(struct?: SwrDomainV2TimeoutsOutputReference | SwrDomainV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -63,7 +63,7 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -253,7 +253,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
 
   // status - computed: true, optional: false, required: false
   public get status() {
-    return this.getBooleanAttribute('status') as any;
+    return this.getBooleanAttribute('status');
   }
 
   // updated - computed: true, optional: false, required: false
@@ -262,7 +262,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new SwrDomainV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new SwrDomainV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

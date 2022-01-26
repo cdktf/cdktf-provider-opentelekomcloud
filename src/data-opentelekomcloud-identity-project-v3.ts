@@ -96,7 +96,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   // enabled - computed: true, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -117,7 +117,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   // is_domain - computed: true, optional: true, required: false
   private _isDomain?: boolean | cdktf.IResolvable; 
   public get isDomain() {
-    return this.getBooleanAttribute('is_domain') as any;
+    return this.getBooleanAttribute('is_domain');
   }
   public set isDomain(value: boolean | cdktf.IResolvable) {
     this._isDomain = value;

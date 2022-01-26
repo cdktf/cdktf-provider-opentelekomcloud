@@ -26,7 +26,7 @@ export interface DataOpentelekomcloudDnsZoneV2Config extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_zone_v2#ttl DataOpentelekomcloudDnsZoneV2#ttl}
   */
@@ -125,13 +125,13 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string {
+  public links(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'links').lookup(key);
   }
 
   // masters - computed: true, optional: false, required: false
   public get masters() {
-    return this.getListAttribute('masters');
+    return cdktf.Fn.tolist(this.getListAttribute('masters'));
   }
 
   // name - computed: true, optional: true, required: false
@@ -182,12 +182,11 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -245,7 +244,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
       email: cdktf.stringToTerraform(this._email),
       name: cdktf.stringToTerraform(this._name),
       status: cdktf.stringToTerraform(this._status),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       ttl: cdktf.numberToTerraform(this._ttl),
       zone_type: cdktf.stringToTerraform(this._zoneType),
     };

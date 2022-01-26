@@ -44,7 +44,7 @@ export interface WafDomainV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_domain_v1#server WafDomainV1#server}
   */
-  readonly server: WafDomainV1Server[];
+  readonly server: WafDomainV1Server[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -79,8 +79,8 @@ export interface WafDomainV1Server {
   readonly serverProtocol?: string;
 }
 
-export function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -105,8 +105,8 @@ export interface WafDomainV1Timeouts {
   readonly delete?: string;
 }
 
-export function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1TimeoutsOutputReference | WafDomainV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1TimeoutsOutputReference | WafDomainV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -124,7 +124,7 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -330,7 +330,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   // proxy - computed: false, optional: false, required: true
   private _proxy?: boolean | cdktf.IResolvable; 
   public get proxy() {
-    return this.getBooleanAttribute('proxy') as any;
+    return this.getBooleanAttribute('proxy');
   }
   public set proxy(value: boolean | cdktf.IResolvable) {
     this._proxy = value;
@@ -399,12 +399,12 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // server - computed: false, optional: false, required: true
-  private _server?: WafDomainV1Server[]; 
+  private _server?: WafDomainV1Server[] | cdktf.IResolvable; 
   public get server() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('server') as any;
+    return this.interpolationForAttribute('server');
   }
-  public set server(value: WafDomainV1Server[]) {
+  public set server(value: WafDomainV1Server[] | cdktf.IResolvable) {
     this._server = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -413,7 +413,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new WafDomainV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new WafDomainV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

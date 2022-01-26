@@ -70,7 +70,7 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tags LbListenerV3#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tls_ciphers_policy LbListenerV3#tls_ciphers_policy}
   */
@@ -102,7 +102,7 @@ export interface LbListenerV3InsertHeaders {
 }
 
 export function lbListenerV3InsertHeadersToTerraform(struct?: LbListenerV3InsertHeadersOutputReference | LbListenerV3InsertHeaders): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -122,7 +122,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -168,7 +168,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   // forward_elb_ip - computed: true, optional: true, required: false
   private _forwardElbIp?: boolean | cdktf.IResolvable; 
   public get forwardElbIp() {
-    return this.getBooleanAttribute('forward_elb_ip') as any;
+    return this.getBooleanAttribute('forward_elb_ip');
   }
   public set forwardElbIp(value: boolean | cdktf.IResolvable) {
     this._forwardElbIp = value;
@@ -184,7 +184,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   // forwarded_for_port - computed: true, optional: true, required: false
   private _forwardedForPort?: boolean | cdktf.IResolvable; 
   public get forwardedForPort() {
-    return this.getBooleanAttribute('forwarded_for_port') as any;
+    return this.getBooleanAttribute('forwarded_for_port');
   }
   public set forwardedForPort(value: boolean | cdktf.IResolvable) {
     this._forwardedForPort = value;
@@ -200,7 +200,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   // forwarded_host - computed: true, optional: true, required: false
   private _forwardedHost?: boolean | cdktf.IResolvable; 
   public get forwardedHost() {
-    return this.getBooleanAttribute('forwarded_host') as any;
+    return this.getBooleanAttribute('forwarded_host');
   }
   public set forwardedHost(value: boolean | cdktf.IResolvable) {
     this._forwardedHost = value;
@@ -216,7 +216,7 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   // forwarded_port - computed: true, optional: true, required: false
   private _forwardedPort?: boolean | cdktf.IResolvable; 
   public get forwardedPort() {
-    return this.getBooleanAttribute('forwarded_port') as any;
+    return this.getBooleanAttribute('forwarded_port');
   }
   public set forwardedPort(value: boolean | cdktf.IResolvable) {
     this._forwardedPort = value;
@@ -289,7 +289,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // admin_state_up - computed: false, optional: true, required: false
   private _adminStateUp?: boolean | cdktf.IResolvable; 
   public get adminStateUp() {
-    return this.getBooleanAttribute('admin_state_up') as any;
+    return this.getBooleanAttribute('admin_state_up');
   }
   public set adminStateUp(value: boolean | cdktf.IResolvable) {
     this._adminStateUp = value;
@@ -390,7 +390,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // http2_enable - computed: false, optional: true, required: false
   private _http2Enable?: boolean | cdktf.IResolvable; 
   public get http2Enable() {
-    return this.getBooleanAttribute('http2_enable') as any;
+    return this.getBooleanAttribute('http2_enable');
   }
   public set http2Enable(value: boolean | cdktf.IResolvable) {
     this._http2Enable = value;
@@ -440,7 +440,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // member_retry_enable - computed: false, optional: true, required: false
   private _memberRetryEnable?: boolean | cdktf.IResolvable; 
   public get memberRetryEnable() {
-    return this.getBooleanAttribute('member_retry_enable') as any;
+    return this.getBooleanAttribute('member_retry_enable');
   }
   public set memberRetryEnable(value: boolean | cdktf.IResolvable) {
     this._memberRetryEnable = value;
@@ -514,7 +514,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // sni_container_refs - computed: false, optional: true, required: false
   private _sniContainerRefs?: string[]; 
   public get sniContainerRefs() {
-    return this.getListAttribute('sni_container_refs');
+    return cdktf.Fn.tolist(this.getListAttribute('sni_container_refs'));
   }
   public set sniContainerRefs(value: string[]) {
     this._sniContainerRefs = value;
@@ -528,12 +528,11 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -566,7 +565,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // insert_headers - computed: false, optional: true, required: false
-  private _insertHeaders = new LbListenerV3InsertHeadersOutputReference(this as any, "insert_headers", true);
+  private _insertHeaders = new LbListenerV3InsertHeadersOutputReference(this, "insert_headers", true);
   public get insertHeaders() {
     return this._insertHeaders;
   }
@@ -602,7 +601,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
       sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform)(this._sniContainerRefs),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
       insert_headers: lbListenerV3InsertHeadersToTerraform(this._insertHeaders.internalValue),
     };

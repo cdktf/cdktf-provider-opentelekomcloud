@@ -99,7 +99,7 @@ export class DataOpentelekomcloudSfsFileSystemV2 extends cdktf.TerraformDataSour
 
   // export_locations - computed: true, optional: false, required: false
   public get exportLocations() {
-    return this.getListAttribute('export_locations');
+    return cdktf.Fn.tolist(this.getListAttribute('export_locations'));
   }
 
   // host - computed: true, optional: false, required: false
@@ -125,11 +125,11 @@ export class DataOpentelekomcloudSfsFileSystemV2 extends cdktf.TerraformDataSour
 
   // is_public - computed: true, optional: false, required: false
   public get isPublic() {
-    return this.getBooleanAttribute('is_public') as any;
+    return this.getBooleanAttribute('is_public');
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string {
+  public metadata(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'metadata').lookup(key);
   }
 
@@ -156,7 +156,7 @@ export class DataOpentelekomcloudSfsFileSystemV2 extends cdktf.TerraformDataSour
 
   // preferred - computed: true, optional: false, required: false
   public get preferred() {
-    return this.getBooleanAttribute('preferred') as any;
+    return this.getBooleanAttribute('preferred');
   }
 
   // project_id - computed: true, optional: false, required: false

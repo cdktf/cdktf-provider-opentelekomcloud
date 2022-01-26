@@ -46,13 +46,13 @@ export interface VpnaasIpsecPolicyV2Config extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#value_specs VpnaasIpsecPolicyV2#value_specs}
   */
-  readonly valueSpecs?: { [key: string]: string } | cdktf.IResolvable;
+  readonly valueSpecs?: { [key: string]: string };
   /**
   * lifetime block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#lifetime VpnaasIpsecPolicyV2#lifetime}
   */
-  readonly lifetime?: VpnaasIpsecPolicyV2Lifetime[];
+  readonly lifetime?: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -71,8 +71,8 @@ export interface VpnaasIpsecPolicyV2Lifetime {
   readonly value?: number;
 }
 
-export function vpnaasIpsecPolicyV2LifetimeToTerraform(struct?: VpnaasIpsecPolicyV2Lifetime): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpnaasIpsecPolicyV2LifetimeToTerraform(struct?: VpnaasIpsecPolicyV2Lifetime | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -89,8 +89,8 @@ export interface VpnaasIpsecPolicyV2Timeouts {
   readonly create?: string;
 }
 
-export function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolicyV2TimeoutsOutputReference | VpnaasIpsecPolicyV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolicyV2TimeoutsOutputReference | VpnaasIpsecPolicyV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -107,7 +107,7 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -349,12 +349,11 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // value_specs - computed: false, optional: true, required: false
-  private _valueSpecs?: { [key: string]: string } | cdktf.IResolvable; 
+  private _valueSpecs?: { [key: string]: string }; 
   public get valueSpecs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('value_specs') as any;
+    return this.getStringMapAttribute('value_specs');
   }
-  public set valueSpecs(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set valueSpecs(value: { [key: string]: string }) {
     this._valueSpecs = value;
   }
   public resetValueSpecs() {
@@ -366,12 +365,12 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // lifetime - computed: false, optional: true, required: false
-  private _lifetime?: VpnaasIpsecPolicyV2Lifetime[]; 
+  private _lifetime?: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable; 
   public get lifetime() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifetime') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('lifetime')));
   }
-  public set lifetime(value: VpnaasIpsecPolicyV2Lifetime[]) {
+  public set lifetime(value: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable) {
     this._lifetime = value;
   }
   public resetLifetime() {
@@ -383,7 +382,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpnaasIpsecPolicyV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpnaasIpsecPolicyV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -413,7 +412,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       transform_protocol: cdktf.stringToTerraform(this._transformProtocol),
-      value_specs: cdktf.hashMapper(cdktf.anyToTerraform)(this._valueSpecs),
+      value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform)(this._lifetime),
       timeouts: vpnaasIpsecPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };

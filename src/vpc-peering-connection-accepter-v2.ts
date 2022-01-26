@@ -37,8 +37,8 @@ export interface VpcPeeringConnectionAccepterV2Timeouts {
   readonly delete?: string;
 }
 
-export function vpcPeeringConnectionAccepterV2TimeoutsToTerraform(struct?: VpcPeeringConnectionAccepterV2TimeoutsOutputReference | VpcPeeringConnectionAccepterV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function vpcPeeringConnectionAccepterV2TimeoutsToTerraform(struct?: VpcPeeringConnectionAccepterV2TimeoutsOutputReference | VpcPeeringConnectionAccepterV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -56,7 +56,7 @@ export class VpcPeeringConnectionAccepterV2TimeoutsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -165,7 +165,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   // accept - computed: false, optional: true, required: false
   private _accept?: boolean | cdktf.IResolvable; 
   public get accept() {
-    return this.getBooleanAttribute('accept') as any;
+    return this.getBooleanAttribute('accept');
   }
   public set accept(value: boolean | cdktf.IResolvable) {
     this._accept = value;
@@ -238,7 +238,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

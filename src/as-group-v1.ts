@@ -84,7 +84,7 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#tags AsGroupV1#tags}
   */
-  readonly tags?: { [key: string]: string } | cdktf.IResolvable;
+  readonly tags?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#vpc_id AsGroupV1#vpc_id}
   */
@@ -94,13 +94,13 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#lbaas_listeners AsGroupV1#lbaas_listeners}
   */
-  readonly lbaasListeners?: AsGroupV1LbaasListeners[];
+  readonly lbaasListeners?: AsGroupV1LbaasListeners[] | cdktf.IResolvable;
   /**
   * networks block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#networks AsGroupV1#networks}
   */
-  readonly networks: AsGroupV1Networks[];
+  readonly networks: AsGroupV1Networks[] | cdktf.IResolvable;
   /**
   * security_groups block
   * 
@@ -129,8 +129,8 @@ export interface AsGroupV1LbaasListeners {
   readonly weight?: number;
 }
 
-export function asGroupV1LbaasListenersToTerraform(struct?: AsGroupV1LbaasListeners): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asGroupV1LbaasListenersToTerraform(struct?: AsGroupV1LbaasListeners | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -148,8 +148,8 @@ export interface AsGroupV1Networks {
   readonly id: string;
 }
 
-export function asGroupV1NetworksToTerraform(struct?: AsGroupV1Networks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asGroupV1NetworksToTerraform(struct?: AsGroupV1Networks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -166,7 +166,7 @@ export interface AsGroupV1SecurityGroups {
 }
 
 export function asGroupV1SecurityGroupsToTerraform(struct?: AsGroupV1SecurityGroupsOutputReference | AsGroupV1SecurityGroups): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -183,7 +183,7 @@ export class AsGroupV1SecurityGroupsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -232,8 +232,8 @@ export interface AsGroupV1Timeouts {
   readonly delete?: string;
 }
 
-export function asGroupV1TimeoutsToTerraform(struct?: AsGroupV1TimeoutsOutputReference | AsGroupV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function asGroupV1TimeoutsToTerraform(struct?: AsGroupV1TimeoutsOutputReference | AsGroupV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -251,7 +251,7 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -431,7 +431,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   // delete_publicip - computed: false, optional: true, required: false
   private _deletePublicip?: boolean | cdktf.IResolvable; 
   public get deletePublicip() {
-    return this.getBooleanAttribute('delete_publicip') as any;
+    return this.getBooleanAttribute('delete_publicip');
   }
   public set deletePublicip(value: boolean | cdktf.IResolvable) {
     this._deletePublicip = value;
@@ -649,12 +649,11 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: { [key: string]: string } | cdktf.IResolvable; 
+  private _tags?: { [key: string]: string }; 
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return this.getStringMapAttribute('tags');
   }
-  public set tags(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set tags(value: { [key: string]: string }) {
     this._tags = value;
   }
   public resetTags() {
@@ -679,12 +678,12 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // lbaas_listeners - computed: false, optional: true, required: false
-  private _lbaasListeners?: AsGroupV1LbaasListeners[]; 
+  private _lbaasListeners?: AsGroupV1LbaasListeners[] | cdktf.IResolvable; 
   public get lbaasListeners() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lbaas_listeners') as any;
+    return this.interpolationForAttribute('lbaas_listeners');
   }
-  public set lbaasListeners(value: AsGroupV1LbaasListeners[]) {
+  public set lbaasListeners(value: AsGroupV1LbaasListeners[] | cdktf.IResolvable) {
     this._lbaasListeners = value;
   }
   public resetLbaasListeners() {
@@ -696,12 +695,12 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // networks - computed: false, optional: false, required: true
-  private _networks?: AsGroupV1Networks[]; 
+  private _networks?: AsGroupV1Networks[] | cdktf.IResolvable; 
   public get networks() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('networks') as any;
+    return this.interpolationForAttribute('networks');
   }
-  public set networks(value: AsGroupV1Networks[]) {
+  public set networks(value: AsGroupV1Networks[] | cdktf.IResolvable) {
     this._networks = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -710,7 +709,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // security_groups - computed: false, optional: true, required: false
-  private _securityGroups = new AsGroupV1SecurityGroupsOutputReference(this as any, "security_groups", true);
+  private _securityGroups = new AsGroupV1SecurityGroupsOutputReference(this, "security_groups", true);
   public get securityGroups() {
     return this._securityGroups;
   }
@@ -726,7 +725,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new AsGroupV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new AsGroupV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -763,7 +762,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       scaling_configuration_id: cdktf.stringToTerraform(this._scalingConfigurationId),
       scaling_group_name: cdktf.stringToTerraform(this._scalingGroupName),
-      tags: cdktf.hashMapper(cdktf.anyToTerraform)(this._tags),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       lbaas_listeners: cdktf.listMapper(asGroupV1LbaasListenersToTerraform)(this._lbaasListeners),
       networks: cdktf.listMapper(asGroupV1NetworksToTerraform)(this._networks),

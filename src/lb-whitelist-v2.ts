@@ -45,8 +45,8 @@ export interface LbWhitelistV2Timeouts {
   readonly update?: string;
 }
 
-export function lbWhitelistV2TimeoutsToTerraform(struct?: LbWhitelistV2TimeoutsOutputReference | LbWhitelistV2Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function lbWhitelistV2TimeoutsToTerraform(struct?: LbWhitelistV2TimeoutsOutputReference | LbWhitelistV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -65,7 +65,7 @@ export class LbWhitelistV2TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -197,7 +197,7 @@ export class LbWhitelistV2 extends cdktf.TerraformResource {
   // enable_whitelist - computed: false, optional: true, required: false
   private _enableWhitelist?: boolean | cdktf.IResolvable; 
   public get enableWhitelist() {
-    return this.getBooleanAttribute('enable_whitelist') as any;
+    return this.getBooleanAttribute('enable_whitelist');
   }
   public set enableWhitelist(value: boolean | cdktf.IResolvable) {
     this._enableWhitelist = value;
@@ -261,7 +261,7 @@ export class LbWhitelistV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new LbWhitelistV2TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new LbWhitelistV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }

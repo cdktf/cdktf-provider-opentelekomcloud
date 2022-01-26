@@ -10,7 +10,7 @@ export interface CsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#common CsbsBackupPolicyV1#common}
   */
-  readonly common?: { [key: string]: string } | cdktf.IResolvable;
+  readonly common?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#description CsbsBackupPolicyV1#description}
   */
@@ -32,7 +32,7 @@ export interface CsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#resource CsbsBackupPolicyV1#resource}
   */
-  readonly resource: CsbsBackupPolicyV1Resource[];
+  readonly resource: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable;
   /**
   * scheduled_operation block
   * 
@@ -44,7 +44,7 @@ export interface CsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#tags CsbsBackupPolicyV1#tags}
   */
-  readonly tags?: CsbsBackupPolicyV1Tags[];
+  readonly tags?: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -67,8 +67,8 @@ export interface CsbsBackupPolicyV1Resource {
   readonly type: string;
 }
 
-export function csbsBackupPolicyV1ResourceToTerraform(struct?: CsbsBackupPolicyV1Resource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupPolicyV1ResourceToTerraform(struct?: CsbsBackupPolicyV1Resource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -134,8 +134,8 @@ export interface CsbsBackupPolicyV1ScheduledOperation {
   readonly yearBackups?: number;
 }
 
-export function csbsBackupPolicyV1ScheduledOperationToTerraform(struct?: CsbsBackupPolicyV1ScheduledOperationOutputReference | CsbsBackupPolicyV1ScheduledOperation): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupPolicyV1ScheduledOperationToTerraform(struct?: CsbsBackupPolicyV1ScheduledOperationOutputReference | CsbsBackupPolicyV1ScheduledOperation | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -164,7 +164,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -296,7 +296,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   // enabled - computed: false, optional: true, required: false
   private _enabled?: boolean | cdktf.IResolvable; 
   public get enabled() {
-    return this.getBooleanAttribute('enabled') as any;
+    return this.getBooleanAttribute('enabled');
   }
   public set enabled(value: boolean | cdktf.IResolvable) {
     this._enabled = value;
@@ -307,6 +307,11 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get enabledInput() {
     return this._enabled;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // max_backups - computed: false, optional: true, required: false
@@ -373,7 +378,7 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   // permanent - computed: true, optional: true, required: false
   private _permanent?: boolean | cdktf.IResolvable; 
   public get permanent() {
-    return this.getBooleanAttribute('permanent') as any;
+    return this.getBooleanAttribute('permanent');
   }
   public set permanent(value: boolean | cdktf.IResolvable) {
     this._permanent = value;
@@ -418,6 +423,16 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
     return this._timezone;
   }
 
+  // trigger_id - computed: true, optional: false, required: false
+  public get triggerId() {
+    return this.getStringAttribute('trigger_id');
+  }
+
+  // trigger_name - computed: true, optional: false, required: false
+  public get triggerName() {
+    return this.getStringAttribute('trigger_name');
+  }
+
   // trigger_pattern - computed: false, optional: false, required: true
   private _triggerPattern?: string; 
   public get triggerPattern() {
@@ -429,6 +444,11 @@ export class CsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get triggerPatternInput() {
     return this._triggerPattern;
+  }
+
+  // trigger_type - computed: true, optional: false, required: false
+  public get triggerType() {
+    return this.getStringAttribute('trigger_type');
   }
 
   // week_backups - computed: false, optional: true, required: false
@@ -474,8 +494,8 @@ export interface CsbsBackupPolicyV1Tags {
   readonly value: string;
 }
 
-export function csbsBackupPolicyV1TagsToTerraform(struct?: CsbsBackupPolicyV1Tags): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupPolicyV1TagsToTerraform(struct?: CsbsBackupPolicyV1Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -496,8 +516,8 @@ export interface CsbsBackupPolicyV1Timeouts {
   readonly delete?: string;
 }
 
-export function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV1TimeoutsOutputReference | CsbsBackupPolicyV1Timeouts): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV1TimeoutsOutputReference | CsbsBackupPolicyV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -515,7 +535,7 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -627,12 +647,11 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   // ==========
 
   // common - computed: false, optional: true, required: false
-  private _common?: { [key: string]: string } | cdktf.IResolvable; 
+  private _common?: { [key: string]: string }; 
   public get common() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('common') as any;
+    return this.getStringMapAttribute('common');
   }
-  public set common(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set common(value: { [key: string]: string }) {
     this._common = value;
   }
   public resetCommon() {
@@ -720,12 +739,12 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // resource - computed: false, optional: false, required: true
-  private _resource?: CsbsBackupPolicyV1Resource[]; 
+  private _resource?: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable; 
   public get resource() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('resource')));
   }
-  public set resource(value: CsbsBackupPolicyV1Resource[]) {
+  public set resource(value: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable) {
     this._resource = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -734,7 +753,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // scheduled_operation - computed: false, optional: false, required: true
-  private _scheduledOperation = new CsbsBackupPolicyV1ScheduledOperationOutputReference(this as any, "scheduled_operation", true);
+  private _scheduledOperation = new CsbsBackupPolicyV1ScheduledOperationOutputReference(this, "scheduled_operation", true);
   public get scheduledOperation() {
     return this._scheduledOperation;
   }
@@ -747,12 +766,12 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: CsbsBackupPolicyV1Tags[]; 
+  private _tags?: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable; 
   public get tags() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('tags') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tags')));
   }
-  public set tags(value: CsbsBackupPolicyV1Tags[]) {
+  public set tags(value: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -764,7 +783,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CsbsBackupPolicyV1TimeoutsOutputReference(this as any, "timeouts", true);
+  private _timeouts = new CsbsBackupPolicyV1TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
     return this._timeouts;
   }
@@ -785,7 +804,7 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      common: cdktf.hashMapper(cdktf.anyToTerraform)(this._common),
+      common: cdktf.hashMapper(cdktf.stringToTerraform)(this._common),
       description: cdktf.stringToTerraform(this._description),
       name: cdktf.stringToTerraform(this._name),
       provider_id: cdktf.stringToTerraform(this._providerId),
