@@ -41237,12 +41237,6 @@ public resetClusterAdminSecret()
 public resetClusterType()
 ```
 
-##### `resetClusterVersion` <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.resetClusterVersion"></a>
-
-```typescript
-public resetClusterVersion()
-```
-
 ##### `resetCoreDataVolumeCount` <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1.resetCoreDataVolumeCount"></a>
 
 ```typescript
@@ -88655,6 +88649,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `clusterVersion`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.clusterVersion"></a>
+
+```typescript
+public readonly clusterVersion: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}.
+
+---
+
 ##### `componentList`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.componentList"></a>
 
 ```typescript
@@ -88814,18 +88820,6 @@ public readonly clusterType: number;
 - *Type:* `number`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#cluster_type MrsClusterV1#cluster_type}.
-
----
-
-##### `clusterVersion`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1Config.property.clusterVersion"></a>
-
-```typescript
-public readonly clusterVersion: string;
-```
-
-- *Type:* `string`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}.
 
 ---
 

@@ -30,7 +30,7 @@ export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}
   */
-  readonly clusterVersion?: string;
+  readonly clusterVersion: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#core_data_volume_count MrsClusterV1#core_data_volume_count}
   */
@@ -520,16 +520,13 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
     return this._clusterType;
   }
 
-  // cluster_version - computed: true, optional: true, required: false
+  // cluster_version - computed: false, optional: false, required: true
   private _clusterVersion?: string; 
   public get clusterVersion() {
     return this.getStringAttribute('cluster_version');
   }
   public set clusterVersion(value: string) {
     this._clusterVersion = value;
-  }
-  public resetClusterVersion() {
-    this._clusterVersion = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get clusterVersionInput() {
