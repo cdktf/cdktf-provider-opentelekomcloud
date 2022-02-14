@@ -193,6 +193,7 @@ export * from './data-opentelekomcloud-networking-secgroup-rule-ids-v2';
 export * from './data-opentelekomcloud-networking-secgroup-v2';
 export * from './data-opentelekomcloud-obs-bucket';
 export * from './data-opentelekomcloud-obs-bucket-object';
+export * from './data-opentelekomcloud-rds-backup-v3';
 export * from './data-opentelekomcloud-rds-flavors-v1';
 export * from './data-opentelekomcloud-rds-flavors-v3';
 export * from './data-opentelekomcloud-rds-versions-v3';

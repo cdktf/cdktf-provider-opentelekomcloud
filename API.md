@@ -20307,6 +20307,217 @@ public readonly versionId: string;
 
 ---
 
+### DataOpentelekomcloudRdsBackupV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3 opentelekomcloud_rds_backup_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudRdsBackupV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudRdsBackupV3(scope: Construct, id: string, config: DataOpentelekomcloudRdsBackupV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetBackupId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.resetBackupId"></a>
+
+```typescript
+public resetBackupId()
+```
+
+##### `resetType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.resetType"></a>
+
+```typescript
+public resetType()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `beginTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.beginTime"></a>
+
+```typescript
+public readonly beginTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `databases`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.databases"></a>
+
+```typescript
+public readonly databases: string[];
+```
+
+- *Type:* `string`[]
+
+---
+
+##### `dbType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.dbType"></a>
+
+```typescript
+public readonly dbType: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `dbVersion`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.dbVersion"></a>
+
+```typescript
+public readonly dbVersion: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `endTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.endTime"></a>
+
+```typescript
+public readonly endTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.size"></a>
+
+```typescript
+public readonly size: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `backupIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.backupIdInput"></a>
+
+```typescript
+public readonly backupIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `instanceIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.instanceIdInput"></a>
+
+```typescript
+public readonly instanceIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `backupId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.backupId"></a>
+
+```typescript
+public readonly backupId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DataOpentelekomcloudRdsFlavorsV1 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV1"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}.
@@ -48629,6 +48840,18 @@ public putDb(value: RdsInstanceV3Db)
 
 ---
 
+##### `putRestorePoint` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.putRestorePoint"></a>
+
+```typescript
+public putRestorePoint(value: RdsInstanceV3RestorePoint)
+```
+
+###### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.parameter.value"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint)
+
+---
+
 ##### `putTimeouts` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.putTimeouts"></a>
 
 ```typescript
@@ -48681,6 +48904,12 @@ public resetParamGroupId()
 
 ```typescript
 public resetPublicIps()
+```
+
+##### `resetRestorePoint` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.resetRestorePoint"></a>
+
+```typescript
+public resetRestorePoint()
 ```
 
 ##### `resetTag` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.resetTag"></a>
@@ -48751,6 +48980,16 @@ public readonly privateIps: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `restorePoint`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.restorePoint"></a>
+
+```typescript
+public readonly restorePoint: RdsInstanceV3RestorePointOutputReference;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference)
 
 ---
 
@@ -48861,6 +49100,16 @@ public readonly publicIpsInput: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `restorePointInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.restorePointInput"></a>
+
+```typescript
+public readonly restorePointInput: RdsInstanceV3RestorePoint;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint)
 
 ---
 
@@ -75899,6 +76148,92 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudRdsBackupV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudRdsBackupV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudRdsBackupV3Config: DataOpentelekomcloudRdsBackupV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#instance_id DataOpentelekomcloudRdsBackupV3#instance_id}.
+
+---
+
+##### `backupId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.backupId"></a>
+
+```typescript
+public readonly backupId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#backup_id DataOpentelekomcloudRdsBackupV3#backup_id}.
+
+---
+
+##### `type`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#type DataOpentelekomcloudRdsBackupV3#type}.
+
+---
+
 ### DataOpentelekomcloudRdsFlavorsV1Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV1Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -93957,6 +94292,20 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `restorePoint`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.restorePoint"></a>
+
+```typescript
+public readonly restorePoint: RdsInstanceV3RestorePoint;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint)
+
+restore_point block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#restore_point RdsInstanceV3#restore_point}
+
+---
+
 ##### `tag`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Config.property.tag"></a>
 
 ```typescript
@@ -94017,7 +94366,19 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.type"></a>
+##### `port`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#port RdsInstanceV3#port}.
+
+---
+
+##### `type`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -94029,7 +94390,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.version"></a>
+##### `version`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.version"></a>
 
 ```typescript
 public readonly version: string;
@@ -94041,15 +94402,49 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Db.property.port"></a>
+### RdsInstanceV3RestorePoint <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
 
 ```typescript
-public readonly port: number;
+import { RdsInstanceV3RestorePoint } from '@cdktf/provider-opentelekomcloud'
+
+const rdsInstanceV3RestorePoint: RdsInstanceV3RestorePoint = { ... }
+```
+
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#instance_id RdsInstanceV3#instance_id}.
+
+---
+
+##### `backupId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint.property.backupId"></a>
+
+```typescript
+public readonly backupId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#backup_id RdsInstanceV3#backup_id}.
+
+---
+
+##### `restoreTime`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint.property.restoreTime"></a>
+
+```typescript
+public readonly restoreTime: number;
 ```
 
 - *Type:* `number`
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#port RdsInstanceV3#port}.
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#restore_time RdsInstanceV3#restore_time}.
 
 ---
 
@@ -118803,6 +119198,18 @@ True if this is a block, false if it's a list.
 public resetPort()
 ```
 
+##### `resetType` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.resetType"></a>
+
+```typescript
+public resetType()
+```
+
+##### `resetVersion` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.resetVersion"></a>
+
+```typescript
+public resetVersion()
+```
+
 
 #### Properties <a name="Properties"></a>
 
@@ -118992,6 +119399,128 @@ public readonly status: string;
 ```
 
 - *Type:* `string`
+
+---
+
+
+### RdsInstanceV3RestorePointOutputReference <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.Initializer"></a>
+
+```typescript
+import { RdsInstanceV3RestorePointOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new RdsInstanceV3RestorePointOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.parameter.isSingleItem"></a>
+
+- *Type:* `boolean`
+
+True if this is a block, false if it's a list.
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetBackupId` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.resetBackupId"></a>
+
+```typescript
+public resetBackupId()
+```
+
+##### `resetRestoreTime` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.resetRestoreTime"></a>
+
+```typescript
+public resetRestoreTime()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `backupIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.backupIdInput"></a>
+
+```typescript
+public readonly backupIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `instanceIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.instanceIdInput"></a>
+
+```typescript
+public readonly instanceIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `restoreTimeInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.restoreTimeInput"></a>
+
+```typescript
+public readonly restoreTimeInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `backupId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.backupId"></a>
+
+```typescript
+public readonly backupId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.instanceId"></a>
+
+```typescript
+public readonly instanceId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `restoreTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.restoreTime"></a>
+
+```typescript
+public readonly restoreTime: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: RdsInstanceV3RestorePoint;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint)
 
 ---
 
