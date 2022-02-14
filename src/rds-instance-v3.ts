@@ -68,6 +68,12 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly db: RdsInstanceV3Db;
   /**
+  * restore_point block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#restore_point RdsInstanceV3#restore_point}
+  */
+  readonly restorePoint?: RdsInstanceV3RestorePoint;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#timeouts RdsInstanceV3#timeouts}
@@ -209,11 +215,11 @@ export interface RdsInstanceV3Db {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#type RdsInstanceV3#type}
   */
-  readonly type: string;
+  readonly type?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#version RdsInstanceV3#version}
   */
-  readonly version: string;
+  readonly version?: string;
 }
 
 export function rdsInstanceV3DbToTerraform(struct?: RdsInstanceV3DbOutputReference | RdsInstanceV3Db): any {
@@ -309,13 +315,16 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
     return this._port;
   }
 
-  // type - computed: false, optional: false, required: true
+  // type - computed: true, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
@@ -327,7 +336,7 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
     return this.getStringAttribute('user_name');
   }
 
-  // version - computed: false, optional: false, required: true
+  // version - computed: true, optional: true, required: false
   private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
@@ -335,9 +344,129 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
   public set version(value: string) {
     this._version = value;
   }
+  public resetVersion() {
+    this._version = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+}
+export interface RdsInstanceV3RestorePoint {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#backup_id RdsInstanceV3#backup_id}
+  */
+  readonly backupId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#instance_id RdsInstanceV3#instance_id}
+  */
+  readonly instanceId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#restore_time RdsInstanceV3#restore_time}
+  */
+  readonly restoreTime?: number;
+}
+
+export function rdsInstanceV3RestorePointToTerraform(struct?: RdsInstanceV3RestorePointOutputReference | RdsInstanceV3RestorePoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    backup_id: cdktf.stringToTerraform(struct!.backupId),
+    instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    restore_time: cdktf.numberToTerraform(struct!.restoreTime),
+  }
+}
+
+export class RdsInstanceV3RestorePointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  public get internalValue(): RdsInstanceV3RestorePoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupId = this._backupId;
+    }
+    if (this._instanceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceId = this._instanceId;
+    }
+    if (this._restoreTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restoreTime = this._restoreTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsInstanceV3RestorePoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._backupId = undefined;
+      this._instanceId = undefined;
+      this._restoreTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._backupId = value.backupId;
+      this._instanceId = value.instanceId;
+      this._restoreTime = value.restoreTime;
+    }
+  }
+
+  // backup_id - computed: false, optional: true, required: false
+  private _backupId?: string; 
+  public get backupId() {
+    return this.getStringAttribute('backup_id');
+  }
+  public set backupId(value: string) {
+    this._backupId = value;
+  }
+  public resetBackupId() {
+    this._backupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupIdInput() {
+    return this._backupId;
+  }
+
+  // instance_id - computed: false, optional: false, required: true
+  private _instanceId?: string; 
+  public get instanceId() {
+    return this.getStringAttribute('instance_id');
+  }
+  public set instanceId(value: string) {
+    this._instanceId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceIdInput() {
+    return this._instanceId;
+  }
+
+  // restore_time - computed: false, optional: true, required: false
+  private _restoreTime?: number; 
+  public get restoreTime() {
+    return this.getNumberAttribute('restore_time');
+  }
+  public set restoreTime(value: number) {
+    this._restoreTime = value;
+  }
+  public resetRestoreTime() {
+    this._restoreTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreTimeInput() {
+    return this._restoreTime;
   }
 }
 export interface RdsInstanceV3Timeouts {
@@ -594,6 +723,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
     this._vpcId = config.vpcId;
     this._backupStrategy.internalValue = config.backupStrategy;
     this._db.internalValue = config.db;
+    this._restorePoint.internalValue = config.restorePoint;
     this._timeouts.internalValue = config.timeouts;
     this._volume.internalValue = config.volume;
   }
@@ -825,6 +955,22 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
     return this._db.internalValue;
   }
 
+  // restore_point - computed: false, optional: true, required: false
+  private _restorePoint = new RdsInstanceV3RestorePointOutputReference(this, "restore_point", true);
+  public get restorePoint() {
+    return this._restorePoint;
+  }
+  public putRestorePoint(value: RdsInstanceV3RestorePoint) {
+    this._restorePoint.internalValue = value;
+  }
+  public resetRestorePoint() {
+    this._restorePoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restorePointInput() {
+    return this._restorePoint.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new RdsInstanceV3TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
@@ -874,6 +1020,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_strategy: rdsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
       db: rdsInstanceV3DbToTerraform(this._db.internalValue),
+      restore_point: rdsInstanceV3RestorePointToTerraform(this._restorePoint.internalValue),
       timeouts: rdsInstanceV3TimeoutsToTerraform(this._timeouts.internalValue),
       volume: rdsInstanceV3VolumeToTerraform(this._volume.internalValue),
     };
