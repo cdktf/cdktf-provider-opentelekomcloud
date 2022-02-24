@@ -174,6 +174,7 @@ export * from './data-opentelekomcloud-dms-az-v1';
 export * from './data-opentelekomcloud-dms-maintainwindow-v1';
 export * from './data-opentelekomcloud-dms-product-v1';
 export * from './data-opentelekomcloud-dns-zone-v2';
+export * from './data-opentelekomcloud-identity-agency-v3';
 export * from './data-opentelekomcloud-identity-auth-scope-v3';
 export * from './data-opentelekomcloud-identity-credential-v3';
 export * from './data-opentelekomcloud-identity-group-v3';

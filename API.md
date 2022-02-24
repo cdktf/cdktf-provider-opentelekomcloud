@@ -15800,6 +15800,167 @@ public readonly zoneType: string;
 
 ---
 
+### DataOpentelekomcloudIdentityAgencyV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityAgencyV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudIdentityAgencyV3(scope: Construct, id: string, config?: DataOpentelekomcloudIdentityAgencyV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.resetName"></a>
+
+```typescript
+public resetName()
+```
+
+##### `resetTrustDomainId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.resetTrustDomainId"></a>
+
+```typescript
+public resetTrustDomainId()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `createTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `duration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.duration"></a>
+
+```typescript
+public readonly duration: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `expireTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.expireTime"></a>
+
+```typescript
+public readonly expireTime: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `trustDomainName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.trustDomainName"></a>
+
+```typescript
+public readonly trustDomainName: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `trustDomainIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.trustDomainIdInput"></a>
+
+```typescript
+public readonly trustDomainIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `trustDomainId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.trustDomainId"></a>
+
+```typescript
+public readonly trustDomainId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DataOpentelekomcloudIdentityAuthScopeV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3}.
@@ -74053,6 +74214,80 @@ public readonly zoneType: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_zone_v2#zone_type DataOpentelekomcloudDnsZoneV2#zone_type}.
+
+---
+
+### DataOpentelekomcloudIdentityAgencyV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityAgencyV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudIdentityAgencyV3Config: DataOpentelekomcloudIdentityAgencyV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `name`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_agency_v3#name DataOpentelekomcloudIdentityAgencyV3#name}.
+
+---
+
+##### `trustDomainId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAgencyV3Config.property.trustDomainId"></a>
+
+```typescript
+public readonly trustDomainId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_agency_v3#trust_domain_id DataOpentelekomcloudIdentityAgencyV3#trust_domain_id}.
 
 ---
 
