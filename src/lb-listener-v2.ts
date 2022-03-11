@@ -68,6 +68,10 @@ export interface LbListenerV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly tlsCiphersPolicy?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#transparent_client_ip_enable LbListenerV2#transparent_client_ip_enable}
+  */
+  readonly transparentClientIpEnable?: boolean | cdktf.IResolvable;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#timeouts LbListenerV2#timeouts}
@@ -242,6 +246,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._tenantId = config.tenantId;
     this._tlsCiphersPolicy = config.tlsCiphersPolicy;
+    this._transparentClientIpEnable = config.transparentClientIpEnable;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -485,6 +490,22 @@ export class LbListenerV2 extends cdktf.TerraformResource {
     return this._tlsCiphersPolicy;
   }
 
+  // transparent_client_ip_enable - computed: true, optional: true, required: false
+  private _transparentClientIpEnable?: boolean | cdktf.IResolvable; 
+  public get transparentClientIpEnable() {
+    return this.getBooleanAttribute('transparent_client_ip_enable');
+  }
+  public set transparentClientIpEnable(value: boolean | cdktf.IResolvable) {
+    this._transparentClientIpEnable = value;
+  }
+  public resetTransparentClientIpEnable() {
+    this._transparentClientIpEnable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transparentClientIpEnableInput() {
+    return this._transparentClientIpEnable;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new LbListenerV2TimeoutsOutputReference(this, "timeouts", true);
   public get timeouts() {
@@ -522,6 +543,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
+      transparent_client_ip_enable: cdktf.booleanToTerraform(this._transparentClientIpEnable),
       timeouts: lbListenerV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

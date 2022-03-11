@@ -150,6 +150,7 @@ export * from './waf-preciseprotection-rule-v1';
 export * from './waf-webtamperprotection-rule-v1';
 export * from './waf-whiteblackip-rule-v1';
 export * from './data-opentelekomcloud-antiddos-v1';
+export * from './data-opentelekomcloud-cce-cluster-kubeconfig-v3';
 export * from './data-opentelekomcloud-cce-cluster-v3';
 export * from './data-opentelekomcloud-cce-node-ids-v3';
 export * from './data-opentelekomcloud-cce-node-v3';

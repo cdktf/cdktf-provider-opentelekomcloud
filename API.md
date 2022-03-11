@@ -8900,6 +8900,12 @@ public resetEnableHttps()
 public resetExpectNodeNum()
 ```
 
+##### `resetTags` <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.resetTags"></a>
+
+```typescript
+public resetTags()
+```
+
 ##### `resetTimeouts` <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.resetTimeouts"></a>
 
 ```typescript
@@ -9049,6 +9055,16 @@ public readonly nodeConfigInput: CssClusterV1NodeConfig;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.property.timeoutsInput"></a>
 
 ```typescript
@@ -9106,6 +9122,16 @@ public readonly name: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -9999,6 +10025,121 @@ public readonly status: string;
 #### Constants <a name="Constants"></a>
 
 ##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudAntiddosV1.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
+### DataOpentelekomcloudCceClusterKubeconfigV3 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterKubeconfigV3 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceClusterKubeconfigV3(scope: Construct, id: string, config: DataOpentelekomcloudCceClusterKubeconfigV3Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetDuration` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.resetDuration"></a>
+
+```typescript
+public resetDuration()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `kubeconfig`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.kubeconfig"></a>
+
+```typescript
+public readonly kubeconfig: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `clusterIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.clusterIdInput"></a>
+
+```typescript
+public readonly clusterIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `durationInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.durationInput"></a>
+
+```typescript
+public readonly durationInput: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `clusterId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.clusterId"></a>
+
+```typescript
+public readonly clusterId: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `duration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.duration"></a>
+
+```typescript
+public readonly duration: number;
+```
+
+- *Type:* `number`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3.property.tfResourceType"></a>
 
 - *Type:* `string`
 
@@ -37028,6 +37169,12 @@ public resetTimeouts()
 public resetTlsCiphersPolicy()
 ```
 
+##### `resetTransparentClientIpEnable` <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.resetTransparentClientIpEnable"></a>
+
+```typescript
+public resetTransparentClientIpEnable()
+```
+
 
 #### Properties <a name="Properties"></a>
 
@@ -37211,6 +37358,16 @@ public readonly tlsCiphersPolicyInput: string;
 
 ---
 
+##### `transparentClientIpEnableInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.property.transparentClientIpEnableInput"></a>
+
+```typescript
+public readonly transparentClientIpEnableInput: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
 ##### `adminStateUp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.property.adminStateUp"></a>
 
 ```typescript
@@ -37358,6 +37515,16 @@ public readonly tlsCiphersPolicy: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `transparentClientIpEnable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2.property.transparentClientIpEnable"></a>
+
+```typescript
+public readonly transparentClientIpEnable: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 
@@ -70639,6 +70806,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Config.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#tags CssClusterV1#tags}.
+
+---
+
 ##### `timeouts`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Config.property.timeouts"></a>
 
 ```typescript
@@ -71454,6 +71633,80 @@ public readonly status: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/antiddos_v1#status DataOpentelekomcloudAntiddosV1#status}.
+
+---
+
+### DataOpentelekomcloudCceClusterKubeconfigV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterKubeconfigV3Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCceClusterKubeconfigV3Config: DataOpentelekomcloudCceClusterKubeconfigV3Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `clusterId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.clusterId"></a>
+
+```typescript
+public readonly clusterId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}.
+
+---
+
+##### `duration`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.duration"></a>
+
+```typescript
+public readonly duration: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}.
 
 ---
 
@@ -86074,6 +86327,18 @@ public readonly tlsCiphersPolicy: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#tls_ciphers_policy LbListenerV2#tls_ciphers_policy}.
+
+---
+
+##### `transparentClientIpEnable`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2Config.property.transparentClientIpEnable"></a>
+
+```typescript
+public readonly transparentClientIpEnable: boolean | IResolvable;
+```
+
+- *Type:* `boolean` | [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v2#transparent_client_ip_enable LbListenerV2#transparent_client_ip_enable}.
 
 ---
 

@@ -28,6 +28,10 @@ export interface CssClusterV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#tags CssClusterV1#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * datastore block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#datastore CssClusterV1#datastore}
@@ -124,7 +128,7 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
     }
   }
 
-  // type - computed: true, optional: true, required: false
+  // type - computed: false, optional: true, required: false
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
@@ -654,6 +658,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
     this._enableHttps = config.enableHttps;
     this._expectNodeNum = config.expectNodeNum;
     this._name = config.name;
+    this._tags = config.tags;
     this._datastore.internalValue = config.datastore;
     this._nodeConfig.internalValue = config.nodeConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -760,6 +765,22 @@ export class CssClusterV1 extends cdktf.TerraformResource {
     return new CssClusterV1Nodes(this, 'nodes', index, false);
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // updated - computed: true, optional: false, required: false
   public get updated() {
     return this.getStringAttribute('updated');
@@ -821,6 +842,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
       enable_https: cdktf.booleanToTerraform(this._enableHttps),
       expect_node_num: cdktf.numberToTerraform(this._expectNodeNum),
       name: cdktf.stringToTerraform(this._name),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       datastore: cssClusterV1DatastoreToTerraform(this._datastore.internalValue),
       node_config: cssClusterV1NodeConfigToTerraform(this._nodeConfig.internalValue),
       timeouts: cssClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
