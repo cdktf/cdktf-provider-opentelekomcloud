@@ -43465,6 +43465,12 @@ public resetDescription()
 public resetRegion()
 ```
 
+##### `resetTags` <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2.resetTags"></a>
+
+```typescript
+public resetTags()
+```
+
 ##### `resetTenantId` <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2.resetTenantId"></a>
 
 ```typescript
@@ -43560,6 +43566,16 @@ public readonly specInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+---
+
 ##### `tenantIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2.property.tenantIdInput"></a>
 
 ```typescript
@@ -43637,6 +43653,16 @@ public readonly spec: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
 
 ---
 
@@ -90393,6 +90419,18 @@ public readonly region: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#region NatGatewayV2#region}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2Config.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: `string`}
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tags NatGatewayV2#tags}.
 
 ---
 
