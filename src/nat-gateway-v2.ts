@@ -32,6 +32,10 @@ export interface NatGatewayV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly spec: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tags NatGatewayV2#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tenant_id NatGatewayV2#tenant_id}
   */
   readonly tenantId?: string;
@@ -174,6 +178,7 @@ export class NatGatewayV2 extends cdktf.TerraformResource {
     this._region = config.region;
     this._routerId = config.routerId;
     this._spec = config.spec;
+    this._tags = config.tags;
     this._tenantId = config.tenantId;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -271,6 +276,22 @@ export class NatGatewayV2 extends cdktf.TerraformResource {
     return this._spec;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // tenant_id - computed: true, optional: true, required: false
   private _tenantId?: string; 
   public get tenantId() {
@@ -315,6 +336,7 @@ export class NatGatewayV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       router_id: cdktf.stringToTerraform(this._routerId),
       spec: cdktf.stringToTerraform(this._spec),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       timeouts: natGatewayV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
