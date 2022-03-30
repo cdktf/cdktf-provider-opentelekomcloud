@@ -65,10 +65,9 @@ export class WafPolicyV1ActionOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafPolicyV1Action | undefined {
@@ -193,10 +192,9 @@ export class WafPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafPolicyV1Options | undefined {
@@ -550,10 +548,9 @@ export class WafPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): WafPolicyV1Timeouts | undefined {
@@ -624,7 +621,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_waf_policy_v1";
+  public static readonly tfResourceType = "opentelekomcloud_waf_policy_v1";
 
   // ===========
   // INITIALIZER
@@ -641,7 +638,9 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_waf_policy_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -728,7 +727,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
 
   // action - computed: false, optional: true, required: false
-  private _action = new WafPolicyV1ActionOutputReference(this, "action", true);
+  private _action = new WafPolicyV1ActionOutputReference(this, "action");
   public get action() {
     return this._action;
   }
@@ -744,7 +743,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
 
   // options - computed: false, optional: true, required: false
-  private _options = new WafPolicyV1OptionsOutputReference(this, "options", true);
+  private _options = new WafPolicyV1OptionsOutputReference(this, "options");
   public get options() {
     return this._options;
   }
@@ -760,7 +759,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new WafPolicyV1TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new WafPolicyV1TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

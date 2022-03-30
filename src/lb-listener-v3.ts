@@ -120,10 +120,9 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LbListenerV3InsertHeaders | undefined {
@@ -238,7 +237,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_lb_listener_v3";
+  public static readonly tfResourceType = "opentelekomcloud_lb_listener_v3";
 
   // ===========
   // INITIALIZER
@@ -255,7 +254,9 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -565,7 +566,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // insert_headers - computed: false, optional: true, required: false
-  private _insertHeaders = new LbListenerV3InsertHeadersOutputReference(this, "insert_headers", true);
+  private _insertHeaders = new LbListenerV3InsertHeadersOutputReference(this, "insert_headers");
   public get insertHeaders() {
     return this._insertHeaders;
   }

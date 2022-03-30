@@ -21,7 +21,7 @@ export class DataOpentelekomcloudSfsTurboShareV1 extends cdktf.TerraformDataSour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_sfs_turbo_share_v1";
+  public static readonly tfResourceType = "opentelekomcloud_sfs_turbo_share_v1";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataOpentelekomcloudSfsTurboShareV1 extends cdktf.TerraformDataSour
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_sfs_turbo_share_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

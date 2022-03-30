@@ -108,11 +108,68 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: ComputeInstanceV2Timeouts;
 }
-export class ComputeInstanceV2VolumeAttached extends cdktf.ComplexComputedList {
+export interface ComputeInstanceV2VolumeAttached {
+}
+
+export function computeInstanceV2VolumeAttachedToTerraform(struct?: ComputeInstanceV2VolumeAttached): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class ComputeInstanceV2VolumeAttachedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeInstanceV2VolumeAttached | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInstanceV2VolumeAttached | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+}
+
+export class ComputeInstanceV2VolumeAttachedList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeInstanceV2VolumeAttachedOutputReference {
+    return new ComputeInstanceV2VolumeAttachedOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ComputeInstanceV2BlockDevice {
@@ -299,10 +356,9 @@ export class ComputeInstanceV2TimeoutsOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ComputeInstanceV2Timeouts | undefined {
@@ -395,7 +451,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_compute_instance_v2";
+  public static readonly tfResourceType = "opentelekomcloud_compute_instance_v2";
 
   // ===========
   // INITIALIZER
@@ -412,7 +468,9 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_compute_instance_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -760,8 +818,9 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // volume_attached - computed: true, optional: false, required: false
-  public volumeAttached(index: string) {
-    return new ComputeInstanceV2VolumeAttached(this, 'volume_attached', index, false);
+  private _volumeAttached = new ComputeInstanceV2VolumeAttachedList(this, "volume_attached", false);
+  public get volumeAttached() {
+    return this._volumeAttached;
   }
 
   // block_device - computed: false, optional: true, required: false
@@ -816,7 +875,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new ComputeInstanceV2TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new ComputeInstanceV2TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

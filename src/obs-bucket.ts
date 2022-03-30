@@ -347,10 +347,9 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ObsBucketServerSideEncryption | undefined {
@@ -444,10 +443,9 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ObsBucketWebsite | undefined {
@@ -562,7 +560,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_obs_bucket";
+  public static readonly tfResourceType = "opentelekomcloud_obs_bucket";
 
   // ===========
   // INITIALIZER
@@ -579,7 +577,9 @@ export class ObsBucket extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_obs_bucket',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -793,7 +793,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
-  private _serverSideEncryption = new ObsBucketServerSideEncryptionOutputReference(this, "server_side_encryption", true);
+  private _serverSideEncryption = new ObsBucketServerSideEncryptionOutputReference(this, "server_side_encryption");
   public get serverSideEncryption() {
     return this._serverSideEncryption;
   }
@@ -809,7 +809,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // website - computed: false, optional: true, required: false
-  private _website = new ObsBucketWebsiteOutputReference(this, "website", true);
+  private _website = new ObsBucketWebsiteOutputReference(this, "website");
   public get website() {
     return this._website;
   }

@@ -110,10 +110,9 @@ export class RdsInstanceV1BackupstrategyOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Backupstrategy | undefined {
@@ -203,10 +202,9 @@ export class RdsInstanceV1DatastoreOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Datastore | undefined {
@@ -290,10 +288,9 @@ export class RdsInstanceV1HaOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Ha | undefined {
@@ -378,10 +375,9 @@ export class RdsInstanceV1NicsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Nics | undefined {
@@ -441,10 +437,9 @@ export class RdsInstanceV1SecuritygroupOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Securitygroup | undefined {
@@ -509,10 +504,9 @@ export class RdsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Timeouts | undefined {
@@ -602,10 +596,9 @@ export class RdsInstanceV1VolumeOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV1Volume | undefined {
@@ -670,7 +663,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_rds_instance_v1";
+  public static readonly tfResourceType = "opentelekomcloud_rds_instance_v1";
 
   // ===========
   // INITIALIZER
@@ -687,7 +680,9 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_rds_instance_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -862,7 +857,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // backupstrategy - computed: false, optional: true, required: false
-  private _backupstrategy = new RdsInstanceV1BackupstrategyOutputReference(this, "backupstrategy", true);
+  private _backupstrategy = new RdsInstanceV1BackupstrategyOutputReference(this, "backupstrategy");
   public get backupstrategy() {
     return this._backupstrategy;
   }
@@ -878,7 +873,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore = new RdsInstanceV1DatastoreOutputReference(this, "datastore", true);
+  private _datastore = new RdsInstanceV1DatastoreOutputReference(this, "datastore");
   public get datastore() {
     return this._datastore;
   }
@@ -891,7 +886,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // ha - computed: false, optional: true, required: false
-  private _ha = new RdsInstanceV1HaOutputReference(this, "ha", true);
+  private _ha = new RdsInstanceV1HaOutputReference(this, "ha");
   public get ha() {
     return this._ha;
   }
@@ -907,7 +902,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // nics - computed: false, optional: false, required: true
-  private _nics = new RdsInstanceV1NicsOutputReference(this, "nics", true);
+  private _nics = new RdsInstanceV1NicsOutputReference(this, "nics");
   public get nics() {
     return this._nics;
   }
@@ -920,7 +915,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // securitygroup - computed: false, optional: false, required: true
-  private _securitygroup = new RdsInstanceV1SecuritygroupOutputReference(this, "securitygroup", true);
+  private _securitygroup = new RdsInstanceV1SecuritygroupOutputReference(this, "securitygroup");
   public get securitygroup() {
     return this._securitygroup;
   }
@@ -933,7 +928,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsInstanceV1TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new RdsInstanceV1TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -949,7 +944,7 @@ export class RdsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new RdsInstanceV1VolumeOutputReference(this, "volume", true);
+  private _volume = new RdsInstanceV1VolumeOutputReference(this, "volume");
   public get volume() {
     return this._volume;
   }

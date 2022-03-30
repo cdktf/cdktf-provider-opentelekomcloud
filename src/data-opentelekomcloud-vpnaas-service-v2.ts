@@ -69,7 +69,7 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vpnaas_service_v2";
+  public static readonly tfResourceType = "opentelekomcloud_vpnaas_service_v2";
 
   // ===========
   // INITIALIZER
@@ -86,7 +86,9 @@ export class DataOpentelekomcloudVpnaasServiceV2 extends cdktf.TerraformDataSour
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vpnaas_service_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

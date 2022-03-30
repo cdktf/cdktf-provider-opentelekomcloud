@@ -28,7 +28,45 @@ export interface DataOpentelekomcloudCceNodeV3Config extends cdktf.TerraformMeta
   */
   readonly status?: string;
 }
-export class DataOpentelekomcloudCceNodeV3DataVolumes extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudCceNodeV3DataVolumes {
+}
+
+export function dataOpentelekomcloudCceNodeV3DataVolumesToTerraform(struct?: DataOpentelekomcloudCceNodeV3DataVolumes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudCceNodeV3DataVolumesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudCceNodeV3DataVolumes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudCceNodeV3DataVolumes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // disk_size - computed: true, optional: false, required: false
   public get diskSize() {
@@ -51,6 +89,25 @@ export class DataOpentelekomcloudCceNodeV3DataVolumes extends cdktf.ComplexCompu
   }
 }
 
+export class DataOpentelekomcloudCceNodeV3DataVolumesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudCceNodeV3DataVolumesOutputReference {
+    return new DataOpentelekomcloudCceNodeV3DataVolumesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_node_v3 opentelekomcloud_cce_node_v3}
 */
@@ -59,7 +116,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cce_node_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cce_node_v3";
 
   // ===========
   // INITIALIZER
@@ -76,7 +133,9 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cce_node_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -128,8 +187,9 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
 
   // data_volumes - computed: true, optional: false, required: false
-  public dataVolumes(index: string) {
-    return new DataOpentelekomcloudCceNodeV3DataVolumes(this, 'data_volumes', index, false);
+  private _dataVolumes = new DataOpentelekomcloudCceNodeV3DataVolumesList(this, "data_volumes", false);
+  public get dataVolumes() {
+    return this._dataVolumes;
   }
 
   // disk_size - computed: true, optional: false, required: false

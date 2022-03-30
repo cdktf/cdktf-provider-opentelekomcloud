@@ -67,10 +67,9 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CssSnapshotConfigurationV1Configuration | undefined {
@@ -191,10 +190,9 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CssSnapshotConfigurationV1CreationPolicy | undefined {
@@ -338,10 +336,9 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CssSnapshotConfigurationV1Timeouts | undefined {
@@ -412,7 +409,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_css_snapshot_configuration_v1";
+  public static readonly tfResourceType = "opentelekomcloud_css_snapshot_configuration_v1";
 
   // ===========
   // INITIALIZER
@@ -429,7 +426,9 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_css_snapshot_configuration_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -487,7 +486,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new CssSnapshotConfigurationV1ConfigurationOutputReference(this, "configuration", true);
+  private _configuration = new CssSnapshotConfigurationV1ConfigurationOutputReference(this, "configuration");
   public get configuration() {
     return this._configuration;
   }
@@ -503,7 +502,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // creation_policy - computed: false, optional: true, required: false
-  private _creationPolicy = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this, "creation_policy", true);
+  private _creationPolicy = new CssSnapshotConfigurationV1CreationPolicyOutputReference(this, "creation_policy");
   public get creationPolicy() {
     return this._creationPolicy;
   }
@@ -519,7 +518,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CssSnapshotConfigurationV1TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CssSnapshotConfigurationV1TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

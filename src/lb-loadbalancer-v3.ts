@@ -105,10 +105,9 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LbLoadbalancerV3PublicIp | undefined {
@@ -243,7 +242,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_lb_loadbalancer_v3";
+  public static readonly tfResourceType = "opentelekomcloud_lb_loadbalancer_v3";
 
   // ===========
   // INITIALIZER
@@ -260,7 +259,9 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_loadbalancer_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -493,7 +494,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp = new LbLoadbalancerV3PublicIpOutputReference(this, "public_ip", true);
+  private _publicIp = new LbLoadbalancerV3PublicIpOutputReference(this, "public_ip");
   public get publicIp() {
     return this._publicIp;
   }

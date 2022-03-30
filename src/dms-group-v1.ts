@@ -25,7 +25,7 @@ export class DmsGroupV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_dms_group_v1";
+  public static readonly tfResourceType = "opentelekomcloud_dms_group_v1";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DmsGroupV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_dms_group_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

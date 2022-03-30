@@ -25,7 +25,7 @@ export class DataOpentelekomcloudCceClusterKubeconfigV3 extends cdktf.TerraformD
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cce_cluster_kubeconfig_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cce_cluster_kubeconfig_v3";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataOpentelekomcloudCceClusterKubeconfigV3 extends cdktf.TerraformD
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cce_cluster_kubeconfig_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

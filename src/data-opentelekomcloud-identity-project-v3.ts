@@ -37,7 +37,7 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_identity_project_v3";
+  public static readonly tfResourceType = "opentelekomcloud_identity_project_v3";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class DataOpentelekomcloudIdentityProjectV3 extends cdktf.TerraformDataSo
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_identity_project_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

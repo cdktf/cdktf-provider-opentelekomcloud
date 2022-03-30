@@ -28,11 +28,68 @@ export interface DataOpentelekomcloudDehHostV1Config extends cdktf.TerraformMeta
   */
   readonly status?: string;
 }
-export class DataOpentelekomcloudDehHostV1AvailableInstanceCapacities extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudDehHostV1AvailableInstanceCapacities {
+}
+
+export function dataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DataOpentelekomcloudDehHostV1AvailableInstanceCapacities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudDehHostV1AvailableInstanceCapacities | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudDehHostV1AvailableInstanceCapacities | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // flavor - computed: true, optional: false, required: false
   public get flavor() {
     return this.getStringAttribute('flavor');
+  }
+}
+
+export class DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference {
+    return new DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -44,7 +101,7 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_deh_host_v1";
+  public static readonly tfResourceType = "opentelekomcloud_deh_host_v1";
 
   // ===========
   // INITIALIZER
@@ -61,7 +118,9 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_deh_host_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -101,8 +160,9 @@ export class DataOpentelekomcloudDehHostV1 extends cdktf.TerraformDataSource {
   }
 
   // available_instance_capacities - computed: true, optional: false, required: false
-  public availableInstanceCapacities(index: string) {
-    return new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(this, 'available_instance_capacities', index, false);
+  private _availableInstanceCapacities = new DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList(this, "available_instance_capacities", false);
+  public get availableInstanceCapacities() {
+    return this._availableInstanceCapacities;
   }
 
   // available_memory - computed: true, optional: false, required: false

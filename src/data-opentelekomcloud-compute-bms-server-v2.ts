@@ -44,7 +44,45 @@ export interface DataOpentelekomcloudComputeBmsServerV2Config extends cdktf.Terr
   */
   readonly userId?: string;
 }
-export class DataOpentelekomcloudComputeBmsServerV2Network extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudComputeBmsServerV2Network {
+}
+
+export function dataOpentelekomcloudComputeBmsServerV2NetworkToTerraform(struct?: DataOpentelekomcloudComputeBmsServerV2Network): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudComputeBmsServerV2Network | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudComputeBmsServerV2Network | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // ip - computed: true, optional: false, required: false
   public get ip() {
@@ -71,11 +109,87 @@ export class DataOpentelekomcloudComputeBmsServerV2Network extends cdktf.Complex
     return this.getNumberAttribute('version');
   }
 }
-export class DataOpentelekomcloudComputeBmsServerV2SecurityGroups extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudComputeBmsServerV2NetworkList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference {
+    return new DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudComputeBmsServerV2SecurityGroups {
+}
+
+export function dataOpentelekomcloudComputeBmsServerV2SecurityGroupsToTerraform(struct?: DataOpentelekomcloudComputeBmsServerV2SecurityGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudComputeBmsServerV2SecurityGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudComputeBmsServerV2SecurityGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+}
+
+export class DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference {
+    return new DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -87,7 +201,7 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_compute_bms_server_v2";
+  public static readonly tfResourceType = "opentelekomcloud_compute_bms_server_v2";
 
   // ===========
   // INITIALIZER
@@ -104,7 +218,9 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_compute_bms_server_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -278,8 +394,9 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // network - computed: true, optional: false, required: false
-  public network(index: string) {
-    return new DataOpentelekomcloudComputeBmsServerV2Network(this, 'network', index, false);
+  private _network = new DataOpentelekomcloudComputeBmsServerV2NetworkList(this, "network", false);
+  public get network() {
+    return this._network;
   }
 
   // progress - computed: true, optional: false, required: false
@@ -304,8 +421,9 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // security_groups - computed: true, optional: false, required: false
-  public securityGroups(index: string) {
-    return new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(this, 'security_groups', index, false);
+  private _securityGroups = new DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList(this, "security_groups", false);
+  public get securityGroups() {
+    return this._securityGroups;
   }
 
   // status - computed: false, optional: true, required: false

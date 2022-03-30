@@ -69,7 +69,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_networking_port_v2";
+  public static readonly tfResourceType = "opentelekomcloud_networking_port_v2";
 
   // ===========
   // INITIALIZER
@@ -86,7 +86,9 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_networking_port_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

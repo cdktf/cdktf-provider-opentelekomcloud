@@ -21,7 +21,7 @@ export class DataOpentelekomcloudVpcepPublicServiceV1 extends cdktf.TerraformDat
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vpcep_public_service_v1";
+  public static readonly tfResourceType = "opentelekomcloud_vpcep_public_service_v1";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataOpentelekomcloudVpcepPublicServiceV1 extends cdktf.TerraformDat
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vpcep_public_service_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

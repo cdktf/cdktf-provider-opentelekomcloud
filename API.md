@@ -1360,18 +1360,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `metadata` <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.metadata"></a>
-
-```typescript
-public metadata(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetAlarmId` <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.resetAlarmId"></a>
 
 ```typescript
@@ -1422,6 +1410,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2.property.metadata"></a>
+
+```typescript
+public readonly metadata: AsPolicyV2MetadataList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList`](#@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList)
 
 ---
 
@@ -1651,18 +1649,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `attachment` <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.attachment"></a>
-
-```typescript
-public attachment(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.putTimeouts"></a>
 
 ```typescript
@@ -1767,6 +1753,16 @@ public resetVolumeType()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `attachment`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.attachment"></a>
+
+```typescript
+public readonly attachment: BlockstorageVolumeV2AttachmentList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList`](#@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2.property.id"></a>
 
@@ -2915,30 +2911,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `certificateClusters` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.certificateClusters"></a>
-
-```typescript
-public certificateClusters(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `certificateUsers` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.certificateUsers"></a>
-
-```typescript
-public certificateUsers(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putAuthenticatingProxy` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.putAuthenticatingProxy"></a>
 
 ```typescript
@@ -3081,6 +3053,26 @@ public readonly authenticatingProxy: CceClusterV3AuthenticatingProxyOutputRefere
 ```
 
 - *Type:* [`@cdktf/provider-opentelekomcloud.CceClusterV3AuthenticatingProxyOutputReference`](#@cdktf/provider-opentelekomcloud.CceClusterV3AuthenticatingProxyOutputReference)
+
+---
+
+##### `certificateClusters`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.certificateClusters"></a>
+
+```typescript
+public readonly certificateClusters: CceClusterV3CertificateClustersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList`](#@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList)
+
+---
+
+##### `certificateUsers`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.certificateUsers"></a>
+
+```typescript
+public readonly certificateUsers: CceClusterV3CertificateUsersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList`](#@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList)
 
 ---
 
@@ -6959,18 +6951,6 @@ public resetTimeouts()
 public resetUserData()
 ```
 
-##### `volumeAttached` <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.volumeAttached"></a>
-
-```typescript
-public volumeAttached(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -6991,6 +6971,16 @@ public readonly timeouts: ComputeInstanceV2TimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2TimeoutsOutputReference`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2TimeoutsOutputReference)
+
+---
+
+##### `volumeAttached`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2.property.volumeAttached"></a>
+
+```typescript
+public readonly volumeAttached: ComputeInstanceV2VolumeAttachedList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList)
 
 ---
 
@@ -8579,30 +8569,6 @@ public resetTags()
 public resetTimeouts()
 ```
 
-##### `vmMetadata` <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.vmMetadata"></a>
-
-```typescript
-public vmMetadata(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `volumeBackups` <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.volumeBackups"></a>
-
-```typescript
-public volumeBackups(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -8643,6 +8609,26 @@ public readonly timeouts: CsbsBackupV1TimeoutsOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1TimeoutsOutputReference`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1TimeoutsOutputReference)
+
+---
+
+##### `vmMetadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.property.vmMetadata"></a>
+
+```typescript
+public readonly vmMetadata: CsbsBackupV1VmMetadataList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList)
+
+---
+
+##### `volumeBackups`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1.property.volumeBackups"></a>
+
+```typescript
+public readonly volumeBackups: CsbsBackupV1VolumeBackupsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList)
 
 ---
 
@@ -8822,18 +8808,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `nodes` <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.nodes"></a>
-
-```typescript
-public nodes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putDatastore` <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.putDatastore"></a>
 
 ```typescript
@@ -8962,6 +8936,16 @@ public readonly nodeConfig: CssClusterV1NodeConfigOutputReference;
 ```
 
 - *Type:* [`@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigOutputReference`](#@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigOutputReference)
+
+---
+
+##### `nodes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1.property.nodes"></a>
+
+```typescript
+public readonly nodes: CssClusterV1NodesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CssClusterV1NodesList`](#@cdktf/provider-opentelekomcloud.CssClusterV1NodesList)
 
 ---
 
@@ -10183,30 +10167,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `certificateClusters` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.certificateClusters"></a>
-
-```typescript
-public certificateClusters(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `certificateUsers` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.certificateUsers"></a>
-
-```typescript
-public certificateUsers(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetClusterType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.resetClusterType"></a>
 
 ```typescript
@@ -10257,6 +10217,26 @@ public readonly billingMode: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `certificateClusters`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.property.certificateClusters"></a>
+
+```typescript
+public readonly certificateClusters: DataOpentelekomcloudCceClusterV3CertificateClustersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList)
+
+---
+
+##### `certificateUsers`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.property.certificateUsers"></a>
+
+```typescript
+public readonly certificateUsers: DataOpentelekomcloudCceClusterV3CertificateUsersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList)
 
 ---
 
@@ -10631,18 +10611,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `dataVolumes` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3.dataVolumes"></a>
-
-```typescript
-public dataVolumes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3.resetName"></a>
 
 ```typescript
@@ -10707,6 +10675,16 @@ public readonly chargeMode: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `dataVolumes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3.property.dataVolumes"></a>
+
+```typescript
+public readonly dataVolumes: DataOpentelekomcloudCceNodeV3DataVolumesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList)
 
 ---
 
@@ -11503,18 +11481,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `fixedIps` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2.fixedIps"></a>
-
-```typescript
-public fixedIps(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2.resetId"></a>
 
 ```typescript
@@ -11535,6 +11501,16 @@ public resetStatus()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `fixedIps`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2.property.fixedIps"></a>
+
+```typescript
+public readonly fixedIps: DataOpentelekomcloudComputeBmsNicV2FixedIpsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList)
+
+---
 
 ##### `macAddress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2.property.macAddress"></a>
 
@@ -11694,18 +11670,6 @@ public metadata(key: string)
 
 ---
 
-##### `network` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.network"></a>
-
-```typescript
-public network(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetFlavorId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.resetFlavorId"></a>
 
 ```typescript
@@ -11759,18 +11723,6 @@ public resetStatus()
 ```typescript
 public resetUserId()
 ```
-
-##### `securityGroups` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.securityGroups"></a>
-
-```typescript
-public securityGroups(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties"></a>
@@ -11875,6 +11827,16 @@ public readonly locked: IResolvable;
 
 ---
 
+##### `network`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.property.network"></a>
+
+```typescript
+public readonly network: DataOpentelekomcloudComputeBmsServerV2NetworkList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList)
+
+---
+
 ##### `progress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.property.progress"></a>
 
 ```typescript
@@ -11882,6 +11844,16 @@ public readonly progress: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `securityGroups`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2.property.securityGroups"></a>
+
+```typescript
+public readonly securityGroups: DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList)
 
 ---
 
@@ -12544,42 +12516,6 @@ public resetRegion()
 public resetStatus()
 ```
 
-##### `resource` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.resource"></a>
-
-```typescript
-public resource(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `scheduledOperation` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.scheduledOperation"></a>
-
-```typescript
-public scheduledOperation(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.tags"></a>
-
-```typescript
-public tags(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -12610,6 +12546,36 @@ public readonly providerId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `resource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.property.resource"></a>
+
+```typescript
+public readonly resource: DataOpentelekomcloudCsbsBackupPolicyV1ResourceList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList)
+
+---
+
+##### `scheduledOperation`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.property.scheduledOperation"></a>
+
+```typescript
+public readonly scheduledOperation: DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList)
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1.property.tags"></a>
+
+```typescript
+public readonly tags: DataOpentelekomcloudCsbsBackupPolicyV1TagsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList)
 
 ---
 
@@ -12779,42 +12745,6 @@ public resetStatus()
 public resetVmIp()
 ```
 
-##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.tags"></a>
-
-```typescript
-public tags(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `vmMetadata` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.vmMetadata"></a>
-
-```typescript
-public vmMetadata(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `volumeBackups` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.volumeBackups"></a>
-
-```typescript
-public volumeBackups(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -12855,6 +12785,36 @@ public readonly size: number;
 ```
 
 - *Type:* `number`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.property.tags"></a>
+
+```typescript
+public readonly tags: DataOpentelekomcloudCsbsBackupV1TagsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList)
+
+---
+
+##### `vmMetadata`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.property.vmMetadata"></a>
+
+```typescript
+public readonly vmMetadata: DataOpentelekomcloudCsbsBackupV1VmMetadataList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList)
+
+---
+
+##### `volumeBackups`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1.property.volumeBackups"></a>
+
+```typescript
+public readonly volumeBackups: DataOpentelekomcloudCsbsBackupV1VolumeBackupsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList)
 
 ---
 
@@ -14011,18 +13971,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `flavors` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3.flavors"></a>
-
-```typescript
-public flavors(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetMemory` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3.resetMemory"></a>
 
 ```typescript
@@ -14049,6 +13997,16 @@ public resetVcpus()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `flavors`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3.property.flavors"></a>
+
+```typescript
+public readonly flavors: DataOpentelekomcloudDdsFlavorsV3FlavorsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3.property.id"></a>
 
@@ -14206,42 +14164,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `backupStrategy` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.backupStrategy"></a>
-
-```typescript
-public backupStrategy(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `datastore` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.datastore"></a>
-
-```typescript
-public datastore(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `nodes` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.nodes"></a>
-
-```typescript
-public nodes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetDatastoreType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.resetDatastoreType"></a>
 
 ```typescript
@@ -14274,6 +14196,26 @@ public resetVpcId()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `backupStrategy`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.property.backupStrategy"></a>
+
+```typescript
+public readonly backupStrategy: DataOpentelekomcloudDdsInstanceV3BackupStrategyList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList)
+
+---
+
+##### `datastore`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.property.datastore"></a>
+
+```typescript
+public readonly datastore: DataOpentelekomcloudDdsInstanceV3DatastoreList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList)
+
+---
 
 ##### `dbUsername`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.property.dbUsername"></a>
 
@@ -14312,6 +14254,16 @@ public readonly mode: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `nodes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3.property.nodes"></a>
+
+```typescript
+public readonly nodes: DataOpentelekomcloudDdsInstanceV3NodesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList)
 
 ---
 
@@ -14521,18 +14473,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `availableInstanceCapacities` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1.availableInstanceCapacities"></a>
-
-```typescript
-public availableInstanceCapacities(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetAvailabilityZone` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1.resetAvailabilityZone"></a>
 
 ```typescript
@@ -14573,6 +14513,16 @@ public readonly autoPlacement: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `availableInstanceCapacities`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1.property.availableInstanceCapacities"></a>
+
+```typescript
+public readonly availableInstanceCapacities: DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList)
 
 ---
 
@@ -16146,18 +16096,6 @@ Must be unique amongst siblings in the same scope
 public resetRegion()
 ```
 
-##### `roles` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3.roles"></a>
-
-```typescript
-public roles(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -16228,6 +16166,16 @@ public readonly projectName: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `roles`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3.property.roles"></a>
+
+```typescript
+public readonly roles: DataOpentelekomcloudIdentityAuthScopeV3RolesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList)
 
 ---
 
@@ -16357,18 +16305,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `credentials` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3.credentials"></a>
-
-```typescript
-public credentials(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetUserId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3.resetUserId"></a>
 
 ```typescript
@@ -16377,6 +16313,16 @@ public resetUserId()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `credentials`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3.property.credentials"></a>
+
+```typescript
+public readonly credentials: DataOpentelekomcloudIdentityCredentialV3CredentialsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3.property.id"></a>
 
@@ -18395,18 +18341,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `insertHeaders` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.insertHeaders"></a>
-
-```typescript
-public insertHeaders(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetClientCaTlsContainerRef` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.resetClientCaTlsContainerRef"></a>
 
 ```typescript
@@ -18539,6 +18473,16 @@ public readonly http2Enable: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `insertHeaders`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3.property.insertHeaders"></a>
+
+```typescript
+public readonly insertHeaders: DataOpentelekomcloudLbListenerV3InsertHeadersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList)
 
 ---
 
@@ -18938,18 +18882,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `publicIp` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.publicIp"></a>
-
-```typescript
-public publicIp(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetL4Flavor` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.resetL4Flavor"></a>
 
 ```typescript
@@ -19074,6 +19006,16 @@ public readonly networkIds: string[];
 ```
 
 - *Type:* `string`[]
+
+---
+
+##### `publicIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3.property.publicIp"></a>
+
+```typescript
+public readonly publicIp: DataOpentelekomcloudLbLoadbalancerV3PublicIpList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList)
 
 ---
 
@@ -20187,66 +20129,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `corsRule` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.corsRule"></a>
-
-```typescript
-public corsRule(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `eventNotifications` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.eventNotifications"></a>
-
-```typescript
-public eventNotifications(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `lifecycleRule` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.lifecycleRule"></a>
-
-```typescript
-public lifecycleRule(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `logging` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.logging"></a>
-
-```typescript
-public logging(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
-##### `serverSideEncryption` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.serverSideEncryption"></a>
-
-```typescript
-public serverSideEncryption(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.tags"></a>
 
 ```typescript
@@ -20254,18 +20136,6 @@ public tags(key: string)
 ```
 
 ###### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.key"></a>
-
-- *Type:* `string`
-
----
-
-##### `website` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.website"></a>
-
-```typescript
-public website(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.parameter.index"></a>
 
 - *Type:* `string`
 
@@ -20284,6 +20154,26 @@ public readonly bucketDomainName: string;
 
 ---
 
+##### `corsRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.corsRule"></a>
+
+```typescript
+public readonly corsRule: DataOpentelekomcloudObsBucketCorsRuleList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList)
+
+---
+
+##### `eventNotifications`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.eventNotifications"></a>
+
+```typescript
+public readonly eventNotifications: DataOpentelekomcloudObsBucketEventNotificationsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList)
+
+---
+
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.id"></a>
 
 ```typescript
@@ -20294,6 +20184,26 @@ public readonly id: string;
 
 ---
 
+##### `lifecycleRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.lifecycleRule"></a>
+
+```typescript
+public readonly lifecycleRule: DataOpentelekomcloudObsBucketLifecycleRuleList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList)
+
+---
+
+##### `logging`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.logging"></a>
+
+```typescript
+public readonly logging: DataOpentelekomcloudObsBucketLoggingList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList)
+
+---
+
 ##### `region`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.region"></a>
 
 ```typescript
@@ -20301,6 +20211,16 @@ public readonly region: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `serverSideEncryption`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.serverSideEncryption"></a>
+
+```typescript
+public readonly serverSideEncryption: DataOpentelekomcloudObsBucketServerSideEncryptionList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList)
 
 ---
 
@@ -20321,6 +20241,16 @@ public readonly versioning: IResolvable;
 ```
 
 - *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+
+---
+
+##### `website`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucket.property.website"></a>
+
+```typescript
+public readonly website: DataOpentelekomcloudObsBucketWebsiteList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList)
 
 ---
 
@@ -21027,22 +20957,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-#### Methods <a name="Methods"></a>
-
-##### `flavors` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3.flavors"></a>
-
-```typescript
-public flavors(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
 
 
 #### Properties <a name="Properties"></a>
+
+##### `flavors`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3.property.flavors"></a>
+
+```typescript
+public readonly flavors: DataOpentelekomcloudRdsFlavorsV3FlavorsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3.property.id"></a>
 
@@ -23091,18 +23018,6 @@ public resetRegion()
 public resetStatus()
 ```
 
-##### `tags` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2.tags"></a>
-
-```typescript
-public tags(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
 
@@ -23143,6 +23058,16 @@ public readonly startTime: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `tags`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2.property.tags"></a>
+
+```typescript
+public readonly tags: DataOpentelekomcloudVbsBackupPolicyV2TagsList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList)
 
 ---
 
@@ -24377,18 +24302,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `port` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.port"></a>
-
-```typescript
-public port(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `resetName` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.resetName"></a>
 
 ```typescript
@@ -24447,6 +24360,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `port`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1.property.port"></a>
+
+```typescript
+public readonly port: DataOpentelekomcloudVpcepServiceV1PortList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList)
 
 ---
 
@@ -25697,20 +25620,18 @@ public resetShared()
 public resetStatus()
 ```
 
-##### `routes` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1.routes"></a>
-
-```typescript
-public routes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 
 #### Properties <a name="Properties"></a>
+
+##### `routes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1.property.routes"></a>
+
+```typescript
+public readonly routes: DataOpentelekomcloudVpcV1RoutesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList)
+
+---
 
 ##### `cidrInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1.property.cidrInput"></a>
 
@@ -27000,18 +26921,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `nodes` <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.nodes"></a>
-
-```typescript
-public nodes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putBackupStrategy` <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.putBackupStrategy"></a>
 
 ```typescript
@@ -27118,6 +27027,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `nodes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3.property.nodes"></a>
+
+```typescript
+public readonly nodes: DdsInstanceV3NodesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList)
 
 ---
 
@@ -30336,18 +30255,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `attachment` <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.attachment"></a>
-
-```typescript
-public attachment(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.putTimeouts"></a>
 
 ```typescript
@@ -30434,6 +30341,16 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `attachment`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.property.attachment"></a>
+
+```typescript
+public readonly attachment: EvsVolumeV3AttachmentList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList`](#@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3.property.id"></a>
 
@@ -49158,18 +49075,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `nodes` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.nodes"></a>
-
-```typescript
-public nodes(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putBackupStrategy` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.putBackupStrategy"></a>
 
 ```typescript
@@ -49324,6 +49229,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `nodes`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3.property.nodes"></a>
+
+```typescript
+public readonly nodes: RdsInstanceV3NodesList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList)
 
 ---
 
@@ -49703,18 +49618,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `configurationParameters` <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.configurationParameters"></a>
-
-```typescript
-public configurationParameters(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putDatastore` <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.putDatastore"></a>
 
 ```typescript
@@ -49741,6 +49644,16 @@ public resetValues()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `configurationParameters`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.property.configurationParameters"></a>
+
+```typescript
+public readonly configurationParameters: RdsParametergroupV3ConfigurationParametersList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList`](#@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList)
+
+---
 
 ##### `created`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3.property.created"></a>
 
@@ -49898,18 +49811,6 @@ Must be unique amongst siblings in the same scope
 
 #### Methods <a name="Methods"></a>
 
-##### `db` <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3.db"></a>
-
-```typescript
-public db(index: string)
-```
-
-###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3.parameter.index"></a>
-
-- *Type:* `string`
-
----
-
 ##### `putTimeouts` <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3.putTimeouts"></a>
 
 ```typescript
@@ -49960,6 +49861,16 @@ public resetTimeouts()
 
 
 #### Properties <a name="Properties"></a>
+
+##### `db`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3.property.db"></a>
+
+```typescript
+public readonly db: RdsReadReplicaV3DbList;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList`](#@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList)
+
+---
 
 ##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3.property.id"></a>
 
@@ -64578,6 +64489,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### AsPolicyV2Metadata <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { AsPolicyV2Metadata } from '@cdktf/provider-opentelekomcloud'
+
+const asPolicyV2Metadata: AsPolicyV2Metadata = { ... }
+```
+
 ### AsPolicyV2ScalingPolicyAction <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2ScalingPolicyAction"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -64705,6 +64626,16 @@ public readonly startTime: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v2#start_time AsPolicyV2#start_time}.
 
 ---
+
+### BlockstorageVolumeV2Attachment <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { BlockstorageVolumeV2Attachment } from '@cdktf/provider-opentelekomcloud'
+
+const blockstorageVolumeV2Attachment: BlockstorageVolumeV2Attachment = { ... }
+```
 
 ### BlockstorageVolumeV2Config <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Config"></a>
 
@@ -65873,6 +65804,26 @@ public readonly privateKey: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#private_key CceClusterV3#private_key}.
 
 ---
+
+### CceClusterV3CertificateClusters <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
+
+const cceClusterV3CertificateClusters: CceClusterV3CertificateClusters = { ... }
+```
+
+### CceClusterV3CertificateUsers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
+
+const cceClusterV3CertificateUsers: CceClusterV3CertificateUsers = { ... }
+```
 
 ### CceClusterV3Config <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config"></a>
 
@@ -69482,6 +69433,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### ComputeInstanceV2VolumeAttached <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { ComputeInstanceV2VolumeAttached } from '@cdktf/provider-opentelekomcloud'
+
+const computeInstanceV2VolumeAttached: ComputeInstanceV2VolumeAttached = { ... }
+```
+
 ### ComputeKeypairV2Config <a name="@cdktf/provider-opentelekomcloud.ComputeKeypairV2Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -70694,6 +70655,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### CsbsBackupV1VmMetadata <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
+
+const csbsBackupV1VmMetadata: CsbsBackupV1VmMetadata = { ... }
+```
+
+### CsbsBackupV1VolumeBackups <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
+
+const csbsBackupV1VolumeBackups: CsbsBackupV1VolumeBackups = { ... }
+```
+
 ### CssClusterV1Config <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -71045,6 +71026,16 @@ public readonly encryptionKey: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_cluster_v1#encryption_key CssClusterV1#encryption_key}.
 
 ---
+
+### CssClusterV1Nodes <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { CssClusterV1Nodes } from '@cdktf/provider-opentelekomcloud'
+
+const cssClusterV1Nodes: CssClusterV1Nodes = { ... }
+```
 
 ### CssClusterV1Timeouts <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Timeouts"></a>
 
@@ -71736,6 +71727,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudCceClusterV3CertificateClusters <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCceClusterV3CertificateClusters: DataOpentelekomcloudCceClusterV3CertificateClusters = { ... }
+```
+
+### DataOpentelekomcloudCceClusterV3CertificateUsers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCceClusterV3CertificateUsers: DataOpentelekomcloudCceClusterV3CertificateUsers = { ... }
+```
+
 ### DataOpentelekomcloudCceClusterV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -72029,6 +72040,16 @@ public readonly status: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_node_v3#status DataOpentelekomcloudCceNodeV3#status}.
 
 ---
+
+### DataOpentelekomcloudCceNodeV3DataVolumes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceNodeV3DataVolumes } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCceNodeV3DataVolumes: DataOpentelekomcloudCceNodeV3DataVolumes = { ... }
+```
 
 ### DataOpentelekomcloudComputeAvailabilityZonesV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeAvailabilityZonesV2Config"></a>
 
@@ -72410,6 +72431,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudComputeBmsNicV2FixedIps <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsNicV2FixedIps } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudComputeBmsNicV2FixedIps: DataOpentelekomcloudComputeBmsNicV2FixedIps = { ... }
+```
+
 ### DataOpentelekomcloudComputeBmsServerV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -72567,6 +72598,26 @@ public readonly userId: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#user_id DataOpentelekomcloudComputeBmsServerV2#user_id}.
 
 ---
+
+### DataOpentelekomcloudComputeBmsServerV2Network <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2Network } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudComputeBmsServerV2Network: DataOpentelekomcloudComputeBmsServerV2Network = { ... }
+```
+
+### DataOpentelekomcloudComputeBmsServerV2SecurityGroups <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2SecurityGroups } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudComputeBmsServerV2SecurityGroups: DataOpentelekomcloudComputeBmsServerV2SecurityGroups = { ... }
+```
 
 ### DataOpentelekomcloudComputeFlavorV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeFlavorV2Config"></a>
 
@@ -72848,6 +72899,36 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudCsbsBackupPolicyV1Resource <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1Resource } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupPolicyV1Resource: DataOpentelekomcloudCsbsBackupPolicyV1Resource = { ... }
+```
+
+### DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation: DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation = { ... }
+```
+
+### DataOpentelekomcloudCsbsBackupPolicyV1Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1Tags } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupPolicyV1Tags: DataOpentelekomcloudCsbsBackupPolicyV1Tags = { ... }
+```
+
 ### DataOpentelekomcloudCsbsBackupV1Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -73017,6 +73098,36 @@ public readonly vmIp: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#vm_ip DataOpentelekomcloudCsbsBackupV1#vm_ip}.
 
 ---
+
+### DataOpentelekomcloudCsbsBackupV1Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1Tags } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupV1Tags: DataOpentelekomcloudCsbsBackupV1Tags = { ... }
+```
+
+### DataOpentelekomcloudCsbsBackupV1VmMetadata <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupV1VmMetadata: DataOpentelekomcloudCsbsBackupV1VmMetadata = { ... }
+```
+
+### DataOpentelekomcloudCsbsBackupV1VolumeBackups <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudCsbsBackupV1VolumeBackups: DataOpentelekomcloudCsbsBackupV1VolumeBackups = { ... }
+```
 
 ### DataOpentelekomcloudCssFlavorV1Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1Config"></a>
 
@@ -73654,6 +73765,26 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudDdsFlavorsV3Flavors <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDdsFlavorsV3Flavors: DataOpentelekomcloudDdsFlavorsV3Flavors = { ... }
+```
+
+### DataOpentelekomcloudDdsInstanceV3BackupStrategy <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3BackupStrategy } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDdsInstanceV3BackupStrategy: DataOpentelekomcloudDdsInstanceV3BackupStrategy = { ... }
+```
+
 ### DataOpentelekomcloudDdsInstanceV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -73763,6 +73894,36 @@ public readonly vpcId: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3#vpc_id DataOpentelekomcloudDdsInstanceV3#vpc_id}.
 
 ---
+
+### DataOpentelekomcloudDdsInstanceV3Datastore <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3Datastore } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDdsInstanceV3Datastore: DataOpentelekomcloudDdsInstanceV3Datastore = { ... }
+```
+
+### DataOpentelekomcloudDdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDdsInstanceV3Nodes: DataOpentelekomcloudDdsInstanceV3Nodes = { ... }
+```
+
+### DataOpentelekomcloudDehHostV1AvailableInstanceCapacities <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDehHostV1AvailableInstanceCapacities } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDehHostV1AvailableInstanceCapacities: DataOpentelekomcloudDehHostV1AvailableInstanceCapacities = { ... }
+```
 
 ### DataOpentelekomcloudDehHostV1Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1Config"></a>
 
@@ -74644,6 +74805,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudIdentityAuthScopeV3Roles <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityAuthScopeV3Roles } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudIdentityAuthScopeV3Roles: DataOpentelekomcloudIdentityAuthScopeV3Roles = { ... }
+```
+
 ### DataOpentelekomcloudIdentityCredentialV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -74705,6 +74876,16 @@ public readonly userId: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3#user_id DataOpentelekomcloudIdentityCredentialV3#user_id}.
 
 ---
+
+### DataOpentelekomcloudIdentityCredentialV3Credentials <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityCredentialV3Credentials } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudIdentityCredentialV3Credentials: DataOpentelekomcloudIdentityCredentialV3Credentials = { ... }
+```
 
 ### DataOpentelekomcloudIdentityGroupV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityGroupV3Config"></a>
 
@@ -75890,6 +76071,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudLbListenerV3InsertHeaders <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3InsertHeaders } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudLbListenerV3InsertHeaders: DataOpentelekomcloudLbListenerV3InsertHeaders = { ... }
+```
+
 ### DataOpentelekomcloudLbLoadbalancerV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -76023,6 +76214,16 @@ public readonly vipPortId: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_loadbalancer_v3#vip_port_id DataOpentelekomcloudLbLoadbalancerV3#vip_port_id}.
 
 ---
+
+### DataOpentelekomcloudLbLoadbalancerV3PublicIp <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3PublicIp } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudLbLoadbalancerV3PublicIp: DataOpentelekomcloudLbLoadbalancerV3PublicIp = { ... }
+```
 
 ### DataOpentelekomcloudNetworkingNetworkV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudNetworkingNetworkV2Config"></a>
 
@@ -76576,6 +76777,96 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudObsBucketCorsRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketCorsRule } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketCorsRule: DataOpentelekomcloudObsBucketCorsRule = { ... }
+```
+
+### DataOpentelekomcloudObsBucketEventNotifications <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotifications } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketEventNotifications: DataOpentelekomcloudObsBucketEventNotifications = { ... }
+```
+
+### DataOpentelekomcloudObsBucketEventNotificationsFilterRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotificationsFilterRule } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketEventNotificationsFilterRule: DataOpentelekomcloudObsBucketEventNotificationsFilterRule = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLifecycleRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRule } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLifecycleRule: DataOpentelekomcloudObsBucketLifecycleRule = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLifecycleRuleExpiration <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleExpiration } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLifecycleRuleExpiration: DataOpentelekomcloudObsBucketLifecycleRuleExpiration = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLifecycleRuleTransition <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleTransition } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLifecycleRuleTransition: DataOpentelekomcloudObsBucketLifecycleRuleTransition = { ... }
+```
+
+### DataOpentelekomcloudObsBucketLogging <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLogging } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketLogging: DataOpentelekomcloudObsBucketLogging = { ... }
+```
+
 ### DataOpentelekomcloudObsBucketObjectConfig <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketObjectConfig"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -76661,6 +76952,26 @@ public readonly versionId: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket_object#version_id DataOpentelekomcloudObsBucketObject#version_id}.
 
 ---
+
+### DataOpentelekomcloudObsBucketServerSideEncryption <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketServerSideEncryption } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketServerSideEncryption: DataOpentelekomcloudObsBucketServerSideEncryption = { ... }
+```
+
+### DataOpentelekomcloudObsBucketWebsite <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketWebsite } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudObsBucketWebsite: DataOpentelekomcloudObsBucketWebsite = { ... }
+```
 
 ### DataOpentelekomcloudRdsBackupV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsBackupV3Config"></a>
 
@@ -76931,6 +77242,16 @@ public readonly instanceMode: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_flavors_v3#instance_mode DataOpentelekomcloudRdsFlavorsV3#instance_mode}.
 
 ---
+
+### DataOpentelekomcloudRdsFlavorsV3Flavors <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudRdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudRdsFlavorsV3Flavors: DataOpentelekomcloudRdsFlavorsV3Flavors = { ... }
+```
 
 ### DataOpentelekomcloudRdsVersionsV3Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsVersionsV3Config"></a>
 
@@ -77864,6 +78185,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudVbsBackupPolicyV2Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVbsBackupPolicyV2Tags } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudVbsBackupPolicyV2Tags: DataOpentelekomcloudVbsBackupPolicyV2Tags = { ... }
+```
+
 ### DataOpentelekomcloudVbsBackupV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupV2Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -78451,6 +78782,16 @@ public readonly tags: {[ key: string ]: string};
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1#tags DataOpentelekomcloudVpcepServiceV1#tags}.
 
 ---
+
+### DataOpentelekomcloudVpcepServiceV1Port <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcepServiceV1Port } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudVpcepServiceV1Port: DataOpentelekomcloudVpcepServiceV1Port = { ... }
+```
 
 ### DataOpentelekomcloudVpcPeeringConnectionV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcPeeringConnectionV2Config"></a>
 
@@ -79147,6 +79488,16 @@ public readonly status: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_v1#status DataOpentelekomcloudVpcV1#status}.
 
 ---
+
+### DataOpentelekomcloudVpcV1Routes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcV1Routes } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudVpcV1Routes: DataOpentelekomcloudVpcV1Routes = { ... }
+```
 
 ### DataOpentelekomcloudVpnaasServiceV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpnaasServiceV2Config"></a>
 
@@ -80211,6 +80562,16 @@ public readonly storage: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#storage DdsInstanceV3#storage}.
 
 ---
+
+### DdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
+
+const ddsInstanceV3Nodes: DdsInstanceV3Nodes = { ... }
+```
 
 ### DdsInstanceV3Timeouts <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Timeouts"></a>
 
@@ -82061,6 +82422,16 @@ public readonly update: string;
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#update EcsInstanceV1#update}.
 
 ---
+
+### EvsVolumeV3Attachment <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { EvsVolumeV3Attachment } from '@cdktf/provider-opentelekomcloud'
+
+const evsVolumeV3Attachment: EvsVolumeV3Attachment = { ... }
+```
 
 ### EvsVolumeV3Config <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Config"></a>
 
@@ -94940,6 +95311,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### RdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { RdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
+
+const rdsInstanceV3Nodes: RdsInstanceV3Nodes = { ... }
+```
+
 ### RdsInstanceV3RestorePoint <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePoint"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -95166,6 +95547,16 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### RdsParametergroupV3ConfigurationParameters <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { RdsParametergroupV3ConfigurationParameters } from '@cdktf/provider-opentelekomcloud'
+
+const rdsParametergroupV3ConfigurationParameters: RdsParametergroupV3ConfigurationParameters = { ... }
+```
+
 ### RdsParametergroupV3Datastore <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3Datastore"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -95349,6 +95740,16 @@ timeouts block.
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#timeouts RdsReadReplicaV3#timeouts}
 
 ---
+
+### RdsReadReplicaV3Db <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { RdsReadReplicaV3Db } from '@cdktf/provider-opentelekomcloud'
+
+const rdsReadReplicaV3Db: RdsReadReplicaV3Db = { ... }
+```
 
 ### RdsReadReplicaV3Timeouts <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Timeouts"></a>
 
@@ -104569,7 +104970,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 ```typescript
 import { AntiddosV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AntiddosV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AntiddosV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AntiddosV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -104585,14 +104986,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AntiddosV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -104697,7 +105090,7 @@ public readonly internalValue: AntiddosV1Timeouts;
 ```typescript
 import { AsConfigurationV1InstanceConfigOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.parameter.terraformResource"></a>
@@ -104713,14 +105106,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105013,7 +105398,7 @@ public readonly internalValue: AsConfigurationV1InstanceConfig;
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference.parameter.terraformResource"></a>
@@ -105029,14 +105414,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105122,7 +105499,7 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIpEipBandwid
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpEipOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipOutputReference.parameter.terraformResource"></a>
@@ -105138,14 +105515,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpEipOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105224,7 +105593,7 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIpEip;
 ```typescript
 import { AsConfigurationV1InstanceConfigPublicIpOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsConfigurationV1InstanceConfigPublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsConfigurationV1InstanceConfigPublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpOutputReference.parameter.terraformResource"></a>
@@ -105240,14 +105609,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsConfigurationV1InstanceConfigPublicIpOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105306,7 +105667,7 @@ public readonly internalValue: AsConfigurationV1InstanceConfigPublicIp;
 ```typescript
 import { AsGroupV1SecurityGroupsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsGroupV1SecurityGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsGroupV1SecurityGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1SecurityGroupsOutputReference.parameter.terraformResource"></a>
@@ -105322,14 +105683,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1SecurityGroupsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105375,7 +105728,7 @@ public readonly internalValue: AsGroupV1SecurityGroups;
 ```typescript
 import { AsGroupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsGroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsGroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -105391,14 +105744,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsGroupV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105477,7 +105822,7 @@ public readonly internalValue: AsGroupV1Timeouts;
 ```typescript
 import { AsPolicyV1ScalingPolicyActionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV1ScalingPolicyActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsPolicyV1ScalingPolicyActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScalingPolicyActionOutputReference.parameter.terraformResource"></a>
@@ -105493,14 +105838,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScalingPolicyActionOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105579,7 +105916,7 @@ public readonly internalValue: AsPolicyV1ScalingPolicyAction;
 ```typescript
 import { AsPolicyV1ScheduledPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV1ScheduledPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new AsPolicyV1ScheduledPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScheduledPolicyOutputReference.parameter.terraformResource"></a>
@@ -105595,14 +105932,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV1ScheduledPolicyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105746,37 +106075,98 @@ public readonly internalValue: AsPolicyV1ScheduledPolicy;
 ---
 
 
-### AsPolicyV2Metadata <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata"></a>
+### AsPolicyV2MetadataList <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.Initializer"></a>
 
 ```typescript
-import { AsPolicyV2Metadata } from '@cdktf/provider-opentelekomcloud'
+import { AsPolicyV2MetadataList } from '@cdktf/provider-opentelekomcloud'
 
-new AsPolicyV2Metadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new AsPolicyV2MetadataList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### AsPolicyV2MetadataOutputReference <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.Initializer"></a>
+
+```typescript
+import { AsPolicyV2MetadataOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new AsPolicyV2MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -105784,7 +106174,7 @@ new AsPolicyV2Metadata(terraformResource: IInterpolatingParent, terraformAttribu
 
 #### Properties <a name="Properties"></a>
 
-##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.property.bandwidthShareType"></a>
+##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.property.bandwidthShareType"></a>
 
 ```typescript
 public readonly bandwidthShareType: string;
@@ -105794,7 +106184,7 @@ public readonly bandwidthShareType: string;
 
 ---
 
-##### `eipAddress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.property.eipAddress"></a>
+##### `eipAddress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.property.eipAddress"></a>
 
 ```typescript
 public readonly eipAddress: string;
@@ -105804,7 +106194,7 @@ public readonly eipAddress: string;
 
 ---
 
-##### `eipId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata.property.eipId"></a>
+##### `eipId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.property.eipId"></a>
 
 ```typescript
 public readonly eipId: string;
@@ -105814,38 +106204,109 @@ public readonly eipId: string;
 
 ---
 
-
-### BlockstorageVolumeV2Attachment <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.AsPolicyV2MetadataOutputReference.property.internalValue"></a>
 
 ```typescript
-import { BlockstorageVolumeV2Attachment } from '@cdktf/provider-opentelekomcloud'
-
-new BlockstorageVolumeV2Attachment(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: AsPolicyV2Metadata;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata`](#@cdktf/provider-opentelekomcloud.AsPolicyV2Metadata)
+
+---
+
+
+### BlockstorageVolumeV2AttachmentList <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.Initializer"></a>
+
+```typescript
+import { BlockstorageVolumeV2AttachmentList } from '@cdktf/provider-opentelekomcloud'
+
+new BlockstorageVolumeV2AttachmentList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### BlockstorageVolumeV2AttachmentOutputReference <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.Initializer"></a>
+
+```typescript
+import { BlockstorageVolumeV2AttachmentOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new BlockstorageVolumeV2AttachmentOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -105853,7 +106314,7 @@ new BlockstorageVolumeV2Attachment(terraformResource: IInterpolatingParent, terr
 
 #### Properties <a name="Properties"></a>
 
-##### `device`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.property.device"></a>
+##### `device`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.property.device"></a>
 
 ```typescript
 public readonly device: string;
@@ -105863,7 +106324,7 @@ public readonly device: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -105873,13 +106334,23 @@ public readonly id: string;
 
 ---
 
-##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment.property.instanceId"></a>
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.property.instanceId"></a>
 
 ```typescript
 public readonly instanceId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2AttachmentOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: BlockstorageVolumeV2Attachment;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment`](#@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2Attachment)
 
 ---
 
@@ -105891,7 +106362,7 @@ public readonly instanceId: string;
 ```typescript
 import { BlockstorageVolumeV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new BlockstorageVolumeV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new BlockstorageVolumeV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -105907,14 +106378,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.BlockstorageVolumeV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -105993,7 +106456,7 @@ public readonly internalValue: BlockstorageVolumeV2Timeouts;
 ```typescript
 import { CbrPolicyV3OperationDefinitionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CbrPolicyV3OperationDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CbrPolicyV3OperationDefinitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrPolicyV3OperationDefinitionOutputReference.parameter.terraformResource"></a>
@@ -106009,14 +106472,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrPolicyV3OperationDefinitionOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -106219,7 +106674,7 @@ public readonly internalValue: CbrPolicyV3OperationDefinition;
 ```typescript
 import { CbrVaultV3BillingOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CbrVaultV3BillingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CbrVaultV3BillingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.parameter.terraformResource"></a>
@@ -106235,14 +106690,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CbrVaultV3BillingOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -106643,7 +107090,7 @@ public readonly internalValue: CbrVaultV3Billing;
 ```typescript
 import { CceAddonV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceAddonV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceAddonV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -106659,14 +107106,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -106719,7 +107158,7 @@ public readonly internalValue: CceAddonV3Timeouts;
 ```typescript
 import { CceAddonV3ValuesOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceAddonV3ValuesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceAddonV3ValuesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.parameter.terraformResource"></a>
@@ -106735,14 +107174,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceAddonV3ValuesOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -106808,7 +107239,7 @@ public readonly internalValue: CceAddonV3Values;
 ```typescript
 import { CceClusterV3AuthenticatingProxyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3AuthenticatingProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceClusterV3AuthenticatingProxyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3AuthenticatingProxyOutputReference.parameter.terraformResource"></a>
@@ -106824,14 +107255,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3AuthenticatingProxyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -106910,37 +107333,98 @@ public readonly internalValue: CceClusterV3AuthenticatingProxy;
 ---
 
 
-### CceClusterV3CertificateClusters <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters"></a>
+### CceClusterV3CertificateClustersList <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.Initializer"></a>
 
 ```typescript
-import { CceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
+import { CceClusterV3CertificateClustersList } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3CertificateClusters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new CceClusterV3CertificateClustersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### CceClusterV3CertificateClustersOutputReference <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.Initializer"></a>
+
+```typescript
+import { CceClusterV3CertificateClustersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new CceClusterV3CertificateClustersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -106948,7 +107432,7 @@ new CceClusterV3CertificateClusters(terraformResource: IInterpolatingParent, ter
 
 #### Properties <a name="Properties"></a>
 
-##### `certificateAuthorityData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.property.certificateAuthorityData"></a>
+##### `certificateAuthorityData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.property.certificateAuthorityData"></a>
 
 ```typescript
 public readonly certificateAuthorityData: string;
@@ -106958,7 +107442,7 @@ public readonly certificateAuthorityData: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -106968,7 +107452,7 @@ public readonly name: string;
 
 ---
 
-##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters.property.server"></a>
+##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.property.server"></a>
 
 ```typescript
 public readonly server: string;
@@ -106978,38 +107462,109 @@ public readonly server: string;
 
 ---
 
-
-### CceClusterV3CertificateUsers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClustersOutputReference.property.internalValue"></a>
 
 ```typescript
-import { CceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
-
-new CceClusterV3CertificateUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: CceClusterV3CertificateClusters;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters`](#@cdktf/provider-opentelekomcloud.CceClusterV3CertificateClusters)
+
+---
+
+
+### CceClusterV3CertificateUsersList <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.Initializer"></a>
+
+```typescript
+import { CceClusterV3CertificateUsersList } from '@cdktf/provider-opentelekomcloud'
+
+new CceClusterV3CertificateUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### CceClusterV3CertificateUsersOutputReference <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.Initializer"></a>
+
+```typescript
+import { CceClusterV3CertificateUsersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new CceClusterV3CertificateUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -107017,7 +107572,7 @@ new CceClusterV3CertificateUsers(terraformResource: IInterpolatingParent, terraf
 
 #### Properties <a name="Properties"></a>
 
-##### `clientCertificateData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.property.clientCertificateData"></a>
+##### `clientCertificateData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.property.clientCertificateData"></a>
 
 ```typescript
 public readonly clientCertificateData: string;
@@ -107027,7 +107582,7 @@ public readonly clientCertificateData: string;
 
 ---
 
-##### `clientKeyData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.property.clientKeyData"></a>
+##### `clientKeyData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.property.clientKeyData"></a>
 
 ```typescript
 public readonly clientKeyData: string;
@@ -107037,13 +107592,23 @@ public readonly clientKeyData: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CceClusterV3CertificateUsers;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers`](#@cdktf/provider-opentelekomcloud.CceClusterV3CertificateUsers)
 
 ---
 
@@ -107055,7 +107620,7 @@ public readonly name: string;
 ```typescript
 import { CceClusterV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceClusterV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceClusterV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -107071,14 +107636,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107157,7 +107714,7 @@ public readonly internalValue: CceClusterV3Timeouts;
 ```typescript
 import { CceNodePoolV3RootVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodePoolV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceNodePoolV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3RootVolumeOutputReference.parameter.terraformResource"></a>
@@ -107173,14 +107730,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3RootVolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107273,7 +107822,7 @@ public readonly internalValue: CceNodePoolV3RootVolume;
 ```typescript
 import { CceNodePoolV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodePoolV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceNodePoolV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -107289,14 +107838,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodePoolV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107427,7 +107968,7 @@ public readonly internalValue: CceNodePoolV3Timeouts;
 ```typescript
 import { CceNodeV3RootVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodeV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceNodeV3RootVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3RootVolumeOutputReference.parameter.terraformResource"></a>
@@ -107443,14 +107984,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3RootVolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107543,7 +108076,7 @@ public readonly internalValue: CceNodeV3RootVolume;
 ```typescript
 import { CceNodeV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CceNodeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CceNodeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -107559,14 +108092,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceNodeV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107645,7 +108170,7 @@ public readonly internalValue: CceNodeV3Timeouts;
 ```typescript
 import { CesAlarmruleConditionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConditionOutputReference.parameter.terraformResource"></a>
@@ -107661,14 +108186,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleConditionOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107821,7 +108338,7 @@ public readonly internalValue: CesAlarmruleCondition;
 ```typescript
 import { CesAlarmruleMetricOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleMetricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleMetricOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetricOutputReference.parameter.terraformResource"></a>
@@ -107837,14 +108354,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleMetricOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -107930,7 +108439,7 @@ public readonly internalValue: CesAlarmruleMetric;
 ```typescript
 import { CesAlarmruleTimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CesAlarmruleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CesAlarmruleTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleTimeoutsOutputReference.parameter.terraformResource"></a>
@@ -107946,14 +108455,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CesAlarmruleTimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108058,7 +108559,7 @@ public readonly internalValue: CesAlarmruleTimeouts;
 ```typescript
 import { ComputeBmsServerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeBmsServerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ComputeBmsServerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -108074,14 +108575,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsServerV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108186,7 +108679,7 @@ public readonly internalValue: ComputeBmsServerV2Timeouts;
 ```typescript
 import { ComputeBmsTagsV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeBmsTagsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ComputeBmsTagsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsTagsV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -108202,14 +108695,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeBmsTagsV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108288,7 +108773,7 @@ public readonly internalValue: ComputeBmsTagsV2Timeouts;
 ```typescript
 import { ComputeInstanceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeInstanceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ComputeInstanceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -108304,14 +108789,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108409,37 +108886,98 @@ public readonly internalValue: ComputeInstanceV2Timeouts;
 ---
 
 
-### ComputeInstanceV2VolumeAttached <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached"></a>
+### ComputeInstanceV2VolumeAttachedList <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.Initializer"></a>
 
 ```typescript
-import { ComputeInstanceV2VolumeAttached } from '@cdktf/provider-opentelekomcloud'
+import { ComputeInstanceV2VolumeAttachedList } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeInstanceV2VolumeAttached(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new ComputeInstanceV2VolumeAttachedList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### ComputeInstanceV2VolumeAttachedOutputReference <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.Initializer"></a>
+
+```typescript
+import { ComputeInstanceV2VolumeAttachedOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new ComputeInstanceV2VolumeAttachedOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -108447,13 +108985,23 @@ new ComputeInstanceV2VolumeAttached(terraformResource: IInterpolatingParent, ter
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttachedOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ComputeInstanceV2VolumeAttached;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached`](#@cdktf/provider-opentelekomcloud.ComputeInstanceV2VolumeAttached)
 
 ---
 
@@ -108465,7 +109013,7 @@ public readonly id: string;
 ```typescript
 import { ComputeSecgroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ComputeSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -108481,14 +109029,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeSecgroupV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108541,7 +109081,7 @@ public readonly internalValue: ComputeSecgroupV2Timeouts;
 ```typescript
 import { ComputeVolumeAttachV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ComputeVolumeAttachV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ComputeVolumeAttachV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeVolumeAttachV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -108557,14 +109097,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ComputeVolumeAttachV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -108643,7 +109175,7 @@ public readonly internalValue: ComputeVolumeAttachV2Timeouts;
 ```typescript
 import { CsbsBackupPolicyV1ScheduledOperationOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.terraformResource"></a>
@@ -108659,14 +109191,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109059,7 +109583,7 @@ public readonly internalValue: CsbsBackupPolicyV1ScheduledOperation;
 ```typescript
 import { CsbsBackupPolicyV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -109075,14 +109599,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupPolicyV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109161,7 +109677,7 @@ public readonly internalValue: CsbsBackupPolicyV1Timeouts;
 ```typescript
 import { CsbsBackupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CsbsBackupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -109177,14 +109693,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109256,37 +109764,98 @@ public readonly internalValue: CsbsBackupV1Timeouts;
 ---
 
 
-### CsbsBackupV1VmMetadata <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata"></a>
+### CsbsBackupV1VmMetadataList <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.Initializer"></a>
 
 ```typescript
-import { CsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
+import { CsbsBackupV1VmMetadataList } from '@cdktf/provider-opentelekomcloud'
 
-new CsbsBackupV1VmMetadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new CsbsBackupV1VmMetadataList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### CsbsBackupV1VmMetadataOutputReference <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.Initializer"></a>
+
+```typescript
+import { CsbsBackupV1VmMetadataOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new CsbsBackupV1VmMetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -109294,7 +109863,7 @@ new CsbsBackupV1VmMetadata(terraformResource: IInterpolatingParent, terraformAtt
 
 #### Properties <a name="Properties"></a>
 
-##### `cloudServiceType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.cloudServiceType"></a>
+##### `cloudServiceType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.cloudServiceType"></a>
 
 ```typescript
 public readonly cloudServiceType: string;
@@ -109304,7 +109873,7 @@ public readonly cloudServiceType: string;
 
 ---
 
-##### `disk`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.disk"></a>
+##### `disk`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.disk"></a>
 
 ```typescript
 public readonly disk: number;
@@ -109314,7 +109883,7 @@ public readonly disk: number;
 
 ---
 
-##### `eip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.eip"></a>
+##### `eip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.eip"></a>
 
 ```typescript
 public readonly eip: string;
@@ -109324,7 +109893,7 @@ public readonly eip: string;
 
 ---
 
-##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.imageType"></a>
+##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.imageType"></a>
 
 ```typescript
 public readonly imageType: string;
@@ -109334,7 +109903,7 @@ public readonly imageType: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -109344,7 +109913,7 @@ public readonly name: string;
 
 ---
 
-##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.privateIp"></a>
+##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -109354,7 +109923,7 @@ public readonly privateIp: string;
 
 ---
 
-##### `ram`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.ram"></a>
+##### `ram`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.ram"></a>
 
 ```typescript
 public readonly ram: number;
@@ -109364,7 +109933,7 @@ public readonly ram: number;
 
 ---
 
-##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata.property.vcpus"></a>
+##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.vcpus"></a>
 
 ```typescript
 public readonly vcpus: number;
@@ -109374,38 +109943,109 @@ public readonly vcpus: number;
 
 ---
 
-
-### CsbsBackupV1VolumeBackups <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadataOutputReference.property.internalValue"></a>
 
 ```typescript
-import { CsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
-
-new CsbsBackupV1VolumeBackups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: CsbsBackupV1VmMetadata;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1VmMetadata)
+
+---
+
+
+### CsbsBackupV1VolumeBackupsList <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.Initializer"></a>
+
+```typescript
+import { CsbsBackupV1VolumeBackupsList } from '@cdktf/provider-opentelekomcloud'
+
+new CsbsBackupV1VolumeBackupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### CsbsBackupV1VolumeBackupsOutputReference <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.Initializer"></a>
+
+```typescript
+import { CsbsBackupV1VolumeBackupsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new CsbsBackupV1VolumeBackupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -109413,7 +110053,7 @@ new CsbsBackupV1VolumeBackups(terraformResource: IInterpolatingParent, terraform
 
 #### Properties <a name="Properties"></a>
 
-##### `averageSpeed`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.averageSpeed"></a>
+##### `averageSpeed`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.averageSpeed"></a>
 
 ```typescript
 public readonly averageSpeed: number;
@@ -109423,7 +110063,7 @@ public readonly averageSpeed: number;
 
 ---
 
-##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.bootable"></a>
+##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.bootable"></a>
 
 ```typescript
 public readonly bootable: IResolvable;
@@ -109433,7 +110073,7 @@ public readonly bootable: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -109443,7 +110083,7 @@ public readonly id: string;
 
 ---
 
-##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.imageType"></a>
+##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.imageType"></a>
 
 ```typescript
 public readonly imageType: string;
@@ -109453,7 +110093,7 @@ public readonly imageType: string;
 
 ---
 
-##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.incremental"></a>
+##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.incremental"></a>
 
 ```typescript
 public readonly incremental: IResolvable;
@@ -109463,7 +110103,7 @@ public readonly incremental: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -109473,7 +110113,7 @@ public readonly name: string;
 
 ---
 
-##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.size"></a>
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -109483,7 +110123,7 @@ public readonly size: number;
 
 ---
 
-##### `snapshotId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.snapshotId"></a>
+##### `snapshotId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.snapshotId"></a>
 
 ```typescript
 public readonly snapshotId: string;
@@ -109493,7 +110133,7 @@ public readonly snapshotId: string;
 
 ---
 
-##### `sourceVolumeId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.sourceVolumeId"></a>
+##### `sourceVolumeId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeId"></a>
 
 ```typescript
 public readonly sourceVolumeId: string;
@@ -109503,7 +110143,7 @@ public readonly sourceVolumeId: string;
 
 ---
 
-##### `sourceVolumeName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.sourceVolumeName"></a>
+##### `sourceVolumeName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeName"></a>
 
 ```typescript
 public readonly sourceVolumeName: string;
@@ -109513,7 +110153,7 @@ public readonly sourceVolumeName: string;
 
 ---
 
-##### `sourceVolumeSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.sourceVolumeSize"></a>
+##### `sourceVolumeSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeSize"></a>
 
 ```typescript
 public readonly sourceVolumeSize: number;
@@ -109523,7 +110163,7 @@ public readonly sourceVolumeSize: number;
 
 ---
 
-##### `spaceSavingRatio`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.spaceSavingRatio"></a>
+##### `spaceSavingRatio`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.spaceSavingRatio"></a>
 
 ```typescript
 public readonly spaceSavingRatio: number;
@@ -109533,13 +110173,23 @@ public readonly spaceSavingRatio: number;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackupsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CsbsBackupV1VolumeBackups;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups`](#@cdktf/provider-opentelekomcloud.CsbsBackupV1VolumeBackups)
 
 ---
 
@@ -109551,7 +110201,7 @@ public readonly status: string;
 ```typescript
 import { CssClusterV1DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1DatastoreOutputReference.parameter.terraformResource"></a>
@@ -109567,14 +110217,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1DatastoreOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109653,7 +110295,7 @@ public readonly internalValue: CssClusterV1Datastore;
 ```typescript
 import { CssClusterV1NodeConfigNetworkInfoOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigNetworkInfoOutputReference.parameter.terraformResource"></a>
@@ -109669,14 +110311,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigNetworkInfoOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109762,7 +110396,7 @@ public readonly internalValue: CssClusterV1NodeConfigNetworkInfo;
 ```typescript
 import { CssClusterV1NodeConfigOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigOutputReference.parameter.terraformResource"></a>
@@ -109778,14 +110412,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -109922,7 +110548,7 @@ public readonly internalValue: CssClusterV1NodeConfig;
 ```typescript
 import { CssClusterV1NodeConfigVolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1NodeConfigVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1NodeConfigVolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigVolumeOutputReference.parameter.terraformResource"></a>
@@ -109938,14 +110564,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodeConfigVolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110031,37 +110649,98 @@ public readonly internalValue: CssClusterV1NodeConfigVolume;
 ---
 
 
-### CssClusterV1Nodes <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes"></a>
+### CssClusterV1NodesList <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.Initializer"></a>
 
 ```typescript
-import { CssClusterV1Nodes } from '@cdktf/provider-opentelekomcloud'
+import { CssClusterV1NodesList } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new CssClusterV1NodesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### CssClusterV1NodesOutputReference <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.Initializer"></a>
+
+```typescript
+import { CssClusterV1NodesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new CssClusterV1NodesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110069,7 +110748,7 @@ new CssClusterV1Nodes(terraformResource: IInterpolatingParent, terraformAttribut
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -110079,7 +110758,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -110089,13 +110768,23 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1Nodes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1NodesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CssClusterV1Nodes;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.CssClusterV1Nodes`](#@cdktf/provider-opentelekomcloud.CssClusterV1Nodes)
 
 ---
 
@@ -110107,7 +110796,7 @@ public readonly type: string;
 ```typescript
 import { CssClusterV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -110123,14 +110812,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssClusterV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110209,7 +110890,7 @@ public readonly internalValue: CssClusterV1Timeouts;
 ```typescript
 import { CssSnapshotConfigurationV1ConfigurationOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1ConfigurationOutputReference.parameter.terraformResource"></a>
@@ -110225,14 +110906,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1ConfigurationOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110325,7 +110998,7 @@ public readonly internalValue: CssSnapshotConfigurationV1Configuration;
 ```typescript
 import { CssSnapshotConfigurationV1CreationPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1CreationPolicyOutputReference.parameter.terraformResource"></a>
@@ -110341,14 +111014,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1CreationPolicyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110481,7 +111146,7 @@ public readonly internalValue: CssSnapshotConfigurationV1CreationPolicy;
 ```typescript
 import { CssSnapshotConfigurationV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CssSnapshotConfigurationV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CssSnapshotConfigurationV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -110497,14 +111162,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CssSnapshotConfigurationV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110583,7 +111240,7 @@ public readonly internalValue: CssSnapshotConfigurationV1Timeouts;
 ```typescript
 import { CtsTrackerV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new CtsTrackerV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new CtsTrackerV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CtsTrackerV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -110599,14 +111256,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CtsTrackerV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -110678,37 +111327,98 @@ public readonly internalValue: CtsTrackerV1Timeouts;
 ---
 
 
-### DataOpentelekomcloudCceClusterV3CertificateClusters <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters"></a>
+### DataOpentelekomcloudCceClusterV3CertificateClustersList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.Initializer"></a>
 
 ```typescript
-import { DataOpentelekomcloudCceClusterV3CertificateClusters } from '@cdktf/provider-opentelekomcloud'
+import { DataOpentelekomcloudCceClusterV3CertificateClustersList } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCceClusterV3CertificateClusters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOpentelekomcloudCceClusterV3CertificateClustersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110716,7 +111426,7 @@ new DataOpentelekomcloudCceClusterV3CertificateClusters(terraformResource: IInte
 
 #### Properties <a name="Properties"></a>
 
-##### `certificateAuthorityData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.property.certificateAuthorityData"></a>
+##### `certificateAuthorityData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.property.certificateAuthorityData"></a>
 
 ```typescript
 public readonly certificateAuthorityData: string;
@@ -110726,7 +111436,7 @@ public readonly certificateAuthorityData: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -110736,7 +111446,7 @@ public readonly name: string;
 
 ---
 
-##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters.property.server"></a>
+##### `server`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.property.server"></a>
 
 ```typescript
 public readonly server: string;
@@ -110746,38 +111456,109 @@ public readonly server: string;
 
 ---
 
-
-### DataOpentelekomcloudCceClusterV3CertificateUsers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCceClusterV3CertificateUsers } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCceClusterV3CertificateUsers(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCceClusterV3CertificateClusters;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateClusters)
+
+---
+
+
+### DataOpentelekomcloudCceClusterV3CertificateUsersList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterV3CertificateUsersList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceClusterV3CertificateUsersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110785,7 +111566,7 @@ new DataOpentelekomcloudCceClusterV3CertificateUsers(terraformResource: IInterpo
 
 #### Properties <a name="Properties"></a>
 
-##### `clientCertificateData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.property.clientCertificateData"></a>
+##### `clientCertificateData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.property.clientCertificateData"></a>
 
 ```typescript
 public readonly clientCertificateData: string;
@@ -110795,7 +111576,7 @@ public readonly clientCertificateData: string;
 
 ---
 
-##### `clientKeyData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.property.clientKeyData"></a>
+##### `clientKeyData`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.property.clientKeyData"></a>
 
 ```typescript
 public readonly clientKeyData: string;
@@ -110805,7 +111586,7 @@ public readonly clientKeyData: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -110815,38 +111596,109 @@ public readonly name: string;
 
 ---
 
-
-### DataOpentelekomcloudCceNodeV3DataVolumes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCceNodeV3DataVolumes } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCceNodeV3DataVolumes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCceClusterV3CertificateUsers;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3CertificateUsers)
+
+---
+
+
+### DataOpentelekomcloudCceNodeV3DataVolumesList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceNodeV3DataVolumesList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceNodeV3DataVolumesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCceNodeV3DataVolumesOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCceNodeV3DataVolumesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCceNodeV3DataVolumesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110854,7 +111706,7 @@ new DataOpentelekomcloudCceNodeV3DataVolumes(terraformResource: IInterpolatingPa
 
 #### Properties <a name="Properties"></a>
 
-##### `diskSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.property.diskSize"></a>
+##### `diskSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.property.diskSize"></a>
 
 ```typescript
 public readonly diskSize: number;
@@ -110864,7 +111716,7 @@ public readonly diskSize: number;
 
 ---
 
-##### `extendParam`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.property.extendParam"></a>
+##### `extendParam`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.property.extendParam"></a>
 
 ```typescript
 public readonly extendParam: string;
@@ -110874,7 +111726,7 @@ public readonly extendParam: string;
 
 ---
 
-##### `kmsId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.property.kmsId"></a>
+##### `kmsId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.property.kmsId"></a>
 
 ```typescript
 public readonly kmsId: string;
@@ -110884,7 +111736,7 @@ public readonly kmsId: string;
 
 ---
 
-##### `volumeType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes.property.volumeType"></a>
+##### `volumeType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.property.volumeType"></a>
 
 ```typescript
 public readonly volumeType: string;
@@ -110894,38 +111746,109 @@ public readonly volumeType: string;
 
 ---
 
-
-### DataOpentelekomcloudComputeBmsNicV2FixedIps <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudComputeBmsNicV2FixedIps } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudComputeBmsNicV2FixedIps(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCceNodeV3DataVolumes;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceNodeV3DataVolumes)
+
+---
+
+
+### DataOpentelekomcloudComputeBmsNicV2FixedIpsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsNicV2FixedIpsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsNicV2FixedIpsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110933,7 +111856,7 @@ new DataOpentelekomcloudComputeBmsNicV2FixedIps(terraformResource: IInterpolatin
 
 #### Properties <a name="Properties"></a>
 
-##### `ipAddress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.property.ipAddress"></a>
+##### `ipAddress`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.property.ipAddress"></a>
 
 ```typescript
 public readonly ipAddress: string;
@@ -110943,7 +111866,7 @@ public readonly ipAddress: string;
 
 ---
 
-##### `subnetId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps.property.subnetId"></a>
+##### `subnetId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.property.subnetId"></a>
 
 ```typescript
 public readonly subnetId: string;
@@ -110953,38 +111876,109 @@ public readonly subnetId: string;
 
 ---
 
-
-### DataOpentelekomcloudComputeBmsServerV2Network <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudComputeBmsServerV2Network } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudComputeBmsServerV2Network(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudComputeBmsNicV2FixedIps;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsNicV2FixedIps)
+
+---
+
+
+### DataOpentelekomcloudComputeBmsServerV2NetworkList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2NetworkList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsServerV2NetworkList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -110992,7 +111986,7 @@ new DataOpentelekomcloudComputeBmsServerV2Network(terraformResource: IInterpolat
 
 #### Properties <a name="Properties"></a>
 
-##### `ip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.property.ip"></a>
+##### `ip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.ip"></a>
 
 ```typescript
 public readonly ip: string;
@@ -111002,7 +111996,7 @@ public readonly ip: string;
 
 ---
 
-##### `mac`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.property.mac"></a>
+##### `mac`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.mac"></a>
 
 ```typescript
 public readonly mac: string;
@@ -111012,7 +112006,7 @@ public readonly mac: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111022,7 +112016,7 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -111032,7 +112026,7 @@ public readonly type: string;
 
 ---
 
-##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network.property.version"></a>
+##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.version"></a>
 
 ```typescript
 public readonly version: number;
@@ -111042,38 +112036,109 @@ public readonly version: number;
 
 ---
 
-
-### DataOpentelekomcloudComputeBmsServerV2SecurityGroups <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2NetworkOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudComputeBmsServerV2SecurityGroups } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudComputeBmsServerV2Network;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2Network)
+
+---
+
+
+### DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111081,7 +112146,7 @@ new DataOpentelekomcloudComputeBmsServerV2SecurityGroups(terraformResource: IInt
 
 #### Properties <a name="Properties"></a>
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111091,38 +112156,109 @@ public readonly name: string;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupPolicyV1Resource <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroupsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupPolicyV1Resource } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupPolicyV1Resource(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudComputeBmsServerV2SecurityGroups;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudComputeBmsServerV2SecurityGroups)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1ResourceList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1ResourceList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1ResourceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111130,7 +112266,7 @@ new DataOpentelekomcloudCsbsBackupPolicyV1Resource(terraformResource: IInterpola
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -111140,7 +112276,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111150,7 +112286,7 @@ public readonly name: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -111160,38 +112296,109 @@ public readonly type: string;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCsbsBackupPolicyV1Resource;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Resource)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111199,7 +112406,7 @@ new DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation(terraformResource: 
 
 #### Properties <a name="Properties"></a>
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -111209,7 +112416,7 @@ public readonly description: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -111219,7 +112426,7 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -111229,7 +112436,7 @@ public readonly id: string;
 
 ---
 
-##### `maxBackups`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.maxBackups"></a>
+##### `maxBackups`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.maxBackups"></a>
 
 ```typescript
 public readonly maxBackups: number;
@@ -111239,7 +112446,7 @@ public readonly maxBackups: number;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111249,7 +112456,7 @@ public readonly name: string;
 
 ---
 
-##### `operationType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.operationType"></a>
+##### `operationType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.operationType"></a>
 
 ```typescript
 public readonly operationType: string;
@@ -111259,7 +112466,7 @@ public readonly operationType: string;
 
 ---
 
-##### `permanent`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.permanent"></a>
+##### `permanent`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.permanent"></a>
 
 ```typescript
 public readonly permanent: IResolvable;
@@ -111269,7 +112476,7 @@ public readonly permanent: IResolvable;
 
 ---
 
-##### `retentionDurationDays`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.retentionDurationDays"></a>
+##### `retentionDurationDays`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.retentionDurationDays"></a>
 
 ```typescript
 public readonly retentionDurationDays: number;
@@ -111279,7 +112486,7 @@ public readonly retentionDurationDays: number;
 
 ---
 
-##### `triggerId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.triggerId"></a>
+##### `triggerId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerId"></a>
 
 ```typescript
 public readonly triggerId: string;
@@ -111289,7 +112496,7 @@ public readonly triggerId: string;
 
 ---
 
-##### `triggerName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.triggerName"></a>
+##### `triggerName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerName"></a>
 
 ```typescript
 public readonly triggerName: string;
@@ -111299,7 +112506,7 @@ public readonly triggerName: string;
 
 ---
 
-##### `triggerPattern`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.triggerPattern"></a>
+##### `triggerPattern`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerPattern"></a>
 
 ```typescript
 public readonly triggerPattern: string;
@@ -111309,7 +112516,7 @@ public readonly triggerPattern: string;
 
 ---
 
-##### `triggerType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation.property.triggerType"></a>
+##### `triggerType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.triggerType"></a>
 
 ```typescript
 public readonly triggerType: string;
@@ -111319,38 +112526,109 @@ public readonly triggerType: string;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupPolicyV1Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupPolicyV1Tags } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupPolicyV1Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1TagsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1TagsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1TagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111358,7 +112636,7 @@ new DataOpentelekomcloudCsbsBackupPolicyV1Tags(terraformResource: IInterpolating
 
 #### Properties <a name="Properties"></a>
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.property.key"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -111368,7 +112646,7 @@ public readonly key: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -111378,38 +112656,109 @@ public readonly value: string;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupV1Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupV1Tags } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupV1Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCsbsBackupPolicyV1Tags;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupPolicyV1Tags)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupV1TagsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1TagsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1TagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupV1TagsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1TagsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1TagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111417,7 +112766,7 @@ new DataOpentelekomcloudCsbsBackupV1Tags(terraformResource: IInterpolatingParent
 
 #### Properties <a name="Properties"></a>
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.property.key"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -111427,7 +112776,7 @@ public readonly key: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -111437,38 +112786,109 @@ public readonly value: string;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupV1VmMetadata <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1TagsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupV1VmMetadata } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupV1VmMetadata(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCsbsBackupV1Tags;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1Tags)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupV1VmMetadataList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VmMetadataList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1VmMetadataList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111476,7 +112896,7 @@ new DataOpentelekomcloudCsbsBackupV1VmMetadata(terraformResource: IInterpolating
 
 #### Properties <a name="Properties"></a>
 
-##### `cloudServiceType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.cloudServiceType"></a>
+##### `cloudServiceType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.cloudServiceType"></a>
 
 ```typescript
 public readonly cloudServiceType: string;
@@ -111486,7 +112906,7 @@ public readonly cloudServiceType: string;
 
 ---
 
-##### `disk`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.disk"></a>
+##### `disk`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.disk"></a>
 
 ```typescript
 public readonly disk: number;
@@ -111496,7 +112916,7 @@ public readonly disk: number;
 
 ---
 
-##### `eip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.eip"></a>
+##### `eip`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.eip"></a>
 
 ```typescript
 public readonly eip: string;
@@ -111506,7 +112926,7 @@ public readonly eip: string;
 
 ---
 
-##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.imageType"></a>
+##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.imageType"></a>
 
 ```typescript
 public readonly imageType: string;
@@ -111516,7 +112936,7 @@ public readonly imageType: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111526,7 +112946,7 @@ public readonly name: string;
 
 ---
 
-##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.privateIp"></a>
+##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -111536,7 +112956,7 @@ public readonly privateIp: string;
 
 ---
 
-##### `ram`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.ram"></a>
+##### `ram`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.ram"></a>
 
 ```typescript
 public readonly ram: number;
@@ -111546,7 +112966,7 @@ public readonly ram: number;
 
 ---
 
-##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata.property.vcpus"></a>
+##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.vcpus"></a>
 
 ```typescript
 public readonly vcpus: number;
@@ -111556,38 +112976,109 @@ public readonly vcpus: number;
 
 ---
 
-
-### DataOpentelekomcloudCsbsBackupV1VolumeBackups <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudCsbsBackupV1VolumeBackups } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudCsbsBackupV1VolumeBackups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudCsbsBackupV1VmMetadata;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VmMetadata)
+
+---
+
+
+### DataOpentelekomcloudCsbsBackupV1VolumeBackupsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VolumeBackupsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1VolumeBackupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111595,7 +113086,7 @@ new DataOpentelekomcloudCsbsBackupV1VolumeBackups(terraformResource: IInterpolat
 
 #### Properties <a name="Properties"></a>
 
-##### `averageSpeed`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.averageSpeed"></a>
+##### `averageSpeed`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.averageSpeed"></a>
 
 ```typescript
 public readonly averageSpeed: number;
@@ -111605,7 +113096,7 @@ public readonly averageSpeed: number;
 
 ---
 
-##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.bootable"></a>
+##### `bootable`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.bootable"></a>
 
 ```typescript
 public readonly bootable: IResolvable;
@@ -111615,7 +113106,7 @@ public readonly bootable: IResolvable;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -111625,7 +113116,7 @@ public readonly id: string;
 
 ---
 
-##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.imageType"></a>
+##### `imageType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.imageType"></a>
 
 ```typescript
 public readonly imageType: string;
@@ -111635,7 +113126,7 @@ public readonly imageType: string;
 
 ---
 
-##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.incremental"></a>
+##### `incremental`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.incremental"></a>
 
 ```typescript
 public readonly incremental: IResolvable;
@@ -111645,7 +113136,7 @@ public readonly incremental: IResolvable;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -111655,7 +113146,7 @@ public readonly name: string;
 
 ---
 
-##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.size"></a>
+##### `size`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -111665,7 +113156,7 @@ public readonly size: number;
 
 ---
 
-##### `snapshotId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.snapshotId"></a>
+##### `snapshotId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.snapshotId"></a>
 
 ```typescript
 public readonly snapshotId: string;
@@ -111675,7 +113166,7 @@ public readonly snapshotId: string;
 
 ---
 
-##### `sourceVolumeId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.sourceVolumeId"></a>
+##### `sourceVolumeId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeId"></a>
 
 ```typescript
 public readonly sourceVolumeId: string;
@@ -111685,7 +113176,7 @@ public readonly sourceVolumeId: string;
 
 ---
 
-##### `sourceVolumeName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.sourceVolumeName"></a>
+##### `sourceVolumeName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeName"></a>
 
 ```typescript
 public readonly sourceVolumeName: string;
@@ -111695,7 +113186,7 @@ public readonly sourceVolumeName: string;
 
 ---
 
-##### `sourceVolumeSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.sourceVolumeSize"></a>
+##### `sourceVolumeSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.sourceVolumeSize"></a>
 
 ```typescript
 public readonly sourceVolumeSize: number;
@@ -111705,7 +113196,7 @@ public readonly sourceVolumeSize: number;
 
 ---
 
-##### `spaceSavingRatio`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.spaceSavingRatio"></a>
+##### `spaceSavingRatio`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.spaceSavingRatio"></a>
 
 ```typescript
 public readonly spaceSavingRatio: number;
@@ -111715,13 +113206,23 @@ public readonly spaceSavingRatio: number;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudCsbsBackupV1VolumeBackups;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCsbsBackupV1VolumeBackups)
 
 ---
 
@@ -111733,7 +113234,7 @@ public readonly status: string;
 ```typescript
 import { DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.parameter.terraformResource"></a>
@@ -111749,14 +113250,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -111848,55 +113341,119 @@ public readonly internalValue: DataOpentelekomcloudCssFlavorV1DiskRange;
 ---
 
 
-### DataOpentelekomcloudDdsFlavorsV3Flavors <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors"></a>
+### DataOpentelekomcloudDdsFlavorsV3FlavorsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.Initializer"></a>
 
 ```typescript
-import { DataOpentelekomcloudDdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
+import { DataOpentelekomcloudDdsFlavorsV3FlavorsList } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudDdsFlavorsV3Flavors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOpentelekomcloudDdsFlavorsV3FlavorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
 
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `azStatus` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.azStatus"></a>
+
+```typescript
+public azStatus(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.parameter.key"></a>
+
+- *Type:* `string`
+
+---
 
 
 #### Properties <a name="Properties"></a>
 
-##### `azStatus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.azStatus"></a>
-
-```typescript
-public readonly azStatus: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: `string`}
-
----
-
-##### `memory`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.memory"></a>
+##### `memory`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.property.memory"></a>
 
 ```typescript
 public readonly memory: string;
@@ -111906,7 +113463,7 @@ public readonly memory: string;
 
 ---
 
-##### `specCode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.specCode"></a>
+##### `specCode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.property.specCode"></a>
 
 ```typescript
 public readonly specCode: string;
@@ -111916,7 +113473,7 @@ public readonly specCode: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -111926,7 +113483,7 @@ public readonly type: string;
 
 ---
 
-##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors.property.vcpus"></a>
+##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.property.vcpus"></a>
 
 ```typescript
 public readonly vcpus: string;
@@ -111936,38 +113493,109 @@ public readonly vcpus: string;
 
 ---
 
-
-### DataOpentelekomcloudDdsInstanceV3BackupStrategy <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudDdsInstanceV3BackupStrategy } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudDdsInstanceV3BackupStrategy(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudDdsFlavorsV3Flavors;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsFlavorsV3Flavors)
+
+---
+
+
+### DataOpentelekomcloudDdsInstanceV3BackupStrategyList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3BackupStrategyList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3BackupStrategyList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -111975,7 +113603,7 @@ new DataOpentelekomcloudDdsInstanceV3BackupStrategy(terraformResource: IInterpol
 
 #### Properties <a name="Properties"></a>
 
-##### `keepDays`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.property.keepDays"></a>
+##### `keepDays`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.property.keepDays"></a>
 
 ```typescript
 public readonly keepDays: number;
@@ -111985,7 +113613,7 @@ public readonly keepDays: number;
 
 ---
 
-##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy.property.startTime"></a>
+##### `startTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.property.startTime"></a>
 
 ```typescript
 public readonly startTime: string;
@@ -111995,38 +113623,109 @@ public readonly startTime: string;
 
 ---
 
-
-### DataOpentelekomcloudDdsInstanceV3Datastore <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudDdsInstanceV3Datastore } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudDdsInstanceV3Datastore(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudDdsInstanceV3BackupStrategy;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3BackupStrategy)
+
+---
+
+
+### DataOpentelekomcloudDdsInstanceV3DatastoreList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3DatastoreList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3DatastoreList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112034,7 +113733,7 @@ new DataOpentelekomcloudDdsInstanceV3Datastore(terraformResource: IInterpolating
 
 #### Properties <a name="Properties"></a>
 
-##### `storageEngine`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.property.storageEngine"></a>
+##### `storageEngine`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.property.storageEngine"></a>
 
 ```typescript
 public readonly storageEngine: string;
@@ -112044,7 +113743,7 @@ public readonly storageEngine: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -112054,7 +113753,7 @@ public readonly type: string;
 
 ---
 
-##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore.property.version"></a>
+##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.property.version"></a>
 
 ```typescript
 public readonly version: string;
@@ -112064,38 +113763,109 @@ public readonly version: string;
 
 ---
 
-
-### DataOpentelekomcloudDdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudDdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudDdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudDdsInstanceV3Datastore;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Datastore)
+
+---
+
+
+### DataOpentelekomcloudDdsInstanceV3NodesList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3NodesList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3NodesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudDdsInstanceV3NodesOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDdsInstanceV3NodesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDdsInstanceV3NodesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112103,7 +113873,7 @@ new DataOpentelekomcloudDdsInstanceV3Nodes(terraformResource: IInterpolatingPare
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -112113,7 +113883,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -112123,7 +113893,7 @@ public readonly name: string;
 
 ---
 
-##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.privateIp"></a>
+##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -112133,7 +113903,7 @@ public readonly privateIp: string;
 
 ---
 
-##### `publicIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.publicIp"></a>
+##### `publicIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.publicIp"></a>
 
 ```typescript
 public readonly publicIp: string;
@@ -112143,7 +113913,7 @@ public readonly publicIp: string;
 
 ---
 
-##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.role"></a>
+##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -112153,7 +113923,7 @@ public readonly role: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -112163,7 +113933,7 @@ public readonly status: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -112173,38 +113943,109 @@ public readonly type: string;
 
 ---
 
-
-### DataOpentelekomcloudDehHostV1AvailableInstanceCapacities <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3NodesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudDehHostV1AvailableInstanceCapacities } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudDdsInstanceV3Nodes;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDdsInstanceV3Nodes)
+
+---
+
+
+### DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112212,7 +114053,7 @@ new DataOpentelekomcloudDehHostV1AvailableInstanceCapacities(terraformResource: 
 
 #### Properties <a name="Properties"></a>
 
-##### `flavor`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.property.flavor"></a>
+##### `flavor`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.property.flavor"></a>
 
 ```typescript
 public readonly flavor: string;
@@ -112222,38 +114063,109 @@ public readonly flavor: string;
 
 ---
 
-
-### DataOpentelekomcloudIdentityAuthScopeV3Roles <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudIdentityAuthScopeV3Roles } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudIdentityAuthScopeV3Roles(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudDehHostV1AvailableInstanceCapacities;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities)
+
+---
+
+
+### DataOpentelekomcloudIdentityAuthScopeV3RolesList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityAuthScopeV3RolesList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudIdentityAuthScopeV3RolesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112261,7 +114173,7 @@ new DataOpentelekomcloudIdentityAuthScopeV3Roles(terraformResource: IInterpolati
 
 #### Properties <a name="Properties"></a>
 
-##### `roleId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.property.roleId"></a>
+##### `roleId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.property.roleId"></a>
 
 ```typescript
 public readonly roleId: string;
@@ -112271,7 +114183,7 @@ public readonly roleId: string;
 
 ---
 
-##### `roleName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles.property.roleName"></a>
+##### `roleName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.property.roleName"></a>
 
 ```typescript
 public readonly roleName: string;
@@ -112281,38 +114193,109 @@ public readonly roleName: string;
 
 ---
 
-
-### DataOpentelekomcloudIdentityCredentialV3Credentials <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudIdentityCredentialV3Credentials } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudIdentityCredentialV3Credentials(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudIdentityAuthScopeV3Roles;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityAuthScopeV3Roles)
+
+---
+
+
+### DataOpentelekomcloudIdentityCredentialV3CredentialsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityCredentialV3CredentialsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudIdentityCredentialV3CredentialsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112320,7 +114303,7 @@ new DataOpentelekomcloudIdentityCredentialV3Credentials(terraformResource: IInte
 
 #### Properties <a name="Properties"></a>
 
-##### `access`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.property.access"></a>
+##### `access`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.access"></a>
 
 ```typescript
 public readonly access: string;
@@ -112330,7 +114313,7 @@ public readonly access: string;
 
 ---
 
-##### `createTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.property.createTime"></a>
+##### `createTime`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.createTime"></a>
 
 ```typescript
 public readonly createTime: string;
@@ -112340,7 +114323,7 @@ public readonly createTime: string;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -112350,7 +114333,7 @@ public readonly description: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -112360,7 +114343,7 @@ public readonly status: string;
 
 ---
 
-##### `userId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials.property.userId"></a>
+##### `userId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.userId"></a>
 
 ```typescript
 public readonly userId: string;
@@ -112370,38 +114353,109 @@ public readonly userId: string;
 
 ---
 
-
-### DataOpentelekomcloudLbListenerV3InsertHeaders <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudLbListenerV3InsertHeaders } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudIdentityCredentialV3Credentials;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudIdentityCredentialV3Credentials)
+
+---
+
+
+### DataOpentelekomcloudLbListenerV3InsertHeadersList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3InsertHeadersList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbListenerV3InsertHeadersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112409,7 +114463,7 @@ new DataOpentelekomcloudLbListenerV3InsertHeaders(terraformResource: IInterpolat
 
 #### Properties <a name="Properties"></a>
 
-##### `forwardedForPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedForPort"></a>
+##### `forwardedForPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.property.forwardedForPort"></a>
 
 ```typescript
 public readonly forwardedForPort: IResolvable;
@@ -112419,7 +114473,7 @@ public readonly forwardedForPort: IResolvable;
 
 ---
 
-##### `forwardedHost`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedHost"></a>
+##### `forwardedHost`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.property.forwardedHost"></a>
 
 ```typescript
 public readonly forwardedHost: IResolvable;
@@ -112429,7 +114483,7 @@ public readonly forwardedHost: IResolvable;
 
 ---
 
-##### `forwardedPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardedPort"></a>
+##### `forwardedPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.property.forwardedPort"></a>
 
 ```typescript
 public readonly forwardedPort: IResolvable;
@@ -112439,7 +114493,7 @@ public readonly forwardedPort: IResolvable;
 
 ---
 
-##### `forwardElbIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders.property.forwardElbIp"></a>
+##### `forwardElbIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.property.forwardElbIp"></a>
 
 ```typescript
 public readonly forwardElbIp: IResolvable;
@@ -112449,38 +114503,109 @@ public readonly forwardElbIp: IResolvable;
 
 ---
 
-
-### DataOpentelekomcloudLbLoadbalancerV3PublicIp <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudLbLoadbalancerV3PublicIp } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudLbListenerV3InsertHeaders;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbListenerV3InsertHeaders)
+
+---
+
+
+### DataOpentelekomcloudLbLoadbalancerV3PublicIpList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3PublicIpList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbLoadbalancerV3PublicIpList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112488,7 +114613,7 @@ new DataOpentelekomcloudLbLoadbalancerV3PublicIp(terraformResource: IInterpolati
 
 #### Properties <a name="Properties"></a>
 
-##### `address`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.address"></a>
+##### `address`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.address"></a>
 
 ```typescript
 public readonly address: string;
@@ -112498,7 +114623,7 @@ public readonly address: string;
 
 ---
 
-##### `bandwidthChargeMode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthChargeMode"></a>
+##### `bandwidthChargeMode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.bandwidthChargeMode"></a>
 
 ```typescript
 public readonly bandwidthChargeMode: string;
@@ -112508,7 +114633,7 @@ public readonly bandwidthChargeMode: string;
 
 ---
 
-##### `bandwidthName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthName"></a>
+##### `bandwidthName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.bandwidthName"></a>
 
 ```typescript
 public readonly bandwidthName: string;
@@ -112518,7 +114643,7 @@ public readonly bandwidthName: string;
 
 ---
 
-##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthShareType"></a>
+##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.bandwidthShareType"></a>
 
 ```typescript
 public readonly bandwidthShareType: string;
@@ -112528,7 +114653,7 @@ public readonly bandwidthShareType: string;
 
 ---
 
-##### `bandwidthSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.bandwidthSize"></a>
+##### `bandwidthSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.bandwidthSize"></a>
 
 ```typescript
 public readonly bandwidthSize: number;
@@ -112538,7 +114663,7 @@ public readonly bandwidthSize: number;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -112548,7 +114673,7 @@ public readonly id: string;
 
 ---
 
-##### `ipType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp.property.ipType"></a>
+##### `ipType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.ipType"></a>
 
 ```typescript
 public readonly ipType: string;
@@ -112558,38 +114683,109 @@ public readonly ipType: string;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketCorsRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIpOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketCorsRule } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketCorsRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudLbLoadbalancerV3PublicIp;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudLbLoadbalancerV3PublicIp)
+
+---
+
+
+### DataOpentelekomcloudObsBucketCorsRuleList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketCorsRuleList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketCorsRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketCorsRuleOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketCorsRuleOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketCorsRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112597,7 +114793,7 @@ new DataOpentelekomcloudObsBucketCorsRule(terraformResource: IInterpolatingParen
 
 #### Properties <a name="Properties"></a>
 
-##### `allowedHeaders`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.property.allowedHeaders"></a>
+##### `allowedHeaders`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.allowedHeaders"></a>
 
 ```typescript
 public readonly allowedHeaders: string[];
@@ -112607,7 +114803,7 @@ public readonly allowedHeaders: string[];
 
 ---
 
-##### `allowedMethods`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.property.allowedMethods"></a>
+##### `allowedMethods`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.allowedMethods"></a>
 
 ```typescript
 public readonly allowedMethods: string[];
@@ -112617,7 +114813,7 @@ public readonly allowedMethods: string[];
 
 ---
 
-##### `allowedOrigins`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.property.allowedOrigins"></a>
+##### `allowedOrigins`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.allowedOrigins"></a>
 
 ```typescript
 public readonly allowedOrigins: string[];
@@ -112627,7 +114823,7 @@ public readonly allowedOrigins: string[];
 
 ---
 
-##### `exposeHeaders`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.property.exposeHeaders"></a>
+##### `exposeHeaders`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.exposeHeaders"></a>
 
 ```typescript
 public readonly exposeHeaders: string[];
@@ -112637,7 +114833,7 @@ public readonly exposeHeaders: string[];
 
 ---
 
-##### `maxAgeSeconds`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule.property.maxAgeSeconds"></a>
+##### `maxAgeSeconds`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.maxAgeSeconds"></a>
 
 ```typescript
 public readonly maxAgeSeconds: number;
@@ -112647,38 +114843,109 @@ public readonly maxAgeSeconds: number;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketEventNotifications <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRuleOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketEventNotifications } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketEventNotifications(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketCorsRule;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketCorsRule)
+
+---
+
+
+### DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112686,7 +114953,137 @@ new DataOpentelekomcloudObsBucketEventNotifications(terraformResource: IInterpol
 
 #### Properties <a name="Properties"></a>
 
-##### `events`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.property.events"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudObsBucketEventNotificationsFilterRule;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule)
+
+---
+
+
+### DataOpentelekomcloudObsBucketEventNotificationsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotificationsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketEventNotificationsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketEventNotificationsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketEventNotificationsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketEventNotificationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `events`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.property.events"></a>
 
 ```typescript
 public readonly events: string[];
@@ -112696,17 +115093,17 @@ public readonly events: string[];
 
 ---
 
-##### `filterRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.property.filterRule"></a>
+##### `filterRule`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.property.filterRule"></a>
 
 ```typescript
-public readonly filterRule: IResolvable;
+public readonly filterRule: DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList)
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -112716,7 +115113,7 @@ public readonly id: string;
 
 ---
 
-##### `topic`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications.property.topic"></a>
+##### `topic`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.property.topic"></a>
 
 ```typescript
 public readonly topic: string;
@@ -112726,38 +115123,109 @@ public readonly topic: string;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketEventNotificationsFilterRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketEventNotificationsFilterRule } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketEventNotificationsFilterRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketEventNotifications;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotifications)
+
+---
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleExpirationList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleExpirationList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleExpirationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112765,58 +115233,172 @@ new DataOpentelekomcloudObsBucketEventNotificationsFilterRule(terraformResource:
 
 #### Properties <a name="Properties"></a>
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.property.name"></a>
+##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.property.days"></a>
 
 ```typescript
-public readonly name: string;
+public readonly days: number;
 ```
 
-- *Type:* `string`
+- *Type:* `number`
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketEventNotificationsFilterRule.property.value"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly value: string;
+public readonly internalValue: DataOpentelekomcloudObsBucketLifecycleRuleExpiration;
 ```
 
-- *Type:* `string`
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration)
 
 ---
 
 
-### DataOpentelekomcloudObsBucketLifecycleRule <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule"></a>
+### DataOpentelekomcloudObsBucketLifecycleRuleList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.Initializer"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketLifecycleRule } from '@cdktf/provider-opentelekomcloud'
+import { DataOpentelekomcloudObsBucketLifecycleRuleList } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOpentelekomcloudObsBucketLifecycleRuleList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112824,7 +115406,204 @@ new DataOpentelekomcloudObsBucketLifecycleRule(terraformResource: IInterpolating
 
 #### Properties <a name="Properties"></a>
 
-##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.enabled"></a>
+##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.property.days"></a>
+
+```typescript
+public readonly days: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration)
+
+---
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.parameter.wrapsSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.days"></a>
+
+```typescript
+public readonly days: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `storageClass`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.storageClass"></a>
+
+```typescript
+public readonly storageClass: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition)
+
+---
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+
+
+#### Properties <a name="Properties"></a>
+
+##### `enabled`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.enabled"></a>
 
 ```typescript
 public readonly enabled: IResolvable;
@@ -112834,17 +115613,17 @@ public readonly enabled: IResolvable;
 
 ---
 
-##### `expiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.expiration"></a>
+##### `expiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.expiration"></a>
 
 ```typescript
-public readonly expiration: IResolvable;
+public readonly expiration: DataOpentelekomcloudObsBucketLifecycleRuleExpirationList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpirationList)
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -112854,27 +115633,27 @@ public readonly name: string;
 
 ---
 
-##### `noncurrentVersionExpiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.noncurrentVersionExpiration"></a>
+##### `noncurrentVersionExpiration`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.noncurrentVersionExpiration"></a>
 
 ```typescript
-public readonly noncurrentVersionExpiration: IResolvable;
+public readonly noncurrentVersionExpiration: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList)
 
 ---
 
-##### `noncurrentVersionTransition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.noncurrentVersionTransition"></a>
+##### `noncurrentVersionTransition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.noncurrentVersionTransition"></a>
 
 ```typescript
-public readonly noncurrentVersionTransition: IResolvable;
+public readonly noncurrentVersionTransition: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList)
 
 ---
 
-##### `prefix`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.prefix"></a>
+##### `prefix`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.prefix"></a>
 
 ```typescript
 public readonly prefix: string;
@@ -112884,48 +115663,119 @@ public readonly prefix: string;
 
 ---
 
-##### `transition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule.property.transition"></a>
+##### `transition`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.transition"></a>
 
 ```typescript
-public readonly transition: IResolvable;
+public readonly transition: DataOpentelekomcloudObsBucketLifecycleRuleTransitionList;
 ```
 
-- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList)
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudObsBucketLifecycleRule;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRule)
 
 ---
 
 
-### DataOpentelekomcloudObsBucketLifecycleRuleExpiration <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration"></a>
+### DataOpentelekomcloudObsBucketLifecycleRuleTransitionList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.Initializer"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketLifecycleRuleExpiration } from '@cdktf/provider-opentelekomcloud'
+import { DataOpentelekomcloudObsBucketLifecycleRuleTransitionList } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLifecycleRuleExpiration(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOpentelekomcloudObsBucketLifecycleRuleTransitionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -112933,7 +115783,7 @@ new DataOpentelekomcloudObsBucketLifecycleRuleExpiration(terraformResource: IInt
 
 #### Properties <a name="Properties"></a>
 
-##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleExpiration.property.days"></a>
+##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.property.days"></a>
 
 ```typescript
 public readonly days: number;
@@ -112943,105 +115793,7 @@ public readonly days: number;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.Initializer"></a>
-
-```typescript
-import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.terraformResource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.terraformAttribute"></a>
-
-- *Type:* `string`
-
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
-
----
-
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.parameter.wrapsSet"></a>
-
-- *Type:* `boolean`
-
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration.property.days"></a>
-
-```typescript
-public readonly days: number;
-```
-
-- *Type:* `number`
-
----
-
-
-### DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.Initializer"></a>
-
-```typescript
-import { DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
-```
-
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.terraformResource"></a>
-
-- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.terraformAttribute"></a>
-
-- *Type:* `string`
-
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
-
----
-
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.parameter.wrapsSet"></a>
-
-- *Type:* `boolean`
-
----
-
-
-
-#### Properties <a name="Properties"></a>
-
-##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.property.days"></a>
-
-```typescript
-public readonly days: number;
-```
-
-- *Type:* `number`
-
----
-
-##### `storageClass`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition.property.storageClass"></a>
+##### `storageClass`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.property.storageClass"></a>
 
 ```typescript
 public readonly storageClass: string;
@@ -113051,97 +115803,109 @@ public readonly storageClass: string;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketLifecycleRuleTransition <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketLifecycleRuleTransition } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketLifecycleRuleTransition(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketLifecycleRuleTransition;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition)
+
+---
+
+
+### DataOpentelekomcloudObsBucketLoggingList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketLoggingList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketLoggingList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
 
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
 ---
 
+#### Methods <a name="Methods"></a>
 
-
-#### Properties <a name="Properties"></a>
-
-##### `days`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.property.days"></a>
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.get"></a>
 
 ```typescript
-public readonly days: number;
+public get(index: number)
 ```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingList.parameter.index"></a>
 
 - *Type:* `number`
 
----
-
-##### `storageClass`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLifecycleRuleTransition.property.storageClass"></a>
-
-```typescript
-public readonly storageClass: string;
-```
-
-- *Type:* `string`
+the index of the item to return.
 
 ---
 
 
-### DataOpentelekomcloudObsBucketLogging <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.Initializer"></a>
+
+### DataOpentelekomcloudObsBucketLoggingOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.Initializer"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketLogging } from '@cdktf/provider-opentelekomcloud'
+import { DataOpentelekomcloudObsBucketLoggingOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DataOpentelekomcloudObsBucketLogging(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataOpentelekomcloudObsBucketLoggingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.parameter.wrapsSet"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113149,7 +115913,7 @@ new DataOpentelekomcloudObsBucketLogging(terraformResource: IInterpolatingParent
 
 #### Properties <a name="Properties"></a>
 
-##### `targetBucket`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.property.targetBucket"></a>
+##### `targetBucket`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.property.targetBucket"></a>
 
 ```typescript
 public readonly targetBucket: string;
@@ -113159,7 +115923,7 @@ public readonly targetBucket: string;
 
 ---
 
-##### `targetPrefix`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging.property.targetPrefix"></a>
+##### `targetPrefix`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.property.targetPrefix"></a>
 
 ```typescript
 public readonly targetPrefix: string;
@@ -113169,38 +115933,109 @@ public readonly targetPrefix: string;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketServerSideEncryption <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLoggingOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketServerSideEncryption } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketServerSideEncryption(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketLogging;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketLogging)
+
+---
+
+
+### DataOpentelekomcloudObsBucketServerSideEncryptionList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketServerSideEncryptionList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketServerSideEncryptionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113208,7 +116043,7 @@ new DataOpentelekomcloudObsBucketServerSideEncryption(terraformResource: IInterp
 
 #### Properties <a name="Properties"></a>
 
-##### `algorithm`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.property.algorithm"></a>
+##### `algorithm`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.property.algorithm"></a>
 
 ```typescript
 public readonly algorithm: string;
@@ -113218,7 +116053,7 @@ public readonly algorithm: string;
 
 ---
 
-##### `kmsKeyId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption.property.kmsKeyId"></a>
+##### `kmsKeyId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.property.kmsKeyId"></a>
 
 ```typescript
 public readonly kmsKeyId: string;
@@ -113228,38 +116063,109 @@ public readonly kmsKeyId: string;
 
 ---
 
-
-### DataOpentelekomcloudObsBucketWebsite <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudObsBucketWebsite } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudObsBucketWebsite(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketServerSideEncryption;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketServerSideEncryption)
+
+---
+
+
+### DataOpentelekomcloudObsBucketWebsiteList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketWebsiteList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketWebsiteList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudObsBucketWebsiteOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudObsBucketWebsiteOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudObsBucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113267,7 +116173,7 @@ new DataOpentelekomcloudObsBucketWebsite(terraformResource: IInterpolatingParent
 
 #### Properties <a name="Properties"></a>
 
-##### `errorDocument`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.property.errorDocument"></a>
+##### `errorDocument`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.property.errorDocument"></a>
 
 ```typescript
 public readonly errorDocument: string;
@@ -113277,7 +116183,7 @@ public readonly errorDocument: string;
 
 ---
 
-##### `indexDocument`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.property.indexDocument"></a>
+##### `indexDocument`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.property.indexDocument"></a>
 
 ```typescript
 public readonly indexDocument: string;
@@ -113287,7 +116193,7 @@ public readonly indexDocument: string;
 
 ---
 
-##### `redirectAllRequestsTo`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.property.redirectAllRequestsTo"></a>
+##### `redirectAllRequestsTo`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.property.redirectAllRequestsTo"></a>
 
 ```typescript
 public readonly redirectAllRequestsTo: string;
@@ -113297,7 +116203,7 @@ public readonly redirectAllRequestsTo: string;
 
 ---
 
-##### `routingRules`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite.property.routingRules"></a>
+##### `routingRules`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.property.routingRules"></a>
 
 ```typescript
 public readonly routingRules: string;
@@ -113307,56 +116213,130 @@ public readonly routingRules: string;
 
 ---
 
-
-### DataOpentelekomcloudRdsFlavorsV3Flavors <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsiteOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudRdsFlavorsV3Flavors } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudRdsFlavorsV3Flavors(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudObsBucketWebsite;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudObsBucketWebsite)
+
+---
+
+
+### DataOpentelekomcloudRdsFlavorsV3FlavorsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudRdsFlavorsV3FlavorsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudRdsFlavorsV3FlavorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
 
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
 ---
 
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `azStatus` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.azStatus"></a>
+
+```typescript
+public azStatus(key: string)
+```
+
+###### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.parameter.key"></a>
+
+- *Type:* `string`
+
+---
 
 
 #### Properties <a name="Properties"></a>
 
-##### `azStatus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.azStatus"></a>
-
-```typescript
-public readonly azStatus: {[ key: string ]: string};
-```
-
-- *Type:* {[ key: string ]: `string`}
-
----
-
-##### `memory`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.memory"></a>
+##### `memory`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.property.memory"></a>
 
 ```typescript
 public readonly memory: number;
@@ -113366,7 +116346,7 @@ public readonly memory: number;
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.property.mode"></a>
 
 ```typescript
 public readonly mode: string;
@@ -113376,7 +116356,7 @@ public readonly mode: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -113386,7 +116366,7 @@ public readonly name: string;
 
 ---
 
-##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors.property.vcpus"></a>
+##### `vcpus`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.property.vcpus"></a>
 
 ```typescript
 public readonly vcpus: string;
@@ -113396,38 +116376,109 @@ public readonly vcpus: string;
 
 ---
 
-
-### DataOpentelekomcloudVbsBackupPolicyV2Tags <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudVbsBackupPolicyV2Tags } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudVbsBackupPolicyV2Tags(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudRdsFlavorsV3Flavors;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudRdsFlavorsV3Flavors)
+
+---
+
+
+### DataOpentelekomcloudVbsBackupPolicyV2TagsList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVbsBackupPolicyV2TagsList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVbsBackupPolicyV2TagsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113435,7 +116486,7 @@ new DataOpentelekomcloudVbsBackupPolicyV2Tags(terraformResource: IInterpolatingP
 
 #### Properties <a name="Properties"></a>
 
-##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.property.key"></a>
+##### `key`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -113445,7 +116496,7 @@ public readonly key: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -113455,38 +116506,109 @@ public readonly value: string;
 
 ---
 
-
-### DataOpentelekomcloudVpcepServiceV1Port <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudVpcepServiceV1Port } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudVpcepServiceV1Port(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudVbsBackupPolicyV2Tags;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVbsBackupPolicyV2Tags)
+
+---
+
+
+### DataOpentelekomcloudVpcepServiceV1PortList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcepServiceV1PortList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVpcepServiceV1PortList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudVpcepServiceV1PortOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcepServiceV1PortOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVpcepServiceV1PortOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113494,7 +116616,7 @@ new DataOpentelekomcloudVpcepServiceV1Port(terraformResource: IInterpolatingPare
 
 #### Properties <a name="Properties"></a>
 
-##### `clientPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.property.clientPort"></a>
+##### `clientPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.property.clientPort"></a>
 
 ```typescript
 public readonly clientPort: number;
@@ -113504,7 +116626,7 @@ public readonly clientPort: number;
 
 ---
 
-##### `protocol`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.property.protocol"></a>
+##### `protocol`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.property.protocol"></a>
 
 ```typescript
 public readonly protocol: string;
@@ -113514,7 +116636,7 @@ public readonly protocol: string;
 
 ---
 
-##### `serverPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port.property.serverPort"></a>
+##### `serverPort`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.property.serverPort"></a>
 
 ```typescript
 public readonly serverPort: number;
@@ -113524,38 +116646,109 @@ public readonly serverPort: number;
 
 ---
 
-
-### DataOpentelekomcloudVpcV1Routes <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes"></a>
-
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.Initializer"></a>
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1PortOutputReference.property.internalValue"></a>
 
 ```typescript
-import { DataOpentelekomcloudVpcV1Routes } from '@cdktf/provider-opentelekomcloud'
-
-new DataOpentelekomcloudVpcV1Routes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+public readonly internalValue: DataOpentelekomcloudVpcepServiceV1Port;
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.terraformResource"></a>
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcepServiceV1Port)
+
+---
+
+
+### DataOpentelekomcloudVpcV1RoutesList <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcV1RoutesList } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVpcV1RoutesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DataOpentelekomcloudVpcV1RoutesOutputReference <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudVpcV1RoutesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudVpcV1RoutesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -113563,7 +116756,7 @@ new DataOpentelekomcloudVpcV1Routes(terraformResource: IInterpolatingParent, ter
 
 #### Properties <a name="Properties"></a>
 
-##### `destination`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.property.destination"></a>
+##### `destination`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.property.destination"></a>
 
 ```typescript
 public readonly destination: string;
@@ -113573,13 +116766,23 @@ public readonly destination: string;
 
 ---
 
-##### `nexthop`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes.property.nexthop"></a>
+##### `nexthop`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.property.nexthop"></a>
 
 ```typescript
 public readonly nexthop: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1RoutesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataOpentelekomcloudVpcV1Routes;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudVpcV1Routes)
 
 ---
 
@@ -113591,7 +116794,7 @@ public readonly nexthop: string;
 ```typescript
 import { DcsInstanceV1BackupPolicyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DcsInstanceV1BackupPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DcsInstanceV1BackupPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1BackupPolicyOutputReference.parameter.terraformResource"></a>
@@ -113607,14 +116810,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1BackupPolicyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -113753,7 +116948,7 @@ public readonly internalValue: DcsInstanceV1BackupPolicy;
 ```typescript
 import { DcsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -113769,14 +116964,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DcsInstanceV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -113881,7 +117068,7 @@ public readonly internalValue: DcsInstanceV1Timeouts;
 ```typescript
 import { DdsInstanceV3BackupStrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3BackupStrategyOutputReference.parameter.terraformResource"></a>
@@ -113897,14 +117084,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3BackupStrategyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -113970,7 +117149,7 @@ public readonly internalValue: DdsInstanceV3BackupStrategy;
 ```typescript
 import { DdsInstanceV3DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3DatastoreOutputReference.parameter.terraformResource"></a>
@@ -113986,14 +117165,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3DatastoreOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114079,37 +117250,98 @@ public readonly internalValue: DdsInstanceV3Datastore;
 ---
 
 
-### DdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes"></a>
+### DdsInstanceV3NodesList <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.Initializer"></a>
 
 ```typescript
-import { DdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
+import { DdsInstanceV3NodesList } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DdsInstanceV3NodesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### DdsInstanceV3NodesOutputReference <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.Initializer"></a>
+
+```typescript
+import { DdsInstanceV3NodesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new DdsInstanceV3NodesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -114117,7 +117349,7 @@ new DdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribu
 
 #### Properties <a name="Properties"></a>
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -114127,7 +117359,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -114137,7 +117369,7 @@ public readonly name: string;
 
 ---
 
-##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.privateIp"></a>
+##### `privateIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.privateIp"></a>
 
 ```typescript
 public readonly privateIp: string;
@@ -114147,7 +117379,7 @@ public readonly privateIp: string;
 
 ---
 
-##### `publicIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.publicIp"></a>
+##### `publicIp`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.publicIp"></a>
 
 ```typescript
 public readonly publicIp: string;
@@ -114157,7 +117389,7 @@ public readonly publicIp: string;
 
 ---
 
-##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.role"></a>
+##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -114167,7 +117399,7 @@ public readonly role: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -114177,13 +117409,23 @@ public readonly status: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3NodesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DdsInstanceV3Nodes;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes`](#@cdktf/provider-opentelekomcloud.DdsInstanceV3Nodes)
 
 ---
 
@@ -114195,7 +117437,7 @@ public readonly type: string;
 ```typescript
 import { DdsInstanceV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114211,14 +117453,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DdsInstanceV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114297,7 +117531,7 @@ public readonly internalValue: DdsInstanceV3Timeouts;
 ```typescript
 import { DehHostV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DehHostV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DehHostV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114313,14 +117547,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DehHostV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114399,7 +117625,7 @@ public readonly internalValue: DehHostV1Timeouts;
 ```typescript
 import { DnsPtrrecordV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsPtrrecordV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DnsPtrrecordV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114415,14 +117641,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsPtrrecordV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114527,7 +117745,7 @@ public readonly internalValue: DnsPtrrecordV2Timeouts;
 ```typescript
 import { DnsRecordsetV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsRecordsetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DnsRecordsetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114543,14 +117761,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsRecordsetV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114655,7 +117865,7 @@ public readonly internalValue: DnsRecordsetV2Timeouts;
 ```typescript
 import { DnsZoneV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new DnsZoneV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new DnsZoneV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114671,14 +117881,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DnsZoneV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114783,7 +117985,7 @@ public readonly internalValue: DnsZoneV2Timeouts;
 ```typescript
 import { EcsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new EcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new EcsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114799,14 +118001,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EcsInstanceV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -114904,37 +118098,98 @@ public readonly internalValue: EcsInstanceV1Timeouts;
 ---
 
 
-### EvsVolumeV3Attachment <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment"></a>
+### EvsVolumeV3AttachmentList <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.Initializer"></a>
 
 ```typescript
-import { EvsVolumeV3Attachment } from '@cdktf/provider-opentelekomcloud'
+import { EvsVolumeV3AttachmentList } from '@cdktf/provider-opentelekomcloud'
 
-new EvsVolumeV3Attachment(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new EvsVolumeV3AttachmentList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### EvsVolumeV3AttachmentOutputReference <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.Initializer"></a>
+
+```typescript
+import { EvsVolumeV3AttachmentOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new EvsVolumeV3AttachmentOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -114942,7 +118197,7 @@ new EvsVolumeV3Attachment(terraformResource: IInterpolatingParent, terraformAttr
 
 #### Properties <a name="Properties"></a>
 
-##### `device`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.property.device"></a>
+##### `device`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.property.device"></a>
 
 ```typescript
 public readonly device: string;
@@ -114952,7 +118207,7 @@ public readonly device: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -114962,13 +118217,23 @@ public readonly id: string;
 
 ---
 
-##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment.property.instanceId"></a>
+##### `instanceId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.property.instanceId"></a>
 
 ```typescript
 public readonly instanceId: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3AttachmentOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: EvsVolumeV3Attachment;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment`](#@cdktf/provider-opentelekomcloud.EvsVolumeV3Attachment)
 
 ---
 
@@ -114980,7 +118245,7 @@ public readonly instanceId: string;
 ```typescript
 import { EvsVolumeV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new EvsVolumeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new EvsVolumeV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -114996,14 +118261,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.EvsVolumeV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115082,7 +118339,7 @@ public readonly internalValue: EvsVolumeV3Timeouts;
 ```typescript
 import { FwFirewallGroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new FwFirewallGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new FwFirewallGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115098,14 +118355,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwFirewallGroupV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115210,7 +118459,7 @@ public readonly internalValue: FwFirewallGroupV2Timeouts;
 ```typescript
 import { FwPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new FwPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new FwPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115226,14 +118475,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.FwPolicyV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115312,7 +118553,7 @@ public readonly internalValue: FwPolicyV2Timeouts;
 ```typescript
 import { IdentityAgencyV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new IdentityAgencyV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new IdentityAgencyV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115328,14 +118569,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityAgencyV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115440,7 +118673,7 @@ public readonly internalValue: IdentityAgencyV3Timeouts;
 ```typescript
 import { IdentityProtocolV3MetadataOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new IdentityProtocolV3MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new IdentityProtocolV3MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProtocolV3MetadataOutputReference.parameter.terraformResource"></a>
@@ -115456,14 +118689,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.IdentityProtocolV3MetadataOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115556,7 +118781,7 @@ public readonly internalValue: IdentityProtocolV3Metadata;
 ```typescript
 import { ImagesImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImagesImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ImagesImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115572,14 +118797,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImagesImageV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115632,7 +118849,7 @@ public readonly internalValue: ImagesImageV2Timeouts;
 ```typescript
 import { ImsDataImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImsDataImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ImsDataImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115648,14 +118865,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsDataImageV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115734,7 +118943,7 @@ public readonly internalValue: ImsDataImageV2Timeouts;
 ```typescript
 import { ImsImageV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ImsImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ImsImageV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115750,14 +118959,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ImsImageV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115836,7 +119037,7 @@ public readonly internalValue: ImsImageV2Timeouts;
 ```typescript
 import { LbCertificateV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbCertificateV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbCertificateV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115852,14 +119053,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbCertificateV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -115964,7 +119157,7 @@ public readonly internalValue: LbCertificateV2Timeouts;
 ```typescript
 import { LbL7PolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbL7PolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbL7PolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7PolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -115980,14 +119173,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7PolicyV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116092,7 +119277,7 @@ public readonly internalValue: LbL7PolicyV2Timeouts;
 ```typescript
 import { LbL7RuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbL7RuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbL7RuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7RuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -116108,14 +119293,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbL7RuleV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116220,7 +119397,7 @@ public readonly internalValue: LbL7RuleV2Timeouts;
 ```typescript
 import { LbListenerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbListenerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbListenerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -116236,14 +119413,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116348,7 +119517,7 @@ public readonly internalValue: LbListenerV2Timeouts;
 ```typescript
 import { LbListenerV3InsertHeadersOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbListenerV3InsertHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbListenerV3InsertHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3InsertHeadersOutputReference.parameter.terraformResource"></a>
@@ -116364,14 +119533,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbListenerV3InsertHeadersOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116502,7 +119663,7 @@ public readonly internalValue: LbListenerV3InsertHeaders;
 ```typescript
 import { LbLoadbalancerV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbLoadbalancerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbLoadbalancerV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -116518,14 +119679,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116630,7 +119783,7 @@ public readonly internalValue: LbLoadbalancerV2Timeouts;
 ```typescript
 import { LbLoadbalancerV3PublicIpOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbLoadbalancerV3PublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbLoadbalancerV3PublicIpOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.parameter.terraformResource"></a>
@@ -116646,14 +119799,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116806,7 +119951,7 @@ public readonly internalValue: LbLoadbalancerV3PublicIp;
 ```typescript
 import { LbMemberV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbMemberV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbMemberV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMemberV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -116822,14 +119967,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMemberV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -116934,7 +120071,7 @@ public readonly internalValue: LbMemberV2Timeouts;
 ```typescript
 import { LbMonitorV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbMonitorV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbMonitorV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMonitorV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -116950,14 +120087,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbMonitorV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117062,7 +120191,7 @@ public readonly internalValue: LbMonitorV2Timeouts;
 ```typescript
 import { LbPoolV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbPoolV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbPoolV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117078,14 +120207,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117190,7 +120311,7 @@ public readonly internalValue: LbPoolV2Timeouts;
 ```typescript
 import { LbPoolV3SessionPersistenceOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbPoolV3SessionPersistenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbPoolV3SessionPersistenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV3SessionPersistenceOutputReference.parameter.terraformResource"></a>
@@ -117206,14 +120327,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbPoolV3SessionPersistenceOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117312,7 +120425,7 @@ public readonly internalValue: LbPoolV3SessionPersistence;
 ```typescript
 import { LbWhitelistV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new LbWhitelistV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new LbWhitelistV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbWhitelistV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117328,14 +120441,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbWhitelistV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117440,7 +120545,7 @@ public readonly internalValue: LbWhitelistV2Timeouts;
 ```typescript
 import { MrsClusterV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new MrsClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new MrsClusterV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117456,14 +120561,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsClusterV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117542,7 +120639,7 @@ public readonly internalValue: MrsClusterV1Timeouts;
 ```typescript
 import { MrsJobV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new MrsJobV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new MrsJobV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsJobV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117558,14 +120655,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.MrsJobV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117670,7 +120759,7 @@ public readonly internalValue: MrsJobV1Timeouts;
 ```typescript
 import { NatDnatRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatDnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NatDnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatDnatRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117686,14 +120775,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatDnatRuleV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117772,7 +120853,7 @@ public readonly internalValue: NatDnatRuleV2Timeouts;
 ```typescript
 import { NatGatewayV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatGatewayV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NatGatewayV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117788,14 +120869,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatGatewayV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117874,7 +120947,7 @@ public readonly internalValue: NatGatewayV2Timeouts;
 ```typescript
 import { NatSnatRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NatSnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NatSnatRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatSnatRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117890,14 +120963,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NatSnatRuleV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -117976,7 +121041,7 @@ public readonly internalValue: NatSnatRuleV2Timeouts;
 ```typescript
 import { NetworkingFloatingipV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingFloatingipV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingFloatingipV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -117992,14 +121057,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingFloatingipV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118078,7 +121135,7 @@ public readonly internalValue: NetworkingFloatingipV2Timeouts;
 ```typescript
 import { NetworkingNetworkV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingNetworkV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingNetworkV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118094,14 +121151,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingNetworkV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118180,7 +121229,7 @@ public readonly internalValue: NetworkingNetworkV2Timeouts;
 ```typescript
 import { NetworkingPortV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingPortV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingPortV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118196,14 +121245,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingPortV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118282,7 +121323,7 @@ public readonly internalValue: NetworkingPortV2Timeouts;
 ```typescript
 import { NetworkingRouterInterfaceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingRouterInterfaceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingRouterInterfaceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterInterfaceV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118298,14 +121339,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterInterfaceV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118384,7 +121417,7 @@ public readonly internalValue: NetworkingRouterInterfaceV2Timeouts;
 ```typescript
 import { NetworkingRouterV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingRouterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingRouterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118400,14 +121433,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingRouterV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118486,7 +121511,7 @@ public readonly internalValue: NetworkingRouterV2Timeouts;
 ```typescript
 import { NetworkingSecgroupRuleV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSecgroupRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSecgroupRuleV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupRuleV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118502,14 +121527,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupRuleV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118562,7 +121579,7 @@ public readonly internalValue: NetworkingSecgroupRuleV2Timeouts;
 ```typescript
 import { NetworkingSecgroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSecgroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118578,14 +121595,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSecgroupV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118638,7 +121647,7 @@ public readonly internalValue: NetworkingSecgroupV2Timeouts;
 ```typescript
 import { NetworkingSubnetV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new NetworkingSubnetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new NetworkingSubnetV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -118654,14 +121663,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.NetworkingSubnetV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118740,7 +121741,7 @@ public readonly internalValue: NetworkingSubnetV2Timeouts;
 ```typescript
 import { ObsBucketServerSideEncryptionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ObsBucketServerSideEncryptionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ObsBucketServerSideEncryptionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketServerSideEncryptionOutputReference.parameter.terraformResource"></a>
@@ -118756,14 +121757,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketServerSideEncryptionOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118829,7 +121822,7 @@ public readonly internalValue: ObsBucketServerSideEncryption;
 ```typescript
 import { ObsBucketWebsiteOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new ObsBucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ObsBucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketWebsiteOutputReference.parameter.terraformResource"></a>
@@ -118845,14 +121838,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.ObsBucketWebsiteOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -118983,7 +121968,7 @@ public readonly internalValue: ObsBucketWebsite;
 ```typescript
 import { RdsInstanceV1BackupstrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1BackupstrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1BackupstrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1BackupstrategyOutputReference.parameter.terraformResource"></a>
@@ -118999,14 +121984,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1BackupstrategyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119085,7 +122062,7 @@ public readonly internalValue: RdsInstanceV1Backupstrategy;
 ```typescript
 import { RdsInstanceV1DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1DatastoreOutputReference.parameter.terraformResource"></a>
@@ -119101,14 +122078,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1DatastoreOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119174,7 +122143,7 @@ public readonly internalValue: RdsInstanceV1Datastore;
 ```typescript
 import { RdsInstanceV1HaOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1HaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1HaOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1HaOutputReference.parameter.terraformResource"></a>
@@ -119190,14 +122159,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1HaOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119276,7 +122237,7 @@ public readonly internalValue: RdsInstanceV1Ha;
 ```typescript
 import { RdsInstanceV1NicsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1NicsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1NicsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1NicsOutputReference.parameter.terraformResource"></a>
@@ -119292,14 +122253,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1NicsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119345,7 +122298,7 @@ public readonly internalValue: RdsInstanceV1Nics;
 ```typescript
 import { RdsInstanceV1SecuritygroupOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1SecuritygroupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1SecuritygroupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1SecuritygroupOutputReference.parameter.terraformResource"></a>
@@ -119361,14 +122314,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1SecuritygroupOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119414,7 +122359,7 @@ public readonly internalValue: RdsInstanceV1Securitygroup;
 ```typescript
 import { RdsInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -119430,14 +122375,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119516,7 +122453,7 @@ public readonly internalValue: RdsInstanceV1Timeouts;
 ```typescript
 import { RdsInstanceV1VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV1VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV1VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1VolumeOutputReference.parameter.terraformResource"></a>
@@ -119532,14 +122469,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV1VolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119605,7 +122534,7 @@ public readonly internalValue: RdsInstanceV1Volume;
 ```typescript
 import { RdsInstanceV3BackupStrategyOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3BackupStrategyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3BackupStrategyOutputReference.parameter.terraformResource"></a>
@@ -119621,14 +122550,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3BackupStrategyOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119701,7 +122622,7 @@ public readonly internalValue: RdsInstanceV3BackupStrategy;
 ```typescript
 import { RdsInstanceV3DbOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3DbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3DbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.parameter.terraformResource"></a>
@@ -119717,14 +122638,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3DbOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -119852,37 +122765,98 @@ public readonly internalValue: RdsInstanceV3Db;
 ---
 
 
-### RdsInstanceV3Nodes <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes"></a>
+### RdsInstanceV3NodesList <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.Initializer"></a>
 
 ```typescript
-import { RdsInstanceV3Nodes } from '@cdktf/provider-opentelekomcloud'
+import { RdsInstanceV3NodesList } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new RdsInstanceV3NodesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### RdsInstanceV3NodesOutputReference <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.Initializer"></a>
+
+```typescript
+import { RdsInstanceV3NodesOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new RdsInstanceV3NodesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -119890,7 +122864,7 @@ new RdsInstanceV3Nodes(terraformResource: IInterpolatingParent, terraformAttribu
 
 #### Properties <a name="Properties"></a>
 
-##### `availabilityZone`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.property.availabilityZone"></a>
+##### `availabilityZone`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.availabilityZone"></a>
 
 ```typescript
 public readonly availabilityZone: string;
@@ -119900,7 +122874,7 @@ public readonly availabilityZone: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.property.id"></a>
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -119910,7 +122884,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -119920,7 +122894,7 @@ public readonly name: string;
 
 ---
 
-##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.property.role"></a>
+##### `role`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -119930,13 +122904,23 @@ public readonly role: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes.property.status"></a>
+##### `status`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3NodesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: RdsInstanceV3Nodes;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes`](#@cdktf/provider-opentelekomcloud.RdsInstanceV3Nodes)
 
 ---
 
@@ -119948,7 +122932,7 @@ public readonly status: string;
 ```typescript
 import { RdsInstanceV3RestorePointOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3RestorePointOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3RestorePointOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.parameter.terraformResource"></a>
@@ -119964,14 +122948,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3RestorePointOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120070,7 +123046,7 @@ public readonly internalValue: RdsInstanceV3RestorePoint;
 ```typescript
 import { RdsInstanceV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -120086,14 +123062,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120172,7 +123140,7 @@ public readonly internalValue: RdsInstanceV3Timeouts;
 ```typescript
 import { RdsInstanceV3VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsInstanceV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsInstanceV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3VolumeOutputReference.parameter.terraformResource"></a>
@@ -120188,14 +123156,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsInstanceV3VolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120281,37 +123241,98 @@ public readonly internalValue: RdsInstanceV3Volume;
 ---
 
 
-### RdsParametergroupV3ConfigurationParameters <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters"></a>
+### RdsParametergroupV3ConfigurationParametersList <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.Initializer"></a>
 
 ```typescript
-import { RdsParametergroupV3ConfigurationParameters } from '@cdktf/provider-opentelekomcloud'
+import { RdsParametergroupV3ConfigurationParametersList } from '@cdktf/provider-opentelekomcloud'
 
-new RdsParametergroupV3ConfigurationParameters(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new RdsParametergroupV3ConfigurationParametersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### RdsParametergroupV3ConfigurationParametersOutputReference <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.Initializer"></a>
+
+```typescript
+import { RdsParametergroupV3ConfigurationParametersOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new RdsParametergroupV3ConfigurationParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -120319,7 +123340,7 @@ new RdsParametergroupV3ConfigurationParameters(terraformResource: IInterpolating
 
 #### Properties <a name="Properties"></a>
 
-##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.description"></a>
+##### `description`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -120329,7 +123350,7 @@ public readonly description: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.name"></a>
+##### `name`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -120339,7 +123360,7 @@ public readonly name: string;
 
 ---
 
-##### `readonly`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.readonly"></a>
+##### `readonly`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.readonly"></a>
 
 ```typescript
 public readonly readonly: IResolvable;
@@ -120349,7 +123370,7 @@ public readonly readonly: IResolvable;
 
 ---
 
-##### `restartRequired`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.restartRequired"></a>
+##### `restartRequired`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.restartRequired"></a>
 
 ```typescript
 public readonly restartRequired: IResolvable;
@@ -120359,7 +123380,7 @@ public readonly restartRequired: IResolvable;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -120369,7 +123390,7 @@ public readonly type: string;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.value"></a>
+##### `value`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -120379,13 +123400,23 @@ public readonly value: string;
 
 ---
 
-##### `valueRange`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters.property.valueRange"></a>
+##### `valueRange`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.valueRange"></a>
 
 ```typescript
 public readonly valueRange: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParametersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: RdsParametergroupV3ConfigurationParameters;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters`](#@cdktf/provider-opentelekomcloud.RdsParametergroupV3ConfigurationParameters)
 
 ---
 
@@ -120397,7 +123428,7 @@ public readonly valueRange: string;
 ```typescript
 import { RdsParametergroupV3DatastoreOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsParametergroupV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsParametergroupV3DatastoreOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3DatastoreOutputReference.parameter.terraformResource"></a>
@@ -120413,14 +123444,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsParametergroupV3DatastoreOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120479,37 +123502,98 @@ public readonly internalValue: RdsParametergroupV3Datastore;
 ---
 
 
-### RdsReadReplicaV3Db <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db"></a>
+### RdsReadReplicaV3DbList <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList"></a>
 
-#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.Initializer"></a>
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.Initializer"></a>
 
 ```typescript
-import { RdsReadReplicaV3Db } from '@cdktf/provider-opentelekomcloud'
+import { RdsReadReplicaV3DbList } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3Db(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new RdsReadReplicaV3DbList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.parameter.terraformResource"></a>
 
 - *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
 
+The parent resource.
+
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.parameter.terraformAttribute"></a>
 
 - *Type:* `string`
 
----
-
-##### `complexComputedListIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.complexComputedListIndex"></a>
-
-- *Type:* `string`
+The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.parameter.wrapsSet"></a>
 
 - *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `get` <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.get"></a>
+
+```typescript
+public get(index: number)
+```
+
+###### `index`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbList.parameter.index"></a>
+
+- *Type:* `number`
+
+the index of the item to return.
+
+---
+
+
+
+
+### RdsReadReplicaV3DbOutputReference <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference"></a>
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.Initializer"></a>
+
+```typescript
+import { RdsReadReplicaV3DbOutputReference } from '@cdktf/provider-opentelekomcloud'
+
+new RdsReadReplicaV3DbOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.parameter.terraformResource"></a>
+
+- *Type:* [`cdktf.IInterpolatingParent`](#cdktf.IInterpolatingParent)
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.parameter.terraformAttribute"></a>
+
+- *Type:* `string`
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.parameter.complexObjectIndex"></a>
+
+- *Type:* `number`
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* `boolean`
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -120517,7 +123601,7 @@ new RdsReadReplicaV3Db(terraformResource: IInterpolatingParent, terraformAttribu
 
 #### Properties <a name="Properties"></a>
 
-##### `port`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.property.port"></a>
+##### `port`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -120527,7 +123611,7 @@ public readonly port: number;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.property.type"></a>
+##### `type`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -120537,7 +123621,7 @@ public readonly type: string;
 
 ---
 
-##### `userName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.property.userName"></a>
+##### `userName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.property.userName"></a>
 
 ```typescript
 public readonly userName: string;
@@ -120547,13 +123631,23 @@ public readonly userName: string;
 
 ---
 
-##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db.property.version"></a>
+##### `version`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.property.version"></a>
 
 ```typescript
 public readonly version: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3DbOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: RdsReadReplicaV3Db;
+```
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db`](#@cdktf/provider-opentelekomcloud.RdsReadReplicaV3Db)
 
 ---
 
@@ -120565,7 +123659,7 @@ public readonly version: string;
 ```typescript
 import { RdsReadReplicaV3TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsReadReplicaV3TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -120581,14 +123675,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120667,7 +123753,7 @@ public readonly internalValue: RdsReadReplicaV3Timeouts;
 ```typescript
 import { RdsReadReplicaV3VolumeOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RdsReadReplicaV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RdsReadReplicaV3VolumeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3VolumeOutputReference.parameter.terraformResource"></a>
@@ -120683,14 +123769,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RdsReadReplicaV3VolumeOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120773,7 +123851,7 @@ public readonly internalValue: RdsReadReplicaV3Volume;
 ```typescript
 import { RtsSoftwareConfigV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsSoftwareConfigV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RtsSoftwareConfigV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -120789,14 +123867,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareConfigV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120875,7 +123945,7 @@ public readonly internalValue: RtsSoftwareConfigV1Timeouts;
 ```typescript
 import { RtsSoftwareDeploymentV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsSoftwareDeploymentV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RtsSoftwareDeploymentV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -120891,14 +123961,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsSoftwareDeploymentV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -120977,7 +124039,7 @@ public readonly internalValue: RtsSoftwareDeploymentV1Timeouts;
 ```typescript
 import { RtsStackV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new RtsStackV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RtsStackV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -120993,14 +124055,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.RtsStackV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121105,7 +124159,7 @@ public readonly internalValue: RtsStackV1Timeouts;
 ```typescript
 import { S3BucketVersioningOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new S3BucketVersioningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new S3BucketVersioningOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketVersioningOutputReference.parameter.terraformResource"></a>
@@ -121121,14 +124175,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketVersioningOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121207,7 +124253,7 @@ public readonly internalValue: S3BucketVersioning;
 ```typescript
 import { S3BucketWebsiteOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new S3BucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new S3BucketWebsiteOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketWebsiteOutputReference.parameter.terraformResource"></a>
@@ -121223,14 +124269,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketWebsiteOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121361,7 +124399,7 @@ public readonly internalValue: S3BucketWebsite;
 ```typescript
 import { SdrsProtectedInstanceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SdrsProtectedInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SdrsProtectedInstanceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121377,14 +124415,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectedInstanceV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121463,7 +124493,7 @@ public readonly internalValue: SdrsProtectedInstanceV1Timeouts;
 ```typescript
 import { SdrsProtectiongroupV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SdrsProtectiongroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SdrsProtectiongroupV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectiongroupV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121479,14 +124509,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SdrsProtectiongroupV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121565,7 +124587,7 @@ public readonly internalValue: SdrsProtectiongroupV1Timeouts;
 ```typescript
 import { SfsFileSystemV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SfsFileSystemV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SfsFileSystemV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121581,14 +124603,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsFileSystemV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121667,7 +124681,7 @@ public readonly internalValue: SfsFileSystemV2Timeouts;
 ```typescript
 import { SfsTurboShareV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SfsTurboShareV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SfsTurboShareV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsTurboShareV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121683,14 +124697,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SfsTurboShareV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121769,7 +124775,7 @@ public readonly internalValue: SfsTurboShareV1Timeouts;
 ```typescript
 import { SwrDomainV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrDomainV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SwrDomainV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrDomainV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121785,14 +124791,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrDomainV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121845,7 +124843,7 @@ public readonly internalValue: SwrDomainV2Timeouts;
 ```typescript
 import { SwrOrganizationPermissionsV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrOrganizationPermissionsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SwrOrganizationPermissionsV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationPermissionsV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121861,14 +124859,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationPermissionsV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -121921,7 +124911,7 @@ public readonly internalValue: SwrOrganizationPermissionsV2Timeouts;
 ```typescript
 import { SwrOrganizationV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrOrganizationV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SwrOrganizationV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -121937,14 +124927,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrOrganizationV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122023,7 +125005,7 @@ public readonly internalValue: SwrOrganizationV2Timeouts;
 ```typescript
 import { SwrRepositoryV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new SwrRepositoryV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new SwrRepositoryV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrRepositoryV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122039,14 +125021,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.SwrRepositoryV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122099,7 +125073,7 @@ public readonly internalValue: SwrRepositoryV2Timeouts;
 ```typescript
 import { VbsBackupPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122115,14 +125089,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupPolicyV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122201,7 +125167,7 @@ public readonly internalValue: VbsBackupPolicyV2Timeouts;
 ```typescript
 import { VbsBackupShareV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupShareV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupShareV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupShareV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122217,14 +125183,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupShareV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122303,7 +125261,7 @@ public readonly internalValue: VbsBackupShareV2Timeouts;
 ```typescript
 import { VbsBackupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VbsBackupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VbsBackupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122319,14 +125277,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VbsBackupV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122405,7 +125355,7 @@ public readonly internalValue: VbsBackupV2Timeouts;
 ```typescript
 import { VpcEipV1BandwidthOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1BandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1BandwidthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1BandwidthOutputReference.parameter.terraformResource"></a>
@@ -122421,14 +125371,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1BandwidthOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122541,7 +125483,7 @@ public readonly internalValue: VpcEipV1Bandwidth;
 ```typescript
 import { VpcEipV1PublicipOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1PublicipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1PublicipOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1PublicipOutputReference.parameter.terraformResource"></a>
@@ -122557,14 +125499,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1PublicipOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122663,7 +125597,7 @@ public readonly internalValue: VpcEipV1Publicip;
 ```typescript
 import { VpcEipV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcEipV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcEipV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122679,14 +125613,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcEipV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122765,7 +125691,7 @@ public readonly internalValue: VpcEipV1Timeouts;
 ```typescript
 import { VpcepEndpointV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcepEndpointV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcepEndpointV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122781,14 +125707,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepEndpointV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122841,7 +125759,7 @@ public readonly internalValue: VpcepEndpointV1Timeouts;
 ```typescript
 import { VpcepServiceV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcepServiceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcepServiceV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122857,14 +125775,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcepServiceV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -122917,7 +125827,7 @@ public readonly internalValue: VpcepServiceV1Timeouts;
 ```typescript
 import { VpcFlowLogV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcFlowLogV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcFlowLogV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcFlowLogV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -122933,14 +125843,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcFlowLogV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123019,7 +125921,7 @@ public readonly internalValue: VpcFlowLogV1Timeouts;
 ```typescript
 import { VpcPeeringConnectionAccepterV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcPeeringConnectionAccepterV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123035,14 +125937,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123121,7 +126015,7 @@ public readonly internalValue: VpcPeeringConnectionAccepterV2Timeouts;
 ```typescript
 import { VpcPeeringConnectionV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcPeeringConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcPeeringConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123137,14 +126031,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcPeeringConnectionV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123223,7 +126109,7 @@ public readonly internalValue: VpcPeeringConnectionV2Timeouts;
 ```typescript
 import { VpcRouteV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcRouteV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcRouteV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcRouteV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123239,14 +126125,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcRouteV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123325,7 +126203,7 @@ public readonly internalValue: VpcRouteV2Timeouts;
 ```typescript
 import { VpcSubnetV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcSubnetV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcSubnetV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123341,14 +126219,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcSubnetV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123427,7 +126297,7 @@ public readonly internalValue: VpcSubnetV1Timeouts;
 ```typescript
 import { VpcV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpcV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpcV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123443,14 +126313,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpcV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123529,7 +126391,7 @@ public readonly internalValue: VpcV1Timeouts;
 ```typescript
 import { VpnaasEndpointGroupV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasEndpointGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasEndpointGroupV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123545,14 +126407,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasEndpointGroupV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123657,7 +126511,7 @@ public readonly internalValue: VpnaasEndpointGroupV2Timeouts;
 ```typescript
 import { VpnaasIkePolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasIkePolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasIkePolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123673,14 +126527,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIkePolicyV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123733,7 +126579,7 @@ public readonly internalValue: VpnaasIkePolicyV2Timeouts;
 ```typescript
 import { VpnaasIpsecPolicyV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasIpsecPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasIpsecPolicyV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123749,14 +126595,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasIpsecPolicyV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123809,7 +126647,7 @@ public readonly internalValue: VpnaasIpsecPolicyV2Timeouts;
 ```typescript
 import { VpnaasServiceV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasServiceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasServiceV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123825,14 +126663,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasServiceV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -123937,7 +126767,7 @@ public readonly internalValue: VpnaasServiceV2Timeouts;
 ```typescript
 import { VpnaasSiteConnectionV2TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new VpnaasSiteConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new VpnaasSiteConnectionV2TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -123953,14 +126783,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.VpnaasSiteConnectionV2TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124065,7 +126887,7 @@ public readonly internalValue: VpnaasSiteConnectionV2Timeouts;
 ```typescript
 import { WafCcattackprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafCcattackprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafCcattackprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCcattackprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -124081,14 +126903,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCcattackprotectionRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124167,7 +126981,7 @@ public readonly internalValue: WafCcattackprotectionRuleV1Timeouts;
 ```typescript
 import { WafCertificateV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafCertificateV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafCertificateV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCertificateV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -124183,14 +126997,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafCertificateV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124269,7 +127075,7 @@ public readonly internalValue: WafCertificateV1Timeouts;
 ```typescript
 import { WafDatamaskingRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafDatamaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafDatamaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDatamaskingRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -124285,14 +127091,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDatamaskingRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124371,7 +127169,7 @@ public readonly internalValue: WafDatamaskingRuleV1Timeouts;
 ```typescript
 import { WafDomainV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafDomainV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafDomainV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -124387,14 +127185,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafDomainV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124473,7 +127263,7 @@ public readonly internalValue: WafDomainV1Timeouts;
 ```typescript
 import { WafFalsealarmmaskingRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafFalsealarmmaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafFalsealarmmaskingRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -124489,14 +127279,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124575,7 +127357,7 @@ public readonly internalValue: WafFalsealarmmaskingRuleV1Timeouts;
 ```typescript
 import { WafPolicyV1ActionOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1ActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1ActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1ActionOutputReference.parameter.terraformResource"></a>
@@ -124591,14 +127373,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1ActionOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -124644,7 +127418,7 @@ public readonly internalValue: WafPolicyV1Action;
 ```typescript
 import { WafPolicyV1OptionsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1OptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1OptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1OptionsOutputReference.parameter.terraformResource"></a>
@@ -124660,14 +127434,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1OptionsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -125058,7 +127824,7 @@ public readonly internalValue: WafPolicyV1Options;
 ```typescript
 import { WafPolicyV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafPolicyV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -125074,14 +127840,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPolicyV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -125160,7 +127918,7 @@ public readonly internalValue: WafPolicyV1Timeouts;
 ```typescript
 import { WafPreciseprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafPreciseprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafPreciseprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -125176,14 +127934,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafPreciseprotectionRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -125262,7 +128012,7 @@ public readonly internalValue: WafPreciseprotectionRuleV1Timeouts;
 ```typescript
 import { WafWebtamperprotectionRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafWebtamperprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafWebtamperprotectionRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWebtamperprotectionRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -125278,14 +128028,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWebtamperprotectionRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 
@@ -125364,7 +128106,7 @@ public readonly internalValue: WafWebtamperprotectionRuleV1Timeouts;
 ```typescript
 import { WafWhiteblackipRuleV1TimeoutsOutputReference } from '@cdktf/provider-opentelekomcloud'
 
-new WafWhiteblackipRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new WafWhiteblackipRuleV1TimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 ##### `terraformResource`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWhiteblackipRuleV1TimeoutsOutputReference.parameter.terraformResource"></a>
@@ -125380,14 +128122,6 @@ The parent resource.
 - *Type:* `string`
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `isSingleItem`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.WafWhiteblackipRuleV1TimeoutsOutputReference.parameter.isSingleItem"></a>
-
-- *Type:* `boolean`
-
-True if this is a block, false if it's a list.
 
 ---
 

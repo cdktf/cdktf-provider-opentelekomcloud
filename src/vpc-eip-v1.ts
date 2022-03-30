@@ -76,10 +76,9 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcEipV1Bandwidth | undefined {
@@ -209,10 +208,9 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcEipV1Publicip | undefined {
@@ -321,10 +319,9 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): VpcEipV1Timeouts | undefined {
@@ -395,7 +392,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vpc_eip_v1";
+  public static readonly tfResourceType = "opentelekomcloud_vpc_eip_v1";
 
   // ===========
   // INITIALIZER
@@ -412,7 +409,9 @@ export class VpcEipV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vpc_eip_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -485,7 +484,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth = new VpcEipV1BandwidthOutputReference(this, "bandwidth", true);
+  private _bandwidth = new VpcEipV1BandwidthOutputReference(this, "bandwidth");
   public get bandwidth() {
     return this._bandwidth;
   }
@@ -498,7 +497,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // publicip - computed: false, optional: false, required: true
-  private _publicip = new VpcEipV1PublicipOutputReference(this, "publicip", true);
+  private _publicip = new VpcEipV1PublicipOutputReference(this, "publicip");
   public get publicip() {
     return this._publicip;
   }
@@ -511,7 +510,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new VpcEipV1TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new VpcEipV1TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

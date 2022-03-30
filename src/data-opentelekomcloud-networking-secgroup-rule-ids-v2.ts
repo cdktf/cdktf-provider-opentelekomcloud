@@ -25,7 +25,7 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_networking_secgroup_rule_ids_v2";
+  public static readonly tfResourceType = "opentelekomcloud_networking_secgroup_rule_ids_v2";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_networking_secgroup_rule_ids_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

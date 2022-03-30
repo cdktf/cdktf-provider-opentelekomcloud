@@ -108,7 +108,45 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: CceClusterV3Timeouts;
 }
-export class CceClusterV3CertificateClusters extends cdktf.ComplexComputedList {
+export interface CceClusterV3CertificateClusters {
+}
+
+export function cceClusterV3CertificateClustersToTerraform(struct?: CceClusterV3CertificateClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class CceClusterV3CertificateClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CceClusterV3CertificateClusters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceClusterV3CertificateClusters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // certificate_authority_data - computed: true, optional: false, required: false
   public get certificateAuthorityData() {
@@ -125,7 +163,64 @@ export class CceClusterV3CertificateClusters extends cdktf.ComplexComputedList {
     return this.getStringAttribute('server');
   }
 }
-export class CceClusterV3CertificateUsers extends cdktf.ComplexComputedList {
+
+export class CceClusterV3CertificateClustersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CceClusterV3CertificateClustersOutputReference {
+    return new CceClusterV3CertificateClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CceClusterV3CertificateUsers {
+}
+
+export function cceClusterV3CertificateUsersToTerraform(struct?: CceClusterV3CertificateUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class CceClusterV3CertificateUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CceClusterV3CertificateUsers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceClusterV3CertificateUsers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // client_certificate_data - computed: true, optional: false, required: false
   public get clientCertificateData() {
@@ -140,6 +235,25 @@ export class CceClusterV3CertificateUsers extends cdktf.ComplexComputedList {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+}
+
+export class CceClusterV3CertificateUsersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CceClusterV3CertificateUsersOutputReference {
+    return new CceClusterV3CertificateUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CceClusterV3AuthenticatingProxy {
@@ -175,10 +289,9 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CceClusterV3AuthenticatingProxy | undefined {
@@ -281,10 +394,9 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CceClusterV3Timeouts | undefined {
@@ -355,7 +467,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cce_cluster_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cce_cluster_v3";
 
   // ===========
   // INITIALIZER
@@ -372,7 +484,9 @@ export class CceClusterV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -474,13 +588,15 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // certificate_clusters - computed: true, optional: false, required: false
-  public certificateClusters(index: string) {
-    return new CceClusterV3CertificateClusters(this, 'certificate_clusters', index, false);
+  private _certificateClusters = new CceClusterV3CertificateClustersList(this, "certificate_clusters", false);
+  public get certificateClusters() {
+    return this._certificateClusters;
   }
 
   // certificate_users - computed: true, optional: false, required: false
-  public certificateUsers(index: string) {
-    return new CceClusterV3CertificateUsers(this, 'certificate_users', index, false);
+  private _certificateUsers = new CceClusterV3CertificateUsersList(this, "certificate_users", false);
+  public get certificateUsers() {
+    return this._certificateUsers;
   }
 
   // cluster_type - computed: false, optional: false, required: true
@@ -799,7 +915,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // authenticating_proxy - computed: false, optional: true, required: false
-  private _authenticatingProxy = new CceClusterV3AuthenticatingProxyOutputReference(this, "authenticating_proxy", true);
+  private _authenticatingProxy = new CceClusterV3AuthenticatingProxyOutputReference(this, "authenticating_proxy");
   public get authenticatingProxy() {
     return this._authenticatingProxy;
   }
@@ -815,7 +931,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceClusterV3TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CceClusterV3TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

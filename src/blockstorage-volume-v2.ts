@@ -74,7 +74,45 @@ export interface BlockstorageVolumeV2Config extends cdktf.TerraformMetaArguments
   */
   readonly timeouts?: BlockstorageVolumeV2Timeouts;
 }
-export class BlockstorageVolumeV2Attachment extends cdktf.ComplexComputedList {
+export interface BlockstorageVolumeV2Attachment {
+}
+
+export function blockstorageVolumeV2AttachmentToTerraform(struct?: BlockstorageVolumeV2Attachment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class BlockstorageVolumeV2AttachmentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BlockstorageVolumeV2Attachment | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BlockstorageVolumeV2Attachment | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // device - computed: true, optional: false, required: false
   public get device() {
@@ -89,6 +127,25 @@ export class BlockstorageVolumeV2Attachment extends cdktf.ComplexComputedList {
   // instance_id - computed: true, optional: false, required: false
   public get instanceId() {
     return this.getStringAttribute('instance_id');
+  }
+}
+
+export class BlockstorageVolumeV2AttachmentList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BlockstorageVolumeV2AttachmentOutputReference {
+    return new BlockstorageVolumeV2AttachmentOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface BlockstorageVolumeV2Timeouts {
@@ -119,10 +176,9 @@ export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): BlockstorageVolumeV2Timeouts | undefined {
@@ -193,7 +249,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_blockstorage_volume_v2";
+  public static readonly tfResourceType = "opentelekomcloud_blockstorage_volume_v2";
 
   // ===========
   // INITIALIZER
@@ -210,7 +266,9 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_blockstorage_volume_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -240,8 +298,9 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   // ==========
 
   // attachment - computed: true, optional: false, required: false
-  public attachment(index: string) {
-    return new BlockstorageVolumeV2Attachment(this, 'attachment', index, true);
+  private _attachment = new BlockstorageVolumeV2AttachmentList(this, "attachment", true);
+  public get attachment() {
+    return this._attachment;
   }
 
   // availability_zone - computed: true, optional: true, required: false
@@ -492,7 +551,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new BlockstorageVolumeV2TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new BlockstorageVolumeV2TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

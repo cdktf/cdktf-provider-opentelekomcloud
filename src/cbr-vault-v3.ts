@@ -181,10 +181,9 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CbrVaultV3Billing | undefined {
@@ -528,7 +527,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cbr_vault_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cbr_vault_v3";
 
   // ===========
   // INITIALIZER
@@ -545,7 +544,9 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cbr_vault_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -720,7 +721,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // billing - computed: false, optional: false, required: true
-  private _billing = new CbrVaultV3BillingOutputReference(this, "billing", true);
+  private _billing = new CbrVaultV3BillingOutputReference(this, "billing");
   public get billing() {
     return this._billing;
   }

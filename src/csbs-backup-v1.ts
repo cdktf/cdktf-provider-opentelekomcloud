@@ -40,7 +40,45 @@ export interface CsbsBackupV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: CsbsBackupV1Timeouts;
 }
-export class CsbsBackupV1VmMetadata extends cdktf.ComplexComputedList {
+export interface CsbsBackupV1VmMetadata {
+}
+
+export function csbsBackupV1VmMetadataToTerraform(struct?: CsbsBackupV1VmMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class CsbsBackupV1VmMetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CsbsBackupV1VmMetadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupV1VmMetadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // cloud_service_type - computed: true, optional: false, required: false
   public get cloudServiceType() {
@@ -82,7 +120,64 @@ export class CsbsBackupV1VmMetadata extends cdktf.ComplexComputedList {
     return this.getNumberAttribute('vcpus');
   }
 }
-export class CsbsBackupV1VolumeBackups extends cdktf.ComplexComputedList {
+
+export class CsbsBackupV1VmMetadataList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CsbsBackupV1VmMetadataOutputReference {
+    return new CsbsBackupV1VmMetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CsbsBackupV1VolumeBackups {
+}
+
+export function csbsBackupV1VolumeBackupsToTerraform(struct?: CsbsBackupV1VolumeBackups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class CsbsBackupV1VolumeBackupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CsbsBackupV1VolumeBackups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupV1VolumeBackups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // average_speed - computed: true, optional: false, required: false
   public get averageSpeed() {
@@ -149,6 +244,25 @@ export class CsbsBackupV1VolumeBackups extends cdktf.ComplexComputedList {
     return this.getStringAttribute('status');
   }
 }
+
+export class CsbsBackupV1VolumeBackupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CsbsBackupV1VolumeBackupsOutputReference {
+    return new CsbsBackupV1VolumeBackupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CsbsBackupV1Tags {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#key CsbsBackupV1#key}
@@ -199,10 +313,9 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CsbsBackupV1Timeouts | undefined {
@@ -273,7 +386,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_csbs_backup_v1";
+  public static readonly tfResourceType = "opentelekomcloud_csbs_backup_v1";
 
   // ===========
   // INITIALIZER
@@ -290,7 +403,9 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_csbs_backup_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -403,13 +518,15 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // vm_metadata - computed: true, optional: false, required: false
-  public vmMetadata(index: string) {
-    return new CsbsBackupV1VmMetadata(this, 'vm_metadata', index, true);
+  private _vmMetadata = new CsbsBackupV1VmMetadataList(this, "vm_metadata", true);
+  public get vmMetadata() {
+    return this._vmMetadata;
   }
 
   // volume_backups - computed: true, optional: false, required: false
-  public volumeBackups(index: string) {
-    return new CsbsBackupV1VolumeBackups(this, 'volume_backups', index, true);
+  private _volumeBackups = new CsbsBackupV1VolumeBackupsList(this, "volume_backups", true);
+  public get volumeBackups() {
+    return this._volumeBackups;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -430,7 +547,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CsbsBackupV1TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CsbsBackupV1TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }

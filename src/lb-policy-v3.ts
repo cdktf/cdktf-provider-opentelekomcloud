@@ -82,7 +82,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_lb_policy_v3";
+  public static readonly tfResourceType = "opentelekomcloud_lb_policy_v3";
 
   // ===========
   // INITIALIZER
@@ -99,7 +99,9 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_policy_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

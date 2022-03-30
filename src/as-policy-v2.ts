@@ -48,7 +48,45 @@ export interface AsPolicyV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly scheduledPolicy?: AsPolicyV2ScheduledPolicy[] | cdktf.IResolvable;
 }
-export class AsPolicyV2Metadata extends cdktf.ComplexComputedList {
+export interface AsPolicyV2Metadata {
+}
+
+export function asPolicyV2MetadataToTerraform(struct?: AsPolicyV2Metadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class AsPolicyV2MetadataOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AsPolicyV2Metadata | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsPolicyV2Metadata | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // bandwidth_share_type - computed: true, optional: false, required: false
   public get bandwidthShareType() {
@@ -63,6 +101,25 @@ export class AsPolicyV2Metadata extends cdktf.ComplexComputedList {
   // eip_id - computed: true, optional: false, required: false
   public get eipId() {
     return this.getStringAttribute('eip_id');
+  }
+}
+
+export class AsPolicyV2MetadataList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AsPolicyV2MetadataOutputReference {
+    return new AsPolicyV2MetadataOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface AsPolicyV2ScalingPolicyAction {
@@ -143,7 +200,7 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_as_policy_v2";
+  public static readonly tfResourceType = "opentelekomcloud_as_policy_v2";
 
   // ===========
   // INITIALIZER
@@ -160,7 +217,9 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_as_policy_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -225,8 +284,9 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(index: string) {
-    return new AsPolicyV2Metadata(this, 'metadata', index, true);
+  private _metadata = new AsPolicyV2MetadataList(this, "metadata", true);
+  public get metadata() {
+    return this._metadata;
   }
 
   // region - computed: true, optional: true, required: false

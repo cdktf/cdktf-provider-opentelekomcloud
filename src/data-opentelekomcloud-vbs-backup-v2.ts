@@ -41,7 +41,7 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vbs_backup_v2";
+  public static readonly tfResourceType = "opentelekomcloud_vbs_backup_v2";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class DataOpentelekomcloudVbsBackupV2 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vbs_backup_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

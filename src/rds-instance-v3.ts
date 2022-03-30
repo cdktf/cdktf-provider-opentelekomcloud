@@ -86,7 +86,45 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly volume: RdsInstanceV3Volume;
 }
-export class RdsInstanceV3Nodes extends cdktf.ComplexComputedList {
+export interface RdsInstanceV3Nodes {
+}
+
+export function rdsInstanceV3NodesToTerraform(struct?: RdsInstanceV3Nodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class RdsInstanceV3NodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RdsInstanceV3Nodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsInstanceV3Nodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
@@ -111,6 +149,25 @@ export class RdsInstanceV3Nodes extends cdktf.ComplexComputedList {
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+}
+
+export class RdsInstanceV3NodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RdsInstanceV3NodesOutputReference {
+    return new RdsInstanceV3NodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface RdsInstanceV3BackupStrategy {
@@ -141,10 +198,9 @@ export class RdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV3BackupStrategy | undefined {
@@ -241,10 +297,9 @@ export class RdsInstanceV3DbOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV3Db | undefined {
@@ -385,10 +440,9 @@ export class RdsInstanceV3RestorePointOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV3RestorePoint | undefined {
@@ -497,10 +551,9 @@ export class RdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV3Timeouts | undefined {
@@ -595,10 +648,9 @@ export class RdsInstanceV3VolumeOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsInstanceV3Volume | undefined {
@@ -685,7 +737,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_rds_instance_v3";
+  public static readonly tfResourceType = "opentelekomcloud_rds_instance_v3";
 
   // ===========
   // INITIALIZER
@@ -702,7 +754,9 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_rds_instance_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -798,8 +852,9 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // nodes - computed: true, optional: false, required: false
-  public nodes(index: string) {
-    return new RdsInstanceV3Nodes(this, 'nodes', index, false);
+  private _nodes = new RdsInstanceV3NodesList(this, "nodes", false);
+  public get nodes() {
+    return this._nodes;
   }
 
   // param_group_id - computed: false, optional: true, required: false
@@ -927,7 +982,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // backup_strategy - computed: false, optional: true, required: false
-  private _backupStrategy = new RdsInstanceV3BackupStrategyOutputReference(this, "backup_strategy", true);
+  private _backupStrategy = new RdsInstanceV3BackupStrategyOutputReference(this, "backup_strategy");
   public get backupStrategy() {
     return this._backupStrategy;
   }
@@ -943,7 +998,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // db - computed: false, optional: false, required: true
-  private _db = new RdsInstanceV3DbOutputReference(this, "db", true);
+  private _db = new RdsInstanceV3DbOutputReference(this, "db");
   public get db() {
     return this._db;
   }
@@ -956,7 +1011,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // restore_point - computed: false, optional: true, required: false
-  private _restorePoint = new RdsInstanceV3RestorePointOutputReference(this, "restore_point", true);
+  private _restorePoint = new RdsInstanceV3RestorePointOutputReference(this, "restore_point");
   public get restorePoint() {
     return this._restorePoint;
   }
@@ -972,7 +1027,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsInstanceV3TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new RdsInstanceV3TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -988,7 +1043,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new RdsInstanceV3VolumeOutputReference(this, "volume", true);
+  private _volume = new RdsInstanceV3VolumeOutputReference(this, "volume");
   public get volume() {
     return this._volume;
   }

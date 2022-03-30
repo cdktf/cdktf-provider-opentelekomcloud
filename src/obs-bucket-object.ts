@@ -57,7 +57,7 @@ export class ObsBucketObject extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_obs_bucket_object";
+  public static readonly tfResourceType = "opentelekomcloud_obs_bucket_object";
 
   // ===========
   // INITIALIZER
@@ -74,7 +74,9 @@ export class ObsBucketObject extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_obs_bucket_object',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -28,7 +28,45 @@ export interface DataOpentelekomcloudDdsInstanceV3Config extends cdktf.Terraform
   */
   readonly vpcId?: string;
 }
-export class DataOpentelekomcloudDdsInstanceV3BackupStrategy extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudDdsInstanceV3BackupStrategy {
+}
+
+export function dataOpentelekomcloudDdsInstanceV3BackupStrategyToTerraform(struct?: DataOpentelekomcloudDdsInstanceV3BackupStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudDdsInstanceV3BackupStrategy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudDdsInstanceV3BackupStrategy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // keep_days - computed: true, optional: false, required: false
   public get keepDays() {
@@ -40,7 +78,64 @@ export class DataOpentelekomcloudDdsInstanceV3BackupStrategy extends cdktf.Compl
     return this.getStringAttribute('start_time');
   }
 }
-export class DataOpentelekomcloudDdsInstanceV3Datastore extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudDdsInstanceV3BackupStrategyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference {
+    return new DataOpentelekomcloudDdsInstanceV3BackupStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudDdsInstanceV3Datastore {
+}
+
+export function dataOpentelekomcloudDdsInstanceV3DatastoreToTerraform(struct?: DataOpentelekomcloudDdsInstanceV3Datastore): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudDdsInstanceV3Datastore | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudDdsInstanceV3Datastore | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // storage_engine - computed: true, optional: false, required: false
   public get storageEngine() {
@@ -57,7 +152,64 @@ export class DataOpentelekomcloudDdsInstanceV3Datastore extends cdktf.ComplexCom
     return this.getStringAttribute('version');
   }
 }
-export class DataOpentelekomcloudDdsInstanceV3Nodes extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudDdsInstanceV3DatastoreList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference {
+    return new DataOpentelekomcloudDdsInstanceV3DatastoreOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudDdsInstanceV3Nodes {
+}
+
+export function dataOpentelekomcloudDdsInstanceV3NodesToTerraform(struct?: DataOpentelekomcloudDdsInstanceV3Nodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudDdsInstanceV3NodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudDdsInstanceV3Nodes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudDdsInstanceV3Nodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // id - computed: true, optional: false, required: false
   public get id() {
@@ -95,6 +247,25 @@ export class DataOpentelekomcloudDdsInstanceV3Nodes extends cdktf.ComplexCompute
   }
 }
 
+export class DataOpentelekomcloudDdsInstanceV3NodesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudDdsInstanceV3NodesOutputReference {
+    return new DataOpentelekomcloudDdsInstanceV3NodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_instance_v3 opentelekomcloud_dds_instance_v3}
 */
@@ -103,7 +274,7 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_dds_instance_v3";
+  public static readonly tfResourceType = "opentelekomcloud_dds_instance_v3";
 
   // ===========
   // INITIALIZER
@@ -120,7 +291,9 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_dds_instance_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -139,13 +312,15 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
   // ==========
 
   // backup_strategy - computed: true, optional: false, required: false
-  public backupStrategy(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3BackupStrategy(this, 'backup_strategy', index, false);
+  private _backupStrategy = new DataOpentelekomcloudDdsInstanceV3BackupStrategyList(this, "backup_strategy", false);
+  public get backupStrategy() {
+    return this._backupStrategy;
   }
 
   // datastore - computed: true, optional: false, required: false
-  public datastore(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3Datastore(this, 'datastore', index, false);
+  private _datastore = new DataOpentelekomcloudDdsInstanceV3DatastoreList(this, "datastore", false);
+  public get datastore() {
+    return this._datastore;
   }
 
   // datastore_type - computed: false, optional: true, required: false
@@ -217,8 +392,9 @@ export class DataOpentelekomcloudDdsInstanceV3 extends cdktf.TerraformDataSource
   }
 
   // nodes - computed: true, optional: false, required: false
-  public nodes(index: string) {
-    return new DataOpentelekomcloudDdsInstanceV3Nodes(this, 'nodes', index, false);
+  private _nodes = new DataOpentelekomcloudDdsInstanceV3NodesList(this, "nodes", false);
+  public get nodes() {
+    return this._nodes;
   }
 
   // pay_mode - computed: true, optional: false, required: false

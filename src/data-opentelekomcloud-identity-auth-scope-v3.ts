@@ -16,7 +16,45 @@ export interface DataOpentelekomcloudIdentityAuthScopeV3Config extends cdktf.Ter
   */
   readonly region?: string;
 }
-export class DataOpentelekomcloudIdentityAuthScopeV3Roles extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudIdentityAuthScopeV3Roles {
+}
+
+export function dataOpentelekomcloudIdentityAuthScopeV3RolesToTerraform(struct?: DataOpentelekomcloudIdentityAuthScopeV3Roles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudIdentityAuthScopeV3Roles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudIdentityAuthScopeV3Roles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // role_id - computed: true, optional: false, required: false
   public get roleId() {
@@ -29,6 +67,25 @@ export class DataOpentelekomcloudIdentityAuthScopeV3Roles extends cdktf.ComplexC
   }
 }
 
+export class DataOpentelekomcloudIdentityAuthScopeV3RolesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference {
+    return new DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3}
 */
@@ -37,7 +94,7 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_identity_auth_scope_v3";
+  public static readonly tfResourceType = "opentelekomcloud_identity_auth_scope_v3";
 
   // ===========
   // INITIALIZER
@@ -54,7 +111,9 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_identity_auth_scope_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -134,8 +193,9 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
   }
 
   // roles - computed: true, optional: false, required: false
-  public roles(index: string) {
-    return new DataOpentelekomcloudIdentityAuthScopeV3Roles(this, 'roles', index, false);
+  private _roles = new DataOpentelekomcloudIdentityAuthScopeV3RolesList(this, "roles", false);
+  public get roles() {
+    return this._roles;
   }
 
   // user_domain_id - computed: true, optional: false, required: false
