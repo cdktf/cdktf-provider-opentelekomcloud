@@ -21,7 +21,7 @@ export class DataOpentelekomcloudLbFlavorV3 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_lb_flavor_v3";
+  public static readonly tfResourceType = "opentelekomcloud_lb_flavor_v3";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataOpentelekomcloudLbFlavorV3 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_flavor_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

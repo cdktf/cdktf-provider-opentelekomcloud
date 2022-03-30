@@ -26,7 +26,45 @@ export interface RdsParametergroupV3Config extends cdktf.TerraformMetaArguments 
   */
   readonly datastore: RdsParametergroupV3Datastore;
 }
-export class RdsParametergroupV3ConfigurationParameters extends cdktf.ComplexComputedList {
+export interface RdsParametergroupV3ConfigurationParameters {
+}
+
+export function rdsParametergroupV3ConfigurationParametersToTerraform(struct?: RdsParametergroupV3ConfigurationParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class RdsParametergroupV3ConfigurationParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RdsParametergroupV3ConfigurationParameters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsParametergroupV3ConfigurationParameters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -63,6 +101,25 @@ export class RdsParametergroupV3ConfigurationParameters extends cdktf.ComplexCom
     return this.getStringAttribute('value_range');
   }
 }
+
+export class RdsParametergroupV3ConfigurationParametersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RdsParametergroupV3ConfigurationParametersOutputReference {
+    return new RdsParametergroupV3ConfigurationParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface RdsParametergroupV3Datastore {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3#type RdsParametergroupV3#type}
@@ -91,10 +148,9 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsParametergroupV3Datastore | undefined {
@@ -159,7 +215,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_rds_parametergroup_v3";
+  public static readonly tfResourceType = "opentelekomcloud_rds_parametergroup_v3";
 
   // ===========
   // INITIALIZER
@@ -176,7 +232,9 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_rds_parametergroup_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -194,8 +252,9 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   // ==========
 
   // configuration_parameters - computed: true, optional: false, required: false
-  public configurationParameters(index: string) {
-    return new RdsParametergroupV3ConfigurationParameters(this, 'configuration_parameters', index, false);
+  private _configurationParameters = new RdsParametergroupV3ConfigurationParametersList(this, "configuration_parameters", false);
+  public get configurationParameters() {
+    return this._configurationParameters;
   }
 
   // created - computed: true, optional: false, required: false
@@ -259,7 +318,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   }
 
   // datastore - computed: false, optional: false, required: true
-  private _datastore = new RdsParametergroupV3DatastoreOutputReference(this, "datastore", true);
+  private _datastore = new RdsParametergroupV3DatastoreOutputReference(this, "datastore");
   public get datastore() {
     return this._datastore;
   }

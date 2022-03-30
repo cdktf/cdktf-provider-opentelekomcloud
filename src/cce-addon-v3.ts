@@ -55,10 +55,9 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CceAddonV3Timeouts | undefined {
@@ -126,10 +125,9 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): CceAddonV3Values | undefined {
@@ -194,7 +192,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cce_addon_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cce_addon_v3";
 
   // ===========
   // INITIALIZER
@@ -211,7 +209,9 @@ export class CceAddonV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cce_addon_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -284,7 +284,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new CceAddonV3TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new CceAddonV3TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -300,7 +300,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   }
 
   // values - computed: false, optional: false, required: true
-  private _values = new CceAddonV3ValuesOutputReference(this, "values", true);
+  private _values = new CceAddonV3ValuesOutputReference(this, "values");
   public get values() {
     return this._values;
   }

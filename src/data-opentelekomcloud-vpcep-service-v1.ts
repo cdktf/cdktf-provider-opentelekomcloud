@@ -20,7 +20,45 @@ export interface DataOpentelekomcloudVpcepServiceV1Config extends cdktf.Terrafor
   */
   readonly tags?: { [key: string]: string };
 }
-export class DataOpentelekomcloudVpcepServiceV1Port extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudVpcepServiceV1Port {
+}
+
+export function dataOpentelekomcloudVpcepServiceV1PortToTerraform(struct?: DataOpentelekomcloudVpcepServiceV1Port): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudVpcepServiceV1PortOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudVpcepServiceV1Port | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudVpcepServiceV1Port | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // client_port - computed: true, optional: false, required: false
   public get clientPort() {
@@ -38,6 +76,25 @@ export class DataOpentelekomcloudVpcepServiceV1Port extends cdktf.ComplexCompute
   }
 }
 
+export class DataOpentelekomcloudVpcepServiceV1PortList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudVpcepServiceV1PortOutputReference {
+    return new DataOpentelekomcloudVpcepServiceV1PortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpcep_service_v1 opentelekomcloud_vpcep_service_v1}
 */
@@ -46,7 +103,7 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vpcep_service_v1";
+  public static readonly tfResourceType = "opentelekomcloud_vpcep_service_v1";
 
   // ===========
   // INITIALIZER
@@ -63,7 +120,9 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vpcep_service_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -116,8 +175,9 @@ export class DataOpentelekomcloudVpcepServiceV1 extends cdktf.TerraformDataSourc
   }
 
   // port - computed: true, optional: false, required: false
-  public port(index: string) {
-    return new DataOpentelekomcloudVpcepServiceV1Port(this, 'port', index, true);
+  private _port = new DataOpentelekomcloudVpcepServiceV1PortList(this, "port", true);
+  public get port() {
+    return this._port;
   }
 
   // port_id - computed: true, optional: false, required: false

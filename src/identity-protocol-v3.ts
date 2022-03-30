@@ -59,10 +59,9 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): IdentityProtocolV3Metadata | undefined {
@@ -149,7 +148,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_identity_protocol_v3";
+  public static readonly tfResourceType = "opentelekomcloud_identity_protocol_v3";
 
   // ===========
   // INITIALIZER
@@ -166,7 +165,9 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_identity_protocol_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -233,7 +234,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: false, optional: true, required: false
-  private _metadata = new IdentityProtocolV3MetadataOutputReference(this, "metadata", true);
+  private _metadata = new IdentityProtocolV3MetadataOutputReference(this, "metadata");
   public get metadata() {
     return this._metadata;
   }

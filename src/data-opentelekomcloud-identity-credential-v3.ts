@@ -12,7 +12,45 @@ export interface DataOpentelekomcloudIdentityCredentialV3Config extends cdktf.Te
   */
   readonly userId?: string;
 }
-export class DataOpentelekomcloudIdentityCredentialV3Credentials extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudIdentityCredentialV3Credentials {
+}
+
+export function dataOpentelekomcloudIdentityCredentialV3CredentialsToTerraform(struct?: DataOpentelekomcloudIdentityCredentialV3Credentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudIdentityCredentialV3Credentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudIdentityCredentialV3Credentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // access - computed: true, optional: false, required: false
   public get access() {
@@ -40,6 +78,25 @@ export class DataOpentelekomcloudIdentityCredentialV3Credentials extends cdktf.C
   }
 }
 
+export class DataOpentelekomcloudIdentityCredentialV3CredentialsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference {
+    return new DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_credential_v3 opentelekomcloud_identity_credential_v3}
 */
@@ -48,7 +105,7 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_identity_credential_v3";
+  public static readonly tfResourceType = "opentelekomcloud_identity_credential_v3";
 
   // ===========
   // INITIALIZER
@@ -65,7 +122,9 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_identity_credential_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -80,8 +139,9 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
   // ==========
 
   // credentials - computed: true, optional: false, required: false
-  public credentials(index: string) {
-    return new DataOpentelekomcloudIdentityCredentialV3Credentials(this, 'credentials', index, false);
+  private _credentials = new DataOpentelekomcloudIdentityCredentialV3CredentialsList(this, "credentials", false);
+  public get credentials() {
+    return this._credentials;
   }
 
   // id - computed: true, optional: true, required: false

@@ -176,7 +176,7 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud";
+  public static readonly tfResourceType = "opentelekomcloud";
 
   // ===========
   // INITIALIZER
@@ -194,6 +194,7 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'opentelekomcloud',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
         providerVersionConstraint: '~> 1.26'
       },
       terraformProviderSource: 'opentelekomcloud/opentelekomcloud'

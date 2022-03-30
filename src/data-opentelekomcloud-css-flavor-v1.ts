@@ -62,10 +62,9 @@ export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdk
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DataOpentelekomcloudCssFlavorV1DiskRange | undefined {
@@ -146,7 +145,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_css_flavor_v1";
+  public static readonly tfResourceType = "opentelekomcloud_css_flavor_v1";
 
   // ===========
   // INITIALIZER
@@ -163,7 +162,9 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_css_flavor_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -283,7 +284,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
   }
 
   // disk_range - computed: false, optional: true, required: false
-  private _diskRange = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this, "disk_range", true);
+  private _diskRange = new DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference(this, "disk_range");
   public get diskRange() {
     return this._diskRange;
   }

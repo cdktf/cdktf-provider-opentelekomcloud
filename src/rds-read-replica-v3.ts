@@ -44,7 +44,45 @@ export interface RdsReadReplicaV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly volume: RdsReadReplicaV3Volume;
 }
-export class RdsReadReplicaV3Db extends cdktf.ComplexComputedList {
+export interface RdsReadReplicaV3Db {
+}
+
+export function rdsReadReplicaV3DbToTerraform(struct?: RdsReadReplicaV3Db): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class RdsReadReplicaV3DbOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RdsReadReplicaV3Db | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RdsReadReplicaV3Db | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // port - computed: true, optional: false, required: false
   public get port() {
@@ -64,6 +102,25 @@ export class RdsReadReplicaV3Db extends cdktf.ComplexComputedList {
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getStringAttribute('version');
+  }
+}
+
+export class RdsReadReplicaV3DbList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RdsReadReplicaV3DbOutputReference {
+    return new RdsReadReplicaV3DbOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface RdsReadReplicaV3Timeouts {
@@ -94,10 +151,9 @@ export class RdsReadReplicaV3TimeoutsOutputReference extends cdktf.ComplexObject
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsReadReplicaV3Timeouts | undefined {
@@ -187,10 +243,9 @@ export class RdsReadReplicaV3VolumeOutputReference extends cdktf.ComplexObject {
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RdsReadReplicaV3Volume | undefined {
@@ -263,7 +318,7 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_rds_read_replica_v3";
+  public static readonly tfResourceType = "opentelekomcloud_rds_read_replica_v3";
 
   // ===========
   // INITIALIZER
@@ -280,7 +335,9 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_rds_read_replica_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -318,8 +375,9 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
   }
 
   // db - computed: true, optional: false, required: false
-  public db(index: string) {
-    return new RdsReadReplicaV3Db(this, 'db', index, false);
+  private _db = new RdsReadReplicaV3DbList(this, "db", false);
+  public get db() {
+    return this._db;
   }
 
   // flavor_ref - computed: false, optional: false, required: true
@@ -419,7 +477,7 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
   }
 
   // timeouts - computed: false, optional: true, required: false
-  private _timeouts = new RdsReadReplicaV3TimeoutsOutputReference(this, "timeouts", true);
+  private _timeouts = new RdsReadReplicaV3TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
     return this._timeouts;
   }
@@ -435,7 +493,7 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
   }
 
   // volume - computed: false, optional: false, required: true
-  private _volume = new RdsReadReplicaV3VolumeOutputReference(this, "volume", true);
+  private _volume = new RdsReadReplicaV3VolumeOutputReference(this, "volume");
   public get volume() {
     return this._volume;
   }

@@ -12,7 +12,45 @@ export interface DataOpentelekomcloudObsBucketConfig extends cdktf.TerraformMeta
   */
   readonly bucket: string;
 }
-export class DataOpentelekomcloudObsBucketCorsRule extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudObsBucketCorsRule {
+}
+
+export function dataOpentelekomcloudObsBucketCorsRuleToTerraform(struct?: DataOpentelekomcloudObsBucketCorsRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketCorsRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketCorsRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketCorsRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // allowed_headers - computed: true, optional: false, required: false
   public get allowedHeaders() {
@@ -39,7 +77,64 @@ export class DataOpentelekomcloudObsBucketCorsRule extends cdktf.ComplexComputed
     return this.getNumberAttribute('max_age_seconds');
   }
 }
-export class DataOpentelekomcloudObsBucketEventNotificationsFilterRule extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketCorsRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketCorsRuleOutputReference {
+    return new DataOpentelekomcloudObsBucketCorsRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketEventNotificationsFilterRule {
+}
+
+export function dataOpentelekomcloudObsBucketEventNotificationsFilterRuleToTerraform(struct?: DataOpentelekomcloudObsBucketEventNotificationsFilterRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketEventNotificationsFilterRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketEventNotificationsFilterRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // name - computed: true, optional: false, required: false
   public get name() {
@@ -51,7 +146,64 @@ export class DataOpentelekomcloudObsBucketEventNotificationsFilterRule extends c
     return this.getStringAttribute('value');
   }
 }
-export class DataOpentelekomcloudObsBucketEventNotifications extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference {
+    return new DataOpentelekomcloudObsBucketEventNotificationsFilterRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketEventNotifications {
+}
+
+export function dataOpentelekomcloudObsBucketEventNotificationsToTerraform(struct?: DataOpentelekomcloudObsBucketEventNotifications): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketEventNotificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketEventNotifications | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketEventNotifications | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // events - computed: true, optional: false, required: false
   public get events() {
@@ -59,9 +211,9 @@ export class DataOpentelekomcloudObsBucketEventNotifications extends cdktf.Compl
   }
 
   // filter_rule - computed: true, optional: false, required: false
+  private _filterRule = new DataOpentelekomcloudObsBucketEventNotificationsFilterRuleList(this, "filter_rule", true);
   public get filterRule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('filter_rule')));
+    return this._filterRule;
   }
 
   // id - computed: true, optional: false, required: false
@@ -74,21 +226,192 @@ export class DataOpentelekomcloudObsBucketEventNotifications extends cdktf.Compl
     return this.getStringAttribute('topic');
   }
 }
-export class DataOpentelekomcloudObsBucketLifecycleRuleExpiration extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketEventNotificationsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketEventNotificationsOutputReference {
+    return new DataOpentelekomcloudObsBucketEventNotificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLifecycleRuleExpiration {
+}
+
+export function dataOpentelekomcloudObsBucketLifecycleRuleExpirationToTerraform(struct?: DataOpentelekomcloudObsBucketLifecycleRuleExpiration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLifecycleRuleExpiration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLifecycleRuleExpiration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // days - computed: true, optional: false, required: false
   public get days() {
     return this.getNumberAttribute('days');
   }
 }
-export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleExpirationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference {
+    return new DataOpentelekomcloudObsBucketLifecycleRuleExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration {
+}
+
+export function dataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(struct?: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpiration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // days - computed: true, optional: false, required: false
   public get days() {
     return this.getNumberAttribute('days');
   }
 }
-export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference {
+    return new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition {
+}
+
+export function dataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(struct?: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // days - computed: true, optional: false, required: false
   public get days() {
@@ -100,7 +423,64 @@ export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransiti
     return this.getStringAttribute('storage_class');
   }
 }
-export class DataOpentelekomcloudObsBucketLifecycleRuleTransition extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
+    return new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLifecycleRuleTransition {
+}
+
+export function dataOpentelekomcloudObsBucketLifecycleRuleTransitionToTerraform(struct?: DataOpentelekomcloudObsBucketLifecycleRuleTransition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLifecycleRuleTransition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLifecycleRuleTransition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // days - computed: true, optional: false, required: false
   public get days() {
@@ -112,7 +492,64 @@ export class DataOpentelekomcloudObsBucketLifecycleRuleTransition extends cdktf.
     return this.getStringAttribute('storage_class');
   }
 }
-export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleTransitionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference {
+    return new DataOpentelekomcloudObsBucketLifecycleRuleTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLifecycleRule {
+}
+
+export function dataOpentelekomcloudObsBucketLifecycleRuleToTerraform(struct?: DataOpentelekomcloudObsBucketLifecycleRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLifecycleRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLifecycleRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
@@ -120,9 +557,9 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
   }
 
   // expiration - computed: true, optional: false, required: false
+  private _expiration = new DataOpentelekomcloudObsBucketLifecycleRuleExpirationList(this, "expiration", true);
   public get expiration() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('expiration')));
+    return this._expiration;
   }
 
   // name - computed: true, optional: false, required: false
@@ -131,15 +568,15 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
   }
 
   // noncurrent_version_expiration - computed: true, optional: false, required: false
+  private _noncurrentVersionExpiration = new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionExpirationList(this, "noncurrent_version_expiration", true);
   public get noncurrentVersionExpiration() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('noncurrent_version_expiration')));
+    return this._noncurrentVersionExpiration;
   }
 
   // noncurrent_version_transition - computed: true, optional: false, required: false
+  private _noncurrentVersionTransition = new DataOpentelekomcloudObsBucketLifecycleRuleNoncurrentVersionTransitionList(this, "noncurrent_version_transition", false);
   public get noncurrentVersionTransition() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('noncurrent_version_transition');
+    return this._noncurrentVersionTransition;
   }
 
   // prefix - computed: true, optional: false, required: false
@@ -148,12 +585,69 @@ export class DataOpentelekomcloudObsBucketLifecycleRule extends cdktf.ComplexCom
   }
 
   // transition - computed: true, optional: false, required: false
+  private _transition = new DataOpentelekomcloudObsBucketLifecycleRuleTransitionList(this, "transition", false);
   public get transition() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('transition');
+    return this._transition;
   }
 }
-export class DataOpentelekomcloudObsBucketLogging extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLifecycleRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLifecycleRuleOutputReference {
+    return new DataOpentelekomcloudObsBucketLifecycleRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketLogging {
+}
+
+export function dataOpentelekomcloudObsBucketLoggingToTerraform(struct?: DataOpentelekomcloudObsBucketLogging): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketLogging | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketLogging | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // target_bucket - computed: true, optional: false, required: false
   public get targetBucket() {
@@ -165,7 +659,64 @@ export class DataOpentelekomcloudObsBucketLogging extends cdktf.ComplexComputedL
     return this.getStringAttribute('target_prefix');
   }
 }
-export class DataOpentelekomcloudObsBucketServerSideEncryption extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketLoggingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketLoggingOutputReference {
+    return new DataOpentelekomcloudObsBucketLoggingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketServerSideEncryption {
+}
+
+export function dataOpentelekomcloudObsBucketServerSideEncryptionToTerraform(struct?: DataOpentelekomcloudObsBucketServerSideEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketServerSideEncryption | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketServerSideEncryption | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // algorithm - computed: true, optional: false, required: false
   public get algorithm() {
@@ -177,7 +728,64 @@ export class DataOpentelekomcloudObsBucketServerSideEncryption extends cdktf.Com
     return this.getStringAttribute('kms_key_id');
   }
 }
-export class DataOpentelekomcloudObsBucketWebsite extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudObsBucketServerSideEncryptionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference {
+    return new DataOpentelekomcloudObsBucketServerSideEncryptionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudObsBucketWebsite {
+}
+
+export function dataOpentelekomcloudObsBucketWebsiteToTerraform(struct?: DataOpentelekomcloudObsBucketWebsite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudObsBucketWebsite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudObsBucketWebsite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // error_document - computed: true, optional: false, required: false
   public get errorDocument() {
@@ -200,6 +808,25 @@ export class DataOpentelekomcloudObsBucketWebsite extends cdktf.ComplexComputedL
   }
 }
 
+export class DataOpentelekomcloudObsBucketWebsiteList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudObsBucketWebsiteOutputReference {
+    return new DataOpentelekomcloudObsBucketWebsiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/obs_bucket opentelekomcloud_obs_bucket}
 */
@@ -208,7 +835,7 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_obs_bucket";
+  public static readonly tfResourceType = "opentelekomcloud_obs_bucket";
 
   // ===========
   // INITIALIZER
@@ -225,7 +852,9 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_obs_bucket',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -258,13 +887,15 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   }
 
   // cors_rule - computed: true, optional: false, required: false
-  public corsRule(index: string) {
-    return new DataOpentelekomcloudObsBucketCorsRule(this, 'cors_rule', index, false);
+  private _corsRule = new DataOpentelekomcloudObsBucketCorsRuleList(this, "cors_rule", false);
+  public get corsRule() {
+    return this._corsRule;
   }
 
   // event_notifications - computed: true, optional: false, required: false
-  public eventNotifications(index: string) {
-    return new DataOpentelekomcloudObsBucketEventNotifications(this, 'event_notifications', index, false);
+  private _eventNotifications = new DataOpentelekomcloudObsBucketEventNotificationsList(this, "event_notifications", false);
+  public get eventNotifications() {
+    return this._eventNotifications;
   }
 
   // id - computed: true, optional: true, required: false
@@ -273,13 +904,15 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   }
 
   // lifecycle_rule - computed: true, optional: false, required: false
-  public lifecycleRule(index: string) {
-    return new DataOpentelekomcloudObsBucketLifecycleRule(this, 'lifecycle_rule', index, false);
+  private _lifecycleRule = new DataOpentelekomcloudObsBucketLifecycleRuleList(this, "lifecycle_rule", false);
+  public get lifecycleRule() {
+    return this._lifecycleRule;
   }
 
   // logging - computed: true, optional: false, required: false
-  public logging(index: string) {
-    return new DataOpentelekomcloudObsBucketLogging(this, 'logging', index, true);
+  private _logging = new DataOpentelekomcloudObsBucketLoggingList(this, "logging", true);
+  public get logging() {
+    return this._logging;
   }
 
   // region - computed: true, optional: false, required: false
@@ -288,8 +921,9 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   }
 
   // server_side_encryption - computed: true, optional: false, required: false
-  public serverSideEncryption(index: string) {
-    return new DataOpentelekomcloudObsBucketServerSideEncryption(this, 'server_side_encryption', index, false);
+  private _serverSideEncryption = new DataOpentelekomcloudObsBucketServerSideEncryptionList(this, "server_side_encryption", false);
+  public get serverSideEncryption() {
+    return this._serverSideEncryption;
   }
 
   // storage_class - computed: true, optional: false, required: false
@@ -308,8 +942,9 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
   }
 
   // website - computed: true, optional: false, required: false
-  public website(index: string) {
-    return new DataOpentelekomcloudObsBucketWebsite(this, 'website', index, false);
+  private _website = new DataOpentelekomcloudObsBucketWebsiteList(this, "website", false);
+  public get website() {
+    return this._website;
   }
 
   // =========

@@ -72,10 +72,9 @@ export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexO
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsPolicyV1ScalingPolicyAction | undefined {
@@ -180,10 +179,9 @@ export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObjec
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsPolicyV1ScheduledPolicy | undefined {
@@ -317,7 +315,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_as_policy_v1";
+  public static readonly tfResourceType = "opentelekomcloud_as_policy_v1";
 
   // ===========
   // INITIALIZER
@@ -334,7 +332,9 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_as_policy_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -448,7 +448,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // scaling_policy_action - computed: false, optional: true, required: false
-  private _scalingPolicyAction = new AsPolicyV1ScalingPolicyActionOutputReference(this, "scaling_policy_action", true);
+  private _scalingPolicyAction = new AsPolicyV1ScalingPolicyActionOutputReference(this, "scaling_policy_action");
   public get scalingPolicyAction() {
     return this._scalingPolicyAction;
   }
@@ -464,7 +464,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // scheduled_policy - computed: false, optional: true, required: false
-  private _scheduledPolicy = new AsPolicyV1ScheduledPolicyOutputReference(this, "scheduled_policy", true);
+  private _scheduledPolicy = new AsPolicyV1ScheduledPolicyOutputReference(this, "scheduled_policy");
   public get scheduledPolicy() {
     return this._scheduledPolicy;
   }

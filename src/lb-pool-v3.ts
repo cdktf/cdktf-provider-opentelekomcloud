@@ -75,10 +75,9 @@ export class LbPoolV3SessionPersistenceOutputReference extends cdktf.ComplexObje
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): LbPoolV3SessionPersistence | undefined {
@@ -168,7 +167,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_lb_pool_v3";
+  public static readonly tfResourceType = "opentelekomcloud_lb_pool_v3";
 
   // ===========
   // INITIALIZER
@@ -185,7 +184,9 @@ export class LbPoolV3 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_pool_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -323,7 +324,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
   }
 
   // session_persistence - computed: false, optional: true, required: false
-  private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this, "session_persistence", true);
+  private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this, "session_persistence");
   public get sessionPersistence() {
     return this._sessionPersistence;
   }

@@ -34,7 +34,45 @@ export interface DataOpentelekomcloudVbsBackupPolicyV2Config extends cdktf.Terra
   */
   readonly filterTags?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags[] | cdktf.IResolvable;
 }
-export class DataOpentelekomcloudVbsBackupPolicyV2Tags extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudVbsBackupPolicyV2Tags {
+}
+
+export function dataOpentelekomcloudVbsBackupPolicyV2TagsToTerraform(struct?: DataOpentelekomcloudVbsBackupPolicyV2Tags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudVbsBackupPolicyV2Tags | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudVbsBackupPolicyV2Tags | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // key - computed: true, optional: false, required: false
   public get key() {
@@ -44,6 +82,25 @@ export class DataOpentelekomcloudVbsBackupPolicyV2Tags extends cdktf.ComplexComp
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+}
+
+export class DataOpentelekomcloudVbsBackupPolicyV2TagsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference {
+    return new DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataOpentelekomcloudVbsBackupPolicyV2FilterTags {
@@ -77,7 +134,7 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vbs_backup_policy_v2";
+  public static readonly tfResourceType = "opentelekomcloud_vbs_backup_policy_v2";
 
   // ===========
   // INITIALIZER
@@ -94,7 +151,9 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vbs_backup_policy_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -214,8 +273,9 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(index: string) {
-    return new DataOpentelekomcloudVbsBackupPolicyV2Tags(this, 'tags', index, true);
+  private _tags = new DataOpentelekomcloudVbsBackupPolicyV2TagsList(this, "tags", true);
+  public get tags() {
+    return this._tags;
   }
 
   // filter_tags - computed: false, optional: true, required: false

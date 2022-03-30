@@ -109,10 +109,9 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEipBandwidth | undefined {
@@ -217,10 +216,9 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIpEip | undefined {
@@ -264,7 +262,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
   }
 
   // bandwidth - computed: false, optional: false, required: true
-  private _bandwidth = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this, "bandwidth", true);
+  private _bandwidth = new AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(this, "bandwidth");
   public get bandwidth() {
     return this._bandwidth;
   }
@@ -301,10 +299,9 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfigPublicIp | undefined {
@@ -329,7 +326,7 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
   }
 
   // eip - computed: false, optional: false, required: true
-  private _eip = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this, "eip", true);
+  private _eip = new AsConfigurationV1InstanceConfigPublicIpEipOutputReference(this, "eip");
   public get eip() {
     return this._eip;
   }
@@ -415,10 +412,9 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): AsConfigurationV1InstanceConfig | undefined {
@@ -640,7 +636,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // public_ip - computed: false, optional: true, required: false
-  private _publicIp = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this, "public_ip", true);
+  private _publicIp = new AsConfigurationV1InstanceConfigPublicIpOutputReference(this, "public_ip");
   public get publicIp() {
     return this._publicIp;
   }
@@ -664,7 +660,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_as_configuration_v1";
+  public static readonly tfResourceType = "opentelekomcloud_as_configuration_v1";
 
   // ===========
   // INITIALIZER
@@ -681,7 +677,9 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_as_configuration_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -732,7 +730,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // instance_config - computed: false, optional: false, required: true
-  private _instanceConfig = new AsConfigurationV1InstanceConfigOutputReference(this, "instance_config", true);
+  private _instanceConfig = new AsConfigurationV1InstanceConfigOutputReference(this, "instance_config");
   public get instanceConfig() {
     return this._instanceConfig;
   }

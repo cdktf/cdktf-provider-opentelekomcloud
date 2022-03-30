@@ -21,7 +21,7 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_dcs_product_v1";
+  public static readonly tfResourceType = "opentelekomcloud_dcs_product_v1";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_dcs_product_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

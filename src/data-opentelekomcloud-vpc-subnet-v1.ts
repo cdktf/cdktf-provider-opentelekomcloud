@@ -53,7 +53,7 @@ export class DataOpentelekomcloudVpcSubnetV1 extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_vpc_subnet_v1";
+  public static readonly tfResourceType = "opentelekomcloud_vpc_subnet_v1";
 
   // ===========
   // INITIALIZER
@@ -70,7 +70,9 @@ export class DataOpentelekomcloudVpcSubnetV1 extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_vpc_subnet_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

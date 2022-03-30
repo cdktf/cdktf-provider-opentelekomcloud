@@ -41,7 +41,7 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_rts_software_deployment_v1";
+  public static readonly tfResourceType = "opentelekomcloud_rts_software_deployment_v1";
 
   // ===========
   // INITIALIZER
@@ -58,7 +58,9 @@ export class DataOpentelekomcloudRtsSoftwareDeploymentV1 extends cdktf.Terraform
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_rts_software_deployment_v1',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

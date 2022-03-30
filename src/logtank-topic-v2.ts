@@ -25,7 +25,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_logtank_topic_v2";
+  public static readonly tfResourceType = "opentelekomcloud_logtank_topic_v2";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_logtank_topic_v2',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -28,7 +28,45 @@ export interface DataOpentelekomcloudCceClusterV3Config extends cdktf.TerraformM
   */
   readonly vpcId?: string;
 }
-export class DataOpentelekomcloudCceClusterV3CertificateClusters extends cdktf.ComplexComputedList {
+export interface DataOpentelekomcloudCceClusterV3CertificateClusters {
+}
+
+export function dataOpentelekomcloudCceClusterV3CertificateClustersToTerraform(struct?: DataOpentelekomcloudCceClusterV3CertificateClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudCceClusterV3CertificateClusters | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudCceClusterV3CertificateClusters | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // certificate_authority_data - computed: true, optional: false, required: false
   public get certificateAuthorityData() {
@@ -45,7 +83,64 @@ export class DataOpentelekomcloudCceClusterV3CertificateClusters extends cdktf.C
     return this.getStringAttribute('server');
   }
 }
-export class DataOpentelekomcloudCceClusterV3CertificateUsers extends cdktf.ComplexComputedList {
+
+export class DataOpentelekomcloudCceClusterV3CertificateClustersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference {
+    return new DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataOpentelekomcloudCceClusterV3CertificateUsers {
+}
+
+export function dataOpentelekomcloudCceClusterV3CertificateUsersToTerraform(struct?: DataOpentelekomcloudCceClusterV3CertificateUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudCceClusterV3CertificateUsers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudCceClusterV3CertificateUsers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // client_certificate_data - computed: true, optional: false, required: false
   public get clientCertificateData() {
@@ -63,6 +158,25 @@ export class DataOpentelekomcloudCceClusterV3CertificateUsers extends cdktf.Comp
   }
 }
 
+export class DataOpentelekomcloudCceClusterV3CertificateUsersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference {
+    return new DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}
 */
@@ -71,7 +185,7 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "opentelekomcloud_cce_cluster_v3";
+  public static readonly tfResourceType = "opentelekomcloud_cce_cluster_v3";
 
   // ===========
   // INITIALIZER
@@ -88,7 +202,9 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
-        providerName: 'opentelekomcloud'
+        providerName: 'opentelekomcloud',
+        providerVersion: '1.28.2',
+        providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -117,13 +233,15 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
   }
 
   // certificate_clusters - computed: true, optional: false, required: false
-  public certificateClusters(index: string) {
-    return new DataOpentelekomcloudCceClusterV3CertificateClusters(this, 'certificate_clusters', index, false);
+  private _certificateClusters = new DataOpentelekomcloudCceClusterV3CertificateClustersList(this, "certificate_clusters", false);
+  public get certificateClusters() {
+    return this._certificateClusters;
   }
 
   // certificate_users - computed: true, optional: false, required: false
-  public certificateUsers(index: string) {
-    return new DataOpentelekomcloudCceClusterV3CertificateUsers(this, 'certificate_users', index, false);
+  private _certificateUsers = new DataOpentelekomcloudCceClusterV3CertificateUsersList(this, "certificate_users", false);
+  public get certificateUsers() {
+    return this._certificateUsers;
   }
 
   // cluster_type - computed: false, optional: true, required: false
