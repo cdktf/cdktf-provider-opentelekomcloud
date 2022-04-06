@@ -43,7 +43,7 @@ export class DataOpentelekomcloudCceClusterKubeconfigV3 extends cdktf.TerraformD
       terraformResourceType: 'opentelekomcloud_cce_cluster_kubeconfig_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.28.2',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -112,7 +112,7 @@ export class DataOpentelekomcloudIdentityAuthScopeV3 extends cdktf.TerraformData
       terraformResourceType: 'opentelekomcloud_identity_auth_scope_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.28.2',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

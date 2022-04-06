@@ -196,7 +196,7 @@ export class LbMemberV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_member_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.28.2',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -341,7 +341,7 @@ export class LbMemberV2 extends cdktf.TerraformResource {
     return this._tenantId;
   }
 
-  // weight - computed: true, optional: true, required: false
+  // weight - computed: false, optional: true, required: false
   private _weight?: number; 
   public get weight() {
     return this.getNumberAttribute('weight');

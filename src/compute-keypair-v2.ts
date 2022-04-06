@@ -51,7 +51,7 @@ export class ComputeKeypairV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_keypair_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.28.2',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

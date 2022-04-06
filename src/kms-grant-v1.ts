@@ -55,7 +55,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_kms_grant_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.28.2',
+        providerVersion: '1.29.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
