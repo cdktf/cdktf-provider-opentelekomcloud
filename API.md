@@ -2989,6 +2989,18 @@ public resetDescription()
 public resetEip()
 ```
 
+##### `resetEniSubnetCidr` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.resetEniSubnetCidr"></a>
+
+```typescript
+public resetEniSubnetCidr()
+```
+
+##### `resetEniSubnetId` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.resetEniSubnetId"></a>
+
+```typescript
+public resetEniSubnetId()
+```
+
 ##### `resetExtendParam` <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.resetExtendParam"></a>
 
 ```typescript
@@ -3286,6 +3298,26 @@ public readonly eipInput: string;
 
 ---
 
+##### `eniSubnetCidrInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.eniSubnetCidrInput"></a>
+
+```typescript
+public readonly eniSubnetCidrInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `eniSubnetIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.eniSubnetIdInput"></a>
+
+```typescript
+public readonly eniSubnetIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
 ##### `extendParamInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.extendParamInput"></a>
 
 ```typescript
@@ -3510,6 +3542,26 @@ public readonly description: string;
 
 ```typescript
 public readonly eip: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `eniSubnetCidr`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.eniSubnetCidr"></a>
+
+```typescript
+public readonly eniSubnetCidr: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `eniSubnetId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3.property.eniSubnetId"></a>
+
+```typescript
+public readonly eniSubnetId: string;
 ```
 
 - *Type:* `string`
@@ -10274,6 +10326,26 @@ public readonly containerNetworkType: string;
 
 ```typescript
 public readonly description: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `eniSubnetCidr`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.property.eniSubnetCidr"></a>
+
+```typescript
+public readonly eniSubnetCidr: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `eniSubnetId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudCceClusterV3.property.eniSubnetId"></a>
+
+```typescript
+public readonly eniSubnetId: string;
 ```
 
 - *Type:* `string`
@@ -66054,6 +66126,30 @@ public readonly eip: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#eip CceClusterV3#eip}.
+
+---
+
+##### `eniSubnetCidr`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.eniSubnetCidr"></a>
+
+```typescript
+public readonly eniSubnetCidr: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#eni_subnet_cidr CceClusterV3#eni_subnet_cidr}.
+
+---
+
+##### `eniSubnetId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.CceClusterV3Config.property.eniSubnetId"></a>
+
+```typescript
+public readonly eniSubnetId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#eni_subnet_id CceClusterV3#eni_subnet_id}.
 
 ---
 

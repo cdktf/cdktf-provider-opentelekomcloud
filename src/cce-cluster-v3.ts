@@ -48,6 +48,14 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly eip?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#eni_subnet_cidr CceClusterV3#eni_subnet_cidr}
+  */
+  readonly eniSubnetCidr?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#eni_subnet_id CceClusterV3#eni_subnet_id}
+  */
+  readonly eniSubnetId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#extend_param CceClusterV3#extend_param}
   */
   readonly extendParam?: { [key: string]: string };
@@ -485,7 +493,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.0',
+        providerVersion: '1.29.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -503,6 +511,8 @@ export class CceClusterV3 extends cdktf.TerraformResource {
     this._containerNetworkType = config.containerNetworkType;
     this._description = config.description;
     this._eip = config.eip;
+    this._eniSubnetCidr = config.eniSubnetCidr;
+    this._eniSubnetId = config.eniSubnetId;
     this._extendParam = config.extendParam;
     this._flavorId = config.flavorId;
     this._highwaySubnetId = config.highwaySubnetId;
@@ -687,6 +697,38 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get eipInput() {
     return this._eip;
+  }
+
+  // eni_subnet_cidr - computed: true, optional: true, required: false
+  private _eniSubnetCidr?: string; 
+  public get eniSubnetCidr() {
+    return this.getStringAttribute('eni_subnet_cidr');
+  }
+  public set eniSubnetCidr(value: string) {
+    this._eniSubnetCidr = value;
+  }
+  public resetEniSubnetCidr() {
+    this._eniSubnetCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eniSubnetCidrInput() {
+    return this._eniSubnetCidr;
+  }
+
+  // eni_subnet_id - computed: true, optional: true, required: false
+  private _eniSubnetId?: string; 
+  public get eniSubnetId() {
+    return this.getStringAttribute('eni_subnet_id');
+  }
+  public set eniSubnetId(value: string) {
+    this._eniSubnetId = value;
+  }
+  public resetEniSubnetId() {
+    this._eniSubnetId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eniSubnetIdInput() {
+    return this._eniSubnetId;
   }
 
   // extend_param - computed: false, optional: true, required: false
@@ -962,6 +1004,8 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       container_network_type: cdktf.stringToTerraform(this._containerNetworkType),
       description: cdktf.stringToTerraform(this._description),
       eip: cdktf.stringToTerraform(this._eip),
+      eni_subnet_cidr: cdktf.stringToTerraform(this._eniSubnetCidr),
+      eni_subnet_id: cdktf.stringToTerraform(this._eniSubnetId),
       extend_param: cdktf.hashMapper(cdktf.stringToTerraform)(this._extendParam),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
       highway_subnet_id: cdktf.stringToTerraform(this._highwaySubnetId),

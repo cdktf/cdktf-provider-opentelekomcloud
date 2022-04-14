@@ -185,7 +185,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_pool_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.0',
+        providerVersion: '1.29.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

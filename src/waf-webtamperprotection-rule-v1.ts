@@ -145,7 +145,7 @@ export class WafWebtamperprotectionRuleV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_webtamperprotection_rule_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.0',
+        providerVersion: '1.29.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

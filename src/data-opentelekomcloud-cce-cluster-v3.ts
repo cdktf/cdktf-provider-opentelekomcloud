@@ -203,7 +203,7 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.0',
+        providerVersion: '1.29.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -278,6 +278,16 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
+  }
+
+  // eni_subnet_cidr - computed: true, optional: false, required: false
+  public get eniSubnetCidr() {
+    return this.getStringAttribute('eni_subnet_cidr');
+  }
+
+  // eni_subnet_id - computed: true, optional: false, required: false
+  public get eniSubnetId() {
+    return this.getStringAttribute('eni_subnet_id');
   }
 
   // external - computed: true, optional: false, required: false
