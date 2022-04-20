@@ -12,6 +12,10 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly acl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#arn S3Bucket#arn}
+  */
+  readonly arn?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#bucket S3Bucket#bucket}
   */
   readonly bucket?: string;
@@ -500,6 +504,7 @@ export class S3Bucket extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._acl = config.acl;
+    this._arn = config.arn;
     this._bucket = config.bucket;
     this._bucketPrefix = config.bucketPrefix;
     this._forceDestroy = config.forceDestroy;
@@ -537,8 +542,19 @@ export class S3Bucket extends cdktf.TerraformResource {
   }
 
   // arn - computed: true, optional: true, required: false
+  private _arn?: string; 
   public get arn() {
     return this.getStringAttribute('arn');
+  }
+  public set arn(value: string) {
+    this._arn = value;
+  }
+  public resetArn() {
+    this._arn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get arnInput() {
+    return this._arn;
   }
 
   // bucket - computed: true, optional: true, required: false
@@ -785,6 +801,7 @@ export class S3Bucket extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       acl: cdktf.stringToTerraform(this._acl),
+      arn: cdktf.stringToTerraform(this._arn),
       bucket: cdktf.stringToTerraform(this._bucket),
       bucket_prefix: cdktf.stringToTerraform(this._bucketPrefix),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),

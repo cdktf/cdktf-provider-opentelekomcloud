@@ -51199,6 +51199,12 @@ public putWebsite(value: S3BucketWebsite)
 public resetAcl()
 ```
 
+##### `resetArn` <a name="@cdktf/provider-opentelekomcloud.S3Bucket.resetArn"></a>
+
+```typescript
+public resetArn()
+```
+
 ##### `resetBucket` <a name="@cdktf/provider-opentelekomcloud.S3Bucket.resetBucket"></a>
 
 ```typescript
@@ -51286,16 +51292,6 @@ public resetWebsiteEndpoint()
 
 #### Properties <a name="Properties"></a>
 
-##### `arn`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.arn"></a>
-
-```typescript
-public readonly arn: string;
-```
-
-- *Type:* `string`
-
----
-
 ##### `bucketDomainName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.bucketDomainName"></a>
 
 ```typescript
@@ -51340,6 +51336,16 @@ public readonly website: S3BucketWebsiteOutputReference;
 
 ```typescript
 public readonly aclInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `arnInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.arnInput"></a>
+
+```typescript
+public readonly arnInput: string;
 ```
 
 - *Type:* `string`
@@ -51490,6 +51496,16 @@ public readonly websiteInput: S3BucketWebsite;
 
 ```typescript
 public readonly acl: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `arn`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.S3Bucket.property.arn"></a>
+
+```typescript
+public readonly arn: string;
 ```
 
 - *Type:* `string`
@@ -96580,6 +96596,18 @@ public readonly acl: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#acl S3Bucket#acl}.
+
+---
+
+##### `arn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.S3BucketConfig.property.arn"></a>
+
+```typescript
+public readonly arn: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket#arn S3Bucket#arn}.
 
 ---
 
