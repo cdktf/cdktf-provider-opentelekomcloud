@@ -39,7 +39,7 @@ export class DataOpentelekomcloudRdsVersionsV3 extends cdktf.TerraformDataSource
       terraformResourceType: 'opentelekomcloud_rds_versions_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.1',
+        providerVersion: '1.29.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

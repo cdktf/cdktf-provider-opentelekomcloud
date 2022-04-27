@@ -15650,6 +15650,117 @@ public readonly vmSpecification: string;
 
 ---
 
+### DataOpentelekomcloudDnsNameserversV2 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}.
+
+#### Initializers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDnsNameserversV2 } from '@cdktf/provider-opentelekomcloud'
+
+new DataOpentelekomcloudDnsNameserversV2(scope: Construct, id: string, config?: DataOpentelekomcloudDnsNameserversV2Config)
+```
+
+##### `scope`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.parameter.scope"></a>
+
+- *Type:* [`constructs.Construct`](#constructs.Construct)
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.parameter.id"></a>
+
+- *Type:* `string`
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.parameter.config"></a>
+
+- *Type:* [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config)
+
+---
+
+#### Methods <a name="Methods"></a>
+
+##### `resetNameservers` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.resetNameservers"></a>
+
+```typescript
+public resetNameservers()
+```
+
+##### `resetZoneId` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.resetZoneId"></a>
+
+```typescript
+public resetZoneId()
+```
+
+
+#### Properties <a name="Properties"></a>
+
+##### `id`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameserversInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.nameserversInput"></a>
+
+```typescript
+public readonly nameserversInput: IResolvable | DataOpentelekomcloudDnsNameserversV2Nameservers[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers)[]
+
+---
+
+##### `zoneIdInput`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.zoneIdInput"></a>
+
+```typescript
+public readonly zoneIdInput: string;
+```
+
+- *Type:* `string`
+
+---
+
+##### `nameservers`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.nameservers"></a>
+
+```typescript
+public readonly nameservers: IResolvable | DataOpentelekomcloudDnsNameserversV2Nameservers[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers)[]
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* `string`
+
+---
+
+#### Constants <a name="Constants"></a>
+
+##### `tfResourceType` <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2.property.tfResourceType"></a>
+
+- *Type:* `string`
+
+---
+
 ### DataOpentelekomcloudDnsZoneV2 <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
@@ -74635,6 +74746,116 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+### DataOpentelekomcloudDnsNameserversV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDnsNameserversV2Config } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDnsNameserversV2Config: DataOpentelekomcloudDnsNameserversV2Config = { ... }
+```
+
+##### `count`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* `number`
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* [`cdktf.ITerraformDependable`](#cdktf.ITerraformDependable)[]
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* [`cdktf.TerraformResourceLifecycle`](#cdktf.TerraformResourceLifecycle)
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* [`cdktf.TerraformProvider`](#cdktf.TerraformProvider)
+
+---
+
+##### `nameservers`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.nameservers"></a>
+
+```typescript
+public readonly nameservers: IResolvable | DataOpentelekomcloudDnsNameserversV2Nameservers[];
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable) | [`@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers`](#@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers)[]
+
+nameservers block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#nameservers DataOpentelekomcloudDnsNameserversV2#nameservers}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Config.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#zone_id DataOpentelekomcloudDnsNameserversV2#zone_id}.
+
+---
+
+### DataOpentelekomcloudDnsNameserversV2Nameservers <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers"></a>
+
+#### Initializer <a name="[object Object].Initializer"></a>
+
+```typescript
+import { DataOpentelekomcloudDnsNameserversV2Nameservers } from '@cdktf/provider-opentelekomcloud'
+
+const dataOpentelekomcloudDnsNameserversV2Nameservers: DataOpentelekomcloudDnsNameserversV2Nameservers = { ... }
+```
+
+##### `hostname`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers.property.hostname"></a>
+
+```typescript
+public readonly hostname: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#hostname DataOpentelekomcloudDnsNameserversV2#hostname}.
+
+---
+
+##### `priority`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsNameserversV2Nameservers.property.priority"></a>
+
+```typescript
+public readonly priority: number;
+```
+
+- *Type:* `number`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#priority DataOpentelekomcloudDnsNameserversV2#priority}.
+
+---
+
 ### DataOpentelekomcloudDnsZoneV2Config <a name="@cdktf/provider-opentelekomcloud.DataOpentelekomcloudDnsZoneV2Config"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
@@ -87659,7 +87880,19 @@ import { LbLoadbalancerV3PublicIp } from '@cdktf/provider-opentelekomcloud'
 const lbLoadbalancerV3PublicIp: LbLoadbalancerV3PublicIp = { ... }
 ```
 
-##### `bandwidthName`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthName"></a>
+##### `bandwidthChargeMode`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthChargeMode"></a>
+
+```typescript
+public readonly bandwidthChargeMode: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#bandwidth_charge_mode LbLoadbalancerV3#bandwidth_charge_mode}.
+
+---
+
+##### `bandwidthName`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthName"></a>
 
 ```typescript
 public readonly bandwidthName: string;
@@ -87671,7 +87904,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `bandwidthShareType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthShareType"></a>
+##### `bandwidthShareType`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthShareType"></a>
 
 ```typescript
 public readonly bandwidthShareType: string;
@@ -87683,7 +87916,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `bandwidthSize`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthSize"></a>
+##### `bandwidthSize`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthSize"></a>
 
 ```typescript
 public readonly bandwidthSize: number;
@@ -87695,7 +87928,19 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
-##### `ipType`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.ipType"></a>
+##### `id`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* `string`
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#id LbLoadbalancerV3#id}.
+
+---
+
+##### `ipType`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.ipType"></a>
 
 ```typescript
 public readonly ipType: string;
@@ -87704,18 +87949,6 @@ public readonly ipType: string;
 - *Type:* `string`
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#ip_type LbLoadbalancerV3#ip_type}.
-
----
-
-##### `bandwidthChargeMode`<sup>Optional</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIp.property.bandwidthChargeMode"></a>
-
-```typescript
-public readonly bandwidthChargeMode: string;
-```
-
-- *Type:* `string`
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#bandwidth_charge_mode LbLoadbalancerV3#bandwidth_charge_mode}.
 
 ---
 
@@ -119934,6 +120167,30 @@ The attribute on the parent resource this class is referencing.
 public resetBandwidthChargeMode()
 ```
 
+##### `resetBandwidthName` <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.resetBandwidthName"></a>
+
+```typescript
+public resetBandwidthName()
+```
+
+##### `resetBandwidthShareType` <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.resetBandwidthShareType"></a>
+
+```typescript
+public resetBandwidthShareType()
+```
+
+##### `resetBandwidthSize` <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.resetBandwidthSize"></a>
+
+```typescript
+public resetBandwidthSize()
+```
+
+##### `resetIpType` <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.resetIpType"></a>
+
+```typescript
+public resetIpType()
+```
+
 
 #### Properties <a name="Properties"></a>
 
@@ -119954,6 +120211,16 @@ public readonly id: string;
 ```
 
 - *Type:* `string`
+
+---
+
+##### `managed`<sup>Required</sup> <a name="@cdktf/provider-opentelekomcloud.LbLoadbalancerV3PublicIpOutputReference.property.managed"></a>
+
+```typescript
+public readonly managed: IResolvable;
+```
+
+- *Type:* [`cdktf.IResolvable`](#cdktf.IResolvable)
 
 ---
 

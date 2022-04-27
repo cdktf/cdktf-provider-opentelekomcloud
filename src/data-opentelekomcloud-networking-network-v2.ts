@@ -58,7 +58,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
       terraformResourceType: 'opentelekomcloud_networking_network_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.1',
+        providerVersion: '1.29.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
