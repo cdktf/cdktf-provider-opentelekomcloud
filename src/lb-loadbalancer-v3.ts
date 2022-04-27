@@ -70,19 +70,23 @@ export interface LbLoadbalancerV3PublicIp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#bandwidth_name LbLoadbalancerV3#bandwidth_name}
   */
-  readonly bandwidthName: string;
+  readonly bandwidthName?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#bandwidth_share_type LbLoadbalancerV3#bandwidth_share_type}
   */
-  readonly bandwidthShareType: string;
+  readonly bandwidthShareType?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#bandwidth_size LbLoadbalancerV3#bandwidth_size}
   */
-  readonly bandwidthSize: number;
+  readonly bandwidthSize?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#id LbLoadbalancerV3#id}
+  */
+  readonly id?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#ip_type LbLoadbalancerV3#ip_type}
   */
-  readonly ipType: string;
+  readonly ipType?: string;
 }
 
 export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3PublicIpOutputReference | LbLoadbalancerV3PublicIp): any {
@@ -155,6 +159,11 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
     }
   }
 
+  // _managed - computed: true, optional: false, required: false
+  public get managed() {
+    return this.getBooleanAttribute('_managed');
+  }
+
   // address - computed: true, optional: false, required: false
   public get address() {
     return this.getStringAttribute('address');
@@ -176,7 +185,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
     return this._bandwidthChargeMode;
   }
 
-  // bandwidth_name - computed: false, optional: false, required: true
+  // bandwidth_name - computed: true, optional: true, required: false
   private _bandwidthName?: string; 
   public get bandwidthName() {
     return this.getStringAttribute('bandwidth_name');
@@ -184,12 +193,15 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   public set bandwidthName(value: string) {
     this._bandwidthName = value;
   }
+  public resetBandwidthName() {
+    this._bandwidthName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get bandwidthNameInput() {
     return this._bandwidthName;
   }
 
-  // bandwidth_share_type - computed: false, optional: false, required: true
+  // bandwidth_share_type - computed: true, optional: true, required: false
   private _bandwidthShareType?: string; 
   public get bandwidthShareType() {
     return this.getStringAttribute('bandwidth_share_type');
@@ -197,12 +209,15 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   public set bandwidthShareType(value: string) {
     this._bandwidthShareType = value;
   }
+  public resetBandwidthShareType() {
+    this._bandwidthShareType = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get bandwidthShareTypeInput() {
     return this._bandwidthShareType;
   }
 
-  // bandwidth_size - computed: false, optional: false, required: true
+  // bandwidth_size - computed: true, optional: true, required: false
   private _bandwidthSize?: number; 
   public get bandwidthSize() {
     return this.getNumberAttribute('bandwidth_size');
@@ -210,23 +225,29 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   public set bandwidthSize(value: number) {
     this._bandwidthSize = value;
   }
+  public resetBandwidthSize() {
+    this._bandwidthSize = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get bandwidthSizeInput() {
     return this._bandwidthSize;
   }
 
-  // id - computed: true, optional: false, required: false
+  // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // ip_type - computed: false, optional: false, required: true
+  // ip_type - computed: true, optional: true, required: false
   private _ipType?: string; 
   public get ipType() {
     return this.getStringAttribute('ip_type');
   }
   public set ipType(value: string) {
     this._ipType = value;
+  }
+  public resetIpType() {
+    this._ipType = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipTypeInput() {
@@ -260,7 +281,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_loadbalancer_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.1',
+        providerVersion: '1.29.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
