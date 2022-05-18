@@ -339,7 +339,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_as_group_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.2',
+        providerVersion: '1.29.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

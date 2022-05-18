@@ -166,7 +166,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_protocol_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.2',
+        providerVersion: '1.29.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

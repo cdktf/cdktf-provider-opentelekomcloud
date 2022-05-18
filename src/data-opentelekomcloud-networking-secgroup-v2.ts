@@ -51,7 +51,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
       terraformResourceType: 'opentelekomcloud_networking_secgroup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.2',
+        providerVersion: '1.29.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
