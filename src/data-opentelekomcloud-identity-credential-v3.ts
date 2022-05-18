@@ -123,7 +123,7 @@ export class DataOpentelekomcloudIdentityCredentialV3 extends cdktf.TerraformDat
       terraformResourceType: 'opentelekomcloud_identity_credential_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.2',
+        providerVersion: '1.29.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
