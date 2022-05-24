@@ -24,6 +24,13 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly flavor: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#id EcsInstanceV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#image_id EcsInstanceV1#image_id}
   */
   readonly imageId: string;
@@ -118,6 +125,146 @@ export function ecsInstanceV1DataDisksToTerraform(struct?: EcsInstanceV1DataDisk
   }
 }
 
+export class EcsInstanceV1DataDisksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsInstanceV1DataDisks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsId = this._kmsId;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._snapshotId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotId = this._snapshotId;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsInstanceV1DataDisks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._kmsId = undefined;
+      this._size = undefined;
+      this._snapshotId = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._kmsId = value.kmsId;
+      this._size = value.size;
+      this._snapshotId = value.snapshotId;
+      this._type = value.type;
+    }
+  }
+
+  // kms_id - computed: false, optional: true, required: false
+  private _kmsId?: string; 
+  public get kmsId() {
+    return this.getStringAttribute('kms_id');
+  }
+  public set kmsId(value: string) {
+    this._kmsId = value;
+  }
+  public resetKmsId() {
+    this._kmsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsIdInput() {
+    return this._kmsId;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // snapshot_id - computed: false, optional: true, required: false
+  private _snapshotId?: string; 
+  public get snapshotId() {
+    return this.getStringAttribute('snapshot_id');
+  }
+  public set snapshotId(value: string) {
+    this._snapshotId = value;
+  }
+  public resetSnapshotId() {
+    this._snapshotId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotIdInput() {
+    return this._snapshotId;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class EcsInstanceV1DataDisksList extends cdktf.ComplexList {
+  public internalValue? : EcsInstanceV1DataDisks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsInstanceV1DataDisksOutputReference {
+    return new EcsInstanceV1DataDisksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsInstanceV1Nics {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}
@@ -140,6 +287,120 @@ export function ecsInstanceV1NicsToTerraform(struct?: EcsInstanceV1Nics | cdktf.
   }
 }
 
+export class EcsInstanceV1NicsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsInstanceV1Nics | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._networkId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkId = this._networkId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsInstanceV1Nics | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._networkId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._networkId = value.networkId;
+    }
+  }
+
+  // ip_address - computed: true, optional: true, required: false
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // mac_address - computed: true, optional: false, required: false
+  public get macAddress() {
+    return this.getStringAttribute('mac_address');
+  }
+
+  // network_id - computed: false, optional: false, required: true
+  private _networkId?: string; 
+  public get networkId() {
+    return this.getStringAttribute('network_id');
+  }
+  public set networkId(value: string) {
+    this._networkId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkIdInput() {
+    return this._networkId;
+  }
+
+  // port_id - computed: true, optional: false, required: false
+  public get portId() {
+    return this.getStringAttribute('port_id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class EcsInstanceV1NicsList extends cdktf.ComplexList {
+  public internalValue? : EcsInstanceV1Nics[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsInstanceV1NicsOutputReference {
+    return new EcsInstanceV1NicsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsInstanceV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#create EcsInstanceV1#create}
@@ -169,6 +430,7 @@ export function ecsInstanceV1TimeoutsToTerraform(struct?: EcsInstanceV1TimeoutsO
 
 export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -178,7 +440,10 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): EcsInstanceV1Timeouts | undefined {
+  public get internalValue(): EcsInstanceV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -196,15 +461,21 @@ export class EcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EcsInstanceV1Timeouts | undefined) {
+  public set internalValue(value: EcsInstanceV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -298,6 +569,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._deleteDisksOnTermination = config.deleteDisksOnTermination;
     this._flavor = config.flavor;
+    this._id = config.id;
     this._imageId = config.imageId;
     this._keyName = config.keyName;
     this._name = config.name;
@@ -309,8 +581,8 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._userData = config.userData;
     this._vpcId = config.vpcId;
-    this._dataDisks = config.dataDisks;
-    this._nics = config.nics;
+    this._dataDisks.internalValue = config.dataDisks;
+    this._nics.internalValue = config.nics;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -377,8 +649,19 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_id - computed: false, optional: false, required: true
@@ -549,34 +832,32 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // data_disks - computed: false, optional: true, required: false
-  private _dataDisks?: EcsInstanceV1DataDisks[] | cdktf.IResolvable; 
+  private _dataDisks = new EcsInstanceV1DataDisksList(this, "data_disks", false);
   public get dataDisks() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('data_disks');
+    return this._dataDisks;
   }
-  public set dataDisks(value: EcsInstanceV1DataDisks[] | cdktf.IResolvable) {
-    this._dataDisks = value;
+  public putDataDisks(value: EcsInstanceV1DataDisks[] | cdktf.IResolvable) {
+    this._dataDisks.internalValue = value;
   }
   public resetDataDisks() {
-    this._dataDisks = undefined;
+    this._dataDisks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get dataDisksInput() {
-    return this._dataDisks;
+    return this._dataDisks.internalValue;
   }
 
   // nics - computed: false, optional: false, required: true
-  private _nics?: EcsInstanceV1Nics[] | cdktf.IResolvable; 
+  private _nics = new EcsInstanceV1NicsList(this, "nics", false);
   public get nics() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('nics');
+    return this._nics;
   }
-  public set nics(value: EcsInstanceV1Nics[] | cdktf.IResolvable) {
-    this._nics = value;
+  public putNics(value: EcsInstanceV1Nics[] | cdktf.IResolvable) {
+    this._nics.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get nicsInput() {
-    return this._nics;
+    return this._nics.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -605,6 +886,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       delete_disks_on_termination: cdktf.booleanToTerraform(this._deleteDisksOnTermination),
       flavor: cdktf.stringToTerraform(this._flavor),
+      id: cdktf.stringToTerraform(this._id),
       image_id: cdktf.stringToTerraform(this._imageId),
       key_name: cdktf.stringToTerraform(this._keyName),
       name: cdktf.stringToTerraform(this._name),
@@ -616,8 +898,8 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform)(this._dataDisks),
-      nics: cdktf.listMapper(ecsInstanceV1NicsToTerraform)(this._nics),
+      data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform)(this._dataDisks.internalValue),
+      nics: cdktf.listMapper(ecsInstanceV1NicsToTerraform)(this._nics.internalValue),
       timeouts: ecsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

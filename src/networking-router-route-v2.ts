@@ -12,6 +12,13 @@ export interface NetworkingRouterRouteV2Config extends cdktf.TerraformMetaArgume
   */
   readonly destinationCidr: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#id NetworkingRouterRouteV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}
   */
   readonly nextHop: string;
@@ -60,6 +67,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._destinationCidr = config.destinationCidr;
+    this._id = config.id;
     this._nextHop = config.nextHop;
     this._region = config.region;
     this._routerId = config.routerId;
@@ -83,8 +91,19 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // next_hop - computed: false, optional: false, required: true
@@ -136,6 +155,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       destination_cidr: cdktf.stringToTerraform(this._destinationCidr),
+      id: cdktf.stringToTerraform(this._id),
       next_hop: cdktf.stringToTerraform(this._nextHop),
       region: cdktf.stringToTerraform(this._region),
       router_id: cdktf.stringToTerraform(this._routerId),

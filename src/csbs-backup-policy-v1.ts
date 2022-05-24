@@ -16,6 +16,13 @@ export interface CsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#id CsbsBackupPolicyV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#name CsbsBackupPolicyV1#name}
   */
   readonly name: string;
@@ -55,6 +62,9 @@ export interface CsbsBackupPolicyV1Config extends cdktf.TerraformMetaArguments {
 export interface CsbsBackupPolicyV1Resource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#id CsbsBackupPolicyV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -79,6 +89,121 @@ export function csbsBackupPolicyV1ResourceToTerraform(struct?: CsbsBackupPolicyV
   }
 }
 
+export class CsbsBackupPolicyV1ResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CsbsBackupPolicyV1Resource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupPolicyV1Resource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CsbsBackupPolicyV1ResourceList extends cdktf.ComplexList {
+  public internalValue? : CsbsBackupPolicyV1Resource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CsbsBackupPolicyV1ResourceOutputReference {
+    return new CsbsBackupPolicyV1ResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CsbsBackupPolicyV1ScheduledOperation {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#day_backups CsbsBackupPolicyV1#day_backups}
@@ -504,6 +629,102 @@ export function csbsBackupPolicyV1TagsToTerraform(struct?: CsbsBackupPolicyV1Tag
   }
 }
 
+export class CsbsBackupPolicyV1TagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CsbsBackupPolicyV1Tags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsbsBackupPolicyV1Tags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CsbsBackupPolicyV1TagsList extends cdktf.ComplexList {
+  public internalValue? : CsbsBackupPolicyV1Tags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CsbsBackupPolicyV1TagsOutputReference {
+    return new CsbsBackupPolicyV1TagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CsbsBackupPolicyV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_policy_v1#create CsbsBackupPolicyV1#create}
@@ -528,6 +749,7 @@ export function csbsBackupPolicyV1TimeoutsToTerraform(struct?: CsbsBackupPolicyV
 
 export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -537,7 +759,10 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CsbsBackupPolicyV1Timeouts | undefined {
+  public get internalValue(): CsbsBackupPolicyV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -551,14 +776,20 @@ export class CsbsBackupPolicyV1TimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CsbsBackupPolicyV1Timeouts | undefined) {
+  public set internalValue(value: CsbsBackupPolicyV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -633,12 +864,13 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
     });
     this._common = config.common;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._providerId = config.providerId;
     this._region = config.region;
-    this._resource = config.resource;
+    this._resource.internalValue = config.resource;
     this._scheduledOperation.internalValue = config.scheduledOperation;
-    this._tags = config.tags;
+    this._tags.internalValue = config.tags;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -684,8 +916,19 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -739,17 +982,16 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // resource - computed: false, optional: false, required: true
-  private _resource?: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable; 
+  private _resource = new CsbsBackupPolicyV1ResourceList(this, "resource", true);
   public get resource() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('resource')));
+    return this._resource;
   }
-  public set resource(value: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable) {
-    this._resource = value;
+  public putResource(value: CsbsBackupPolicyV1Resource[] | cdktf.IResolvable) {
+    this._resource.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceInput() {
-    return this._resource;
+    return this._resource.internalValue;
   }
 
   // scheduled_operation - computed: false, optional: false, required: true
@@ -766,20 +1008,19 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable; 
+  private _tags = new CsbsBackupPolicyV1TagsList(this, "tags", true);
   public get tags() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('tags')));
+    return this._tags;
   }
-  public set tags(value: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable) {
-    this._tags = value;
+  public putTags(value: CsbsBackupPolicyV1Tags[] | cdktf.IResolvable) {
+    this._tags.internalValue = value;
   }
   public resetTags() {
-    this._tags = undefined;
+    this._tags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
-    return this._tags;
+    return this._tags.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -806,12 +1047,13 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
     return {
       common: cdktf.hashMapper(cdktf.stringToTerraform)(this._common),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       provider_id: cdktf.stringToTerraform(this._providerId),
       region: cdktf.stringToTerraform(this._region),
-      resource: cdktf.listMapper(csbsBackupPolicyV1ResourceToTerraform)(this._resource),
+      resource: cdktf.listMapper(csbsBackupPolicyV1ResourceToTerraform)(this._resource.internalValue),
       scheduled_operation: csbsBackupPolicyV1ScheduledOperationToTerraform(this._scheduledOperation.internalValue),
-      tags: cdktf.listMapper(csbsBackupPolicyV1TagsToTerraform)(this._tags),
+      tags: cdktf.listMapper(csbsBackupPolicyV1TagsToTerraform)(this._tags.internalValue),
       timeouts: csbsBackupPolicyV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

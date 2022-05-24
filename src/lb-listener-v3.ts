@@ -36,6 +36,13 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly http2Enable?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#id LbListenerV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#keep_alive_timeout LbListenerV3#keep_alive_timeout}
   */
   readonly keepAliveTimeout?: number;
@@ -270,6 +277,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     this._defaultTlsContainerRef = config.defaultTlsContainerRef;
     this._description = config.description;
     this._http2Enable = config.http2Enable;
+    this._id = config.id;
     this._keepAliveTimeout = config.keepAliveTimeout;
     this._loadbalancerId = config.loadbalancerId;
     this._memberRetryEnable = config.memberRetryEnable;
@@ -405,8 +413,19 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // keep_alive_timeout - computed: true, optional: true, required: false
@@ -594,6 +613,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       default_tls_container_ref: cdktf.stringToTerraform(this._defaultTlsContainerRef),
       description: cdktf.stringToTerraform(this._description),
       http2_enable: cdktf.booleanToTerraform(this._http2Enable),
+      id: cdktf.stringToTerraform(this._id),
       keep_alive_timeout: cdktf.numberToTerraform(this._keepAliveTimeout),
       loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
       member_retry_enable: cdktf.booleanToTerraform(this._memberRetryEnable),

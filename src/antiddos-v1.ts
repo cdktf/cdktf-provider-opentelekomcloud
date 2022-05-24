@@ -28,6 +28,13 @@ export interface AntiddosV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly httpRequestPosId: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#id AntiddosV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/antiddos_v1#region AntiddosV1#region}
   */
   readonly region?: string;
@@ -71,6 +78,7 @@ export function antiddosV1TimeoutsToTerraform(struct?: AntiddosV1TimeoutsOutputR
 
 export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -80,7 +88,10 @@ export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): AntiddosV1Timeouts | undefined {
+  public get internalValue(): AntiddosV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -98,15 +109,21 @@ export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AntiddosV1Timeouts | undefined) {
+  public set internalValue(value: AntiddosV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -201,6 +218,7 @@ export class AntiddosV1 extends cdktf.TerraformResource {
     this._enableL7 = config.enableL7;
     this._floatingIpId = config.floatingIpId;
     this._httpRequestPosId = config.httpRequestPosId;
+    this._id = config.id;
     this._region = config.region;
     this._trafficPosId = config.trafficPosId;
     this._timeouts.internalValue = config.timeouts;
@@ -276,8 +294,19 @@ export class AntiddosV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // region - computed: true, optional: true, required: false
@@ -336,6 +365,7 @@ export class AntiddosV1 extends cdktf.TerraformResource {
       enable_l7: cdktf.booleanToTerraform(this._enableL7),
       floating_ip_id: cdktf.stringToTerraform(this._floatingIpId),
       http_request_pos_id: cdktf.numberToTerraform(this._httpRequestPosId),
+      id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       traffic_pos_id: cdktf.numberToTerraform(this._trafficPosId),
       timeouts: antiddosV1TimeoutsToTerraform(this._timeouts.internalValue),

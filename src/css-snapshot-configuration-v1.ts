@@ -16,6 +16,13 @@ export interface CssSnapshotConfigurationV1Config extends cdktf.TerraformMetaArg
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#id CssSnapshotConfigurationV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * configuration block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/css_snapshot_configuration_v1#configuration CssSnapshotConfigurationV1#configuration}
@@ -332,6 +339,7 @@ export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapsh
 
 export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -341,7 +349,10 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CssSnapshotConfigurationV1Timeouts | undefined {
+  public get internalValue(): CssSnapshotConfigurationV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -355,14 +366,20 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CssSnapshotConfigurationV1Timeouts | undefined) {
+  public set internalValue(value: CssSnapshotConfigurationV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._update = value.update;
     }
@@ -437,6 +454,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
     });
     this._automatic = config.automatic;
     this._clusterId = config.clusterId;
+    this._id = config.id;
     this._configuration.internalValue = config.configuration;
     this._creationPolicy.internalValue = config.creationPolicy;
     this._timeouts.internalValue = config.timeouts;
@@ -481,8 +499,19 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // configuration - computed: false, optional: true, required: false
@@ -541,6 +570,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
     return {
       automatic: cdktf.booleanToTerraform(this._automatic),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      id: cdktf.stringToTerraform(this._id),
       configuration: cssSnapshotConfigurationV1ConfigurationToTerraform(this._configuration.internalValue),
       creation_policy: cssSnapshotConfigurationV1CreationPolicyToTerraform(this._creationPolicy.internalValue),
       timeouts: cssSnapshotConfigurationV1TimeoutsToTerraform(this._timeouts.internalValue),

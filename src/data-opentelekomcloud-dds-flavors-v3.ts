@@ -12,6 +12,13 @@ export interface DataOpentelekomcloudDdsFlavorsV3Config extends cdktf.TerraformM
   */
   readonly engineName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_flavors_v3#id DataOpentelekomcloudDdsFlavorsV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_flavors_v3#memory DataOpentelekomcloudDdsFlavorsV3#memory}
   */
   readonly memory?: string;
@@ -69,8 +76,9 @@ export class DataOpentelekomcloudDdsFlavorsV3FlavorsOutputReference extends cdkt
   }
 
   // az_status - computed: true, optional: false, required: false
-  public azStatus(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'az_status').lookup(key);
+  private _azStatus = new cdktf.StringMap(this, "az_status");
+  public get azStatus() {
+    return this._azStatus;
   }
 
   // memory - computed: true, optional: false, required: false
@@ -148,6 +156,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
       lifecycle: config.lifecycle
     });
     this._engineName = config.engineName;
+    this._id = config.id;
     this._memory = config.memory;
     this._region = config.region;
     this._type = config.type;
@@ -178,8 +187,19 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // memory - computed: false, optional: true, required: false
@@ -253,6 +273,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       engine_name: cdktf.stringToTerraform(this._engineName),
+      id: cdktf.stringToTerraform(this._id),
       memory: cdktf.stringToTerraform(this._memory),
       region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),

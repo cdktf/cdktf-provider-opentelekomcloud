@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProtocolV3Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_protocol_v3#id IdentityProtocolV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}
   */
   readonly mappingId: string;
@@ -174,6 +181,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._mappingId = config.mappingId;
     this._protocol = config.protocol;
     this._providerId = config.providerId;
@@ -185,13 +193,25 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // links - computed: true, optional: false, required: false
-  public links(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'links').lookup(key);
+  private _links = new cdktf.StringMap(this, "links");
+  public get links() {
+    return this._links;
   }
 
   // mapping_id - computed: false, optional: false, required: true
@@ -255,6 +275,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       mapping_id: cdktf.stringToTerraform(this._mappingId),
       protocol: cdktf.stringToTerraform(this._protocol),
       provider_id: cdktf.stringToTerraform(this._providerId),

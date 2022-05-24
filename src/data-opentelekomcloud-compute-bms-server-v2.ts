@@ -17,6 +17,9 @@ export interface DataOpentelekomcloudComputeBmsServerV2Config extends cdktf.Terr
   readonly hostStatus?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_bms_server_v2#id DataOpentelekomcloudComputeBmsServerV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -373,8 +376,9 @@ export class DataOpentelekomcloudComputeBmsServerV2 extends cdktf.TerraformDataS
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'metadata').lookup(key);
+  private _metadata = new cdktf.StringMap(this, "metadata");
+  public get metadata() {
+    return this._metadata;
   }
 
   // name - computed: false, optional: true, required: false

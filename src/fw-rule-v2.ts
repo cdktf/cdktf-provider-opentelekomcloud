@@ -28,6 +28,13 @@ export interface FwRuleV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_rule_v2#id FwRuleV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_rule_v2#ip_version FwRuleV2#ip_version}
   */
   readonly ipVersion?: number;
@@ -100,6 +107,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
     this._destinationIpAddress = config.destinationIpAddress;
     this._destinationPort = config.destinationPort;
     this._enabled = config.enabled;
+    this._id = config.id;
     this._ipVersion = config.ipVersion;
     this._name = config.name;
     this._protocol = config.protocol;
@@ -192,8 +200,19 @@ export class FwRuleV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_version - computed: false, optional: true, required: false
@@ -332,6 +351,7 @@ export class FwRuleV2 extends cdktf.TerraformResource {
       destination_ip_address: cdktf.stringToTerraform(this._destinationIpAddress),
       destination_port: cdktf.stringToTerraform(this._destinationPort),
       enabled: cdktf.booleanToTerraform(this._enabled),
+      id: cdktf.stringToTerraform(this._id),
       ip_version: cdktf.numberToTerraform(this._ipVersion),
       name: cdktf.stringToTerraform(this._name),
       protocol: cdktf.stringToTerraform(this._protocol),

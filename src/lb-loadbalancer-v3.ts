@@ -20,6 +20,13 @@ export interface LbLoadbalancerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#id LbLoadbalancerV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#ip_target_enable LbLoadbalancerV3#ip_target_enable}
   */
   readonly ipTargetEnable?: boolean | cdktf.IResolvable;
@@ -81,6 +88,9 @@ export interface LbLoadbalancerV3PublicIp {
   readonly bandwidthSize?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#id LbLoadbalancerV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -99,6 +109,7 @@ export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3Pub
     bandwidth_name: cdktf.stringToTerraform(struct!.bandwidthName),
     bandwidth_share_type: cdktf.stringToTerraform(struct!.bandwidthShareType),
     bandwidth_size: cdktf.numberToTerraform(struct!.bandwidthSize),
+    id: cdktf.stringToTerraform(struct!.id),
     ip_type: cdktf.stringToTerraform(struct!.ipType),
   }
 }
@@ -133,6 +144,10 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.bandwidthSize = this._bandwidthSize;
     }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
     if (this._ipType !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipType = this._ipType;
@@ -147,6 +162,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
       this._bandwidthName = undefined;
       this._bandwidthShareType = undefined;
       this._bandwidthSize = undefined;
+      this._id = undefined;
       this._ipType = undefined;
     }
     else {
@@ -155,6 +171,7 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
       this._bandwidthName = value.bandwidthName;
       this._bandwidthShareType = value.bandwidthShareType;
       this._bandwidthSize = value.bandwidthSize;
+      this._id = value.id;
       this._ipType = value.ipType;
     }
   }
@@ -234,8 +251,19 @@ export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_type - computed: true, optional: true, required: false
@@ -292,6 +320,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
     this._adminStateUp = config.adminStateUp;
     this._availabilityZones = config.availabilityZones;
     this._description = config.description;
+    this._id = config.id;
     this._ipTargetEnable = config.ipTargetEnable;
     this._l4Flavor = config.l4Flavor;
     this._l7Flavor = config.l7Flavor;
@@ -359,8 +388,19 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_target_enable - computed: true, optional: true, required: false
@@ -539,6 +579,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       ip_target_enable: cdktf.booleanToTerraform(this._ipTargetEnable),
       l4_flavor: cdktf.stringToTerraform(this._l4Flavor),
       l7_flavor: cdktf.stringToTerraform(this._l7Flavor),

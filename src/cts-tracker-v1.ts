@@ -16,6 +16,13 @@ export interface CtsTrackerV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly filePrefixName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#id CtsTrackerV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#is_send_all_key_operation CtsTrackerV1#is_send_all_key_operation}
   */
   readonly isSendAllKeyOperation?: boolean | cdktf.IResolvable;
@@ -78,6 +85,7 @@ export function ctsTrackerV1TimeoutsToTerraform(struct?: CtsTrackerV1TimeoutsOut
 
 export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -87,7 +95,10 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CtsTrackerV1Timeouts | undefined {
+  public get internalValue(): CtsTrackerV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -101,14 +112,20 @@ export class CtsTrackerV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CtsTrackerV1Timeouts | undefined) {
+  public set internalValue(value: CtsTrackerV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -183,6 +200,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
     });
     this._bucketName = config.bucketName;
     this._filePrefixName = config.filePrefixName;
+    this._id = config.id;
     this._isSendAllKeyOperation = config.isSendAllKeyOperation;
     this._isSupportSmn = config.isSupportSmn;
     this._needNotifyUserList = config.needNotifyUserList;
@@ -228,8 +246,19 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_send_all_key_operation - computed: false, optional: true, required: false
@@ -386,6 +415,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
     return {
       bucket_name: cdktf.stringToTerraform(this._bucketName),
       file_prefix_name: cdktf.stringToTerraform(this._filePrefixName),
+      id: cdktf.stringToTerraform(this._id),
       is_send_all_key_operation: cdktf.booleanToTerraform(this._isSendAllKeyOperation),
       is_support_smn: cdktf.booleanToTerraform(this._isSupportSmn),
       need_notify_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._needNotifyUserList),

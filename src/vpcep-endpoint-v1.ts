@@ -16,6 +16,13 @@ export interface VpcepEndpointV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly enableWhitelist?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1#id VpcepEndpointV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}
   */
   readonly portIp?: string;
@@ -69,6 +76,7 @@ export function vpcepEndpointV1TimeoutsToTerraform(struct?: VpcepEndpointV1Timeo
 
 export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -78,7 +86,10 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): VpcepEndpointV1Timeouts | undefined {
+  public get internalValue(): VpcepEndpointV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default !== undefined) {
@@ -88,13 +99,19 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcepEndpointV1Timeouts | undefined) {
+  public set internalValue(value: VpcepEndpointV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._default = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._default = value.default;
     }
   }
@@ -152,6 +169,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
     });
     this._enableDns = config.enableDns;
     this._enableWhitelist = config.enableWhitelist;
+    this._id = config.id;
     this._portIp = config.portIp;
     this._routeTables = config.routeTables;
     this._serviceId = config.serviceId;
@@ -204,8 +222,19 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // marker_id - computed: true, optional: false, required: false
@@ -358,6 +387,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
     return {
       enable_dns: cdktf.booleanToTerraform(this._enableDns),
       enable_whitelist: cdktf.booleanToTerraform(this._enableWhitelist),
+      id: cdktf.stringToTerraform(this._id),
       port_ip: cdktf.stringToTerraform(this._portIp),
       route_tables: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTables),
       service_id: cdktf.stringToTerraform(this._serviceId),

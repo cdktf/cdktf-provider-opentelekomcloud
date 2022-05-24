@@ -20,6 +20,13 @@ export interface DataOpentelekomcloudComputeFlavorV2Config extends cdktf.Terrafo
   */
   readonly flavorId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_flavor_v2#id DataOpentelekomcloudComputeFlavorV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_flavor_v2#min_disk DataOpentelekomcloudComputeFlavorV2#min_disk}
   */
   readonly minDisk?: number;
@@ -94,6 +101,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
     this._availabilityZone = config.availabilityZone;
     this._disk = config.disk;
     this._flavorId = config.flavorId;
+    this._id = config.id;
     this._minDisk = config.minDisk;
     this._minRam = config.minRam;
     this._name = config.name;
@@ -142,8 +150,9 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
 
   // extra_specs - computed: true, optional: false, required: false
-  public extraSpecs(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'extra_specs').lookup(key);
+  private _extraSpecs = new cdktf.StringMap(this, "extra_specs");
+  public get extraSpecs() {
+    return this._extraSpecs;
   }
 
   // flavor_id - computed: false, optional: true, required: false
@@ -163,8 +172,19 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // min_disk - computed: false, optional: true, required: false
@@ -320,6 +340,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       disk: cdktf.numberToTerraform(this._disk),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
+      id: cdktf.stringToTerraform(this._id),
       min_disk: cdktf.numberToTerraform(this._minDisk),
       min_ram: cdktf.numberToTerraform(this._minRam),
       name: cdktf.stringToTerraform(this._name),

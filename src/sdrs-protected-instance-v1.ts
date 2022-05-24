@@ -24,6 +24,13 @@ export interface SdrsProtectedInstanceV1Config extends cdktf.TerraformMetaArgume
   */
   readonly groupId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}
   */
   readonly ipAddress?: string;
@@ -74,6 +81,7 @@ export function sdrsProtectedInstanceV1TimeoutsToTerraform(struct?: SdrsProtecte
 
 export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -83,7 +91,10 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): SdrsProtectedInstanceV1Timeouts | undefined {
+  public get internalValue(): SdrsProtectedInstanceV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -97,14 +108,20 @@ export class SdrsProtectedInstanceV1TimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SdrsProtectedInstanceV1Timeouts | undefined) {
+  public set internalValue(value: SdrsProtectedInstanceV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -181,6 +198,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
     this._deleteTargetServer = config.deleteTargetServer;
     this._description = config.description;
     this._groupId = config.groupId;
+    this._id = config.id;
     this._ipAddress = config.ipAddress;
     this._name = config.name;
     this._serverId = config.serverId;
@@ -260,8 +278,19 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_address - computed: false, optional: true, required: false
@@ -379,6 +408,7 @@ export class SdrsProtectedInstanceV1 extends cdktf.TerraformResource {
       delete_target_server: cdktf.booleanToTerraform(this._deleteTargetServer),
       description: cdktf.stringToTerraform(this._description),
       group_id: cdktf.stringToTerraform(this._groupId),
+      id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),

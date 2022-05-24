@@ -20,6 +20,13 @@ export interface MrsJobV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly hiveScriptPath?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_job_v1#id MrsJobV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_job_v1#input MrsJobV1#input}
   */
   readonly input?: string;
@@ -91,6 +98,7 @@ export function mrsJobV1TimeoutsToTerraform(struct?: MrsJobV1TimeoutsOutputRefer
 
 export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -100,7 +108,10 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MrsJobV1Timeouts | undefined {
+  public get internalValue(): MrsJobV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -118,15 +129,21 @@ export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MrsJobV1Timeouts | undefined) {
+  public set internalValue(value: MrsJobV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -219,6 +236,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
     this._arguments = config.arguments;
     this._clusterId = config.clusterId;
     this._hiveScriptPath = config.hiveScriptPath;
+    this._id = config.id;
     this._input = config.input;
     this._isProtected = config.isProtected;
     this._isPublic = config.isPublic;
@@ -281,8 +299,19 @@ export class MrsJobV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // input - computed: true, optional: true, required: false
@@ -450,6 +479,7 @@ export class MrsJobV1 extends cdktf.TerraformResource {
       arguments: cdktf.stringToTerraform(this._arguments),
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       hive_script_path: cdktf.stringToTerraform(this._hiveScriptPath),
+      id: cdktf.stringToTerraform(this._id),
       input: cdktf.stringToTerraform(this._input),
       is_protected: cdktf.booleanToTerraform(this._isProtected),
       is_public: cdktf.booleanToTerraform(this._isPublic),

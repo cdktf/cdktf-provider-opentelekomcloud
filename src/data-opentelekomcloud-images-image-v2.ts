@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudImagesImageV2Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/images_image_v2#id DataOpentelekomcloudImagesImageV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/images_image_v2#most_recent DataOpentelekomcloudImagesImageV2#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
@@ -91,6 +98,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._mostRecent = config.mostRecent;
     this._name = config.name;
     this._nameRegex = config.nameRegex;
@@ -135,13 +143,25 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'metadata').lookup(key);
+  private _metadata = new cdktf.StringMap(this, "metadata");
+  public get metadata() {
+    return this._metadata;
   }
 
   // min_disk_gb - computed: true, optional: false, required: false
@@ -377,6 +397,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       name: cdktf.stringToTerraform(this._name),
       name_regex: cdktf.stringToTerraform(this._nameRegex),

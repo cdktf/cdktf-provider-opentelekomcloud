@@ -24,6 +24,13 @@ export interface ComputeBmsServerV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly flavorName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#id ComputeBmsServerV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#image_id ComputeBmsServerV2#image_id}
   */
   readonly imageId?: string;
@@ -139,6 +146,259 @@ export function computeBmsServerV2BlockDeviceToTerraform(struct?: ComputeBmsServ
   }
 }
 
+export class ComputeBmsServerV2BlockDeviceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeBmsServerV2BlockDevice | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bootIndex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bootIndex = this._bootIndex;
+    }
+    if (this._deleteOnTermination !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteOnTermination = this._deleteOnTermination;
+    }
+    if (this._destinationType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationType = this._destinationType;
+    }
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    if (this._guestFormat !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.guestFormat = this._guestFormat;
+    }
+    if (this._sourceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceType = this._sourceType;
+    }
+    if (this._uuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uuid = this._uuid;
+    }
+    if (this._volumeSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeSize = this._volumeSize;
+    }
+    if (this._volumeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeType = this._volumeType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeBmsServerV2BlockDevice | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._bootIndex = undefined;
+      this._deleteOnTermination = undefined;
+      this._destinationType = undefined;
+      this._deviceName = undefined;
+      this._guestFormat = undefined;
+      this._sourceType = undefined;
+      this._uuid = undefined;
+      this._volumeSize = undefined;
+      this._volumeType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._bootIndex = value.bootIndex;
+      this._deleteOnTermination = value.deleteOnTermination;
+      this._destinationType = value.destinationType;
+      this._deviceName = value.deviceName;
+      this._guestFormat = value.guestFormat;
+      this._sourceType = value.sourceType;
+      this._uuid = value.uuid;
+      this._volumeSize = value.volumeSize;
+      this._volumeType = value.volumeType;
+    }
+  }
+
+  // boot_index - computed: false, optional: true, required: false
+  private _bootIndex?: number; 
+  public get bootIndex() {
+    return this.getNumberAttribute('boot_index');
+  }
+  public set bootIndex(value: number) {
+    this._bootIndex = value;
+  }
+  public resetBootIndex() {
+    this._bootIndex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootIndexInput() {
+    return this._bootIndex;
+  }
+
+  // delete_on_termination - computed: false, optional: true, required: false
+  private _deleteOnTermination?: boolean | cdktf.IResolvable; 
+  public get deleteOnTermination() {
+    return this.getBooleanAttribute('delete_on_termination');
+  }
+  public set deleteOnTermination(value: boolean | cdktf.IResolvable) {
+    this._deleteOnTermination = value;
+  }
+  public resetDeleteOnTermination() {
+    this._deleteOnTermination = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteOnTerminationInput() {
+    return this._deleteOnTermination;
+  }
+
+  // destination_type - computed: false, optional: true, required: false
+  private _destinationType?: string; 
+  public get destinationType() {
+    return this.getStringAttribute('destination_type');
+  }
+  public set destinationType(value: string) {
+    this._destinationType = value;
+  }
+  public resetDestinationType() {
+    this._destinationType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationTypeInput() {
+    return this._destinationType;
+  }
+
+  // device_name - computed: false, optional: true, required: false
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  public resetDeviceName() {
+    this._deviceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+
+  // guest_format - computed: false, optional: true, required: false
+  private _guestFormat?: string; 
+  public get guestFormat() {
+    return this.getStringAttribute('guest_format');
+  }
+  public set guestFormat(value: string) {
+    this._guestFormat = value;
+  }
+  public resetGuestFormat() {
+    this._guestFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get guestFormatInput() {
+    return this._guestFormat;
+  }
+
+  // source_type - computed: false, optional: false, required: true
+  private _sourceType?: string; 
+  public get sourceType() {
+    return this.getStringAttribute('source_type');
+  }
+  public set sourceType(value: string) {
+    this._sourceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceTypeInput() {
+    return this._sourceType;
+  }
+
+  // uuid - computed: false, optional: true, required: false
+  private _uuid?: string; 
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+  public set uuid(value: string) {
+    this._uuid = value;
+  }
+  public resetUuid() {
+    this._uuid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uuidInput() {
+    return this._uuid;
+  }
+
+  // volume_size - computed: false, optional: true, required: false
+  private _volumeSize?: number; 
+  public get volumeSize() {
+    return this.getNumberAttribute('volume_size');
+  }
+  public set volumeSize(value: number) {
+    this._volumeSize = value;
+  }
+  public resetVolumeSize() {
+    this._volumeSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeSizeInput() {
+    return this._volumeSize;
+  }
+
+  // volume_type - computed: false, optional: true, required: false
+  private _volumeType?: string; 
+  public get volumeType() {
+    return this.getStringAttribute('volume_type');
+  }
+  public set volumeType(value: string) {
+    this._volumeType = value;
+  }
+  public resetVolumeType() {
+    this._volumeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeTypeInput() {
+    return this._volumeType;
+  }
+}
+
+export class ComputeBmsServerV2BlockDeviceList extends cdktf.ComplexList {
+  public internalValue? : ComputeBmsServerV2BlockDevice[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeBmsServerV2BlockDeviceOutputReference {
+    return new ComputeBmsServerV2BlockDeviceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ComputeBmsServerV2Network {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#access_network ComputeBmsServerV2#access_network}
@@ -181,6 +441,201 @@ export function computeBmsServerV2NetworkToTerraform(struct?: ComputeBmsServerV2
   }
 }
 
+export class ComputeBmsServerV2NetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeBmsServerV2Network | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessNetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessNetwork = this._accessNetwork;
+    }
+    if (this._fixedIpV4 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fixedIpV4 = this._fixedIpV4;
+    }
+    if (this._fixedIpV6 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fixedIpV6 = this._fixedIpV6;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._uuid !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uuid = this._uuid;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeBmsServerV2Network | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accessNetwork = undefined;
+      this._fixedIpV4 = undefined;
+      this._fixedIpV6 = undefined;
+      this._name = undefined;
+      this._port = undefined;
+      this._uuid = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accessNetwork = value.accessNetwork;
+      this._fixedIpV4 = value.fixedIpV4;
+      this._fixedIpV6 = value.fixedIpV6;
+      this._name = value.name;
+      this._port = value.port;
+      this._uuid = value.uuid;
+    }
+  }
+
+  // access_network - computed: false, optional: true, required: false
+  private _accessNetwork?: boolean | cdktf.IResolvable; 
+  public get accessNetwork() {
+    return this.getBooleanAttribute('access_network');
+  }
+  public set accessNetwork(value: boolean | cdktf.IResolvable) {
+    this._accessNetwork = value;
+  }
+  public resetAccessNetwork() {
+    this._accessNetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessNetworkInput() {
+    return this._accessNetwork;
+  }
+
+  // fixed_ip_v4 - computed: true, optional: true, required: false
+  private _fixedIpV4?: string; 
+  public get fixedIpV4() {
+    return this.getStringAttribute('fixed_ip_v4');
+  }
+  public set fixedIpV4(value: string) {
+    this._fixedIpV4 = value;
+  }
+  public resetFixedIpV4() {
+    this._fixedIpV4 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedIpV4Input() {
+    return this._fixedIpV4;
+  }
+
+  // fixed_ip_v6 - computed: true, optional: true, required: false
+  private _fixedIpV6?: string; 
+  public get fixedIpV6() {
+    return this.getStringAttribute('fixed_ip_v6');
+  }
+  public set fixedIpV6(value: string) {
+    this._fixedIpV6 = value;
+  }
+  public resetFixedIpV6() {
+    this._fixedIpV6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedIpV6Input() {
+    return this._fixedIpV6;
+  }
+
+  // mac - computed: true, optional: false, required: false
+  public get mac() {
+    return this.getStringAttribute('mac');
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // port - computed: true, optional: true, required: false
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // uuid - computed: true, optional: true, required: false
+  private _uuid?: string; 
+  public get uuid() {
+    return this.getStringAttribute('uuid');
+  }
+  public set uuid(value: string) {
+    this._uuid = value;
+  }
+  public resetUuid() {
+    this._uuid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uuidInput() {
+    return this._uuid;
+  }
+}
+
+export class ComputeBmsServerV2NetworkList extends cdktf.ComplexList {
+  public internalValue? : ComputeBmsServerV2Network[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeBmsServerV2NetworkOutputReference {
+    return new ComputeBmsServerV2NetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ComputeBmsServerV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2#create ComputeBmsServerV2#create}
@@ -210,6 +665,7 @@ export function computeBmsServerV2TimeoutsToTerraform(struct?: ComputeBmsServerV
 
 export class ComputeBmsServerV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -219,7 +675,10 @@ export class ComputeBmsServerV2TimeoutsOutputReference extends cdktf.ComplexObje
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ComputeBmsServerV2Timeouts | undefined {
+  public get internalValue(): ComputeBmsServerV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -237,15 +696,21 @@ export class ComputeBmsServerV2TimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeBmsServerV2Timeouts | undefined) {
+  public set internalValue(value: ComputeBmsServerV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -339,6 +804,7 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._flavorId = config.flavorId;
     this._flavorName = config.flavorName;
+    this._id = config.id;
     this._imageId = config.imageId;
     this._imageName = config.imageName;
     this._keyPair = config.keyPair;
@@ -349,8 +815,8 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
     this._stopBeforeDestroy = config.stopBeforeDestroy;
     this._tags = config.tags;
     this._userData = config.userData;
-    this._blockDevice = config.blockDevice;
-    this._network = config.network;
+    this._blockDevice.internalValue = config.blockDevice;
+    this._network.internalValue = config.network;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -445,8 +911,19 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_id - computed: true, optional: true, required: false
@@ -622,37 +1099,35 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
   }
 
   // block_device - computed: false, optional: true, required: false
-  private _blockDevice?: ComputeBmsServerV2BlockDevice[] | cdktf.IResolvable; 
+  private _blockDevice = new ComputeBmsServerV2BlockDeviceList(this, "block_device", false);
   public get blockDevice() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('block_device');
+    return this._blockDevice;
   }
-  public set blockDevice(value: ComputeBmsServerV2BlockDevice[] | cdktf.IResolvable) {
-    this._blockDevice = value;
+  public putBlockDevice(value: ComputeBmsServerV2BlockDevice[] | cdktf.IResolvable) {
+    this._blockDevice.internalValue = value;
   }
   public resetBlockDevice() {
-    this._blockDevice = undefined;
+    this._blockDevice.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get blockDeviceInput() {
-    return this._blockDevice;
+    return this._blockDevice.internalValue;
   }
 
   // network - computed: false, optional: true, required: false
-  private _network?: ComputeBmsServerV2Network[] | cdktf.IResolvable; 
+  private _network = new ComputeBmsServerV2NetworkList(this, "network", false);
   public get network() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network');
+    return this._network;
   }
-  public set network(value: ComputeBmsServerV2Network[] | cdktf.IResolvable) {
-    this._network = value;
+  public putNetwork(value: ComputeBmsServerV2Network[] | cdktf.IResolvable) {
+    this._network.internalValue = value;
   }
   public resetNetwork() {
-    this._network = undefined;
+    this._network.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networkInput() {
-    return this._network;
+    return this._network.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -681,6 +1156,7 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
       flavor_name: cdktf.stringToTerraform(this._flavorName),
+      id: cdktf.stringToTerraform(this._id),
       image_id: cdktf.stringToTerraform(this._imageId),
       image_name: cdktf.stringToTerraform(this._imageName),
       key_pair: cdktf.stringToTerraform(this._keyPair),
@@ -691,8 +1167,8 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
       stop_before_destroy: cdktf.booleanToTerraform(this._stopBeforeDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
-      block_device: cdktf.listMapper(computeBmsServerV2BlockDeviceToTerraform)(this._blockDevice),
-      network: cdktf.listMapper(computeBmsServerV2NetworkToTerraform)(this._network),
+      block_device: cdktf.listMapper(computeBmsServerV2BlockDeviceToTerraform)(this._blockDevice.internalValue),
+      network: cdktf.listMapper(computeBmsServerV2NetworkToTerraform)(this._network.internalValue),
       timeouts: computeBmsServerV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

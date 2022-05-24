@@ -16,6 +16,13 @@ export interface NatDnatRuleV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly floatingIpId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#id NatDnatRuleV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#internal_service_port NatDnatRuleV2#internal_service_port}
   */
   readonly internalServicePort: number;
@@ -66,6 +73,7 @@ export function natDnatRuleV2TimeoutsToTerraform(struct?: NatDnatRuleV2TimeoutsO
 
 export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,7 +83,10 @@ export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): NatDnatRuleV2Timeouts | undefined {
+  public get internalValue(): NatDnatRuleV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -89,14 +100,20 @@ export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NatDnatRuleV2Timeouts | undefined) {
+  public set internalValue(value: NatDnatRuleV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -171,6 +188,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
     });
     this._externalServicePort = config.externalServicePort;
     this._floatingIpId = config.floatingIpId;
+    this._id = config.id;
     this._internalServicePort = config.internalServicePort;
     this._natGatewayId = config.natGatewayId;
     this._portId = config.portId;
@@ -220,8 +238,19 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // internal_service_port - computed: false, optional: false, required: true
@@ -329,6 +358,7 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
     return {
       external_service_port: cdktf.numberToTerraform(this._externalServicePort),
       floating_ip_id: cdktf.stringToTerraform(this._floatingIpId),
+      id: cdktf.stringToTerraform(this._id),
       internal_service_port: cdktf.numberToTerraform(this._internalServicePort),
       nat_gateway_id: cdktf.stringToTerraform(this._natGatewayId),
       port_id: cdktf.stringToTerraform(this._portId),

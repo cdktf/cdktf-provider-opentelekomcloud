@@ -28,6 +28,13 @@ export interface VpcSubnetV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly gatewayIp: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_subnet_v1#id VpcSubnetV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_subnet_v1#name VpcSubnetV1#name}
   */
   readonly name: string;
@@ -86,6 +93,7 @@ export function vpcSubnetV1TimeoutsToTerraform(struct?: VpcSubnetV1TimeoutsOutpu
 
 export class VpcSubnetV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,7 +103,10 @@ export class VpcSubnetV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): VpcSubnetV1Timeouts | undefined {
+  public get internalValue(): VpcSubnetV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -109,14 +120,20 @@ export class VpcSubnetV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcSubnetV1Timeouts | undefined) {
+  public set internalValue(value: VpcSubnetV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -194,6 +211,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
     this._dhcpEnable = config.dhcpEnable;
     this._dnsList = config.dnsList;
     this._gatewayIp = config.gatewayIp;
+    this._id = config.id;
     this._name = config.name;
     this._ntpAddresses = config.ntpAddresses;
     this._primaryDns = config.primaryDns;
@@ -283,8 +301,19 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -430,6 +459,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       dhcp_enable: cdktf.booleanToTerraform(this._dhcpEnable),
       dns_list: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsList),
       gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       ntp_addresses: cdktf.stringToTerraform(this._ntpAddresses),
       primary_dns: cdktf.stringToTerraform(this._primaryDns),

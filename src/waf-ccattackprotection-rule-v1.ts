@@ -20,6 +20,13 @@ export interface WafCcattackprotectionRuleV1Config extends cdktf.TerraformMetaAr
   */
   readonly blockContentType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#id WafCcattackprotectionRuleV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1#limit_num WafCcattackprotectionRuleV1#limit_num}
   */
   readonly limitNum: number;
@@ -86,6 +93,7 @@ export function wafCcattackprotectionRuleV1TimeoutsToTerraform(struct?: WafCcatt
 
 export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,7 +103,10 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): WafCcattackprotectionRuleV1Timeouts | undefined {
+  public get internalValue(): WafCcattackprotectionRuleV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -109,14 +120,20 @@ export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafCcattackprotectionRuleV1Timeouts | undefined) {
+  public set internalValue(value: WafCcattackprotectionRuleV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -192,6 +209,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
     this._actionCategory = config.actionCategory;
     this._blockContent = config.blockContent;
     this._blockContentType = config.blockContentType;
+    this._id = config.id;
     this._limitNum = config.limitNum;
     this._limitPeriod = config.limitPeriod;
     this._lockTime = config.lockTime;
@@ -259,8 +277,19 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // limit_num - computed: false, optional: false, required: true
@@ -417,6 +446,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
       action_category: cdktf.stringToTerraform(this._actionCategory),
       block_content: cdktf.stringToTerraform(this._blockContent),
       block_content_type: cdktf.stringToTerraform(this._blockContentType),
+      id: cdktf.stringToTerraform(this._id),
       limit_num: cdktf.numberToTerraform(this._limitNum),
       limit_period: cdktf.numberToTerraform(this._limitPeriod),
       lock_time: cdktf.numberToTerraform(this._lockTime),

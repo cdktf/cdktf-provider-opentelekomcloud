@@ -20,6 +20,13 @@ export interface IdentityAgencyV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly domainRoles?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#id IdentityAgencyV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#name IdentityAgencyV3#name}
   */
   readonly name: string;
@@ -58,6 +65,102 @@ export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3
   }
 }
 
+export class IdentityAgencyV3ProjectRoleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IdentityAgencyV3ProjectRole | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._roles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roles = this._roles;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityAgencyV3ProjectRole | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._project = undefined;
+      this._roles = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._project = value.project;
+      this._roles = value.roles;
+    }
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // roles - computed: false, optional: false, required: true
+  private _roles?: string[]; 
+  public get roles() {
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+  }
+  public set roles(value: string[]) {
+    this._roles = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rolesInput() {
+    return this._roles;
+  }
+}
+
+export class IdentityAgencyV3ProjectRoleList extends cdktf.ComplexList {
+  public internalValue? : IdentityAgencyV3ProjectRole[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IdentityAgencyV3ProjectRoleOutputReference {
+    return new IdentityAgencyV3ProjectRoleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IdentityAgencyV3Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#create IdentityAgencyV3#create}
@@ -87,6 +190,7 @@ export function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3Tim
 
 export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,7 +200,10 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): IdentityAgencyV3Timeouts | undefined {
+  public get internalValue(): IdentityAgencyV3Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -114,15 +221,21 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IdentityAgencyV3Timeouts | undefined) {
+  public set internalValue(value: IdentityAgencyV3Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -215,8 +328,9 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
     this._delegatedDomainName = config.delegatedDomainName;
     this._description = config.description;
     this._domainRoles = config.domainRoles;
+    this._id = config.id;
     this._name = config.name;
-    this._projectRole = config.projectRole;
+    this._projectRole.internalValue = config.projectRole;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -285,8 +399,19 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -303,20 +428,19 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   }
 
   // project_role - computed: false, optional: true, required: false
-  private _projectRole?: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable; 
+  private _projectRole = new IdentityAgencyV3ProjectRoleList(this, "project_role", true);
   public get projectRole() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('project_role')));
+    return this._projectRole;
   }
-  public set projectRole(value: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable) {
-    this._projectRole = value;
+  public putProjectRole(value: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable) {
+    this._projectRole.internalValue = value;
   }
   public resetProjectRole() {
-    this._projectRole = undefined;
+    this._projectRole.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get projectRoleInput() {
-    return this._projectRole;
+    return this._projectRole.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -344,8 +468,9 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
       delegated_domain_name: cdktf.stringToTerraform(this._delegatedDomainName),
       description: cdktf.stringToTerraform(this._description),
       domain_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._domainRoles),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform)(this._projectRole),
+      project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform)(this._projectRole.internalValue),
       timeouts: identityAgencyV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

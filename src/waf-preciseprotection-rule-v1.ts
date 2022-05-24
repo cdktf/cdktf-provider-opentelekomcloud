@@ -16,6 +16,13 @@ export interface WafPreciseprotectionRuleV1Config extends cdktf.TerraformMetaArg
   */
   readonly end?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_preciseprotection_rule_v1#id WafPreciseprotectionRuleV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_preciseprotection_rule_v1#name WafPreciseprotectionRuleV1#name}
   */
   readonly name: string;
@@ -80,6 +87,143 @@ export function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPrec
   }
 }
 
+export class WafPreciseprotectionRuleV1ConditionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WafPreciseprotectionRuleV1Conditions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._contents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contents = this._contents;
+    }
+    if (this._index !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.index = this._index;
+    }
+    if (this._logic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logic = this._logic;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafPreciseprotectionRuleV1Conditions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._category = undefined;
+      this._contents = undefined;
+      this._index = undefined;
+      this._logic = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._category = value.category;
+      this._contents = value.contents;
+      this._index = value.index;
+      this._logic = value.logic;
+    }
+  }
+
+  // category - computed: false, optional: false, required: true
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // contents - computed: false, optional: false, required: true
+  private _contents?: string[]; 
+  public get contents() {
+    return this.getListAttribute('contents');
+  }
+  public set contents(value: string[]) {
+    this._contents = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentsInput() {
+    return this._contents;
+  }
+
+  // index - computed: false, optional: true, required: false
+  private _index?: string; 
+  public get index() {
+    return this.getStringAttribute('index');
+  }
+  public set index(value: string) {
+    this._index = value;
+  }
+  public resetIndex() {
+    this._index = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get indexInput() {
+    return this._index;
+  }
+
+  // logic - computed: false, optional: false, required: true
+  private _logic?: string; 
+  public get logic() {
+    return this.getStringAttribute('logic');
+  }
+  public set logic(value: string) {
+    this._logic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logicInput() {
+    return this._logic;
+  }
+}
+
+export class WafPreciseprotectionRuleV1ConditionsList extends cdktf.ComplexList {
+  public internalValue? : WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WafPreciseprotectionRuleV1ConditionsOutputReference {
+    return new WafPreciseprotectionRuleV1ConditionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface WafPreciseprotectionRuleV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_preciseprotection_rule_v1#create WafPreciseprotectionRuleV1#create}
@@ -104,6 +248,7 @@ export function wafPreciseprotectionRuleV1TimeoutsToTerraform(struct?: WafPrecis
 
 export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -113,7 +258,10 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): WafPreciseprotectionRuleV1Timeouts | undefined {
+  public get internalValue(): WafPreciseprotectionRuleV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -127,14 +275,20 @@ export class WafPreciseprotectionRuleV1TimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafPreciseprotectionRuleV1Timeouts | undefined) {
+  public set internalValue(value: WafPreciseprotectionRuleV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -209,12 +363,13 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
     });
     this._actionCategory = config.actionCategory;
     this._end = config.end;
+    this._id = config.id;
     this._name = config.name;
     this._policyId = config.policyId;
     this._priority = config.priority;
     this._start = config.start;
     this._time = config.time;
-    this._conditions = config.conditions;
+    this._conditions.internalValue = config.conditions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -252,8 +407,19 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -331,17 +497,16 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
   }
 
   // conditions - computed: false, optional: false, required: true
-  private _conditions?: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable; 
+  private _conditions = new WafPreciseprotectionRuleV1ConditionsList(this, "conditions", false);
   public get conditions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('conditions');
+    return this._conditions;
   }
-  public set conditions(value: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable) {
-    this._conditions = value;
+  public putConditions(value: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable) {
+    this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get conditionsInput() {
-    return this._conditions;
+    return this._conditions.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -368,12 +533,13 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
     return {
       action_category: cdktf.stringToTerraform(this._actionCategory),
       end: cdktf.stringToTerraform(this._end),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       policy_id: cdktf.stringToTerraform(this._policyId),
       priority: cdktf.numberToTerraform(this._priority),
       start: cdktf.stringToTerraform(this._start),
       time: cdktf.booleanToTerraform(this._time),
-      conditions: cdktf.listMapper(wafPreciseprotectionRuleV1ConditionsToTerraform)(this._conditions),
+      conditions: cdktf.listMapper(wafPreciseprotectionRuleV1ConditionsToTerraform)(this._conditions.internalValue),
       timeouts: wafPreciseprotectionRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

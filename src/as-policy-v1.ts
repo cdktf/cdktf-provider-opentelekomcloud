@@ -16,6 +16,13 @@ export interface AsPolicyV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly coolDownTime?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#id AsPolicyV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#region AsPolicyV1#region}
   */
   readonly region?: string;
@@ -343,6 +350,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
     });
     this._alarmId = config.alarmId;
     this._coolDownTime = config.coolDownTime;
+    this._id = config.id;
     this._region = config.region;
     this._scalingGroupId = config.scalingGroupId;
     this._scalingPolicyName = config.scalingPolicyName;
@@ -388,8 +396,19 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // region - computed: true, optional: true, required: false
@@ -487,6 +506,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
     return {
       alarm_id: cdktf.stringToTerraform(this._alarmId),
       cool_down_time: cdktf.numberToTerraform(this._coolDownTime),
+      id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       scaling_group_id: cdktf.stringToTerraform(this._scalingGroupId),
       scaling_policy_name: cdktf.stringToTerraform(this._scalingPolicyName),

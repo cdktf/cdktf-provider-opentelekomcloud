@@ -60,6 +60,13 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly flavorId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#id CceNodeV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#iptype CceNodeV3#iptype}
   */
   readonly iptype?: string;
@@ -184,6 +191,146 @@ export function cceNodeV3DataVolumesToTerraform(struct?: CceNodeV3DataVolumes | 
   }
 }
 
+export class CceNodeV3DataVolumesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CceNodeV3DataVolumes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._extendParam !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extendParam = this._extendParam;
+    }
+    if (this._kmsId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsId = this._kmsId;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._volumetype !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumetype = this._volumetype;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceNodeV3DataVolumes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._extendParam = undefined;
+      this._kmsId = undefined;
+      this._size = undefined;
+      this._volumetype = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._extendParam = value.extendParam;
+      this._kmsId = value.kmsId;
+      this._size = value.size;
+      this._volumetype = value.volumetype;
+    }
+  }
+
+  // extend_param - computed: false, optional: true, required: false
+  private _extendParam?: string; 
+  public get extendParam() {
+    return this.getStringAttribute('extend_param');
+  }
+  public set extendParam(value: string) {
+    this._extendParam = value;
+  }
+  public resetExtendParam() {
+    this._extendParam = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extendParamInput() {
+    return this._extendParam;
+  }
+
+  // kms_id - computed: false, optional: true, required: false
+  private _kmsId?: string; 
+  public get kmsId() {
+    return this.getStringAttribute('kms_id');
+  }
+  public set kmsId(value: string) {
+    this._kmsId = value;
+  }
+  public resetKmsId() {
+    this._kmsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsIdInput() {
+    return this._kmsId;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // volumetype - computed: false, optional: false, required: true
+  private _volumetype?: string; 
+  public get volumetype() {
+    return this.getStringAttribute('volumetype');
+  }
+  public set volumetype(value: string) {
+    this._volumetype = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumetypeInput() {
+    return this._volumetype;
+  }
+}
+
+export class CceNodeV3DataVolumesList extends cdktf.ComplexList {
+  public internalValue? : CceNodeV3DataVolumes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CceNodeV3DataVolumesOutputReference {
+    return new CceNodeV3DataVolumesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CceNodeV3RootVolume {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#extend_param CceNodeV3#extend_param}
@@ -324,6 +471,121 @@ export function cceNodeV3TaintsToTerraform(struct?: CceNodeV3Taints | cdktf.IRes
   }
 }
 
+export class CceNodeV3TaintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CceNodeV3Taints | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._effect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effect = this._effect;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CceNodeV3Taints | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._effect = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._effect = value.effect;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // effect - computed: false, optional: false, required: true
+  private _effect?: string; 
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+  public set effect(value: string) {
+    this._effect = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectInput() {
+    return this._effect;
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CceNodeV3TaintsList extends cdktf.ComplexList {
+  public internalValue? : CceNodeV3Taints[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CceNodeV3TaintsOutputReference {
+    return new CceNodeV3TaintsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CceNodeV3Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_v3#create CceNodeV3#create}
@@ -348,6 +610,7 @@ export function cceNodeV3TimeoutsToTerraform(struct?: CceNodeV3TimeoutsOutputRef
 
 export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,7 +620,10 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CceNodeV3Timeouts | undefined {
+  public get internalValue(): CceNodeV3Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -371,14 +637,20 @@ export class CceNodeV3TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CceNodeV3Timeouts | undefined) {
+  public set internalValue(value: CceNodeV3Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -464,6 +736,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
     this._eipIds = config.eipIds;
     this._extendParamChargingMode = config.extendParamChargingMode;
     this._flavorId = config.flavorId;
+    this._id = config.id;
     this._iptype = config.iptype;
     this._k8STags = config.k8STags;
     this._keyPair = config.keyPair;
@@ -481,9 +754,9 @@ export class CceNodeV3 extends cdktf.TerraformResource {
     this._sharetype = config.sharetype;
     this._subnetId = config.subnetId;
     this._tags = config.tags;
-    this._dataVolumes = config.dataVolumes;
+    this._dataVolumes.internalValue = config.dataVolumes;
     this._rootVolume.internalValue = config.rootVolume;
-    this._taints = config.taints;
+    this._taints.internalValue = config.taints;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -691,8 +964,19 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // iptype - computed: true, optional: true, required: false
@@ -980,17 +1264,16 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // data_volumes - computed: false, optional: false, required: true
-  private _dataVolumes?: CceNodeV3DataVolumes[] | cdktf.IResolvable; 
+  private _dataVolumes = new CceNodeV3DataVolumesList(this, "data_volumes", false);
   public get dataVolumes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('data_volumes');
+    return this._dataVolumes;
   }
-  public set dataVolumes(value: CceNodeV3DataVolumes[] | cdktf.IResolvable) {
-    this._dataVolumes = value;
+  public putDataVolumes(value: CceNodeV3DataVolumes[] | cdktf.IResolvable) {
+    this._dataVolumes.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dataVolumesInput() {
-    return this._dataVolumes;
+    return this._dataVolumes.internalValue;
   }
 
   // root_volume - computed: false, optional: false, required: true
@@ -1007,20 +1290,19 @@ export class CceNodeV3 extends cdktf.TerraformResource {
   }
 
   // taints - computed: false, optional: true, required: false
-  private _taints?: CceNodeV3Taints[] | cdktf.IResolvable; 
+  private _taints = new CceNodeV3TaintsList(this, "taints", false);
   public get taints() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('taints');
+    return this._taints;
   }
-  public set taints(value: CceNodeV3Taints[] | cdktf.IResolvable) {
-    this._taints = value;
+  public putTaints(value: CceNodeV3Taints[] | cdktf.IResolvable) {
+    this._taints.internalValue = value;
   }
   public resetTaints() {
-    this._taints = undefined;
+    this._taints.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get taintsInput() {
-    return this._taints;
+    return this._taints.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1058,6 +1340,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       eip_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eipIds),
       extend_param_charging_mode: cdktf.numberToTerraform(this._extendParamChargingMode),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
+      id: cdktf.stringToTerraform(this._id),
       iptype: cdktf.stringToTerraform(this._iptype),
       k8s_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._k8STags),
       key_pair: cdktf.stringToTerraform(this._keyPair),
@@ -1075,9 +1358,9 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       sharetype: cdktf.stringToTerraform(this._sharetype),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      data_volumes: cdktf.listMapper(cceNodeV3DataVolumesToTerraform)(this._dataVolumes),
+      data_volumes: cdktf.listMapper(cceNodeV3DataVolumesToTerraform)(this._dataVolumes.internalValue),
       root_volume: cceNodeV3RootVolumeToTerraform(this._rootVolume.internalValue),
-      taints: cdktf.listMapper(cceNodeV3TaintsToTerraform)(this._taints),
+      taints: cdktf.listMapper(cceNodeV3TaintsToTerraform)(this._taints.internalValue),
       timeouts: cceNodeV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
