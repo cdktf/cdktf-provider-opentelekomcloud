@@ -28,6 +28,13 @@ export interface DmsInstanceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly engineVersion: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_instance_v1#id DmsInstanceV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dms_instance_v1#maintain_begin DmsInstanceV1#maintain_begin}
   */
   readonly maintainBegin?: string;
@@ -120,6 +127,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
     this._description = config.description;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
+    this._id = config.id;
     this._maintainBegin = config.maintainBegin;
     this._maintainEnd = config.maintainEnd;
     this._name = config.name;
@@ -221,8 +229,19 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // maintain_begin - computed: true, optional: true, required: false
@@ -478,6 +497,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
+      id: cdktf.stringToTerraform(this._id),
       maintain_begin: cdktf.stringToTerraform(this._maintainBegin),
       maintain_end: cdktf.stringToTerraform(this._maintainEnd),
       name: cdktf.stringToTerraform(this._name),

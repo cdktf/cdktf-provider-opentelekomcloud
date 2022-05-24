@@ -16,6 +16,13 @@ export interface DnsZoneV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly email?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_zone_v2#id DnsZoneV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_zone_v2#name DnsZoneV2#name}
   */
   readonly name: string;
@@ -74,6 +81,102 @@ export function dnsZoneV2RouterToTerraform(struct?: DnsZoneV2Router | cdktf.IRes
   }
 }
 
+export class DnsZoneV2RouterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DnsZoneV2Router | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._routerId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routerId = this._routerId;
+    }
+    if (this._routerRegion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routerRegion = this._routerRegion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DnsZoneV2Router | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._routerId = undefined;
+      this._routerRegion = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._routerId = value.routerId;
+      this._routerRegion = value.routerRegion;
+    }
+  }
+
+  // router_id - computed: false, optional: false, required: true
+  private _routerId?: string; 
+  public get routerId() {
+    return this.getStringAttribute('router_id');
+  }
+  public set routerId(value: string) {
+    this._routerId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routerIdInput() {
+    return this._routerId;
+  }
+
+  // router_region - computed: false, optional: false, required: true
+  private _routerRegion?: string; 
+  public get routerRegion() {
+    return this.getStringAttribute('router_region');
+  }
+  public set routerRegion(value: string) {
+    this._routerRegion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routerRegionInput() {
+    return this._routerRegion;
+  }
+}
+
+export class DnsZoneV2RouterList extends cdktf.ComplexList {
+  public internalValue? : DnsZoneV2Router[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DnsZoneV2RouterOutputReference {
+    return new DnsZoneV2RouterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DnsZoneV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_zone_v2#create DnsZoneV2#create}
@@ -103,6 +206,7 @@ export function dnsZoneV2TimeoutsToTerraform(struct?: DnsZoneV2TimeoutsOutputRef
 
 export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,7 +216,10 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DnsZoneV2Timeouts | undefined {
+  public get internalValue(): DnsZoneV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -130,15 +237,21 @@ export class DnsZoneV2TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsZoneV2Timeouts | undefined) {
+  public set internalValue(value: DnsZoneV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -230,13 +343,14 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._email = config.email;
+    this._id = config.id;
     this._name = config.name;
     this._region = config.region;
     this._tags = config.tags;
     this._ttl = config.ttl;
     this._type = config.type;
     this._valueSpecs = config.valueSpecs;
-    this._router = config.router;
+    this._router.internalValue = config.router;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -277,8 +391,19 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // masters - computed: true, optional: false, required: false
@@ -380,20 +505,19 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
   }
 
   // router - computed: false, optional: true, required: false
-  private _router?: DnsZoneV2Router[] | cdktf.IResolvable; 
+  private _router = new DnsZoneV2RouterList(this, "router", true);
   public get router() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('router')));
+    return this._router;
   }
-  public set router(value: DnsZoneV2Router[] | cdktf.IResolvable) {
-    this._router = value;
+  public putRouter(value: DnsZoneV2Router[] | cdktf.IResolvable) {
+    this._router.internalValue = value;
   }
   public resetRouter() {
-    this._router = undefined;
+    this._router.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get routerInput() {
-    return this._router;
+    return this._router.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -420,13 +544,14 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       email: cdktf.stringToTerraform(this._email),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      router: cdktf.listMapper(dnsZoneV2RouterToTerraform)(this._router),
+      router: cdktf.listMapper(dnsZoneV2RouterToTerraform)(this._router.internalValue),
       timeouts: dnsZoneV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

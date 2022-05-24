@@ -20,6 +20,13 @@ export interface IdentityRoleV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#id IdentityRoleV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * statement block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#statement IdentityRoleV3#statement}
@@ -48,6 +55,102 @@ export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statem
   }
 }
 
+export class IdentityRoleV3StatementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IdentityRoleV3Statement | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._action !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.action = this._action;
+    }
+    if (this._effect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effect = this._effect;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityRoleV3Statement | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._action = undefined;
+      this._effect = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._action = value.action;
+      this._effect = value.effect;
+    }
+  }
+
+  // action - computed: false, optional: false, required: true
+  private _action?: string[]; 
+  public get action() {
+    return this.getListAttribute('action');
+  }
+  public set action(value: string[]) {
+    this._action = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
+
+  // effect - computed: false, optional: false, required: true
+  private _effect?: string; 
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+  public set effect(value: string) {
+    this._effect = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectInput() {
+    return this._effect;
+  }
+}
+
+export class IdentityRoleV3StatementList extends cdktf.ComplexList {
+  public internalValue? : IdentityRoleV3Statement[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IdentityRoleV3StatementOutputReference {
+    return new IdentityRoleV3StatementOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3 opentelekomcloud_identity_role_v3}
@@ -86,7 +189,8 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
     this._description = config.description;
     this._displayLayer = config.displayLayer;
     this._displayName = config.displayName;
-    this._statement = config.statement;
+    this._id = config.id;
+    this._statement.internalValue = config.statement;
   }
 
   // ==========
@@ -143,8 +247,19 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -153,17 +268,16 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
   }
 
   // statement - computed: false, optional: false, required: true
-  private _statement?: IdentityRoleV3Statement[] | cdktf.IResolvable; 
+  private _statement = new IdentityRoleV3StatementList(this, "statement", false);
   public get statement() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('statement');
+    return this._statement;
   }
-  public set statement(value: IdentityRoleV3Statement[] | cdktf.IResolvable) {
-    this._statement = value;
+  public putStatement(value: IdentityRoleV3Statement[] | cdktf.IResolvable) {
+    this._statement.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get statementInput() {
-    return this._statement;
+    return this._statement.internalValue;
   }
 
   // =========
@@ -175,7 +289,8 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       display_layer: cdktf.stringToTerraform(this._displayLayer),
       display_name: cdktf.stringToTerraform(this._displayName),
-      statement: cdktf.listMapper(identityRoleV3StatementToTerraform)(this._statement),
+      id: cdktf.stringToTerraform(this._id),
+      statement: cdktf.listMapper(identityRoleV3StatementToTerraform)(this._statement.internalValue),
     };
   }
 }

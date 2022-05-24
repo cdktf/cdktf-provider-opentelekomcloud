@@ -28,6 +28,13 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly alarmName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#id CesAlarmrule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * alarm_actions block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#alarm_actions CesAlarmrule#alarm_actions}
@@ -86,6 +93,102 @@ export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmAc
   }
 }
 
+export class CesAlarmruleAlarmActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAlarmruleAlarmActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._notificationList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationList = this._notificationList;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleAlarmActions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._notificationList = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._notificationList = value.notificationList;
+      this._type = value.type;
+    }
+  }
+
+  // notification_list - computed: false, optional: false, required: true
+  private _notificationList?: string[]; 
+  public get notificationList() {
+    return this.getListAttribute('notification_list');
+  }
+  public set notificationList(value: string[]) {
+    this._notificationList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationListInput() {
+    return this._notificationList;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CesAlarmruleAlarmActionsList extends cdktf.ComplexList {
+  public internalValue? : CesAlarmruleAlarmActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAlarmruleAlarmActionsOutputReference {
+    return new CesAlarmruleAlarmActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAlarmruleCondition {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#comparison_operator CesAlarmrule#comparison_operator}
@@ -293,6 +396,102 @@ export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarm
   }
 }
 
+export class CesAlarmruleInsufficientdataActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAlarmruleInsufficientdataActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._notificationList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationList = this._notificationList;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleInsufficientdataActions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._notificationList = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._notificationList = value.notificationList;
+      this._type = value.type;
+    }
+  }
+
+  // notification_list - computed: false, optional: false, required: true
+  private _notificationList?: string[]; 
+  public get notificationList() {
+    return this.getListAttribute('notification_list');
+  }
+  public set notificationList(value: string[]) {
+    this._notificationList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationListInput() {
+    return this._notificationList;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CesAlarmruleInsufficientdataActionsList extends cdktf.ComplexList {
+  public internalValue? : CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAlarmruleInsufficientdataActionsOutputReference {
+    return new CesAlarmruleInsufficientdataActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAlarmruleMetricDimensions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#name CesAlarmrule#name}
@@ -315,6 +514,102 @@ export function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMet
   }
 }
 
+export class CesAlarmruleMetricDimensionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAlarmruleMetricDimensions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleMetricDimensions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CesAlarmruleMetricDimensionsList extends cdktf.ComplexList {
+  public internalValue? : CesAlarmruleMetricDimensions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAlarmruleMetricDimensionsOutputReference {
+    return new CesAlarmruleMetricDimensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAlarmruleMetric {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#metric_name CesAlarmrule#metric_name}
@@ -366,9 +661,9 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.namespace = this._namespace;
     }
-    if (this._dimensions !== undefined) {
+    if (this._dimensions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dimensions = this._dimensions;
+      internalValueResult.dimensions = this._dimensions?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -378,13 +673,13 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this._metricName = undefined;
       this._namespace = undefined;
-      this._dimensions = undefined;
+      this._dimensions.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metricName = value.metricName;
       this._namespace = value.namespace;
-      this._dimensions = value.dimensions;
+      this._dimensions.internalValue = value.dimensions;
     }
   }
 
@@ -415,17 +710,16 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   }
 
   // dimensions - computed: false, optional: false, required: true
-  private _dimensions?: CesAlarmruleMetricDimensions[] | cdktf.IResolvable; 
+  private _dimensions = new CesAlarmruleMetricDimensionsList(this, "dimensions", false);
   public get dimensions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dimensions');
+    return this._dimensions;
   }
-  public set dimensions(value: CesAlarmruleMetricDimensions[] | cdktf.IResolvable) {
-    this._dimensions = value;
+  public putDimensions(value: CesAlarmruleMetricDimensions[] | cdktf.IResolvable) {
+    this._dimensions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dimensionsInput() {
-    return this._dimensions;
+    return this._dimensions.internalValue;
   }
 }
 export interface CesAlarmruleOkActions {
@@ -450,6 +744,102 @@ export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions 
   }
 }
 
+export class CesAlarmruleOkActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAlarmruleOkActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._notificationList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationList = this._notificationList;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAlarmruleOkActions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._notificationList = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._notificationList = value.notificationList;
+      this._type = value.type;
+    }
+  }
+
+  // notification_list - computed: false, optional: false, required: true
+  private _notificationList?: string[]; 
+  public get notificationList() {
+    return this.getListAttribute('notification_list');
+  }
+  public set notificationList(value: string[]) {
+    this._notificationList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationListInput() {
+    return this._notificationList;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CesAlarmruleOkActionsList extends cdktf.ComplexList {
+  public internalValue? : CesAlarmruleOkActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAlarmruleOkActionsOutputReference {
+    return new CesAlarmruleOkActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAlarmruleTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#create CesAlarmrule#create}
@@ -479,6 +869,7 @@ export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeoutsOut
 
 export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -488,7 +879,10 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): CesAlarmruleTimeouts | undefined {
+  public get internalValue(): CesAlarmruleTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -506,15 +900,21 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CesAlarmruleTimeouts | undefined) {
+  public set internalValue(value: CesAlarmruleTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -609,11 +1009,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
     this._alarmEnabled = config.alarmEnabled;
     this._alarmLevel = config.alarmLevel;
     this._alarmName = config.alarmName;
-    this._alarmActions = config.alarmActions;
+    this._id = config.id;
+    this._alarmActions.internalValue = config.alarmActions;
     this._condition.internalValue = config.condition;
-    this._insufficientdataActions = config.insufficientdataActions;
+    this._insufficientdataActions.internalValue = config.insufficientdataActions;
     this._metric.internalValue = config.metric;
-    this._okActions = config.okActions;
+    this._okActions.internalValue = config.okActions;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -704,8 +1105,19 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -714,20 +1126,19 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // alarm_actions - computed: false, optional: true, required: false
-  private _alarmActions?: CesAlarmruleAlarmActions[] | cdktf.IResolvable; 
+  private _alarmActions = new CesAlarmruleAlarmActionsList(this, "alarm_actions", false);
   public get alarmActions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('alarm_actions');
+    return this._alarmActions;
   }
-  public set alarmActions(value: CesAlarmruleAlarmActions[] | cdktf.IResolvable) {
-    this._alarmActions = value;
+  public putAlarmActions(value: CesAlarmruleAlarmActions[] | cdktf.IResolvable) {
+    this._alarmActions.internalValue = value;
   }
   public resetAlarmActions() {
-    this._alarmActions = undefined;
+    this._alarmActions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get alarmActionsInput() {
-    return this._alarmActions;
+    return this._alarmActions.internalValue;
   }
 
   // condition - computed: false, optional: false, required: true
@@ -744,20 +1155,19 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // insufficientdata_actions - computed: false, optional: true, required: false
-  private _insufficientdataActions?: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable; 
+  private _insufficientdataActions = new CesAlarmruleInsufficientdataActionsList(this, "insufficientdata_actions", false);
   public get insufficientdataActions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('insufficientdata_actions');
+    return this._insufficientdataActions;
   }
-  public set insufficientdataActions(value: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable) {
-    this._insufficientdataActions = value;
+  public putInsufficientdataActions(value: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable) {
+    this._insufficientdataActions.internalValue = value;
   }
   public resetInsufficientdataActions() {
-    this._insufficientdataActions = undefined;
+    this._insufficientdataActions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get insufficientdataActionsInput() {
-    return this._insufficientdataActions;
+    return this._insufficientdataActions.internalValue;
   }
 
   // metric - computed: false, optional: false, required: true
@@ -774,20 +1184,19 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   }
 
   // ok_actions - computed: false, optional: true, required: false
-  private _okActions?: CesAlarmruleOkActions[] | cdktf.IResolvable; 
+  private _okActions = new CesAlarmruleOkActionsList(this, "ok_actions", false);
   public get okActions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ok_actions');
+    return this._okActions;
   }
-  public set okActions(value: CesAlarmruleOkActions[] | cdktf.IResolvable) {
-    this._okActions = value;
+  public putOkActions(value: CesAlarmruleOkActions[] | cdktf.IResolvable) {
+    this._okActions.internalValue = value;
   }
   public resetOkActions() {
-    this._okActions = undefined;
+    this._okActions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get okActionsInput() {
-    return this._okActions;
+    return this._okActions.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -817,11 +1226,12 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       alarm_enabled: cdktf.booleanToTerraform(this._alarmEnabled),
       alarm_level: cdktf.numberToTerraform(this._alarmLevel),
       alarm_name: cdktf.stringToTerraform(this._alarmName),
-      alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform)(this._alarmActions),
+      id: cdktf.stringToTerraform(this._id),
+      alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform)(this._alarmActions.internalValue),
       condition: cesAlarmruleConditionToTerraform(this._condition.internalValue),
-      insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform)(this._insufficientdataActions),
+      insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform)(this._insufficientdataActions.internalValue),
       metric: cesAlarmruleMetricToTerraform(this._metric.internalValue),
-      ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform)(this._okActions),
+      ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform)(this._okActions.internalValue),
       timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

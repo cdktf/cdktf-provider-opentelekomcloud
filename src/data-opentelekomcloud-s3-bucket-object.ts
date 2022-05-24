@@ -12,6 +12,13 @@ export interface DataOpentelekomcloudS3BucketObjectConfig extends cdktf.Terrafor
   */
   readonly bucket: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/s3_bucket_object#id DataOpentelekomcloudS3BucketObject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/s3_bucket_object#key DataOpentelekomcloudS3BucketObject#key}
   */
   readonly key: string;
@@ -60,6 +67,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
       lifecycle: config.lifecycle
     });
     this._bucket = config.bucket;
+    this._id = config.id;
     this._key = config.key;
     this._range = config.range;
     this._versionId = config.versionId;
@@ -133,8 +141,19 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -156,8 +175,9 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   }
 
   // metadata - computed: true, optional: false, required: false
-  public metadata(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'metadata').lookup(key);
+  private _metadata = new cdktf.StringMap(this, "metadata");
+  public get metadata() {
+    return this._metadata;
   }
 
   // range - computed: false, optional: true, required: false
@@ -214,6 +234,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket: cdktf.stringToTerraform(this._bucket),
+      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       range: cdktf.stringToTerraform(this._range),
       version_id: cdktf.stringToTerraform(this._versionId),

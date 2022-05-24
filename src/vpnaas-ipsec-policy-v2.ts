@@ -24,6 +24,13 @@ export interface VpnaasIpsecPolicyV2Config extends cdktf.TerraformMetaArguments 
   */
   readonly encryptionAlgorithm?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#id VpnaasIpsecPolicyV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#name VpnaasIpsecPolicyV2#name}
   */
   readonly name?: string;
@@ -82,6 +89,108 @@ export function vpnaasIpsecPolicyV2LifetimeToTerraform(struct?: VpnaasIpsecPolic
   }
 }
 
+export class VpnaasIpsecPolicyV2LifetimeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpnaasIpsecPolicyV2Lifetime | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._units !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.units = this._units;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnaasIpsecPolicyV2Lifetime | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._units = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._units = value.units;
+      this._value = value.value;
+    }
+  }
+
+  // units - computed: true, optional: true, required: false
+  private _units?: string; 
+  public get units() {
+    return this.getStringAttribute('units');
+  }
+  public set units(value: string) {
+    this._units = value;
+  }
+  public resetUnits() {
+    this._units = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unitsInput() {
+    return this._units;
+  }
+
+  // value - computed: true, optional: true, required: false
+  private _value?: number; 
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+  public set value(value: number) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class VpnaasIpsecPolicyV2LifetimeList extends cdktf.ComplexList {
+  public internalValue? : VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpnaasIpsecPolicyV2LifetimeOutputReference {
+    return new VpnaasIpsecPolicyV2LifetimeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface VpnaasIpsecPolicyV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ipsec_policy_v2#create VpnaasIpsecPolicyV2#create}
@@ -101,6 +210,7 @@ export function vpnaasIpsecPolicyV2TimeoutsToTerraform(struct?: VpnaasIpsecPolic
 
 export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -110,7 +220,10 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): VpnaasIpsecPolicyV2Timeouts | undefined {
+  public get internalValue(): VpnaasIpsecPolicyV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -120,13 +233,19 @@ export class VpnaasIpsecPolicyV2TimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpnaasIpsecPolicyV2Timeouts | undefined) {
+  public set internalValue(value: VpnaasIpsecPolicyV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
     }
   }
@@ -186,13 +305,14 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
     this._description = config.description;
     this._encapsulationMode = config.encapsulationMode;
     this._encryptionAlgorithm = config.encryptionAlgorithm;
+    this._id = config.id;
     this._name = config.name;
     this._pfs = config.pfs;
     this._region = config.region;
     this._tenantId = config.tenantId;
     this._transformProtocol = config.transformProtocol;
     this._valueSpecs = config.valueSpecs;
-    this._lifetime = config.lifetime;
+    this._lifetime.internalValue = config.lifetime;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -265,8 +385,19 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -366,20 +497,19 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
   }
 
   // lifetime - computed: false, optional: true, required: false
-  private _lifetime?: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable; 
+  private _lifetime = new VpnaasIpsecPolicyV2LifetimeList(this, "lifetime", true);
   public get lifetime() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('lifetime')));
+    return this._lifetime;
   }
-  public set lifetime(value: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable) {
-    this._lifetime = value;
+  public putLifetime(value: VpnaasIpsecPolicyV2Lifetime[] | cdktf.IResolvable) {
+    this._lifetime.internalValue = value;
   }
   public resetLifetime() {
-    this._lifetime = undefined;
+    this._lifetime.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lifetimeInput() {
-    return this._lifetime;
+    return this._lifetime.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -408,13 +538,14 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       encapsulation_mode: cdktf.stringToTerraform(this._encapsulationMode),
       encryption_algorithm: cdktf.stringToTerraform(this._encryptionAlgorithm),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       pfs: cdktf.stringToTerraform(this._pfs),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       transform_protocol: cdktf.stringToTerraform(this._transformProtocol),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform)(this._lifetime),
+      lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform)(this._lifetime.internalValue),
       timeouts: vpnaasIpsecPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

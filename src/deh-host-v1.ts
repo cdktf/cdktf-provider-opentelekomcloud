@@ -36,6 +36,13 @@ export interface DehHostV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly hostTypeName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/deh_host_v1#id DehHostV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/deh_host_v1#instance_total DehHostV1#instance_total}
   */
   readonly instanceTotal?: number;
@@ -92,6 +99,69 @@ export function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHost
   }
 }
 
+export class DehHostV1AvailableInstanceCapacitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DehHostV1AvailableInstanceCapacities | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DehHostV1AvailableInstanceCapacities | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // flavor - computed: true, optional: false, required: false
+  public get flavor() {
+    return this.getStringAttribute('flavor');
+  }
+}
+
+export class DehHostV1AvailableInstanceCapacitiesList extends cdktf.ComplexList {
+  public internalValue? : DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DehHostV1AvailableInstanceCapacitiesOutputReference {
+    return new DehHostV1AvailableInstanceCapacitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DehHostV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/deh_host_v1#create DehHostV1#create}
@@ -116,6 +186,7 @@ export function dehHostV1TimeoutsToTerraform(struct?: DehHostV1TimeoutsOutputRef
 
 export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,7 +196,10 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DehHostV1Timeouts | undefined {
+  public get internalValue(): DehHostV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -139,14 +213,20 @@ export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DehHostV1Timeouts | undefined) {
+  public set internalValue(value: DehHostV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -226,6 +306,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
     this._cores = config.cores;
     this._hostType = config.hostType;
     this._hostTypeName = config.hostTypeName;
+    this._id = config.id;
     this._instanceTotal = config.instanceTotal;
     this._instanceUuids = config.instanceUuids;
     this._memory = config.memory;
@@ -234,7 +315,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
     this._sockets = config.sockets;
     this._status = config.status;
     this._vcpus = config.vcpus;
-    this._availableInstanceCapacities = config.availableInstanceCapacities;
+    this._availableInstanceCapacities.internalValue = config.availableInstanceCapacities;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -349,8 +430,19 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_total - computed: true, optional: true, required: false
@@ -479,20 +571,19 @@ export class DehHostV1 extends cdktf.TerraformResource {
   }
 
   // available_instance_capacities - computed: false, optional: true, required: false
-  private _availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable; 
+  private _availableInstanceCapacities = new DehHostV1AvailableInstanceCapacitiesList(this, "available_instance_capacities", false);
   public get availableInstanceCapacities() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('available_instance_capacities');
+    return this._availableInstanceCapacities;
   }
-  public set availableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable) {
-    this._availableInstanceCapacities = value;
+  public putAvailableInstanceCapacities(value: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable) {
+    this._availableInstanceCapacities.internalValue = value;
   }
   public resetAvailableInstanceCapacities() {
-    this._availableInstanceCapacities = undefined;
+    this._availableInstanceCapacities.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get availableInstanceCapacitiesInput() {
-    return this._availableInstanceCapacities;
+    return this._availableInstanceCapacities.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -524,6 +615,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
       cores: cdktf.numberToTerraform(this._cores),
       host_type: cdktf.stringToTerraform(this._hostType),
       host_type_name: cdktf.stringToTerraform(this._hostTypeName),
+      id: cdktf.stringToTerraform(this._id),
       instance_total: cdktf.numberToTerraform(this._instanceTotal),
       instance_uuids: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceUuids),
       memory: cdktf.numberToTerraform(this._memory),
@@ -532,7 +624,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
       sockets: cdktf.numberToTerraform(this._sockets),
       status: cdktf.stringToTerraform(this._status),
       vcpus: cdktf.numberToTerraform(this._vcpus),
-      available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform)(this._availableInstanceCapacities),
+      available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform)(this._availableInstanceCapacities.internalValue),
       timeouts: dehHostV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

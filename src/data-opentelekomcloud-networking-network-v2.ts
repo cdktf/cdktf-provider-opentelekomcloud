@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudNetworkingNetworkV2Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#id DataOpentelekomcloudNetworkingNetworkV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_network_v2#matching_subnet_cidr DataOpentelekomcloudNetworkingNetworkV2#matching_subnet_cidr}
   */
   readonly matchingSubnetCidr?: string;
@@ -66,6 +73,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._matchingSubnetCidr = config.matchingSubnetCidr;
     this._name = config.name;
     this._networkId = config.networkId;
@@ -83,8 +91,19 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // matching_subnet_cidr - computed: false, optional: true, required: false
@@ -178,6 +197,7 @@ export class DataOpentelekomcloudNetworkingNetworkV2 extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       matching_subnet_cidr: cdktf.stringToTerraform(this._matchingSubnetCidr),
       name: cdktf.stringToTerraform(this._name),
       network_id: cdktf.stringToTerraform(this._networkId),

@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDnsNameserversV2Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#id DataOpentelekomcloudDnsNameserversV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2#zone_id DataOpentelekomcloudDnsNameserversV2#zone_id}
   */
   readonly zoneId?: string;
@@ -40,6 +47,108 @@ export function dataOpentelekomcloudDnsNameserversV2NameserversToTerraform(struc
   }
 }
 
+export class DataOpentelekomcloudDnsNameserversV2NameserversOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudDnsNameserversV2Nameservers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudDnsNameserversV2Nameservers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hostname = undefined;
+      this._priority = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hostname = value.hostname;
+      this._priority = value.priority;
+    }
+  }
+
+  // hostname - computed: false, optional: true, required: false
+  private _hostname?: string; 
+  public get hostname() {
+    return this.getStringAttribute('hostname');
+  }
+  public set hostname(value: string) {
+    this._hostname = value;
+  }
+  public resetHostname() {
+    this._hostname = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+}
+
+export class DataOpentelekomcloudDnsNameserversV2NameserversList extends cdktf.ComplexList {
+  public internalValue? : DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudDnsNameserversV2NameserversOutputReference {
+    return new DataOpentelekomcloudDnsNameserversV2NameserversOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}
@@ -75,8 +184,9 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._zoneId = config.zoneId;
-    this._nameservers = config.nameservers;
+    this._nameservers.internalValue = config.nameservers;
   }
 
   // ==========
@@ -84,8 +194,19 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // zone_id - computed: true, optional: true, required: false
@@ -105,20 +226,19 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
   }
 
   // nameservers - computed: false, optional: true, required: false
-  private _nameservers?: DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable; 
+  private _nameservers = new DataOpentelekomcloudDnsNameserversV2NameserversList(this, "nameservers", false);
   public get nameservers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('nameservers');
+    return this._nameservers;
   }
-  public set nameservers(value: DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable) {
-    this._nameservers = value;
+  public putNameservers(value: DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable) {
+    this._nameservers.internalValue = value;
   }
   public resetNameservers() {
-    this._nameservers = undefined;
+    this._nameservers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameserversInput() {
-    return this._nameservers;
+    return this._nameservers.internalValue;
   }
 
   // =========
@@ -127,8 +247,9 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      nameservers: cdktf.listMapper(dataOpentelekomcloudDnsNameserversV2NameserversToTerraform)(this._nameservers),
+      nameservers: cdktf.listMapper(dataOpentelekomcloudDnsNameserversV2NameserversToTerraform)(this._nameservers.internalValue),
     };
   }
 }

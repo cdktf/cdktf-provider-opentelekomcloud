@@ -44,6 +44,13 @@ export interface S3BucketObjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly etag?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket_object#id S3BucketObject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s3_bucket_object#key S3BucketObject#key}
   */
   readonly key: string;
@@ -108,6 +115,7 @@ export class S3BucketObject extends cdktf.TerraformResource {
     this._contentLanguage = config.contentLanguage;
     this._contentType = config.contentType;
     this._etag = config.etag;
+    this._id = config.id;
     this._key = config.key;
     this._serverSideEncryption = config.serverSideEncryption;
     this._source = config.source;
@@ -261,8 +269,19 @@ export class S3BucketObject extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // key - computed: false, optional: false, required: true
@@ -362,6 +381,7 @@ export class S3BucketObject extends cdktf.TerraformResource {
       content_language: cdktf.stringToTerraform(this._contentLanguage),
       content_type: cdktf.stringToTerraform(this._contentType),
       etag: cdktf.stringToTerraform(this._etag),
+      id: cdktf.stringToTerraform(this._id),
       key: cdktf.stringToTerraform(this._key),
       server_side_encryption: cdktf.stringToTerraform(this._serverSideEncryption),
       source: cdktf.stringToTerraform(this._source),

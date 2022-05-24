@@ -52,6 +52,13 @@ export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly coreNodeSize: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#id MrsClusterV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#log_collection MrsClusterV1#log_collection}
   */
   readonly logCollection?: number;
@@ -204,6 +211,316 @@ export function mrsClusterV1AddJobsToTerraform(struct?: MrsClusterV1AddJobs | cd
   }
 }
 
+export class MrsClusterV1AddJobsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MrsClusterV1AddJobs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._arguments !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.arguments = this._arguments;
+    }
+    if (this._fileAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileAction = this._fileAction;
+    }
+    if (this._hiveScriptPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hiveScriptPath = this._hiveScriptPath;
+    }
+    if (this._hql !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hql = this._hql;
+    }
+    if (this._input !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.input = this._input;
+    }
+    if (this._jarPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jarPath = this._jarPath;
+    }
+    if (this._jobLog !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobLog = this._jobLog;
+    }
+    if (this._jobName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobName = this._jobName;
+    }
+    if (this._jobType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jobType = this._jobType;
+    }
+    if (this._output !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.output = this._output;
+    }
+    if (this._shutdownCluster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shutdownCluster = this._shutdownCluster;
+    }
+    if (this._submitJobOnceClusterRun !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.submitJobOnceClusterRun = this._submitJobOnceClusterRun;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MrsClusterV1AddJobs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._arguments = undefined;
+      this._fileAction = undefined;
+      this._hiveScriptPath = undefined;
+      this._hql = undefined;
+      this._input = undefined;
+      this._jarPath = undefined;
+      this._jobLog = undefined;
+      this._jobName = undefined;
+      this._jobType = undefined;
+      this._output = undefined;
+      this._shutdownCluster = undefined;
+      this._submitJobOnceClusterRun = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._arguments = value.arguments;
+      this._fileAction = value.fileAction;
+      this._hiveScriptPath = value.hiveScriptPath;
+      this._hql = value.hql;
+      this._input = value.input;
+      this._jarPath = value.jarPath;
+      this._jobLog = value.jobLog;
+      this._jobName = value.jobName;
+      this._jobType = value.jobType;
+      this._output = value.output;
+      this._shutdownCluster = value.shutdownCluster;
+      this._submitJobOnceClusterRun = value.submitJobOnceClusterRun;
+    }
+  }
+
+  // arguments - computed: true, optional: true, required: false
+  private _arguments?: string; 
+  public get arguments() {
+    return this.getStringAttribute('arguments');
+  }
+  public set arguments(value: string) {
+    this._arguments = value;
+  }
+  public resetArguments() {
+    this._arguments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get argumentsInput() {
+    return this._arguments;
+  }
+
+  // file_action - computed: true, optional: true, required: false
+  private _fileAction?: string; 
+  public get fileAction() {
+    return this.getStringAttribute('file_action');
+  }
+  public set fileAction(value: string) {
+    this._fileAction = value;
+  }
+  public resetFileAction() {
+    this._fileAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileActionInput() {
+    return this._fileAction;
+  }
+
+  // hive_script_path - computed: true, optional: true, required: false
+  private _hiveScriptPath?: string; 
+  public get hiveScriptPath() {
+    return this.getStringAttribute('hive_script_path');
+  }
+  public set hiveScriptPath(value: string) {
+    this._hiveScriptPath = value;
+  }
+  public resetHiveScriptPath() {
+    this._hiveScriptPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hiveScriptPathInput() {
+    return this._hiveScriptPath;
+  }
+
+  // hql - computed: true, optional: true, required: false
+  private _hql?: string; 
+  public get hql() {
+    return this.getStringAttribute('hql');
+  }
+  public set hql(value: string) {
+    this._hql = value;
+  }
+  public resetHql() {
+    this._hql = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hqlInput() {
+    return this._hql;
+  }
+
+  // input - computed: true, optional: true, required: false
+  private _input?: string; 
+  public get input() {
+    return this.getStringAttribute('input');
+  }
+  public set input(value: string) {
+    this._input = value;
+  }
+  public resetInput() {
+    this._input = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inputInput() {
+    return this._input;
+  }
+
+  // jar_path - computed: false, optional: false, required: true
+  private _jarPath?: string; 
+  public get jarPath() {
+    return this.getStringAttribute('jar_path');
+  }
+  public set jarPath(value: string) {
+    this._jarPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jarPathInput() {
+    return this._jarPath;
+  }
+
+  // job_log - computed: true, optional: true, required: false
+  private _jobLog?: string; 
+  public get jobLog() {
+    return this.getStringAttribute('job_log');
+  }
+  public set jobLog(value: string) {
+    this._jobLog = value;
+  }
+  public resetJobLog() {
+    this._jobLog = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobLogInput() {
+    return this._jobLog;
+  }
+
+  // job_name - computed: false, optional: false, required: true
+  private _jobName?: string; 
+  public get jobName() {
+    return this.getStringAttribute('job_name');
+  }
+  public set jobName(value: string) {
+    this._jobName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobNameInput() {
+    return this._jobName;
+  }
+
+  // job_type - computed: false, optional: false, required: true
+  private _jobType?: number; 
+  public get jobType() {
+    return this.getNumberAttribute('job_type');
+  }
+  public set jobType(value: number) {
+    this._jobType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jobTypeInput() {
+    return this._jobType;
+  }
+
+  // output - computed: true, optional: true, required: false
+  private _output?: string; 
+  public get output() {
+    return this.getStringAttribute('output');
+  }
+  public set output(value: string) {
+    this._output = value;
+  }
+  public resetOutput() {
+    this._output = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputInput() {
+    return this._output;
+  }
+
+  // shutdown_cluster - computed: true, optional: true, required: false
+  private _shutdownCluster?: boolean | cdktf.IResolvable; 
+  public get shutdownCluster() {
+    return this.getBooleanAttribute('shutdown_cluster');
+  }
+  public set shutdownCluster(value: boolean | cdktf.IResolvable) {
+    this._shutdownCluster = value;
+  }
+  public resetShutdownCluster() {
+    this._shutdownCluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shutdownClusterInput() {
+    return this._shutdownCluster;
+  }
+
+  // submit_job_once_cluster_run - computed: false, optional: false, required: true
+  private _submitJobOnceClusterRun?: boolean | cdktf.IResolvable; 
+  public get submitJobOnceClusterRun() {
+    return this.getBooleanAttribute('submit_job_once_cluster_run');
+  }
+  public set submitJobOnceClusterRun(value: boolean | cdktf.IResolvable) {
+    this._submitJobOnceClusterRun = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get submitJobOnceClusterRunInput() {
+    return this._submitJobOnceClusterRun;
+  }
+}
+
+export class MrsClusterV1AddJobsList extends cdktf.ComplexList {
+  public internalValue? : MrsClusterV1AddJobs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MrsClusterV1AddJobsOutputReference {
+    return new MrsClusterV1AddJobsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface MrsClusterV1BootstrapScripts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#active_master MrsClusterV1#active_master}
@@ -251,6 +568,206 @@ export function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1Boo
   }
 }
 
+export class MrsClusterV1BootstrapScriptsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MrsClusterV1BootstrapScripts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._activeMaster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.activeMaster = this._activeMaster;
+    }
+    if (this._beforeComponentStart !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.beforeComponentStart = this._beforeComponentStart;
+    }
+    if (this._failAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failAction = this._failAction;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._nodes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodes = this._nodes;
+    }
+    if (this._parameters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameters = this._parameters;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MrsClusterV1BootstrapScripts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._activeMaster = undefined;
+      this._beforeComponentStart = undefined;
+      this._failAction = undefined;
+      this._name = undefined;
+      this._nodes = undefined;
+      this._parameters = undefined;
+      this._uri = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._activeMaster = value.activeMaster;
+      this._beforeComponentStart = value.beforeComponentStart;
+      this._failAction = value.failAction;
+      this._name = value.name;
+      this._nodes = value.nodes;
+      this._parameters = value.parameters;
+      this._uri = value.uri;
+    }
+  }
+
+  // active_master - computed: true, optional: true, required: false
+  private _activeMaster?: boolean | cdktf.IResolvable; 
+  public get activeMaster() {
+    return this.getBooleanAttribute('active_master');
+  }
+  public set activeMaster(value: boolean | cdktf.IResolvable) {
+    this._activeMaster = value;
+  }
+  public resetActiveMaster() {
+    this._activeMaster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeMasterInput() {
+    return this._activeMaster;
+  }
+
+  // before_component_start - computed: true, optional: true, required: false
+  private _beforeComponentStart?: boolean | cdktf.IResolvable; 
+  public get beforeComponentStart() {
+    return this.getBooleanAttribute('before_component_start');
+  }
+  public set beforeComponentStart(value: boolean | cdktf.IResolvable) {
+    this._beforeComponentStart = value;
+  }
+  public resetBeforeComponentStart() {
+    this._beforeComponentStart = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get beforeComponentStartInput() {
+    return this._beforeComponentStart;
+  }
+
+  // fail_action - computed: false, optional: false, required: true
+  private _failAction?: string; 
+  public get failAction() {
+    return this.getStringAttribute('fail_action');
+  }
+  public set failAction(value: string) {
+    this._failAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failActionInput() {
+    return this._failAction;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // nodes - computed: false, optional: false, required: true
+  private _nodes?: string[]; 
+  public get nodes() {
+    return this.getListAttribute('nodes');
+  }
+  public set nodes(value: string[]) {
+    this._nodes = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodesInput() {
+    return this._nodes;
+  }
+
+  // parameters - computed: true, optional: true, required: false
+  private _parameters?: string; 
+  public get parameters() {
+    return this.getStringAttribute('parameters');
+  }
+  public set parameters(value: string) {
+    this._parameters = value;
+  }
+  public resetParameters() {
+    this._parameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parametersInput() {
+    return this._parameters;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
+
+export class MrsClusterV1BootstrapScriptsList extends cdktf.ComplexList {
+  public internalValue? : MrsClusterV1BootstrapScripts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MrsClusterV1BootstrapScriptsOutputReference {
+    return new MrsClusterV1BootstrapScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface MrsClusterV1ComponentList {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#component_name MrsClusterV1#component_name}
@@ -268,6 +785,98 @@ export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1Compon
   }
 }
 
+export class MrsClusterV1ComponentListOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MrsClusterV1ComponentList | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._componentName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.componentName = this._componentName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MrsClusterV1ComponentList | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._componentName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._componentName = value.componentName;
+    }
+  }
+
+  // component_desc - computed: true, optional: false, required: false
+  public get componentDesc() {
+    return this.getStringAttribute('component_desc');
+  }
+
+  // component_id - computed: true, optional: false, required: false
+  public get componentId() {
+    return this.getStringAttribute('component_id');
+  }
+
+  // component_name - computed: false, optional: false, required: true
+  private _componentName?: string; 
+  public get componentName() {
+    return this.getStringAttribute('component_name');
+  }
+  public set componentName(value: string) {
+    this._componentName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentNameInput() {
+    return this._componentName;
+  }
+
+  // component_version - computed: true, optional: false, required: false
+  public get componentVersion() {
+    return this.getStringAttribute('component_version');
+  }
+}
+
+export class MrsClusterV1ComponentListList extends cdktf.ComplexList {
+  public internalValue? : MrsClusterV1ComponentList[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MrsClusterV1ComponentListOutputReference {
+    return new MrsClusterV1ComponentListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface MrsClusterV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1#create MrsClusterV1#create}
@@ -292,6 +901,7 @@ export function mrsClusterV1TimeoutsToTerraform(struct?: MrsClusterV1TimeoutsOut
 
 export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -301,7 +911,10 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): MrsClusterV1Timeouts | undefined {
+  public get internalValue(): MrsClusterV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -315,14 +928,20 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MrsClusterV1Timeouts | undefined) {
+  public set internalValue(value: MrsClusterV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -406,6 +1025,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
     this._coreDataVolumeType = config.coreDataVolumeType;
     this._coreNodeNum = config.coreNodeNum;
     this._coreNodeSize = config.coreNodeSize;
+    this._id = config.id;
     this._logCollection = config.logCollection;
     this._masterDataVolumeCount = config.masterDataVolumeCount;
     this._masterDataVolumeSize = config.masterDataVolumeSize;
@@ -420,9 +1040,9 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
     this._volumeSize = config.volumeSize;
     this._volumeType = config.volumeType;
     this._vpcId = config.vpcId;
-    this._addJobs = config.addJobs;
-    this._bootstrapScripts = config.bootstrapScripts;
-    this._componentList = config.componentList;
+    this._addJobs.internalValue = config.addJobs;
+    this._bootstrapScripts.internalValue = config.bootstrapScripts;
+    this._componentList.internalValue = config.componentList;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -659,8 +1279,19 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: true, optional: false, required: false
@@ -935,51 +1566,48 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // add_jobs - computed: false, optional: true, required: false
-  private _addJobs?: MrsClusterV1AddJobs[] | cdktf.IResolvable; 
+  private _addJobs = new MrsClusterV1AddJobsList(this, "add_jobs", false);
   public get addJobs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('add_jobs');
+    return this._addJobs;
   }
-  public set addJobs(value: MrsClusterV1AddJobs[] | cdktf.IResolvable) {
-    this._addJobs = value;
+  public putAddJobs(value: MrsClusterV1AddJobs[] | cdktf.IResolvable) {
+    this._addJobs.internalValue = value;
   }
   public resetAddJobs() {
-    this._addJobs = undefined;
+    this._addJobs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get addJobsInput() {
-    return this._addJobs;
+    return this._addJobs.internalValue;
   }
 
   // bootstrap_scripts - computed: false, optional: true, required: false
-  private _bootstrapScripts?: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable; 
+  private _bootstrapScripts = new MrsClusterV1BootstrapScriptsList(this, "bootstrap_scripts", false);
   public get bootstrapScripts() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bootstrap_scripts');
+    return this._bootstrapScripts;
   }
-  public set bootstrapScripts(value: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable) {
-    this._bootstrapScripts = value;
+  public putBootstrapScripts(value: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable) {
+    this._bootstrapScripts.internalValue = value;
   }
   public resetBootstrapScripts() {
-    this._bootstrapScripts = undefined;
+    this._bootstrapScripts.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bootstrapScriptsInput() {
-    return this._bootstrapScripts;
+    return this._bootstrapScripts.internalValue;
   }
 
   // component_list - computed: false, optional: false, required: true
-  private _componentList?: MrsClusterV1ComponentList[] | cdktf.IResolvable; 
+  private _componentList = new MrsClusterV1ComponentListList(this, "component_list", false);
   public get componentList() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('component_list');
+    return this._componentList;
   }
-  public set componentList(value: MrsClusterV1ComponentList[] | cdktf.IResolvable) {
-    this._componentList = value;
+  public putComponentList(value: MrsClusterV1ComponentList[] | cdktf.IResolvable) {
+    this._componentList.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get componentListInput() {
-    return this._componentList;
+    return this._componentList.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1015,6 +1643,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       core_data_volume_type: cdktf.stringToTerraform(this._coreDataVolumeType),
       core_node_num: cdktf.numberToTerraform(this._coreNodeNum),
       core_node_size: cdktf.stringToTerraform(this._coreNodeSize),
+      id: cdktf.stringToTerraform(this._id),
       log_collection: cdktf.numberToTerraform(this._logCollection),
       master_data_volume_count: cdktf.numberToTerraform(this._masterDataVolumeCount),
       master_data_volume_size: cdktf.numberToTerraform(this._masterDataVolumeSize),
@@ -1029,9 +1658,9 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       volume_size: cdktf.numberToTerraform(this._volumeSize),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform)(this._addJobs),
-      bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform)(this._bootstrapScripts),
-      component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform)(this._componentList),
+      add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform)(this._addJobs.internalValue),
+      bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform)(this._bootstrapScripts.internalValue),
+      component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform)(this._componentList.internalValue),
       timeouts: mrsClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

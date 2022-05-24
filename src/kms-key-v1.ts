@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface KmsKeyV1Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#id KmsKeyV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#is_enabled KmsKeyV1#is_enabled}
   */
   readonly isEnabled?: boolean | cdktf.IResolvable;
@@ -67,6 +74,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._isEnabled = config.isEnabled;
     this._keyAlias = config.keyAlias;
     this._keyDescription = config.keyDescription;
@@ -100,8 +108,19 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_enabled - computed: false, optional: true, required: false
@@ -213,6 +232,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       key_alias: cdktf.stringToTerraform(this._keyAlias),
       key_description: cdktf.stringToTerraform(this._keyDescription),

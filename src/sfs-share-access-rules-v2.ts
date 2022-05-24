@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface SfsShareAccessRulesV2Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#id SfsShareAccessRulesV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2#share_id SfsShareAccessRulesV2#share_id}
   */
   readonly shareId: string;
@@ -45,6 +52,134 @@ export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAcce
   }
 }
 
+export class SfsShareAccessRulesV2AccessRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): SfsShareAccessRulesV2AccessRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessLevel = this._accessLevel;
+    }
+    if (this._accessTo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessTo = this._accessTo;
+    }
+    if (this._accessType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessType = this._accessType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: SfsShareAccessRulesV2AccessRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accessLevel = undefined;
+      this._accessTo = undefined;
+      this._accessType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accessLevel = value.accessLevel;
+      this._accessTo = value.accessTo;
+      this._accessType = value.accessType;
+    }
+  }
+
+  // access_level - computed: false, optional: false, required: true
+  private _accessLevel?: string; 
+  public get accessLevel() {
+    return this.getStringAttribute('access_level');
+  }
+  public set accessLevel(value: string) {
+    this._accessLevel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLevelInput() {
+    return this._accessLevel;
+  }
+
+  // access_rule_status - computed: true, optional: false, required: false
+  public get accessRuleStatus() {
+    return this.getStringAttribute('access_rule_status');
+  }
+
+  // access_to - computed: false, optional: false, required: true
+  private _accessTo?: string; 
+  public get accessTo() {
+    return this.getStringAttribute('access_to');
+  }
+  public set accessTo(value: string) {
+    this._accessTo = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessToInput() {
+    return this._accessTo;
+  }
+
+  // access_type - computed: false, optional: true, required: false
+  private _accessType?: string; 
+  public get accessType() {
+    return this.getStringAttribute('access_type');
+  }
+  public set accessType(value: string) {
+    this._accessType = value;
+  }
+  public resetAccessType() {
+    this._accessType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTypeInput() {
+    return this._accessType;
+  }
+
+  // share_access_id - computed: true, optional: false, required: false
+  public get shareAccessId() {
+    return this.getStringAttribute('share_access_id');
+  }
+}
+
+export class SfsShareAccessRulesV2AccessRuleList extends cdktf.ComplexList {
+  public internalValue? : SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): SfsShareAccessRulesV2AccessRuleOutputReference {
+    return new SfsShareAccessRulesV2AccessRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2 opentelekomcloud_sfs_share_access_rules_v2}
@@ -80,8 +215,9 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._shareId = config.shareId;
-    this._accessRule = config.accessRule;
+    this._accessRule.internalValue = config.accessRule;
   }
 
   // ==========
@@ -89,8 +225,19 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // share_id - computed: false, optional: false, required: true
@@ -107,17 +254,16 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
   }
 
   // access_rule - computed: false, optional: false, required: true
-  private _accessRule?: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable; 
+  private _accessRule = new SfsShareAccessRulesV2AccessRuleList(this, "access_rule", false);
   public get accessRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('access_rule');
+    return this._accessRule;
   }
-  public set accessRule(value: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable) {
-    this._accessRule = value;
+  public putAccessRule(value: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable) {
+    this._accessRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get accessRuleInput() {
-    return this._accessRule;
+    return this._accessRule.internalValue;
   }
 
   // =========
@@ -126,8 +272,9 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       share_id: cdktf.stringToTerraform(this._shareId),
-      access_rule: cdktf.listMapper(sfsShareAccessRulesV2AccessRuleToTerraform)(this._accessRule),
+      access_rule: cdktf.listMapper(sfsShareAccessRulesV2AccessRuleToTerraform)(this._accessRule.internalValue),
     };
   }
 }

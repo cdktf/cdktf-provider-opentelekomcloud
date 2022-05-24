@@ -20,6 +20,13 @@ export interface WafDomainV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly hostname: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_domain_v1#id WafDomainV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_domain_v1#policy_id WafDomainV1#policy_id}
   */
   readonly policyId?: string;
@@ -94,6 +101,190 @@ export function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server | cdktf.
   }
 }
 
+export class WafDomainV1ServerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WafDomainV1Server | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    if (this._backProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backProtocol = this._backProtocol;
+    }
+    if (this._clientProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientProtocol = this._clientProtocol;
+    }
+    if (this._frontProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.frontProtocol = this._frontProtocol;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._serverProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverProtocol = this._serverProtocol;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafDomainV1Server | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._address = undefined;
+      this._backProtocol = undefined;
+      this._clientProtocol = undefined;
+      this._frontProtocol = undefined;
+      this._port = undefined;
+      this._serverProtocol = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._address = value.address;
+      this._backProtocol = value.backProtocol;
+      this._clientProtocol = value.clientProtocol;
+      this._frontProtocol = value.frontProtocol;
+      this._port = value.port;
+      this._serverProtocol = value.serverProtocol;
+    }
+  }
+
+  // address - computed: false, optional: false, required: true
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+
+  // back_protocol - computed: true, optional: true, required: false
+  private _backProtocol?: string; 
+  public get backProtocol() {
+    return this.getStringAttribute('back_protocol');
+  }
+  public set backProtocol(value: string) {
+    this._backProtocol = value;
+  }
+  public resetBackProtocol() {
+    this._backProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backProtocolInput() {
+    return this._backProtocol;
+  }
+
+  // client_protocol - computed: true, optional: true, required: false
+  private _clientProtocol?: string; 
+  public get clientProtocol() {
+    return this.getStringAttribute('client_protocol');
+  }
+  public set clientProtocol(value: string) {
+    this._clientProtocol = value;
+  }
+  public resetClientProtocol() {
+    this._clientProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientProtocolInput() {
+    return this._clientProtocol;
+  }
+
+  // front_protocol - computed: true, optional: true, required: false
+  private _frontProtocol?: string; 
+  public get frontProtocol() {
+    return this.getStringAttribute('front_protocol');
+  }
+  public set frontProtocol(value: string) {
+    this._frontProtocol = value;
+  }
+  public resetFrontProtocol() {
+    this._frontProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get frontProtocolInput() {
+    return this._frontProtocol;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // server_protocol - computed: true, optional: true, required: false
+  private _serverProtocol?: string; 
+  public get serverProtocol() {
+    return this.getStringAttribute('server_protocol');
+  }
+  public set serverProtocol(value: string) {
+    this._serverProtocol = value;
+  }
+  public resetServerProtocol() {
+    this._serverProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverProtocolInput() {
+    return this._serverProtocol;
+  }
+}
+
+export class WafDomainV1ServerList extends cdktf.ComplexList {
+  public internalValue? : WafDomainV1Server[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WafDomainV1ServerOutputReference {
+    return new WafDomainV1ServerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface WafDomainV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_domain_v1#create WafDomainV1#create}
@@ -118,6 +309,7 @@ export function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1TimeoutsOutpu
 
 export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,7 +319,10 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): WafDomainV1Timeouts | undefined {
+  public get internalValue(): WafDomainV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -141,14 +336,20 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafDomainV1Timeouts | undefined) {
+  public set internalValue(value: WafDomainV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -224,12 +425,13 @@ export class WafDomainV1 extends cdktf.TerraformResource {
     this._certificateId = config.certificateId;
     this._cipher = config.cipher;
     this._hostname = config.hostname;
+    this._id = config.id;
     this._policyId = config.policyId;
     this._proxy = config.proxy;
     this._sipHeaderList = config.sipHeaderList;
     this._sipHeaderName = config.sipHeaderName;
     this._tls = config.tls;
-    this._server = config.server;
+    this._server.internalValue = config.server;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -298,8 +500,19 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // policy_id - computed: true, optional: true, required: false
@@ -400,17 +613,16 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   }
 
   // server - computed: false, optional: false, required: true
-  private _server?: WafDomainV1Server[] | cdktf.IResolvable; 
+  private _server = new WafDomainV1ServerList(this, "server", false);
   public get server() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('server');
+    return this._server;
   }
-  public set server(value: WafDomainV1Server[] | cdktf.IResolvable) {
-    this._server = value;
+  public putServer(value: WafDomainV1Server[] | cdktf.IResolvable) {
+    this._server.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get serverInput() {
-    return this._server;
+    return this._server.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -438,12 +650,13 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       certificate_id: cdktf.stringToTerraform(this._certificateId),
       cipher: cdktf.stringToTerraform(this._cipher),
       hostname: cdktf.stringToTerraform(this._hostname),
+      id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
       proxy: cdktf.booleanToTerraform(this._proxy),
       sip_header_list: cdktf.listMapper(cdktf.stringToTerraform)(this._sipHeaderList),
       sip_header_name: cdktf.stringToTerraform(this._sipHeaderName),
       tls: cdktf.stringToTerraform(this._tls),
-      server: cdktf.listMapper(wafDomainV1ServerToTerraform)(this._server),
+      server: cdktf.listMapper(wafDomainV1ServerToTerraform)(this._server.internalValue),
       timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

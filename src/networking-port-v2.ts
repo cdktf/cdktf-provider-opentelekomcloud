@@ -20,6 +20,13 @@ export interface NetworkingPortV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly deviceOwner?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#id NetworkingPortV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#mac_address NetworkingPortV2#mac_address}
   */
   readonly macAddress?: string;
@@ -96,6 +103,105 @@ export function networkingPortV2AllowedAddressPairsToTerraform(struct?: Networki
   }
 }
 
+export class NetworkingPortV2AllowedAddressPairsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkingPortV2AllowedAddressPairs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._macAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.macAddress = this._macAddress;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingPortV2AllowedAddressPairs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._macAddress = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._macAddress = value.macAddress;
+    }
+  }
+
+  // ip_address - computed: false, optional: false, required: true
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // mac_address - computed: true, optional: true, required: false
+  private _macAddress?: string; 
+  public get macAddress() {
+    return this.getStringAttribute('mac_address');
+  }
+  public set macAddress(value: string) {
+    this._macAddress = value;
+  }
+  public resetMacAddress() {
+    this._macAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get macAddressInput() {
+    return this._macAddress;
+  }
+}
+
+export class NetworkingPortV2AllowedAddressPairsList extends cdktf.ComplexList {
+  public internalValue? : NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkingPortV2AllowedAddressPairsOutputReference {
+    return new NetworkingPortV2AllowedAddressPairsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkingPortV2FixedIp {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#ip_address NetworkingPortV2#ip_address}
@@ -118,6 +224,105 @@ export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2Fixe
   }
 }
 
+export class NetworkingPortV2FixedIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkingPortV2FixedIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._subnetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetId = this._subnetId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingPortV2FixedIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._subnetId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._subnetId = value.subnetId;
+    }
+  }
+
+  // ip_address - computed: false, optional: true, required: false
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // subnet_id - computed: false, optional: false, required: true
+  private _subnetId?: string; 
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
+  }
+  public set subnetId(value: string) {
+    this._subnetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetIdInput() {
+    return this._subnetId;
+  }
+}
+
+export class NetworkingPortV2FixedIpList extends cdktf.ComplexList {
+  public internalValue? : NetworkingPortV2FixedIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkingPortV2FixedIpOutputReference {
+    return new NetworkingPortV2FixedIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkingPortV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_port_v2#create NetworkingPortV2#create}
@@ -142,6 +347,7 @@ export function networkingPortV2TimeoutsToTerraform(struct?: NetworkingPortV2Tim
 
 export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -151,7 +357,10 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): NetworkingPortV2Timeouts | undefined {
+  public get internalValue(): NetworkingPortV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -165,14 +374,20 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkingPortV2Timeouts | undefined) {
+  public set internalValue(value: NetworkingPortV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -248,6 +463,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
     this._adminStateUp = config.adminStateUp;
     this._deviceId = config.deviceId;
     this._deviceOwner = config.deviceOwner;
+    this._id = config.id;
     this._macAddress = config.macAddress;
     this._name = config.name;
     this._networkId = config.networkId;
@@ -257,8 +473,8 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
     this._securityGroupIds = config.securityGroupIds;
     this._tenantId = config.tenantId;
     this._valueSpecs = config.valueSpecs;
-    this._allowedAddressPairs = config.allowedAddressPairs;
-    this._fixedIp = config.fixedIp;
+    this._allowedAddressPairs.internalValue = config.allowedAddressPairs;
+    this._fixedIp.internalValue = config.fixedIp;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -320,8 +536,19 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mac_address - computed: true, optional: true, required: false
@@ -466,37 +693,35 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // allowed_address_pairs - computed: false, optional: true, required: false
-  private _allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable; 
+  private _allowedAddressPairs = new NetworkingPortV2AllowedAddressPairsList(this, "allowed_address_pairs", true);
   public get allowedAddressPairs() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('allowed_address_pairs')));
+    return this._allowedAddressPairs;
   }
-  public set allowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable) {
-    this._allowedAddressPairs = value;
+  public putAllowedAddressPairs(value: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable) {
+    this._allowedAddressPairs.internalValue = value;
   }
   public resetAllowedAddressPairs() {
-    this._allowedAddressPairs = undefined;
+    this._allowedAddressPairs.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get allowedAddressPairsInput() {
-    return this._allowedAddressPairs;
+    return this._allowedAddressPairs.internalValue;
   }
 
   // fixed_ip - computed: false, optional: true, required: false
-  private _fixedIp?: NetworkingPortV2FixedIp[] | cdktf.IResolvable; 
+  private _fixedIp = new NetworkingPortV2FixedIpList(this, "fixed_ip", false);
   public get fixedIp() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('fixed_ip');
+    return this._fixedIp;
   }
-  public set fixedIp(value: NetworkingPortV2FixedIp[] | cdktf.IResolvable) {
-    this._fixedIp = value;
+  public putFixedIp(value: NetworkingPortV2FixedIp[] | cdktf.IResolvable) {
+    this._fixedIp.internalValue = value;
   }
   public resetFixedIp() {
-    this._fixedIp = undefined;
+    this._fixedIp.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get fixedIpInput() {
-    return this._fixedIp;
+    return this._fixedIp.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -524,6 +749,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
       device_id: cdktf.stringToTerraform(this._deviceId),
       device_owner: cdktf.stringToTerraform(this._deviceOwner),
+      id: cdktf.stringToTerraform(this._id),
       mac_address: cdktf.stringToTerraform(this._macAddress),
       name: cdktf.stringToTerraform(this._name),
       network_id: cdktf.stringToTerraform(this._networkId),
@@ -533,8 +759,8 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform)(this._allowedAddressPairs),
-      fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform)(this._fixedIp),
+      allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform)(this._allowedAddressPairs.internalValue),
+      fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform)(this._fixedIp.internalValue),
       timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

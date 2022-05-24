@@ -48,6 +48,13 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly healthPeriodicAuditTime?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#id AsGroupV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#instance_terminate_policy AsGroupV1#instance_terminate_policy}
   */
   readonly instanceTerminatePolicy?: string;
@@ -141,9 +148,130 @@ export function asGroupV1LbaasListenersToTerraform(struct?: AsGroupV1LbaasListen
   }
 }
 
+export class AsGroupV1LbaasListenersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AsGroupV1LbaasListeners | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolId = this._poolId;
+    }
+    if (this._protocolPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocolPort = this._protocolPort;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsGroupV1LbaasListeners | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolId = undefined;
+      this._protocolPort = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolId = value.poolId;
+      this._protocolPort = value.protocolPort;
+      this._weight = value.weight;
+    }
+  }
+
+  // pool_id - computed: false, optional: false, required: true
+  private _poolId?: string; 
+  public get poolId() {
+    return this.getStringAttribute('pool_id');
+  }
+  public set poolId(value: string) {
+    this._poolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdInput() {
+    return this._poolId;
+  }
+
+  // protocol_port - computed: false, optional: false, required: true
+  private _protocolPort?: number; 
+  public get protocolPort() {
+    return this.getNumberAttribute('protocol_port');
+  }
+  public set protocolPort(value: number) {
+    this._protocolPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolPortInput() {
+    return this._protocolPort;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class AsGroupV1LbaasListenersList extends cdktf.ComplexList {
+  public internalValue? : AsGroupV1LbaasListeners[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AsGroupV1LbaasListenersOutputReference {
+    return new AsGroupV1LbaasListenersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AsGroupV1Networks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#id AsGroupV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -158,9 +286,89 @@ export function asGroupV1NetworksToTerraform(struct?: AsGroupV1Networks | cdktf.
   }
 }
 
+export class AsGroupV1NetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AsGroupV1Networks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsGroupV1Networks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class AsGroupV1NetworksList extends cdktf.ComplexList {
+  public internalValue? : AsGroupV1Networks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AsGroupV1NetworksOutputReference {
+    return new AsGroupV1NetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AsGroupV1SecurityGroups {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#id AsGroupV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -244,6 +452,7 @@ export function asGroupV1TimeoutsToTerraform(struct?: AsGroupV1TimeoutsOutputRef
 
 export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -253,7 +462,10 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): AsGroupV1Timeouts | undefined {
+  public get internalValue(): AsGroupV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -267,14 +479,20 @@ export class AsGroupV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AsGroupV1Timeouts | undefined) {
+  public set internalValue(value: AsGroupV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -355,6 +573,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
     this._healthPeriodicAuditGracePeriod = config.healthPeriodicAuditGracePeriod;
     this._healthPeriodicAuditMethod = config.healthPeriodicAuditMethod;
     this._healthPeriodicAuditTime = config.healthPeriodicAuditTime;
+    this._id = config.id;
     this._instanceTerminatePolicy = config.instanceTerminatePolicy;
     this._lbListenerId = config.lbListenerId;
     this._maxInstanceNumber = config.maxInstanceNumber;
@@ -365,8 +584,8 @@ export class AsGroupV1 extends cdktf.TerraformResource {
     this._scalingGroupName = config.scalingGroupName;
     this._tags = config.tags;
     this._vpcId = config.vpcId;
-    this._lbaasListeners = config.lbaasListeners;
-    this._networks = config.networks;
+    this._lbaasListeners.internalValue = config.lbaasListeners;
+    this._networks.internalValue = config.networks;
     this._securityGroups.internalValue = config.securityGroups;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -509,8 +728,19 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_terminate_policy - computed: false, optional: true, required: false
@@ -678,34 +908,32 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   }
 
   // lbaas_listeners - computed: false, optional: true, required: false
-  private _lbaasListeners?: AsGroupV1LbaasListeners[] | cdktf.IResolvable; 
+  private _lbaasListeners = new AsGroupV1LbaasListenersList(this, "lbaas_listeners", false);
   public get lbaasListeners() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lbaas_listeners');
+    return this._lbaasListeners;
   }
-  public set lbaasListeners(value: AsGroupV1LbaasListeners[] | cdktf.IResolvable) {
-    this._lbaasListeners = value;
+  public putLbaasListeners(value: AsGroupV1LbaasListeners[] | cdktf.IResolvable) {
+    this._lbaasListeners.internalValue = value;
   }
   public resetLbaasListeners() {
-    this._lbaasListeners = undefined;
+    this._lbaasListeners.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lbaasListenersInput() {
-    return this._lbaasListeners;
+    return this._lbaasListeners.internalValue;
   }
 
   // networks - computed: false, optional: false, required: true
-  private _networks?: AsGroupV1Networks[] | cdktf.IResolvable; 
+  private _networks = new AsGroupV1NetworksList(this, "networks", false);
   public get networks() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('networks');
+    return this._networks;
   }
-  public set networks(value: AsGroupV1Networks[] | cdktf.IResolvable) {
-    this._networks = value;
+  public putNetworks(value: AsGroupV1Networks[] | cdktf.IResolvable) {
+    this._networks.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get networksInput() {
-    return this._networks;
+    return this._networks.internalValue;
   }
 
   // security_groups - computed: false, optional: true, required: false
@@ -754,6 +982,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       health_periodic_audit_grace_period: cdktf.numberToTerraform(this._healthPeriodicAuditGracePeriod),
       health_periodic_audit_method: cdktf.stringToTerraform(this._healthPeriodicAuditMethod),
       health_periodic_audit_time: cdktf.numberToTerraform(this._healthPeriodicAuditTime),
+      id: cdktf.stringToTerraform(this._id),
       instance_terminate_policy: cdktf.stringToTerraform(this._instanceTerminatePolicy),
       lb_listener_id: cdktf.stringToTerraform(this._lbListenerId),
       max_instance_number: cdktf.numberToTerraform(this._maxInstanceNumber),
@@ -764,8 +993,8 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       scaling_group_name: cdktf.stringToTerraform(this._scalingGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      lbaas_listeners: cdktf.listMapper(asGroupV1LbaasListenersToTerraform)(this._lbaasListeners),
-      networks: cdktf.listMapper(asGroupV1NetworksToTerraform)(this._networks),
+      lbaas_listeners: cdktf.listMapper(asGroupV1LbaasListenersToTerraform)(this._lbaasListeners.internalValue),
+      networks: cdktf.listMapper(asGroupV1NetworksToTerraform)(this._networks.internalValue),
       security_groups: asGroupV1SecurityGroupsToTerraform(this._securityGroups.internalValue),
       timeouts: asGroupV1TimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -29,6 +29,9 @@ export interface DataOpentelekomcloudLbListenerV3Config extends cdktf.TerraformM
   readonly description?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3#id DataOpentelekomcloudLbListenerV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -469,8 +472,9 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   }
 
   // tags - computed: true, optional: false, required: false
-  public tags(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'tags').lookup(key);
+  private _tags = new cdktf.StringMap(this, "tags");
+  public get tags() {
+    return this._tags;
   }
 
   // tls_ciphers_policy - computed: false, optional: true, required: false

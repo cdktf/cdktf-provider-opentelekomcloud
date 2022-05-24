@@ -16,6 +16,13 @@ export interface DdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly diskEncryptionId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#id DdsInstanceV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#mode DdsInstanceV3#mode}
   */
   readonly mode: string;
@@ -402,6 +409,165 @@ export function ddsInstanceV3FlavorToTerraform(struct?: DdsInstanceV3Flavor | cd
   }
 }
 
+export class DdsInstanceV3FlavorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DdsInstanceV3Flavor | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._num !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.num = this._num;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._specCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.specCode = this._specCode;
+    }
+    if (this._storage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storage = this._storage;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DdsInstanceV3Flavor | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._num = undefined;
+      this._size = undefined;
+      this._specCode = undefined;
+      this._storage = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._num = value.num;
+      this._size = value.size;
+      this._specCode = value.specCode;
+      this._storage = value.storage;
+      this._type = value.type;
+    }
+  }
+
+  // num - computed: false, optional: false, required: true
+  private _num?: number; 
+  public get num() {
+    return this.getNumberAttribute('num');
+  }
+  public set num(value: number) {
+    this._num = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numInput() {
+    return this._num;
+  }
+
+  // size - computed: false, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // spec_code - computed: false, optional: false, required: true
+  private _specCode?: string; 
+  public get specCode() {
+    return this.getStringAttribute('spec_code');
+  }
+  public set specCode(value: string) {
+    this._specCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get specCodeInput() {
+    return this._specCode;
+  }
+
+  // storage - computed: false, optional: true, required: false
+  private _storage?: string; 
+  public get storage() {
+    return this.getStringAttribute('storage');
+  }
+  public set storage(value: string) {
+    this._storage = value;
+  }
+  public resetStorage() {
+    this._storage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageInput() {
+    return this._storage;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class DdsInstanceV3FlavorList extends cdktf.ComplexList {
+  public internalValue? : DdsInstanceV3Flavor[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DdsInstanceV3FlavorOutputReference {
+    return new DdsInstanceV3FlavorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DdsInstanceV3Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#create DdsInstanceV3#create}
@@ -426,6 +592,7 @@ export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsO
 
 export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -435,7 +602,10 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DdsInstanceV3Timeouts | undefined {
+  public get internalValue(): DdsInstanceV3Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -449,14 +619,20 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DdsInstanceV3Timeouts | undefined) {
+  public set internalValue(value: DdsInstanceV3Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -531,6 +707,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     });
     this._availabilityZone = config.availabilityZone;
     this._diskEncryptionId = config.diskEncryptionId;
+    this._id = config.id;
     this._mode = config.mode;
     this._name = config.name;
     this._password = config.password;
@@ -541,7 +718,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     this._vpcId = config.vpcId;
     this._backupStrategy.internalValue = config.backupStrategy;
     this._datastore.internalValue = config.datastore;
-    this._flavor = config.flavor;
+    this._flavor.internalValue = config.flavor;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -584,8 +761,19 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // mode - computed: false, optional: false, required: true
@@ -749,17 +937,16 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   }
 
   // flavor - computed: false, optional: false, required: true
-  private _flavor?: DdsInstanceV3Flavor[] | cdktf.IResolvable; 
+  private _flavor = new DdsInstanceV3FlavorList(this, "flavor", false);
   public get flavor() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('flavor');
+    return this._flavor;
   }
-  public set flavor(value: DdsInstanceV3Flavor[] | cdktf.IResolvable) {
-    this._flavor = value;
+  public putFlavor(value: DdsInstanceV3Flavor[] | cdktf.IResolvable) {
+    this._flavor.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get flavorInput() {
-    return this._flavor;
+    return this._flavor.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -786,6 +973,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       disk_encryption_id: cdktf.stringToTerraform(this._diskEncryptionId),
+      id: cdktf.stringToTerraform(this._id),
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
@@ -796,7 +984,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_strategy: ddsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
       datastore: ddsInstanceV3DatastoreToTerraform(this._datastore.internalValue),
-      flavor: cdktf.listMapper(ddsInstanceV3FlavorToTerraform)(this._flavor),
+      flavor: cdktf.listMapper(ddsInstanceV3FlavorToTerraform)(this._flavor.internalValue),
       timeouts: ddsInstanceV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

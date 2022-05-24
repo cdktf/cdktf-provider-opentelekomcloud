@@ -12,6 +12,13 @@ export interface DataOpentelekomcloudCceNodeV3Config extends cdktf.TerraformMeta
   */
   readonly clusterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_node_v3#id DataOpentelekomcloudCceNodeV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_node_v3#name DataOpentelekomcloudCceNodeV3#name}
   */
   readonly name?: string;
@@ -143,6 +150,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._clusterId = config.clusterId;
+    this._id = config.id;
     this._name = config.name;
     this._nodeId = config.nodeId;
     this._region = config.region;
@@ -213,8 +221,19 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_type - computed: true, optional: false, required: false
@@ -323,6 +342,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       node_id: cdktf.stringToTerraform(this._nodeId),
       region: cdktf.stringToTerraform(this._region),

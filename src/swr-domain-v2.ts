@@ -20,6 +20,13 @@ export interface SwrDomainV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#id SwrDomainV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2#organization SwrDomainV2#organization}
   */
   readonly organization: string;
@@ -57,6 +64,7 @@ export function swrDomainV2TimeoutsToTerraform(struct?: SwrDomainV2TimeoutsOutpu
 
 export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -66,7 +74,10 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): SwrDomainV2Timeouts | undefined {
+  public get internalValue(): SwrDomainV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default !== undefined) {
@@ -76,13 +87,19 @@ export class SwrDomainV2TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SwrDomainV2Timeouts | undefined) {
+  public set internalValue(value: SwrDomainV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._default = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._default = value.default;
     }
   }
@@ -141,6 +158,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
     this._accessDomain = config.accessDomain;
     this._deadline = config.deadline;
     this._description = config.description;
+    this._id = config.id;
     this._organization = config.organization;
     this._permission = config.permission;
     this._repository = config.repository;
@@ -209,8 +227,19 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // organization - computed: false, optional: false, required: true
@@ -287,6 +316,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
       access_domain: cdktf.stringToTerraform(this._accessDomain),
       deadline: cdktf.stringToTerraform(this._deadline),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       organization: cdktf.stringToTerraform(this._organization),
       permission: cdktf.stringToTerraform(this._permission),
       repository: cdktf.stringToTerraform(this._repository),

@@ -28,6 +28,13 @@ export interface LbMonitorV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly httpMethod?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_monitor_v2#id LbMonitorV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_monitor_v2#max_retries LbMonitorV2#max_retries}
   */
   readonly maxRetries: number;
@@ -99,6 +106,7 @@ export function lbMonitorV2TimeoutsToTerraform(struct?: LbMonitorV2TimeoutsOutpu
 
 export class LbMonitorV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -108,7 +116,10 @@ export class LbMonitorV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LbMonitorV2Timeouts | undefined {
+  public get internalValue(): LbMonitorV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -126,15 +137,21 @@ export class LbMonitorV2TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbMonitorV2Timeouts | undefined) {
+  public set internalValue(value: LbMonitorV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -229,6 +246,7 @@ export class LbMonitorV2 extends cdktf.TerraformResource {
     this._domainName = config.domainName;
     this._expectedCodes = config.expectedCodes;
     this._httpMethod = config.httpMethod;
+    this._id = config.id;
     this._maxRetries = config.maxRetries;
     this._monitorPort = config.monitorPort;
     this._name = config.name;
@@ -323,8 +341,19 @@ export class LbMonitorV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // max_retries - computed: false, optional: false, required: true
@@ -486,6 +515,7 @@ export class LbMonitorV2 extends cdktf.TerraformResource {
       domain_name: cdktf.stringToTerraform(this._domainName),
       expected_codes: cdktf.stringToTerraform(this._expectedCodes),
       http_method: cdktf.stringToTerraform(this._httpMethod),
+      id: cdktf.stringToTerraform(this._id),
       max_retries: cdktf.numberToTerraform(this._maxRetries),
       monitor_port: cdktf.numberToTerraform(this._monitorPort),
       name: cdktf.stringToTerraform(this._name),

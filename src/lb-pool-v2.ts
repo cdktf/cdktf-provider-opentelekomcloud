@@ -16,6 +16,13 @@ export interface LbPoolV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v2#id LbPoolV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v2#lb_method LbPoolV2#lb_method}
   */
   readonly lbMethod: string;
@@ -78,6 +85,108 @@ export function lbPoolV2PersistenceToTerraform(struct?: LbPoolV2Persistence | cd
   }
 }
 
+export class LbPoolV2PersistenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbPoolV2Persistence | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cookieName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cookieName = this._cookieName;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbPoolV2Persistence | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cookieName = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cookieName = value.cookieName;
+      this._type = value.type;
+    }
+  }
+
+  // cookie_name - computed: false, optional: true, required: false
+  private _cookieName?: string; 
+  public get cookieName() {
+    return this.getStringAttribute('cookie_name');
+  }
+  public set cookieName(value: string) {
+    this._cookieName = value;
+  }
+  public resetCookieName() {
+    this._cookieName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cookieNameInput() {
+    return this._cookieName;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class LbPoolV2PersistenceList extends cdktf.ComplexList {
+  public internalValue? : LbPoolV2Persistence[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbPoolV2PersistenceOutputReference {
+    return new LbPoolV2PersistenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LbPoolV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v2#create LbPoolV2#create}
@@ -107,6 +216,7 @@ export function lbPoolV2TimeoutsToTerraform(struct?: LbPoolV2TimeoutsOutputRefer
 
 export class LbPoolV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,7 +226,10 @@ export class LbPoolV2TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LbPoolV2Timeouts | undefined {
+  public get internalValue(): LbPoolV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -134,15 +247,21 @@ export class LbPoolV2TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbPoolV2Timeouts | undefined) {
+  public set internalValue(value: LbPoolV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -234,6 +353,7 @@ export class LbPoolV2 extends cdktf.TerraformResource {
     });
     this._adminStateUp = config.adminStateUp;
     this._description = config.description;
+    this._id = config.id;
     this._lbMethod = config.lbMethod;
     this._listenerId = config.listenerId;
     this._loadbalancerId = config.loadbalancerId;
@@ -241,7 +361,7 @@ export class LbPoolV2 extends cdktf.TerraformResource {
     this._protocol = config.protocol;
     this._region = config.region;
     this._tenantId = config.tenantId;
-    this._persistence = config.persistence;
+    this._persistence.internalValue = config.persistence;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -282,8 +402,19 @@ export class LbPoolV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // lb_method - computed: false, optional: false, required: true
@@ -393,20 +524,19 @@ export class LbPoolV2 extends cdktf.TerraformResource {
   }
 
   // persistence - computed: false, optional: true, required: false
-  private _persistence?: LbPoolV2Persistence[] | cdktf.IResolvable; 
+  private _persistence = new LbPoolV2PersistenceList(this, "persistence", false);
   public get persistence() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('persistence');
+    return this._persistence;
   }
-  public set persistence(value: LbPoolV2Persistence[] | cdktf.IResolvable) {
-    this._persistence = value;
+  public putPersistence(value: LbPoolV2Persistence[] | cdktf.IResolvable) {
+    this._persistence.internalValue = value;
   }
   public resetPersistence() {
-    this._persistence = undefined;
+    this._persistence.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get persistenceInput() {
-    return this._persistence;
+    return this._persistence.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -433,6 +563,7 @@ export class LbPoolV2 extends cdktf.TerraformResource {
     return {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       lb_method: cdktf.stringToTerraform(this._lbMethod),
       listener_id: cdktf.stringToTerraform(this._listenerId),
       loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
@@ -440,7 +571,7 @@ export class LbPoolV2 extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      persistence: cdktf.listMapper(lbPoolV2PersistenceToTerraform)(this._persistence),
+      persistence: cdktf.listMapper(lbPoolV2PersistenceToTerraform)(this._persistence.internalValue),
       timeouts: lbPoolV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

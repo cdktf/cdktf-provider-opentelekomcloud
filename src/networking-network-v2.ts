@@ -12,6 +12,13 @@ export interface NetworkingNetworkV2Config extends cdktf.TerraformMetaArguments 
   */
   readonly adminStateUp?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#id NetworkingNetworkV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#name NetworkingNetworkV2#name}
   */
   readonly name?: string;
@@ -71,6 +78,130 @@ export function networkingNetworkV2SegmentsToTerraform(struct?: NetworkingNetwor
   }
 }
 
+export class NetworkingNetworkV2SegmentsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkingNetworkV2Segments | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkType = this._networkType;
+    }
+    if (this._physicalNetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.physicalNetwork = this._physicalNetwork;
+    }
+    if (this._segmentationId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.segmentationId = this._segmentationId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkingNetworkV2Segments | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._networkType = undefined;
+      this._physicalNetwork = undefined;
+      this._segmentationId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._networkType = value.networkType;
+      this._physicalNetwork = value.physicalNetwork;
+      this._segmentationId = value.segmentationId;
+    }
+  }
+
+  // network_type - computed: false, optional: true, required: false
+  private _networkType?: string; 
+  public get networkType() {
+    return this.getStringAttribute('network_type');
+  }
+  public set networkType(value: string) {
+    this._networkType = value;
+  }
+  public resetNetworkType() {
+    this._networkType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTypeInput() {
+    return this._networkType;
+  }
+
+  // physical_network - computed: false, optional: true, required: false
+  private _physicalNetwork?: string; 
+  public get physicalNetwork() {
+    return this.getStringAttribute('physical_network');
+  }
+  public set physicalNetwork(value: string) {
+    this._physicalNetwork = value;
+  }
+  public resetPhysicalNetwork() {
+    this._physicalNetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get physicalNetworkInput() {
+    return this._physicalNetwork;
+  }
+
+  // segmentation_id - computed: false, optional: true, required: false
+  private _segmentationId?: number; 
+  public get segmentationId() {
+    return this.getNumberAttribute('segmentation_id');
+  }
+  public set segmentationId(value: number) {
+    this._segmentationId = value;
+  }
+  public resetSegmentationId() {
+    this._segmentationId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get segmentationIdInput() {
+    return this._segmentationId;
+  }
+}
+
+export class NetworkingNetworkV2SegmentsList extends cdktf.ComplexList {
+  public internalValue? : NetworkingNetworkV2Segments[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkingNetworkV2SegmentsOutputReference {
+    return new NetworkingNetworkV2SegmentsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface NetworkingNetworkV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_network_v2#create NetworkingNetworkV2#create}
@@ -95,6 +226,7 @@ export function networkingNetworkV2TimeoutsToTerraform(struct?: NetworkingNetwor
 
 export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,7 +236,10 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): NetworkingNetworkV2Timeouts | undefined {
+  public get internalValue(): NetworkingNetworkV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -118,14 +253,20 @@ export class NetworkingNetworkV2TimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkingNetworkV2Timeouts | undefined) {
+  public set internalValue(value: NetworkingNetworkV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -199,12 +340,13 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._adminStateUp = config.adminStateUp;
+    this._id = config.id;
     this._name = config.name;
     this._region = config.region;
     this._shared = config.shared;
     this._tenantId = config.tenantId;
     this._valueSpecs = config.valueSpecs;
-    this._segments = config.segments;
+    this._segments.internalValue = config.segments;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -229,8 +371,19 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -314,20 +467,19 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   }
 
   // segments - computed: false, optional: true, required: false
-  private _segments?: NetworkingNetworkV2Segments[] | cdktf.IResolvable; 
+  private _segments = new NetworkingNetworkV2SegmentsList(this, "segments", false);
   public get segments() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('segments');
+    return this._segments;
   }
-  public set segments(value: NetworkingNetworkV2Segments[] | cdktf.IResolvable) {
-    this._segments = value;
+  public putSegments(value: NetworkingNetworkV2Segments[] | cdktf.IResolvable) {
+    this._segments.internalValue = value;
   }
   public resetSegments() {
-    this._segments = undefined;
+    this._segments.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get segmentsInput() {
-    return this._segments;
+    return this._segments.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -353,12 +505,13 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       admin_state_up: cdktf.stringToTerraform(this._adminStateUp),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       shared: cdktf.stringToTerraform(this._shared),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform)(this._segments),
+      segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform)(this._segments.internalValue),
       timeouts: networkingNetworkV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

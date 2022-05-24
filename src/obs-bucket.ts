@@ -20,6 +20,13 @@ export interface ObsBucketConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#id ObsBucket#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#region ObsBucket#region}
   */
   readonly region?: string;
@@ -109,6 +116,168 @@ export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule | cdktf.
   }
 }
 
+export class ObsBucketCorsRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketCorsRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedHeaders = this._allowedHeaders;
+    }
+    if (this._allowedMethods !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedMethods = this._allowedMethods;
+    }
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    if (this._exposeHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exposeHeaders = this._exposeHeaders;
+    }
+    if (this._maxAgeSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxAgeSeconds = this._maxAgeSeconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketCorsRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedHeaders = undefined;
+      this._allowedMethods = undefined;
+      this._allowedOrigins = undefined;
+      this._exposeHeaders = undefined;
+      this._maxAgeSeconds = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedHeaders = value.allowedHeaders;
+      this._allowedMethods = value.allowedMethods;
+      this._allowedOrigins = value.allowedOrigins;
+      this._exposeHeaders = value.exposeHeaders;
+      this._maxAgeSeconds = value.maxAgeSeconds;
+    }
+  }
+
+  // allowed_headers - computed: false, optional: true, required: false
+  private _allowedHeaders?: string[]; 
+  public get allowedHeaders() {
+    return this.getListAttribute('allowed_headers');
+  }
+  public set allowedHeaders(value: string[]) {
+    this._allowedHeaders = value;
+  }
+  public resetAllowedHeaders() {
+    this._allowedHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedHeadersInput() {
+    return this._allowedHeaders;
+  }
+
+  // allowed_methods - computed: false, optional: false, required: true
+  private _allowedMethods?: string[]; 
+  public get allowedMethods() {
+    return this.getListAttribute('allowed_methods');
+  }
+  public set allowedMethods(value: string[]) {
+    this._allowedMethods = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedMethodsInput() {
+    return this._allowedMethods;
+  }
+
+  // allowed_origins - computed: false, optional: false, required: true
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+
+  // expose_headers - computed: false, optional: true, required: false
+  private _exposeHeaders?: string[]; 
+  public get exposeHeaders() {
+    return this.getListAttribute('expose_headers');
+  }
+  public set exposeHeaders(value: string[]) {
+    this._exposeHeaders = value;
+  }
+  public resetExposeHeaders() {
+    this._exposeHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exposeHeadersInput() {
+    return this._exposeHeaders;
+  }
+
+  // max_age_seconds - computed: false, optional: true, required: false
+  private _maxAgeSeconds?: number; 
+  public get maxAgeSeconds() {
+    return this.getNumberAttribute('max_age_seconds');
+  }
+  public set maxAgeSeconds(value: number) {
+    this._maxAgeSeconds = value;
+  }
+  public resetMaxAgeSeconds() {
+    this._maxAgeSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxAgeSecondsInput() {
+    return this._maxAgeSeconds;
+  }
+}
+
+export class ObsBucketCorsRuleList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketCorsRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketCorsRuleOutputReference {
+    return new ObsBucketCorsRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketEventNotificationsFilterRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#name ObsBucket#name}
@@ -131,6 +300,108 @@ export function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBuc
   }
 }
 
+export class ObsBucketEventNotificationsFilterRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketEventNotificationsFilterRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketEventNotificationsFilterRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ObsBucketEventNotificationsFilterRuleList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketEventNotificationsFilterRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketEventNotificationsFilterRuleOutputReference {
+    return new ObsBucketEventNotificationsFilterRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketEventNotifications {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#events ObsBucket#events}
@@ -138,6 +409,9 @@ export interface ObsBucketEventNotifications {
   readonly events: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#id ObsBucket#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -159,11 +433,152 @@ export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNo
   }
   return {
     events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    id: cdktf.stringToTerraform(struct!.id),
     topic: cdktf.stringToTerraform(struct!.topic),
     filter_rule: cdktf.listMapper(obsBucketEventNotificationsFilterRuleToTerraform)(struct!.filterRule),
   }
 }
 
+export class ObsBucketEventNotificationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketEventNotifications | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._events !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.events = this._events;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._topic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.topic = this._topic;
+    }
+    if (this._filterRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterRule = this._filterRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketEventNotifications | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._events = undefined;
+      this._id = undefined;
+      this._topic = undefined;
+      this._filterRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._events = value.events;
+      this._id = value.id;
+      this._topic = value.topic;
+      this._filterRule.internalValue = value.filterRule;
+    }
+  }
+
+  // events - computed: false, optional: false, required: true
+  private _events?: string[]; 
+  public get events() {
+    return cdktf.Fn.tolist(this.getListAttribute('events'));
+  }
+  public set events(value: string[]) {
+    this._events = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventsInput() {
+    return this._events;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // topic - computed: false, optional: false, required: true
+  private _topic?: string; 
+  public get topic() {
+    return this.getStringAttribute('topic');
+  }
+  public set topic(value: string) {
+    this._topic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic;
+  }
+
+  // filter_rule - computed: false, optional: true, required: false
+  private _filterRule = new ObsBucketEventNotificationsFilterRuleList(this, "filter_rule", true);
+  public get filterRule() {
+    return this._filterRule;
+  }
+  public putFilterRule(value: ObsBucketEventNotificationsFilterRule[] | cdktf.IResolvable) {
+    this._filterRule.internalValue = value;
+  }
+  public resetFilterRule() {
+    this._filterRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterRuleInput() {
+    return this._filterRule.internalValue;
+  }
+}
+
+export class ObsBucketEventNotificationsList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketEventNotifications[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketEventNotificationsOutputReference {
+    return new ObsBucketEventNotificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRuleExpiration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#days ObsBucket#days}
@@ -181,6 +596,83 @@ export function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLi
   }
 }
 
+export class ObsBucketLifecycleRuleExpirationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRuleExpiration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRuleExpiration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._days = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._days = value.days;
+    }
+  }
+
+  // days - computed: false, optional: false, required: true
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+}
+
+export class ObsBucketLifecycleRuleExpirationList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRuleExpiration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleExpirationOutputReference {
+    return new ObsBucketLifecycleRuleExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRuleNoncurrentVersionExpiration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#days ObsBucket#days}
@@ -198,6 +690,83 @@ export function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(str
   }
 }
 
+export class ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRuleNoncurrentVersionExpiration | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRuleNoncurrentVersionExpiration | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._days = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._days = value.days;
+    }
+  }
+
+  // days - computed: false, optional: false, required: true
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+}
+
+export class ObsBucketLifecycleRuleNoncurrentVersionExpirationList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference {
+    return new ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRuleNoncurrentVersionTransition {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#days ObsBucket#days}
@@ -220,6 +789,102 @@ export function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(str
   }
 }
 
+export class ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRuleNoncurrentVersionTransition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    if (this._storageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageClass = this._storageClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRuleNoncurrentVersionTransition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._days = undefined;
+      this._storageClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._days = value.days;
+      this._storageClass = value.storageClass;
+    }
+  }
+
+  // days - computed: false, optional: false, required: true
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+
+  // storage_class - computed: false, optional: false, required: true
+  private _storageClass?: string; 
+  public get storageClass() {
+    return this.getStringAttribute('storage_class');
+  }
+  public set storageClass(value: string) {
+    this._storageClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass;
+  }
+}
+
+export class ObsBucketLifecycleRuleNoncurrentVersionTransitionList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference {
+    return new ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRuleTransition {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#days ObsBucket#days}
@@ -242,6 +907,102 @@ export function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLi
   }
 }
 
+export class ObsBucketLifecycleRuleTransitionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRuleTransition | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    if (this._storageClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storageClass = this._storageClass;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRuleTransition | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._days = undefined;
+      this._storageClass = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._days = value.days;
+      this._storageClass = value.storageClass;
+    }
+  }
+
+  // days - computed: false, optional: false, required: true
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+
+  // storage_class - computed: false, optional: false, required: true
+  private _storageClass?: string; 
+  public get storageClass() {
+    return this.getStringAttribute('storage_class');
+  }
+  public set storageClass(value: string) {
+    this._storageClass = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageClassInput() {
+    return this._storageClass;
+  }
+}
+
+export class ObsBucketLifecycleRuleTransitionList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRuleTransition[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleTransitionOutputReference {
+    return new ObsBucketLifecycleRuleTransitionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRule {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#enabled ObsBucket#enabled}
@@ -297,6 +1058,212 @@ export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRul
   }
 }
 
+export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._expiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expiration = this._expiration?.internalValue;
+    }
+    if (this._noncurrentVersionExpiration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentVersionExpiration = this._noncurrentVersionExpiration?.internalValue;
+    }
+    if (this._noncurrentVersionTransition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.noncurrentVersionTransition = this._noncurrentVersionTransition?.internalValue;
+    }
+    if (this._transition?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transition = this._transition?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enabled = undefined;
+      this._name = undefined;
+      this._prefix = undefined;
+      this._expiration.internalValue = undefined;
+      this._noncurrentVersionExpiration.internalValue = undefined;
+      this._noncurrentVersionTransition.internalValue = undefined;
+      this._transition.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enabled = value.enabled;
+      this._name = value.name;
+      this._prefix = value.prefix;
+      this._expiration.internalValue = value.expiration;
+      this._noncurrentVersionExpiration.internalValue = value.noncurrentVersionExpiration;
+      this._noncurrentVersionTransition.internalValue = value.noncurrentVersionTransition;
+      this._transition.internalValue = value.transition;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration = new ObsBucketLifecycleRuleExpirationList(this, "expiration", true);
+  public get expiration() {
+    return this._expiration;
+  }
+  public putExpiration(value: ObsBucketLifecycleRuleExpiration[] | cdktf.IResolvable) {
+    this._expiration.internalValue = value;
+  }
+  public resetExpiration() {
+    this._expiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration.internalValue;
+  }
+
+  // noncurrent_version_expiration - computed: false, optional: true, required: false
+  private _noncurrentVersionExpiration = new ObsBucketLifecycleRuleNoncurrentVersionExpirationList(this, "noncurrent_version_expiration", true);
+  public get noncurrentVersionExpiration() {
+    return this._noncurrentVersionExpiration;
+  }
+  public putNoncurrentVersionExpiration(value: ObsBucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable) {
+    this._noncurrentVersionExpiration.internalValue = value;
+  }
+  public resetNoncurrentVersionExpiration() {
+    this._noncurrentVersionExpiration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentVersionExpirationInput() {
+    return this._noncurrentVersionExpiration.internalValue;
+  }
+
+  // noncurrent_version_transition - computed: false, optional: true, required: false
+  private _noncurrentVersionTransition = new ObsBucketLifecycleRuleNoncurrentVersionTransitionList(this, "noncurrent_version_transition", false);
+  public get noncurrentVersionTransition() {
+    return this._noncurrentVersionTransition;
+  }
+  public putNoncurrentVersionTransition(value: ObsBucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable) {
+    this._noncurrentVersionTransition.internalValue = value;
+  }
+  public resetNoncurrentVersionTransition() {
+    this._noncurrentVersionTransition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noncurrentVersionTransitionInput() {
+    return this._noncurrentVersionTransition.internalValue;
+  }
+
+  // transition - computed: false, optional: true, required: false
+  private _transition = new ObsBucketLifecycleRuleTransitionList(this, "transition", false);
+  public get transition() {
+    return this._transition;
+  }
+  public putTransition(value: ObsBucketLifecycleRuleTransition[] | cdktf.IResolvable) {
+    this._transition.internalValue = value;
+  }
+  public resetTransition() {
+    this._transition.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transitionInput() {
+    return this._transition.internalValue;
+  }
+}
+
+export class ObsBucketLifecycleRuleList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleOutputReference {
+    return new ObsBucketLifecycleRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLogging {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#target_bucket ObsBucket#target_bucket}
@@ -319,6 +1286,105 @@ export function obsBucketLoggingToTerraform(struct?: ObsBucketLogging | cdktf.IR
   }
 }
 
+export class ObsBucketLoggingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLogging | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetBucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetBucket = this._targetBucket;
+    }
+    if (this._targetPrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPrefix = this._targetPrefix;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLogging | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._targetBucket = undefined;
+      this._targetPrefix = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._targetBucket = value.targetBucket;
+      this._targetPrefix = value.targetPrefix;
+    }
+  }
+
+  // target_bucket - computed: false, optional: false, required: true
+  private _targetBucket?: string; 
+  public get targetBucket() {
+    return this.getStringAttribute('target_bucket');
+  }
+  public set targetBucket(value: string) {
+    this._targetBucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetBucketInput() {
+    return this._targetBucket;
+  }
+
+  // target_prefix - computed: false, optional: true, required: false
+  private _targetPrefix?: string; 
+  public get targetPrefix() {
+    return this.getStringAttribute('target_prefix');
+  }
+  public set targetPrefix(value: string) {
+    this._targetPrefix = value;
+  }
+  public resetTargetPrefix() {
+    this._targetPrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPrefixInput() {
+    return this._targetPrefix;
+  }
+}
+
+export class ObsBucketLoggingList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLogging[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLoggingOutputReference {
+    return new ObsBucketLoggingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketServerSideEncryption {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/obs_bucket#algorithm ObsBucket#algorithm}
@@ -589,14 +1655,15 @@ export class ObsBucket extends cdktf.TerraformResource {
     this._acl = config.acl;
     this._bucket = config.bucket;
     this._forceDestroy = config.forceDestroy;
+    this._id = config.id;
     this._region = config.region;
     this._storageClass = config.storageClass;
     this._tags = config.tags;
     this._versioning = config.versioning;
-    this._corsRule = config.corsRule;
-    this._eventNotifications = config.eventNotifications;
-    this._lifecycleRule = config.lifecycleRule;
-    this._logging = config.logging;
+    this._corsRule.internalValue = config.corsRule;
+    this._eventNotifications.internalValue = config.eventNotifications;
+    this._lifecycleRule.internalValue = config.lifecycleRule;
+    this._logging.internalValue = config.logging;
     this._serverSideEncryption.internalValue = config.serverSideEncryption;
     this._website.internalValue = config.website;
   }
@@ -656,8 +1723,19 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // region - computed: true, optional: true, required: false
@@ -725,71 +1803,67 @@ export class ObsBucket extends cdktf.TerraformResource {
   }
 
   // cors_rule - computed: false, optional: true, required: false
-  private _corsRule?: ObsBucketCorsRule[] | cdktf.IResolvable; 
+  private _corsRule = new ObsBucketCorsRuleList(this, "cors_rule", false);
   public get corsRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('cors_rule');
+    return this._corsRule;
   }
-  public set corsRule(value: ObsBucketCorsRule[] | cdktf.IResolvable) {
-    this._corsRule = value;
+  public putCorsRule(value: ObsBucketCorsRule[] | cdktf.IResolvable) {
+    this._corsRule.internalValue = value;
   }
   public resetCorsRule() {
-    this._corsRule = undefined;
+    this._corsRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get corsRuleInput() {
-    return this._corsRule;
+    return this._corsRule.internalValue;
   }
 
   // event_notifications - computed: false, optional: true, required: false
-  private _eventNotifications?: ObsBucketEventNotifications[] | cdktf.IResolvable; 
+  private _eventNotifications = new ObsBucketEventNotificationsList(this, "event_notifications", false);
   public get eventNotifications() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event_notifications');
+    return this._eventNotifications;
   }
-  public set eventNotifications(value: ObsBucketEventNotifications[] | cdktf.IResolvable) {
-    this._eventNotifications = value;
+  public putEventNotifications(value: ObsBucketEventNotifications[] | cdktf.IResolvable) {
+    this._eventNotifications.internalValue = value;
   }
   public resetEventNotifications() {
-    this._eventNotifications = undefined;
+    this._eventNotifications.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventNotificationsInput() {
-    return this._eventNotifications;
+    return this._eventNotifications.internalValue;
   }
 
   // lifecycle_rule - computed: false, optional: true, required: false
-  private _lifecycleRule?: ObsBucketLifecycleRule[] | cdktf.IResolvable; 
+  private _lifecycleRule = new ObsBucketLifecycleRuleList(this, "lifecycle_rule", false);
   public get lifecycleRule() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('lifecycle_rule');
+    return this._lifecycleRule;
   }
-  public set lifecycleRule(value: ObsBucketLifecycleRule[] | cdktf.IResolvable) {
-    this._lifecycleRule = value;
+  public putLifecycleRule(value: ObsBucketLifecycleRule[] | cdktf.IResolvable) {
+    this._lifecycleRule.internalValue = value;
   }
   public resetLifecycleRule() {
-    this._lifecycleRule = undefined;
+    this._lifecycleRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lifecycleRuleInput() {
-    return this._lifecycleRule;
+    return this._lifecycleRule.internalValue;
   }
 
   // logging - computed: false, optional: true, required: false
-  private _logging?: ObsBucketLogging[] | cdktf.IResolvable; 
+  private _logging = new ObsBucketLoggingList(this, "logging", true);
   public get logging() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('logging')));
+    return this._logging;
   }
-  public set logging(value: ObsBucketLogging[] | cdktf.IResolvable) {
-    this._logging = value;
+  public putLogging(value: ObsBucketLogging[] | cdktf.IResolvable) {
+    this._logging.internalValue = value;
   }
   public resetLogging() {
-    this._logging = undefined;
+    this._logging.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get loggingInput() {
-    return this._logging;
+    return this._logging.internalValue;
   }
 
   // server_side_encryption - computed: false, optional: true, required: false
@@ -833,14 +1907,15 @@ export class ObsBucket extends cdktf.TerraformResource {
       acl: cdktf.stringToTerraform(this._acl),
       bucket: cdktf.stringToTerraform(this._bucket),
       force_destroy: cdktf.booleanToTerraform(this._forceDestroy),
+      id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       storage_class: cdktf.stringToTerraform(this._storageClass),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       versioning: cdktf.booleanToTerraform(this._versioning),
-      cors_rule: cdktf.listMapper(obsBucketCorsRuleToTerraform)(this._corsRule),
-      event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform)(this._eventNotifications),
-      lifecycle_rule: cdktf.listMapper(obsBucketLifecycleRuleToTerraform)(this._lifecycleRule),
-      logging: cdktf.listMapper(obsBucketLoggingToTerraform)(this._logging),
+      cors_rule: cdktf.listMapper(obsBucketCorsRuleToTerraform)(this._corsRule.internalValue),
+      event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform)(this._eventNotifications.internalValue),
+      lifecycle_rule: cdktf.listMapper(obsBucketLifecycleRuleToTerraform)(this._lifecycleRule.internalValue),
+      logging: cdktf.listMapper(obsBucketLoggingToTerraform)(this._logging.internalValue),
       server_side_encryption: obsBucketServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       website: obsBucketWebsiteToTerraform(this._website.internalValue),
     };

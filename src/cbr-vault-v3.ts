@@ -28,6 +28,13 @@ export interface CbrVaultV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly enterpriseProjectId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#id CbrVaultV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#name CbrVaultV3#name}
   */
   readonly name: string;
@@ -67,6 +74,9 @@ export interface CbrVaultV3Resource {
   readonly extraInfo?: { [key: string]: string };
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#id CbrVaultV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -96,6 +106,7 @@ export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource | cdkt
     backup_count: cdktf.numberToTerraform(struct!.backupCount),
     backup_size: cdktf.numberToTerraform(struct!.backupSize),
     extra_info: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.extraInfo),
+    id: cdktf.stringToTerraform(struct!.id),
     name: cdktf.stringToTerraform(struct!.name),
     protect_status: cdktf.stringToTerraform(struct!.protectStatus),
     size: cdktf.numberToTerraform(struct!.size),
@@ -103,6 +114,240 @@ export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource | cdkt
   }
 }
 
+export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CbrVaultV3Resource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backupCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupCount = this._backupCount;
+    }
+    if (this._backupSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupSize = this._backupSize;
+    }
+    if (this._extraInfo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraInfo = this._extraInfo;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._protectStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protectStatus = this._protectStatus;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CbrVaultV3Resource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backupCount = undefined;
+      this._backupSize = undefined;
+      this._extraInfo = undefined;
+      this._id = undefined;
+      this._name = undefined;
+      this._protectStatus = undefined;
+      this._size = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backupCount = value.backupCount;
+      this._backupSize = value.backupSize;
+      this._extraInfo = value.extraInfo;
+      this._id = value.id;
+      this._name = value.name;
+      this._protectStatus = value.protectStatus;
+      this._size = value.size;
+      this._type = value.type;
+    }
+  }
+
+  // backup_count - computed: true, optional: true, required: false
+  private _backupCount?: number; 
+  public get backupCount() {
+    return this.getNumberAttribute('backup_count');
+  }
+  public set backupCount(value: number) {
+    this._backupCount = value;
+  }
+  public resetBackupCount() {
+    this._backupCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupCountInput() {
+    return this._backupCount;
+  }
+
+  // backup_size - computed: true, optional: true, required: false
+  private _backupSize?: number; 
+  public get backupSize() {
+    return this.getNumberAttribute('backup_size');
+  }
+  public set backupSize(value: number) {
+    this._backupSize = value;
+  }
+  public resetBackupSize() {
+    this._backupSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupSizeInput() {
+    return this._backupSize;
+  }
+
+  // extra_info - computed: true, optional: true, required: false
+  private _extraInfo?: { [key: string]: string }; 
+  public get extraInfo() {
+    return this.getStringMapAttribute('extra_info');
+  }
+  public set extraInfo(value: { [key: string]: string }) {
+    this._extraInfo = value;
+  }
+  public resetExtraInfo() {
+    this._extraInfo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraInfoInput() {
+    return this._extraInfo;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // protect_status - computed: true, optional: true, required: false
+  private _protectStatus?: string; 
+  public get protectStatus() {
+    return this.getStringAttribute('protect_status');
+  }
+  public set protectStatus(value: string) {
+    this._protectStatus = value;
+  }
+  public resetProtectStatus() {
+    this._protectStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectStatusInput() {
+    return this._protectStatus;
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class CbrVaultV3ResourceList extends cdktf.ComplexList {
+  public internalValue? : CbrVaultV3Resource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CbrVaultV3ResourceOutputReference {
+    return new CbrVaultV3ResourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CbrVaultV3Billing {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#charging_mode CbrVaultV3#charging_mode}
@@ -518,6 +763,102 @@ export function cbrVaultV3BindRulesToTerraform(struct?: CbrVaultV3BindRules | cd
   }
 }
 
+export class CbrVaultV3BindRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CbrVaultV3BindRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CbrVaultV3BindRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class CbrVaultV3BindRulesList extends cdktf.ComplexList {
+  public internalValue? : CbrVaultV3BindRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CbrVaultV3BindRulesOutputReference {
+    return new CbrVaultV3BindRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}
@@ -558,11 +899,12 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     this._backupPolicyId = config.backupPolicyId;
     this._description = config.description;
     this._enterpriseProjectId = config.enterpriseProjectId;
+    this._id = config.id;
     this._name = config.name;
-    this._resource = config.resource;
+    this._resource.internalValue = config.resource;
     this._tags = config.tags;
     this._billing.internalValue = config.billing;
-    this._bindRules = config.bindRules;
+    this._bindRules.internalValue = config.bindRules;
   }
 
   // ==========
@@ -655,8 +997,19 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -683,20 +1036,19 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // resource - computed: true, optional: true, required: false
-  private _resource?: CbrVaultV3Resource[] | cdktf.IResolvable; 
+  private _resource = new CbrVaultV3ResourceList(this, "resource", true);
   public get resource() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('resource')));
+    return this._resource;
   }
-  public set resource(value: CbrVaultV3Resource[] | cdktf.IResolvable) {
-    this._resource = value;
+  public putResource(value: CbrVaultV3Resource[] | cdktf.IResolvable) {
+    this._resource.internalValue = value;
   }
   public resetResource() {
-    this._resource = undefined;
+    this._resource.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceInput() {
-    return this._resource;
+    return this._resource.internalValue;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -734,20 +1086,19 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   }
 
   // bind_rules - computed: false, optional: true, required: false
-  private _bindRules?: CbrVaultV3BindRules[] | cdktf.IResolvable; 
+  private _bindRules = new CbrVaultV3BindRulesList(this, "bind_rules", false);
   public get bindRules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('bind_rules');
+    return this._bindRules;
   }
-  public set bindRules(value: CbrVaultV3BindRules[] | cdktf.IResolvable) {
-    this._bindRules = value;
+  public putBindRules(value: CbrVaultV3BindRules[] | cdktf.IResolvable) {
+    this._bindRules.internalValue = value;
   }
   public resetBindRules() {
-    this._bindRules = undefined;
+    this._bindRules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bindRulesInput() {
-    return this._bindRules;
+    return this._bindRules.internalValue;
   }
 
   // =========
@@ -761,11 +1112,12 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       backup_policy_id: cdktf.stringToTerraform(this._backupPolicyId),
       description: cdktf.stringToTerraform(this._description),
       enterprise_project_id: cdktf.stringToTerraform(this._enterpriseProjectId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      resource: cdktf.listMapper(cbrVaultV3ResourceToTerraform)(this._resource),
+      resource: cdktf.listMapper(cbrVaultV3ResourceToTerraform)(this._resource.internalValue),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       billing: cbrVaultV3BillingToTerraform(this._billing.internalValue),
-      bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform)(this._bindRules),
+      bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform)(this._bindRules.internalValue),
     };
   }
 }

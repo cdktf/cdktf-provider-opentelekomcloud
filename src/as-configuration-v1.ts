@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface AsConfigurationV1Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#id AsConfigurationV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#region AsConfigurationV1#region}
   */
   readonly region?: string;
@@ -54,6 +61,143 @@ export function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfig
   }
 }
 
+export class AsConfigurationV1InstanceConfigDiskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AsConfigurationV1InstanceConfigDisk | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._diskType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskType = this._diskType;
+    }
+    if (this._kmsId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsId = this._kmsId;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    if (this._volumeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumeType = this._volumeType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfigDisk | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._diskType = undefined;
+      this._kmsId = undefined;
+      this._size = undefined;
+      this._volumeType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._diskType = value.diskType;
+      this._kmsId = value.kmsId;
+      this._size = value.size;
+      this._volumeType = value.volumeType;
+    }
+  }
+
+  // disk_type - computed: false, optional: false, required: true
+  private _diskType?: string; 
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+  public set diskType(value: string) {
+    this._diskType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskTypeInput() {
+    return this._diskType;
+  }
+
+  // kms_id - computed: false, optional: true, required: false
+  private _kmsId?: string; 
+  public get kmsId() {
+    return this.getStringAttribute('kms_id');
+  }
+  public set kmsId(value: string) {
+    this._kmsId = value;
+  }
+  public resetKmsId() {
+    this._kmsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsIdInput() {
+    return this._kmsId;
+  }
+
+  // size - computed: false, optional: false, required: true
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+
+  // volume_type - computed: false, optional: false, required: true
+  private _volumeType?: string; 
+  public get volumeType() {
+    return this.getStringAttribute('volume_type');
+  }
+  public set volumeType(value: string) {
+    this._volumeType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeTypeInput() {
+    return this._volumeType;
+  }
+}
+
+export class AsConfigurationV1InstanceConfigDiskList extends cdktf.ComplexList {
+  public internalValue? : AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AsConfigurationV1InstanceConfigDiskOutputReference {
+    return new AsConfigurationV1InstanceConfigDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AsConfigurationV1InstanceConfigPersonality {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#content AsConfigurationV1#content}
@@ -76,6 +220,102 @@ export function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: A
   }
 }
 
+export class AsConfigurationV1InstanceConfigPersonalityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): AsConfigurationV1InstanceConfigPersonality | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AsConfigurationV1InstanceConfigPersonality | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._content = undefined;
+      this._path = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._content = value.content;
+      this._path = value.path;
+    }
+  }
+
+  // content - computed: false, optional: false, required: true
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+
+export class AsConfigurationV1InstanceConfigPersonalityList extends cdktf.ComplexList {
+  public internalValue? : AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): AsConfigurationV1InstanceConfigPersonalityOutputReference {
+    return new AsConfigurationV1InstanceConfigPersonalityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface AsConfigurationV1InstanceConfigPublicIpEipBandwidth {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_configuration_v1#charging_mode AsConfigurationV1#charging_mode}
@@ -448,13 +688,13 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.userData = this._userData;
     }
-    if (this._disk !== undefined) {
+    if (this._disk?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.disk = this._disk;
+      internalValueResult.disk = this._disk?.internalValue;
     }
-    if (this._personality !== undefined) {
+    if (this._personality?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.personality = this._personality;
+      internalValueResult.personality = this._personality?.internalValue;
     }
     if (this._publicIp?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -473,8 +713,8 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
       this._metadata = undefined;
       this._securityGroups = undefined;
       this._userData = undefined;
-      this._disk = undefined;
-      this._personality = undefined;
+      this._disk.internalValue = undefined;
+      this._personality.internalValue = undefined;
       this._publicIp.internalValue = undefined;
     }
     else {
@@ -486,8 +726,8 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
       this._metadata = value.metadata;
       this._securityGroups = value.securityGroups;
       this._userData = value.userData;
-      this._disk = value.disk;
-      this._personality = value.personality;
+      this._disk.internalValue = value.disk;
+      this._personality.internalValue = value.personality;
       this._publicIp.internalValue = value.publicIp;
     }
   }
@@ -602,37 +842,35 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
   }
 
   // disk - computed: false, optional: true, required: false
-  private _disk?: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable; 
+  private _disk = new AsConfigurationV1InstanceConfigDiskList(this, "disk", false);
   public get disk() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('disk');
+    return this._disk;
   }
-  public set disk(value: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable) {
-    this._disk = value;
+  public putDisk(value: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable) {
+    this._disk.internalValue = value;
   }
   public resetDisk() {
-    this._disk = undefined;
+    this._disk.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get diskInput() {
-    return this._disk;
+    return this._disk.internalValue;
   }
 
   // personality - computed: false, optional: true, required: false
-  private _personality?: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable; 
+  private _personality = new AsConfigurationV1InstanceConfigPersonalityList(this, "personality", false);
   public get personality() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('personality');
+    return this._personality;
   }
-  public set personality(value: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable) {
-    this._personality = value;
+  public putPersonality(value: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable) {
+    this._personality.internalValue = value;
   }
   public resetPersonality() {
-    this._personality = undefined;
+    this._personality.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get personalityInput() {
-    return this._personality;
+    return this._personality.internalValue;
   }
 
   // public_ip - computed: false, optional: true, required: false
@@ -686,6 +924,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._region = config.region;
     this._scalingConfigurationName = config.scalingConfigurationName;
     this._instanceConfig.internalValue = config.instanceConfig;
@@ -696,8 +935,19 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // region - computed: true, optional: true, required: false
@@ -748,6 +998,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       scaling_configuration_name: cdktf.stringToTerraform(this._scalingConfigurationName),
       instance_config: asConfigurationV1InstanceConfigToTerraform(this._instanceConfig.internalValue),

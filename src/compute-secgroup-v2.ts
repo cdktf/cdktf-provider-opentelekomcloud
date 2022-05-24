@@ -12,6 +12,13 @@ export interface ComputeSecgroupV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly description: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#id ComputeSecgroupV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#name ComputeSecgroupV2#name}
   */
   readonly name: string;
@@ -74,6 +81,192 @@ export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule 
   }
 }
 
+export class ComputeSecgroupV2RuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeSecgroupV2Rule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cidr !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidr = this._cidr;
+    }
+    if (this._fromGroupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromGroupId = this._fromGroupId;
+    }
+    if (this._fromPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fromPort = this._fromPort;
+    }
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._self !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.selfAttribute = this._self;
+    }
+    if (this._toPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toPort = this._toPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeSecgroupV2Rule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cidr = undefined;
+      this._fromGroupId = undefined;
+      this._fromPort = undefined;
+      this._ipProtocol = undefined;
+      this._self = undefined;
+      this._toPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cidr = value.cidr;
+      this._fromGroupId = value.fromGroupId;
+      this._fromPort = value.fromPort;
+      this._ipProtocol = value.ipProtocol;
+      this._self = value.selfAttribute;
+      this._toPort = value.toPort;
+    }
+  }
+
+  // cidr - computed: false, optional: true, required: false
+  private _cidr?: string; 
+  public get cidr() {
+    return this.getStringAttribute('cidr');
+  }
+  public set cidr(value: string) {
+    this._cidr = value;
+  }
+  public resetCidr() {
+    this._cidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrInput() {
+    return this._cidr;
+  }
+
+  // from_group_id - computed: false, optional: true, required: false
+  private _fromGroupId?: string; 
+  public get fromGroupId() {
+    return this.getStringAttribute('from_group_id');
+  }
+  public set fromGroupId(value: string) {
+    this._fromGroupId = value;
+  }
+  public resetFromGroupId() {
+    this._fromGroupId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromGroupIdInput() {
+    return this._fromGroupId;
+  }
+
+  // from_port - computed: false, optional: false, required: true
+  private _fromPort?: number; 
+  public get fromPort() {
+    return this.getNumberAttribute('from_port');
+  }
+  public set fromPort(value: number) {
+    this._fromPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fromPortInput() {
+    return this._fromPort;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // self - computed: false, optional: true, required: false
+  private _self?: boolean | cdktf.IResolvable; 
+  public get selfAttribute() {
+    return this.getBooleanAttribute('self');
+  }
+  public set selfAttribute(value: boolean | cdktf.IResolvable) {
+    this._self = value;
+  }
+  public resetSelfAttribute() {
+    this._self = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selfAttributeInput() {
+    return this._self;
+  }
+
+  // to_port - computed: false, optional: false, required: true
+  private _toPort?: number; 
+  public get toPort() {
+    return this.getNumberAttribute('to_port');
+  }
+  public set toPort(value: number) {
+    this._toPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toPortInput() {
+    return this._toPort;
+  }
+}
+
+export class ComputeSecgroupV2RuleList extends cdktf.ComplexList {
+  public internalValue? : ComputeSecgroupV2Rule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeSecgroupV2RuleOutputReference {
+    return new ComputeSecgroupV2RuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ComputeSecgroupV2Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_secgroup_v2#delete ComputeSecgroupV2#delete}
@@ -93,6 +286,7 @@ export function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2T
 
 export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -102,7 +296,10 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): ComputeSecgroupV2Timeouts | undefined {
+  public get internalValue(): ComputeSecgroupV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._delete !== undefined) {
@@ -112,13 +309,19 @@ export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSecgroupV2Timeouts | undefined) {
+  public set internalValue(value: ComputeSecgroupV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._delete = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._delete = value.delete;
     }
   }
@@ -175,9 +378,10 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._region = config.region;
-    this._rule = config.rule;
+    this._rule.internalValue = config.rule;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -199,8 +403,19 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -233,20 +448,19 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   }
 
   // rule - computed: false, optional: true, required: false
-  private _rule?: ComputeSecgroupV2Rule[] | cdktf.IResolvable; 
+  private _rule = new ComputeSecgroupV2RuleList(this, "rule", true);
   public get rule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('rule')));
+    return this._rule;
   }
-  public set rule(value: ComputeSecgroupV2Rule[] | cdktf.IResolvable) {
-    this._rule = value;
+  public putRule(value: ComputeSecgroupV2Rule[] | cdktf.IResolvable) {
+    this._rule.internalValue = value;
   }
   public resetRule() {
-    this._rule = undefined;
+    this._rule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleInput() {
-    return this._rule;
+    return this._rule.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -272,9 +486,10 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform)(this._rule),
+      rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform)(this._rule.internalValue),
       timeouts: computeSecgroupV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -28,6 +28,13 @@ export interface BlockstorageVolumeV2Config extends cdktf.TerraformMetaArguments
   */
   readonly deviceType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#id BlockstorageVolumeV2#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/blockstorage_volume_v2#image_id BlockstorageVolumeV2#image_id}
   */
   readonly imageId?: string;
@@ -172,6 +179,7 @@ export function blockstorageVolumeV2TimeoutsToTerraform(struct?: BlockstorageVol
 
 export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -181,7 +189,10 @@ export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): BlockstorageVolumeV2Timeouts | undefined {
+  public get internalValue(): BlockstorageVolumeV2Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -195,14 +206,20 @@ export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BlockstorageVolumeV2Timeouts | undefined) {
+  public set internalValue(value: BlockstorageVolumeV2Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -280,6 +297,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
     this._consistencyGroupId = config.consistencyGroupId;
     this._description = config.description;
     this._deviceType = config.deviceType;
+    this._id = config.id;
     this._imageId = config.imageId;
     this._metadata = config.metadata;
     this._name = config.name;
@@ -384,8 +402,19 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // image_id - computed: false, optional: true, required: false
@@ -577,6 +606,7 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
       consistency_group_id: cdktf.stringToTerraform(this._consistencyGroupId),
       description: cdktf.stringToTerraform(this._description),
       device_type: cdktf.stringToTerraform(this._deviceType),
+      id: cdktf.stringToTerraform(this._id),
       image_id: cdktf.stringToTerraform(this._imageId),
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),

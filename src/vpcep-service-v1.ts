@@ -12,6 +12,13 @@ export interface VpcepServiceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly approvalEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#id VpcepServiceV1#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#name VpcepServiceV1#name}
   */
   readonly name?: string;
@@ -87,6 +94,124 @@ export function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port | cdkt
   }
 }
 
+export class VpcepServiceV1PortOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VpcepServiceV1Port | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientPort = this._clientPort;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._serverPort !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serverPort = this._serverPort;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpcepServiceV1Port | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clientPort = undefined;
+      this._protocol = undefined;
+      this._serverPort = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clientPort = value.clientPort;
+      this._protocol = value.protocol;
+      this._serverPort = value.serverPort;
+    }
+  }
+
+  // client_port - computed: false, optional: false, required: true
+  private _clientPort?: number; 
+  public get clientPort() {
+    return this.getNumberAttribute('client_port');
+  }
+  public set clientPort(value: number) {
+    this._clientPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientPortInput() {
+    return this._clientPort;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // server_port - computed: false, optional: false, required: true
+  private _serverPort?: number; 
+  public get serverPort() {
+    return this.getNumberAttribute('server_port');
+  }
+  public set serverPort(value: number) {
+    this._serverPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serverPortInput() {
+    return this._serverPort;
+  }
+}
+
+export class VpcepServiceV1PortList extends cdktf.ComplexList {
+  public internalValue? : VpcepServiceV1Port[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VpcepServiceV1PortOutputReference {
+    return new VpcepServiceV1PortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface VpcepServiceV1Timeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpcep_service_v1#default VpcepServiceV1#default}
@@ -106,6 +231,7 @@ export function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1Timeout
 
 export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -115,7 +241,10 @@ export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): VpcepServiceV1Timeouts | undefined {
+  public get internalValue(): VpcepServiceV1Timeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._default !== undefined) {
@@ -125,13 +254,19 @@ export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VpcepServiceV1Timeouts | undefined) {
+  public set internalValue(value: VpcepServiceV1Timeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._default = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._default = value.default;
     }
   }
@@ -188,6 +323,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._approvalEnabled = config.approvalEnabled;
+    this._id = config.id;
     this._name = config.name;
     this._poolId = config.poolId;
     this._portId = config.portId;
@@ -197,7 +333,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
     this._tcpProxy = config.tcpProxy;
     this._vipPortId = config.vipPortId;
     this._vpcId = config.vpcId;
-    this._port = config.port;
+    this._port.internalValue = config.port;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -222,8 +358,19 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: true, required: false
@@ -362,17 +509,16 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   }
 
   // port - computed: false, optional: false, required: true
-  private _port?: VpcepServiceV1Port[] | cdktf.IResolvable; 
+  private _port = new VpcepServiceV1PortList(this, "port", true);
   public get port() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('port')));
+    return this._port;
   }
-  public set port(value: VpcepServiceV1Port[] | cdktf.IResolvable) {
-    this._port = value;
+  public putPort(value: VpcepServiceV1Port[] | cdktf.IResolvable) {
+    this._port.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {
-    return this._port;
+    return this._port.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -398,6 +544,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       approval_enabled: cdktf.booleanToTerraform(this._approvalEnabled),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       pool_id: cdktf.stringToTerraform(this._poolId),
       port_id: cdktf.stringToTerraform(this._portId),
@@ -407,7 +554,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       tcp_proxy: cdktf.stringToTerraform(this._tcpProxy),
       vip_port_id: cdktf.stringToTerraform(this._vipPortId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      port: cdktf.listMapper(vpcepServiceV1PortToTerraform)(this._port),
+      port: cdktf.listMapper(vpcepServiceV1PortToTerraform)(this._port.internalValue),
       timeouts: vpcepServiceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
