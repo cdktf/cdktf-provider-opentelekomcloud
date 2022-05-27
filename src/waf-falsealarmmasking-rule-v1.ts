@@ -162,7 +162,7 @@ export class WafFalsealarmmaskingRuleV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_falsealarmmasking_rule_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.3',
+        providerVersion: '1.29.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

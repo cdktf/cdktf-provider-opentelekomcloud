@@ -262,7 +262,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.3',
+        providerVersion: '1.29.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -348,7 +348,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('created_at');
   }
 
-  // default_pool_id - computed: false, optional: true, required: false
+  // default_pool_id - computed: true, optional: true, required: false
   private _defaultPoolId?: string; 
   public get defaultPoolId() {
     return this.getStringAttribute('default_pool_id');

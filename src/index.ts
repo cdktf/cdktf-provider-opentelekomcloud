@@ -199,6 +199,7 @@ export * from './data-opentelekomcloud-obs-bucket-object';
 export * from './data-opentelekomcloud-rds-backup-v3';
 export * from './data-opentelekomcloud-rds-flavors-v1';
 export * from './data-opentelekomcloud-rds-flavors-v3';
+export * from './data-opentelekomcloud-rds-instance-v3';
 export * from './data-opentelekomcloud-rds-versions-v3';
 export * from './data-opentelekomcloud-rts-software-config-v1';
 export * from './data-opentelekomcloud-rts-software-deployment-v1';
