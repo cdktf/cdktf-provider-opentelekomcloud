@@ -50,7 +50,7 @@ export class DataOpentelekomcloudVpcSubnetIdsV1 extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_vpc_subnet_ids_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.3',
+        providerVersion: '1.29.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
