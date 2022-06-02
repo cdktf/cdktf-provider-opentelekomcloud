@@ -370,7 +370,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_csbs_backup_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.4',
+        providerVersion: '1.29.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -114,7 +114,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dms_instance_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.4',
+        providerVersion: '1.29.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
