@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config extends cdktf.TerraformMetaArguments {
+export interface DataOpentelekomcloudLbMemberIdsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2#id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2#id DataOpentelekomcloudLbMemberIdsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2#region DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#region}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2#pool_id DataOpentelekomcloudLbMemberIdsV2#pool_id}
+  */
+  readonly poolId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2#region DataOpentelekomcloudLbMemberIdsV2#region}
   */
   readonly region?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2#security_group_id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#security_group_id}
-  */
-  readonly securityGroupId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2 opentelekomcloud_networking_secgroup_rule_ids_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2}
 */
-export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.TerraformDataSource {
+export class DataOpentelekomcloudLbMemberIdsV2 extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "opentelekomcloud_networking_secgroup_rule_ids_v2";
+  public static readonly tfResourceType = "opentelekomcloud_lb_member_ids_v2";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_rule_ids_v2 opentelekomcloud_networking_secgroup_rule_ids_v2} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config
+  * @param options DataOpentelekomcloudLbMemberIdsV2Config
   */
-  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config) {
+  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudLbMemberIdsV2Config) {
     super(scope, id, {
-      terraformResourceType: 'opentelekomcloud_networking_secgroup_rule_ids_v2',
+      terraformResourceType: 'opentelekomcloud_lb_member_ids_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
         providerVersion: '1.29.6',
@@ -59,8 +59,8 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
       lifecycle: config.lifecycle
     });
     this._id = config.id;
+    this._poolId = config.poolId;
     this._region = config.region;
-    this._securityGroupId = config.securityGroupId;
   }
 
   // ==========
@@ -88,6 +88,19 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
     return cdktf.Fn.tolist(this.getListAttribute('ids'));
   }
 
+  // pool_id - computed: false, optional: false, required: true
+  private _poolId?: string; 
+  public get poolId() {
+    return this.getStringAttribute('pool_id');
+  }
+  public set poolId(value: string) {
+    this._poolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdInput() {
+    return this._poolId;
+  }
+
   // region - computed: true, optional: true, required: false
   private _region?: string; 
   public get region() {
@@ -104,19 +117,6 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
     return this._region;
   }
 
-  // security_group_id - computed: false, optional: false, required: true
-  private _securityGroupId?: string; 
-  public get securityGroupId() {
-    return this.getStringAttribute('security_group_id');
-  }
-  public set securityGroupId(value: string) {
-    this._securityGroupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get securityGroupIdInput() {
-    return this._securityGroupId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -124,8 +124,8 @@ export class DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 extends cdktf.Terra
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      pool_id: cdktf.stringToTerraform(this._poolId),
       region: cdktf.stringToTerraform(this._region),
-      security_group_id: cdktf.stringToTerraform(this._securityGroupId),
     };
   }
 }
