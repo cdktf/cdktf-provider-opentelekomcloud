@@ -12,6 +12,10 @@ export interface VpcV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly cidr: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_v1#description VpcV1#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_v1#id VpcV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -170,7 +174,7 @@ export class VpcV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.5',
+        providerVersion: '1.29.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -179,6 +183,7 @@ export class VpcV1 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._cidr = config.cidr;
+    this._description = config.description;
     this._id = config.id;
     this._name = config.name;
     this._region = config.region;
@@ -202,6 +207,22 @@ export class VpcV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cidrInput() {
     return this._cidr;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -309,6 +330,7 @@ export class VpcV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr: cdktf.stringToTerraform(this._cidr),
+      description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),

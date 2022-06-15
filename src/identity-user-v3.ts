@@ -12,6 +12,10 @@ export interface IdentityUserV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly defaultProjectId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_v3#description IdentityUserV3#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_v3#domain_id IdentityUserV3#domain_id}
   */
   readonly domainId?: string;
@@ -74,7 +78,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_user_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.5',
+        providerVersion: '1.29.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -83,6 +87,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._defaultProjectId = config.defaultProjectId;
+    this._description = config.description;
     this._domainId = config.domainId;
     this._email = config.email;
     this._enabled = config.enabled;
@@ -111,6 +116,22 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultProjectIdInput() {
     return this._defaultProjectId;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // domain_id - computed: true, optional: true, required: false
@@ -248,6 +269,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       default_project_id: cdktf.stringToTerraform(this._defaultProjectId),
+      description: cdktf.stringToTerraform(this._description),
       domain_id: cdktf.stringToTerraform(this._domainId),
       email: cdktf.stringToTerraform(this._email),
       enabled: cdktf.booleanToTerraform(this._enabled),

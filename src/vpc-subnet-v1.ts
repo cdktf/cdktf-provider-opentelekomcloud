@@ -16,6 +16,10 @@ export interface VpcSubnetV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly cidr: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_subnet_v1#description VpcSubnetV1#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_subnet_v1#dhcp_enable VpcSubnetV1#dhcp_enable}
   */
   readonly dhcpEnable?: boolean | cdktf.IResolvable;
@@ -198,7 +202,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_subnet_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.5',
+        providerVersion: '1.29.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -208,6 +212,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
     });
     this._availabilityZone = config.availabilityZone;
     this._cidr = config.cidr;
+    this._description = config.description;
     this._dhcpEnable = config.dhcpEnable;
     this._dnsList = config.dnsList;
     this._gatewayIp = config.gatewayIp;
@@ -253,6 +258,22 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cidrInput() {
     return this._cidr;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // dhcp_enable - computed: false, optional: true, required: false
@@ -456,6 +477,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
     return {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       cidr: cdktf.stringToTerraform(this._cidr),
+      description: cdktf.stringToTerraform(this._description),
       dhcp_enable: cdktf.booleanToTerraform(this._dhcpEnable),
       dns_list: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsList),
       gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
