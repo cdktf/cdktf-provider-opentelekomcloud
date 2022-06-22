@@ -177,7 +177,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

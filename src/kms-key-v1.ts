@@ -35,6 +35,14 @@ export interface KmsKeyV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly realm?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#rotation_enabled KmsKeyV1#rotation_enabled}
+  */
+  readonly rotationEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#rotation_interval KmsKeyV1#rotation_interval}
+  */
+  readonly rotationInterval?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#tags KmsKeyV1#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -66,7 +74,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_kms_key_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -80,6 +88,8 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
     this._keyDescription = config.keyDescription;
     this._pendingDays = config.pendingDays;
     this._realm = config.realm;
+    this._rotationEnabled = config.rotationEnabled;
+    this._rotationInterval = config.rotationInterval;
     this._tags = config.tags;
   }
 
@@ -205,6 +215,43 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
     return this._realm;
   }
 
+  // rotation_enabled - computed: false, optional: true, required: false
+  private _rotationEnabled?: boolean | cdktf.IResolvable; 
+  public get rotationEnabled() {
+    return this.getBooleanAttribute('rotation_enabled');
+  }
+  public set rotationEnabled(value: boolean | cdktf.IResolvable) {
+    this._rotationEnabled = value;
+  }
+  public resetRotationEnabled() {
+    this._rotationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationEnabledInput() {
+    return this._rotationEnabled;
+  }
+
+  // rotation_interval - computed: true, optional: true, required: false
+  private _rotationInterval?: number; 
+  public get rotationInterval() {
+    return this.getNumberAttribute('rotation_interval');
+  }
+  public set rotationInterval(value: number) {
+    this._rotationInterval = value;
+  }
+  public resetRotationInterval() {
+    this._rotationInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rotationIntervalInput() {
+    return this._rotationInterval;
+  }
+
+  // rotation_number - computed: true, optional: false, required: false
+  public get rotationNumber() {
+    return this.getNumberAttribute('rotation_number');
+  }
+
   // scheduled_deletion_date - computed: true, optional: false, required: false
   public get scheduledDeletionDate() {
     return this.getStringAttribute('scheduled_deletion_date');
@@ -238,6 +285,8 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       key_description: cdktf.stringToTerraform(this._keyDescription),
       pending_days: cdktf.stringToTerraform(this._pendingDays),
       realm: cdktf.stringToTerraform(this._realm),
+      rotation_enabled: cdktf.booleanToTerraform(this._rotationEnabled),
+      rotation_interval: cdktf.numberToTerraform(this._rotationInterval),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }

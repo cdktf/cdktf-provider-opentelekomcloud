@@ -54,7 +54,7 @@ export class DataOpentelekomcloudRdsBackupV3 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_rds_backup_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
