@@ -58,7 +58,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_s3_bucket_object',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

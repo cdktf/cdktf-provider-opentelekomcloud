@@ -58,7 +58,7 @@ export class DataOpentelekomcloudDcsMaintainwindowV1 extends cdktf.TerraformData
       terraformResourceType: 'opentelekomcloud_dcs_maintainwindow_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

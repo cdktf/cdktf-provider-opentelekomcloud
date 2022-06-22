@@ -656,7 +656,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_policy_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.6',
+        providerVersion: '1.29.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
