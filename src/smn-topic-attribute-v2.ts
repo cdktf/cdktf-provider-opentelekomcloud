@@ -54,7 +54,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_smn_topic_attribute_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.7',
+        providerVersion: '1.29.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
