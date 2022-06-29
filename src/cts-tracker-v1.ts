@@ -190,7 +190,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cts_tracker_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.7',
+        providerVersion: '1.29.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

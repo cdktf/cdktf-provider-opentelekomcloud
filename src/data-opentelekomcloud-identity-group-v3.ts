@@ -54,7 +54,7 @@ export class DataOpentelekomcloudIdentityGroupV3 extends cdktf.TerraformDataSour
       terraformResourceType: 'opentelekomcloud_identity_group_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.7',
+        providerVersion: '1.29.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -160,6 +160,7 @@ export * from './data-opentelekomcloud-compute-bms-keypairs-v2';
 export * from './data-opentelekomcloud-compute-bms-nic-v2';
 export * from './data-opentelekomcloud-compute-bms-server-v2';
 export * from './data-opentelekomcloud-compute-flavor-v2';
+export * from './data-opentelekomcloud-compute-instance-v2';
 export * from './data-opentelekomcloud-csbs-backup-policy-v1';
 export * from './data-opentelekomcloud-csbs-backup-v1';
 export * from './data-opentelekomcloud-css-flavor-v1';

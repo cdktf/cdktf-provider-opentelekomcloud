@@ -164,7 +164,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
       terraformResourceType: 'opentelekomcloud_lb_loadbalancer_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.7',
+        providerVersion: '1.29.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
