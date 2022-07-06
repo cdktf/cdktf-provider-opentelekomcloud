@@ -207,7 +207,7 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_sfs_share_access_rules_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.8',
+        providerVersion: '1.29.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

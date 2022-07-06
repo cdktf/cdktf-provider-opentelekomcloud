@@ -13,7 +13,11 @@ export interface DataOpentelekomcloudComputeInstanceV2Config extends cdktf.Terra
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id: string;
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#name DataOpentelekomcloudComputeInstanceV2#name}
+  */
+  readonly name?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#region DataOpentelekomcloudComputeInstanceV2#region}
   */
@@ -153,14 +157,14 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataOpentelekomcloudComputeInstanceV2Config
+  * @param options DataOpentelekomcloudComputeInstanceV2Config = {}
   */
-  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudComputeInstanceV2Config) {
+  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudComputeInstanceV2Config = {}) {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_compute_instance_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.8',
+        providerVersion: '1.29.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -169,6 +173,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
       lifecycle: config.lifecycle
     });
     this._id = config.id;
+    this._name = config.name;
     this._region = config.region;
     this._tags = config.tags;
     this._userData = config.userData;
@@ -204,13 +209,16 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
     return this.getStringAttribute('flavor_name');
   }
 
-  // id - computed: false, optional: false, required: true
+  // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
   public set id(value: string) {
     this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
@@ -238,9 +246,20 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
     return this._metadata;
   }
 
-  // name - computed: true, optional: false, required: false
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // power_state - computed: true, optional: false, required: false
@@ -324,6 +343,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
