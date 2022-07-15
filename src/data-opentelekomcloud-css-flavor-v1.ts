@@ -170,7 +170,7 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_css_flavor_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -46,7 +46,7 @@ export class DataOpentelekomcloudSfsTurboShareV1 extends cdktf.TerraformDataSour
       terraformResourceType: 'opentelekomcloud_sfs_turbo_share_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

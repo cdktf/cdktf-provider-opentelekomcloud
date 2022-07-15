@@ -32,6 +32,7 @@ export * from './deh-host-v1';
 export * from './dms-group-v1';
 export * from './dms-instance-v1';
 export * from './dms-queue-v1';
+export * from './dms-topic-v1';
 export * from './dns-ptrrecord-v2';
 export * from './dns-recordset-v2';
 export * from './dns-zone-v2';

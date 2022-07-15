@@ -58,7 +58,7 @@ export class ComputeFloatingipAssociateV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_floatingip_associate_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
