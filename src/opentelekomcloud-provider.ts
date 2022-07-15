@@ -194,7 +194,7 @@ export class OpentelekomcloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'opentelekomcloud',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       terraformProviderSource: 'opentelekomcloud/opentelekomcloud'

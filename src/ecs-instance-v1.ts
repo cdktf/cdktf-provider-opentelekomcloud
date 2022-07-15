@@ -187,6 +187,11 @@ export class EcsInstanceV1DataDisksOutputReference extends cdktf.ComplexObject {
     }
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // kms_id - computed: false, optional: true, required: false
   private _kmsId?: string; 
   public get kmsId() {
@@ -557,7 +562,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ecs_instance_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -736,6 +741,11 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
     return this._securityGroups;
+  }
+
+  // system_disk_id - computed: true, optional: false, required: false
+  public get systemDiskId() {
+    return this.getStringAttribute('system_disk_id');
   }
 
   // system_disk_kms_id - computed: false, optional: true, required: false

@@ -69,9 +69,9 @@ export interface CbrVaultV3Resource {
   */
   readonly backupSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#extra_info CbrVaultV3#extra_info}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#exclude_volumes CbrVaultV3#exclude_volumes}
   */
-  readonly extraInfo?: { [key: string]: string };
+  readonly excludeVolumes?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#id CbrVaultV3#id}
   *
@@ -79,6 +79,10 @@ export interface CbrVaultV3Resource {
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#include_volumes CbrVaultV3#include_volumes}
+  */
+  readonly includeVolumes?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cbr_vault_v3#name CbrVaultV3#name}
   */
@@ -105,8 +109,9 @@ export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource | cdkt
   return {
     backup_count: cdktf.numberToTerraform(struct!.backupCount),
     backup_size: cdktf.numberToTerraform(struct!.backupSize),
-    extra_info: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.extraInfo),
+    exclude_volumes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludeVolumes),
     id: cdktf.stringToTerraform(struct!.id),
+    include_volumes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includeVolumes),
     name: cdktf.stringToTerraform(struct!.name),
     protect_status: cdktf.stringToTerraform(struct!.protectStatus),
     size: cdktf.numberToTerraform(struct!.size),
@@ -142,13 +147,17 @@ export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.backupSize = this._backupSize;
     }
-    if (this._extraInfo !== undefined) {
+    if (this._excludeVolumes !== undefined) {
       hasAnyValues = true;
-      internalValueResult.extraInfo = this._extraInfo;
+      internalValueResult.excludeVolumes = this._excludeVolumes;
     }
     if (this._id !== undefined) {
       hasAnyValues = true;
       internalValueResult.id = this._id;
+    }
+    if (this._includeVolumes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeVolumes = this._includeVolumes;
     }
     if (this._name !== undefined) {
       hasAnyValues = true;
@@ -175,8 +184,9 @@ export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._backupCount = undefined;
       this._backupSize = undefined;
-      this._extraInfo = undefined;
+      this._excludeVolumes = undefined;
       this._id = undefined;
+      this._includeVolumes = undefined;
       this._name = undefined;
       this._protectStatus = undefined;
       this._size = undefined;
@@ -191,8 +201,9 @@ export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._backupCount = value.backupCount;
       this._backupSize = value.backupSize;
-      this._extraInfo = value.extraInfo;
+      this._excludeVolumes = value.excludeVolumes;
       this._id = value.id;
+      this._includeVolumes = value.includeVolumes;
       this._name = value.name;
       this._protectStatus = value.protectStatus;
       this._size = value.size;
@@ -232,20 +243,20 @@ export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
     return this._backupSize;
   }
 
-  // extra_info - computed: true, optional: true, required: false
-  private _extraInfo?: { [key: string]: string }; 
-  public get extraInfo() {
-    return this.getStringMapAttribute('extra_info');
+  // exclude_volumes - computed: true, optional: true, required: false
+  private _excludeVolumes?: string[]; 
+  public get excludeVolumes() {
+    return cdktf.Fn.tolist(this.getListAttribute('exclude_volumes'));
   }
-  public set extraInfo(value: { [key: string]: string }) {
-    this._extraInfo = value;
+  public set excludeVolumes(value: string[]) {
+    this._excludeVolumes = value;
   }
-  public resetExtraInfo() {
-    this._extraInfo = undefined;
+  public resetExcludeVolumes() {
+    this._excludeVolumes = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get extraInfoInput() {
-    return this._extraInfo;
+  public get excludeVolumesInput() {
+    return this._excludeVolumes;
   }
 
   // id - computed: true, optional: true, required: false
@@ -262,6 +273,22 @@ export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // include_volumes - computed: true, optional: true, required: false
+  private _includeVolumes?: string[]; 
+  public get includeVolumes() {
+    return cdktf.Fn.tolist(this.getListAttribute('include_volumes'));
+  }
+  public set includeVolumes(value: string[]) {
+    this._includeVolumes = value;
+  }
+  public resetIncludeVolumes() {
+    this._includeVolumes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeVolumesInput() {
+    return this._includeVolumes;
   }
 
   // name - computed: true, optional: true, required: false
@@ -886,7 +913,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cbr_vault_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

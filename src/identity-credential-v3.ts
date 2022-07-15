@@ -19,6 +19,10 @@ export interface IdentityCredentialV3Config extends cdktf.TerraformMetaArguments
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_credential_v3#pgp_key IdentityCredentialV3#pgp_key}
+  */
+  readonly pgpKey?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_credential_v3#status IdentityCredentialV3#status}
   */
   readonly status?: string;
@@ -54,7 +58,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_credential_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -64,6 +68,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._id = config.id;
+    this._pgpKey = config.pgpKey;
     this._status = config.status;
     this._userId = config.userId;
   }
@@ -114,9 +119,30 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // key_fingerprint - computed: true, optional: false, required: false
+  public get keyFingerprint() {
+    return this.getStringAttribute('key_fingerprint');
+  }
+
   // last_use_time - computed: true, optional: false, required: false
   public get lastUseTime() {
     return this.getStringAttribute('last_use_time');
+  }
+
+  // pgp_key - computed: false, optional: true, required: false
+  private _pgpKey?: string; 
+  public get pgpKey() {
+    return this.getStringAttribute('pgp_key');
+  }
+  public set pgpKey(value: string) {
+    this._pgpKey = value;
+  }
+  public resetPgpKey() {
+    this._pgpKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pgpKeyInput() {
+    return this._pgpKey;
   }
 
   // secret - computed: true, optional: false, required: false
@@ -164,6 +190,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      pgp_key: cdktf.stringToTerraform(this._pgpKey),
       status: cdktf.stringToTerraform(this._status),
       user_id: cdktf.stringToTerraform(this._userId),
     };

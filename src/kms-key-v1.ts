@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface KmsKeyV1Config extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#allow_cancel_deletion KmsKeyV1#allow_cancel_deletion}
+  */
+  readonly allowCancelDeletion?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_key_v1#id KmsKeyV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -74,7 +78,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_kms_key_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -82,6 +86,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowCancelDeletion = config.allowCancelDeletion;
     this._id = config.id;
     this._isEnabled = config.isEnabled;
     this._keyAlias = config.keyAlias;
@@ -96,6 +101,22 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_cancel_deletion - computed: false, optional: true, required: false
+  private _allowCancelDeletion?: boolean | cdktf.IResolvable; 
+  public get allowCancelDeletion() {
+    return this.getBooleanAttribute('allow_cancel_deletion');
+  }
+  public set allowCancelDeletion(value: boolean | cdktf.IResolvable) {
+    this._allowCancelDeletion = value;
+  }
+  public resetAllowCancelDeletion() {
+    this._allowCancelDeletion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowCancelDeletionInput() {
+    return this._allowCancelDeletion;
+  }
 
   // creation_date - computed: true, optional: false, required: false
   public get creationDate() {
@@ -279,6 +300,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_cancel_deletion: cdktf.booleanToTerraform(this._allowCancelDeletion),
       id: cdktf.stringToTerraform(this._id),
       is_enabled: cdktf.booleanToTerraform(this._isEnabled),
       key_alias: cdktf.stringToTerraform(this._keyAlias),

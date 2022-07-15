@@ -198,7 +198,7 @@ export class SfsFileSystemV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_sfs_file_system_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

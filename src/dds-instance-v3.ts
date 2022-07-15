@@ -697,7 +697,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.29.9',
+        providerVersion: '1.30.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
