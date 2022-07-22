@@ -305,6 +305,10 @@ export interface CceNodePoolV3RootVolume {
   */
   readonly extendParam?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}
+  */
+  readonly kmsId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_node_pool_v3#size CceNodePoolV3#size}
   */
   readonly size: number;
@@ -321,6 +325,7 @@ export function cceNodePoolV3RootVolumeToTerraform(struct?: CceNodePoolV3RootVol
   }
   return {
     extend_param: cdktf.stringToTerraform(struct!.extendParam),
+    kms_id: cdktf.stringToTerraform(struct!.kmsId),
     size: cdktf.numberToTerraform(struct!.size),
     volumetype: cdktf.stringToTerraform(struct!.volumetype),
   }
@@ -344,6 +349,10 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.extendParam = this._extendParam;
     }
+    if (this._kmsId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsId = this._kmsId;
+    }
     if (this._size !== undefined) {
       hasAnyValues = true;
       internalValueResult.size = this._size;
@@ -359,12 +368,14 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._extendParam = undefined;
+      this._kmsId = undefined;
       this._size = undefined;
       this._volumetype = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._extendParam = value.extendParam;
+      this._kmsId = value.kmsId;
       this._size = value.size;
       this._volumetype = value.volumetype;
     }
@@ -384,6 +395,22 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get extendParamInput() {
     return this._extendParam;
+  }
+
+  // kms_id - computed: false, optional: true, required: false
+  private _kmsId?: string; 
+  public get kmsId() {
+    return this.getStringAttribute('kms_id');
+  }
+  public set kmsId(value: string) {
+    this._kmsId = value;
+  }
+  public resetKmsId() {
+    this._kmsId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsIdInput() {
+    return this._kmsId;
   }
 
   // size - computed: false, optional: false, required: true
@@ -737,7 +764,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_node_pool_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.0',
+        providerVersion: '1.30.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
