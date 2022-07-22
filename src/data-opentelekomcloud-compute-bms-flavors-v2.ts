@@ -66,7 +66,7 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
       terraformResourceType: 'opentelekomcloud_compute_bms_flavors_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.0',
+        providerVersion: '1.30.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

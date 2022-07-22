@@ -90,7 +90,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       terraformResourceType: 'opentelekomcloud_images_image_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.0',
+        providerVersion: '1.30.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

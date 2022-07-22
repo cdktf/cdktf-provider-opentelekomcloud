@@ -185,6 +185,7 @@ export * from './data-opentelekomcloud-identity-auth-scope-v3';
 export * from './data-opentelekomcloud-identity-credential-v3';
 export * from './data-opentelekomcloud-identity-group-v3';
 export * from './data-opentelekomcloud-identity-project-v3';
+export * from './data-opentelekomcloud-identity-projects-v3';
 export * from './data-opentelekomcloud-identity-role-v3';
 export * from './data-opentelekomcloud-identity-user-v3';
 export * from './data-opentelekomcloud-images-image-v2';
