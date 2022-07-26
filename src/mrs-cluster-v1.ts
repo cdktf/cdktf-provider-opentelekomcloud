@@ -562,7 +562,7 @@ export function mrsClusterV1BootstrapScriptsToTerraform(struct?: MrsClusterV1Boo
     before_component_start: cdktf.booleanToTerraform(struct!.beforeComponentStart),
     fail_action: cdktf.stringToTerraform(struct!.failAction),
     name: cdktf.stringToTerraform(struct!.name),
-    nodes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nodes),
+    nodes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nodes),
     parameters: cdktf.stringToTerraform(struct!.parameters),
     uri: cdktf.stringToTerraform(struct!.uri),
   }
@@ -1012,7 +1012,10 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availableZoneId = config.availableZoneId;
     this._billingType = config.billingType;
@@ -1658,9 +1661,9 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       volume_size: cdktf.numberToTerraform(this._volumeSize),
       volume_type: cdktf.stringToTerraform(this._volumeType),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform)(this._addJobs.internalValue),
-      bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform)(this._bootstrapScripts.internalValue),
-      component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform)(this._componentList.internalValue),
+      add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform, true)(this._addJobs.internalValue),
+      bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform, true)(this._bootstrapScripts.internalValue),
+      component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform, true)(this._componentList.internalValue),
       timeouts: mrsClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

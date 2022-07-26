@@ -190,7 +190,10 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dedicatedHostId = config.dedicatedHostId;
     this._id = config.id;
@@ -325,7 +328,7 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       server_id: cdktf.stringToTerraform(this._serverId),
-      addresses: cdktf.listMapper(dataOpentelekomcloudDehServerV1AddressesToTerraform)(this._addresses.internalValue),
+      addresses: cdktf.listMapper(dataOpentelekomcloudDehServerV1AddressesToTerraform, true)(this._addresses.internalValue),
     };
   }
 }

@@ -213,7 +213,10 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._shareId = config.shareId;
@@ -274,7 +277,7 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       share_id: cdktf.stringToTerraform(this._shareId),
-      access_rule: cdktf.listMapper(sfsShareAccessRulesV2AccessRuleToTerraform)(this._accessRule.internalValue),
+      access_rule: cdktf.listMapper(sfsShareAccessRulesV2AccessRuleToTerraform, true)(this._accessRule.internalValue),
     };
   }
 }

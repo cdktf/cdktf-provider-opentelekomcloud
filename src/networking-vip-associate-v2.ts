@@ -56,7 +56,10 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._portIds = config.portIds;
@@ -126,7 +129,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      port_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._portIds),
+      port_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._portIds),
       vip_id: cdktf.stringToTerraform(this._vipId),
     };
   }

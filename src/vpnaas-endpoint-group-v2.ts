@@ -211,7 +211,10 @@ export class VpnaasEndpointGroupV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._endpoints = config.endpoints;
@@ -379,7 +382,7 @@ export class VpnaasEndpointGroupV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
-      endpoints: cdktf.listMapper(cdktf.stringToTerraform)(this._endpoints),
+      endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(this._endpoints),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),

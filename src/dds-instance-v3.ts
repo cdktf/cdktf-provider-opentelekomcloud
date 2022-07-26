@@ -703,7 +703,10 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._diskEncryptionId = config.diskEncryptionId;
@@ -984,7 +987,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_strategy: ddsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
       datastore: ddsInstanceV3DatastoreToTerraform(this._datastore.internalValue),
-      flavor: cdktf.listMapper(ddsInstanceV3FlavorToTerraform)(this._flavor.internalValue),
+      flavor: cdktf.listMapper(ddsInstanceV3FlavorToTerraform, true)(this._flavor.internalValue),
       timeouts: ddsInstanceV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

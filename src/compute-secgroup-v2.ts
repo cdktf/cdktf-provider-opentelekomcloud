@@ -375,7 +375,10 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -489,7 +492,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform)(this._rule.internalValue),
+      rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform, true)(this._rule.internalValue),
       timeouts: computeSecgroupV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

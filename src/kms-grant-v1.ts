@@ -68,7 +68,10 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._granteePrincipal = config.granteePrincipal;
     this._id = config.id;
@@ -192,7 +195,7 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
       name: cdktf.stringToTerraform(this._name),
-      operations: cdktf.listMapper(cdktf.stringToTerraform)(this._operations),
+      operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
       retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
     };
   }

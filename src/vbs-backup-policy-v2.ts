@@ -320,7 +320,10 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._frequency = config.frequency;
     this._id = config.id;
@@ -557,12 +560,12 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       rentention_day: cdktf.numberToTerraform(this._rententionDay),
       rentention_num: cdktf.numberToTerraform(this._rententionNum),
-      resources: cdktf.listMapper(cdktf.stringToTerraform)(this._resources),
+      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
       retain_first_backup: cdktf.stringToTerraform(this._retainFirstBackup),
       start_time: cdktf.stringToTerraform(this._startTime),
       status: cdktf.stringToTerraform(this._status),
-      week_frequency: cdktf.listMapper(cdktf.stringToTerraform)(this._weekFrequency),
-      tags: cdktf.listMapper(vbsBackupPolicyV2TagsToTerraform)(this._tags.internalValue),
+      week_frequency: cdktf.listMapper(cdktf.stringToTerraform, false)(this._weekFrequency),
+      tags: cdktf.listMapper(vbsBackupPolicyV2TagsToTerraform, true)(this._tags.internalValue),
       timeouts: vbsBackupPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

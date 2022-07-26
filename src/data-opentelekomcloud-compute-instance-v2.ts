@@ -170,7 +170,10 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -347,7 +350,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
-      network: cdktf.listMapper(dataOpentelekomcloudComputeInstanceV2NetworkToTerraform)(this._network.internalValue),
+      network: cdktf.listMapper(dataOpentelekomcloudComputeInstanceV2NetworkToTerraform, true)(this._network.internalValue),
     };
   }
 }

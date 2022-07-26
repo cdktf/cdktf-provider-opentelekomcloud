@@ -182,7 +182,10 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._zoneId = config.zoneId;
@@ -249,7 +252,7 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
     return {
       id: cdktf.stringToTerraform(this._id),
       zone_id: cdktf.stringToTerraform(this._zoneId),
-      nameservers: cdktf.listMapper(dataOpentelekomcloudDnsNameserversV2NameserversToTerraform)(this._nameservers.internalValue),
+      nameservers: cdktf.listMapper(dataOpentelekomcloudDnsNameserversV2NameserversToTerraform, true)(this._nameservers.internalValue),
     };
   }
 }

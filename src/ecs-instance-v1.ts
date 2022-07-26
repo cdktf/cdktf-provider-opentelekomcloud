@@ -568,7 +568,10 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoRecovery = config.autoRecovery;
     this._availabilityZone = config.availabilityZone;
@@ -901,15 +904,15 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       key_name: cdktf.stringToTerraform(this._keyName),
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       system_disk_kms_id: cdktf.stringToTerraform(this._systemDiskKmsId),
       system_disk_size: cdktf.numberToTerraform(this._systemDiskSize),
       system_disk_type: cdktf.stringToTerraform(this._systemDiskType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform)(this._dataDisks.internalValue),
-      nics: cdktf.listMapper(ecsInstanceV1NicsToTerraform)(this._nics.internalValue),
+      data_disks: cdktf.listMapper(ecsInstanceV1DataDisksToTerraform, true)(this._dataDisks.internalValue),
+      nics: cdktf.listMapper(ecsInstanceV1NicsToTerraform, true)(this._nics.internalValue),
       timeouts: ecsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

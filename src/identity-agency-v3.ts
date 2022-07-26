@@ -61,7 +61,7 @@ export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3
   }
   return {
     project: cdktf.stringToTerraform(struct!.project),
-    roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.roles),
+    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
 }
 
@@ -323,7 +323,10 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._delegatedDomainName = config.delegatedDomainName;
     this._description = config.description;
@@ -467,10 +470,10 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
     return {
       delegated_domain_name: cdktf.stringToTerraform(this._delegatedDomainName),
       description: cdktf.stringToTerraform(this._description),
-      domain_roles: cdktf.listMapper(cdktf.stringToTerraform)(this._domainRoles),
+      domain_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domainRoles),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform)(this._projectRole.internalValue),
+      project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform, true)(this._projectRole.internalValue),
       timeouts: identityAgencyV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

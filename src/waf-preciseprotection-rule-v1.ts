@@ -81,7 +81,7 @@ export function wafPreciseprotectionRuleV1ConditionsToTerraform(struct?: WafPrec
   }
   return {
     category: cdktf.stringToTerraform(struct!.category),
-    contents: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contents),
+    contents: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contents),
     index: cdktf.stringToTerraform(struct!.index),
     logic: cdktf.stringToTerraform(struct!.logic),
   }
@@ -359,7 +359,10 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._actionCategory = config.actionCategory;
     this._end = config.end;
@@ -539,7 +542,7 @@ export class WafPreciseprotectionRuleV1 extends cdktf.TerraformResource {
       priority: cdktf.numberToTerraform(this._priority),
       start: cdktf.stringToTerraform(this._start),
       time: cdktf.booleanToTerraform(this._time),
-      conditions: cdktf.listMapper(wafPreciseprotectionRuleV1ConditionsToTerraform)(this._conditions.internalValue),
+      conditions: cdktf.listMapper(wafPreciseprotectionRuleV1ConditionsToTerraform, true)(this._conditions.internalValue),
       timeouts: wafPreciseprotectionRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -638,10 +638,10 @@ export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurat
     instance_id: cdktf.stringToTerraform(struct!.instanceId),
     key_name: cdktf.stringToTerraform(struct!.keyName),
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
-    security_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroups),
+    security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroups),
     user_data: cdktf.stringToTerraform(struct!.userData),
-    disk: cdktf.listMapper(asConfigurationV1InstanceConfigDiskToTerraform)(struct!.disk),
-    personality: cdktf.listMapper(asConfigurationV1InstanceConfigPersonalityToTerraform)(struct!.personality),
+    disk: cdktf.listMapper(asConfigurationV1InstanceConfigDiskToTerraform, true)(struct!.disk),
+    personality: cdktf.listMapper(asConfigurationV1InstanceConfigPersonalityToTerraform, true)(struct!.personality),
     public_ip: asConfigurationV1InstanceConfigPublicIpToTerraform(struct!.publicIp),
   }
 }
@@ -922,7 +922,10 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._region = config.region;

@@ -120,7 +120,10 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessUser = config.accessUser;
     this._availableZones = config.availableZones;
@@ -493,7 +496,7 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_user: cdktf.stringToTerraform(this._accessUser),
-      available_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availableZones),
+      available_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availableZones),
       description: cdktf.stringToTerraform(this._description),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),

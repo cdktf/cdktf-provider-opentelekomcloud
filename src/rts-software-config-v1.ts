@@ -184,7 +184,10 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._config = config.config;
     this._group = config.group;
@@ -351,10 +354,10 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
       config: cdktf.stringToTerraform(this._config),
       group: cdktf.stringToTerraform(this._group),
       id: cdktf.stringToTerraform(this._id),
-      input_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._inputValues),
+      input_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._inputValues),
       name: cdktf.stringToTerraform(this._name),
       options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      output_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform))(this._outputValues),
+      output_values: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._outputValues),
       region: cdktf.stringToTerraform(this._region),
       timeouts: rtsSoftwareConfigV1TimeoutsToTerraform(this._timeouts.internalValue),
     };

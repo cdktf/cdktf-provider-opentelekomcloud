@@ -662,7 +662,10 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._fullDetection = config.fullDetection;
     this._hosts = config.hosts;
@@ -810,7 +813,7 @@ export class WafPolicyV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       full_detection: cdktf.booleanToTerraform(this._fullDetection),
-      hosts: cdktf.listMapper(cdktf.stringToTerraform)(this._hosts),
+      hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hosts),
       id: cdktf.stringToTerraform(this._id),
       level: cdktf.numberToTerraform(this._level),
       name: cdktf.stringToTerraform(this._name),

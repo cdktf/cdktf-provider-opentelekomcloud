@@ -108,10 +108,10 @@ export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule | cdktf.
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedOrigins),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
   }
 }
@@ -432,10 +432,10 @@ export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform)(struct!.events),
+    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
     id: cdktf.stringToTerraform(struct!.id),
     topic: cdktf.stringToTerraform(struct!.topic),
-    filter_rule: cdktf.listMapper(obsBucketEventNotificationsFilterRuleToTerraform)(struct!.filterRule),
+    filter_rule: cdktf.listMapper(obsBucketEventNotificationsFilterRuleToTerraform, true)(struct!.filterRule),
   }
 }
 
@@ -1051,10 +1051,10 @@ export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRul
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     name: cdktf.stringToTerraform(struct!.name),
     prefix: cdktf.stringToTerraform(struct!.prefix),
-    expiration: cdktf.listMapper(obsBucketLifecycleRuleExpirationToTerraform)(struct!.expiration),
-    noncurrent_version_expiration: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform)(struct!.noncurrentVersionExpiration),
-    noncurrent_version_transition: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform)(struct!.noncurrentVersionTransition),
-    transition: cdktf.listMapper(obsBucketLifecycleRuleTransitionToTerraform)(struct!.transition),
+    expiration: cdktf.listMapper(obsBucketLifecycleRuleExpirationToTerraform, true)(struct!.expiration),
+    noncurrent_version_expiration: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform, true)(struct!.noncurrentVersionExpiration),
+    noncurrent_version_transition: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
+    transition: cdktf.listMapper(obsBucketLifecycleRuleTransitionToTerraform, true)(struct!.transition),
   }
 }
 
@@ -1650,7 +1650,10 @@ export class ObsBucket extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._acl = config.acl;
     this._bucket = config.bucket;
@@ -1912,10 +1915,10 @@ export class ObsBucket extends cdktf.TerraformResource {
       storage_class: cdktf.stringToTerraform(this._storageClass),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       versioning: cdktf.booleanToTerraform(this._versioning),
-      cors_rule: cdktf.listMapper(obsBucketCorsRuleToTerraform)(this._corsRule.internalValue),
-      event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform)(this._eventNotifications.internalValue),
-      lifecycle_rule: cdktf.listMapper(obsBucketLifecycleRuleToTerraform)(this._lifecycleRule.internalValue),
-      logging: cdktf.listMapper(obsBucketLoggingToTerraform)(this._logging.internalValue),
+      cors_rule: cdktf.listMapper(obsBucketCorsRuleToTerraform, true)(this._corsRule.internalValue),
+      event_notifications: cdktf.listMapper(obsBucketEventNotificationsToTerraform, true)(this._eventNotifications.internalValue),
+      lifecycle_rule: cdktf.listMapper(obsBucketLifecycleRuleToTerraform, true)(this._lifecycleRule.internalValue),
+      logging: cdktf.listMapper(obsBucketLoggingToTerraform, true)(this._logging.internalValue),
       server_side_encryption: obsBucketServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       website: obsBucketWebsiteToTerraform(this._website.internalValue),
     };

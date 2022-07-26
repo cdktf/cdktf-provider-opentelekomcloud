@@ -196,7 +196,10 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._bucketName = config.bucketName;
     this._filePrefixName = config.filePrefixName;
@@ -418,8 +421,8 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       is_send_all_key_operation: cdktf.booleanToTerraform(this._isSendAllKeyOperation),
       is_support_smn: cdktf.booleanToTerraform(this._isSupportSmn),
-      need_notify_user_list: cdktf.listMapper(cdktf.stringToTerraform)(this._needNotifyUserList),
-      operations: cdktf.listMapper(cdktf.stringToTerraform)(this._operations),
+      need_notify_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._needNotifyUserList),
+      operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
       project_name: cdktf.stringToTerraform(this._projectName),
       region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),

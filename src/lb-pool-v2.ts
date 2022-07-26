@@ -349,7 +349,10 @@ export class LbPoolV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._description = config.description;
@@ -571,7 +574,7 @@ export class LbPoolV2 extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
-      persistence: cdktf.listMapper(lbPoolV2PersistenceToTerraform)(this._persistence.internalValue),
+      persistence: cdktf.listMapper(lbPoolV2PersistenceToTerraform, true)(this._persistence.internalValue),
       timeouts: lbPoolV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

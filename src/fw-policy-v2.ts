@@ -188,7 +188,10 @@ export class FwPolicyV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._audited = config.audited;
     this._description = config.description;
@@ -377,7 +380,7 @@ export class FwPolicyV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      rules: cdktf.listMapper(cdktf.stringToTerraform)(this._rules),
+      rules: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rules),
       shared: cdktf.booleanToTerraform(this._shared),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),

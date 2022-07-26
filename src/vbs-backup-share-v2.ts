@@ -168,7 +168,10 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backupId = config.backupId;
     this._id = config.id;
@@ -314,7 +317,7 @@ export class VbsBackupShareV2 extends cdktf.TerraformResource {
       backup_id: cdktf.stringToTerraform(this._backupId),
       id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
-      to_project_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._toProjectIds),
+      to_project_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._toProjectIds),
       timeouts: vbsBackupShareV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

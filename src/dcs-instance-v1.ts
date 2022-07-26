@@ -138,7 +138,7 @@ export function dcsInstanceV1BackupPolicyToTerraform(struct?: DcsInstanceV1Backu
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_at: cdktf.listMapper(cdktf.numberToTerraform)(struct!.backupAt),
+    backup_at: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.backupAt),
     backup_type: cdktf.stringToTerraform(struct!.backupType),
     begin_at: cdktf.stringToTerraform(struct!.beginAt),
     period_type: cdktf.stringToTerraform(struct!.periodType),
@@ -577,7 +577,10 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessUser = config.accessUser;
     this._availableZones = config.availableZones;
@@ -1023,8 +1026,8 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_user: cdktf.stringToTerraform(this._accessUser),
-      available_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availableZones),
-      backup_at: cdktf.listMapper(cdktf.numberToTerraform)(this._backupAt),
+      available_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availableZones),
+      backup_at: cdktf.listMapper(cdktf.numberToTerraform, false)(this._backupAt),
       backup_type: cdktf.stringToTerraform(this._backupType),
       begin_at: cdktf.stringToTerraform(this._beginAt),
       capacity: cdktf.numberToTerraform(this._capacity),
@@ -1043,7 +1046,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_policy: dcsInstanceV1BackupPolicyToTerraform(this._backupPolicy.internalValue),
-      configuration: cdktf.listMapper(dcsInstanceV1ConfigurationToTerraform)(this._configuration.internalValue),
+      configuration: cdktf.listMapper(dcsInstanceV1ConfigurationToTerraform, true)(this._configuration.internalValue),
       timeouts: dcsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

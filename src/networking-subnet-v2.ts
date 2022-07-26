@@ -448,7 +448,10 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cidr = config.cidr;
     this._dnsNameservers = config.dnsNameservers;
@@ -712,7 +715,7 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cidr: cdktf.stringToTerraform(this._cidr),
-      dns_nameservers: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsNameservers),
+      dns_nameservers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsNameservers),
       enable_dhcp: cdktf.booleanToTerraform(this._enableDhcp),
       gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
       id: cdktf.stringToTerraform(this._id),
@@ -723,8 +726,8 @@ export class NetworkingSubnetV2 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      allocation_pools: cdktf.listMapper(networkingSubnetV2AllocationPoolsToTerraform)(this._allocationPools.internalValue),
-      host_routes: cdktf.listMapper(networkingSubnetV2HostRoutesToTerraform)(this._hostRoutes.internalValue),
+      allocation_pools: cdktf.listMapper(networkingSubnetV2AllocationPoolsToTerraform, true)(this._allocationPools.internalValue),
+      host_routes: cdktf.listMapper(networkingSubnetV2HostRoutesToTerraform, true)(this._hostRoutes.internalValue),
       timeouts: networkingSubnetV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

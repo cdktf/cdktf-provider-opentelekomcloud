@@ -100,7 +100,10 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._deviceId = config.deviceId;
@@ -373,7 +376,7 @@ export class DataOpentelekomcloudNetworkingPortV2 extends cdktf.TerraformDataSou
       port_id: cdktf.stringToTerraform(this._portId),
       project_id: cdktf.stringToTerraform(this._projectId),
       region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       status: cdktf.stringToTerraform(this._status),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
     };

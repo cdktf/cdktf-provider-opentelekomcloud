@@ -769,10 +769,10 @@ export function computeInstanceV2SchedulerHintsToTerraform(struct?: ComputeInsta
   return {
     build_near_host_ip: cdktf.stringToTerraform(struct!.buildNearHostIp),
     deh_id: cdktf.stringToTerraform(struct!.dehId),
-    different_host: cdktf.listMapper(cdktf.stringToTerraform)(struct!.differentHost),
+    different_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.differentHost),
     group: cdktf.stringToTerraform(struct!.group),
-    query: cdktf.listMapper(cdktf.stringToTerraform)(struct!.query),
-    same_host: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sameHost),
+    query: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.query),
+    same_host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sameHost),
     target_cell: cdktf.stringToTerraform(struct!.targetCell),
     tenancy: cdktf.stringToTerraform(struct!.tenancy),
   }
@@ -1174,7 +1174,10 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessIpV4 = config.accessIpV4;
     this._accessIpV6 = config.accessIpV6;
@@ -1621,13 +1624,13 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       power_state: cdktf.stringToTerraform(this._powerState),
       region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       stop_before_destroy: cdktf.booleanToTerraform(this._stopBeforeDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
-      block_device: cdktf.listMapper(computeInstanceV2BlockDeviceToTerraform)(this._blockDevice.internalValue),
-      network: cdktf.listMapper(computeInstanceV2NetworkToTerraform)(this._network.internalValue),
-      scheduler_hints: cdktf.listMapper(computeInstanceV2SchedulerHintsToTerraform)(this._schedulerHints.internalValue),
+      block_device: cdktf.listMapper(computeInstanceV2BlockDeviceToTerraform, true)(this._blockDevice.internalValue),
+      network: cdktf.listMapper(computeInstanceV2NetworkToTerraform, true)(this._network.internalValue),
+      scheduler_hints: cdktf.listMapper(computeInstanceV2SchedulerHintsToTerraform, true)(this._schedulerHints.internalValue),
       timeouts: computeInstanceV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -542,7 +542,10 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alarmId = config.alarmId;
     this._coolDownTime = config.coolDownTime;
@@ -733,8 +736,8 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
       scaling_policy_type: cdktf.stringToTerraform(this._scalingPolicyType),
       scaling_resource_id: cdktf.stringToTerraform(this._scalingResourceId),
       scaling_resource_type: cdktf.stringToTerraform(this._scalingResourceType),
-      scaling_policy_action: cdktf.listMapper(asPolicyV2ScalingPolicyActionToTerraform)(this._scalingPolicyAction.internalValue),
-      scheduled_policy: cdktf.listMapper(asPolicyV2ScheduledPolicyToTerraform)(this._scheduledPolicy.internalValue),
+      scaling_policy_action: cdktf.listMapper(asPolicyV2ScalingPolicyActionToTerraform, true)(this._scalingPolicyAction.internalValue),
+      scheduled_policy: cdktf.listMapper(asPolicyV2ScheduledPolicyToTerraform, true)(this._scheduledPolicy.internalValue),
     };
   }
 }

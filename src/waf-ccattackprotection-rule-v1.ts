@@ -204,7 +204,10 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._actionCategory = config.actionCategory;
     this._blockContent = config.blockContent;
@@ -452,7 +455,7 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
       lock_time: cdktf.numberToTerraform(this._lockTime),
       policy_id: cdktf.stringToTerraform(this._policyId),
       tag_category: cdktf.stringToTerraform(this._tagCategory),
-      tag_contents: cdktf.listMapper(cdktf.stringToTerraform)(this._tagContents),
+      tag_contents: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagContents),
       tag_index: cdktf.stringToTerraform(this._tagIndex),
       tag_type: cdktf.stringToTerraform(this._tagType),
       url: cdktf.stringToTerraform(this._url),

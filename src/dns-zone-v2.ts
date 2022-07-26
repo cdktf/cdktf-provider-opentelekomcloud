@@ -339,7 +339,10 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._email = config.email;
@@ -551,7 +554,7 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      router: cdktf.listMapper(dnsZoneV2RouterToTerraform)(this._router.internalValue),
+      router: cdktf.listMapper(dnsZoneV2RouterToTerraform, true)(this._router.internalValue),
       timeouts: dnsZoneV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

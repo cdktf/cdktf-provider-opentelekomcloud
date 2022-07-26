@@ -64,7 +64,10 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._backupChargeMode = config.backupChargeMode;
     this._backupSize = config.backupSize;
@@ -160,7 +163,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
       backup_charge_mode: cdktf.stringToTerraform(this._backupChargeMode),
       backup_size: cdktf.numberToTerraform(this._backupSize),
       bandwidth: cdktf.stringToTerraform(this._bandwidth),
-      floating_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._floatingIps),
+      floating_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._floatingIps),
       id: cdktf.stringToTerraform(this._id),
     };
   }

@@ -294,7 +294,10 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enabled = config.enabled;
     this._id = config.id;
@@ -410,7 +413,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       operation_type: cdktf.stringToTerraform(this._operationType),
-      trigger_pattern: cdktf.listMapper(cdktf.stringToTerraform)(this._triggerPattern),
+      trigger_pattern: cdktf.listMapper(cdktf.stringToTerraform, false)(this._triggerPattern),
       operation_definition: cbrPolicyV3OperationDefinitionToTerraform(this._operationDefinition.internalValue),
     };
   }

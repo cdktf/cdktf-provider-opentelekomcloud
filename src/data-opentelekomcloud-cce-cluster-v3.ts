@@ -216,7 +216,10 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterType = config.clusterType;
     this._id = config.id;
