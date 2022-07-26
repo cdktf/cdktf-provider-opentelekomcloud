@@ -124,7 +124,7 @@ export function dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform(struc
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -257,7 +257,10 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -404,7 +407,7 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
       policy_resource_count: cdktf.numberToTerraform(this._policyResourceCount),
       region: cdktf.stringToTerraform(this._region),
       status: cdktf.stringToTerraform(this._status),
-      filter_tags: cdktf.listMapper(dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform)(this._filterTags.internalValue),
+      filter_tags: cdktf.listMapper(dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform, true)(this._filterTags.internalValue),
     };
   }
 }

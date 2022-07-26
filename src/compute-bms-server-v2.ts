@@ -798,7 +798,10 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminPass = config.adminPass;
     this._availabilityZone = config.availabilityZone;
@@ -1163,12 +1166,12 @@ export class ComputeBmsServerV2 extends cdktf.TerraformResource {
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
-      security_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroups),
+      security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
       stop_before_destroy: cdktf.booleanToTerraform(this._stopBeforeDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
-      block_device: cdktf.listMapper(computeBmsServerV2BlockDeviceToTerraform)(this._blockDevice.internalValue),
-      network: cdktf.listMapper(computeBmsServerV2NetworkToTerraform)(this._network.internalValue),
+      block_device: cdktf.listMapper(computeBmsServerV2BlockDeviceToTerraform, true)(this._blockDevice.internalValue),
+      network: cdktf.listMapper(computeBmsServerV2NetworkToTerraform, true)(this._network.internalValue),
       timeouts: computeBmsServerV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

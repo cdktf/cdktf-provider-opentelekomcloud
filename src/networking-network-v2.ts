@@ -337,7 +337,10 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._id = config.id;
@@ -511,7 +514,7 @@ export class NetworkingNetworkV2 extends cdktf.TerraformResource {
       shared: cdktf.stringToTerraform(this._shared),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform)(this._segments.internalValue),
+      segments: cdktf.listMapper(networkingNetworkV2SegmentsToTerraform, true)(this._segments.internalValue),
       timeouts: networkingNetworkV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

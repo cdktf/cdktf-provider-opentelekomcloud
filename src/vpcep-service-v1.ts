@@ -320,7 +320,10 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._approvalEnabled = config.approvalEnabled;
     this._id = config.id;
@@ -554,7 +557,7 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       tcp_proxy: cdktf.stringToTerraform(this._tcpProxy),
       vip_port_id: cdktf.stringToTerraform(this._vipPortId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      port: cdktf.listMapper(vpcepServiceV1PortToTerraform)(this._port.internalValue),
+      port: cdktf.listMapper(vpcepServiceV1PortToTerraform, true)(this._port.internalValue),
       timeouts: vpcepServiceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

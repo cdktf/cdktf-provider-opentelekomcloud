@@ -770,7 +770,10 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._clusterId = config.clusterId;
@@ -1253,9 +1256,9 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       server_group_reference: cdktf.stringToTerraform(this._serverGroupReference),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       user_tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._userTags),
-      data_volumes: cdktf.listMapper(cceNodePoolV3DataVolumesToTerraform)(this._dataVolumes.internalValue),
+      data_volumes: cdktf.listMapper(cceNodePoolV3DataVolumesToTerraform, true)(this._dataVolumes.internalValue),
       root_volume: cceNodePoolV3RootVolumeToTerraform(this._rootVolume.internalValue),
-      taints: cdktf.listMapper(cceNodePoolV3TaintsToTerraform)(this._taints.internalValue),
+      taints: cdktf.listMapper(cceNodePoolV3TaintsToTerraform, true)(this._taints.internalValue),
       timeouts: cceNodePoolV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

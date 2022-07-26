@@ -177,7 +177,10 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._containerFormat = config.containerFormat;
     this._diskFormat = config.diskFormat;
@@ -477,7 +480,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       protected: cdktf.booleanToTerraform(this._protected),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       visibility: cdktf.stringToTerraform(this._visibility),
       timeouts: imagesImageV2TimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -299,7 +299,10 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authAlgorithm = config.authAlgorithm;
     this._description = config.description;
@@ -545,7 +548,7 @@ export class VpnaasIpsecPolicyV2 extends cdktf.TerraformResource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       transform_protocol: cdktf.stringToTerraform(this._transformProtocol),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform)(this._lifetime.internalValue),
+      lifetime: cdktf.listMapper(vpnaasIpsecPolicyV2LifetimeToTerraform, true)(this._lifetime.internalValue),
       timeouts: vpnaasIpsecPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

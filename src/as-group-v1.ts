@@ -563,7 +563,10 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availableZones = config.availableZones;
     this._coolDownTime = config.coolDownTime;
@@ -974,7 +977,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      available_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availableZones),
+      available_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availableZones),
       cool_down_time: cdktf.numberToTerraform(this._coolDownTime),
       delete_instances: cdktf.stringToTerraform(this._deleteInstances),
       delete_publicip: cdktf.booleanToTerraform(this._deletePublicip),
@@ -987,14 +990,14 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       lb_listener_id: cdktf.stringToTerraform(this._lbListenerId),
       max_instance_number: cdktf.numberToTerraform(this._maxInstanceNumber),
       min_instance_number: cdktf.numberToTerraform(this._minInstanceNumber),
-      notifications: cdktf.listMapper(cdktf.stringToTerraform)(this._notifications),
+      notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifications),
       region: cdktf.stringToTerraform(this._region),
       scaling_configuration_id: cdktf.stringToTerraform(this._scalingConfigurationId),
       scaling_group_name: cdktf.stringToTerraform(this._scalingGroupName),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      lbaas_listeners: cdktf.listMapper(asGroupV1LbaasListenersToTerraform)(this._lbaasListeners.internalValue),
-      networks: cdktf.listMapper(asGroupV1NetworksToTerraform)(this._networks.internalValue),
+      lbaas_listeners: cdktf.listMapper(asGroupV1LbaasListenersToTerraform, true)(this._lbaasListeners.internalValue),
+      networks: cdktf.listMapper(asGroupV1NetworksToTerraform, true)(this._networks.internalValue),
       security_groups: asGroupV1SecurityGroupsToTerraform(this._securityGroups.internalValue),
       timeouts: asGroupV1TimeoutsToTerraform(this._timeouts.internalValue),
     };

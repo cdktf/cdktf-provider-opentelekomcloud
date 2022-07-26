@@ -228,7 +228,10 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._description = config.description;
@@ -420,7 +423,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       project_id: cdktf.stringToTerraform(this._projectId),
       redirect_listener_id: cdktf.stringToTerraform(this._redirectListenerId),
       redirect_pool_id: cdktf.stringToTerraform(this._redirectPoolId),
-      rules: cdktf.listMapper(lbPolicyV3RulesToTerraform)(this._rules.internalValue),
+      rules: cdktf.listMapper(lbPolicyV3RulesToTerraform, true)(this._rules.internalValue),
     };
   }
 }

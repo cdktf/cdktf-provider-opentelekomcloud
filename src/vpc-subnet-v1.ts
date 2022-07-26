@@ -208,7 +208,10 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._cidr = config.cidr;
@@ -479,7 +482,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       cidr: cdktf.stringToTerraform(this._cidr),
       description: cdktf.stringToTerraform(this._description),
       dhcp_enable: cdktf.booleanToTerraform(this._dhcpEnable),
-      dns_list: cdktf.listMapper(cdktf.stringToTerraform)(this._dnsList),
+      dns_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsList),
       gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),

@@ -165,7 +165,10 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._enableDns = config.enableDns;
     this._enableWhitelist = config.enableWhitelist;
@@ -389,12 +392,12 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       enable_whitelist: cdktf.booleanToTerraform(this._enableWhitelist),
       id: cdktf.stringToTerraform(this._id),
       port_ip: cdktf.stringToTerraform(this._portIp),
-      route_tables: cdktf.listMapper(cdktf.stringToTerraform)(this._routeTables),
+      route_tables: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeTables),
       service_id: cdktf.stringToTerraform(this._serviceId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
-      whitelist: cdktf.listMapper(cdktf.stringToTerraform)(this._whitelist),
+      whitelist: cdktf.listMapper(cdktf.stringToTerraform, false)(this._whitelist),
       timeouts: vpcepEndpointV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -416,7 +416,10 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._description = config.description;
@@ -797,7 +800,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       mtu: cdktf.numberToTerraform(this._mtu),
       name: cdktf.stringToTerraform(this._name),
       peer_address: cdktf.stringToTerraform(this._peerAddress),
-      peer_cidrs: cdktf.listMapper(cdktf.stringToTerraform)(this._peerCidrs),
+      peer_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._peerCidrs),
       peer_ep_group_id: cdktf.stringToTerraform(this._peerEpGroupId),
       peer_id: cdktf.stringToTerraform(this._peerId),
       psk: cdktf.stringToTerraform(this._psk),
@@ -806,7 +809,7 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       vpnservice_id: cdktf.stringToTerraform(this._vpnserviceId),
-      dpd: cdktf.listMapper(vpnaasSiteConnectionV2DpdToTerraform)(this._dpd.internalValue),
+      dpd: cdktf.listMapper(vpnaasSiteConnectionV2DpdToTerraform, true)(this._dpd.internalValue),
       timeouts: vpnaasSiteConnectionV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

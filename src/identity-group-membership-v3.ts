@@ -56,7 +56,10 @@ export class IdentityGroupMembershipV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._group = config.group;
     this._id = config.id;
@@ -117,7 +120,7 @@ export class IdentityGroupMembershipV3 extends cdktf.TerraformResource {
     return {
       group: cdktf.stringToTerraform(this._group),
       id: cdktf.stringToTerraform(this._id),
-      users: cdktf.listMapper(cdktf.stringToTerraform)(this._users),
+      users: cdktf.listMapper(cdktf.stringToTerraform, false)(this._users),
     };
   }
 }

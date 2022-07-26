@@ -860,7 +860,10 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._common = config.common;
     this._description = config.description;
@@ -1051,9 +1054,9 @@ export class CsbsBackupPolicyV1 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       provider_id: cdktf.stringToTerraform(this._providerId),
       region: cdktf.stringToTerraform(this._region),
-      resource: cdktf.listMapper(csbsBackupPolicyV1ResourceToTerraform)(this._resource.internalValue),
+      resource: cdktf.listMapper(csbsBackupPolicyV1ResourceToTerraform, true)(this._resource.internalValue),
       scheduled_operation: csbsBackupPolicyV1ScheduledOperationToTerraform(this._scheduledOperation.internalValue),
-      tags: cdktf.listMapper(csbsBackupPolicyV1TagsToTerraform)(this._tags.internalValue),
+      tags: cdktf.listMapper(csbsBackupPolicyV1TagsToTerraform, true)(this._tags.internalValue),
       timeouts: csbsBackupPolicyV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

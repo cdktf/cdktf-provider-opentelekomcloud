@@ -88,7 +88,7 @@ export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmAc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notification_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notificationList),
+    notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -391,7 +391,7 @@ export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarm
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notification_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notificationList),
+    notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -635,7 +635,7 @@ export function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputR
   return {
     metric_name: cdktf.stringToTerraform(struct!.metricName),
     namespace: cdktf.stringToTerraform(struct!.namespace),
-    dimensions: cdktf.listMapper(cesAlarmruleMetricDimensionsToTerraform)(struct!.dimensions),
+    dimensions: cdktf.listMapper(cesAlarmruleMetricDimensionsToTerraform, true)(struct!.dimensions),
   }
 }
 
@@ -739,7 +739,7 @@ export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    notification_list: cdktf.listMapper(cdktf.stringToTerraform)(struct!.notificationList),
+    notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -1002,7 +1002,10 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alarmActionEnabled = config.alarmActionEnabled;
     this._alarmDescription = config.alarmDescription;
@@ -1227,11 +1230,11 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       alarm_level: cdktf.numberToTerraform(this._alarmLevel),
       alarm_name: cdktf.stringToTerraform(this._alarmName),
       id: cdktf.stringToTerraform(this._id),
-      alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform)(this._alarmActions.internalValue),
+      alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform, true)(this._alarmActions.internalValue),
       condition: cesAlarmruleConditionToTerraform(this._condition.internalValue),
-      insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform)(this._insufficientdataActions.internalValue),
+      insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform, true)(this._insufficientdataActions.internalValue),
       metric: cesAlarmruleMetricToTerraform(this._metric.internalValue),
-      ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform)(this._okActions.internalValue),
+      ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform, true)(this._okActions.internalValue),
       timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

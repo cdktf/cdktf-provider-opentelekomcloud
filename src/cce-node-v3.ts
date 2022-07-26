@@ -748,7 +748,10 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._annotations = config.annotations;
     this._availabilityZone = config.availabilityZone;
@@ -1364,7 +1367,7 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       docker_lvm_config_override: cdktf.stringToTerraform(this._dockerLvmConfigOverride),
       ecs_performance_type: cdktf.stringToTerraform(this._ecsPerformanceType),
       eip_count: cdktf.numberToTerraform(this._eipCount),
-      eip_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._eipIds),
+      eip_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eipIds),
       extend_param_charging_mode: cdktf.numberToTerraform(this._extendParamChargingMode),
       flavor_id: cdktf.stringToTerraform(this._flavorId),
       id: cdktf.stringToTerraform(this._id),
@@ -1385,9 +1388,9 @@ export class CceNodeV3 extends cdktf.TerraformResource {
       sharetype: cdktf.stringToTerraform(this._sharetype),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      data_volumes: cdktf.listMapper(cceNodeV3DataVolumesToTerraform)(this._dataVolumes.internalValue),
+      data_volumes: cdktf.listMapper(cceNodeV3DataVolumesToTerraform, true)(this._dataVolumes.internalValue),
       root_volume: cceNodeV3RootVolumeToTerraform(this._rootVolume.internalValue),
-      taints: cdktf.listMapper(cceNodeV3TaintsToTerraform)(this._taints.internalValue),
+      taints: cdktf.listMapper(cceNodeV3TaintsToTerraform, true)(this._taints.internalValue),
       timeouts: cceNodeV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

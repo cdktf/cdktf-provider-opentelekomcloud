@@ -80,7 +80,10 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultKeyFlag = config.defaultKeyFlag;
     this._domainId = config.domainId;

@@ -359,7 +359,10 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._flavorRef = config.flavorRef;
@@ -544,7 +547,7 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
       flavor_ref: cdktf.stringToTerraform(this._flavorRef),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      public_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._publicIps),
+      public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicIps),
       region: cdktf.stringToTerraform(this._region),
       replica_of_id: cdktf.stringToTerraform(this._replicaOfId),
       timeouts: rdsReadReplicaV3TimeoutsToTerraform(this._timeouts.internalValue),

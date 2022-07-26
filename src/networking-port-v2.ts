@@ -458,7 +458,10 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._deviceId = config.deviceId;
@@ -756,11 +759,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       no_security_groups: cdktf.booleanToTerraform(this._noSecurityGroups),
       port_security_enabled: cdktf.booleanToTerraform(this._portSecurityEnabled),
       region: cdktf.stringToTerraform(this._region),
-      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._securityGroupIds),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
-      allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform)(this._allowedAddressPairs.internalValue),
-      fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform)(this._fixedIp.internalValue),
+      allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform, true)(this._allowedAddressPairs.internalValue),
+      fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform, true)(this._fixedIp.internalValue),
       timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

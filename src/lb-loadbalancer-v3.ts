@@ -315,7 +315,10 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._availabilityZones = config.availabilityZones;
@@ -577,14 +580,14 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
-      availability_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZones),
+      availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       ip_target_enable: cdktf.booleanToTerraform(this._ipTargetEnable),
       l4_flavor: cdktf.stringToTerraform(this._l4Flavor),
       l7_flavor: cdktf.stringToTerraform(this._l7Flavor),
       name: cdktf.stringToTerraform(this._name),
-      network_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._networkIds),
+      network_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkIds),
       router_id: cdktf.stringToTerraform(this._routerId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),

@@ -247,7 +247,10 @@ export class LbListenerV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._clientCaTlsContainerRef = config.clientCaTlsContainerRef;
@@ -570,7 +573,7 @@ export class LbListenerV2 extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
       region: cdktf.stringToTerraform(this._region),
-      sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform)(this._sniContainerRefs),
+      sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sniContainerRefs),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),

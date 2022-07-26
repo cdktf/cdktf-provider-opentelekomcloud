@@ -778,7 +778,10 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._flavor = config.flavor;
@@ -1090,14 +1093,14 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      availability_zone: cdktf.listMapper(cdktf.stringToTerraform)(this._availabilityZone),
+      availability_zone: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZone),
       flavor: cdktf.stringToTerraform(this._flavor),
       ha_replication_mode: cdktf.stringToTerraform(this._haReplicationMode),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       param_group_id: cdktf.stringToTerraform(this._paramGroupId),
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      public_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._publicIps),
+      public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicIps),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tag: cdktf.hashMapper(cdktf.stringToTerraform)(this._tag),

@@ -109,9 +109,9 @@ export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource | cdkt
   return {
     backup_count: cdktf.numberToTerraform(struct!.backupCount),
     backup_size: cdktf.numberToTerraform(struct!.backupSize),
-    exclude_volumes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludeVolumes),
+    exclude_volumes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeVolumes),
     id: cdktf.stringToTerraform(struct!.id),
-    include_volumes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includeVolumes),
+    include_volumes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeVolumes),
     name: cdktf.stringToTerraform(struct!.name),
     protect_status: cdktf.stringToTerraform(struct!.protectStatus),
     size: cdktf.numberToTerraform(struct!.size),
@@ -919,7 +919,10 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoBind = config.autoBind;
     this._autoExpand = config.autoExpand;
@@ -1141,10 +1144,10 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       enterprise_project_id: cdktf.stringToTerraform(this._enterpriseProjectId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      resource: cdktf.listMapper(cbrVaultV3ResourceToTerraform)(this._resource.internalValue),
+      resource: cdktf.listMapper(cbrVaultV3ResourceToTerraform, false)(this._resource.internalValue),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       billing: cbrVaultV3BillingToTerraform(this._billing.internalValue),
-      bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform)(this._bindRules.internalValue),
+      bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform, true)(this._bindRules.internalValue),
     };
   }
 }

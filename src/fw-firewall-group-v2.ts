@@ -219,7 +219,10 @@ export class FwFirewallGroupV2 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
     this._description = config.description;
@@ -426,7 +429,7 @@ export class FwFirewallGroupV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ingress_policy_id: cdktf.stringToTerraform(this._ingressPolicyId),
       name: cdktf.stringToTerraform(this._name),
-      ports: cdktf.listMapper(cdktf.stringToTerraform)(this._ports),
+      ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ports),
       region: cdktf.stringToTerraform(this._region),
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),

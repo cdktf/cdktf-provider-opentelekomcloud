@@ -297,7 +297,10 @@ export class DehHostV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autoPlacement = config.autoPlacement;
     this._availabilityZone = config.availabilityZone;
@@ -617,14 +620,14 @@ export class DehHostV1 extends cdktf.TerraformResource {
       host_type_name: cdktf.stringToTerraform(this._hostTypeName),
       id: cdktf.stringToTerraform(this._id),
       instance_total: cdktf.numberToTerraform(this._instanceTotal),
-      instance_uuids: cdktf.listMapper(cdktf.stringToTerraform)(this._instanceUuids),
+      instance_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._instanceUuids),
       memory: cdktf.numberToTerraform(this._memory),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
       sockets: cdktf.numberToTerraform(this._sockets),
       status: cdktf.stringToTerraform(this._status),
       vcpus: cdktf.numberToTerraform(this._vcpus),
-      available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform)(this._availableInstanceCapacities.internalValue),
+      available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform, true)(this._availableInstanceCapacities.internalValue),
       timeouts: dehHostV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

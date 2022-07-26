@@ -420,7 +420,10 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateId = config.certificateId;
     this._cipher = config.cipher;
@@ -653,10 +656,10 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
       proxy: cdktf.booleanToTerraform(this._proxy),
-      sip_header_list: cdktf.listMapper(cdktf.stringToTerraform)(this._sipHeaderList),
+      sip_header_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sipHeaderList),
       sip_header_name: cdktf.stringToTerraform(this._sipHeaderName),
       tls: cdktf.stringToTerraform(this._tls),
-      server: cdktf.listMapper(wafDomainV1ServerToTerraform)(this._server.internalValue),
+      server: cdktf.listMapper(wafDomainV1ServerToTerraform, true)(this._server.internalValue),
       timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
