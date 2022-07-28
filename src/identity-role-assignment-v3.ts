@@ -14,7 +14,7 @@ export interface IdentityRoleAssignmentV3Config extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}
   */
-  readonly groupId?: string;
+  readonly groupId: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#id IdentityRoleAssignmentV3#id}
   *
@@ -30,10 +30,6 @@ export interface IdentityRoleAssignmentV3Config extends cdktf.TerraformMetaArgum
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}
   */
   readonly roleId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3#user_id IdentityRoleAssignmentV3#user_id}
-  */
-  readonly userId?: string;
 }
 
 /**
@@ -62,7 +58,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_role_assignment_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.1',
+        providerVersion: '1.30.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -78,7 +74,6 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
     this._id = config.id;
     this._projectId = config.projectId;
     this._roleId = config.roleId;
-    this._userId = config.userId;
   }
 
   // ==========
@@ -101,16 +96,13 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
     return this._domainId;
   }
 
-  // group_id - computed: false, optional: true, required: false
+  // group_id - computed: false, optional: false, required: true
   private _groupId?: string; 
   public get groupId() {
     return this.getStringAttribute('group_id');
   }
   public set groupId(value: string) {
     this._groupId = value;
-  }
-  public resetGroupId() {
-    this._groupId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get groupIdInput() {
@@ -162,22 +154,6 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
     return this._roleId;
   }
 
-  // user_id - computed: false, optional: true, required: false
-  private _userId?: string; 
-  public get userId() {
-    return this.getStringAttribute('user_id');
-  }
-  public set userId(value: string) {
-    this._userId = value;
-  }
-  public resetUserId() {
-    this._userId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get userIdInput() {
-    return this._userId;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -189,7 +165,6 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project_id: cdktf.stringToTerraform(this._projectId),
       role_id: cdktf.stringToTerraform(this._roleId),
-      user_id: cdktf.stringToTerraform(this._userId),
     };
   }
 }

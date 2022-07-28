@@ -78,7 +78,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_user_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.1',
+        providerVersion: '1.30.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -153,7 +153,7 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
     return this._domainId;
   }
 
-  // email - computed: false, optional: true, required: false
+  // email - computed: true, optional: true, required: false
   private _email?: string; 
   public get email() {
     return this.getStringAttribute('email');

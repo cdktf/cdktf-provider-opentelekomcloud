@@ -58,7 +58,7 @@ export class IdentityCredentialV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_credential_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.1',
+        providerVersion: '1.30.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
