@@ -46,7 +46,7 @@ export class DataOpentelekomcloudLbFlavorV3 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_lb_flavor_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.1',
+        providerVersion: '1.30.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
