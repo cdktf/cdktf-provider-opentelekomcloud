@@ -202,7 +202,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_subnet_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.2',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -420,6 +420,11 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get secondaryDnsInput() {
     return this._secondaryDns;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // subnet_id - computed: true, optional: false, required: false

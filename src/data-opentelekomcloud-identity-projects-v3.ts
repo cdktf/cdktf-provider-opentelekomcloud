@@ -131,7 +131,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
       terraformResourceType: 'opentelekomcloud_identity_projects_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.2',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

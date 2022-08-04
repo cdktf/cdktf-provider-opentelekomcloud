@@ -227,7 +227,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_addon_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.2',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
