@@ -90,7 +90,7 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
       terraformResourceType: 'opentelekomcloud_compute_flavor_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.2',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

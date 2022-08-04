@@ -93,6 +93,90 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: EcsInstanceV1Timeouts;
 }
+export interface EcsInstanceV1VolumesAttached {
+}
+
+export function ecsInstanceV1VolumesAttachedToTerraform(struct?: EcsInstanceV1VolumesAttached): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class EcsInstanceV1VolumesAttachedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): EcsInstanceV1VolumesAttached | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: EcsInstanceV1VolumesAttached | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // kms_id - computed: true, optional: false, required: false
+  public get kmsId() {
+    return this.getStringAttribute('kms_id');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
+  // snapshot_id - computed: true, optional: false, required: false
+  public get snapshotId() {
+    return this.getStringAttribute('snapshot_id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class EcsInstanceV1VolumesAttachedList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): EcsInstanceV1VolumesAttachedOutputReference {
+    return new EcsInstanceV1VolumesAttachedOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface EcsInstanceV1DataDisks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}
@@ -562,7 +646,7 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ecs_instance_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.30.2',
+        providerVersion: '1.31.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -829,6 +913,12 @@ export class EcsInstanceV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get userDataInput() {
     return this._userData;
+  }
+
+  // volumes_attached - computed: true, optional: false, required: false
+  private _volumesAttached = new EcsInstanceV1VolumesAttachedList(this, "volumes_attached", false);
+  public get volumesAttached() {
+    return this._volumesAttached;
   }
 
   // vpc_id - computed: false, optional: false, required: true
