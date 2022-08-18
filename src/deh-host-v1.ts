@@ -291,7 +291,7 @@ export class DehHostV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_deh_host_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.0',
+        providerVersion: '1.31.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

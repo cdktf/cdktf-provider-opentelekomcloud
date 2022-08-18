@@ -1168,7 +1168,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_instance_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.0',
+        providerVersion: '1.31.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
