@@ -50,7 +50,7 @@ export class ObsBucketPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_obs_bucket_policy',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.0',
+        providerVersion: '1.31.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
