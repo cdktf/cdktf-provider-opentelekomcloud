@@ -39,6 +39,10 @@ export interface IdentityRoleV3Statement {
   */
   readonly action: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#condition IdentityRoleV3#condition}
+  */
+  readonly condition?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_v3#effect IdentityRoleV3#effect}
   */
   readonly effect: string;
@@ -55,6 +59,7 @@ export function identityRoleV3StatementToTerraform(struct?: IdentityRoleV3Statem
   }
   return {
     action: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.action),
+    condition: cdktf.stringToTerraform(struct!.condition),
     effect: cdktf.stringToTerraform(struct!.effect),
     resource: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resource),
   }
@@ -84,6 +89,10 @@ export class IdentityRoleV3StatementOutputReference extends cdktf.ComplexObject 
       hasAnyValues = true;
       internalValueResult.action = this._action;
     }
+    if (this._condition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition;
+    }
     if (this._effect !== undefined) {
       hasAnyValues = true;
       internalValueResult.effect = this._effect;
@@ -100,6 +109,7 @@ export class IdentityRoleV3StatementOutputReference extends cdktf.ComplexObject 
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
+      this._condition = undefined;
       this._effect = undefined;
       this._resource = undefined;
     }
@@ -111,6 +121,7 @@ export class IdentityRoleV3StatementOutputReference extends cdktf.ComplexObject 
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._action = value.action;
+      this._condition = value.condition;
       this._effect = value.effect;
       this._resource = value.resource;
     }
@@ -127,6 +138,22 @@ export class IdentityRoleV3StatementOutputReference extends cdktf.ComplexObject 
   // Temporarily expose input value. Use with caution.
   public get actionInput() {
     return this._action;
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition?: string; 
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+  public set condition(value: string) {
+    this._condition = value;
+  }
+  public resetCondition() {
+    this._condition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition;
   }
 
   // effect - computed: false, optional: false, required: true
@@ -205,7 +232,7 @@ export class IdentityRoleV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_role_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.1',
+        providerVersion: '1.31.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

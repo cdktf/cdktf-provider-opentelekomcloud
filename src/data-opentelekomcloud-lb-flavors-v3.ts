@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2
+// https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavors_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,44 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface LogtankGroupV2Config extends cdktf.TerraformMetaArguments {
+export interface DataOpentelekomcloudLbFlavorsV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2#group_name LogtankGroupV2#group_name}
-  */
-  readonly groupName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2#id LogtankGroupV2#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavors_v3#id DataOpentelekomcloudLbFlavorsV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavors_v3#name DataOpentelekomcloudLbFlavorsV3#name}
+  */
+  readonly name?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2 opentelekomcloud_logtank_group_v2}
+* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavors_v3 opentelekomcloud_lb_flavors_v3}
 */
-export class LogtankGroupV2 extends cdktf.TerraformResource {
+export class DataOpentelekomcloudLbFlavorsV3 extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "opentelekomcloud_logtank_group_v2";
+  public static readonly tfResourceType = "opentelekomcloud_lb_flavors_v3";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2 opentelekomcloud_logtank_group_v2} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_flavors_v3 opentelekomcloud_lb_flavors_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options LogtankGroupV2Config
+  * @param options DataOpentelekomcloudLbFlavorsV3Config = {}
   */
-  public constructor(scope: Construct, id: string, config: LogtankGroupV2Config) {
+  public constructor(scope: Construct, id: string, config: DataOpentelekomcloudLbFlavorsV3Config = {}) {
     super(scope, id, {
-      terraformResourceType: 'opentelekomcloud_logtank_group_v2',
+      terraformResourceType: 'opentelekomcloud_lb_flavors_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
         providerVersion: '1.31.2',
@@ -57,25 +57,17 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._groupName = config.groupName;
     this._id = config.id;
+    this._name = config.name;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // group_name - computed: false, optional: false, required: true
-  private _groupName?: string; 
-  public get groupName() {
-    return this.getStringAttribute('group_name');
-  }
-  public set groupName(value: string) {
-    this._groupName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupNameInput() {
-    return this._groupName;
+  // flavors - computed: true, optional: false, required: false
+  public get flavors() {
+    return cdktf.Fn.tolist(this.getListAttribute('flavors'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -94,9 +86,20 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // ttl_in_days - computed: true, optional: false, required: false
-  public get ttlInDays() {
-    return this.getNumberAttribute('ttl_in_days');
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // =========
@@ -105,8 +108,8 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: cdktf.stringToTerraform(this._groupName),
       id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
     };
   }
 }

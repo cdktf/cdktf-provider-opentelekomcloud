@@ -66,7 +66,7 @@ export class DataOpentelekomcloudVpcRouteV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_vpc_route_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.1',
+        providerVersion: '1.31.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
