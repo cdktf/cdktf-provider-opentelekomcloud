@@ -191,6 +191,7 @@ export * from './data-opentelekomcloud-kms-data-key-v1';
 export * from './data-opentelekomcloud-kms-key-v1';
 export * from './data-opentelekomcloud-lb-certificate-v3';
 export * from './data-opentelekomcloud-lb-flavor-v3';
+export * from './data-opentelekomcloud-lb-flavors-v3';
 export * from './data-opentelekomcloud-lb-listener-v3';
 export * from './data-opentelekomcloud-lb-loadbalancer-v3';
 export * from './data-opentelekomcloud-lb-member-ids-v2';

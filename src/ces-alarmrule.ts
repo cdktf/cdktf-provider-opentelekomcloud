@@ -47,12 +47,6 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   */
   readonly condition: CesAlarmruleCondition;
   /**
-  * insufficientdata_actions block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#insufficientdata_actions CesAlarmrule#insufficientdata_actions}
-  */
-  readonly insufficientdataActions?: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable;
-  /**
   * metric block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#metric CesAlarmrule#metric}
@@ -372,124 +366,6 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get valueInput() {
     return this._value;
-  }
-}
-export interface CesAlarmruleInsufficientdataActions {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#notification_list CesAlarmrule#notification_list}
-  */
-  readonly notificationList: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ces_alarmrule#type CesAlarmrule#type}
-  */
-  readonly type: string;
-}
-
-export function cesAlarmruleInsufficientdataActionsToTerraform(struct?: CesAlarmruleInsufficientdataActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
-    type: cdktf.stringToTerraform(struct!.type),
-  }
-}
-
-export class CesAlarmruleInsufficientdataActionsOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAlarmruleInsufficientdataActions | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._notificationList !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.notificationList = this._notificationList;
-    }
-    if (this._type !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.type = this._type;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAlarmruleInsufficientdataActions | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._notificationList = undefined;
-      this._type = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._notificationList = value.notificationList;
-      this._type = value.type;
-    }
-  }
-
-  // notification_list - computed: false, optional: false, required: true
-  private _notificationList?: string[]; 
-  public get notificationList() {
-    return this.getListAttribute('notification_list');
-  }
-  public set notificationList(value: string[]) {
-    this._notificationList = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get notificationListInput() {
-    return this._notificationList;
-  }
-
-  // type - computed: false, optional: false, required: true
-  private _type?: string; 
-  public get type() {
-    return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
-  }
-}
-
-export class CesAlarmruleInsufficientdataActionsList extends cdktf.ComplexList {
-  public internalValue? : CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAlarmruleInsufficientdataActionsOutputReference {
-    return new CesAlarmruleInsufficientdataActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CesAlarmruleMetricDimensions {
@@ -996,7 +872,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ces_alarmrule',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.1',
+        providerVersion: '1.31.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1015,7 +891,6 @@ export class CesAlarmrule extends cdktf.TerraformResource {
     this._id = config.id;
     this._alarmActions.internalValue = config.alarmActions;
     this._condition.internalValue = config.condition;
-    this._insufficientdataActions.internalValue = config.insufficientdataActions;
     this._metric.internalValue = config.metric;
     this._okActions.internalValue = config.okActions;
     this._timeouts.internalValue = config.timeouts;
@@ -1157,22 +1032,6 @@ export class CesAlarmrule extends cdktf.TerraformResource {
     return this._condition.internalValue;
   }
 
-  // insufficientdata_actions - computed: false, optional: true, required: false
-  private _insufficientdataActions = new CesAlarmruleInsufficientdataActionsList(this, "insufficientdata_actions", false);
-  public get insufficientdataActions() {
-    return this._insufficientdataActions;
-  }
-  public putInsufficientdataActions(value: CesAlarmruleInsufficientdataActions[] | cdktf.IResolvable) {
-    this._insufficientdataActions.internalValue = value;
-  }
-  public resetInsufficientdataActions() {
-    this._insufficientdataActions.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get insufficientdataActionsInput() {
-    return this._insufficientdataActions.internalValue;
-  }
-
   // metric - computed: false, optional: false, required: true
   private _metric = new CesAlarmruleMetricOutputReference(this, "metric");
   public get metric() {
@@ -1232,7 +1091,6 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       alarm_actions: cdktf.listMapper(cesAlarmruleAlarmActionsToTerraform, true)(this._alarmActions.internalValue),
       condition: cesAlarmruleConditionToTerraform(this._condition.internalValue),
-      insufficientdata_actions: cdktf.listMapper(cesAlarmruleInsufficientdataActionsToTerraform, true)(this._insufficientdataActions.internalValue),
       metric: cesAlarmruleMetricToTerraform(this._metric.internalValue),
       ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform, true)(this._okActions.internalValue),
       timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts.internalValue),

@@ -22,11 +22,11 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_instances AsGroupV1#delete_instances}
   */
-  readonly deleteInstances?: string;
+  readonly deleteInstances: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#delete_publicip AsGroupV1#delete_publicip}
   */
-  readonly deletePublicip?: boolean | cdktf.IResolvable;
+  readonly deletePublicip: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}
   */
@@ -557,7 +557,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_as_group_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.1',
+        providerVersion: '1.31.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -634,7 +634,7 @@ export class AsGroupV1 extends cdktf.TerraformResource {
     return this.getNumberAttribute('current_instance_number');
   }
 
-  // delete_instances - computed: false, optional: true, required: false
+  // delete_instances - computed: false, optional: false, required: true
   private _deleteInstances?: string; 
   public get deleteInstances() {
     return this.getStringAttribute('delete_instances');
@@ -642,24 +642,18 @@ export class AsGroupV1 extends cdktf.TerraformResource {
   public set deleteInstances(value: string) {
     this._deleteInstances = value;
   }
-  public resetDeleteInstances() {
-    this._deleteInstances = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get deleteInstancesInput() {
     return this._deleteInstances;
   }
 
-  // delete_publicip - computed: false, optional: true, required: false
+  // delete_publicip - computed: false, optional: false, required: true
   private _deletePublicip?: boolean | cdktf.IResolvable; 
   public get deletePublicip() {
     return this.getBooleanAttribute('delete_publicip');
   }
   public set deletePublicip(value: boolean | cdktf.IResolvable) {
     this._deletePublicip = value;
-  }
-  public resetDeletePublicip() {
-    this._deletePublicip = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get deletePublicipInput() {
