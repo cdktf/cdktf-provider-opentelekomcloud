@@ -147,7 +147,7 @@ export class SwrDomainV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_swr_domain_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
