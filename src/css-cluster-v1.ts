@@ -207,7 +207,7 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 
-  // version - computed: true, optional: true, required: false
+  // version - computed: false, optional: true, required: false
   private _version?: string; 
   public get version() {
     return this.getStringAttribute('version');
@@ -716,7 +716,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_css_cluster_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

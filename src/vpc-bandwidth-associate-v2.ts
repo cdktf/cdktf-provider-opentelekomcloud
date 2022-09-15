@@ -58,7 +58,7 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_bandwidth_associate_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

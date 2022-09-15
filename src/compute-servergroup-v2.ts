@@ -21,7 +21,7 @@ export interface ComputeServergroupV2Config extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_servergroup_v2#policies ComputeServergroupV2#policies}
   */
-  readonly policies?: string[];
+  readonly policies: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_servergroup_v2#region ComputeServergroupV2#region}
   */
@@ -58,7 +58,7 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_servergroup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -114,16 +114,13 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // policies - computed: false, optional: true, required: false
+  // policies - computed: false, optional: false, required: true
   private _policies?: string[]; 
   public get policies() {
     return this.getListAttribute('policies');
   }
   public set policies(value: string[]) {
     this._policies = value;
-  }
-  public resetPolicies() {
-    this._policies = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get policiesInput() {

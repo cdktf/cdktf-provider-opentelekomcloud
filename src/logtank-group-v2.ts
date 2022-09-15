@@ -18,6 +18,10 @@ export interface LogtankGroupV2Config extends cdktf.TerraformMetaArguments {
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/logtank_group_v2#ttl_in_days LogtankGroupV2#ttl_in_days}
+  */
+  readonly ttlInDays?: number;
 }
 
 /**
@@ -46,7 +50,7 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_logtank_group_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -59,6 +63,7 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
     });
     this._groupName = config.groupName;
     this._id = config.id;
+    this._ttlInDays = config.ttlInDays;
   }
 
   // ==========
@@ -94,9 +99,20 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // ttl_in_days - computed: true, optional: false, required: false
+  // ttl_in_days - computed: true, optional: true, required: false
+  private _ttlInDays?: number; 
   public get ttlInDays() {
     return this.getNumberAttribute('ttl_in_days');
+  }
+  public set ttlInDays(value: number) {
+    this._ttlInDays = value;
+  }
+  public resetTtlInDays() {
+    this._ttlInDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInDaysInput() {
+    return this._ttlInDays;
   }
 
   // =========
@@ -107,6 +123,7 @@ export class LogtankGroupV2 extends cdktf.TerraformResource {
     return {
       group_name: cdktf.stringToTerraform(this._groupName),
       id: cdktf.stringToTerraform(this._id),
+      ttl_in_days: cdktf.numberToTerraform(this._ttlInDays),
     };
   }
 }

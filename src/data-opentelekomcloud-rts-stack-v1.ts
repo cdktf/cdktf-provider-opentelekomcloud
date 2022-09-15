@@ -50,7 +50,7 @@ export class DataOpentelekomcloudRtsStackV1 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_rts_stack_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -70,7 +70,7 @@ export class DataOpentelekomcloudDnsZoneV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_dns_zone_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

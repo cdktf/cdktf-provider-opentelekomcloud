@@ -79,6 +79,10 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly ignoreAddons?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#kube_proxy_mode CceClusterV3#kube_proxy_mode}
+  */
+  readonly kubeProxyMode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cce_cluster_v3#kubernetes_svc_ip_range CceClusterV3#kubernetes_svc_ip_range}
   */
   readonly kubernetesSvcIpRange?: string;
@@ -510,7 +514,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.2',
+        providerVersion: '1.31.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -538,6 +542,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
     this._highwaySubnetId = config.highwaySubnetId;
     this._id = config.id;
     this._ignoreAddons = config.ignoreAddons;
+    this._kubeProxyMode = config.kubeProxyMode;
     this._kubernetesSvcIpRange = config.kubernetesSvcIpRange;
     this._labels = config.labels;
     this._multiAz = config.multiAz;
@@ -849,9 +854,20 @@ export class CceClusterV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('internal');
   }
 
-  // kube_proxy_mode - computed: true, optional: false, required: false
+  // kube_proxy_mode - computed: true, optional: true, required: false
+  private _kubeProxyMode?: string; 
   public get kubeProxyMode() {
     return this.getStringAttribute('kube_proxy_mode');
+  }
+  public set kubeProxyMode(value: string) {
+    this._kubeProxyMode = value;
+  }
+  public resetKubeProxyMode() {
+    this._kubeProxyMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubeProxyModeInput() {
+    return this._kubeProxyMode;
   }
 
   // kubernetes_svc_ip_range - computed: true, optional: true, required: false
@@ -1043,6 +1059,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       highway_subnet_id: cdktf.stringToTerraform(this._highwaySubnetId),
       id: cdktf.stringToTerraform(this._id),
       ignore_addons: cdktf.booleanToTerraform(this._ignoreAddons),
+      kube_proxy_mode: cdktf.stringToTerraform(this._kubeProxyMode),
       kubernetes_svc_ip_range: cdktf.stringToTerraform(this._kubernetesSvcIpRange),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       multi_az: cdktf.booleanToTerraform(this._multiAz),
