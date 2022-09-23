@@ -54,7 +54,7 @@ export class DataOpentelekomcloudDcsAzV1 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_dcs_az_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.3',
+        providerVersion: '1.31.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
