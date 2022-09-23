@@ -222,7 +222,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_policy_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.3',
+        providerVersion: '1.31.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

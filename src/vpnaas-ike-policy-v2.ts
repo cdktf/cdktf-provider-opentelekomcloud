@@ -293,7 +293,7 @@ export class VpnaasIkePolicyV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpnaas_ike_policy_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.3',
+        providerVersion: '1.31.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
