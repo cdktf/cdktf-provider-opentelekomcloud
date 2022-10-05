@@ -79,6 +79,10 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly securityGroups?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#ssh_private_key_path ComputeInstanceV2#ssh_private_key_path}
+  */
+  readonly sshPrivateKeyPath?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_instance_v2#stop_before_destroy ComputeInstanceV2#stop_before_destroy}
   */
   readonly stopBeforeDestroy?: boolean | cdktf.IResolvable;
@@ -1168,7 +1172,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_instance_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.4',
+        providerVersion: '1.31.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1196,6 +1200,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
     this._powerState = config.powerState;
     this._region = config.region;
     this._securityGroups = config.securityGroups;
+    this._sshPrivateKeyPath = config.sshPrivateKeyPath;
     this._stopBeforeDestroy = config.stopBeforeDestroy;
     this._tags = config.tags;
     this._userData = config.userData;
@@ -1309,6 +1314,11 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get configDriveInput() {
     return this._configDrive;
+  }
+
+  // encrypted_password - computed: true, optional: false, required: false
+  public get encryptedPassword() {
+    return this.getStringAttribute('encrypted_password');
   }
 
   // flavor_id - computed: true, optional: true, required: false
@@ -1436,6 +1446,11 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // password - computed: true, optional: false, required: false
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+
   // power_state - computed: false, optional: true, required: false
   private _powerState?: string; 
   public get powerState() {
@@ -1482,6 +1497,22 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get securityGroupsInput() {
     return this._securityGroups;
+  }
+
+  // ssh_private_key_path - computed: false, optional: true, required: false
+  private _sshPrivateKeyPath?: string; 
+  public get sshPrivateKeyPath() {
+    return this.getStringAttribute('ssh_private_key_path');
+  }
+  public set sshPrivateKeyPath(value: string) {
+    this._sshPrivateKeyPath = value;
+  }
+  public resetSshPrivateKeyPath() {
+    this._sshPrivateKeyPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPrivateKeyPathInput() {
+    return this._sshPrivateKeyPath;
   }
 
   // stop_before_destroy - computed: false, optional: true, required: false
@@ -1625,6 +1656,7 @@ export class ComputeInstanceV2 extends cdktf.TerraformResource {
       power_state: cdktf.stringToTerraform(this._powerState),
       region: cdktf.stringToTerraform(this._region),
       security_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroups),
+      ssh_private_key_path: cdktf.stringToTerraform(this._sshPrivateKeyPath),
       stop_before_destroy: cdktf.booleanToTerraform(this._stopBeforeDestroy),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),

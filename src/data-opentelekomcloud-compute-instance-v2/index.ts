@@ -23,6 +23,10 @@ export interface DataOpentelekomcloudComputeInstanceV2Config extends cdktf.Terra
   */
   readonly region?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#ssh_private_key_path DataOpentelekomcloudComputeInstanceV2#ssh_private_key_path}
+  */
+  readonly sshPrivateKeyPath?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/compute_instance_v2#tags DataOpentelekomcloudComputeInstanceV2#tags}
   */
   readonly tags?: { [key: string]: string };
@@ -164,7 +168,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
       terraformResourceType: 'opentelekomcloud_compute_instance_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.4',
+        providerVersion: '1.31.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -178,6 +182,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
     this._id = config.id;
     this._name = config.name;
     this._region = config.region;
+    this._sshPrivateKeyPath = config.sshPrivateKeyPath;
     this._tags = config.tags;
     this._userData = config.userData;
     this._network.internalValue = config.network;
@@ -197,9 +202,19 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
     return this.getStringAttribute('access_ip_v6');
   }
 
+  // admin_pass - computed: true, optional: false, required: false
+  public get adminPass() {
+    return this.getStringAttribute('admin_pass');
+  }
+
   // availability_zone - computed: true, optional: false, required: false
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
+  }
+
+  // encrypted_password - computed: true, optional: false, required: false
+  public get encryptedPassword() {
+    return this.getStringAttribute('encrypted_password');
   }
 
   // flavor_id - computed: true, optional: false, required: false
@@ -265,6 +280,11 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
     return this._name;
   }
 
+  // password - computed: true, optional: false, required: false
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+
   // power_state - computed: true, optional: false, required: false
   public get powerState() {
     return this.getStringAttribute('power_state');
@@ -289,6 +309,22 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
   // security_groups - computed: true, optional: false, required: false
   public get securityGroups() {
     return cdktf.Fn.tolist(this.getListAttribute('security_groups'));
+  }
+
+  // ssh_private_key_path - computed: false, optional: true, required: false
+  private _sshPrivateKeyPath?: string; 
+  public get sshPrivateKeyPath() {
+    return this.getStringAttribute('ssh_private_key_path');
+  }
+  public set sshPrivateKeyPath(value: string) {
+    this._sshPrivateKeyPath = value;
+  }
+  public resetSshPrivateKeyPath() {
+    this._sshPrivateKeyPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshPrivateKeyPathInput() {
+    return this._sshPrivateKeyPath;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -348,6 +384,7 @@ export class DataOpentelekomcloudComputeInstanceV2 extends cdktf.TerraformDataSo
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       region: cdktf.stringToTerraform(this._region),
+      ssh_private_key_path: cdktf.stringToTerraform(this._sshPrivateKeyPath),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       user_data: cdktf.stringToTerraform(this._userData),
       network: cdktf.listMapper(dataOpentelekomcloudComputeInstanceV2NetworkToTerraform, true)(this._network.internalValue),
