@@ -872,7 +872,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ces_alarmrule',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.4',
+        providerVersion: '1.31.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -269,7 +269,7 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
     return this._ipAddress;
   }
 
-  // port_id - computed: true, optional: true, required: false
+  // port_id - computed: false, optional: true, required: false
   private _portId?: string; 
   public get portId() {
     return this.getStringAttribute('port_id');
@@ -427,7 +427,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_eip_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.4',
+        providerVersion: '1.31.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

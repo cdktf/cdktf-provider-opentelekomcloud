@@ -36,6 +36,10 @@ export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#enable_whitelist DcsInstanceV1#enable_whitelist}
+  */
+  readonly enableWhitelist?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#engine DcsInstanceV1#engine}
   */
   readonly engine: string;
@@ -81,7 +85,7 @@ export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#security_group_id DcsInstanceV1#security_group_id}
   */
-  readonly securityGroupId: string;
+  readonly securityGroupId?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#subnet_id DcsInstanceV1#subnet_id}
   */
@@ -108,6 +112,12 @@ export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#timeouts DcsInstanceV1#timeouts}
   */
   readonly timeouts?: DcsInstanceV1Timeouts;
+  /**
+  * whitelist block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#whitelist DcsInstanceV1#whitelist}
+  */
+  readonly whitelist?: DcsInstanceV1Whitelist[] | cdktf.IResolvable;
 }
 export interface DcsInstanceV1BackupPolicy {
   /**
@@ -544,6 +554,124 @@ export class DcsInstanceV1TimeoutsOutputReference extends cdktf.ComplexObject {
     return this._update;
   }
 }
+export interface DcsInstanceV1Whitelist {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#group_name DcsInstanceV1#group_name}
+  */
+  readonly groupName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#ip_list DcsInstanceV1#ip_list}
+  */
+  readonly ipList: string[];
+}
+
+export function dcsInstanceV1WhitelistToTerraform(struct?: DcsInstanceV1Whitelist | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    group_name: cdktf.stringToTerraform(struct!.groupName),
+    ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipList),
+  }
+}
+
+export class DcsInstanceV1WhitelistOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DcsInstanceV1Whitelist | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupName = this._groupName;
+    }
+    if (this._ipList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipList = this._ipList;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DcsInstanceV1Whitelist | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupName = undefined;
+      this._ipList = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupName = value.groupName;
+      this._ipList = value.ipList;
+    }
+  }
+
+  // group_name - computed: false, optional: false, required: true
+  private _groupName?: string; 
+  public get groupName() {
+    return this.getStringAttribute('group_name');
+  }
+  public set groupName(value: string) {
+    this._groupName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupNameInput() {
+    return this._groupName;
+  }
+
+  // ip_list - computed: false, optional: false, required: true
+  private _ipList?: string[]; 
+  public get ipList() {
+    return this.getListAttribute('ip_list');
+  }
+  public set ipList(value: string[]) {
+    this._ipList = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipListInput() {
+    return this._ipList;
+  }
+}
+
+export class DcsInstanceV1WhitelistList extends cdktf.ComplexList {
+  public internalValue? : DcsInstanceV1Whitelist[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DcsInstanceV1WhitelistOutputReference {
+    return new DcsInstanceV1WhitelistOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1 opentelekomcloud_dcs_instance_v1}
@@ -571,7 +699,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dcs_instance_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.4',
+        providerVersion: '1.31.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -589,6 +717,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
     this._beginAt = config.beginAt;
     this._capacity = config.capacity;
     this._description = config.description;
+    this._enableWhitelist = config.enableWhitelist;
     this._engine = config.engine;
     this._engineVersion = config.engineVersion;
     this._id = config.id;
@@ -605,6 +734,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
     this._backupPolicy.internalValue = config.backupPolicy;
     this._configuration.internalValue = config.configuration;
     this._timeouts.internalValue = config.timeouts;
+    this._whitelist.internalValue = config.whitelist;
   }
 
   // ==========
@@ -720,6 +850,22 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // enable_whitelist - computed: true, optional: true, required: false
+  private _enableWhitelist?: boolean | cdktf.IResolvable; 
+  public get enableWhitelist() {
+    return this.getBooleanAttribute('enable_whitelist');
+  }
+  public set enableWhitelist(value: boolean | cdktf.IResolvable) {
+    this._enableWhitelist = value;
+  }
+  public resetEnableWhitelist() {
+    this._enableWhitelist = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableWhitelistInput() {
+    return this._enableWhitelist;
   }
 
   // engine - computed: false, optional: false, required: true
@@ -897,13 +1043,16 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
     return this._saveDays;
   }
 
-  // security_group_id - computed: false, optional: false, required: true
+  // security_group_id - computed: false, optional: true, required: false
   private _securityGroupId?: string; 
   public get securityGroupId() {
     return this.getStringAttribute('security_group_id');
   }
   public set securityGroupId(value: string) {
     this._securityGroupId = value;
+  }
+  public resetSecurityGroupId() {
+    this._securityGroupId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get securityGroupIdInput() {
@@ -1019,6 +1168,22 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // whitelist - computed: false, optional: true, required: false
+  private _whitelist = new DcsInstanceV1WhitelistList(this, "whitelist", true);
+  public get whitelist() {
+    return this._whitelist;
+  }
+  public putWhitelist(value: DcsInstanceV1Whitelist[] | cdktf.IResolvable) {
+    this._whitelist.internalValue = value;
+  }
+  public resetWhitelist() {
+    this._whitelist.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whitelistInput() {
+    return this._whitelist.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1032,6 +1197,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       begin_at: cdktf.stringToTerraform(this._beginAt),
       capacity: cdktf.numberToTerraform(this._capacity),
       description: cdktf.stringToTerraform(this._description),
+      enable_whitelist: cdktf.booleanToTerraform(this._enableWhitelist),
       engine: cdktf.stringToTerraform(this._engine),
       engine_version: cdktf.stringToTerraform(this._engineVersion),
       id: cdktf.stringToTerraform(this._id),
@@ -1048,6 +1214,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       backup_policy: dcsInstanceV1BackupPolicyToTerraform(this._backupPolicy.internalValue),
       configuration: cdktf.listMapper(dcsInstanceV1ConfigurationToTerraform, true)(this._configuration.internalValue),
       timeouts: dcsInstanceV1TimeoutsToTerraform(this._timeouts.internalValue),
+      whitelist: cdktf.listMapper(dcsInstanceV1WhitelistToTerraform, true)(this._whitelist.internalValue),
     };
   }
 }
