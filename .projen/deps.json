@@ -48,8 +48,13 @@
       "type": "build"
     },
     {
+      "name": "node-fetch",
+      "version": "cjs",
+      "type": "build"
+    },
+    {
       "name": "npm-check-updates",
-      "version": "^15",
+      "version": "^16",
       "type": "build"
     },
     {
