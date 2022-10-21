@@ -78,7 +78,7 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_kms_key_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
