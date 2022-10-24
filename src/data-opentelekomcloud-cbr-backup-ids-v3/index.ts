@@ -82,7 +82,7 @@ export class DataOpentelekomcloudCbrBackupIdsV3 extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_cbr_backup_ids_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

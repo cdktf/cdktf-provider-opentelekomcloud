@@ -176,7 +176,7 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
       terraformResourceType: 'opentelekomcloud_dns_nameservers_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
