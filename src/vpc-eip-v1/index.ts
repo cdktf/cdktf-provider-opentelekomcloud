@@ -23,6 +23,10 @@ export interface VpcEipV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly tags?: { [key: string]: string };
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#unbind_port VpcEipV1#unbind_port}
+  */
+  readonly unbindPort?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_eip_v1#value_specs VpcEipV1#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string };
@@ -427,7 +431,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_eip_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -441,6 +445,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
     this._id = config.id;
     this._region = config.region;
     this._tags = config.tags;
+    this._unbindPort = config.unbindPort;
     this._valueSpecs = config.valueSpecs;
     this._bandwidth.internalValue = config.bandwidth;
     this._publicip.internalValue = config.publicip;
@@ -497,6 +502,22 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // unbind_port - computed: false, optional: true, required: false
+  private _unbindPort?: boolean | cdktf.IResolvable; 
+  public get unbindPort() {
+    return this.getBooleanAttribute('unbind_port');
+  }
+  public set unbindPort(value: boolean | cdktf.IResolvable) {
+    this._unbindPort = value;
+  }
+  public resetUnbindPort() {
+    this._unbindPort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unbindPortInput() {
+    return this._unbindPort;
   }
 
   // value_specs - computed: false, optional: true, required: false
@@ -566,6 +587,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       region: cdktf.stringToTerraform(this._region),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      unbind_port: cdktf.booleanToTerraform(this._unbindPort),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       bandwidth: vpcEipV1BandwidthToTerraform(this._bandwidth.internalValue),
       publicip: vpcEipV1PublicipToTerraform(this._publicip.internalValue),
