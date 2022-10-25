@@ -162,7 +162,7 @@ export class VpcPeeringConnectionAccepterV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_peering_connection_accepter_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

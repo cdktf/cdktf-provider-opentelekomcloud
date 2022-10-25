@@ -58,7 +58,7 @@ export class ComputeServergroupV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_servergroup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

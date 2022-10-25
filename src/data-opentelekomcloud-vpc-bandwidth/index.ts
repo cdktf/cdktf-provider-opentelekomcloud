@@ -58,7 +58,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_vpc_bandwidth',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

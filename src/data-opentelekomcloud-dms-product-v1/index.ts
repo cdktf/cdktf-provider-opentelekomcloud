@@ -82,7 +82,7 @@ export class DataOpentelekomcloudDmsProductV1 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_dms_product_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

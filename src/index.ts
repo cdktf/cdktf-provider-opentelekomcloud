@@ -184,6 +184,7 @@ export * as dataOpentelekomcloudIdentityCredentialV3 from './data-opentelekomclo
 export * as dataOpentelekomcloudIdentityGroupV3 from './data-opentelekomcloud-identity-group-v3';
 export * as dataOpentelekomcloudIdentityProjectV3 from './data-opentelekomcloud-identity-project-v3';
 export * as dataOpentelekomcloudIdentityProjectsV3 from './data-opentelekomcloud-identity-projects-v3';
+export * as dataOpentelekomcloudIdentityRoleCustomV3 from './data-opentelekomcloud-identity-role-custom-v3';
 export * as dataOpentelekomcloudIdentityRoleV3 from './data-opentelekomcloud-identity-role-v3';
 export * as dataOpentelekomcloudIdentityUserV3 from './data-opentelekomcloud-identity-user-v3';
 export * as dataOpentelekomcloudImagesImageV2 from './data-opentelekomcloud-images-image-v2';
