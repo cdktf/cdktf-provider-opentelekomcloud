@@ -190,7 +190,7 @@ export class SfsTurboShareV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_sfs_turbo_share_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

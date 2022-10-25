@@ -772,7 +772,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_rds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.5',
+        providerVersion: '1.31.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
