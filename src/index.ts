@@ -151,6 +151,7 @@ export * as wafWhiteblackipRuleV1 from './waf-whiteblackip-rule-v1';
 export * as dataOpentelekomcloudAntiddosV1 from './data-opentelekomcloud-antiddos-v1';
 export * as dataOpentelekomcloudCbrBackupIdsV3 from './data-opentelekomcloud-cbr-backup-ids-v3';
 export * as dataOpentelekomcloudCbrBackupV3 from './data-opentelekomcloud-cbr-backup-v3';
+export * as dataOpentelekomcloudCceAddonTemplateV3 from './data-opentelekomcloud-cce-addon-template-v3';
 export * as dataOpentelekomcloudCceClusterKubeconfigV3 from './data-opentelekomcloud-cce-cluster-kubeconfig-v3';
 export * as dataOpentelekomcloudCceClusterV3 from './data-opentelekomcloud-cce-cluster-v3';
 export * as dataOpentelekomcloudCceNodeIdsV3 from './data-opentelekomcloud-cce-node-ids-v3';
