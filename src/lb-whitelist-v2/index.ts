@@ -58,7 +58,7 @@ export class LbWhitelistV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_whitelist_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.6',
+        providerVersion: '1.31.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
