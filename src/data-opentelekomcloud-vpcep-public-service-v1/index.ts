@@ -46,7 +46,7 @@ export class DataOpentelekomcloudVpcepPublicServiceV1 extends cdktf.TerraformDat
       terraformResourceType: 'opentelekomcloud_vpcep_public_service_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -414,7 +414,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_domain_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

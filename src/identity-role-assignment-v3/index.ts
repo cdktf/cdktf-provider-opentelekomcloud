@@ -58,7 +58,7 @@ export class IdentityRoleAssignmentV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_role_assignment_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

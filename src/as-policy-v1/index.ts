@@ -340,7 +340,7 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_as_policy_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
