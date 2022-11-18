@@ -26,10 +26,6 @@ export interface DataOpentelekomcloudIdentityUserV3Config extends cdktf.Terrafor
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_user_v3#name DataOpentelekomcloudIdentityUserV3#name}
   */
   readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_user_v3#region DataOpentelekomcloudIdentityUserV3#region}
-  */
-  readonly region?: string;
 }
 
 /**
@@ -58,7 +54,7 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_identity_user_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -73,17 +69,11 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
     this._enabled = config.enabled;
     this._id = config.id;
     this._name = config.name;
-    this._region = config.region;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // default_project_id - computed: true, optional: false, required: false
-  public get defaultProjectId() {
-    return this.getStringAttribute('default_project_id');
-  }
 
   // domain_id - computed: true, optional: true, required: false
   private _domainId?: string; 
@@ -133,6 +123,11 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
     return this._id;
   }
 
+  // mfa_device - computed: true, optional: false, required: false
+  public get mfaDevice() {
+    return this.getStringAttribute('mfa_device');
+  }
+
   // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
@@ -154,22 +149,6 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
     return this.getStringAttribute('password_expires_at');
   }
 
-  // region - computed: false, optional: true, required: false
-  private _region?: string; 
-  public get region() {
-    return this.getStringAttribute('region');
-  }
-  public set region(value: string) {
-    this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region;
-  }
-
   // =========
   // SYNTHESIS
   // =========
@@ -180,7 +159,6 @@ export class DataOpentelekomcloudIdentityUserV3 extends cdktf.TerraformDataSourc
       enabled: cdktf.booleanToTerraform(this._enabled),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      region: cdktf.stringToTerraform(this._region),
     };
   }
 }
