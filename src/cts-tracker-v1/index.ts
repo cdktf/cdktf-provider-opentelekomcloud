@@ -23,37 +23,9 @@ export interface CtsTrackerV1Config extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#is_send_all_key_operation CtsTrackerV1#is_send_all_key_operation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#is_lts_enabled CtsTrackerV1#is_lts_enabled}
   */
-  readonly isSendAllKeyOperation?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#is_support_smn CtsTrackerV1#is_support_smn}
-  */
-  readonly isSupportSmn: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#need_notify_user_list CtsTrackerV1#need_notify_user_list}
-  */
-  readonly needNotifyUserList?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#operations CtsTrackerV1#operations}
-  */
-  readonly operations?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#project_name CtsTrackerV1#project_name}
-  */
-  readonly projectName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#region CtsTrackerV1#region}
-  */
-  readonly region?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#status CtsTrackerV1#status}
-  */
-  readonly status?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/cts_tracker_v1#topic_id CtsTrackerV1#topic_id}
-  */
-  readonly topicId?: string;
+  readonly isLtsEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -190,7 +162,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cts_tracker_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -204,14 +176,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
     this._bucketName = config.bucketName;
     this._filePrefixName = config.filePrefixName;
     this._id = config.id;
-    this._isSendAllKeyOperation = config.isSendAllKeyOperation;
-    this._isSupportSmn = config.isSupportSmn;
-    this._needNotifyUserList = config.needNotifyUserList;
-    this._operations = config.operations;
-    this._projectName = config.projectName;
-    this._region = config.region;
-    this._status = config.status;
-    this._topicId = config.topicId;
+    this._isLtsEnabled = config.isLtsEnabled;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -264,129 +229,40 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // is_send_all_key_operation - computed: false, optional: true, required: false
-  private _isSendAllKeyOperation?: boolean | cdktf.IResolvable; 
-  public get isSendAllKeyOperation() {
-    return this.getBooleanAttribute('is_send_all_key_operation');
+  // is_lts_enabled - computed: true, optional: true, required: false
+  private _isLtsEnabled?: boolean | cdktf.IResolvable; 
+  public get isLtsEnabled() {
+    return this.getBooleanAttribute('is_lts_enabled');
   }
-  public set isSendAllKeyOperation(value: boolean | cdktf.IResolvable) {
-    this._isSendAllKeyOperation = value;
+  public set isLtsEnabled(value: boolean | cdktf.IResolvable) {
+    this._isLtsEnabled = value;
   }
-  public resetIsSendAllKeyOperation() {
-    this._isSendAllKeyOperation = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isSendAllKeyOperationInput() {
-    return this._isSendAllKeyOperation;
-  }
-
-  // is_support_smn - computed: false, optional: false, required: true
-  private _isSupportSmn?: boolean | cdktf.IResolvable; 
-  public get isSupportSmn() {
-    return this.getBooleanAttribute('is_support_smn');
-  }
-  public set isSupportSmn(value: boolean | cdktf.IResolvable) {
-    this._isSupportSmn = value;
+  public resetIsLtsEnabled() {
+    this._isLtsEnabled = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get isSupportSmnInput() {
-    return this._isSupportSmn;
+  public get isLtsEnabledInput() {
+    return this._isLtsEnabled;
   }
 
-  // need_notify_user_list - computed: true, optional: true, required: false
-  private _needNotifyUserList?: string[]; 
-  public get needNotifyUserList() {
-    return cdktf.Fn.tolist(this.getListAttribute('need_notify_user_list'));
-  }
-  public set needNotifyUserList(value: string[]) {
-    this._needNotifyUserList = value;
-  }
-  public resetNeedNotifyUserList() {
-    this._needNotifyUserList = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get needNotifyUserListInput() {
-    return this._needNotifyUserList;
+  // log_group_name - computed: true, optional: false, required: false
+  public get logGroupName() {
+    return this.getStringAttribute('log_group_name');
   }
 
-  // operations - computed: false, optional: true, required: false
-  private _operations?: string[]; 
-  public get operations() {
-    return cdktf.Fn.tolist(this.getListAttribute('operations'));
-  }
-  public set operations(value: string[]) {
-    this._operations = value;
-  }
-  public resetOperations() {
-    this._operations = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get operationsInput() {
-    return this._operations;
+  // log_topic_name - computed: true, optional: false, required: false
+  public get logTopicName() {
+    return this.getStringAttribute('log_topic_name');
   }
 
-  // project_name - computed: true, optional: true, required: false
-  private _projectName?: string; 
-  public get projectName() {
-    return this.getStringAttribute('project_name');
-  }
-  public set projectName(value: string) {
-    this._projectName = value;
-  }
-  public resetProjectName() {
-    this._projectName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get projectNameInput() {
-    return this._projectName;
-  }
-
-  // region - computed: true, optional: true, required: false
-  private _region?: string; 
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
   }
-  public set region(value: string) {
-    this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region;
-  }
 
-  // status - computed: true, optional: true, required: false
-  private _status?: string; 
+  // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
-  }
-  public set status(value: string) {
-    this._status = value;
-  }
-  public resetStatus() {
-    this._status = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get statusInput() {
-    return this._status;
-  }
-
-  // topic_id - computed: false, optional: true, required: false
-  private _topicId?: string; 
-  public get topicId() {
-    return this.getStringAttribute('topic_id');
-  }
-  public set topicId(value: string) {
-    this._topicId = value;
-  }
-  public resetTopicId() {
-    this._topicId = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get topicIdInput() {
-    return this._topicId;
   }
 
   // tracker_name - computed: true, optional: false, required: false
@@ -419,14 +295,7 @@ export class CtsTrackerV1 extends cdktf.TerraformResource {
       bucket_name: cdktf.stringToTerraform(this._bucketName),
       file_prefix_name: cdktf.stringToTerraform(this._filePrefixName),
       id: cdktf.stringToTerraform(this._id),
-      is_send_all_key_operation: cdktf.booleanToTerraform(this._isSendAllKeyOperation),
-      is_support_smn: cdktf.booleanToTerraform(this._isSupportSmn),
-      need_notify_user_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._needNotifyUserList),
-      operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
-      project_name: cdktf.stringToTerraform(this._projectName),
-      region: cdktf.stringToTerraform(this._region),
-      status: cdktf.stringToTerraform(this._status),
-      topic_id: cdktf.stringToTerraform(this._topicId),
+      is_lts_enabled: cdktf.booleanToTerraform(this._isLtsEnabled),
       timeouts: ctsTrackerV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

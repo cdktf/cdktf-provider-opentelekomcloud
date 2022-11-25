@@ -333,7 +333,7 @@ export class DnsZoneV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dns_zone_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
