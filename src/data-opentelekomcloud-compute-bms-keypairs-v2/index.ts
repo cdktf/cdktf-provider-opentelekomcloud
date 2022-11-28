@@ -50,7 +50,7 @@ export class DataOpentelekomcloudComputeBmsKeypairsV2 extends cdktf.TerraformDat
       terraformResourceType: 'opentelekomcloud_compute_bms_keypairs_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
