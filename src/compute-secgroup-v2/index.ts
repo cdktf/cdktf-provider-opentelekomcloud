@@ -369,7 +369,7 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_compute_secgroup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

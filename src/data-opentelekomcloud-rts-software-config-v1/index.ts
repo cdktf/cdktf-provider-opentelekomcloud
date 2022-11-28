@@ -50,7 +50,7 @@ export class DataOpentelekomcloudRtsSoftwareConfigV1 extends cdktf.TerraformData
       terraformResourceType: 'opentelekomcloud_rts_software_config_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -46,7 +46,7 @@ export class DataOpentelekomcloudSdrsDomainV1 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_sdrs_domain_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.7',
+        providerVersion: '1.31.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
