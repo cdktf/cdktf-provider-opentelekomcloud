@@ -8,10 +8,6 @@ import * as cdktf from 'cdktf';
 
 export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#access_user DcsInstanceV1#access_user}
-  */
-  readonly accessUser?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1#available_zones DcsInstanceV1#available_zones}
   */
   readonly availableZones: string[];
@@ -699,7 +695,7 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dcs_instance_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.31.9',
+        providerVersion: '1.32.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -710,7 +706,6 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._accessUser = config.accessUser;
     this._availableZones = config.availableZones;
     this._backupAt = config.backupAt;
     this._backupType = config.backupType;
@@ -740,22 +735,6 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // access_user - computed: true, optional: true, required: false
-  private _accessUser?: string; 
-  public get accessUser() {
-    return this.getStringAttribute('access_user');
-  }
-  public set accessUser(value: string) {
-    this._accessUser = value;
-  }
-  public resetAccessUser() {
-    this._accessUser = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get accessUserInput() {
-    return this._accessUser;
-  }
 
   // available_zones - computed: false, optional: false, required: true
   private _availableZones?: string[]; 
@@ -1190,7 +1169,6 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_user: cdktf.stringToTerraform(this._accessUser),
       available_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availableZones),
       backup_at: cdktf.listMapper(cdktf.numberToTerraform, false)(this._backupAt),
       backup_type: cdktf.stringToTerraform(this._backupType),
