@@ -25,6 +25,7 @@ export * as csbsBackupPolicyV1 from './csbs-backup-policy-v1';
 export * as csbsBackupV1 from './csbs-backup-v1';
 export * as cssClusterV1 from './css-cluster-v1';
 export * as cssSnapshotConfigurationV1 from './css-snapshot-configuration-v1';
+export * as ctsEventNotificationV3 from './cts-event-notification-v3';
 export * as ctsTrackerV1 from './cts-tracker-v1';
 export * as dcsInstanceV1 from './dcs-instance-v1';
 export * as ddsInstanceV3 from './dds-instance-v3';
