@@ -860,7 +860,7 @@ export class DataOpentelekomcloudObsBucket extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_obs_bucket',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.0',
+        providerVersion: '1.32.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
