@@ -50,7 +50,7 @@ export class DataOpentelekomcloudLbMemberIdsV2 extends cdktf.TerraformDataSource
       terraformResourceType: 'opentelekomcloud_lb_member_ids_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

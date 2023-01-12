@@ -70,7 +70,7 @@ export class DataOpentelekomcloudVpcEipV1 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_vpc_eip_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
