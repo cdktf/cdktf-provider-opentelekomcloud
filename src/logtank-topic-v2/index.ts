@@ -50,7 +50,7 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_logtank_topic_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -69,6 +69,11 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // creation_time - computed: true, optional: false, required: false
+  public get creationTime() {
+    return this.getNumberAttribute('creation_time');
+  }
 
   // group_id - computed: false, optional: false, required: true
   private _groupId?: string; 
@@ -97,11 +102,6 @@ export class LogtankTopicV2 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
-  }
-
-  // index_enabled - computed: true, optional: false, required: false
-  public get indexEnabled() {
-    return this.getBooleanAttribute('index_enabled');
   }
 
   // topic_name - computed: false, optional: false, required: true

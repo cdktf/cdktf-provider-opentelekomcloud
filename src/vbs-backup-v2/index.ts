@@ -294,7 +294,7 @@ export class VbsBackupV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vbs_backup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

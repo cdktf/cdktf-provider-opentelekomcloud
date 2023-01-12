@@ -577,6 +577,10 @@ export interface DdsInstanceV3Timeouts {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#delete DdsInstanceV3#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#update DdsInstanceV3#update}
+  */
+  readonly update?: string;
 }
 
 export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsOutputReference | DdsInstanceV3Timeouts | cdktf.IResolvable): any {
@@ -587,6 +591,7 @@ export function ddsInstanceV3TimeoutsToTerraform(struct?: DdsInstanceV3TimeoutsO
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -616,6 +621,10 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -625,6 +634,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -635,6 +645,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -669,6 +680,22 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
@@ -697,7 +724,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

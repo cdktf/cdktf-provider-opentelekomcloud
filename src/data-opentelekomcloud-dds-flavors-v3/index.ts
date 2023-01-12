@@ -23,10 +23,6 @@ export interface DataOpentelekomcloudDdsFlavorsV3Config extends cdktf.TerraformM
   */
   readonly memory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_flavors_v3#region DataOpentelekomcloudDdsFlavorsV3#region}
-  */
-  readonly region?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dds_flavors_v3#type DataOpentelekomcloudDdsFlavorsV3#type}
   */
   readonly type?: string;
@@ -147,7 +143,7 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_dds_flavors_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.1',
+        providerVersion: '1.32.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -161,7 +157,6 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
     this._engineName = config.engineName;
     this._id = config.id;
     this._memory = config.memory;
-    this._region = config.region;
     this._type = config.type;
     this._vcpus = config.vcpus;
   }
@@ -221,20 +216,9 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
     return this._memory;
   }
 
-  // region - computed: true, optional: true, required: false
-  private _region?: string; 
+  // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
-  }
-  public set region(value: string) {
-    this._region = value;
-  }
-  public resetRegion() {
-    this._region = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get regionInput() {
-    return this._region;
   }
 
   // type - computed: false, optional: true, required: false
@@ -278,7 +262,6 @@ export class DataOpentelekomcloudDdsFlavorsV3 extends cdktf.TerraformDataSource 
       engine_name: cdktf.stringToTerraform(this._engineName),
       id: cdktf.stringToTerraform(this._id),
       memory: cdktf.stringToTerraform(this._memory),
-      region: cdktf.stringToTerraform(this._region),
       type: cdktf.stringToTerraform(this._type),
       vcpus: cdktf.stringToTerraform(this._vcpus),
     };
