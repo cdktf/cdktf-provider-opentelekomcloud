@@ -51,6 +51,10 @@ export interface DdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly subnetId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#tags DdsInstanceV3#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dds_instance_v3#vpc_id DdsInstanceV3#vpc_id}
   */
   readonly vpcId: string;
@@ -724,7 +728,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.2',
+        providerVersion: '1.32.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -745,6 +749,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     this._securityGroupId = config.securityGroupId;
     this._ssl = config.ssl;
     this._subnetId = config.subnetId;
+    this._tags = config.tags;
     this._vpcId = config.vpcId;
     this._backupStrategy.internalValue = config.backupStrategy;
     this._datastore.internalValue = config.datastore;
@@ -924,6 +929,22 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     return this._subnetId;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // vpc_id - computed: false, optional: false, required: true
   private _vpcId?: string; 
   public get vpcId() {
@@ -1011,6 +1032,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       ssl: cdktf.booleanToTerraform(this._ssl),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
+      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       backup_strategy: ddsInstanceV3BackupStrategyToTerraform(this._backupStrategy.internalValue),
       datastore: ddsInstanceV3DatastoreToTerraform(this._datastore.internalValue),

@@ -47,6 +47,10 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly securityGroupId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#ssl_enable RdsInstanceV3#ssl_enable}
+  */
+  readonly sslEnable?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3#subnet_id RdsInstanceV3#subnet_id}
   */
   readonly subnetId: string;
@@ -772,7 +776,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_rds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.2',
+        providerVersion: '1.32.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -792,6 +796,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
     this._parameters = config.parameters;
     this._publicIps = config.publicIps;
     this._securityGroupId = config.securityGroupId;
+    this._sslEnable = config.sslEnable;
     this._subnetId = config.subnetId;
     this._tag = config.tag;
     this._tags = config.tags;
@@ -955,6 +960,22 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
     return this._securityGroupId;
   }
 
+  // ssl_enable - computed: false, optional: true, required: false
+  private _sslEnable?: boolean | cdktf.IResolvable; 
+  public get sslEnable() {
+    return this.getBooleanAttribute('ssl_enable');
+  }
+  public set sslEnable(value: boolean | cdktf.IResolvable) {
+    this._sslEnable = value;
+  }
+  public resetSslEnable() {
+    this._sslEnable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslEnableInput() {
+    return this._sslEnable;
+  }
+
   // subnet_id - computed: false, optional: false, required: true
   private _subnetId?: string; 
   public get subnetId() {
@@ -1102,6 +1123,7 @@ export class RdsInstanceV3 extends cdktf.TerraformResource {
       parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
       public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicIps),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
+      ssl_enable: cdktf.booleanToTerraform(this._sslEnable),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       tag: cdktf.hashMapper(cdktf.stringToTerraform)(this._tag),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
