@@ -1006,7 +1006,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_mrs_cluster_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.3',
+        providerVersion: '1.33.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1249,11 +1249,6 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   // deployment_id - computed: true, optional: false, required: false
   public get deploymentId() {
     return this.getStringAttribute('deployment_id');
-  }
-
-  // duration - computed: true, optional: false, required: false
-  public get duration() {
-    return this.getStringAttribute('duration');
   }
 
   // error_info - computed: true, optional: false, required: false
@@ -1601,7 +1596,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // component_list - computed: false, optional: false, required: true
-  private _componentList = new MrsClusterV1ComponentListList(this, "component_list", false);
+  private _componentList = new MrsClusterV1ComponentListList(this, "component_list", true);
   public get componentList() {
     return this._componentList;
   }

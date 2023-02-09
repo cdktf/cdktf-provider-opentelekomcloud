@@ -80,9 +80,10 @@ export class DataOpentelekomcloudCceNodeV3DataVolumesOutputReference extends cdk
     return this.getNumberAttribute('disk_size');
   }
 
-  // extend_param - computed: true, optional: false, required: false
-  public get extendParam() {
-    return this.getStringAttribute('extend_param');
+  // extend_params - computed: true, optional: false, required: false
+  private _extendParams = new cdktf.StringMap(this, "extend_params");
+  public get extendParams() {
+    return this._extendParams;
   }
 
   // kms_id - computed: true, optional: false, required: false
@@ -141,7 +142,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_cce_node_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.32.3',
+        providerVersion: '1.33.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
