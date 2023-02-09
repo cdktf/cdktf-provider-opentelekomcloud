@@ -35,6 +35,7 @@ export * as dmsTopicV1 from './dms-topic-v1';
 export * as dnsPtrrecordV2 from './dns-ptrrecord-v2';
 export * as dnsRecordsetV2 from './dns-recordset-v2';
 export * as dnsZoneV2 from './dns-zone-v2';
+export * as dwsClusterV1 from './dws-cluster-v1';
 export * as ecsInstanceV1 from './ecs-instance-v1';
 export * as evsVolumeV3 from './evs-volume-v3';
 export * as fwFirewallGroupV2 from './fw-firewall-group-v2';
@@ -164,6 +165,7 @@ export * as dataOpentelekomcloudComputeBmsNicV2 from './data-opentelekomcloud-co
 export * as dataOpentelekomcloudComputeBmsServerV2 from './data-opentelekomcloud-compute-bms-server-v2';
 export * as dataOpentelekomcloudComputeFlavorV2 from './data-opentelekomcloud-compute-flavor-v2';
 export * as dataOpentelekomcloudComputeInstanceV2 from './data-opentelekomcloud-compute-instance-v2';
+export * as dataOpentelekomcloudComputeInstancesV2 from './data-opentelekomcloud-compute-instances-v2';
 export * as dataOpentelekomcloudCsbsBackupPolicyV1 from './data-opentelekomcloud-csbs-backup-policy-v1';
 export * as dataOpentelekomcloudCsbsBackupV1 from './data-opentelekomcloud-csbs-backup-v1';
 export * as dataOpentelekomcloudCssFlavorV1 from './data-opentelekomcloud-css-flavor-v1';
@@ -180,6 +182,7 @@ export * as dataOpentelekomcloudDmsMaintainwindowV1 from './data-opentelekomclou
 export * as dataOpentelekomcloudDmsProductV1 from './data-opentelekomcloud-dms-product-v1';
 export * as dataOpentelekomcloudDnsNameserversV2 from './data-opentelekomcloud-dns-nameservers-v2';
 export * as dataOpentelekomcloudDnsZoneV2 from './data-opentelekomcloud-dns-zone-v2';
+export * as dataOpentelekomcloudDwsFlavorsV2 from './data-opentelekomcloud-dws-flavors-v2';
 export * as dataOpentelekomcloudIdentityAgencyV3 from './data-opentelekomcloud-identity-agency-v3';
 export * as dataOpentelekomcloudIdentityAuthScopeV3 from './data-opentelekomcloud-identity-auth-scope-v3';
 export * as dataOpentelekomcloudIdentityCredentialV3 from './data-opentelekomcloud-identity-credential-v3';
