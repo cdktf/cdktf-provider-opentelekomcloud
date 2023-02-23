@@ -31,6 +31,7 @@ export * as dcsInstanceV1 from './dcs-instance-v1';
 export * as ddsInstanceV3 from './dds-instance-v3';
 export * as dehHostV1 from './deh-host-v1';
 export * as dmsInstanceV1 from './dms-instance-v1';
+export * as dmsInstanceV2 from './dms-instance-v2';
 export * as dmsTopicV1 from './dms-topic-v1';
 export * as dnsPtrrecordV2 from './dns-ptrrecord-v2';
 export * as dnsRecordsetV2 from './dns-recordset-v2';

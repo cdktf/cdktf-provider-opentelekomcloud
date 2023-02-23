@@ -330,7 +330,7 @@ export class CtsEventNotificationV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cts_event_notification_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

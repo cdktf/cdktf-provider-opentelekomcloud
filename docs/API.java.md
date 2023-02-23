@@ -117,6 +117,7 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.java.md)
 - [dehHostV1](./dehHostV1.java.md)
 - [dmsInstanceV1](./dmsInstanceV1.java.md)
+- [dmsInstanceV2](./dmsInstanceV2.java.md)
 - [dmsTopicV1](./dmsTopicV1.java.md)
 - [dnsPtrrecordV2](./dnsPtrrecordV2.java.md)
 - [dnsRecordsetV2](./dnsRecordsetV2.java.md)

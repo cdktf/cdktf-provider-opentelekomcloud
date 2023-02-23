@@ -98,7 +98,7 @@ export class S3BucketObject extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_s3_bucket_object',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

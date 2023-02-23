@@ -117,6 +117,7 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.typescript.md)
 - [dehHostV1](./dehHostV1.typescript.md)
 - [dmsInstanceV1](./dmsInstanceV1.typescript.md)
+- [dmsInstanceV2](./dmsInstanceV2.typescript.md)
 - [dmsTopicV1](./dmsTopicV1.typescript.md)
 - [dnsPtrrecordV2](./dnsPtrrecordV2.typescript.md)
 - [dnsRecordsetV2](./dnsRecordsetV2.typescript.md)

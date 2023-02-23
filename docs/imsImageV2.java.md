@@ -37,6 +37,7 @@ ImsImageV2.Builder.create(Construct scope, java.lang.String id)
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(ImsImageV2Timeouts)
 //  .type(java.lang.String)
+//  .volumeId(java.lang.String)
     .build();
 ```
 
@@ -65,6 +66,7 @@ ImsImageV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}. |
 
 ---
 
@@ -245,6 +247,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `volumeId`<sup>Optional</sup> <a name="volumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.volumeId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}.
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -279,6 +289,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId">resetVolumeId</a></code> | *No description.* |
 
 ---
 
@@ -556,6 +567,12 @@ public void resetTimeouts()
 public void resetType()
 ```
 
+##### `resetVolumeId` <a name="resetVolumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId"></a>
+
+```java
+public void resetVolumeId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -664,6 +681,7 @@ ImsImageV2.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tagsInput">tagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput">volumeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId">cmkId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -677,6 +695,7 @@ ImsImageV2.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.osVersion">osVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -1022,6 +1041,16 @@ public java.lang.String getTypeInput();
 
 ---
 
+##### `volumeIdInput`<sup>Optional</sup> <a name="volumeIdInput" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput"></a>
+
+```java
+public java.lang.String getVolumeIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `cmkId`<sup>Required</sup> <a name="cmkId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId"></a>
 
 ```java
@@ -1152,6 +1181,16 @@ public java.lang.String getType();
 
 ---
 
+##### `volumeId`<sup>Required</sup> <a name="volumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId"></a>
+
+```java
+public java.lang.String getVolumeId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1205,6 +1244,7 @@ ImsImageV2Config.builder()
 //  .tags(java.util.Map<java.lang.String, java.lang.String>)
 //  .timeouts(ImsImageV2Timeouts)
 //  .type(java.lang.String)
+//  .volumeId(java.lang.String)
     .build();
 ```
 
@@ -1233,6 +1273,7 @@ ImsImageV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}. |
 
 ---
 
@@ -1476,6 +1517,18 @@ public java.lang.String getType();
 - *Type:* java.lang.String
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}.
+
+---
+
+##### `volumeId`<sup>Optional</sup> <a name="volumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId"></a>
+
+```java
+public java.lang.String getVolumeId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}.
 
 ---
 

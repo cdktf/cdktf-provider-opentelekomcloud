@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId">ResetVolumeId</a></code> | *No description.* |
 
 ---
 
@@ -357,6 +358,12 @@ private void ResetTimeouts()
 private void ResetType()
 ```
 
+##### `ResetVolumeId` <a name="ResetVolumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId"></a>
+
+```csharp
+private void ResetVolumeId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -465,6 +472,7 @@ ImsImageV2.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput">VolumeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId">CmkId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -478,6 +486,7 @@ ImsImageV2.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.osVersion">OsVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.type">Type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId">VolumeId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -823,6 +832,16 @@ public string TypeInput { get; }
 
 ---
 
+##### `VolumeIdInput`<sup>Optional</sup> <a name="VolumeIdInput" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput"></a>
+
+```csharp
+public string VolumeIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `CmkId`<sup>Required</sup> <a name="CmkId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId"></a>
 
 ```csharp
@@ -953,6 +972,16 @@ public string Type { get; }
 
 ---
 
+##### `VolumeId`<sup>Required</sup> <a name="VolumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId"></a>
+
+```csharp
+public string VolumeId { get; }
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1001,7 +1030,8 @@ new ImsImageV2Config {
     string OsVersion = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     ImsImageV2Timeouts Timeouts = null,
-    string Type = null
+    string Type = null,
+    string VolumeId = null
 };
 ```
 
@@ -1030,6 +1060,7 @@ new ImsImageV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId">VolumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}. |
 
 ---
 
@@ -1273,6 +1304,18 @@ public string Type { get; set; }
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}.
+
+---
+
+##### `VolumeId`<sup>Optional</sup> <a name="VolumeId" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId"></a>
+
+```csharp
+public string VolumeId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}.
 
 ---
 

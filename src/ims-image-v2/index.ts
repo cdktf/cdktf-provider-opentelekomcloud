@@ -63,6 +63,10 @@ export interface ImsImageV2Config extends cdktf.TerraformMetaArguments {
   */
   readonly type?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}
+  */
+  readonly volumeId?: string;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#timeouts ImsImageV2#timeouts}
@@ -198,7 +202,7 @@ export class ImsImageV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ims_image_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -222,6 +226,7 @@ export class ImsImageV2 extends cdktf.TerraformResource {
     this._osVersion = config.osVersion;
     this._tags = config.tags;
     this._type = config.type;
+    this._volumeId = config.volumeId;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -459,6 +464,22 @@ export class ImsImageV2 extends cdktf.TerraformResource {
     return this.getStringAttribute('visibility');
   }
 
+  // volume_id - computed: false, optional: true, required: false
+  private _volumeId?: string; 
+  public get volumeId() {
+    return this.getStringAttribute('volume_id');
+  }
+  public set volumeId(value: string) {
+    this._volumeId = value;
+  }
+  public resetVolumeId() {
+    this._volumeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumeIdInput() {
+    return this._volumeId;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ImsImageV2TimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -494,6 +515,7 @@ export class ImsImageV2 extends cdktf.TerraformResource {
       os_version: cdktf.stringToTerraform(this._osVersion),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       type: cdktf.stringToTerraform(this._type),
+      volume_id: cdktf.stringToTerraform(this._volumeId),
       timeouts: imsImageV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

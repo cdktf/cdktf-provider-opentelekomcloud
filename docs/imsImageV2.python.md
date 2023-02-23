@@ -34,7 +34,8 @@ imsImageV2.ImsImageV2(
   os_version: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: ImsImageV2Timeouts = None,
-  type: str = None
+  type: str = None,
+  volume_id: str = None
 )
 ```
 
@@ -63,6 +64,7 @@ imsImageV2.ImsImageV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}. |
 
 ---
 
@@ -243,6 +245,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `volume_id`<sup>Optional</sup> <a name="volume_id" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer.parameter.volumeId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}.
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -277,6 +287,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId">reset_volume_id</a></code> | *No description.* |
 
 ---
 
@@ -592,6 +603,12 @@ def reset_timeouts() -> None
 def reset_type() -> None
 ```
 
+##### `reset_volume_id` <a name="reset_volume_id" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.resetVolumeId"></a>
+
+```python
+def reset_volume_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -706,6 +723,7 @@ imsImageV2.ImsImageV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput">volume_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId">cmk_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -719,6 +737,7 @@ imsImageV2.ImsImageV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.osVersion">os_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId">volume_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1064,6 +1083,16 @@ type_input: str
 
 ---
 
+##### `volume_id_input`<sup>Optional</sup> <a name="volume_id_input" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeIdInput"></a>
+
+```python
+volume_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `cmk_id`<sup>Required</sup> <a name="cmk_id" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.cmkId"></a>
 
 ```python
@@ -1194,6 +1223,16 @@ type: str
 
 ---
 
+##### `volume_id`<sup>Required</sup> <a name="volume_id" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.property.volumeId"></a>
+
+```python
+volume_id: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1242,7 +1281,8 @@ imsImageV2.ImsImageV2Config(
   os_version: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: ImsImageV2Timeouts = None,
-  type: str = None
+  type: str = None,
+  volume_id: str = None
 )
 ```
 
@@ -1271,6 +1311,7 @@ imsImageV2.ImsImageV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#tags ImsImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts">ImsImageV2Timeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}. |
 
 ---
 
@@ -1514,6 +1555,18 @@ type: str
 - *Type:* str
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#type ImsImageV2#type}.
+
+---
+
+##### `volume_id`<sup>Optional</sup> <a name="volume_id" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.property.volumeId"></a>
+
+```python
+volume_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_image_v2#volume_id ImsImageV2#volume_id}.
 
 ---
 
