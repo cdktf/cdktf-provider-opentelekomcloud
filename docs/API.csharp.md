@@ -117,6 +117,7 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.csharp.md)
 - [dehHostV1](./dehHostV1.csharp.md)
 - [dmsInstanceV1](./dmsInstanceV1.csharp.md)
+- [dmsInstanceV2](./dmsInstanceV2.csharp.md)
 - [dmsTopicV1](./dmsTopicV1.csharp.md)
 - [dnsPtrrecordV2](./dnsPtrrecordV2.csharp.md)
 - [dnsRecordsetV2](./dnsRecordsetV2.csharp.md)

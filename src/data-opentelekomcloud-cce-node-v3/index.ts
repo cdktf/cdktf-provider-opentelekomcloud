@@ -142,7 +142,7 @@ export class DataOpentelekomcloudCceNodeV3 extends cdktf.TerraformDataSource {
       terraformResourceType: 'opentelekomcloud_cce_node_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

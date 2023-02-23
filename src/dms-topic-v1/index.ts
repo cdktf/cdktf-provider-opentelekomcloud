@@ -82,7 +82,7 @@ export class DmsTopicV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dms_topic_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

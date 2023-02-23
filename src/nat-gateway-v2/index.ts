@@ -182,7 +182,7 @@ export class NatGatewayV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_nat_gateway_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.0',
+        providerVersion: '1.33.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

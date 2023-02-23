@@ -117,6 +117,7 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.go.md)
 - [dehHostV1](./dehHostV1.go.md)
 - [dmsInstanceV1](./dmsInstanceV1.go.md)
+- [dmsInstanceV2](./dmsInstanceV2.go.md)
 - [dmsTopicV1](./dmsTopicV1.go.md)
 - [dnsPtrrecordV2](./dnsPtrrecordV2.go.md)
 - [dnsRecordsetV2](./dnsRecordsetV2.go.md)

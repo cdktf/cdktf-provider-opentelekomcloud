@@ -117,6 +117,7 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.python.md)
 - [dehHostV1](./dehHostV1.python.md)
 - [dmsInstanceV1](./dmsInstanceV1.python.md)
+- [dmsInstanceV2](./dmsInstanceV2.python.md)
 - [dmsTopicV1](./dmsTopicV1.python.md)
 - [dnsPtrrecordV2](./dnsPtrrecordV2.python.md)
 - [dnsRecordsetV2](./dnsRecordsetV2.python.md)
