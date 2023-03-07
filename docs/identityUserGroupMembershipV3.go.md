@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/i
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.NewIdentityUserGroupMembershipV3(scope Construct, id *string, config IdentityUserGroupMembershipV3Config) IdentityUserGroupMembershipV3
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 &identityusergroupmembershipv3.IdentityUserGroupMembershipV3Config {
 	Connection: interface{},

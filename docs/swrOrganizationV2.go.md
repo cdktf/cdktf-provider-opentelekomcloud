@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/s
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 swrorganizationv2.NewSwrOrganizationV2(scope Construct, id *string, config SwrOrganizationV2Config) SwrOrganizationV2
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 swrorganizationv2.SwrOrganizationV2_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 swrorganizationv2.SwrOrganizationV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ swrorganizationv2.SwrOrganizationV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 swrorganizationv2.SwrOrganizationV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 &swrorganizationv2.SwrOrganizationV2Config {
 	Connection: interface{},
@@ -649,7 +649,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Provisioners: *[]interface{},
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.swrOrganizationV2.SwrOrganizationV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts,
 }
 ```
 
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 &swrorganizationv2.SwrOrganizationV2Timeouts {
 	Create: *string,
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/swrorganizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/swrorganizationv2"
 
 swrorganizationv2.NewSwrOrganizationV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SwrOrganizationV2TimeoutsOutputReference
 ```
