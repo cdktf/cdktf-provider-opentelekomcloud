@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/o
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketpolicy"
 
 obsbucketpolicy.NewObsBucketPolicy(scope Construct, id *string, config ObsBucketPolicyConfig) ObsBucketPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketpolicy"
 
 obsbucketpolicy.ObsBucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketpolicy"
 
 obsbucketpolicy.ObsBucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ obsbucketpolicy.ObsBucketPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketpolicy"
 
 obsbucketpolicy.ObsBucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/obsbucketpolicy"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketpolicy"
 
 &obsbucketpolicy.ObsBucketPolicyConfig {
 	Connection: interface{},

@@ -54,7 +54,7 @@ export class DataOpentelekomcloudIdentityRoleV3 extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_identity_role_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.1',
+        providerVersion: '1.33.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

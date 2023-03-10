@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/c
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCbrBackupV3.DataOpentelekomcloudCbrBackupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudcbrbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcbrbackupv3"
 
 dataopentelekomcloudcbrbackupv3.NewDataOpentelekomcloudCbrBackupV3(scope Construct, id *string, config DataOpentelekomcloudCbrBackupV3Config) DataOpentelekomcloudCbrBackupV3
 ```
@@ -455,7 +455,7 @@ func ResetVaultId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCbrBackupV3.DataOpentelekomcloudCbrBackupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudcbrbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcbrbackupv3"
 
 dataopentelekomcloudcbrbackupv3.DataOpentelekomcloudCbrBackupV3_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCbrBackupV3.DataOpentelekomcloudCbrBackupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudcbrbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcbrbackupv3"
 
 dataopentelekomcloudcbrbackupv3.DataOpentelekomcloudCbrBackupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataopentelekomcloudcbrbackupv3.DataOpentelekomcloudCbrBackupV3_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCbrBackupV3.DataOpentelekomcloudCbrBackupV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudcbrbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcbrbackupv3"
 
 dataopentelekomcloudcbrbackupv3.DataOpentelekomcloudCbrBackupV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -1272,7 +1272,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCbrBackupV3.DataOpentelekomcloudCbrBackupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudcbrbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcbrbackupv3"
 
 &dataopentelekomcloudcbrbackupv3.DataOpentelekomcloudCbrBackupV3Config {
 	Connection: interface{},

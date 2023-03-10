@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/l
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 lbcertificatev2.NewLbCertificateV2(scope Construct, id *string, config LbCertificateV2Config) LbCertificateV2
 ```
@@ -335,7 +335,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 lbcertificatev2.LbCertificateV2_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 lbcertificatev2.LbCertificateV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ lbcertificatev2.LbCertificateV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 lbcertificatev2.LbCertificateV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -811,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 &lbcertificatev2.LbCertificateV2Config {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Name: *string,
 	PrivateKey: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.lbCertificateV2.LbCertificateV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts,
 	Type: *string,
 }
 ```
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 &lbcertificatev2.LbCertificateV2Timeouts {
 	Create: *string,
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbcertificatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbcertificatev2"
 
 lbcertificatev2.NewLbCertificateV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbCertificateV2TimeoutsOutputReference
 ```

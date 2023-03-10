@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/r
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.NewDataOpentelekomcloudRtsSoftwareConfigV1(scope Construct, id *string, config DataOpentelekomcloudRtsSoftwareConfigV1Config) DataOpentelekomcloudRtsSoftwareConfigV1
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 &dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1Config {
 	Connection: interface{},

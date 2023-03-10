@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/i
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 imsimagev2.NewImsImageV2(scope Construct, id *string, config ImsImageV2Config) ImsImageV2
 ```
@@ -377,7 +377,7 @@ func ResetVolumeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 imsimagev2.ImsImageV2_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 imsimagev2.ImsImageV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ imsimagev2.ImsImageV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 imsimagev2.ImsImageV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -1007,7 +1007,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 &imsimagev2.ImsImageV2Config {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	MinRam: *f64,
 	OsVersion: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.imsImageV2.ImsImageV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.imsImageV2.ImsImageV2Timeouts,
 	Type: *string,
 	VolumeId: *string,
 }
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 &imsimagev2.ImsImageV2Timeouts {
 	Create: *string,
@@ -1372,7 +1372,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsImageV2.ImsImageV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/imsimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimagev2"
 
 imsimagev2.NewImsImageV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImsImageV2TimeoutsOutputReference
 ```
