@@ -16,6 +16,10 @@ export interface LbLoadbalancerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly availabilityZones: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#deletion_protection LbLoadbalancerV3#deletion_protection}
+  */
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v3#description LbLoadbalancerV3#description}
   */
   readonly description?: string;
@@ -309,7 +313,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_loadbalancer_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -322,6 +326,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
     });
     this._adminStateUp = config.adminStateUp;
     this._availabilityZones = config.availabilityZones;
+    this._deletionProtection = config.deletionProtection;
     this._description = config.description;
     this._id = config.id;
     this._ipTargetEnable = config.ipTargetEnable;
@@ -372,6 +377,22 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
+  }
+
+  // deletion_protection - computed: true, optional: true, required: false
+  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  public get deletionProtection() {
+    return this.getBooleanAttribute('deletion_protection');
+  }
+  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+    this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection;
   }
 
   // description - computed: false, optional: true, required: false
@@ -581,6 +602,7 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
     return {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
       availability_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._availabilityZones),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       ip_target_enable: cdktf.booleanToTerraform(this._ipTargetEnable),

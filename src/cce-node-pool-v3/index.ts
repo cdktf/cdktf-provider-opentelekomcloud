@@ -818,7 +818,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_node_pool_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

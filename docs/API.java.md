@@ -149,6 +149,7 @@ The following submodules are available:
 - [kmsKeyV1](./kmsKeyV1.java.md)
 - [lbCertificateV2](./lbCertificateV2.java.md)
 - [lbCertificateV3](./lbCertificateV3.java.md)
+- [lbIpgroupV3](./lbIpgroupV3.java.md)
 - [lbL7PolicyV2](./lbL7PolicyV2.java.md)
 - [lbL7RuleV2](./lbL7RuleV2.java.md)
 - [lbListenerV2](./lbListenerV2.java.md)

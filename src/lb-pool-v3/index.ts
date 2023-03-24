@@ -31,6 +31,10 @@ export interface LbPoolV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly loadbalancerId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}
+  */
+  readonly memberDeletionProtection?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#name LbPoolV3#name}
   */
   readonly name?: string;
@@ -42,6 +46,14 @@ export interface LbPoolV3Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#protocol LbPoolV3#protocol}
   */
   readonly protocol: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}
+  */
+  readonly type?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}
+  */
+  readonly vpcId?: string;
   /**
   * session_persistence block
   * 
@@ -192,7 +204,7 @@ export class LbPoolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_pool_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -208,9 +220,12 @@ export class LbPoolV3 extends cdktf.TerraformResource {
     this._lbAlgorithm = config.lbAlgorithm;
     this._listenerId = config.listenerId;
     this._loadbalancerId = config.loadbalancerId;
+    this._memberDeletionProtection = config.memberDeletionProtection;
     this._name = config.name;
     this._projectId = config.projectId;
     this._protocol = config.protocol;
+    this._type = config.type;
+    this._vpcId = config.vpcId;
     this._sessionPersistence.internalValue = config.sessionPersistence;
   }
 
@@ -300,6 +315,22 @@ export class LbPoolV3 extends cdktf.TerraformResource {
     return this._loadbalancerId;
   }
 
+  // member_deletion_protection - computed: true, optional: true, required: false
+  private _memberDeletionProtection?: boolean | cdktf.IResolvable; 
+  public get memberDeletionProtection() {
+    return this.getBooleanAttribute('member_deletion_protection');
+  }
+  public set memberDeletionProtection(value: boolean | cdktf.IResolvable) {
+    this._memberDeletionProtection = value;
+  }
+  public resetMemberDeletionProtection() {
+    this._memberDeletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memberDeletionProtectionInput() {
+    return this._memberDeletionProtection;
+  }
+
   // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
@@ -345,6 +376,38 @@ export class LbPoolV3 extends cdktf.TerraformResource {
     return this._protocol;
   }
 
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // vpc_id - computed: true, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+
   // session_persistence - computed: false, optional: true, required: false
   private _sessionPersistence = new LbPoolV3SessionPersistenceOutputReference(this, "session_persistence");
   public get sessionPersistence() {
@@ -372,9 +435,12 @@ export class LbPoolV3 extends cdktf.TerraformResource {
       lb_algorithm: cdktf.stringToTerraform(this._lbAlgorithm),
       listener_id: cdktf.stringToTerraform(this._listenerId),
       loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
+      member_deletion_protection: cdktf.booleanToTerraform(this._memberDeletionProtection),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
       protocol: cdktf.stringToTerraform(this._protocol),
+      type: cdktf.stringToTerraform(this._type),
+      vpc_id: cdktf.stringToTerraform(this._vpcId),
       session_persistence: lbPoolV3SessionPersistenceToTerraform(this._sessionPersistence.internalValue),
     };
   }

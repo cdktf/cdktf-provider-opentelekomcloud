@@ -149,6 +149,7 @@ The following submodules are available:
 - [kmsKeyV1](./kmsKeyV1.python.md)
 - [lbCertificateV2](./lbCertificateV2.python.md)
 - [lbCertificateV3](./lbCertificateV3.python.md)
+- [lbIpgroupV3](./lbIpgroupV3.python.md)
 - [lbL7PolicyV2](./lbL7PolicyV2.python.md)
 - [lbL7RuleV2](./lbL7RuleV2.python.md)
 - [lbListenerV2](./lbListenerV2.python.md)

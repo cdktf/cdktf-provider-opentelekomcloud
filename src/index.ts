@@ -63,6 +63,7 @@ export * as kmsGrantV1 from './kms-grant-v1';
 export * as kmsKeyV1 from './kms-key-v1';
 export * as lbCertificateV2 from './lb-certificate-v2';
 export * as lbCertificateV3 from './lb-certificate-v3';
+export * as lbIpgroupV3 from './lb-ipgroup-v3';
 export * as lbL7PolicyV2 from './lb-l7policy-v2';
 export * as lbL7RuleV2 from './lb-l7rule-v2';
 export * as lbListenerV2 from './lb-listener-v2';
