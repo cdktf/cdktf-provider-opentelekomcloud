@@ -164,7 +164,7 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
       terraformResourceType: 'opentelekomcloud_lb_loadbalancer_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -202,6 +202,11 @@ export class DataOpentelekomcloudLbLoadbalancerV3 extends cdktf.TerraformDataSou
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
+  }
+
+  // deletion_protection - computed: true, optional: false, required: false
+  public get deletionProtection() {
+    return this.getBooleanAttribute('deletion_protection');
   }
 
   // description - computed: true, optional: false, required: false

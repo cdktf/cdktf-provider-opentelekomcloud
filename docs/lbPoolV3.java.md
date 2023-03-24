@@ -28,9 +28,13 @@ LbPoolV3.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .listenerId(java.lang.String)
 //  .loadbalancerId(java.lang.String)
+//  .memberDeletionProtection(java.lang.Boolean)
+//  .memberDeletionProtection(IResolvable)
 //  .name(java.lang.String)
 //  .projectId(java.lang.String)
 //  .sessionPersistence(LbPoolV3SessionPersistence)
+//  .type(java.lang.String)
+//  .vpcId(java.lang.String)
     .build();
 ```
 
@@ -51,9 +55,12 @@ LbPoolV3.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#id LbPoolV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.listenerId">listenerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#listener_id LbPoolV3#listener_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#loadbalancer_id LbPoolV3#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.memberDeletionProtection">memberDeletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#name LbPoolV3#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#project_id LbPoolV3#project_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.sessionPersistence">sessionPersistence</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3SessionPersistence">LbPoolV3SessionPersistence</a></code> | session_persistence block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}. |
 
 ---
 
@@ -168,6 +175,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `memberDeletionProtection`<sup>Optional</sup> <a name="memberDeletionProtection" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.memberDeletionProtection"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}.
+
+---
+
 ##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
@@ -191,6 +206,22 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 session_persistence block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#session_persistence LbPoolV3#session_persistence}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.type"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}.
+
+---
+
+##### `vpcId`<sup>Optional</sup> <a name="vpcId" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.Initializer.parameter.vpcId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}.
 
 ---
 
@@ -219,9 +250,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetListenerId">resetListenerId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetLoadbalancerId">resetLoadbalancerId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetMemberDeletionProtection">resetMemberDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetProjectId">resetProjectId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetSessionPersistence">resetSessionPersistence</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetVpcId">resetVpcId</a></code> | *No description.* |
 
 ---
 
@@ -445,6 +479,12 @@ public void resetListenerId()
 public void resetLoadbalancerId()
 ```
 
+##### `resetMemberDeletionProtection` <a name="resetMemberDeletionProtection" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetMemberDeletionProtection"></a>
+
+```java
+public void resetMemberDeletionProtection()
+```
+
 ##### `resetName` <a name="resetName" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetName"></a>
 
 ```java
@@ -461,6 +501,18 @@ public void resetProjectId()
 
 ```java
 public void resetSessionPersistence()
+```
+
+##### `resetType` <a name="resetType" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetType"></a>
+
+```java
+public void resetType()
+```
+
+##### `resetVpcId` <a name="resetVpcId" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.resetVpcId"></a>
+
+```java
+public void resetVpcId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -558,18 +610,24 @@ LbPoolV3.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.lbAlgorithmInput">lbAlgorithmInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.listenerIdInput">listenerIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.loadbalancerIdInput">loadbalancerIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.memberDeletionProtectionInput">memberDeletionProtectionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.projectIdInput">projectIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.protocolInput">protocolInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.sessionPersistenceInput">sessionPersistenceInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3SessionPersistence">LbPoolV3SessionPersistence</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.vpcIdInput">vpcIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.lbAlgorithm">lbAlgorithm</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.listenerId">listenerId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.memberDeletionProtection">memberDeletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.projectId">projectId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.protocol">protocol</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -785,6 +843,16 @@ public java.lang.String getLoadbalancerIdInput();
 
 ---
 
+##### `memberDeletionProtectionInput`<sup>Optional</sup> <a name="memberDeletionProtectionInput" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.memberDeletionProtectionInput"></a>
+
+```java
+public java.lang.Object getMemberDeletionProtectionInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.nameInput"></a>
 
 ```java
@@ -822,6 +890,26 @@ public LbPoolV3SessionPersistence getSessionPersistenceInput();
 ```
 
 - *Type:* <a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3SessionPersistence">LbPoolV3SessionPersistence</a>
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `vpcIdInput`<sup>Optional</sup> <a name="vpcIdInput" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.vpcIdInput"></a>
+
+```java
+public java.lang.String getVpcIdInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -875,6 +963,16 @@ public java.lang.String getLoadbalancerId();
 
 ---
 
+##### `memberDeletionProtection`<sup>Required</sup> <a name="memberDeletionProtection" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.memberDeletionProtection"></a>
+
+```java
+public java.lang.Object getMemberDeletionProtection();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.name"></a>
 
 ```java
@@ -899,6 +997,26 @@ public java.lang.String getProjectId();
 
 ```java
 public java.lang.String getProtocol();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `vpcId`<sup>Required</sup> <a name="vpcId" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3.property.vpcId"></a>
+
+```java
+public java.lang.String getVpcId();
 ```
 
 - *Type:* java.lang.String
@@ -949,9 +1067,13 @@ LbPoolV3Config.builder()
 //  .id(java.lang.String)
 //  .listenerId(java.lang.String)
 //  .loadbalancerId(java.lang.String)
+//  .memberDeletionProtection(java.lang.Boolean)
+//  .memberDeletionProtection(IResolvable)
 //  .name(java.lang.String)
 //  .projectId(java.lang.String)
 //  .sessionPersistence(LbPoolV3SessionPersistence)
+//  .type(java.lang.String)
+//  .vpcId(java.lang.String)
     .build();
 ```
 
@@ -972,9 +1094,12 @@ LbPoolV3Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#id LbPoolV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.listenerId">listenerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#listener_id LbPoolV3#listener_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.loadbalancerId">loadbalancerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#loadbalancer_id LbPoolV3#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.memberDeletionProtection">memberDeletionProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#name LbPoolV3#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.projectId">projectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#project_id LbPoolV3#project_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.sessionPersistence">sessionPersistence</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3SessionPersistence">LbPoolV3SessionPersistence</a></code> | session_persistence block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}. |
 
 ---
 
@@ -1123,6 +1248,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 ---
 
+##### `memberDeletionProtection`<sup>Optional</sup> <a name="memberDeletionProtection" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.memberDeletionProtection"></a>
+
+```java
+public java.lang.Object getMemberDeletionProtection();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#member_deletion_protection LbPoolV3#member_deletion_protection}.
+
+---
+
 ##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.name"></a>
 
 ```java
@@ -1158,6 +1295,30 @@ public LbPoolV3SessionPersistence getSessionPersistence();
 session_persistence block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#session_persistence LbPoolV3#session_persistence}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#type LbPoolV3#type}.
+
+---
+
+##### `vpcId`<sup>Optional</sup> <a name="vpcId" id="@cdktf/provider-opentelekomcloud.lbPoolV3.LbPoolV3Config.property.vpcId"></a>
+
+```java
+public java.lang.String getVpcId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_pool_v3#vpc_id LbPoolV3#vpc_id}.
 
 ---
 

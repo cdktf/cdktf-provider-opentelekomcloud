@@ -186,7 +186,7 @@ export class RtsSoftwareDeploymentV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_rts_software_deployment_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

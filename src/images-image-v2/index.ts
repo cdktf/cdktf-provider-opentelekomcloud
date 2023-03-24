@@ -171,7 +171,7 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_images_image_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -177,7 +177,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -212,6 +212,11 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   // admin_state_up - computed: true, optional: false, required: false
   public get adminStateUp() {
     return this.getBooleanAttribute('admin_state_up');
+  }
+
+  // advanced_forwarding - computed: true, optional: false, required: false
+  public get advancedForwarding() {
+    return this.getBooleanAttribute('advanced_forwarding');
   }
 
   // client_ca_tls_container_ref - computed: false, optional: true, required: false
@@ -469,9 +474,19 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
     return this._protocolPort;
   }
 
+  // security_policy_id - computed: true, optional: false, required: false
+  public get securityPolicyId() {
+    return this.getStringAttribute('security_policy_id');
+  }
+
   // sni_container_refs - computed: true, optional: false, required: false
   public get sniContainerRefs() {
     return cdktf.Fn.tolist(this.getListAttribute('sni_container_refs'));
+  }
+
+  // sni_match_algo - computed: true, optional: false, required: false
+  public get sniMatchAlgo() {
+    return this.getStringAttribute('sni_match_algo');
   }
 
   // tags - computed: true, optional: false, required: false

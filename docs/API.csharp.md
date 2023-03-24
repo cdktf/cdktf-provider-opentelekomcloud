@@ -149,6 +149,7 @@ The following submodules are available:
 - [kmsKeyV1](./kmsKeyV1.csharp.md)
 - [lbCertificateV2](./lbCertificateV2.csharp.md)
 - [lbCertificateV3](./lbCertificateV3.csharp.md)
+- [lbIpgroupV3](./lbIpgroupV3.csharp.md)
 - [lbL7PolicyV2](./lbL7PolicyV2.csharp.md)
 - [lbL7RuleV2](./lbL7RuleV2.csharp.md)
 - [lbListenerV2](./lbListenerV2.csharp.md)

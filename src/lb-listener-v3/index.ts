@@ -12,6 +12,10 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#advanced_forwarding LbListenerV3#advanced_forwarding}
+  */
+  readonly advancedForwarding?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#client_ca_tls_container_ref LbListenerV3#client_ca_tls_container_ref}
   */
   readonly clientCaTlsContainerRef?: string;
@@ -71,9 +75,17 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly protocolPort: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#security_policy_id LbListenerV3#security_policy_id}
+  */
+  readonly securityPolicyId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#sni_container_refs LbListenerV3#sni_container_refs}
   */
   readonly sniContainerRefs?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#sni_match_algo LbListenerV3#sni_match_algo}
+  */
+  readonly sniMatchAlgo?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#tags LbListenerV3#tags}
   */
@@ -88,6 +100,12 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#insert_headers LbListenerV3#insert_headers}
   */
   readonly insertHeaders?: LbListenerV3InsertHeaders;
+  /**
+  * ip_group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#ip_group LbListenerV3#ip_group}
+  */
+  readonly ipGroup?: LbListenerV3IpGroup;
 }
 export interface LbListenerV3InsertHeaders {
   /**
@@ -235,6 +253,125 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
     return this._forwardedPort;
   }
 }
+export interface LbListenerV3IpGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#enable LbListenerV3#enable}
+  */
+  readonly enable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#id LbListenerV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3#type LbListenerV3#type}
+  */
+  readonly type?: string;
+}
+
+export function lbListenerV3IpGroupToTerraform(struct?: LbListenerV3IpGroupOutputReference | LbListenerV3IpGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable: cdktf.booleanToTerraform(struct!.enable),
+    id: cdktf.stringToTerraform(struct!.id),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class LbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LbListenerV3IpGroup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enable = this._enable;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbListenerV3IpGroup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enable = undefined;
+      this._id = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enable = value.enable;
+      this._id = value.id;
+      this._type = value.type;
+    }
+  }
+
+  // enable - computed: true, optional: true, required: false
+  private _enable?: boolean | cdktf.IResolvable; 
+  public get enable() {
+    return this.getBooleanAttribute('enable');
+  }
+  public set enable(value: boolean | cdktf.IResolvable) {
+    this._enable = value;
+  }
+  public resetEnable() {
+    this._enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_listener_v3 opentelekomcloud_lb_listener_v3}
@@ -262,7 +399,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -274,6 +411,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._adminStateUp = config.adminStateUp;
+    this._advancedForwarding = config.advancedForwarding;
     this._clientCaTlsContainerRef = config.clientCaTlsContainerRef;
     this._clientTimeout = config.clientTimeout;
     this._defaultPoolId = config.defaultPoolId;
@@ -288,10 +426,13 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     this._name = config.name;
     this._protocol = config.protocol;
     this._protocolPort = config.protocolPort;
+    this._securityPolicyId = config.securityPolicyId;
     this._sniContainerRefs = config.sniContainerRefs;
+    this._sniMatchAlgo = config.sniMatchAlgo;
     this._tags = config.tags;
     this._tlsCiphersPolicy = config.tlsCiphersPolicy;
     this._insertHeaders.internalValue = config.insertHeaders;
+    this._ipGroup.internalValue = config.ipGroup;
   }
 
   // ==========
@@ -312,6 +453,22 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get adminStateUpInput() {
     return this._adminStateUp;
+  }
+
+  // advanced_forwarding - computed: true, optional: true, required: false
+  private _advancedForwarding?: boolean | cdktf.IResolvable; 
+  public get advancedForwarding() {
+    return this.getBooleanAttribute('advanced_forwarding');
+  }
+  public set advancedForwarding(value: boolean | cdktf.IResolvable) {
+    this._advancedForwarding = value;
+  }
+  public resetAdvancedForwarding() {
+    this._advancedForwarding = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedForwardingInput() {
+    return this._advancedForwarding;
   }
 
   // client_ca_tls_container_ref - computed: false, optional: true, required: false
@@ -534,6 +691,22 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     return this._protocolPort;
   }
 
+  // security_policy_id - computed: true, optional: true, required: false
+  private _securityPolicyId?: string; 
+  public get securityPolicyId() {
+    return this.getStringAttribute('security_policy_id');
+  }
+  public set securityPolicyId(value: string) {
+    this._securityPolicyId = value;
+  }
+  public resetSecurityPolicyId() {
+    this._securityPolicyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityPolicyIdInput() {
+    return this._securityPolicyId;
+  }
+
   // sni_container_refs - computed: false, optional: true, required: false
   private _sniContainerRefs?: string[]; 
   public get sniContainerRefs() {
@@ -548,6 +721,22 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get sniContainerRefsInput() {
     return this._sniContainerRefs;
+  }
+
+  // sni_match_algo - computed: true, optional: true, required: false
+  private _sniMatchAlgo?: string; 
+  public get sniMatchAlgo() {
+    return this.getStringAttribute('sni_match_algo');
+  }
+  public set sniMatchAlgo(value: string) {
+    this._sniMatchAlgo = value;
+  }
+  public resetSniMatchAlgo() {
+    this._sniMatchAlgo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sniMatchAlgoInput() {
+    return this._sniMatchAlgo;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -603,6 +792,22 @@ export class LbListenerV3 extends cdktf.TerraformResource {
     return this._insertHeaders.internalValue;
   }
 
+  // ip_group - computed: false, optional: true, required: false
+  private _ipGroup = new LbListenerV3IpGroupOutputReference(this, "ip_group");
+  public get ipGroup() {
+    return this._ipGroup;
+  }
+  public putIpGroup(value: LbListenerV3IpGroup) {
+    this._ipGroup.internalValue = value;
+  }
+  public resetIpGroup() {
+    this._ipGroup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipGroupInput() {
+    return this._ipGroup.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -610,6 +815,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       admin_state_up: cdktf.booleanToTerraform(this._adminStateUp),
+      advanced_forwarding: cdktf.booleanToTerraform(this._advancedForwarding),
       client_ca_tls_container_ref: cdktf.stringToTerraform(this._clientCaTlsContainerRef),
       client_timeout: cdktf.numberToTerraform(this._clientTimeout),
       default_pool_id: cdktf.stringToTerraform(this._defaultPoolId),
@@ -624,10 +830,13 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       protocol: cdktf.stringToTerraform(this._protocol),
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
+      security_policy_id: cdktf.stringToTerraform(this._securityPolicyId),
       sni_container_refs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sniContainerRefs),
+      sni_match_algo: cdktf.stringToTerraform(this._sniMatchAlgo),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
       insert_headers: lbListenerV3InsertHeadersToTerraform(this._insertHeaders.internalValue),
+      ip_group: lbListenerV3IpGroupToTerraform(this._ipGroup.internalValue),
     };
   }
 }

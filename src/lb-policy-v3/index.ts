@@ -35,6 +35,10 @@ export interface LbPolicyV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly position?: number;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#priority LbPolicyV3#priority}
+  */
+  readonly priority?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#project_id LbPolicyV3#project_id}
   */
   readonly projectId?: string;
@@ -47,11 +51,464 @@ export interface LbPolicyV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly redirectPoolId?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#redirect_url LbPolicyV3#redirect_url}
+  */
+  readonly redirectUrl?: string;
+  /**
+  * fixed_response_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#fixed_response_config LbPolicyV3#fixed_response_config}
+  */
+  readonly fixedResponseConfig?: LbPolicyV3FixedResponseConfig;
+  /**
+  * redirect_pools_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#redirect_pools_config LbPolicyV3#redirect_pools_config}
+  */
+  readonly redirectPoolsConfig?: LbPolicyV3RedirectPoolsConfig[] | cdktf.IResolvable;
+  /**
+  * redirect_url_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#redirect_url_config LbPolicyV3#redirect_url_config}
+  */
+  readonly redirectUrlConfig?: LbPolicyV3RedirectUrlConfig;
+  /**
   * rules block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#rules LbPolicyV3#rules}
   */
   readonly rules?: LbPolicyV3Rules[] | cdktf.IResolvable;
+}
+export interface LbPolicyV3FixedResponseConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#content_type LbPolicyV3#content_type}
+  */
+  readonly contentType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#message_body LbPolicyV3#message_body}
+  */
+  readonly messageBody?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#status_code LbPolicyV3#status_code}
+  */
+  readonly statusCode: string;
+}
+
+export function lbPolicyV3FixedResponseConfigToTerraform(struct?: LbPolicyV3FixedResponseConfigOutputReference | LbPolicyV3FixedResponseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    content_type: cdktf.stringToTerraform(struct!.contentType),
+    message_body: cdktf.stringToTerraform(struct!.messageBody),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
+export class LbPolicyV3FixedResponseConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LbPolicyV3FixedResponseConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._messageBody !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.messageBody = this._messageBody;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbPolicyV3FixedResponseConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._contentType = undefined;
+      this._messageBody = undefined;
+      this._statusCode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._contentType = value.contentType;
+      this._messageBody = value.messageBody;
+      this._statusCode = value.statusCode;
+    }
+  }
+
+  // content_type - computed: false, optional: true, required: false
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // message_body - computed: false, optional: true, required: false
+  private _messageBody?: string; 
+  public get messageBody() {
+    return this.getStringAttribute('message_body');
+  }
+  public set messageBody(value: string) {
+    this._messageBody = value;
+  }
+  public resetMessageBody() {
+    this._messageBody = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get messageBodyInput() {
+    return this._messageBody;
+  }
+
+  // status_code - computed: false, optional: false, required: true
+  private _statusCode?: string; 
+  public get statusCode() {
+    return this.getStringAttribute('status_code');
+  }
+  public set statusCode(value: string) {
+    this._statusCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
+}
+export interface LbPolicyV3RedirectPoolsConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#pool_id LbPolicyV3#pool_id}
+  */
+  readonly poolId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#weight LbPolicyV3#weight}
+  */
+  readonly weight: number;
+}
+
+export function lbPolicyV3RedirectPoolsConfigToTerraform(struct?: LbPolicyV3RedirectPoolsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pool_id: cdktf.stringToTerraform(struct!.poolId),
+    weight: cdktf.numberToTerraform(struct!.weight),
+  }
+}
+
+export class LbPolicyV3RedirectPoolsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LbPolicyV3RedirectPoolsConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._poolId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.poolId = this._poolId;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbPolicyV3RedirectPoolsConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._poolId = undefined;
+      this._weight = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._poolId = value.poolId;
+      this._weight = value.weight;
+    }
+  }
+
+  // pool_id - computed: false, optional: false, required: true
+  private _poolId?: string; 
+  public get poolId() {
+    return this.getStringAttribute('pool_id');
+  }
+  public set poolId(value: string) {
+    this._poolId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get poolIdInput() {
+    return this._poolId;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+}
+
+export class LbPolicyV3RedirectPoolsConfigList extends cdktf.ComplexList {
+  public internalValue? : LbPolicyV3RedirectPoolsConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LbPolicyV3RedirectPoolsConfigOutputReference {
+    return new LbPolicyV3RedirectPoolsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface LbPolicyV3RedirectUrlConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#host LbPolicyV3#host}
+  */
+  readonly host?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#path LbPolicyV3#path}
+  */
+  readonly path?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#port LbPolicyV3#port}
+  */
+  readonly port?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#protocol LbPolicyV3#protocol}
+  */
+  readonly protocol?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#query LbPolicyV3#query}
+  */
+  readonly query?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_policy_v3#status_code LbPolicyV3#status_code}
+  */
+  readonly statusCode: string;
+}
+
+export function lbPolicyV3RedirectUrlConfigToTerraform(struct?: LbPolicyV3RedirectUrlConfigOutputReference | LbPolicyV3RedirectUrlConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    host: cdktf.stringToTerraform(struct!.host),
+    path: cdktf.stringToTerraform(struct!.path),
+    port: cdktf.stringToTerraform(struct!.port),
+    protocol: cdktf.stringToTerraform(struct!.protocol),
+    query: cdktf.stringToTerraform(struct!.query),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+  }
+}
+
+export class LbPolicyV3RedirectUrlConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LbPolicyV3RedirectUrlConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._protocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.protocol = this._protocol;
+    }
+    if (this._query !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.query = this._query;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LbPolicyV3RedirectUrlConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._host = undefined;
+      this._path = undefined;
+      this._port = undefined;
+      this._protocol = undefined;
+      this._query = undefined;
+      this._statusCode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._host = value.host;
+      this._path = value.path;
+      this._port = value.port;
+      this._protocol = value.protocol;
+      this._query = value.query;
+      this._statusCode = value.statusCode;
+    }
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // protocol - computed: false, optional: true, required: false
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  public resetProtocol() {
+    this._protocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // query - computed: false, optional: true, required: false
+  private _query?: string; 
+  public get query() {
+    return this.getStringAttribute('query');
+  }
+  public set query(value: string) {
+    this._query = value;
+  }
+  public resetQuery() {
+    this._query = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query;
+  }
+
+  // status_code - computed: false, optional: false, required: true
+  private _statusCode?: string; 
+  public get statusCode() {
+    return this.getStringAttribute('status_code');
+  }
+  public set statusCode(value: string) {
+    this._statusCode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
 }
 export interface LbPolicyV3Rules {
   /**
@@ -222,7 +679,7 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_policy_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.33.2',
+        providerVersion: '1.34.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -239,9 +696,14 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
     this._listenerId = config.listenerId;
     this._name = config.name;
     this._position = config.position;
+    this._priority = config.priority;
     this._projectId = config.projectId;
     this._redirectListenerId = config.redirectListenerId;
     this._redirectPoolId = config.redirectPoolId;
+    this._redirectUrl = config.redirectUrl;
+    this._fixedResponseConfig.internalValue = config.fixedResponseConfig;
+    this._redirectPoolsConfig.internalValue = config.redirectPoolsConfig;
+    this._redirectUrlConfig.internalValue = config.redirectUrlConfig;
     this._rules.internalValue = config.rules;
   }
 
@@ -339,6 +801,22 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
     return this._position;
   }
 
+  // priority - computed: true, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
   // project_id - computed: true, optional: true, required: false
   private _projectId?: string; 
   public get projectId() {
@@ -387,9 +865,73 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
     return this._redirectPoolId;
   }
 
+  // redirect_url - computed: true, optional: true, required: false
+  private _redirectUrl?: string; 
+  public get redirectUrl() {
+    return this.getStringAttribute('redirect_url');
+  }
+  public set redirectUrl(value: string) {
+    this._redirectUrl = value;
+  }
+  public resetRedirectUrl() {
+    this._redirectUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectUrlInput() {
+    return this._redirectUrl;
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // fixed_response_config - computed: false, optional: true, required: false
+  private _fixedResponseConfig = new LbPolicyV3FixedResponseConfigOutputReference(this, "fixed_response_config");
+  public get fixedResponseConfig() {
+    return this._fixedResponseConfig;
+  }
+  public putFixedResponseConfig(value: LbPolicyV3FixedResponseConfig) {
+    this._fixedResponseConfig.internalValue = value;
+  }
+  public resetFixedResponseConfig() {
+    this._fixedResponseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedResponseConfigInput() {
+    return this._fixedResponseConfig.internalValue;
+  }
+
+  // redirect_pools_config - computed: false, optional: true, required: false
+  private _redirectPoolsConfig = new LbPolicyV3RedirectPoolsConfigList(this, "redirect_pools_config", true);
+  public get redirectPoolsConfig() {
+    return this._redirectPoolsConfig;
+  }
+  public putRedirectPoolsConfig(value: LbPolicyV3RedirectPoolsConfig[] | cdktf.IResolvable) {
+    this._redirectPoolsConfig.internalValue = value;
+  }
+  public resetRedirectPoolsConfig() {
+    this._redirectPoolsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectPoolsConfigInput() {
+    return this._redirectPoolsConfig.internalValue;
+  }
+
+  // redirect_url_config - computed: false, optional: true, required: false
+  private _redirectUrlConfig = new LbPolicyV3RedirectUrlConfigOutputReference(this, "redirect_url_config");
+  public get redirectUrlConfig() {
+    return this._redirectUrlConfig;
+  }
+  public putRedirectUrlConfig(value: LbPolicyV3RedirectUrlConfig) {
+    this._redirectUrlConfig.internalValue = value;
+  }
+  public resetRedirectUrlConfig() {
+    this._redirectUrlConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectUrlConfigInput() {
+    return this._redirectUrlConfig.internalValue;
   }
 
   // rules - computed: false, optional: true, required: false
@@ -420,9 +962,14 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       listener_id: cdktf.stringToTerraform(this._listenerId),
       name: cdktf.stringToTerraform(this._name),
       position: cdktf.numberToTerraform(this._position),
+      priority: cdktf.numberToTerraform(this._priority),
       project_id: cdktf.stringToTerraform(this._projectId),
       redirect_listener_id: cdktf.stringToTerraform(this._redirectListenerId),
       redirect_pool_id: cdktf.stringToTerraform(this._redirectPoolId),
+      redirect_url: cdktf.stringToTerraform(this._redirectUrl),
+      fixed_response_config: lbPolicyV3FixedResponseConfigToTerraform(this._fixedResponseConfig.internalValue),
+      redirect_pools_config: cdktf.listMapper(lbPolicyV3RedirectPoolsConfigToTerraform, true)(this._redirectPoolsConfig.internalValue),
+      redirect_url_config: lbPolicyV3RedirectUrlConfigToTerraform(this._redirectUrlConfig.internalValue),
       rules: cdktf.listMapper(lbPolicyV3RulesToTerraform, true)(this._rules.internalValue),
     };
   }
