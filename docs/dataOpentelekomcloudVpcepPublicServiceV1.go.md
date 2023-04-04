@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/v
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpceppublicservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpceppublicservicev1"
 
 dataopentelekomcloudvpceppublicservicev1.NewDataOpentelekomcloudVpcepPublicServiceV1(scope Construct, id *string, config DataOpentelekomcloudVpcepPublicServiceV1Config) DataOpentelekomcloudVpcepPublicServiceV1
 ```
@@ -280,7 +280,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpceppublicservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpceppublicservicev1"
 
 dataopentelekomcloudvpceppublicservicev1.DataOpentelekomcloudVpcepPublicServiceV1_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpceppublicservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpceppublicservicev1"
 
 dataopentelekomcloudvpceppublicservicev1.DataOpentelekomcloudVpcepPublicServiceV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ dataopentelekomcloudvpceppublicservicev1.DataOpentelekomcloudVpcepPublicServiceV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpceppublicservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpceppublicservicev1"
 
 dataopentelekomcloudvpceppublicservicev1.DataOpentelekomcloudVpcepPublicServiceV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomcloudvpceppublicservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpceppublicservicev1"
 
 &dataopentelekomcloudvpceppublicservicev1.DataOpentelekomcloudVpcepPublicServiceV1Config {
 	Connection: interface{},

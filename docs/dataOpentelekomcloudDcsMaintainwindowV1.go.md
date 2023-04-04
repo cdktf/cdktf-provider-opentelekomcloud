@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/d
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.NewDataOpentelekomcloudDcsMaintainwindowV1(scope Construct, id *string, config DataOpentelekomcloudDcsMaintainwindowV1Config) DataOpentelekomcloudDcsMaintainwindowV1
 ```
@@ -301,7 +301,7 @@ func ResetSeq()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 &dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1Config {
 	Connection: interface{},

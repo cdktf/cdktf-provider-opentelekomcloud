@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/n
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 natdnatrulev2.NewNatDnatRuleV2(scope Construct, id *string, config NatDnatRuleV2Config) NatDnatRuleV2
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 natdnatrulev2.NatDnatRuleV2_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 natdnatrulev2.NatDnatRuleV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ natdnatrulev2.NatDnatRuleV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 natdnatrulev2.NatDnatRuleV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -794,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 &natdnatrulev2.NatDnatRuleV2Config {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Id: *string,
 	PortId: *string,
 	PrivateIp: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.natDnatRuleV2.NatDnatRuleV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts,
 }
 ```
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 &natdnatrulev2.NatDnatRuleV2Timeouts {
 	Create: *string,
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/natdnatrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/natdnatrulev2"
 
 natdnatrulev2.NewNatDnatRuleV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatDnatRuleV2TimeoutsOutputReference
 ```

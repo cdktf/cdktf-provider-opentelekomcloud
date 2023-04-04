@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/l
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.NewLbIpgroupV3(scope Construct, id *string, config LbIpgroupV3Config) LbIpgroupV3
 ```
@@ -307,7 +307,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.LbIpgroupV3_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.LbIpgroupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ lbipgroupv3.LbIpgroupV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.LbIpgroupV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 &lbipgroupv3.LbIpgroupV3Config {
 	Connection: interface{},
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 &lbipgroupv3.LbIpgroupV3IpList {
 	Ip: *string,
@@ -920,7 +920,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.NewLbIpgroupV3IpListList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbIpgroupV3IpListList
 ```
@@ -1063,7 +1063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbIpgroupV3.LbIpgroupV3IpListOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbipgroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbipgroupv3"
 
 lbipgroupv3.NewLbIpgroupV3IpListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbIpgroupV3IpListOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/v
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 vpcroutev2.NewVpcRouteV2(scope Construct, id *string, config VpcRouteV2Config) VpcRouteV2
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 vpcroutev2.VpcRouteV2_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 vpcroutev2.VpcRouteV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ vpcroutev2.VpcRouteV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 vpcroutev2.VpcRouteV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 &vpcroutev2.VpcRouteV2Config {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Id: *string,
 	Region: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.vpcRouteV2.VpcRouteV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcRouteV2.VpcRouteV2Timeouts,
 }
 ```
 
@@ -947,7 +947,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 &vpcroutev2.VpcRouteV2Timeouts {
 	Create: *string,
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteV2.VpcRouteV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/vpcroutev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutev2"
 
 vpcroutev2.NewVpcRouteV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcRouteV2TimeoutsOutputReference
 ```

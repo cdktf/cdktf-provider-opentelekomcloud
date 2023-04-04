@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/n
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2(scope Construct, id *string, config NetworkingPortV2Config) NetworkingPortV2
 ```
@@ -410,7 +410,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NetworkingPortV2_IsConstruct(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NetworkingPortV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ networkingportv2.NetworkingPortV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NetworkingPortV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -1018,7 +1018,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2AllowedAddressPairs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 &networkingportv2.NetworkingPortV2AllowedAddressPairs {
 	IpAddress: *string,
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 &networkingportv2.NetworkingPortV2Config {
 	Connection: interface{},
@@ -1088,7 +1088,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Region: *string,
 	SecurityGroupIds: *[]*string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.networkingPortV2.NetworkingPortV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.networkingPortV2.NetworkingPortV2Timeouts,
 	ValueSpecs: *map[string]*string,
 }
 ```
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2FixedIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 &networkingportv2.NetworkingPortV2FixedIp {
 	SubnetId: *string,
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 &networkingportv2.NetworkingPortV2Timeouts {
 	Create: *string,
@@ -1493,7 +1493,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2AllowedAddressPairsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2AllowedAddressPairsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkingPortV2AllowedAddressPairsList
 ```
@@ -1636,7 +1636,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2AllowedAddressPairsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2AllowedAddressPairsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkingPortV2AllowedAddressPairsOutputReference
 ```
@@ -1954,7 +1954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2FixedIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2FixedIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkingPortV2FixedIpList
 ```
@@ -2097,7 +2097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2FixedIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2FixedIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkingPortV2FixedIpOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortV2.NetworkingPortV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/networkingportv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingportv2"
 
 networkingportv2.NewNetworkingPortV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkingPortV2TimeoutsOutputReference
 ```
