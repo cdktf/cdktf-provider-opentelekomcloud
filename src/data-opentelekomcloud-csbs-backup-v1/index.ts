@@ -50,6 +50,12 @@ export interface DataOpentelekomcloudCsbsBackupV1Config extends cdktf.TerraformM
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#vm_ip DataOpentelekomcloudCsbsBackupV1#vm_ip}
   */
   readonly vmIp?: string;
+  /**
+  * tags block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#tags DataOpentelekomcloudCsbsBackupV1#tags}
+  */
+  readonly tags?: DataOpentelekomcloudCsbsBackupV1Tags[] | cdktf.IResolvable;
 }
 export interface DataOpentelekomcloudCsbsBackupV1VmMetadata {
 }
@@ -274,6 +280,124 @@ export class DataOpentelekomcloudCsbsBackupV1VolumeBackupsList extends cdktf.Com
     return new DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataOpentelekomcloudCsbsBackupV1Tags {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#key DataOpentelekomcloudCsbsBackupV1#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1#value DataOpentelekomcloudCsbsBackupV1#value}
+  */
+  readonly value: string;
+}
+
+export function dataOpentelekomcloudCsbsBackupV1TagsToTerraform(struct?: DataOpentelekomcloudCsbsBackupV1Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class DataOpentelekomcloudCsbsBackupV1TagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudCsbsBackupV1Tags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudCsbsBackupV1Tags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class DataOpentelekomcloudCsbsBackupV1TagsList extends cdktf.ComplexList {
+  public internalValue? : DataOpentelekomcloudCsbsBackupV1Tags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudCsbsBackupV1TagsOutputReference {
+    return new DataOpentelekomcloudCsbsBackupV1TagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}
@@ -301,7 +425,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_csbs_backup_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -322,6 +446,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
     this._resourceType = config.resourceType;
     this._status = config.status;
     this._vmIp = config.vmIp;
+    this._tags.internalValue = config.tags;
   }
 
   // ==========
@@ -492,12 +617,6 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
     return this._status;
   }
 
-  // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
-  public get tags() {
-    return this._tags;
-  }
-
   // vm_ip - computed: false, optional: true, required: false
   private _vmIp?: string; 
   public get vmIp() {
@@ -526,6 +645,22 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
     return this._volumeBackups;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags = new DataOpentelekomcloudCsbsBackupV1TagsList(this, "tags", true);
+  public get tags() {
+    return this._tags;
+  }
+  public putTags(value: DataOpentelekomcloudCsbsBackupV1Tags[] | cdktf.IResolvable) {
+    this._tags.internalValue = value;
+  }
+  public resetTags() {
+    this._tags.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -542,6 +677,7 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
       resource_type: cdktf.stringToTerraform(this._resourceType),
       status: cdktf.stringToTerraform(this._status),
       vm_ip: cdktf.stringToTerraform(this._vmIp),
+      tags: cdktf.listMapper(dataOpentelekomcloudCsbsBackupV1TagsToTerraform, true)(this._tags.internalValue),
     };
   }
 }

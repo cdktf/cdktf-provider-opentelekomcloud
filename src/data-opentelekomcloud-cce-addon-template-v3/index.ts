@@ -70,7 +70,7 @@ export class DataOpentelekomcloudCceAddonTemplateV3 extends cdktf.TerraformDataS
       terraformResourceType: 'opentelekomcloud_cce_addon_template_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

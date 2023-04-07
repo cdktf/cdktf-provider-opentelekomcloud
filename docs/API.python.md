@@ -164,6 +164,7 @@ The following submodules are available:
 - [lbPoolV2](./lbPoolV2.python.md)
 - [lbPoolV3](./lbPoolV3.python.md)
 - [lbRuleV3](./lbRuleV3.python.md)
+- [lbSecurityPolicyV3](./lbSecurityPolicyV3.python.md)
 - [lbWhitelistV2](./lbWhitelistV2.python.md)
 - [logtankGroupV2](./logtankGroupV2.python.md)
 - [logtankTopicV2](./logtankTopicV2.python.md)

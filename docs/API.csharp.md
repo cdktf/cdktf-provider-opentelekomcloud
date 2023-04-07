@@ -164,6 +164,7 @@ The following submodules are available:
 - [lbPoolV2](./lbPoolV2.csharp.md)
 - [lbPoolV3](./lbPoolV3.csharp.md)
 - [lbRuleV3](./lbRuleV3.csharp.md)
+- [lbSecurityPolicyV3](./lbSecurityPolicyV3.csharp.md)
 - [lbWhitelistV2](./lbWhitelistV2.csharp.md)
 - [logtankGroupV2](./logtankGroupV2.csharp.md)
 - [logtankTopicV2](./logtankTopicV2.csharp.md)

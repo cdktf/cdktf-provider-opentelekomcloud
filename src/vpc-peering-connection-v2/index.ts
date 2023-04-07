@@ -170,7 +170,7 @@ export class VpcPeeringConnectionV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_peering_connection_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
