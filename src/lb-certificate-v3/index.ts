@@ -70,7 +70,7 @@ export class LbCertificateV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_certificate_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

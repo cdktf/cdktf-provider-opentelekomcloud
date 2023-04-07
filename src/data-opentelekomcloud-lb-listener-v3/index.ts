@@ -150,6 +150,80 @@ export class DataOpentelekomcloudLbListenerV3InsertHeadersList extends cdktf.Com
     return new DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataOpentelekomcloudLbListenerV3IpGroup {
+}
+
+export function dataOpentelekomcloudLbListenerV3IpGroupToTerraform(struct?: DataOpentelekomcloudLbListenerV3IpGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataOpentelekomcloudLbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataOpentelekomcloudLbListenerV3IpGroup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataOpentelekomcloudLbListenerV3IpGroup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enable - computed: true, optional: false, required: false
+  public get enable() {
+    return this.getBooleanAttribute('enable');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataOpentelekomcloudLbListenerV3IpGroupList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataOpentelekomcloudLbListenerV3IpGroupOutputReference {
+    return new DataOpentelekomcloudLbListenerV3IpGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3 opentelekomcloud_lb_listener_v3}
@@ -177,7 +251,7 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -329,6 +403,12 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
   private _insertHeaders = new DataOpentelekomcloudLbListenerV3InsertHeadersList(this, "insert_headers", false);
   public get insertHeaders() {
     return this._insertHeaders;
+  }
+
+  // ip_group - computed: true, optional: false, required: false
+  private _ipGroup = new DataOpentelekomcloudLbListenerV3IpGroupList(this, "ip_group", false);
+  public get ipGroup() {
+    return this._ipGroup;
   }
 
   // keep_alive_timeout - computed: false, optional: true, required: false

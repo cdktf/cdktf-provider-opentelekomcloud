@@ -19,6 +19,10 @@ export interface DataOpentelekomcloudNetworkingSecgroupV2Config extends cdktf.Te
   */
   readonly name?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#name_regex DataOpentelekomcloudNetworkingSecgroupV2#name_regex}
+  */
+  readonly nameRegex?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2#region DataOpentelekomcloudNetworkingSecgroupV2#region}
   */
   readonly region?: string;
@@ -58,7 +62,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
       terraformResourceType: 'opentelekomcloud_networking_secgroup_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -71,6 +75,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
     });
     this._id = config.id;
     this._name = config.name;
+    this._nameRegex = config.nameRegex;
     this._region = config.region;
     this._secgroupId = config.secgroupId;
     this._tenantId = config.tenantId;
@@ -115,6 +120,22 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // name_regex - computed: false, optional: true, required: false
+  private _nameRegex?: string; 
+  public get nameRegex() {
+    return this.getStringAttribute('name_regex');
+  }
+  public set nameRegex(value: string) {
+    this._nameRegex = value;
+  }
+  public resetNameRegex() {
+    this._nameRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameRegexInput() {
+    return this._nameRegex;
   }
 
   // region - computed: true, optional: true, required: false
@@ -173,6 +194,7 @@ export class DataOpentelekomcloudNetworkingSecgroupV2 extends cdktf.TerraformDat
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      name_regex: cdktf.stringToTerraform(this._nameRegex),
       region: cdktf.stringToTerraform(this._region),
       secgroup_id: cdktf.stringToTerraform(this._secgroupId),
       tenant_id: cdktf.stringToTerraform(this._tenantId),

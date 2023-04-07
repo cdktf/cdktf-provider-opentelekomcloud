@@ -78,6 +78,7 @@ export * as lbPolicyV3 from './lb-policy-v3';
 export * as lbPoolV2 from './lb-pool-v2';
 export * as lbPoolV3 from './lb-pool-v3';
 export * as lbRuleV3 from './lb-rule-v3';
+export * as lbSecurityPolicyV3 from './lb-security-policy-v3';
 export * as lbWhitelistV2 from './lb-whitelist-v2';
 export * as logtankGroupV2 from './logtank-group-v2';
 export * as logtankTopicV2 from './logtank-topic-v2';

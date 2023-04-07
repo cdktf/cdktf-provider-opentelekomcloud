@@ -174,7 +174,7 @@ export class VpcV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

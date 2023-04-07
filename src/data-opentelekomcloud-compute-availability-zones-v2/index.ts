@@ -50,7 +50,7 @@ export class DataOpentelekomcloudComputeAvailabilityZonesV2 extends cdktf.Terraf
       terraformResourceType: 'opentelekomcloud_compute_availability_zones_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.0',
+        providerVersion: '1.34.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

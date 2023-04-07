@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/l
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3(scope Construct, id *string, config LbPolicyV3Config) LbPolicyV3
 ```
@@ -409,7 +409,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.LbPolicyV3_IsConstruct(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.LbPolicyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ lbpolicyv3.LbPolicyV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.LbPolicyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 &lbpolicyv3.LbPolicyV3Config {
 	Connection: interface{},
@@ -1008,7 +1008,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Action: *string,
 	ListenerId: *string,
 	Description: *string,
-	FixedResponseConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.lbPolicyV3.LbPolicyV3FixedResponseConfig,
+	FixedResponseConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbPolicyV3.LbPolicyV3FixedResponseConfig,
 	Id: *string,
 	Name: *string,
 	Position: *f64,
@@ -1018,7 +1018,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	RedirectPoolId: *string,
 	RedirectPoolsConfig: interface{},
 	RedirectUrl: *string,
-	RedirectUrlConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.lbPolicyV3.LbPolicyV3RedirectUrlConfig,
+	RedirectUrlConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectUrlConfig,
 	Rules: interface{},
 }
 ```
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3FixedResponseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 &lbpolicyv3.LbPolicyV3FixedResponseConfig {
 	StatusCode: *string,
@@ -1378,7 +1378,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectPoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 &lbpolicyv3.LbPolicyV3RedirectPoolsConfig {
 	PoolId: *string,
@@ -1424,7 +1424,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectUrlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 &lbpolicyv3.LbPolicyV3RedirectUrlConfig {
 	StatusCode: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3Rules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 &lbpolicyv3.LbPolicyV3Rules {
 	CompareType: *string,
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3FixedResponseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3FixedResponseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbPolicyV3FixedResponseConfigOutputReference
 ```
@@ -1917,7 +1917,7 @@ func InternalValue() LbPolicyV3FixedResponseConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectPoolsConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3RedirectPoolsConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbPolicyV3RedirectPoolsConfigList
 ```
@@ -2060,7 +2060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectPoolsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3RedirectPoolsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbPolicyV3RedirectPoolsConfigOutputReference
 ```
@@ -2371,7 +2371,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RedirectUrlConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3RedirectUrlConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbPolicyV3RedirectUrlConfigOutputReference
 ```
@@ -2787,7 +2787,7 @@ func InternalValue() LbPolicyV3RedirectUrlConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3RulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbPolicyV3RulesList
 ```
@@ -2930,7 +2930,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPolicyV3.LbPolicyV3RulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/lbpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpolicyv3"
 
 lbpolicyv3.NewLbPolicyV3RulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbPolicyV3RulesOutputReference
 ```
