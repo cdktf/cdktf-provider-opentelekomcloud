@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/i
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.NewIdentityAgencyV3(scope Construct, id *string, config IdentityAgencyV3Config) IdentityAgencyV3
 ```
@@ -327,7 +327,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.IdentityAgencyV3_IsConstruct(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.IdentityAgencyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ identityagencyv3.IdentityAgencyV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.IdentityAgencyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 &identityagencyv3.IdentityAgencyV3Config {
 	Connection: interface{},
@@ -775,7 +775,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	DomainRoles: *[]*string,
 	Id: *string,
 	ProjectRole: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.identityAgencyV3.IdentityAgencyV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts,
 }
 ```
 
@@ -966,7 +966,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 &identityagencyv3.IdentityAgencyV3ProjectRole {
 	Project: *string,
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 &identityagencyv3.IdentityAgencyV3Timeouts {
 	Create: *string,
@@ -1074,7 +1074,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.NewIdentityAgencyV3ProjectRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityAgencyV3ProjectRoleList
 ```
@@ -1217,7 +1217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.NewIdentityAgencyV3ProjectRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityAgencyV3ProjectRoleOutputReference
 ```
@@ -1528,7 +1528,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/identityagencyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityagencyv3"
 
 identityagencyv3.NewIdentityAgencyV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityAgencyV3TimeoutsOutputReference
 ```

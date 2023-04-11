@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/provider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/provider"
 
 provider.NewOpentelekomcloudProvider(scope Construct, id *string, config OpentelekomcloudProviderConfig) OpentelekomcloudProvider
 ```
@@ -318,7 +318,7 @@ func ResetUserName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/provider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/provider"
 
 provider.OpentelekomcloudProvider_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/provider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/provider"
 
 provider.OpentelekomcloudProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ provider.OpentelekomcloudProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/provider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/provider"
 
 provider.OpentelekomcloudProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/provider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/provider"
 
 &provider.OpentelekomcloudProviderConfig {
 	AccessKey: *string,

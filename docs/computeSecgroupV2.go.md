@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/c
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.NewComputeSecgroupV2(scope Construct, id *string, config ComputeSecgroupV2Config) ComputeSecgroupV2
 ```
@@ -320,7 +320,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.ComputeSecgroupV2_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.ComputeSecgroupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ computesecgroupv2.ComputeSecgroupV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.ComputeSecgroupV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 &computesecgroupv2.ComputeSecgroupV2Config {
 	Connection: interface{},
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Id: *string,
 	Region: *string,
 	Rule: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.computeSecgroupV2.ComputeSecgroupV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2Timeouts,
 }
 ```
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2Rule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 &computesecgroupv2.ComputeSecgroupV2Rule {
 	FromPort: *f64,
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 &computesecgroupv2.ComputeSecgroupV2Timeouts {
 	Delete: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2RuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.NewComputeSecgroupV2RuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeSecgroupV2RuleList
 ```
@@ -1169,7 +1169,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2RuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.NewComputeSecgroupV2RuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeSecgroupV2RuleOutputReference
 ```
@@ -1600,7 +1600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeSecgroupV2.ComputeSecgroupV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/computesecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computesecgroupv2"
 
 computesecgroupv2.NewComputeSecgroupV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSecgroupV2TimeoutsOutputReference
 ```

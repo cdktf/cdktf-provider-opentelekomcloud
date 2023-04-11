@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/w
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafAlarmNotificationV1.WafAlarmNotificationV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/wafalarmnotificationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafalarmnotificationv1"
 
 wafalarmnotificationv1.NewWafAlarmNotificationV1(scope Construct, id *string, config WafAlarmNotificationV1Config) WafAlarmNotificationV1
 ```
@@ -280,7 +280,7 @@ func ResetLocale()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafAlarmNotificationV1.WafAlarmNotificationV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/wafalarmnotificationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafalarmnotificationv1"
 
 wafalarmnotificationv1.WafAlarmNotificationV1_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafAlarmNotificationV1.WafAlarmNotificationV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/wafalarmnotificationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafalarmnotificationv1"
 
 wafalarmnotificationv1.WafAlarmNotificationV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ wafalarmnotificationv1.WafAlarmNotificationV1_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafAlarmNotificationV1.WafAlarmNotificationV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/wafalarmnotificationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafalarmnotificationv1"
 
 wafalarmnotificationv1.WafAlarmNotificationV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafAlarmNotificationV1.WafAlarmNotificationV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/wafalarmnotificationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafalarmnotificationv1"
 
 &wafalarmnotificationv1.WafAlarmNotificationV1Config {
 	Connection: interface{},
