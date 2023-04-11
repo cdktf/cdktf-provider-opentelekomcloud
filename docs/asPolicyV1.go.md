@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/a
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.NewAsPolicyV1(scope Construct, id *string, config AsPolicyV1Config) AsPolicyV1
 ```
@@ -334,7 +334,7 @@ func ResetScheduledPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.AsPolicyV1_IsConstruct(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.AsPolicyV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ aspolicyv1.AsPolicyV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.AsPolicyV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 &aspolicyv1.AsPolicyV1Config {
 	Connection: interface{},
@@ -794,8 +794,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	CoolDownTime: *f64,
 	Id: *string,
 	Region: *string,
-	ScalingPolicyAction: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asPolicyV1.AsPolicyV1ScalingPolicyAction,
-	ScheduledPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asPolicyV1.AsPolicyV1ScheduledPolicy,
+	ScalingPolicyAction: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction,
+	ScheduledPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 &aspolicyv1.AsPolicyV1ScalingPolicyAction {
 	InstanceNumber: *f64,
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 &aspolicyv1.AsPolicyV1ScheduledPolicy {
 	LaunchTime: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.NewAsPolicyV1ScalingPolicyActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsPolicyV1ScalingPolicyActionOutputReference
 ```
@@ -1455,7 +1455,7 @@ func InternalValue() AsPolicyV1ScalingPolicyAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/aspolicyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/aspolicyv1"
 
 aspolicyv1.NewAsPolicyV1ScheduledPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsPolicyV1ScheduledPolicyOutputReference
 ```

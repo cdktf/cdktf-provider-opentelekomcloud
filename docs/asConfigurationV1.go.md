@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/a
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1(scope Construct, id *string, config AsConfigurationV1Config) AsConfigurationV1
 ```
@@ -293,7 +293,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.AsConfigurationV1_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.AsConfigurationV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ asconfigurationv1.AsConfigurationV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.AsConfigurationV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1Config {
 	Connection: interface{},
@@ -636,7 +636,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	InstanceConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asConfigurationV1.AsConfigurationV1InstanceConfig,
+	InstanceConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfig,
 	ScalingConfigurationName: *string,
 	Id: *string,
 	Region: *string,
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfig {
 	KeyName: *string,
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/
 	InstanceId: *string,
 	Metadata: *map[string]*string,
 	Personality: interface{},
-	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIp,
+	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIp,
 	SecurityGroups: *[]*string,
 	UserData: *string,
 }
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfigDisk {
 	DiskType: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPersonality.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfigPersonality {
 	Content: *string,
@@ -1073,10 +1073,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfigPublicIp {
-	Eip: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEip,
+	Eip: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEip,
 }
 ```
 
@@ -1107,10 +1107,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfigPublicIpEip {
-	Bandwidth: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEipBandwidth,
+	Bandwidth: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEipBandwidth,
 	IpType: *string,
 }
 ```
@@ -1155,7 +1155,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEipBandwidth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 &asconfigurationv1.AsConfigurationV1InstanceConfigPublicIpEipBandwidth {
 	ChargingMode: *string,
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsConfigurationV1InstanceConfigDiskList
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsConfigurationV1InstanceConfigDiskOutputReference
 ```
@@ -1722,7 +1722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigOutputReference
 ```
@@ -2293,7 +2293,7 @@ func InternalValue() AsConfigurationV1InstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPersonalityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigPersonalityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsConfigurationV1InstanceConfigPersonalityList
 ```
@@ -2436,7 +2436,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPersonalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigPersonalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsConfigurationV1InstanceConfigPersonalityOutputReference
 ```
@@ -2747,7 +2747,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference
 ```
@@ -3062,7 +3062,7 @@ func InternalValue() AsConfigurationV1InstanceConfigPublicIpEipBandwidth
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpEipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigPublicIpEipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigPublicIpEipOutputReference
 ```
@@ -3368,7 +3368,7 @@ func InternalValue() AsConfigurationV1InstanceConfigPublicIpEip
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asConfigurationV1.AsConfigurationV1InstanceConfigPublicIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v5/asconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asconfigurationv1"
 
 asconfigurationv1.NewAsConfigurationV1InstanceConfigPublicIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsConfigurationV1InstanceConfigPublicIpOutputReference
 ```
