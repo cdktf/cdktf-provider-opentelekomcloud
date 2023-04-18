@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface RtsSoftwareConfigV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#config RtsSoftwareConfigV1#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#config RtsSoftwareConfigV1#config}
   */
   readonly config?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#group RtsSoftwareConfigV1#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#group RtsSoftwareConfigV1#group}
   */
   readonly group?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#id RtsSoftwareConfigV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#id RtsSoftwareConfigV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#input_values RtsSoftwareConfigV1#input_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#input_values RtsSoftwareConfigV1#input_values}
   */
-  readonly inputValues?: { [key: string]: string } | cdktf.IResolvable;
+  readonly inputValues?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#name RtsSoftwareConfigV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#name RtsSoftwareConfigV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#options RtsSoftwareConfigV1#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#options RtsSoftwareConfigV1#options}
   */
   readonly options?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#output_values RtsSoftwareConfigV1#output_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#output_values RtsSoftwareConfigV1#output_values}
   */
-  readonly outputValues?: { [key: string]: string } | cdktf.IResolvable;
+  readonly outputValues?: { [key: string]: string }[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#region RtsSoftwareConfigV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#region RtsSoftwareConfigV1#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#timeouts RtsSoftwareConfigV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#timeouts RtsSoftwareConfigV1#timeouts}
   */
   readonly timeouts?: RtsSoftwareConfigV1Timeouts;
 }
 export interface RtsSoftwareConfigV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#create RtsSoftwareConfigV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#create RtsSoftwareConfigV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1#delete RtsSoftwareConfigV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1#delete RtsSoftwareConfigV1#delete}
   */
   readonly delete?: string;
 }
 
-export function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1TimeoutsOutputReference | RtsSoftwareConfigV1Timeouts | cdktf.IResolvable): any {
+export function rtsSoftwareConfigV1TimeoutsToTerraform(struct?: RtsSoftwareConfigV1Timeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,7 +80,7 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): RtsSoftwareConfigV1Timeouts | cdktf.IResolvable | undefined {
@@ -153,7 +153,7 @@ export class RtsSoftwareConfigV1TimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}
 */
 export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
 
@@ -167,7 +167,7 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,11 +253,11 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
 
   // input_values - computed: false, optional: true, required: false
-  private _inputValues?: { [key: string]: string } | cdktf.IResolvable; 
+  private _inputValues?: { [key: string]: string }[] | cdktf.IResolvable; 
   public get inputValues() {
-    return this.getStringMapAttribute('input_values');
+    return this.interpolationForAttribute('input_values');
   }
-  public set inputValues(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set inputValues(value: { [key: string]: string }[] | cdktf.IResolvable) {
     this._inputValues = value;
   }
   public resetInputValues() {
@@ -298,11 +298,11 @@ export class RtsSoftwareConfigV1 extends cdktf.TerraformResource {
   }
 
   // output_values - computed: false, optional: true, required: false
-  private _outputValues?: { [key: string]: string } | cdktf.IResolvable; 
+  private _outputValues?: { [key: string]: string }[] | cdktf.IResolvable; 
   public get outputValues() {
-    return this.getStringMapAttribute('output_values');
+    return this.interpolationForAttribute('output_values');
   }
-  public set outputValues(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set outputValues(value: { [key: string]: string }[] | cdktf.IResolvable) {
     this._outputValues = value;
   }
   public resetOutputValues() {

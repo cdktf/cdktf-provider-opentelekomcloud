@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_vbs_backup_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vbs_backup_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vbs_backup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2).
 
 # `dataOpentelekomcloudVbsBackupV2` Submodule <a name="`dataOpentelekomcloudVbsBackupV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vbs_backup_v2
 
 ### DataOpentelekomcloudVbsBackupV2 <a name="DataOpentelekomcloudVbsBackupV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2 opentelekomcloud_vbs_backup_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2 opentelekomcloud_vbs_backup_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.Initializer"></a>
 
@@ -380,7 +380,7 @@ dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.isTerraformDataS
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -482,10 +482,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -754,18 +754,18 @@ const dataOpentelekomcloudVbsBackupV2Config: dataOpentelekomcloudVbsBackupV2.Dat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#id DataOpentelekomcloudVbsBackupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#name DataOpentelekomcloudVbsBackupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#region DataOpentelekomcloudVbsBackupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.snapshotId">snapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#snapshot_id DataOpentelekomcloudVbsBackupV2#snapshot_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#status DataOpentelekomcloudVbsBackupV2#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.volumeId">volumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#volume_id DataOpentelekomcloudVbsBackupV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#id DataOpentelekomcloudVbsBackupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#name DataOpentelekomcloudVbsBackupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#region DataOpentelekomcloudVbsBackupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.snapshotId">snapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#snapshot_id DataOpentelekomcloudVbsBackupV2#snapshot_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#status DataOpentelekomcloudVbsBackupV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.volumeId">volumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#volume_id DataOpentelekomcloudVbsBackupV2#volume_id}. |
 
 ---
 
@@ -782,10 +782,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupV2.DataOpentelekomcloudVbsBackupV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -847,7 +847,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#id DataOpentelekomcloudVbsBackupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#id DataOpentelekomcloudVbsBackupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -862,7 +862,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#name DataOpentelekomcloudVbsBackupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#name DataOpentelekomcloudVbsBackupV2#name}.
 
 ---
 
@@ -874,7 +874,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#region DataOpentelekomcloudVbsBackupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#region DataOpentelekomcloudVbsBackupV2#region}.
 
 ---
 
@@ -886,7 +886,7 @@ public readonly snapshotId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#snapshot_id DataOpentelekomcloudVbsBackupV2#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#snapshot_id DataOpentelekomcloudVbsBackupV2#snapshot_id}.
 
 ---
 
@@ -898,7 +898,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#status DataOpentelekomcloudVbsBackupV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#status DataOpentelekomcloudVbsBackupV2#status}.
 
 ---
 
@@ -910,7 +910,7 @@ public readonly volumeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vbs_backup_v2#volume_id DataOpentelekomcloudVbsBackupV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vbs_backup_v2#volume_id DataOpentelekomcloudVbsBackupV2#volume_id}.
 
 ---
 

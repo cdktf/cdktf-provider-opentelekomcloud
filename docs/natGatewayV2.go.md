@@ -1,6 +1,6 @@
 # `opentelekomcloud_nat_gateway_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_gateway_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_gateway_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2).
 
 # `natGatewayV2` Submodule <a name="`natGatewayV2` Submodule" id="@cdktf/provider-opentelekomcloud.natGatewayV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_gateway_v2`](h
 
 ### NatGatewayV2 <a name="NatGatewayV2" id="@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2 opentelekomcloud_nat_gateway_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.Initializer"></a>
 
@@ -394,7 +394,7 @@ natgatewayv2.NatGatewayV2_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -508,10 +508,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 &natgatewayv2.NatGatewayV2Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -818,21 +818,21 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.internalNetworkId">InternalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#internal_network_id NatGatewayV2#internal_network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#name NatGatewayV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#router_id NatGatewayV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.spec">Spec</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#spec NatGatewayV2#spec}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#description NatGatewayV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#id NatGatewayV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#region NatGatewayV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tags NatGatewayV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tenant_id NatGatewayV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.internalNetworkId">InternalNetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#internal_network_id NatGatewayV2#internal_network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#name NatGatewayV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#router_id NatGatewayV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.spec">Spec</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#spec NatGatewayV2#spec}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#description NatGatewayV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#id NatGatewayV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#region NatGatewayV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#tags NatGatewayV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#tenant_id NatGatewayV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Timeouts">NatGatewayV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -850,10 +850,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -915,7 +915,7 @@ InternalNetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#internal_network_id NatGatewayV2#internal_network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#internal_network_id NatGatewayV2#internal_network_id}.
 
 ---
 
@@ -927,7 +927,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#name NatGatewayV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#name NatGatewayV2#name}.
 
 ---
 
@@ -939,7 +939,7 @@ RouterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#router_id NatGatewayV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#router_id NatGatewayV2#router_id}.
 
 ---
 
@@ -951,7 +951,7 @@ Spec *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#spec NatGatewayV2#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#spec NatGatewayV2#spec}.
 
 ---
 
@@ -963,7 +963,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#description NatGatewayV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#description NatGatewayV2#description}.
 
 ---
 
@@ -975,7 +975,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#id NatGatewayV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#id NatGatewayV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#region NatGatewayV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#region NatGatewayV2#region}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tags NatGatewayV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#tags NatGatewayV2#tags}.
 
 ---
 
@@ -1014,7 +1014,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#tenant_id NatGatewayV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#tenant_id NatGatewayV2#tenant_id}.
 
 ---
 
@@ -1028,7 +1028,7 @@ Timeouts NatGatewayV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#timeouts NatGatewayV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#timeouts NatGatewayV2#timeouts}
 
 ---
 
@@ -1049,8 +1049,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#create NatGatewayV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#delete NatGatewayV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#create NatGatewayV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natGatewayV2.NatGatewayV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#delete NatGatewayV2#delete}. |
 
 ---
 
@@ -1062,7 +1062,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#create NatGatewayV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#create NatGatewayV2#create}.
 
 ---
 
@@ -1074,7 +1074,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_gateway_v2#delete NatGatewayV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_gateway_v2#delete NatGatewayV2#delete}.
 
 ---
 

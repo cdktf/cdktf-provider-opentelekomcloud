@@ -1,6 +1,6 @@
 # `opentelekomcloud_identity_group_membership_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_membership_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_membership_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3).
 
 # `identityGroupMembershipV3` Submodule <a name="`identityGroupMembershipV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_mem
 
 ### IdentityGroupMembershipV3 <a name="IdentityGroupMembershipV3" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3 opentelekomcloud_identity_group_membership_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3 opentelekomcloud_identity_group_membership_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer"></a>
 
@@ -19,7 +19,7 @@ identityGroupMembershipV3.IdentityGroupMembershipV3(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ identityGroupMembershipV3.IdentityGroupMembershipV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -462,7 +462,7 @@ identityGroupMembershipV3.IdentityGroupMembershipV3.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -562,10 +562,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -708,7 +708,7 @@ from cdktf_cdktf_provider_opentelekomcloud import identity_group_membership_v3
 
 identityGroupMembershipV3.IdentityGroupMembershipV3Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -725,15 +725,15 @@ identityGroupMembershipV3.IdentityGroupMembershipV3Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.group">group</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
 
 ---
 
@@ -750,10 +750,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -815,7 +815,7 @@ group: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
 
 ---
 
@@ -827,7 +827,7 @@ users: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
 
 ---
 
@@ -839,7 +839,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

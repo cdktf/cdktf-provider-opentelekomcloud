@@ -1,6 +1,6 @@
 # `opentelekomcloud_as_policy_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_as_policy_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_as_policy_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1).
 
 # `asPolicyV1` Submodule <a name="`asPolicyV1` Submodule" id="@cdktf/provider-opentelekomcloud.asPolicyV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_as_policy_v1`](htt
 
 ### AsPolicyV1 <a name="AsPolicyV1" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1 opentelekomcloud_as_policy_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1 opentelekomcloud_as_policy_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.Initializer"></a>
 
@@ -407,7 +407,7 @@ aspolicyv1.AsPolicyV1_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -519,10 +519,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 &aspolicyv1.AsPolicyV1Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -808,19 +808,19 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingGroupId">ScalingGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_group_id AsPolicyV1#scaling_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingPolicyName">ScalingPolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_policy_name AsPolicyV1#scaling_policy_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingPolicyType">ScalingPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_policy_type AsPolicyV1#scaling_policy_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.alarmId">AlarmId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#alarm_id AsPolicyV1#alarm_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.coolDownTime">CoolDownTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#cool_down_time AsPolicyV1#cool_down_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#id AsPolicyV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#region AsPolicyV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingGroupId">ScalingGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_group_id AsPolicyV1#scaling_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingPolicyName">ScalingPolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_policy_name AsPolicyV1#scaling_policy_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingPolicyType">ScalingPolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_policy_type AsPolicyV1#scaling_policy_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.alarmId">AlarmId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#alarm_id AsPolicyV1#alarm_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.coolDownTime">CoolDownTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#cool_down_time AsPolicyV1#cool_down_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#id AsPolicyV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#region AsPolicyV1#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scalingPolicyAction">ScalingPolicyAction</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction">AsPolicyV1ScalingPolicyAction</a></code> | scaling_policy_action block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.scheduledPolicy">ScheduledPolicy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy">AsPolicyV1ScheduledPolicy</a></code> | scheduled_policy block. |
 
@@ -839,10 +839,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -904,7 +904,7 @@ ScalingGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_group_id AsPolicyV1#scaling_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_group_id AsPolicyV1#scaling_group_id}.
 
 ---
 
@@ -916,7 +916,7 @@ ScalingPolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_policy_name AsPolicyV1#scaling_policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_policy_name AsPolicyV1#scaling_policy_name}.
 
 ---
 
@@ -928,7 +928,7 @@ ScalingPolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_policy_type AsPolicyV1#scaling_policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_policy_type AsPolicyV1#scaling_policy_type}.
 
 ---
 
@@ -940,7 +940,7 @@ AlarmId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#alarm_id AsPolicyV1#alarm_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#alarm_id AsPolicyV1#alarm_id}.
 
 ---
 
@@ -952,7 +952,7 @@ CoolDownTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#cool_down_time AsPolicyV1#cool_down_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#cool_down_time AsPolicyV1#cool_down_time}.
 
 ---
 
@@ -964,7 +964,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#id AsPolicyV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#id AsPolicyV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -979,7 +979,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#region AsPolicyV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#region AsPolicyV1#region}.
 
 ---
 
@@ -993,7 +993,7 @@ ScalingPolicyAction AsPolicyV1ScalingPolicyAction
 
 scaling_policy_action block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scaling_policy_action AsPolicyV1#scaling_policy_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scaling_policy_action AsPolicyV1#scaling_policy_action}
 
 ---
 
@@ -1007,7 +1007,7 @@ ScheduledPolicy AsPolicyV1ScheduledPolicy
 
 scheduled_policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#scheduled_policy AsPolicyV1#scheduled_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#scheduled_policy AsPolicyV1#scheduled_policy}
 
 ---
 
@@ -1028,8 +1028,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction.property.instanceNumber">InstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#instance_number AsPolicyV1#instance_number}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction.property.operation">Operation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#operation AsPolicyV1#operation}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction.property.instanceNumber">InstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#instance_number AsPolicyV1#instance_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScalingPolicyAction.property.operation">Operation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#operation AsPolicyV1#operation}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ InstanceNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#instance_number AsPolicyV1#instance_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#instance_number AsPolicyV1#instance_number}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Operation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#operation AsPolicyV1#operation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#operation AsPolicyV1#operation}.
 
 ---
 
@@ -1077,11 +1077,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.launchTime">LaunchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#launch_time AsPolicyV1#launch_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#end_time AsPolicyV1#end_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.recurrenceType">RecurrenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#recurrence_type AsPolicyV1#recurrence_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.recurrenceValue">RecurrenceValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#recurrence_value AsPolicyV1#recurrence_value}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#start_time AsPolicyV1#start_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.launchTime">LaunchTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#launch_time AsPolicyV1#launch_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.endTime">EndTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#end_time AsPolicyV1#end_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.recurrenceType">RecurrenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#recurrence_type AsPolicyV1#recurrence_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.recurrenceValue">RecurrenceValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#recurrence_value AsPolicyV1#recurrence_value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asPolicyV1.AsPolicyV1ScheduledPolicy.property.startTime">StartTime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#start_time AsPolicyV1#start_time}. |
 
 ---
 
@@ -1093,7 +1093,7 @@ LaunchTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#launch_time AsPolicyV1#launch_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#launch_time AsPolicyV1#launch_time}.
 
 ---
 
@@ -1105,7 +1105,7 @@ EndTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#end_time AsPolicyV1#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#end_time AsPolicyV1#end_time}.
 
 ---
 
@@ -1117,7 +1117,7 @@ RecurrenceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#recurrence_type AsPolicyV1#recurrence_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#recurrence_type AsPolicyV1#recurrence_type}.
 
 ---
 
@@ -1129,7 +1129,7 @@ RecurrenceValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#recurrence_value AsPolicyV1#recurrence_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#recurrence_value AsPolicyV1#recurrence_value}.
 
 ---
 
@@ -1141,7 +1141,7 @@ StartTime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/as_policy_v1#start_time AsPolicyV1#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/as_policy_v1#start_time AsPolicyV1#start_time}.
 
 ---
 

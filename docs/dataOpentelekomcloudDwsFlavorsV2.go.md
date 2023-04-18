@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_dws_flavors_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2).
 
 # `dataOpentelekomcloudDwsFlavorsV2` Submodule <a name="`dataOpentelekomcloudDwsFlavorsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v
 
 ### DataOpentelekomcloudDwsFlavorsV2 <a name="DataOpentelekomcloudDwsFlavorsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.Initializer"></a>
 
@@ -373,7 +373,7 @@ dataopentelekomclouddwsflavorsv2.DataOpentelekomcloudDwsFlavorsV2_IsTerraformDat
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -467,10 +467,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 &dataopentelekomclouddwsflavorsv2.DataOpentelekomcloudDwsFlavorsV2Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -672,17 +672,17 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.memory">Memory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.vcpus">Vcpus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.memory">Memory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.vcpus">Vcpus</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}. |
 
 ---
 
@@ -699,10 +699,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -764,7 +764,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}.
 
 ---
 
@@ -776,7 +776,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -791,7 +791,7 @@ Memory *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}.
 
 ---
 
@@ -803,7 +803,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}.
 
 ---
 
@@ -815,7 +815,7 @@ Vcpus *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}.
 
 ---
 

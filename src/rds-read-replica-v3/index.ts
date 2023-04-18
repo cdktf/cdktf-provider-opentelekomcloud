@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface RdsReadReplicaV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#availability_zone RdsReadReplicaV3#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#availability_zone RdsReadReplicaV3#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#flavor_ref RdsReadReplicaV3#flavor_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#flavor_ref RdsReadReplicaV3#flavor_ref}
   */
   readonly flavorRef: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#id RdsReadReplicaV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#id RdsReadReplicaV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#name RdsReadReplicaV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#name RdsReadReplicaV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#public_ips RdsReadReplicaV3#public_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#public_ips RdsReadReplicaV3#public_ips}
   */
   readonly publicIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#region RdsReadReplicaV3#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#region RdsReadReplicaV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#replica_of_id RdsReadReplicaV3#replica_of_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#replica_of_id RdsReadReplicaV3#replica_of_id}
   */
   readonly replicaOfId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#timeouts RdsReadReplicaV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#timeouts RdsReadReplicaV3#timeouts}
   */
   readonly timeouts?: RdsReadReplicaV3Timeouts;
   /**
   * volume block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#volume RdsReadReplicaV3#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#volume RdsReadReplicaV3#volume}
   */
   readonly volume: RdsReadReplicaV3Volume;
 }
@@ -132,16 +132,16 @@ export class RdsReadReplicaV3DbList extends cdktf.ComplexList {
 }
 export interface RdsReadReplicaV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#create RdsReadReplicaV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#create RdsReadReplicaV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#update RdsReadReplicaV3#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#update RdsReadReplicaV3#update}
   */
   readonly update?: string;
 }
 
-export function rdsReadReplicaV3TimeoutsToTerraform(struct?: RdsReadReplicaV3TimeoutsOutputReference | RdsReadReplicaV3Timeouts | cdktf.IResolvable): any {
+export function rdsReadReplicaV3TimeoutsToTerraform(struct?: RdsReadReplicaV3Timeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -161,7 +161,7 @@ export class RdsReadReplicaV3TimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): RdsReadReplicaV3Timeouts | cdktf.IResolvable | undefined {
@@ -234,11 +234,11 @@ export class RdsReadReplicaV3TimeoutsOutputReference extends cdktf.ComplexObject
 }
 export interface RdsReadReplicaV3Volume {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#disk_encryption_id RdsReadReplicaV3#disk_encryption_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#disk_encryption_id RdsReadReplicaV3#disk_encryption_id}
   */
   readonly diskEncryptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3#type RdsReadReplicaV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3#type RdsReadReplicaV3#type}
   */
   readonly type: string;
 }
@@ -328,7 +328,7 @@ export class RdsReadReplicaV3VolumeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3}
 */
 export class RdsReadReplicaV3 extends cdktf.TerraformResource {
 
@@ -342,7 +342,7 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/rds_read_replica_v3 opentelekomcloud_rds_read_replica_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

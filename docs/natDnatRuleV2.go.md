@@ -1,6 +1,6 @@
 # `opentelekomcloud_nat_dnat_rule_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_dnat_rule_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_dnat_rule_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2).
 
 # `natDnatRuleV2` Submodule <a name="`natDnatRuleV2` Submodule" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_dnat_rule_v2`]
 
 ### NatDnatRuleV2 <a name="NatDnatRuleV2" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2 opentelekomcloud_nat_dnat_rule_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.Initializer"></a>
 
@@ -380,7 +380,7 @@ natdnatrulev2.NatDnatRuleV2_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -496,10 +496,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 &natdnatrulev2.NatDnatRuleV2Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -825,20 +825,20 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.externalServicePort">ExternalServicePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#external_service_port NatDnatRuleV2#external_service_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.floatingIpId">FloatingIpId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#floating_ip_id NatDnatRuleV2#floating_ip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.internalServicePort">InternalServicePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#internal_service_port NatDnatRuleV2#internal_service_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#nat_gateway_id NatDnatRuleV2#nat_gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#protocol NatDnatRuleV2#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#id NatDnatRuleV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#port_id NatDnatRuleV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.privateIp">PrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#private_ip NatDnatRuleV2#private_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.externalServicePort">ExternalServicePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#external_service_port NatDnatRuleV2#external_service_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.floatingIpId">FloatingIpId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#floating_ip_id NatDnatRuleV2#floating_ip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.internalServicePort">InternalServicePort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#internal_service_port NatDnatRuleV2#internal_service_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.natGatewayId">NatGatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#nat_gateway_id NatDnatRuleV2#nat_gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#protocol NatDnatRuleV2#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#id NatDnatRuleV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#port_id NatDnatRuleV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.privateIp">PrivateIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#private_ip NatDnatRuleV2#private_ip}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts">NatDnatRuleV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -856,10 +856,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -921,7 +921,7 @@ ExternalServicePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#external_service_port NatDnatRuleV2#external_service_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#external_service_port NatDnatRuleV2#external_service_port}.
 
 ---
 
@@ -933,7 +933,7 @@ FloatingIpId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#floating_ip_id NatDnatRuleV2#floating_ip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#floating_ip_id NatDnatRuleV2#floating_ip_id}.
 
 ---
 
@@ -945,7 +945,7 @@ InternalServicePort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#internal_service_port NatDnatRuleV2#internal_service_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#internal_service_port NatDnatRuleV2#internal_service_port}.
 
 ---
 
@@ -957,7 +957,7 @@ NatGatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#nat_gateway_id NatDnatRuleV2#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#nat_gateway_id NatDnatRuleV2#nat_gateway_id}.
 
 ---
 
@@ -969,7 +969,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#protocol NatDnatRuleV2#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#protocol NatDnatRuleV2#protocol}.
 
 ---
 
@@ -981,7 +981,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#id NatDnatRuleV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#id NatDnatRuleV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -996,7 +996,7 @@ PortId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#port_id NatDnatRuleV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#port_id NatDnatRuleV2#port_id}.
 
 ---
 
@@ -1008,7 +1008,7 @@ PrivateIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#private_ip NatDnatRuleV2#private_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#private_ip NatDnatRuleV2#private_ip}.
 
 ---
 
@@ -1022,7 +1022,7 @@ Timeouts NatDnatRuleV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#timeouts NatDnatRuleV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#timeouts NatDnatRuleV2#timeouts}
 
 ---
 
@@ -1043,8 +1043,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#create NatDnatRuleV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#delete NatDnatRuleV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#create NatDnatRuleV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natDnatRuleV2.NatDnatRuleV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#delete NatDnatRuleV2#delete}. |
 
 ---
 
@@ -1056,7 +1056,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#create NatDnatRuleV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#create NatDnatRuleV2#create}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2#delete NatDnatRuleV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/nat_dnat_rule_v2#delete NatDnatRuleV2#delete}.
 
 ---
 

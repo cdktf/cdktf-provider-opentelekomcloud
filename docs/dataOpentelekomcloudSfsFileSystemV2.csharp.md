@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_sfs_file_system_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_system_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_system_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2).
 
 # `dataOpentelekomcloudSfsFileSystemV2` Submodule <a name="`dataOpentelekomcloudSfsFileSystemV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_syst
 
 ### DataOpentelekomcloudSfsFileSystemV2 <a name="DataOpentelekomcloudSfsFileSystemV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer"></a>
 
@@ -366,7 +366,7 @@ DataOpentelekomcloudSfsFileSystemV2.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -477,10 +477,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -833,7 +833,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new DataOpentelekomcloudSfsFileSystemV2Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -851,16 +851,16 @@ new DataOpentelekomcloudSfsFileSystemV2Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
 
 ---
 
@@ -877,10 +877,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -942,7 +942,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
 
 ---
 
@@ -969,7 +969,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
 
 ---
 
@@ -981,7 +981,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
 
 ---
 

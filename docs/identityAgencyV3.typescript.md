@@ -1,6 +1,6 @@
 # `opentelekomcloud_identity_agency_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_agency_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_agency_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3).
 
 # `identityAgencyV3` Submodule <a name="`identityAgencyV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityAgencyV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_agency_v3
 
 ### IdentityAgencyV3 <a name="IdentityAgencyV3" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.Initializer"></a>
 
@@ -400,7 +400,7 @@ identityAgencyV3.IdentityAgencyV3.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -511,10 +511,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -773,17 +773,17 @@ const identityAgencyV3Config: identityAgencyV3.IdentityAgencyV3Config = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.delegatedDomainName">delegatedDomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#name IdentityAgencyV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#description IdentityAgencyV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.domainRoles">domainRoles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#id IdentityAgencyV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.delegatedDomainName">delegatedDomainName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#name IdentityAgencyV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#description IdentityAgencyV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.domainRoles">domainRoles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#id IdentityAgencyV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.projectRole">projectRole</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole">IdentityAgencyV3ProjectRole</a>[]</code> | project_role block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts">IdentityAgencyV3Timeouts</a></code> | timeouts block. |
 
@@ -802,10 +802,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Config.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -867,7 +867,7 @@ public readonly delegatedDomainName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#name IdentityAgencyV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#name IdentityAgencyV3#name}.
 
 ---
 
@@ -891,7 +891,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#description IdentityAgencyV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#description IdentityAgencyV3#description}.
 
 ---
 
@@ -903,7 +903,7 @@ public readonly domainRoles: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}.
 
 ---
 
@@ -915,7 +915,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#id IdentityAgencyV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#id IdentityAgencyV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -932,7 +932,7 @@ public readonly projectRole: IResolvable | IdentityAgencyV3ProjectRole[];
 
 project_role block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#project_role IdentityAgencyV3#project_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#project_role IdentityAgencyV3#project_role}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly timeouts: IdentityAgencyV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#timeouts IdentityAgencyV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#timeouts IdentityAgencyV3#timeouts}
 
 ---
 
@@ -964,8 +964,8 @@ const identityAgencyV3ProjectRole: identityAgencyV3.IdentityAgencyV3ProjectRole 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#project IdentityAgencyV3#project}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole.property.roles">roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#roles IdentityAgencyV3#roles}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#project IdentityAgencyV3#project}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3ProjectRole.property.roles">roles</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#roles IdentityAgencyV3#roles}. |
 
 ---
 
@@ -977,7 +977,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#project IdentityAgencyV3#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#project IdentityAgencyV3#project}.
 
 ---
 
@@ -989,7 +989,7 @@ public readonly roles: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#roles IdentityAgencyV3#roles}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#roles IdentityAgencyV3#roles}.
 
 ---
 
@@ -1007,9 +1007,9 @@ const identityAgencyV3Timeouts: identityAgencyV3.IdentityAgencyV3Timeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#create IdentityAgencyV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#delete IdentityAgencyV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#update IdentityAgencyV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#create IdentityAgencyV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#delete IdentityAgencyV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityAgencyV3.IdentityAgencyV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#update IdentityAgencyV3#update}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#create IdentityAgencyV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#create IdentityAgencyV3#create}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#delete IdentityAgencyV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#delete IdentityAgencyV3#delete}.
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3#update IdentityAgencyV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_agency_v3#update IdentityAgencyV3#update}.
 
 ---
 

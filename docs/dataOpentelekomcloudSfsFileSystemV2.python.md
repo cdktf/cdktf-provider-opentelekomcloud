@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_sfs_file_system_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_system_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_system_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2).
 
 # `dataOpentelekomcloudSfsFileSystemV2` Submodule <a name="`dataOpentelekomcloudSfsFileSystemV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_file_syst
 
 ### DataOpentelekomcloudSfsFileSystemV2 <a name="DataOpentelekomcloudSfsFileSystemV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,16 +37,16 @@ dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
 
 ---
 
@@ -492,7 +492,7 @@ dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.is_terra
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -603,10 +603,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -959,7 +959,7 @@ from cdktf_cdktf_provider_opentelekomcloud import data_opentelekomcloud_sfs_file
 
 dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -977,16 +977,16 @@ dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.status">status</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}. |
 
 ---
 
@@ -1003,10 +1003,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsFileSystemV2.DataOpentelekomcloudSfsFileSystemV2Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1068,7 +1068,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#id DataOpentelekomcloudSfsFileSystemV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1083,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#name DataOpentelekomcloudSfsFileSystemV2#name}.
 
 ---
 
@@ -1095,7 +1095,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#region DataOpentelekomcloudSfsFileSystemV2#region}.
 
 ---
 
@@ -1107,7 +1107,7 @@ status: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_file_system_v2#status DataOpentelekomcloudSfsFileSystemV2#status}.
 
 ---
 

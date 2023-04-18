@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_sfs_turbo_share_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_share_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_share_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1).
 
 # `dataOpentelekomcloudSfsTurboShareV1` Submodule <a name="`dataOpentelekomcloudSfsTurboShareV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_sha
 
 ### DataOpentelekomcloudSfsTurboShareV1 <a name="DataOpentelekomcloudSfsTurboShareV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataOpentelekomcloudSfsTurboShareV1.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -680,7 +680,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new DataOpentelekomcloudSfsTurboShareV1Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -696,14 +696,14 @@ new DataOpentelekomcloudSfsTurboShareV1Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
 
 ---
 
@@ -720,10 +720,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -785,7 +785,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
 
 ---
 
@@ -797,7 +797,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
