@@ -1,3 +1,7 @@
+# `opentelekomcloud_dcs_instance_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dcs_instance_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/dcs_instance_v1).
+
 # `dcsInstanceV1` Submodule <a name="`dcsInstanceV1` Submodule" id="@cdktf/provider-opentelekomcloud.dcsInstanceV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

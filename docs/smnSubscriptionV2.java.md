@@ -1,3 +1,7 @@
+# `opentelekomcloud_smn_subscription_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_subscription_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_subscription_v2).
+
 # `smnSubscriptionV2` Submodule <a name="`smnSubscriptionV2` Submodule" id="@cdktf/provider-opentelekomcloud.smnSubscriptionV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

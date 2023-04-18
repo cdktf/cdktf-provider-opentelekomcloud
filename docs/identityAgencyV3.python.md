@@ -1,3 +1,7 @@
+# `opentelekomcloud_identity_agency_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_agency_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_agency_v3).
+
 # `identityAgencyV3` Submodule <a name="`identityAgencyV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityAgencyV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

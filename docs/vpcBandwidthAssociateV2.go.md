@@ -1,3 +1,7 @@
+# `opentelekomcloud_vpc_bandwidth_associate_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_bandwidth_associate_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_bandwidth_associate_v2).
+
 # `vpcBandwidthAssociateV2` Submodule <a name="`vpcBandwidthAssociateV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

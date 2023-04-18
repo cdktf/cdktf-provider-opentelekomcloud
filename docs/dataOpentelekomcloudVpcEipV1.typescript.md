@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_vpc_eip_v1`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_eip_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_eip_v1).
+
 # `dataOpentelekomcloudVpcEipV1` Submodule <a name="`dataOpentelekomcloudVpcEipV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcEipV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `opentelekomcloud_sdrs_protectiongroup_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_sdrs_protectiongroup_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/sdrs_protectiongroup_v1).
+
 # `sdrsProtectiongroupV1` Submodule <a name="`sdrsProtectiongroupV1` Submodule" id="@cdktf/provider-opentelekomcloud.sdrsProtectiongroupV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

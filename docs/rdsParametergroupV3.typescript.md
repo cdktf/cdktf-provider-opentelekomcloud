@@ -1,3 +1,7 @@
+# `opentelekomcloud_rds_parametergroup_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_rds_parametergroup_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_parametergroup_v3).
+
 # `rdsParametergroupV3` Submodule <a name="`rdsParametergroupV3` Submodule" id="@cdktf/provider-opentelekomcloud.rdsParametergroupV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

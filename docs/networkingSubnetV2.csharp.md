@@ -1,3 +1,7 @@
+# `opentelekomcloud_networking_subnet_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_subnet_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_subnet_v2).
+
 # `networkingSubnetV2` Submodule <a name="`networkingSubnetV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingSubnetV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

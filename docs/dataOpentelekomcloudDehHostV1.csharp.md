@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_deh_host_v1`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_deh_host_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/deh_host_v1).
+
 # `dataOpentelekomcloudDehHostV1` Submodule <a name="`dataOpentelekomcloudDehHostV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

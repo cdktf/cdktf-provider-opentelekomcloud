@@ -1,3 +1,7 @@
+# `opentelekomcloud_vpnaas_ike_policy_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_ike_policy_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_ike_policy_v2).
+
 # `vpnaasIkePolicyV2` Submodule <a name="`vpnaasIkePolicyV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpnaasIkePolicyV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

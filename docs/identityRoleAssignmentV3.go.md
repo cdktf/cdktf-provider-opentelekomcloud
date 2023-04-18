@@ -1,3 +1,7 @@
+# `opentelekomcloud_identity_role_assignment_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_role_assignment_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_role_assignment_v3).
+
 # `identityRoleAssignmentV3` Submodule <a name="`identityRoleAssignmentV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

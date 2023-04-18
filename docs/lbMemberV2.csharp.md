@@ -1,3 +1,7 @@
+# `opentelekomcloud_lb_member_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_member_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_member_v2).
+
 # `lbMemberV2` Submodule <a name="`lbMemberV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbMemberV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

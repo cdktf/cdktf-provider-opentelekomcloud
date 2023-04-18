@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud`](https://www.terraform.io/docs/providers/opentelekomcloud).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-opentelekomcloud.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

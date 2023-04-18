@@ -1,3 +1,7 @@
+# `opentelekomcloud_rds_instance_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_rds_instance_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/rds_instance_v3).
+
 # `rdsInstanceV3` Submodule <a name="`rdsInstanceV3` Submodule" id="@cdktf/provider-opentelekomcloud.rdsInstanceV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

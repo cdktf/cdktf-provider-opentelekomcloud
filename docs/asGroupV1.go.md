@@ -1,3 +1,7 @@
+# `opentelekomcloud_as_group_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_as_group_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/as_group_v1).
+
 # `asGroupV1` Submodule <a name="`asGroupV1` Submodule" id="@cdktf/provider-opentelekomcloud.asGroupV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

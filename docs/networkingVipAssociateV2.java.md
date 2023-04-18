@@ -1,3 +1,7 @@
+# `opentelekomcloud_networking_vip_associate_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_associate_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_vip_associate_v2).
+
 # `networkingVipAssociateV2` Submodule <a name="`networkingVipAssociateV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingVipAssociateV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

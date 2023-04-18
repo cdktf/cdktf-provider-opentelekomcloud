@@ -1,3 +1,7 @@
+# `opentelekomcloud_identity_group_membership_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_membership_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_group_membership_v3).
+
 # `identityGroupMembershipV3` Submodule <a name="`identityGroupMembershipV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

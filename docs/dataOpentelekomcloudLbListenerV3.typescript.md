@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_lb_listener_v3`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_listener_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/d/lb_listener_v3).
+
 # `dataOpentelekomcloudLbListenerV3` Submodule <a name="`dataOpentelekomcloudLbListenerV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbListenerV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
