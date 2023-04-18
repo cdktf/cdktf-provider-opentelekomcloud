@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.NewDataOpentelekomcloudIdentityRoleCustomV3(scope Construct, id *string, config DataOpentelekomcloudIdentityRoleCustomV3Config) DataOpentelekomcloudIdentityRoleCustomV3
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV3_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 &dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV3Config {
 	Connection: interface{},
@@ -771,7 +771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Statement.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 &dataopentelekomcloudidentityrolecustomv3.DataOpentelekomcloudIdentityRoleCustomV3Statement {
 
@@ -786,7 +786,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3StatementList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.NewDataOpentelekomcloudIdentityRoleCustomV3StatementList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityRoleCustomV3StatementList
 ```
@@ -918,7 +918,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3StatementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityrolecustomv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudidentityrolecustomv3"
 
 dataopentelekomcloudidentityrolecustomv3.NewDataOpentelekomcloudIdentityRoleCustomV3StatementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudIdentityRoleCustomV3StatementOutputReference
 ```
