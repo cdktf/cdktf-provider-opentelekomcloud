@@ -1,6 +1,6 @@
 # `opentelekomcloud_sfs_file_system_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_sfs_file_system_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_sfs_file_system_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2).
 
 # `sfsFileSystemV2` Submodule <a name="`sfsFileSystemV2` Submodule" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_sfs_file_system_v2
 
 ### SfsFileSystemV2 <a name="SfsFileSystemV2" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2 opentelekomcloud_sfs_file_system_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ sfsFileSystemV2.SfsFileSystemV2(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -47,25 +47,25 @@ sfsFileSystemV2.SfsFileSystemV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#size SfsFileSystemV2#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessTo">access_to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessType">access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#description SfsFileSystemV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#id SfsFileSystemV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#name SfsFileSystemV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#region SfsFileSystemV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.shareProto">share_proto</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessTo">access_to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.accessType">access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.shareProto">share_proto</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -96,7 +96,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#size SfsFileSystemV2#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#description SfsFileSystemV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#id SfsFileSystemV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -193,7 +193,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#name SfsFileSystemV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#region SfsFileSystemV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}.
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
 
 ---
 
@@ -506,7 +506,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#create SfsFileSystemV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#create SfsFileSystemV2#create}.
 
 ---
 
@@ -514,7 +514,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#delete SfsFileSystemV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#delete SfsFileSystemV2#delete}.
 
 ---
 
@@ -684,7 +684,7 @@ sfsFileSystemV2.SfsFileSystemV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -813,10 +813,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1249,7 +1249,7 @@ from cdktf_cdktf_provider_opentelekomcloud import sfs_file_system_v2
 
 sfsFileSystemV2.SfsFileSystemV2Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1277,25 +1277,25 @@ sfsFileSystemV2.SfsFileSystemV2Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#size SfsFileSystemV2#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessLevel">access_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessTo">access_to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessType">access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#description SfsFileSystemV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#id SfsFileSystemV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#name SfsFileSystemV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#region SfsFileSystemV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.shareProto">share_proto</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.size">size</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessLevel">access_level</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessTo">access_to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.accessType">access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.availabilityZone">availability_zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.shareProto">share_proto</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1313,10 +1313,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1378,7 +1378,7 @@ size: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#size SfsFileSystemV2#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#size SfsFileSystemV2#size}.
 
 ---
 
@@ -1390,7 +1390,7 @@ access_level: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_level SfsFileSystemV2#access_level}.
 
 ---
 
@@ -1402,7 +1402,7 @@ access_to: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_to SfsFileSystemV2#access_to}.
 
 ---
 
@@ -1414,7 +1414,7 @@ access_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#access_type SfsFileSystemV2#access_type}.
 
 ---
 
@@ -1426,7 +1426,7 @@ availability_zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#availability_zone SfsFileSystemV2#availability_zone}.
 
 ---
 
@@ -1438,7 +1438,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#description SfsFileSystemV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#description SfsFileSystemV2#description}.
 
 ---
 
@@ -1450,7 +1450,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#id SfsFileSystemV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#id SfsFileSystemV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1465,7 +1465,7 @@ is_public: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#is_public SfsFileSystemV2#is_public}.
 
 ---
 
@@ -1477,7 +1477,7 @@ metadata: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#metadata SfsFileSystemV2#metadata}.
 
 ---
 
@@ -1489,7 +1489,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#name SfsFileSystemV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#name SfsFileSystemV2#name}.
 
 ---
 
@@ -1501,7 +1501,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#region SfsFileSystemV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#region SfsFileSystemV2#region}.
 
 ---
 
@@ -1513,7 +1513,7 @@ share_proto: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#share_proto SfsFileSystemV2#share_proto}.
 
 ---
 
@@ -1525,7 +1525,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#tags SfsFileSystemV2#tags}.
 
 ---
 
@@ -1539,7 +1539,7 @@ timeouts: SfsFileSystemV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
 
 ---
 
@@ -1560,8 +1560,8 @@ sfsFileSystemV2.SfsFileSystemV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#create SfsFileSystemV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#delete SfsFileSystemV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#create SfsFileSystemV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#delete SfsFileSystemV2#delete}. |
 
 ---
 
@@ -1573,7 +1573,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#create SfsFileSystemV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#create SfsFileSystemV2#create}.
 
 ---
 
@@ -1585,7 +1585,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_file_system_v2#delete SfsFileSystemV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/sfs_file_system_v2#delete SfsFileSystemV2#delete}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_rds_backup_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rds_backup_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rds_backup_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3).
 
 # `dataOpentelekomcloudRdsBackupV3` Submodule <a name="`dataOpentelekomcloudRdsBackupV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rds_backup_v3
 
 ### DataOpentelekomcloudRdsBackupV3 <a name="DataOpentelekomcloudRdsBackupV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3 opentelekomcloud_rds_backup_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3 opentelekomcloud_rds_backup_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.NewDataOpentelekomcloudRdsBackupV3(scope Construct, id *string, config DataOpentelekomcloudRdsBackupV3Config) DataOpentelekomcloudRdsBackupV3
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformDataS
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -690,11 +690,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 &dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -712,16 +712,16 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#instance_id DataOpentelekomcloudRdsBackupV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.backupId">BackupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#backup_id DataOpentelekomcloudRdsBackupV3#backup_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#id DataOpentelekomcloudRdsBackupV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#type DataOpentelekomcloudRdsBackupV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#instance_id DataOpentelekomcloudRdsBackupV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.backupId">BackupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#backup_id DataOpentelekomcloudRdsBackupV3#backup_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#id DataOpentelekomcloudRdsBackupV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#type DataOpentelekomcloudRdsBackupV3#type}. |
 
 ---
 
@@ -738,10 +738,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -803,7 +803,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#instance_id DataOpentelekomcloudRdsBackupV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#instance_id DataOpentelekomcloudRdsBackupV3#instance_id}.
 
 ---
 
@@ -815,7 +815,7 @@ BackupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#backup_id DataOpentelekomcloudRdsBackupV3#backup_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#backup_id DataOpentelekomcloudRdsBackupV3#backup_id}.
 
 ---
 
@@ -827,7 +827,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#id DataOpentelekomcloudRdsBackupV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#id DataOpentelekomcloudRdsBackupV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -842,7 +842,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rds_backup_v3#type DataOpentelekomcloudRdsBackupV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rds_backup_v3#type DataOpentelekomcloudRdsBackupV3#type}.
 
 ---
 

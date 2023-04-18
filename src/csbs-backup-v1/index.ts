@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface CsbsBackupV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}
   */
   readonly backupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#description CsbsBackupV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#description CsbsBackupV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#id CsbsBackupV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#id CsbsBackupV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#region CsbsBackupV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#region CsbsBackupV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}
   */
   readonly resourceType?: string;
   /**
   * tags block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#tags CsbsBackupV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#tags CsbsBackupV1#tags}
   */
   readonly tags?: CsbsBackupV1Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}
   */
   readonly timeouts?: CsbsBackupV1Timeouts;
 }
@@ -272,11 +272,11 @@ export class CsbsBackupV1VolumeBackupsList extends cdktf.ComplexList {
 }
 export interface CsbsBackupV1Tags {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#key CsbsBackupV1#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#key CsbsBackupV1#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#value CsbsBackupV1#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#value CsbsBackupV1#value}
   */
   readonly value: string;
 }
@@ -390,16 +390,16 @@ export class CsbsBackupV1TagsList extends cdktf.ComplexList {
 }
 export interface CsbsBackupV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#create CsbsBackupV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#create CsbsBackupV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1#delete CsbsBackupV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1#delete CsbsBackupV1#delete}
   */
   readonly delete?: string;
 }
 
-export function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1TimeoutsOutputReference | CsbsBackupV1Timeouts | cdktf.IResolvable): any {
+export function csbsBackupV1TimeoutsToTerraform(struct?: CsbsBackupV1Timeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -419,7 +419,7 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): CsbsBackupV1Timeouts | cdktf.IResolvable | undefined {
@@ -492,7 +492,7 @@ export class CsbsBackupV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}
 */
 export class CsbsBackupV1 extends cdktf.TerraformResource {
 
@@ -506,7 +506,7 @@ export class CsbsBackupV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

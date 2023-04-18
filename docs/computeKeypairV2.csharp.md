@@ -1,6 +1,6 @@
 # `opentelekomcloud_compute_keypair_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_keypair_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_keypair_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2).
 
 # `computeKeypairV2` Submodule <a name="`computeKeypairV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeKeypairV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_keypair_v2
 
 ### ComputeKeypairV2 <a name="ComputeKeypairV2" id="@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.Initializer"></a>
 
@@ -367,7 +367,7 @@ ComputeKeypairV2.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -679,7 +679,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new ComputeKeypairV2Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -698,17 +698,17 @@ new ComputeKeypairV2Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#name ComputeKeypairV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#id ComputeKeypairV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#public_key ComputeKeypairV2#public_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#region ComputeKeypairV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#name ComputeKeypairV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#id ComputeKeypairV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.publicKey">PublicKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#public_key ComputeKeypairV2#public_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#region ComputeKeypairV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}. |
 
 ---
 
@@ -725,10 +725,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.computeKeypairV2.ComputeKeypairV2Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -790,7 +790,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#name ComputeKeypairV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#name ComputeKeypairV2#name}.
 
 ---
 
@@ -802,7 +802,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#id ComputeKeypairV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#id ComputeKeypairV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -817,7 +817,7 @@ public string PublicKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#public_key ComputeKeypairV2#public_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#public_key ComputeKeypairV2#public_key}.
 
 ---
 
@@ -829,7 +829,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#region ComputeKeypairV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#region ComputeKeypairV2#region}.
 
 ---
 
@@ -841,7 +841,7 @@ public System.Collections.Generic.IDictionary<string, string> ValueSpecs { get; 
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_keypair_v2#value_specs ComputeKeypairV2#value_specs}.
 
 ---
 

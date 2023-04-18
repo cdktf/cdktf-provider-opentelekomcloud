@@ -1,6 +1,6 @@
 # `opentelekomcloud_kms_grant_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_kms_grant_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_kms_grant_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1).
 
 # `kmsGrantV1` Submodule <a name="`kmsGrantV1` Submodule" id="@cdktf/provider-opentelekomcloud.kmsGrantV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_kms_grant_v1`](htt
 
 ### KmsGrantV1 <a name="KmsGrantV1" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1 opentelekomcloud_kms_grant_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1 opentelekomcloud_kms_grant_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.Initializer"></a>
 
@@ -367,7 +367,7 @@ KmsGrantV1.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -475,10 +475,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new KmsGrantV1Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -721,18 +721,18 @@ new KmsGrantV1Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.granteePrincipal">GranteePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#grantee_principal KmsGrantV1#grantee_principal}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#key_id KmsGrantV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#id KmsGrantV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#name KmsGrantV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.operations">Operations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#operations KmsGrantV1#operations}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.retiringPrincipal">RetiringPrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#retiring_principal KmsGrantV1#retiring_principal}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.granteePrincipal">GranteePrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#grantee_principal KmsGrantV1#grantee_principal}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.keyId">KeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#key_id KmsGrantV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#id KmsGrantV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#name KmsGrantV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.operations">Operations</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#operations KmsGrantV1#operations}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.retiringPrincipal">RetiringPrincipal</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#retiring_principal KmsGrantV1#retiring_principal}. |
 
 ---
 
@@ -749,10 +749,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -814,7 +814,7 @@ public string GranteePrincipal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#grantee_principal KmsGrantV1#grantee_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#grantee_principal KmsGrantV1#grantee_principal}.
 
 ---
 
@@ -826,7 +826,7 @@ public string KeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#key_id KmsGrantV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#key_id KmsGrantV1#key_id}.
 
 ---
 
@@ -838,7 +838,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#id KmsGrantV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#id KmsGrantV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -853,7 +853,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#name KmsGrantV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#name KmsGrantV1#name}.
 
 ---
 
@@ -865,7 +865,7 @@ public string[] Operations { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#operations KmsGrantV1#operations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#operations KmsGrantV1#operations}.
 
 ---
 
@@ -877,7 +877,7 @@ public string RetiringPrincipal { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/kms_grant_v1#retiring_principal KmsGrantV1#retiring_principal}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/kms_grant_v1#retiring_principal KmsGrantV1#retiring_principal}.
 
 ---
 

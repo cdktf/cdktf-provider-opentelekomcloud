@@ -1,6 +1,6 @@
 # `opentelekomcloud_waf_falsealarmmasking_rule_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_falsealarmmasking_rule_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_falsealarmmasking_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1).
 
 # `wafFalsealarmmaskingRuleV1` Submodule <a name="`wafFalsealarmmaskingRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_falsealarmmask
 
 ### WafFalsealarmmaskingRuleV1 <a name="WafFalsealarmmaskingRuleV1" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.Initializer"></a>
 
@@ -366,7 +366,7 @@ WafFalsealarmmaskingRuleV1.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -470,10 +470,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -656,7 +656,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new WafFalsealarmmaskingRuleV1Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -675,16 +675,16 @@ new WafFalsealarmmaskingRuleV1Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.rule">Rule</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.url">Url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -702,10 +702,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -767,7 +767,7 @@ public string PolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}.
 
 ---
 
@@ -779,7 +779,7 @@ public string Rule { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}.
 
 ---
 
@@ -791,7 +791,7 @@ public string Url { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}.
 
 ---
 
@@ -803,7 +803,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ public WafFalsealarmmaskingRuleV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#timeouts WafFalsealarmmaskingRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#timeouts WafFalsealarmmaskingRuleV1#timeouts}
 
 ---
 
@@ -841,8 +841,8 @@ new WafFalsealarmmaskingRuleV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}. |
 
 ---
 
@@ -854,7 +854,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}.
 
 ---
 
@@ -866,7 +866,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}.
 
 ---
 

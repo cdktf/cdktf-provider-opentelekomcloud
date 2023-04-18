@@ -1,6 +1,6 @@
 # `opentelekomcloud_compute_floatingip_associate_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip_associate_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip_associate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2).
 
 # `computeFloatingipAssociateV2` Submodule <a name="`computeFloatingipAssociateV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip
 
 ### ComputeFloatingipAssociateV2 <a name="ComputeFloatingipAssociateV2" id="@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2 opentelekomcloud_compute_floatingip_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.Initializer"></a>
 
@@ -360,7 +360,7 @@ computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.isTerraformResource(x:
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -464,10 +464,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -656,17 +656,17 @@ const computeFloatingipAssociateV2Config: computeFloatingipAssociateV2.ComputeFl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.floatingIp">floatingIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#floating_ip ComputeFloatingipAssociateV2#floating_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#instance_id ComputeFloatingipAssociateV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.fixedIp">fixedIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#id ComputeFloatingipAssociateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#region ComputeFloatingipAssociateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.floatingIp">floatingIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#floating_ip ComputeFloatingipAssociateV2#floating_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#instance_id ComputeFloatingipAssociateV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.fixedIp">fixedIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#id ComputeFloatingipAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#region ComputeFloatingipAssociateV2#region}. |
 
 ---
 
@@ -683,10 +683,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.computeFloatingipAssociateV2.ComputeFloatingipAssociateV2Config.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -748,7 +748,7 @@ public readonly floatingIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#floating_ip ComputeFloatingipAssociateV2#floating_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#floating_ip ComputeFloatingipAssociateV2#floating_ip}.
 
 ---
 
@@ -760,7 +760,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#instance_id ComputeFloatingipAssociateV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#instance_id ComputeFloatingipAssociateV2#instance_id}.
 
 ---
 
@@ -772,7 +772,7 @@ public readonly fixedIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#fixed_ip ComputeFloatingipAssociateV2#fixed_ip}.
 
 ---
 
@@ -784,7 +784,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#id ComputeFloatingipAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#id ComputeFloatingipAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_floatingip_associate_v2#region ComputeFloatingipAssociateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_floatingip_associate_v2#region ComputeFloatingipAssociateV2#region}.
 
 ---
 

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface SwrOrganizationPermissionsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}
   */
   readonly auth: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}
   */
   readonly userId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}
   */
   readonly username: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
   */
   readonly timeouts?: SwrOrganizationPermissionsV2Timeouts;
 }
 export interface SwrOrganizationPermissionsV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2#default SwrOrganizationPermissionsV2#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2#default SwrOrganizationPermissionsV2#default}
   */
   readonly default?: string;
 }
 
-export function swrOrganizationPermissionsV2TimeoutsToTerraform(struct?: SwrOrganizationPermissionsV2TimeoutsOutputReference | SwrOrganizationPermissionsV2Timeouts | cdktf.IResolvable): any {
+export function swrOrganizationPermissionsV2TimeoutsToTerraform(struct?: SwrOrganizationPermissionsV2Timeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -63,7 +63,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): SwrOrganizationPermissionsV2Timeouts | cdktf.IResolvable | undefined {
@@ -114,7 +114,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}
 */
 export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
 
@@ -128,7 +128,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

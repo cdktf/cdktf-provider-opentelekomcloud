@@ -1,6 +1,6 @@
 # `opentelekomcloud_compute_bms_tags_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_bms_tags_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_bms_tags_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2).
 
 # `computeBmsTagsV2` Submodule <a name="`computeBmsTagsV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeBmsTagsV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_bms_tags_v
 
 ### ComputeBmsTagsV2 <a name="ComputeBmsTagsV2" id="@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2 opentelekomcloud_compute_bms_tags_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.Initializer"></a>
 
@@ -373,7 +373,7 @@ ComputeBmsTagsV2.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -477,10 +477,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -663,7 +663,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new ComputeBmsTagsV2Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -682,16 +682,16 @@ new ComputeBmsTagsV2Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#server_id ComputeBmsTagsV2#server_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.tags">Tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#tags ComputeBmsTagsV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#id ComputeBmsTagsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#region ComputeBmsTagsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#server_id ComputeBmsTagsV2#server_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.tags">Tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#tags ComputeBmsTagsV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#id ComputeBmsTagsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#region ComputeBmsTagsV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Timeouts">ComputeBmsTagsV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -709,10 +709,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -774,7 +774,7 @@ public string ServerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#server_id ComputeBmsTagsV2#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#server_id ComputeBmsTagsV2#server_id}.
 
 ---
 
@@ -786,7 +786,7 @@ public string[] Tags { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#tags ComputeBmsTagsV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#tags ComputeBmsTagsV2#tags}.
 
 ---
 
@@ -798,7 +798,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#id ComputeBmsTagsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#id ComputeBmsTagsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#region ComputeBmsTagsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#region ComputeBmsTagsV2#region}.
 
 ---
 
@@ -827,7 +827,7 @@ public ComputeBmsTagsV2Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#timeouts ComputeBmsTagsV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#timeouts ComputeBmsTagsV2#timeouts}
 
 ---
 
@@ -848,8 +848,8 @@ new ComputeBmsTagsV2Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#create ComputeBmsTagsV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#delete ComputeBmsTagsV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#create ComputeBmsTagsV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeBmsTagsV2.ComputeBmsTagsV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#delete ComputeBmsTagsV2#delete}. |
 
 ---
 
@@ -861,7 +861,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#create ComputeBmsTagsV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#create ComputeBmsTagsV2#create}.
 
 ---
 
@@ -873,7 +873,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_tags_v2#delete ComputeBmsTagsV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/compute_bms_tags_v2#delete ComputeBmsTagsV2#delete}.
 
 ---
 

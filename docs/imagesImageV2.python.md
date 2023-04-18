@@ -1,6 +1,6 @@
 # `opentelekomcloud_images_image_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_images_image_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_images_image_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2).
 
 # `imagesImageV2` Submodule <a name="`imagesImageV2` Submodule" id="@cdktf/provider-opentelekomcloud.imagesImageV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_images_image_v2`](
 
 ### ImagesImageV2 <a name="ImagesImageV2" id="@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2 opentelekomcloud_images_image_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2 opentelekomcloud_images_image_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ imagesImageV2.ImagesImageV2(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -47,26 +47,26 @@ imagesImageV2.ImagesImageV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.containerFormat">container_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#container_format ImagesImageV2#container_format}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.diskFormat">disk_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#disk_format ImagesImageV2#disk_format}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#name ImagesImageV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#id ImagesImageV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.imageCachePath">image_cache_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.imageSourceUrl">image_source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_source_url ImagesImageV2#image_source_url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.localFilePath">local_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#local_file_path ImagesImageV2#local_file_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.minDiskGb">min_disk_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.minRamMb">min_ram_mb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#protected ImagesImageV2#protected}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#region ImagesImageV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#tags ImagesImageV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.containerFormat">container_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#container_format ImagesImageV2#container_format}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.diskFormat">disk_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#disk_format ImagesImageV2#disk_format}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#name ImagesImageV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#id ImagesImageV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.imageCachePath">image_cache_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.imageSourceUrl">image_source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_source_url ImagesImageV2#image_source_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.localFilePath">local_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#local_file_path ImagesImageV2#local_file_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.minDiskGb">min_disk_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.minRamMb">min_ram_mb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#protected ImagesImageV2#protected}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#region ImagesImageV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#tags ImagesImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Timeouts">ImagesImageV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#visibility ImagesImageV2#visibility}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#visibility ImagesImageV2#visibility}. |
 
 ---
 
@@ -96,7 +96,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#container_format ImagesImageV2#container_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#container_format ImagesImageV2#container_format}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#disk_format ImagesImageV2#disk_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#disk_format ImagesImageV2#disk_format}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#name ImagesImageV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#name ImagesImageV2#name}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#id ImagesImageV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#id ImagesImageV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}.
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_source_url ImagesImageV2#image_source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_source_url ImagesImageV2#image_source_url}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#local_file_path ImagesImageV2#local_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#local_file_path ImagesImageV2#local_file_path}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}.
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#protected ImagesImageV2#protected}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#protected ImagesImageV2#protected}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#region ImagesImageV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#region ImagesImageV2#region}.
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#tags ImagesImageV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#tags ImagesImageV2#tags}.
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#timeouts ImagesImageV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#timeouts ImagesImageV2#timeouts}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#visibility ImagesImageV2#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#visibility ImagesImageV2#visibility}.
 
 ---
 
@@ -503,7 +503,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#create ImagesImageV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#create ImagesImageV2#create}.
 
 ---
 
@@ -661,7 +661,7 @@ imagesImageV2.ImagesImageV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -792,10 +792,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1248,7 +1248,7 @@ from cdktf_cdktf_provider_opentelekomcloud import images_image_v2
 
 imagesImageV2.ImagesImageV2Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1276,26 +1276,26 @@ imagesImageV2.ImagesImageV2Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.containerFormat">container_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#container_format ImagesImageV2#container_format}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.diskFormat">disk_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#disk_format ImagesImageV2#disk_format}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#name ImagesImageV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#id ImagesImageV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.imageCachePath">image_cache_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.imageSourceUrl">image_source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_source_url ImagesImageV2#image_source_url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.localFilePath">local_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#local_file_path ImagesImageV2#local_file_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.minDiskGb">min_disk_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.minRamMb">min_ram_mb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#protected ImagesImageV2#protected}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#region ImagesImageV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#tags ImagesImageV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.containerFormat">container_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#container_format ImagesImageV2#container_format}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.diskFormat">disk_format</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#disk_format ImagesImageV2#disk_format}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#name ImagesImageV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#id ImagesImageV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.imageCachePath">image_cache_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.imageSourceUrl">image_source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_source_url ImagesImageV2#image_source_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.localFilePath">local_file_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#local_file_path ImagesImageV2#local_file_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.minDiskGb">min_disk_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.minRamMb">min_ram_mb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.protected">protected</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#protected ImagesImageV2#protected}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#region ImagesImageV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.tags">tags</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#tags ImagesImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Timeouts">ImagesImageV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.visibility">visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#visibility ImagesImageV2#visibility}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.visibility">visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#visibility ImagesImageV2#visibility}. |
 
 ---
 
@@ -1312,10 +1312,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1377,7 +1377,7 @@ container_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#container_format ImagesImageV2#container_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#container_format ImagesImageV2#container_format}.
 
 ---
 
@@ -1389,7 +1389,7 @@ disk_format: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#disk_format ImagesImageV2#disk_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#disk_format ImagesImageV2#disk_format}.
 
 ---
 
@@ -1401,7 +1401,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#name ImagesImageV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#name ImagesImageV2#name}.
 
 ---
 
@@ -1413,7 +1413,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#id ImagesImageV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#id ImagesImageV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1428,7 +1428,7 @@ image_cache_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_cache_path ImagesImageV2#image_cache_path}.
 
 ---
 
@@ -1440,7 +1440,7 @@ image_source_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#image_source_url ImagesImageV2#image_source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#image_source_url ImagesImageV2#image_source_url}.
 
 ---
 
@@ -1452,7 +1452,7 @@ local_file_path: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#local_file_path ImagesImageV2#local_file_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#local_file_path ImagesImageV2#local_file_path}.
 
 ---
 
@@ -1464,7 +1464,7 @@ min_disk_gb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_disk_gb ImagesImageV2#min_disk_gb}.
 
 ---
 
@@ -1476,7 +1476,7 @@ min_ram_mb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#min_ram_mb ImagesImageV2#min_ram_mb}.
 
 ---
 
@@ -1488,7 +1488,7 @@ protected: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#protected ImagesImageV2#protected}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#protected ImagesImageV2#protected}.
 
 ---
 
@@ -1500,7 +1500,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#region ImagesImageV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#region ImagesImageV2#region}.
 
 ---
 
@@ -1512,7 +1512,7 @@ tags: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#tags ImagesImageV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#tags ImagesImageV2#tags}.
 
 ---
 
@@ -1526,7 +1526,7 @@ timeouts: ImagesImageV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#timeouts ImagesImageV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#timeouts ImagesImageV2#timeouts}
 
 ---
 
@@ -1538,7 +1538,7 @@ visibility: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#visibility ImagesImageV2#visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#visibility ImagesImageV2#visibility}.
 
 ---
 
@@ -1558,7 +1558,7 @@ imagesImageV2.ImagesImageV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#create ImagesImageV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imagesImageV2.ImagesImageV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#create ImagesImageV2#create}. |
 
 ---
 
@@ -1570,7 +1570,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_v2#create ImagesImageV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/images_image_v2#create ImagesImageV2#create}.
 
 ---
 

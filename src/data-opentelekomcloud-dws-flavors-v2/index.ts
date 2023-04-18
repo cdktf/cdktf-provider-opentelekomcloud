@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,26 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDwsFlavorsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}
   */
   readonly memory?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}
   */
   readonly vcpus?: number;
 }
@@ -122,7 +122,7 @@ export class DataOpentelekomcloudDwsFlavorsV2FlavorsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}
 */
 export class DataOpentelekomcloudDwsFlavorsV2 extends cdktf.TerraformDataSource {
 
@@ -136,7 +136,7 @@ export class DataOpentelekomcloudDwsFlavorsV2 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dws_flavors_v2 opentelekomcloud_dws_flavors_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dws_flavors_v2 opentelekomcloud_dws_flavors_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

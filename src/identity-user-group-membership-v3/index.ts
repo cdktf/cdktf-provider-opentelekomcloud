@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityUserGroupMembershipV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}
   */
   readonly groups: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}
   */
   readonly user: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}
 */
 export class IdentityUserGroupMembershipV3 extends cdktf.TerraformResource {
 
@@ -39,7 +39,7 @@ export class IdentityUserGroupMembershipV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

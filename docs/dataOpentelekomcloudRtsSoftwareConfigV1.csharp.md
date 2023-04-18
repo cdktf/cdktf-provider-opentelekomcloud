@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_rts_software_config_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_software_config_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_software_config_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1).
 
 # `dataOpentelekomcloudRtsSoftwareConfigV1` Submodule <a name="`dataOpentelekomcloudRtsSoftwareConfigV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_software_
 
 ### DataOpentelekomcloudRtsSoftwareConfigV1 <a name="DataOpentelekomcloudRtsSoftwareConfigV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.Initializer"></a>
 
@@ -359,7 +359,7 @@ DataOpentelekomcloudRtsSoftwareConfigV1.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -639,7 +639,7 @@ using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new DataOpentelekomcloudRtsSoftwareConfigV1Config {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -656,15 +656,15 @@ new DataOpentelekomcloudRtsSoftwareConfigV1Config {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}. |
 
 ---
 
@@ -681,10 +681,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -746,7 +746,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -761,7 +761,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}.
 
 ---
 
@@ -773,7 +773,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}.
 
 ---
 

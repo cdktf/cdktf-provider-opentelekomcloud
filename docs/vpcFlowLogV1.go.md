@@ -1,6 +1,6 @@
 # `opentelekomcloud_vpc_flow_log_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_flow_log_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_flow_log_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1).
 
 # `vpcFlowLogV1` Submodule <a name="`vpcFlowLogV1` Submodule" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_flow_log_v1`](
 
 ### VpcFlowLogV1 <a name="VpcFlowLogV1" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1 opentelekomcloud_vpc_flow_log_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 vpcflowlogv1.NewVpcFlowLogV1(scope Construct, id *string, config VpcFlowLogV1Config) VpcFlowLogV1
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 vpcflowlogv1.VpcFlowLogV1_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 vpcflowlogv1.VpcFlowLogV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ vpcflowlogv1.VpcFlowLogV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 vpcflowlogv1.VpcFlowLogV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ vpcflowlogv1.VpcFlowLogV1_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -510,10 +510,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -812,11 +812,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 &vpcflowlogv1.VpcFlowLogV1Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -832,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 	Id: *string,
 	Name: *string,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.vpcFlowLogV1.VpcFlowLogV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts,
 }
 ```
 
@@ -841,22 +841,22 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#log_group_id VpcFlowLogV1#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.logTopicId">LogTopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#log_topic_id VpcFlowLogV1#log_topic_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#resource_id VpcFlowLogV1#resource_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#resource_type VpcFlowLogV1#resource_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.trafficType">TrafficType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#traffic_type VpcFlowLogV1#traffic_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.adminState">AdminState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#admin_state VpcFlowLogV1#admin_state}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#description VpcFlowLogV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#id VpcFlowLogV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#name VpcFlowLogV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#status VpcFlowLogV1#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#log_group_id VpcFlowLogV1#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.logTopicId">LogTopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#log_topic_id VpcFlowLogV1#log_topic_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#resource_id VpcFlowLogV1#resource_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#resource_type VpcFlowLogV1#resource_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.trafficType">TrafficType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#traffic_type VpcFlowLogV1#traffic_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.adminState">AdminState</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#admin_state VpcFlowLogV1#admin_state}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#description VpcFlowLogV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#id VpcFlowLogV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#name VpcFlowLogV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#status VpcFlowLogV1#status}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts">VpcFlowLogV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -874,10 +874,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -939,7 +939,7 @@ LogGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#log_group_id VpcFlowLogV1#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#log_group_id VpcFlowLogV1#log_group_id}.
 
 ---
 
@@ -951,7 +951,7 @@ LogTopicId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#log_topic_id VpcFlowLogV1#log_topic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#log_topic_id VpcFlowLogV1#log_topic_id}.
 
 ---
 
@@ -963,7 +963,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#resource_id VpcFlowLogV1#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#resource_id VpcFlowLogV1#resource_id}.
 
 ---
 
@@ -975,7 +975,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#resource_type VpcFlowLogV1#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#resource_type VpcFlowLogV1#resource_type}.
 
 ---
 
@@ -987,7 +987,7 @@ TrafficType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#traffic_type VpcFlowLogV1#traffic_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#traffic_type VpcFlowLogV1#traffic_type}.
 
 ---
 
@@ -999,7 +999,7 @@ AdminState interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#admin_state VpcFlowLogV1#admin_state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#admin_state VpcFlowLogV1#admin_state}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#description VpcFlowLogV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#description VpcFlowLogV1#description}.
 
 ---
 
@@ -1023,7 +1023,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#id VpcFlowLogV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#id VpcFlowLogV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1038,7 +1038,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#name VpcFlowLogV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#name VpcFlowLogV1#name}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#status VpcFlowLogV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#status VpcFlowLogV1#status}.
 
 ---
 
@@ -1064,7 +1064,7 @@ Timeouts VpcFlowLogV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#timeouts VpcFlowLogV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#timeouts VpcFlowLogV1#timeouts}
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 &vpcflowlogv1.VpcFlowLogV1Timeouts {
 	Create: *string,
@@ -1085,8 +1085,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#create VpcFlowLogV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#delete VpcFlowLogV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#create VpcFlowLogV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#delete VpcFlowLogV1#delete}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#create VpcFlowLogV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#create VpcFlowLogV1#create}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_flow_log_v1#delete VpcFlowLogV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_flow_log_v1#delete VpcFlowLogV1#delete}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcFlowLogV1.VpcFlowLogV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcflowlogv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcflowlogv1"
 
 vpcflowlogv1.NewVpcFlowLogV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcFlowLogV1TimeoutsOutputReference
 ```

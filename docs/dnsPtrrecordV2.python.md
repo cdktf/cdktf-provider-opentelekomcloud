@@ -1,6 +1,6 @@
 # `opentelekomcloud_dns_ptrrecord_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_ptrrecord_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_ptrrecord_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2).
 
 # `dnsPtrrecordV2` Submodule <a name="`dnsPtrrecordV2` Submodule" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_ptrrecord_v2`]
 
 ### DnsPtrrecordV2 <a name="DnsPtrrecordV2" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2 opentelekomcloud_dns_ptrrecord_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer"></a>
 
@@ -19,7 +19,7 @@ dnsPtrrecordV2.DnsPtrrecordV2(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -40,19 +40,19 @@ dnsPtrrecordV2.DnsPtrrecordV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.floatingipId">floatingip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#name DnsPtrrecordV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#description DnsPtrrecordV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#id DnsPtrrecordV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.floatingipId">floatingip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#name DnsPtrrecordV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#description DnsPtrrecordV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#id DnsPtrrecordV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}. |
 
 ---
 
@@ -82,7 +82,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#name DnsPtrrecordV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#name DnsPtrrecordV2#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#description DnsPtrrecordV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#description DnsPtrrecordV2#description}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#id DnsPtrrecordV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#id DnsPtrrecordV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#timeouts DnsPtrrecordV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#timeouts DnsPtrrecordV2#timeouts}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}.
 
 ---
 
@@ -429,7 +429,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#create DnsPtrrecordV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#create DnsPtrrecordV2#create}.
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}.
 
 ---
 
@@ -445,7 +445,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#update DnsPtrrecordV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#update DnsPtrrecordV2#update}.
 
 ---
 
@@ -567,7 +567,7 @@ dnsPtrrecordV2.DnsPtrrecordV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -676,10 +676,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -912,7 +912,7 @@ from cdktf_cdktf_provider_opentelekomcloud import dns_ptrrecord_v2
 
 dnsPtrrecordV2.DnsPtrrecordV2Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -933,19 +933,19 @@ dnsPtrrecordV2.DnsPtrrecordV2Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.floatingipId">floatingip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#name DnsPtrrecordV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#description DnsPtrrecordV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#id DnsPtrrecordV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.floatingipId">floatingip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#name DnsPtrrecordV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#description DnsPtrrecordV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#id DnsPtrrecordV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}. |
 
 ---
 
@@ -962,10 +962,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1027,7 +1027,7 @@ floatingip_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#floatingip_id DnsPtrrecordV2#floatingip_id}.
 
 ---
 
@@ -1039,7 +1039,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#name DnsPtrrecordV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#name DnsPtrrecordV2#name}.
 
 ---
 
@@ -1051,7 +1051,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#description DnsPtrrecordV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#description DnsPtrrecordV2#description}.
 
 ---
 
@@ -1063,7 +1063,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#id DnsPtrrecordV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#id DnsPtrrecordV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1078,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#tags DnsPtrrecordV2#tags}.
 
 ---
 
@@ -1092,7 +1092,7 @@ timeouts: DnsPtrrecordV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#timeouts DnsPtrrecordV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#timeouts DnsPtrrecordV2#timeouts}
 
 ---
 
@@ -1104,7 +1104,7 @@ ttl: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#ttl DnsPtrrecordV2#ttl}.
 
 ---
 
@@ -1126,9 +1126,9 @@ dnsPtrrecordV2.DnsPtrrecordV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#create DnsPtrrecordV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#update DnsPtrrecordV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#create DnsPtrrecordV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#update DnsPtrrecordV2#update}. |
 
 ---
 
@@ -1140,7 +1140,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#create DnsPtrrecordV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#create DnsPtrrecordV2#create}.
 
 ---
 
@@ -1152,7 +1152,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#delete DnsPtrrecordV2#delete}.
 
 ---
 
@@ -1164,7 +1164,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/dns_ptrrecord_v2#update DnsPtrrecordV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/dns_ptrrecord_v2#update DnsPtrrecordV2#update}.
 
 ---
 

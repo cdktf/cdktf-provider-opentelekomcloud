@@ -1,6 +1,6 @@
 # `opentelekomcloud_vpc_peering_connection_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connection_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connection_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2).
 
 # `vpcPeeringConnectionV2` Submodule <a name="`vpcPeeringConnectionV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connec
 
 ### VpcPeeringConnectionV2 <a name="VpcPeeringConnectionV2" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 vpcpeeringconnectionv2.NewVpcPeeringConnectionV2(scope Construct, id *string, config VpcPeeringConnectionV2Config) VpcPeeringConnectionV2
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 vpcpeeringconnectionv2.VpcPeeringConnectionV2_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 vpcpeeringconnectionv2.VpcPeeringConnectionV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ vpcpeeringconnectionv2.VpcPeeringConnectionV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 vpcpeeringconnectionv2.VpcPeeringConnectionV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ vpcpeeringconnectionv2.VpcPeeringConnectionV2_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -489,10 +489,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -721,11 +721,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 &vpcpeeringconnectionv2.VpcPeeringConnectionV2Config {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -737,7 +737,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 	Id: *string,
 	PeerTenantId: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts,
 }
 ```
 
@@ -746,18 +746,18 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerVpcId">PeerVpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerTenantId">PeerTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerVpcId">PeerVpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerTenantId">PeerTenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts">VpcPeeringConnectionV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -775,10 +775,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -840,7 +840,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}.
 
 ---
 
@@ -852,7 +852,7 @@ PeerVpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}.
 
 ---
 
@@ -864,7 +864,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}.
 
 ---
 
@@ -876,7 +876,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ PeerTenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}.
 
 ---
 
@@ -903,7 +903,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}.
 
 ---
 
@@ -917,7 +917,7 @@ Timeouts VpcPeeringConnectionV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 &vpcpeeringconnectionv2.VpcPeeringConnectionV2Timeouts {
 	Create: *string,
@@ -938,8 +938,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}. |
 
 ---
 
@@ -951,7 +951,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}.
 
 ---
 
@@ -963,7 +963,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}.
 
 ---
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/vpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcpeeringconnectionv2"
 
 vpcpeeringconnectionv2.NewVpcPeeringConnectionV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcPeeringConnectionV2TimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_dms_maintainwindow_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dms_maintainwindow_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dms_maintainwindow_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1).
 
 # `dataOpentelekomcloudDmsMaintainwindowV1` Submodule <a name="`dataOpentelekomcloudDmsMaintainwindowV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dms_maintainw
 
 ### DataOpentelekomcloudDmsMaintainwindowV1 <a name="DataOpentelekomcloudDmsMaintainwindowV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1 opentelekomcloud_dms_maintainwindow_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer"></a>
 
@@ -373,7 +373,7 @@ dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -648,17 +648,17 @@ const dataOpentelekomcloudDmsMaintainwindowV1Config: dataOpentelekomcloudDmsMain
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.begin">begin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.default">default</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.seq">seq</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.begin">begin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.default">default</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.end">end</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.seq">seq</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}. |
 
 ---
 
@@ -675,10 +675,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -740,7 +740,7 @@ public readonly begin: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}.
 
 ---
 
@@ -752,7 +752,7 @@ public readonly default: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
 
 ---
 
@@ -764,7 +764,7 @@ public readonly end: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}.
 
 ---
 
@@ -776,7 +776,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -791,7 +791,7 @@ public readonly seq: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}.
 
 ---
 

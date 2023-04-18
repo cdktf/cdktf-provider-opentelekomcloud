@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_vpc_subnet_ids_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_subnet_ids_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_subnet_ids_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1).
 
 # `dataOpentelekomcloudVpcSubnetIdsV1` Submodule <a name="`dataOpentelekomcloudVpcSubnetIdsV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_subnet_id
 
 ### DataOpentelekomcloudVpcSubnetIdsV1 <a name="DataOpentelekomcloudVpcSubnetIdsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,15 +36,15 @@ dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
 
 ---
 
@@ -468,7 +468,7 @@ dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.is_terrafo
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -558,10 +558,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -704,7 +704,7 @@ from cdktf_cdktf_provider_opentelekomcloud import data_opentelekomcloud_vpc_subn
 
 dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -721,15 +721,15 @@ dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.vpcId">vpc_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
 
 ---
 
@@ -746,10 +746,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -811,7 +811,7 @@ vpc_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
 
 ---
 
@@ -823,7 +823,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -838,7 +838,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/opentelekomcloud/d/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
 
 ---
 
