@@ -1,3 +1,7 @@
+# `opentelekomcloud_dws_cluster_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dws_cluster_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/dws_cluster_v1).
+
 # `dwsClusterV1` Submodule <a name="`dwsClusterV1` Submodule" id="@cdktf/provider-opentelekomcloud.dwsClusterV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

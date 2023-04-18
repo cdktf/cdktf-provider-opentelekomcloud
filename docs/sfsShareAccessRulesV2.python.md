@@ -1,3 +1,7 @@
+# `opentelekomcloud_sfs_share_access_rules_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_sfs_share_access_rules_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/sfs_share_access_rules_v2).
+
 # `sfsShareAccessRulesV2` Submodule <a name="`sfsShareAccessRulesV2` Submodule" id="@cdktf/provider-opentelekomcloud.sfsShareAccessRulesV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

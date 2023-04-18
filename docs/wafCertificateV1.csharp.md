@@ -1,3 +1,7 @@
+# `opentelekomcloud_waf_certificate_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_certificate_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_certificate_v1).
+
 # `wafCertificateV1` Submodule <a name="`wafCertificateV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafCertificateV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

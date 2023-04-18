@@ -1,3 +1,7 @@
+# `opentelekomcloud_networking_floatingip_associate_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_floatingip_associate_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_floatingip_associate_v2).
+
 # `networkingFloatingipAssociateV2` Submodule <a name="`networkingFloatingipAssociateV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

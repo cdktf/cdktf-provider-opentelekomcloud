@@ -1,3 +1,7 @@
+# `opentelekomcloud_mrs_cluster_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_mrs_cluster_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/mrs_cluster_v1).
+
 # `mrsClusterV1` Submodule <a name="`mrsClusterV1` Submodule" id="@cdktf/provider-opentelekomcloud.mrsClusterV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

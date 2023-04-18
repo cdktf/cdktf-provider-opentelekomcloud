@@ -1,3 +1,7 @@
+# `opentelekomcloud_vpnaas_service_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_service_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_service_v2).
+
 # `vpnaasServiceV2` Submodule <a name="`vpnaasServiceV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpnaasServiceV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `opentelekomcloud_vbs_backup_policy_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vbs_backup_policy_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vbs_backup_policy_v2).
+
 # `vbsBackupPolicyV2` Submodule <a name="`vbsBackupPolicyV2` Submodule" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

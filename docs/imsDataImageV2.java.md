@@ -1,3 +1,7 @@
+# `opentelekomcloud_ims_data_image_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_ims_data_image_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/ims_data_image_v2).
+
 # `imsDataImageV2` Submodule <a name="`imsDataImageV2` Submodule" id="@cdktf/provider-opentelekomcloud.imsDataImageV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

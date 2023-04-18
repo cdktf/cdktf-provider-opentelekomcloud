@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_networking_secgroup_v2`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_secgroup_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_secgroup_v2).
+
 # `dataOpentelekomcloudNetworkingSecgroupV2` Submodule <a name="`dataOpentelekomcloudNetworkingSecgroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

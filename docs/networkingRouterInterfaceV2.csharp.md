@@ -1,3 +1,7 @@
+# `opentelekomcloud_networking_router_interface_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_router_interface_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/networking_router_interface_v2).
+
 # `networkingRouterInterfaceV2` Submodule <a name="`networkingRouterInterfaceV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

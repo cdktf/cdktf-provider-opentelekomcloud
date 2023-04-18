@@ -1,3 +1,7 @@
+# `opentelekomcloud_vpnaas_endpoint_group_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_endpoint_group_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpnaas_endpoint_group_v2).
+
 # `vpnaasEndpointGroupV2` Submodule <a name="`vpnaasEndpointGroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

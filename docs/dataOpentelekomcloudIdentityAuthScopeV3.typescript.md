@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_identity_auth_scope_v3`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_auth_scope_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/d/identity_auth_scope_v3).
+
 # `dataOpentelekomcloudIdentityAuthScopeV3` Submodule <a name="`dataOpentelekomcloudIdentityAuthScopeV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

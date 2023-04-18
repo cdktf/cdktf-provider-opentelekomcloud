@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_networking_port_v2`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_port_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/d/networking_port_v2).
+
 # `dataOpentelekomcloudNetworkingPortV2` Submodule <a name="`dataOpentelekomcloudNetworkingPortV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingPortV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

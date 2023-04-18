@@ -1,3 +1,7 @@
+# `opentelekomcloud_lb_loadbalancer_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_loadbalancer_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_loadbalancer_v2).
+
 # `lbLoadbalancerV2` Submodule <a name="`lbLoadbalancerV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

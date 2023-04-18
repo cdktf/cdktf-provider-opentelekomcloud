@@ -1,3 +1,7 @@
+# `opentelekomcloud_images_image_access_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_images_image_access_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/images_image_access_v2).
+
 # `imagesImageAccessV2` Submodule <a name="`imagesImageAccessV2` Submodule" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

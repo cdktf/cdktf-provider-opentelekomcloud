@@ -1,3 +1,7 @@
+# `opentelekomcloud_lb_monitor_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_monitor_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/lb_monitor_v3).
+
 # `lbMonitorV3` Submodule <a name="`lbMonitorV3` Submodule" id="@cdktf/provider-opentelekomcloud.lbMonitorV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_dms_maintainwindow_v1`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dms_maintainwindow_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/d/dms_maintainwindow_v1).
+
 # `dataOpentelekomcloudDmsMaintainwindowV1` Submodule <a name="`dataOpentelekomcloudDmsMaintainwindowV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

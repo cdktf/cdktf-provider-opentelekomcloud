@@ -1,3 +1,7 @@
+# `opentelekomcloud_compute_bms_server_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_bms_server_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/compute_bms_server_v2).
+
 # `computeBmsServerV2` Submodule <a name="`computeBmsServerV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeBmsServerV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

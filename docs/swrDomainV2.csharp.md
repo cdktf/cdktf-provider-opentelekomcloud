@@ -1,3 +1,7 @@
+# `opentelekomcloud_swr_domain_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_swr_domain_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/swr_domain_v2).
+
 # `swrDomainV2` Submodule <a name="`swrDomainV2` Submodule" id="@cdktf/provider-opentelekomcloud.swrDomainV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `opentelekomcloud_vpc_peering_connection_accepter_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connection_accepter_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/vpc_peering_connection_accepter_v2).
+
 # `vpcPeeringConnectionAccepterV2` Submodule <a name="`vpcPeeringConnectionAccepterV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `opentelekomcloud_smn_topic_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/smn_topic_v2).
+
 # `smnTopicV2` Submodule <a name="`smnTopicV2` Submodule" id="@cdktf/provider-opentelekomcloud.smnTopicV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

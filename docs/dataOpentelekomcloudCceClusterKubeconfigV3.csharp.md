@@ -1,3 +1,7 @@
+# `data_opentelekomcloud_cce_cluster_kubeconfig_v3`
+
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_cluster_kubeconfig_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/d/cce_cluster_kubeconfig_v3).
+
 # `dataOpentelekomcloudCceClusterKubeconfigV3` Submodule <a name="`dataOpentelekomcloudCceClusterKubeconfigV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

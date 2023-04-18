@@ -1,3 +1,7 @@
+# `opentelekomcloud_fw_policy_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_policy_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/fw_policy_v2).
+
 # `fwPolicyV2` Submodule <a name="`fwPolicyV2` Submodule" id="@cdktf/provider-opentelekomcloud.fwPolicyV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

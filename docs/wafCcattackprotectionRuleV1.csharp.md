@@ -1,3 +1,7 @@
+# `opentelekomcloud_waf_ccattackprotection_rule_v1`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_ccattackprotection_rule_v1`](https://www.terraform.io/docs/providers/opentelekomcloud/r/waf_ccattackprotection_rule_v1).
+
 # `wafCcattackprotectionRuleV1` Submodule <a name="`wafCcattackprotectionRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafCcattackprotectionRuleV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

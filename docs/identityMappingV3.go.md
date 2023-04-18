@@ -1,3 +1,7 @@
+# `opentelekomcloud_identity_mapping_v3`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_mapping_v3`](https://www.terraform.io/docs/providers/opentelekomcloud/r/identity_mapping_v3).
+
 # `identityMappingV3` Submodule <a name="`identityMappingV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityMappingV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

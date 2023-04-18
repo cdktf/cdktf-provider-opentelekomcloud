@@ -1,3 +1,7 @@
+# `opentelekomcloud_nat_dnat_rule_v2`
+
+Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_dnat_rule_v2`](https://www.terraform.io/docs/providers/opentelekomcloud/r/nat_dnat_rule_v2).
+
 # `natDnatRuleV2` Submodule <a name="`natDnatRuleV2` Submodule" id="@cdktf/provider-opentelekomcloud.natDnatRuleV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
