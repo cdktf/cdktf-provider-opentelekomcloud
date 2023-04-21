@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudKmsDataKeyV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}
   */
   readonly datakeyLength: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}
   */
   readonly encryptionContext?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}
   */
   readonly keyId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1}
 */
 export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource {
 
@@ -43,7 +43,7 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_kms_data_key_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.1',
+        providerVersion: '1.34.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

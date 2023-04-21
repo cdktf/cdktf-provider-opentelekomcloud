@@ -1,6 +1,6 @@
 # `opentelekomcloud_vpc_peering_connection_accepter_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connection_accepter_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connection_accepter_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2).
 
 # `vpcPeeringConnectionAccepterV2` Submodule <a name="`vpcPeeringConnectionAccepterV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_peering_connec
 
 ### VpcPeeringConnectionAccepterV2 <a name="VpcPeeringConnectionAccepterV2" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2 opentelekomcloud_vpc_peering_connection_accepter_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer"></a>
 
@@ -44,10 +44,10 @@ vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.accept">accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.accept">accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#timeouts VpcPeeringConnectionAccepterV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#timeouts VpcPeeringConnectionAccepterV2#timeouts}
 
 ---
 
@@ -407,7 +407,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}.
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}.
 
 ---
 
@@ -901,10 +901,10 @@ vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.accept">accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.vpcPeeringConnectionId">vpc_peering_connection_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.accept">accept</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -987,7 +987,7 @@ vpc_peering_connection_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#vpc_peering_connection_id VpcPeeringConnectionAccepterV2#vpc_peering_connection_id}.
 
 ---
 
@@ -999,7 +999,7 @@ accept: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#accept VpcPeeringConnectionAccepterV2#accept}.
 
 ---
 
@@ -1011,7 +1011,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#id VpcPeeringConnectionAccepterV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1026,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#region VpcPeeringConnectionAccepterV2#region}.
 
 ---
 
@@ -1040,7 +1040,7 @@ timeouts: VpcPeeringConnectionAccepterV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#timeouts VpcPeeringConnectionAccepterV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#timeouts VpcPeeringConnectionAccepterV2#timeouts}
 
 ---
 
@@ -1061,8 +1061,8 @@ vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#create VpcPeeringConnectionAccepterV2#create}.
 
 ---
 
@@ -1086,7 +1086,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/vpc_peering_connection_accepter_v2#delete VpcPeeringConnectionAccepterV2#delete}.
 
 ---
 

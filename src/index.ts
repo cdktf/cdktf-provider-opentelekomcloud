@@ -102,6 +102,7 @@ export * as networkingVipV2 from './networking-vip-v2';
 export * as obsBucket from './obs-bucket';
 export * as obsBucketObject from './obs-bucket-object';
 export * as obsBucketPolicy from './obs-bucket-policy';
+export * as rdsBackupV3 from './rds-backup-v3';
 export * as rdsInstanceV1 from './rds-instance-v1';
 export * as rdsInstanceV3 from './rds-instance-v3';
 export * as rdsParametergroupV3 from './rds-parametergroup-v3';
@@ -204,6 +205,7 @@ export * as dataOpentelekomcloudLbFlavorsV3 from './data-opentelekomcloud-lb-fla
 export * as dataOpentelekomcloudLbListenerV3 from './data-opentelekomcloud-lb-listener-v3';
 export * as dataOpentelekomcloudLbLoadbalancerV3 from './data-opentelekomcloud-lb-loadbalancer-v3';
 export * as dataOpentelekomcloudLbMemberIdsV2 from './data-opentelekomcloud-lb-member-ids-v2';
+export * as dataOpentelekomcloudNatGatewayV2 from './data-opentelekomcloud-nat-gateway-v2';
 export * as dataOpentelekomcloudNetworkingNetworkV2 from './data-opentelekomcloud-networking-network-v2';
 export * as dataOpentelekomcloudNetworkingPortV2 from './data-opentelekomcloud-networking-port-v2';
 export * as dataOpentelekomcloudNetworkingSecgroupRuleIdsV2 from './data-opentelekomcloud-networking-secgroup-rule-ids-v2';

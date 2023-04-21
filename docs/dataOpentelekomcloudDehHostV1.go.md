@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_deh_host_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_deh_host_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_deh_host_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1).
 
 # `dataOpentelekomcloudDehHostV1` Submodule <a name="`dataOpentelekomcloudDehHostV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_deh_host_v1`]
 
 ### DataOpentelekomcloudDehHostV1 <a name="DataOpentelekomcloudDehHostV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1 opentelekomcloud_deh_host_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1 opentelekomcloud_deh_host_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.NewDataOpentelekomcloudDehHostV1(scope Construct, id *string, config DataOpentelekomcloudDehHostV1Config) DataOpentelekomcloudDehHostV1
 ```
@@ -305,7 +305,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 &dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1AvailableInstanceCapacities {
 
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 &dataopentelekomclouddehhostv1.DataOpentelekomcloudDehHostV1Config {
 	Connection: interface{},
@@ -823,11 +823,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#id DataOpentelekomcloudDehHostV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#name DataOpentelekomcloudDehHostV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#region DataOpentelekomcloudDehHostV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#status DataOpentelekomcloudDehHostV1#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#id DataOpentelekomcloudDehHostV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#name DataOpentelekomcloudDehHostV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#region DataOpentelekomcloudDehHostV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#status DataOpentelekomcloudDehHostV1#status}. |
 
 ---
 
@@ -909,7 +909,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#availability_zone DataOpentelekomcloudDehHostV1#availability_zone}.
 
 ---
 
@@ -921,7 +921,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#id DataOpentelekomcloudDehHostV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#id DataOpentelekomcloudDehHostV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#name DataOpentelekomcloudDehHostV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#name DataOpentelekomcloudDehHostV1#name}.
 
 ---
 
@@ -948,7 +948,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#region DataOpentelekomcloudDehHostV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#region DataOpentelekomcloudDehHostV1#region}.
 
 ---
 
@@ -960,7 +960,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.1/docs/data-sources/deh_host_v1#status DataOpentelekomcloudDehHostV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/deh_host_v1#status DataOpentelekomcloudDehHostV1#status}.
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.NewDataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesList
 ```
@@ -1103,7 +1103,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDehHostV1.DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomclouddehhostv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddehhostv1"
 
 dataopentelekomclouddehhostv1.NewDataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudDehHostV1AvailableInstanceCapacitiesOutputReference
 ```
