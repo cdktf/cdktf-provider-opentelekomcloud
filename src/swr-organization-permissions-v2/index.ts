@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface SwrOrganizationPermissionsV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#auth SwrOrganizationPermissionsV2#auth}
   */
   readonly auth: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#id SwrOrganizationPermissionsV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#organization SwrOrganizationPermissionsV2#organization}
   */
   readonly organization: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#user_id SwrOrganizationPermissionsV2#user_id}
   */
   readonly userId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#username SwrOrganizationPermissionsV2#username}
   */
   readonly username: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
   */
   readonly timeouts?: SwrOrganizationPermissionsV2Timeouts;
 }
 export interface SwrOrganizationPermissionsV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2#default SwrOrganizationPermissionsV2#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2#default SwrOrganizationPermissionsV2#default}
   */
   readonly default?: string;
 }
@@ -114,7 +114,7 @@ export class SwrOrganizationPermissionsV2TimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2}
 */
 export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
 
@@ -128,7 +128,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/swr_organization_permissions_v2 opentelekomcloud_swr_organization_permissions_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -139,7 +139,7 @@ export class SwrOrganizationPermissionsV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_swr_organization_permissions_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.2',
+        providerVersion: '1.34.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
