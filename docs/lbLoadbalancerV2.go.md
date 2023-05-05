@@ -1,6 +1,6 @@
 # `opentelekomcloud_lb_loadbalancer_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_loadbalancer_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_loadbalancer_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2).
 
 # `lbLoadbalancerV2` Submodule <a name="`lbLoadbalancerV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_loadbalancer_v2
 
 ### LbLoadbalancerV2 <a name="LbLoadbalancerV2" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2 opentelekomcloud_lb_loadbalancer_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.NewLbLoadbalancerV2(scope Construct, id *string, config LbLoadbalancerV2Config) LbLoadbalancerV2
 ```
@@ -353,7 +353,7 @@ func ResetVipAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ lbloadbalancerv2.LbLoadbalancerV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -851,7 +851,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 &lbloadbalancerv2.LbLoadbalancerV2Config {
 	Connection: interface{},
@@ -870,7 +870,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 	Region: *string,
 	Tags: *map[string]*string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.lbLoadbalancerV2.LbLoadbalancerV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts,
 	VipAddress: *string,
 }
 ```
@@ -886,17 +886,17 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.vipSubnetId">VipSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#vip_subnet_id LbLoadbalancerV2#vip_subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#admin_state_up LbLoadbalancerV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#description LbLoadbalancerV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#id LbLoadbalancerV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.loadbalancerProvider">LoadbalancerProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#loadbalancer_provider LbLoadbalancerV2#loadbalancer_provider}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#name LbLoadbalancerV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#region LbLoadbalancerV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#tenant_id LbLoadbalancerV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.vipSubnetId">VipSubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#vip_subnet_id LbLoadbalancerV2#vip_subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#admin_state_up LbLoadbalancerV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#description LbLoadbalancerV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#id LbLoadbalancerV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.loadbalancerProvider">LoadbalancerProvider</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#loadbalancer_provider LbLoadbalancerV2#loadbalancer_provider}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#name LbLoadbalancerV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#region LbLoadbalancerV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#tenant_id LbLoadbalancerV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts">LbLoadbalancerV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.vipAddress">VipAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#vip_address LbLoadbalancerV2#vip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.property.vipAddress">VipAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#vip_address LbLoadbalancerV2#vip_address}. |
 
 ---
 
@@ -978,7 +978,7 @@ VipSubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#vip_subnet_id LbLoadbalancerV2#vip_subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#vip_subnet_id LbLoadbalancerV2#vip_subnet_id}.
 
 ---
 
@@ -990,7 +990,7 @@ AdminStateUp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#admin_state_up LbLoadbalancerV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#admin_state_up LbLoadbalancerV2#admin_state_up}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#description LbLoadbalancerV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#description LbLoadbalancerV2#description}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#id LbLoadbalancerV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#id LbLoadbalancerV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1029,7 @@ LoadbalancerProvider *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#loadbalancer_provider LbLoadbalancerV2#loadbalancer_provider}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#loadbalancer_provider LbLoadbalancerV2#loadbalancer_provider}.
 
 ---
 
@@ -1041,7 +1041,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#name LbLoadbalancerV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#name LbLoadbalancerV2#name}.
 
 ---
 
@@ -1053,7 +1053,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#region LbLoadbalancerV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#region LbLoadbalancerV2#region}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#tags LbLoadbalancerV2#tags}.
 
 ---
 
@@ -1077,7 +1077,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#tenant_id LbLoadbalancerV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#tenant_id LbLoadbalancerV2#tenant_id}.
 
 ---
 
@@ -1091,7 +1091,7 @@ Timeouts LbLoadbalancerV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#timeouts LbLoadbalancerV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#timeouts LbLoadbalancerV2#timeouts}
 
 ---
 
@@ -1103,7 +1103,7 @@ VipAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#vip_address LbLoadbalancerV2#vip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#vip_address LbLoadbalancerV2#vip_address}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 &lbloadbalancerv2.LbLoadbalancerV2Timeouts {
 	Create: *string,
@@ -1125,9 +1125,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#create LbLoadbalancerV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#delete LbLoadbalancerV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#update LbLoadbalancerV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#create LbLoadbalancerV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#delete LbLoadbalancerV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#update LbLoadbalancerV2#update}. |
 
 ---
 
@@ -1139,7 +1139,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#create LbLoadbalancerV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#create LbLoadbalancerV2#create}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#delete LbLoadbalancerV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#delete LbLoadbalancerV2#delete}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/lb_loadbalancer_v2#update LbLoadbalancerV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/lb_loadbalancer_v2#update LbLoadbalancerV2#update}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.NewLbLoadbalancerV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbLoadbalancerV2TimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `opentelekomcloud_fw_firewall_group_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_firewall_group_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_firewall_group_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2).
 
 # `fwFirewallGroupV2` Submodule <a name="`fwFirewallGroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.fwFirewallGroupV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_firewall_group_
 
 ### FwFirewallGroupV2 <a name="FwFirewallGroupV2" id="@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2 opentelekomcloud_fw_firewall_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer"></a>
 
@@ -50,17 +50,17 @@ fwFirewallGroupV2.FwFirewallGroupV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.adminStateUp">admin_state_up</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.egressPolicyId">egress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.ingressPolicyId">ingress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.ports">ports</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.adminStateUp">admin_state_up</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.egressPolicyId">egress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.ingressPolicyId">ingress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.ports">ports</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts">FwFirewallGroupV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}. |
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}.
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}.
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
 
 ---
 
@@ -213,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}.
 
 ---
 
@@ -475,7 +475,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}.
 
 ---
 
@@ -483,7 +483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}.
 
 ---
 
@@ -491,7 +491,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}.
 
 ---
 
@@ -1102,17 +1102,17 @@ fwFirewallGroupV2.FwFirewallGroupV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.adminStateUp">admin_state_up</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.egressPolicyId">egress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.ingressPolicyId">ingress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.ports">ports</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.adminStateUp">admin_state_up</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.egressPolicyId">egress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.ingressPolicyId">ingress_policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.ports">ports</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts">FwFirewallGroupV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}. |
 
 ---
 
@@ -1194,7 +1194,7 @@ admin_state_up: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#admin_state_up FwFirewallGroupV2#admin_state_up}.
 
 ---
 
@@ -1206,7 +1206,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#description FwFirewallGroupV2#description}.
 
 ---
 
@@ -1218,7 +1218,7 @@ egress_policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#egress_policy_id FwFirewallGroupV2#egress_policy_id}.
 
 ---
 
@@ -1230,7 +1230,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#id FwFirewallGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1245,7 +1245,7 @@ ingress_policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ingress_policy_id FwFirewallGroupV2#ingress_policy_id}.
 
 ---
 
@@ -1257,7 +1257,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#name FwFirewallGroupV2#name}.
 
 ---
 
@@ -1269,7 +1269,7 @@ ports: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#ports FwFirewallGroupV2#ports}.
 
 ---
 
@@ -1281,7 +1281,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#region FwFirewallGroupV2#region}.
 
 ---
 
@@ -1293,7 +1293,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#tenant_id FwFirewallGroupV2#tenant_id}.
 
 ---
 
@@ -1307,7 +1307,7 @@ timeouts: FwFirewallGroupV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
 
 ---
 
@@ -1319,7 +1319,7 @@ value_specs: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#value_specs FwFirewallGroupV2#value_specs}.
 
 ---
 
@@ -1341,9 +1341,9 @@ fwFirewallGroupV2.FwFirewallGroupV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwFirewallGroupV2.FwFirewallGroupV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}. |
 
 ---
 
@@ -1355,7 +1355,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#create FwFirewallGroupV2#create}.
 
 ---
 
@@ -1367,7 +1367,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#delete FwFirewallGroupV2#delete}.
 
 ---
 
@@ -1379,7 +1379,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/fw_firewall_group_v2#update FwFirewallGroupV2#update}.
 
 ---
 

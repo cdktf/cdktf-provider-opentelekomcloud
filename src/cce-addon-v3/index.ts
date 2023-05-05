@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,40 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface CceAddonV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#cluster_id CceAddonV3#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#cluster_id CceAddonV3#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#id CceAddonV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#id CceAddonV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#template_name CceAddonV3#template_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#template_name CceAddonV3#template_name}
   */
   readonly templateName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#template_version CceAddonV3#template_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#template_version CceAddonV3#template_version}
   */
   readonly templateVersion: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#timeouts CceAddonV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#timeouts CceAddonV3#timeouts}
   */
   readonly timeouts?: CceAddonV3Timeouts;
   /**
   * values block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#values CceAddonV3#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#values CceAddonV3#values}
   */
   readonly values: CceAddonV3Values;
 }
 export interface CceAddonV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#delete CceAddonV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#create CceAddonV3#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#delete CceAddonV3#delete}
   */
   readonly delete?: string;
 }
@@ -52,6 +56,7 @@ export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3Timeouts | cdkt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
 }
@@ -74,6 +79,10 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
     if (this._delete !== undefined) {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
@@ -85,6 +94,7 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._create = undefined;
       this._delete = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -94,8 +104,25 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._create = value.create;
       this._delete = value.delete;
     }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
   }
 
   // delete - computed: false, optional: true, required: false
@@ -116,13 +143,17 @@ export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface CceAddonV3Values {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#basic CceAddonV3#basic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#basic CceAddonV3#basic}
   */
   readonly basic: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3#custom CceAddonV3#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#custom CceAddonV3#custom}
   */
   readonly custom: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3#flavor CceAddonV3#flavor}
+  */
+  readonly flavor?: string;
 }
 
 export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputReference | CceAddonV3Values): any {
@@ -133,6 +164,7 @@ export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputRefer
   return {
     basic: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.basic),
     custom: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.custom),
+    flavor: cdktf.stringToTerraform(struct!.flavor),
   }
 }
 
@@ -158,6 +190,10 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.custom = this._custom;
     }
+    if (this._flavor !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.flavor = this._flavor;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -166,11 +202,13 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
       this.isEmptyObject = false;
       this._basic = undefined;
       this._custom = undefined;
+      this._flavor = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._basic = value.basic;
       this._custom = value.custom;
+      this._flavor = value.flavor;
     }
   }
 
@@ -199,10 +237,26 @@ export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
   public get customInput() {
     return this._custom;
   }
+
+  // flavor - computed: false, optional: true, required: false
+  private _flavor?: string; 
+  public get flavor() {
+    return this.getStringAttribute('flavor');
+  }
+  public set flavor(value: string) {
+    this._flavor = value;
+  }
+  public resetFlavor() {
+    this._flavor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get flavorInput() {
+    return this._flavor;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3}
 */
 export class CceAddonV3 extends cdktf.TerraformResource {
 
@@ -216,7 +270,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cce_addon_v3 opentelekomcloud_cce_addon_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +281,7 @@ export class CceAddonV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_addon_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.2',
+        providerVersion: '1.34.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

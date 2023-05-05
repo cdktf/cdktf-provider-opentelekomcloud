@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_lb_certificate_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_certificate_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_certificate_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3).
 
 # `dataOpentelekomcloudLbCertificateV3` Submodule <a name="`dataOpentelekomcloudLbCertificateV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_certificat
 
 ### DataOpentelekomcloudLbCertificateV3 <a name="DataOpentelekomcloudLbCertificateV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3 opentelekomcloud_lb_certificate_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbcertificatev3"
 
 dataopentelekomcloudlbcertificatev3.NewDataOpentelekomcloudLbCertificateV3(scope Construct, id *string, config DataOpentelekomcloudLbCertificateV3Config) DataOpentelekomcloudLbCertificateV3
 ```
@@ -298,7 +298,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbcertificatev3"
 
 dataopentelekomcloudlbcertificatev3.DataOpentelekomcloudLbCertificateV3_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbcertificatev3"
 
 dataopentelekomcloudlbcertificatev3.DataOpentelekomcloudLbCertificateV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ dataopentelekomcloudlbcertificatev3.DataOpentelekomcloudLbCertificateV3_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbcertificatev3"
 
 dataopentelekomcloudlbcertificatev3.DataOpentelekomcloudLbCertificateV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbcertificatev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbcertificatev3"
 
 &dataopentelekomcloudlbcertificatev3.DataOpentelekomcloudLbCertificateV3Config {
 	Connection: interface{},
@@ -703,10 +703,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#domain DataOpentelekomcloudLbCertificateV3#domain}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#id DataOpentelekomcloudLbCertificateV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#name DataOpentelekomcloudLbCertificateV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#type DataOpentelekomcloudLbCertificateV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.domain">Domain</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#domain DataOpentelekomcloudLbCertificateV3#domain}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#id DataOpentelekomcloudLbCertificateV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#name DataOpentelekomcloudLbCertificateV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbCertificateV3.DataOpentelekomcloudLbCertificateV3Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#type DataOpentelekomcloudLbCertificateV3#type}. |
 
 ---
 
@@ -788,7 +788,7 @@ Domain *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#domain DataOpentelekomcloudLbCertificateV3#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#domain DataOpentelekomcloudLbCertificateV3#domain}.
 
 ---
 
@@ -800,7 +800,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#id DataOpentelekomcloudLbCertificateV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#id DataOpentelekomcloudLbCertificateV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -815,7 +815,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#name DataOpentelekomcloudLbCertificateV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#name DataOpentelekomcloudLbCertificateV3#name}.
 
 ---
 
@@ -827,7 +827,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/data-sources/lb_certificate_v3#type DataOpentelekomcloudLbCertificateV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/lb_certificate_v3#type DataOpentelekomcloudLbCertificateV3#type}.
 
 ---
 

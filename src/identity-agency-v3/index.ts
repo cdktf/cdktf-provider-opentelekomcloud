@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityAgencyV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#delegated_domain_name IdentityAgencyV3#delegated_domain_name}
   */
   readonly delegatedDomainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#description IdentityAgencyV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#description IdentityAgencyV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#domain_roles IdentityAgencyV3#domain_roles}
   */
   readonly domainRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#id IdentityAgencyV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#id IdentityAgencyV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#name IdentityAgencyV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#name IdentityAgencyV3#name}
   */
   readonly name: string;
   /**
   * project_role block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#project_role IdentityAgencyV3#project_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#project_role IdentityAgencyV3#project_role}
   */
   readonly projectRole?: IdentityAgencyV3ProjectRole[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#timeouts IdentityAgencyV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#timeouts IdentityAgencyV3#timeouts}
   */
   readonly timeouts?: IdentityAgencyV3Timeouts;
 }
 export interface IdentityAgencyV3ProjectRole {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#project IdentityAgencyV3#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#project IdentityAgencyV3#project}
   */
   readonly project: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#roles IdentityAgencyV3#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#roles IdentityAgencyV3#roles}
   */
   readonly roles: string[];
 }
@@ -163,15 +163,15 @@ export class IdentityAgencyV3ProjectRoleList extends cdktf.ComplexList {
 }
 export interface IdentityAgencyV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#create IdentityAgencyV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#create IdentityAgencyV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#delete IdentityAgencyV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#delete IdentityAgencyV3#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3#update IdentityAgencyV3#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3#update IdentityAgencyV3#update}
   */
   readonly update?: string;
 }
@@ -292,7 +292,7 @@ export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3}
 */
 export class IdentityAgencyV3 extends cdktf.TerraformResource {
 
@@ -306,7 +306,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.2/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/identity_agency_v3 opentelekomcloud_identity_agency_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -317,7 +317,7 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_agency_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.2',
+        providerVersion: '1.34.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
