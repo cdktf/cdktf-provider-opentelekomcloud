@@ -1,6 +1,6 @@
 # `opentelekomcloud_compute_servergroup_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_servergroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_servergroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2).
 
 # `computeServergroupV2` Submodule <a name="`computeServergroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeServergroupV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_servergrou
 
 ### ComputeServergroupV2 <a name="ComputeServergroupV2" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeservergroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computeservergroupv2"
 
 computeservergroupv2.NewComputeServergroupV2(scope Construct, id *string, config ComputeServergroupV2Config) ComputeServergroupV2
 ```
@@ -291,7 +291,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeservergroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computeservergroupv2"
 
 computeservergroupv2.ComputeServergroupV2_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeservergroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computeservergroupv2"
 
 computeservergroupv2.ComputeServergroupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ computeservergroupv2.ComputeServergroupV2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeservergroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computeservergroupv2"
 
 computeservergroupv2.ComputeServergroupV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/computeservergroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/computeservergroupv2"
 
 &computeservergroupv2.ComputeServergroupV2Config {
 	Connection: interface{},
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.policies">Policies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.policies">Policies</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}. |
 
 ---
 
@@ -772,7 +772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}.
 
 ---
 
@@ -784,7 +784,7 @@ Policies *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}.
 
 ---
 
@@ -823,7 +823,7 @@ ValueSpecs *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `opentelekomcloud_cts_event_notification_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_event_notification_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_event_notification_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3).
 
 # `ctsEventNotificationV3` Submodule <a name="`ctsEventNotificationV3` Submodule" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_event_notifica
 
 ### CtsEventNotificationV3 <a name="CtsEventNotificationV3" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3(scope Construct, id *string, config CtsEventNotificationV3Config) CtsEventNotificationV3
 ```
@@ -331,7 +331,7 @@ func ResetTopicId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ ctseventnotificationv3.CtsEventNotificationV3_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3Config {
 	Connection: interface{},
@@ -805,13 +805,13 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.notificationName">NotificationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.operationType">OperationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.notificationName">NotificationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.operationType">OperationType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.notifyUserList">NotifyUserList</a></code> | <code>interface{}</code> | notify_user_list block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.operations">Operations</a></code> | <code>interface{}</code> | operations block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.topicId">TopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.property.topicId">TopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}. |
 
 ---
 
@@ -893,7 +893,7 @@ NotificationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}.
 
 ---
 
@@ -905,7 +905,7 @@ OperationType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}.
 
 ---
 
@@ -917,7 +917,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -934,7 +934,7 @@ NotifyUserList interface{}
 
 notify_user_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
 
 ---
 
@@ -948,7 +948,7 @@ Operations interface{}
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
 
 ---
 
@@ -960,7 +960,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}.
 
 ---
 
@@ -972,7 +972,7 @@ TopicId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}.
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3NotifyUserList {
 	UserGroup: *string,
@@ -993,8 +993,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList.property.userList">UserList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList.property.userGroup">UserGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserList.property.userList">UserList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}. |
 
 ---
 
@@ -1006,7 +1006,7 @@ UserGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}.
 
 ---
 
@@ -1018,7 +1018,7 @@ UserList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3Operations {
 	ResourceType: *string,
@@ -1040,9 +1040,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.serviceType">ServiceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.traceNames">TraceNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.serviceType">ServiceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.property.traceNames">TraceNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}. |
 
 ---
 
@@ -1054,7 +1054,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}.
 
 ---
 
@@ -1066,7 +1066,7 @@ ServiceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}.
 
 ---
 
@@ -1078,7 +1078,7 @@ TraceNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}.
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3NotifyUserListList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3NotifyUserListList
 ```
@@ -1232,7 +1232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3NotifyUserListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CtsEventNotificationV3NotifyUserListOutputReference
 ```
@@ -1543,7 +1543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3OperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3OperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3OperationsList
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3OperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3OperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CtsEventNotificationV3OperationsOutputReference
 ```

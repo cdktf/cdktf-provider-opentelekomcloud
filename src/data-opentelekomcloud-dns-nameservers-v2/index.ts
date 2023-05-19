@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,30 +8,30 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudDnsNameserversV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2#id DataOpentelekomcloudDnsNameserversV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2#id DataOpentelekomcloudDnsNameserversV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2#zone_id DataOpentelekomcloudDnsNameserversV2#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2#zone_id DataOpentelekomcloudDnsNameserversV2#zone_id}
   */
   readonly zoneId?: string;
   /**
   * nameservers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2#nameservers DataOpentelekomcloudDnsNameserversV2#nameservers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2#nameservers DataOpentelekomcloudDnsNameserversV2#nameservers}
   */
   readonly nameservers?: DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable;
 }
 export interface DataOpentelekomcloudDnsNameserversV2Nameservers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2#hostname DataOpentelekomcloudDnsNameserversV2#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2#hostname DataOpentelekomcloudDnsNameserversV2#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2#priority DataOpentelekomcloudDnsNameserversV2#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2#priority DataOpentelekomcloudDnsNameserversV2#priority}
   */
   readonly priority?: number;
 }
@@ -151,7 +151,7 @@ export class DataOpentelekomcloudDnsNameserversV2NameserversList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2}
 */
 export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSource {
 
@@ -165,7 +165,7 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/data-sources/dns_nameservers_v2 opentelekomcloud_dns_nameservers_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
       terraformResourceType: 'opentelekomcloud_dns_nameservers_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.3',
+        providerVersion: '1.34.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
