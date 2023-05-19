@@ -1,6 +1,6 @@
 # `opentelekomcloud_waf_webtamperprotection_rule_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_webtamperprotection_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_webtamperprotection_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1).
 
 # `wafWebtamperprotectionRuleV1` Submodule <a name="`wafWebtamperprotectionRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_webtamperprote
 
 ### WafWebtamperprotectionRuleV1 <a name="WafWebtamperprotectionRuleV1" id="@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1 opentelekomcloud_waf_webtamperprotection_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer"></a>
 
@@ -44,10 +44,10 @@ wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.hostname">hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.hostname">hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts">WafWebtamperprotectionRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
 
 ---
 
@@ -405,7 +405,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}.
 
 ---
 
@@ -413,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}.
 
 ---
 
@@ -832,10 +832,10 @@ wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.hostname">hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.hostname">hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts">WafWebtamperprotectionRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -918,7 +918,7 @@ hostname: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#hostname WafWebtamperprotectionRuleV1#hostname}.
 
 ---
 
@@ -930,7 +930,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#policy_id WafWebtamperprotectionRuleV1#policy_id}.
 
 ---
 
@@ -942,7 +942,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#url WafWebtamperprotectionRuleV1#url}.
 
 ---
 
@@ -954,7 +954,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#id WafWebtamperprotectionRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -971,7 +971,7 @@ timeouts: WafWebtamperprotectionRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
 
 ---
 
@@ -992,8 +992,8 @@ wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafWebtamperprotectionRuleV1.WafWebtamperprotectionRuleV1Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}. |
 
 ---
 
@@ -1005,7 +1005,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#create WafWebtamperprotectionRuleV1#create}.
 
 ---
 
@@ -1017,7 +1017,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.3/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/waf_webtamperprotection_rule_v1#delete WafWebtamperprotectionRuleV1#delete}.
 
 ---
 
