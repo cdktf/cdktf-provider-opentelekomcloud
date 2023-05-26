@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.NewCssSnapshotConfigurationV1(scope Construct, id *string, config CssSnapshotConfigurationV1Config) CssSnapshotConfigurationV1
 ```
@@ -344,7 +344,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.CssSnapshotConfigurationV1_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.CssSnapshotConfigurationV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ csssnapshotconfigurationv1.CssSnapshotConfigurationV1_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.CssSnapshotConfigurationV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 &csssnapshotconfigurationv1.CssSnapshotConfigurationV1Config {
 	Connection: interface{},
@@ -744,10 +744,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	Automatic: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Configuration,
-	CreationPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1CreationPolicy,
+	Configuration: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Configuration,
+	CreationPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1CreationPolicy,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Timeouts,
 }
 ```
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Configuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 &csssnapshotconfigurationv1.CssSnapshotConfigurationV1Configuration {
 	Agency: *string,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1CreationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 &csssnapshotconfigurationv1.CssSnapshotConfigurationV1CreationPolicy {
 	Enable: interface{},
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 &csssnapshotconfigurationv1.CssSnapshotConfigurationV1Timeouts {
 	Create: *string,
@@ -1123,7 +1123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1ConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.NewCssSnapshotConfigurationV1ConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssSnapshotConfigurationV1ConfigurationOutputReference
 ```
@@ -1445,7 +1445,7 @@ func InternalValue() CssSnapshotConfigurationV1Configuration
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1CreationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.NewCssSnapshotConfigurationV1CreationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssSnapshotConfigurationV1CreationPolicyOutputReference
 ```
@@ -1811,7 +1811,7 @@ func InternalValue() CssSnapshotConfigurationV1CreationPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssSnapshotConfigurationV1.CssSnapshotConfigurationV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/csssnapshotconfigurationv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csssnapshotconfigurationv1"
 
 csssnapshotconfigurationv1.NewCssSnapshotConfigurationV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssSnapshotConfigurationV1TimeoutsOutputReference
 ```
