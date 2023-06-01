@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface LbIpgroupV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#id LbIpgroupV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#id LbIpgroupV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#name LbIpgroupV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#name LbIpgroupV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#project_id LbIpgroupV3#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#project_id LbIpgroupV3#project_id}
   */
   readonly projectId?: string;
   /**
   * ip_list block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#ip_list LbIpgroupV3#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#ip_list LbIpgroupV3#ip_list}
   */
-  readonly ipList: LbIpgroupV3IpList[] | cdktf.IResolvable;
+  readonly ipList: LbIpgroupV3IpListStruct[] | cdktf.IResolvable;
 }
-export interface LbIpgroupV3IpList {
+export interface LbIpgroupV3IpListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3#ip LbIpgroupV3#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3#ip LbIpgroupV3#ip}
   */
   readonly ip: string;
 }
 
-export function lbIpgroupV3IpListToTerraform(struct?: LbIpgroupV3IpList | cdktf.IResolvable): any {
+export function lbIpgroupV3IpListStructToTerraform(struct?: LbIpgroupV3IpListStruct | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -60,7 +55,7 @@ export function lbIpgroupV3IpListToTerraform(struct?: LbIpgroupV3IpList | cdktf.
   }
 }
 
-export class LbIpgroupV3IpListOutputReference extends cdktf.ComplexObject {
+export class LbIpgroupV3IpListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -74,7 +69,7 @@ export class LbIpgroupV3IpListOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LbIpgroupV3IpList | cdktf.IResolvable | undefined {
+  public get internalValue(): LbIpgroupV3IpListStruct | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -91,7 +86,7 @@ export class LbIpgroupV3IpListOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbIpgroupV3IpList | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbIpgroupV3IpListStruct | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -140,8 +135,8 @@ export class LbIpgroupV3IpListOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LbIpgroupV3IpListList extends cdktf.ComplexList {
-  public internalValue? : LbIpgroupV3IpList[] | cdktf.IResolvable
+export class LbIpgroupV3IpListStructList extends cdktf.ComplexList {
+  public internalValue? : LbIpgroupV3IpListStruct[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -155,13 +150,13 @@ export class LbIpgroupV3IpListList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): LbIpgroupV3IpListOutputReference {
-    return new LbIpgroupV3IpListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): LbIpgroupV3IpListStructOutputReference {
+    return new LbIpgroupV3IpListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}
 */
 export class LbIpgroupV3 extends cdktf.TerraformResource {
 
@@ -175,7 +170,7 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_ipgroup_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.4',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -288,11 +283,11 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
   }
 
   // ip_list - computed: false, optional: false, required: true
-  private _ipList = new LbIpgroupV3IpListList(this, "ip_list", true);
+  private _ipList = new LbIpgroupV3IpListStructList(this, "ip_list", true);
   public get ipList() {
     return this._ipList;
   }
-  public putIpList(value: LbIpgroupV3IpList[] | cdktf.IResolvable) {
+  public putIpList(value: LbIpgroupV3IpListStruct[] | cdktf.IResolvable) {
     this._ipList.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -310,7 +305,7 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
-      ip_list: cdktf.listMapper(lbIpgroupV3IpListToTerraform, true)(this._ipList.internalValue),
+      ip_list: cdktf.listMapper(lbIpgroupV3IpListStructToTerraform, true)(this._ipList.internalValue),
     };
   }
 }

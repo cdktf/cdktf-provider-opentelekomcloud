@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,184 +8,184 @@ import * as cdktf from 'cdktf';
 
 export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#available_zone_id MrsClusterV1#available_zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#available_zone_id MrsClusterV1#available_zone_id}
   */
   readonly availableZoneId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#billing_type MrsClusterV1#billing_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#billing_type MrsClusterV1#billing_type}
   */
   readonly billingType: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#cluster_admin_secret MrsClusterV1#cluster_admin_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_admin_secret MrsClusterV1#cluster_admin_secret}
   */
   readonly clusterAdminSecret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#cluster_name MrsClusterV1#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_name MrsClusterV1#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#cluster_type MrsClusterV1#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_type MrsClusterV1#cluster_type}
   */
   readonly clusterType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}
   */
   readonly clusterVersion: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#core_data_volume_count MrsClusterV1#core_data_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_data_volume_count MrsClusterV1#core_data_volume_count}
   */
   readonly coreDataVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#core_data_volume_size MrsClusterV1#core_data_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_data_volume_size MrsClusterV1#core_data_volume_size}
   */
   readonly coreDataVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#core_data_volume_type MrsClusterV1#core_data_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_data_volume_type MrsClusterV1#core_data_volume_type}
   */
   readonly coreDataVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#core_node_num MrsClusterV1#core_node_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_num MrsClusterV1#core_node_num}
   */
   readonly coreNodeNum: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#core_node_size MrsClusterV1#core_node_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_size MrsClusterV1#core_node_size}
   */
   readonly coreNodeSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#id MrsClusterV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#id MrsClusterV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#log_collection MrsClusterV1#log_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#log_collection MrsClusterV1#log_collection}
   */
   readonly logCollection?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#master_data_volume_count MrsClusterV1#master_data_volume_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_data_volume_count MrsClusterV1#master_data_volume_count}
   */
   readonly masterDataVolumeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#master_data_volume_size MrsClusterV1#master_data_volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_data_volume_size MrsClusterV1#master_data_volume_size}
   */
   readonly masterDataVolumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#master_data_volume_type MrsClusterV1#master_data_volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_data_volume_type MrsClusterV1#master_data_volume_type}
   */
   readonly masterDataVolumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#master_node_num MrsClusterV1#master_node_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_node_num MrsClusterV1#master_node_num}
   */
   readonly masterNodeNum: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#master_node_size MrsClusterV1#master_node_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_node_size MrsClusterV1#master_node_size}
   */
   readonly masterNodeSize: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#node_public_cert_name MrsClusterV1#node_public_cert_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#node_public_cert_name MrsClusterV1#node_public_cert_name}
   */
   readonly nodePublicCertName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#region MrsClusterV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#region MrsClusterV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#safe_mode MrsClusterV1#safe_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#safe_mode MrsClusterV1#safe_mode}
   */
   readonly safeMode: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#subnet_id MrsClusterV1#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#subnet_id MrsClusterV1#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#tags MrsClusterV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#tags MrsClusterV1#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#volume_size MrsClusterV1#volume_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#volume_size MrsClusterV1#volume_size}
   */
   readonly volumeSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#volume_type MrsClusterV1#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#volume_type MrsClusterV1#volume_type}
   */
   readonly volumeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#vpc_id MrsClusterV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#vpc_id MrsClusterV1#vpc_id}
   */
   readonly vpcId: string;
   /**
   * add_jobs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#add_jobs MrsClusterV1#add_jobs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#add_jobs MrsClusterV1#add_jobs}
   */
   readonly addJobs?: MrsClusterV1AddJobs[] | cdktf.IResolvable;
   /**
   * bootstrap_scripts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#bootstrap_scripts MrsClusterV1#bootstrap_scripts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#bootstrap_scripts MrsClusterV1#bootstrap_scripts}
   */
   readonly bootstrapScripts?: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable;
   /**
   * component_list block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#component_list MrsClusterV1#component_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#component_list MrsClusterV1#component_list}
   */
-  readonly componentList: MrsClusterV1ComponentList[] | cdktf.IResolvable;
+  readonly componentList: MrsClusterV1ComponentListStruct[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#timeouts MrsClusterV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#timeouts MrsClusterV1#timeouts}
   */
   readonly timeouts?: MrsClusterV1Timeouts;
 }
 export interface MrsClusterV1AddJobs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#arguments MrsClusterV1#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#arguments MrsClusterV1#arguments}
   */
   readonly arguments?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#file_action MrsClusterV1#file_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#file_action MrsClusterV1#file_action}
   */
   readonly fileAction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#hive_script_path MrsClusterV1#hive_script_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#hive_script_path MrsClusterV1#hive_script_path}
   */
   readonly hiveScriptPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#hql MrsClusterV1#hql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#hql MrsClusterV1#hql}
   */
   readonly hql?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#input MrsClusterV1#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#input MrsClusterV1#input}
   */
   readonly input?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#jar_path MrsClusterV1#jar_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#jar_path MrsClusterV1#jar_path}
   */
   readonly jarPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#job_log MrsClusterV1#job_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#job_log MrsClusterV1#job_log}
   */
   readonly jobLog?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#job_name MrsClusterV1#job_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#job_name MrsClusterV1#job_name}
   */
   readonly jobName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#job_type MrsClusterV1#job_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#job_type MrsClusterV1#job_type}
   */
   readonly jobType: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#output MrsClusterV1#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#output MrsClusterV1#output}
   */
   readonly output?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#shutdown_cluster MrsClusterV1#shutdown_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#shutdown_cluster MrsClusterV1#shutdown_cluster}
   */
   readonly shutdownCluster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#submit_job_once_cluster_run MrsClusterV1#submit_job_once_cluster_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#submit_job_once_cluster_run MrsClusterV1#submit_job_once_cluster_run}
   */
   readonly submitJobOnceClusterRun: boolean | cdktf.IResolvable;
 }
@@ -528,31 +523,31 @@ export class MrsClusterV1AddJobsList extends cdktf.ComplexList {
 }
 export interface MrsClusterV1BootstrapScripts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#active_master MrsClusterV1#active_master}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#active_master MrsClusterV1#active_master}
   */
   readonly activeMaster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#before_component_start MrsClusterV1#before_component_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#before_component_start MrsClusterV1#before_component_start}
   */
   readonly beforeComponentStart?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#fail_action MrsClusterV1#fail_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#fail_action MrsClusterV1#fail_action}
   */
   readonly failAction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#name MrsClusterV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#name MrsClusterV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#nodes MrsClusterV1#nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#nodes MrsClusterV1#nodes}
   */
   readonly nodes: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#parameters MrsClusterV1#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#parameters MrsClusterV1#parameters}
   */
   readonly parameters?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#uri MrsClusterV1#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#uri MrsClusterV1#uri}
   */
   readonly uri: string;
 }
@@ -773,14 +768,14 @@ export class MrsClusterV1BootstrapScriptsList extends cdktf.ComplexList {
     return new MrsClusterV1BootstrapScriptsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface MrsClusterV1ComponentList {
+export interface MrsClusterV1ComponentListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}
   */
   readonly componentName: string;
 }
 
-export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1ComponentList | cdktf.IResolvable): any {
+export function mrsClusterV1ComponentListStructToTerraform(struct?: MrsClusterV1ComponentListStruct | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -790,7 +785,7 @@ export function mrsClusterV1ComponentListToTerraform(struct?: MrsClusterV1Compon
   }
 }
 
-export class MrsClusterV1ComponentListOutputReference extends cdktf.ComplexObject {
+export class MrsClusterV1ComponentListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -804,7 +799,7 @@ export class MrsClusterV1ComponentListOutputReference extends cdktf.ComplexObjec
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MrsClusterV1ComponentList | cdktf.IResolvable | undefined {
+  public get internalValue(): MrsClusterV1ComponentListStruct | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -817,7 +812,7 @@ export class MrsClusterV1ComponentListOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MrsClusterV1ComponentList | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MrsClusterV1ComponentListStruct | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -863,8 +858,8 @@ export class MrsClusterV1ComponentListOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class MrsClusterV1ComponentListList extends cdktf.ComplexList {
-  public internalValue? : MrsClusterV1ComponentList[] | cdktf.IResolvable
+export class MrsClusterV1ComponentListStructList extends cdktf.ComplexList {
+  public internalValue? : MrsClusterV1ComponentListStruct[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -878,17 +873,17 @@ export class MrsClusterV1ComponentListList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): MrsClusterV1ComponentListOutputReference {
-    return new MrsClusterV1ComponentListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): MrsClusterV1ComponentListStructOutputReference {
+    return new MrsClusterV1ComponentListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface MrsClusterV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#create MrsClusterV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#create MrsClusterV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1#delete MrsClusterV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#delete MrsClusterV1#delete}
   */
   readonly delete?: string;
 }
@@ -986,7 +981,7 @@ export class MrsClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1}
 */
 export class MrsClusterV1 extends cdktf.TerraformResource {
 
@@ -1000,7 +995,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1 opentelekomcloud_mrs_cluster_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1011,7 +1006,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_mrs_cluster_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.4',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1601,11 +1596,11 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
   }
 
   // component_list - computed: false, optional: false, required: true
-  private _componentList = new MrsClusterV1ComponentListList(this, "component_list", true);
+  private _componentList = new MrsClusterV1ComponentListStructList(this, "component_list", true);
   public get componentList() {
     return this._componentList;
   }
-  public putComponentList(value: MrsClusterV1ComponentList[] | cdktf.IResolvable) {
+  public putComponentList(value: MrsClusterV1ComponentListStruct[] | cdktf.IResolvable) {
     this._componentList.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1663,7 +1658,7 @@ export class MrsClusterV1 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       add_jobs: cdktf.listMapper(mrsClusterV1AddJobsToTerraform, true)(this._addJobs.internalValue),
       bootstrap_scripts: cdktf.listMapper(mrsClusterV1BootstrapScriptsToTerraform, true)(this._bootstrapScripts.internalValue),
-      component_list: cdktf.listMapper(mrsClusterV1ComponentListToTerraform, true)(this._componentList.internalValue),
+      component_list: cdktf.listMapper(mrsClusterV1ComponentListStructToTerraform, true)(this._componentList.internalValue),
       timeouts: mrsClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
