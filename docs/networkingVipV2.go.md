@@ -1,6 +1,6 @@
 # `opentelekomcloud_networking_vip_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2).
 
 # `networkingVipV2` Submodule <a name="`networkingVipV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingVipV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_v2`
 
 ### NetworkingVipV2 <a name="NetworkingVipV2" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2 opentelekomcloud_networking_vip_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingvipv2"
 
 networkingvipv2.NewNetworkingVipV2(scope Construct, id *string, config NetworkingVipV2Config) NetworkingVipV2
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingvipv2"
 
 networkingvipv2.NetworkingVipV2_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingvipv2"
 
 networkingvipv2.NetworkingVipV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ networkingvipv2.NetworkingVipV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingvipv2"
 
 networkingvipv2.NetworkingVipV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/networkingvipv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingvipv2"
 
 &networkingvipv2.NetworkingVipV2Config {
 	Connection: interface{},
@@ -708,11 +708,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#network_id NetworkingVipV2#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#subnet_id NetworkingVipV2#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#id NetworkingVipV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#ip_address NetworkingVipV2#ip_address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#name NetworkingVipV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#network_id NetworkingVipV2#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#subnet_id NetworkingVipV2#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#id NetworkingVipV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.ipAddress">IpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#ip_address NetworkingVipV2#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipV2.NetworkingVipV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#name NetworkingVipV2#name}. |
 
 ---
 
@@ -794,7 +794,7 @@ NetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#network_id NetworkingVipV2#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#network_id NetworkingVipV2#network_id}.
 
 ---
 
@@ -806,7 +806,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#subnet_id NetworkingVipV2#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#subnet_id NetworkingVipV2#subnet_id}.
 
 ---
 
@@ -818,7 +818,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#id NetworkingVipV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#id NetworkingVipV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ IpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#ip_address NetworkingVipV2#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#ip_address NetworkingVipV2#ip_address}.
 
 ---
 
@@ -845,7 +845,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/networking_vip_v2#name NetworkingVipV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/networking_vip_v2#name NetworkingVipV2#name}.
 
 ---
 
