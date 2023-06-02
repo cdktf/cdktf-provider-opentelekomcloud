@@ -40,7 +40,7 @@ export interface CtsEventNotificationV3Config extends cdktf.TerraformMetaArgumen
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
   */
-  readonly notifyUserList?: CtsEventNotificationV3NotifyUserList[] | cdktf.IResolvable;
+  readonly notifyUserList?: CtsEventNotificationV3NotifyUserListStruct[] | cdktf.IResolvable;
   /**
   * operations block
   * 
@@ -48,7 +48,7 @@ export interface CtsEventNotificationV3Config extends cdktf.TerraformMetaArgumen
   */
   readonly operations?: CtsEventNotificationV3Operations[] | cdktf.IResolvable;
 }
-export interface CtsEventNotificationV3NotifyUserList {
+export interface CtsEventNotificationV3NotifyUserListStruct {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}
   */
@@ -59,7 +59,7 @@ export interface CtsEventNotificationV3NotifyUserList {
   readonly userList: string[];
 }
 
-export function ctsEventNotificationV3NotifyUserListToTerraform(struct?: CtsEventNotificationV3NotifyUserList | cdktf.IResolvable): any {
+export function ctsEventNotificationV3NotifyUserListStructToTerraform(struct?: CtsEventNotificationV3NotifyUserListStruct | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -70,7 +70,7 @@ export function ctsEventNotificationV3NotifyUserListToTerraform(struct?: CtsEven
   }
 }
 
-export class CtsEventNotificationV3NotifyUserListOutputReference extends cdktf.ComplexObject {
+export class CtsEventNotificationV3NotifyUserListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
 
@@ -84,7 +84,7 @@ export class CtsEventNotificationV3NotifyUserListOutputReference extends cdktf.C
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CtsEventNotificationV3NotifyUserList | cdktf.IResolvable | undefined {
+  public get internalValue(): CtsEventNotificationV3NotifyUserListStruct | cdktf.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -101,7 +101,7 @@ export class CtsEventNotificationV3NotifyUserListOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CtsEventNotificationV3NotifyUserList | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CtsEventNotificationV3NotifyUserListStruct | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,8 +147,8 @@ export class CtsEventNotificationV3NotifyUserListOutputReference extends cdktf.C
   }
 }
 
-export class CtsEventNotificationV3NotifyUserListList extends cdktf.ComplexList {
-  public internalValue? : CtsEventNotificationV3NotifyUserList[] | cdktf.IResolvable
+export class CtsEventNotificationV3NotifyUserListStructList extends cdktf.ComplexList {
+  public internalValue? : CtsEventNotificationV3NotifyUserListStruct[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -162,8 +162,8 @@ export class CtsEventNotificationV3NotifyUserListList extends cdktf.ComplexList 
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): CtsEventNotificationV3NotifyUserListOutputReference {
-    return new CtsEventNotificationV3NotifyUserListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): CtsEventNotificationV3NotifyUserListStructOutputReference {
+    return new CtsEventNotificationV3NotifyUserListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CtsEventNotificationV3Operations {
@@ -454,11 +454,11 @@ export class CtsEventNotificationV3 extends cdktf.TerraformResource {
   }
 
   // notify_user_list - computed: false, optional: true, required: false
-  private _notifyUserList = new CtsEventNotificationV3NotifyUserListList(this, "notify_user_list", false);
+  private _notifyUserList = new CtsEventNotificationV3NotifyUserListStructList(this, "notify_user_list", false);
   public get notifyUserList() {
     return this._notifyUserList;
   }
-  public putNotifyUserList(value: CtsEventNotificationV3NotifyUserList[] | cdktf.IResolvable) {
+  public putNotifyUserList(value: CtsEventNotificationV3NotifyUserListStruct[] | cdktf.IResolvable) {
     this._notifyUserList.internalValue = value;
   }
   public resetNotifyUserList() {
@@ -496,7 +496,7 @@ export class CtsEventNotificationV3 extends cdktf.TerraformResource {
       operation_type: cdktf.stringToTerraform(this._operationType),
       status: cdktf.stringToTerraform(this._status),
       topic_id: cdktf.stringToTerraform(this._topicId),
-      notify_user_list: cdktf.listMapper(ctsEventNotificationV3NotifyUserListToTerraform, true)(this._notifyUserList.internalValue),
+      notify_user_list: cdktf.listMapper(ctsEventNotificationV3NotifyUserListStructToTerraform, true)(this._notifyUserList.internalValue),
       operations: cdktf.listMapper(ctsEventNotificationV3OperationsToTerraform, true)(this._operations.internalValue),
     };
   }
