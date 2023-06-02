@@ -29,7 +29,7 @@ mrsClusterV1.MrsClusterV1(
   billing_type: typing.Union[int, float],
   cluster_name: str,
   cluster_version: str,
-  component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]],
+  component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]],
   core_node_num: typing.Union[int, float],
   core_node_size: str,
   master_node_num: typing.Union[int, float],
@@ -73,7 +73,7 @@ mrsClusterV1.MrsClusterV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.billingType">billing_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#billing_type MrsClusterV1#billing_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_name MrsClusterV1#cluster_name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.clusterVersion">cluster_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.componentList">component_list</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]</code> | component_list block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.componentList">component_list</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]</code> | component_list block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.coreNodeNum">core_node_num</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_num MrsClusterV1#core_node_num}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.coreNodeSize">core_node_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_size MrsClusterV1#core_node_size}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.masterNodeNum">master_node_num</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_node_num MrsClusterV1#master_node_num}. |
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `component_list`<sup>Required</sup> <a name="component_list" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.Initializer.parameter.componentList"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]
 
 component_list block.
 
@@ -698,13 +698,13 @@ def put_bootstrap_scripts(
 
 ```python
 def put_component_list(
-  value: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]]
+  value: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.putComponentList.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]
 
 ---
 
@@ -935,7 +935,7 @@ mrsClusterV1.MrsClusterV1.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.chargingStartTime">charging_start_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.clusterState">cluster_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentList">component_list</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList">MrsClusterV1ComponentListList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentList">component_list</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList">MrsClusterV1ComponentListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.coreNodeProductId">core_node_product_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.coreNodeSpecId">core_node_spec_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.createAt">create_at</a></code> | <code>str</code> | *No description.* |
@@ -967,7 +967,7 @@ mrsClusterV1.MrsClusterV1.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.clusterNameInput">cluster_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.clusterTypeInput">cluster_type_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.clusterVersionInput">cluster_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentListInput">component_list_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentListInput">component_list_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.coreDataVolumeCountInput">core_data_volume_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.coreDataVolumeSizeInput">core_data_volume_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.coreDataVolumeTypeInput">core_data_volume_type_input</a></code> | <code>str</code> | *No description.* |
@@ -1223,10 +1223,10 @@ cluster_state: str
 ##### `component_list`<sup>Required</sup> <a name="component_list" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentList"></a>
 
 ```python
-component_list: MrsClusterV1ComponentListList
+component_list: MrsClusterV1ComponentListStructList
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList">MrsClusterV1ComponentListList</a>
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList">MrsClusterV1ComponentListStructList</a>
 
 ---
 
@@ -1543,10 +1543,10 @@ cluster_version_input: str
 ##### `component_list_input`<sup>Optional</sup> <a name="component_list_input" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1.property.componentListInput"></a>
 
 ```python
-component_list_input: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]]
+component_list_input: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]
 
 ---
 
@@ -2342,14 +2342,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ---
 
-### MrsClusterV1ComponentList <a name="MrsClusterV1ComponentList" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList"></a>
+### MrsClusterV1ComponentListStruct <a name="MrsClusterV1ComponentListStruct" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_opentelekomcloud import mrs_cluster_v1
 
-mrsClusterV1.MrsClusterV1ComponentList(
+mrsClusterV1.MrsClusterV1ComponentListStruct(
   component_name: str
 )
 ```
@@ -2358,11 +2358,11 @@ mrsClusterV1.MrsClusterV1ComponentList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList.property.componentName">component_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct.property.componentName">component_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#component_name MrsClusterV1#component_name}. |
 
 ---
 
-##### `component_name`<sup>Required</sup> <a name="component_name" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList.property.componentName"></a>
+##### `component_name`<sup>Required</sup> <a name="component_name" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct.property.componentName"></a>
 
 ```python
 component_name: str
@@ -2393,7 +2393,7 @@ mrsClusterV1.MrsClusterV1Config(
   billing_type: typing.Union[int, float],
   cluster_name: str,
   cluster_version: str,
-  component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]],
+  component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]],
   core_node_num: typing.Union[int, float],
   core_node_size: str,
   master_node_num: typing.Union[int, float],
@@ -2437,7 +2437,7 @@ mrsClusterV1.MrsClusterV1Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.billingType">billing_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#billing_type MrsClusterV1#billing_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.clusterName">cluster_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_name MrsClusterV1#cluster_name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.clusterVersion">cluster_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#cluster_version MrsClusterV1#cluster_version}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.componentList">component_list</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]</code> | component_list block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.componentList">component_list</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]</code> | component_list block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.coreNodeNum">core_node_num</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_num MrsClusterV1#core_node_num}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.coreNodeSize">core_node_size</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#core_node_size MrsClusterV1#core_node_size}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.masterNodeNum">master_node_num</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/mrs_cluster_v1#master_node_num MrsClusterV1#master_node_num}. |
@@ -2587,10 +2587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `component_list`<sup>Required</sup> <a name="component_list" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1Config.property.componentList"></a>
 
 ```python
-component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]]
+component_list: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]
 
 component_list block.
 
@@ -4340,14 +4340,14 @@ internal_value: typing.Union[MrsClusterV1BootstrapScripts, IResolvable]
 ---
 
 
-### MrsClusterV1ComponentListList <a name="MrsClusterV1ComponentListList" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList"></a>
+### MrsClusterV1ComponentListStructList <a name="MrsClusterV1ComponentListStructList" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_opentelekomcloud import mrs_cluster_v1
 
-mrsClusterV1.MrsClusterV1ComponentListList(
+mrsClusterV1.MrsClusterV1ComponentListStructList(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   wraps_set: bool
@@ -4356,13 +4356,13 @@ mrsClusterV1.MrsClusterV1ComponentListList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4370,7 +4370,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4378,7 +4378,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4390,20 +4390,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.resolve"></a>
 
 ```python
 def resolve(
@@ -4413,13 +4413,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4429,15 +4429,15 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.get"></a>
+##### `get` <a name="get" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.get"></a>
 
 ```python
 def get(
   index: typing.Union[int, float]
-) -> MrsClusterV1ComponentListOutputReference
+) -> MrsClusterV1ComponentListStructOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4450,13 +4450,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4470,7 +4470,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4480,25 +4480,25 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentList]]
+internal_value: typing.Union[IResolvable, typing.List[MrsClusterV1ComponentListStruct]]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>]]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>]]
 
 ---
 
 
-### MrsClusterV1ComponentListOutputReference <a name="MrsClusterV1ComponentListOutputReference" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference"></a>
+### MrsClusterV1ComponentListStructOutputReference <a name="MrsClusterV1ComponentListStructOutputReference" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer"></a>
 
 ```python
 from cdktf_cdktf_provider_opentelekomcloud import mrs_cluster_v1
 
-mrsClusterV1.MrsClusterV1ComponentListOutputReference(
+mrsClusterV1.MrsClusterV1ComponentListStructOutputReference(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   complex_object_index: typing.Union[int, float],
@@ -4508,14 +4508,14 @@ mrsClusterV1.MrsClusterV1ComponentListOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4523,7 +4523,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4531,7 +4531,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4539,7 +4539,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4551,29 +4551,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4581,13 +4581,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4595,13 +4595,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4609,13 +4609,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4623,13 +4623,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4637,13 +4637,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4651,13 +4651,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4665,13 +4665,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4679,13 +4679,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4693,13 +4693,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4707,13 +4707,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4723,13 +4723,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4744,18 +4744,18 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentDesc">component_desc</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentId">component_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentVersion">component_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentNameInput">component_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentName">component_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentDesc">component_desc</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentId">component_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentVersion">component_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentNameInput">component_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentName">component_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>, cdktf.IResolvable]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4769,7 +4769,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4779,7 +4779,7 @@ fqn: str
 
 ---
 
-##### `component_desc`<sup>Required</sup> <a name="component_desc" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentDesc"></a>
+##### `component_desc`<sup>Required</sup> <a name="component_desc" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentDesc"></a>
 
 ```python
 component_desc: str
@@ -4789,7 +4789,7 @@ component_desc: str
 
 ---
 
-##### `component_id`<sup>Required</sup> <a name="component_id" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentId"></a>
+##### `component_id`<sup>Required</sup> <a name="component_id" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentId"></a>
 
 ```python
 component_id: str
@@ -4799,7 +4799,7 @@ component_id: str
 
 ---
 
-##### `component_version`<sup>Required</sup> <a name="component_version" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentVersion"></a>
+##### `component_version`<sup>Required</sup> <a name="component_version" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentVersion"></a>
 
 ```python
 component_version: str
@@ -4809,7 +4809,7 @@ component_version: str
 
 ---
 
-##### `component_name_input`<sup>Optional</sup> <a name="component_name_input" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentNameInput"></a>
+##### `component_name_input`<sup>Optional</sup> <a name="component_name_input" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentNameInput"></a>
 
 ```python
 component_name_input: str
@@ -4819,7 +4819,7 @@ component_name_input: str
 
 ---
 
-##### `component_name`<sup>Required</sup> <a name="component_name" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.componentName"></a>
+##### `component_name`<sup>Required</sup> <a name="component_name" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.componentName"></a>
 
 ```python
 component_name: str
@@ -4829,13 +4829,13 @@ component_name: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStructOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[MrsClusterV1ComponentList, IResolvable]
+internal_value: typing.Union[MrsClusterV1ComponentListStruct, IResolvable]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentList">MrsClusterV1ComponentList</a>, cdktf.IResolvable]
+- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.mrsClusterV1.MrsClusterV1ComponentListStruct">MrsClusterV1ComponentListStruct</a>, cdktf.IResolvable]
 
 ---
 
