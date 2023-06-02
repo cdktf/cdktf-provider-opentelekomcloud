@@ -1,6 +1,6 @@
 # `opentelekomcloud_vpnaas_service_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_service_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_service_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2).
 
 # `vpnaasServiceV2` Submodule <a name="`vpnaasServiceV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpnaasServiceV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_service_v2`
 
 ### VpnaasServiceV2 <a name="VpnaasServiceV2" id="@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2 opentelekomcloud_vpnaas_service_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer"></a>
 
@@ -52,16 +52,16 @@ VpnaasServiceV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.adminStateUp">adminStateUp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.adminStateUp">adminStateUp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts">VpnaasServiceV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}. |
 
 ---
 
@@ -129,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -164,7 +164,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}.
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}.
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#timeouts VpnaasServiceV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#timeouts VpnaasServiceV2#timeouts}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}.
 
 ---
 
@@ -1043,16 +1043,16 @@ VpnaasServiceV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.adminStateUp">adminStateUp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.adminStateUp">adminStateUp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts">VpnaasServiceV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}. |
 
 ---
 
@@ -1134,7 +1134,7 @@ public java.lang.String getRouterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#router_id VpnaasServiceV2#router_id}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public java.lang.Object getAdminStateUp();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#admin_state_up VpnaasServiceV2#admin_state_up}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#description VpnaasServiceV2#description}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#id VpnaasServiceV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1185,7 +1185,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#name VpnaasServiceV2#name}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#region VpnaasServiceV2#region}.
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.String getSubnetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#subnet_id VpnaasServiceV2#subnet_id}.
 
 ---
 
@@ -1221,7 +1221,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#tenant_id VpnaasServiceV2#tenant_id}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public VpnaasServiceV2Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#timeouts VpnaasServiceV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#timeouts VpnaasServiceV2#timeouts}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValueSpecs();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#value_specs VpnaasServiceV2#value_specs}.
 
 ---
 
@@ -1269,9 +1269,9 @@ VpnaasServiceV2Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#create VpnaasServiceV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#delete VpnaasServiceV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#update VpnaasServiceV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#create VpnaasServiceV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#delete VpnaasServiceV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasServiceV2.VpnaasServiceV2Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#update VpnaasServiceV2#update}. |
 
 ---
 
@@ -1283,7 +1283,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#create VpnaasServiceV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#create VpnaasServiceV2#create}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#delete VpnaasServiceV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#delete VpnaasServiceV2#delete}.
 
 ---
 
@@ -1307,7 +1307,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/vpnaas_service_v2#update VpnaasServiceV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/vpnaas_service_v2#update VpnaasServiceV2#update}.
 
 ---
 

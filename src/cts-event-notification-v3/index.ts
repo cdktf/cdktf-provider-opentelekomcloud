@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,48 @@ import * as cdktf from 'cdktf';
 
 export interface CtsEventNotificationV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#id CtsEventNotificationV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#notification_name CtsEventNotificationV3#notification_name}
   */
   readonly notificationName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#operation_type CtsEventNotificationV3#operation_type}
   */
   readonly operationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#status CtsEventNotificationV3#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#topic_id CtsEventNotificationV3#topic_id}
   */
   readonly topicId?: string;
   /**
   * notify_user_list block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
   */
   readonly notifyUserList?: CtsEventNotificationV3NotifyUserList[] | cdktf.IResolvable;
   /**
   * operations block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
   */
   readonly operations?: CtsEventNotificationV3Operations[] | cdktf.IResolvable;
 }
 export interface CtsEventNotificationV3NotifyUserList {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#user_group CtsEventNotificationV3#user_group}
   */
   readonly userGroup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#user_list CtsEventNotificationV3#user_list}
   */
   readonly userList: string[];
 }
@@ -168,15 +168,15 @@ export class CtsEventNotificationV3NotifyUserListList extends cdktf.ComplexList 
 }
 export interface CtsEventNotificationV3Operations {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#resource_type CtsEventNotificationV3#resource_type}
   */
   readonly resourceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#service_type CtsEventNotificationV3#service_type}
   */
   readonly serviceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3#trace_names CtsEventNotificationV3#trace_names}
   */
   readonly traceNames: string[];
 }
@@ -310,7 +310,7 @@ export class CtsEventNotificationV3OperationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3}
 */
 export class CtsEventNotificationV3 extends cdktf.TerraformResource {
 
@@ -324,7 +324,7 @@ export class CtsEventNotificationV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/cts_event_notification_v3 opentelekomcloud_cts_event_notification_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -335,7 +335,7 @@ export class CtsEventNotificationV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cts_event_notification_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.4',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

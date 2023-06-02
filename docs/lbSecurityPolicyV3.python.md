@@ -1,6 +1,6 @@
 # `opentelekomcloud_lb_security_policy_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_security_policy_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_security_policy_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3).
 
 # `lbSecurityPolicyV3` Submodule <a name="`lbSecurityPolicyV3` Submodule" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_security_policy
 
 ### LbSecurityPolicyV3 <a name="LbSecurityPolicyV3" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3 opentelekomcloud_lb_security_policy_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer"></a>
 
@@ -44,11 +44,11 @@ lbSecurityPolicyV3.LbSecurityPolicyV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.ciphers">ciphers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.protocols">protocols</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.ciphers">ciphers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.protocols">protocols</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}.
 
 ---
 
@@ -855,11 +855,11 @@ lbSecurityPolicyV3.LbSecurityPolicyV3Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.ciphers">ciphers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.protocols">protocols</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.ciphers">ciphers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.protocols">protocols</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}. |
 
 ---
 
@@ -941,7 +941,7 @@ ciphers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#ciphers LbSecurityPolicyV3#ciphers}.
 
 ---
 
@@ -953,7 +953,7 @@ protocols: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#protocols LbSecurityPolicyV3#protocols}.
 
 ---
 
@@ -965,7 +965,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#description LbSecurityPolicyV3#description}.
 
 ---
 
@@ -977,7 +977,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#id LbSecurityPolicyV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +992,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/lb_security_policy_v3#name LbSecurityPolicyV3#name}.
 
 ---
 

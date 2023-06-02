@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface AsConfigurationV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#id AsConfigurationV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#id AsConfigurationV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#region AsConfigurationV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#region AsConfigurationV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#scaling_configuration_name AsConfigurationV1#scaling_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#scaling_configuration_name AsConfigurationV1#scaling_configuration_name}
   */
   readonly scalingConfigurationName: string;
   /**
   * instance_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#instance_config AsConfigurationV1#instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#instance_config AsConfigurationV1#instance_config}
   */
   readonly instanceConfig: AsConfigurationV1InstanceConfig;
 }
 export interface AsConfigurationV1InstanceConfigDisk {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#disk_type AsConfigurationV1#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#disk_type AsConfigurationV1#disk_type}
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#kms_id AsConfigurationV1#kms_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#kms_id AsConfigurationV1#kms_id}
   */
   readonly kmsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#size AsConfigurationV1#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#size AsConfigurationV1#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#volume_type AsConfigurationV1#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#volume_type AsConfigurationV1#volume_type}
   */
   readonly volumeType: string;
 }
@@ -205,11 +205,11 @@ export class AsConfigurationV1InstanceConfigDiskList extends cdktf.ComplexList {
 }
 export interface AsConfigurationV1InstanceConfigPersonality {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#content AsConfigurationV1#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#content AsConfigurationV1#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#path AsConfigurationV1#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#path AsConfigurationV1#path}
   */
   readonly path: string;
 }
@@ -323,15 +323,15 @@ export class AsConfigurationV1InstanceConfigPersonalityList extends cdktf.Comple
 }
 export interface AsConfigurationV1InstanceConfigPublicIpEipBandwidth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#charging_mode AsConfigurationV1#charging_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#charging_mode AsConfigurationV1#charging_mode}
   */
   readonly chargingMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#share_type AsConfigurationV1#share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#share_type AsConfigurationV1#share_type}
   */
   readonly shareType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#size AsConfigurationV1#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#size AsConfigurationV1#size}
   */
   readonly size: number;
 }
@@ -433,13 +433,13 @@ export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference 
 }
 export interface AsConfigurationV1InstanceConfigPublicIpEip {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#ip_type AsConfigurationV1#ip_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#ip_type AsConfigurationV1#ip_type}
   */
   readonly ipType: string;
   /**
   * bandwidth block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#bandwidth AsConfigurationV1#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#bandwidth AsConfigurationV1#bandwidth}
   */
   readonly bandwidth: AsConfigurationV1InstanceConfigPublicIpEipBandwidth;
 }
@@ -523,7 +523,7 @@ export interface AsConfigurationV1InstanceConfigPublicIp {
   /**
   * eip block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#eip AsConfigurationV1#eip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#eip AsConfigurationV1#eip}
   */
   readonly eip: AsConfigurationV1InstanceConfigPublicIpEip;
 }
@@ -585,49 +585,49 @@ export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdkt
 }
 export interface AsConfigurationV1InstanceConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#flavor AsConfigurationV1#flavor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#flavor AsConfigurationV1#flavor}
   */
   readonly flavor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#image AsConfigurationV1#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#image AsConfigurationV1#image}
   */
   readonly image?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#instance_id AsConfigurationV1#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#instance_id AsConfigurationV1#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#key_name AsConfigurationV1#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#key_name AsConfigurationV1#key_name}
   */
   readonly keyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#metadata AsConfigurationV1#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#metadata AsConfigurationV1#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#security_groups AsConfigurationV1#security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#security_groups AsConfigurationV1#security_groups}
   */
   readonly securityGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#user_data AsConfigurationV1#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#user_data AsConfigurationV1#user_data}
   */
   readonly userData?: string;
   /**
   * disk block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#disk AsConfigurationV1#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#disk AsConfigurationV1#disk}
   */
   readonly disk?: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable;
   /**
   * personality block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#personality AsConfigurationV1#personality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#personality AsConfigurationV1#personality}
   */
   readonly personality?: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable;
   /**
   * public_ip block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1#public_ip AsConfigurationV1#public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1#public_ip AsConfigurationV1#public_ip}
   */
   readonly publicIp?: AsConfigurationV1InstanceConfigPublicIp;
 }
@@ -896,7 +896,7 @@ export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1}
 */
 export class AsConfigurationV1 extends cdktf.TerraformResource {
 
@@ -910,7 +910,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.34.4/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/resources/as_configuration_v1 opentelekomcloud_as_configuration_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -921,7 +921,7 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_as_configuration_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.34.4',
+        providerVersion: '1.35.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
