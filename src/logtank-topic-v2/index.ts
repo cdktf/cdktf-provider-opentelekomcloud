@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/logtank_topic_v2
 // generated from terraform resource schema
 

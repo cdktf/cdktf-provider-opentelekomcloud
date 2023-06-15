@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.NewDataOpentelekomcloudComputeInstancesV2(scope Construct, id *string, config DataOpentelekomcloudComputeInstancesV2Config) DataOpentelekomcloudComputeInstancesV2
 ```
@@ -347,7 +347,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -823,7 +823,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 &dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2Config {
 	Connection: interface{},
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2Instances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 &dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2Instances {
 
@@ -1095,7 +1095,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2InstancesNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 &dataopentelekomcloudcomputeinstancesv2.DataOpentelekomcloudComputeInstancesV2InstancesNetwork {
 
@@ -1110,7 +1110,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2InstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.NewDataOpentelekomcloudComputeInstancesV2InstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudComputeInstancesV2InstancesList
 ```
@@ -1242,7 +1242,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2InstancesNetworkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.NewDataOpentelekomcloudComputeInstancesV2InstancesNetworkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudComputeInstancesV2InstancesNetworkList
 ```
@@ -1374,7 +1374,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2InstancesNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.NewDataOpentelekomcloudComputeInstancesV2InstancesNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudComputeInstancesV2InstancesNetworkOutputReference
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() DataOpentelekomcloudComputeInstancesV2InstancesNetwork
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeInstancesV2.DataOpentelekomcloudComputeInstancesV2InstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeinstancesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudcomputeinstancesv2"
 
 dataopentelekomcloudcomputeinstancesv2.NewDataOpentelekomcloudComputeInstancesV2InstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudComputeInstancesV2InstancesOutputReference
 ```

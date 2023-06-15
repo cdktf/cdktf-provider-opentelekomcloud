@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3(scope Construct, id *string, config DdsInstanceV3Config) DdsInstanceV3
 ```
@@ -371,7 +371,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.DdsInstanceV3_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.DdsInstanceV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ ddsinstancev3.DdsInstanceV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.DdsInstanceV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3BackupStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3BackupStrategy {
 	KeepDays: *f64,
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3Config {
 	Connection: interface{},
@@ -1080,7 +1080,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dds
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AvailabilityZone: *string,
-	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ddsInstanceV3.DdsInstanceV3Datastore,
+	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7.ddsInstanceV3.DdsInstanceV3Datastore,
 	Flavor: interface{},
 	Mode: *string,
 	Name: *string,
@@ -1088,13 +1088,13 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dds
 	SecurityGroupId: *string,
 	SubnetId: *string,
 	VpcId: *string,
-	BackupStrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ddsInstanceV3.DdsInstanceV3BackupStrategy,
+	BackupStrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7.ddsInstanceV3.DdsInstanceV3BackupStrategy,
 	DiskEncryptionId: *string,
 	Id: *string,
 	Region: *string,
 	Ssl: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ddsInstanceV3.DdsInstanceV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7.ddsInstanceV3.DdsInstanceV3Timeouts,
 }
 ```
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3Datastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3Datastore {
 	Type: *string,
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3Flavor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3Flavor {
 	Num: *f64,
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3Nodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3Nodes {
 
@@ -1567,7 +1567,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dds
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 &ddsinstancev3.DdsInstanceV3Timeouts {
 	Create: *string,
@@ -1629,7 +1629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3BackupStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3BackupStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DdsInstanceV3BackupStrategyOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() DdsInstanceV3BackupStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3DatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3DatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DdsInstanceV3DatastoreOutputReference
 ```
@@ -2244,7 +2244,7 @@ func InternalValue() DdsInstanceV3Datastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3FlavorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3FlavorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdsInstanceV3FlavorList
 ```
@@ -2387,7 +2387,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3FlavorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3FlavorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DdsInstanceV3FlavorOutputReference
 ```
@@ -2778,7 +2778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3NodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3NodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdsInstanceV3NodesList
 ```
@@ -2910,7 +2910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3NodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3NodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DdsInstanceV3NodesOutputReference
 ```
@@ -3254,7 +3254,7 @@ func InternalValue() DdsInstanceV3Nodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3.DdsInstanceV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/ddsinstancev3"
 
 ddsinstancev3.NewDdsInstanceV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DdsInstanceV3TimeoutsOutputReference
 ```
