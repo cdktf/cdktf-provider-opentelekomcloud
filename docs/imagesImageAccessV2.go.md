@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/imagesimageaccessv2"
 
 imagesimageaccessv2.NewImagesImageAccessV2(scope Construct, id *string, config ImagesImageAccessV2Config) ImagesImageAccessV2
 ```
@@ -284,7 +284,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ imagesimageaccessv2.ImagesImageAccessV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/imagesimageaccessv2"
 
 &imagesimageaccessv2.ImagesImageAccessV2Config {
 	Connection: interface{},
