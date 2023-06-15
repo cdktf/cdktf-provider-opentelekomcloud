@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_lb_member_ids_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_member_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_member_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2).
 
 # `dataOpentelekomcloudLbMemberIdsV2` Submodule <a name="`dataOpentelekomcloudLbMemberIdsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_member_ids
 
 ### DataOpentelekomcloudLbMemberIdsV2 <a name="DataOpentelekomcloudLbMemberIdsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2 opentelekomcloud_lb_member_ids_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbmemberidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbmemberidsv2"
 
 dataopentelekomcloudlbmemberidsv2.NewDataOpentelekomcloudLbMemberIdsV2(scope Construct, id *string, config DataOpentelekomcloudLbMemberIdsV2Config) DataOpentelekomcloudLbMemberIdsV2
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbmemberidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbmemberidsv2"
 
 dataopentelekomcloudlbmemberidsv2.DataOpentelekomcloudLbMemberIdsV2_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbmemberidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbmemberidsv2"
 
 dataopentelekomcloudlbmemberidsv2.DataOpentelekomcloudLbMemberIdsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataopentelekomcloudlbmemberidsv2.DataOpentelekomcloudLbMemberIdsV2_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbmemberidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbmemberidsv2"
 
 dataopentelekomcloudlbmemberidsv2.DataOpentelekomcloudLbMemberIdsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/dataopentelekomcloudlbmemberidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v7/dataopentelekomcloudlbmemberidsv2"
 
 &dataopentelekomcloudlbmemberidsv2.DataOpentelekomcloudLbMemberIdsV2Config {
 	Connection: interface{},
@@ -611,9 +611,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v6/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.poolId">PoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#pool_id DataOpentelekomcloudLbMemberIdsV2#pool_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#id DataOpentelekomcloudLbMemberIdsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#region DataOpentelekomcloudLbMemberIdsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.poolId">PoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#pool_id DataOpentelekomcloudLbMemberIdsV2#pool_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#id DataOpentelekomcloudLbMemberIdsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbMemberIdsV2.DataOpentelekomcloudLbMemberIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#region DataOpentelekomcloudLbMemberIdsV2#region}. |
 
 ---
 
@@ -695,7 +695,7 @@ PoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#pool_id DataOpentelekomcloudLbMemberIdsV2#pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#pool_id DataOpentelekomcloudLbMemberIdsV2#pool_id}.
 
 ---
 
@@ -707,7 +707,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#id DataOpentelekomcloudLbMemberIdsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#id DataOpentelekomcloudLbMemberIdsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -722,7 +722,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.0/docs/data-sources/lb_member_ids_v2#region DataOpentelekomcloudLbMemberIdsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/lb_member_ids_v2#region DataOpentelekomcloudLbMemberIdsV2#region}.
 
 ---
 
