@@ -580,7 +580,7 @@ dnsPtrrecordV2.DnsPtrrecordV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.floatingipId">floatingip_id</a></code> | <code>str</code> | *No description.* |
@@ -806,10 +806,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DnsPtrrecordV2Timeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DnsPtrrecordV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>]
 
 ---
 
@@ -1432,7 +1432,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1523,10 +1523,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DnsPtrrecordV2Timeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DnsPtrrecordV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.dnsPtrrecordV2.DnsPtrrecordV2Timeouts">DnsPtrrecordV2Timeouts</a>]
 
 ---
 

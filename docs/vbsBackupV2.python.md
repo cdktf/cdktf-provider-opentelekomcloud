@@ -611,7 +611,7 @@ vbsBackupV2.VbsBackupV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.tagsInput">tags_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags">VbsBackupV2Tags</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.volumeIdInput">volume_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -897,10 +897,10 @@ tags_input: typing.Union[IResolvable, typing.List[VbsBackupV2Tags]]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[VbsBackupV2Timeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, VbsBackupV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>]
 
 ---
 
@@ -1719,7 +1719,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags">VbsBackupV2Tags</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags">VbsBackupV2Tags</a>]</code> | *No description.* |
 
 ---
 
@@ -1790,10 +1790,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VbsBackupV2Tags, IResolvable]
+internal_value: typing.Union[IResolvable, VbsBackupV2Tags]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags">VbsBackupV2Tags</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags">VbsBackupV2Tags</a>]
 
 ---
 
@@ -2051,7 +2051,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2122,10 +2122,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[VbsBackupV2Timeouts, IResolvable]
+internal_value: typing.Union[IResolvable, VbsBackupV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a>]
 
 ---
 

@@ -1494,7 +1494,7 @@ def reset_resource() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.condition">condition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.effect">effect</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.resource">resource</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement">IdentityRoleV3Statement</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement">IdentityRoleV3Statement</a>]</code> | *No description.* |
 
 ---
 
@@ -1605,10 +1605,10 @@ resource: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3StatementOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IdentityRoleV3Statement, IResolvable]
+internal_value: typing.Union[IResolvable, IdentityRoleV3Statement]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement">IdentityRoleV3Statement</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement">IdentityRoleV3Statement</a>]
 
 ---
 

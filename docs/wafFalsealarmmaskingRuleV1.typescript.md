@@ -376,7 +376,7 @@ wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.isTerraformResource(x: any
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.policyIdInput">policyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.ruleInput">ruleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.policyId">policyId</a></code> | <code>string</code> | *No description.* |
@@ -570,10 +570,10 @@ public readonly ruleInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: WafFalsealarmmaskingRuleV1Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | WafFalsealarmmaskingRuleV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a>
 
 ---
 
@@ -1084,7 +1084,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1155,10 +1155,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: WafFalsealarmmaskingRuleV1Timeouts | IResolvable;
+public readonly internalValue: IResolvable | WafFalsealarmmaskingRuleV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafFalsealarmmaskingRuleV1.WafFalsealarmmaskingRuleV1Timeouts">WafFalsealarmmaskingRuleV1Timeouts</a>
 
 ---
 

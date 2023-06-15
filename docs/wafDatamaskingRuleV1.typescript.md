@@ -377,7 +377,7 @@ wafDatamaskingRuleV1.WafDatamaskingRuleV1.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.indexInput">indexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.policyIdInput">policyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.category">category</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -582,10 +582,10 @@ public readonly policyIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: WafDatamaskingRuleV1Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | WafDatamaskingRuleV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a>
 
 ---
 
@@ -1119,7 +1119,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1190,10 +1190,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: WafDatamaskingRuleV1Timeouts | IResolvable;
+public readonly internalValue: IResolvable | WafDatamaskingRuleV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a>
 
 ---
 

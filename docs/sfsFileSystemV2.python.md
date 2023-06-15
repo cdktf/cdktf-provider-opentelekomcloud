@@ -711,7 +711,7 @@ sfsFileSystemV2.SfsFileSystemV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.shareProtoInput">share_proto_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.sizeInput">size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.accessLevel">access_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.accessTo">access_to</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.accessType">access_type</a></code> | <code>str</code> | *No description.* |
@@ -1083,10 +1083,10 @@ tags_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[SfsFileSystemV2Timeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, SfsFileSystemV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>]
 
 ---
 
@@ -1844,7 +1844,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1915,10 +1915,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[SfsFileSystemV2Timeouts, IResolvable]
+internal_value: typing.Union[IResolvable, SfsFileSystemV2Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.sfsFileSystemV2.SfsFileSystemV2Timeouts">SfsFileSystemV2Timeouts</a>]
 
 ---
 

@@ -393,7 +393,7 @@ vbsBackupShareV2.VbsBackupShareV2.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.backupIdInput">backupIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.toProjectIdsInput">toProjectIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.backupId">backupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -687,10 +687,10 @@ public readonly regionInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: VbsBackupShareV2Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | VbsBackupShareV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a>
 
 ---
 
@@ -1201,7 +1201,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1272,10 +1272,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VbsBackupShareV2Timeouts | IResolvable;
+public readonly internalValue: IResolvable | VbsBackupShareV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a>
 
 ---
 

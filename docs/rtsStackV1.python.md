@@ -664,7 +664,7 @@ rtsStackV1.RtsStackV1.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.templateBodyInput">template_body_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.templateUrlInput">template_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.timeoutMinsInput">timeout_mins_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.disableRollback">disable_rollback</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.files">files</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -983,10 +983,10 @@ timeout_mins_input: typing.Union[int, float]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[RtsStackV1Timeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, RtsStackV1Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>]
 
 ---
 
@@ -1695,7 +1695,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1786,10 +1786,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1TimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[RtsStackV1Timeouts, IResolvable]
+internal_value: typing.Union[IResolvable, RtsStackV1Timeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.rtsStackV1.RtsStackV1Timeouts">RtsStackV1Timeouts</a>]
 
 ---
 

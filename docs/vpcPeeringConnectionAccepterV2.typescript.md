@@ -395,7 +395,7 @@ vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.isTerraformResourc
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.acceptInput">acceptInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.vpcPeeringConnectionIdInput">vpcPeeringConnectionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.accept">accept</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -639,10 +639,10 @@ public readonly regionInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: VpcPeeringConnectionAccepterV2Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | VpcPeeringConnectionAccepterV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a>
 
 ---
 
@@ -1153,7 +1153,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1224,10 +1224,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VpcPeeringConnectionAccepterV2Timeouts | IResolvable;
+public readonly internalValue: IResolvable | VpcPeeringConnectionAccepterV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionAccepterV2.VpcPeeringConnectionAccepterV2Timeouts">VpcPeeringConnectionAccepterV2Timeouts</a>
 
 ---
 
