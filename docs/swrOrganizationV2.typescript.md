@@ -378,7 +378,7 @@ swrOrganizationV2.SwrOrganizationV2.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference">SwrOrganizationV2TimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.name">name</a></code> | <code>string</code> | *No description.* |
 
@@ -589,10 +589,10 @@ public readonly nameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: SwrOrganizationV2Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | SwrOrganizationV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a>
 
 ---
 
@@ -1047,7 +1047,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1118,10 +1118,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: SwrOrganizationV2Timeouts | IResolvable;
+public readonly internalValue: IResolvable | SwrOrganizationV2Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.swrOrganizationV2.SwrOrganizationV2Timeouts">SwrOrganizationV2Timeouts</a>
 
 ---
 

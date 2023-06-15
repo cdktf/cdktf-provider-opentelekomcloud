@@ -386,7 +386,7 @@ wafCertificateV1.WafCertificateV1.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.content">content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.key">key</a></code> | <code>string</code> | *No description.* |
@@ -610,10 +610,10 @@ public readonly regionInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: WafCertificateV1Timeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | WafCertificateV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a>
 
 ---
 
@@ -1137,7 +1137,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a></code> | *No description.* |
 
 ---
 
@@ -1208,10 +1208,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1TimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: WafCertificateV1Timeouts | IResolvable;
+public readonly internalValue: IResolvable | WafCertificateV1Timeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a>
 
 ---
 
