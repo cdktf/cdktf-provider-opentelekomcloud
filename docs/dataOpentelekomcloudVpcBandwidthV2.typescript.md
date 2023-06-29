@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_vpc_bandwidth_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_bandwidth_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_bandwidth_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2).
 
 # `dataOpentelekomcloudVpcBandwidthV2` Submodule <a name="`dataOpentelekomcloudVpcBandwidthV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_bandwidth
 
 ### DataOpentelekomcloudVpcBandwidthV2 <a name="DataOpentelekomcloudVpcBandwidthV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2 opentelekomcloud_vpc_bandwidth_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.Initializer"></a>
 
@@ -640,9 +640,9 @@ const dataOpentelekomcloudVpcBandwidthV2Config: dataOpentelekomcloudVpcBandwidth
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#id DataOpentelekomcloudVpcBandwidthV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#name DataOpentelekomcloudVpcBandwidthV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#size DataOpentelekomcloudVpcBandwidthV2#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#id DataOpentelekomcloudVpcBandwidthV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#name DataOpentelekomcloudVpcBandwidthV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#size DataOpentelekomcloudVpcBandwidthV2#size}. |
 
 ---
 
@@ -724,7 +724,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#id DataOpentelekomcloudVpcBandwidthV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#id DataOpentelekomcloudVpcBandwidthV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -739,7 +739,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#name DataOpentelekomcloudVpcBandwidthV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#name DataOpentelekomcloudVpcBandwidthV2#name}.
 
 ---
 
@@ -751,7 +751,7 @@ public readonly size: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/data-sources/vpc_bandwidth_v2#size DataOpentelekomcloudVpcBandwidthV2#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/vpc_bandwidth_v2#size DataOpentelekomcloudVpcBandwidthV2#size}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface SmnTopicAttributeV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}
   */
   readonly attributeName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}
   */
   readonly topicAttribute: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}
   */
   readonly topicUrn: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2}
 */
 export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_smn_topic_attribute_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.1',
+        providerVersion: '1.35.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

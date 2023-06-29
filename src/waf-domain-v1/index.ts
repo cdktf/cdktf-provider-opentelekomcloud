@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,256 @@ import * as cdktf from 'cdktf';
 
 export interface WafDomainV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#certificate_id WafDomainV1#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#certificate_id WafDomainV1#certificate_id}
   */
   readonly certificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#cipher WafDomainV1#cipher}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#cipher WafDomainV1#cipher}
   */
   readonly cipher?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#hostname WafDomainV1#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#hostname WafDomainV1#hostname}
   */
   readonly hostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#id WafDomainV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#id WafDomainV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#policy_id WafDomainV1#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#policy_id WafDomainV1#policy_id}
   */
   readonly policyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#proxy WafDomainV1#proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#proxy WafDomainV1#proxy}
   */
   readonly proxy: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#sip_header_list WafDomainV1#sip_header_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#sip_header_list WafDomainV1#sip_header_list}
   */
   readonly sipHeaderList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#sip_header_name WafDomainV1#sip_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#sip_header_name WafDomainV1#sip_header_name}
   */
   readonly sipHeaderName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#tls WafDomainV1#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#tls WafDomainV1#tls}
   */
   readonly tls?: string;
   /**
+  * block_page block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#block_page WafDomainV1#block_page}
+  */
+  readonly blockPage?: WafDomainV1BlockPage;
+  /**
   * server block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#server WafDomainV1#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#server WafDomainV1#server}
   */
   readonly server: WafDomainV1Server[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#timeouts WafDomainV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#timeouts WafDomainV1#timeouts}
   */
   readonly timeouts?: WafDomainV1Timeouts;
 }
+export interface WafDomainV1BlockPage {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#content WafDomainV1#content}
+  */
+  readonly content?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#content_type WafDomainV1#content_type}
+  */
+  readonly contentType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#redirect_url WafDomainV1#redirect_url}
+  */
+  readonly redirectUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#status_code WafDomainV1#status_code}
+  */
+  readonly statusCode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#template WafDomainV1#template}
+  */
+  readonly template: string;
+}
+
+export function wafDomainV1BlockPageToTerraform(struct?: WafDomainV1BlockPageOutputReference | WafDomainV1BlockPage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    content: cdktf.stringToTerraform(struct!.content),
+    content_type: cdktf.stringToTerraform(struct!.contentType),
+    redirect_url: cdktf.stringToTerraform(struct!.redirectUrl),
+    status_code: cdktf.stringToTerraform(struct!.statusCode),
+    template: cdktf.stringToTerraform(struct!.template),
+  }
+}
+
+export class WafDomainV1BlockPageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): WafDomainV1BlockPage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._content !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.content = this._content;
+    }
+    if (this._contentType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._redirectUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redirectUrl = this._redirectUrl;
+    }
+    if (this._statusCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusCode = this._statusCode;
+    }
+    if (this._template !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.template = this._template;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WafDomainV1BlockPage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._content = undefined;
+      this._contentType = undefined;
+      this._redirectUrl = undefined;
+      this._statusCode = undefined;
+      this._template = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._content = value.content;
+      this._contentType = value.contentType;
+      this._redirectUrl = value.redirectUrl;
+      this._statusCode = value.statusCode;
+      this._template = value.template;
+    }
+  }
+
+  // content - computed: true, optional: true, required: false
+  private _content?: string; 
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+  public set content(value: string) {
+    this._content = value;
+  }
+  public resetContent() {
+    this._content = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content;
+  }
+
+  // content_type - computed: true, optional: true, required: false
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
+  // redirect_url - computed: true, optional: true, required: false
+  private _redirectUrl?: string; 
+  public get redirectUrl() {
+    return this.getStringAttribute('redirect_url');
+  }
+  public set redirectUrl(value: string) {
+    this._redirectUrl = value;
+  }
+  public resetRedirectUrl() {
+    this._redirectUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectUrlInput() {
+    return this._redirectUrl;
+  }
+
+  // status_code - computed: true, optional: true, required: false
+  private _statusCode?: string; 
+  public get statusCode() {
+    return this.getStringAttribute('status_code');
+  }
+  public set statusCode(value: string) {
+    this._statusCode = value;
+  }
+  public resetStatusCode() {
+    this._statusCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusCodeInput() {
+    return this._statusCode;
+  }
+
+  // template - computed: false, optional: false, required: true
+  private _template?: string; 
+  public get template() {
+    return this.getStringAttribute('template');
+  }
+  public set template(value: string) {
+    this._template = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateInput() {
+    return this._template;
+  }
+}
 export interface WafDomainV1Server {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#address WafDomainV1#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#address WafDomainV1#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#back_protocol WafDomainV1#back_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#back_protocol WafDomainV1#back_protocol}
   */
   readonly backProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#client_protocol WafDomainV1#client_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#client_protocol WafDomainV1#client_protocol}
   */
   readonly clientProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#front_protocol WafDomainV1#front_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#front_protocol WafDomainV1#front_protocol}
   */
   readonly frontProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#port WafDomainV1#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#port WafDomainV1#port}
   */
   readonly port: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#server_protocol WafDomainV1#server_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#server_protocol WafDomainV1#server_protocol}
   */
   readonly serverProtocol?: string;
 }
@@ -292,11 +468,11 @@ export class WafDomainV1ServerList extends cdktf.ComplexList {
 }
 export interface WafDomainV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#create WafDomainV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#create WafDomainV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1#delete WafDomainV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1#delete WafDomainV1#delete}
   */
   readonly delete?: string;
 }
@@ -394,7 +570,7 @@ export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1}
 */
 export class WafDomainV1 extends cdktf.TerraformResource {
 
@@ -408,7 +584,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_domain_v1 opentelekomcloud_waf_domain_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -419,7 +595,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_domain_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.1',
+        providerVersion: '1.35.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -439,6 +615,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
     this._sipHeaderList = config.sipHeaderList;
     this._sipHeaderName = config.sipHeaderName;
     this._tls = config.tls;
+    this._blockPage.internalValue = config.blockPage;
     this._server.internalValue = config.server;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -620,6 +797,22 @@ export class WafDomainV1 extends cdktf.TerraformResource {
     return this.getStringAttribute('txt_code');
   }
 
+  // block_page - computed: false, optional: true, required: false
+  private _blockPage = new WafDomainV1BlockPageOutputReference(this, "block_page");
+  public get blockPage() {
+    return this._blockPage;
+  }
+  public putBlockPage(value: WafDomainV1BlockPage) {
+    this._blockPage.internalValue = value;
+  }
+  public resetBlockPage() {
+    this._blockPage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blockPageInput() {
+    return this._blockPage.internalValue;
+  }
+
   // server - computed: false, optional: false, required: true
   private _server = new WafDomainV1ServerList(this, "server", false);
   public get server() {
@@ -664,6 +857,7 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       sip_header_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sipHeaderList),
       sip_header_name: cdktf.stringToTerraform(this._sipHeaderName),
       tls: cdktf.stringToTerraform(this._tls),
+      block_page: wafDomainV1BlockPageToTerraform(this._blockPage.internalValue),
       server: cdktf.listMapper(wafDomainV1ServerToTerraform, true)(this._server.internalValue),
       timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -1,6 +1,6 @@
 # `opentelekomcloud_cts_tracker_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_tracker_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_tracker_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1).
 
 # `ctsTrackerV1` Submodule <a name="`ctsTrackerV1` Submodule" id="@cdktf/provider-opentelekomcloud.ctsTrackerV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_tracker_v1`](h
 
 ### CtsTrackerV1 <a name="CtsTrackerV1" id="@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1 opentelekomcloud_cts_tracker_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1.Initializer"></a>
 
@@ -750,10 +750,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#bucket_name CtsTrackerV1#bucket_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.filePrefixName">FilePrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#file_prefix_name CtsTrackerV1#file_prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#id CtsTrackerV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.isLtsEnabled">IsLtsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#is_lts_enabled CtsTrackerV1#is_lts_enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.bucketName">BucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#bucket_name CtsTrackerV1#bucket_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.filePrefixName">FilePrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#file_prefix_name CtsTrackerV1#file_prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#id CtsTrackerV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.isLtsEnabled">IsLtsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#is_lts_enabled CtsTrackerV1#is_lts_enabled}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Timeouts">CtsTrackerV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -836,7 +836,7 @@ BucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#bucket_name CtsTrackerV1#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#bucket_name CtsTrackerV1#bucket_name}.
 
 ---
 
@@ -848,7 +848,7 @@ FilePrefixName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#file_prefix_name CtsTrackerV1#file_prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#file_prefix_name CtsTrackerV1#file_prefix_name}.
 
 ---
 
@@ -860,7 +860,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#id CtsTrackerV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#id CtsTrackerV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -875,7 +875,7 @@ IsLtsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#is_lts_enabled CtsTrackerV1#is_lts_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#is_lts_enabled CtsTrackerV1#is_lts_enabled}.
 
 ---
 
@@ -889,7 +889,7 @@ Timeouts CtsTrackerV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#timeouts CtsTrackerV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#timeouts CtsTrackerV1#timeouts}
 
 ---
 
@@ -910,8 +910,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#create CtsTrackerV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#delete CtsTrackerV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#create CtsTrackerV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV1.CtsTrackerV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#delete CtsTrackerV1#delete}. |
 
 ---
 
@@ -923,7 +923,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#create CtsTrackerV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#create CtsTrackerV1#create}.
 
 ---
 
@@ -935,7 +935,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/cts_tracker_v1#delete CtsTrackerV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cts_tracker_v1#delete CtsTrackerV1#delete}.
 
 ---
 
