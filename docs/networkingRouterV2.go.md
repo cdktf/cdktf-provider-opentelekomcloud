@@ -1,6 +1,6 @@
 # `opentelekomcloud_networking_router_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_router_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_router_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2).
 
 # `networkingRouterV2` Submodule <a name="`networkingRouterV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingRouterV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_router_
 
 ### NetworkingRouterV2 <a name="NetworkingRouterV2" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2 opentelekomcloud_networking_router_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2 opentelekomcloud_networking_router_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 networkingrouterv2.NewNetworkingRouterV2(scope Construct, id *string, config NetworkingRouterV2Config) NetworkingRouterV2
 ```
@@ -353,7 +353,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 networkingrouterv2.NetworkingRouterV2_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 networkingrouterv2.NetworkingRouterV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ networkingrouterv2.NetworkingRouterV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 networkingrouterv2.NetworkingRouterV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -818,7 +818,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 &networkingrouterv2.NetworkingRouterV2Config {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 	Name: *string,
 	Region: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8.networkingRouterV2.NetworkingRouterV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts,
 	ValueSpecs: *map[string]*string,
 }
 ```
@@ -852,16 +852,16 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#admin_state_up NetworkingRouterV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.distributed">Distributed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#distributed NetworkingRouterV2#distributed}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.enableSnat">EnableSnat</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#enable_snat NetworkingRouterV2#enable_snat}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.externalGateway">ExternalGateway</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#external_gateway NetworkingRouterV2#external_gateway}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#id NetworkingRouterV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#name NetworkingRouterV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#region NetworkingRouterV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#tenant_id NetworkingRouterV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#admin_state_up NetworkingRouterV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.distributed">Distributed</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#distributed NetworkingRouterV2#distributed}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.enableSnat">EnableSnat</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#enable_snat NetworkingRouterV2#enable_snat}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.externalGateway">ExternalGateway</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#external_gateway NetworkingRouterV2#external_gateway}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#id NetworkingRouterV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#name NetworkingRouterV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#region NetworkingRouterV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#tenant_id NetworkingRouterV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts">NetworkingRouterV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#value_specs NetworkingRouterV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#value_specs NetworkingRouterV2#value_specs}. |
 
 ---
 
@@ -943,7 +943,7 @@ AdminStateUp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#admin_state_up NetworkingRouterV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#admin_state_up NetworkingRouterV2#admin_state_up}.
 
 ---
 
@@ -955,7 +955,7 @@ Distributed interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#distributed NetworkingRouterV2#distributed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#distributed NetworkingRouterV2#distributed}.
 
 ---
 
@@ -967,7 +967,7 @@ EnableSnat interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#enable_snat NetworkingRouterV2#enable_snat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#enable_snat NetworkingRouterV2#enable_snat}.
 
 ---
 
@@ -979,7 +979,7 @@ ExternalGateway *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#external_gateway NetworkingRouterV2#external_gateway}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#external_gateway NetworkingRouterV2#external_gateway}.
 
 ---
 
@@ -991,7 +991,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#id NetworkingRouterV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#id NetworkingRouterV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#name NetworkingRouterV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#name NetworkingRouterV2#name}.
 
 ---
 
@@ -1018,7 +1018,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#region NetworkingRouterV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#region NetworkingRouterV2#region}.
 
 ---
 
@@ -1030,7 +1030,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#tenant_id NetworkingRouterV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#tenant_id NetworkingRouterV2#tenant_id}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Timeouts NetworkingRouterV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#timeouts NetworkingRouterV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#timeouts NetworkingRouterV2#timeouts}
 
 ---
 
@@ -1056,7 +1056,7 @@ ValueSpecs *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#value_specs NetworkingRouterV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#value_specs NetworkingRouterV2#value_specs}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 &networkingrouterv2.NetworkingRouterV2Timeouts {
 	Create: *string,
@@ -1077,8 +1077,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#create NetworkingRouterV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#delete NetworkingRouterV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#create NetworkingRouterV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#delete NetworkingRouterV2#delete}. |
 
 ---
 
@@ -1090,7 +1090,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#create NetworkingRouterV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#create NetworkingRouterV2#create}.
 
 ---
 
@@ -1102,7 +1102,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/networking_router_v2#delete NetworkingRouterV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_router_v2#delete NetworkingRouterV2#delete}.
 
 ---
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterV2.NetworkingRouterV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/networkingrouterv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterv2"
 
 networkingrouterv2.NewNetworkingRouterV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkingRouterV2TimeoutsOutputReference
 ```

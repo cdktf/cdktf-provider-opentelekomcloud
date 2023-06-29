@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface WafFalsealarmmaskingRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#id WafFalsealarmmaskingRuleV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#policy_id WafFalsealarmmaskingRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#rule WafFalsealarmmaskingRuleV1#rule}
   */
   readonly rule: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#url WafFalsealarmmaskingRuleV1#url}
   */
   readonly url: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#timeouts WafFalsealarmmaskingRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#timeouts WafFalsealarmmaskingRuleV1#timeouts}
   */
   readonly timeouts?: WafFalsealarmmaskingRuleV1Timeouts;
 }
 export interface WafFalsealarmmaskingRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#create WafFalsealarmmaskingRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1#delete WafFalsealarmmaskingRuleV1#delete}
   */
   readonly delete?: string;
 }
@@ -142,7 +137,7 @@ export class WafFalsealarmmaskingRuleV1TimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1}
 */
 export class WafFalsealarmmaskingRuleV1 extends cdktf.TerraformResource {
 
@@ -156,7 +151,7 @@ export class WafFalsealarmmaskingRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/waf_falsealarmmasking_rule_v1 opentelekomcloud_waf_falsealarmmasking_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +162,7 @@ export class WafFalsealarmmaskingRuleV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_falsealarmmasking_rule_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.1',
+        providerVersion: '1.35.2',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

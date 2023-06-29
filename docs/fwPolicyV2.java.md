@@ -1,6 +1,6 @@
 # `opentelekomcloud_fw_policy_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_policy_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_policy_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2).
 
 # `fwPolicyV2` Submodule <a name="`fwPolicyV2` Submodule" id="@cdktf/provider-opentelekomcloud.fwPolicyV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_policy_v2`](htt
 
 ### FwPolicyV2 <a name="FwPolicyV2" id="@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2 opentelekomcloud_fw_policy_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer"></a>
 
@@ -53,16 +53,16 @@ FwPolicyV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.audited">audited</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#description FwPolicyV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#id FwPolicyV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#name FwPolicyV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#region FwPolicyV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.rules">rules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.shared">shared</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.audited">audited</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#description FwPolicyV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#id FwPolicyV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#name FwPolicyV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#region FwPolicyV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.rules">rules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.shared">shared</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts">FwPolicyV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}. |
 
 ---
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#description FwPolicyV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#description FwPolicyV2#description}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#id FwPolicyV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#id FwPolicyV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#name FwPolicyV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#name FwPolicyV2#name}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#region FwPolicyV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#region FwPolicyV2#region}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#timeouts FwPolicyV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#timeouts FwPolicyV2#timeouts}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}.
 
 ---
 
@@ -1019,16 +1019,16 @@ FwPolicyV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.audited">audited</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#description FwPolicyV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#id FwPolicyV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#name FwPolicyV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#region FwPolicyV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.rules">rules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.shared">shared</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.audited">audited</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#description FwPolicyV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#id FwPolicyV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#name FwPolicyV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#region FwPolicyV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.rules">rules</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.shared">shared</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts">FwPolicyV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.Object getAudited();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#audited FwPolicyV2#audited}.
 
 ---
 
@@ -1122,7 +1122,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#description FwPolicyV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#description FwPolicyV2#description}.
 
 ---
 
@@ -1134,7 +1134,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#id FwPolicyV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#id FwPolicyV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1149,7 +1149,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#name FwPolicyV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#name FwPolicyV2#name}.
 
 ---
 
@@ -1161,7 +1161,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#region FwPolicyV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#region FwPolicyV2#region}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public java.util.List<java.lang.String> getRules();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#rules FwPolicyV2#rules}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public java.lang.Object getShared();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#shared FwPolicyV2#shared}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public java.lang.String getTenantId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#tenant_id FwPolicyV2#tenant_id}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public FwPolicyV2Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#timeouts FwPolicyV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#timeouts FwPolicyV2#timeouts}
 
 ---
 
@@ -1223,7 +1223,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValueSpecs();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#value_specs FwPolicyV2#value_specs}.
 
 ---
 
@@ -1244,8 +1244,8 @@ FwPolicyV2Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#create FwPolicyV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#delete FwPolicyV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#create FwPolicyV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fwPolicyV2.FwPolicyV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#delete FwPolicyV2#delete}. |
 
 ---
 
@@ -1257,7 +1257,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#create FwPolicyV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#create FwPolicyV2#create}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.1/docs/resources/fw_policy_v2#delete FwPolicyV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/fw_policy_v2#delete FwPolicyV2#delete}.
 
 ---
 
