@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.NewDataOpentelekomcloudLbFlavorsV3(scope Construct, id *string, config DataOpentelekomcloudLbFlavorsV3Config) DataOpentelekomcloudLbFlavorsV3
 ```
@@ -284,7 +284,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 &dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3Config {
 	Connection: interface{},
