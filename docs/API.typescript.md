@@ -120,6 +120,8 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.typescript.md)
 - [dehHostV1](./dehHostV1.typescript.md)
 - [disAppV2](./disAppV2.typescript.md)
+- [disCheckpointV2](./disCheckpointV2.typescript.md)
+- [disDumpTaskV2](./disDumpTaskV2.typescript.md)
 - [disStreamV2](./disStreamV2.typescript.md)
 - [dmsInstanceV1](./dmsInstanceV1.typescript.md)
 - [dmsInstanceV2](./dmsInstanceV2.typescript.md)

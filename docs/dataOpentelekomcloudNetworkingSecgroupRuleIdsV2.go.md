@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_networking_secgroup_rule_ids_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_secgroup_rule_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_secgroup_rule_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2).
 
 # `dataOpentelekomcloudNetworkingSecgroupRuleIdsV2` Submodule <a name="`dataOpentelekomcloudNetworkingSecgroupRuleIdsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_se
 
 ### DataOpentelekomcloudNetworkingSecgroupRuleIdsV2 <a name="DataOpentelekomcloudNetworkingSecgroupRuleIdsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2 opentelekomcloud_networking_secgroup_rule_ids_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2 opentelekomcloud_networking_secgroup_rule_ids_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.NewDataOpentelekomcloudNetworkingSecgroupRuleIdsV2(scope Construct, id *string, config DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config) DataOpentelekomcloudNetworkingSecgroupRuleIdsV2
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 &dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config {
 	Connection: interface{},
@@ -611,9 +611,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.securityGroupId">SecurityGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#security_group_id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#security_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#region DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.securityGroupId">SecurityGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#security_group_id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#security_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#region DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#region}. |
 
 ---
 
@@ -695,7 +695,7 @@ SecurityGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#security_group_id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#security_group_id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#security_group_id}.
 
 ---
 
@@ -707,7 +707,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#id DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -722,7 +722,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/networking_secgroup_rule_ids_v2#region DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_secgroup_rule_ids_v2#region DataOpentelekomcloudNetworkingSecgroupRuleIdsV2#region}.
 
 ---
 

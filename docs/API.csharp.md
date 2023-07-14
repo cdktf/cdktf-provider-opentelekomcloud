@@ -120,6 +120,8 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.csharp.md)
 - [dehHostV1](./dehHostV1.csharp.md)
 - [disAppV2](./disAppV2.csharp.md)
+- [disCheckpointV2](./disCheckpointV2.csharp.md)
+- [disDumpTaskV2](./disDumpTaskV2.csharp.md)
 - [disStreamV2](./disStreamV2.csharp.md)
 - [dmsInstanceV1](./dmsInstanceV1.csharp.md)
 - [dmsInstanceV2](./dmsInstanceV2.csharp.md)

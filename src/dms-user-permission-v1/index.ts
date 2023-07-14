@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,34 +8,34 @@ import * as cdktf from 'cdktf';
 
 export interface DmsUserPermissionV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}
   */
   readonly topicName: string;
   /**
   * policies block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#policies DmsUserPermissionV1#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#policies DmsUserPermissionV1#policies}
   */
   readonly policies: DmsUserPermissionV1Policies[] | cdktf.IResolvable;
 }
 export interface DmsUserPermissionV1Policies {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}
   */
   readonly accessPolicy: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}
   */
   readonly username: string;
 }
@@ -159,7 +154,7 @@ export class DmsUserPermissionV1PoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}
 */
 export class DmsUserPermissionV1 extends cdktf.TerraformResource {
 
@@ -173,7 +168,7 @@ export class DmsUserPermissionV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -184,7 +179,7 @@ export class DmsUserPermissionV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dms_user_permission_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
