@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_cce_cluster_kubeconfig_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_cluster_kubeconfig_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_cluster_kubeconfig_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3).
 
 # `dataOpentelekomcloudCceClusterKubeconfigV3` Submodule <a name="`dataOpentelekomcloudCceClusterKubeconfigV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_cluster_k
 
 ### DataOpentelekomcloudCceClusterKubeconfigV3 <a name="DataOpentelekomcloudCceClusterKubeconfigV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.Initializer"></a>
 
@@ -600,9 +600,9 @@ const dataOpentelekomcloudCceClusterKubeconfigV3Config: dataOpentelekomcloudCceC
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}. |
 
 ---
 
@@ -684,7 +684,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}.
 
 ---
 
@@ -696,7 +696,7 @@ public readonly duration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}.
 
 ---
 
@@ -708,7 +708,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `opentelekomcloud_dis_app_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2).
 
 # `disAppV2` Submodule <a name="`disAppV2` Submodule" id="@cdktf/provider-opentelekomcloud.disAppV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https
 
 ### DisAppV2 <a name="DisAppV2" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer"></a>
 
@@ -25,8 +25,7 @@ disAppV2.DisAppV2(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  app_name: str,
-  id: str = None,
+  name: str,
   timeouts: DisAppV2Timeouts = None
 )
 ```
@@ -42,8 +41,7 @@ disAppV2.DisAppV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.appName">app_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts">DisAppV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -108,22 +106,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `app_name`<sup>Required</sup> <a name="app_name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.appName"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.name"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}.
 
 ---
 
@@ -133,7 +120,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
 
 ---
 
@@ -158,7 +145,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -384,15 +370,9 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}.
 
 ---
-
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetId"></a>
-
-```python
-def reset_id() -> None
-```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetTimeouts"></a>
 
@@ -494,16 +474,14 @@ disAppV2.DisAppV2.is_terraform_resource(
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.commitCheckpointStreamNames">commit_checkpoint_stream_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.created">created</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.partitionConsumingStates">partition_consuming_states</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2PartitionConsumingStatesList">DisAppV2PartitionConsumingStatesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2TimeoutsOutputReference">DisAppV2TimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appNameInput">app_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts">DisAppV2Timeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appName">app_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -649,16 +627,6 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appId"></a>
-
-```python
-app_id: str
-```
-
-- *Type:* str
-
----
-
 ##### `commit_checkpoint_stream_names`<sup>Required</sup> <a name="commit_checkpoint_stream_names" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.commitCheckpointStreamNames"></a>
 
 ```python
@@ -676,6 +644,16 @@ created: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
 
 ---
 
@@ -699,20 +677,10 @@ timeouts: DisAppV2TimeoutsOutputReference
 
 ---
 
-##### `app_name_input`<sup>Optional</sup> <a name="app_name_input" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appNameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.nameInput"></a>
 
 ```python
-app_name_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.idInput"></a>
-
-```python
-id_input: str
+name_input: str
 ```
 
 - *Type:* str
@@ -729,20 +697,10 @@ timeouts_input: typing.Union[IResolvable, DisAppV2Timeouts]
 
 ---
 
-##### `app_name`<sup>Required</sup> <a name="app_name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appName"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.name"></a>
 
 ```python
-app_name: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id"></a>
-
-```python
-id: str
+name: str
 ```
 
 - *Type:* str
@@ -784,8 +742,7 @@ disAppV2.DisAppV2Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  app_name: str,
-  id: str = None,
+  name: str,
   timeouts: DisAppV2Timeouts = None
 )
 ```
@@ -801,8 +758,7 @@ disAppV2.DisAppV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.appName">app_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts">DisAppV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -877,30 +833,15 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
-##### `app_name`<sup>Required</sup> <a name="app_name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.appName"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.name"></a>
 
 ```python
-app_name: str
+name: str
 ```
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}.
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}.
 
 ---
 
@@ -914,7 +855,7 @@ timeouts: DisAppV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
 
 ---
 
@@ -945,7 +886,7 @@ disAppV2.DisAppV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}. |
 
 ---
 
@@ -957,7 +898,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,52 @@ import * as cdktf from 'cdktf';
 
 export interface DisStreamV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#auto_scale_max_partition_count DisStreamV2#auto_scale_max_partition_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#auto_scale_max_partition_count DisStreamV2#auto_scale_max_partition_count}
   */
   readonly autoScaleMaxPartitionCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#auto_scale_min_partition_count DisStreamV2#auto_scale_min_partition_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#auto_scale_min_partition_count DisStreamV2#auto_scale_min_partition_count}
   */
   readonly autoScaleMinPartitionCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#compression_format DisStreamV2#compression_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#compression_format DisStreamV2#compression_format}
   */
   readonly compressionFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#data_type DisStreamV2#data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#data_type DisStreamV2#data_type}
   */
   readonly dataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#id DisStreamV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#id DisStreamV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#partition_count DisStreamV2#partition_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#name DisStreamV2#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#partition_count DisStreamV2#partition_count}
   */
   readonly partitionCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#retention_period DisStreamV2#retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#retention_period DisStreamV2#retention_period}
   */
   readonly retentionPeriod?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#stream_name DisStreamV2#stream_name}
-  */
-  readonly streamName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#stream_type DisStreamV2#stream_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#stream_type DisStreamV2#stream_type}
   */
   readonly streamType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#tags DisStreamV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#tags DisStreamV2#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#timeouts DisStreamV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#timeouts DisStreamV2#timeouts}
   */
   readonly timeouts?: DisStreamV2Timeouts;
 }
@@ -148,7 +143,7 @@ export class DisStreamV2PartitionsList extends cdktf.ComplexList {
 }
 export interface DisStreamV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2#update DisStreamV2#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#update DisStreamV2#update}
   */
   readonly update?: string;
 }
@@ -223,7 +218,7 @@ export class DisStreamV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2}
 */
 export class DisStreamV2 extends cdktf.TerraformResource {
 
@@ -237,7 +232,7 @@ export class DisStreamV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2 opentelekomcloud_dis_stream_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -248,7 +243,7 @@ export class DisStreamV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dis_stream_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -264,9 +259,9 @@ export class DisStreamV2 extends cdktf.TerraformResource {
     this._compressionFormat = config.compressionFormat;
     this._dataType = config.dataType;
     this._id = config.id;
+    this._name = config.name;
     this._partitionCount = config.partitionCount;
     this._retentionPeriod = config.retentionPeriod;
-    this._streamName = config.streamName;
     this._streamType = config.streamType;
     this._tags = config.tags;
     this._timeouts.internalValue = config.timeouts;
@@ -361,6 +356,19 @@ export class DisStreamV2 extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
   // partition_count - computed: false, optional: false, required: true
   private _partitionCount?: number; 
   public get partitionCount() {
@@ -409,19 +417,6 @@ export class DisStreamV2 extends cdktf.TerraformResource {
   // stream_id - computed: true, optional: false, required: false
   public get streamId() {
     return this.getStringAttribute('stream_id');
-  }
-
-  // stream_name - computed: false, optional: false, required: true
-  private _streamName?: string; 
-  public get streamName() {
-    return this.getStringAttribute('stream_name');
-  }
-  public set streamName(value: string) {
-    this._streamName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get streamNameInput() {
-    return this._streamName;
   }
 
   // stream_type - computed: true, optional: true, required: false
@@ -488,9 +483,9 @@ export class DisStreamV2 extends cdktf.TerraformResource {
       compression_format: cdktf.stringToTerraform(this._compressionFormat),
       data_type: cdktf.stringToTerraform(this._dataType),
       id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
       partition_count: cdktf.numberToTerraform(this._partitionCount),
       retention_period: cdktf.numberToTerraform(this._retentionPeriod),
-      stream_name: cdktf.stringToTerraform(this._streamName),
       stream_type: cdktf.stringToTerraform(this._streamType),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: disStreamV2TimeoutsToTerraform(this._timeouts.internalValue),

@@ -1,6 +1,6 @@
 # `opentelekomcloud_dis_app_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2).
 
 # `disAppV2` Submodule <a name="`disAppV2` Submodule" id="@cdktf/provider-opentelekomcloud.disAppV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https
 
 ### DisAppV2 <a name="DisAppV2" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.Initializer"></a>
 
@@ -71,7 +71,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -272,12 +271,6 @@ private void PutTimeouts(DisAppV2Timeouts Value)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.resetTimeouts"></a>
 
 ```csharp
@@ -372,16 +365,14 @@ DisAppV2.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appId">AppId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.commitCheckpointStreamNames">CommitCheckpointStreamNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.created">Created</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.partitionConsumingStates">PartitionConsumingStates</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2PartitionConsumingStatesList">DisAppV2PartitionConsumingStatesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2TimeoutsOutputReference">DisAppV2TimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appNameInput">AppNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appName">AppName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.name">Name</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -527,16 +518,6 @@ public object[] Provisioners { get; }
 
 ---
 
-##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appId"></a>
-
-```csharp
-public string AppId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `CommitCheckpointStreamNames`<sup>Required</sup> <a name="CommitCheckpointStreamNames" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.commitCheckpointStreamNames"></a>
 
 ```csharp
@@ -554,6 +535,16 @@ public double Created { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -577,20 +568,10 @@ public DisAppV2TimeoutsOutputReference Timeouts { get; }
 
 ---
 
-##### `AppNameInput`<sup>Optional</sup> <a name="AppNameInput" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appNameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.nameInput"></a>
 
 ```csharp
-public string AppNameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
+public string NameInput { get; }
 ```
 
 - *Type:* string
@@ -607,20 +588,10 @@ public object TimeoutsInput { get; }
 
 ---
 
-##### `AppName`<sup>Required</sup> <a name="AppName" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.appName"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.name"></a>
 
 ```csharp
-public string AppName { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2.property.id"></a>
-
-```csharp
-public string Id { get; }
+public string Name { get; }
 ```
 
 - *Type:* string
@@ -662,8 +633,7 @@ new DisAppV2Config {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     object[] Provisioners = null,
-    string AppName,
-    string Id = null,
+    string Name,
     DisAppV2Timeouts Timeouts = null
 };
 ```
@@ -679,8 +649,7 @@ new DisAppV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.appName">AppName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts">DisAppV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -755,30 +724,15 @@ public object[] Provisioners { get; set; }
 
 ---
 
-##### `AppName`<sup>Required</sup> <a name="AppName" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.appName"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.name"></a>
 
 ```csharp
-public string AppName { get; set; }
+public string Name { get; set; }
 ```
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}.
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Config.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}.
 
 ---
 
@@ -792,7 +746,7 @@ public DisAppV2Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
 
 ---
 
@@ -825,7 +779,7 @@ new DisAppV2Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disAppV2.DisAppV2Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}. |
 
 ---
 
@@ -837,7 +791,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}.
 
 ---
 
