@@ -120,6 +120,8 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.go.md)
 - [dehHostV1](./dehHostV1.go.md)
 - [disAppV2](./disAppV2.go.md)
+- [disCheckpointV2](./disCheckpointV2.go.md)
+- [disDumpTaskV2](./disDumpTaskV2.go.md)
 - [disStreamV2](./disStreamV2.go.md)
 - [dmsInstanceV1](./dmsInstanceV1.go.md)
 - [dmsInstanceV2](./dmsInstanceV2.go.md)

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface CbrPolicyV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#enabled CbrPolicyV3#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#enabled CbrPolicyV3#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#id CbrPolicyV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#id CbrPolicyV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#name CbrPolicyV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#name CbrPolicyV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#operation_type CbrPolicyV3#operation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#operation_type CbrPolicyV3#operation_type}
   */
   readonly operationType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#trigger_pattern CbrPolicyV3#trigger_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#trigger_pattern CbrPolicyV3#trigger_pattern}
   */
   readonly triggerPattern: string[];
   /**
   * operation_definition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#operation_definition CbrPolicyV3#operation_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#operation_definition CbrPolicyV3#operation_definition}
   */
   readonly operationDefinition?: CbrPolicyV3OperationDefinition;
 }
 export interface CbrPolicyV3OperationDefinition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#day_backups CbrPolicyV3#day_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#day_backups CbrPolicyV3#day_backups}
   */
   readonly dayBackups?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#max_backups CbrPolicyV3#max_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#max_backups CbrPolicyV3#max_backups}
   */
   readonly maxBackups?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#month_backups CbrPolicyV3#month_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#month_backups CbrPolicyV3#month_backups}
   */
   readonly monthBackups?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#retention_duration_days CbrPolicyV3#retention_duration_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#retention_duration_days CbrPolicyV3#retention_duration_days}
   */
   readonly retentionDurationDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#timezone CbrPolicyV3#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#timezone CbrPolicyV3#timezone}
   */
   readonly timezone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#week_backups CbrPolicyV3#week_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#week_backups CbrPolicyV3#week_backups}
   */
   readonly weekBackups?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3#year_backups CbrPolicyV3#year_backups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#year_backups CbrPolicyV3#year_backups}
   */
   readonly yearBackups?: number;
 }
@@ -268,7 +263,7 @@ export class CbrPolicyV3OperationDefinitionOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3}
 */
 export class CbrPolicyV3 extends cdktf.TerraformResource {
 
@@ -282,7 +277,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3 opentelekomcloud_cbr_policy_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +288,7 @@ export class CbrPolicyV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cbr_policy_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
