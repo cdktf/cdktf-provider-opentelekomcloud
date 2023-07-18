@@ -120,6 +120,8 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.java.md)
 - [dehHostV1](./dehHostV1.java.md)
 - [disAppV2](./disAppV2.java.md)
+- [disCheckpointV2](./disCheckpointV2.java.md)
+- [disDumpTaskV2](./disDumpTaskV2.java.md)
 - [disStreamV2](./disStreamV2.java.md)
 - [dmsInstanceV1](./dmsInstanceV1.java.md)
 - [dmsInstanceV2](./dmsInstanceV2.java.md)

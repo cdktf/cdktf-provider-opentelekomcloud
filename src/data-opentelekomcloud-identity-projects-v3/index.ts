@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/identity_projects_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_projects_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudIdentityProjectsV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -89,6 +84,11 @@ export class DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference exten
   public get parentId() {
     return this.getStringAttribute('parent_id');
   }
+
+  // project_id - computed: true, optional: false, required: false
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
 }
 
 export class DataOpentelekomcloudIdentityProjectsV3ProjectsList extends cdktf.ComplexList {
@@ -111,7 +111,7 @@ export class DataOpentelekomcloudIdentityProjectsV3ProjectsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}
 */
 export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataSource {
 
@@ -125,7 +125,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -136,7 +136,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
       terraformResourceType: 'opentelekomcloud_identity_projects_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
