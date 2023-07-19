@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingVipAssociateV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}
   */
   readonly portIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}
   */
   readonly vipId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2}
 */
 export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -55,7 +55,7 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_networking_vip_associate_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

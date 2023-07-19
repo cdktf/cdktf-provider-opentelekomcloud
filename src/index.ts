@@ -37,6 +37,8 @@ export * as dcsInstanceV1 from './dcs-instance-v1';
 export * as ddsInstanceV3 from './dds-instance-v3';
 export * as dehHostV1 from './deh-host-v1';
 export * as disAppV2 from './dis-app-v2';
+export * as disCheckpointV2 from './dis-checkpoint-v2';
+export * as disDumpTaskV2 from './dis-dump-task-v2';
 export * as disStreamV2 from './dis-stream-v2';
 export * as dmsInstanceV1 from './dms-instance-v1';
 export * as dmsInstanceV2 from './dms-instance-v2';

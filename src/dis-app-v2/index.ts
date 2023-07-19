@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,13 @@ import * as cdktf from 'cdktf';
 
 export interface DisAppV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#app_name DisAppV2#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#name DisAppV2#name}
   */
-  readonly appName: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#id DisAppV2#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
+  readonly name: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
   */
   readonly timeouts?: DisAppV2Timeouts;
 }
@@ -121,7 +114,7 @@ export class DisAppV2PartitionConsumingStatesList extends cdktf.ComplexList {
 }
 export interface DisAppV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2#update DisAppV2#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#update DisAppV2#update}
   */
   readonly update?: string;
 }
@@ -196,7 +189,7 @@ export class DisAppV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2}
 */
 export class DisAppV2 extends cdktf.TerraformResource {
 
@@ -210,7 +203,7 @@ export class DisAppV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2 opentelekomcloud_dis_app_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +214,7 @@ export class DisAppV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dis_app_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -232,32 +225,13 @@ export class DisAppV2 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._appName = config.appName;
-    this._id = config.id;
+    this._name = config.name;
     this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // app_id - computed: true, optional: false, required: false
-  public get appId() {
-    return this.getStringAttribute('app_id');
-  }
-
-  // app_name - computed: false, optional: false, required: true
-  private _appName?: string; 
-  public get appName() {
-    return this.getStringAttribute('app_name');
-  }
-  public set appName(value: string) {
-    this._appName = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get appNameInput() {
-    return this._appName;
-  }
 
   // commit_checkpoint_stream_names - computed: true, optional: false, required: false
   public get commitCheckpointStreamNames() {
@@ -269,20 +243,22 @@ export class DisAppV2 extends cdktf.TerraformResource {
     return this.getNumberAttribute('created');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-  public resetId() {
-    this._id = undefined;
+  public set name(value: string) {
+    this._name = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+  public get nameInput() {
+    return this._name;
   }
 
   // partition_consuming_states - computed: true, optional: false, required: false
@@ -313,8 +289,7 @@ export class DisAppV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_name: cdktf.stringToTerraform(this._appName),
-      id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
       timeouts: disAppV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

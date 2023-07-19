@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,53 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudImagesImageV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#id DataOpentelekomcloudImagesImageV2#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#most_recent DataOpentelekomcloudImagesImageV2#most_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#most_recent DataOpentelekomcloudImagesImageV2#most_recent}
   */
   readonly mostRecent?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#name DataOpentelekomcloudImagesImageV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#name DataOpentelekomcloudImagesImageV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#name_regex DataOpentelekomcloudImagesImageV2#name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#name_regex DataOpentelekomcloudImagesImageV2#name_regex}
   */
   readonly nameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#owner DataOpentelekomcloudImagesImageV2#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#owner DataOpentelekomcloudImagesImageV2#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#properties DataOpentelekomcloudImagesImageV2#properties}
-  */
-  readonly properties?: { [key: string]: string };
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#region DataOpentelekomcloudImagesImageV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#region DataOpentelekomcloudImagesImageV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#size_max DataOpentelekomcloudImagesImageV2#size_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#size_max DataOpentelekomcloudImagesImageV2#size_max}
   */
   readonly sizeMax?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#size_min DataOpentelekomcloudImagesImageV2#size_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#size_min DataOpentelekomcloudImagesImageV2#size_min}
   */
   readonly sizeMin?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#sort_direction DataOpentelekomcloudImagesImageV2#sort_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#sort_direction DataOpentelekomcloudImagesImageV2#sort_direction}
   */
   readonly sortDirection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#sort_key DataOpentelekomcloudImagesImageV2#sort_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#sort_key DataOpentelekomcloudImagesImageV2#sort_key}
   */
   readonly sortKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#tag DataOpentelekomcloudImagesImageV2#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#tag DataOpentelekomcloudImagesImageV2#tag}
   */
   readonly tag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2#visibility DataOpentelekomcloudImagesImageV2#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2#visibility DataOpentelekomcloudImagesImageV2#visibility}
   */
   readonly visibility?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2}
 */
 export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource {
 
@@ -84,7 +73,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.2/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/images_image_v2 opentelekomcloud_images_image_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +84,7 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       terraformResourceType: 'opentelekomcloud_images_image_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.2',
+        providerVersion: '1.35.3',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -106,12 +95,10 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._mostRecent = config.mostRecent;
     this._name = config.name;
     this._nameRegex = config.nameRegex;
     this._owner = config.owner;
-    this._properties = config.properties;
     this._region = config.region;
     this._sizeMax = config.sizeMax;
     this._sizeMin = config.sizeMin;
@@ -150,20 +137,24 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this.getStringAttribute('file');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // image_type - computed: true, optional: false, required: false
+  public get imageType() {
+    return this.getStringAttribute('image_type');
   }
-  public resetId() {
-    this._id = undefined;
+
+  // is_registered - computed: true, optional: false, required: false
+  public get isRegistered() {
+    return this.getStringAttribute('is_registered');
   }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+
+  // member_status - computed: true, optional: false, required: false
+  public get memberStatus() {
+    return this.getStringAttribute('member_status');
   }
 
   // metadata - computed: true, optional: false, required: false
@@ -172,9 +163,19 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this._metadata;
   }
 
+  // min_disk - computed: true, optional: false, required: false
+  public get minDisk() {
+    return this.getNumberAttribute('min_disk');
+  }
+
   // min_disk_gb - computed: true, optional: false, required: false
   public get minDiskGb() {
     return this.getNumberAttribute('min_disk_gb');
+  }
+
+  // min_ram - computed: true, optional: false, required: false
+  public get minRam() {
+    return this.getNumberAttribute('min_ram');
   }
 
   // min_ram_mb - computed: true, optional: false, required: false
@@ -230,6 +231,16 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this._nameRegex;
   }
 
+  // os_bit - computed: true, optional: false, required: false
+  public get osBit() {
+    return this.getStringAttribute('os_bit');
+  }
+
+  // os_type - computed: true, optional: false, required: false
+  public get osType() {
+    return this.getStringAttribute('os_type');
+  }
+
   // owner - computed: false, optional: true, required: false
   private _owner?: string; 
   public get owner() {
@@ -246,20 +257,9 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this._owner;
   }
 
-  // properties - computed: false, optional: true, required: false
-  private _properties?: { [key: string]: string }; 
-  public get properties() {
-    return this.getStringMapAttribute('properties');
-  }
-  public set properties(value: { [key: string]: string }) {
-    this._properties = value;
-  }
-  public resetProperties() {
-    this._properties = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get propertiesInput() {
-    return this._properties;
+  // platform - computed: true, optional: false, required: false
+  public get platform() {
+    return this.getStringAttribute('platform');
   }
 
   // protected - computed: true, optional: false, required: false
@@ -357,6 +357,61 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this._sortKey;
   }
 
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // support_disk_intensive - computed: true, optional: false, required: false
+  public get supportDiskIntensive() {
+    return this.getStringAttribute('support_disk_intensive');
+  }
+
+  // support_high_performance - computed: true, optional: false, required: false
+  public get supportHighPerformance() {
+    return this.getStringAttribute('support_high_performance');
+  }
+
+  // support_kvm - computed: true, optional: false, required: false
+  public get supportKvm() {
+    return this.getStringAttribute('support_kvm');
+  }
+
+  // support_kvm_gpu_type - computed: true, optional: false, required: false
+  public get supportKvmGpuType() {
+    return this.getStringAttribute('support_kvm_gpu_type');
+  }
+
+  // support_kvm_infiniband - computed: true, optional: false, required: false
+  public get supportKvmInfiniband() {
+    return this.getStringAttribute('support_kvm_infiniband');
+  }
+
+  // support_large_memory - computed: true, optional: false, required: false
+  public get supportLargeMemory() {
+    return this.getStringAttribute('support_large_memory');
+  }
+
+  // support_xen - computed: true, optional: false, required: false
+  public get supportXen() {
+    return this.getStringAttribute('support_xen');
+  }
+
+  // support_xen_gpu_type - computed: true, optional: false, required: false
+  public get supportXenGpuType() {
+    return this.getStringAttribute('support_xen_gpu_type');
+  }
+
+  // support_xen_hana - computed: true, optional: false, required: false
+  public get supportXenHana() {
+    return this.getStringAttribute('support_xen_hana');
+  }
+
+  // system_cmk_id - computed: true, optional: false, required: false
+  public get systemCmkId() {
+    return this.getStringAttribute('system_cmk_id');
+  }
+
   // tag - computed: false, optional: true, required: false
   private _tag?: string; 
   public get tag() {
@@ -383,6 +438,11 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this.getStringAttribute('updated_at');
   }
 
+  // virtual_env_type - computed: true, optional: false, required: false
+  public get virtualEnvType() {
+    return this.getStringAttribute('virtual_env_type');
+  }
+
   // visibility - computed: false, optional: true, required: false
   private _visibility?: string; 
   public get visibility() {
@@ -399,18 +459,21 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
     return this._visibility;
   }
 
+  // whole_image - computed: true, optional: false, required: false
+  public get wholeImage() {
+    return this.getBooleanAttribute('whole_image');
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       most_recent: cdktf.booleanToTerraform(this._mostRecent),
       name: cdktf.stringToTerraform(this._name),
       name_regex: cdktf.stringToTerraform(this._nameRegex),
       owner: cdktf.stringToTerraform(this._owner),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
       region: cdktf.stringToTerraform(this._region),
       size_max: cdktf.numberToTerraform(this._sizeMax),
       size_min: cdktf.numberToTerraform(this._sizeMin),

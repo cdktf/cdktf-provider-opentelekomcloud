@@ -120,6 +120,8 @@ The following submodules are available:
 - [ddsInstanceV3](./ddsInstanceV3.python.md)
 - [dehHostV1](./dehHostV1.python.md)
 - [disAppV2](./disAppV2.python.md)
+- [disCheckpointV2](./disCheckpointV2.python.md)
+- [disDumpTaskV2](./disDumpTaskV2.python.md)
 - [disStreamV2](./disStreamV2.python.md)
 - [dmsInstanceV1](./dmsInstanceV1.python.md)
 - [dmsInstanceV2](./dmsInstanceV2.python.md)
