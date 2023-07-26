@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sfs_file_system_v2
 // generated from terraform resource schema
 
@@ -69,7 +64,7 @@ export interface SfsFileSystemV2Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sfs_file_system_v2#timeouts SfsFileSystemV2#timeouts}
   */
   readonly timeouts?: SfsFileSystemV2Timeouts;

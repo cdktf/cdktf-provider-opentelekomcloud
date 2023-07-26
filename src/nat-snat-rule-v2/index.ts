@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/nat_snat_rule_v2
 // generated from terraform resource schema
 
@@ -45,7 +40,7 @@ export interface NatSnatRuleV2Config extends cdktf.TerraformMetaArguments {
   readonly sourceType?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
   */
   readonly timeouts?: NatSnatRuleV2Timeouts;

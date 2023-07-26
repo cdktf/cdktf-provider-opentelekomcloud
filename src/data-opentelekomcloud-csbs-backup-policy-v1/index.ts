@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/csbs_backup_policy_v1
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface DataOpentelekomcloudCsbsBackupPolicyV1Config extends cdktf.Terr
   readonly status?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/csbs_backup_policy_v1#tags DataOpentelekomcloudCsbsBackupPolicyV1#tags}
   */
   readonly tags?: DataOpentelekomcloudCsbsBackupPolicyV1Tags[] | cdktf.IResolvable;

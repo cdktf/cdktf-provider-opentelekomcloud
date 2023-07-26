@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket
 // generated from terraform resource schema
 
@@ -53,37 +48,37 @@ export interface ObsBucketConfig extends cdktf.TerraformMetaArguments {
   readonly versioning?: boolean | cdktf.IResolvable;
   /**
   * cors_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#cors_rule ObsBucket#cors_rule}
   */
   readonly corsRule?: ObsBucketCorsRule[] | cdktf.IResolvable;
   /**
   * event_notifications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#event_notifications ObsBucket#event_notifications}
   */
   readonly eventNotifications?: ObsBucketEventNotifications[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
   */
   readonly lifecycleRule?: ObsBucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#logging ObsBucket#logging}
   */
   readonly logging?: ObsBucketLogging[] | cdktf.IResolvable;
   /**
   * server_side_encryption block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#server_side_encryption ObsBucket#server_side_encryption}
   */
   readonly serverSideEncryption?: ObsBucketServerSideEncryption;
   /**
   * website block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#website ObsBucket#website}
   */
   readonly website?: ObsBucketWebsite;
@@ -429,7 +424,7 @@ export interface ObsBucketEventNotifications {
   readonly topic: string;
   /**
   * filter_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#filter_rule ObsBucket#filter_rule}
   */
   readonly filterRule?: ObsBucketEventNotificationsFilterRule[] | cdktf.IResolvable;
@@ -1027,25 +1022,25 @@ export interface ObsBucketLifecycleRule {
   readonly prefix?: string;
   /**
   * expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#expiration ObsBucket#expiration}
   */
   readonly expiration?: ObsBucketLifecycleRuleExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
   */
   readonly noncurrentVersionExpiration?: ObsBucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_transition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
   */
   readonly noncurrentVersionTransition?: ObsBucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable;
   /**
   * transition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/obs_bucket#transition ObsBucket#transition}
   */
   readonly transition?: ObsBucketLifecycleRuleTransition[] | cdktf.IResolvable;

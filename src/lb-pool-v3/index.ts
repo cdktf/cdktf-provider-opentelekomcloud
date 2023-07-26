@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_pool_v3
 // generated from terraform resource schema
 
@@ -61,7 +56,7 @@ export interface LbPoolV3Config extends cdktf.TerraformMetaArguments {
   readonly vpcId?: string;
   /**
   * session_persistence block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_pool_v3#session_persistence LbPoolV3#session_persistence}
   */
   readonly sessionPersistence?: LbPoolV3SessionPersistence;

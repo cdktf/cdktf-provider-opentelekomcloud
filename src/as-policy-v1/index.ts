@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v1
 // generated from terraform resource schema
 
@@ -45,13 +40,13 @@ export interface AsPolicyV1Config extends cdktf.TerraformMetaArguments {
   readonly scalingPolicyType: string;
   /**
   * scaling_policy_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v1#scaling_policy_action AsPolicyV1#scaling_policy_action}
   */
   readonly scalingPolicyAction?: AsPolicyV1ScalingPolicyAction;
   /**
   * scheduled_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v1#scheduled_policy AsPolicyV1#scheduled_policy}
   */
   readonly scheduledPolicy?: AsPolicyV1ScheduledPolicy;

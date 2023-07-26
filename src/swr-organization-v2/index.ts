@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/swr_organization_v2
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface SwrOrganizationV2Config extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/swr_organization_v2#timeouts SwrOrganizationV2#timeouts}
   */
   readonly timeouts?: SwrOrganizationV2Timeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/dns_nameservers_v2
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface DataOpentelekomcloudDnsNameserversV2Config extends cdktf.Terraf
   readonly zoneId?: string;
   /**
   * nameservers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/dns_nameservers_v2#nameservers DataOpentelekomcloudDnsNameserversV2#nameservers}
   */
   readonly nameservers?: DataOpentelekomcloudDnsNameserversV2Nameservers[] | cdktf.IResolvable;

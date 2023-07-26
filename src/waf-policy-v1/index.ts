@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_policy_v1
 // generated from terraform resource schema
 
@@ -37,19 +32,19 @@ export interface WafPolicyV1Config extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_policy_v1#action WafPolicyV1#action}
   */
   readonly action?: WafPolicyV1Action;
   /**
   * options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_policy_v1#options WafPolicyV1#options}
   */
   readonly options?: WafPolicyV1Options;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_policy_v1#timeouts WafPolicyV1#timeouts}
   */
   readonly timeouts?: WafPolicyV1Timeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_falsealarmmasking_rule_v1
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface WafFalsealarmmaskingRuleV1Config extends cdktf.TerraformMetaArg
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_falsealarmmasking_rule_v1#timeouts WafFalsealarmmaskingRuleV1#timeouts}
   */
   readonly timeouts?: WafFalsealarmmaskingRuleV1Timeouts;

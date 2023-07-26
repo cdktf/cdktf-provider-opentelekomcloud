@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1
 // generated from terraform resource schema
 
@@ -53,43 +48,43 @@ export interface RdsInstanceV1Config extends cdktf.TerraformMetaArguments {
   readonly vpc: string;
   /**
   * backupstrategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#backupstrategy RdsInstanceV1#backupstrategy}
   */
   readonly backupstrategy?: RdsInstanceV1Backupstrategy;
   /**
   * datastore block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#datastore RdsInstanceV1#datastore}
   */
   readonly datastore: RdsInstanceV1Datastore;
   /**
   * ha block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#ha RdsInstanceV1#ha}
   */
   readonly ha?: RdsInstanceV1Ha;
   /**
   * nics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#nics RdsInstanceV1#nics}
   */
   readonly nics: RdsInstanceV1Nics;
   /**
   * securitygroup block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#securitygroup RdsInstanceV1#securitygroup}
   */
   readonly securitygroup: RdsInstanceV1Securitygroup;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#timeouts RdsInstanceV1#timeouts}
   */
   readonly timeouts?: RdsInstanceV1Timeouts;
   /**
   * volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v1#volume RdsInstanceV1#volume}
   */
   readonly volume: RdsInstanceV1Volume;

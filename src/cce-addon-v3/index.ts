@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_addon_v3
 // generated from terraform resource schema
 
@@ -33,13 +28,13 @@ export interface CceAddonV3Config extends cdktf.TerraformMetaArguments {
   readonly templateVersion: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_addon_v3#timeouts CceAddonV3#timeouts}
   */
   readonly timeouts?: CceAddonV3Timeouts;
   /**
   * values block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_addon_v3#values CceAddonV3#values}
   */
   readonly values: CceAddonV3Values;

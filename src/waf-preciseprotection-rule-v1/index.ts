@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_preciseprotection_rule_v1
 // generated from terraform resource schema
 
@@ -49,13 +44,13 @@ export interface WafPreciseprotectionRuleV1Config extends cdktf.TerraformMetaArg
   readonly time?: boolean | cdktf.IResolvable;
   /**
   * conditions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_preciseprotection_rule_v1#conditions WafPreciseprotectionRuleV1#conditions}
   */
   readonly conditions: WafPreciseprotectionRuleV1Conditions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_preciseprotection_rule_v1#timeouts WafPreciseprotectionRuleV1#timeouts}
   */
   readonly timeouts?: WafPreciseprotectionRuleV1Timeouts;

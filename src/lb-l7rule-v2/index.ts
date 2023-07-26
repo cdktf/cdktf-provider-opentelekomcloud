@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7rule_v2
 // generated from terraform resource schema
 
@@ -53,7 +48,7 @@ export interface LbL7RuleV2Config extends cdktf.TerraformMetaArguments {
   readonly value: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7rule_v2#timeouts LbL7RuleV2#timeouts}
   */
   readonly timeouts?: LbL7RuleV2Timeouts;

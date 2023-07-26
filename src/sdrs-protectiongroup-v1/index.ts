@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sdrs_protectiongroup_v1
 // generated from terraform resource schema
 
@@ -49,7 +44,7 @@ export interface SdrsProtectiongroupV1Config extends cdktf.TerraformMetaArgument
   readonly targetAvailabilityZone: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sdrs_protectiongroup_v1#timeouts SdrsProtectiongroupV1#timeouts}
   */
   readonly timeouts?: SdrsProtectiongroupV1Timeouts;

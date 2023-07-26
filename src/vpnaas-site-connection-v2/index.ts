@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_site_connection_v2
 // generated from terraform resource schema
 
@@ -97,13 +92,13 @@ export interface VpnaasSiteConnectionV2Config extends cdktf.TerraformMetaArgumen
   readonly vpnserviceId: string;
   /**
   * dpd block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_site_connection_v2#dpd VpnaasSiteConnectionV2#dpd}
   */
   readonly dpd?: VpnaasSiteConnectionV2Dpd[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_site_connection_v2#timeouts VpnaasSiteConnectionV2#timeouts}
   */
   readonly timeouts?: VpnaasSiteConnectionV2Timeouts;

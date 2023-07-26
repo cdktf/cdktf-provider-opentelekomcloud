@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_backup_v3
 // generated from terraform resource schema
 
@@ -37,13 +32,13 @@ export interface RdsBackupV3Config extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /**
   * databases block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_backup_v3#databases RdsBackupV3#databases}
   */
   readonly databases?: RdsBackupV3Databases[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_backup_v3#timeouts RdsBackupV3#timeouts}
   */
   readonly timeouts?: RdsBackupV3Timeouts;

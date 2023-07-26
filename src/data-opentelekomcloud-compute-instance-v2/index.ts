@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/compute_instance_v2
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface DataOpentelekomcloudComputeInstanceV2Config extends cdktf.Terra
   readonly userData?: string;
   /**
   * network block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/compute_instance_v2#network DataOpentelekomcloudComputeInstanceV2#network}
   */
   readonly network?: DataOpentelekomcloudComputeInstanceV2Network[] | cdktf.IResolvable;

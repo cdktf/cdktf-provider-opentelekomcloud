@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_ike_policy_v2
 // generated from terraform resource schema
 
@@ -61,13 +56,13 @@ export interface VpnaasIkePolicyV2Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * lifetime block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_ike_policy_v2#lifetime VpnaasIkePolicyV2#lifetime}
   */
   readonly lifetime?: VpnaasIkePolicyV2Lifetime[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpnaas_ike_policy_v2#timeouts VpnaasIkePolicyV2#timeouts}
   */
   readonly timeouts?: VpnaasIkePolicyV2Timeouts;

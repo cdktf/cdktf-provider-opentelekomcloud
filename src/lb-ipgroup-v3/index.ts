@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_ipgroup_v3
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface LbIpgroupV3Config extends cdktf.TerraformMetaArguments {
   readonly projectId?: string;
   /**
   * ip_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_ipgroup_v3#ip_list LbIpgroupV3#ip_list}
   */
   readonly ipList: LbIpgroupV3IpListStruct[] | cdktf.IResolvable;

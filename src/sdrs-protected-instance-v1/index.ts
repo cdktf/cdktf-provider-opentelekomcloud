@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sdrs_protected_instance_v1
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface SdrsProtectedInstanceV1Config extends cdktf.TerraformMetaArgume
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
   */
   readonly timeouts?: SdrsProtectedInstanceV1Timeouts;

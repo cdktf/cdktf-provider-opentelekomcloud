@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1
 // generated from terraform resource schema
 
@@ -65,13 +60,13 @@ export interface VpcepServiceV1Config extends cdktf.TerraformMetaArguments {
   readonly whitelist?: string[];
   /**
   * port block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1#port VpcepServiceV1#port}
   */
   readonly port: VpcepServiceV1Port[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_service_v1#timeouts VpcepServiceV1#timeouts}
   */
   readonly timeouts?: VpcepServiceV1Timeouts;

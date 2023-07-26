@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dns_zone_v2
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface DnsZoneV2Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * router block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dns_zone_v2#router DnsZoneV2#router}
   */
   readonly router?: DnsZoneV2Router[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
   */
   readonly timeouts?: DnsZoneV2Timeouts;

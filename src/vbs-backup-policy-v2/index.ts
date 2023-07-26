@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_policy_v2
 // generated from terraform resource schema
 
@@ -61,13 +56,13 @@ export interface VbsBackupPolicyV2Config extends cdktf.TerraformMetaArguments {
   readonly weekFrequency?: string[];
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_policy_v2#tags VbsBackupPolicyV2#tags}
   */
   readonly tags?: VbsBackupPolicyV2Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_policy_v2#timeouts VbsBackupPolicyV2#timeouts}
   */
   readonly timeouts?: VbsBackupPolicyV2Timeouts;

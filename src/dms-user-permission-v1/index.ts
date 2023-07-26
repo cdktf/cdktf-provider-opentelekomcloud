@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface DmsUserPermissionV1Config extends cdktf.TerraformMetaArguments 
   readonly topicName: string;
   /**
   * policies block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dms_user_permission_v1#policies DmsUserPermissionV1#policies}
   */
   readonly policies: DmsUserPermissionV1Policies[] | cdktf.IResolvable;

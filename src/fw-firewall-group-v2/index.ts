@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/fw_firewall_group_v2
 // generated from terraform resource schema
 
@@ -57,7 +52,7 @@ export interface FwFirewallGroupV2Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/fw_firewall_group_v2#timeouts FwFirewallGroupV2#timeouts}
   */
   readonly timeouts?: FwFirewallGroupV2Timeouts;

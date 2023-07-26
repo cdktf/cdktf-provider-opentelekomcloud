@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_dump_task_v2
 // generated from terraform resource schema
 
@@ -33,19 +28,19 @@ export interface DisDumpTaskV2Config extends cdktf.TerraformMetaArguments {
   readonly streamName: string;
   /**
   * obs_destination_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_dump_task_v2#obs_destination_descriptor DisDumpTaskV2#obs_destination_descriptor}
   */
   readonly obsDestinationDescriptor?: DisDumpTaskV2ObsDestinationDescriptor[] | cdktf.IResolvable;
   /**
   * obs_processing_schema block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_dump_task_v2#obs_processing_schema DisDumpTaskV2#obs_processing_schema}
   */
   readonly obsProcessingSchema?: DisDumpTaskV2ObsProcessingSchema[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_dump_task_v2#timeouts DisDumpTaskV2#timeouts}
   */
   readonly timeouts?: DisDumpTaskV2Timeouts;

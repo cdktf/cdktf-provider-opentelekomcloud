@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dcs_instance_v1
 // generated from terraform resource schema
 
@@ -97,25 +92,25 @@ export interface DcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * backup_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dcs_instance_v1#backup_policy DcsInstanceV1#backup_policy}
   */
   readonly backupPolicy?: DcsInstanceV1BackupPolicy;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dcs_instance_v1#configuration DcsInstanceV1#configuration}
   */
   readonly configuration?: DcsInstanceV1Configuration[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dcs_instance_v1#timeouts DcsInstanceV1#timeouts}
   */
   readonly timeouts?: DcsInstanceV1Timeouts;
   /**
   * whitelist block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dcs_instance_v1#whitelist DcsInstanceV1#whitelist}
   */
   readonly whitelist?: DcsInstanceV1WhitelistStruct[] | cdktf.IResolvable;

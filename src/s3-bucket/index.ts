@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket
 // generated from terraform resource schema
 
@@ -65,31 +60,31 @@ export interface S3BucketConfig extends cdktf.TerraformMetaArguments {
   readonly websiteEndpoint?: string;
   /**
   * cors_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#cors_rule S3Bucket#cors_rule}
   */
   readonly corsRule?: S3BucketCorsRule[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#lifecycle_rule S3Bucket#lifecycle_rule}
   */
   readonly lifecycleRule?: S3BucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#logging S3Bucket#logging}
   */
   readonly logging?: S3BucketLogging[] | cdktf.IResolvable;
   /**
   * versioning block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#versioning S3Bucket#versioning}
   */
   readonly versioning?: S3BucketVersioning;
   /**
   * website block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#website S3Bucket#website}
   */
   readonly website?: S3BucketWebsite;
@@ -563,13 +558,13 @@ export interface S3BucketLifecycleRule {
   readonly prefix?: string;
   /**
   * expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#expiration S3Bucket#expiration}
   */
   readonly expiration?: S3BucketLifecycleRuleExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/s3_bucket#noncurrent_version_expiration S3Bucket#noncurrent_version_expiration}
   */
   readonly noncurrentVersionExpiration?: S3BucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;

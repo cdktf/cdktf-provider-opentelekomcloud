@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_peering_connection_v2
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface VpcPeeringConnectionV2Config extends cdktf.TerraformMetaArgumen
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
   */
   readonly timeouts?: VpcPeeringConnectionV2Timeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_vault_v3
 // generated from terraform resource schema
 
@@ -53,13 +48,13 @@ export interface CbrVaultV3Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * billing block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_vault_v3#billing CbrVaultV3#billing}
   */
   readonly billing: CbrVaultV3Billing;
   /**
   * bind_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_vault_v3#bind_rules CbrVaultV3#bind_rules}
   */
   readonly bindRules?: CbrVaultV3BindRules[] | cdktf.IResolvable;

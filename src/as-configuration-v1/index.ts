@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1
 // generated from terraform resource schema
 
@@ -29,7 +24,7 @@ export interface AsConfigurationV1Config extends cdktf.TerraformMetaArguments {
   readonly scalingConfigurationName: string;
   /**
   * instance_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#instance_config AsConfigurationV1#instance_config}
   */
   readonly instanceConfig: AsConfigurationV1InstanceConfig;
@@ -438,7 +433,7 @@ export interface AsConfigurationV1InstanceConfigPublicIpEip {
   readonly ipType: string;
   /**
   * bandwidth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#bandwidth AsConfigurationV1#bandwidth}
   */
   readonly bandwidth: AsConfigurationV1InstanceConfigPublicIpEipBandwidth;
@@ -522,7 +517,7 @@ export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends c
 export interface AsConfigurationV1InstanceConfigPublicIp {
   /**
   * eip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#eip AsConfigurationV1#eip}
   */
   readonly eip: AsConfigurationV1InstanceConfigPublicIpEip;
@@ -614,19 +609,19 @@ export interface AsConfigurationV1InstanceConfig {
   readonly userData?: string;
   /**
   * disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#disk AsConfigurationV1#disk}
   */
   readonly disk?: AsConfigurationV1InstanceConfigDisk[] | cdktf.IResolvable;
   /**
   * personality block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#personality AsConfigurationV1#personality}
   */
   readonly personality?: AsConfigurationV1InstanceConfigPersonality[] | cdktf.IResolvable;
   /**
   * public_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_configuration_v1#public_ip AsConfigurationV1#public_ip}
   */
   readonly publicIp?: AsConfigurationV1InstanceConfigPublicIp;

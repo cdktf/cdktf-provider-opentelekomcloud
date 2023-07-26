@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeavailabilityzonesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeavailabilityzonesv2"
 
 dataopentelekomcloudcomputeavailabilityzonesv2.NewDataOpentelekomcloudComputeAvailabilityZonesV2(scope Construct, id *string, config DataOpentelekomcloudComputeAvailabilityZonesV2Config) DataOpentelekomcloudComputeAvailabilityZonesV2
 ```
@@ -291,7 +291,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeavailabilityzonesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeavailabilityzonesv2"
 
 dataopentelekomcloudcomputeavailabilityzonesv2.DataOpentelekomcloudComputeAvailabilityZonesV2_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeavailabilityzonesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeavailabilityzonesv2"
 
 dataopentelekomcloudcomputeavailabilityzonesv2.DataOpentelekomcloudComputeAvailabilityZonesV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataopentelekomcloudcomputeavailabilityzonesv2.DataOpentelekomcloudComputeAvaila
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeavailabilityzonesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeavailabilityzonesv2"
 
 dataopentelekomcloudcomputeavailabilityzonesv2.DataOpentelekomcloudComputeAvailabilityZonesV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudcomputeavailabilityzonesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputeavailabilityzonesv2"
 
 &dataopentelekomcloudcomputeavailabilityzonesv2.DataOpentelekomcloudComputeAvailabilityZonesV2Config {
 	Connection: interface{},

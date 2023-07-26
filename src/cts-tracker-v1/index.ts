@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cts_tracker_v1
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface CtsTrackerV1Config extends cdktf.TerraformMetaArguments {
   readonly isLtsEnabled?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cts_tracker_v1#timeouts CtsTrackerV1#timeouts}
   */
   readonly timeouts?: CtsTrackerV1Timeouts;

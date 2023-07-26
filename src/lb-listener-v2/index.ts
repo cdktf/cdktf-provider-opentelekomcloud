@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_listener_v2
 // generated from terraform resource schema
 
@@ -85,7 +80,7 @@ export interface LbListenerV2Config extends cdktf.TerraformMetaArguments {
   readonly transparentClientIpEnable?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_listener_v2#timeouts LbListenerV2#timeouts}
   */
   readonly timeouts?: LbListenerV2Timeouts;

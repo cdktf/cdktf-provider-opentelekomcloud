@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_role_v3
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface IdentityRoleV3Config extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * statement block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_role_v3#statement IdentityRoleV3#statement}
   */
   readonly statement: IdentityRoleV3Statement[] | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/deh_host_v1
 // generated from terraform resource schema
 
@@ -81,13 +76,13 @@ export interface DehHostV1Config extends cdktf.TerraformMetaArguments {
   readonly vcpus?: number;
   /**
   * available_instance_capacities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/deh_host_v1#available_instance_capacities DehHostV1#available_instance_capacities}
   */
   readonly availableInstanceCapacities?: DehHostV1AvailableInstanceCapacities[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/deh_host_v1#timeouts DehHostV1#timeouts}
   */
   readonly timeouts?: DehHostV1Timeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3
 // generated from terraform resource schema
 
@@ -77,31 +72,31 @@ export interface RdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * backup_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3#backup_strategy RdsInstanceV3#backup_strategy}
   */
   readonly backupStrategy?: RdsInstanceV3BackupStrategy;
   /**
   * db block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3#db RdsInstanceV3#db}
   */
   readonly db: RdsInstanceV3Db;
   /**
   * restore_point block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3#restore_point RdsInstanceV3#restore_point}
   */
   readonly restorePoint?: RdsInstanceV3RestorePoint;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3#timeouts RdsInstanceV3#timeouts}
   */
   readonly timeouts?: RdsInstanceV3Timeouts;
   /**
   * volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_instance_v3#volume RdsInstanceV3#volume}
   */
   readonly volume: RdsInstanceV3Volume;

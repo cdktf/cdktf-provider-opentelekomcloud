@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ecs_instance_v1
 // generated from terraform resource schema
 
@@ -81,19 +76,19 @@ export interface EcsInstanceV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * data_disks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ecs_instance_v1#data_disks EcsInstanceV1#data_disks}
   */
   readonly dataDisks?: EcsInstanceV1DataDisks[] | cdktf.IResolvable;
   /**
   * nics block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ecs_instance_v1#nics EcsInstanceV1#nics}
   */
   readonly nics: EcsInstanceV1Nics[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ecs_instance_v1#timeouts EcsInstanceV1#timeouts}
   */
   readonly timeouts?: EcsInstanceV1Timeouts;
