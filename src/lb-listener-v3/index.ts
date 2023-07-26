@@ -101,13 +101,13 @@ export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   readonly tlsCiphersPolicy?: string;
   /**
   * insert_headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_listener_v3#insert_headers LbListenerV3#insert_headers}
   */
   readonly insertHeaders?: LbListenerV3InsertHeaders;
   /**
   * ip_group block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_listener_v3#ip_group LbListenerV3#ip_group}
   */
   readonly ipGroup?: LbListenerV3IpGroup;

@@ -57,13 +57,13 @@ export interface LbPoolV2Config extends cdktf.TerraformMetaArguments {
   readonly tenantId?: string;
   /**
   * persistence block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_pool_v2#persistence LbPoolV2#persistence}
   */
   readonly persistence?: LbPoolV2Persistence[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_pool_v2#timeouts LbPoolV2#timeouts}
   */
   readonly timeouts?: LbPoolV2Timeouts;

@@ -57,7 +57,7 @@ export interface VpcepEndpointV1Config extends cdktf.TerraformMetaArguments {
   readonly whitelist?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpcep_endpoint_v1#timeouts VpcepEndpointV1#timeouts}
   */
   readonly timeouts?: VpcepEndpointV1Timeouts;

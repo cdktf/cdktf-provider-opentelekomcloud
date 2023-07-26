@@ -45,13 +45,13 @@ export interface RdsReadReplicaV3Config extends cdktf.TerraformMetaArguments {
   readonly replicaOfId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_read_replica_v3#timeouts RdsReadReplicaV3#timeouts}
   */
   readonly timeouts?: RdsReadReplicaV3Timeouts;
   /**
   * volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_read_replica_v3#volume RdsReadReplicaV3#volume}
   */
   readonly volume: RdsReadReplicaV3Volume;

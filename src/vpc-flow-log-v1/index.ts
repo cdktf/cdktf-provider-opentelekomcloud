@@ -57,7 +57,7 @@ export interface VpcFlowLogV1Config extends cdktf.TerraformMetaArguments {
   readonly trafficType: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_flow_log_v1#timeouts VpcFlowLogV1#timeouts}
   */
   readonly timeouts?: VpcFlowLogV1Timeouts;

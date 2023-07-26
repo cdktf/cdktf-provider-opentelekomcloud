@@ -57,7 +57,7 @@ export interface DataOpentelekomcloudCsbsBackupV1Config extends cdktf.TerraformM
   readonly vmIp?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/csbs_backup_v1#tags DataOpentelekomcloudCsbsBackupV1#tags}
   */
   readonly tags?: DataOpentelekomcloudCsbsBackupV1Tags[] | cdktf.IResolvable;

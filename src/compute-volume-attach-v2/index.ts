@@ -37,7 +37,7 @@ export interface ComputeVolumeAttachV2Config extends cdktf.TerraformMetaArgument
   readonly volumeId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
   */
   readonly timeouts?: ComputeVolumeAttachV2Timeouts;

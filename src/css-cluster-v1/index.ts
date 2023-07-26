@@ -45,19 +45,19 @@ export interface CssClusterV1Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * datastore block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_cluster_v1#datastore CssClusterV1#datastore}
   */
   readonly datastore?: CssClusterV1Datastore;
   /**
   * node_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_cluster_v1#node_config CssClusterV1#node_config}
   */
   readonly nodeConfig: CssClusterV1NodeConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_cluster_v1#timeouts CssClusterV1#timeouts}
   */
   readonly timeouts?: CssClusterV1Timeouts;
@@ -462,13 +462,13 @@ export interface CssClusterV1NodeConfig {
   readonly flavor: string;
   /**
   * network_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_cluster_v1#network_info CssClusterV1#network_info}
   */
   readonly networkInfo: CssClusterV1NodeConfigNetworkInfo;
   /**
   * volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_cluster_v1#volume CssClusterV1#volume}
   */
   readonly volume: CssClusterV1NodeConfigVolume;

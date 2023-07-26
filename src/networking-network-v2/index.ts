@@ -45,13 +45,13 @@ export interface NetworkingNetworkV2Config extends cdktf.TerraformMetaArguments 
   readonly valueSpecs?: { [key: string]: string };
   /**
   * segments block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_network_v2#segments NetworkingNetworkV2#segments}
   */
   readonly segments?: NetworkingNetworkV2Segments[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_network_v2#timeouts NetworkingNetworkV2#timeouts}
   */
   readonly timeouts?: NetworkingNetworkV2Timeouts;

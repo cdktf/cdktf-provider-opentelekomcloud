@@ -41,7 +41,7 @@ export interface DataOpentelekomcloudCssFlavorV1Config extends cdktf.TerraformMe
   readonly version?: string;
   /**
   * disk_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/css_flavor_v1#disk_range DataOpentelekomcloudCssFlavorV1#disk_range}
   */
   readonly diskRange?: DataOpentelekomcloudCssFlavorV1DiskRange;

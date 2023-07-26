@@ -81,7 +81,7 @@ export interface BlockstorageVolumeV2Config extends cdktf.TerraformMetaArguments
   readonly volumeType?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/blockstorage_volume_v2#timeouts BlockstorageVolumeV2#timeouts}
   */
   readonly timeouts?: BlockstorageVolumeV2Timeouts;

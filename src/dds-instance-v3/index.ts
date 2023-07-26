@@ -65,25 +65,25 @@ export interface DdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * backup_strategy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dds_instance_v3#backup_strategy DdsInstanceV3#backup_strategy}
   */
   readonly backupStrategy?: DdsInstanceV3BackupStrategy;
   /**
   * datastore block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dds_instance_v3#datastore DdsInstanceV3#datastore}
   */
   readonly datastore: DdsInstanceV3Datastore;
   /**
   * flavor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dds_instance_v3#flavor DdsInstanceV3#flavor}
   */
   readonly flavor: DdsInstanceV3Flavor[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dds_instance_v3#timeouts DdsInstanceV3#timeouts}
   */
   readonly timeouts?: DdsInstanceV3Timeouts;

@@ -33,7 +33,7 @@ export interface VbsBackupShareV2Config extends cdktf.TerraformMetaArguments {
   readonly toProjectIds: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_share_v2#timeouts VbsBackupShareV2#timeouts}
   */
   readonly timeouts?: VbsBackupShareV2Timeouts;

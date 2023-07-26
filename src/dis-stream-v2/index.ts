@@ -57,7 +57,7 @@ export interface DisStreamV2Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_stream_v2#timeouts DisStreamV2#timeouts}
   */
   readonly timeouts?: DisStreamV2Timeouts;

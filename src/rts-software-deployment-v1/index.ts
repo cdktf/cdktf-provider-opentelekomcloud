@@ -57,7 +57,7 @@ export interface RtsSoftwareDeploymentV1Config extends cdktf.TerraformMetaArgume
   readonly tenantId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rts_software_deployment_v1#timeouts RtsSoftwareDeploymentV1#timeouts}
   */
   readonly timeouts?: RtsSoftwareDeploymentV1Timeouts;

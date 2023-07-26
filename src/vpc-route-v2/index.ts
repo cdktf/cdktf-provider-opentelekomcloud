@@ -45,7 +45,7 @@ export interface VpcRouteV2Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_route_v2#timeouts VpcRouteV2#timeouts}
   */
   readonly timeouts?: VpcRouteV2Timeouts;

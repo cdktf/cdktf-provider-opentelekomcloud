@@ -33,7 +33,7 @@ export interface IdentityProtocolV3Config extends cdktf.TerraformMetaArguments {
   readonly providerId: string;
   /**
   * metadata block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
   */
   readonly metadata?: IdentityProtocolV3Metadata;

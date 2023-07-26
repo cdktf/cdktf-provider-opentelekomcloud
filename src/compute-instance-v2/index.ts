@@ -101,25 +101,25 @@ export interface ComputeInstanceV2Config extends cdktf.TerraformMetaArguments {
   readonly userData?: string;
   /**
   * block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_instance_v2#block_device ComputeInstanceV2#block_device}
   */
   readonly blockDevice?: ComputeInstanceV2BlockDevice[] | cdktf.IResolvable;
   /**
   * network block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_instance_v2#network ComputeInstanceV2#network}
   */
   readonly network?: ComputeInstanceV2Network[] | cdktf.IResolvable;
   /**
   * scheduler_hints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_instance_v2#scheduler_hints ComputeInstanceV2#scheduler_hints}
   */
   readonly schedulerHints?: ComputeInstanceV2SchedulerHints[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_instance_v2#timeouts ComputeInstanceV2#timeouts}
   */
   readonly timeouts?: ComputeInstanceV2Timeouts;

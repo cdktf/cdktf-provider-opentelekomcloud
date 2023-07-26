@@ -25,7 +25,7 @@ export interface SfsShareAccessRulesV2Config extends cdktf.TerraformMetaArgument
   readonly shareId: string;
   /**
   * access_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sfs_share_access_rules_v2#access_rule SfsShareAccessRulesV2#access_rule}
   */
   readonly accessRule: SfsShareAccessRulesV2AccessRule[] | cdktf.IResolvable;

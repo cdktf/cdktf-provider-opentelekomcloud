@@ -73,7 +73,7 @@ export interface EvsVolumeV3Config extends cdktf.TerraformMetaArguments {
   readonly volumeType: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/evs_volume_v3#timeouts EvsVolumeV3#timeouts}
   */
   readonly timeouts?: EvsVolumeV3Timeouts;

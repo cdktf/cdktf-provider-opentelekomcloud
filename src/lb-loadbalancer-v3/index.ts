@@ -73,7 +73,7 @@ export interface LbLoadbalancerV3Config extends cdktf.TerraformMetaArguments {
   readonly vipAddress?: string;
   /**
   * public_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_loadbalancer_v3#public_ip LbLoadbalancerV3#public_ip}
   */
   readonly publicIp?: LbLoadbalancerV3PublicIp;

@@ -69,7 +69,7 @@ export interface WafCcattackprotectionRuleV1Config extends cdktf.TerraformMetaAr
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_ccattackprotection_rule_v1#timeouts WafCcattackprotectionRuleV1#timeouts}
   */
   readonly timeouts?: WafCcattackprotectionRuleV1Timeouts;

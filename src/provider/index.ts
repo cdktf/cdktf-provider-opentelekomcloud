@@ -15,61 +15,61 @@ export interface OpentelekomcloudProviderConfig {
   /**
   * The access key for API operations. You can retrieve this
 from the 'My Credential' section of the console.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#access_key OpentelekomcloudProvider#access_key}
   */
   readonly accessKey?: string;
   /**
   * The name of domain who created the agency (Identity v3).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#agency_domain_name OpentelekomcloudProvider#agency_domain_name}
   */
   readonly agencyDomainName?: string;
   /**
   * The name of agency
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#agency_name OpentelekomcloudProvider#agency_name}
   */
   readonly agencyName?: string;
   /**
   * The Identity authentication URL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#auth_url OpentelekomcloudProvider#auth_url}
   */
   readonly authUrl?: string;
   /**
   * A Custom CA certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#cacert_file OpentelekomcloudProvider#cacert_file}
   */
   readonly cacertFile?: string;
   /**
   * A client certificate to authenticate with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#cert OpentelekomcloudProvider#cert}
   */
   readonly cert?: string;
   /**
   * An entry in a `clouds.yaml` file to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#cloud OpentelekomcloudProvider#cloud}
   */
   readonly cloud?: string;
   /**
   * The name of delegated project (Identity v3).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#delegated_project OpentelekomcloudProvider#delegated_project}
   */
   readonly delegatedProject?: string;
   /**
   * The ID of the Domain to scope to (Identity v3).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#domain_id OpentelekomcloudProvider#domain_id}
   */
   readonly domainId?: string;
   /**
   * The name of the Domain to scope to (Identity v3).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#domain_name OpentelekomcloudProvider#domain_name}
   */
   readonly domainName?: string;
@@ -79,95 +79,95 @@ from the 'My Credential' section of the console.
   readonly endpointType?: string;
   /**
   * Trust self-signed certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#insecure OpentelekomcloudProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * A client private key to authenticate with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#key OpentelekomcloudProvider#key}
   */
   readonly key?: string;
   /**
   * How many times HTTP connection should be retried until giving up.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#max_retries OpentelekomcloudProvider#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * One-time MFA passcode
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#passcode OpentelekomcloudProvider#passcode}
   */
   readonly passcode?: string;
   /**
   * Password to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#password OpentelekomcloudProvider#password}
   */
   readonly password?: string;
   /**
   * The OpenTelekomCloud region to connect to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#region OpentelekomcloudProvider#region}
   */
   readonly region?: string;
   /**
   * The secret key for API operations. You can retrieve this
 from the 'My Credential' section of the console.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#secret_key OpentelekomcloudProvider#secret_key}
   */
   readonly secretKey?: string;
   /**
   * Security token to use for OBS federated authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#security_token OpentelekomcloudProvider#security_token}
   */
   readonly securityToken?: string;
   /**
   * Use Swift's authentication system instead of Keystone. Only used for
 interaction with Swift.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#swauth OpentelekomcloudProvider#swauth}
   */
   readonly swauth?: boolean | cdktf.IResolvable;
   /**
   * The ID of the Tenant (Identity v2) or Project (Identity v3)
 to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#tenant_id OpentelekomcloudProvider#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * The name of the Tenant (Identity v2) or Project (Identity v3)
 to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#tenant_name OpentelekomcloudProvider#tenant_name}
   */
   readonly tenantName?: string;
   /**
   * Authentication token to use as an alternative to username/password.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#token OpentelekomcloudProvider#token}
   */
   readonly token?: string;
   /**
   * User ID to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#user_id OpentelekomcloudProvider#user_id}
   */
   readonly userId?: string;
   /**
   * Username to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#user_name OpentelekomcloudProvider#user_name}
   */
   readonly userName?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs#alias OpentelekomcloudProvider#alias}
   */
   readonly alias?: string;

@@ -18,7 +18,7 @@ export interface DisAppV2Config extends cdktf.TerraformMetaArguments {
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_app_v2#timeouts DisAppV2#timeouts}
   */
   readonly timeouts?: DisAppV2Timeouts;

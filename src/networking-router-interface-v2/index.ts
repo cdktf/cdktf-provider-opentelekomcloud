@@ -37,7 +37,7 @@ export interface NetworkingRouterInterfaceV2Config extends cdktf.TerraformMetaAr
   readonly subnetId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_router_interface_v2#timeouts NetworkingRouterInterfaceV2#timeouts}
   */
   readonly timeouts?: NetworkingRouterInterfaceV2Timeouts;

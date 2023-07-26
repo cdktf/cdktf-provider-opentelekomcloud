@@ -37,13 +37,13 @@ export interface CtsEventNotificationV3Config extends cdktf.TerraformMetaArgumen
   readonly topicId?: string;
   /**
   * notify_user_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cts_event_notification_v3#notify_user_list CtsEventNotificationV3#notify_user_list}
   */
   readonly notifyUserList?: CtsEventNotificationV3NotifyUserListStruct[] | cdktf.IResolvable;
   /**
   * operations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cts_event_notification_v3#operations CtsEventNotificationV3#operations}
   */
   readonly operations?: CtsEventNotificationV3Operations[] | cdktf.IResolvable;

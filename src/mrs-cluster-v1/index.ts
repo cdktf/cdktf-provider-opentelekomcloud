@@ -121,25 +121,25 @@ export interface MrsClusterV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * add_jobs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/mrs_cluster_v1#add_jobs MrsClusterV1#add_jobs}
   */
   readonly addJobs?: MrsClusterV1AddJobs[] | cdktf.IResolvable;
   /**
   * bootstrap_scripts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/mrs_cluster_v1#bootstrap_scripts MrsClusterV1#bootstrap_scripts}
   */
   readonly bootstrapScripts?: MrsClusterV1BootstrapScripts[] | cdktf.IResolvable;
   /**
   * component_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/mrs_cluster_v1#component_list MrsClusterV1#component_list}
   */
   readonly componentList: MrsClusterV1ComponentListStruct[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/mrs_cluster_v1#timeouts MrsClusterV1#timeouts}
   */
   readonly timeouts?: MrsClusterV1Timeouts;

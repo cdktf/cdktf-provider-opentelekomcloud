@@ -61,7 +61,7 @@ export interface SfsTurboShareV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/sfs_turbo_share_v1#timeouts SfsTurboShareV1#timeouts}
   */
   readonly timeouts?: SfsTurboShareV1Timeouts;

@@ -34,7 +34,7 @@ export interface CtsTrackerV3Config extends cdktf.TerraformMetaArguments {
   readonly status: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
   */
   readonly timeouts?: CtsTrackerV3Timeouts;

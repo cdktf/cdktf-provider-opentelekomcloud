@@ -73,7 +73,7 @@ export interface ImsImageV2Config extends cdktf.TerraformMetaArguments {
   readonly volumeId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ims_image_v2#timeouts ImsImageV2#timeouts}
   */
   readonly timeouts?: ImsImageV2Timeouts;

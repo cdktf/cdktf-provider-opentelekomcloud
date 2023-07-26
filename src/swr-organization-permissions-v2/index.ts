@@ -37,7 +37,7 @@ export interface SwrOrganizationPermissionsV2Config extends cdktf.TerraformMetaA
   readonly username: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/swr_organization_permissions_v2#timeouts SwrOrganizationPermissionsV2#timeouts}
   */
   readonly timeouts?: SwrOrganizationPermissionsV2Timeouts;

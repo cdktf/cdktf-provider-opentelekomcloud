@@ -29,19 +29,19 @@ export interface CssSnapshotConfigurationV1Config extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * configuration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_snapshot_configuration_v1#configuration CssSnapshotConfigurationV1#configuration}
   */
   readonly configuration?: CssSnapshotConfigurationV1Configuration;
   /**
   * creation_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_snapshot_configuration_v1#creation_policy CssSnapshotConfigurationV1#creation_policy}
   */
   readonly creationPolicy?: CssSnapshotConfigurationV1CreationPolicy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/css_snapshot_configuration_v1#timeouts CssSnapshotConfigurationV1#timeouts}
   */
   readonly timeouts?: CssSnapshotConfigurationV1Timeouts;

@@ -57,7 +57,7 @@ export interface RtsStackV1Config extends cdktf.TerraformMetaArguments {
   readonly timeoutMins?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rts_stack_v1#timeouts RtsStackV1#timeouts}
   */
   readonly timeouts?: RtsStackV1Timeouts;

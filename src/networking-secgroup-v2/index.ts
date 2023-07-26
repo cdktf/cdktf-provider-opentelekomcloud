@@ -41,7 +41,7 @@ export interface NetworkingSecgroupV2Config extends cdktf.TerraformMetaArguments
   readonly tenantId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_secgroup_v2#timeouts NetworkingSecgroupV2#timeouts}
   */
   readonly timeouts?: NetworkingSecgroupV2Timeouts;

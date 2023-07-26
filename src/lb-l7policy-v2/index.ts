@@ -61,7 +61,7 @@ export interface LbL7PolicyV2Config extends cdktf.TerraformMetaArguments {
   readonly tenantId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_l7policy_v2#timeouts LbL7PolicyV2#timeouts}
   */
   readonly timeouts?: LbL7PolicyV2Timeouts;

@@ -33,13 +33,13 @@ export interface ComputeSecgroupV2Config extends cdktf.TerraformMetaArguments {
   readonly region?: string;
   /**
   * rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_secgroup_v2#rule ComputeSecgroupV2#rule}
   */
   readonly rule?: ComputeSecgroupV2Rule[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_secgroup_v2#timeouts ComputeSecgroupV2#timeouts}
   */
   readonly timeouts?: ComputeSecgroupV2Timeouts;

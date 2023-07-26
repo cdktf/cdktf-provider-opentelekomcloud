@@ -41,13 +41,13 @@ export interface CsbsBackupV1Config extends cdktf.TerraformMetaArguments {
   readonly resourceType?: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/csbs_backup_v1#tags CsbsBackupV1#tags}
   */
   readonly tags?: CsbsBackupV1Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}
   */
   readonly timeouts?: CsbsBackupV1Timeouts;

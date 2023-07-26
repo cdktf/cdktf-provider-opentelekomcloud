@@ -37,19 +37,19 @@ export interface VpcEipV1Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * bandwidth block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_eip_v1#bandwidth VpcEipV1#bandwidth}
   */
   readonly bandwidth: VpcEipV1Bandwidth;
   /**
   * publicip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_eip_v1#publicip VpcEipV1#publicip}
   */
   readonly publicip: VpcEipV1Publicip;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_eip_v1#timeouts VpcEipV1#timeouts}
   */
   readonly timeouts?: VpcEipV1Timeouts;

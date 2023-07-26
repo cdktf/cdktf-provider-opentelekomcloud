@@ -18,13 +18,13 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   readonly availableZones?: string[];
   /**
   * The cooling duration, in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#cool_down_time AsGroupV1#cool_down_time}
   */
   readonly coolDownTime?: number;
   /**
   * Whether to delete instances when they are removed from the AS group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#delete_instances AsGroupV1#delete_instances}
   */
   readonly deleteInstances: string;
@@ -38,7 +38,7 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   readonly desireInstanceNumber?: number;
   /**
   * The grace period for instance health check, in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#health_periodic_audit_grace_period AsGroupV1#health_periodic_audit_grace_period}
   */
   readonly healthPeriodicAuditGracePeriod?: number;
@@ -48,7 +48,7 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   readonly healthPeriodicAuditMethod?: string;
   /**
   * The health check period for instances, in minutes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#health_periodic_audit_time AsGroupV1#health_periodic_audit_time}
   */
   readonly healthPeriodicAuditTime?: number;
@@ -65,7 +65,7 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   readonly instanceTerminatePolicy?: string;
   /**
   * The system supports the binding of up to six classic LB listeners, the IDs of which are separated using a comma.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#lb_listener_id AsGroupV1#lb_listener_id}
   */
   readonly lbListenerId?: string;
@@ -103,25 +103,25 @@ export interface AsGroupV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * lbaas_listeners block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#lbaas_listeners AsGroupV1#lbaas_listeners}
   */
   readonly lbaasListeners?: AsGroupV1LbaasListeners[] | cdktf.IResolvable;
   /**
   * networks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#networks AsGroupV1#networks}
   */
   readonly networks: AsGroupV1Networks[] | cdktf.IResolvable;
   /**
   * security_groups block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#security_groups AsGroupV1#security_groups}
   */
   readonly securityGroups?: AsGroupV1SecurityGroups;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_group_v1#timeouts AsGroupV1#timeouts}
   */
   readonly timeouts?: AsGroupV1Timeouts;

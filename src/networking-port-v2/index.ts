@@ -69,19 +69,19 @@ export interface NetworkingPortV2Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * allowed_address_pairs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_port_v2#allowed_address_pairs NetworkingPortV2#allowed_address_pairs}
   */
   readonly allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable;
   /**
   * fixed_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_port_v2#fixed_ip NetworkingPortV2#fixed_ip}
   */
   readonly fixedIp?: NetworkingPortV2FixedIp[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_port_v2#timeouts NetworkingPortV2#timeouts}
   */
   readonly timeouts?: NetworkingPortV2Timeouts;

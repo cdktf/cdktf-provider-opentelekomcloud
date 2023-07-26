@@ -77,7 +77,7 @@ export interface LbMonitorV2Config extends cdktf.TerraformMetaArguments {
   readonly urlPath?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_monitor_v2#timeouts LbMonitorV2#timeouts}
   */
   readonly timeouts?: LbMonitorV2Timeouts;

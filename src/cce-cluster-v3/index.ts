@@ -129,13 +129,13 @@ export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * authenticating_proxy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_cluster_v3#authenticating_proxy CceClusterV3#authenticating_proxy}
   */
   readonly authenticatingProxy?: CceClusterV3AuthenticatingProxy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_cluster_v3#timeouts CceClusterV3#timeouts}
   */
   readonly timeouts?: CceClusterV3Timeouts;

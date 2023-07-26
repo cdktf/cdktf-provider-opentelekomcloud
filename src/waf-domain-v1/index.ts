@@ -53,19 +53,19 @@ export interface WafDomainV1Config extends cdktf.TerraformMetaArguments {
   readonly tls?: string;
   /**
   * block_page block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_domain_v1#block_page WafDomainV1#block_page}
   */
   readonly blockPage?: WafDomainV1BlockPage;
   /**
   * server block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_domain_v1#server WafDomainV1#server}
   */
   readonly server: WafDomainV1Server[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_domain_v1#timeouts WafDomainV1#timeouts}
   */
   readonly timeouts?: WafDomainV1Timeouts;

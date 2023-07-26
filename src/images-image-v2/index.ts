@@ -69,7 +69,7 @@ export interface ImagesImageV2Config extends cdktf.TerraformMetaArguments {
   readonly visibility?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/images_image_v2#timeouts ImagesImageV2#timeouts}
   */
   readonly timeouts?: ImagesImageV2Timeouts;

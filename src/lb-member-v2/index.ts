@@ -57,7 +57,7 @@ export interface LbMemberV2Config extends cdktf.TerraformMetaArguments {
   readonly weight?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_member_v2#timeouts LbMemberV2#timeouts}
   */
   readonly timeouts?: LbMemberV2Timeouts;

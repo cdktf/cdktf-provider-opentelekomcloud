@@ -61,25 +61,25 @@ export interface LbPolicyV3Config extends cdktf.TerraformMetaArguments {
   readonly redirectUrl?: string;
   /**
   * fixed_response_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_policy_v3#fixed_response_config LbPolicyV3#fixed_response_config}
   */
   readonly fixedResponseConfig?: LbPolicyV3FixedResponseConfig;
   /**
   * redirect_pools_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_policy_v3#redirect_pools_config LbPolicyV3#redirect_pools_config}
   */
   readonly redirectPoolsConfig?: LbPolicyV3RedirectPoolsConfig[] | cdktf.IResolvable;
   /**
   * redirect_url_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_policy_v3#redirect_url_config LbPolicyV3#redirect_url_config}
   */
   readonly redirectUrlConfig?: LbPolicyV3RedirectUrlConfig;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_policy_v3#rules LbPolicyV3#rules}
   */
   readonly rules?: LbPolicyV3Rules[] | cdktf.IResolvable;

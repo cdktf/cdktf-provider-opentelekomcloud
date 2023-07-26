@@ -145,25 +145,25 @@ export interface CceNodeV3Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * data_volumes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_node_v3#data_volumes CceNodeV3#data_volumes}
   */
   readonly dataVolumes: CceNodeV3DataVolumes[] | cdktf.IResolvable;
   /**
   * root_volume block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_node_v3#root_volume CceNodeV3#root_volume}
   */
   readonly rootVolume: CceNodeV3RootVolume;
   /**
   * taints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_node_v3#taints CceNodeV3#taints}
   */
   readonly taints?: CceNodeV3Taints[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cce_node_v3#timeouts CceNodeV3#timeouts}
   */
   readonly timeouts?: CceNodeV3Timeouts;

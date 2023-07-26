@@ -33,7 +33,7 @@ export interface RdsParametergroupV3Config extends cdktf.TerraformMetaArguments 
   readonly values?: { [key: string]: string };
   /**
   * datastore block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rds_parametergroup_v3#datastore RdsParametergroupV3#datastore}
   */
   readonly datastore: RdsParametergroupV3Datastore;

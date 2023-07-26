@@ -65,19 +65,19 @@ export interface NetworkingSubnetV2Config extends cdktf.TerraformMetaArguments {
   readonly valueSpecs?: { [key: string]: string };
   /**
   * allocation_pools block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_subnet_v2#allocation_pools NetworkingSubnetV2#allocation_pools}
   */
   readonly allocationPools?: NetworkingSubnetV2AllocationPools[] | cdktf.IResolvable;
   /**
   * host_routes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_subnet_v2#host_routes NetworkingSubnetV2#host_routes}
   */
   readonly hostRoutes?: NetworkingSubnetV2HostRoutes[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/networking_subnet_v2#timeouts NetworkingSubnetV2#timeouts}
   */
   readonly timeouts?: NetworkingSubnetV2Timeouts;

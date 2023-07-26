@@ -41,7 +41,7 @@ export interface SwrRepositoryV2Config extends cdktf.TerraformMetaArguments {
   readonly organization: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/swr_repository_v2#timeouts SwrRepositoryV2#timeouts}
   */
   readonly timeouts?: SwrRepositoryV2Timeouts;

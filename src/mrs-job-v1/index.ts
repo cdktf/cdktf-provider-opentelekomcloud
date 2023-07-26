@@ -69,7 +69,7 @@ export interface MrsJobV1Config extends cdktf.TerraformMetaArguments {
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/mrs_job_v1#timeouts MrsJobV1#timeouts}
   */
   readonly timeouts?: MrsJobV1Timeouts;

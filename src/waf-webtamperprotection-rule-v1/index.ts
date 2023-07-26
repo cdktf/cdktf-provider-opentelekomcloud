@@ -33,7 +33,7 @@ export interface WafWebtamperprotectionRuleV1Config extends cdktf.TerraformMetaA
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_webtamperprotection_rule_v1#timeouts WafWebtamperprotectionRuleV1#timeouts}
   */
   readonly timeouts?: WafWebtamperprotectionRuleV1Timeouts;

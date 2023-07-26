@@ -45,31 +45,31 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * alarm_actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#alarm_actions CesAlarmrule#alarm_actions}
   */
   readonly alarmActions?: CesAlarmruleAlarmActions[] | cdktf.IResolvable;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#condition CesAlarmrule#condition}
   */
   readonly condition: CesAlarmruleCondition;
   /**
   * metric block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#metric CesAlarmrule#metric}
   */
   readonly metric: CesAlarmruleMetric;
   /**
   * ok_actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#ok_actions CesAlarmrule#ok_actions}
   */
   readonly okActions?: CesAlarmruleOkActions[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#timeouts CesAlarmrule#timeouts}
   */
   readonly timeouts?: CesAlarmruleTimeouts;
@@ -533,7 +533,7 @@ export interface CesAlarmruleMetric {
   readonly namespace: string;
   /**
   * dimensions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/ces_alarmrule#dimensions CesAlarmrule#dimensions}
   */
   readonly dimensions?: CesAlarmruleMetricDimensions[] | cdktf.IResolvable;

@@ -77,19 +77,19 @@ export interface ComputeBmsServerV2Config extends cdktf.TerraformMetaArguments {
   readonly userData?: string;
   /**
   * block_device block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_bms_server_v2#block_device ComputeBmsServerV2#block_device}
   */
   readonly blockDevice?: ComputeBmsServerV2BlockDevice[] | cdktf.IResolvable;
   /**
   * network block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_bms_server_v2#network ComputeBmsServerV2#network}
   */
   readonly network?: ComputeBmsServerV2Network[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/compute_bms_server_v2#timeouts ComputeBmsServerV2#timeouts}
   */
   readonly timeouts?: ComputeBmsServerV2Timeouts;

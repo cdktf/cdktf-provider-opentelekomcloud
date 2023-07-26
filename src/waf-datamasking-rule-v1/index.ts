@@ -37,7 +37,7 @@ export interface WafDatamaskingRuleV1Config extends cdktf.TerraformMetaArguments
   readonly url: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/waf_datamasking_rule_v1#timeouts WafDatamaskingRuleV1#timeouts}
   */
   readonly timeouts?: WafDatamaskingRuleV1Timeouts;

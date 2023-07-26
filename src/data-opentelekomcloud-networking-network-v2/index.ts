@@ -38,7 +38,7 @@ export interface DataOpentelekomcloudNetworkingNetworkV2Config extends cdktf.Ter
   /**
   * The ID of the Tenant (Identity v2) or Project (Identity v3)
 to login with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/networking_network_v2#tenant_id DataOpentelekomcloudNetworkingNetworkV2#tenant_id}
   */
   readonly tenantId?: string;

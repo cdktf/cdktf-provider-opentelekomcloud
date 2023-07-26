@@ -45,7 +45,7 @@ export interface VpcV1Config extends cdktf.TerraformMetaArguments {
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vpc_v1#timeouts VpcV1#timeouts}
   */
   readonly timeouts?: VpcV1Timeouts;

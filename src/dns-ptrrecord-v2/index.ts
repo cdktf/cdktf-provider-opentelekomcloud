@@ -41,7 +41,7 @@ export interface DnsPtrrecordV2Config extends cdktf.TerraformMetaArguments {
   readonly ttl?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dns_ptrrecord_v2#timeouts DnsPtrrecordV2#timeouts}
   */
   readonly timeouts?: DnsPtrrecordV2Timeouts;

@@ -49,7 +49,7 @@ export interface LbCertificateV2Config extends cdktf.TerraformMetaArguments {
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_certificate_v2#timeouts LbCertificateV2#timeouts}
   */
   readonly timeouts?: LbCertificateV2Timeouts;

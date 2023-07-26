@@ -41,7 +41,7 @@ export interface LbRuleV3Config extends cdktf.TerraformMetaArguments {
   readonly value: string;
   /**
   * conditions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/lb_rule_v3#conditions LbRuleV3#conditions}
   */
   readonly conditions?: LbRuleV3Conditions[] | cdktf.IResolvable;

@@ -49,7 +49,7 @@ export interface RtsSoftwareConfigV1Config extends cdktf.TerraformMetaArguments 
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/rts_software_config_v1#timeouts RtsSoftwareConfigV1#timeouts}
   */
   readonly timeouts?: RtsSoftwareConfigV1Timeouts;

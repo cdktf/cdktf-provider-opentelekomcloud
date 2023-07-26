@@ -37,7 +37,7 @@ export interface CbrPolicyV3Config extends cdktf.TerraformMetaArguments {
   readonly triggerPattern: string[];
   /**
   * operation_definition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/cbr_policy_v3#operation_definition CbrPolicyV3#operation_definition}
   */
   readonly operationDefinition?: CbrPolicyV3OperationDefinition;

@@ -69,25 +69,25 @@ export interface DwsClusterV1Config extends cdktf.TerraformMetaArguments {
   readonly vpcId: string;
   /**
   * endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dws_cluster_v1#endpoints DwsClusterV1#endpoints}
   */
   readonly endpoints?: DwsClusterV1Endpoints[] | cdktf.IResolvable;
   /**
   * public_endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dws_cluster_v1#public_endpoints DwsClusterV1#public_endpoints}
   */
   readonly publicEndpoints?: DwsClusterV1PublicEndpoints[] | cdktf.IResolvable;
   /**
   * public_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dws_cluster_v1#public_ip DwsClusterV1#public_ip}
   */
   readonly publicIp?: DwsClusterV1PublicIp;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dws_cluster_v1#timeouts DwsClusterV1#timeouts}
   */
   readonly timeouts?: DwsClusterV1Timeouts;

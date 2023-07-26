@@ -49,13 +49,13 @@ export interface AsPolicyV2Config extends cdktf.TerraformMetaArguments {
   readonly scalingResourceType: string;
   /**
   * scaling_policy_action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v2#scaling_policy_action AsPolicyV2#scaling_policy_action}
   */
   readonly scalingPolicyAction?: AsPolicyV2ScalingPolicyAction[] | cdktf.IResolvable;
   /**
   * scheduled_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/as_policy_v2#scheduled_policy AsPolicyV2#scheduled_policy}
   */
   readonly scheduledPolicy?: AsPolicyV2ScheduledPolicy[] | cdktf.IResolvable;

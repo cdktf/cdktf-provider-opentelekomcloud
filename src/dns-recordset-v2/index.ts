@@ -57,7 +57,7 @@ export interface DnsRecordsetV2Config extends cdktf.TerraformMetaArguments {
   readonly zoneId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
   */
   readonly timeouts?: DnsRecordsetV2Timeouts;

@@ -41,13 +41,13 @@ export interface VbsBackupV2Config extends cdktf.TerraformMetaArguments {
   readonly volumeId: string;
   /**
   * tags block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_v2#tags VbsBackupV2#tags}
   */
   readonly tags?: VbsBackupV2Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/vbs_backup_v2#timeouts VbsBackupV2#timeouts}
   */
   readonly timeouts?: VbsBackupV2Timeouts;
