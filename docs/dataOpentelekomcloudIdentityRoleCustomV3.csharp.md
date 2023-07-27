@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_identity_role_custom_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_role_custom_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_role_custom_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3).
 
 # `dataOpentelekomcloudIdentityRoleCustomV3` Submodule <a name="`dataOpentelekomcloudIdentityRoleCustomV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_role
 
 ### DataOpentelekomcloudIdentityRoleCustomV3 <a name="DataOpentelekomcloudIdentityRoleCustomV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3 opentelekomcloud_identity_role_custom_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3.Initializer"></a>
 
@@ -651,9 +651,9 @@ new DataOpentelekomcloudIdentityRoleCustomV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#display_name DataOpentelekomcloudIdentityRoleCustomV3#display_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#id DataOpentelekomcloudIdentityRoleCustomV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#type DataOpentelekomcloudIdentityRoleCustomV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.displayName">DisplayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#display_name DataOpentelekomcloudIdentityRoleCustomV3#display_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#id DataOpentelekomcloudIdentityRoleCustomV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleCustomV3.DataOpentelekomcloudIdentityRoleCustomV3Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#type DataOpentelekomcloudIdentityRoleCustomV3#type}. |
 
 ---
 
@@ -735,7 +735,7 @@ public string DisplayName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#display_name DataOpentelekomcloudIdentityRoleCustomV3#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#display_name DataOpentelekomcloudIdentityRoleCustomV3#display_name}.
 
 ---
 
@@ -747,7 +747,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#id DataOpentelekomcloudIdentityRoleCustomV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#id DataOpentelekomcloudIdentityRoleCustomV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/data-sources/identity_role_custom_v3#type DataOpentelekomcloudIdentityRoleCustomV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/identity_role_custom_v3#type DataOpentelekomcloudIdentityRoleCustomV3#type}.
 
 ---
 

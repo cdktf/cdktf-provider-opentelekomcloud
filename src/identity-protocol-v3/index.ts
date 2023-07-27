@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,290 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProtocolV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}
   */
   readonly mappingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}
   */
   readonly providerId: string;
   /**
+  * access_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#access_config IdentityProtocolV3#access_config}
+  */
+  readonly accessConfig?: IdentityProtocolV3AccessConfig;
+  /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
   */
   readonly metadata?: IdentityProtocolV3Metadata;
 }
+export interface IdentityProtocolV3AccessConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}
+  */
+  readonly accessType: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}
+  */
+  readonly authorizationEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}
+  */
+  readonly clientId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}
+  */
+  readonly providerUrl: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}
+  */
+  readonly responseMode?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}
+  */
+  readonly responseType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}
+  */
+  readonly scopes?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}
+  */
+  readonly signingKey: string;
+}
+
+export function identityProtocolV3AccessConfigToTerraform(struct?: IdentityProtocolV3AccessConfigOutputReference | IdentityProtocolV3AccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    access_type: cdktf.stringToTerraform(struct!.accessType),
+    authorization_endpoint: cdktf.stringToTerraform(struct!.authorizationEndpoint),
+    client_id: cdktf.stringToTerraform(struct!.clientId),
+    provider_url: cdktf.stringToTerraform(struct!.providerUrl),
+    response_mode: cdktf.stringToTerraform(struct!.responseMode),
+    response_type: cdktf.stringToTerraform(struct!.responseType),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
+    signing_key: cdktf.stringToTerraform(struct!.signingKey),
+  }
+}
+
+export class IdentityProtocolV3AccessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): IdentityProtocolV3AccessConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessType = this._accessType;
+    }
+    if (this._authorizationEndpoint !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizationEndpoint = this._authorizationEndpoint;
+    }
+    if (this._clientId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientId = this._clientId;
+    }
+    if (this._providerUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.providerUrl = this._providerUrl;
+    }
+    if (this._responseMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseMode = this._responseMode;
+    }
+    if (this._responseType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseType = this._responseType;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    if (this._signingKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.signingKey = this._signingKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IdentityProtocolV3AccessConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._accessType = undefined;
+      this._authorizationEndpoint = undefined;
+      this._clientId = undefined;
+      this._providerUrl = undefined;
+      this._responseMode = undefined;
+      this._responseType = undefined;
+      this._scopes = undefined;
+      this._signingKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._accessType = value.accessType;
+      this._authorizationEndpoint = value.authorizationEndpoint;
+      this._clientId = value.clientId;
+      this._providerUrl = value.providerUrl;
+      this._responseMode = value.responseMode;
+      this._responseType = value.responseType;
+      this._scopes = value.scopes;
+      this._signingKey = value.signingKey;
+    }
+  }
+
+  // access_type - computed: false, optional: false, required: true
+  private _accessType?: string; 
+  public get accessType() {
+    return this.getStringAttribute('access_type');
+  }
+  public set accessType(value: string) {
+    this._accessType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessTypeInput() {
+    return this._accessType;
+  }
+
+  // authorization_endpoint - computed: true, optional: true, required: false
+  private _authorizationEndpoint?: string; 
+  public get authorizationEndpoint() {
+    return this.getStringAttribute('authorization_endpoint');
+  }
+  public set authorizationEndpoint(value: string) {
+    this._authorizationEndpoint = value;
+  }
+  public resetAuthorizationEndpoint() {
+    this._authorizationEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationEndpointInput() {
+    return this._authorizationEndpoint;
+  }
+
+  // client_id - computed: false, optional: false, required: true
+  private _clientId?: string; 
+  public get clientId() {
+    return this.getStringAttribute('client_id');
+  }
+  public set clientId(value: string) {
+    this._clientId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIdInput() {
+    return this._clientId;
+  }
+
+  // provider_url - computed: false, optional: false, required: true
+  private _providerUrl?: string; 
+  public get providerUrl() {
+    return this.getStringAttribute('provider_url');
+  }
+  public set providerUrl(value: string) {
+    this._providerUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get providerUrlInput() {
+    return this._providerUrl;
+  }
+
+  // response_mode - computed: true, optional: true, required: false
+  private _responseMode?: string; 
+  public get responseMode() {
+    return this.getStringAttribute('response_mode');
+  }
+  public set responseMode(value: string) {
+    this._responseMode = value;
+  }
+  public resetResponseMode() {
+    this._responseMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseModeInput() {
+    return this._responseMode;
+  }
+
+  // response_type - computed: false, optional: true, required: false
+  private _responseType?: string; 
+  public get responseType() {
+    return this.getStringAttribute('response_type');
+  }
+  public set responseType(value: string) {
+    this._responseType = value;
+  }
+  public resetResponseType() {
+    this._responseType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseTypeInput() {
+    return this._responseType;
+  }
+
+  // scopes - computed: true, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return this.getListAttribute('scopes');
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+
+  // signing_key - computed: false, optional: false, required: true
+  private _signingKey?: string; 
+  public get signingKey() {
+    return this.getStringAttribute('signing_key');
+  }
+  public set signingKey(value: string) {
+    this._signingKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signingKeyInput() {
+    return this._signingKey;
+  }
+}
 export interface IdentityProtocolV3Metadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}
   */
   readonly domainId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
   */
   readonly metadata: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}
   */
   readonly xaccountType?: string;
 }
@@ -153,7 +401,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}
 */
 export class IdentityProtocolV3 extends cdktf.TerraformResource {
 
@@ -167,7 +415,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +426,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_protocol_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.3',
+        providerVersion: '1.35.4',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -193,6 +441,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
     this._mappingId = config.mappingId;
     this._protocol = config.protocol;
     this._providerId = config.providerId;
+    this._accessConfig.internalValue = config.accessConfig;
     this._metadata.internalValue = config.metadata;
   }
 
@@ -261,6 +510,22 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
     return this._providerId;
   }
 
+  // access_config - computed: false, optional: true, required: false
+  private _accessConfig = new IdentityProtocolV3AccessConfigOutputReference(this, "access_config");
+  public get accessConfig() {
+    return this._accessConfig;
+  }
+  public putAccessConfig(value: IdentityProtocolV3AccessConfig) {
+    this._accessConfig.internalValue = value;
+  }
+  public resetAccessConfig() {
+    this._accessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConfigInput() {
+    return this._accessConfig.internalValue;
+  }
+
   // metadata - computed: false, optional: true, required: false
   private _metadata = new IdentityProtocolV3MetadataOutputReference(this, "metadata");
   public get metadata() {
@@ -287,6 +552,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       mapping_id: cdktf.stringToTerraform(this._mappingId),
       protocol: cdktf.stringToTerraform(this._protocol),
       provider_id: cdktf.stringToTerraform(this._providerId),
+      access_config: identityProtocolV3AccessConfigToTerraform(this._accessConfig.internalValue),
       metadata: identityProtocolV3MetadataToTerraform(this._metadata.internalValue),
     };
   }

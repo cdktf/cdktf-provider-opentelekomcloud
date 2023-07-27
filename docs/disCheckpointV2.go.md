@@ -1,6 +1,6 @@
 # `opentelekomcloud_dis_checkpoint_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_checkpoint_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_checkpoint_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2).
 
 # `disCheckpointV2` Submodule <a name="`disCheckpointV2` Submodule" id="@cdktf/provider-opentelekomcloud.disCheckpointV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_checkpoint_v2`
 
 ### DisCheckpointV2 <a name="DisCheckpointV2" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2.Initializer"></a>
 
@@ -764,13 +764,13 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.appName">AppName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.partitionId">PartitionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.sequenceNumber">SequenceNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.checkpointType">CheckpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.appName">AppName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.partitionId">PartitionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.sequenceNumber">SequenceNumber</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.streamName">StreamName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.checkpointType">CheckpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Timeouts">DisCheckpointV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -853,7 +853,7 @@ AppName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}.
 
 ---
 
@@ -865,7 +865,7 @@ PartitionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}.
 
 ---
 
@@ -877,7 +877,7 @@ SequenceNumber *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}.
 
 ---
 
@@ -889,7 +889,7 @@ StreamName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}.
 
 ---
 
@@ -901,7 +901,7 @@ CheckpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}.
 
 ---
 
@@ -913,7 +913,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -928,7 +928,7 @@ Metadata *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}.
 
 ---
 
@@ -942,7 +942,7 @@ Timeouts DisCheckpointV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#timeouts DisCheckpointV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#timeouts DisCheckpointV2#timeouts}
 
 ---
 
@@ -962,7 +962,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}. |
 
 ---
 
@@ -974,7 +974,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.3/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}.
 
 ---
 
