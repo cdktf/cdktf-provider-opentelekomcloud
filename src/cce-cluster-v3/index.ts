@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,130 +8,162 @@ import * as cdktf from 'cdktf';
 
 export interface CceClusterV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#annotations CceClusterV3#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#annotations CceClusterV3#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#authenticating_proxy_ca CceClusterV3#authenticating_proxy_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#authenticating_proxy_ca CceClusterV3#authenticating_proxy_ca}
   */
   readonly authenticatingProxyCa?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#authentication_mode CceClusterV3#authentication_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#authentication_mode CceClusterV3#authentication_mode}
   */
   readonly authenticationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#billing_mode CceClusterV3#billing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#billing_mode CceClusterV3#billing_mode}
   */
   readonly billingMode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#cluster_type CceClusterV3#cluster_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#cluster_type CceClusterV3#cluster_type}
   */
   readonly clusterType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#cluster_version CceClusterV3#cluster_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#cluster_version CceClusterV3#cluster_version}
   */
   readonly clusterVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#container_network_cidr CceClusterV3#container_network_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#container_network_cidr CceClusterV3#container_network_cidr}
   */
   readonly containerNetworkCidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#container_network_type CceClusterV3#container_network_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#container_network_type CceClusterV3#container_network_type}
   */
   readonly containerNetworkType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#description CceClusterV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_all_network CceClusterV3#delete_all_network}
+  */
+  readonly deleteAllNetwork?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_all_storage CceClusterV3#delete_all_storage}
+  */
+  readonly deleteAllStorage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_efs CceClusterV3#delete_efs}
+  */
+  readonly deleteEfs?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_eni CceClusterV3#delete_eni}
+  */
+  readonly deleteEni?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_evs CceClusterV3#delete_evs}
+  */
+  readonly deleteEvs?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_net CceClusterV3#delete_net}
+  */
+  readonly deleteNet?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_obs CceClusterV3#delete_obs}
+  */
+  readonly deleteObs?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete_sfs CceClusterV3#delete_sfs}
+  */
+  readonly deleteSfs?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#description CceClusterV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#eip CceClusterV3#eip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#eip CceClusterV3#eip}
   */
   readonly eip?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#eni_subnet_cidr CceClusterV3#eni_subnet_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#eni_subnet_cidr CceClusterV3#eni_subnet_cidr}
   */
   readonly eniSubnetCidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#eni_subnet_id CceClusterV3#eni_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#eni_subnet_id CceClusterV3#eni_subnet_id}
   */
   readonly eniSubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#extend_param CceClusterV3#extend_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#extend_param CceClusterV3#extend_param}
   */
   readonly extendParam?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#flavor_id CceClusterV3#flavor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#flavor_id CceClusterV3#flavor_id}
   */
   readonly flavorId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#highway_subnet_id CceClusterV3#highway_subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#highway_subnet_id CceClusterV3#highway_subnet_id}
   */
   readonly highwaySubnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#id CceClusterV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#id CceClusterV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#ignore_addons CceClusterV3#ignore_addons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#ignore_addons CceClusterV3#ignore_addons}
   */
   readonly ignoreAddons?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#ignore_certificate_clusters_data CceClusterV3#ignore_certificate_clusters_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#ignore_certificate_clusters_data CceClusterV3#ignore_certificate_clusters_data}
   */
   readonly ignoreCertificateClustersData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#ignore_certificate_users_data CceClusterV3#ignore_certificate_users_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#ignore_certificate_users_data CceClusterV3#ignore_certificate_users_data}
   */
   readonly ignoreCertificateUsersData?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#kube_proxy_mode CceClusterV3#kube_proxy_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#kube_proxy_mode CceClusterV3#kube_proxy_mode}
   */
   readonly kubeProxyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#kubernetes_svc_ip_range CceClusterV3#kubernetes_svc_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#kubernetes_svc_ip_range CceClusterV3#kubernetes_svc_ip_range}
   */
   readonly kubernetesSvcIpRange?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#labels CceClusterV3#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#labels CceClusterV3#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#multi_az CceClusterV3#multi_az}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#multi_az CceClusterV3#multi_az}
   */
   readonly multiAz?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#name CceClusterV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#name CceClusterV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#no_addons CceClusterV3#no_addons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#no_addons CceClusterV3#no_addons}
   */
   readonly noAddons?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#region CceClusterV3#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#region CceClusterV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#subnet_id CceClusterV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#subnet_id CceClusterV3#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#vpc_id CceClusterV3#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#vpc_id CceClusterV3#vpc_id}
   */
   readonly vpcId: string;
   /**
   * authenticating_proxy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#authenticating_proxy CceClusterV3#authenticating_proxy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#authenticating_proxy CceClusterV3#authenticating_proxy}
   */
   readonly authenticatingProxy?: CceClusterV3AuthenticatingProxy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#timeouts CceClusterV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#timeouts CceClusterV3#timeouts}
   */
   readonly timeouts?: CceClusterV3Timeouts;
 }
@@ -290,15 +317,15 @@ export class CceClusterV3CertificateUsersList extends cdktf.ComplexList {
 }
 export interface CceClusterV3AuthenticatingProxy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#ca CceClusterV3#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#ca CceClusterV3#ca}
   */
   readonly ca: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#cert CceClusterV3#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#cert CceClusterV3#cert}
   */
   readonly cert: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#private_key CceClusterV3#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#private_key CceClusterV3#private_key}
   */
   readonly privateKey: string;
 }
@@ -400,11 +427,11 @@ export class CceClusterV3AuthenticatingProxyOutputReference extends cdktf.Comple
 }
 export interface CceClusterV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#create CceClusterV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#create CceClusterV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3#delete CceClusterV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3#delete CceClusterV3#delete}
   */
   readonly delete?: string;
 }
@@ -502,7 +529,7 @@ export class CceClusterV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3}
 */
 export class CceClusterV3 extends cdktf.TerraformResource {
 
@@ -516,7 +543,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/cce_cluster_v3 opentelekomcloud_cce_cluster_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -527,7 +554,7 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_cluster_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.4',
+        providerVersion: '1.35.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -546,6 +573,14 @@ export class CceClusterV3 extends cdktf.TerraformResource {
     this._clusterVersion = config.clusterVersion;
     this._containerNetworkCidr = config.containerNetworkCidr;
     this._containerNetworkType = config.containerNetworkType;
+    this._deleteAllNetwork = config.deleteAllNetwork;
+    this._deleteAllStorage = config.deleteAllStorage;
+    this._deleteEfs = config.deleteEfs;
+    this._deleteEni = config.deleteEni;
+    this._deleteEvs = config.deleteEvs;
+    this._deleteNet = config.deleteNet;
+    this._deleteObs = config.deleteObs;
+    this._deleteSfs = config.deleteSfs;
     this._description = config.description;
     this._eip = config.eip;
     this._eniSubnetCidr = config.eniSubnetCidr;
@@ -706,6 +741,134 @@ export class CceClusterV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get containerNetworkTypeInput() {
     return this._containerNetworkType;
+  }
+
+  // delete_all_network - computed: false, optional: true, required: false
+  private _deleteAllNetwork?: string; 
+  public get deleteAllNetwork() {
+    return this.getStringAttribute('delete_all_network');
+  }
+  public set deleteAllNetwork(value: string) {
+    this._deleteAllNetwork = value;
+  }
+  public resetDeleteAllNetwork() {
+    this._deleteAllNetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteAllNetworkInput() {
+    return this._deleteAllNetwork;
+  }
+
+  // delete_all_storage - computed: false, optional: true, required: false
+  private _deleteAllStorage?: string; 
+  public get deleteAllStorage() {
+    return this.getStringAttribute('delete_all_storage');
+  }
+  public set deleteAllStorage(value: string) {
+    this._deleteAllStorage = value;
+  }
+  public resetDeleteAllStorage() {
+    this._deleteAllStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteAllStorageInput() {
+    return this._deleteAllStorage;
+  }
+
+  // delete_efs - computed: false, optional: true, required: false
+  private _deleteEfs?: string; 
+  public get deleteEfs() {
+    return this.getStringAttribute('delete_efs');
+  }
+  public set deleteEfs(value: string) {
+    this._deleteEfs = value;
+  }
+  public resetDeleteEfs() {
+    this._deleteEfs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteEfsInput() {
+    return this._deleteEfs;
+  }
+
+  // delete_eni - computed: false, optional: true, required: false
+  private _deleteEni?: string; 
+  public get deleteEni() {
+    return this.getStringAttribute('delete_eni');
+  }
+  public set deleteEni(value: string) {
+    this._deleteEni = value;
+  }
+  public resetDeleteEni() {
+    this._deleteEni = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteEniInput() {
+    return this._deleteEni;
+  }
+
+  // delete_evs - computed: false, optional: true, required: false
+  private _deleteEvs?: string; 
+  public get deleteEvs() {
+    return this.getStringAttribute('delete_evs');
+  }
+  public set deleteEvs(value: string) {
+    this._deleteEvs = value;
+  }
+  public resetDeleteEvs() {
+    this._deleteEvs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteEvsInput() {
+    return this._deleteEvs;
+  }
+
+  // delete_net - computed: false, optional: true, required: false
+  private _deleteNet?: string; 
+  public get deleteNet() {
+    return this.getStringAttribute('delete_net');
+  }
+  public set deleteNet(value: string) {
+    this._deleteNet = value;
+  }
+  public resetDeleteNet() {
+    this._deleteNet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteNetInput() {
+    return this._deleteNet;
+  }
+
+  // delete_obs - computed: false, optional: true, required: false
+  private _deleteObs?: string; 
+  public get deleteObs() {
+    return this.getStringAttribute('delete_obs');
+  }
+  public set deleteObs(value: string) {
+    this._deleteObs = value;
+  }
+  public resetDeleteObs() {
+    this._deleteObs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteObsInput() {
+    return this._deleteObs;
+  }
+
+  // delete_sfs - computed: false, optional: true, required: false
+  private _deleteSfs?: string; 
+  public get deleteSfs() {
+    return this.getStringAttribute('delete_sfs');
+  }
+  public set deleteSfs(value: string) {
+    this._deleteSfs = value;
+  }
+  public resetDeleteSfs() {
+    this._deleteSfs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteSfsInput() {
+    return this._deleteSfs;
   }
 
   // description - computed: true, optional: true, required: false
@@ -1097,6 +1260,14 @@ export class CceClusterV3 extends cdktf.TerraformResource {
       cluster_version: cdktf.stringToTerraform(this._clusterVersion),
       container_network_cidr: cdktf.stringToTerraform(this._containerNetworkCidr),
       container_network_type: cdktf.stringToTerraform(this._containerNetworkType),
+      delete_all_network: cdktf.stringToTerraform(this._deleteAllNetwork),
+      delete_all_storage: cdktf.stringToTerraform(this._deleteAllStorage),
+      delete_efs: cdktf.stringToTerraform(this._deleteEfs),
+      delete_eni: cdktf.stringToTerraform(this._deleteEni),
+      delete_evs: cdktf.stringToTerraform(this._deleteEvs),
+      delete_net: cdktf.stringToTerraform(this._deleteNet),
+      delete_obs: cdktf.stringToTerraform(this._deleteObs),
+      delete_sfs: cdktf.stringToTerraform(this._deleteSfs),
       description: cdktf.stringToTerraform(this._description),
       eip: cdktf.stringToTerraform(this._eip),
       eni_subnet_cidr: cdktf.stringToTerraform(this._eniSubnetCidr),
