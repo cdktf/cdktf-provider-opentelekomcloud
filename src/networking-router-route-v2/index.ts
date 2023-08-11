@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingRouterRouteV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}
   */
   readonly destinationCidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}
   */
   readonly nextHop: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}
   */
   readonly routerId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}
 */
 export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +63,7 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_networking_router_route_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.4',
+        providerVersion: '1.35.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

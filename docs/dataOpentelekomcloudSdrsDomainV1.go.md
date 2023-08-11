@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_sdrs_domain_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sdrs_domain_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sdrs_domain_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1).
 
 # `dataOpentelekomcloudSdrsDomainV1` Submodule <a name="`dataOpentelekomcloudSdrsDomainV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sdrs_domain_v
 
 ### DataOpentelekomcloudSdrsDomainV1 <a name="DataOpentelekomcloudSdrsDomainV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1 opentelekomcloud_sdrs_domain_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.Initializer"></a>
 
@@ -588,8 +588,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1#id DataOpentelekomcloudSdrsDomainV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1#name DataOpentelekomcloudSdrsDomainV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1#id DataOpentelekomcloudSdrsDomainV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1#name DataOpentelekomcloudSdrsDomainV1#name}. |
 
 ---
 
@@ -671,7 +671,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1#id DataOpentelekomcloudSdrsDomainV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1#id DataOpentelekomcloudSdrsDomainV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -686,7 +686,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/data-sources/sdrs_domain_v1#name DataOpentelekomcloudSdrsDomainV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/sdrs_domain_v1#name DataOpentelekomcloudSdrsDomainV1#name}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface DisCheckpointV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#app_name DisCheckpointV2#app_name}
   */
   readonly appName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#checkpoint_type DisCheckpointV2#checkpoint_type}
   */
   readonly checkpointType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#id DisCheckpointV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#metadata DisCheckpointV2#metadata}
   */
   readonly metadata?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#partition_id DisCheckpointV2#partition_id}
   */
   readonly partitionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#sequence_number DisCheckpointV2#sequence_number}
   */
   readonly sequenceNumber: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#stream_name DisCheckpointV2#stream_name}
   */
   readonly streamName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#timeouts DisCheckpointV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#timeouts DisCheckpointV2#timeouts}
   */
   readonly timeouts?: DisCheckpointV2Timeouts;
 }
 export interface DisCheckpointV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2#update DisCheckpointV2#update}
   */
   readonly update?: string;
 }
@@ -127,7 +127,7 @@ export class DisCheckpointV2TimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2}
 */
 export class DisCheckpointV2 extends cdktf.TerraformResource {
 
@@ -141,7 +141,7 @@ export class DisCheckpointV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.4/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dis_checkpoint_v2 opentelekomcloud_dis_checkpoint_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -152,7 +152,7 @@ export class DisCheckpointV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dis_checkpoint_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.4',
+        providerVersion: '1.35.5',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
