@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_dns_zone_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dns_zone_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dns_zone_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2).
 
 # `dataOpentelekomcloudDnsZoneV2` Submodule <a name="`dataOpentelekomcloudDnsZoneV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dns_zone_v2`]
 
 ### DataOpentelekomcloudDnsZoneV2 <a name="DataOpentelekomcloudDnsZoneV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2.Initializer"></a>
 
@@ -834,14 +834,14 @@ new DataOpentelekomcloudDnsZoneV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#description DataOpentelekomcloudDnsZoneV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#email DataOpentelekomcloudDnsZoneV2#email}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#id DataOpentelekomcloudDnsZoneV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#name DataOpentelekomcloudDnsZoneV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#status DataOpentelekomcloudDnsZoneV2#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#ttl DataOpentelekomcloudDnsZoneV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.zoneType">ZoneType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#zone_type DataOpentelekomcloudDnsZoneV2#zone_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#description DataOpentelekomcloudDnsZoneV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.email">Email</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#email DataOpentelekomcloudDnsZoneV2#email}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#id DataOpentelekomcloudDnsZoneV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#name DataOpentelekomcloudDnsZoneV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#status DataOpentelekomcloudDnsZoneV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.ttl">Ttl</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#ttl DataOpentelekomcloudDnsZoneV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsZoneV2.DataOpentelekomcloudDnsZoneV2Config.property.zoneType">ZoneType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#zone_type DataOpentelekomcloudDnsZoneV2#zone_type}. |
 
 ---
 
@@ -923,7 +923,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#description DataOpentelekomcloudDnsZoneV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#description DataOpentelekomcloudDnsZoneV2#description}.
 
 ---
 
@@ -935,7 +935,7 @@ public string Email { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#email DataOpentelekomcloudDnsZoneV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#email DataOpentelekomcloudDnsZoneV2#email}.
 
 ---
 
@@ -947,7 +947,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#id DataOpentelekomcloudDnsZoneV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#id DataOpentelekomcloudDnsZoneV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#name DataOpentelekomcloudDnsZoneV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#name DataOpentelekomcloudDnsZoneV2#name}.
 
 ---
 
@@ -974,7 +974,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#status DataOpentelekomcloudDnsZoneV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#status DataOpentelekomcloudDnsZoneV2#status}.
 
 ---
 
@@ -986,7 +986,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#tags DataOpentelekomcloudDnsZoneV2#tags}.
 
 ---
 
@@ -998,7 +998,7 @@ public double Ttl { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#ttl DataOpentelekomcloudDnsZoneV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#ttl DataOpentelekomcloudDnsZoneV2#ttl}.
 
 ---
 
@@ -1010,7 +1010,7 @@ public string ZoneType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/dns_zone_v2#zone_type DataOpentelekomcloudDnsZoneV2#zone_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/dns_zone_v2#zone_type DataOpentelekomcloudDnsZoneV2#zone_type}.
 
 ---
 

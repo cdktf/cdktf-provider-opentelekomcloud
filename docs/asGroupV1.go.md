@@ -1,6 +1,6 @@
 # `opentelekomcloud_as_group_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_as_group_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_as_group_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1).
 
 # `asGroupV1` Submodule <a name="`asGroupV1` Submodule" id="@cdktf/provider-opentelekomcloud.asGroupV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_as_group_v1`](http
 
 ### AsGroupV1 <a name="AsGroupV1" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1 opentelekomcloud_as_group_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1(scope Construct, id *string, config AsGroupV1Config) AsGroupV1
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.AsGroupV1_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.AsGroupV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ asgroupv1.AsGroupV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.AsGroupV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -1232,7 +1232,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 &asgroupv1.AsGroupV1Config {
 	Connection: interface{},
@@ -1262,9 +1262,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 	Notifications: *[]*string,
 	Region: *string,
 	ScalingConfigurationId: *string,
-	SecurityGroups: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8.asGroupV1.AsGroupV1SecurityGroups,
+	SecurityGroups: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asGroupV1.AsGroupV1SecurityGroups,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8.asGroupV1.AsGroupV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asGroupV1.AsGroupV1Timeouts,
 }
 ```
 
@@ -1280,27 +1280,27 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.deleteInstances">DeleteInstances</a></code> | <code>*string</code> | Whether to delete instances when they are removed from the AS group. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.deletePublicip">DeletePublicip</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#delete_publicip AsGroupV1#delete_publicip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.deletePublicip">DeletePublicip</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#delete_publicip AsGroupV1#delete_publicip}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.networks">Networks</a></code> | <code>interface{}</code> | networks block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.scalingGroupName">ScalingGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#scaling_group_name AsGroupV1#scaling_group_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#vpc_id AsGroupV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.availableZones">AvailableZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#available_zones AsGroupV1#available_zones}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.scalingGroupName">ScalingGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#scaling_group_name AsGroupV1#scaling_group_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#vpc_id AsGroupV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.availableZones">AvailableZones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#available_zones AsGroupV1#available_zones}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.coolDownTime">CoolDownTime</a></code> | <code>*f64</code> | The cooling duration, in seconds. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.desireInstanceNumber">DesireInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.desireInstanceNumber">DesireInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.healthPeriodicAuditGracePeriod">HealthPeriodicAuditGracePeriod</a></code> | <code>*f64</code> | The grace period for instance health check, in seconds. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.healthPeriodicAuditMethod">HealthPeriodicAuditMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#health_periodic_audit_method AsGroupV1#health_periodic_audit_method}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.healthPeriodicAuditMethod">HealthPeriodicAuditMethod</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#health_periodic_audit_method AsGroupV1#health_periodic_audit_method}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.healthPeriodicAuditTime">HealthPeriodicAuditTime</a></code> | <code>*f64</code> | The health check period for instances, in minutes. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.instanceTerminatePolicy">InstanceTerminatePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#instance_terminate_policy AsGroupV1#instance_terminate_policy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.instanceTerminatePolicy">InstanceTerminatePolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#instance_terminate_policy AsGroupV1#instance_terminate_policy}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.lbaasListeners">LbaasListeners</a></code> | <code>interface{}</code> | lbaas_listeners block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.lbListenerId">LbListenerId</a></code> | <code>*string</code> | The system supports the binding of up to six classic LB listeners, the IDs of which are separated using a comma. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.maxInstanceNumber">MaxInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#max_instance_number AsGroupV1#max_instance_number}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.minInstanceNumber">MinInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#min_instance_number AsGroupV1#min_instance_number}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.notifications">Notifications</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#notifications AsGroupV1#notifications}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#region AsGroupV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.scalingConfigurationId">ScalingConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#scaling_configuration_id AsGroupV1#scaling_configuration_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.maxInstanceNumber">MaxInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#max_instance_number AsGroupV1#max_instance_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.minInstanceNumber">MinInstanceNumber</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#min_instance_number AsGroupV1#min_instance_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.notifications">Notifications</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#notifications AsGroupV1#notifications}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#region AsGroupV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.scalingConfigurationId">ScalingConfigurationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#scaling_configuration_id AsGroupV1#scaling_configuration_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.securityGroups">SecurityGroups</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1SecurityGroups">AsGroupV1SecurityGroups</a></code> | security_groups block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#tags AsGroupV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#tags AsGroupV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts">AsGroupV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1385,7 +1385,7 @@ DeleteInstances *string
 
 Whether to delete instances when they are removed from the AS group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#delete_instances AsGroupV1#delete_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#delete_instances AsGroupV1#delete_instances}
 
 ---
 
@@ -1397,7 +1397,7 @@ DeletePublicip interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#delete_publicip AsGroupV1#delete_publicip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#delete_publicip AsGroupV1#delete_publicip}.
 
 ---
 
@@ -1411,7 +1411,7 @@ Networks interface{}
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#networks AsGroupV1#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#networks AsGroupV1#networks}
 
 ---
 
@@ -1423,7 +1423,7 @@ ScalingGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#scaling_group_name AsGroupV1#scaling_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#scaling_group_name AsGroupV1#scaling_group_name}.
 
 ---
 
@@ -1435,7 +1435,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#vpc_id AsGroupV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#vpc_id AsGroupV1#vpc_id}.
 
 ---
 
@@ -1447,7 +1447,7 @@ AvailableZones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#available_zones AsGroupV1#available_zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#available_zones AsGroupV1#available_zones}.
 
 ---
 
@@ -1461,7 +1461,7 @@ CoolDownTime *f64
 
 The cooling duration, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#cool_down_time AsGroupV1#cool_down_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#cool_down_time AsGroupV1#cool_down_time}
 
 ---
 
@@ -1473,7 +1473,7 @@ DesireInstanceNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#desire_instance_number AsGroupV1#desire_instance_number}.
 
 ---
 
@@ -1487,7 +1487,7 @@ HealthPeriodicAuditGracePeriod *f64
 
 The grace period for instance health check, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#health_periodic_audit_grace_period AsGroupV1#health_periodic_audit_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#health_periodic_audit_grace_period AsGroupV1#health_periodic_audit_grace_period}
 
 ---
 
@@ -1499,7 +1499,7 @@ HealthPeriodicAuditMethod *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#health_periodic_audit_method AsGroupV1#health_periodic_audit_method}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#health_periodic_audit_method AsGroupV1#health_periodic_audit_method}.
 
 ---
 
@@ -1513,7 +1513,7 @@ HealthPeriodicAuditTime *f64
 
 The health check period for instances, in minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#health_periodic_audit_time AsGroupV1#health_periodic_audit_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#health_periodic_audit_time AsGroupV1#health_periodic_audit_time}
 
 ---
 
@@ -1525,7 +1525,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1540,7 +1540,7 @@ InstanceTerminatePolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#instance_terminate_policy AsGroupV1#instance_terminate_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#instance_terminate_policy AsGroupV1#instance_terminate_policy}.
 
 ---
 
@@ -1554,7 +1554,7 @@ LbaasListeners interface{}
 
 lbaas_listeners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#lbaas_listeners AsGroupV1#lbaas_listeners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#lbaas_listeners AsGroupV1#lbaas_listeners}
 
 ---
 
@@ -1568,7 +1568,7 @@ LbListenerId *string
 
 The system supports the binding of up to six classic LB listeners, the IDs of which are separated using a comma.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#lb_listener_id AsGroupV1#lb_listener_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#lb_listener_id AsGroupV1#lb_listener_id}
 
 ---
 
@@ -1580,7 +1580,7 @@ MaxInstanceNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#max_instance_number AsGroupV1#max_instance_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#max_instance_number AsGroupV1#max_instance_number}.
 
 ---
 
@@ -1592,7 +1592,7 @@ MinInstanceNumber *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#min_instance_number AsGroupV1#min_instance_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#min_instance_number AsGroupV1#min_instance_number}.
 
 ---
 
@@ -1604,7 +1604,7 @@ Notifications *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#notifications AsGroupV1#notifications}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#notifications AsGroupV1#notifications}.
 
 ---
 
@@ -1616,7 +1616,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#region AsGroupV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#region AsGroupV1#region}.
 
 ---
 
@@ -1628,7 +1628,7 @@ ScalingConfigurationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#scaling_configuration_id AsGroupV1#scaling_configuration_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#scaling_configuration_id AsGroupV1#scaling_configuration_id}.
 
 ---
 
@@ -1642,7 +1642,7 @@ SecurityGroups AsGroupV1SecurityGroups
 
 security_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#security_groups AsGroupV1#security_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#security_groups AsGroupV1#security_groups}
 
 ---
 
@@ -1654,7 +1654,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#tags AsGroupV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#tags AsGroupV1#tags}.
 
 ---
 
@@ -1668,7 +1668,7 @@ Timeouts AsGroupV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#timeouts AsGroupV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#timeouts AsGroupV1#timeouts}
 
 ---
 
@@ -1677,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 &asgroupv1.AsGroupV1LbaasListeners {
 	PoolId: *string,
@@ -1690,9 +1690,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.poolId">PoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#pool_id AsGroupV1#pool_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.protocolPort">ProtocolPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#protocol_port AsGroupV1#protocol_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#weight AsGroupV1#weight}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.poolId">PoolId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#pool_id AsGroupV1#pool_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.protocolPort">ProtocolPort</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#protocol_port AsGroupV1#protocol_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListeners.property.weight">Weight</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#weight AsGroupV1#weight}. |
 
 ---
 
@@ -1704,7 +1704,7 @@ PoolId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#pool_id AsGroupV1#pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#pool_id AsGroupV1#pool_id}.
 
 ---
 
@@ -1716,7 +1716,7 @@ ProtocolPort *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#protocol_port AsGroupV1#protocol_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#protocol_port AsGroupV1#protocol_port}.
 
 ---
 
@@ -1728,7 +1728,7 @@ Weight *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#weight AsGroupV1#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#weight AsGroupV1#weight}.
 
 ---
 
@@ -1737,7 +1737,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Networks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 &asgroupv1.AsGroupV1Networks {
 	Id: *string,
@@ -1748,7 +1748,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Networks.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Networks.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}. |
 
 ---
 
@@ -1760,7 +1760,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1772,7 +1772,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1SecurityGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 &asgroupv1.AsGroupV1SecurityGroups {
 	Id: *string,
@@ -1783,7 +1783,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1SecurityGroups.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1SecurityGroups.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}. |
 
 ---
 
@@ -1795,7 +1795,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#id AsGroupV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#id AsGroupV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1807,7 +1807,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 &asgroupv1.AsGroupV1Timeouts {
 	Create: *string,
@@ -1819,8 +1819,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#create AsGroupV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#delete AsGroupV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#create AsGroupV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#delete AsGroupV1#delete}. |
 
 ---
 
@@ -1832,7 +1832,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#create AsGroupV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#create AsGroupV1#create}.
 
 ---
 
@@ -1844,7 +1844,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/as_group_v1#delete AsGroupV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/as_group_v1#delete AsGroupV1#delete}.
 
 ---
 
@@ -1855,7 +1855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListenersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1LbaasListenersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsGroupV1LbaasListenersList
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1LbaasListenersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1LbaasListenersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsGroupV1LbaasListenersOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1NetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1NetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsGroupV1NetworksList
 ```
@@ -2481,7 +2481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1NetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1NetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsGroupV1NetworksOutputReference
 ```
@@ -2770,7 +2770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1SecurityGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1SecurityGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsGroupV1SecurityGroupsOutputReference
 ```
@@ -3041,7 +3041,7 @@ func InternalValue() AsGroupV1SecurityGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asGroupV1.AsGroupV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/asgroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asgroupv1"
 
 asgroupv1.NewAsGroupV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsGroupV1TimeoutsOutputReference
 ```

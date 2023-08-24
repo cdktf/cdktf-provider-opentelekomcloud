@@ -1,6 +1,6 @@
 # `opentelekomcloud_dns_zone_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_zone_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_zone_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2).
 
 # `dnsZoneV2` Submodule <a name="`dnsZoneV2` Submodule" id="@cdktf/provider-opentelekomcloud.dnsZoneV2"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_zone_v2`](http
 
 ### DnsZoneV2 <a name="DnsZoneV2" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.NewDnsZoneV2(scope Construct, id *string, config DnsZoneV2Config) DnsZoneV2
 ```
@@ -366,7 +366,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.DnsZoneV2_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.DnsZoneV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ dnszonev2.DnsZoneV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.DnsZoneV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 &dnszonev2.DnsZoneV2Config {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 	Region: *string,
 	Router: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8.dnsZoneV2.DnsZoneV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts,
 	Ttl: *f64,
 	Type: *string,
 	ValueSpecs: *map[string]*string,
@@ -899,17 +899,17 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.email">Email</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.router">Router</a></code> | <code>interface{}</code> | router block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts">DnsZoneV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.valueSpecs">ValueSpecs</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
 
 ---
 
@@ -991,7 +991,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
 
 ---
 
@@ -1015,7 +1015,7 @@ Email *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Router interface{}
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#router DnsZoneV2#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#router DnsZoneV2#router}
 
 ---
 
@@ -1068,7 +1068,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
 
 ---
 
@@ -1082,7 +1082,7 @@ Timeouts DnsZoneV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
 
 ---
 
@@ -1094,7 +1094,7 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
 
 ---
 
@@ -1106,7 +1106,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
 
 ---
 
@@ -1118,7 +1118,7 @@ ValueSpecs *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
 
 ---
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 &dnszonev2.DnsZoneV2Router {
 	RouterId: *string,
@@ -1139,8 +1139,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerRegion">RouterRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerRegion">RouterRegion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}. |
 
 ---
 
@@ -1152,7 +1152,7 @@ RouterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}.
 
 ---
 
@@ -1164,7 +1164,7 @@ RouterRegion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}.
 
 ---
 
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 &dnszonev2.DnsZoneV2Timeouts {
 	Create: *string,
@@ -1186,9 +1186,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#create DnsZoneV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#update DnsZoneV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#create DnsZoneV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#update DnsZoneV2#update}. |
 
 ---
 
@@ -1200,7 +1200,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#create DnsZoneV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#create DnsZoneV2#create}.
 
 ---
 
@@ -1212,7 +1212,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/dns_zone_v2#update DnsZoneV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/dns_zone_v2#update DnsZoneV2#update}.
 
 ---
 
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2RouterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.NewDnsZoneV2RouterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsZoneV2RouterList
 ```
@@ -1378,7 +1378,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2RouterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.NewDnsZoneV2RouterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsZoneV2RouterOutputReference
 ```
@@ -1689,7 +1689,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dnszonev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnszonev2"
 
 dnszonev2.NewDnsZoneV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsZoneV2TimeoutsOutputReference
 ```
