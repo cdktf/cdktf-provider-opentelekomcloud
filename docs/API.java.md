@@ -247,6 +247,8 @@ The following submodules are available:
 - [wafCcattackprotectionRuleV1](./wafCcattackprotectionRuleV1.java.md)
 - [wafCertificateV1](./wafCertificateV1.java.md)
 - [wafDatamaskingRuleV1](./wafDatamaskingRuleV1.java.md)
+- [wafDedicatedCcRuleV1](./wafDedicatedCcRuleV1.java.md)
+- [wafDedicatedCertificateV1](./wafDedicatedCertificateV1.java.md)
 - [wafDedicatedDomainV1](./wafDedicatedDomainV1.java.md)
 - [wafDedicatedInstanceV1](./wafDedicatedInstanceV1.java.md)
 - [wafDedicatedPolicyV1](./wafDedicatedPolicyV1.java.md)

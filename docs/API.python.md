@@ -247,6 +247,8 @@ The following submodules are available:
 - [wafCcattackprotectionRuleV1](./wafCcattackprotectionRuleV1.python.md)
 - [wafCertificateV1](./wafCertificateV1.python.md)
 - [wafDatamaskingRuleV1](./wafDatamaskingRuleV1.python.md)
+- [wafDedicatedCcRuleV1](./wafDedicatedCcRuleV1.python.md)
+- [wafDedicatedCertificateV1](./wafDedicatedCertificateV1.python.md)
 - [wafDedicatedDomainV1](./wafDedicatedDomainV1.python.md)
 - [wafDedicatedInstanceV1](./wafDedicatedInstanceV1.python.md)
 - [wafDedicatedPolicyV1](./wafDedicatedPolicyV1.python.md)

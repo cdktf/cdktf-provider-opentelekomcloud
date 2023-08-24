@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktf from 'cdktf';
 
 export interface VbsBackupPolicyV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#frequency VbsBackupPolicyV2#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#frequency VbsBackupPolicyV2#frequency}
   */
   readonly frequency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#id VbsBackupPolicyV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#id VbsBackupPolicyV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#name VbsBackupPolicyV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#name VbsBackupPolicyV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#region VbsBackupPolicyV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#region VbsBackupPolicyV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#rentention_day VbsBackupPolicyV2#rentention_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#rentention_day VbsBackupPolicyV2#rentention_day}
   */
   readonly rententionDay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#rentention_num VbsBackupPolicyV2#rentention_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#rentention_num VbsBackupPolicyV2#rentention_num}
   */
   readonly rententionNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#resources VbsBackupPolicyV2#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#resources VbsBackupPolicyV2#resources}
   */
   readonly resources?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#retain_first_backup VbsBackupPolicyV2#retain_first_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#retain_first_backup VbsBackupPolicyV2#retain_first_backup}
   */
   readonly retainFirstBackup: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#start_time VbsBackupPolicyV2#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#start_time VbsBackupPolicyV2#start_time}
   */
   readonly startTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#status VbsBackupPolicyV2#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#status VbsBackupPolicyV2#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#week_frequency VbsBackupPolicyV2#week_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#week_frequency VbsBackupPolicyV2#week_frequency}
   */
   readonly weekFrequency?: string[];
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#tags VbsBackupPolicyV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#tags VbsBackupPolicyV2#tags}
   */
   readonly tags?: VbsBackupPolicyV2Tags[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#timeouts VbsBackupPolicyV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#timeouts VbsBackupPolicyV2#timeouts}
   */
   readonly timeouts?: VbsBackupPolicyV2Timeouts;
 }
 export interface VbsBackupPolicyV2Tags {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#key VbsBackupPolicyV2#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#key VbsBackupPolicyV2#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#value VbsBackupPolicyV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#value VbsBackupPolicyV2#value}
   */
   readonly value: string;
 }
@@ -192,11 +192,11 @@ export class VbsBackupPolicyV2TagsList extends cdktf.ComplexList {
 }
 export interface VbsBackupPolicyV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#create VbsBackupPolicyV2#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#create VbsBackupPolicyV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2#delete VbsBackupPolicyV2#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2#delete VbsBackupPolicyV2#delete}
   */
   readonly delete?: string;
 }
@@ -294,7 +294,7 @@ export class VbsBackupPolicyV2TimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2}
 */
 export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
 
@@ -308,7 +308,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/vbs_backup_policy_v2 opentelekomcloud_vbs_backup_policy_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -319,7 +319,7 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vbs_backup_policy_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.5',
+        providerVersion: '1.35.6',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

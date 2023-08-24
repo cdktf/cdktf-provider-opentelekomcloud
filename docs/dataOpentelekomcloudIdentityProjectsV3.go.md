@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_identity_projects_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_projects_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_projects_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3).
 
 # `dataOpentelekomcloudIdentityProjectsV3` Submodule <a name="`dataOpentelekomcloudIdentityProjectsV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_identity_proj
 
 ### DataOpentelekomcloudIdentityProjectsV3 <a name="DataOpentelekomcloudIdentityProjectsV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.NewDataOpentelekomcloudIdentityProjectsV3(scope Construct, id *string, config DataOpentelekomcloudIdentityProjectsV3Config) DataOpentelekomcloudIdentityProjectsV3
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 &dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3Config {
 	Connection: interface{},
@@ -569,7 +569,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}. |
 
 ---
 
@@ -651,7 +651,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.5/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -663,7 +663,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3Projects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 &dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3Projects {
 
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3ProjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.NewDataOpentelekomcloudIdentityProjectsV3ProjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityProjectsV3ProjectsList
 ```
@@ -810,7 +810,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v8/dataopentelekomcloudidentityprojectsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentityprojectsv3"
 
 dataopentelekomcloudidentityprojectsv3.NewDataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudIdentityProjectsV3ProjectsOutputReference
 ```

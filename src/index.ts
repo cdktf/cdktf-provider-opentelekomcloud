@@ -163,6 +163,8 @@ export * as wafAlarmNotificationV1 from './waf-alarm-notification-v1';
 export * as wafCcattackprotectionRuleV1 from './waf-ccattackprotection-rule-v1';
 export * as wafCertificateV1 from './waf-certificate-v1';
 export * as wafDatamaskingRuleV1 from './waf-datamasking-rule-v1';
+export * as wafDedicatedCcRuleV1 from './waf-dedicated-cc-rule-v1';
+export * as wafDedicatedCertificateV1 from './waf-dedicated-certificate-v1';
 export * as wafDedicatedDomainV1 from './waf-dedicated-domain-v1';
 export * as wafDedicatedInstanceV1 from './waf-dedicated-instance-v1';
 export * as wafDedicatedPolicyV1 from './waf-dedicated-policy-v1';
