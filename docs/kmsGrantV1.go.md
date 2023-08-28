@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmsgrantv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/kmsgrantv1"
 
 kmsgrantv1.NewKmsGrantV1(scope Construct, id *string, config KmsGrantV1Config) KmsGrantV1
 ```
@@ -298,7 +298,7 @@ func ResetRetiringPrincipal()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmsgrantv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/kmsgrantv1"
 
 kmsgrantv1.KmsGrantV1_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmsgrantv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/kmsgrantv1"
 
 kmsgrantv1.KmsGrantV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ kmsgrantv1.KmsGrantV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmsgrantv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/kmsgrantv1"
 
 kmsgrantv1.KmsGrantV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.kmsGrantV1.KmsGrantV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmsgrantv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/kmsgrantv1"
 
 &kmsgrantv1.KmsGrantV1Config {
 	Connection: interface{},
