@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,38 @@ import * as cdktf from 'cdktf';
 
 export interface WafWhiteblackipRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#addr WafWhiteblackipRuleV1#addr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#addr WafWhiteblackipRuleV1#addr}
   */
   readonly addr: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#id WafWhiteblackipRuleV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#id WafWhiteblackipRuleV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#policy_id WafWhiteblackipRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#policy_id WafWhiteblackipRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#white WafWhiteblackipRuleV1#white}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#white WafWhiteblackipRuleV1#white}
   */
   readonly white?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#timeouts WafWhiteblackipRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#timeouts WafWhiteblackipRuleV1#timeouts}
   */
   readonly timeouts?: WafWhiteblackipRuleV1Timeouts;
 }
 export interface WafWhiteblackipRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#create WafWhiteblackipRuleV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#create WafWhiteblackipRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1#delete WafWhiteblackipRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1#delete WafWhiteblackipRuleV1#delete}
   */
   readonly delete?: string;
 }
@@ -142,7 +137,7 @@ export class WafWhiteblackipRuleV1TimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1}
 */
 export class WafWhiteblackipRuleV1 extends cdktf.TerraformResource {
 
@@ -156,7 +151,7 @@ export class WafWhiteblackipRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/waf_whiteblackip_rule_v1 opentelekomcloud_waf_whiteblackip_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +162,7 @@ export class WafWhiteblackipRuleV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_whiteblackip_rule_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.6',
+        providerVersion: '1.35.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
