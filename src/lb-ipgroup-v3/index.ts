@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface LbIpgroupV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#id LbIpgroupV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#id LbIpgroupV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#name LbIpgroupV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#name LbIpgroupV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#project_id LbIpgroupV3#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#project_id LbIpgroupV3#project_id}
   */
   readonly projectId?: string;
   /**
   * ip_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#ip_list LbIpgroupV3#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#ip_list LbIpgroupV3#ip_list}
   */
-  readonly ipList: LbIpgroupV3IpListStruct[] | cdktf.IResolvable;
+  readonly ipList?: LbIpgroupV3IpListStruct[] | cdktf.IResolvable;
 }
 export interface LbIpgroupV3IpListStruct {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#description LbIpgroupV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3#ip LbIpgroupV3#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3#ip LbIpgroupV3#ip}
   */
   readonly ip: string;
 }
@@ -161,7 +161,7 @@ export class LbIpgroupV3IpListStructList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3}
 */
 export class LbIpgroupV3 extends cdktf.TerraformResource {
 
@@ -175,18 +175,18 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.6/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/lb_ipgroup_v3 opentelekomcloud_lb_ipgroup_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options LbIpgroupV3Config
+  * @param options LbIpgroupV3Config = {}
   */
-  public constructor(scope: Construct, id: string, config: LbIpgroupV3Config) {
+  public constructor(scope: Construct, id: string, config: LbIpgroupV3Config = {}) {
     super(scope, id, {
       terraformResourceType: 'opentelekomcloud_lb_ipgroup_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.6',
+        providerVersion: '1.35.7',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -287,13 +287,16 @@ export class LbIpgroupV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('updated_at');
   }
 
-  // ip_list - computed: false, optional: false, required: true
+  // ip_list - computed: false, optional: true, required: false
   private _ipList = new LbIpgroupV3IpListStructList(this, "ip_list", true);
   public get ipList() {
     return this._ipList;
   }
   public putIpList(value: LbIpgroupV3IpListStruct[] | cdktf.IResolvable) {
     this._ipList.internalValue = value;
+  }
+  public resetIpList() {
+    this._ipList.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipListInput() {

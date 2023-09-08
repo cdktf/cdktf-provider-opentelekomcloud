@@ -36,6 +36,7 @@ Object.defineProperty(exports, 'ctsTrackerV3', { get: function () { return requi
 Object.defineProperty(exports, 'dcsInstanceV1', { get: function () { return require('./dcs-instance-v1'); } });
 Object.defineProperty(exports, 'ddsInstanceV3', { get: function () { return require('./dds-instance-v3'); } });
 Object.defineProperty(exports, 'dehHostV1', { get: function () { return require('./deh-host-v1'); } });
+Object.defineProperty(exports, 'directConnectV2', { get: function () { return require('./direct-connect-v2'); } });
 Object.defineProperty(exports, 'disAppV2', { get: function () { return require('./dis-app-v2'); } });
 Object.defineProperty(exports, 'disCheckpointV2', { get: function () { return require('./dis-checkpoint-v2'); } });
 Object.defineProperty(exports, 'disDumpTaskV2', { get: function () { return require('./dis-dump-task-v2'); } });
@@ -140,6 +141,7 @@ Object.defineProperty(exports, 'swrDomainV2', { get: function () { return requir
 Object.defineProperty(exports, 'swrOrganizationPermissionsV2', { get: function () { return require('./swr-organization-permissions-v2'); } });
 Object.defineProperty(exports, 'swrOrganizationV2', { get: function () { return require('./swr-organization-v2'); } });
 Object.defineProperty(exports, 'swrRepositoryV2', { get: function () { return require('./swr-repository-v2'); } });
+Object.defineProperty(exports, 'tmsTagsV1', { get: function () { return require('./tms-tags-v1'); } });
 Object.defineProperty(exports, 'vbsBackupPolicyV2', { get: function () { return require('./vbs-backup-policy-v2'); } });
 Object.defineProperty(exports, 'vbsBackupShareV2', { get: function () { return require('./vbs-backup-share-v2'); } });
 Object.defineProperty(exports, 'vbsBackupV2', { get: function () { return require('./vbs-backup-v2'); } });
@@ -163,8 +165,10 @@ Object.defineProperty(exports, 'wafAlarmNotificationV1', { get: function () { re
 Object.defineProperty(exports, 'wafCcattackprotectionRuleV1', { get: function () { return require('./waf-ccattackprotection-rule-v1'); } });
 Object.defineProperty(exports, 'wafCertificateV1', { get: function () { return require('./waf-certificate-v1'); } });
 Object.defineProperty(exports, 'wafDatamaskingRuleV1', { get: function () { return require('./waf-datamasking-rule-v1'); } });
+Object.defineProperty(exports, 'wafDedicatedAntiCrawlerRuleV1', { get: function () { return require('./waf-dedicated-anti-crawler-rule-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedCcRuleV1', { get: function () { return require('./waf-dedicated-cc-rule-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedCertificateV1', { get: function () { return require('./waf-dedicated-certificate-v1'); } });
+Object.defineProperty(exports, 'wafDedicatedDataMaskingRuleV1', { get: function () { return require('./waf-dedicated-data-masking-rule-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedDomainV1', { get: function () { return require('./waf-dedicated-domain-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedInstanceV1', { get: function () { return require('./waf-dedicated-instance-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedPolicyV1', { get: function () { return require('./waf-dedicated-policy-v1'); } });
@@ -202,6 +206,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudDdsFlavorsV3', { get: functi
 Object.defineProperty(exports, 'dataOpentelekomcloudDdsInstanceV3', { get: function () { return require('./data-opentelekomcloud-dds-instance-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDehHostV1', { get: function () { return require('./data-opentelekomcloud-deh-host-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDehServerV1', { get: function () { return require('./data-opentelekomcloud-deh-server-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudDirectConnectV2', { get: function () { return require('./data-opentelekomcloud-direct-connect-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDmsAzV1', { get: function () { return require('./data-opentelekomcloud-dms-az-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDmsMaintainwindowV1', { get: function () { return require('./data-opentelekomcloud-dms-maintainwindow-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDmsProductV1', { get: function () { return require('./data-opentelekomcloud-dms-product-v1'); } });
