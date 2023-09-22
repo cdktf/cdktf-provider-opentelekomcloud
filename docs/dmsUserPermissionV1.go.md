@@ -1,6 +1,6 @@
 # `opentelekomcloud_dms_user_permission_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_user_permission_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_user_permission_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1).
 
 # `dmsUserPermissionV1` Submodule <a name="`dmsUserPermissionV1` Submodule" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_user_permissio
 
 ### DmsUserPermissionV1 <a name="DmsUserPermissionV1" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1 opentelekomcloud_dms_user_permission_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.NewDmsUserPermissionV1(scope Construct, id *string, config DmsUserPermissionV1Config) DmsUserPermissionV1
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.DmsUserPermissionV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.DmsUserPermissionV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dmsuserpermissionv1.DmsUserPermissionV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.DmsUserPermissionV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 &dmsuserpermissionv1.DmsUserPermissionV1Config {
 	Connection: interface{},
@@ -662,10 +662,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.policies">Policies</a></code> | <code>interface{}</code> | policies block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.topicName">TopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#instance_id DmsUserPermissionV1#instance_id}.
 
 ---
 
@@ -761,7 +761,7 @@ Policies interface{}
 
 policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#policies DmsUserPermissionV1#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#policies DmsUserPermissionV1#policies}
 
 ---
 
@@ -773,7 +773,7 @@ TopicName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#topic_name DmsUserPermissionV1#topic_name}.
 
 ---
 
@@ -785,7 +785,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#id DmsUserPermissionV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,7 +797,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Policies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 &dmsuserpermissionv1.DmsUserPermissionV1Policies {
 	AccessPolicy: *string,
@@ -809,8 +809,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Policies.property.accessPolicy">AccessPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Policies.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Policies.property.accessPolicy">AccessPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1Policies.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}. |
 
 ---
 
@@ -822,7 +822,7 @@ AccessPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#access_policy DmsUserPermissionV1#access_policy}.
 
 ---
 
@@ -834,7 +834,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/dms_user_permission_v1#username DmsUserPermissionV1#username}.
 
 ---
 
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1PoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.NewDmsUserPermissionV1PoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DmsUserPermissionV1PoliciesList
 ```
@@ -988,7 +988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsUserPermissionV1.DmsUserPermissionV1PoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dmsuserpermissionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsuserpermissionv1"
 
 dmsuserpermissionv1.NewDmsUserPermissionV1PoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DmsUserPermissionV1PoliciesOutputReference
 ```

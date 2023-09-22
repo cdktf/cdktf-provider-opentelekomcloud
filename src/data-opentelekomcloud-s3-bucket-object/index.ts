@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +8,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudS3BucketObjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object#bucket DataOpentelekomcloudS3BucketObject#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object#bucket DataOpentelekomcloudS3BucketObject#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object#id DataOpentelekomcloudS3BucketObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object#id DataOpentelekomcloudS3BucketObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object#key DataOpentelekomcloudS3BucketObject#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object#key DataOpentelekomcloudS3BucketObject#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object#range DataOpentelekomcloudS3BucketObject#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object#range DataOpentelekomcloudS3BucketObject#range}
   */
   readonly range?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object#version_id DataOpentelekomcloudS3BucketObject#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object#version_id DataOpentelekomcloudS3BucketObject#version_id}
   */
   readonly versionId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object}
 */
 export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSource {
 
@@ -52,7 +47,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/s3_bucket_object opentelekomcloud_s3_bucket_object} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -63,7 +58,7 @@ export class DataOpentelekomcloudS3BucketObject extends cdktf.TerraformDataSourc
       terraformResourceType: 'opentelekomcloud_s3_bucket_object',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.7',
+        providerVersion: '1.35.8',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
