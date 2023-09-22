@@ -1,6 +1,6 @@
 # `opentelekomcloud_identity_group_membership_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_membership_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_membership_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3).
 
 # `identityGroupMembershipV3` Submodule <a name="`identityGroupMembershipV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_group_mem
 
 ### IdentityGroupMembershipV3 <a name="IdentityGroupMembershipV3" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3 opentelekomcloud_identity_group_membership_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3 opentelekomcloud_identity_group_membership_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3.Initializer"></a>
 
@@ -615,9 +615,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.group">Group</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.users">Users</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityGroupMembershipV3.IdentityGroupMembershipV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ Group *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#group IdentityGroupMembershipV3#group}.
 
 ---
 
@@ -711,7 +711,7 @@ Users *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#users IdentityGroupMembershipV3#users}.
 
 ---
 
@@ -723,7 +723,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.7/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/identity_group_membership_v3#id IdentityGroupMembershipV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
