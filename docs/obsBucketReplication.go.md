@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.NewObsBucketReplication(scope Construct, id *string, config ObsBucketReplicationConfig) ObsBucketReplication
 ```
@@ -304,7 +304,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.ObsBucketReplication_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.ObsBucketReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ obsbucketreplication.ObsBucketReplication_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.ObsBucketReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 &obsbucketreplication.ObsBucketReplicationConfig {
 	Connection: interface{},
@@ -872,7 +872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplicationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 &obsbucketreplication.ObsBucketReplicationRule {
 	Enabled: interface{},
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplicationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.NewObsBucketReplicationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketReplicationRuleList
 ```
@@ -1091,7 +1091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketReplication.ObsBucketReplicationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/obsbucketreplication"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketreplication"
 
 obsbucketreplication.NewObsBucketReplicationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObsBucketReplicationRuleOutputReference
 ```
