@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_rts_stack_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_stack_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_stack_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1).
 
 # `dataOpentelekomcloudRtsStackV1` Submodule <a name="`dataOpentelekomcloudRtsStackV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_stack_v1`
 
 ### DataOpentelekomcloudRtsStackV1 <a name="DataOpentelekomcloudRtsStackV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1 opentelekomcloud_rts_stack_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1 opentelekomcloud_rts_stack_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtsstackv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtsstackv1"
 
 dataopentelekomcloudrtsstackv1.NewDataOpentelekomcloudRtsStackV1(scope Construct, id *string, config DataOpentelekomcloudRtsStackV1Config) DataOpentelekomcloudRtsStackV1
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtsstackv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtsstackv1"
 
 dataopentelekomcloudrtsstackv1.DataOpentelekomcloudRtsStackV1_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtsstackv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtsstackv1"
 
 dataopentelekomcloudrtsstackv1.DataOpentelekomcloudRtsStackV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataopentelekomcloudrtsstackv1.DataOpentelekomcloudRtsStackV1_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtsstackv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtsstackv1"
 
 dataopentelekomcloudrtsstackv1.DataOpentelekomcloudRtsStackV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -672,7 +672,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudrtsstackv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtsstackv1"
 
 &dataopentelekomcloudrtsstackv1.DataOpentelekomcloudRtsStackV1Config {
 	Connection: interface{},
@@ -699,9 +699,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#name DataOpentelekomcloudRtsStackV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#id DataOpentelekomcloudRtsStackV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#region DataOpentelekomcloudRtsStackV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#name DataOpentelekomcloudRtsStackV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#id DataOpentelekomcloudRtsStackV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackV1.DataOpentelekomcloudRtsStackV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#region DataOpentelekomcloudRtsStackV1#region}. |
 
 ---
 
@@ -783,7 +783,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#name DataOpentelekomcloudRtsStackV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#name DataOpentelekomcloudRtsStackV1#name}.
 
 ---
 
@@ -795,7 +795,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#id DataOpentelekomcloudRtsStackV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#id DataOpentelekomcloudRtsStackV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -810,7 +810,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/rts_stack_v1#region DataOpentelekomcloudRtsStackV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/rts_stack_v1#region DataOpentelekomcloudRtsStackV1#region}.
 
 ---
 

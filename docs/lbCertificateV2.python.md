@@ -1,6 +1,6 @@
 # `opentelekomcloud_lb_certificate_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_certificate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_certificate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2).
 
 # `lbCertificateV2` Submodule <a name="`lbCertificateV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbCertificateV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_certificate_v2`
 
 ### LbCertificateV2 <a name="LbCertificateV2" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2 opentelekomcloud_lb_certificate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer"></a>
 
@@ -48,15 +48,15 @@ lbCertificateV2.LbCertificateV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#description LbCertificateV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#id LbCertificateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#name LbCertificateV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#region LbCertificateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#description LbCertificateV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#id LbCertificateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#name LbCertificateV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#region LbCertificateV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts">LbCertificateV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#type LbCertificateV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#type LbCertificateV2#type}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#description LbCertificateV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#description LbCertificateV2#description}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#id LbCertificateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#id LbCertificateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#name LbCertificateV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#name LbCertificateV2#name}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}.
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#region LbCertificateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#region LbCertificateV2#region}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#timeouts LbCertificateV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#timeouts LbCertificateV2#timeouts}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#type LbCertificateV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#type LbCertificateV2#type}.
 
 ---
 
@@ -452,7 +452,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#create LbCertificateV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#create LbCertificateV2#create}.
 
 ---
 
@@ -460,7 +460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}.
 
 ---
 
@@ -468,7 +468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#update LbCertificateV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#update LbCertificateV2#update}.
 
 ---
 
@@ -1048,15 +1048,15 @@ lbCertificateV2.LbCertificateV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.certificate">certificate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#description LbCertificateV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#id LbCertificateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#name LbCertificateV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#region LbCertificateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.certificate">certificate</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#description LbCertificateV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.domain">domain</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#id LbCertificateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#name LbCertificateV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.privateKey">private_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#region LbCertificateV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts">LbCertificateV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#type LbCertificateV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#type LbCertificateV2#type}. |
 
 ---
 
@@ -1138,7 +1138,7 @@ certificate: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#certificate LbCertificateV2#certificate}.
 
 ---
 
@@ -1150,7 +1150,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#description LbCertificateV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#description LbCertificateV2#description}.
 
 ---
 
@@ -1162,7 +1162,7 @@ domain: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#domain LbCertificateV2#domain}.
 
 ---
 
@@ -1174,7 +1174,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#id LbCertificateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#id LbCertificateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1189,7 +1189,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#name LbCertificateV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#name LbCertificateV2#name}.
 
 ---
 
@@ -1201,7 +1201,7 @@ private_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#private_key LbCertificateV2#private_key}.
 
 ---
 
@@ -1213,7 +1213,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#region LbCertificateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#region LbCertificateV2#region}.
 
 ---
 
@@ -1227,7 +1227,7 @@ timeouts: LbCertificateV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#timeouts LbCertificateV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#timeouts LbCertificateV2#timeouts}
 
 ---
 
@@ -1239,7 +1239,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#type LbCertificateV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#type LbCertificateV2#type}.
 
 ---
 
@@ -1261,9 +1261,9 @@ lbCertificateV2.LbCertificateV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#create LbCertificateV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#update LbCertificateV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#create LbCertificateV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbCertificateV2.LbCertificateV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#update LbCertificateV2#update}. |
 
 ---
 
@@ -1275,7 +1275,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#create LbCertificateV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#create LbCertificateV2#create}.
 
 ---
 
@@ -1287,7 +1287,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#delete LbCertificateV2#delete}.
 
 ---
 
@@ -1299,7 +1299,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/lb_certificate_v2#update LbCertificateV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_certificate_v2#update LbCertificateV2#update}.
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_action_enabled CesAlarmrule#alarm_action_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_action_enabled CesAlarmrule#alarm_action_enabled}
   */
   readonly alarmActionEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_description CesAlarmrule#alarm_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_description CesAlarmrule#alarm_description}
   */
   readonly alarmDescription?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_enabled CesAlarmrule#alarm_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_enabled CesAlarmrule#alarm_enabled}
   */
   readonly alarmEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_level CesAlarmrule#alarm_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_level CesAlarmrule#alarm_level}
   */
   readonly alarmLevel?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_name CesAlarmrule#alarm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_name CesAlarmrule#alarm_name}
   */
   readonly alarmName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_type CesAlarmrule#alarm_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_type CesAlarmrule#alarm_type}
   */
   readonly alarmType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#id CesAlarmrule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#id CesAlarmrule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,41 +41,41 @@ export interface CesAlarmruleConfig extends cdktf.TerraformMetaArguments {
   /**
   * alarm_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_actions CesAlarmrule#alarm_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_actions CesAlarmrule#alarm_actions}
   */
   readonly alarmActions?: CesAlarmruleAlarmActions[] | cdktf.IResolvable;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#condition CesAlarmrule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#condition CesAlarmrule#condition}
   */
   readonly condition: CesAlarmruleCondition;
   /**
   * metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#metric CesAlarmrule#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#metric CesAlarmrule#metric}
   */
   readonly metric: CesAlarmruleMetric;
   /**
   * ok_actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#ok_actions CesAlarmrule#ok_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#ok_actions CesAlarmrule#ok_actions}
   */
   readonly okActions?: CesAlarmruleOkActions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#timeouts CesAlarmrule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#timeouts CesAlarmrule#timeouts}
   */
   readonly timeouts?: CesAlarmruleTimeouts;
 }
 export interface CesAlarmruleAlarmActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}
   */
   readonly notificationList: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#type CesAlarmrule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#type CesAlarmrule#type}
   */
   readonly type: string;
 }
@@ -194,31 +189,31 @@ export class CesAlarmruleAlarmActionsList extends cdktf.ComplexList {
 }
 export interface CesAlarmruleCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#alarm_frequency CesAlarmrule#alarm_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#alarm_frequency CesAlarmrule#alarm_frequency}
   */
   readonly alarmFrequency?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#comparison_operator CesAlarmrule#comparison_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#comparison_operator CesAlarmrule#comparison_operator}
   */
   readonly comparisonOperator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#count CesAlarmrule#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#count CesAlarmrule#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#filter CesAlarmrule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#filter CesAlarmrule#filter}
   */
   readonly filter: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#period CesAlarmrule#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#period CesAlarmrule#period}
   */
   readonly period: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#unit CesAlarmrule#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#unit CesAlarmrule#unit}
   */
   readonly unit?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#value CesAlarmrule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#value CesAlarmrule#value}
   */
   readonly value: number;
 }
@@ -406,11 +401,11 @@ export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
 }
 export interface CesAlarmruleMetricDimensions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#name CesAlarmrule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#name CesAlarmrule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#value CesAlarmrule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#value CesAlarmrule#value}
   */
   readonly value: string;
 }
@@ -524,17 +519,17 @@ export class CesAlarmruleMetricDimensionsList extends cdktf.ComplexList {
 }
 export interface CesAlarmruleMetric {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#metric_name CesAlarmrule#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#metric_name CesAlarmrule#metric_name}
   */
   readonly metricName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#namespace CesAlarmrule#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#namespace CesAlarmrule#namespace}
   */
   readonly namespace: string;
   /**
   * dimensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#dimensions CesAlarmrule#dimensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#dimensions CesAlarmrule#dimensions}
   */
   readonly dimensions?: CesAlarmruleMetricDimensions[] | cdktf.IResolvable;
 }
@@ -639,11 +634,11 @@ export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
 }
 export interface CesAlarmruleOkActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#notification_list CesAlarmrule#notification_list}
   */
   readonly notificationList: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#type CesAlarmrule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#type CesAlarmrule#type}
   */
   readonly type: string;
 }
@@ -757,15 +752,15 @@ export class CesAlarmruleOkActionsList extends cdktf.ComplexList {
 }
 export interface CesAlarmruleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#create CesAlarmrule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#create CesAlarmrule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#delete CesAlarmrule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#delete CesAlarmrule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule#update CesAlarmrule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule#update CesAlarmrule#update}
   */
   readonly update?: string;
 }
@@ -886,7 +881,7 @@ export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule}
 */
 export class CesAlarmrule extends cdktf.TerraformResource {
 
@@ -900,7 +895,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ces_alarmrule opentelekomcloud_ces_alarmrule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -911,7 +906,7 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_ces_alarmrule',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.8',
+        providerVersion: '1.35.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface RdsParametergroupV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#description RdsParametergroupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#description RdsParametergroupV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#id RdsParametergroupV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#id RdsParametergroupV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#name RdsParametergroupV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#name RdsParametergroupV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#values RdsParametergroupV3#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#values RdsParametergroupV3#values}
   */
   readonly values?: { [key: string]: string };
   /**
   * datastore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#datastore RdsParametergroupV3#datastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#datastore RdsParametergroupV3#datastore}
   */
   readonly datastore: RdsParametergroupV3Datastore;
 }
@@ -134,11 +129,11 @@ export class RdsParametergroupV3ConfigurationParametersList extends cdktf.Comple
 }
 export interface RdsParametergroupV3Datastore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#type RdsParametergroupV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#type RdsParametergroupV3#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3#version RdsParametergroupV3#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3#version RdsParametergroupV3#version}
   */
   readonly version: string;
 }
@@ -220,7 +215,7 @@ export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3}
 */
 export class RdsParametergroupV3 extends cdktf.TerraformResource {
 
@@ -234,7 +229,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/rds_parametergroup_v3 opentelekomcloud_rds_parametergroup_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -245,7 +240,7 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_rds_parametergroup_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.8',
+        providerVersion: '1.35.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
