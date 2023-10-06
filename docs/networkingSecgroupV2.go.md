@@ -1,6 +1,6 @@
 # `opentelekomcloud_networking_secgroup_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_secgroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_secgroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2).
 
 # `networkingSecgroupV2` Submodule <a name="`networkingSecgroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingSecgroupV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_secgrou
 
 ### NetworkingSecgroupV2 <a name="NetworkingSecgroupV2" id="@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2 opentelekomcloud_networking_secgroup_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2.Initializer"></a>
 
@@ -755,12 +755,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#name NetworkingSecgroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.deleteDefaultRules">DeleteDefaultRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#delete_default_rules NetworkingSecgroupV2#delete_default_rules}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#description NetworkingSecgroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#id NetworkingSecgroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#region NetworkingSecgroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#tenant_id NetworkingSecgroupV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#name NetworkingSecgroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.deleteDefaultRules">DeleteDefaultRules</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#delete_default_rules NetworkingSecgroupV2#delete_default_rules}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#description NetworkingSecgroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#id NetworkingSecgroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#region NetworkingSecgroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.tenantId">TenantId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#tenant_id NetworkingSecgroupV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Timeouts">NetworkingSecgroupV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -843,7 +843,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#name NetworkingSecgroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#name NetworkingSecgroupV2#name}.
 
 ---
 
@@ -855,7 +855,7 @@ DeleteDefaultRules interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#delete_default_rules NetworkingSecgroupV2#delete_default_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#delete_default_rules NetworkingSecgroupV2#delete_default_rules}.
 
 ---
 
@@ -867,7 +867,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#description NetworkingSecgroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#description NetworkingSecgroupV2#description}.
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#id NetworkingSecgroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#id NetworkingSecgroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -894,7 +894,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#region NetworkingSecgroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#region NetworkingSecgroupV2#region}.
 
 ---
 
@@ -906,7 +906,7 @@ TenantId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#tenant_id NetworkingSecgroupV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#tenant_id NetworkingSecgroupV2#tenant_id}.
 
 ---
 
@@ -920,7 +920,7 @@ Timeouts NetworkingSecgroupV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#timeouts NetworkingSecgroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#timeouts NetworkingSecgroupV2#timeouts}
 
 ---
 
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#delete NetworkingSecgroupV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingSecgroupV2.NetworkingSecgroupV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#delete NetworkingSecgroupV2#delete}. |
 
 ---
 
@@ -952,7 +952,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/networking_secgroup_v2#delete NetworkingSecgroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_secgroup_v2#delete NetworkingSecgroupV2#delete}.
 
 ---
 

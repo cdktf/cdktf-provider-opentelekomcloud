@@ -1,6 +1,6 @@
 # `opentelekomcloud_tms_tags_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_tms_tags_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_tms_tags_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1).
 
 # `tmsTagsV1` Submodule <a name="`tmsTagsV1` Submodule" id="@cdktf/provider-opentelekomcloud.tmsTagsV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_tms_tags_v1`](http
 
 ### TmsTagsV1 <a name="TmsTagsV1" id="@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer"></a>
 
@@ -46,7 +46,7 @@ TmsTagsV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags">TmsTagsV1Tags</a>></code> | tags block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#id TmsTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#id TmsTagsV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts">TmsTagsV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -117,7 +117,7 @@ Must be unique amongst siblings in the same scope
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#tags TmsTagsV1#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#tags TmsTagsV1#tags}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#id TmsTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#id TmsTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -138,7 +138,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#timeouts TmsTagsV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#timeouts TmsTagsV1#timeouts}
 
 ---
 
@@ -746,7 +746,7 @@ TmsTagsV1Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.tags">tags</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags">TmsTagsV1Tags</a>></code> | tags block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#id TmsTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#id TmsTagsV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts">TmsTagsV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -831,7 +831,7 @@ public java.lang.Object getTags();
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#tags TmsTagsV1#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#tags TmsTagsV1#tags}
 
 ---
 
@@ -843,7 +843,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#id TmsTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#id TmsTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ public TmsTagsV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#timeouts TmsTagsV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#timeouts TmsTagsV1#timeouts}
 
 ---
 
@@ -881,8 +881,8 @@ TmsTagsV1Tags.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#key TmsTagsV1#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#value TmsTagsV1#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#key TmsTagsV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Tags.property.value">value</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#value TmsTagsV1#value}. |
 
 ---
 
@@ -894,7 +894,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#key TmsTagsV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#key TmsTagsV1#key}.
 
 ---
 
@@ -906,7 +906,7 @@ public java.lang.String getValue();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#value TmsTagsV1#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#value TmsTagsV1#value}.
 
 ---
 
@@ -927,8 +927,8 @@ TmsTagsV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#create TmsTagsV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#delete TmsTagsV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#create TmsTagsV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsTagsV1.TmsTagsV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#delete TmsTagsV1#delete}. |
 
 ---
 
@@ -940,7 +940,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#create TmsTagsV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#create TmsTagsV1#create}.
 
 ---
 
@@ -952,7 +952,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/tms_tags_v1#delete TmsTagsV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/tms_tags_v1#delete TmsTagsV1#delete}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_compute_bms_nic_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_nic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_nic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2).
 
 # `dataOpentelekomcloudComputeBmsNicV2` Submodule <a name="`dataOpentelekomcloudComputeBmsNicV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_n
 
 ### DataOpentelekomcloudComputeBmsNicV2 <a name="DataOpentelekomcloudComputeBmsNicV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2 opentelekomcloud_compute_bms_nic_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2.Initializer"></a>
 
@@ -663,10 +663,10 @@ new DataOpentelekomcloudComputeBmsNicV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#id DataOpentelekomcloudComputeBmsNicV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#region DataOpentelekomcloudComputeBmsNicV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#status DataOpentelekomcloudComputeBmsNicV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#id DataOpentelekomcloudComputeBmsNicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#region DataOpentelekomcloudComputeBmsNicV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.property.status">Status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#status DataOpentelekomcloudComputeBmsNicV2#status}. |
 
 ---
 
@@ -748,7 +748,7 @@ public string ServerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#server_id DataOpentelekomcloudComputeBmsNicV2#server_id}.
 
 ---
 
@@ -760,7 +760,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#id DataOpentelekomcloudComputeBmsNicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#id DataOpentelekomcloudComputeBmsNicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#region DataOpentelekomcloudComputeBmsNicV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#region DataOpentelekomcloudComputeBmsNicV2#region}.
 
 ---
 
@@ -787,7 +787,7 @@ public string Status { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/data-sources/compute_bms_nic_v2#status DataOpentelekomcloudComputeBmsNicV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/compute_bms_nic_v2#status DataOpentelekomcloudComputeBmsNicV2#status}.
 
 ---
 

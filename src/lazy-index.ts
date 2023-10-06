@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'evsVolumeV3', { get: function () { return requir
 Object.defineProperty(exports, 'fwFirewallGroupV2', { get: function () { return require('./fw-firewall-group-v2'); } });
 Object.defineProperty(exports, 'fwPolicyV2', { get: function () { return require('./fw-policy-v2'); } });
 Object.defineProperty(exports, 'fwRuleV2', { get: function () { return require('./fw-rule-v2'); } });
+Object.defineProperty(exports, 'gaussdbMysqlInstanceV3', { get: function () { return require('./gaussdb-mysql-instance-v3'); } });
 Object.defineProperty(exports, 'identityAgencyV3', { get: function () { return require('./identity-agency-v3'); } });
 Object.defineProperty(exports, 'identityCredentialV3', { get: function () { return require('./identity-credential-v3'); } });
 Object.defineProperty(exports, 'identityGroupMembershipV3', { get: function () { return require('./identity-group-membership-v3'); } });
@@ -203,6 +204,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudComputeBmsServerV2', { get: 
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeFlavorV2', { get: function () { return require('./data-opentelekomcloud-compute-flavor-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeInstanceV2', { get: function () { return require('./data-opentelekomcloud-compute-instance-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeInstancesV2', { get: function () { return require('./data-opentelekomcloud-compute-instances-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudComputeKeypairV2', { get: function () { return require('./data-opentelekomcloud-compute-keypair-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCsbsBackupPolicyV1', { get: function () { return require('./data-opentelekomcloud-csbs-backup-policy-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCsbsBackupV1', { get: function () { return require('./data-opentelekomcloud-csbs-backup-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCssFlavorV1', { get: function () { return require('./data-opentelekomcloud-css-flavor-v1'); } });

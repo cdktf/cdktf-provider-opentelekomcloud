@@ -1,6 +1,6 @@
 # `opentelekomcloud_waf_dedicated_blacklist_rule_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_dedicated_blacklist_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_dedicated_blacklist_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1).
 
 # `wafDedicatedBlacklistRuleV1` Submodule <a name="`wafDedicatedBlacklistRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_dedicated_blac
 
 ### WafDedicatedBlacklistRuleV1 <a name="WafDedicatedBlacklistRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1 opentelekomcloud_waf_dedicated_blacklist_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.Initializer"></a>
 
@@ -793,13 +793,13 @@ new WafDedicatedBlacklistRuleV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.action">Action</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#action WafDedicatedBlacklistRuleV1#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#ip_address WafDedicatedBlacklistRuleV1#ip_address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#policy_id WafDedicatedBlacklistRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#description WafDedicatedBlacklistRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.followedActionId">FollowedActionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#followed_action_id WafDedicatedBlacklistRuleV1#followed_action_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#id WafDedicatedBlacklistRuleV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#name WafDedicatedBlacklistRuleV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.action">Action</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#action WafDedicatedBlacklistRuleV1#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#ip_address WafDedicatedBlacklistRuleV1#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.policyId">PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#policy_id WafDedicatedBlacklistRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#description WafDedicatedBlacklistRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.followedActionId">FollowedActionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#followed_action_id WafDedicatedBlacklistRuleV1#followed_action_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#id WafDedicatedBlacklistRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#name WafDedicatedBlacklistRuleV1#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts">WafDedicatedBlacklistRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -882,7 +882,7 @@ public double Action { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#action WafDedicatedBlacklistRuleV1#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#action WafDedicatedBlacklistRuleV1#action}.
 
 ---
 
@@ -894,7 +894,7 @@ public string IpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#ip_address WafDedicatedBlacklistRuleV1#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#ip_address WafDedicatedBlacklistRuleV1#ip_address}.
 
 ---
 
@@ -906,7 +906,7 @@ public string PolicyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#policy_id WafDedicatedBlacklistRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#policy_id WafDedicatedBlacklistRuleV1#policy_id}.
 
 ---
 
@@ -918,7 +918,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#description WafDedicatedBlacklistRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#description WafDedicatedBlacklistRuleV1#description}.
 
 ---
 
@@ -930,7 +930,7 @@ public string FollowedActionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#followed_action_id WafDedicatedBlacklistRuleV1#followed_action_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#followed_action_id WafDedicatedBlacklistRuleV1#followed_action_id}.
 
 ---
 
@@ -942,7 +942,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#id WafDedicatedBlacklistRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#id WafDedicatedBlacklistRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -957,7 +957,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#name WafDedicatedBlacklistRuleV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#name WafDedicatedBlacklistRuleV1#name}.
 
 ---
 
@@ -971,7 +971,7 @@ public WafDedicatedBlacklistRuleV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#timeouts WafDedicatedBlacklistRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#timeouts WafDedicatedBlacklistRuleV1#timeouts}
 
 ---
 
@@ -992,8 +992,8 @@ new WafDedicatedBlacklistRuleV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#create WafDedicatedBlacklistRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#delete WafDedicatedBlacklistRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#create WafDedicatedBlacklistRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#delete WafDedicatedBlacklistRuleV1#delete}. |
 
 ---
 
@@ -1005,7 +1005,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#create WafDedicatedBlacklistRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#create WafDedicatedBlacklistRuleV1#create}.
 
 ---
 
@@ -1017,7 +1017,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.8/docs/resources/waf_dedicated_blacklist_rule_v1#delete WafDedicatedBlacklistRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_blacklist_rule_v1#delete WafDedicatedBlacklistRuleV1#delete}.
 
 ---
 

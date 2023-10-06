@@ -56,6 +56,7 @@ export * as evsVolumeV3 from './evs-volume-v3';
 export * as fwFirewallGroupV2 from './fw-firewall-group-v2';
 export * as fwPolicyV2 from './fw-policy-v2';
 export * as fwRuleV2 from './fw-rule-v2';
+export * as gaussdbMysqlInstanceV3 from './gaussdb-mysql-instance-v3';
 export * as identityAgencyV3 from './identity-agency-v3';
 export * as identityCredentialV3 from './identity-credential-v3';
 export * as identityGroupMembershipV3 from './identity-group-membership-v3';
@@ -203,6 +204,7 @@ export * as dataOpentelekomcloudComputeBmsServerV2 from './data-opentelekomcloud
 export * as dataOpentelekomcloudComputeFlavorV2 from './data-opentelekomcloud-compute-flavor-v2';
 export * as dataOpentelekomcloudComputeInstanceV2 from './data-opentelekomcloud-compute-instance-v2';
 export * as dataOpentelekomcloudComputeInstancesV2 from './data-opentelekomcloud-compute-instances-v2';
+export * as dataOpentelekomcloudComputeKeypairV2 from './data-opentelekomcloud-compute-keypair-v2';
 export * as dataOpentelekomcloudCsbsBackupPolicyV1 from './data-opentelekomcloud-csbs-backup-policy-v1';
 export * as dataOpentelekomcloudCsbsBackupV1 from './data-opentelekomcloud-csbs-backup-v1';
 export * as dataOpentelekomcloudCssFlavorV1 from './data-opentelekomcloud-css-flavor-v1';
