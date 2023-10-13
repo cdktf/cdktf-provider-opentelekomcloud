@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktopicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktopicv2"
 
 logtanktopicv2.NewLogtankTopicV2(scope Construct, id *string, config LogtankTopicV2Config) LogtankTopicV2
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktopicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktopicv2"
 
 logtanktopicv2.LogtankTopicV2_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktopicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktopicv2"
 
 logtanktopicv2.LogtankTopicV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ logtanktopicv2.LogtankTopicV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktopicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktopicv2"
 
 logtanktopicv2.LogtankTopicV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktopicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktopicv2"
 
 &logtanktopicv2.LogtankTopicV2Config {
 	Connection: interface{},
