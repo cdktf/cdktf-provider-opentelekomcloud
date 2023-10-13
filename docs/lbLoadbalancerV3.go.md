@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 lbloadbalancerv3.NewLbLoadbalancerV3(scope Construct, id *string, config LbLoadbalancerV3Config) LbLoadbalancerV3
 ```
@@ -374,7 +374,7 @@ func ResetVipAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsConstruct(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ lbloadbalancerv3.LbLoadbalancerV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -982,7 +982,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 &lbloadbalancerv3.LbLoadbalancerV3Config {
 	Connection: interface{},
@@ -1002,7 +1002,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 	L4Flavor: *string,
 	L7Flavor: *string,
 	Name: *string,
-	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.lbLoadbalancerV3.LbLoadbalancerV3PublicIp,
+	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.lbLoadbalancerV3.LbLoadbalancerV3PublicIp,
 	RouterId: *string,
 	SubnetId: *string,
 	Tags: *map[string]*string,
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3PublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 &lbloadbalancerv3.LbLoadbalancerV3PublicIp {
 	BandwidthChargeMode: *string,
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3PublicIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
 
 lbloadbalancerv3.NewLbLoadbalancerV3PublicIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbLoadbalancerV3PublicIpOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.NewDataOpentelekomcloudVbsBackupPolicyV2(scope Construct, id *string, config DataOpentelekomcloudVbsBackupPolicyV2Config) DataOpentelekomcloudVbsBackupPolicyV2
 ```
@@ -325,7 +325,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 &dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2Config {
 	Connection: interface{},
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2FilterTags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 &dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2FilterTags {
 	Key: *string,
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2Tags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 &dataopentelekomcloudvbsbackuppolicyv2.DataOpentelekomcloudVbsBackupPolicyV2Tags {
 
@@ -987,7 +987,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2FilterTagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.NewDataOpentelekomcloudVbsBackupPolicyV2FilterTagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVbsBackupPolicyV2FilterTagsList
 ```
@@ -1130,7 +1130,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2FilterTagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.NewDataOpentelekomcloudVbsBackupPolicyV2FilterTagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudVbsBackupPolicyV2FilterTagsOutputReference
 ```
@@ -1441,7 +1441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2TagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.NewDataOpentelekomcloudVbsBackupPolicyV2TagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVbsBackupPolicyV2TagsList
 ```
@@ -1573,7 +1573,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVbsBackupPolicyV2.DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudvbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvbsbackuppolicyv2"
 
 dataopentelekomcloudvbsbackuppolicyv2.NewDataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.NewVpcEipV1(scope Construct, id *string, config VpcEipV1Config) VpcEipV1
 ```
@@ -351,7 +351,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.VpcEipV1_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.VpcEipV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ vpceipv1.VpcEipV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.VpcEipV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1Bandwidth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 &vpceipv1.VpcEipV1Bandwidth {
 	Name: *string,
@@ -846,7 +846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 &vpceipv1.VpcEipV1Config {
 	Connection: interface{},
@@ -856,12 +856,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Bandwidth: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.vpcEipV1.VpcEipV1Bandwidth,
-	Publicip: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.vpcEipV1.VpcEipV1Publicip,
+	Bandwidth: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.vpcEipV1.VpcEipV1Bandwidth,
+	Publicip: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.vpcEipV1.VpcEipV1Publicip,
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.vpcEipV1.VpcEipV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.vpcEipV1.VpcEipV1Timeouts,
 	UnbindPort: interface{},
 	ValueSpecs: *map[string]*string,
 }
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1Publicip.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 &vpceipv1.VpcEipV1Publicip {
 	Type: *string,
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 &vpceipv1.VpcEipV1Timeouts {
 	Create: *string,
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1BandwidthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.NewVpcEipV1BandwidthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEipV1BandwidthOutputReference
 ```
@@ -1521,7 +1521,7 @@ func InternalValue() VpcEipV1Bandwidth
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1PublicipOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.NewVpcEipV1PublicipOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEipV1PublicipOutputReference
 ```
@@ -1850,7 +1850,7 @@ func InternalValue() VpcEipV1Publicip
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcEipV1.VpcEipV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/vpceipv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpceipv1"
 
 vpceipv1.NewVpcEipV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcEipV1TimeoutsOutputReference
 ```

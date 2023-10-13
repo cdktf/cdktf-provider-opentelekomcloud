@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3(scope Construct, id *string, config CtsEventNotificationV3Config) CtsEventNotificationV3
 ```
@@ -331,7 +331,7 @@ func ResetTopicId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsConstruct(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ ctseventnotificationv3.CtsEventNotificationV3_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.CtsEventNotificationV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -774,7 +774,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3Config {
 	Connection: interface{},
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3NotifyUserListStruct {
 	UserGroup: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3Operations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 &ctseventnotificationv3.CtsEventNotificationV3Operations {
 	ResourceType: *string,
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3NotifyUserListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3NotifyUserListStructList
 ```
@@ -1232,7 +1232,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3NotifyUserListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3NotifyUserListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CtsEventNotificationV3NotifyUserListStructOutputReference
 ```
@@ -1543,7 +1543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3OperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3OperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CtsEventNotificationV3OperationsList
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsEventNotificationV3.CtsEventNotificationV3OperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/ctseventnotificationv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ctseventnotificationv3"
 
 ctseventnotificationv3.NewCtsEventNotificationV3OperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CtsEventNotificationV3OperationsOutputReference
 ```

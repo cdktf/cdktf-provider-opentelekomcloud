@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1(scope Construct, id *string, config CssClusterV1Config) CssClusterV1
 ```
@@ -365,7 +365,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.CssClusterV1_IsConstruct(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.CssClusterV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ cssclusterv1.CssClusterV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.CssClusterV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1Config {
 	Connection: interface{},
@@ -885,15 +885,15 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	NodeConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.cssClusterV1.CssClusterV1NodeConfig,
+	NodeConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cssClusterV1.CssClusterV1NodeConfig,
 	AdminPass: *string,
-	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.cssClusterV1.CssClusterV1Datastore,
+	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cssClusterV1.CssClusterV1Datastore,
 	EnableAuthority: interface{},
 	EnableHttps: interface{},
 	ExpectNodeNum: *f64,
 	Id: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.cssClusterV1.CssClusterV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cssClusterV1.CssClusterV1Timeouts,
 }
 ```
 
@@ -1125,7 +1125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1Datastore {
 	Type: *string,
@@ -1171,12 +1171,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1NodeConfig {
 	Flavor: *string,
-	NetworkInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.cssClusterV1.CssClusterV1NodeConfigNetworkInfo,
-	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.cssClusterV1.CssClusterV1NodeConfigVolume,
+	NetworkInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cssClusterV1.CssClusterV1NodeConfigNetworkInfo,
+	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cssClusterV1.CssClusterV1NodeConfigVolume,
 	AvailabilityZone: *string,
 }
 ```
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1NodeConfigNetworkInfo {
 	NetworkId: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1NodeConfigVolume {
 	Size: *f64,
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Nodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1Nodes {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 &cssclusterv1.CssClusterV1Timeouts {
 	Create: *string,
@@ -1430,7 +1430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1DatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1DatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssClusterV1DatastoreOutputReference
 ```
@@ -1737,7 +1737,7 @@ func InternalValue() CssClusterV1Datastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1NodeConfigNetworkInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssClusterV1NodeConfigNetworkInfoOutputReference
 ```
@@ -2052,7 +2052,7 @@ func InternalValue() CssClusterV1NodeConfigNetworkInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1NodeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssClusterV1NodeConfigOutputReference
 ```
@@ -2422,7 +2422,7 @@ func InternalValue() CssClusterV1NodeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1NodeConfigVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssClusterV1NodeConfigVolumeOutputReference
 ```
@@ -2744,7 +2744,7 @@ func InternalValue() CssClusterV1NodeConfigVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1NodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CssClusterV1NodesList
 ```
@@ -2876,7 +2876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1NodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CssClusterV1NodesOutputReference
 ```
@@ -3176,7 +3176,7 @@ func InternalValue() CssClusterV1Nodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/cssclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cssclusterv1"
 
 cssclusterv1.NewCssClusterV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CssClusterV1TimeoutsOutputReference
 ```

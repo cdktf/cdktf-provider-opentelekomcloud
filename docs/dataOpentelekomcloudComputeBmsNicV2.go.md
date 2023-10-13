@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.NewDataOpentelekomcloudComputeBmsNicV2(scope Construct, id *string, config DataOpentelekomcloudComputeBmsNicV2Config) DataOpentelekomcloudComputeBmsNicV2
 ```
@@ -291,7 +291,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 &dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2Config {
 	Connection: interface{},
@@ -796,7 +796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2FixedIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 &dataopentelekomcloudcomputebmsnicv2.DataOpentelekomcloudComputeBmsNicV2FixedIps {
 
@@ -811,7 +811,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2FixedIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.NewDataOpentelekomcloudComputeBmsNicV2FixedIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudComputeBmsNicV2FixedIpsList
 ```
@@ -943,7 +943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsNicV2.DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudcomputebmsnicv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsnicv2"
 
 dataopentelekomcloudcomputebmsnicv2.NewDataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudComputeBmsNicV2FixedIpsOutputReference
 ```

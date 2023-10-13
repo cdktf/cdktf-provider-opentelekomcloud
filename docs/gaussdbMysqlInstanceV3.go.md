@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3(scope Construct, id *string, config GaussdbMysqlInstanceV3Config) GaussdbMysqlInstanceV3
 ```
@@ -407,7 +407,7 @@ func ResetTimeZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -1213,7 +1213,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3BackupStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 &gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3BackupStrategy {
 	StartTime: *string,
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 &gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3Config {
 	Connection: interface{},
@@ -1275,10 +1275,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 	SubnetId: *string,
 	VpcId: *string,
 	AvailabilityZoneMode: *string,
-	BackupStrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3BackupStrategy,
+	BackupStrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3BackupStrategy,
 	ConfigurationId: *string,
 	ConfigurationName: *string,
-	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Datastore,
+	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Datastore,
 	DedicatedResourceId: *string,
 	DedicatedResourceName: *string,
 	Id: *string,
@@ -1286,7 +1286,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 	ReadReplicas: *f64,
 	Region: *string,
 	SecurityGroupId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Timeouts,
 	TimeZone: *string,
 }
 ```
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Datastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 &gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3Datastore {
 	Engine: *string,
@@ -1682,7 +1682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Nodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 &gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3Nodes {
 
@@ -1695,7 +1695,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 &gaussdbmysqlinstancev3.GaussdbMysqlInstanceV3Timeouts {
 	Create: *string,
@@ -1757,7 +1757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3BackupStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3BackupStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GaussdbMysqlInstanceV3BackupStrategyOutputReference
 ```
@@ -2057,7 +2057,7 @@ func InternalValue() GaussdbMysqlInstanceV3BackupStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3DatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3DatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GaussdbMysqlInstanceV3DatastoreOutputReference
 ```
@@ -2350,7 +2350,7 @@ func InternalValue() GaussdbMysqlInstanceV3Datastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3NodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3NodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GaussdbMysqlInstanceV3NodesList
 ```
@@ -2482,7 +2482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3NodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3NodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GaussdbMysqlInstanceV3NodesOutputReference
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() GaussdbMysqlInstanceV3Nodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.gaussdbMysqlInstanceV3.GaussdbMysqlInstanceV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/gaussdbmysqlinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/gaussdbmysqlinstancev3"
 
 gaussdbmysqlinstancev3.NewGaussdbMysqlInstanceV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GaussdbMysqlInstanceV3TimeoutsOutputReference
 ```

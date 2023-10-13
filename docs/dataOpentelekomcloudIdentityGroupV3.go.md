@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.NewDataOpentelekomcloudIdentityGroupV3(scope Construct, id *string, config DataOpentelekomcloudIdentityGroupV3Config) DataOpentelekomcloudIdentityGroupV3
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v9/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
 
 &dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3Config {
 	Connection: interface{},
