@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 discheckpointv2.NewDisCheckpointV2(scope Construct, id *string, config DisCheckpointV2Config) DisCheckpointV2
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 discheckpointv2.DisCheckpointV2_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 discheckpointv2.DisCheckpointV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ discheckpointv2.DisCheckpointV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 discheckpointv2.DisCheckpointV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -732,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 &discheckpointv2.DisCheckpointV2Config {
 	Connection: interface{},
@@ -749,7 +749,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dis
 	CheckpointType: *string,
 	Id: *string,
 	Metadata: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.disCheckpointV2.DisCheckpointV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.disCheckpointV2.DisCheckpointV2Timeouts,
 }
 ```
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 &discheckpointv2.DisCheckpointV2Timeouts {
 	Update: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.disCheckpointV2.DisCheckpointV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/discheckpointv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/discheckpointv2"
 
 discheckpointv2.NewDisCheckpointV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DisCheckpointV2TimeoutsOutputReference
 ```

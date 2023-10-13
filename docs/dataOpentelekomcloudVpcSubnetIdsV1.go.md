@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcsubnetidsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcsubnetidsv1"
 
 dataopentelekomcloudvpcsubnetidsv1.NewDataOpentelekomcloudVpcSubnetIdsV1(scope Construct, id *string, config DataOpentelekomcloudVpcSubnetIdsV1Config) DataOpentelekomcloudVpcSubnetIdsV1
 ```
@@ -284,7 +284,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcsubnetidsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcsubnetidsv1"
 
 dataopentelekomcloudvpcsubnetidsv1.DataOpentelekomcloudVpcSubnetIdsV1_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcsubnetidsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcsubnetidsv1"
 
 dataopentelekomcloudvpcsubnetidsv1.DataOpentelekomcloudVpcSubnetIdsV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ dataopentelekomcloudvpcsubnetidsv1.DataOpentelekomcloudVpcSubnetIdsV1_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcsubnetidsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcsubnetidsv1"
 
 dataopentelekomcloudvpcsubnetidsv1.DataOpentelekomcloudVpcSubnetIdsV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcsubnetidsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcsubnetidsv1"
 
 &dataopentelekomcloudvpcsubnetidsv1.DataOpentelekomcloudVpcSubnetIdsV1Config {
 	Connection: interface{},
