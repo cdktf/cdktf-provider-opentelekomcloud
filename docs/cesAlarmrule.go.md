@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmrule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmrule(scope Construct, id *string, config CesAlarmruleConfig) CesAlarmrule
 ```
@@ -398,7 +398,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmrule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.CesAlarmrule_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmrule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.CesAlarmrule_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ cesalarmrule.CesAlarmrule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmrule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.CesAlarmrule_IsTerraformResource(x interface{}) *bool
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleAlarmActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleAlarmActions {
 	NotificationList: *[]*string,
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleCondition {
 	ComparisonOperator: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleConfig {
 	Connection: interface{},
@@ -1102,8 +1102,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AlarmName: *string,
-	Condition: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cesAlarmrule.CesAlarmruleCondition,
-	Metric: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cesAlarmrule.CesAlarmruleMetric,
+	Condition: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cesAlarmrule.CesAlarmruleCondition,
+	Metric: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cesAlarmrule.CesAlarmruleMetric,
 	AlarmActionEnabled: interface{},
 	AlarmActions: interface{},
 	AlarmDescription: *string,
@@ -1112,7 +1112,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	AlarmType: *string,
 	Id: *string,
 	OkActions: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cesAlarmrule.CesAlarmruleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cesAlarmrule.CesAlarmruleTimeouts,
 }
 ```
 
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleMetric {
 	MetricName: *string,
@@ -1436,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleMetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleMetricDimensions {
 	Name: *string,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleOkActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleOkActions {
 	NotificationList: *[]*string,
@@ -1528,7 +1528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 &cesalarmrule.CesAlarmruleTimeouts {
 	Create: *string,
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleAlarmActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleAlarmActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAlarmruleAlarmActionsList
 ```
@@ -1733,7 +1733,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleAlarmActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleAlarmActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAlarmruleAlarmActionsOutputReference
 ```
@@ -2044,7 +2044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAlarmruleConditionOutputReference
 ```
@@ -2461,7 +2461,7 @@ func InternalValue() CesAlarmruleCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleMetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleMetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAlarmruleMetricDimensionsList
 ```
@@ -2604,7 +2604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleMetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleMetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAlarmruleMetricDimensionsOutputReference
 ```
@@ -2915,7 +2915,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleMetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleMetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAlarmruleMetricOutputReference
 ```
@@ -3250,7 +3250,7 @@ func InternalValue() CesAlarmruleMetric
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleOkActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleOkActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesAlarmruleOkActionsList
 ```
@@ -3393,7 +3393,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleOkActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleOkActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesAlarmruleOkActionsOutputReference
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesAlarmrule.CesAlarmruleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cesalarmrule"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesalarmrule"
 
 cesalarmrule.NewCesAlarmruleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesAlarmruleTimeoutsOutputReference
 ```
