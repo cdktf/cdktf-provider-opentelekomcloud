@@ -285,6 +285,7 @@ public resetRegion(): void
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudIdentityRoleV3 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -345,6 +346,50 @@ dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.isTerrafor
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport"></a>
+
+```typescript
+import { dataOpentelekomcloudIdentityRoleV3 } from '@cdktf/provider-opentelekomcloud'
+
+dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudIdentityRoleV3 resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataOpentelekomcloudIdentityRoleV3 to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataOpentelekomcloudIdentityRoleV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/identity_role_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudIdentityRoleV3 to import is found.
 
 ---
 

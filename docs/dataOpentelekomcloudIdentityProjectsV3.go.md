@@ -271,6 +271,7 @@ func ResetId()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudIdentityProjectsV3 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -331,6 +332,50 @@ dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_Is
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentityprojectsv3"
+
+dataopentelekomcloudidentityprojectsv3.DataOpentelekomcloudIdentityProjectsV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudIdentityProjectsV3 resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOpentelekomcloudIdentityProjectsV3 to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOpentelekomcloudIdentityProjectsV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/identity_projects_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectsV3.DataOpentelekomcloudIdentityProjectsV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudIdentityProjectsV3 to import is found.
 
 ---
 

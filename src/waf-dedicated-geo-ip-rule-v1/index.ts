@@ -186,6 +186,20 @@ export class WafDedicatedGeoIpRuleV1 extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "opentelekomcloud_waf_dedicated_geo_ip_rule_v1";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a WafDedicatedGeoIpRuleV1 resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the WafDedicatedGeoIpRuleV1 to import
+  * @param importFromId The id of the existing WafDedicatedGeoIpRuleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/waf_dedicated_geo_ip_rule_v1#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the WafDedicatedGeoIpRuleV1 to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "opentelekomcloud_waf_dedicated_geo_ip_rule_v1", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

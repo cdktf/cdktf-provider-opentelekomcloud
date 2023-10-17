@@ -155,6 +155,20 @@ export class NetworkingRouterInterfaceV2 extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "opentelekomcloud_networking_router_interface_v2";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a NetworkingRouterInterfaceV2 resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the NetworkingRouterInterfaceV2 to import
+  * @param importFromId The id of the existing NetworkingRouterInterfaceV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/networking_router_interface_v2#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the NetworkingRouterInterfaceV2 to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "opentelekomcloud_networking_router_interface_v2", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
