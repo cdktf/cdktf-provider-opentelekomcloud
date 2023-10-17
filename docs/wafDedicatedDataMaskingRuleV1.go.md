@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 wafdedicateddatamaskingrulev1.NewWafDedicatedDataMaskingRuleV1(scope Construct, id *string, config WafDedicatedDataMaskingRuleV1Config) WafDedicatedDataMaskingRuleV1
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -725,7 +725,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 &wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1Config {
 	Connection: interface{},
@@ -741,7 +741,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/waf
 	Url: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1Timeouts,
 }
 ```
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 &wafdedicateddatamaskingrulev1.WafDedicatedDataMaskingRuleV1Timeouts {
 	Create: *string,
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedDataMaskingRuleV1.WafDedicatedDataMaskingRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicateddatamaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicateddatamaskingrulev1"
 
 wafdedicateddatamaskingrulev1.NewWafDedicatedDataMaskingRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedDataMaskingRuleV1TimeoutsOutputReference
 ```
