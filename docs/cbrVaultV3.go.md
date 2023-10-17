@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3(scope Construct, id *string, config CbrVaultV3Config) CbrVaultV3
 ```
@@ -372,7 +372,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.CbrVaultV3_IsConstruct(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.CbrVaultV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ cbrvaultv3.CbrVaultV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.CbrVaultV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -903,7 +903,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3Billing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 &cbrvaultv3.CbrVaultV3Billing {
 	ObjectType: *string,
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3BindRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 &cbrvaultv3.CbrVaultV3BindRules {
 	Key: *string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 &cbrvaultv3.CbrVaultV3Config {
 	Connection: interface{},
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Billing: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cbrVaultV3.CbrVaultV3Billing,
+	Billing: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cbrVaultV3.CbrVaultV3Billing,
 	Name: *string,
 	AutoBind: interface{},
 	AutoExpand: interface{},
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3Resource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 &cbrvaultv3.CbrVaultV3Resource {
 	BackupCount: *f64,
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3BillingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3BillingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CbrVaultV3BillingOutputReference
 ```
@@ -2211,7 +2211,7 @@ func InternalValue() CbrVaultV3Billing
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3BindRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3BindRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CbrVaultV3BindRulesList
 ```
@@ -2354,7 +2354,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3BindRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3BindRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CbrVaultV3BindRulesOutputReference
 ```
@@ -2665,7 +2665,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3ResourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3ResourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CbrVaultV3ResourceList
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrVaultV3.CbrVaultV3ResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrvaultv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrvaultv3"
 
 cbrvaultv3.NewCbrVaultV3ResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CbrVaultV3ResourceOutputReference
 ```
