@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/dcs_instance_v1
 // generated from terraform resource schema
 
@@ -683,6 +678,20 @@ export class DcsInstanceV1 extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "opentelekomcloud_dcs_instance_v1";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DcsInstanceV1 resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DcsInstanceV1 to import
+  * @param importFromId The id of the existing DcsInstanceV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/dcs_instance_v1#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DcsInstanceV1 to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "opentelekomcloud_dcs_instance_v1", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

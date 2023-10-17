@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_listener_v2
 // generated from terraform resource schema
 
@@ -386,6 +381,20 @@ export class LbListenerV2 extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "opentelekomcloud_lb_listener_v2";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a LbListenerV2 resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the LbListenerV2 to import
+  * @param importFromId The id of the existing LbListenerV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/lb_listener_v2#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the LbListenerV2 to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "opentelekomcloud_lb_listener_v2", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

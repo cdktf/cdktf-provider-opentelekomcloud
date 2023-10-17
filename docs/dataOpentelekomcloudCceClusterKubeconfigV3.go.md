@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.NewDataOpentelekomcloudCceClusterKubeconfigV3(scope Construct, id *string, config DataOpentelekomcloudCceClusterKubeconfigV3Config) DataOpentelekomcloudCceClusterKubeconfigV3
 ```
@@ -278,13 +278,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudCceClusterKubeconfigV3 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubecon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubecon
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
+
+dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudCceClusterKubeconfigV3 resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOpentelekomcloudCceClusterKubeconfigV3 to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOpentelekomcloudCceClusterKubeconfigV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/cce_cluster_kubeconfig_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudCceClusterKubeconfigV3 to import is found.
 
 ---
 
@@ -584,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 &dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3Config {
 	Connection: interface{},

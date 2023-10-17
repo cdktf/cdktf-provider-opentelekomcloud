@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.NewDataOpentelekomcloudIdentityCredentialV3(scope Construct, id *string, config DataOpentelekomcloudIdentityCredentialV3Config) DataOpentelekomcloudIdentityCredentialV3
 ```
@@ -278,13 +278,14 @@ func ResetUserId()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudIdentityCredentialV3 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
+
+dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudIdentityCredentialV3 resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataOpentelekomcloudIdentityCredentialV3 to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataOpentelekomcloudIdentityCredentialV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/identity_credential_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudIdentityCredentialV3 to import is found.
 
 ---
 
@@ -562,7 +607,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 &dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3Config {
 	Connection: interface{},
@@ -695,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3Credentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 &dataopentelekomcloudidentitycredentialv3.DataOpentelekomcloudIdentityCredentialV3Credentials {
 
@@ -710,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3CredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.NewDataOpentelekomcloudIdentityCredentialV3CredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityCredentialV3CredentialsList
 ```
@@ -842,7 +887,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitycredentialv3"
 
 dataopentelekomcloudidentitycredentialv3.NewDataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudIdentityCredentialV3CredentialsOutputReference
 ```

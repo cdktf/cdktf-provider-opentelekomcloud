@@ -378,6 +378,7 @@ def reset_user_id() -> None
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudIdentityCredentialV3 resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -444,6 +445,55 @@ dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport"></a>
+
+```python
+from cdktf_cdktf_provider_opentelekomcloud import data_opentelekomcloud_identity_credential_v3
+
+dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudIdentityCredentialV3 resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the DataOpentelekomcloudIdentityCredentialV3 to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing DataOpentelekomcloudIdentityCredentialV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/identity_credential_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityCredentialV3.DataOpentelekomcloudIdentityCredentialV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudIdentityCredentialV3 to import is found.
 
 ---
 
