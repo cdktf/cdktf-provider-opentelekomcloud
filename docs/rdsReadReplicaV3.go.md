@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.NewRdsReadReplicaV3(scope Construct, id *string, config RdsReadReplicaV3Config) RdsReadReplicaV3
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.RdsReadReplicaV3_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.RdsReadReplicaV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ rdsreadreplicav3.RdsReadReplicaV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.RdsReadReplicaV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ rdsreadreplicav3.RdsReadReplicaV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.RdsReadReplicaV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 &rdsreadreplicav3.RdsReadReplicaV3Config {
 	Connection: interface{},
@@ -948,12 +948,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rds
 	FlavorRef: *string,
 	Name: *string,
 	ReplicaOfId: *string,
-	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Volume,
+	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsReadReplicaV3.RdsReadReplicaV3Volume,
 	AvailabilityZone: *string,
 	Id: *string,
 	PublicIps: *[]*string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsReadReplicaV3.RdsReadReplicaV3Timeouts,
 }
 ```
 
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Db.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 &rdsreadreplicav3.RdsReadReplicaV3Db {
 
@@ -1183,7 +1183,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rds
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 &rdsreadreplicav3.RdsReadReplicaV3Timeouts {
 	Create: *string,
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3Volume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 &rdsreadreplicav3.RdsReadReplicaV3Volume {
 	Type: *string,
@@ -1277,7 +1277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3DbList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.NewRdsReadReplicaV3DbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RdsReadReplicaV3DbList
 ```
@@ -1409,7 +1409,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3DbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.NewRdsReadReplicaV3DbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RdsReadReplicaV3DbOutputReference
 ```
@@ -1720,7 +1720,7 @@ func InternalValue() RdsReadReplicaV3Db
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.NewRdsReadReplicaV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsReadReplicaV3TimeoutsOutputReference
 ```
@@ -2027,7 +2027,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsReadReplicaV3.RdsReadReplicaV3VolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsreadreplicav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsreadreplicav3"
 
 rdsreadreplicav3.NewRdsReadReplicaV3VolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsReadReplicaV3VolumeOutputReference
 ```
