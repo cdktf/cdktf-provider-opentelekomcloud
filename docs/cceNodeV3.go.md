@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3(scope Construct, id *string, config CceNodeV3Config) CceNodeV3
 ```
@@ -594,7 +594,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.CceNodeV3_IsConstruct(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.CceNodeV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ ccenodev3.CceNodeV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.CceNodeV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -654,7 +654,7 @@ ccenodev3.CceNodeV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.CceNodeV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1708,7 +1708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 &ccenodev3.CceNodeV3Config {
 	Connection: interface{},
@@ -1723,7 +1723,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	DataVolumes: interface{},
 	FlavorId: *string,
 	KeyPair: *string,
-	RootVolume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceNodeV3.CceNodeV3RootVolume,
+	RootVolume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceNodeV3.CceNodeV3RootVolume,
 	Annotations: *map[string]*string,
 	BandwidthChargeMode: *string,
 	BandwidthSize: *f64,
@@ -1753,7 +1753,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	SubnetId: *string,
 	Tags: *map[string]*string,
 	Taints: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceNodeV3.CceNodeV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceNodeV3.CceNodeV3Timeouts,
 }
 ```
 
@@ -2325,7 +2325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3DataVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 &ccenodev3.CceNodeV3DataVolumes {
 	Size: *f64,
@@ -2413,7 +2413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3RootVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 &ccenodev3.CceNodeV3RootVolume {
 	Size: *f64,
@@ -2501,7 +2501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3Taints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 &ccenodev3.CceNodeV3Taints {
 	Effect: *string,
@@ -2561,7 +2561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 &ccenodev3.CceNodeV3Timeouts {
 	Create: *string,
@@ -2609,7 +2609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3DataVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3DataVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodeV3DataVolumesList
 ```
@@ -2752,7 +2752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3DataVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3DataVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceNodeV3DataVolumesOutputReference
 ```
@@ -3150,7 +3150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3RootVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3RootVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceNodeV3RootVolumeOutputReference
 ```
@@ -3530,7 +3530,7 @@ func InternalValue() CceNodeV3RootVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3TaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3TaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodeV3TaintsList
 ```
@@ -3673,7 +3673,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3TaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3TaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceNodeV3TaintsOutputReference
 ```
@@ -4006,7 +4006,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodeV3.CceNodeV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodev3"
 
 ccenodev3.NewCceNodeV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceNodeV3TimeoutsOutputReference
 ```

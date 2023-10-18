@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 networkingfloatingipassociatev2.NewNetworkingFloatingipAssociateV2(scope Construct, id *string, config NetworkingFloatingipAssociateV2Config) NetworkingFloatingipAssociateV2
 ```
@@ -346,7 +346,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +723,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingfloatingipassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingfloatingipassociatev2"
 
 &networkingfloatingipassociatev2.NetworkingFloatingipAssociateV2Config {
 	Connection: interface{},
