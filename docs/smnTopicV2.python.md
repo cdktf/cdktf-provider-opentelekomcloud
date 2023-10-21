@@ -1,6 +1,6 @@
 # `opentelekomcloud_smn_topic_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2).
 
 # `smnTopicV2` Submodule <a name="`smnTopicV2` Submodule" id="@cdktf/provider-opentelekomcloud.smnTopicV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_v2`](htt
 
 ### SmnTopicV2 <a name="SmnTopicV2" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2 opentelekomcloud_smn_topic_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer"></a>
 
@@ -28,7 +28,8 @@ smnTopicV2.SmnTopicV2(
   name: str,
   display_name: str = None,
   id: str = None,
-  project_name: str = None
+  project_name: str = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -43,10 +44,11 @@ smnTopicV2.SmnTopicV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#name SmnTopicV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#id SmnTopicV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#name SmnTopicV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#id SmnTopicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#tags SmnTopicV2#tags}. |
 
 ---
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#name SmnTopicV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#name SmnTopicV2#name}.
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}.
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#id SmnTopicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#id SmnTopicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +143,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#tags SmnTopicV2#tags}.
 
 ---
 
@@ -171,6 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.resetDisplayName">reset_display_name</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.resetProjectName">reset_project_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.resetTags">reset_tags</a></code> | *No description.* |
 
 ---
 
@@ -467,6 +478,12 @@ def reset_id() -> None
 def reset_project_name() -> None
 ```
 
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.resetTags"></a>
+
+```python
+def reset_tags() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -581,7 +598,7 @@ The construct id used in the generated config for the SmnTopicV2 to import.
 
 The id of the existing SmnTopicV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,10 +636,12 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.projectNameInput">project_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.projectName">project_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -848,6 +867,16 @@ project_name_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.displayName"></a>
 
 ```python
@@ -885,6 +914,16 @@ project_name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -926,7 +965,8 @@ smnTopicV2.SmnTopicV2Config(
   name: str,
   display_name: str = None,
   id: str = None,
-  project_name: str = None
+  project_name: str = None,
+  tags: typing.Mapping[str] = None
 )
 ```
 
@@ -941,10 +981,11 @@ smnTopicV2.SmnTopicV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#name SmnTopicV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#id SmnTopicV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#name SmnTopicV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.displayName">display_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#id SmnTopicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.projectName">project_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#tags SmnTopicV2#tags}. |
 
 ---
 
@@ -1026,7 +1067,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#name SmnTopicV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#name SmnTopicV2#name}.
 
 ---
 
@@ -1038,7 +1079,7 @@ display_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#display_name SmnTopicV2#display_name}.
 
 ---
 
@@ -1050,7 +1091,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#id SmnTopicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#id SmnTopicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1065,7 +1106,19 @@ project_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#project_name SmnTopicV2#project_name}.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-opentelekomcloud.smnTopicV2.SmnTopicV2Config.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_v2#tags SmnTopicV2#tags}.
 
 ---
 

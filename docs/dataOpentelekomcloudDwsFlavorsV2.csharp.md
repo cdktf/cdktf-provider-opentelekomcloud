@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_dws_flavors_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2).
 
 # `dataOpentelekomcloudDwsFlavorsV2` Submodule <a name="`dataOpentelekomcloudDwsFlavorsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dws_flavors_v
 
 ### DataOpentelekomcloudDwsFlavorsV2 <a name="DataOpentelekomcloudDwsFlavorsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2 opentelekomcloud_dws_flavors_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2.Initializer"></a>
 
@@ -395,7 +395,7 @@ The construct id used in the generated config for the DataOpentelekomcloudDwsFla
 
 The id of the existing DataOpentelekomcloudDwsFlavorsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,11 +723,11 @@ new DataOpentelekomcloudDwsFlavorsV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.memory">Memory</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.vcpus">Vcpus</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.memory">Memory</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDwsFlavorsV2.DataOpentelekomcloudDwsFlavorsV2Config.property.vcpus">Vcpus</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}. |
 
 ---
 
@@ -809,7 +809,7 @@ public string AvailabilityZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#availability_zone DataOpentelekomcloudDwsFlavorsV2#availability_zone}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#id DataOpentelekomcloudDwsFlavorsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ public double Memory { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#memory DataOpentelekomcloudDwsFlavorsV2#memory}.
 
 ---
 
@@ -848,7 +848,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#region DataOpentelekomcloudDwsFlavorsV2#region}.
 
 ---
 
@@ -860,7 +860,7 @@ public double Vcpus { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/dws_flavors_v2#vcpus DataOpentelekomcloudDwsFlavorsV2#vcpus}.
 
 ---
 

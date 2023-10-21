@@ -1,6 +1,6 @@
 # `opentelekomcloud_ims_data_image_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_ims_data_image_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_ims_data_image_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2).
 
 # `imsDataImageV2` Submodule <a name="`imsDataImageV2` Submodule" id="@cdktf/provider-opentelekomcloud.imsDataImageV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_ims_data_image_v2`
 
 ### ImsDataImageV2 <a name="ImsDataImageV2" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2 opentelekomcloud_ims_data_image_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer"></a>
 
@@ -51,16 +51,16 @@ ImsDataImageV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.cmkId">cmkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.imageUrl">imageUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.minDisk">minDisk</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.cmkId">cmkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.imageUrl">imageUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.minDisk">minDisk</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts">ImsDataImageV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer.parameter.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}. |
 
 ---
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}.
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#timeouts ImsDataImageV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#timeouts ImsDataImageV2#timeouts}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}.
 
 ---
 
@@ -658,7 +658,7 @@ The construct id used in the generated config for the ImsDataImageV2 to import.
 
 The id of the existing ImsDataImageV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1160,16 +1160,16 @@ ImsDataImageV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.cmkId">cmkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.imageUrl">imageUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.minDisk">minDisk</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.cmkId">cmkId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.imageUrl">imageUrl</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.minDisk">minDisk</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.osType">osType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts">ImsDataImageV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#name ImsDataImageV2#name}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public java.lang.String getCmkId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#cmk_id ImsDataImageV2#cmk_id}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#description ImsDataImageV2#description}.
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#id ImsDataImageV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,7 +1302,7 @@ public java.lang.String getImageUrl();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#image_url ImsDataImageV2#image_url}.
 
 ---
 
@@ -1314,7 +1314,7 @@ public java.lang.Number getMinDisk();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#min_disk ImsDataImageV2#min_disk}.
 
 ---
 
@@ -1326,7 +1326,7 @@ public java.lang.String getOsType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#os_type ImsDataImageV2#os_type}.
 
 ---
 
@@ -1338,7 +1338,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#tags ImsDataImageV2#tags}.
 
 ---
 
@@ -1352,7 +1352,7 @@ public ImsDataImageV2Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#timeouts ImsDataImageV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#timeouts ImsDataImageV2#timeouts}
 
 ---
 
@@ -1364,7 +1364,7 @@ public java.lang.String getVolumeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#volume_id ImsDataImageV2#volume_id}.
 
 ---
 
@@ -1385,8 +1385,8 @@ ImsDataImageV2Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#create ImsDataImageV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#delete ImsDataImageV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#create ImsDataImageV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#delete ImsDataImageV2#delete}. |
 
 ---
 
@@ -1398,7 +1398,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#create ImsDataImageV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#create ImsDataImageV2#create}.
 
 ---
 
@@ -1410,7 +1410,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/ims_data_image_v2#delete ImsDataImageV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/ims_data_image_v2#delete ImsDataImageV2#delete}.
 
 ---
 

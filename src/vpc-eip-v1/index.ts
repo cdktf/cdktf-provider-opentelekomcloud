@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,62 @@ import * as cdktf from 'cdktf';
 
 export interface VpcEipV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#id VpcEipV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#id VpcEipV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#region VpcEipV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#region VpcEipV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#tags VpcEipV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#tags VpcEipV1#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#unbind_port VpcEipV1#unbind_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#unbind_port VpcEipV1#unbind_port}
   */
   readonly unbindPort?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#value_specs VpcEipV1#value_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#value_specs VpcEipV1#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string };
   /**
   * bandwidth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#bandwidth VpcEipV1#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#bandwidth VpcEipV1#bandwidth}
   */
   readonly bandwidth: VpcEipV1Bandwidth;
   /**
   * publicip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#publicip VpcEipV1#publicip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#publicip VpcEipV1#publicip}
   */
   readonly publicip: VpcEipV1Publicip;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#timeouts VpcEipV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#timeouts VpcEipV1#timeouts}
   */
   readonly timeouts?: VpcEipV1Timeouts;
 }
 export interface VpcEipV1Bandwidth {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#charge_mode VpcEipV1#charge_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#charge_mode VpcEipV1#charge_mode}
   */
   readonly chargeMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#name VpcEipV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#name VpcEipV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#share_type VpcEipV1#share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#share_type VpcEipV1#share_type}
   */
   readonly shareType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#size VpcEipV1#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#size VpcEipV1#size}
   */
   readonly size: number;
 }
@@ -193,15 +188,19 @@ export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
 }
 export interface VpcEipV1Publicip {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#ip_address VpcEipV1#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#ip_address VpcEipV1#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#port_id VpcEipV1#port_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#name VpcEipV1#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#port_id VpcEipV1#port_id}
   */
   readonly portId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#type VpcEipV1#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#type VpcEipV1#type}
   */
   readonly type: string;
 }
@@ -213,6 +212,7 @@ export function vpcEipV1PublicipToTerraform(struct?: VpcEipV1PublicipOutputRefer
   }
   return {
     ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    name: cdktf.stringToTerraform(struct!.name),
     port_id: cdktf.stringToTerraform(struct!.portId),
     type: cdktf.stringToTerraform(struct!.type),
   }
@@ -236,6 +236,10 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.ipAddress = this._ipAddress;
     }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
     if (this._portId !== undefined) {
       hasAnyValues = true;
       internalValueResult.portId = this._portId;
@@ -251,12 +255,14 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._ipAddress = undefined;
+      this._name = undefined;
       this._portId = undefined;
       this._type = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._ipAddress = value.ipAddress;
+      this._name = value.name;
       this._portId = value.portId;
       this._type = value.type;
     }
@@ -276,6 +282,22 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipAddressInput() {
     return this._ipAddress;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 
   // port_id - computed: true, optional: true, required: false
@@ -309,11 +331,11 @@ export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
 }
 export interface VpcEipV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#create VpcEipV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#create VpcEipV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#delete VpcEipV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#delete VpcEipV1#delete}
   */
   readonly delete?: string;
 }
@@ -411,7 +433,7 @@ export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1}
 */
 export class VpcEipV1 extends cdktf.TerraformResource {
 
@@ -427,7 +449,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcEipV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcEipV1 to import
-  * @param importFromId The id of the existing VpcEipV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcEipV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcEipV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -439,7 +461,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/vpc_eip_v1 opentelekomcloud_vpc_eip_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -450,7 +472,7 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_eip_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.9',
+        providerVersion: '1.35.10',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

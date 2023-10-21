@@ -1,6 +1,6 @@
 # `opentelekomcloud_compute_floatingip_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2).
 
 # `computeFloatingipV2` Submodule <a name="`computeFloatingipV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeFloatingipV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_floatingip
 
 ### ComputeFloatingipV2 <a name="ComputeFloatingipV2" id="@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2 opentelekomcloud_compute_floatingip_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2 opentelekomcloud_compute_floatingip_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2.Initializer"></a>
 
@@ -442,7 +442,7 @@ The construct id used in the generated config for the ComputeFloatingipV2 to imp
 
 The id of the existing ComputeFloatingipV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,9 +757,9 @@ const computeFloatingipV2Config: computeFloatingipV2.ComputeFloatingipV2Config =
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#id ComputeFloatingipV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.pool">pool</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#pool ComputeFloatingipV2#pool}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#region ComputeFloatingipV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#id ComputeFloatingipV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.pool">pool</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#pool ComputeFloatingipV2#pool}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeFloatingipV2.ComputeFloatingipV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#region ComputeFloatingipV2#region}. |
 
 ---
 
@@ -841,7 +841,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#id ComputeFloatingipV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#id ComputeFloatingipV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -856,7 +856,7 @@ public readonly pool: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#pool ComputeFloatingipV2#pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#pool ComputeFloatingipV2#pool}.
 
 ---
 
@@ -868,7 +868,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/compute_floatingip_v2#region ComputeFloatingipV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/compute_floatingip_v2#region ComputeFloatingipV2#region}.
 
 ---
 

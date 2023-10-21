@@ -1,6 +1,6 @@
 # `opentelekomcloud_smn_topic_attribute_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_attribute_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_attribute_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2).
 
 # `smnTopicAttributeV2` Submodule <a name="`smnTopicAttributeV2` Submodule" id="@cdktf/provider-opentelekomcloud.smnTopicAttributeV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_smn_topic_attribut
 
 ### SmnTopicAttributeV2 <a name="SmnTopicAttributeV2" id="@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2 opentelekomcloud_smn_topic_attribute_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the SmnTopicAttributeV2 to imp
 
 The id of the existing SmnTopicAttributeV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,10 +744,10 @@ new SmnTopicAttributeV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.attributeName">AttributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.topicAttribute">TopicAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.topicUrn">TopicUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.attributeName">AttributeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.topicAttribute">TopicAttribute</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.topicUrn">TopicUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.smnTopicAttributeV2.SmnTopicAttributeV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}. |
 
 ---
 
@@ -829,7 +829,7 @@ public string AttributeName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#attribute_name SmnTopicAttributeV2#attribute_name}.
 
 ---
 
@@ -841,7 +841,7 @@ public string TopicAttribute { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#topic_attribute SmnTopicAttributeV2#topic_attribute}.
 
 ---
 
@@ -853,7 +853,7 @@ public string TopicUrn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#topic_urn SmnTopicAttributeV2#topic_urn}.
 
 ---
 
@@ -865,7 +865,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/smn_topic_attribute_v2#id SmnTopicAttributeV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

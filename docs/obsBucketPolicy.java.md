@@ -1,6 +1,6 @@
 # `opentelekomcloud_obs_bucket_policy`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_obs_bucket_policy`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_obs_bucket_policy`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy).
 
 # `obsBucketPolicy` Submodule <a name="`obsBucketPolicy` Submodule" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_obs_bucket_policy`
 
 ### ObsBucketPolicy <a name="ObsBucketPolicy" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy opentelekomcloud_obs_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer"></a>
 
@@ -44,9 +44,9 @@ ObsBucketPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -517,7 +517,7 @@ The construct id used in the generated config for the ObsBucketPolicy to import.
 
 The id of the existing ObsBucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,9 +814,9 @@ ObsBucketPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.policy">policy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucketPolicy.ObsBucketPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}. |
 
 ---
 
@@ -898,7 +898,7 @@ public java.lang.String getBucket();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#bucket ObsBucketPolicy#bucket}.
 
 ---
 
@@ -910,7 +910,7 @@ public java.lang.String getPolicy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#policy ObsBucketPolicy#policy}.
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/obs_bucket_policy#id ObsBucketPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
