@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_vpcep_public_service_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpcep_public_service_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpcep_public_service_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1).
 
 # `dataOpentelekomcloudVpcepPublicServiceV1` Submodule <a name="`dataOpentelekomcloudVpcepPublicServiceV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpcep_public_
 
 ### DataOpentelekomcloudVpcepPublicServiceV1 <a name="DataOpentelekomcloudVpcepPublicServiceV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1 opentelekomcloud_vpcep_public_service_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcepP
 
 The id of the existing DataOpentelekomcloudVpcepPublicServiceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,8 +656,8 @@ const dataOpentelekomcloudVpcepPublicServiceV1Config: dataOpentelekomcloudVpcepP
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1#id DataOpentelekomcloudVpcepPublicServiceV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1#name DataOpentelekomcloudVpcepPublicServiceV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1#id DataOpentelekomcloudVpcepPublicServiceV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepPublicServiceV1.DataOpentelekomcloudVpcepPublicServiceV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1#name DataOpentelekomcloudVpcepPublicServiceV1#name}. |
 
 ---
 
@@ -739,7 +739,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1#id DataOpentelekomcloudVpcepPublicServiceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1#id DataOpentelekomcloudVpcepPublicServiceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -754,7 +754,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.9/docs/data-sources/vpcep_public_service_v1#name DataOpentelekomcloudVpcepPublicServiceV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpcep_public_service_v1#name DataOpentelekomcloudVpcepPublicServiceV1#name}.
 
 ---
 
