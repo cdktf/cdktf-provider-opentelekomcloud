@@ -1,6 +1,6 @@
 # `opentelekomcloud_networking_vip_associate_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_associate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_associate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2).
 
 # `networkingVipAssociateV2` Submodule <a name="`networkingVipAssociateV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingVipAssociateV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_vip_ass
 
 ### NetworkingVipAssociateV2 <a name="NetworkingVipAssociateV2" id="@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2 opentelekomcloud_networking_vip_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer"></a>
 
@@ -42,9 +42,9 @@ networkingVipAssociateV2.NetworkingVipAssociateV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.portIds">port_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.vipId">vip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.portIds">port_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.vipId">vip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -557,7 +557,7 @@ The construct id used in the generated config for the NetworkingVipAssociateV2 t
 
 The id of the existing NetworkingVipAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,9 +872,9 @@ networkingVipAssociateV2.NetworkingVipAssociateV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.portIds">port_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.vipId">vip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.portIds">port_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.vipId">vip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingVipAssociateV2.NetworkingVipAssociateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}. |
 
 ---
 
@@ -956,7 +956,7 @@ port_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#port_ids NetworkingVipAssociateV2#port_ids}.
 
 ---
 
@@ -968,7 +968,7 @@ vip_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#vip_id NetworkingVipAssociateV2#vip_id}.
 
 ---
 
@@ -980,7 +980,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_vip_associate_v2#id NetworkingVipAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

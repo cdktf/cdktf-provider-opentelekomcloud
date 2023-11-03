@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_cce_node_ids_v3`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_node_ids_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_node_ids_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3).
 
 # `dataOpentelekomcloudCceNodeIdsV3` Submodule <a name="`dataOpentelekomcloudCceNodeIdsV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_node_ids_
 
 ### DataOpentelekomcloudCceNodeIdsV3 <a name="DataOpentelekomcloudCceNodeIdsV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3 opentelekomcloud_cce_node_ids_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3 opentelekomcloud_cce_node_ids_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataOpentelekomcloudCceNod
 
 The id of the existing DataOpentelekomcloudCceNodeIdsV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,9 +656,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#cluster_id DataOpentelekomcloudCceNodeIdsV3#cluster_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#id DataOpentelekomcloudCceNodeIdsV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#region DataOpentelekomcloudCceNodeIdsV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#cluster_id DataOpentelekomcloudCceNodeIdsV3#cluster_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#id DataOpentelekomcloudCceNodeIdsV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceNodeIdsV3.DataOpentelekomcloudCceNodeIdsV3Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#region DataOpentelekomcloudCceNodeIdsV3#region}. |
 
 ---
 
@@ -740,7 +740,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#cluster_id DataOpentelekomcloudCceNodeIdsV3#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#cluster_id DataOpentelekomcloudCceNodeIdsV3#cluster_id}.
 
 ---
 
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#id DataOpentelekomcloudCceNodeIdsV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#id DataOpentelekomcloudCceNodeIdsV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/cce_node_ids_v3#region DataOpentelekomcloudCceNodeIdsV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/cce_node_ids_v3#region DataOpentelekomcloudCceNodeIdsV3#region}.
 
 ---
 

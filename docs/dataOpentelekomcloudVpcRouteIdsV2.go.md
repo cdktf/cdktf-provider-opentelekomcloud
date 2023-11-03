@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_vpc_route_ids_v2`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_route_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_route_ids_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2).
 
 # `dataOpentelekomcloudVpcRouteIdsV2` Submodule <a name="`dataOpentelekomcloudVpcRouteIdsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_route_ids
 
 ### DataOpentelekomcloudVpcRouteIdsV2 <a name="DataOpentelekomcloudVpcRouteIdsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2 opentelekomcloud_vpc_route_ids_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2 opentelekomcloud_vpc_route_ids_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2.Initializer"></a>
 
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcRou
 
 The id of the existing DataOpentelekomcloudVpcRouteIdsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,9 +656,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#id DataOpentelekomcloudVpcRouteIdsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#region DataOpentelekomcloudVpcRouteIdsV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#id DataOpentelekomcloudVpcRouteIdsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteIdsV2.DataOpentelekomcloudVpcRouteIdsV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#region DataOpentelekomcloudVpcRouteIdsV2#region}. |
 
 ---
 
@@ -740,7 +740,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#vpc_id DataOpentelekomcloudVpcRouteIdsV2#vpc_id}.
 
 ---
 
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#id DataOpentelekomcloudVpcRouteIdsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#id DataOpentelekomcloudVpcRouteIdsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/vpc_route_ids_v2#region DataOpentelekomcloudVpcRouteIdsV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/vpc_route_ids_v2#region DataOpentelekomcloudVpcRouteIdsV2#region}.
 
 ---
 

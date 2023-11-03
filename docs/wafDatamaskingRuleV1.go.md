@@ -1,6 +1,6 @@
 # `opentelekomcloud_waf_datamasking_rule_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_datamasking_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_datamasking_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1).
 
 # `wafDatamaskingRuleV1` Submodule <a name="`wafDatamaskingRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_datamasking_ru
 
 ### WafDatamaskingRuleV1 <a name="WafDatamaskingRuleV1" id="@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1 opentelekomcloud_waf_datamasking_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1.Initializer"></a>
 
@@ -448,7 +448,7 @@ The construct id used in the generated config for the WafDatamaskingRuleV1 to im
 
 The id of the existing WafDatamaskingRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,11 +810,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#category WafDatamaskingRuleV1#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#index WafDatamaskingRuleV1#index}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#policy_id WafDatamaskingRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#url WafDatamaskingRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#id WafDatamaskingRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#category WafDatamaskingRuleV1#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#index WafDatamaskingRuleV1#index}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#policy_id WafDatamaskingRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#url WafDatamaskingRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#id WafDatamaskingRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts">WafDatamaskingRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -897,7 +897,7 @@ Category *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#category WafDatamaskingRuleV1#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#category WafDatamaskingRuleV1#category}.
 
 ---
 
@@ -909,7 +909,7 @@ Index *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#index WafDatamaskingRuleV1#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#index WafDatamaskingRuleV1#index}.
 
 ---
 
@@ -921,7 +921,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#policy_id WafDatamaskingRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#policy_id WafDatamaskingRuleV1#policy_id}.
 
 ---
 
@@ -933,7 +933,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#url WafDatamaskingRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#url WafDatamaskingRuleV1#url}.
 
 ---
 
@@ -945,7 +945,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#id WafDatamaskingRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#id WafDatamaskingRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ Timeouts WafDatamaskingRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#timeouts WafDatamaskingRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#timeouts WafDatamaskingRuleV1#timeouts}
 
 ---
 
@@ -983,8 +983,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#create WafDatamaskingRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#delete WafDatamaskingRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#create WafDatamaskingRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDatamaskingRuleV1.WafDatamaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#delete WafDatamaskingRuleV1#delete}. |
 
 ---
 
@@ -996,7 +996,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#create WafDatamaskingRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#create WafDatamaskingRuleV1#create}.
 
 ---
 
@@ -1008,7 +1008,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/waf_datamasking_rule_v1#delete WafDatamaskingRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/waf_datamasking_rule_v1#delete WafDatamaskingRuleV1#delete}.
 
 ---
 

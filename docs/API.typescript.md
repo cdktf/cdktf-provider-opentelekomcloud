@@ -239,6 +239,7 @@ The following submodules are available:
 - [vpcFlowLogV1](./vpcFlowLogV1.typescript.md)
 - [vpcPeeringConnectionAccepterV2](./vpcPeeringConnectionAccepterV2.typescript.md)
 - [vpcPeeringConnectionV2](./vpcPeeringConnectionV2.typescript.md)
+- [vpcRouteTableV1](./vpcRouteTableV1.typescript.md)
 - [vpcRouteV2](./vpcRouteV2.typescript.md)
 - [vpcSubnetV1](./vpcSubnetV1.typescript.md)
 - [vpcV1](./vpcV1.typescript.md)

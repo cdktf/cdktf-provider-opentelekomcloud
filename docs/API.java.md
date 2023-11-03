@@ -239,6 +239,7 @@ The following submodules are available:
 - [vpcFlowLogV1](./vpcFlowLogV1.java.md)
 - [vpcPeeringConnectionAccepterV2](./vpcPeeringConnectionAccepterV2.java.md)
 - [vpcPeeringConnectionV2](./vpcPeeringConnectionV2.java.md)
+- [vpcRouteTableV1](./vpcRouteTableV1.java.md)
 - [vpcRouteV2](./vpcRouteV2.java.md)
 - [vpcSubnetV1](./vpcSubnetV1.java.md)
 - [vpcV1](./vpcV1.java.md)

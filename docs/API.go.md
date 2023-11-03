@@ -239,6 +239,7 @@ The following submodules are available:
 - [vpcFlowLogV1](./vpcFlowLogV1.go.md)
 - [vpcPeeringConnectionAccepterV2](./vpcPeeringConnectionAccepterV2.go.md)
 - [vpcPeeringConnectionV2](./vpcPeeringConnectionV2.go.md)
+- [vpcRouteTableV1](./vpcRouteTableV1.go.md)
 - [vpcRouteV2](./vpcRouteV2.go.md)
 - [vpcSubnetV1](./vpcSubnetV1.go.md)
 - [vpcV1](./vpcV1.go.md)

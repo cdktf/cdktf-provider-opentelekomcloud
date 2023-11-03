@@ -153,6 +153,7 @@ Object.defineProperty(exports, 'vpcEipV1', { get: function () { return require('
 Object.defineProperty(exports, 'vpcFlowLogV1', { get: function () { return require('./vpc-flow-log-v1'); } });
 Object.defineProperty(exports, 'vpcPeeringConnectionAccepterV2', { get: function () { return require('./vpc-peering-connection-accepter-v2'); } });
 Object.defineProperty(exports, 'vpcPeeringConnectionV2', { get: function () { return require('./vpc-peering-connection-v2'); } });
+Object.defineProperty(exports, 'vpcRouteTableV1', { get: function () { return require('./vpc-route-table-v1'); } });
 Object.defineProperty(exports, 'vpcRouteV2', { get: function () { return require('./vpc-route-v2'); } });
 Object.defineProperty(exports, 'vpcSubnetV1', { get: function () { return require('./vpc-subnet-v1'); } });
 Object.defineProperty(exports, 'vpcV1', { get: function () { return require('./vpc-v1'); } });

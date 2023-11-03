@@ -153,6 +153,7 @@ export * as vpcEipV1 from './vpc-eip-v1';
 export * as vpcFlowLogV1 from './vpc-flow-log-v1';
 export * as vpcPeeringConnectionAccepterV2 from './vpc-peering-connection-accepter-v2';
 export * as vpcPeeringConnectionV2 from './vpc-peering-connection-v2';
+export * as vpcRouteTableV1 from './vpc-route-table-v1';
 export * as vpcRouteV2 from './vpc-route-v2';
 export * as vpcSubnetV1 from './vpc-subnet-v1';
 export * as vpcV1 from './vpc-v1';
