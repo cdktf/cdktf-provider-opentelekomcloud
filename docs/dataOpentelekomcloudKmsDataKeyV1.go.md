@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_kms_data_key_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_kms_data_key_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_kms_data_key_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1).
 
 # `dataOpentelekomcloudKmsDataKeyV1` Submodule <a name="`dataOpentelekomcloudKmsDataKeyV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_kms_data_key_
 
 ### DataOpentelekomcloudKmsDataKeyV1 <a name="DataOpentelekomcloudKmsDataKeyV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1 opentelekomcloud_kms_data_key_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 dataopentelekomcloudkmsdatakeyv1.NewDataOpentelekomcloudKmsDataKeyV1(scope Construct, id *string, config DataOpentelekomcloudKmsDataKeyV1Config) DataOpentelekomcloudKmsDataKeyV1
 ```
@@ -285,7 +285,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -374,7 +374,7 @@ The construct id used in the generated config for the DataOpentelekomcloudKmsDat
 
 The id of the existing DataOpentelekomcloudKmsDataKeyV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudkmsdatakeyv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudkmsdatakeyv1"
 
 &dataopentelekomcloudkmsdatakeyv1.DataOpentelekomcloudKmsDataKeyV1Config {
 	Connection: interface{},
@@ -690,10 +690,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.datakeyLength">DatakeyLength</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.encryptionContext">EncryptionContext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.datakeyLength">DatakeyLength</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.keyId">KeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.encryptionContext">EncryptionContext</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsDataKeyV1.DataOpentelekomcloudKmsDataKeyV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}. |
 
 ---
 
@@ -775,7 +775,7 @@ DatakeyLength *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#datakey_length DataOpentelekomcloudKmsDataKeyV1#datakey_length}.
 
 ---
 
@@ -787,7 +787,7 @@ KeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#key_id DataOpentelekomcloudKmsDataKeyV1#key_id}.
 
 ---
 
@@ -799,7 +799,7 @@ EncryptionContext *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#encryption_context DataOpentelekomcloudKmsDataKeyV1#encryption_context}.
 
 ---
 
@@ -811,7 +811,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/kms_data_key_v1#id DataOpentelekomcloudKmsDataKeyV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

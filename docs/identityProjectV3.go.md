@@ -1,6 +1,6 @@
 # `opentelekomcloud_identity_project_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_project_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_project_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3).
 
 # `identityProjectV3` Submodule <a name="`identityProjectV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityProjectV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_project_v
 
 ### IdentityProjectV3 <a name="IdentityProjectV3" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3 opentelekomcloud_identity_project_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3 opentelekomcloud_identity_project_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 identityprojectv3.NewIdentityProjectV3(scope Construct, id *string, config IdentityProjectV3Config) IdentityProjectV3
 ```
@@ -367,7 +367,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 identityprojectv3.IdentityProjectV3_IsConstruct(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 identityprojectv3.IdentityProjectV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ identityprojectv3.IdentityProjectV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 identityprojectv3.IdentityProjectV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -427,7 +427,7 @@ identityprojectv3.IdentityProjectV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 identityprojectv3.IdentityProjectV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -456,7 +456,7 @@ The construct id used in the generated config for the IdentityProjectV3 to impor
 
 The id of the existing IdentityProjectV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprojectv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprojectv3"
 
 &identityprojectv3.IdentityProjectV3Config {
 	Connection: interface{},
@@ -840,12 +840,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#name IdentityProjectV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#description IdentityProjectV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#domain_id IdentityProjectV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#id IdentityProjectV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#parent_id IdentityProjectV3#parent_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#region IdentityProjectV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#name IdentityProjectV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#description IdentityProjectV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#domain_id IdentityProjectV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#id IdentityProjectV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#parent_id IdentityProjectV3#parent_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProjectV3.IdentityProjectV3Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#region IdentityProjectV3#region}. |
 
 ---
 
@@ -927,7 +927,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#name IdentityProjectV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#name IdentityProjectV3#name}.
 
 ---
 
@@ -939,7 +939,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#description IdentityProjectV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#description IdentityProjectV3#description}.
 
 ---
 
@@ -951,7 +951,7 @@ DomainId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#domain_id IdentityProjectV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#domain_id IdentityProjectV3#domain_id}.
 
 ---
 
@@ -963,7 +963,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#id IdentityProjectV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#id IdentityProjectV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ ParentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#parent_id IdentityProjectV3#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#parent_id IdentityProjectV3#parent_id}.
 
 ---
 
@@ -990,7 +990,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.10/docs/resources/identity_project_v3#region IdentityProjectV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_project_v3#region IdentityProjectV3#region}.
 
 ---
 
