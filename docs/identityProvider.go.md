@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProvider(scope Construct, id *string, config IdentityProviderConfig) IdentityProvider
 ```
@@ -387,7 +387,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.IdentityProvider_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.IdentityProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ identityprovider.IdentityProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.IdentityProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ identityprovider.IdentityProvider_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.IdentityProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 &identityprovider.IdentityProviderAccessConfig {
 	AccessType: *string,
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 &identityprovider.IdentityProviderConfig {
 	Connection: interface{},
@@ -1027,7 +1027,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Provisioners: *[]interface{},
 	Name: *string,
 	Protocol: *string,
-	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.identityProvider.IdentityProviderAccessConfig,
+	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityProvider.IdentityProviderAccessConfig,
 	Description: *string,
 	Id: *string,
 	MappingRules: *string,
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 &identityprovider.IdentityProviderConversionRules {
 
@@ -1247,7 +1247,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesLocal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 &identityprovider.IdentityProviderConversionRulesLocal {
 
@@ -1260,7 +1260,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 &identityprovider.IdentityProviderConversionRulesRemote {
 
@@ -1275,7 +1275,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityProviderAccessConfigOutputReference
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() IdentityProviderAccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityProviderConversionRulesList
 ```
@@ -1860,7 +1860,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesLocalList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesLocalList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityProviderConversionRulesLocalList
 ```
@@ -1992,7 +1992,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesLocalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesLocalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityProviderConversionRulesLocalOutputReference
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() IdentityProviderConversionRulesLocal
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityProviderConversionRulesOutputReference
 ```
@@ -2581,7 +2581,7 @@ func InternalValue() IdentityProviderConversionRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesRemoteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesRemoteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityProviderConversionRulesRemoteList
 ```
@@ -2713,7 +2713,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProvider.IdentityProviderConversionRulesRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprovider"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprovider"
 
 identityprovider.NewIdentityProviderConversionRulesRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityProviderConversionRulesRemoteOutputReference
 ```
