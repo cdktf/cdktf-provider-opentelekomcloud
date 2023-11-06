@@ -1,7 +1,9 @@
 
-# Terraform CDK opentelekomcloud Provider ~> 1.26
+# Terraform CDK opentelekomcloud Provider tracks ~> 1.26
 
 This repo builds and publishes the Terraform opentelekomcloud Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on opentelekomcloud 1.35.11
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform opentelekomcloud Provider 
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform opentelekomcloud Provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.26.0)
+- [Terraform opentelekomcloud Provider](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-opentelekomcloud/releases)
 - [Terraform Engine](https://terraform.io)
 
