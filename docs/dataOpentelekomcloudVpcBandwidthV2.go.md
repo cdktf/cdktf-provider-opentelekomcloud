@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 dataopentelekomcloudvpcbandwidthv2.NewDataOpentelekomcloudVpcBandwidthV2(scope Construct, id *string, config DataOpentelekomcloudVpcBandwidthV2Config) DataOpentelekomcloudVpcBandwidthV2
 ```
@@ -292,7 +292,7 @@ func ResetSize()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -669,7 +669,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcBandwidthV2.DataOpentelekomcloudVpcBandwidthV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcbandwidthv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcbandwidthv2"
 
 &dataopentelekomcloudvpcbandwidthv2.DataOpentelekomcloudVpcBandwidthV2Config {
 	Connection: interface{},
