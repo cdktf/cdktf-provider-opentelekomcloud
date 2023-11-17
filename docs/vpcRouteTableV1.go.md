@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.NewVpcRouteTableV1(scope Construct, id *string, config VpcRouteTableV1Config) VpcRouteTableV1
 ```
@@ -400,7 +400,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.VpcRouteTableV1_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.VpcRouteTableV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ vpcroutetablev1.VpcRouteTableV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.VpcRouteTableV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ vpcroutetablev1.VpcRouteTableV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.VpcRouteTableV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 &vpcroutetablev1.VpcRouteTableV1Config {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpc
 	Region: *string,
 	Route: interface{},
 	Subnets: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.vpcRouteTableV1.VpcRouteTableV1Timeouts,
 }
 ```
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 &vpcroutetablev1.VpcRouteTableV1Route {
 	Destination: *string,
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 &vpcroutetablev1.VpcRouteTableV1Timeouts {
 	Create: *string,
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1RouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.NewVpcRouteTableV1RouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpcRouteTableV1RouteList
 ```
@@ -1373,7 +1373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1RouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.NewVpcRouteTableV1RouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpcRouteTableV1RouteOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcroutetablev1"
 
 vpcroutetablev1.NewVpcRouteTableV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcRouteTableV1TimeoutsOutputReference
 ```
