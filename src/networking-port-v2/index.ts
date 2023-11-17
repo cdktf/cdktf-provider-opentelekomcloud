@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +8,86 @@ import * as cdktf from 'cdktf';
 
 export interface NetworkingPortV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#admin_state_up NetworkingPortV2#admin_state_up}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#admin_state_up NetworkingPortV2#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#device_id NetworkingPortV2#device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#device_id NetworkingPortV2#device_id}
   */
   readonly deviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#device_owner NetworkingPortV2#device_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#device_owner NetworkingPortV2#device_owner}
   */
   readonly deviceOwner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#id NetworkingPortV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#id NetworkingPortV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#mac_address NetworkingPortV2#mac_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#mac_address NetworkingPortV2#mac_address}
   */
   readonly macAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#name NetworkingPortV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#name NetworkingPortV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#network_id NetworkingPortV2#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#network_id NetworkingPortV2#network_id}
   */
   readonly networkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#no_security_groups NetworkingPortV2#no_security_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#no_security_groups NetworkingPortV2#no_security_groups}
   */
   readonly noSecurityGroups?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#port_security_enabled NetworkingPortV2#port_security_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#port_security_enabled NetworkingPortV2#port_security_enabled}
   */
   readonly portSecurityEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#region NetworkingPortV2#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#region NetworkingPortV2#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#security_group_ids NetworkingPortV2#security_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#security_group_ids NetworkingPortV2#security_group_ids}
   */
   readonly securityGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#tenant_id NetworkingPortV2#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#tenant_id NetworkingPortV2#tenant_id}
   */
   readonly tenantId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#value_specs NetworkingPortV2#value_specs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#value_specs NetworkingPortV2#value_specs}
   */
   readonly valueSpecs?: { [key: string]: string };
   /**
   * allowed_address_pairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#allowed_address_pairs NetworkingPortV2#allowed_address_pairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#allowed_address_pairs NetworkingPortV2#allowed_address_pairs}
   */
   readonly allowedAddressPairs?: NetworkingPortV2AllowedAddressPairs[] | cdktf.IResolvable;
   /**
   * fixed_ip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#fixed_ip NetworkingPortV2#fixed_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#fixed_ip NetworkingPortV2#fixed_ip}
   */
-  readonly fixedIp?: NetworkingPortV2FixedIp[] | cdktf.IResolvable;
+  readonly fixedIp?: NetworkingPortV2FixedIp;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#timeouts NetworkingPortV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#timeouts NetworkingPortV2#timeouts}
   */
   readonly timeouts?: NetworkingPortV2Timeouts;
 }
 export interface NetworkingPortV2AllowedAddressPairs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#ip_address NetworkingPortV2#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#ip_address NetworkingPortV2#ip_address}
   */
   readonly ipAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#mac_address NetworkingPortV2#mac_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#mac_address NetworkingPortV2#mac_address}
   */
   readonly macAddress?: string;
 }
@@ -209,16 +204,16 @@ export class NetworkingPortV2AllowedAddressPairsList extends cdktf.ComplexList {
 }
 export interface NetworkingPortV2FixedIp {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#ip_address NetworkingPortV2#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#ip_address NetworkingPortV2#ip_address}
   */
   readonly ipAddress?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#subnet_id NetworkingPortV2#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#subnet_id NetworkingPortV2#subnet_id}
   */
   readonly subnetId: string;
 }
 
-export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIp | cdktf.IResolvable): any {
+export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2FixedIpOutputReference | NetworkingPortV2FixedIp): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -231,22 +226,16 @@ export function networkingPortV2FixedIpToTerraform(struct?: NetworkingPortV2Fixe
 
 export class NetworkingPortV2FixedIpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): NetworkingPortV2FixedIp | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): NetworkingPortV2FixedIp | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._ipAddress !== undefined) {
@@ -260,20 +249,14 @@ export class NetworkingPortV2FixedIpOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkingPortV2FixedIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkingPortV2FixedIp | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._ipAddress = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._ipAddress = value.ipAddress;
       this._subnetId = value.subnetId;
     }
@@ -308,33 +291,13 @@ export class NetworkingPortV2FixedIpOutputReference extends cdktf.ComplexObject 
     return this._subnetId;
   }
 }
-
-export class NetworkingPortV2FixedIpList extends cdktf.ComplexList {
-  public internalValue? : NetworkingPortV2FixedIp[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): NetworkingPortV2FixedIpOutputReference {
-    return new NetworkingPortV2FixedIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface NetworkingPortV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#create NetworkingPortV2#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#create NetworkingPortV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#delete NetworkingPortV2#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#delete NetworkingPortV2#delete}
   */
   readonly delete?: string;
 }
@@ -432,7 +395,7 @@ export class NetworkingPortV2TimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2}
 */
 export class NetworkingPortV2 extends cdktf.TerraformResource {
 
@@ -448,7 +411,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkingPortV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkingPortV2 to import
-  * @param importFromId The id of the existing NetworkingPortV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkingPortV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkingPortV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -460,7 +423,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_port_v2 opentelekomcloud_networking_port_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -471,7 +434,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_networking_port_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.11',
+        providerVersion: '1.35.12',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -731,11 +694,11 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
   }
 
   // fixed_ip - computed: false, optional: true, required: false
-  private _fixedIp = new NetworkingPortV2FixedIpList(this, "fixed_ip", false);
+  private _fixedIp = new NetworkingPortV2FixedIpOutputReference(this, "fixed_ip");
   public get fixedIp() {
     return this._fixedIp;
   }
-  public putFixedIp(value: NetworkingPortV2FixedIp[] | cdktf.IResolvable) {
+  public putFixedIp(value: NetworkingPortV2FixedIp) {
     this._fixedIp.internalValue = value;
   }
   public resetFixedIp() {
@@ -782,7 +745,7 @@ export class NetworkingPortV2 extends cdktf.TerraformResource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       value_specs: cdktf.hashMapper(cdktf.stringToTerraform)(this._valueSpecs),
       allowed_address_pairs: cdktf.listMapper(networkingPortV2AllowedAddressPairsToTerraform, true)(this._allowedAddressPairs.internalValue),
-      fixed_ip: cdktf.listMapper(networkingPortV2FixedIpToTerraform, true)(this._fixedIp.internalValue),
+      fixed_ip: networkingPortV2FixedIpToTerraform(this._fixedIp.internalValue),
       timeouts: networkingPortV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

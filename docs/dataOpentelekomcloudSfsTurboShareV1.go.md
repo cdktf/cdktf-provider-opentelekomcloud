@@ -1,6 +1,6 @@
 # `data_opentelekomcloud_sfs_turbo_share_v1`
 
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_share_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1).
+Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_share_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1).
 
 # `dataOpentelekomcloudSfsTurboShareV1` Submodule <a name="`dataOpentelekomcloudSfsTurboShareV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_sha
 
 ### DataOpentelekomcloudSfsTurboShareV1 <a name="DataOpentelekomcloudSfsTurboShareV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.NewDataOpentelekomcloudSfsTurboShareV1(scope Construct, id *string, config DataOpentelekomcloudSfsTurboShareV1Config) DataOpentelekomcloudSfsTurboShareV1
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataOpentelekomcloudSfsTur
 
 The id of the existing DataOpentelekomcloudSfsTurboShareV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsfsturbosharev1"
 
 &dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1Config {
 	Connection: interface{},
@@ -747,8 +747,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
 
 ---
 
@@ -830,7 +830,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
 
 ---
 
@@ -842,7 +842,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

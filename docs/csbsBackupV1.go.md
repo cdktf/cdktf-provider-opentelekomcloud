@@ -1,6 +1,6 @@
 # `opentelekomcloud_csbs_backup_v1`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_csbs_backup_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_csbs_backup_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1).
 
 # `csbsBackupV1` Submodule <a name="`csbsBackupV1` Submodule" id="@cdktf/provider-opentelekomcloud.csbsBackupV1"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_csbs_backup_v1`](h
 
 ### CsbsBackupV1 <a name="CsbsBackupV1" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1 opentelekomcloud_csbs_backup_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1(scope Construct, id *string, config CsbsBackupV1Config) CsbsBackupV1
 ```
@@ -407,7 +407,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.CsbsBackupV1_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.CsbsBackupV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ csbsbackupv1.CsbsBackupV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.CsbsBackupV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ csbsbackupv1.CsbsBackupV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.CsbsBackupV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CsbsBackupV1 to import.
 
 The id of the existing CsbsBackupV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,7 +916,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 &csbsbackupv1.CsbsBackupV1Config {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Region: *string,
 	ResourceType: *string,
 	Tags: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.csbsBackupV1.CsbsBackupV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts,
 }
 ```
 
@@ -948,12 +948,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.backupName">BackupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#description CsbsBackupV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#id CsbsBackupV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#region CsbsBackupV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.resourceId">ResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.backupName">BackupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#description CsbsBackupV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#id CsbsBackupV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#region CsbsBackupV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.resourceType">ResourceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts">CsbsBackupV1Timeouts</a></code> | timeouts block. |
 
@@ -1037,7 +1037,7 @@ ResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#resource_id CsbsBackupV1#resource_id}.
 
 ---
 
@@ -1049,7 +1049,7 @@ BackupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#backup_name CsbsBackupV1#backup_name}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#description CsbsBackupV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#description CsbsBackupV1#description}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#id CsbsBackupV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#id CsbsBackupV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1088,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#region CsbsBackupV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#region CsbsBackupV1#region}.
 
 ---
 
@@ -1100,7 +1100,7 @@ ResourceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#resource_type CsbsBackupV1#resource_type}.
 
 ---
 
@@ -1114,7 +1114,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#tags CsbsBackupV1#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#tags CsbsBackupV1#tags}
 
 ---
 
@@ -1128,7 +1128,7 @@ Timeouts CsbsBackupV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#timeouts CsbsBackupV1#timeouts}
 
 ---
 
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Tags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 &csbsbackupv1.CsbsBackupV1Tags {
 	Key: *string,
@@ -1149,8 +1149,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Tags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#key CsbsBackupV1#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Tags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#value CsbsBackupV1#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Tags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#key CsbsBackupV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Tags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#value CsbsBackupV1#value}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#key CsbsBackupV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#key CsbsBackupV1#key}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#value CsbsBackupV1#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#value CsbsBackupV1#value}.
 
 ---
 
@@ -1183,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 &csbsbackupv1.CsbsBackupV1Timeouts {
 	Create: *string,
@@ -1195,8 +1195,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#create CsbsBackupV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#delete CsbsBackupV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#create CsbsBackupV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#delete CsbsBackupV1#delete}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#create CsbsBackupV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#create CsbsBackupV1#create}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/csbs_backup_v1#delete CsbsBackupV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1#delete CsbsBackupV1#delete}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VmMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 &csbsbackupv1.CsbsBackupV1VmMetadata {
 
@@ -1242,7 +1242,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VolumeBackups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 &csbsbackupv1.CsbsBackupV1VolumeBackups {
 
@@ -1257,7 +1257,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1TagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1TagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsbsBackupV1TagsList
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1TagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1TagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsbsBackupV1TagsOutputReference
 ```
@@ -1711,7 +1711,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsbsBackupV1TimeoutsOutputReference
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VmMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1VmMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsbsBackupV1VmMetadataList
 ```
@@ -2150,7 +2150,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VmMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1VmMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsbsBackupV1VmMetadataOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() CsbsBackupV1VmMetadata
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VolumeBackupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1VolumeBackupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsbsBackupV1VolumeBackupsList
 ```
@@ -2637,7 +2637,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.csbsBackupV1.CsbsBackupV1VolumeBackupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/csbsbackupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/csbsbackupv1"
 
 csbsbackupv1.NewCsbsBackupV1VolumeBackupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsbsBackupV1VolumeBackupsOutputReference
 ```

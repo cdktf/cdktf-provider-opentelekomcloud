@@ -1,6 +1,6 @@
 # `opentelekomcloud_identity_role_assignment_v3`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_role_assignment_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_role_assignment_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3).
 
 # `identityRoleAssignmentV3` Submodule <a name="`identityRoleAssignmentV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_role_assi
 
 ### IdentityRoleAssignmentV3 <a name="IdentityRoleAssignmentV3" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3 opentelekomcloud_identity_role_assignment_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 identityroleassignmentv3.NewIdentityRoleAssignmentV3(scope Construct, id *string, config IdentityRoleAssignmentV3Config) IdentityRoleAssignmentV3
 ```
@@ -360,7 +360,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 identityroleassignmentv3.IdentityRoleAssignmentV3_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 identityroleassignmentv3.IdentityRoleAssignmentV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ identityroleassignmentv3.IdentityRoleAssignmentV3_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 identityroleassignmentv3.IdentityRoleAssignmentV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ identityroleassignmentv3.IdentityRoleAssignmentV3_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 identityroleassignmentv3.IdentityRoleAssignmentV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -449,7 +449,7 @@ The construct id used in the generated config for the IdentityRoleAssignmentV3 t
 
 The id of the existing IdentityRoleAssignmentV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityroleassignmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityroleassignmentv3"
 
 &identityroleassignmentv3.IdentityRoleAssignmentV3Config {
 	Connection: interface{},
@@ -811,12 +811,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.allProjects">AllProjects</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#all_projects IdentityRoleAssignmentV3#all_projects}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#domain_id IdentityRoleAssignmentV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#id IdentityRoleAssignmentV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#project_id IdentityRoleAssignmentV3#project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.groupId">GroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.roleId">RoleId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.allProjects">AllProjects</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#all_projects IdentityRoleAssignmentV3#all_projects}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#domain_id IdentityRoleAssignmentV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#id IdentityRoleAssignmentV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleAssignmentV3.IdentityRoleAssignmentV3Config.property.projectId">ProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#project_id IdentityRoleAssignmentV3#project_id}. |
 
 ---
 
@@ -898,7 +898,7 @@ GroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#group_id IdentityRoleAssignmentV3#group_id}.
 
 ---
 
@@ -910,7 +910,7 @@ RoleId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#role_id IdentityRoleAssignmentV3#role_id}.
 
 ---
 
@@ -922,7 +922,7 @@ AllProjects interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#all_projects IdentityRoleAssignmentV3#all_projects}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#all_projects IdentityRoleAssignmentV3#all_projects}.
 
 ---
 
@@ -934,7 +934,7 @@ DomainId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#domain_id IdentityRoleAssignmentV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#domain_id IdentityRoleAssignmentV3#domain_id}.
 
 ---
 
@@ -946,7 +946,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#id IdentityRoleAssignmentV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#id IdentityRoleAssignmentV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ ProjectId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/identity_role_assignment_v3#project_id IdentityRoleAssignmentV3#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_assignment_v3#project_id IdentityRoleAssignmentV3#project_id}.
 
 ---
 

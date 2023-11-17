@@ -1,6 +1,6 @@
 # `opentelekomcloud_networking_floatingip_v2`
 
-Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_floatingip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2).
+Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_floatingip_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2).
 
 # `networkingFloatingipV2` Submodule <a name="`networkingFloatingipV2` Submodule" id="@cdktf/provider-opentelekomcloud.networkingFloatingipV2"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`opentelekomcloud_networking_floatin
 
 ### NetworkingFloatingipV2 <a name="NetworkingFloatingipV2" id="@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2 opentelekomcloud_networking_floatingip_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer"></a>
 
@@ -47,14 +47,14 @@ networkingFloatingipV2.NetworkingFloatingipV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.fixedIp">fixed_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.pool">pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.portId">port_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.fixedIp">fixed_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.pool">pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.portId">port_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts">NetworkingFloatingipV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}.
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}.
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#timeouts NetworkingFloatingipV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#timeouts NetworkingFloatingipV2#timeouts}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}.
 
 ---
 
@@ -510,7 +510,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}.
 
 ---
 
@@ -518,7 +518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}.
 
 ---
 
@@ -684,7 +684,7 @@ The construct id used in the generated config for the NetworkingFloatingipV2 to 
 
 The id of the existing NetworkingFloatingipV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,14 +1103,14 @@ networkingFloatingipV2.NetworkingFloatingipV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.fixedIp">fixed_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.pool">pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.portId">port_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.fixedIp">fixed_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.pool">pool</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.portId">port_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts">NetworkingFloatingipV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ fixed_ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#fixed_ip NetworkingFloatingipV2#fixed_ip}.
 
 ---
 
@@ -1204,7 +1204,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#id NetworkingFloatingipV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1219,7 +1219,7 @@ pool: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#pool NetworkingFloatingipV2#pool}.
 
 ---
 
@@ -1231,7 +1231,7 @@ port_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#port_id NetworkingFloatingipV2#port_id}.
 
 ---
 
@@ -1243,7 +1243,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#region NetworkingFloatingipV2#region}.
 
 ---
 
@@ -1255,7 +1255,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#tenant_id NetworkingFloatingipV2#tenant_id}.
 
 ---
 
@@ -1269,7 +1269,7 @@ timeouts: NetworkingFloatingipV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#timeouts NetworkingFloatingipV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#timeouts NetworkingFloatingipV2#timeouts}
 
 ---
 
@@ -1281,7 +1281,7 @@ value_specs: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#value_specs NetworkingFloatingipV2#value_specs}.
 
 ---
 
@@ -1302,8 +1302,8 @@ networkingFloatingipV2.NetworkingFloatingipV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipV2.NetworkingFloatingipV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#create NetworkingFloatingipV2#create}.
 
 ---
 
@@ -1327,7 +1327,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.11/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/networking_floatingip_v2#delete NetworkingFloatingipV2#delete}.
 
 ---
 
