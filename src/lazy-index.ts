@@ -33,6 +33,9 @@ Object.defineProperty(exports, 'cssSnapshotConfigurationV1', { get: function () 
 Object.defineProperty(exports, 'ctsEventNotificationV3', { get: function () { return require('./cts-event-notification-v3'); } });
 Object.defineProperty(exports, 'ctsTrackerV1', { get: function () { return require('./cts-tracker-v1'); } });
 Object.defineProperty(exports, 'ctsTrackerV3', { get: function () { return require('./cts-tracker-v3'); } });
+Object.defineProperty(exports, 'dcEndpointGroupV2', { get: function () { return require('./dc-endpoint-group-v2'); } });
+Object.defineProperty(exports, 'dcVirtualGatewayV2', { get: function () { return require('./dc-virtual-gateway-v2'); } });
+Object.defineProperty(exports, 'dcVirtualInterfaceV2', { get: function () { return require('./dc-virtual-interface-v2'); } });
 Object.defineProperty(exports, 'dcsInstanceV1', { get: function () { return require('./dcs-instance-v1'); } });
 Object.defineProperty(exports, 'ddsInstanceV3', { get: function () { return require('./dds-instance-v3'); } });
 Object.defineProperty(exports, 'dehHostV1', { get: function () { return require('./deh-host-v1'); } });
