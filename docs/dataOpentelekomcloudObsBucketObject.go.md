@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_obs_bucket_object`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_obs_bucket_object`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/obs_bucket_object).
-
 # `dataOpentelekomcloudObsBucketObject` Submodule <a name="`dataOpentelekomcloudObsBucketObject` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudObsBucketObject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

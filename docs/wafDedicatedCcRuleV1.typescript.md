@@ -1,7 +1,3 @@
-# `opentelekomcloud_waf_dedicated_cc_rule_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_dedicated_cc_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_dedicated_cc_rule_v1).
-
 # `wafDedicatedCcRuleV1` Submodule <a name="`wafDedicatedCcRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafDedicatedCcRuleV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `opentelekomcloud_vpnaas_site_connection_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpnaas_site_connection_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpnaas_site_connection_v2).
-
 # `vpnaasSiteConnectionV2` Submodule <a name="`vpnaasSiteConnectionV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpnaasSiteConnectionV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

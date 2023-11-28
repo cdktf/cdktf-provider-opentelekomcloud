@@ -1,7 +1,3 @@
-# `opentelekomcloud_nat_gateway_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_nat_gateway_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/nat_gateway_v2).
-
 # `natGatewayV2` Submodule <a name="`natGatewayV2` Submodule" id="@cdktf/provider-opentelekomcloud.natGatewayV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

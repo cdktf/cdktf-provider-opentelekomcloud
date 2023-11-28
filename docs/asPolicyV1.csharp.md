@@ -1,7 +1,3 @@
-# `opentelekomcloud_as_policy_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_as_policy_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/as_policy_v1).
-
 # `asPolicyV1` Submodule <a name="`asPolicyV1` Submodule" id="@cdktf/provider-opentelekomcloud.asPolicyV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

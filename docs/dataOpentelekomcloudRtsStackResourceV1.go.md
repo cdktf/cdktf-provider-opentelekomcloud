@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_rts_stack_resource_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_stack_resource_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_stack_resource_v1).
-
 # `dataOpentelekomcloudRtsStackResourceV1` Submodule <a name="`dataOpentelekomcloudRtsStackResourceV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsStackResourceV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

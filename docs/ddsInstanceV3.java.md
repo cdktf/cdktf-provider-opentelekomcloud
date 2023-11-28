@@ -1,7 +1,3 @@
-# `opentelekomcloud_dds_instance_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dds_instance_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dds_instance_v3).
-
 # `ddsInstanceV3` Submodule <a name="`ddsInstanceV3` Submodule" id="@cdktf/provider-opentelekomcloud.ddsInstanceV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

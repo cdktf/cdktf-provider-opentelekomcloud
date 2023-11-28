@@ -1,7 +1,3 @@
-# `opentelekomcloud_identity_role_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_role_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_role_v3).
-
 # `identityRoleV3` Submodule <a name="`identityRoleV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityRoleV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

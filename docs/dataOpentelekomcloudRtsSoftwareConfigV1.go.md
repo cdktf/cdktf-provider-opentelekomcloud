@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_rts_software_config_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_software_config_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1).
-
 # `dataOpentelekomcloudRtsSoftwareConfigV1` Submodule <a name="`dataOpentelekomcloudRtsSoftwareConfigV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

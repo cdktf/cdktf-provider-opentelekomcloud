@@ -1,7 +1,3 @@
-# `opentelekomcloud_sdrs_protected_instance_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_sdrs_protected_instance_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/sdrs_protected_instance_v1).
-
 # `sdrsProtectedInstanceV1` Submodule <a name="`sdrsProtectedInstanceV1` Submodule" id="@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

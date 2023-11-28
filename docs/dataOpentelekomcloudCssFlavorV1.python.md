@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_css_flavor_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_css_flavor_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/css_flavor_v1).
-
 # `dataOpentelekomcloudCssFlavorV1` Submodule <a name="`dataOpentelekomcloudCssFlavorV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssFlavorV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

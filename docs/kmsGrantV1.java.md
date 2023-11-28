@@ -1,7 +1,3 @@
-# `opentelekomcloud_kms_grant_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_kms_grant_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/kms_grant_v1).
-
 # `kmsGrantV1` Submodule <a name="`kmsGrantV1` Submodule" id="@cdktf/provider-opentelekomcloud.kmsGrantV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

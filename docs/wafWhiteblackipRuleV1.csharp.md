@@ -1,7 +1,3 @@
-# `opentelekomcloud_waf_whiteblackip_rule_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_whiteblackip_rule_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_whiteblackip_rule_v1).
-
 # `wafWhiteblackipRuleV1` Submodule <a name="`wafWhiteblackipRuleV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafWhiteblackipRuleV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

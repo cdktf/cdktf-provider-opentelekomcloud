@@ -1,7 +1,3 @@
-# `opentelekomcloud_fw_rule_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_rule_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/fw_rule_v2).
-
 # `fwRuleV2` Submodule <a name="`fwRuleV2` Submodule" id="@cdktf/provider-opentelekomcloud.fwRuleV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_vpnaas_service_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpnaas_service_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpnaas_service_v2).
-
 # `dataOpentelekomcloudVpnaasServiceV2` Submodule <a name="`dataOpentelekomcloudVpnaasServiceV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpnaasServiceV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

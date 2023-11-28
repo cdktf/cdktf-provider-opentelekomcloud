@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_sfs_turbo_share_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_sfs_turbo_share_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/sfs_turbo_share_v1).
-
 # `dataOpentelekomcloudSfsTurboShareV1` Submodule <a name="`dataOpentelekomcloudSfsTurboShareV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

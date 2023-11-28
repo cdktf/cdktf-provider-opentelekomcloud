@@ -1,7 +1,3 @@
-# `opentelekomcloud_cbr_vault_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cbr_vault_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/cbr_vault_v3).
-
 # `cbrVaultV3` Submodule <a name="`cbrVaultV3` Submodule" id="@cdktf/provider-opentelekomcloud.cbrVaultV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

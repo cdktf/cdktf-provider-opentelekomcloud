@@ -1,7 +1,3 @@
-# `opentelekomcloud_blockstorage_volume_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_blockstorage_volume_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/blockstorage_volume_v2).
-
 # `blockstorageVolumeV2` Submodule <a name="`blockstorageVolumeV2` Submodule" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

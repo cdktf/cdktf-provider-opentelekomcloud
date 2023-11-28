@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_compute_bms_flavors_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_flavors_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/compute_bms_flavors_v2).
-
 # `dataOpentelekomcloudComputeBmsFlavorsV2` Submodule <a name="`dataOpentelekomcloudComputeBmsFlavorsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

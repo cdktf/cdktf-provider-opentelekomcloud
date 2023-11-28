@@ -1,7 +1,3 @@
-# `opentelekomcloud_lb_pool_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_pool_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_pool_v2).
-
 # `lbPoolV2` Submodule <a name="`lbPoolV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbPoolV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

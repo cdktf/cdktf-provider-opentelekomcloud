@@ -1,7 +1,3 @@
-# `opentelekomcloud_drs_task_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_drs_task_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/drs_task_v3).
-
 # `drsTaskV3` Submodule <a name="`drsTaskV3` Submodule" id="@cdktf/provider-opentelekomcloud.drsTaskV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

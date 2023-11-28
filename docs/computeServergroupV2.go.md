@@ -1,7 +1,3 @@
-# `opentelekomcloud_compute_servergroup_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_servergroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/compute_servergroup_v2).
-
 # `computeServergroupV2` Submodule <a name="`computeServergroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeServergroupV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

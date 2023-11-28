@@ -1,7 +1,3 @@
-# `opentelekomcloud_csbs_backup_policy_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_csbs_backup_policy_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_policy_v1).
-
 # `csbsBackupPolicyV1` Submodule <a name="`csbsBackupPolicyV1` Submodule" id="@cdktf/provider-opentelekomcloud.csbsBackupPolicyV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

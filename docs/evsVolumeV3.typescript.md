@@ -1,7 +1,3 @@
-# `opentelekomcloud_evs_volume_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_evs_volume_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/evs_volume_v3).
-
 # `evsVolumeV3` Submodule <a name="`evsVolumeV3` Submodule" id="@cdktf/provider-opentelekomcloud.evsVolumeV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

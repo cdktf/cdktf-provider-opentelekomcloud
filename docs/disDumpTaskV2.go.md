@@ -1,7 +1,3 @@
-# `opentelekomcloud_dis_dump_task_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_dump_task_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dis_dump_task_v2).
-
 # `disDumpTaskV2` Submodule <a name="`disDumpTaskV2` Submodule" id="@cdktf/provider-opentelekomcloud.disDumpTaskV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `opentelekomcloud_csbs_backup_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_csbs_backup_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/csbs_backup_v1).
-
 # `csbsBackupV1` Submodule <a name="`csbsBackupV1` Submodule" id="@cdktf/provider-opentelekomcloud.csbsBackupV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

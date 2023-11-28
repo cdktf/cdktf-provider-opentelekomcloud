@@ -1,7 +1,3 @@
-# `opentelekomcloud_lb_l7rule_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_l7rule_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_l7rule_v2).
-
 # `lbL7RuleV2` Submodule <a name="`lbL7RuleV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbL7RuleV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

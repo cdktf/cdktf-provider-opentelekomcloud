@@ -1,7 +1,3 @@
-# `opentelekomcloud_vbs_backup_share_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vbs_backup_share_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vbs_backup_share_v2).
-
 # `vbsBackupShareV2` Submodule <a name="`vbsBackupShareV2` Submodule" id="@cdktf/provider-opentelekomcloud.vbsBackupShareV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

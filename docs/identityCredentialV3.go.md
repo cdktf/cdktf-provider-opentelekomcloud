@@ -1,7 +1,3 @@
-# `opentelekomcloud_identity_credential_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_credential_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_credential_v3).
-
 # `identityCredentialV3` Submodule <a name="`identityCredentialV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityCredentialV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

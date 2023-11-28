@@ -1,7 +1,3 @@
-# `opentelekomcloud_compute_volume_attach_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_volume_attach_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/compute_volume_attach_v2).
-
 # `computeVolumeAttachV2` Submodule <a name="`computeVolumeAttachV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

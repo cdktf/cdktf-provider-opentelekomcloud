@@ -1,7 +1,3 @@
-# `opentelekomcloud_dis_app_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_app_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dis_app_v2).
-
 # `disAppV2` Submodule <a name="`disAppV2` Submodule" id="@cdktf/provider-opentelekomcloud.disAppV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

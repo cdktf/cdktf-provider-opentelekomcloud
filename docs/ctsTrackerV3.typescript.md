@@ -1,7 +1,3 @@
-# `opentelekomcloud_cts_tracker_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cts_tracker_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/cts_tracker_v3).
-
 # `ctsTrackerV3` Submodule <a name="`ctsTrackerV3` Submodule" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

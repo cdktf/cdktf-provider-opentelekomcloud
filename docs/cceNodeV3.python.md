@@ -1,7 +1,3 @@
-# `opentelekomcloud_cce_node_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cce_node_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/cce_node_v3).
-
 # `cceNodeV3` Submodule <a name="`cceNodeV3` Submodule" id="@cdktf/provider-opentelekomcloud.cceNodeV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

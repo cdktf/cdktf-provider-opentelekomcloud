@@ -1,7 +1,3 @@
-# `opentelekomcloud_lb_certificate_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_lb_certificate_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/lb_certificate_v2).
-
 # `lbCertificateV2` Submodule <a name="`lbCertificateV2` Submodule" id="@cdktf/provider-opentelekomcloud.lbCertificateV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
