@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.NewWafDomainV1(scope Construct, id *string, config WafDomainV1Config) WafDomainV1
 ```
@@ -430,7 +430,7 @@ func ResetTls()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.WafDomainV1_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.WafDomainV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -476,7 +476,7 @@ wafdomainv1.WafDomainV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.WafDomainV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ wafdomainv1.WafDomainV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.WafDomainV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1BlockPage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 &wafdomainv1.WafDomainV1BlockPage {
 	Template: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 &wafdomainv1.WafDomainV1Config {
 	Connection: interface{},
@@ -1161,14 +1161,14 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/waf
 	Hostname: *string,
 	Proxy: interface{},
 	Server: interface{},
-	BlockPage: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDomainV1.WafDomainV1BlockPage,
+	BlockPage: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDomainV1.WafDomainV1BlockPage,
 	CertificateId: *string,
 	Cipher: *string,
 	Id: *string,
 	PolicyId: *string,
 	SipHeaderList: *[]*string,
 	SipHeaderName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDomainV1.WafDomainV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDomainV1.WafDomainV1Timeouts,
 	Tls: *string,
 }
 ```
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 &wafdomainv1.WafDomainV1Server {
 	Address: *string,
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 &wafdomainv1.WafDomainV1Timeouts {
 	Create: *string,
@@ -1577,7 +1577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1BlockPageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.NewWafDomainV1BlockPageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDomainV1BlockPageOutputReference
 ```
@@ -1964,7 +1964,7 @@ func InternalValue() WafDomainV1BlockPage
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1ServerList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.NewWafDomainV1ServerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafDomainV1ServerList
 ```
@@ -2107,7 +2107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1ServerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.NewWafDomainV1ServerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafDomainV1ServerOutputReference
 ```
@@ -2534,7 +2534,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDomainV1.WafDomainV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdomainv1"
 
 wafdomainv1.NewWafDomainV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDomainV1TimeoutsOutputReference
 ```

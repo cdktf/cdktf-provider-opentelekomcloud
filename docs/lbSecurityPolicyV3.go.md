@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 lbsecuritypolicyv3.NewLbSecurityPolicyV3(scope Construct, id *string, config LbSecurityPolicyV3Config) LbSecurityPolicyV3
 ```
@@ -349,7 +349,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 lbsecuritypolicyv3.LbSecurityPolicyV3_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 lbsecuritypolicyv3.LbSecurityPolicyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ lbsecuritypolicyv3.LbSecurityPolicyV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 lbsecuritypolicyv3.LbSecurityPolicyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ lbsecuritypolicyv3.LbSecurityPolicyV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 lbsecuritypolicyv3.LbSecurityPolicyV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbSecurityPolicyV3.LbSecurityPolicyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbsecuritypolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbsecuritypolicyv3"
 
 &lbsecuritypolicyv3.LbSecurityPolicyV3Config {
 	Connection: interface{},

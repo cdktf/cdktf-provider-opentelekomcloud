@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.NewWafDedicatedBlacklistRuleV1(scope Construct, id *string, config WafDedicatedBlacklistRuleV1Config) WafDedicatedBlacklistRuleV1
 ```
@@ -376,7 +376,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -422,7 +422,7 @@ wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -436,7 +436,7 @@ wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 &wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1Config {
 	Connection: interface{},
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/waf
 	FollowedActionId: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts,
 }
 ```
 
@@ -1082,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 &wafdedicatedblacklistrulev1.WafDedicatedBlacklistRuleV1Timeouts {
 	Create: *string,
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedBlacklistRuleV1.WafDedicatedBlacklistRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedblacklistrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedblacklistrulev1"
 
 wafdedicatedblacklistrulev1.NewWafDedicatedBlacklistRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedBlacklistRuleV1TimeoutsOutputReference
 ```

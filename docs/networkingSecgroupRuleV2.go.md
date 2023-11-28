@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NewNetworkingSecgroupRuleV2(scope Construct, id *string, config NetworkingSecgroupRuleV2Config) NetworkingSecgroupRuleV2
 ```
@@ -411,7 +411,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NetworkingSecgroupRuleV2_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NetworkingSecgroupRuleV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ networkingsecgrouprulev2.NetworkingSecgroupRuleV2_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NetworkingSecgroupRuleV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ networkingsecgrouprulev2.NetworkingSecgroupRuleV2_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NetworkingSecgroupRuleV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 &networkingsecgrouprulev2.NetworkingSecgroupRuleV2Config {
 	Connection: interface{},
@@ -1008,7 +1008,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/net
 	RemoteGroupId: *string,
 	RemoteIpPrefix: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2Timeouts,
 }
 ```
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 &networkingsecgrouprulev2.NetworkingSecgroupRuleV2Timeouts {
 	Delete: *string,
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingSecgroupRuleV2.NetworkingSecgroupRuleV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingsecgrouprulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingsecgrouprulev2"
 
 networkingsecgrouprulev2.NewNetworkingSecgroupRuleV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkingSecgroupRuleV2TimeoutsOutputReference
 ```
