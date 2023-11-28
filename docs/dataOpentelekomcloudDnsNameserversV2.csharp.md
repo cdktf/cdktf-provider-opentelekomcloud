@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_dns_nameservers_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_dns_nameservers_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dns_nameservers_v2).
-
 # `dataOpentelekomcloudDnsNameserversV2` Submodule <a name="`dataOpentelekomcloudDnsNameserversV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDnsNameserversV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

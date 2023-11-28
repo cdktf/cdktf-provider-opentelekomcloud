@@ -1,7 +1,3 @@
-# `opentelekomcloud_dms_instance_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dms_instance_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dms_instance_v1).
-
 # `dmsInstanceV1` Submodule <a name="`dmsInstanceV1` Submodule" id="@cdktf/provider-opentelekomcloud.dmsInstanceV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

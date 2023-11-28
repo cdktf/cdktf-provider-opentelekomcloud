@@ -1,7 +1,3 @@
-# `opentelekomcloud_vpc_bandwidth_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_vpc_bandwidth_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_v2).
-
 # `vpcBandwidthV2` Submodule <a name="`vpcBandwidthV2` Submodule" id="@cdktf/provider-opentelekomcloud.vpcBandwidthV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

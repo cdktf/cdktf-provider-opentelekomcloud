@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_cce_cluster_kubeconfig_v3`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_cce_cluster_kubeconfig_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/cce_cluster_kubeconfig_v3).
-
 # `dataOpentelekomcloudCceClusterKubeconfigV3` Submodule <a name="`dataOpentelekomcloudCceClusterKubeconfigV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.NewDataOpentelekomcloudCceClusterKubeconfigV3(scope Construct, id *string, config DataOpentelekomcloudCceClusterKubeconfigV3Config) DataOpentelekomcloudCceClusterKubeconfigV3
 ```
@@ -285,7 +281,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubecon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubecon
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcceclusterkubeconfigv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcceclusterkubeconfigv3"
 
 &dataopentelekomcloudcceclusterkubeconfigv3.DataOpentelekomcloudCceClusterKubeconfigV3Config {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `opentelekomcloud_cbr_policy_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cbr_policy_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/cbr_policy_v3).
-
 # `cbrPolicyV3` Submodule <a name="`cbrPolicyV3` Submodule" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.NewCbrPolicyV3(scope Construct, id *string, config CbrPolicyV3Config) CbrPolicyV3
 ```
@@ -366,7 +362,7 @@ func ResetOperationDefinition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.CbrPolicyV3_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.CbrPolicyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +408,7 @@ cbrpolicyv3.CbrPolicyV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.CbrPolicyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +422,7 @@ cbrpolicyv3.CbrPolicyV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.CbrPolicyV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +794,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 &cbrpolicyv3.CbrPolicyV3Config {
 	Connection: interface{},
@@ -813,7 +809,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	TriggerPattern: *[]*string,
 	Enabled: interface{},
 	Id: *string,
-	OperationDefinition: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cbrPolicyV3.CbrPolicyV3OperationDefinition,
+	OperationDefinition: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cbrPolicyV3.CbrPolicyV3OperationDefinition,
 }
 ```
 
@@ -989,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3OperationDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 &cbrpolicyv3.CbrPolicyV3OperationDefinition {
 	Timezone: *string,
@@ -1107,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cbrPolicyV3.CbrPolicyV3OperationDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cbrpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cbrpolicyv3"
 
 cbrpolicyv3.NewCbrPolicyV3OperationDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CbrPolicyV3OperationDefinitionOutputReference
 ```

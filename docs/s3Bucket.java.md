@@ -1,7 +1,3 @@
-# `opentelekomcloud_s3_bucket`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_s3_bucket`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/s3_bucket).
-
 # `s3Bucket` Submodule <a name="`s3Bucket` Submodule" id="@cdktf/provider-opentelekomcloud.s3Bucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

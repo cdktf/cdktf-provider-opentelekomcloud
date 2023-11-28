@@ -1,7 +1,3 @@
-# `opentelekomcloud_waf_domain_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_waf_domain_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/waf_domain_v1).
-
 # `wafDomainV1` Submodule <a name="`wafDomainV1` Submodule" id="@cdktf/provider-opentelekomcloud.wafDomainV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

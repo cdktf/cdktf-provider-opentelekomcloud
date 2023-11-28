@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_compute_bms_keypairs_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_keypairs_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/compute_bms_keypairs_v2).
-
 # `dataOpentelekomcloudComputeBmsKeypairsV2` Submodule <a name="`dataOpentelekomcloudComputeBmsKeypairsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 dataopentelekomcloudcomputebmskeypairsv2.NewDataOpentelekomcloudComputeBmsKeypairsV2(scope Construct, id *string, config DataOpentelekomcloudComputeBmsKeypairsV2Config) DataOpentelekomcloudComputeBmsKeypairsV2
 ```
@@ -285,7 +281,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV2_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2.DataOpentelekomcloudComputeBmsKeypairsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmskeypairsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmskeypairsv2"
 
 &dataopentelekomcloudcomputebmskeypairsv2.DataOpentelekomcloudComputeBmsKeypairsV2Config {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `opentelekomcloud_obs_bucket_policy`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_obs_bucket_policy`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/obs_bucket_policy).
-
 # `obsBucketPolicy` Submodule <a name="`obsBucketPolicy` Submodule" id="@cdktf/provider-opentelekomcloud.obsBucketPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

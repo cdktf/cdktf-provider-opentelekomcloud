@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_rts_software_config_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rts_software_config_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1).
-
 # `dataOpentelekomcloudRtsSoftwareConfigV1` Submodule <a name="`dataOpentelekomcloudRtsSoftwareConfigV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.NewDataOpentelekomcloudRtsSoftwareConfigV1(scope Construct, id *string, config DataOpentelekomcloudRtsSoftwareConfigV1Config) DataOpentelekomcloudRtsSoftwareConfigV1
 ```
@@ -292,7 +288,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -680,7 +676,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrtssoftwareconfigv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrtssoftwareconfigv1"
 
 &dataopentelekomcloudrtssoftwareconfigv1.DataOpentelekomcloudRtsSoftwareConfigV1Config {
 	Connection: interface{},

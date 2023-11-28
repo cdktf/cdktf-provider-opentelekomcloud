@@ -1,7 +1,3 @@
-# `opentelekomcloud_fw_firewall_group_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_fw_firewall_group_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/fw_firewall_group_v2).
-
 # `fwFirewallGroupV2` Submodule <a name="`fwFirewallGroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.fwFirewallGroupV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `opentelekomcloud_rts_software_deployment_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_rts_software_deployment_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/rts_software_deployment_v1).
-
 # `rtsSoftwareDeploymentV1` Submodule <a name="`rtsSoftwareDeploymentV1` Submodule" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.NewRtsSoftwareDeploymentV1(scope Construct, id *string, config RtsSoftwareDeploymentV1Config) RtsSoftwareDeploymentV1
 ```
@@ -408,7 +404,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_IsConstruct(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -454,7 +450,7 @@ rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -468,7 +464,7 @@ rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -939,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 &rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1Config {
 	Connection: interface{},
@@ -959,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Status: *string,
 	StatusReason: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1Timeouts,
 }
 ```
 
@@ -1200,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 &rtssoftwaredeploymentv1.RtsSoftwareDeploymentV1Timeouts {
 	Create: *string,
@@ -1248,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1.RtsSoftwareDeploymentV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rtssoftwaredeploymentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rtssoftwaredeploymentv1"
 
 rtssoftwaredeploymentv1.NewRtsSoftwareDeploymentV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RtsSoftwareDeploymentV1TimeoutsOutputReference
 ```

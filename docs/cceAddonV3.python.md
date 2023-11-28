@@ -1,7 +1,3 @@
-# `opentelekomcloud_cce_addon_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_cce_addon_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/cce_addon_v3).
-
 # `cceAddonV3` Submodule <a name="`cceAddonV3` Submodule" id="@cdktf/provider-opentelekomcloud.cceAddonV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

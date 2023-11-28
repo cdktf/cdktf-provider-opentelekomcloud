@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_vpc_peering_connection_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_peering_connection_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_peering_connection_v2).
-
 # `dataOpentelekomcloudVpcPeeringConnectionV2` Submodule <a name="`dataOpentelekomcloudVpcPeeringConnectionV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

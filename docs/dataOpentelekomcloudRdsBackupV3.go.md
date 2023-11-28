@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_rds_backup_v3`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_rds_backup_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rds_backup_v3).
-
 # `dataOpentelekomcloudRdsBackupV3` Submodule <a name="`dataOpentelekomcloudRdsBackupV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.NewDataOpentelekomcloudRdsBackupV3(scope Construct, id *string, config DataOpentelekomcloudRdsBackupV3Config) DataOpentelekomcloudRdsBackupV3
 ```
@@ -292,7 +288,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -735,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsBackupV3.DataOpentelekomcloudRdsBackupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsbackupv3"
 
 &dataopentelekomcloudrdsbackupv3.DataOpentelekomcloudRdsBackupV3Config {
 	Connection: interface{},

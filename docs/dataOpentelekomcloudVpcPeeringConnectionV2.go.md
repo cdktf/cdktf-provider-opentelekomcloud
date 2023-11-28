@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_vpc_peering_connection_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpc_peering_connection_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_peering_connection_v2).
-
 # `dataOpentelekomcloudVpcPeeringConnectionV2` Submodule <a name="`dataOpentelekomcloudVpcPeeringConnectionV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 dataopentelekomcloudvpcpeeringconnectionv2.NewDataOpentelekomcloudVpcPeeringConnectionV2(scope Construct, id *string, config DataOpentelekomcloudVpcPeeringConnectionV2Config) DataOpentelekomcloudVpcPeeringConnectionV2
 ```
@@ -320,7 +316,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnectionV2_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnectionV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +362,7 @@ dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnect
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnectionV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -380,7 +376,7 @@ dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnect
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnectionV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -741,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcPeeringConnectionV2.DataOpentelekomcloudVpcPeeringConnectionV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcpeeringconnectionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcpeeringconnectionv2"
 
 &dataopentelekomcloudvpcpeeringconnectionv2.DataOpentelekomcloudVpcPeeringConnectionV2Config {
 	Connection: interface{},

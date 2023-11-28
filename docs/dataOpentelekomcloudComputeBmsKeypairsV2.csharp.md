@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_compute_bms_keypairs_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_compute_bms_keypairs_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/compute_bms_keypairs_v2).
-
 # `dataOpentelekomcloudComputeBmsKeypairsV2` Submodule <a name="`dataOpentelekomcloudComputeBmsKeypairsV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsKeypairsV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

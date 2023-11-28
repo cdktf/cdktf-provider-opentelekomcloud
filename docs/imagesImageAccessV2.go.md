@@ -1,7 +1,3 @@
-# `opentelekomcloud_images_image_access_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_images_image_access_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/images_image_access_v2).
-
 # `imagesImageAccessV2` Submodule <a name="`imagesImageAccessV2` Submodule" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 imagesimageaccessv2.NewImagesImageAccessV2(scope Construct, id *string, config ImagesImageAccessV2Config) ImagesImageAccessV2
 ```
@@ -346,7 +342,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ imagesimageaccessv2.ImagesImageAccessV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ imagesimageaccessv2.ImagesImageAccessV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 imagesimageaccessv2.ImagesImageAccessV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imagesImageAccessV2.ImagesImageAccessV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imagesimageaccessv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imagesimageaccessv2"
 
 &imagesimageaccessv2.ImagesImageAccessV2Config {
 	Connection: interface{},

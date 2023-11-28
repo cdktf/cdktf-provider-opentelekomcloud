@@ -1,7 +1,3 @@
-# `opentelekomcloud_dis_checkpoint_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dis_checkpoint_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dis_checkpoint_v2).
-
 # `disCheckpointV2` Submodule <a name="`disCheckpointV2` Submodule" id="@cdktf/provider-opentelekomcloud.disCheckpointV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

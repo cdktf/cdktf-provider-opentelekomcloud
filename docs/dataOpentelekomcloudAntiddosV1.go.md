@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_antiddos_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_antiddos_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/antiddos_v1).
-
 # `dataOpentelekomcloudAntiddosV1` Submodule <a name="`dataOpentelekomcloudAntiddosV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 dataopentelekomcloudantiddosv1.NewDataOpentelekomcloudAntiddosV1(scope Construct, id *string, config DataOpentelekomcloudAntiddosV1Config) DataOpentelekomcloudAntiddosV1
 ```
@@ -306,7 +302,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_IsConstruct(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -352,7 +348,7 @@ dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -366,7 +362,7 @@ dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudAntiddosV1.DataOpentelekomcloudAntiddosV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudantiddosv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudantiddosv1"
 
 &dataopentelekomcloudantiddosv1.DataOpentelekomcloudAntiddosV1Config {
 	Connection: interface{},

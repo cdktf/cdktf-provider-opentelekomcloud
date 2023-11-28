@@ -1,7 +1,3 @@
-# `opentelekomcloud_direct_connect_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_direct_connect_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/direct_connect_v2).
-
 # `directConnectV2` Submodule <a name="`directConnectV2` Submodule" id="@cdktf/provider-opentelekomcloud.directConnectV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

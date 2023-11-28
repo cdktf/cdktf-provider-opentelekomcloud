@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_lb_flavors_v3`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_lb_flavors_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/lb_flavors_v3).
-
 # `dataOpentelekomcloudLbFlavorsV3` Submodule <a name="`dataOpentelekomcloudLbFlavorsV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

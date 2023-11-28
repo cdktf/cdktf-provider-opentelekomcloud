@@ -1,7 +1,3 @@
-# `opentelekomcloud_compute_instance_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_compute_instance_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/compute_instance_v2).
-
 # `computeInstanceV2` Submodule <a name="`computeInstanceV2` Submodule" id="@cdktf/provider-opentelekomcloud.computeInstanceV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

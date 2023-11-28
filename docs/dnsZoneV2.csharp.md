@@ -1,7 +1,3 @@
-# `opentelekomcloud_dns_zone_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_dns_zone_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dns_zone_v2).
-
 # `dnsZoneV2` Submodule <a name="`dnsZoneV2` Submodule" id="@cdktf/provider-opentelekomcloud.dnsZoneV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

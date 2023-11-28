@@ -1,7 +1,3 @@
-# `opentelekomcloud_css_cluster_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_css_cluster_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/css_cluster_v1).
-
 # `cssClusterV1` Submodule <a name="`cssClusterV1` Submodule" id="@cdktf/provider-opentelekomcloud.cssClusterV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_networking_secgroup_v2`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_networking_secgroup_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/networking_secgroup_v2).
-
 # `dataOpentelekomcloudNetworkingSecgroupV2` Submodule <a name="`dataOpentelekomcloudNetworkingSecgroupV2` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 dataopentelekomcloudnetworkingsecgroupv2.NewDataOpentelekomcloudNetworkingSecgroupV2(scope Construct, id *string, config DataOpentelekomcloudNetworkingSecgroupV2Config) DataOpentelekomcloudNetworkingSecgroupV2
 ```
@@ -313,7 +309,7 @@ func ResetTenantId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV2_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +355,7 @@ dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,7 +369,7 @@ dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -723,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupV2.DataOpentelekomcloudNetworkingSecgroupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupv2"
 
 &dataopentelekomcloudnetworkingsecgroupv2.DataOpentelekomcloudNetworkingSecgroupV2Config {
 	Connection: interface{},

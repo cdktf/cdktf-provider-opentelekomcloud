@@ -1,7 +1,3 @@
-# `opentelekomcloud_identity_user_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_identity_user_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_v3).
-
 # `identityUserV3` Submodule <a name="`identityUserV3` Submodule" id="@cdktf/provider-opentelekomcloud.identityUserV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

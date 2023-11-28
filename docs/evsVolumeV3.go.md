@@ -1,7 +1,3 @@
-# `opentelekomcloud_evs_volume_v3`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_evs_volume_v3`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/evs_volume_v3).
-
 # `evsVolumeV3` Submodule <a name="`evsVolumeV3` Submodule" id="@cdktf/provider-opentelekomcloud.evsVolumeV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.NewEvsVolumeV3(scope Construct, id *string, config EvsVolumeV3Config) EvsVolumeV3
 ```
@@ -436,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.EvsVolumeV3_IsConstruct(x interface{}) *bool
 ```
@@ -468,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.EvsVolumeV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -482,7 +478,7 @@ evsvolumev3.EvsVolumeV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.EvsVolumeV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -496,7 +492,7 @@ evsvolumev3.EvsVolumeV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.EvsVolumeV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1073,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3Attachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 &evsvolumev3.EvsVolumeV3Attachment {
 
@@ -1090,7 +1086,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 &evsvolumev3.EvsVolumeV3Config {
 	Connection: interface{},
@@ -1114,7 +1110,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Size: *f64,
 	SnapshotId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.evsVolumeV3.EvsVolumeV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.evsVolumeV3.EvsVolumeV3Timeouts,
 }
 ```
 
@@ -1407,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 &evsvolumev3.EvsVolumeV3Timeouts {
 	Create: *string,
@@ -1455,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3AttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.NewEvsVolumeV3AttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EvsVolumeV3AttachmentList
 ```
@@ -1587,7 +1583,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3AttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.NewEvsVolumeV3AttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) EvsVolumeV3AttachmentOutputReference
 ```
@@ -1887,7 +1883,7 @@ func InternalValue() EvsVolumeV3Attachment
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.evsVolumeV3.EvsVolumeV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/evsvolumev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/evsvolumev3"
 
 evsvolumev3.NewEvsVolumeV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EvsVolumeV3TimeoutsOutputReference
 ```

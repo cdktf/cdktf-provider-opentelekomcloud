@@ -1,7 +1,3 @@
-# `opentelekomcloud_ims_data_image_v2`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_ims_data_image_v2`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/ims_data_image_v2).
-
 # `imsDataImageV2` Submodule <a name="`imsDataImageV2` Submodule" id="@cdktf/provider-opentelekomcloud.imsDataImageV2"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.NewImsDataImageV2(scope Construct, id *string, config ImsDataImageV2Config) ImsDataImageV2
 ```
@@ -408,7 +404,7 @@ func ResetVolumeId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.ImsDataImageV2_IsConstruct(x interface{}) *bool
 ```
@@ -440,7 +436,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.ImsDataImageV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -454,7 +450,7 @@ imsdataimagev2.ImsDataImageV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.ImsDataImageV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -468,7 +464,7 @@ imsdataimagev2.ImsDataImageV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.ImsDataImageV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -961,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 &imsdataimagev2.ImsDataImageV2Config {
 	Connection: interface{},
@@ -979,7 +975,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	MinDisk: *f64,
 	OsType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.imsDataImageV2.ImsDataImageV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts,
 	VolumeId: *string,
 }
 ```
@@ -1208,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 &imsdataimagev2.ImsDataImageV2Timeouts {
 	Create: *string,
@@ -1256,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsDataImageV2.ImsDataImageV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/imsdataimagev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsdataimagev2"
 
 imsdataimagev2.NewImsDataImageV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImsDataImageV2TimeoutsOutputReference
 ```

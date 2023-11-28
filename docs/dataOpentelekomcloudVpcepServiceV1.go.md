@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_vpcep_service_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_vpcep_service_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpcep_service_v1).
-
 # `dataOpentelekomcloudVpcepServiceV1` Submodule <a name="`dataOpentelekomcloudVpcepServiceV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.NewDataOpentelekomcloudVpcepServiceV1(scope Construct, id *string, config DataOpentelekomcloudVpcepServiceV1Config) DataOpentelekomcloudVpcepServiceV1
 ```
@@ -299,7 +295,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_IsConstruct(x interface{}) *bool
 ```
@@ -331,7 +327,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -345,7 +341,7 @@ dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -359,7 +355,7 @@ dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 &dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1Config {
 	Connection: interface{},
@@ -947,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1Port.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 &dataopentelekomcloudvpcepservicev1.DataOpentelekomcloudVpcepServiceV1Port {
 
@@ -962,7 +958,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1PortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.NewDataOpentelekomcloudVpcepServiceV1PortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVpcepServiceV1PortList
 ```
@@ -1094,7 +1090,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcepServiceV1.DataOpentelekomcloudVpcepServiceV1PortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudvpcepservicev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcepservicev1"
 
 dataopentelekomcloudvpcepservicev1.NewDataOpentelekomcloudVpcepServiceV1PortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudVpcepServiceV1PortOutputReference
 ```

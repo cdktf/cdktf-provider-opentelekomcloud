@@ -1,7 +1,3 @@
-# `data_opentelekomcloud_kms_key_v1`
-
-Refer to the Terraform Registory for docs: [`data_opentelekomcloud_kms_key_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/kms_key_v1).
-
 # `dataOpentelekomcloudKmsKeyV1` Submodule <a name="`dataOpentelekomcloudKmsKeyV1` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

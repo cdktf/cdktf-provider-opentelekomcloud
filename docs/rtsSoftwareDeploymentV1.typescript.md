@@ -1,7 +1,3 @@
-# `opentelekomcloud_rts_software_deployment_v1`
-
-Refer to the Terraform Registory for docs: [`opentelekomcloud_rts_software_deployment_v1`](https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/rts_software_deployment_v1).
-
 # `rtsSoftwareDeploymentV1` Submodule <a name="`rtsSoftwareDeploymentV1` Submodule" id="@cdktf/provider-opentelekomcloud.rtsSoftwareDeploymentV1"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
