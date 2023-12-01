@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +8,48 @@ import * as cdktf from 'cdktf';
 
 export interface DcVirtualGatewayV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#asn DcVirtualGatewayV2#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#asn DcVirtualGatewayV2#asn}
   */
   readonly asn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#device_id DcVirtualGatewayV2#device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#device_id DcVirtualGatewayV2#device_id}
   */
   readonly deviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#id DcVirtualGatewayV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#id DcVirtualGatewayV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#local_ep_group_id DcVirtualGatewayV2#local_ep_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#local_ep_group_id DcVirtualGatewayV2#local_ep_group_id}
   */
   readonly localEpGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#project_id DcVirtualGatewayV2#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#project_id DcVirtualGatewayV2#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#redundant_device_id DcVirtualGatewayV2#redundant_device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#redundant_device_id DcVirtualGatewayV2#redundant_device_id}
   */
   readonly redundantDeviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#vpc_id DcVirtualGatewayV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#vpc_id DcVirtualGatewayV2#vpc_id}
   */
   readonly vpcId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}
 */
 export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
 
@@ -70,7 +65,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DcVirtualGatewayV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DcVirtualGatewayV2 to import
-  * @param importFromId The id of the existing DcVirtualGatewayV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DcVirtualGatewayV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DcVirtualGatewayV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -82,7 +77,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +88,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dc_virtual_gateway_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.12',
+        providerVersion: '1.35.13',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

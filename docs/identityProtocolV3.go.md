@@ -4,12 +4,12 @@
 
 ### IdentityProtocolV3 <a name="IdentityProtocolV3" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3(scope Construct, id *string, config IdentityProtocolV3Config) IdentityProtocolV3
 ```
@@ -375,7 +375,7 @@ func ResetMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsConstruct(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ identityprotocolv3.IdentityProtocolV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ identityprotocolv3.IdentityProtocolV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -464,7 +464,7 @@ The construct id used in the generated config for the IdentityProtocolV3 to impo
 
 The id of the existing IdentityProtocolV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +807,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3AccessConfig {
 	AccessType: *string,
@@ -825,14 +825,14 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.accessType">AccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.providerUrl">ProviderUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.signingKey">SigningKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.responseMode">ResponseMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.responseType">ResponseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.accessType">AccessType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.providerUrl">ProviderUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.signingKey">SigningKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.authorizationEndpoint">AuthorizationEndpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.responseMode">ResponseMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.responseType">ResponseType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}. |
 
 ---
 
@@ -844,7 +844,7 @@ AccessType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}.
 
 ---
 
@@ -856,7 +856,7 @@ ClientId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}.
 
 ---
 
@@ -868,7 +868,7 @@ ProviderUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}.
 
 ---
 
@@ -880,7 +880,7 @@ SigningKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}.
 
 ---
 
@@ -892,7 +892,7 @@ AuthorizationEndpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}.
 
 ---
 
@@ -904,7 +904,7 @@ ResponseMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}.
 
 ---
 
@@ -916,7 +916,7 @@ ResponseType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}.
 
 ---
 
@@ -928,7 +928,7 @@ Scopes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}.
 
 ---
 
@@ -937,7 +937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3Config {
 	Connection: interface{},
@@ -950,9 +950,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	MappingId: *string,
 	Protocol: *string,
 	ProviderId: *string,
-	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.identityProtocolV3.IdentityProtocolV3AccessConfig,
+	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.identityProtocolV3.IdentityProtocolV3Metadata,
+	Metadata: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata,
 }
 ```
 
@@ -967,11 +967,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.mappingId">MappingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.providerId">ProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.mappingId">MappingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.providerId">ProviderId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.accessConfig">AccessConfig</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig">IdentityProtocolV3AccessConfig</a></code> | access_config block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.property.metadata">Metadata</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata">IdentityProtocolV3Metadata</a></code> | metadata block. |
 
 ---
@@ -1054,7 +1054,7 @@ MappingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}.
 
 ---
 
@@ -1078,7 +1078,7 @@ ProviderId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}.
 
 ---
 
@@ -1092,7 +1092,7 @@ AccessConfig IdentityProtocolV3AccessConfig
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#access_config IdentityProtocolV3#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#access_config IdentityProtocolV3#access_config}
 
 ---
 
@@ -1104,7 +1104,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1121,7 +1121,7 @@ Metadata IdentityProtocolV3Metadata
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
 
 ---
 
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3Metadata {
 	DomainId: *string,
@@ -1143,9 +1143,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.xaccountType">XaccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.domainId">DomainId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.metadata">Metadata</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.property.xaccountType">XaccountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}. |
 
 ---
 
@@ -1157,7 +1157,7 @@ DomainId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}.
 
 ---
 
@@ -1169,7 +1169,7 @@ Metadata *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}.
 
 ---
 
@@ -1181,7 +1181,7 @@ XaccountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}.
 
 ---
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3AccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityProtocolV3AccessConfigOutputReference
 ```
@@ -1645,7 +1645,7 @@ func InternalValue() IdentityProtocolV3AccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityProtocolV3MetadataOutputReference
 ```

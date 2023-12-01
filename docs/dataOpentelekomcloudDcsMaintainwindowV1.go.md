@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudDcsMaintainwindowV1 <a name="DataOpentelekomcloudDcsMaintainwindowV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1 opentelekomcloud_dcs_maintainwindow_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.NewDataOpentelekomcloudDcsMaintainwindowV1(scope Construct, id *string, config DataOpentelekomcloudDcsMaintainwindowV1Config) DataOpentelekomcloudDcsMaintainwindowV1
 ```
@@ -302,7 +302,7 @@ func ResetSeq()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsConstruct(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -391,7 +391,7 @@ The construct id used in the generated config for the DataOpentelekomcloudDcsMai
 
 The id of the existing DataOpentelekomcloudDcsMaintainwindowV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomclouddcsmaintainwindowv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsmaintainwindowv1"
 
 &dataopentelekomclouddcsmaintainwindowv1.DataOpentelekomcloudDcsMaintainwindowV1Config {
 	Connection: interface{},
@@ -708,11 +708,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.begin">Begin</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#begin DataOpentelekomcloudDcsMaintainwindowV1#begin}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.default">Default</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#default DataOpentelekomcloudDcsMaintainwindowV1#default}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#end DataOpentelekomcloudDcsMaintainwindowV1#end}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#id DataOpentelekomcloudDcsMaintainwindowV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.seq">Seq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#seq DataOpentelekomcloudDcsMaintainwindowV1#seq}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.begin">Begin</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#begin DataOpentelekomcloudDcsMaintainwindowV1#begin}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.default">Default</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#default DataOpentelekomcloudDcsMaintainwindowV1#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.end">End</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#end DataOpentelekomcloudDcsMaintainwindowV1#end}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#id DataOpentelekomcloudDcsMaintainwindowV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsMaintainwindowV1.DataOpentelekomcloudDcsMaintainwindowV1Config.property.seq">Seq</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#seq DataOpentelekomcloudDcsMaintainwindowV1#seq}. |
 
 ---
 
@@ -794,7 +794,7 @@ Begin *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#begin DataOpentelekomcloudDcsMaintainwindowV1#begin}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#begin DataOpentelekomcloudDcsMaintainwindowV1#begin}.
 
 ---
 
@@ -806,7 +806,7 @@ Default interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#default DataOpentelekomcloudDcsMaintainwindowV1#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#default DataOpentelekomcloudDcsMaintainwindowV1#default}.
 
 ---
 
@@ -818,7 +818,7 @@ End *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#end DataOpentelekomcloudDcsMaintainwindowV1#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#end DataOpentelekomcloudDcsMaintainwindowV1#end}.
 
 ---
 
@@ -830,7 +830,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#id DataOpentelekomcloudDcsMaintainwindowV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#id DataOpentelekomcloudDcsMaintainwindowV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -845,7 +845,7 @@ Seq *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/dcs_maintainwindow_v1#seq DataOpentelekomcloudDcsMaintainwindowV1#seq}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/dcs_maintainwindow_v1#seq DataOpentelekomcloudDcsMaintainwindowV1#seq}.
 
 ---
 

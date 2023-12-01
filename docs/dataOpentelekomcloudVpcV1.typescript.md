@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudVpcV1 <a name="DataOpentelekomcloudVpcV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1 opentelekomcloud_vpc_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1.Initializer"></a>
 
@@ -398,7 +398,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcV1 
 
 The id of the existing DataOpentelekomcloudVpcV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -735,12 +735,12 @@ const dataOpentelekomcloudVpcV1Config: dataOpentelekomcloudVpcV1.DataOpentelekom
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#cidr DataOpentelekomcloudVpcV1#cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#id DataOpentelekomcloudVpcV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#name DataOpentelekomcloudVpcV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#region DataOpentelekomcloudVpcV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.shared">shared</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#shared DataOpentelekomcloudVpcV1#shared}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#status DataOpentelekomcloudVpcV1#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.cidr">cidr</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#cidr DataOpentelekomcloudVpcV1#cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#id DataOpentelekomcloudVpcV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#name DataOpentelekomcloudVpcV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#region DataOpentelekomcloudVpcV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.shared">shared</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#shared DataOpentelekomcloudVpcV1#shared}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcV1.DataOpentelekomcloudVpcV1Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#status DataOpentelekomcloudVpcV1#status}. |
 
 ---
 
@@ -822,7 +822,7 @@ public readonly cidr: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#cidr DataOpentelekomcloudVpcV1#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#cidr DataOpentelekomcloudVpcV1#cidr}.
 
 ---
 
@@ -834,7 +834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#id DataOpentelekomcloudVpcV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#id DataOpentelekomcloudVpcV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#name DataOpentelekomcloudVpcV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#name DataOpentelekomcloudVpcV1#name}.
 
 ---
 
@@ -861,7 +861,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#region DataOpentelekomcloudVpcV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#region DataOpentelekomcloudVpcV1#region}.
 
 ---
 
@@ -873,7 +873,7 @@ public readonly shared: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#shared DataOpentelekomcloudVpcV1#shared}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#shared DataOpentelekomcloudVpcV1#shared}.
 
 ---
 
@@ -885,7 +885,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/vpc_v1#status DataOpentelekomcloudVpcV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/vpc_v1#status DataOpentelekomcloudVpcV1#status}.
 
 ---
 

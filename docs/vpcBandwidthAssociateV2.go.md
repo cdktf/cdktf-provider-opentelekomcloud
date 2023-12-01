@@ -4,12 +4,12 @@
 
 ### VpcBandwidthAssociateV2 <a name="VpcBandwidthAssociateV2" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2 opentelekomcloud_vpc_bandwidth_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2 opentelekomcloud_vpc_bandwidth_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 vpcbandwidthassociatev2.NewVpcBandwidthAssociateV2(scope Construct, id *string, config VpcBandwidthAssociateV2Config) VpcBandwidthAssociateV2
 ```
@@ -349,7 +349,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 vpcbandwidthassociatev2.VpcBandwidthAssociateV2_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 vpcbandwidthassociatev2.VpcBandwidthAssociateV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ vpcbandwidthassociatev2.VpcBandwidthAssociateV2_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 vpcbandwidthassociatev2.VpcBandwidthAssociateV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ vpcbandwidthassociatev2.VpcBandwidthAssociateV2_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 vpcbandwidthassociatev2.VpcBandwidthAssociateV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -438,7 +438,7 @@ The construct id used in the generated config for the VpcBandwidthAssociateV2 to
 
 The id of the existing VpcBandwidthAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vpcbandwidthassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcbandwidthassociatev2"
 
 &vpcbandwidthassociatev2.VpcBandwidthAssociateV2Config {
 	Connection: interface{},
@@ -777,11 +777,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.bandwidth">Bandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#bandwidth VpcBandwidthAssociateV2#bandwidth}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.floatingIps">FloatingIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#floating_ips VpcBandwidthAssociateV2#floating_ips}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.backupChargeMode">BackupChargeMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#backup_charge_mode VpcBandwidthAssociateV2#backup_charge_mode}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.backupSize">BackupSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#backup_size VpcBandwidthAssociateV2#backup_size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#id VpcBandwidthAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.bandwidth">Bandwidth</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#bandwidth VpcBandwidthAssociateV2#bandwidth}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.floatingIps">FloatingIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#floating_ips VpcBandwidthAssociateV2#floating_ips}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.backupChargeMode">BackupChargeMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#backup_charge_mode VpcBandwidthAssociateV2#backup_charge_mode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.backupSize">BackupSize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#backup_size VpcBandwidthAssociateV2#backup_size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcBandwidthAssociateV2.VpcBandwidthAssociateV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#id VpcBandwidthAssociateV2#id}. |
 
 ---
 
@@ -863,7 +863,7 @@ Bandwidth *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#bandwidth VpcBandwidthAssociateV2#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#bandwidth VpcBandwidthAssociateV2#bandwidth}.
 
 ---
 
@@ -875,7 +875,7 @@ FloatingIps *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#floating_ips VpcBandwidthAssociateV2#floating_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#floating_ips VpcBandwidthAssociateV2#floating_ips}.
 
 ---
 
@@ -887,7 +887,7 @@ BackupChargeMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#backup_charge_mode VpcBandwidthAssociateV2#backup_charge_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#backup_charge_mode VpcBandwidthAssociateV2#backup_charge_mode}.
 
 ---
 
@@ -899,7 +899,7 @@ BackupSize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#backup_size VpcBandwidthAssociateV2#backup_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#backup_size VpcBandwidthAssociateV2#backup_size}.
 
 ---
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/vpc_bandwidth_associate_v2#id VpcBandwidthAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vpc_bandwidth_associate_v2#id VpcBandwidthAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

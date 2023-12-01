@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudIdentityAuthScopeV3 <a name="DataOpentelekomcloudIdentityAuthScopeV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3 opentelekomcloud_identity_auth_scope_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}.
 
 ---
 
@@ -491,7 +491,7 @@ The construct id used in the generated config for the DataOpentelekomcloudIdenti
 
 The id of the existing DataOpentelekomcloudIdentityAuthScopeV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -883,9 +883,9 @@ dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3C
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}. |
 
 ---
 
@@ -967,7 +967,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#name DataOpentelekomcloudIdentityAuthScopeV3#name}.
 
 ---
 
@@ -979,7 +979,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#id DataOpentelekomcloudIdentityAuthScopeV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/identity_auth_scope_v3#region DataOpentelekomcloudIdentityAuthScopeV3#region}.
 
 ---
 
