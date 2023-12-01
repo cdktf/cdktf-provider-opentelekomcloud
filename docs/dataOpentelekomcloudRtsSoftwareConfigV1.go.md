@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudRtsSoftwareConfigV1 <a name="DataOpentelekomcloudRtsSoftwareConfigV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1 opentelekomcloud_rts_software_config_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1.Initializer"></a>
 
@@ -377,7 +377,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRtsSof
 
 The id of the existing DataOpentelekomcloudRtsSoftwareConfigV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -703,9 +703,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRtsSoftwareConfigV1.DataOpentelekomcloudRtsSoftwareConfigV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}. |
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#id DataOpentelekomcloudRtsSoftwareConfigV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -802,7 +802,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#name DataOpentelekomcloudRtsSoftwareConfigV1#name}.
 
 ---
 
@@ -814,7 +814,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/rts_software_config_v1#region DataOpentelekomcloudRtsSoftwareConfigV1#region}.
 
 ---
 

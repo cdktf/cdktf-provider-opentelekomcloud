@@ -4,7 +4,7 @@
 
 ### IdentityUserGroupMembershipV3 <a name="IdentityUserGroupMembershipV3" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.Initializer"></a>
 
@@ -424,7 +424,7 @@ The construct id used in the generated config for the IdentityUserGroupMembershi
 
 The id of the existing IdentityUserGroupMembershipV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -706,9 +706,9 @@ const identityUserGroupMembershipV3Config: identityUserGroupMembershipV3.Identit
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.groups">groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.groups">groups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}. |
 
 ---
 
@@ -790,7 +790,7 @@ public readonly groups: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}.
 
 ---
 
@@ -802,7 +802,7 @@ public readonly user: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}.
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.12/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
