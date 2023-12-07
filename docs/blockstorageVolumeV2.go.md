@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2(scope Construct, id *string, config BlockstorageVolumeV2Config) BlockstorageVolumeV2
 ```
@@ -496,7 +496,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1181,7 +1181,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Attachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Attachment {
 
@@ -1194,7 +1194,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blo
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Config {
 	Connection: interface{},
@@ -1219,7 +1219,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blo
 	SourceReplica: *string,
 	SourceVolId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts,
 	VolumeType: *string,
 }
 ```
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Timeouts {
 	Create: *string,
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2AttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BlockstorageVolumeV2AttachmentList
 ```
@@ -1719,7 +1719,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2AttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BlockstorageVolumeV2AttachmentOutputReference
 ```
@@ -2019,7 +2019,7 @@ func InternalValue() BlockstorageVolumeV2Attachment
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BlockstorageVolumeV2TimeoutsOutputReference
 ```
