@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1(scope Construct, id *string, config RdsInstanceV1Config) RdsInstanceV1
 ```
@@ -518,7 +518,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.RdsInstanceV1_IsConstruct(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.RdsInstanceV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ rdsinstancev1.RdsInstanceV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.RdsInstanceV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -578,7 +578,7 @@ rdsinstancev1.RdsInstanceV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.RdsInstanceV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1214,7 +1214,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Backupstrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Backupstrategy {
 	Keepdays: *f64,
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Config {
 	Connection: interface{},
@@ -1271,21 +1271,21 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rds
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Availabilityzone: *string,
-	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Datastore,
+	Datastore: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Datastore,
 	Dbrtpd: *string,
 	Flavorref: *string,
-	Nics: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Nics,
-	Securitygroup: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Securitygroup,
-	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Volume,
+	Nics: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Nics,
+	Securitygroup: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Securitygroup,
+	Volume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Volume,
 	Vpc: *string,
-	Backupstrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Backupstrategy,
+	Backupstrategy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Backupstrategy,
 	Dbport: *string,
-	Ha: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Ha,
+	Ha: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Ha,
 	Id: *string,
 	Name: *string,
 	Region: *string,
 	Tag: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rdsInstanceV1.RdsInstanceV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.rdsInstanceV1.RdsInstanceV1Timeouts,
 }
 ```
 
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Datastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Datastore {
 	Type: *string,
@@ -1649,7 +1649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Ha.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Ha {
 	Enable: interface{},
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Nics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Nics {
 	Subnetid: *string,
@@ -1727,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Securitygroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Securitygroup {
 	Id: *string,
@@ -1762,7 +1762,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Timeouts {
 	Create: *string,
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1Volume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 &rdsinstancev1.RdsInstanceV1Volume {
 	Size: *f64,
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1BackupstrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1BackupstrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1BackupstrategyOutputReference
 ```
@@ -2163,7 +2163,7 @@ func InternalValue() RdsInstanceV1Backupstrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1DatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1DatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1DatastoreOutputReference
 ```
@@ -2456,7 +2456,7 @@ func InternalValue() RdsInstanceV1Datastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1HaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1HaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1HaOutputReference
 ```
@@ -2763,7 +2763,7 @@ func InternalValue() RdsInstanceV1Ha
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1NicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1NicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1NicsOutputReference
 ```
@@ -3034,7 +3034,7 @@ func InternalValue() RdsInstanceV1Nics
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1SecuritygroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1SecuritygroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1SecuritygroupOutputReference
 ```
@@ -3305,7 +3305,7 @@ func InternalValue() RdsInstanceV1Securitygroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1TimeoutsOutputReference
 ```
@@ -3612,7 +3612,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsInstanceV1.RdsInstanceV1VolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rdsinstancev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/rdsinstancev1"
 
 rdsinstancev1.NewRdsInstanceV1VolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RdsInstanceV1VolumeOutputReference
 ```
