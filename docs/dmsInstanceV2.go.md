@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.NewDmsInstanceV2(scope Construct, id *string, config DmsInstanceV2Config) DmsInstanceV2
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.DmsInstanceV2_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.DmsInstanceV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ dmsinstancev2.DmsInstanceV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.DmsInstanceV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ dmsinstancev2.DmsInstanceV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.DmsInstanceV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1566,7 +1566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 &dmsinstancev2.DmsInstanceV2Config {
 	Connection: interface{},
@@ -1601,7 +1601,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	RetentionPolicy: *string,
 	Specification: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.dmsInstanceV2.DmsInstanceV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dmsInstanceV2.DmsInstanceV2Timeouts,
 }
 ```
 
@@ -2037,7 +2037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 &dmsinstancev2.DmsInstanceV2Timeouts {
 	Create: *string,
@@ -2099,7 +2099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsInstanceV2.DmsInstanceV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dmsinstancev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dmsinstancev2"
 
 dmsinstancev2.NewDmsInstanceV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DmsInstanceV2TimeoutsOutputReference
 ```
