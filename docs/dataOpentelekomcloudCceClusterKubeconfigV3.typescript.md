@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudCceClusterKubeconfigV3 <a name="DataOpentelekomcloudCceClusterKubeconfigV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3 opentelekomcloud_cce_cluster_kubeconfig_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.Initializer"></a>
 
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.resetDuration">resetDuration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.resetExpiryDate">resetExpiryDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.resetId">resetId</a></code> | *No description.* |
 
 ---
@@ -261,6 +262,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetDuration(): void
 ```
 
+##### `resetExpiryDate` <a name="resetExpiryDate" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.resetExpiryDate"></a>
+
+```typescript
+public resetExpiryDate(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.resetId"></a>
 
 ```typescript
@@ -370,7 +377,7 @@ The construct id used in the generated config for the DataOpentelekomcloudCceClu
 
 The id of the existing DataOpentelekomcloudCceClusterKubeconfigV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -401,9 +408,11 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.kubeconfig">kubeconfig</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.clusterIdInput">clusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.durationInput">durationInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.expiryDateInput">expiryDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.clusterId">clusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.duration">duration</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.expiryDate">expiryDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.id">id</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -560,6 +569,16 @@ public readonly durationInput: number;
 
 ---
 
+##### `expiryDateInput`<sup>Optional</sup> <a name="expiryDateInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.expiryDateInput"></a>
+
+```typescript
+public readonly expiryDateInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.idInput"></a>
 
 ```typescript
@@ -587,6 +606,16 @@ public readonly duration: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `expiryDate`<sup>Required</sup> <a name="expiryDate" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3.property.expiryDate"></a>
+
+```typescript
+public readonly expiryDate: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -641,9 +670,10 @@ const dataOpentelekomcloudCceClusterKubeconfigV3Config: dataOpentelekomcloudCceC
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.duration">duration</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.expiryDate">expiryDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#expiry_date DataOpentelekomcloudCceClusterKubeconfigV3#expiry_date}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}. |
 
 ---
 
@@ -725,7 +755,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#cluster_id DataOpentelekomcloudCceClusterKubeconfigV3#cluster_id}.
 
 ---
 
@@ -737,7 +767,19 @@ public readonly duration: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#duration DataOpentelekomcloudCceClusterKubeconfigV3#duration}.
+
+---
+
+##### `expiryDate`<sup>Optional</sup> <a name="expiryDate" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCceClusterKubeconfigV3.DataOpentelekomcloudCceClusterKubeconfigV3Config.property.expiryDate"></a>
+
+```typescript
+public readonly expiryDate: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#expiry_date DataOpentelekomcloudCceClusterKubeconfigV3#expiry_date}.
 
 ---
 
@@ -749,7 +791,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/data-sources/cce_cluster_kubeconfig_v3#id DataOpentelekomcloudCceClusterKubeconfigV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### IdentityUserGroupMembershipV3 <a name="IdentityUserGroupMembershipV3" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3 opentelekomcloud_identity_user_group_membership_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.NewIdentityUserGroupMembershipV3(scope Construct, id *string, config IdentityUserGroupMembershipV3Config) IdentityUserGroupMembershipV3
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ identityusergroupmembershipv3.IdentityUserGroupMembershipV3_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 identityusergroupmembershipv3.IdentityUserGroupMembershipV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the IdentityUserGroupMembershi
 
 The id of the existing IdentityUserGroupMembershipV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/identityusergroupmembershipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityusergroupmembershipv3"
 
 &identityusergroupmembershipv3.IdentityUserGroupMembershipV3Config {
 	Connection: interface{},
@@ -760,9 +760,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.groups">Groups</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.user">User</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityUserGroupMembershipV3.IdentityUserGroupMembershipV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}. |
 
 ---
 
@@ -844,7 +844,7 @@ Groups *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#groups IdentityUserGroupMembershipV3#groups}.
 
 ---
 
@@ -856,7 +856,7 @@ User *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#user IdentityUserGroupMembershipV3#user}.
 
 ---
 
@@ -868,7 +868,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/identity_user_group_membership_v3#id IdentityUserGroupMembershipV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,12 +4,12 @@
 
 ### WafDedicatedKnownAttackSourceRuleV1 <a name="WafDedicatedKnownAttackSourceRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1 opentelekomcloud_waf_dedicated_known_attack_source_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.NewWafDedicatedKnownAttackSourceRuleV1(scope Construct, id *string, config WafDedicatedKnownAttackSourceRuleV1Config) WafDedicatedKnownAttackSourceRuleV1
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the WafDedicatedKnownAttackSou
 
 The id of the existing WafDedicatedKnownAttackSourceRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 &wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1Config {
 	Connection: interface{},
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	PolicyId: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts,
 }
 ```
 
@@ -867,11 +867,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.blockTime">BlockTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#block_time WafDedicatedKnownAttackSourceRuleV1#block_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#category WafDedicatedKnownAttackSourceRuleV1#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#policy_id WafDedicatedKnownAttackSourceRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#description WafDedicatedKnownAttackSourceRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#id WafDedicatedKnownAttackSourceRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.blockTime">BlockTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#block_time WafDedicatedKnownAttackSourceRuleV1#block_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#category WafDedicatedKnownAttackSourceRuleV1#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#policy_id WafDedicatedKnownAttackSourceRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#description WafDedicatedKnownAttackSourceRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#id WafDedicatedKnownAttackSourceRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts">WafDedicatedKnownAttackSourceRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +954,7 @@ BlockTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#block_time WafDedicatedKnownAttackSourceRuleV1#block_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#block_time WafDedicatedKnownAttackSourceRuleV1#block_time}.
 
 ---
 
@@ -966,7 +966,7 @@ Category *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#category WafDedicatedKnownAttackSourceRuleV1#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#category WafDedicatedKnownAttackSourceRuleV1#category}.
 
 ---
 
@@ -978,7 +978,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#policy_id WafDedicatedKnownAttackSourceRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#policy_id WafDedicatedKnownAttackSourceRuleV1#policy_id}.
 
 ---
 
@@ -990,7 +990,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#description WafDedicatedKnownAttackSourceRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#description WafDedicatedKnownAttackSourceRuleV1#description}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#id WafDedicatedKnownAttackSourceRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#id WafDedicatedKnownAttackSourceRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ Timeouts WafDedicatedKnownAttackSourceRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#timeouts WafDedicatedKnownAttackSourceRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#timeouts WafDedicatedKnownAttackSourceRuleV1#timeouts}
 
 ---
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 &wafdedicatedknownattacksourcerulev1.WafDedicatedKnownAttackSourceRuleV1Timeouts {
 	Create: *string,
@@ -1041,9 +1041,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#create WafDedicatedKnownAttackSourceRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#delete WafDedicatedKnownAttackSourceRuleV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#update WafDedicatedKnownAttackSourceRuleV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#create WafDedicatedKnownAttackSourceRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#delete WafDedicatedKnownAttackSourceRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#update WafDedicatedKnownAttackSourceRuleV1#update}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#create WafDedicatedKnownAttackSourceRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#create WafDedicatedKnownAttackSourceRuleV1#create}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#delete WafDedicatedKnownAttackSourceRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#delete WafDedicatedKnownAttackSourceRuleV1#delete}.
 
 ---
 
@@ -1079,7 +1079,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/waf_dedicated_known_attack_source_rule_v1#update WafDedicatedKnownAttackSourceRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/waf_dedicated_known_attack_source_rule_v1#update WafDedicatedKnownAttackSourceRuleV1#update}.
 
 ---
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedKnownAttackSourceRuleV1.WafDedicatedKnownAttackSourceRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedknownattacksourcerulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedknownattacksourcerulev1"
 
 wafdedicatedknownattacksourcerulev1.NewWafDedicatedKnownAttackSourceRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedKnownAttackSourceRuleV1TimeoutsOutputReference
 ```

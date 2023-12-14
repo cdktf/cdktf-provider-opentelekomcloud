@@ -4,12 +4,12 @@
 
 ### VbsBackupV2 <a name="VbsBackupV2" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2 opentelekomcloud_vbs_backup_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2 opentelekomcloud_vbs_backup_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.NewVbsBackupV2(scope Construct, id *string, config VbsBackupV2Config) VbsBackupV2
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.VbsBackupV2_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.VbsBackupV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ vbsbackupv2.VbsBackupV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.VbsBackupV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ vbsbackupv2.VbsBackupV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.VbsBackupV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the VbsBackupV2 to import.
 
 The id of the existing VbsBackupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,7 +959,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 &vbsbackupv2.VbsBackupV2Config {
 	Connection: interface{},
@@ -976,7 +976,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Region: *string,
 	SnapshotId: *string,
 	Tags: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.vbsBackupV2.VbsBackupV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts,
 }
 ```
 
@@ -991,12 +991,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#name VbsBackupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#volume_id VbsBackupV2#volume_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#description VbsBackupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#id VbsBackupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#region VbsBackupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#snapshot_id VbsBackupV2#snapshot_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#name VbsBackupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#volume_id VbsBackupV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#description VbsBackupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#id VbsBackupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#region VbsBackupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.snapshotId">SnapshotId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#snapshot_id VbsBackupV2#snapshot_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.tags">Tags</a></code> | <code>interface{}</code> | tags block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts">VbsBackupV2Timeouts</a></code> | timeouts block. |
 
@@ -1080,7 +1080,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#name VbsBackupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#name VbsBackupV2#name}.
 
 ---
 
@@ -1092,7 +1092,7 @@ VolumeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#volume_id VbsBackupV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#volume_id VbsBackupV2#volume_id}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#description VbsBackupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#description VbsBackupV2#description}.
 
 ---
 
@@ -1116,7 +1116,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#id VbsBackupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#id VbsBackupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#region VbsBackupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#region VbsBackupV2#region}.
 
 ---
 
@@ -1143,7 +1143,7 @@ SnapshotId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#snapshot_id VbsBackupV2#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#snapshot_id VbsBackupV2#snapshot_id}.
 
 ---
 
@@ -1157,7 +1157,7 @@ Tags interface{}
 
 tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#tags VbsBackupV2#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#tags VbsBackupV2#tags}
 
 ---
 
@@ -1171,7 +1171,7 @@ Timeouts VbsBackupV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#timeouts VbsBackupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#timeouts VbsBackupV2#timeouts}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 &vbsbackupv2.VbsBackupV2Tags {
 	Key: *string,
@@ -1192,8 +1192,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#key VbsBackupV2#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#value VbsBackupV2#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#key VbsBackupV2#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Tags.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#value VbsBackupV2#value}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#key VbsBackupV2#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#key VbsBackupV2#key}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#value VbsBackupV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#value VbsBackupV2#value}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 &vbsbackupv2.VbsBackupV2Timeouts {
 	Create: *string,
@@ -1238,8 +1238,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#create VbsBackupV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#delete VbsBackupV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#create VbsBackupV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#delete VbsBackupV2#delete}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#create VbsBackupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#create VbsBackupV2#create}.
 
 ---
 
@@ -1263,7 +1263,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/vbs_backup_v2#delete VbsBackupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/vbs_backup_v2#delete VbsBackupV2#delete}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.NewVbsBackupV2TagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VbsBackupV2TagsList
 ```
@@ -1417,7 +1417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.NewVbsBackupV2TagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VbsBackupV2TagsOutputReference
 ```
@@ -1728,7 +1728,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupV2.VbsBackupV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/vbsbackupv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vbsbackupv2"
 
 vbsbackupv2.NewVbsBackupV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VbsBackupV2TimeoutsOutputReference
 ```

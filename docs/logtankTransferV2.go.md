@@ -4,12 +4,12 @@
 
 ### LogtankTransferV2 <a name="LogtankTransferV2" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2 opentelekomcloud_logtank_transfer_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2 opentelekomcloud_logtank_transfer_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 logtanktransferv2.NewLogtankTransferV2(scope Construct, id *string, config LogtankTransferV2Config) LogtankTransferV2
 ```
@@ -399,7 +399,7 @@ func ResetSwitchOn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 logtanktransferv2.LogtankTransferV2_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 logtanktransferv2.LogtankTransferV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ logtanktransferv2.LogtankTransferV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 logtanktransferv2.LogtankTransferV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ logtanktransferv2.LogtankTransferV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 logtanktransferv2.LogtankTransferV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the LogtankTransferV2 to impor
 
 The id of the existing LogtankTransferV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/logtanktransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/logtanktransferv2"
 
 &logtanktransferv2.LogtankTransferV2Config {
 	Connection: interface{},
@@ -1019,16 +1019,16 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#log_group_id LogtankTransferV2#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.logStreamIds">LogStreamIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#log_stream_ids LogtankTransferV2#log_stream_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.obsBucketName">ObsBucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#obs_bucket_name LogtankTransferV2#obs_bucket_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.period">Period</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#period LogtankTransferV2#period}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.periodUnit">PeriodUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#period_unit LogtankTransferV2#period_unit}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.storageFormat">StorageFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#storage_format LogtankTransferV2#storage_format}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.dirPrefixName">DirPrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#dir_prefix_name LogtankTransferV2#dir_prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#id LogtankTransferV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.prefixName">PrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#prefix_name LogtankTransferV2#prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.switchOn">SwitchOn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#switch_on LogtankTransferV2#switch_on}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#log_group_id LogtankTransferV2#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.logStreamIds">LogStreamIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#log_stream_ids LogtankTransferV2#log_stream_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.obsBucketName">ObsBucketName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#obs_bucket_name LogtankTransferV2#obs_bucket_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.period">Period</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#period LogtankTransferV2#period}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.periodUnit">PeriodUnit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#period_unit LogtankTransferV2#period_unit}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.storageFormat">StorageFormat</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#storage_format LogtankTransferV2#storage_format}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.dirPrefixName">DirPrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#dir_prefix_name LogtankTransferV2#dir_prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#id LogtankTransferV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.prefixName">PrefixName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#prefix_name LogtankTransferV2#prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTransferV2.LogtankTransferV2Config.property.switchOn">SwitchOn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#switch_on LogtankTransferV2#switch_on}. |
 
 ---
 
@@ -1110,7 +1110,7 @@ LogGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#log_group_id LogtankTransferV2#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#log_group_id LogtankTransferV2#log_group_id}.
 
 ---
 
@@ -1122,7 +1122,7 @@ LogStreamIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#log_stream_ids LogtankTransferV2#log_stream_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#log_stream_ids LogtankTransferV2#log_stream_ids}.
 
 ---
 
@@ -1134,7 +1134,7 @@ ObsBucketName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#obs_bucket_name LogtankTransferV2#obs_bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#obs_bucket_name LogtankTransferV2#obs_bucket_name}.
 
 ---
 
@@ -1146,7 +1146,7 @@ Period *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#period LogtankTransferV2#period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#period LogtankTransferV2#period}.
 
 ---
 
@@ -1158,7 +1158,7 @@ PeriodUnit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#period_unit LogtankTransferV2#period_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#period_unit LogtankTransferV2#period_unit}.
 
 ---
 
@@ -1170,7 +1170,7 @@ StorageFormat *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#storage_format LogtankTransferV2#storage_format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#storage_format LogtankTransferV2#storage_format}.
 
 ---
 
@@ -1182,7 +1182,7 @@ DirPrefixName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#dir_prefix_name LogtankTransferV2#dir_prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#dir_prefix_name LogtankTransferV2#dir_prefix_name}.
 
 ---
 
@@ -1194,7 +1194,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#id LogtankTransferV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#id LogtankTransferV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1209,7 +1209,7 @@ PrefixName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#prefix_name LogtankTransferV2#prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#prefix_name LogtankTransferV2#prefix_name}.
 
 ---
 
@@ -1221,7 +1221,7 @@ SwitchOn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/logtank_transfer_v2#switch_on LogtankTransferV2#switch_on}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/logtank_transfer_v2#switch_on LogtankTransferV2#switch_on}.
 
 ---
 

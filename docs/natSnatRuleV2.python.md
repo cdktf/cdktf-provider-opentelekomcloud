@@ -4,7 +4,7 @@
 
 ### NatSnatRuleV2 <a name="NatSnatRuleV2" id="@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2 opentelekomcloud_nat_snat_rule_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2 opentelekomcloud_nat_snat_rule_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer"></a>
 
@@ -43,13 +43,13 @@ natSnatRuleV2.NatSnatRuleV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.floatingIpId">floating_ip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.networkId">network_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.sourceType">source_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.floatingIpId">floating_ip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.networkId">network_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.sourceType">source_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts">NatSnatRuleV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}.
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
 
 ---
 
@@ -551,7 +551,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}.
 
 ---
 
@@ -559,7 +559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}.
 
 ---
 
@@ -713,7 +713,7 @@ The construct id used in the generated config for the NatSnatRuleV2 to import.
 
 The id of the existing NatSnatRuleV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1121,13 +1121,13 @@ natSnatRuleV2.NatSnatRuleV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.floatingIpId">floating_ip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.networkId">network_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.sourceType">source_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.floatingIpId">floating_ip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.natGatewayId">nat_gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.cidr">cidr</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.networkId">network_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.sourceType">source_type</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts">NatSnatRuleV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1210,7 +1210,7 @@ floating_ip_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#floating_ip_id NatSnatRuleV2#floating_ip_id}.
 
 ---
 
@@ -1222,7 +1222,7 @@ nat_gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#nat_gateway_id NatSnatRuleV2#nat_gateway_id}.
 
 ---
 
@@ -1234,7 +1234,7 @@ cidr: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#cidr NatSnatRuleV2#cidr}.
 
 ---
 
@@ -1246,7 +1246,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#id NatSnatRuleV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1261,7 +1261,7 @@ network_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#network_id NatSnatRuleV2#network_id}.
 
 ---
 
@@ -1273,7 +1273,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#region NatSnatRuleV2#region}.
 
 ---
 
@@ -1285,7 +1285,7 @@ source_type: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#source_type NatSnatRuleV2#source_type}.
 
 ---
 
@@ -1299,7 +1299,7 @@ timeouts: NatSnatRuleV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#timeouts NatSnatRuleV2#timeouts}
 
 ---
 
@@ -1320,8 +1320,8 @@ natSnatRuleV2.NatSnatRuleV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.natSnatRuleV2.NatSnatRuleV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}. |
 
 ---
 
@@ -1333,7 +1333,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#create NatSnatRuleV2#create}.
 
 ---
 
@@ -1345,7 +1345,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.13/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.14/docs/resources/nat_snat_rule_v2#delete NatSnatRuleV2#delete}.
 
 ---
 
