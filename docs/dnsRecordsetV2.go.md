@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.NewDnsRecordsetV2(scope Construct, id *string, config DnsRecordsetV2Config) DnsRecordsetV2
 ```
@@ -433,7 +433,7 @@ func ResetValueSpecs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.DnsRecordsetV2_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.DnsRecordsetV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ dnsrecordsetv2.DnsRecordsetV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.DnsRecordsetV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ dnsrecordsetv2.DnsRecordsetV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.DnsRecordsetV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -975,7 +975,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 &dnsrecordsetv2.DnsRecordsetV2Config {
 	Connection: interface{},
@@ -993,7 +993,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dns
 	Id: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.dnsRecordsetV2.DnsRecordsetV2Timeouts,
 	Ttl: *f64,
 	ValueSpecs: *map[string]*string,
 }
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 &dnsrecordsetv2.DnsRecordsetV2Timeouts {
 	Create: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dnsrecordsetv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dnsrecordsetv2"
 
 dnsrecordsetv2.NewDnsRecordsetV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsRecordsetV2TimeoutsOutputReference
 ```
