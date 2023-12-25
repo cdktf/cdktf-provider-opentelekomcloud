@@ -1,6 +1,9 @@
-# Submodules <a name="Submodules" id="submodules"></a>
+# API Reference <a name="API Reference" id="api-reference"></a>
+
+## Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+
 - [antiddosV1](./antiddosV1.typescript.md)
 - [asConfigurationV1](./asConfigurationV1.typescript.md)
 - [asGroupV1](./asGroupV1.typescript.md)
@@ -277,3 +280,8 @@ The following submodules are available:
 - [wafPreciseprotectionRuleV1](./wafPreciseprotectionRuleV1.typescript.md)
 - [wafWebtamperprotectionRuleV1](./wafWebtamperprotectionRuleV1.typescript.md)
 - [wafWhiteblackipRuleV1](./wafWhiteblackipRuleV1.typescript.md)
+
+
+
+
+
