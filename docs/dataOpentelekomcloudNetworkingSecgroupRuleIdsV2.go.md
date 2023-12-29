@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.NewDataOpentelekomcloudNetworkingSecgroupRuleIdsV2(scope Construct, id *string, config DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config) DataOpentelekomcloudNetworkingSecgroupRuleIdsV2
 ```
@@ -281,7 +281,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +313,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +327,7 @@ dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +625,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingSecgroupRuleIdsV2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingsecgroupruleidsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingsecgroupruleidsv2"
 
 &dataopentelekomcloudnetworkingsecgroupruleidsv2.DataOpentelekomcloudNetworkingSecgroupRuleIdsV2Config {
 	Connection: interface{},
