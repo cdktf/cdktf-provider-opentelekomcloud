@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1(scope Construct, id *string, config DwsClusterV1Config) DwsClusterV1
 ```
@@ -486,7 +486,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.DwsClusterV1_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.DwsClusterV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ dwsclusterv1.DwsClusterV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.DwsClusterV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ dwsclusterv1.DwsClusterV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.DwsClusterV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1237,7 +1237,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 &dwsclusterv1.DwsClusterV1Config {
 	Connection: interface{},
@@ -1262,8 +1262,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	NumberOfCn: *f64,
 	Port: *f64,
 	PublicEndpoints: interface{},
-	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.dwsClusterV1.DwsClusterV1PublicIp,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.dwsClusterV1.DwsClusterV1Timeouts,
+	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dwsClusterV1.DwsClusterV1PublicIp,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dwsClusterV1.DwsClusterV1Timeouts,
 }
 ```
 
@@ -1588,7 +1588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1Endpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 &dwsclusterv1.DwsClusterV1Endpoints {
 
@@ -1601,7 +1601,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1PublicEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 &dwsclusterv1.DwsClusterV1PublicEndpoints {
 
@@ -1614,7 +1614,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1PublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 &dwsclusterv1.DwsClusterV1PublicIp {
 	EipId: *string,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 &dwsclusterv1.DwsClusterV1Timeouts {
 	Create: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1EndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1EndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DwsClusterV1EndpointsList
 ```
@@ -1865,7 +1865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1EndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1EndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DwsClusterV1EndpointsOutputReference
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1PublicEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1PublicEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DwsClusterV1PublicEndpointsList
 ```
@@ -2297,7 +2297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1PublicEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1PublicEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DwsClusterV1PublicEndpointsOutputReference
 ```
@@ -2586,7 +2586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1PublicIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1PublicIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DwsClusterV1PublicIpOutputReference
 ```
@@ -2893,7 +2893,7 @@ func InternalValue() DwsClusterV1PublicIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dwsClusterV1.DwsClusterV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dwsclusterv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dwsclusterv1"
 
 dwsclusterv1.NewDwsClusterV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DwsClusterV1TimeoutsOutputReference
 ```
