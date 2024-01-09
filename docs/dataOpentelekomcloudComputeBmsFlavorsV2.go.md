@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 dataopentelekomcloudcomputebmsflavorsv2.NewDataOpentelekomcloudComputeBmsFlavorsV2(scope Construct, id *string, config DataOpentelekomcloudComputeBmsFlavorsV2Config) DataOpentelekomcloudComputeBmsFlavorsV2
 ```
@@ -316,7 +316,7 @@ func ResetSortKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeBmsFlavorsV2.DataOpentelekomcloudComputeBmsFlavorsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudcomputebmsflavorsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputebmsflavorsv2"
 
 &dataopentelekomcloudcomputebmsflavorsv2.DataOpentelekomcloudComputeBmsFlavorsV2Config {
 	Connection: interface{},
