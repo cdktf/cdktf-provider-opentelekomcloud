@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3(scope Construct, id *string, config CceClusterV3Config) CceClusterV3
 ```
@@ -621,7 +621,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.CceClusterV3_IsConstruct(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.CceClusterV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ cceclusterv3.CceClusterV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.CceClusterV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ cceclusterv3.CceClusterV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.CceClusterV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1845,7 +1845,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3AuthenticatingProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 &cceclusterv3.CceClusterV3AuthenticatingProxy {
 	Ca: *string,
@@ -1905,7 +1905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 &cceclusterv3.CceClusterV3CertificateClusters {
 
@@ -1918,7 +1918,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cce
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 &cceclusterv3.CceClusterV3CertificateUsers {
 
@@ -1931,7 +1931,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cce
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 &cceclusterv3.CceClusterV3Config {
 	Connection: interface{},
@@ -1948,7 +1948,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cce
 	SubnetId: *string,
 	VpcId: *string,
 	Annotations: *map[string]*string,
-	AuthenticatingProxy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceClusterV3.CceClusterV3AuthenticatingProxy,
+	AuthenticatingProxy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceClusterV3.CceClusterV3AuthenticatingProxy,
 	AuthenticatingProxyCa: *string,
 	AuthenticationMode: *string,
 	BillingMode: *f64,
@@ -1978,7 +1978,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cce
 	MultiAz: interface{},
 	NoAddons: interface{},
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceClusterV3.CceClusterV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceClusterV3.CceClusterV3Timeouts,
 }
 ```
 
@@ -2572,7 +2572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 &cceclusterv3.CceClusterV3Timeouts {
 	Create: *string,
@@ -2620,7 +2620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3AuthenticatingProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3AuthenticatingProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceClusterV3AuthenticatingProxyOutputReference
 ```
@@ -2935,7 +2935,7 @@ func InternalValue() CceClusterV3AuthenticatingProxy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3CertificateClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceClusterV3CertificateClustersList
 ```
@@ -3067,7 +3067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3CertificateClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceClusterV3CertificateClustersOutputReference
 ```
@@ -3367,7 +3367,7 @@ func InternalValue() CceClusterV3CertificateClusters
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3CertificateUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceClusterV3CertificateUsersList
 ```
@@ -3499,7 +3499,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3CertificateUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3CertificateUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceClusterV3CertificateUsersOutputReference
 ```
@@ -3799,7 +3799,7 @@ func InternalValue() CceClusterV3CertificateUsers
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceClusterV3.CceClusterV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cceclusterv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/cceclusterv3"
 
 cceclusterv3.NewCceClusterV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceClusterV3TimeoutsOutputReference
 ```
