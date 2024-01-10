@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.NewDataOpentelekomcloudSfsTurboShareV1(scope Construct, id *string, config DataOpentelekomcloudSfsTurboShareV1Config) DataOpentelekomcloudSfsTurboShareV1
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -717,7 +726,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudsfsturbosharev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudsfsturbosharev1"
 
 &dataopentelekomcloudsfsturbosharev1.DataOpentelekomcloudSfsTurboShareV1Config {
 	Connection: interface{},

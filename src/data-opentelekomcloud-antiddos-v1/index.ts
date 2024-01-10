@@ -262,4 +262,42 @@ export class DataOpentelekomcloudAntiddosV1 extends cdktf.TerraformDataSource {
       status: cdktf.stringToTerraform(this._status),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      floating_ip_address: {
+        value: cdktf.stringToHclTerraform(this._floatingIpAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      floating_ip_id: {
+        value: cdktf.stringToHclTerraform(this._floatingIpId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

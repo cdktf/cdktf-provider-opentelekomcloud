@@ -86,6 +86,43 @@ export function vpcEipV1BandwidthToTerraform(struct?: VpcEipV1BandwidthOutputRef
   }
 }
 
+
+export function vpcEipV1BandwidthToHclTerraform(struct?: VpcEipV1BandwidthOutputReference | VpcEipV1Bandwidth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    charge_mode: {
+      value: cdktf.stringToHclTerraform(struct!.chargeMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    share_type: {
+      value: cdktf.stringToHclTerraform(struct!.shareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpcEipV1BandwidthOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -223,6 +260,43 @@ export function vpcEipV1PublicipToTerraform(struct?: VpcEipV1PublicipOutputRefer
   }
 }
 
+
+export function vpcEipV1PublicipToHclTerraform(struct?: VpcEipV1PublicipOutputReference | VpcEipV1Publicip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_address: {
+      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port_id: {
+      value: cdktf.stringToHclTerraform(struct!.portId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpcEipV1PublicipOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -354,6 +428,31 @@ export function vpcEipV1TimeoutsToTerraform(struct?: VpcEipV1Timeouts | cdktf.IR
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function vpcEipV1TimeoutsToHclTerraform(struct?: VpcEipV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcEipV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -639,5 +738,61 @@ export class VpcEipV1 extends cdktf.TerraformResource {
       publicip: vpcEipV1PublicipToTerraform(this._publicip.internalValue),
       timeouts: vpcEipV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      unbind_port: {
+        value: cdktf.booleanToHclTerraform(this._unbindPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      value_specs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._valueSpecs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      bandwidth: {
+        value: vpcEipV1BandwidthToHclTerraform(this._bandwidth.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpcEipV1BandwidthList",
+      },
+      publicip: {
+        value: vpcEipV1PublicipToHclTerraform(this._publicip.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpcEipV1PublicipList",
+      },
+      timeouts: {
+        value: vpcEipV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcEipV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

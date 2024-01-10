@@ -94,6 +94,31 @@ export function vpnaasIkePolicyV2LifetimeToTerraform(struct?: VpnaasIkePolicyV2L
   }
 }
 
+
+export function vpnaasIkePolicyV2LifetimeToHclTerraform(struct?: VpnaasIkePolicyV2Lifetime | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    units: {
+      value: cdktf.stringToHclTerraform(struct!.units),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpnaasIkePolicyV2LifetimeOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -211,6 +236,25 @@ export function vpnaasIkePolicyV2TimeoutsToTerraform(struct?: VpnaasIkePolicyV2T
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function vpnaasIkePolicyV2TimeoutsToHclTerraform(struct?: VpnaasIkePolicyV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpnaasIkePolicyV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -570,5 +614,91 @@ export class VpnaasIkePolicyV2 extends cdktf.TerraformResource {
       lifetime: cdktf.listMapper(vpnaasIkePolicyV2LifetimeToTerraform, true)(this._lifetime.internalValue),
       timeouts: vpnaasIkePolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_algorithm: {
+        value: cdktf.stringToHclTerraform(this._authAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_algorithm: {
+        value: cdktf.stringToHclTerraform(this._encryptionAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ike_version: {
+        value: cdktf.stringToHclTerraform(this._ikeVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pfs: {
+        value: cdktf.stringToHclTerraform(this._pfs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      phase1_negotiation_mode: {
+        value: cdktf.stringToHclTerraform(this._phase1NegotiationMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_specs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._valueSpecs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      lifetime: {
+        value: cdktf.listMapperHcl(vpnaasIkePolicyV2LifetimeToHclTerraform, true)(this._lifetime.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VpnaasIkePolicyV2LifetimeList",
+      },
+      timeouts: {
+        value: vpnaasIkePolicyV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpnaasIkePolicyV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

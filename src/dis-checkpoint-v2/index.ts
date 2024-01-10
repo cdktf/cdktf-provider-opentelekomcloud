@@ -67,6 +67,25 @@ export function disCheckpointV2TimeoutsToTerraform(struct?: DisCheckpointV2Timeo
   }
 }
 
+
+export function disCheckpointV2TimeoutsToHclTerraform(struct?: DisCheckpointV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DisCheckpointV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -322,5 +341,61 @@ export class DisCheckpointV2 extends cdktf.TerraformResource {
       stream_name: cdktf.stringToTerraform(this._streamName),
       timeouts: disCheckpointV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_name: {
+        value: cdktf.stringToHclTerraform(this._appName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      checkpoint_type: {
+        value: cdktf.stringToHclTerraform(this._checkpointType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.stringToHclTerraform(this._metadata),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_id: {
+        value: cdktf.stringToHclTerraform(this._partitionId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sequence_number: {
+        value: cdktf.stringToHclTerraform(this._sequenceNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stream_name: {
+        value: cdktf.stringToHclTerraform(this._streamName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: disCheckpointV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DisCheckpointV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

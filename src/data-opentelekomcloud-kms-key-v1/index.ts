@@ -295,4 +295,66 @@ export class DataOpentelekomcloudKmsKeyV1 extends cdktf.TerraformDataSource {
       realm: cdktf.stringToTerraform(this._realm),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      default_key_flag: {
+        value: cdktf.stringToHclTerraform(this._defaultKeyFlag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_id: {
+        value: cdktf.stringToHclTerraform(this._domainId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_alias: {
+        value: cdktf.stringToHclTerraform(this._keyAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_description: {
+        value: cdktf.stringToHclTerraform(this._keyDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_state: {
+        value: cdktf.stringToHclTerraform(this._keyState),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      origin: {
+        value: cdktf.stringToHclTerraform(this._origin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      realm: {
+        value: cdktf.stringToHclTerraform(this._realm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -125,6 +125,49 @@ export function obsBucketCorsRuleToTerraform(struct?: ObsBucketCorsRule | cdktf.
   }
 }
 
+
+export function obsBucketCorsRuleToHclTerraform(struct?: ObsBucketCorsRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_methods: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    allowed_origins: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    expose_headers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposeHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    max_age_seconds: {
+      value: cdktf.numberToHclTerraform(struct!.maxAgeSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ObsBucketCorsRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -309,6 +352,31 @@ export function obsBucketEventNotificationsFilterRuleToTerraform(struct?: ObsBuc
   }
 }
 
+
+export function obsBucketEventNotificationsFilterRuleToHclTerraform(struct?: ObsBucketEventNotificationsFilterRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ObsBucketEventNotificationsFilterRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -446,6 +514,43 @@ export function obsBucketEventNotificationsToTerraform(struct?: ObsBucketEventNo
     topic: cdktf.stringToTerraform(struct!.topic),
     filter_rule: cdktf.listMapper(obsBucketEventNotificationsFilterRuleToTerraform, true)(struct!.filterRule),
   }
+}
+
+
+export function obsBucketEventNotificationsToHclTerraform(struct?: ObsBucketEventNotifications | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    events: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    topic: {
+      value: cdktf.stringToHclTerraform(struct!.topic),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter_rule: {
+      value: cdktf.listMapperHcl(obsBucketEventNotificationsFilterRuleToHclTerraform, true)(struct!.filterRule),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ObsBucketEventNotificationsFilterRuleList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketEventNotificationsOutputReference extends cdktf.ComplexObject {
@@ -605,6 +710,25 @@ export function obsBucketLifecycleRuleExpirationToTerraform(struct?: ObsBucketLi
   }
 }
 
+
+export function obsBucketLifecycleRuleExpirationToHclTerraform(struct?: ObsBucketLifecycleRuleExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ObsBucketLifecycleRuleExpirationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -697,6 +821,25 @@ export function obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform(str
   return {
     days: cdktf.numberToTerraform(struct!.days),
   }
+}
+
+
+export function obsBucketLifecycleRuleNoncurrentVersionExpirationToHclTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketLifecycleRuleNoncurrentVersionExpirationOutputReference extends cdktf.ComplexObject {
@@ -796,6 +939,31 @@ export function obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform(str
     days: cdktf.numberToTerraform(struct!.days),
     storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
+}
+
+
+export function obsBucketLifecycleRuleNoncurrentVersionTransitionToHclTerraform(struct?: ObsBucketLifecycleRuleNoncurrentVersionTransition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketLifecycleRuleNoncurrentVersionTransitionOutputReference extends cdktf.ComplexObject {
@@ -914,6 +1082,31 @@ export function obsBucketLifecycleRuleTransitionToTerraform(struct?: ObsBucketLi
     days: cdktf.numberToTerraform(struct!.days),
     storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
+}
+
+
+export function obsBucketLifecycleRuleTransitionToHclTerraform(struct?: ObsBucketLifecycleRuleTransition | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketLifecycleRuleTransitionOutputReference extends cdktf.ComplexObject {
@@ -1065,6 +1258,61 @@ export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRul
     noncurrent_version_transition: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
     transition: cdktf.listMapper(obsBucketLifecycleRuleTransitionToTerraform, true)(struct!.transition),
   }
+}
+
+
+export function obsBucketLifecycleRuleToHclTerraform(struct?: ObsBucketLifecycleRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expiration: {
+      value: cdktf.listMapperHcl(obsBucketLifecycleRuleExpirationToHclTerraform, true)(struct!.expiration),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ObsBucketLifecycleRuleExpirationList",
+    },
+    noncurrent_version_expiration: {
+      value: cdktf.listMapperHcl(obsBucketLifecycleRuleNoncurrentVersionExpirationToHclTerraform, true)(struct!.noncurrentVersionExpiration),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ObsBucketLifecycleRuleNoncurrentVersionExpirationList",
+    },
+    noncurrent_version_transition: {
+      value: cdktf.listMapperHcl(obsBucketLifecycleRuleNoncurrentVersionTransitionToHclTerraform, true)(struct!.noncurrentVersionTransition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObsBucketLifecycleRuleNoncurrentVersionTransitionList",
+    },
+    transition: {
+      value: cdktf.listMapperHcl(obsBucketLifecycleRuleTransitionToHclTerraform, true)(struct!.transition),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObsBucketLifecycleRuleTransitionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
@@ -1295,6 +1543,31 @@ export function obsBucketLoggingToTerraform(struct?: ObsBucketLogging | cdktf.IR
   }
 }
 
+
+export function obsBucketLoggingToHclTerraform(struct?: ObsBucketLogging | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    target_bucket: {
+      value: cdktf.stringToHclTerraform(struct!.targetBucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    target_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.targetPrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ObsBucketLoggingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -1416,6 +1689,31 @@ export function obsBucketServerSideEncryptionToTerraform(struct?: ObsBucketServe
   }
 }
 
+
+export function obsBucketServerSideEncryptionToHclTerraform(struct?: ObsBucketServerSideEncryptionOutputReference | ObsBucketServerSideEncryption): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsKeyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -1510,6 +1808,43 @@ export function obsBucketWebsiteToTerraform(struct?: ObsBucketWebsiteOutputRefer
     redirect_all_requests_to: cdktf.stringToTerraform(struct!.redirectAllRequestsTo),
     routing_rules: cdktf.stringToTerraform(struct!.routingRules),
   }
+}
+
+
+export function obsBucketWebsiteToHclTerraform(struct?: ObsBucketWebsiteOutputReference | ObsBucketWebsite): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    error_document: {
+      value: cdktf.stringToHclTerraform(struct!.errorDocument),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    index_document: {
+      value: cdktf.stringToHclTerraform(struct!.indexDocument),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_all_requests_to: {
+      value: cdktf.stringToHclTerraform(struct!.redirectAllRequestsTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routing_rules: {
+      value: cdktf.stringToHclTerraform(struct!.routingRules),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
@@ -1968,5 +2303,103 @@ export class ObsBucket extends cdktf.TerraformResource {
       server_side_encryption: obsBucketServerSideEncryptionToTerraform(this._serverSideEncryption.internalValue),
       website: obsBucketWebsiteToTerraform(this._website.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl: {
+        value: cdktf.stringToHclTerraform(this._acl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktf.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parallel_fs: {
+        value: cdktf.booleanToHclTerraform(this._parallelFs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_class: {
+        value: cdktf.stringToHclTerraform(this._storageClass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      versioning: {
+        value: cdktf.booleanToHclTerraform(this._versioning),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cors_rule: {
+        value: cdktf.listMapperHcl(obsBucketCorsRuleToHclTerraform, true)(this._corsRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketCorsRuleList",
+      },
+      event_notifications: {
+        value: cdktf.listMapperHcl(obsBucketEventNotificationsToHclTerraform, true)(this._eventNotifications.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketEventNotificationsList",
+      },
+      lifecycle_rule: {
+        value: cdktf.listMapperHcl(obsBucketLifecycleRuleToHclTerraform, true)(this._lifecycleRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketLifecycleRuleList",
+      },
+      logging: {
+        value: cdktf.listMapperHcl(obsBucketLoggingToHclTerraform, true)(this._logging.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ObsBucketLoggingList",
+      },
+      server_side_encryption: {
+        value: obsBucketServerSideEncryptionToHclTerraform(this._serverSideEncryption.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketServerSideEncryptionList",
+      },
+      website: {
+        value: obsBucketWebsiteToHclTerraform(this._website.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketWebsiteList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -107,6 +107,49 @@ export function wafDomainV1BlockPageToTerraform(struct?: WafDomainV1BlockPageOut
   }
 }
 
+
+export function wafDomainV1BlockPageToHclTerraform(struct?: WafDomainV1BlockPageOutputReference | WafDomainV1BlockPage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    redirect_url: {
+      value: cdktf.stringToHclTerraform(struct!.redirectUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    template: {
+      value: cdktf.stringToHclTerraform(struct!.template),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafDomainV1BlockPageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -280,6 +323,55 @@ export function wafDomainV1ServerToTerraform(struct?: WafDomainV1Server | cdktf.
     port: cdktf.stringToTerraform(struct!.port),
     server_protocol: cdktf.stringToTerraform(struct!.serverProtocol),
   }
+}
+
+
+export function wafDomainV1ServerToHclTerraform(struct?: WafDomainV1Server | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    back_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.backProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.clientProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    front_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.frontProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    server_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.serverProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDomainV1ServerOutputReference extends cdktf.ComplexObject {
@@ -486,6 +578,31 @@ export function wafDomainV1TimeoutsToTerraform(struct?: WafDomainV1Timeouts | cd
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function wafDomainV1TimeoutsToHclTerraform(struct?: WafDomainV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDomainV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -875,5 +992,85 @@ export class WafDomainV1 extends cdktf.TerraformResource {
       server: cdktf.listMapper(wafDomainV1ServerToTerraform, true)(this._server.internalValue),
       timeouts: wafDomainV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_id: {
+        value: cdktf.stringToHclTerraform(this._certificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cipher: {
+        value: cdktf.stringToHclTerraform(this._cipher),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hostname: {
+        value: cdktf.stringToHclTerraform(this._hostname),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      proxy: {
+        value: cdktf.booleanToHclTerraform(this._proxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sip_header_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sipHeaderList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      sip_header_name: {
+        value: cdktf.stringToHclTerraform(this._sipHeaderName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls: {
+        value: cdktf.stringToHclTerraform(this._tls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_page: {
+        value: wafDomainV1BlockPageToHclTerraform(this._blockPage.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDomainV1BlockPageList",
+      },
+      server: {
+        value: cdktf.listMapperHcl(wafDomainV1ServerToHclTerraform, true)(this._server.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDomainV1ServerList",
+      },
+      timeouts: {
+        value: wafDomainV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WafDomainV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

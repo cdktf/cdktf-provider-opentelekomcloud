@@ -111,6 +111,37 @@ export function lbPolicyV3FixedResponseConfigToTerraform(struct?: LbPolicyV3Fixe
   }
 }
 
+
+export function lbPolicyV3FixedResponseConfigToHclTerraform(struct?: LbPolicyV3FixedResponseConfigOutputReference | LbPolicyV3FixedResponseConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    message_body: {
+      value: cdktf.stringToHclTerraform(struct!.messageBody),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LbPolicyV3FixedResponseConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -220,6 +251,31 @@ export function lbPolicyV3RedirectPoolsConfigToTerraform(struct?: LbPolicyV3Redi
     pool_id: cdktf.stringToTerraform(struct!.poolId),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function lbPolicyV3RedirectPoolsConfigToHclTerraform(struct?: LbPolicyV3RedirectPoolsConfig | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    pool_id: {
+      value: cdktf.stringToHclTerraform(struct!.poolId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LbPolicyV3RedirectPoolsConfigOutputReference extends cdktf.ComplexObject {
@@ -358,6 +414,55 @@ export function lbPolicyV3RedirectUrlConfigToTerraform(struct?: LbPolicyV3Redire
     query: cdktf.stringToTerraform(struct!.query),
     status_code: cdktf.stringToTerraform(struct!.statusCode),
   }
+}
+
+
+export function lbPolicyV3RedirectUrlConfigToHclTerraform(struct?: LbPolicyV3RedirectUrlConfigOutputReference | LbPolicyV3RedirectUrlConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    host: {
+      value: cdktf.stringToHclTerraform(struct!.host),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.stringToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    query: {
+      value: cdktf.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.stringToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LbPolicyV3RedirectUrlConfigOutputReference extends cdktf.ComplexObject {
@@ -540,6 +645,37 @@ export function lbPolicyV3RulesToTerraform(struct?: LbPolicyV3Rules | cdktf.IRes
     type: cdktf.stringToTerraform(struct!.type),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function lbPolicyV3RulesToHclTerraform(struct?: LbPolicyV3Rules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    compare_type: {
+      value: cdktf.stringToHclTerraform(struct!.compareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class LbPolicyV3RulesOutputReference extends cdktf.ComplexObject {
@@ -991,5 +1127,103 @@ export class LbPolicyV3 extends cdktf.TerraformResource {
       redirect_url_config: lbPolicyV3RedirectUrlConfigToTerraform(this._redirectUrlConfig.internalValue),
       rules: cdktf.listMapper(lbPolicyV3RulesToTerraform, true)(this._rules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_id: {
+        value: cdktf.stringToHclTerraform(this._listenerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      position: {
+        value: cdktf.numberToHclTerraform(this._position),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      priority: {
+        value: cdktf.numberToHclTerraform(this._priority),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redirect_listener_id: {
+        value: cdktf.stringToHclTerraform(this._redirectListenerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redirect_pool_id: {
+        value: cdktf.stringToHclTerraform(this._redirectPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redirect_url: {
+        value: cdktf.stringToHclTerraform(this._redirectUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      fixed_response_config: {
+        value: lbPolicyV3FixedResponseConfigToHclTerraform(this._fixedResponseConfig.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LbPolicyV3FixedResponseConfigList",
+      },
+      redirect_pools_config: {
+        value: cdktf.listMapperHcl(lbPolicyV3RedirectPoolsConfigToHclTerraform, true)(this._redirectPoolsConfig.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LbPolicyV3RedirectPoolsConfigList",
+      },
+      redirect_url_config: {
+        value: lbPolicyV3RedirectUrlConfigToHclTerraform(this._redirectUrlConfig.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LbPolicyV3RedirectUrlConfigList",
+      },
+      rules: {
+        value: cdktf.listMapperHcl(lbPolicyV3RulesToHclTerraform, true)(this._rules.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "LbPolicyV3RulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

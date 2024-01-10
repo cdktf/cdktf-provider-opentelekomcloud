@@ -161,4 +161,36 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
       topic_urn: cdktf.stringToTerraform(this._topicUrn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attribute_name: {
+        value: cdktf.stringToHclTerraform(this._attributeName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_attribute: {
+        value: cdktf.stringToHclTerraform(this._topicAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_urn: {
+        value: cdktf.stringToHclTerraform(this._topicUrn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

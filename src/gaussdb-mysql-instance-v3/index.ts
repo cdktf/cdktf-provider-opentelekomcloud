@@ -110,6 +110,17 @@ export function gaussdbMysqlInstanceV3NodesToTerraform(struct?: GaussdbMysqlInst
   }
 }
 
+
+export function gaussdbMysqlInstanceV3NodesToHclTerraform(struct?: GaussdbMysqlInstanceV3Nodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class GaussdbMysqlInstanceV3NodesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -259,6 +270,31 @@ export function gaussdbMysqlInstanceV3BackupStrategyToTerraform(struct?: Gaussdb
   }
 }
 
+
+export function gaussdbMysqlInstanceV3BackupStrategyToHclTerraform(struct?: GaussdbMysqlInstanceV3BackupStrategyOutputReference | GaussdbMysqlInstanceV3BackupStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keep_days: {
+      value: cdktf.numberToHclTerraform(struct!.keepDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class GaussdbMysqlInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -346,6 +382,31 @@ export function gaussdbMysqlInstanceV3DatastoreToTerraform(struct?: GaussdbMysql
     engine: cdktf.stringToTerraform(struct!.engine),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function gaussdbMysqlInstanceV3DatastoreToHclTerraform(struct?: GaussdbMysqlInstanceV3DatastoreOutputReference | GaussdbMysqlInstanceV3Datastore): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    engine: {
+      value: cdktf.stringToHclTerraform(struct!.engine),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GaussdbMysqlInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
@@ -437,6 +498,37 @@ export function gaussdbMysqlInstanceV3TimeoutsToTerraform(struct?: GaussdbMysqlI
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function gaussdbMysqlInstanceV3TimeoutsToHclTerraform(struct?: GaussdbMysqlInstanceV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GaussdbMysqlInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -999,5 +1091,127 @@ export class GaussdbMysqlInstanceV3 extends cdktf.TerraformResource {
       datastore: gaussdbMysqlInstanceV3DatastoreToTerraform(this._datastore.internalValue),
       timeouts: gaussdbMysqlInstanceV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone_mode: {
+        value: cdktf.stringToHclTerraform(this._availabilityZoneMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration_id: {
+        value: cdktf.stringToHclTerraform(this._configurationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration_name: {
+        value: cdktf.stringToHclTerraform(this._configurationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dedicated_resource_id: {
+        value: cdktf.stringToHclTerraform(this._dedicatedResourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dedicated_resource_name: {
+        value: cdktf.stringToHclTerraform(this._dedicatedResourceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flavor: {
+        value: cdktf.stringToHclTerraform(this._flavor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      master_availability_zone: {
+        value: cdktf.stringToHclTerraform(this._masterAvailabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      read_replicas: {
+        value: cdktf.numberToHclTerraform(this._readReplicas),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      time_zone: {
+        value: cdktf.stringToHclTerraform(this._timeZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_strategy: {
+        value: gaussdbMysqlInstanceV3BackupStrategyToHclTerraform(this._backupStrategy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GaussdbMysqlInstanceV3BackupStrategyList",
+      },
+      datastore: {
+        value: gaussdbMysqlInstanceV3DatastoreToHclTerraform(this._datastore.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GaussdbMysqlInstanceV3DatastoreList",
+      },
+      timeouts: {
+        value: gaussdbMysqlInstanceV3TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GaussdbMysqlInstanceV3Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

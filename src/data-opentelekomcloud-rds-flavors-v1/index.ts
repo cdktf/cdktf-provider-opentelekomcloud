@@ -196,4 +196,42 @@ export class DataOpentelekomcloudRdsFlavorsV1 extends cdktf.TerraformDataSource 
       speccode: cdktf.stringToTerraform(this._speccode),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datastore_name: {
+        value: cdktf.stringToHclTerraform(this._datastoreName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      datastore_version: {
+        value: cdktf.stringToHclTerraform(this._datastoreVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      speccode: {
+        value: cdktf.stringToHclTerraform(this._speccode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

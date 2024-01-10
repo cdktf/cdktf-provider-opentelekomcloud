@@ -62,6 +62,17 @@ export function identityProviderConversionRulesLocalToTerraform(struct?: Identit
   }
 }
 
+
+export function identityProviderConversionRulesLocalToHclTerraform(struct?: IdentityProviderConversionRulesLocal): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class IdentityProviderConversionRulesLocalOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -136,6 +147,17 @@ export function identityProviderConversionRulesRemoteToTerraform(struct?: Identi
   }
 }
 
+
+export function identityProviderConversionRulesRemoteToHclTerraform(struct?: IdentityProviderConversionRulesRemote): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class IdentityProviderConversionRulesRemoteOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -208,6 +230,17 @@ export function identityProviderConversionRulesToTerraform(struct?: IdentityProv
   }
   return {
   }
+}
+
+
+export function identityProviderConversionRulesToHclTerraform(struct?: IdentityProviderConversionRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class IdentityProviderConversionRulesOutputReference extends cdktf.ComplexObject {
@@ -319,6 +352,67 @@ export function identityProviderAccessConfigToTerraform(struct?: IdentityProvide
     scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
     signing_key: cdktf.stringToTerraform(struct!.signingKey),
   }
+}
+
+
+export function identityProviderAccessConfigToHclTerraform(struct?: IdentityProviderAccessConfigOutputReference | IdentityProviderAccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_type: {
+      value: cdktf.stringToHclTerraform(struct!.accessType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider_url: {
+      value: cdktf.stringToHclTerraform(struct!.providerUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_mode: {
+      value: cdktf.stringToHclTerraform(struct!.responseMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_type: {
+      value: cdktf.stringToHclTerraform(struct!.responseType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    signing_key: {
+      value: cdktf.stringToHclTerraform(struct!.signingKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IdentityProviderAccessConfigOutputReference extends cdktf.ComplexObject {
@@ -731,5 +825,61 @@ export class IdentityProvider extends cdktf.TerraformResource {
       status: cdktf.booleanToTerraform(this._status),
       access_config: identityProviderAccessConfigToTerraform(this._accessConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mapping_rules: {
+        value: cdktf.stringToHclTerraform(this._mappingRules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.stringToHclTerraform(this._metadata),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.booleanToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_config: {
+        value: identityProviderAccessConfigToHclTerraform(this._accessConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IdentityProviderAccessConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

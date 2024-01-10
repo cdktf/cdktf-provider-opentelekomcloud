@@ -60,6 +60,31 @@ export function dataOpentelekomcloudDehServerV1AddressesToTerraform(struct?: Dat
   }
 }
 
+
+export function dataOpentelekomcloudDehServerV1AddressesToHclTerraform(struct?: DataOpentelekomcloudDehServerV1Addresses | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fixed_ip_v4: {
+      value: cdktf.stringToHclTerraform(struct!.fixedIpV4),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataOpentelekomcloudDehServerV1AddressesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -349,5 +374,43 @@ export class DataOpentelekomcloudDehServerV1 extends cdktf.TerraformDataSource {
       server_id: cdktf.stringToTerraform(this._serverId),
       addresses: cdktf.listMapper(dataOpentelekomcloudDehServerV1AddressesToTerraform, true)(this._addresses.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      dedicated_host_id: {
+        value: cdktf.stringToHclTerraform(this._dedicatedHostId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_id: {
+        value: cdktf.stringToHclTerraform(this._serverId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      addresses: {
+        value: cdktf.listMapperHcl(dataOpentelekomcloudDehServerV1AddressesToHclTerraform, true)(this._addresses.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataOpentelekomcloudDehServerV1AddressesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

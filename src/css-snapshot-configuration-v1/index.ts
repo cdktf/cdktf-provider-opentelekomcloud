@@ -73,6 +73,37 @@ export function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssS
   }
 }
 
+
+export function cssSnapshotConfigurationV1ConfigurationToHclTerraform(struct?: CssSnapshotConfigurationV1ConfigurationOutputReference | CssSnapshotConfigurationV1Configuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    agency: {
+      value: cdktf.stringToHclTerraform(struct!.agency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -194,6 +225,49 @@ export function cssSnapshotConfigurationV1CreationPolicyToTerraform(struct?: Css
     period: cdktf.stringToTerraform(struct!.period),
     prefix: cdktf.stringToTerraform(struct!.prefix),
   }
+}
+
+
+export function cssSnapshotConfigurationV1CreationPolicyToHclTerraform(struct?: CssSnapshotConfigurationV1CreationPolicyOutputReference | CssSnapshotConfigurationV1CreationPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete_auto: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteAuto),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable: {
+      value: cdktf.booleanToHclTerraform(struct!.enable),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    keepday: {
+      value: cdktf.numberToHclTerraform(struct!.keepday),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    period: {
+      value: cdktf.stringToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdktf.ComplexObject {
@@ -340,6 +414,31 @@ export function cssSnapshotConfigurationV1TimeoutsToTerraform(struct?: CssSnapsh
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cssSnapshotConfigurationV1TimeoutsToHclTerraform(struct?: CssSnapshotConfigurationV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -597,5 +696,49 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
       creation_policy: cssSnapshotConfigurationV1CreationPolicyToTerraform(this._creationPolicy.internalValue),
       timeouts: cssSnapshotConfigurationV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      automatic: {
+        value: cdktf.booleanToHclTerraform(this._automatic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration: {
+        value: cssSnapshotConfigurationV1ConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CssSnapshotConfigurationV1ConfigurationList",
+      },
+      creation_policy: {
+        value: cssSnapshotConfigurationV1CreationPolicyToHclTerraform(this._creationPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CssSnapshotConfigurationV1CreationPolicyList",
+      },
+      timeouts: {
+        value: cssSnapshotConfigurationV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CssSnapshotConfigurationV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

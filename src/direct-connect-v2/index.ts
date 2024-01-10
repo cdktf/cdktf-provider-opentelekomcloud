@@ -126,6 +126,37 @@ export function directConnectV2TimeoutsToTerraform(struct?: DirectConnectV2Timeo
   }
 }
 
+
+export function directConnectV2TimeoutsToHclTerraform(struct?: DirectConnectV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DirectConnectV2TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -773,5 +804,139 @@ export class DirectConnectV2 extends cdktf.TerraformResource {
       vlan: cdktf.numberToTerraform(this._vlan),
       timeouts: directConnectV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_state_up: {
+        value: cdktf.booleanToHclTerraform(this._adminStateUp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      bandwidth: {
+        value: cdktf.numberToHclTerraform(this._bandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      charge_mode: {
+        value: cdktf.stringToHclTerraform(this._chargeMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_id: {
+        value: cdktf.stringToHclTerraform(this._deviceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hosting_id: {
+        value: cdktf.stringToHclTerraform(this._hostingId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      interface_name: {
+        value: cdktf.stringToHclTerraform(this._interfaceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      order_id: {
+        value: cdktf.stringToHclTerraform(this._orderId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_location: {
+        value: cdktf.stringToHclTerraform(this._peerLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_type: {
+        value: cdktf.stringToHclTerraform(this._portType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      product_id: {
+        value: cdktf.stringToHclTerraform(this._productId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_name: {
+        value: cdktf.stringToHclTerraform(this._providerName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_status: {
+        value: cdktf.stringToHclTerraform(this._providerStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      redundant_id: {
+        value: cdktf.stringToHclTerraform(this._redundantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vlan: {
+        value: cdktf.numberToHclTerraform(this._vlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeouts: {
+        value: directConnectV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DirectConnectV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

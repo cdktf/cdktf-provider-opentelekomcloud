@@ -152,4 +152,30 @@ export class NetworkingVipAssociateV2 extends cdktf.TerraformResource {
       vip_id: cdktf.stringToTerraform(this._vipId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._portIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      vip_id: {
+        value: cdktf.stringToHclTerraform(this._vipId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

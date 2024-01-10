@@ -57,6 +57,37 @@ export function sfsShareAccessRulesV2AccessRuleToTerraform(struct?: SfsShareAcce
   }
 }
 
+
+export function sfsShareAccessRulesV2AccessRuleToHclTerraform(struct?: SfsShareAccessRulesV2AccessRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_level: {
+      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_to: {
+      value: cdktf.stringToHclTerraform(struct!.accessTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    access_type: {
+      value: cdktf.stringToHclTerraform(struct!.accessType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class SfsShareAccessRulesV2AccessRuleOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -298,5 +329,31 @@ export class SfsShareAccessRulesV2 extends cdktf.TerraformResource {
       share_id: cdktf.stringToTerraform(this._shareId),
       access_rule: cdktf.listMapper(sfsShareAccessRulesV2AccessRuleToTerraform, true)(this._accessRule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      share_id: {
+        value: cdktf.stringToHclTerraform(this._shareId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_rule: {
+        value: cdktf.listMapperHcl(sfsShareAccessRulesV2AccessRuleToHclTerraform, true)(this._accessRule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "SfsShareAccessRulesV2AccessRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

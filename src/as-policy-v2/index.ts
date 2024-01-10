@@ -72,6 +72,17 @@ export function asPolicyV2MetadataToTerraform(struct?: AsPolicyV2Metadata): any 
   }
 }
 
+
+export function asPolicyV2MetadataToHclTerraform(struct?: AsPolicyV2Metadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class AsPolicyV2MetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -164,6 +175,43 @@ export function asPolicyV2ScalingPolicyActionToTerraform(struct?: AsPolicyV2Scal
     percentage: cdktf.numberToTerraform(struct!.percentage),
     size: cdktf.numberToTerraform(struct!.size),
   }
+}
+
+
+export function asPolicyV2ScalingPolicyActionToHclTerraform(struct?: AsPolicyV2ScalingPolicyAction | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    limits: {
+      value: cdktf.numberToHclTerraform(struct!.limits),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    operation: {
+      value: cdktf.stringToHclTerraform(struct!.operation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    percentage: {
+      value: cdktf.numberToHclTerraform(struct!.percentage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsPolicyV2ScalingPolicyActionOutputReference extends cdktf.ComplexObject {
@@ -347,6 +395,49 @@ export function asPolicyV2ScheduledPolicyToTerraform(struct?: AsPolicyV2Schedule
     recurrence_value: cdktf.stringToTerraform(struct!.recurrenceValue),
     start_time: cdktf.stringToTerraform(struct!.startTime),
   }
+}
+
+
+export function asPolicyV2ScheduledPolicyToHclTerraform(struct?: AsPolicyV2ScheduledPolicy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    launch_time: {
+      value: cdktf.stringToHclTerraform(struct!.launchTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recurrence_type: {
+      value: cdktf.stringToHclTerraform(struct!.recurrenceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recurrence_value: {
+      value: cdktf.stringToHclTerraform(struct!.recurrenceValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsPolicyV2ScheduledPolicyOutputReference extends cdktf.ComplexObject {
@@ -758,5 +849,73 @@ export class AsPolicyV2 extends cdktf.TerraformResource {
       scaling_policy_action: cdktf.listMapper(asPolicyV2ScalingPolicyActionToTerraform, true)(this._scalingPolicyAction.internalValue),
       scheduled_policy: cdktf.listMapper(asPolicyV2ScheduledPolicyToTerraform, true)(this._scheduledPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alarm_id: {
+        value: cdktf.stringToHclTerraform(this._alarmId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cool_down_time: {
+        value: cdktf.numberToHclTerraform(this._coolDownTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_name: {
+        value: cdktf.stringToHclTerraform(this._scalingPolicyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_type: {
+        value: cdktf.stringToHclTerraform(this._scalingPolicyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_resource_id: {
+        value: cdktf.stringToHclTerraform(this._scalingResourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_resource_type: {
+        value: cdktf.stringToHclTerraform(this._scalingResourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_action: {
+        value: cdktf.listMapperHcl(asPolicyV2ScalingPolicyActionToHclTerraform, true)(this._scalingPolicyAction.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AsPolicyV2ScalingPolicyActionList",
+      },
+      scheduled_policy: {
+        value: cdktf.listMapperHcl(asPolicyV2ScheduledPolicyToHclTerraform, true)(this._scheduledPolicy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "AsPolicyV2ScheduledPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

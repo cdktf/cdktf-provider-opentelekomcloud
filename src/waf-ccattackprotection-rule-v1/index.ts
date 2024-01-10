@@ -96,6 +96,31 @@ export function wafCcattackprotectionRuleV1TimeoutsToTerraform(struct?: WafCcatt
   }
 }
 
+
+export function wafCcattackprotectionRuleV1TimeoutsToHclTerraform(struct?: WafCcattackprotectionRuleV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafCcattackprotectionRuleV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -480,5 +505,97 @@ export class WafCcattackprotectionRuleV1 extends cdktf.TerraformResource {
       url: cdktf.stringToTerraform(this._url),
       timeouts: wafCcattackprotectionRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action_category: {
+        value: cdktf.stringToHclTerraform(this._actionCategory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_content: {
+        value: cdktf.stringToHclTerraform(this._blockContent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      block_content_type: {
+        value: cdktf.stringToHclTerraform(this._blockContentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_num: {
+        value: cdktf.numberToHclTerraform(this._limitNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      limit_period: {
+        value: cdktf.numberToHclTerraform(this._limitPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lock_time: {
+        value: cdktf.numberToHclTerraform(this._lockTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_category: {
+        value: cdktf.stringToHclTerraform(this._tagCategory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_contents: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagContents),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tag_index: {
+        value: cdktf.stringToHclTerraform(this._tagIndex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_type: {
+        value: cdktf.stringToHclTerraform(this._tagType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: wafCcattackprotectionRuleV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WafCcattackprotectionRuleV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

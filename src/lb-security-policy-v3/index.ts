@@ -206,4 +206,42 @@ export class LbSecurityPolicyV3 extends cdktf.TerraformResource {
       protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ciphers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ciphers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocols: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

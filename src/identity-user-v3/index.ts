@@ -341,4 +341,78 @@ export class IdentityUserV3 extends cdktf.TerraformResource {
       send_welcome_email: cdktf.booleanToTerraform(this._sendWelcomeEmail),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_type: {
+        value: cdktf.stringToHclTerraform(this._accessType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      country_code: {
+        value: cdktf.stringToHclTerraform(this._countryCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      phone: {
+        value: cdktf.stringToHclTerraform(this._phone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pwd_reset: {
+        value: cdktf.booleanToHclTerraform(this._pwdReset),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      send_welcome_email: {
+        value: cdktf.booleanToHclTerraform(this._sendWelcomeEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

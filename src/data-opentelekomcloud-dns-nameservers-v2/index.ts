@@ -52,6 +52,31 @@ export function dataOpentelekomcloudDnsNameserversV2NameserversToTerraform(struc
   }
 }
 
+
+export function dataOpentelekomcloudDnsNameserversV2NameserversToHclTerraform(struct?: DataOpentelekomcloudDnsNameserversV2Nameservers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: cdktf.stringToHclTerraform(struct!.hostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktf.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataOpentelekomcloudDnsNameserversV2NameserversOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -273,5 +298,31 @@ export class DataOpentelekomcloudDnsNameserversV2 extends cdktf.TerraformDataSou
       zone_id: cdktf.stringToTerraform(this._zoneId),
       nameservers: cdktf.listMapper(dataOpentelekomcloudDnsNameserversV2NameserversToTerraform, true)(this._nameservers.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zone_id: {
+        value: cdktf.stringToHclTerraform(this._zoneId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nameservers: {
+        value: cdktf.listMapperHcl(dataOpentelekomcloudDnsNameserversV2NameserversToHclTerraform, true)(this._nameservers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataOpentelekomcloudDnsNameserversV2NameserversList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -183,4 +183,42 @@ export class NetworkingRouterRouteV2 extends cdktf.TerraformResource {
       router_id: cdktf.stringToTerraform(this._routerId),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      destination_cidr: {
+        value: cdktf.stringToHclTerraform(this._destinationCidr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      next_hop: {
+        value: cdktf.stringToHclTerraform(this._nextHop),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      router_id: {
+        value: cdktf.stringToHclTerraform(this._routerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -221,4 +221,54 @@ export class WafAlarmNotificationV1 extends cdktf.TerraformResource {
       topic_urn: cdktf.stringToTerraform(this._topicUrn),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      locale: {
+        value: cdktf.stringToHclTerraform(this._locale),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      send_frequency: {
+        value: cdktf.numberToHclTerraform(this._sendFrequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      threat: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._threat),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      times: {
+        value: cdktf.numberToHclTerraform(this._times),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      topic_urn: {
+        value: cdktf.stringToHclTerraform(this._topicUrn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

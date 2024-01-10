@@ -78,6 +78,31 @@ export function asPolicyV1ScalingPolicyActionToTerraform(struct?: AsPolicyV1Scal
   }
 }
 
+
+export function asPolicyV1ScalingPolicyActionToHclTerraform(struct?: AsPolicyV1ScalingPolicyActionOutputReference | AsPolicyV1ScalingPolicyAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    instance_number: {
+      value: cdktf.numberToHclTerraform(struct!.instanceNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    operation: {
+      value: cdktf.stringToHclTerraform(struct!.operation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AsPolicyV1ScalingPolicyActionOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -183,6 +208,49 @@ export function asPolicyV1ScheduledPolicyToTerraform(struct?: AsPolicyV1Schedule
     recurrence_value: cdktf.stringToTerraform(struct!.recurrenceValue),
     start_time: cdktf.stringToTerraform(struct!.startTime),
   }
+}
+
+
+export function asPolicyV1ScheduledPolicyToHclTerraform(struct?: AsPolicyV1ScheduledPolicyOutputReference | AsPolicyV1ScheduledPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    end_time: {
+      value: cdktf.stringToHclTerraform(struct!.endTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    launch_time: {
+      value: cdktf.stringToHclTerraform(struct!.launchTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recurrence_type: {
+      value: cdktf.stringToHclTerraform(struct!.recurrenceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recurrence_value: {
+      value: cdktf.stringToHclTerraform(struct!.recurrenceValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsPolicyV1ScheduledPolicyOutputReference extends cdktf.ComplexObject {
@@ -536,5 +604,67 @@ export class AsPolicyV1 extends cdktf.TerraformResource {
       scaling_policy_action: asPolicyV1ScalingPolicyActionToTerraform(this._scalingPolicyAction.internalValue),
       scheduled_policy: asPolicyV1ScheduledPolicyToTerraform(this._scheduledPolicy.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alarm_id: {
+        value: cdktf.stringToHclTerraform(this._alarmId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cool_down_time: {
+        value: cdktf.numberToHclTerraform(this._coolDownTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_group_id: {
+        value: cdktf.stringToHclTerraform(this._scalingGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_name: {
+        value: cdktf.stringToHclTerraform(this._scalingPolicyName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_type: {
+        value: cdktf.stringToHclTerraform(this._scalingPolicyType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_policy_action: {
+        value: asPolicyV1ScalingPolicyActionToHclTerraform(this._scalingPolicyAction.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AsPolicyV1ScalingPolicyActionList",
+      },
+      scheduled_policy: {
+        value: asPolicyV1ScheduledPolicyToHclTerraform(this._scheduledPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AsPolicyV1ScheduledPolicyList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

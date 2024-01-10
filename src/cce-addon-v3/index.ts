@@ -66,6 +66,31 @@ export function cceAddonV3TimeoutsToTerraform(struct?: CceAddonV3Timeouts | cdkt
   }
 }
 
+
+export function cceAddonV3TimeoutsToHclTerraform(struct?: CceAddonV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CceAddonV3TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -171,6 +196,37 @@ export function cceAddonV3ValuesToTerraform(struct?: CceAddonV3ValuesOutputRefer
     custom: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.custom),
     flavor: cdktf.stringToTerraform(struct!.flavor),
   }
+}
+
+
+export function cceAddonV3ValuesToHclTerraform(struct?: CceAddonV3ValuesOutputReference | CceAddonV3Values): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    basic: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.basic),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    custom: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.custom),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    flavor: {
+      value: cdktf.stringToHclTerraform(struct!.flavor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CceAddonV3ValuesOutputReference extends cdktf.ComplexObject {
@@ -430,5 +486,49 @@ export class CceAddonV3 extends cdktf.TerraformResource {
       timeouts: cceAddonV3TimeoutsToTerraform(this._timeouts.internalValue),
       values: cceAddonV3ValuesToTerraform(this._values.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_name: {
+        value: cdktf.stringToHclTerraform(this._templateName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_version: {
+        value: cdktf.stringToHclTerraform(this._templateVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: cceAddonV3TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CceAddonV3Timeouts",
+      },
+      values: {
+        value: cceAddonV3ValuesToHclTerraform(this._values.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CceAddonV3ValuesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

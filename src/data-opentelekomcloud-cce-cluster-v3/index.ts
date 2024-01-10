@@ -52,6 +52,17 @@ export function dataOpentelekomcloudCceClusterV3CertificateClustersToTerraform(s
   }
 }
 
+
+export function dataOpentelekomcloudCceClusterV3CertificateClustersToHclTerraform(struct?: DataOpentelekomcloudCceClusterV3CertificateClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOpentelekomcloudCceClusterV3CertificateClustersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -124,6 +135,17 @@ export function dataOpentelekomcloudCceClusterV3CertificateUsersToTerraform(stru
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudCceClusterV3CertificateUsersToHclTerraform(struct?: DataOpentelekomcloudCceClusterV3CertificateUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudCceClusterV3CertificateUsersOutputReference extends cdktf.ComplexObject {
@@ -443,5 +465,49 @@ export class DataOpentelekomcloudCceClusterV3 extends cdktf.TerraformDataSource 
       status: cdktf.stringToTerraform(this._status),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cluster_type: {
+        value: cdktf.stringToHclTerraform(this._clusterType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

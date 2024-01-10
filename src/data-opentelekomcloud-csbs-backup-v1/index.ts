@@ -74,6 +74,17 @@ export function dataOpentelekomcloudCsbsBackupV1VmMetadataToTerraform(struct?: D
   }
 }
 
+
+export function dataOpentelekomcloudCsbsBackupV1VmMetadataToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupV1VmMetadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOpentelekomcloudCsbsBackupV1VmMetadataOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -171,6 +182,17 @@ export function dataOpentelekomcloudCsbsBackupV1VolumeBackupsToTerraform(struct?
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudCsbsBackupV1VolumeBackupsToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupV1VolumeBackups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudCsbsBackupV1VolumeBackupsOutputReference extends cdktf.ComplexObject {
@@ -305,6 +327,31 @@ export function dataOpentelekomcloudCsbsBackupV1TagsToTerraform(struct?: DataOpe
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataOpentelekomcloudCsbsBackupV1TagsToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupV1Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataOpentelekomcloudCsbsBackupV1TagsOutputReference extends cdktf.ComplexObject {
@@ -698,5 +745,79 @@ export class DataOpentelekomcloudCsbsBackupV1 extends cdktf.TerraformDataSource 
       vm_ip: cdktf.stringToTerraform(this._vmIp),
       tags: cdktf.listMapper(dataOpentelekomcloudCsbsBackupV1TagsToTerraform, true)(this._tags.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backup_name: {
+        value: cdktf.stringToHclTerraform(this._backupName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_record_id: {
+        value: cdktf.stringToHclTerraform(this._backupRecordId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_id: {
+        value: cdktf.stringToHclTerraform(this._resourceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_name: {
+        value: cdktf.stringToHclTerraform(this._resourceName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktf.stringToHclTerraform(this._resourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vm_ip: {
+        value: cdktf.stringToHclTerraform(this._vmIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(dataOpentelekomcloudCsbsBackupV1TagsToHclTerraform, true)(this._tags.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataOpentelekomcloudCsbsBackupV1TagsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

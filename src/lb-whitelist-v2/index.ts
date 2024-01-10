@@ -189,4 +189,42 @@ export class LbWhitelistV2 extends cdktf.TerraformResource {
       whitelist: cdktf.stringToTerraform(this._whitelist),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      enable_whitelist: {
+        value: cdktf.booleanToHclTerraform(this._enableWhitelist),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_id: {
+        value: cdktf.stringToHclTerraform(this._listenerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      whitelist: {
+        value: cdktf.stringToHclTerraform(this._whitelist),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

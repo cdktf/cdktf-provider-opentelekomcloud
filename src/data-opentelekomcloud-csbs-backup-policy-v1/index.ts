@@ -50,6 +50,17 @@ export function dataOpentelekomcloudCsbsBackupPolicyV1ResourceToTerraform(struct
   }
 }
 
+
+export function dataOpentelekomcloudCsbsBackupPolicyV1ResourceToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupPolicyV1Resource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOpentelekomcloudCsbsBackupPolicyV1ResourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -122,6 +133,17 @@ export function dataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationToTerraf
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudCsbsBackupPolicyV1ScheduledOperationOutputReference extends cdktf.ComplexObject {
@@ -251,6 +273,31 @@ export function dataOpentelekomcloudCsbsBackupPolicyV1TagsToTerraform(struct?: D
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function dataOpentelekomcloudCsbsBackupPolicyV1TagsToHclTerraform(struct?: DataOpentelekomcloudCsbsBackupPolicyV1Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataOpentelekomcloudCsbsBackupPolicyV1TagsOutputReference extends cdktf.ComplexObject {
@@ -532,5 +579,43 @@ export class DataOpentelekomcloudCsbsBackupPolicyV1 extends cdktf.TerraformDataS
       status: cdktf.stringToTerraform(this._status),
       tags: cdktf.listMapper(dataOpentelekomcloudCsbsBackupPolicyV1TagsToTerraform, true)(this._tags.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(dataOpentelekomcloudCsbsBackupPolicyV1TagsToHclTerraform, true)(this._tags.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataOpentelekomcloudCsbsBackupPolicyV1TagsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

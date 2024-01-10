@@ -104,6 +104,17 @@ export function dehHostV1AvailableInstanceCapacitiesToTerraform(struct?: DehHost
   }
 }
 
+
+export function dehHostV1AvailableInstanceCapacitiesToHclTerraform(struct?: DehHostV1AvailableInstanceCapacities | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DehHostV1AvailableInstanceCapacitiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -187,6 +198,31 @@ export function dehHostV1TimeoutsToTerraform(struct?: DehHostV1Timeouts | cdktf.
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function dehHostV1TimeoutsToHclTerraform(struct?: DehHostV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DehHostV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -649,5 +685,121 @@ export class DehHostV1 extends cdktf.TerraformResource {
       available_instance_capacities: cdktf.listMapper(dehHostV1AvailableInstanceCapacitiesToTerraform, true)(this._availableInstanceCapacities.internalValue),
       timeouts: dehHostV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_placement: {
+        value: cdktf.stringToHclTerraform(this._autoPlacement),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      available_memory: {
+        value: cdktf.numberToHclTerraform(this._availableMemory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      available_vcpus: {
+        value: cdktf.numberToHclTerraform(this._availableVcpus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cores: {
+        value: cdktf.numberToHclTerraform(this._cores),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      host_type: {
+        value: cdktf.stringToHclTerraform(this._hostType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      host_type_name: {
+        value: cdktf.stringToHclTerraform(this._hostTypeName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_total: {
+        value: cdktf.numberToHclTerraform(this._instanceTotal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      instance_uuids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._instanceUuids),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      memory: {
+        value: cdktf.numberToHclTerraform(this._memory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sockets: {
+        value: cdktf.numberToHclTerraform(this._sockets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vcpus: {
+        value: cdktf.numberToHclTerraform(this._vcpus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      available_instance_capacities: {
+        value: cdktf.listMapperHcl(dehHostV1AvailableInstanceCapacitiesToHclTerraform, true)(this._availableInstanceCapacities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DehHostV1AvailableInstanceCapacitiesList",
+      },
+      timeouts: {
+        value: dehHostV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DehHostV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

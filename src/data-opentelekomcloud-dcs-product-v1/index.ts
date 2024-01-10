@@ -126,4 +126,24 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
       spec_code: cdktf.stringToTerraform(this._specCode),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spec_code: {
+        value: cdktf.stringToHclTerraform(this._specCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

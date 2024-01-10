@@ -124,6 +124,73 @@ export function cbrVaultV3ResourceToTerraform(struct?: CbrVaultV3Resource | cdkt
   }
 }
 
+
+export function cbrVaultV3ResourceToHclTerraform(struct?: CbrVaultV3Resource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup_count: {
+      value: cdktf.numberToHclTerraform(struct!.backupCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    backup_size: {
+      value: cdktf.numberToHclTerraform(struct!.backupSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    exclude_volumes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeVolumes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    include_volumes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeVolumes),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protect_status: {
+      value: cdktf.stringToHclTerraform(struct!.protectStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CbrVaultV3ResourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -450,6 +517,91 @@ export function cbrVaultV3BillingToTerraform(struct?: CbrVaultV3BillingOutputRef
     protect_type: cdktf.stringToTerraform(struct!.protectType),
     size: cdktf.numberToTerraform(struct!.size),
   }
+}
+
+
+export function cbrVaultV3BillingToHclTerraform(struct?: CbrVaultV3BillingOutputReference | CbrVaultV3Billing): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    charging_mode: {
+      value: cdktf.stringToHclTerraform(struct!.chargingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cloud_type: {
+      value: cdktf.stringToHclTerraform(struct!.cloudType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    consistent_level: {
+      value: cdktf.stringToHclTerraform(struct!.consistentLevel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    console_url: {
+      value: cdktf.stringToHclTerraform(struct!.consoleUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    extra_info: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraInfo),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    is_auto_pay: {
+      value: cdktf.booleanToHclTerraform(struct!.isAutoPay),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    is_auto_renew: {
+      value: cdktf.booleanToHclTerraform(struct!.isAutoRenew),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    object_type: {
+      value: cdktf.stringToHclTerraform(struct!.objectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    period_num: {
+      value: cdktf.numberToHclTerraform(struct!.periodNum),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    period_type: {
+      value: cdktf.stringToHclTerraform(struct!.periodType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    protect_type: {
+      value: cdktf.stringToHclTerraform(struct!.protectType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
@@ -793,6 +945,31 @@ export function cbrVaultV3BindRulesToTerraform(struct?: CbrVaultV3BindRules | cd
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function cbrVaultV3BindRulesToHclTerraform(struct?: CbrVaultV3BindRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CbrVaultV3BindRulesOutputReference extends cdktf.ComplexObject {
@@ -1168,5 +1345,79 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       billing: cbrVaultV3BillingToTerraform(this._billing.internalValue),
       bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform, true)(this._bindRules.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_bind: {
+        value: cdktf.booleanToHclTerraform(this._autoBind),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_expand: {
+        value: cdktf.booleanToHclTerraform(this._autoExpand),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      backup_policy_id: {
+        value: cdktf.stringToHclTerraform(this._backupPolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enterprise_project_id: {
+        value: cdktf.stringToHclTerraform(this._enterpriseProjectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource: {
+        value: cdktf.listMapperHcl(cbrVaultV3ResourceToHclTerraform, false)(this._resource.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CbrVaultV3ResourceList",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      billing: {
+        value: cbrVaultV3BillingToHclTerraform(this._billing.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CbrVaultV3BillingList",
+      },
+      bind_rules: {
+        value: cdktf.listMapperHcl(cbrVaultV3BindRulesToHclTerraform, true)(this._bindRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CbrVaultV3BindRulesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

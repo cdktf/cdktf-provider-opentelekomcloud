@@ -186,4 +186,42 @@ export class VpcBandwidthAssociateV2 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backup_charge_mode: {
+        value: cdktf.stringToHclTerraform(this._backupChargeMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup_size: {
+        value: cdktf.numberToHclTerraform(this._backupSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bandwidth: {
+        value: cdktf.stringToHclTerraform(this._bandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      floating_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._floatingIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

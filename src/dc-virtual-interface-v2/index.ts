@@ -483,4 +483,126 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
       vlan: cdktf.numberToTerraform(this._vlan),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      asn: {
+        value: cdktf.numberToHclTerraform(this._asn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bandwidth: {
+        value: cdktf.numberToHclTerraform(this._bandwidth),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      bgp_md5: {
+        value: cdktf.stringToHclTerraform(this._bgpMd5),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      direct_connect_id: {
+        value: cdktf.stringToHclTerraform(this._directConnectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable_bfd: {
+        value: cdktf.booleanToHclTerraform(this._enableBfd),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enable_nqa: {
+        value: cdktf.booleanToHclTerraform(this._enableNqa),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lag_id: {
+        value: cdktf.stringToHclTerraform(this._lagId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_gateway_v4_ip: {
+        value: cdktf.stringToHclTerraform(this._localGatewayV4Ip),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_ep_group_id: {
+        value: cdktf.stringToHclTerraform(this._remoteEpGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_gateway_v4_ip: {
+        value: cdktf.stringToHclTerraform(this._remoteGatewayV4Ip),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      route_mode: {
+        value: cdktf.stringToHclTerraform(this._routeMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_type: {
+        value: cdktf.stringToHclTerraform(this._serviceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._virtualGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vlan: {
+        value: cdktf.numberToHclTerraform(this._vlan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -123,6 +123,55 @@ export function lbLoadbalancerV3PublicIpToTerraform(struct?: LbLoadbalancerV3Pub
   }
 }
 
+
+export function lbLoadbalancerV3PublicIpToHclTerraform(struct?: LbLoadbalancerV3PublicIpOutputReference | LbLoadbalancerV3PublicIp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bandwidth_charge_mode: {
+      value: cdktf.stringToHclTerraform(struct!.bandwidthChargeMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth_name: {
+      value: cdktf.stringToHclTerraform(struct!.bandwidthName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth_share_type: {
+      value: cdktf.stringToHclTerraform(struct!.bandwidthShareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth_size: {
+      value: cdktf.numberToHclTerraform(struct!.bandwidthSize),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    ip_type: {
+      value: cdktf.stringToHclTerraform(struct!.ipType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class LbLoadbalancerV3PublicIpOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -635,5 +684,103 @@ export class LbLoadbalancerV3 extends cdktf.TerraformResource {
       vip_address: cdktf.stringToTerraform(this._vipAddress),
       public_ip: lbLoadbalancerV3PublicIpToTerraform(this._publicIp.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_state_up: {
+        value: cdktf.booleanToHclTerraform(this._adminStateUp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      availability_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availabilityZones),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      deletion_protection: {
+        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_target_enable: {
+        value: cdktf.booleanToHclTerraform(this._ipTargetEnable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      l4_flavor: {
+        value: cdktf.stringToHclTerraform(this._l4Flavor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      l7_flavor: {
+        value: cdktf.stringToHclTerraform(this._l7Flavor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      network_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      router_id: {
+        value: cdktf.stringToHclTerraform(this._routerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vip_address: {
+        value: cdktf.stringToHclTerraform(this._vipAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ip: {
+        value: lbLoadbalancerV3PublicIpToHclTerraform(this._publicIp.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LbLoadbalancerV3PublicIpList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

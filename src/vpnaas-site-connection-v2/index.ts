@@ -135,6 +135,37 @@ export function vpnaasSiteConnectionV2DpdToTerraform(struct?: VpnaasSiteConnecti
   }
 }
 
+
+export function vpnaasSiteConnectionV2DpdToHclTerraform(struct?: VpnaasSiteConnectionV2Dpd | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktf.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout: {
+      value: cdktf.numberToHclTerraform(struct!.timeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VpnaasSiteConnectionV2DpdOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -284,6 +315,37 @@ export function vpnaasSiteConnectionV2TimeoutsToTerraform(struct?: VpnaasSiteCon
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function vpnaasSiteConnectionV2TimeoutsToHclTerraform(struct?: VpnaasSiteConnectionV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpnaasSiteConnectionV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -831,5 +893,145 @@ export class VpnaasSiteConnectionV2 extends cdktf.TerraformResource {
       dpd: cdktf.listMapper(vpnaasSiteConnectionV2DpdToTerraform, true)(this._dpd.internalValue),
       timeouts: vpnaasSiteConnectionV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_state_up: {
+        value: cdktf.booleanToHclTerraform(this._adminStateUp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ikepolicy_id: {
+        value: cdktf.stringToHclTerraform(this._ikepolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      initiator: {
+        value: cdktf.stringToHclTerraform(this._initiator),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipsecpolicy_id: {
+        value: cdktf.stringToHclTerraform(this._ipsecpolicyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_ep_group_id: {
+        value: cdktf.stringToHclTerraform(this._localEpGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_id: {
+        value: cdktf.stringToHclTerraform(this._localId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mtu: {
+        value: cdktf.numberToHclTerraform(this._mtu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_address: {
+        value: cdktf.stringToHclTerraform(this._peerAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_cidrs: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._peerCidrs),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      peer_ep_group_id: {
+        value: cdktf.stringToHclTerraform(this._peerEpGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      peer_id: {
+        value: cdktf.stringToHclTerraform(this._peerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      psk: {
+        value: cdktf.stringToHclTerraform(this._psk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_specs: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._valueSpecs),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpnservice_id: {
+        value: cdktf.stringToHclTerraform(this._vpnserviceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dpd: {
+        value: cdktf.listMapperHcl(vpnaasSiteConnectionV2DpdToHclTerraform, true)(this._dpd.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VpnaasSiteConnectionV2DpdList",
+      },
+      timeouts: {
+        value: vpnaasSiteConnectionV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpnaasSiteConnectionV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

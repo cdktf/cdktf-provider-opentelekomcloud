@@ -334,4 +334,72 @@ export class KmsKeyV1 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_cancel_deletion: {
+        value: cdktf.booleanToHclTerraform(this._allowCancelDeletion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_alias: {
+        value: cdktf.stringToHclTerraform(this._keyAlias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_description: {
+        value: cdktf.stringToHclTerraform(this._keyDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pending_days: {
+        value: cdktf.stringToHclTerraform(this._pendingDays),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      realm: {
+        value: cdktf.stringToHclTerraform(this._realm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rotation_enabled: {
+        value: cdktf.booleanToHclTerraform(this._rotationEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rotation_interval: {
+        value: cdktf.numberToHclTerraform(this._rotationInterval),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }
