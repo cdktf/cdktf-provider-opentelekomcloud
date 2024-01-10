@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/networking_secgroup_rule_v2
 // generated from terraform resource schema
 
@@ -85,6 +80,25 @@ export function networkingSecgroupRuleV2TimeoutsToTerraform(struct?: NetworkingS
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function networkingSecgroupRuleV2TimeoutsToHclTerraform(struct?: NetworkingSecgroupRuleV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkingSecgroupRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -435,5 +449,91 @@ export class NetworkingSecgroupRuleV2 extends cdktf.TerraformResource {
       tenant_id: cdktf.stringToTerraform(this._tenantId),
       timeouts: networkingSecgroupRuleV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      direction: {
+        value: cdktf.stringToHclTerraform(this._direction),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ethertype: {
+        value: cdktf.stringToHclTerraform(this._ethertype),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_range_max: {
+        value: cdktf.numberToHclTerraform(this._portRangeMax),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      port_range_min: {
+        value: cdktf.numberToHclTerraform(this._portRangeMin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_group_id: {
+        value: cdktf.stringToHclTerraform(this._remoteGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remote_ip_prefix: {
+        value: cdktf.stringToHclTerraform(this._remoteIpPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tenant_id: {
+        value: cdktf.stringToHclTerraform(this._tenantId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: networkingSecgroupRuleV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NetworkingSecgroupRuleV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vbs_backup_policy_v2
 // generated from terraform resource schema
 
@@ -92,6 +87,31 @@ export function vbsBackupPolicyV2TagsToTerraform(struct?: VbsBackupPolicyV2Tags 
     key: cdktf.stringToTerraform(struct!.key),
     value: cdktf.stringToTerraform(struct!.value),
   }
+}
+
+
+export function vbsBackupPolicyV2TagsToHclTerraform(struct?: VbsBackupPolicyV2Tags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VbsBackupPolicyV2TagsOutputReference extends cdktf.ComplexObject {
@@ -210,6 +230,31 @@ export function vbsBackupPolicyV2TimeoutsToTerraform(struct?: VbsBackupPolicyV2T
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function vbsBackupPolicyV2TimeoutsToHclTerraform(struct?: VbsBackupPolicyV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VbsBackupPolicyV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -587,5 +632,91 @@ export class VbsBackupPolicyV2 extends cdktf.TerraformResource {
       tags: cdktf.listMapper(vbsBackupPolicyV2TagsToTerraform, true)(this._tags.internalValue),
       timeouts: vbsBackupPolicyV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      frequency: {
+        value: cdktf.numberToHclTerraform(this._frequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rentention_day: {
+        value: cdktf.numberToHclTerraform(this._rententionDay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      rentention_num: {
+        value: cdktf.numberToHclTerraform(this._rententionNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      resources: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      retain_first_backup: {
+        value: cdktf.stringToHclTerraform(this._retainFirstBackup),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      start_time: {
+        value: cdktf.stringToHclTerraform(this._startTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      week_frequency: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._weekFrequency),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(vbsBackupPolicyV2TagsToHclTerraform, true)(this._tags.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VbsBackupPolicyV2TagsList",
+      },
+      timeouts: {
+        value: vbsBackupPolicyV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VbsBackupPolicyV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

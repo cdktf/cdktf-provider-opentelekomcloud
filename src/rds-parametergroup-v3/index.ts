@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/rds_parametergroup_v3
 // generated from terraform resource schema
 
@@ -48,6 +43,17 @@ export function rdsParametergroupV3ConfigurationParametersToTerraform(struct?: R
   }
   return {
   }
+}
+
+
+export function rdsParametergroupV3ConfigurationParametersToHclTerraform(struct?: RdsParametergroupV3ConfigurationParameters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class RdsParametergroupV3ConfigurationParametersOutputReference extends cdktf.ComplexObject {
@@ -152,6 +158,31 @@ export function rdsParametergroupV3DatastoreToTerraform(struct?: RdsParametergro
     type: cdktf.stringToTerraform(struct!.type),
     version: cdktf.stringToTerraform(struct!.version),
   }
+}
+
+
+export function rdsParametergroupV3DatastoreToHclTerraform(struct?: RdsParametergroupV3DatastoreOutputReference | RdsParametergroupV3Datastore): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    version: {
+      value: cdktf.stringToHclTerraform(struct!.version),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RdsParametergroupV3DatastoreOutputReference extends cdktf.ComplexObject {
@@ -383,5 +414,43 @@ export class RdsParametergroupV3 extends cdktf.TerraformResource {
       values: cdktf.hashMapper(cdktf.stringToTerraform)(this._values),
       datastore: rdsParametergroupV3DatastoreToTerraform(this._datastore.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      values: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._values),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      datastore: {
+        value: rdsParametergroupV3DatastoreToHclTerraform(this._datastore.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RdsParametergroupV3DatastoreList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/s3_bucket_object
 // generated from terraform resource schema
 
@@ -410,5 +405,103 @@ export class S3BucketObject extends cdktf.TerraformResource {
       sse_kms_key_id: cdktf.stringToTerraform(this._sseKmsKeyId),
       website_redirect: cdktf.stringToTerraform(this._websiteRedirect),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      acl: {
+        value: cdktf.stringToHclTerraform(this._acl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cache_control: {
+        value: cdktf.stringToHclTerraform(this._cacheControl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_disposition: {
+        value: cdktf.stringToHclTerraform(this._contentDisposition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_encoding: {
+        value: cdktf.stringToHclTerraform(this._contentEncoding),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_language: {
+        value: cdktf.stringToHclTerraform(this._contentLanguage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_type: {
+        value: cdktf.stringToHclTerraform(this._contentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      etag: {
+        value: cdktf.stringToHclTerraform(this._etag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key: {
+        value: cdktf.stringToHclTerraform(this._key),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_side_encryption: {
+        value: cdktf.stringToHclTerraform(this._serverSideEncryption),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source: {
+        value: cdktf.stringToHclTerraform(this._source),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sse_kms_key_id: {
+        value: cdktf.stringToHclTerraform(this._sseKmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      website_redirect: {
+        value: cdktf.stringToHclTerraform(this._websiteRedirect),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

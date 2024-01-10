@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dms_instance_v1
 // generated from terraform resource schema
 
@@ -534,5 +529,127 @@ export class DmsInstanceV1 extends cdktf.TerraformResource {
       subnet_id: cdktf.stringToTerraform(this._subnetId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_user: {
+        value: cdktf.stringToHclTerraform(this._accessUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      available_zones: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._availableZones),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine: {
+        value: cdktf.stringToHclTerraform(this._engine),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      engine_version: {
+        value: cdktf.stringToHclTerraform(this._engineVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintain_begin: {
+        value: cdktf.stringToHclTerraform(this._maintainBegin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintain_end: {
+        value: cdktf.stringToHclTerraform(this._maintainEnd),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_num: {
+        value: cdktf.numberToHclTerraform(this._partitionNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      password: {
+        value: cdktf.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      product_id: {
+        value: cdktf.stringToHclTerraform(this._productId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retention_policy: {
+        value: cdktf.stringToHclTerraform(this._retentionPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      security_group_id: {
+        value: cdktf.stringToHclTerraform(this._securityGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      specification: {
+        value: cdktf.stringToHclTerraform(this._specification),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_space: {
+        value: cdktf.numberToHclTerraform(this._storageSpace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_spec_code: {
+        value: cdktf.stringToHclTerraform(this._storageSpecCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      subnet_id: {
+        value: cdktf.stringToHclTerraform(this._subnetId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

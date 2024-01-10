@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/ces_alarmrule
 // generated from terraform resource schema
 
@@ -94,6 +89,31 @@ export function cesAlarmruleAlarmActionsToTerraform(struct?: CesAlarmruleAlarmAc
     notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function cesAlarmruleAlarmActionsToHclTerraform(struct?: CesAlarmruleAlarmActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    notification_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notificationList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CesAlarmruleAlarmActionsOutputReference extends cdktf.ComplexObject {
@@ -237,6 +257,61 @@ export function cesAlarmruleConditionToTerraform(struct?: CesAlarmruleConditionO
     unit: cdktf.stringToTerraform(struct!.unit),
     value: cdktf.numberToTerraform(struct!.value),
   }
+}
+
+
+export function cesAlarmruleConditionToHclTerraform(struct?: CesAlarmruleConditionOutputReference | CesAlarmruleCondition): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alarm_frequency: {
+      value: cdktf.numberToHclTerraform(struct!.alarmFrequency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    comparison_operator: {
+      value: cdktf.stringToHclTerraform(struct!.comparisonOperator),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    count: {
+      value: cdktf.numberToHclTerraform(struct!.count),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    filter: {
+      value: cdktf.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    period: {
+      value: cdktf.numberToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    unit: {
+      value: cdktf.stringToHclTerraform(struct!.unit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.numberToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CesAlarmruleConditionOutputReference extends cdktf.ComplexObject {
@@ -426,6 +501,31 @@ export function cesAlarmruleMetricDimensionsToTerraform(struct?: CesAlarmruleMet
   }
 }
 
+
+export function cesAlarmruleMetricDimensionsToHclTerraform(struct?: CesAlarmruleMetricDimensions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CesAlarmruleMetricDimensionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -551,6 +651,37 @@ export function cesAlarmruleMetricToTerraform(struct?: CesAlarmruleMetricOutputR
   }
 }
 
+
+export function cesAlarmruleMetricToHclTerraform(struct?: CesAlarmruleMetricOutputReference | CesAlarmruleMetric): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    metric_name: {
+      value: cdktf.stringToHclTerraform(struct!.metricName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    dimensions: {
+      value: cdktf.listMapperHcl(cesAlarmruleMetricDimensionsToHclTerraform, true)(struct!.dimensions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAlarmruleMetricDimensionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class CesAlarmruleMetricOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -657,6 +788,31 @@ export function cesAlarmruleOkActionsToTerraform(struct?: CesAlarmruleOkActions 
     notification_list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationList),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function cesAlarmruleOkActionsToHclTerraform(struct?: CesAlarmruleOkActions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    notification_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notificationList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CesAlarmruleOkActionsOutputReference extends cdktf.ComplexObject {
@@ -780,6 +936,37 @@ export function cesAlarmruleTimeoutsToTerraform(struct?: CesAlarmruleTimeouts | 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function cesAlarmruleTimeoutsToHclTerraform(struct?: CesAlarmruleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CesAlarmruleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1166,5 +1353,85 @@ export class CesAlarmrule extends cdktf.TerraformResource {
       ok_actions: cdktf.listMapper(cesAlarmruleOkActionsToTerraform, true)(this._okActions.internalValue),
       timeouts: cesAlarmruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      alarm_action_enabled: {
+        value: cdktf.booleanToHclTerraform(this._alarmActionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alarm_description: {
+        value: cdktf.stringToHclTerraform(this._alarmDescription),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alarm_enabled: {
+        value: cdktf.booleanToHclTerraform(this._alarmEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      alarm_level: {
+        value: cdktf.numberToHclTerraform(this._alarmLevel),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      alarm_name: {
+        value: cdktf.stringToHclTerraform(this._alarmName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alarm_type: {
+        value: cdktf.stringToHclTerraform(this._alarmType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      alarm_actions: {
+        value: cdktf.listMapperHcl(cesAlarmruleAlarmActionsToHclTerraform, true)(this._alarmActions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAlarmruleAlarmActionsList",
+      },
+      condition: {
+        value: cesAlarmruleConditionToHclTerraform(this._condition.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAlarmruleConditionList",
+      },
+      metric: {
+        value: cesAlarmruleMetricToHclTerraform(this._metric.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAlarmruleMetricList",
+      },
+      ok_actions: {
+        value: cdktf.listMapperHcl(cesAlarmruleOkActionsToHclTerraform, true)(this._okActions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAlarmruleOkActionsList",
+      },
+      timeouts: {
+        value: cesAlarmruleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CesAlarmruleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

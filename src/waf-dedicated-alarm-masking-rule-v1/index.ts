@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_alarm_masking_rule_v1
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform(struct
     contents: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contents),
     index: cdktf.stringToTerraform(struct!.index),
   }
+}
+
+
+export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform(struct?: WafDedicatedAlarmMaskingRuleV1AdvancedSettings | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contents: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contents),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference extends cdktf.ComplexObject {
@@ -208,6 +228,43 @@ export function wafDedicatedAlarmMaskingRuleV1ConditionsToTerraform(struct?: Waf
     index: cdktf.stringToTerraform(struct!.index),
     logic_operation: cdktf.stringToTerraform(struct!.logicOperation),
   }
+}
+
+
+export function wafDedicatedAlarmMaskingRuleV1ConditionsToHclTerraform(struct?: WafDedicatedAlarmMaskingRuleV1Conditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contents: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contents),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logic_operation: {
+      value: cdktf.stringToHclTerraform(struct!.logicOperation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference extends cdktf.ComplexObject {
@@ -375,6 +432,37 @@ export function wafDedicatedAlarmMaskingRuleV1TimeoutsToTerraform(struct?: WafDe
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function wafDedicatedAlarmMaskingRuleV1TimeoutsToHclTerraform(struct?: WafDedicatedAlarmMaskingRuleV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -686,5 +774,61 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
       conditions: cdktf.listMapper(wafDedicatedAlarmMaskingRuleV1ConditionsToTerraform, true)(this._conditions.internalValue),
       timeouts: wafDedicatedAlarmMaskingRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domains: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.stringToHclTerraform(this._rule),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      advanced_settings: {
+        value: cdktf.listMapperHcl(wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform, true)(this._advancedSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList",
+      },
+      conditions: {
+        value: cdktf.listMapperHcl(wafDedicatedAlarmMaskingRuleV1ConditionsToHclTerraform, true)(this._conditions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDedicatedAlarmMaskingRuleV1ConditionsList",
+      },
+      timeouts: {
+        value: wafDedicatedAlarmMaskingRuleV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WafDedicatedAlarmMaskingRuleV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

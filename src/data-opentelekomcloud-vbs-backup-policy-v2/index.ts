@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/vbs_backup_policy_v2
 // generated from terraform resource schema
 
@@ -52,6 +47,17 @@ export function dataOpentelekomcloudVbsBackupPolicyV2TagsToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudVbsBackupPolicyV2TagsToHclTerraform(struct?: DataOpentelekomcloudVbsBackupPolicyV2Tags): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudVbsBackupPolicyV2TagsOutputReference extends cdktf.ComplexObject {
@@ -131,6 +137,31 @@ export function dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform(struc
     key: cdktf.stringToTerraform(struct!.key),
     values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
+}
+
+
+export function dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToHclTerraform(struct?: DataOpentelekomcloudVbsBackupPolicyV2FilterTags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    values: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataOpentelekomcloudVbsBackupPolicyV2FilterTagsOutputReference extends cdktf.ComplexObject {
@@ -428,5 +459,49 @@ export class DataOpentelekomcloudVbsBackupPolicyV2 extends cdktf.TerraformDataSo
       status: cdktf.stringToTerraform(this._status),
       filter_tags: cdktf.listMapper(dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToTerraform, true)(this._filterTags.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_resource_count: {
+        value: cdktf.numberToHclTerraform(this._policyResourceCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      filter_tags: {
+        value: cdktf.listMapperHcl(dataOpentelekomcloudVbsBackupPolicyV2FilterTagsToHclTerraform, true)(this._filterTags.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataOpentelekomcloudVbsBackupPolicyV2FilterTagsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

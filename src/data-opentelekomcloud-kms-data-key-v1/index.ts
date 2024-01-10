@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/kms_data_key_v1
 // generated from terraform resource schema
 
@@ -173,5 +168,37 @@ export class DataOpentelekomcloudKmsDataKeyV1 extends cdktf.TerraformDataSource 
       id: cdktf.stringToTerraform(this._id),
       key_id: cdktf.stringToTerraform(this._keyId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datakey_length: {
+        value: cdktf.stringToHclTerraform(this._datakeyLength),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encryption_context: {
+        value: cdktf.stringToHclTerraform(this._encryptionContext),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

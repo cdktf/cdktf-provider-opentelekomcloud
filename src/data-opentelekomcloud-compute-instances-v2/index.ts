@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/compute_instances_v2
 // generated from terraform resource schema
 
@@ -70,6 +65,17 @@ export function dataOpentelekomcloudComputeInstancesV2InstancesNetworkToTerrafor
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudComputeInstancesV2InstancesNetworkToHclTerraform(struct?: DataOpentelekomcloudComputeInstancesV2InstancesNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudComputeInstancesV2InstancesNetworkOutputReference extends cdktf.ComplexObject {
@@ -159,6 +165,17 @@ export function dataOpentelekomcloudComputeInstancesV2InstancesToTerraform(struc
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudComputeInstancesV2InstancesToHclTerraform(struct?: DataOpentelekomcloudComputeInstancesV2Instances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudComputeInstancesV2InstancesOutputReference extends cdktf.ComplexObject {
@@ -554,5 +571,79 @@ export class DataOpentelekomcloudComputeInstancesV2 extends cdktf.TerraformDataS
       project_id: cdktf.stringToTerraform(this._projectId),
       status: cdktf.stringToTerraform(this._status),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flavor_id: {
+        value: cdktf.stringToHclTerraform(this._flavorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flavor_name: {
+        value: cdktf.stringToHclTerraform(this._flavorName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_id: {
+        value: cdktf.stringToHclTerraform(this._imageId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_pair: {
+        value: cdktf.stringToHclTerraform(this._keyPair),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit: {
+        value: cdktf.numberToHclTerraform(this._limit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_policy_v1
 // generated from terraform resource schema
 
@@ -152,6 +147,127 @@ export function wafDedicatedPolicyV1OptionsToTerraform(struct?: WafDedicatedPoli
     web_attack: cdktf.booleanToTerraform(struct!.webAttack),
     web_shell: cdktf.booleanToTerraform(struct!.webShell),
   }
+}
+
+
+export function wafDedicatedPolicyV1OptionsToHclTerraform(struct?: WafDedicatedPolicyV1Options | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    anti_crawler: {
+      value: cdktf.booleanToHclTerraform(struct!.antiCrawler),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    anti_leakage: {
+      value: cdktf.booleanToHclTerraform(struct!.antiLeakage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    anti_tamper: {
+      value: cdktf.booleanToHclTerraform(struct!.antiTamper),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    blacklist: {
+      value: cdktf.booleanToHclTerraform(struct!.blacklist),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    cc: {
+      value: cdktf.booleanToHclTerraform(struct!.cc),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    common: {
+      value: cdktf.booleanToHclTerraform(struct!.common),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    crawler: {
+      value: cdktf.booleanToHclTerraform(struct!.crawler),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    crawler_engine: {
+      value: cdktf.booleanToHclTerraform(struct!.crawlerEngine),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    crawler_other: {
+      value: cdktf.booleanToHclTerraform(struct!.crawlerOther),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    crawler_scanner: {
+      value: cdktf.booleanToHclTerraform(struct!.crawlerScanner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    crawler_script: {
+      value: cdktf.booleanToHclTerraform(struct!.crawlerScript),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    custom: {
+      value: cdktf.booleanToHclTerraform(struct!.custom),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    followed_action: {
+      value: cdktf.booleanToHclTerraform(struct!.followedAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    geolocation_access_control: {
+      value: cdktf.booleanToHclTerraform(struct!.geolocationAccessControl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ignore: {
+      value: cdktf.booleanToHclTerraform(struct!.ignore),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    privacy: {
+      value: cdktf.booleanToHclTerraform(struct!.privacy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    web_attack: {
+      value: cdktf.booleanToHclTerraform(struct!.webAttack),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    web_shell: {
+      value: cdktf.booleanToHclTerraform(struct!.webShell),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedPolicyV1OptionsOutputReference extends cdktf.ComplexObject {
@@ -640,6 +756,31 @@ export function wafDedicatedPolicyV1TimeoutsToTerraform(struct?: WafDedicatedPol
   }
 }
 
+
+export function wafDedicatedPolicyV1TimeoutsToHclTerraform(struct?: WafDedicatedPolicyV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class WafDedicatedPolicyV1TimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -936,5 +1077,61 @@ export class WafDedicatedPolicyV1 extends cdktf.TerraformResource {
       options: cdktf.listMapper(wafDedicatedPolicyV1OptionsToTerraform, true)(this._options.internalValue),
       timeouts: wafDedicatedPolicyV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      full_detection: {
+        value: cdktf.booleanToHclTerraform(this._fullDetection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      level: {
+        value: cdktf.numberToHclTerraform(this._level),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protection_mode: {
+        value: cdktf.stringToHclTerraform(this._protectionMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      options: {
+        value: cdktf.listMapperHcl(wafDedicatedPolicyV1OptionsToHclTerraform, true)(this._options.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDedicatedPolicyV1OptionsList",
+      },
+      timeouts: {
+        value: wafDedicatedPolicyV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WafDedicatedPolicyV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

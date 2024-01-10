@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3(scope Construct, id *string, config CceNodePoolV3Config) CceNodePoolV3
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -151,6 +152,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.toMetadata"></a>
 
@@ -584,7 +591,7 @@ func ResetUserTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.CceNodePoolV3_IsConstruct(x interface{}) *bool
 ```
@@ -616,7 +623,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.CceNodePoolV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -630,7 +637,7 @@ ccenodepoolv3.CceNodePoolV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.CceNodePoolV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -644,7 +651,7 @@ ccenodepoolv3.CceNodePoolV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.CceNodePoolV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1522,7 +1529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 &ccenodepoolv3.CceNodePoolV3Config {
 	Connection: interface{},
@@ -1537,7 +1544,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Flavor: *string,
 	InitialNodeCount: *f64,
 	Name: *string,
-	RootVolume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceNodePoolV3.CceNodePoolV3RootVolume,
+	RootVolume: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceNodePoolV3.CceNodePoolV3RootVolume,
 	AgencyName: *string,
 	AvailabilityZone: *string,
 	DockerBaseSize: *f64,
@@ -1559,7 +1566,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	ServerGroupReference: *string,
 	SubnetId: *string,
 	Taints: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.cceNodePoolV3.CceNodePoolV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cceNodePoolV3.CceNodePoolV3Timeouts,
 	UserTags: *map[string]*string,
 }
 ```
@@ -2041,7 +2048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 &ccenodepoolv3.CceNodePoolV3DataVolumes {
 	Size: *f64,
@@ -2129,7 +2136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3RootVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 &ccenodepoolv3.CceNodePoolV3RootVolume {
 	Size: *f64,
@@ -2217,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3Taints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 &ccenodepoolv3.CceNodePoolV3Taints {
 	Effect: *string,
@@ -2277,7 +2284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 &ccenodepoolv3.CceNodePoolV3Timeouts {
 	Create: *string,
@@ -2353,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3DataVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodePoolV3DataVolumesList
 ```
@@ -2394,10 +2401,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2496,7 +2520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3DataVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3DataVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceNodePoolV3DataVolumesOutputReference
 ```
@@ -2894,7 +2918,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3RootVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3RootVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceNodePoolV3RootVolumeOutputReference
 ```
@@ -3274,7 +3298,7 @@ func InternalValue() CceNodePoolV3RootVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3TaintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CceNodePoolV3TaintsList
 ```
@@ -3315,10 +3339,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3417,7 +3458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TaintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3TaintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CceNodePoolV3TaintsOutputReference
 ```
@@ -3750,7 +3791,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cceNodePoolV3.CceNodePoolV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/ccenodepoolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ccenodepoolv3"
 
 ccenodepoolv3.NewCceNodePoolV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CceNodePoolV3TimeoutsOutputReference
 ```

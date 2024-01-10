@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/lb_security_policy_v3
 // generated from terraform resource schema
 
@@ -205,5 +200,43 @@ export class LbSecurityPolicyV3 extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      ciphers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ciphers),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocols: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

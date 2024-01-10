@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/compute_flavor_v2
 // generated from terraform resource schema
 
@@ -373,5 +368,91 @@ export class DataOpentelekomcloudComputeFlavorV2 extends cdktf.TerraformDataSour
       swap: cdktf.numberToTerraform(this._swap),
       vcpus: cdktf.numberToTerraform(this._vcpus),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk: {
+        value: cdktf.numberToHclTerraform(this._disk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      flavor_id: {
+        value: cdktf.stringToHclTerraform(this._flavorId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_disk: {
+        value: cdktf.numberToHclTerraform(this._minDisk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_ram: {
+        value: cdktf.numberToHclTerraform(this._minRam),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ram: {
+        value: cdktf.numberToHclTerraform(this._ram),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resource_type: {
+        value: cdktf.stringToHclTerraform(this._resourceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rx_tx_factor: {
+        value: cdktf.numberToHclTerraform(this._rxTxFactor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      swap: {
+        value: cdktf.numberToHclTerraform(this._swap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      vcpus: {
+        value: cdktf.numberToHclTerraform(this._vcpus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

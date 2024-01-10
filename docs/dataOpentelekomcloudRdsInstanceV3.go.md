@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.NewDataOpentelekomcloudRdsInstanceV3(scope Construct, id *string, config DataOpentelekomcloudRdsInstanceV3Config) DataOpentelekomcloudRdsInstanceV3
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -126,6 +127,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.toMetadata"></a>
 
@@ -323,7 +332,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +378,7 @@ dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -383,7 +392,7 @@ dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -975,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 &dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3BackupStrategy {
 
@@ -988,7 +997,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 &dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3Config {
 	Connection: interface{},
@@ -1205,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3Nodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 &dataopentelekomcloudrdsinstancev3.DataOpentelekomcloudRdsInstanceV3Nodes {
 
@@ -1220,7 +1229,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.NewDataOpentelekomcloudRdsInstanceV3BackupStrategyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRdsInstanceV3BackupStrategyList
 ```
@@ -1261,10 +1270,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1352,7 +1378,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3BackupStrategyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.NewDataOpentelekomcloudRdsInstanceV3BackupStrategyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRdsInstanceV3BackupStrategyOutputReference
 ```
@@ -1641,7 +1667,7 @@ func InternalValue() DataOpentelekomcloudRdsInstanceV3BackupStrategy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.NewDataOpentelekomcloudRdsInstanceV3NodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRdsInstanceV3NodesList
 ```
@@ -1682,10 +1708,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1773,7 +1816,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsInstanceV3.DataOpentelekomcloudRdsInstanceV3NodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudrdsinstancev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrdsinstancev3"
 
 dataopentelekomcloudrdsinstancev3.NewDataOpentelekomcloudRdsInstanceV3NodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRdsInstanceV3NodesOutputReference
 ```

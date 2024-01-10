@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/mrs_job_v1
 // generated from terraform resource schema
 
@@ -99,6 +94,37 @@ export function mrsJobV1TimeoutsToTerraform(struct?: MrsJobV1Timeouts | cdktf.IR
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mrsJobV1TimeoutsToHclTerraform(struct?: MrsJobV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MrsJobV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -513,5 +539,97 @@ export class MrsJobV1 extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       timeouts: mrsJobV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      arguments: {
+        value: cdktf.stringToHclTerraform(this._arguments),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hive_script_path: {
+        value: cdktf.stringToHclTerraform(this._hiveScriptPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      input: {
+        value: cdktf.stringToHclTerraform(this._input),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_protected: {
+        value: cdktf.booleanToHclTerraform(this._isProtected),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_public: {
+        value: cdktf.booleanToHclTerraform(this._isPublic),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      jar_path: {
+        value: cdktf.stringToHclTerraform(this._jarPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_log: {
+        value: cdktf.stringToHclTerraform(this._jobLog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_name: {
+        value: cdktf.stringToHclTerraform(this._jobName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_type: {
+        value: cdktf.numberToHclTerraform(this._jobType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      output: {
+        value: cdktf.stringToHclTerraform(this._output),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: mrsJobV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MrsJobV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

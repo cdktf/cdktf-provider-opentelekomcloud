@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_cc_rule_v1
 // generated from terraform resource schema
 
@@ -111,6 +106,37 @@ export function wafDedicatedCcRuleV1ActionToTerraform(struct?: WafDedicatedCcRul
     content: cdktf.stringToTerraform(struct!.content),
     content_type: cdktf.stringToTerraform(struct!.contentType),
   }
+}
+
+
+export function wafDedicatedCcRuleV1ActionToHclTerraform(struct?: WafDedicatedCcRuleV1Action | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedCcRuleV1ActionOutputReference extends cdktf.ComplexObject {
@@ -269,6 +295,49 @@ export function wafDedicatedCcRuleV1ConditionsToTerraform(struct?: WafDedicatedC
     logic_operation: cdktf.stringToTerraform(struct!.logicOperation),
     value_list_id: cdktf.stringToTerraform(struct!.valueListId),
   }
+}
+
+
+export function wafDedicatedCcRuleV1ConditionsToHclTerraform(struct?: WafDedicatedCcRuleV1Conditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    category: {
+      value: cdktf.stringToHclTerraform(struct!.category),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    contents: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contents),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    index: {
+      value: cdktf.stringToHclTerraform(struct!.index),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    logic_operation: {
+      value: cdktf.stringToHclTerraform(struct!.logicOperation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value_list_id: {
+      value: cdktf.stringToHclTerraform(struct!.valueListId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedCcRuleV1ConditionsOutputReference extends cdktf.ComplexObject {
@@ -453,6 +522,31 @@ export function wafDedicatedCcRuleV1TimeoutsToTerraform(struct?: WafDedicatedCcR
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function wafDedicatedCcRuleV1TimeoutsToHclTerraform(struct?: WafDedicatedCcRuleV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedCcRuleV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -877,5 +971,109 @@ export class WafDedicatedCcRuleV1 extends cdktf.TerraformResource {
       conditions: cdktf.listMapper(wafDedicatedCcRuleV1ConditionsToTerraform, true)(this._conditions.internalValue),
       timeouts: wafDedicatedCcRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limit_num: {
+        value: cdktf.numberToHclTerraform(this._limitNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      limit_period: {
+        value: cdktf.numberToHclTerraform(this._limitPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      lock_time: {
+        value: cdktf.numberToHclTerraform(this._lockTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      mode: {
+        value: cdktf.numberToHclTerraform(this._mode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_category: {
+        value: cdktf.stringToHclTerraform(this._tagCategory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_contents: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagContents),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      tag_index: {
+        value: cdktf.stringToHclTerraform(this._tagIndex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_type: {
+        value: cdktf.stringToHclTerraform(this._tagType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      unlock_num: {
+        value: cdktf.numberToHclTerraform(this._unlockNum),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      url: {
+        value: cdktf.stringToHclTerraform(this._url),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      action: {
+        value: cdktf.listMapperHcl(wafDedicatedCcRuleV1ActionToHclTerraform, true)(this._action.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "WafDedicatedCcRuleV1ActionList",
+      },
+      conditions: {
+        value: cdktf.listMapperHcl(wafDedicatedCcRuleV1ConditionsToHclTerraform, true)(this._conditions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDedicatedCcRuleV1ConditionsList",
+      },
+      timeouts: {
+        value: wafDedicatedCcRuleV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "WafDedicatedCcRuleV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

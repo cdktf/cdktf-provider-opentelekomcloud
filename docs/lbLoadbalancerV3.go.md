@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.NewLbLoadbalancerV3(scope Construct, id *string, config LbLoadbalancerV3Config) LbLoadbalancerV3
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -138,6 +139,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.toMetadata"></a>
 
@@ -475,7 +482,7 @@ func ResetVipAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +528,7 @@ lbloadbalancerv3.LbLoadbalancerV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +542,7 @@ lbloadbalancerv3.LbLoadbalancerV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.LbLoadbalancerV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1127,7 +1134,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 &lbloadbalancerv3.LbLoadbalancerV3Config {
 	Connection: interface{},
@@ -1147,7 +1154,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	L4Flavor: *string,
 	L7Flavor: *string,
 	Name: *string,
-	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.lbLoadbalancerV3.LbLoadbalancerV3PublicIp,
+	PublicIp: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3PublicIp,
 	RouterId: *string,
 	SubnetId: *string,
 	Tags: *map[string]*string,
@@ -1444,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3PublicIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 &lbloadbalancerv3.LbLoadbalancerV3PublicIp {
 	BandwidthChargeMode: *string,
@@ -1551,7 +1558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV3.LbLoadbalancerV3PublicIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/lbloadbalancerv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv3"
 
 lbloadbalancerv3.NewLbLoadbalancerV3PublicIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbLoadbalancerV3PublicIpOutputReference
 ```

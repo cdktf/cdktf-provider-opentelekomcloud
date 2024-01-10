@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dis_stream_v2
 // generated from terraform resource schema
 
@@ -72,6 +67,17 @@ export function disStreamV2PartitionsToTerraform(struct?: DisStreamV2Partitions)
   }
   return {
   }
+}
+
+
+export function disStreamV2PartitionsToHclTerraform(struct?: DisStreamV2Partitions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DisStreamV2PartitionsOutputReference extends cdktf.ComplexObject {
@@ -161,6 +167,25 @@ export function disStreamV2TimeoutsToTerraform(struct?: DisStreamV2Timeouts | cd
   return {
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function disStreamV2TimeoutsToHclTerraform(struct?: DisStreamV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DisStreamV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -509,5 +534,79 @@ export class DisStreamV2 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeouts: disStreamV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auto_scale_max_partition_count: {
+        value: cdktf.numberToHclTerraform(this._autoScaleMaxPartitionCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      auto_scale_min_partition_count: {
+        value: cdktf.numberToHclTerraform(this._autoScaleMinPartitionCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      compression_format: {
+        value: cdktf.stringToHclTerraform(this._compressionFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      data_type: {
+        value: cdktf.stringToHclTerraform(this._dataType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition_count: {
+        value: cdktf.numberToHclTerraform(this._partitionCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retention_period: {
+        value: cdktf.numberToHclTerraform(this._retentionPeriod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      stream_type: {
+        value: cdktf.stringToHclTerraform(this._streamType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      timeouts: {
+        value: disStreamV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DisStreamV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

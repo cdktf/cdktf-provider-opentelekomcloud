@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NewNetworkingRouterInterfaceV2(scope Construct, id *string, config NetworkingRouterInterfaceV2Config) NetworkingRouterInterfaceV2
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.toMetadata"></a>
 
@@ -419,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NetworkingRouterInterfaceV2_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NetworkingRouterInterfaceV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ networkingrouterinterfacev2.NetworkingRouterInterfaceV2_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NetworkingRouterInterfaceV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ networkingrouterinterfacev2.NetworkingRouterInterfaceV2_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NetworkingRouterInterfaceV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 &networkingrouterinterfacev2.NetworkingRouterInterfaceV2Config {
 	Connection: interface{},
@@ -855,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	PortId: *string,
 	Region: *string,
 	SubnetId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts,
 }
 ```
 
@@ -1031,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 &networkingrouterinterfacev2.NetworkingRouterInterfaceV2Timeouts {
 	Create: *string,
@@ -1079,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/networkingrouterinterfacev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/networkingrouterinterfacev2"
 
 networkingrouterinterfacev2.NewNetworkingRouterInterfaceV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkingRouterInterfaceV2TimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.NewWafDedicatedWebTamperRuleV1(scope Construct, id *string, config WafDedicatedWebTamperRuleV1Config) WafDedicatedWebTamperRuleV1
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetUpdateCache()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 &wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1Config {
 	Connection: interface{},
@@ -892,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	Url: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts,
 	UpdateCache: interface{},
 }
 ```
@@ -1082,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 &wafdedicatedwebtamperrulev1.WafDedicatedWebTamperRuleV1Timeouts {
 	Create: *string,
@@ -1144,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/wafdedicatedwebtamperrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedwebtamperrulev1"
 
 wafdedicatedwebtamperrulev1.NewWafDedicatedWebTamperRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedWebTamperRuleV1TimeoutsOutputReference
 ```

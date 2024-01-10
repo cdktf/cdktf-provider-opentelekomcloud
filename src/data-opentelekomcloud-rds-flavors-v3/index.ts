@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/rds_flavors_v3
 // generated from terraform resource schema
 
@@ -42,6 +37,17 @@ export function dataOpentelekomcloudRdsFlavorsV3FlavorsToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudRdsFlavorsV3FlavorsToHclTerraform(struct?: DataOpentelekomcloudRdsFlavorsV3Flavors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudRdsFlavorsV3FlavorsOutputReference extends cdktf.ComplexObject {
@@ -251,5 +257,37 @@ export class DataOpentelekomcloudRdsFlavorsV3 extends cdktf.TerraformDataSource 
       id: cdktf.stringToTerraform(this._id),
       instance_mode: cdktf.stringToTerraform(this._instanceMode),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      db_type: {
+        value: cdktf.stringToHclTerraform(this._dbType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      db_version: {
+        value: cdktf.stringToHclTerraform(this._dbVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_mode: {
+        value: cdktf.stringToHclTerraform(this._instanceMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

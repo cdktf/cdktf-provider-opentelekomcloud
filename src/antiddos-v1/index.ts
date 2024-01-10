@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/antiddos_v1
 // generated from terraform resource schema
 
@@ -79,6 +74,37 @@ export function antiddosV1TimeoutsToTerraform(struct?: AntiddosV1Timeouts | cdkt
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function antiddosV1TimeoutsToHclTerraform(struct?: AntiddosV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AntiddosV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -392,5 +418,67 @@ export class AntiddosV1 extends cdktf.TerraformResource {
       traffic_pos_id: cdktf.numberToTerraform(this._trafficPosId),
       timeouts: antiddosV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_type_id: {
+        value: cdktf.numberToHclTerraform(this._appTypeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cleaning_access_pos_id: {
+        value: cdktf.numberToHclTerraform(this._cleaningAccessPosId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      enable_l7: {
+        value: cdktf.booleanToHclTerraform(this._enableL7),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      floating_ip_id: {
+        value: cdktf.stringToHclTerraform(this._floatingIpId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_request_pos_id: {
+        value: cdktf.numberToHclTerraform(this._httpRequestPosId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      traffic_pos_id: {
+        value: cdktf.numberToHclTerraform(this._trafficPosId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeouts: {
+        value: antiddosV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "AntiddosV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

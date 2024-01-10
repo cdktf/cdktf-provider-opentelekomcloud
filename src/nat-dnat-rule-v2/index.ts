@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/nat_dnat_rule_v2
 // generated from terraform resource schema
 
@@ -74,6 +69,31 @@ export function natDnatRuleV2TimeoutsToTerraform(struct?: NatDnatRuleV2Timeouts 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function natDnatRuleV2TimeoutsToHclTerraform(struct?: NatDnatRuleV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NatDnatRuleV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -388,5 +408,67 @@ export class NatDnatRuleV2 extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       timeouts: natDnatRuleV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      external_service_port: {
+        value: cdktf.numberToHclTerraform(this._externalServicePort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      floating_ip_id: {
+        value: cdktf.stringToHclTerraform(this._floatingIpId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      internal_service_port: {
+        value: cdktf.numberToHclTerraform(this._internalServicePort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      nat_gateway_id: {
+        value: cdktf.stringToHclTerraform(this._natGatewayId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_id: {
+        value: cdktf.stringToHclTerraform(this._portId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private_ip: {
+        value: cdktf.stringToHclTerraform(this._privateIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: natDnatRuleV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NatDnatRuleV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

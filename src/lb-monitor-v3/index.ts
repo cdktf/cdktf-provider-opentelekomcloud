@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/lb_monitor_v3
 // generated from terraform resource schema
 
@@ -396,5 +391,103 @@ export class LbMonitorV3 extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       url_path: cdktf.stringToTerraform(this._urlPath),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      admin_state_up: {
+        value: cdktf.booleanToHclTerraform(this._adminStateUp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      delay: {
+        value: cdktf.numberToHclTerraform(this._delay),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      domain_name: {
+        value: cdktf.stringToHclTerraform(this._domainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      expected_codes: {
+        value: cdktf.stringToHclTerraform(this._expectedCodes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      http_method: {
+        value: cdktf.stringToHclTerraform(this._httpMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_retries: {
+        value: cdktf.numberToHclTerraform(this._maxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_retries_down: {
+        value: cdktf.numberToHclTerraform(this._maxRetriesDown),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      monitor_port: {
+        value: cdktf.numberToHclTerraform(this._monitorPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pool_id: {
+        value: cdktf.stringToHclTerraform(this._poolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_id: {
+        value: cdktf.stringToHclTerraform(this._projectId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeout: {
+        value: cdktf.numberToHclTerraform(this._timeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      url_path: {
+        value: cdktf.stringToHclTerraform(this._urlPath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/images_image_v2
 // generated from terraform resource schema
 
@@ -483,5 +478,73 @@ export class DataOpentelekomcloudImagesImageV2 extends cdktf.TerraformDataSource
       tag: cdktf.stringToTerraform(this._tag),
       visibility: cdktf.stringToTerraform(this._visibility),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      most_recent: {
+        value: cdktf.booleanToHclTerraform(this._mostRecent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name_regex: {
+        value: cdktf.stringToHclTerraform(this._nameRegex),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size_max: {
+        value: cdktf.numberToHclTerraform(this._sizeMax),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      size_min: {
+        value: cdktf.numberToHclTerraform(this._sizeMin),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sort_direction: {
+        value: cdktf.stringToHclTerraform(this._sortDirection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_key: {
+        value: cdktf.stringToHclTerraform(this._sortKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag: {
+        value: cdktf.stringToHclTerraform(this._tag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

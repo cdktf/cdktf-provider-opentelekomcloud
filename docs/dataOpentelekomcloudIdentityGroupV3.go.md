@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.NewDataOpentelekomcloudIdentityGroupV3(scope Construct, id *string, config DataOpentelekomcloudIdentityGroupV3Config) DataOpentelekomcloudIdentityGroupV3
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -643,7 +652,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityGroupV3.DataOpentelekomcloudIdentityGroupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudidentitygroupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentitygroupv3"
 
 &dataopentelekomcloudidentitygroupv3.DataOpentelekomcloudIdentityGroupV3Config {
 	Connection: interface{},

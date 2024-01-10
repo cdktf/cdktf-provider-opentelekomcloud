@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/identity_agency_v3
 // generated from terraform resource schema
 
@@ -68,6 +63,31 @@ export function identityAgencyV3ProjectRoleToTerraform(struct?: IdentityAgencyV3
     project: cdktf.stringToTerraform(struct!.project),
     roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
   }
+}
+
+
+export function identityAgencyV3ProjectRoleToHclTerraform(struct?: IdentityAgencyV3ProjectRole | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    project: {
+      value: cdktf.stringToHclTerraform(struct!.project),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    roles: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IdentityAgencyV3ProjectRoleOutputReference extends cdktf.ComplexObject {
@@ -191,6 +211,37 @@ export function identityAgencyV3TimeoutsToTerraform(struct?: IdentityAgencyV3Tim
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function identityAgencyV3TimeoutsToHclTerraform(struct?: IdentityAgencyV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IdentityAgencyV3TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -495,5 +546,55 @@ export class IdentityAgencyV3 extends cdktf.TerraformResource {
       project_role: cdktf.listMapper(identityAgencyV3ProjectRoleToTerraform, true)(this._projectRole.internalValue),
       timeouts: identityAgencyV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      delegated_domain_name: {
+        value: cdktf.stringToHclTerraform(this._delegatedDomainName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain_roles: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domainRoles),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_role: {
+        value: cdktf.listMapperHcl(identityAgencyV3ProjectRoleToHclTerraform, true)(this._projectRole.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "IdentityAgencyV3ProjectRoleList",
+      },
+      timeouts: {
+        value: identityAgencyV3TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "IdentityAgencyV3Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

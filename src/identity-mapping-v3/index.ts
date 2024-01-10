@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/identity_mapping_v3
 // generated from terraform resource schema
 
@@ -147,5 +142,31 @@ export class IdentityMappingV3 extends cdktf.TerraformResource {
       mapping_id: cdktf.stringToTerraform(this._mappingId),
       rules: cdktf.stringToTerraform(this._rules),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mapping_id: {
+        value: cdktf.stringToHclTerraform(this._mappingId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules: {
+        value: cdktf.stringToHclTerraform(this._rules),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

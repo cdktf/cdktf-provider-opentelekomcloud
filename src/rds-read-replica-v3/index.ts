@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/rds_read_replica_v3
 // generated from terraform resource schema
 
@@ -66,6 +61,17 @@ export function rdsReadReplicaV3DbToTerraform(struct?: RdsReadReplicaV3Db): any 
   }
   return {
   }
+}
+
+
+export function rdsReadReplicaV3DbToHclTerraform(struct?: RdsReadReplicaV3Db): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class RdsReadReplicaV3DbOutputReference extends cdktf.ComplexObject {
@@ -155,6 +161,31 @@ export function rdsReadReplicaV3TimeoutsToTerraform(struct?: RdsReadReplicaV3Tim
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function rdsReadReplicaV3TimeoutsToHclTerraform(struct?: RdsReadReplicaV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RdsReadReplicaV3TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -257,6 +288,31 @@ export function rdsReadReplicaV3VolumeToTerraform(struct?: RdsReadReplicaV3Volum
     disk_encryption_id: cdktf.stringToTerraform(struct!.diskEncryptionId),
     type: cdktf.stringToTerraform(struct!.type),
   }
+}
+
+
+export function rdsReadReplicaV3VolumeToHclTerraform(struct?: RdsReadReplicaV3VolumeOutputReference | RdsReadReplicaV3Volume): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk_encryption_id: {
+      value: cdktf.stringToHclTerraform(struct!.diskEncryptionId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RdsReadReplicaV3VolumeOutputReference extends cdktf.ComplexObject {
@@ -572,5 +628,67 @@ export class RdsReadReplicaV3 extends cdktf.TerraformResource {
       timeouts: rdsReadReplicaV3TimeoutsToTerraform(this._timeouts.internalValue),
       volume: rdsReadReplicaV3VolumeToTerraform(this._volume.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flavor_ref: {
+        value: cdktf.stringToHclTerraform(this._flavorRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publicIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      replica_of_id: {
+        value: cdktf.stringToHclTerraform(this._replicaOfId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: rdsReadReplicaV3TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "RdsReadReplicaV3Timeouts",
+      },
+      volume: {
+        value: rdsReadReplicaV3VolumeToHclTerraform(this._volume.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RdsReadReplicaV3VolumeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

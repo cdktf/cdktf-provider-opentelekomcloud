@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/obs_bucket_replication
 // generated from terraform resource schema
 
@@ -72,6 +67,43 @@ export function obsBucketReplicationRuleToTerraform(struct?: ObsBucketReplicatio
     prefix: cdktf.stringToTerraform(struct!.prefix),
     storage_class: cdktf.stringToTerraform(struct!.storageClass),
   }
+}
+
+
+export function obsBucketReplicationRuleToHclTerraform(struct?: ObsBucketReplicationRule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    history_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.historyEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    storage_class: {
+      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ObsBucketReplicationRuleOutputReference extends cdktf.ComplexObject {
@@ -389,5 +421,49 @@ export class ObsBucketReplication extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       rule: cdktf.listMapper(obsBucketReplicationRuleToTerraform, true)(this._rule.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      agency: {
+        value: cdktf.stringToHclTerraform(this._agency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bucket: {
+        value: cdktf.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination_bucket: {
+        value: cdktf.stringToHclTerraform(this._destinationBucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(obsBucketReplicationRuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ObsBucketReplicationRuleList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/css_flavor_v1
 // generated from terraform resource schema
 
@@ -66,6 +61,31 @@ export function dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(struct?: Dat
     min_from: cdktf.numberToTerraform(struct!.minFrom),
     min_to: cdktf.numberToTerraform(struct!.minTo),
   }
+}
+
+
+export function dataOpentelekomcloudCssFlavorV1DiskRangeToHclTerraform(struct?: DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference | DataOpentelekomcloudCssFlavorV1DiskRange): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    min_from: {
+      value: cdktf.numberToHclTerraform(struct!.minFrom),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_to: {
+      value: cdktf.numberToHclTerraform(struct!.minTo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataOpentelekomcloudCssFlavorV1DiskRangeOutputReference extends cdktf.ComplexObject {
@@ -354,5 +374,55 @@ export class DataOpentelekomcloudCssFlavorV1 extends cdktf.TerraformDataSource {
       version: cdktf.stringToTerraform(this._version),
       disk_range: dataOpentelekomcloudCssFlavorV1DiskRangeToTerraform(this._diskRange.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_cpu: {
+        value: cdktf.numberToHclTerraform(this._minCpu),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_ram: {
+        value: cdktf.numberToHclTerraform(this._minRam),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_range: {
+        value: dataOpentelekomcloudCssFlavorV1DiskRangeToHclTerraform(this._diskRange.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataOpentelekomcloudCssFlavorV1DiskRangeList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

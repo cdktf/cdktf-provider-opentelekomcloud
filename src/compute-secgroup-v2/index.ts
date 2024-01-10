@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/compute_secgroup_v2
 // generated from terraform resource schema
 
@@ -84,6 +79,55 @@ export function computeSecgroupV2RuleToTerraform(struct?: ComputeSecgroupV2Rule 
     self: cdktf.booleanToTerraform(struct!.selfAttribute),
     to_port: cdktf.numberToTerraform(struct!.toPort),
   }
+}
+
+
+export function computeSecgroupV2RuleToHclTerraform(struct?: ComputeSecgroupV2Rule | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_group_id: {
+      value: cdktf.stringToHclTerraform(struct!.fromGroupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    from_port: {
+      value: cdktf.numberToHclTerraform(struct!.fromPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ip_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    self: {
+      value: cdktf.booleanToHclTerraform(struct!.selfAttribute),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    to_port: {
+      value: cdktf.numberToHclTerraform(struct!.toPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ComputeSecgroupV2RuleOutputReference extends cdktf.ComplexObject {
@@ -287,6 +331,25 @@ export function computeSecgroupV2TimeoutsToTerraform(struct?: ComputeSecgroupV2T
   return {
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function computeSecgroupV2TimeoutsToHclTerraform(struct?: ComputeSecgroupV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ComputeSecgroupV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -514,5 +577,49 @@ export class ComputeSecgroupV2 extends cdktf.TerraformResource {
       rule: cdktf.listMapper(computeSecgroupV2RuleToTerraform, true)(this._rule.internalValue),
       timeouts: computeSecgroupV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rule: {
+        value: cdktf.listMapperHcl(computeSecgroupV2RuleToHclTerraform, true)(this._rule.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "ComputeSecgroupV2RuleList",
+      },
+      timeouts: {
+        value: computeSecgroupV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ComputeSecgroupV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

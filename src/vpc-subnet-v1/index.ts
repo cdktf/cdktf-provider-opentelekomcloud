@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_subnet_v1
 // generated from terraform resource schema
 
@@ -98,6 +93,31 @@ export function vpcSubnetV1TimeoutsToTerraform(struct?: VpcSubnetV1Timeouts | cd
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function vpcSubnetV1TimeoutsToHclTerraform(struct?: VpcSubnetV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcSubnetV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -518,5 +538,103 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       timeouts: vpcSubnetV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cidr: {
+        value: cdktf.stringToHclTerraform(this._cidr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dhcp_enable: {
+        value: cdktf.booleanToHclTerraform(this._dhcpEnable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dns_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      gateway_ip: {
+        value: cdktf.stringToHclTerraform(this._gatewayIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ntp_addresses: {
+        value: cdktf.stringToHclTerraform(this._ntpAddresses),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      primary_dns: {
+        value: cdktf.stringToHclTerraform(this._primaryDns),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secondary_dns: {
+        value: cdktf.stringToHclTerraform(this._secondaryDns),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: vpcSubnetV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcSubnetV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

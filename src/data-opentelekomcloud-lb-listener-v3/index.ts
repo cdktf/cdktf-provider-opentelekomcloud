@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/lb_listener_v3
 // generated from terraform resource schema
 
@@ -88,6 +83,17 @@ export function dataOpentelekomcloudLbListenerV3InsertHeadersToTerraform(struct?
   }
 }
 
+
+export function dataOpentelekomcloudLbListenerV3InsertHeadersToHclTerraform(struct?: DataOpentelekomcloudLbListenerV3InsertHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataOpentelekomcloudLbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -165,6 +171,17 @@ export function dataOpentelekomcloudLbListenerV3IpGroupToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudLbListenerV3IpGroupToHclTerraform(struct?: DataOpentelekomcloudLbListenerV3IpGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudLbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
@@ -637,5 +654,103 @@ export class DataOpentelekomcloudLbListenerV3 extends cdktf.TerraformDataSource 
       protocol_port: cdktf.numberToTerraform(this._protocolPort),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      client_ca_tls_container_ref: {
+        value: cdktf.stringToHclTerraform(this._clientCaTlsContainerRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_timeout: {
+        value: cdktf.numberToHclTerraform(this._clientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      default_pool_id: {
+        value: cdktf.stringToHclTerraform(this._defaultPoolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_tls_container_ref: {
+        value: cdktf.stringToHclTerraform(this._defaultTlsContainerRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keep_alive_timeout: {
+        value: cdktf.numberToHclTerraform(this._keepAliveTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      loadbalancer_id: {
+        value: cdktf.stringToHclTerraform(this._loadbalancerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_address: {
+        value: cdktf.stringToHclTerraform(this._memberAddress),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_device_id: {
+        value: cdktf.stringToHclTerraform(this._memberDeviceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      member_timeout: {
+        value: cdktf.numberToHclTerraform(this._memberTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol_port: {
+        value: cdktf.numberToHclTerraform(this._protocolPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      tls_ciphers_policy: {
+        value: cdktf.stringToHclTerraform(this._tlsCiphersPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

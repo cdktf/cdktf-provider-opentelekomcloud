@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/blockstorage_volume_v2
 // generated from terraform resource schema
 
@@ -98,6 +93,17 @@ export function blockstorageVolumeV2AttachmentToTerraform(struct?: BlockstorageV
   }
 }
 
+
+export function blockstorageVolumeV2AttachmentToHclTerraform(struct?: BlockstorageVolumeV2Attachment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class BlockstorageVolumeV2AttachmentOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -180,6 +186,31 @@ export function blockstorageVolumeV2TimeoutsToTerraform(struct?: BlockstorageVol
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function blockstorageVolumeV2TimeoutsToHclTerraform(struct?: BlockstorageVolumeV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BlockstorageVolumeV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -641,5 +672,115 @@ export class BlockstorageVolumeV2 extends cdktf.TerraformResource {
       volume_type: cdktf.stringToTerraform(this._volumeType),
       timeouts: blockstorageVolumeV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cascade: {
+        value: cdktf.booleanToHclTerraform(this._cascade),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      consistency_group_id: {
+        value: cdktf.stringToHclTerraform(this._consistencyGroupId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      device_type: {
+        value: cdktf.stringToHclTerraform(this._deviceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_id: {
+        value: cdktf.stringToHclTerraform(this._imageId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      metadata: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size: {
+        value: cdktf.numberToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      snapshot_id: {
+        value: cdktf.stringToHclTerraform(this._snapshotId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_replica: {
+        value: cdktf.stringToHclTerraform(this._sourceReplica),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_vol_id: {
+        value: cdktf.stringToHclTerraform(this._sourceVolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      volume_type: {
+        value: cdktf.stringToHclTerraform(this._volumeType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: blockstorageVolumeV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "BlockstorageVolumeV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

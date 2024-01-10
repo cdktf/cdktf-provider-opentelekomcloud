@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/cts_tracker_v3
 // generated from terraform resource schema
 
@@ -59,6 +54,31 @@ export function ctsTrackerV3TimeoutsToTerraform(struct?: CtsTrackerV3Timeouts | 
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
   }
+}
+
+
+export function ctsTrackerV3TimeoutsToHclTerraform(struct?: CtsTrackerV3Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class CtsTrackerV3TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -356,5 +376,49 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
       status: cdktf.stringToTerraform(this._status),
       timeouts: ctsTrackerV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket_name: {
+        value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file_prefix_name: {
+        value: cdktf.stringToHclTerraform(this._filePrefixName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_lts_enabled: {
+        value: cdktf.booleanToHclTerraform(this._isLtsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_obs_created: {
+        value: cdktf.booleanToHclTerraform(this._isObsCreated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      status: {
+        value: cdktf.stringToHclTerraform(this._status),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: ctsTrackerV3TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "CtsTrackerV3Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

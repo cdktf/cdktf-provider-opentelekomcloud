@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2(scope Construct, id *string, config BlockstorageVolumeV2Config) BlockstorageVolumeV2
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -141,6 +142,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.toMetadata"></a>
 
@@ -496,7 +503,7 @@ func ResetVolumeType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +549,7 @@ blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +563,7 @@ blockstoragevolumev2.BlockstorageVolumeV2_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.BlockstorageVolumeV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1181,7 +1188,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Attachment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Attachment {
 
@@ -1194,7 +1201,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Config {
 	Connection: interface{},
@@ -1219,7 +1226,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10
 	SourceReplica: *string,
 	SourceVolId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts,
 	VolumeType: *string,
 }
 ```
@@ -1539,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 &blockstoragevolumev2.BlockstorageVolumeV2Timeouts {
 	Create: *string,
@@ -1587,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2AttachmentList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BlockstorageVolumeV2AttachmentList
 ```
@@ -1628,10 +1635,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1719,7 +1743,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2AttachmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2AttachmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BlockstorageVolumeV2AttachmentOutputReference
 ```
@@ -2019,7 +2043,7 @@ func InternalValue() BlockstorageVolumeV2Attachment
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.blockstorageVolumeV2.BlockstorageVolumeV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/blockstoragevolumev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/blockstoragevolumev2"
 
 blockstoragevolumev2.NewBlockstorageVolumeV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BlockstorageVolumeV2TimeoutsOutputReference
 ```

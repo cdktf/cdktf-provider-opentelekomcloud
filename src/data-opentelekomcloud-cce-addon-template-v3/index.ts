@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/cce_addon_template_v3
 // generated from terraform resource schema
 
@@ -251,5 +246,61 @@ export class DataOpentelekomcloudCceAddonTemplateV3 extends cdktf.TerraformDataS
       swr_addr: cdktf.stringToTerraform(this._swrAddr),
       swr_user: cdktf.stringToTerraform(this._swrUser),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      addon_name: {
+        value: cdktf.stringToHclTerraform(this._addonName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      addon_version: {
+        value: cdktf.stringToHclTerraform(this._addonVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_ip: {
+        value: cdktf.stringToHclTerraform(this._clusterIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_versions: {
+        value: cdktf.stringToHclTerraform(this._clusterVersions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_version: {
+        value: cdktf.stringToHclTerraform(this._imageVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      swr_addr: {
+        value: cdktf.stringToHclTerraform(this._swrAddr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      swr_user: {
+        value: cdktf.stringToHclTerraform(this._swrUser),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

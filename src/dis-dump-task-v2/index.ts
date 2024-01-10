@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dis_dump_task_v2
 // generated from terraform resource schema
 
@@ -60,6 +55,17 @@ export function disDumpTaskV2PartitionsToTerraform(struct?: DisDumpTaskV2Partiti
   }
   return {
   }
+}
+
+
+export function disDumpTaskV2PartitionsToHclTerraform(struct?: DisDumpTaskV2Partitions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DisDumpTaskV2PartitionsOutputReference extends cdktf.ComplexObject {
@@ -189,6 +195,73 @@ export function disDumpTaskV2ObsDestinationDescriptorToTerraform(struct?: DisDum
     record_delimiter: cdktf.stringToTerraform(struct!.recordDelimiter),
     task_name: cdktf.stringToTerraform(struct!.taskName),
   }
+}
+
+
+export function disDumpTaskV2ObsDestinationDescriptorToHclTerraform(struct?: DisDumpTaskV2ObsDestinationDescriptor | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    agency_name: {
+      value: cdktf.stringToHclTerraform(struct!.agencyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    consumer_strategy: {
+      value: cdktf.stringToHclTerraform(struct!.consumerStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    deliver_time_interval: {
+      value: cdktf.numberToHclTerraform(struct!.deliverTimeInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    destination_file_type: {
+      value: cdktf.stringToHclTerraform(struct!.destinationFileType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    file_prefix: {
+      value: cdktf.stringToHclTerraform(struct!.filePrefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    obs_bucket_path: {
+      value: cdktf.stringToHclTerraform(struct!.obsBucketPath),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    partition_format: {
+      value: cdktf.stringToHclTerraform(struct!.partitionFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    record_delimiter: {
+      value: cdktf.stringToHclTerraform(struct!.recordDelimiter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task_name: {
+      value: cdktf.stringToHclTerraform(struct!.taskName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DisDumpTaskV2ObsDestinationDescriptorOutputReference extends cdktf.ComplexObject {
@@ -462,6 +535,37 @@ export function disDumpTaskV2ObsProcessingSchemaToTerraform(struct?: DisDumpTask
   }
 }
 
+
+export function disDumpTaskV2ObsProcessingSchemaToHclTerraform(struct?: DisDumpTaskV2ObsProcessingSchema | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    timestamp_format: {
+      value: cdktf.stringToHclTerraform(struct!.timestampFormat),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timestamp_name: {
+      value: cdktf.stringToHclTerraform(struct!.timestampName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    timestamp_type: {
+      value: cdktf.stringToHclTerraform(struct!.timestampType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DisDumpTaskV2ObsProcessingSchemaOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -595,6 +699,25 @@ export function disDumpTaskV2TimeoutsToTerraform(struct?: DisDumpTaskV2Timeouts 
   return {
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function disDumpTaskV2TimeoutsToHclTerraform(struct?: DisDumpTaskV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DisDumpTaskV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -874,5 +997,55 @@ export class DisDumpTaskV2 extends cdktf.TerraformResource {
       obs_processing_schema: cdktf.listMapper(disDumpTaskV2ObsProcessingSchemaToTerraform, true)(this._obsProcessingSchema.internalValue),
       timeouts: disDumpTaskV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      destination: {
+        value: cdktf.stringToHclTerraform(this._destination),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      stream_name: {
+        value: cdktf.stringToHclTerraform(this._streamName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      obs_destination_descriptor: {
+        value: cdktf.listMapperHcl(disDumpTaskV2ObsDestinationDescriptorToHclTerraform, true)(this._obsDestinationDescriptor.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DisDumpTaskV2ObsDestinationDescriptorList",
+      },
+      obs_processing_schema: {
+        value: cdktf.listMapperHcl(disDumpTaskV2ObsProcessingSchemaToHclTerraform, true)(this._obsProcessingSchema.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DisDumpTaskV2ObsProcessingSchemaList",
+      },
+      timeouts: {
+        value: disDumpTaskV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DisDumpTaskV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

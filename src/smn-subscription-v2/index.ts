@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/smn_subscription_v2
 // generated from terraform resource schema
 
@@ -219,5 +214,49 @@ export class SmnSubscriptionV2 extends cdktf.TerraformResource {
       remark: cdktf.stringToTerraform(this._remark),
       topic_urn: cdktf.stringToTerraform(this._topicUrn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      endpoint: {
+        value: cdktf.stringToHclTerraform(this._endpoint),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      project_name: {
+        value: cdktf.stringToHclTerraform(this._projectName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      remark: {
+        value: cdktf.stringToHclTerraform(this._remark),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_urn: {
+        value: cdktf.stringToHclTerraform(this._topicUrn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

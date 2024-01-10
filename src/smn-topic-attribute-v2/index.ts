@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/smn_topic_attribute_v2
 // generated from terraform resource schema
 
@@ -160,5 +155,37 @@ export class SmnTopicAttributeV2 extends cdktf.TerraformResource {
       topic_attribute: cdktf.stringToTerraform(this._topicAttribute),
       topic_urn: cdktf.stringToTerraform(this._topicUrn),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      attribute_name: {
+        value: cdktf.stringToHclTerraform(this._attributeName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_attribute: {
+        value: cdktf.stringToHclTerraform(this._topicAttribute),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_urn: {
+        value: cdktf.stringToHclTerraform(this._topicUrn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

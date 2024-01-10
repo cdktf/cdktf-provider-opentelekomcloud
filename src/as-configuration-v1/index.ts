@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/as_configuration_v1
 // generated from terraform resource schema
 
@@ -64,6 +59,43 @@ export function asConfigurationV1InstanceConfigDiskToTerraform(struct?: AsConfig
     size: cdktf.numberToTerraform(struct!.size),
     volume_type: cdktf.stringToTerraform(struct!.volumeType),
   }
+}
+
+
+export function asConfigurationV1InstanceConfigDiskToHclTerraform(struct?: AsConfigurationV1InstanceConfigDisk | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk_type: {
+      value: cdktf.stringToHclTerraform(struct!.diskType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_id: {
+      value: cdktf.stringToHclTerraform(struct!.kmsId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    volume_type: {
+      value: cdktf.stringToHclTerraform(struct!.volumeType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsConfigurationV1InstanceConfigDiskOutputReference extends cdktf.ComplexObject {
@@ -225,6 +257,31 @@ export function asConfigurationV1InstanceConfigPersonalityToTerraform(struct?: A
   }
 }
 
+
+export function asConfigurationV1InstanceConfigPersonalityToHclTerraform(struct?: AsConfigurationV1InstanceConfigPersonality | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content: {
+      value: cdktf.stringToHclTerraform(struct!.content),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AsConfigurationV1InstanceConfigPersonalityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -348,6 +405,37 @@ export function asConfigurationV1InstanceConfigPublicIpEipBandwidthToTerraform(s
   }
 }
 
+
+export function asConfigurationV1InstanceConfigPublicIpEipBandwidthToHclTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference | AsConfigurationV1InstanceConfigPublicIpEipBandwidth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    charging_mode: {
+      value: cdktf.stringToHclTerraform(struct!.chargingMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    share_type: {
+      value: cdktf.stringToHclTerraform(struct!.shareType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktf.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AsConfigurationV1InstanceConfigPublicIpEipBandwidthOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -455,6 +543,31 @@ export function asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct?: A
   }
 }
 
+
+export function asConfigurationV1InstanceConfigPublicIpEipToHclTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpEipOutputReference | AsConfigurationV1InstanceConfigPublicIpEip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ip_type: {
+      value: cdktf.stringToHclTerraform(struct!.ipType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bandwidth: {
+      value: asConfigurationV1InstanceConfigPublicIpEipBandwidthToHclTerraform(struct!.bandwidth),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AsConfigurationV1InstanceConfigPublicIpEipBandwidthList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AsConfigurationV1InstanceConfigPublicIpEipOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -536,6 +649,25 @@ export function asConfigurationV1InstanceConfigPublicIpToTerraform(struct?: AsCo
   return {
     eip: asConfigurationV1InstanceConfigPublicIpEipToTerraform(struct!.eip),
   }
+}
+
+
+export function asConfigurationV1InstanceConfigPublicIpToHclTerraform(struct?: AsConfigurationV1InstanceConfigPublicIpOutputReference | AsConfigurationV1InstanceConfigPublicIp): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    eip: {
+      value: asConfigurationV1InstanceConfigPublicIpEipToHclTerraform(struct!.eip),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AsConfigurationV1InstanceConfigPublicIpEipList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsConfigurationV1InstanceConfigPublicIpOutputReference extends cdktf.ComplexObject {
@@ -649,6 +781,79 @@ export function asConfigurationV1InstanceConfigToTerraform(struct?: AsConfigurat
     personality: cdktf.listMapper(asConfigurationV1InstanceConfigPersonalityToTerraform, true)(struct!.personality),
     public_ip: asConfigurationV1InstanceConfigPublicIpToTerraform(struct!.publicIp),
   }
+}
+
+
+export function asConfigurationV1InstanceConfigToHclTerraform(struct?: AsConfigurationV1InstanceConfigOutputReference | AsConfigurationV1InstanceConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    flavor: {
+      value: cdktf.stringToHclTerraform(struct!.flavor),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    image: {
+      value: cdktf.stringToHclTerraform(struct!.image),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    instance_id: {
+      value: cdktf.stringToHclTerraform(struct!.instanceId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_name: {
+      value: cdktf.stringToHclTerraform(struct!.keyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.metadata),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    security_groups: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.securityGroups),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    user_data: {
+      value: cdktf.stringToHclTerraform(struct!.userData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk: {
+      value: cdktf.listMapperHcl(asConfigurationV1InstanceConfigDiskToHclTerraform, true)(struct!.disk),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AsConfigurationV1InstanceConfigDiskList",
+    },
+    personality: {
+      value: cdktf.listMapperHcl(asConfigurationV1InstanceConfigPersonalityToHclTerraform, true)(struct!.personality),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AsConfigurationV1InstanceConfigPersonalityList",
+    },
+    public_ip: {
+      value: asConfigurationV1InstanceConfigPublicIpToHclTerraform(struct!.publicIp),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AsConfigurationV1InstanceConfigPublicIpList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class AsConfigurationV1InstanceConfigOutputReference extends cdktf.ComplexObject {
@@ -1025,5 +1230,37 @@ export class AsConfigurationV1 extends cdktf.TerraformResource {
       scaling_configuration_name: cdktf.stringToTerraform(this._scalingConfigurationName),
       instance_config: asConfigurationV1InstanceConfigToTerraform(this._instanceConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scaling_configuration_name: {
+        value: cdktf.stringToHclTerraform(this._scalingConfigurationName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_config: {
+        value: asConfigurationV1InstanceConfigToHclTerraform(this._instanceConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AsConfigurationV1InstanceConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

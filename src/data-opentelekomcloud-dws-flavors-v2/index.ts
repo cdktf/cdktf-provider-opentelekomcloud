@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/dws_flavors_v2
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function dataOpentelekomcloudDwsFlavorsV2FlavorsToTerraform(struct?: Data
   }
   return {
   }
+}
+
+
+export function dataOpentelekomcloudDwsFlavorsV2FlavorsToHclTerraform(struct?: DataOpentelekomcloudDwsFlavorsV2Flavors): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataOpentelekomcloudDwsFlavorsV2FlavorsOutputReference extends cdktf.ComplexObject {
@@ -286,5 +292,43 @@ export class DataOpentelekomcloudDwsFlavorsV2 extends cdktf.TerraformDataSource 
       region: cdktf.stringToTerraform(this._region),
       vcpus: cdktf.numberToTerraform(this._vcpus),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      memory: {
+        value: cdktf.numberToHclTerraform(this._memory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vcpus: {
+        value: cdktf.numberToHclTerraform(this._vcpus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

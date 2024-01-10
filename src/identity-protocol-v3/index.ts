@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/identity_protocol_v3
 // generated from terraform resource schema
 
@@ -94,6 +89,67 @@ export function identityProtocolV3AccessConfigToTerraform(struct?: IdentityProto
     scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
     signing_key: cdktf.stringToTerraform(struct!.signingKey),
   }
+}
+
+
+export function identityProtocolV3AccessConfigToHclTerraform(struct?: IdentityProtocolV3AccessConfigOutputReference | IdentityProtocolV3AccessConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_type: {
+      value: cdktf.stringToHclTerraform(struct!.accessType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    authorization_endpoint: {
+      value: cdktf.stringToHclTerraform(struct!.authorizationEndpoint),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_id: {
+      value: cdktf.stringToHclTerraform(struct!.clientId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    provider_url: {
+      value: cdktf.stringToHclTerraform(struct!.providerUrl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_mode: {
+      value: cdktf.stringToHclTerraform(struct!.responseMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_type: {
+      value: cdktf.stringToHclTerraform(struct!.responseType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scopes: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    signing_key: {
+      value: cdktf.stringToHclTerraform(struct!.signingKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IdentityProtocolV3AccessConfigOutputReference extends cdktf.ComplexObject {
@@ -311,6 +367,37 @@ export function identityProtocolV3MetadataToTerraform(struct?: IdentityProtocolV
     metadata: cdktf.stringToTerraform(struct!.metadata),
     xaccount_type: cdktf.stringToTerraform(struct!.xaccountType),
   }
+}
+
+
+export function identityProtocolV3MetadataToHclTerraform(struct?: IdentityProtocolV3MetadataOutputReference | IdentityProtocolV3Metadata): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain_id: {
+      value: cdktf.stringToHclTerraform(struct!.domainId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata: {
+      value: cdktf.stringToHclTerraform(struct!.metadata),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    xaccount_type: {
+      value: cdktf.stringToHclTerraform(struct!.xaccountType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObject {
@@ -569,5 +656,49 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       access_config: identityProtocolV3AccessConfigToTerraform(this._accessConfig.internalValue),
       metadata: identityProtocolV3MetadataToTerraform(this._metadata.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mapping_id: {
+        value: cdktf.stringToHclTerraform(this._mappingId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provider_id: {
+        value: cdktf.stringToHclTerraform(this._providerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      access_config: {
+        value: identityProtocolV3AccessConfigToHclTerraform(this._accessConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IdentityProtocolV3AccessConfigList",
+      },
+      metadata: {
+        value: identityProtocolV3MetadataToHclTerraform(this._metadata.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "IdentityProtocolV3MetadataList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

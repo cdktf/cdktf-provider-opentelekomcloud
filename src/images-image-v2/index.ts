@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/images_image_v2
 // generated from terraform resource schema
 
@@ -89,6 +84,25 @@ export function imagesImageV2TimeoutsToTerraform(struct?: ImagesImageV2Timeouts 
   return {
     create: cdktf.stringToTerraform(struct!.create),
   }
+}
+
+
+export function imagesImageV2TimeoutsToHclTerraform(struct?: ImagesImageV2Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ImagesImageV2TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -497,5 +511,97 @@ export class ImagesImageV2 extends cdktf.TerraformResource {
       visibility: cdktf.stringToTerraform(this._visibility),
       timeouts: imagesImageV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      container_format: {
+        value: cdktf.stringToHclTerraform(this._containerFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disk_format: {
+        value: cdktf.stringToHclTerraform(this._diskFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_cache_path: {
+        value: cdktf.stringToHclTerraform(this._imageCachePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image_source_url: {
+        value: cdktf.stringToHclTerraform(this._imageSourceUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      local_file_path: {
+        value: cdktf.stringToHclTerraform(this._localFilePath),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_disk_gb: {
+        value: cdktf.numberToHclTerraform(this._minDiskGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_ram_mb: {
+        value: cdktf.numberToHclTerraform(this._minRamMb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protected: {
+        value: cdktf.booleanToHclTerraform(this._protected),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: imagesImageV2TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ImagesImageV2Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/compute_bms_flavors_v2
 // generated from terraform resource schema
 
@@ -260,5 +255,55 @@ export class DataOpentelekomcloudComputeBmsFlavorsV2 extends cdktf.TerraformData
       sort_dir: cdktf.stringToTerraform(this._sortDir),
       sort_key: cdktf.stringToTerraform(this._sortKey),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      min_disk: {
+        value: cdktf.numberToHclTerraform(this._minDisk),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      min_ram: {
+        value: cdktf.numberToHclTerraform(this._minRam),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_dir: {
+        value: cdktf.stringToHclTerraform(this._sortDir),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_key: {
+        value: cdktf.stringToHclTerraform(this._sortKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

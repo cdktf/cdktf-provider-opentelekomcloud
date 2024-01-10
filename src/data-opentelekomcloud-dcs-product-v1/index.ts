@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/data-sources/dcs_product_v1
 // generated from terraform resource schema
 
@@ -125,5 +120,25 @@ export class DataOpentelekomcloudDcsProductV1 extends cdktf.TerraformDataSource 
       id: cdktf.stringToTerraform(this._id),
       spec_code: cdktf.stringToTerraform(this._specCode),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      spec_code: {
+        value: cdktf.stringToHclTerraform(this._specCode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

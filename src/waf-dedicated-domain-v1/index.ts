@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/waf_dedicated_domain_v1
 // generated from terraform resource schema
 
@@ -110,6 +105,55 @@ export function wafDedicatedDomainV1ServerToTerraform(struct?: WafDedicatedDomai
     type: cdktf.stringToTerraform(struct!.type),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
+}
+
+
+export function wafDedicatedDomainV1ServerToHclTerraform(struct?: WafDedicatedDomainV1Server | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    address: {
+      value: cdktf.stringToHclTerraform(struct!.address),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    client_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.clientProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    server_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.serverProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class WafDedicatedDomainV1ServerOutputReference extends cdktf.ComplexObject {
@@ -615,5 +659,91 @@ export class WafDedicatedDomainV1 extends cdktf.TerraformResource {
       tls: cdktf.stringToTerraform(this._tls),
       server: cdktf.listMapper(wafDedicatedDomainV1ServerToTerraform, true)(this._server.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      certificate_id: {
+        value: cdktf.stringToHclTerraform(this._certificateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cipher: {
+        value: cdktf.stringToHclTerraform(this._cipher),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      domain: {
+        value: cdktf.stringToHclTerraform(this._domain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      keep_policy: {
+        value: cdktf.booleanToHclTerraform(this._keepPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pci_3ds: {
+        value: cdktf.booleanToHclTerraform(this._pci3Ds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pci_dss: {
+        value: cdktf.booleanToHclTerraform(this._pciDss),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policy_id: {
+        value: cdktf.stringToHclTerraform(this._policyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protect_status: {
+        value: cdktf.numberToHclTerraform(this._protectStatus),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      proxy: {
+        value: cdktf.booleanToHclTerraform(this._proxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      region: {
+        value: cdktf.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tls: {
+        value: cdktf.stringToHclTerraform(this._tls),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server: {
+        value: cdktf.listMapperHcl(wafDedicatedDomainV1ServerToHclTerraform, true)(this._server.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WafDedicatedDomainV1ServerList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

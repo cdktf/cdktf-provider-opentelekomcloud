@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dms_user_permission_v1
 // generated from terraform resource schema
 
@@ -54,6 +49,31 @@ export function dmsUserPermissionV1PoliciesToTerraform(struct?: DmsUserPermissio
     access_policy: cdktf.stringToTerraform(struct!.accessPolicy),
     username: cdktf.stringToTerraform(struct!.username),
   }
+}
+
+
+export function dmsUserPermissionV1PoliciesToHclTerraform(struct?: DmsUserPermissionV1Policies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_policy: {
+      value: cdktf.stringToHclTerraform(struct!.accessPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DmsUserPermissionV1PoliciesOutputReference extends cdktf.ComplexObject {
@@ -290,5 +310,37 @@ export class DmsUserPermissionV1 extends cdktf.TerraformResource {
       topic_name: cdktf.stringToTerraform(this._topicName),
       policies: cdktf.listMapper(dmsUserPermissionV1PoliciesToTerraform, true)(this._policies.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topic_name: {
+        value: cdktf.stringToHclTerraform(this._topicName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policies: {
+        value: cdktf.listMapperHcl(dmsUserPermissionV1PoliciesToHclTerraform, true)(this._policies.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DmsUserPermissionV1PoliciesList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpcep_service_v1
 // generated from terraform resource schema
 
@@ -101,6 +96,37 @@ export function vpcepServiceV1PortToTerraform(struct?: VpcepServiceV1Port | cdkt
     protocol: cdktf.stringToTerraform(struct!.protocol),
     server_port: cdktf.numberToTerraform(struct!.serverPort),
   }
+}
+
+
+export function vpcepServiceV1PortToHclTerraform(struct?: VpcepServiceV1Port | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    client_port: {
+      value: cdktf.numberToHclTerraform(struct!.clientPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    protocol: {
+      value: cdktf.stringToHclTerraform(struct!.protocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    server_port: {
+      value: cdktf.numberToHclTerraform(struct!.serverPort),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcepServiceV1PortOutputReference extends cdktf.ComplexObject {
@@ -236,6 +262,25 @@ export function vpcepServiceV1TimeoutsToTerraform(struct?: VpcepServiceV1Timeout
   return {
     default: cdktf.stringToTerraform(struct!.default),
   }
+}
+
+
+export function vpcepServiceV1TimeoutsToHclTerraform(struct?: VpcepServiceV1Timeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VpcepServiceV1TimeoutsOutputReference extends cdktf.ComplexObject {
@@ -601,5 +646,97 @@ export class VpcepServiceV1 extends cdktf.TerraformResource {
       port: cdktf.listMapper(vpcepServiceV1PortToTerraform, true)(this._port.internalValue),
       timeouts: vpcepServiceV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      approval_enabled: {
+        value: cdktf.booleanToHclTerraform(this._approvalEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pool_id: {
+        value: cdktf.stringToHclTerraform(this._poolId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      port_id: {
+        value: cdktf.stringToHclTerraform(this._portId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_type: {
+        value: cdktf.stringToHclTerraform(this._serverType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_type: {
+        value: cdktf.stringToHclTerraform(this._serviceType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tags: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      tcp_proxy: {
+        value: cdktf.stringToHclTerraform(this._tcpProxy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vip_port_id: {
+        value: cdktf.stringToHclTerraform(this._vipPortId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vpc_id: {
+        value: cdktf.stringToHclTerraform(this._vpcId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      whitelist: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._whitelist),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      port: {
+        value: cdktf.listMapperHcl(vpcepServiceV1PortToHclTerraform, true)(this._port.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VpcepServiceV1PortList",
+      },
+      timeouts: {
+        value: vpcepServiceV1TimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "VpcepServiceV1Timeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

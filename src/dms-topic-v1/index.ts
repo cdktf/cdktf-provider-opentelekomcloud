@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dms_topic_v1
 // generated from terraform resource schema
 
@@ -317,5 +312,79 @@ export class DmsTopicV1 extends cdktf.TerraformResource {
       sync_message_flush: cdktf.booleanToTerraform(this._syncMessageFlush),
       sync_replication: cdktf.booleanToTerraform(this._syncReplication),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instance_id: {
+        value: cdktf.stringToHclTerraform(this._instanceId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      max_partitions: {
+        value: cdktf.numberToHclTerraform(this._maxPartitions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partition: {
+        value: cdktf.numberToHclTerraform(this._partition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      remain_partitions: {
+        value: cdktf.numberToHclTerraform(this._remainPartitions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      replication: {
+        value: cdktf.numberToHclTerraform(this._replication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      retention_time: {
+        value: cdktf.numberToHclTerraform(this._retentionTime),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      size: {
+        value: cdktf.numberToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      sync_message_flush: {
+        value: cdktf.booleanToHclTerraform(this._syncMessageFlush),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      sync_replication: {
+        value: cdktf.booleanToHclTerraform(this._syncReplication),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

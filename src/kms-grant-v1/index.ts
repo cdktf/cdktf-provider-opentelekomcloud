@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/kms_grant_v1
 // generated from terraform resource schema
 
@@ -217,5 +212,49 @@ export class KmsGrantV1 extends cdktf.TerraformResource {
       operations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._operations),
       retiring_principal: cdktf.stringToTerraform(this._retiringPrincipal),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      grantee_principal: {
+        value: cdktf.stringToHclTerraform(this._granteePrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_id: {
+        value: cdktf.stringToHclTerraform(this._keyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      operations: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._operations),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      retiring_principal: {
+        value: cdktf.stringToHclTerraform(this._retiringPrincipal),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

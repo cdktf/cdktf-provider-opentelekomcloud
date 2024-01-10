@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 dataopentelekomcloudnetworkingnetworkv2.NewDataOpentelekomcloudNetworkingNetworkV2(scope Construct, id *string, config DataOpentelekomcloudNetworkingNetworkV2Config) DataOpentelekomcloudNetworkingNetworkV2
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -124,6 +125,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.toMetadata"></a>
 
@@ -309,7 +318,7 @@ func ResetTenantId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +364,7 @@ dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -369,7 +378,7 @@ dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -730,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudNetworkingNetworkV2.DataOpentelekomcloudNetworkingNetworkV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v10/dataopentelekomcloudnetworkingnetworkv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudnetworkingnetworkv2"
 
 &dataopentelekomcloudnetworkingnetworkv2.DataOpentelekomcloudNetworkingNetworkV2Config {
 	Connection: interface{},
