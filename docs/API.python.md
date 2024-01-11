@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.python.md)
+- [apigwGatewayV2](./apigwGatewayV2.python.md)
 - [asConfigurationV1](./asConfigurationV1.python.md)
 - [asGroupV1](./asGroupV1.python.md)
 - [asPolicyV1](./asPolicyV1.python.md)

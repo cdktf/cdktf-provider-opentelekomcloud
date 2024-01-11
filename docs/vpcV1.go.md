@@ -4,12 +4,12 @@
 
 ### VpcV1 <a name="VpcV1" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1 opentelekomcloud_vpc_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.NewVpcV1(scope Construct, id *string, config VpcV1Config) VpcV1
 ```
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetSecondaryCidr">ResetSecondaryCidr</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetShared">ResetShared</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -401,6 +402,12 @@ func ResetId()
 func ResetRegion()
 ```
 
+##### `ResetSecondaryCidr` <a name="ResetSecondaryCidr" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetSecondaryCidr"></a>
+
+```go
+func ResetSecondaryCidr()
+```
+
 ##### `ResetShared` <a name="ResetShared" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.resetShared"></a>
 
 ```go
@@ -433,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.VpcV1_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.VpcV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +486,7 @@ vpcv1.VpcV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.VpcV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ vpcv1.VpcV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.VpcV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +529,7 @@ The construct id used in the generated config for the VpcV1 to import.
 
 The id of the existing VpcV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -559,6 +566,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.secondaryCidrInput">SecondaryCidrInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.sharedInput">SharedInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -567,6 +575,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.secondaryCidr">SecondaryCidr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.shared">Shared</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 
@@ -784,6 +793,16 @@ func RegionInput() *string
 
 ---
 
+##### `SecondaryCidrInput`<sup>Optional</sup> <a name="SecondaryCidrInput" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.secondaryCidrInput"></a>
+
+```go
+func SecondaryCidrInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `SharedInput`<sup>Optional</sup> <a name="SharedInput" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.sharedInput"></a>
 
 ```go
@@ -864,6 +883,16 @@ func Region() *string
 
 ---
 
+##### `SecondaryCidr`<sup>Required</sup> <a name="SecondaryCidr" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.secondaryCidr"></a>
+
+```go
+func SecondaryCidr() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Shared`<sup>Required</sup> <a name="Shared" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1.property.shared"></a>
 
 ```go
@@ -909,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 &vpcv1.VpcV1Config {
 	Connection: interface{},
@@ -924,9 +953,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Description: *string,
 	Id: *string,
 	Region: *string,
+	SecondaryCidr: *string,
 	Shared: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.vpcV1.VpcV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcV1.VpcV1Timeouts,
 }
 ```
 
@@ -941,13 +971,14 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#cidr VpcV1#cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#name VpcV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#description VpcV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#id VpcV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#region VpcV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.shared">Shared</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#shared VpcV1#shared}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#tags VpcV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.cidr">Cidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#cidr VpcV1#cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#name VpcV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#description VpcV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#id VpcV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#region VpcV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.secondaryCidr">SecondaryCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#secondary_cidr VpcV1#secondary_cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.shared">Shared</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#shared VpcV1#shared}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#tags VpcV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts">VpcV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1030,7 +1061,7 @@ Cidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#cidr VpcV1#cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#cidr VpcV1#cidr}.
 
 ---
 
@@ -1042,7 +1073,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#name VpcV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#name VpcV1#name}.
 
 ---
 
@@ -1054,7 +1085,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#description VpcV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#description VpcV1#description}.
 
 ---
 
@@ -1066,7 +1097,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#id VpcV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#id VpcV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1081,7 +1112,19 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#region VpcV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#region VpcV1#region}.
+
+---
+
+##### `SecondaryCidr`<sup>Optional</sup> <a name="SecondaryCidr" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Config.property.secondaryCidr"></a>
+
+```go
+SecondaryCidr *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#secondary_cidr VpcV1#secondary_cidr}.
 
 ---
 
@@ -1093,7 +1136,7 @@ Shared interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#shared VpcV1#shared}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#shared VpcV1#shared}.
 
 ---
 
@@ -1105,7 +1148,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#tags VpcV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#tags VpcV1#tags}.
 
 ---
 
@@ -1119,7 +1162,7 @@ Timeouts VpcV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#timeouts VpcV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#timeouts VpcV1#timeouts}
 
 ---
 
@@ -1128,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 &vpcv1.VpcV1Timeouts {
 	Create: *string,
@@ -1140,8 +1183,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#create VpcV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#delete VpcV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#create VpcV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcV1.VpcV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#delete VpcV1#delete}. |
 
 ---
 
@@ -1153,7 +1196,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#create VpcV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#create VpcV1#create}.
 
 ---
 
@@ -1165,7 +1208,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_v1#delete VpcV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_v1#delete VpcV1#delete}.
 
 ---
 
@@ -1176,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcV1.VpcV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcv1"
 
 vpcv1.NewVpcV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcV1TimeoutsOutputReference
 ```

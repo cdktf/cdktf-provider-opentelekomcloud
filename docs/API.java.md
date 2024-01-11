@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.java.md)
+- [apigwGatewayV2](./apigwGatewayV2.java.md)
 - [asConfigurationV1](./asConfigurationV1.java.md)
 - [asGroupV1](./asGroupV1.java.md)
 - [asPolicyV1](./asPolicyV1.java.md)
