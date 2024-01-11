@@ -4,7 +4,7 @@
 
 ### VpcPeeringConnectionV2 <a name="VpcPeeringConnectionV2" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2 opentelekomcloud_vpc_peering_connection_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the VpcPeeringConnectionV2 to 
 
 The id of the existing VpcPeeringConnectionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,12 +904,12 @@ new VpcPeeringConnectionV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerVpcId">PeerVpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerTenantId">PeerTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerVpcId">PeerVpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.peerTenantId">PeerTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts">VpcPeeringConnectionV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -992,7 +992,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#name VpcPeeringConnectionV2#name}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public string PeerVpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#peer_vpc_id VpcPeeringConnectionV2#peer_vpc_id}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#vpc_id VpcPeeringConnectionV2#vpc_id}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#id VpcPeeringConnectionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1043,7 +1043,7 @@ public string PeerTenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#peer_tenant_id VpcPeeringConnectionV2#peer_tenant_id}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#region VpcPeeringConnectionV2#region}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public VpcPeeringConnectionV2Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#timeouts VpcPeeringConnectionV2#timeouts}
 
 ---
 
@@ -1090,8 +1090,8 @@ new VpcPeeringConnectionV2Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcPeeringConnectionV2.VpcPeeringConnectionV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}. |
 
 ---
 
@@ -1103,7 +1103,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#create VpcPeeringConnectionV2#create}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_peering_connection_v2#delete VpcPeeringConnectionV2#delete}.
 
 ---
 

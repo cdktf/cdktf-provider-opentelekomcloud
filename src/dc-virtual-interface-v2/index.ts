@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,303 @@ import * as cdktf from 'cdktf';
 
 export interface DcVirtualInterfaceV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#asn DcVirtualInterfaceV2#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#asn DcVirtualInterfaceV2#asn}
   */
   readonly asn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#bandwidth DcVirtualInterfaceV2#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#bandwidth DcVirtualInterfaceV2#bandwidth}
   */
   readonly bandwidth: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#bgp_md5 DcVirtualInterfaceV2#bgp_md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#bgp_md5 DcVirtualInterfaceV2#bgp_md5}
   */
   readonly bgpMd5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#description DcVirtualInterfaceV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#description DcVirtualInterfaceV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#direct_connect_id DcVirtualInterfaceV2#direct_connect_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#direct_connect_id DcVirtualInterfaceV2#direct_connect_id}
   */
   readonly directConnectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#enable_bfd DcVirtualInterfaceV2#enable_bfd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#enable_bfd DcVirtualInterfaceV2#enable_bfd}
   */
   readonly enableBfd?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#enable_nqa DcVirtualInterfaceV2#enable_nqa}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#enable_nqa DcVirtualInterfaceV2#enable_nqa}
   */
   readonly enableNqa?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#id DcVirtualInterfaceV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#id DcVirtualInterfaceV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#lag_id DcVirtualInterfaceV2#lag_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#lag_id DcVirtualInterfaceV2#lag_id}
   */
   readonly lagId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#local_gateway_v4_ip DcVirtualInterfaceV2#local_gateway_v4_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#local_gateway_v4_ip DcVirtualInterfaceV2#local_gateway_v4_ip}
   */
   readonly localGatewayV4Ip?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#name DcVirtualInterfaceV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#name DcVirtualInterfaceV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#project_id DcVirtualInterfaceV2#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#project_id DcVirtualInterfaceV2#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#remote_ep_group_id DcVirtualInterfaceV2#remote_ep_group_id}
-  */
-  readonly remoteEpGroupId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#remote_gateway_v4_ip DcVirtualInterfaceV2#remote_gateway_v4_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#remote_gateway_v4_ip DcVirtualInterfaceV2#remote_gateway_v4_ip}
   */
   readonly remoteGatewayV4Ip?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#route_mode DcVirtualInterfaceV2#route_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#route_mode DcVirtualInterfaceV2#route_mode}
   */
   readonly routeMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#service_type DcVirtualInterfaceV2#service_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#service_type DcVirtualInterfaceV2#service_type}
   */
   readonly serviceType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#type DcVirtualInterfaceV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#type DcVirtualInterfaceV2#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#virtual_gateway_id DcVirtualInterfaceV2#virtual_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#virtual_gateway_id DcVirtualInterfaceV2#virtual_gateway_id}
   */
   readonly virtualGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#vlan DcVirtualInterfaceV2#vlan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#vlan DcVirtualInterfaceV2#vlan}
   */
   readonly vlan: number;
+  /**
+  * remote_ep_group block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#remote_ep_group DcVirtualInterfaceV2#remote_ep_group}
+  */
+  readonly remoteEpGroup: DcVirtualInterfaceV2RemoteEpGroup;
+}
+export interface DcVirtualInterfaceV2RemoteEpGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#description DcVirtualInterfaceV2#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#endpoints DcVirtualInterfaceV2#endpoints}
+  */
+  readonly endpoints: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#name DcVirtualInterfaceV2#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#project_id DcVirtualInterfaceV2#project_id}
+  */
+  readonly projectId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#type DcVirtualInterfaceV2#type}
+  */
+  readonly type?: string;
+}
+
+export function dcVirtualInterfaceV2RemoteEpGroupToTerraform(struct?: DcVirtualInterfaceV2RemoteEpGroupOutputReference | DcVirtualInterfaceV2RemoteEpGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.endpoints),
+    name: cdktf.stringToTerraform(struct!.name),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function dcVirtualInterfaceV2RemoteEpGroupToHclTerraform(struct?: DcVirtualInterfaceV2RemoteEpGroupOutputReference | DcVirtualInterfaceV2RemoteEpGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.endpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktf.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DcVirtualInterfaceV2RemoteEpGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DcVirtualInterfaceV2RemoteEpGroup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._endpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoints = this._endpoints;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DcVirtualInterfaceV2RemoteEpGroup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._endpoints = undefined;
+      this._name = undefined;
+      this._projectId = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._endpoints = value.endpoints;
+      this._name = value.name;
+      this._projectId = value.projectId;
+      this._type = value.type;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // endpoints - computed: false, optional: false, required: true
+  private _endpoints?: string[]; 
+  public get endpoints() {
+    return this.getListAttribute('endpoints');
+  }
+  public set endpoints(value: string[]) {
+    this._endpoints = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // project_id - computed: false, optional: true, required: false
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  public resetProjectId() {
+    this._projectId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2}
 */
 export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
 
@@ -110,7 +325,7 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DcVirtualInterfaceV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DcVirtualInterfaceV2 to import
-  * @param importFromId The id of the existing DcVirtualInterfaceV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DcVirtualInterfaceV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DcVirtualInterfaceV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -122,7 +337,7 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.15/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dc_virtual_interface_v2 opentelekomcloud_dc_virtual_interface_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -133,7 +348,7 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dc_virtual_interface_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.15',
+        providerVersion: '1.35.16',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -156,13 +371,13 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
     this._localGatewayV4Ip = config.localGatewayV4Ip;
     this._name = config.name;
     this._projectId = config.projectId;
-    this._remoteEpGroupId = config.remoteEpGroupId;
     this._remoteGatewayV4Ip = config.remoteGatewayV4Ip;
     this._routeMode = config.routeMode;
     this._serviceType = config.serviceType;
     this._type = config.type;
     this._virtualGatewayId = config.virtualGatewayId;
     this._vlan = config.vlan;
+    this._remoteEpGroup.internalValue = config.remoteEpGroup;
   }
 
   // ==========
@@ -357,17 +572,9 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
     return this._projectId;
   }
 
-  // remote_ep_group_id - computed: false, optional: false, required: true
-  private _remoteEpGroupId?: string; 
+  // remote_ep_group_id - computed: true, optional: false, required: false
   public get remoteEpGroupId() {
     return this.getStringAttribute('remote_ep_group_id');
-  }
-  public set remoteEpGroupId(value: string) {
-    this._remoteEpGroupId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get remoteEpGroupIdInput() {
-    return this._remoteEpGroupId;
   }
 
   // remote_gateway_v4_ip - computed: false, optional: true, required: false
@@ -456,6 +663,19 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
     return this._vlan;
   }
 
+  // remote_ep_group - computed: false, optional: false, required: true
+  private _remoteEpGroup = new DcVirtualInterfaceV2RemoteEpGroupOutputReference(this, "remote_ep_group");
+  public get remoteEpGroup() {
+    return this._remoteEpGroup;
+  }
+  public putRemoteEpGroup(value: DcVirtualInterfaceV2RemoteEpGroup) {
+    this._remoteEpGroup.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteEpGroupInput() {
+    return this._remoteEpGroup.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -474,13 +694,13 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
       local_gateway_v4_ip: cdktf.stringToTerraform(this._localGatewayV4Ip),
       name: cdktf.stringToTerraform(this._name),
       project_id: cdktf.stringToTerraform(this._projectId),
-      remote_ep_group_id: cdktf.stringToTerraform(this._remoteEpGroupId),
       remote_gateway_v4_ip: cdktf.stringToTerraform(this._remoteGatewayV4Ip),
       route_mode: cdktf.stringToTerraform(this._routeMode),
       service_type: cdktf.stringToTerraform(this._serviceType),
       type: cdktf.stringToTerraform(this._type),
       virtual_gateway_id: cdktf.stringToTerraform(this._virtualGatewayId),
       vlan: cdktf.numberToTerraform(this._vlan),
+      remote_ep_group: dcVirtualInterfaceV2RemoteEpGroupToTerraform(this._remoteEpGroup.internalValue),
     };
   }
 
@@ -558,12 +778,6 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      remote_ep_group_id: {
-        value: cdktf.stringToHclTerraform(this._remoteEpGroupId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       remote_gateway_v4_ip: {
         value: cdktf.stringToHclTerraform(this._remoteGatewayV4Ip),
         isBlock: false,
@@ -599,6 +813,12 @@ export class DcVirtualInterfaceV2 extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      remote_ep_group: {
+        value: dcVirtualInterfaceV2RemoteEpGroupToHclTerraform(this._remoteEpGroup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DcVirtualInterfaceV2RemoteEpGroupList",
       },
     };
 

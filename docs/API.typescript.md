@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.typescript.md)
+- [apigwGatewayV2](./apigwGatewayV2.typescript.md)
 - [asConfigurationV1](./asConfigurationV1.typescript.md)
 - [asGroupV1](./asGroupV1.typescript.md)
 - [asPolicyV1](./asPolicyV1.typescript.md)

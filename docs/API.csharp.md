@@ -5,6 +5,7 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.csharp.md)
+- [apigwGatewayV2](./apigwGatewayV2.csharp.md)
 - [asConfigurationV1](./asConfigurationV1.csharp.md)
 - [asGroupV1](./asGroupV1.csharp.md)
 - [asPolicyV1](./asPolicyV1.csharp.md)
