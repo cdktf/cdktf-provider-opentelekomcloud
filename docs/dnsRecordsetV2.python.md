@@ -4,7 +4,7 @@
 
 ### DnsRecordsetV2 <a name="DnsRecordsetV2" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2 opentelekomcloud_dns_recordset_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer"></a>
 
@@ -46,17 +46,17 @@ dnsRecordsetV2.DnsRecordsetV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts">DnsRecordsetV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}. |
 
 ---
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}.
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}.
 
 ---
 
@@ -590,7 +590,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}.
 
 ---
 
@@ -598,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}.
 
 ---
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}.
 
 ---
 
@@ -766,7 +766,7 @@ The construct id used in the generated config for the DnsRecordsetV2 to import.
 
 The id of the existing DnsRecordsetV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1254,17 +1254,17 @@ dnsRecordsetV2.DnsRecordsetV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.records">records</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts">DnsRecordsetV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}. |
 
 ---
 
@@ -1346,7 +1346,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#name DnsRecordsetV2#name}.
 
 ---
 
@@ -1358,7 +1358,7 @@ records: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#records DnsRecordsetV2#records}.
 
 ---
 
@@ -1370,7 +1370,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#type DnsRecordsetV2#type}.
 
 ---
 
@@ -1382,7 +1382,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#zone_id DnsRecordsetV2#zone_id}.
 
 ---
 
@@ -1394,7 +1394,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#description DnsRecordsetV2#description}.
 
 ---
 
@@ -1406,7 +1406,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#id DnsRecordsetV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1421,7 +1421,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#region DnsRecordsetV2#region}.
 
 ---
 
@@ -1433,7 +1433,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#tags DnsRecordsetV2#tags}.
 
 ---
 
@@ -1447,7 +1447,7 @@ timeouts: DnsRecordsetV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#timeouts DnsRecordsetV2#timeouts}
 
 ---
 
@@ -1459,7 +1459,7 @@ ttl: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#ttl DnsRecordsetV2#ttl}.
 
 ---
 
@@ -1471,7 +1471,7 @@ value_specs: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#value_specs DnsRecordsetV2#value_specs}.
 
 ---
 
@@ -1493,9 +1493,9 @@ dnsRecordsetV2.DnsRecordsetV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsRecordsetV2.DnsRecordsetV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}. |
 
 ---
 
@@ -1507,7 +1507,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#create DnsRecordsetV2#create}.
 
 ---
 
@@ -1519,7 +1519,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#delete DnsRecordsetV2#delete}.
 
 ---
 
@@ -1531,7 +1531,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/dns_recordset_v2#update DnsRecordsetV2#update}.
 
 ---
 
