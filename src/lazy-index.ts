@@ -65,8 +65,11 @@ Object.defineProperty(exports, 'identityAgencyV3', { get: function () { return r
 Object.defineProperty(exports, 'identityCredentialV3', { get: function () { return require('./identity-credential-v3'); } });
 Object.defineProperty(exports, 'identityGroupMembershipV3', { get: function () { return require('./identity-group-membership-v3'); } });
 Object.defineProperty(exports, 'identityGroupV3', { get: function () { return require('./identity-group-v3'); } });
+Object.defineProperty(exports, 'identityLoginPolicyV3', { get: function () { return require('./identity-login-policy-v3'); } });
 Object.defineProperty(exports, 'identityMappingV3', { get: function () { return require('./identity-mapping-v3'); } });
+Object.defineProperty(exports, 'identityPasswordPolicyV3', { get: function () { return require('./identity-password-policy-v3'); } });
 Object.defineProperty(exports, 'identityProjectV3', { get: function () { return require('./identity-project-v3'); } });
+Object.defineProperty(exports, 'identityProtectionPolicyV3', { get: function () { return require('./identity-protection-policy-v3'); } });
 Object.defineProperty(exports, 'identityProtocolV3', { get: function () { return require('./identity-protocol-v3'); } });
 Object.defineProperty(exports, 'identityProvider', { get: function () { return require('./identity-provider'); } });
 Object.defineProperty(exports, 'identityProviderV3', { get: function () { return require('./identity-provider-v3'); } });

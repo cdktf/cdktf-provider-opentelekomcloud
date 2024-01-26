@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,82 @@ import * as cdktf from 'cdktf';
 
 export interface VpcSubnetV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#availability_zone VpcSubnetV1#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#availability_zone VpcSubnetV1#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#cidr VpcSubnetV1#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#cidr VpcSubnetV1#cidr}
   */
   readonly cidr: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#description VpcSubnetV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#description VpcSubnetV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#dhcp_enable VpcSubnetV1#dhcp_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#dhcp_enable VpcSubnetV1#dhcp_enable}
   */
   readonly dhcpEnable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#dns_list VpcSubnetV1#dns_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#dns_list VpcSubnetV1#dns_list}
   */
   readonly dnsList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#gateway_ip VpcSubnetV1#gateway_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#gateway_ip VpcSubnetV1#gateway_ip}
   */
   readonly gatewayIp: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#id VpcSubnetV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#id VpcSubnetV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#name VpcSubnetV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#ipv6_enable VpcSubnetV1#ipv6_enable}
+  */
+  readonly ipv6Enable?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#name VpcSubnetV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#ntp_addresses VpcSubnetV1#ntp_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#ntp_addresses VpcSubnetV1#ntp_addresses}
   */
   readonly ntpAddresses?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#primary_dns VpcSubnetV1#primary_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#primary_dns VpcSubnetV1#primary_dns}
   */
   readonly primaryDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#region VpcSubnetV1#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#region VpcSubnetV1#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#secondary_dns VpcSubnetV1#secondary_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#secondary_dns VpcSubnetV1#secondary_dns}
   */
   readonly secondaryDns?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#tags VpcSubnetV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#tags VpcSubnetV1#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#vpc_id VpcSubnetV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#vpc_id VpcSubnetV1#vpc_id}
   */
   readonly vpcId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#timeouts VpcSubnetV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#timeouts VpcSubnetV1#timeouts}
   */
   readonly timeouts?: VpcSubnetV1Timeouts;
 }
 export interface VpcSubnetV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#create VpcSubnetV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#create VpcSubnetV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#delete VpcSubnetV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#delete VpcSubnetV1#delete}
   */
   readonly delete?: string;
 }
@@ -207,7 +211,7 @@ export class VpcSubnetV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1}
 */
 export class VpcSubnetV1 extends cdktf.TerraformResource {
 
@@ -223,7 +227,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcSubnetV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcSubnetV1 to import
-  * @param importFromId The id of the existing VpcSubnetV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcSubnetV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcSubnetV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -235,7 +239,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.35.16/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpc_subnet_v1 opentelekomcloud_vpc_subnet_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -246,7 +250,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpc_subnet_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.35.16',
+        providerVersion: '1.36.0',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -264,6 +268,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
     this._dnsList = config.dnsList;
     this._gatewayIp = config.gatewayIp;
     this._id = config.id;
+    this._ipv6Enable = config.ipv6Enable;
     this._name = config.name;
     this._ntpAddresses = config.ntpAddresses;
     this._primaryDns = config.primaryDns;
@@ -305,6 +310,11 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cidrInput() {
     return this._cidr;
+  }
+
+  // cidr_ipv6 - computed: true, optional: false, required: false
+  public get cidrIpv6() {
+    return this.getStringAttribute('cidr_ipv6');
   }
 
   // description - computed: false, optional: true, required: false
@@ -368,6 +378,11 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
     return this._gatewayIp;
   }
 
+  // gateway_ipv6 - computed: true, optional: false, required: false
+  public get gatewayIpv6() {
+    return this.getStringAttribute('gateway_ipv6');
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -382,6 +397,22 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ipv6_enable - computed: false, optional: true, required: false
+  private _ipv6Enable?: boolean | cdktf.IResolvable; 
+  public get ipv6Enable() {
+    return this.getBooleanAttribute('ipv6_enable');
+  }
+  public set ipv6Enable(value: boolean | cdktf.IResolvable) {
+    this._ipv6Enable = value;
+  }
+  public resetIpv6Enable() {
+    this._ipv6Enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6EnableInput() {
+    return this._ipv6Enable;
   }
 
   // name - computed: false, optional: false, required: true
@@ -534,6 +565,7 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
       dns_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsList),
       gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
       id: cdktf.stringToTerraform(this._id),
+      ipv6_enable: cdktf.booleanToTerraform(this._ipv6Enable),
       name: cdktf.stringToTerraform(this._name),
       ntp_addresses: cdktf.stringToTerraform(this._ntpAddresses),
       primary_dns: cdktf.stringToTerraform(this._primaryDns),
@@ -588,6 +620,12 @@ export class VpcSubnetV1 extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      ipv6_enable: {
+        value: cdktf.booleanToHclTerraform(this._ipv6Enable),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
