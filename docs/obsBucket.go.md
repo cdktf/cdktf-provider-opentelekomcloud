@@ -4,7 +4,7 @@
 
 ### ObsBucket <a name="ObsBucket" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket opentelekomcloud_obs_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putLogging">PutLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putServerSideEncryption">PutServerSideEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putWebsite">PutWebsite</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putWormPolicy">PutWormPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetAcl">ResetAcl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetCorsRule">ResetCorsRule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetEventNotifications">ResetEventNotifications</a></code> | *No description.* |
@@ -93,6 +94,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetVersioning">ResetVersioning</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetWebsite">ResetWebsite</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetWormPolicy">ResetWormPolicy</a></code> | *No description.* |
 
 ---
 
@@ -456,6 +458,18 @@ func PutWebsite(value ObsBucketWebsite)
 
 ---
 
+##### `PutWormPolicy` <a name="PutWormPolicy" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putWormPolicy"></a>
+
+```go
+func PutWormPolicy(value ObsBucketWormPolicy)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.putWormPolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a>
+
+---
+
 ##### `ResetAcl` <a name="ResetAcl" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetAcl"></a>
 
 ```go
@@ -538,6 +552,12 @@ func ResetVersioning()
 
 ```go
 func ResetWebsite()
+```
+
+##### `ResetWormPolicy` <a name="ResetWormPolicy" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.resetWormPolicy"></a>
+
+```go
+func ResetWormPolicy()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -643,7 +663,7 @@ The construct id used in the generated config for the ObsBucket to import.
 
 The id of the existing ObsBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -681,6 +701,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.logging">Logging</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLoggingList">ObsBucketLoggingList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.serverSideEncryption">ServerSideEncryption</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryptionOutputReference">ObsBucketServerSideEncryptionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.website">Website</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsiteOutputReference">ObsBucketWebsiteOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.wormPolicy">WormPolicy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference">ObsBucketWormPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.aclInput">AclInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.bucketInput">BucketInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.corsRuleInput">CorsRuleInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -696,6 +717,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.versioningInput">VersioningInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.websiteInput">WebsiteInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite">ObsBucketWebsite</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.wormPolicyInput">WormPolicyInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.acl">Acl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.bucket">Bucket</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | *No description.* |
@@ -930,6 +952,16 @@ func Website() ObsBucketWebsiteOutputReference
 
 ---
 
+##### `WormPolicy`<sup>Required</sup> <a name="WormPolicy" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.wormPolicy"></a>
+
+```go
+func WormPolicy() ObsBucketWormPolicyOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference">ObsBucketWormPolicyOutputReference</a>
+
+---
+
 ##### `AclInput`<sup>Optional</sup> <a name="AclInput" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.aclInput"></a>
 
 ```go
@@ -1080,6 +1112,16 @@ func WebsiteInput() ObsBucketWebsite
 
 ---
 
+##### `WormPolicyInput`<sup>Optional</sup> <a name="WormPolicyInput" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.wormPolicyInput"></a>
+
+```go
+func WormPolicyInput() ObsBucketWormPolicy
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a>
+
+---
+
 ##### `Acl`<sup>Required</sup> <a name="Acl" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucket.property.acl"></a>
 
 ```go
@@ -1220,6 +1262,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Tags: *map[string]*string,
 	Versioning: interface{},
 	Website: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.obsBucket.ObsBucketWebsite,
+	WormPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.obsBucket.ObsBucketWormPolicy,
 }
 ```
 
@@ -1234,21 +1277,22 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#bucket ObsBucket#bucket}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#acl ObsBucket#acl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#bucket ObsBucket#bucket}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.acl">Acl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#acl ObsBucket#acl}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.corsRule">CorsRule</a></code> | <code>interface{}</code> | cors_rule block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.eventNotifications">EventNotifications</a></code> | <code>interface{}</code> | event_notifications block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#id ObsBucket#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#id ObsBucket#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.lifecycleRule">LifecycleRule</a></code> | <code>interface{}</code> | lifecycle_rule block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.logging">Logging</a></code> | <code>interface{}</code> | logging block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.parallelFs">ParallelFs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#region ObsBucket#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.parallelFs">ParallelFs</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#region ObsBucket#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.serverSideEncryption">ServerSideEncryption</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryption">ObsBucketServerSideEncryption</a></code> | server_side_encryption block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#tags ObsBucket#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.versioning">Versioning</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#versioning ObsBucket#versioning}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#tags ObsBucket#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.versioning">Versioning</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#versioning ObsBucket#versioning}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.website">Website</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite">ObsBucketWebsite</a></code> | website block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.wormPolicy">WormPolicy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a></code> | worm_policy block. |
 
 ---
 
@@ -1330,7 +1374,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#bucket ObsBucket#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#bucket ObsBucket#bucket}.
 
 ---
 
@@ -1342,7 +1386,7 @@ Acl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#acl ObsBucket#acl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#acl ObsBucket#acl}.
 
 ---
 
@@ -1356,7 +1400,7 @@ CorsRule interface{}
 
 cors_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#cors_rule ObsBucket#cors_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#cors_rule ObsBucket#cors_rule}
 
 ---
 
@@ -1370,7 +1414,7 @@ EventNotifications interface{}
 
 event_notifications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#event_notifications ObsBucket#event_notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#event_notifications ObsBucket#event_notifications}
 
 ---
 
@@ -1382,7 +1426,7 @@ ForceDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}.
 
 ---
 
@@ -1394,7 +1438,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#id ObsBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#id ObsBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1411,7 +1455,7 @@ LifecycleRule interface{}
 
 lifecycle_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
 
 ---
 
@@ -1425,7 +1469,7 @@ Logging interface{}
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#logging ObsBucket#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#logging ObsBucket#logging}
 
 ---
 
@@ -1437,7 +1481,7 @@ ParallelFs interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}.
 
 ---
 
@@ -1449,7 +1493,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#region ObsBucket#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#region ObsBucket#region}.
 
 ---
 
@@ -1463,7 +1507,7 @@ ServerSideEncryption ObsBucketServerSideEncryption
 
 server_side_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#server_side_encryption ObsBucket#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#server_side_encryption ObsBucket#server_side_encryption}
 
 ---
 
@@ -1475,7 +1519,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
 
 ---
 
@@ -1487,7 +1531,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#tags ObsBucket#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#tags ObsBucket#tags}.
 
 ---
 
@@ -1499,7 +1543,7 @@ Versioning interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#versioning ObsBucket#versioning}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#versioning ObsBucket#versioning}.
 
 ---
 
@@ -1513,7 +1557,21 @@ Website ObsBucketWebsite
 
 website block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#website ObsBucket#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#website ObsBucket#website}
+
+---
+
+##### `WormPolicy`<sup>Optional</sup> <a name="WormPolicy" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketConfig.property.wormPolicy"></a>
+
+```go
+WormPolicy ObsBucketWormPolicy
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a>
+
+worm_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#worm_policy ObsBucket#worm_policy}
 
 ---
 
@@ -1537,11 +1595,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.exposeHeaders">ExposeHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedMethods">AllowedMethods</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedOrigins">AllowedOrigins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.allowedHeaders">AllowedHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.exposeHeaders">ExposeHeaders</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketCorsRule.property.maxAgeSeconds">MaxAgeSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}. |
 
 ---
 
@@ -1553,7 +1611,7 @@ AllowedMethods *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}.
 
 ---
 
@@ -1565,7 +1623,7 @@ AllowedOrigins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}.
 
 ---
 
@@ -1577,7 +1635,7 @@ AllowedHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}.
 
 ---
 
@@ -1589,7 +1647,7 @@ ExposeHeaders *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}.
 
 ---
 
@@ -1601,7 +1659,7 @@ MaxAgeSeconds *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}.
 
 ---
 
@@ -1624,10 +1682,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#events ObsBucket#events}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#topic ObsBucket#topic}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.events">Events</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#events ObsBucket#events}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.topic">Topic</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#topic ObsBucket#topic}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.filterRule">FilterRule</a></code> | <code>interface{}</code> | filter_rule block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#id ObsBucket#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotifications.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#id ObsBucket#id}. |
 
 ---
 
@@ -1639,7 +1697,7 @@ Events *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#events ObsBucket#events}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#events ObsBucket#events}.
 
 ---
 
@@ -1651,7 +1709,7 @@ Topic *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#topic ObsBucket#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#topic ObsBucket#topic}.
 
 ---
 
@@ -1665,7 +1723,7 @@ FilterRule interface{}
 
 filter_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#filter_rule ObsBucket#filter_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#filter_rule ObsBucket#filter_rule}
 
 ---
 
@@ -1677,7 +1735,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#id ObsBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#id ObsBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1701,8 +1759,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotificationsFilterRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#name ObsBucket#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotificationsFilterRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#value ObsBucket#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotificationsFilterRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#name ObsBucket#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketEventNotificationsFilterRule.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#value ObsBucket#value}. |
 
 ---
 
@@ -1714,7 +1772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#name ObsBucket#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#name ObsBucket#name}.
 
 ---
 
@@ -1726,7 +1784,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#value ObsBucket#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#value ObsBucket#value}.
 
 ---
 
@@ -1752,12 +1810,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#enabled ObsBucket#enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#name ObsBucket#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#enabled ObsBucket#enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#name ObsBucket#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.expiration">Expiration</a></code> | <code>interface{}</code> | expiration block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.noncurrentVersionExpiration">NoncurrentVersionExpiration</a></code> | <code>interface{}</code> | noncurrent_version_expiration block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.noncurrentVersionTransition">NoncurrentVersionTransition</a></code> | <code>interface{}</code> | noncurrent_version_transition block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#prefix ObsBucket#prefix}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#prefix ObsBucket#prefix}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRule.property.transition">Transition</a></code> | <code>interface{}</code> | transition block. |
 
 ---
@@ -1770,7 +1828,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#enabled ObsBucket#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#enabled ObsBucket#enabled}.
 
 ---
 
@@ -1782,7 +1840,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#name ObsBucket#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#name ObsBucket#name}.
 
 ---
 
@@ -1796,7 +1854,7 @@ Expiration interface{}
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#expiration ObsBucket#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#expiration ObsBucket#expiration}
 
 ---
 
@@ -1810,7 +1868,7 @@ NoncurrentVersionExpiration interface{}
 
 noncurrent_version_expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
 
 ---
 
@@ -1824,7 +1882,7 @@ NoncurrentVersionTransition interface{}
 
 noncurrent_version_transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
 
 ---
 
@@ -1836,7 +1894,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#prefix ObsBucket#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#prefix ObsBucket#prefix}.
 
 ---
 
@@ -1850,7 +1908,7 @@ Transition interface{}
 
 transition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#transition ObsBucket#transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#transition ObsBucket#transition}
 
 ---
 
@@ -1870,7 +1928,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}. |
 
 ---
 
@@ -1882,7 +1940,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}.
 
 ---
 
@@ -1902,7 +1960,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionExpiration.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}. |
 
 ---
 
@@ -1914,7 +1972,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}.
 
 ---
 
@@ -1935,8 +1993,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleNoncurrentVersionTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
 
 ---
 
@@ -1948,7 +2006,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}.
 
 ---
 
@@ -1960,7 +2018,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
 
 ---
 
@@ -1981,8 +2039,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleTransition.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLifecycleRuleTransition.property.storageClass">StorageClass</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}. |
 
 ---
 
@@ -1994,7 +2052,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#days ObsBucket#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}.
 
 ---
 
@@ -2006,7 +2064,7 @@ StorageClass *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}.
 
 ---
 
@@ -2027,8 +2085,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLogging.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLogging.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLogging.property.targetBucket">TargetBucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketLogging.property.targetPrefix">TargetPrefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}. |
 
 ---
 
@@ -2040,7 +2098,7 @@ TargetBucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}.
 
 ---
 
@@ -2052,7 +2110,7 @@ TargetPrefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}.
 
 ---
 
@@ -2073,8 +2131,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryption.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryption.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryption.property.algorithm">Algorithm</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketServerSideEncryption.property.kmsKeyId">KmsKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}. |
 
 ---
 
@@ -2086,7 +2144,7 @@ Algorithm *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}.
 
 ---
 
@@ -2098,7 +2156,7 @@ KmsKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}.
 
 ---
 
@@ -2121,10 +2179,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.errorDocument">ErrorDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#error_document ObsBucket#error_document}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#index_document ObsBucket#index_document}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.redirectAllRequestsTo">RedirectAllRequestsTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.routingRules">RoutingRules</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.errorDocument">ErrorDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#error_document ObsBucket#error_document}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.indexDocument">IndexDocument</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#index_document ObsBucket#index_document}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.redirectAllRequestsTo">RedirectAllRequestsTo</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite.property.routingRules">RoutingRules</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}. |
 
 ---
 
@@ -2136,7 +2194,7 @@ ErrorDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#error_document ObsBucket#error_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#error_document ObsBucket#error_document}.
 
 ---
 
@@ -2148,7 +2206,7 @@ IndexDocument *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#index_document ObsBucket#index_document}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#index_document ObsBucket#index_document}.
 
 ---
 
@@ -2160,7 +2218,7 @@ RedirectAllRequestsTo *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}.
 
 ---
 
@@ -2172,7 +2230,53 @@ RoutingRules *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}.
+
+---
+
+### ObsBucketWormPolicy <a name="ObsBucketWormPolicy" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucket"
+
+&obsbucket.ObsBucketWormPolicy {
+	Days: *f64,
+	Years: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy.property.years">Years</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#years ObsBucket#years}. |
+
+---
+
+##### `Days`<sup>Optional</sup> <a name="Days" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy.property.days"></a>
+
+```go
+Days *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#days ObsBucket#days}.
+
+---
+
+##### `Years`<sup>Optional</sup> <a name="Years" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy.property.years"></a>
+
+```go
+Years *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket#years ObsBucket#years}.
 
 ---
 
@@ -7403,6 +7507,313 @@ func InternalValue() ObsBucketWebsite
 ```
 
 - *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWebsite">ObsBucketWebsite</a>
+
+---
+
+
+### ObsBucketWormPolicyOutputReference <a name="ObsBucketWormPolicyOutputReference" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucket"
+
+obsbucket.NewObsBucketWormPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObsBucketWormPolicyOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resetDays">ResetDays</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resetYears">ResetYears</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDays` <a name="ResetDays" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resetDays"></a>
+
+```go
+func ResetDays()
+```
+
+##### `ResetYears` <a name="ResetYears" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.resetYears"></a>
+
+```go
+func ResetYears()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.daysInput">DaysInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.yearsInput">YearsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.days">Days</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.years">Years</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DaysInput`<sup>Optional</sup> <a name="DaysInput" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.daysInput"></a>
+
+```go
+func DaysInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `YearsInput`<sup>Optional</sup> <a name="YearsInput" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.yearsInput"></a>
+
+```go
+func YearsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Days`<sup>Required</sup> <a name="Days" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.days"></a>
+
+```go
+func Days() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Years`<sup>Required</sup> <a name="Years" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.years"></a>
+
+```go
+func Years() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicyOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ObsBucketWormPolicy
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.obsBucket.ObsBucketWormPolicy">ObsBucketWormPolicy</a>
 
 ---
 

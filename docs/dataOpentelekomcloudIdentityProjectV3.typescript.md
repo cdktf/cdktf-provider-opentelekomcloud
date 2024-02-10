@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudIdentityProjectV3 <a name="DataOpentelekomcloudIdentityProjectV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3 opentelekomcloud_identity_project_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3 opentelekomcloud_identity_project_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3.Initializer"></a>
 
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataOpentelekomcloudIdenti
 
 The id of the existing DataOpentelekomcloudIdentityProjectV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,12 +755,12 @@ const dataOpentelekomcloudIdentityProjectV3Config: dataOpentelekomcloudIdentityP
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.domainId">domainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#enabled DataOpentelekomcloudIdentityProjectV3#enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#id DataOpentelekomcloudIdentityProjectV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.isDomain">isDomain</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#name DataOpentelekomcloudIdentityProjectV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.parentId">parentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.domainId">domainId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#enabled DataOpentelekomcloudIdentityProjectV3#enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#id DataOpentelekomcloudIdentityProjectV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.isDomain">isDomain</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#name DataOpentelekomcloudIdentityProjectV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityProjectV3.DataOpentelekomcloudIdentityProjectV3Config.property.parentId">parentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}. |
 
 ---
 
@@ -842,7 +842,7 @@ public readonly domainId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#domain_id DataOpentelekomcloudIdentityProjectV3#domain_id}.
 
 ---
 
@@ -854,7 +854,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#enabled DataOpentelekomcloudIdentityProjectV3#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#enabled DataOpentelekomcloudIdentityProjectV3#enabled}.
 
 ---
 
@@ -866,7 +866,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#id DataOpentelekomcloudIdentityProjectV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#id DataOpentelekomcloudIdentityProjectV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ public readonly isDomain: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#is_domain DataOpentelekomcloudIdentityProjectV3#is_domain}.
 
 ---
 
@@ -893,7 +893,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#name DataOpentelekomcloudIdentityProjectV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#name DataOpentelekomcloudIdentityProjectV3#name}.
 
 ---
 
@@ -905,7 +905,7 @@ public readonly parentId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/data-sources/identity_project_v3#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/data-sources/identity_project_v3#parent_id DataOpentelekomcloudIdentityProjectV3#parent_id}.
 
 ---
 

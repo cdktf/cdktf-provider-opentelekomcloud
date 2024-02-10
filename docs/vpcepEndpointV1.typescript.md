@@ -4,7 +4,7 @@
 
 ### VpcepEndpointV1 <a name="VpcepEndpointV1" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the VpcepEndpointV1 to import.
 
 The id of the existing VpcepEndpointV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1056,17 +1056,17 @@ const vpcepEndpointV1Config: vpcepEndpointV1.VpcepEndpointV1Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.enableDns">enableDns</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.enableWhitelist">enableWhitelist</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.portIp">portIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.routeTables">routeTables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.serviceId">serviceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.enableDns">enableDns</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.enableWhitelist">enableWhitelist</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.portIp">portIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.routeTables">routeTables</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Timeouts">VpcepEndpointV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.whitelist">whitelist</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.property.whitelist">whitelist</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}. |
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly serviceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}.
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly enableDns: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly enableWhitelist: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}.
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,7 +1211,7 @@ public readonly portIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}.
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly routeTables: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}.
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly subnetId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}.
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}.
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly timeouts: VpcepEndpointV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#timeouts VpcepEndpointV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#timeouts VpcepEndpointV1#timeouts}
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly whitelist: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}.
 
 ---
 
@@ -1291,7 +1291,7 @@ const vpcepEndpointV1Timeouts: vpcepEndpointV1.VpcepEndpointV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Timeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Timeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}. |
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}.
 
 ---
 
