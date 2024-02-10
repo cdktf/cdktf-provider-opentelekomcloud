@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,54 @@ import * as cdktf from 'cdktf';
 
 export interface ObsBucketReplicationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#agency ObsBucketReplication#agency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#agency ObsBucketReplication#agency}
   */
   readonly agency: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#bucket ObsBucketReplication#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#bucket ObsBucketReplication#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#destination_bucket ObsBucketReplication#destination_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#destination_bucket ObsBucketReplication#destination_bucket}
   */
   readonly destinationBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#id ObsBucketReplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#id ObsBucketReplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#region ObsBucketReplication#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#region ObsBucketReplication#region}
   */
   readonly region?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#rule ObsBucketReplication#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#rule ObsBucketReplication#rule}
   */
   readonly rule?: ObsBucketReplicationRule[] | cdktf.IResolvable;
 }
 export interface ObsBucketReplicationRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#enabled ObsBucketReplication#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#delete_data ObsBucketReplication#delete_data}
+  */
+  readonly deleteData?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#enabled ObsBucketReplication#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#history_enabled ObsBucketReplication#history_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#history_enabled ObsBucketReplication#history_enabled}
   */
   readonly historyEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#prefix ObsBucketReplication#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#prefix ObsBucketReplication#prefix}
   */
   readonly prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#storage_class ObsBucketReplication#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#storage_class ObsBucketReplication#storage_class}
   */
   readonly storageClass?: string;
 }
@@ -67,6 +66,7 @@ export function obsBucketReplicationRuleToTerraform(struct?: ObsBucketReplicatio
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    delete_data: cdktf.booleanToTerraform(struct!.deleteData),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     history_enabled: cdktf.booleanToTerraform(struct!.historyEnabled),
     prefix: cdktf.stringToTerraform(struct!.prefix),
@@ -81,6 +81,12 @@ export function obsBucketReplicationRuleToHclTerraform(struct?: ObsBucketReplica
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    delete_data: {
+      value: cdktf.booleanToHclTerraform(struct!.deleteData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     enabled: {
       value: cdktf.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
@@ -131,6 +137,10 @@ export class ObsBucketReplicationRuleOutputReference extends cdktf.ComplexObject
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._deleteData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteData = this._deleteData;
+    }
     if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
@@ -154,6 +164,7 @@ export class ObsBucketReplicationRuleOutputReference extends cdktf.ComplexObject
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._deleteData = undefined;
       this._enabled = undefined;
       this._historyEnabled = undefined;
       this._prefix = undefined;
@@ -166,11 +177,28 @@ export class ObsBucketReplicationRuleOutputReference extends cdktf.ComplexObject
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._deleteData = value.deleteData;
       this._enabled = value.enabled;
       this._historyEnabled = value.historyEnabled;
       this._prefix = value.prefix;
       this._storageClass = value.storageClass;
     }
+  }
+
+  // delete_data - computed: false, optional: true, required: false
+  private _deleteData?: boolean | cdktf.IResolvable; 
+  public get deleteData() {
+    return this.getBooleanAttribute('delete_data');
+  }
+  public set deleteData(value: boolean | cdktf.IResolvable) {
+    this._deleteData = value;
+  }
+  public resetDeleteData() {
+    this._deleteData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteDataInput() {
+    return this._deleteData;
   }
 
   // enabled - computed: false, optional: true, required: false
@@ -264,7 +292,7 @@ export class ObsBucketReplicationRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication}
 */
 export class ObsBucketReplication extends cdktf.TerraformResource {
 
@@ -280,7 +308,7 @@ export class ObsBucketReplication extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObsBucketReplication resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObsBucketReplication to import
-  * @param importFromId The id of the existing ObsBucketReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObsBucketReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObsBucketReplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -292,7 +320,7 @@ export class ObsBucketReplication extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.0/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.1/docs/resources/obs_bucket_replication opentelekomcloud_obs_bucket_replication} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -303,7 +331,7 @@ export class ObsBucketReplication extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_obs_bucket_replication',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.0',
+        providerVersion: '1.36.1',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
