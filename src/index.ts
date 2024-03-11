@@ -188,6 +188,7 @@ export * as wafDedicatedInstanceV1 from './waf-dedicated-instance-v1';
 export * as wafDedicatedKnownAttackSourceRuleV1 from './waf-dedicated-known-attack-source-rule-v1';
 export * as wafDedicatedPolicyV1 from './waf-dedicated-policy-v1';
 export * as wafDedicatedPreciseProtectionRuleV1 from './waf-dedicated-precise-protection-rule-v1';
+export * as wafDedicatedReferenceTableV1 from './waf-dedicated-reference-table-v1';
 export * as wafDedicatedWebTamperRuleV1 from './waf-dedicated-web-tamper-rule-v1';
 export * as wafDomainV1 from './waf-domain-v1';
 export * as wafFalsealarmmaskingRuleV1 from './waf-falsealarmmasking-rule-v1';
@@ -283,5 +284,6 @@ export * as dataOpentelekomcloudVpcV1 from './data-opentelekomcloud-vpc-v1';
 export * as dataOpentelekomcloudVpcepPublicServiceV1 from './data-opentelekomcloud-vpcep-public-service-v1';
 export * as dataOpentelekomcloudVpcepServiceV1 from './data-opentelekomcloud-vpcep-service-v1';
 export * as dataOpentelekomcloudVpnaasServiceV2 from './data-opentelekomcloud-vpnaas-service-v2';
+export * as dataOpentelekomcloudWafDedicatedReferenceTablesV1 from './data-opentelekomcloud-waf-dedicated-reference-tables-v1';
 export * as provider from './provider';
 

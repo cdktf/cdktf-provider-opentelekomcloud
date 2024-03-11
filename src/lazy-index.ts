@@ -188,6 +188,7 @@ Object.defineProperty(exports, 'wafDedicatedInstanceV1', { get: function () { re
 Object.defineProperty(exports, 'wafDedicatedKnownAttackSourceRuleV1', { get: function () { return require('./waf-dedicated-known-attack-source-rule-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedPolicyV1', { get: function () { return require('./waf-dedicated-policy-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedPreciseProtectionRuleV1', { get: function () { return require('./waf-dedicated-precise-protection-rule-v1'); } });
+Object.defineProperty(exports, 'wafDedicatedReferenceTableV1', { get: function () { return require('./waf-dedicated-reference-table-v1'); } });
 Object.defineProperty(exports, 'wafDedicatedWebTamperRuleV1', { get: function () { return require('./waf-dedicated-web-tamper-rule-v1'); } });
 Object.defineProperty(exports, 'wafDomainV1', { get: function () { return require('./waf-domain-v1'); } });
 Object.defineProperty(exports, 'wafFalsealarmmaskingRuleV1', { get: function () { return require('./waf-falsealarmmasking-rule-v1'); } });
@@ -283,5 +284,6 @@ Object.defineProperty(exports, 'dataOpentelekomcloudVpcV1', { get: function () {
 Object.defineProperty(exports, 'dataOpentelekomcloudVpcepPublicServiceV1', { get: function () { return require('./data-opentelekomcloud-vpcep-public-service-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVpcepServiceV1', { get: function () { return require('./data-opentelekomcloud-vpcep-service-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVpnaasServiceV2', { get: function () { return require('./data-opentelekomcloud-vpnaas-service-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudWafDedicatedReferenceTablesV1', { get: function () { return require('./data-opentelekomcloud-waf-dedicated-reference-tables-v1'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 
