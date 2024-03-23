@@ -5,7 +5,9 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.go.md)
+- [apigwEnvironmentV2](./apigwEnvironmentV2.go.md)
 - [apigwGatewayV2](./apigwGatewayV2.go.md)
+- [apigwGroupV2](./apigwGroupV2.go.md)
 - [asConfigurationV1](./asConfigurationV1.go.md)
 - [asGroupV1](./asGroupV1.go.md)
 - [asPolicyV1](./asPolicyV1.go.md)
@@ -230,6 +232,8 @@ The following submodules are available:
 - [s3BucketPolicy](./s3BucketPolicy.go.md)
 - [sdrsProtectedInstanceV1](./sdrsProtectedInstanceV1.go.md)
 - [sdrsProtectiongroupV1](./sdrsProtectiongroupV1.go.md)
+- [sdrsReplicationAttachV1](./sdrsReplicationAttachV1.go.md)
+- [sdrsReplicationPairV1](./sdrsReplicationPairV1.go.md)
 - [sfsFileSystemV2](./sfsFileSystemV2.go.md)
 - [sfsShareAccessRulesV2](./sfsShareAccessRulesV2.go.md)
 - [sfsTurboShareV1](./sfsTurboShareV1.go.md)
