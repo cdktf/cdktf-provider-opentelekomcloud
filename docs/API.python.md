@@ -5,7 +5,9 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.python.md)
+- [apigwEnvironmentV2](./apigwEnvironmentV2.python.md)
 - [apigwGatewayV2](./apigwGatewayV2.python.md)
+- [apigwGroupV2](./apigwGroupV2.python.md)
 - [asConfigurationV1](./asConfigurationV1.python.md)
 - [asGroupV1](./asGroupV1.python.md)
 - [asPolicyV1](./asPolicyV1.python.md)
@@ -230,6 +232,8 @@ The following submodules are available:
 - [s3BucketPolicy](./s3BucketPolicy.python.md)
 - [sdrsProtectedInstanceV1](./sdrsProtectedInstanceV1.python.md)
 - [sdrsProtectiongroupV1](./sdrsProtectiongroupV1.python.md)
+- [sdrsReplicationAttachV1](./sdrsReplicationAttachV1.python.md)
+- [sdrsReplicationPairV1](./sdrsReplicationPairV1.python.md)
 - [sfsFileSystemV2](./sfsFileSystemV2.python.md)
 - [sfsShareAccessRulesV2](./sfsShareAccessRulesV2.python.md)
 - [sfsTurboShareV1](./sfsTurboShareV1.python.md)

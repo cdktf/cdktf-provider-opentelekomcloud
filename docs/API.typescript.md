@@ -5,7 +5,9 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.typescript.md)
+- [apigwEnvironmentV2](./apigwEnvironmentV2.typescript.md)
 - [apigwGatewayV2](./apigwGatewayV2.typescript.md)
+- [apigwGroupV2](./apigwGroupV2.typescript.md)
 - [asConfigurationV1](./asConfigurationV1.typescript.md)
 - [asGroupV1](./asGroupV1.typescript.md)
 - [asPolicyV1](./asPolicyV1.typescript.md)
@@ -230,6 +232,8 @@ The following submodules are available:
 - [s3BucketPolicy](./s3BucketPolicy.typescript.md)
 - [sdrsProtectedInstanceV1](./sdrsProtectedInstanceV1.typescript.md)
 - [sdrsProtectiongroupV1](./sdrsProtectiongroupV1.typescript.md)
+- [sdrsReplicationAttachV1](./sdrsReplicationAttachV1.typescript.md)
+- [sdrsReplicationPairV1](./sdrsReplicationPairV1.typescript.md)
 - [sfsFileSystemV2](./sfsFileSystemV2.typescript.md)
 - [sfsShareAccessRulesV2](./sfsShareAccessRulesV2.typescript.md)
 - [sfsTurboShareV1](./sfsTurboShareV1.typescript.md)

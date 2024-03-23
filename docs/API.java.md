@@ -5,7 +5,9 @@
 The following submodules are available:
 
 - [antiddosV1](./antiddosV1.java.md)
+- [apigwEnvironmentV2](./apigwEnvironmentV2.java.md)
 - [apigwGatewayV2](./apigwGatewayV2.java.md)
+- [apigwGroupV2](./apigwGroupV2.java.md)
 - [asConfigurationV1](./asConfigurationV1.java.md)
 - [asGroupV1](./asGroupV1.java.md)
 - [asPolicyV1](./asPolicyV1.java.md)
@@ -230,6 +232,8 @@ The following submodules are available:
 - [s3BucketPolicy](./s3BucketPolicy.java.md)
 - [sdrsProtectedInstanceV1](./sdrsProtectedInstanceV1.java.md)
 - [sdrsProtectiongroupV1](./sdrsProtectiongroupV1.java.md)
+- [sdrsReplicationAttachV1](./sdrsReplicationAttachV1.java.md)
+- [sdrsReplicationPairV1](./sdrsReplicationPairV1.java.md)
 - [sfsFileSystemV2](./sfsFileSystemV2.java.md)
 - [sfsShareAccessRulesV2](./sfsShareAccessRulesV2.java.md)
 - [sfsTurboShareV1](./sfsTurboShareV1.java.md)
