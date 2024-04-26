@@ -4,7 +4,7 @@
 
 ### VpcRouteTableV1 <a name="VpcRouteTableV1" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer"></a>
 
@@ -46,13 +46,13 @@ VpcRouteTableV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.route">route</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route">VpcRouteTableV1Route</a>></code> | route block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts">VpcRouteTableV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -121,7 +121,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}.
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -156,7 +156,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#route VpcRouteTableV1#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#route VpcRouteTableV1#route}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}.
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#timeouts VpcRouteTableV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#timeouts VpcRouteTableV1#timeouts}
 
 ---
 
@@ -679,7 +679,7 @@ The construct id used in the generated config for the VpcRouteTableV1 to import.
 
 The id of the existing VpcRouteTableV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1114,13 +1114,13 @@ VpcRouteTableV1Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.vpcId">vpcId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.route">route</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route">VpcRouteTableV1Route</a>></code> | route block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.subnets">subnets</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts">VpcRouteTableV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1203,7 +1203,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#name VpcRouteTableV1#name}.
 
 ---
 
@@ -1215,7 +1215,7 @@ public java.lang.String getVpcId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#vpc_id VpcRouteTableV1#vpc_id}.
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#id VpcRouteTableV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1254,7 +1254,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#region VpcRouteTableV1#region}.
 
 ---
 
@@ -1268,7 +1268,7 @@ public java.lang.Object getRoute();
 
 route block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#route VpcRouteTableV1#route}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#route VpcRouteTableV1#route}
 
 ---
 
@@ -1280,7 +1280,7 @@ public java.util.List<java.lang.String> getSubnets();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#subnets VpcRouteTableV1#subnets}.
 
 ---
 
@@ -1294,7 +1294,7 @@ public VpcRouteTableV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#timeouts VpcRouteTableV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#timeouts VpcRouteTableV1#timeouts}
 
 ---
 
@@ -1317,10 +1317,10 @@ VpcRouteTableV1Route.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#destination VpcRouteTableV1#destination}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.nexthop">nexthop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#nexthop VpcRouteTableV1#nexthop}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#type VpcRouteTableV1#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.destination">destination</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#destination VpcRouteTableV1#destination}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.nexthop">nexthop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#nexthop VpcRouteTableV1#nexthop}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#type VpcRouteTableV1#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Route.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}. |
 
 ---
 
@@ -1332,7 +1332,7 @@ public java.lang.String getDestination();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#destination VpcRouteTableV1#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#destination VpcRouteTableV1#destination}.
 
 ---
 
@@ -1344,7 +1344,7 @@ public java.lang.String getNexthop();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#nexthop VpcRouteTableV1#nexthop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#nexthop VpcRouteTableV1#nexthop}.
 
 ---
 
@@ -1356,7 +1356,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#type VpcRouteTableV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#type VpcRouteTableV1#type}.
 
 ---
 
@@ -1368,7 +1368,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#description VpcRouteTableV1#description}.
 
 ---
 
@@ -1389,8 +1389,8 @@ VpcRouteTableV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcRouteTableV1.VpcRouteTableV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}. |
 
 ---
 
@@ -1402,7 +1402,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#create VpcRouteTableV1#create}.
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.5/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.7/docs/resources/vpc_route_table_v1#delete VpcRouteTableV1#delete}.
 
 ---
 
