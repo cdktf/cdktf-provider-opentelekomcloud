@@ -4,7 +4,7 @@
 
 ### ApigwApiPublishmentV2 <a name="ApigwApiPublishmentV2" id="@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2 opentelekomcloud_apigw_api_publishment_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ApigwApiPublishmentV2 to i
 
 The id of the existing ApigwApiPublishmentV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,12 +902,12 @@ const apigwApiPublishmentV2Config: apigwApiPublishmentV2.ApigwApiPublishmentV2Co
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.apiId">apiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#api_id ApigwApiPublishmentV2#api_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.environmentId">environmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#environment_id ApigwApiPublishmentV2#environment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#gateway_id ApigwApiPublishmentV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#description ApigwApiPublishmentV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#id ApigwApiPublishmentV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#version_id ApigwApiPublishmentV2#version_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.apiId">apiId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#api_id ApigwApiPublishmentV2#api_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.environmentId">environmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#environment_id ApigwApiPublishmentV2#environment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#gateway_id ApigwApiPublishmentV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#description ApigwApiPublishmentV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#id ApigwApiPublishmentV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApiPublishmentV2.ApigwApiPublishmentV2Config.property.versionId">versionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#version_id ApigwApiPublishmentV2#version_id}. |
 
 ---
 
@@ -989,7 +989,7 @@ public readonly apiId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#api_id ApigwApiPublishmentV2#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#api_id ApigwApiPublishmentV2#api_id}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly environmentId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#environment_id ApigwApiPublishmentV2#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#environment_id ApigwApiPublishmentV2#environment_id}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly gatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#gateway_id ApigwApiPublishmentV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#gateway_id ApigwApiPublishmentV2#gateway_id}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#description ApigwApiPublishmentV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#description ApigwApiPublishmentV2#description}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#id ApigwApiPublishmentV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#id ApigwApiPublishmentV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ public readonly versionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/apigw_api_publishment_v2#version_id ApigwApiPublishmentV2#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/apigw_api_publishment_v2#version_id ApigwApiPublishmentV2#version_id}.
 
 ---
 
