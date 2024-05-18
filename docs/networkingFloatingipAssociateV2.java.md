@@ -4,7 +4,7 @@
 
 ### NetworkingFloatingipAssociateV2 <a name="NetworkingFloatingipAssociateV2" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2 opentelekomcloud_networking_floatingip_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer"></a>
 
@@ -41,10 +41,10 @@ NetworkingFloatingipAssociateV2.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.floatingIp">floatingIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.portId">portId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.floatingIp">floatingIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.portId">portId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}.
 
 ---
 
@@ -580,7 +580,7 @@ The construct id used in the generated config for the NetworkingFloatingipAssoci
 
 The id of the existing NetworkingFloatingipAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,10 +900,10 @@ NetworkingFloatingipAssociateV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.floatingIp">floatingIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.portId">portId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.floatingIp">floatingIp</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.portId">portId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingFloatingipAssociateV2.NetworkingFloatingipAssociateV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}. |
 
 ---
 
@@ -985,7 +985,7 @@ public java.lang.String getFloatingIp();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#floating_ip NetworkingFloatingipAssociateV2#floating_ip}.
 
 ---
 
@@ -997,7 +997,7 @@ public java.lang.String getPortId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#port_id NetworkingFloatingipAssociateV2#port_id}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#id NetworkingFloatingipAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1024,7 +1024,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/networking_floatingip_associate_v2#region NetworkingFloatingipAssociateV2#region}.
 
 ---
 

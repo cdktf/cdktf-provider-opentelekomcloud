@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface CssSnapshotConfigurationV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#automatic CssSnapshotConfigurationV1#automatic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#automatic CssSnapshotConfigurationV1#automatic}
   */
   readonly automatic?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#cluster_id CssSnapshotConfigurationV1#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#cluster_id CssSnapshotConfigurationV1#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#id CssSnapshotConfigurationV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#id CssSnapshotConfigurationV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,33 +25,37 @@ export interface CssSnapshotConfigurationV1Config extends cdktf.TerraformMetaArg
   /**
   * configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#configuration CssSnapshotConfigurationV1#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#configuration CssSnapshotConfigurationV1#configuration}
   */
   readonly configuration?: CssSnapshotConfigurationV1Configuration;
   /**
   * creation_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#creation_policy CssSnapshotConfigurationV1#creation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#creation_policy CssSnapshotConfigurationV1#creation_policy}
   */
   readonly creationPolicy?: CssSnapshotConfigurationV1CreationPolicy;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#timeouts CssSnapshotConfigurationV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#timeouts CssSnapshotConfigurationV1#timeouts}
   */
   readonly timeouts?: CssSnapshotConfigurationV1Timeouts;
 }
 export interface CssSnapshotConfigurationV1Configuration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#agency CssSnapshotConfigurationV1#agency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#agency CssSnapshotConfigurationV1#agency}
   */
   readonly agency: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#bucket CssSnapshotConfigurationV1#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#base_path CssSnapshotConfigurationV1#base_path}
+  */
+  readonly basePath: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#bucket CssSnapshotConfigurationV1#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#kms_id CssSnapshotConfigurationV1#kms_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#kms_id CssSnapshotConfigurationV1#kms_id}
   */
   readonly kmsId?: string;
 }
@@ -68,6 +67,7 @@ export function cssSnapshotConfigurationV1ConfigurationToTerraform(struct?: CssS
   }
   return {
     agency: cdktf.stringToTerraform(struct!.agency),
+    base_path: cdktf.stringToTerraform(struct!.basePath),
     bucket: cdktf.stringToTerraform(struct!.bucket),
     kms_id: cdktf.stringToTerraform(struct!.kmsId),
   }
@@ -82,6 +82,12 @@ export function cssSnapshotConfigurationV1ConfigurationToHclTerraform(struct?: C
   const attrs = {
     agency: {
       value: cdktf.stringToHclTerraform(struct!.agency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    base_path: {
+      value: cdktf.stringToHclTerraform(struct!.basePath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,6 +128,10 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.agency = this._agency;
     }
+    if (this._basePath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.basePath = this._basePath;
+    }
     if (this._bucket !== undefined) {
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
@@ -137,12 +147,14 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this._agency = undefined;
+      this._basePath = undefined;
       this._bucket = undefined;
       this._kmsId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._agency = value.agency;
+      this._basePath = value.basePath;
       this._bucket = value.bucket;
       this._kmsId = value.kmsId;
     }
@@ -159,6 +171,19 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
   // Temporarily expose input value. Use with caution.
   public get agencyInput() {
     return this._agency;
+  }
+
+  // base_path - computed: false, optional: false, required: true
+  private _basePath?: string; 
+  public get basePath() {
+    return this.getStringAttribute('base_path');
+  }
+  public set basePath(value: string) {
+    this._basePath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get basePathInput() {
+    return this._basePath;
   }
 
   // bucket - computed: false, optional: false, required: true
@@ -192,23 +217,23 @@ export class CssSnapshotConfigurationV1ConfigurationOutputReference extends cdkt
 }
 export interface CssSnapshotConfigurationV1CreationPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#delete_auto CssSnapshotConfigurationV1#delete_auto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#delete_auto CssSnapshotConfigurationV1#delete_auto}
   */
   readonly deleteAuto?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#enable CssSnapshotConfigurationV1#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#enable CssSnapshotConfigurationV1#enable}
   */
   readonly enable: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#keepday CssSnapshotConfigurationV1#keepday}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#keepday CssSnapshotConfigurationV1#keepday}
   */
   readonly keepday: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#period CssSnapshotConfigurationV1#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#period CssSnapshotConfigurationV1#period}
   */
   readonly period: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#prefix CssSnapshotConfigurationV1#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#prefix CssSnapshotConfigurationV1#prefix}
   */
   readonly prefix: string;
 }
@@ -396,11 +421,11 @@ export class CssSnapshotConfigurationV1CreationPolicyOutputReference extends cdk
 }
 export interface CssSnapshotConfigurationV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#create CssSnapshotConfigurationV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#create CssSnapshotConfigurationV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#update CssSnapshotConfigurationV1#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#update CssSnapshotConfigurationV1#update}
   */
   readonly update?: string;
 }
@@ -523,7 +548,7 @@ export class CssSnapshotConfigurationV1TimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1}
 */
 export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
 
@@ -539,7 +564,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CssSnapshotConfigurationV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CssSnapshotConfigurationV1 to import
-  * @param importFromId The id of the existing CssSnapshotConfigurationV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CssSnapshotConfigurationV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CssSnapshotConfigurationV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -551,7 +576,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.8/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/css_snapshot_configuration_v1 opentelekomcloud_css_snapshot_configuration_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -562,7 +587,7 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_css_snapshot_configuration_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.8',
+        providerVersion: '1.36.9',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -599,11 +624,6 @@ export class CssSnapshotConfigurationV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get automaticInput() {
     return this._automatic;
-  }
-
-  // base_path - computed: true, optional: false, required: false
-  public get basePath() {
-    return this.getStringAttribute('base_path');
   }
 
   // cluster_id - computed: false, optional: false, required: true
