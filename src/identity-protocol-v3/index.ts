@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,68 +13,68 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProtocolV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#id IdentityProtocolV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#mapping_id IdentityProtocolV3#mapping_id}
   */
   readonly mappingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#protocol IdentityProtocolV3#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#provider_id IdentityProtocolV3#provider_id}
   */
   readonly providerId: string;
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#access_config IdentityProtocolV3#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#access_config IdentityProtocolV3#access_config}
   */
   readonly accessConfig?: IdentityProtocolV3AccessConfig;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
   */
   readonly metadata?: IdentityProtocolV3Metadata;
 }
 export interface IdentityProtocolV3AccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#access_type IdentityProtocolV3#access_type}
   */
   readonly accessType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#authorization_endpoint IdentityProtocolV3#authorization_endpoint}
   */
   readonly authorizationEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#client_id IdentityProtocolV3#client_id}
   */
   readonly clientId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#provider_url IdentityProtocolV3#provider_url}
   */
   readonly providerUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#response_mode IdentityProtocolV3#response_mode}
   */
   readonly responseMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#response_type IdentityProtocolV3#response_type}
   */
   readonly responseType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#scopes IdentityProtocolV3#scopes}
   */
   readonly scopes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#signing_key IdentityProtocolV3#signing_key}
   */
   readonly signingKey: string;
 }
@@ -349,15 +349,15 @@ export class IdentityProtocolV3AccessConfigOutputReference extends cdktf.Complex
 }
 export interface IdentityProtocolV3Metadata {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#domain_id IdentityProtocolV3#domain_id}
   */
   readonly domainId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#metadata IdentityProtocolV3#metadata}
   */
   readonly metadata: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#xaccount_type IdentityProtocolV3#xaccount_type}
   */
   readonly xaccountType?: string;
 }
@@ -493,7 +493,7 @@ export class IdentityProtocolV3MetadataOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3}
 */
 export class IdentityProtocolV3 extends cdktf.TerraformResource {
 
@@ -509,7 +509,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityProtocolV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityProtocolV3 to import
-  * @param importFromId The id of the existing IdentityProtocolV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityProtocolV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityProtocolV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -521,7 +521,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protocol_v3 opentelekomcloud_identity_protocol_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -532,7 +532,7 @@ export class IdentityProtocolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_protocol_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.9',
+        providerVersion: '1.36.10',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
