@@ -4,7 +4,7 @@
 
 ### CtsTrackerV3 <a name="CtsTrackerV3" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer"></a>
 
@@ -75,9 +75,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetBucketName">resetBucketName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetCompressType">resetCompressType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetFilePrefixName">resetFilePrefixName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetIsLtsEnabled">resetIsLtsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetIsObsCreated">resetIsObsCreated</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetIsSortByService">resetIsSortByService</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -388,6 +390,12 @@ public putTimeouts(value: CtsTrackerV3Timeouts): void
 public resetBucketName(): void
 ```
 
+##### `resetCompressType` <a name="resetCompressType" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetCompressType"></a>
+
+```typescript
+public resetCompressType(): void
+```
+
 ##### `resetFilePrefixName` <a name="resetFilePrefixName" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetFilePrefixName"></a>
 
 ```typescript
@@ -404,6 +412,12 @@ public resetIsLtsEnabled(): void
 
 ```typescript
 public resetIsObsCreated(): void
+```
+
+##### `resetIsSortByService` <a name="resetIsSortByService" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetIsSortByService"></a>
+
+```typescript
+public resetIsSortByService(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.resetTimeouts"></a>
@@ -515,7 +529,7 @@ The construct id used in the generated config for the CtsTrackerV3 to import.
 
 The id of the existing CtsTrackerV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -545,7 +559,6 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.bucketLifecycle">bucketLifecycle</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.detail">detail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.domainId">domainId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -556,15 +569,19 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.trackerName">trackerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.trackerType">trackerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.bucketNameInput">bucketNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.compressTypeInput">compressTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.filePrefixNameInput">filePrefixNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isLtsEnabledInput">isLtsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isObsCreatedInput">isObsCreatedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isSortByServiceInput">isSortByServiceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts">CtsTrackerV3Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.compressType">compressType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.filePrefixName">filePrefixName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isLtsEnabled">isLtsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isObsCreated">isObsCreated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isSortByService">isSortByService</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.status">status</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -711,16 +728,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `bucketLifecycle`<sup>Required</sup> <a name="bucketLifecycle" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.bucketLifecycle"></a>
-
-```typescript
-public readonly bucketLifecycle: number;
-```
-
-- *Type:* number
-
----
-
 ##### `detail`<sup>Required</sup> <a name="detail" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.detail"></a>
 
 ```typescript
@@ -821,6 +828,16 @@ public readonly bucketNameInput: string;
 
 ---
 
+##### `compressTypeInput`<sup>Optional</sup> <a name="compressTypeInput" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.compressTypeInput"></a>
+
+```typescript
+public readonly compressTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `filePrefixNameInput`<sup>Optional</sup> <a name="filePrefixNameInput" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.filePrefixNameInput"></a>
 
 ```typescript
@@ -845,6 +862,16 @@ public readonly isLtsEnabledInput: boolean | IResolvable;
 
 ```typescript
 public readonly isObsCreatedInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `isSortByServiceInput`<sup>Optional</sup> <a name="isSortByServiceInput" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isSortByServiceInput"></a>
+
+```typescript
+public readonly isSortByServiceInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -881,6 +908,16 @@ public readonly bucketName: string;
 
 ---
 
+##### `compressType`<sup>Required</sup> <a name="compressType" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.compressType"></a>
+
+```typescript
+public readonly compressType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `filePrefixName`<sup>Required</sup> <a name="filePrefixName" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.filePrefixName"></a>
 
 ```typescript
@@ -905,6 +942,16 @@ public readonly isLtsEnabled: boolean | IResolvable;
 
 ```typescript
 public readonly isObsCreated: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `isSortByService`<sup>Required</sup> <a name="isSortByService" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.property.isSortByService"></a>
+
+```typescript
+public readonly isSortByService: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
@@ -962,11 +1009,13 @@ const ctsTrackerV3Config: ctsTrackerV3.CtsTrackerV3Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.filePrefixName">filePrefixName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isLtsEnabled">isLtsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isObsCreated">isObsCreated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.bucketName">bucketName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.compressType">compressType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.filePrefixName">filePrefixName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isLtsEnabled">isLtsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isObsCreated">isObsCreated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isSortByService">isSortByService</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts">CtsTrackerV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1049,7 +1098,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
 
 ---
 
@@ -1061,7 +1110,19 @@ public readonly bucketName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
+
+---
+
+##### `compressType`<sup>Optional</sup> <a name="compressType" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.compressType"></a>
+
+```typescript
+public readonly compressType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}.
 
 ---
 
@@ -1073,7 +1134,7 @@ public readonly filePrefixName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
 
 ---
 
@@ -1085,7 +1146,7 @@ public readonly isLtsEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
 
 ---
 
@@ -1097,7 +1158,19 @@ public readonly isObsCreated: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
+
+---
+
+##### `isSortByService`<sup>Optional</sup> <a name="isSortByService" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isSortByService"></a>
+
+```typescript
+public readonly isSortByService: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}.
 
 ---
 
@@ -1111,7 +1184,7 @@ public readonly timeouts: CtsTrackerV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
 
 ---
 
@@ -1129,8 +1202,8 @@ const ctsTrackerV3Timeouts: ctsTrackerV3.CtsTrackerV3Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}. |
 
 ---
 
@@ -1142,7 +1215,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}.
 
 ---
 
@@ -1154,7 +1227,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}.
 
 ---
 

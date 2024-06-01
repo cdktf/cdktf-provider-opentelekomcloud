@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +8,47 @@ import * as cdktf from 'cdktf';
 
 export interface CtsTrackerV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}
   */
   readonly bucketName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}
+  */
+  readonly compressType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}
   */
   readonly filePrefixName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}
   */
   readonly isLtsEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}
   */
   readonly isObsCreated?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}
+  */
+  readonly isSortByService?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}
   */
   readonly status: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
   */
   readonly timeouts?: CtsTrackerV3Timeouts;
 }
 export interface CtsTrackerV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}
   */
   readonly delete?: string;
 }
@@ -168,7 +171,7 @@ export class CtsTrackerV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}
 */
 export class CtsTrackerV3 extends cdktf.TerraformResource {
 
@@ -184,7 +187,7 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CtsTrackerV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CtsTrackerV3 to import
-  * @param importFromId The id of the existing CtsTrackerV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CtsTrackerV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CtsTrackerV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -196,7 +199,7 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +210,7 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cts_tracker_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.9',
+        providerVersion: '1.36.10',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -219,9 +222,11 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._bucketName = config.bucketName;
+    this._compressType = config.compressType;
     this._filePrefixName = config.filePrefixName;
     this._isLtsEnabled = config.isLtsEnabled;
     this._isObsCreated = config.isObsCreated;
+    this._isSortByService = config.isSortByService;
     this._status = config.status;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -229,11 +234,6 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // bucket_lifecycle - computed: true, optional: false, required: false
-  public get bucketLifecycle() {
-    return this.getNumberAttribute('bucket_lifecycle');
-  }
 
   // bucket_name - computed: true, optional: true, required: false
   private _bucketName?: string; 
@@ -249,6 +249,22 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get bucketNameInput() {
     return this._bucketName;
+  }
+
+  // compress_type - computed: true, optional: true, required: false
+  private _compressType?: string; 
+  public get compressType() {
+    return this.getStringAttribute('compress_type');
+  }
+  public set compressType(value: string) {
+    this._compressType = value;
+  }
+  public resetCompressType() {
+    this._compressType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get compressTypeInput() {
+    return this._compressType;
   }
 
   // detail - computed: true, optional: false, required: false
@@ -314,6 +330,22 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
     return this._isObsCreated;
   }
 
+  // is_sort_by_service - computed: true, optional: true, required: false
+  private _isSortByService?: boolean | cdktf.IResolvable; 
+  public get isSortByService() {
+    return this.getBooleanAttribute('is_sort_by_service');
+  }
+  public set isSortByService(value: boolean | cdktf.IResolvable) {
+    this._isSortByService = value;
+  }
+  public resetIsSortByService() {
+    this._isSortByService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isSortByServiceInput() {
+    return this._isSortByService;
+  }
+
   // log_group_name - computed: true, optional: false, required: false
   public get logGroupName() {
     return this.getStringAttribute('log_group_name');
@@ -375,9 +407,11 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       bucket_name: cdktf.stringToTerraform(this._bucketName),
+      compress_type: cdktf.stringToTerraform(this._compressType),
       file_prefix_name: cdktf.stringToTerraform(this._filePrefixName),
       is_lts_enabled: cdktf.booleanToTerraform(this._isLtsEnabled),
       is_obs_created: cdktf.booleanToTerraform(this._isObsCreated),
+      is_sort_by_service: cdktf.booleanToTerraform(this._isSortByService),
       status: cdktf.stringToTerraform(this._status),
       timeouts: ctsTrackerV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -387,6 +421,12 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
     const attrs = {
       bucket_name: {
         value: cdktf.stringToHclTerraform(this._bucketName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      compress_type: {
+        value: cdktf.stringToHclTerraform(this._compressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -405,6 +445,12 @@ export class CtsTrackerV3 extends cdktf.TerraformResource {
       },
       is_obs_created: {
         value: cdktf.booleanToHclTerraform(this._isObsCreated),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_sort_by_service: {
+        value: cdktf.booleanToHclTerraform(this._isSortByService),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

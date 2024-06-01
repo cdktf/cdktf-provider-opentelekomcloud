@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,120 +8,120 @@ import * as cdktf from 'cdktf';
 
 export interface LbListenerV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#admin_state_up LbListenerV3#admin_state_up}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#admin_state_up LbListenerV3#admin_state_up}
   */
   readonly adminStateUp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#advanced_forwarding LbListenerV3#advanced_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#advanced_forwarding LbListenerV3#advanced_forwarding}
   */
   readonly advancedForwarding?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#client_ca_tls_container_ref LbListenerV3#client_ca_tls_container_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#client_ca_tls_container_ref LbListenerV3#client_ca_tls_container_ref}
   */
   readonly clientCaTlsContainerRef?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#client_timeout LbListenerV3#client_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#client_timeout LbListenerV3#client_timeout}
   */
   readonly clientTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#default_pool_id LbListenerV3#default_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#default_pool_id LbListenerV3#default_pool_id}
   */
   readonly defaultPoolId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#default_tls_container_ref LbListenerV3#default_tls_container_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#default_tls_container_ref LbListenerV3#default_tls_container_ref}
   */
   readonly defaultTlsContainerRef?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#description LbListenerV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#description LbListenerV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#http2_enable LbListenerV3#http2_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#http2_enable LbListenerV3#http2_enable}
   */
   readonly http2Enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#id LbListenerV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#id LbListenerV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#keep_alive_timeout LbListenerV3#keep_alive_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#keep_alive_timeout LbListenerV3#keep_alive_timeout}
   */
   readonly keepAliveTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#loadbalancer_id LbListenerV3#loadbalancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#loadbalancer_id LbListenerV3#loadbalancer_id}
   */
   readonly loadbalancerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#member_retry_enable LbListenerV3#member_retry_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#member_retry_enable LbListenerV3#member_retry_enable}
   */
   readonly memberRetryEnable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#member_timeout LbListenerV3#member_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#member_timeout LbListenerV3#member_timeout}
   */
   readonly memberTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#name LbListenerV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#name LbListenerV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#protocol LbListenerV3#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#protocol LbListenerV3#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#protocol_port LbListenerV3#protocol_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#protocol_port LbListenerV3#protocol_port}
   */
   readonly protocolPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#security_policy_id LbListenerV3#security_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#security_policy_id LbListenerV3#security_policy_id}
   */
   readonly securityPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#sni_container_refs LbListenerV3#sni_container_refs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#sni_container_refs LbListenerV3#sni_container_refs}
   */
   readonly sniContainerRefs?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#sni_match_algo LbListenerV3#sni_match_algo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#sni_match_algo LbListenerV3#sni_match_algo}
   */
   readonly sniMatchAlgo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#tags LbListenerV3#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#tags LbListenerV3#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#tls_ciphers_policy LbListenerV3#tls_ciphers_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#tls_ciphers_policy LbListenerV3#tls_ciphers_policy}
   */
   readonly tlsCiphersPolicy?: string;
   /**
   * insert_headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#insert_headers LbListenerV3#insert_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#insert_headers LbListenerV3#insert_headers}
   */
   readonly insertHeaders?: LbListenerV3InsertHeaders;
   /**
   * ip_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#ip_group LbListenerV3#ip_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#ip_group LbListenerV3#ip_group}
   */
-  readonly ipGroup?: LbListenerV3IpGroup[] | cdktf.IResolvable;
+  readonly ipGroup?: LbListenerV3IpGroup;
 }
 export interface LbListenerV3InsertHeaders {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#forward_elb_ip LbListenerV3#forward_elb_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#forward_elb_ip LbListenerV3#forward_elb_ip}
   */
   readonly forwardElbIp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#forwarded_for_port LbListenerV3#forwarded_for_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#forwarded_for_port LbListenerV3#forwarded_for_port}
   */
   readonly forwardedForPort?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#forwarded_host LbListenerV3#forwarded_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#forwarded_host LbListenerV3#forwarded_host}
   */
   readonly forwardedHost?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#forwarded_port LbListenerV3#forwarded_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#forwarded_port LbListenerV3#forwarded_port}
   */
   readonly forwardedPort?: boolean | cdktf.IResolvable;
 }
@@ -297,23 +292,23 @@ export class LbListenerV3InsertHeadersOutputReference extends cdktf.ComplexObjec
 }
 export interface LbListenerV3IpGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#enable LbListenerV3#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#enable LbListenerV3#enable}
   */
   readonly enable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#id LbListenerV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#id LbListenerV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#type LbListenerV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#type LbListenerV3#type}
   */
   readonly type?: string;
 }
 
-export function lbListenerV3IpGroupToTerraform(struct?: LbListenerV3IpGroup | cdktf.IResolvable): any {
+export function lbListenerV3IpGroupToTerraform(struct?: LbListenerV3IpGroupOutputReference | LbListenerV3IpGroup): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -326,7 +321,7 @@ export function lbListenerV3IpGroupToTerraform(struct?: LbListenerV3IpGroup | cd
 }
 
 
-export function lbListenerV3IpGroupToHclTerraform(struct?: LbListenerV3IpGroup | cdktf.IResolvable): any {
+export function lbListenerV3IpGroupToHclTerraform(struct?: LbListenerV3IpGroupOutputReference | LbListenerV3IpGroup): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -358,22 +353,16 @@ export function lbListenerV3IpGroupToHclTerraform(struct?: LbListenerV3IpGroup |
 
 export class LbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LbListenerV3IpGroup | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): LbListenerV3IpGroup | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._enable !== undefined) {
@@ -391,21 +380,15 @@ export class LbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LbListenerV3IpGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LbListenerV3IpGroup | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._enable = undefined;
       this._id = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._enable = value.enable;
       this._id = value.id;
       this._type = value.type;
@@ -458,28 +441,8 @@ export class LbListenerV3IpGroupOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LbListenerV3IpGroupList extends cdktf.ComplexList {
-  public internalValue? : LbListenerV3IpGroup[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): LbListenerV3IpGroupOutputReference {
-    return new LbListenerV3IpGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3}
 */
 export class LbListenerV3 extends cdktf.TerraformResource {
 
@@ -495,7 +458,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LbListenerV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LbListenerV3 to import
-  * @param importFromId The id of the existing LbListenerV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LbListenerV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LbListenerV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -507,7 +470,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/lb_listener_v3 opentelekomcloud_lb_listener_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -518,7 +481,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lb_listener_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.9',
+        providerVersion: '1.36.10',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -912,11 +875,11 @@ export class LbListenerV3 extends cdktf.TerraformResource {
   }
 
   // ip_group - computed: false, optional: true, required: false
-  private _ipGroup = new LbListenerV3IpGroupList(this, "ip_group", false);
+  private _ipGroup = new LbListenerV3IpGroupOutputReference(this, "ip_group");
   public get ipGroup() {
     return this._ipGroup;
   }
-  public putIpGroup(value: LbListenerV3IpGroup[] | cdktf.IResolvable) {
+  public putIpGroup(value: LbListenerV3IpGroup) {
     this._ipGroup.internalValue = value;
   }
   public resetIpGroup() {
@@ -955,7 +918,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       tls_ciphers_policy: cdktf.stringToTerraform(this._tlsCiphersPolicy),
       insert_headers: lbListenerV3InsertHeadersToTerraform(this._insertHeaders.internalValue),
-      ip_group: cdktf.listMapper(lbListenerV3IpGroupToTerraform, true)(this._ipGroup.internalValue),
+      ip_group: lbListenerV3IpGroupToTerraform(this._ipGroup.internalValue),
     };
   }
 
@@ -1094,7 +1057,7 @@ export class LbListenerV3 extends cdktf.TerraformResource {
         storageClassType: "LbListenerV3InsertHeadersList",
       },
       ip_group: {
-        value: cdktf.listMapperHcl(lbListenerV3IpGroupToHclTerraform, true)(this._ipGroup.internalValue),
+        value: lbListenerV3IpGroupToHclTerraform(this._ipGroup.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LbListenerV3IpGroupList",

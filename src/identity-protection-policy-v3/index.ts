@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProtectionPolicyV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3#enable_operation_protection_policy IdentityProtectionPolicyV3#enable_operation_protection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3#enable_operation_protection_policy IdentityProtectionPolicyV3#enable_operation_protection_policy}
   */
   readonly enableOperationProtectionPolicy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3#id IdentityProtectionPolicyV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3#id IdentityProtectionPolicyV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +21,7 @@ export interface IdentityProtectionPolicyV3Config extends cdktf.TerraformMetaArg
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3}
 */
 export class IdentityProtectionPolicyV3 extends cdktf.TerraformResource {
 
@@ -42,7 +37,7 @@ export class IdentityProtectionPolicyV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityProtectionPolicyV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityProtectionPolicyV3 to import
-  * @param importFromId The id of the existing IdentityProtectionPolicyV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityProtectionPolicyV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityProtectionPolicyV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +49,7 @@ export class IdentityProtectionPolicyV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.9/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/identity_protection_policy_v3 opentelekomcloud_identity_protection_policy_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class IdentityProtectionPolicyV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_protection_policy_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.9',
+        providerVersion: '1.36.10',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
