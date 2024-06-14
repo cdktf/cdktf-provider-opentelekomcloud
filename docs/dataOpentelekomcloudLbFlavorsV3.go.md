@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudLbFlavorsV3 <a name="DataOpentelekomcloudLbFlavorsV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3 opentelekomcloud_lb_flavors_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3 opentelekomcloud_lb_flavors_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.NewDataOpentelekomcloudLbFlavorsV3(scope Construct, id *string, config DataOpentelekomcloudLbFlavorsV3Config) DataOpentelekomcloudLbFlavorsV3
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudLbFlav
 
 The id of the existing DataOpentelekomcloudLbFlavorsV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudlbflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudlbflavorsv3"
 
 &dataopentelekomcloudlbflavorsv3.DataOpentelekomcloudLbFlavorsV3Config {
 	Connection: interface{},
@@ -638,8 +638,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3#id DataOpentelekomcloudLbFlavorsV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3#name DataOpentelekomcloudLbFlavorsV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3#id DataOpentelekomcloudLbFlavorsV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorsV3.DataOpentelekomcloudLbFlavorsV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3#name DataOpentelekomcloudLbFlavorsV3#name}. |
 
 ---
 
@@ -721,7 +721,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3#id DataOpentelekomcloudLbFlavorsV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3#id DataOpentelekomcloudLbFlavorsV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -736,7 +736,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/data-sources/lb_flavors_v3#name DataOpentelekomcloudLbFlavorsV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/data-sources/lb_flavors_v3#name DataOpentelekomcloudLbFlavorsV3#name}.
 
 ---
 

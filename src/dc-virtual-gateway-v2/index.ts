@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,62 +8,68 @@ import * as cdktf from 'cdktf';
 
 export interface DcVirtualGatewayV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#asn DcVirtualGatewayV2#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#asn DcVirtualGatewayV2#asn}
   */
   readonly asn?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#device_id DcVirtualGatewayV2#device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#device_id DcVirtualGatewayV2#device_id}
   */
   readonly deviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#id DcVirtualGatewayV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#id DcVirtualGatewayV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#project_id DcVirtualGatewayV2#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#project_id DcVirtualGatewayV2#project_id}
   */
   readonly projectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#redundant_device_id DcVirtualGatewayV2#redundant_device_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#redundant_device_id DcVirtualGatewayV2#redundant_device_id}
   */
   readonly redundantDeviceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#vpc_id DcVirtualGatewayV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#vpc_id DcVirtualGatewayV2#vpc_id}
   */
   readonly vpcId: string;
   /**
   * local_ep_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#local_ep_group DcVirtualGatewayV2#local_ep_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#local_ep_group DcVirtualGatewayV2#local_ep_group}
   */
-  readonly localEpGroup: DcVirtualGatewayV2LocalEpGroup;
+  readonly localEpGroup?: DcVirtualGatewayV2LocalEpGroup;
+  /**
+  * local_ep_group_v6 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#local_ep_group_v6 DcVirtualGatewayV2#local_ep_group_v6}
+  */
+  readonly localEpGroupV6?: DcVirtualGatewayV2LocalEpGroupV6;
 }
 export interface DcVirtualGatewayV2LocalEpGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#endpoints DcVirtualGatewayV2#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#endpoints DcVirtualGatewayV2#endpoints}
   */
   readonly endpoints: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#type DcVirtualGatewayV2#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#type DcVirtualGatewayV2#type}
   */
   readonly type?: string;
 }
@@ -234,9 +235,189 @@ export class DcVirtualGatewayV2LocalEpGroupOutputReference extends cdktf.Complex
     return this._type;
   }
 }
+export interface DcVirtualGatewayV2LocalEpGroupV6 {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#description DcVirtualGatewayV2#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#endpoints DcVirtualGatewayV2#endpoints}
+  */
+  readonly endpoints: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#name DcVirtualGatewayV2#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#type DcVirtualGatewayV2#type}
+  */
+  readonly type?: string;
+}
+
+export function dcVirtualGatewayV2LocalEpGroupV6ToTerraform(struct?: DcVirtualGatewayV2LocalEpGroupV6OutputReference | DcVirtualGatewayV2LocalEpGroupV6): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.endpoints),
+    name: cdktf.stringToTerraform(struct!.name),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function dcVirtualGatewayV2LocalEpGroupV6ToHclTerraform(struct?: DcVirtualGatewayV2LocalEpGroupV6OutputReference | DcVirtualGatewayV2LocalEpGroupV6): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    description: {
+      value: cdktf.stringToHclTerraform(struct!.description),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    endpoints: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.endpoints),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DcVirtualGatewayV2LocalEpGroupV6OutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DcVirtualGatewayV2LocalEpGroupV6 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._endpoints !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoints = this._endpoints;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DcVirtualGatewayV2LocalEpGroupV6 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._endpoints = undefined;
+      this._name = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._endpoints = value.endpoints;
+      this._name = value.name;
+      this._type = value.type;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // endpoints - computed: false, optional: false, required: true
+  private _endpoints?: string[]; 
+  public get endpoints() {
+    return this.getListAttribute('endpoints');
+  }
+  public set endpoints(value: string[]) {
+    this._endpoints = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2}
 */
 export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
 
@@ -252,7 +433,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DcVirtualGatewayV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DcVirtualGatewayV2 to import
-  * @param importFromId The id of the existing DcVirtualGatewayV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DcVirtualGatewayV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DcVirtualGatewayV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -264,7 +445,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/dc_virtual_gateway_v2 opentelekomcloud_dc_virtual_gateway_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -275,7 +456,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dc_virtual_gateway_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.10',
+        providerVersion: '1.36.12',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -295,6 +476,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
     this._redundantDeviceId = config.redundantDeviceId;
     this._vpcId = config.vpcId;
     this._localEpGroup.internalValue = config.localEpGroup;
+    this._localEpGroupV6.internalValue = config.localEpGroupV6;
   }
 
   // ==========
@@ -438,7 +620,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
     return this._vpcId;
   }
 
-  // local_ep_group - computed: false, optional: false, required: true
+  // local_ep_group - computed: false, optional: true, required: false
   private _localEpGroup = new DcVirtualGatewayV2LocalEpGroupOutputReference(this, "local_ep_group");
   public get localEpGroup() {
     return this._localEpGroup;
@@ -446,9 +628,28 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
   public putLocalEpGroup(value: DcVirtualGatewayV2LocalEpGroup) {
     this._localEpGroup.internalValue = value;
   }
+  public resetLocalEpGroup() {
+    this._localEpGroup.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get localEpGroupInput() {
     return this._localEpGroup.internalValue;
+  }
+
+  // local_ep_group_v6 - computed: false, optional: true, required: false
+  private _localEpGroupV6 = new DcVirtualGatewayV2LocalEpGroupV6OutputReference(this, "local_ep_group_v6");
+  public get localEpGroupV6() {
+    return this._localEpGroupV6;
+  }
+  public putLocalEpGroupV6(value: DcVirtualGatewayV2LocalEpGroupV6) {
+    this._localEpGroupV6.internalValue = value;
+  }
+  public resetLocalEpGroupV6() {
+    this._localEpGroupV6.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localEpGroupV6Input() {
+    return this._localEpGroupV6.internalValue;
   }
 
   // =========
@@ -466,6 +667,7 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
       redundant_device_id: cdktf.stringToTerraform(this._redundantDeviceId),
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       local_ep_group: dcVirtualGatewayV2LocalEpGroupToTerraform(this._localEpGroup.internalValue),
+      local_ep_group_v6: dcVirtualGatewayV2LocalEpGroupV6ToTerraform(this._localEpGroupV6.internalValue),
     };
   }
 
@@ -524,6 +726,12 @@ export class DcVirtualGatewayV2 extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "DcVirtualGatewayV2LocalEpGroupList",
+      },
+      local_ep_group_v6: {
+        value: dcVirtualGatewayV2LocalEpGroupV6ToHclTerraform(this._localEpGroupV6.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DcVirtualGatewayV2LocalEpGroupV6List",
       },
     };
 

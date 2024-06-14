@@ -4,7 +4,7 @@
 
 ### FgsEventV2 <a name="FgsEventV2" id="@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer"></a>
 
@@ -39,10 +39,10 @@ fgsEventV2.FgsEventV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.functionUrn">function_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.functionUrn">function_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#content FgsEventV2#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#content FgsEventV2#content}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#name FgsEventV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#name FgsEventV2#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#id FgsEventV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#id FgsEventV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -617,7 +617,7 @@ The construct id used in the generated config for the FgsEventV2 to import.
 
 The id of the existing FgsEventV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -955,10 +955,10 @@ fgsEventV2.FgsEventV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.functionUrn">function_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.content">content</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.functionUrn">function_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ content: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#content FgsEventV2#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#content FgsEventV2#content}.
 
 ---
 
@@ -1052,7 +1052,7 @@ function_urn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
 
 ---
 
@@ -1064,7 +1064,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#name FgsEventV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#name FgsEventV2#name}.
 
 ---
 
@@ -1076,7 +1076,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.10/docs/resources/fgs_event_v2#id FgsEventV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/fgs_event_v2#id FgsEventV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
