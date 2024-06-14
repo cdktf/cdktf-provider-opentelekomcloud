@@ -12,14 +12,17 @@ Object.defineProperty(exports, 'apigwApiV2', { get: function () { return require
 Object.defineProperty(exports, 'apigwAppcodeV2', { get: function () { return require('./apigw-appcode-v2'); } });
 Object.defineProperty(exports, 'apigwApplicationAuthorizationV2', { get: function () { return require('./apigw-application-authorization-v2'); } });
 Object.defineProperty(exports, 'apigwApplicationV2', { get: function () { return require('./apigw-application-v2'); } });
+Object.defineProperty(exports, 'apigwCustomAuthorizerV2', { get: function () { return require('./apigw-custom-authorizer-v2'); } });
 Object.defineProperty(exports, 'apigwEnvironmentV2', { get: function () { return require('./apigw-environment-v2'); } });
 Object.defineProperty(exports, 'apigwEnvironmentVariableV2', { get: function () { return require('./apigw-environment-variable-v2'); } });
 Object.defineProperty(exports, 'apigwGatewayV2', { get: function () { return require('./apigw-gateway-v2'); } });
 Object.defineProperty(exports, 'apigwGroupV2', { get: function () { return require('./apigw-group-v2'); } });
+Object.defineProperty(exports, 'apigwResponseV2', { get: function () { return require('./apigw-response-v2'); } });
 Object.defineProperty(exports, 'apigwSignatureAssociateV2', { get: function () { return require('./apigw-signature-associate-v2'); } });
 Object.defineProperty(exports, 'apigwSignatureV2', { get: function () { return require('./apigw-signature-v2'); } });
 Object.defineProperty(exports, 'apigwThrottlingPolicyAssociateV2', { get: function () { return require('./apigw-throttling-policy-associate-v2'); } });
 Object.defineProperty(exports, 'apigwThrottlingPolicyV2', { get: function () { return require('./apigw-throttling-policy-v2'); } });
+Object.defineProperty(exports, 'apigwVpcChannelV2', { get: function () { return require('./apigw-vpc-channel-v2'); } });
 Object.defineProperty(exports, 'asConfigurationV1', { get: function () { return require('./as-configuration-v1'); } });
 Object.defineProperty(exports, 'asGroupV1', { get: function () { return require('./as-group-v1'); } });
 Object.defineProperty(exports, 'asPolicyV1', { get: function () { return require('./as-policy-v1'); } });
@@ -71,6 +74,7 @@ Object.defineProperty(exports, 'dnsZoneV2', { get: function () { return require(
 Object.defineProperty(exports, 'drsTaskV3', { get: function () { return require('./drs-task-v3'); } });
 Object.defineProperty(exports, 'dwsClusterV1', { get: function () { return require('./dws-cluster-v1'); } });
 Object.defineProperty(exports, 'ecsInstanceV1', { get: function () { return require('./ecs-instance-v1'); } });
+Object.defineProperty(exports, 'erInstanceV3', { get: function () { return require('./er-instance-v3'); } });
 Object.defineProperty(exports, 'evsVolumeV3', { get: function () { return require('./evs-volume-v3'); } });
 Object.defineProperty(exports, 'fgsAsyncInvokeConfigV2', { get: function () { return require('./fgs-async-invoke-config-v2'); } });
 Object.defineProperty(exports, 'fgsEventV2', { get: function () { return require('./fgs-event-v2'); } });
@@ -144,6 +148,7 @@ Object.defineProperty(exports, 'networkingSubnetV2', { get: function () { return
 Object.defineProperty(exports, 'networkingVipAssociateV2', { get: function () { return require('./networking-vip-associate-v2'); } });
 Object.defineProperty(exports, 'networkingVipV2', { get: function () { return require('./networking-vip-v2'); } });
 Object.defineProperty(exports, 'obsBucket', { get: function () { return require('./obs-bucket'); } });
+Object.defineProperty(exports, 'obsBucketInventory', { get: function () { return require('./obs-bucket-inventory'); } });
 Object.defineProperty(exports, 'obsBucketObject', { get: function () { return require('./obs-bucket-object'); } });
 Object.defineProperty(exports, 'obsBucketPolicy', { get: function () { return require('./obs-bucket-policy'); } });
 Object.defineProperty(exports, 'obsBucketReplication', { get: function () { return require('./obs-bucket-replication'); } });
