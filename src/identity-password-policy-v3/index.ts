@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/identity_password_policy_v3
 // generated from terraform resource schema
 
