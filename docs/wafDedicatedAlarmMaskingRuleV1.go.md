@@ -4,12 +4,12 @@
 
 ### WafDedicatedAlarmMaskingRuleV1 <a name="WafDedicatedAlarmMaskingRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1(scope Construct, id *string, config WafDedicatedAlarmMaskingRuleV1Config) WafDedicatedAlarmMaskingRuleV1
 ```
@@ -374,12 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutAdvancedSettings` <a name="PutAdvancedSettings" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.putAdvancedSettings"></a>
 
 ```go
-func PutAdvancedSettings(value interface{})
+func PutAdvancedSettings(value WafDedicatedAlarmMaskingRuleV1AdvancedSettings)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.putAdvancedSettings.parameter.value"></a>
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a>
 
 ---
 
@@ -445,7 +445,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -534,7 +534,7 @@ The construct id used in the generated config for the WafDedicatedAlarmMaskingRu
 
 The id of the existing WafDedicatedAlarmMaskingRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,12 +564,12 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettings">AdvancedSettings</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList">WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettings">AdvancedSettings</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference">WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.conditions">Conditions</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1ConditionsList">WafDedicatedAlarmMaskingRuleV1ConditionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.createdAt">CreatedAt</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.status">Status</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference">WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettingsInput">AdvancedSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettingsInput">AdvancedSettingsInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.conditionsInput">ConditionsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.domainsInput">DomainsInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -730,10 +730,10 @@ func Provisioners() *[]interface{}
 ##### `AdvancedSettings`<sup>Required</sup> <a name="AdvancedSettings" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettings"></a>
 
 ```go
-func AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList
+func AdvancedSettings() WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList">WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList</a>
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference">WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference</a>
 
 ---
 
@@ -780,10 +780,10 @@ func Timeouts() WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference
 ##### `AdvancedSettingsInput`<sup>Optional</sup> <a name="AdvancedSettingsInput" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1.property.advancedSettingsInput"></a>
 
 ```go
-func AdvancedSettingsInput() interface{}
+func AdvancedSettingsInput() WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a>
 
 ---
 
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 &wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings {
 	Contents: *[]*string,
@@ -944,8 +944,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings.property.contents">Contents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings.property.contents">Contents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}. |
 
 ---
 
@@ -957,7 +957,7 @@ Contents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}.
 
 ---
 
@@ -969,7 +969,7 @@ Index *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}.
 
 ---
 
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 &wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1Conditions {
 	Category: *string,
@@ -992,10 +992,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.logicOperation">LogicOperation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.contents">Contents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.category">Category</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.logicOperation">LogicOperation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.contents">Contents</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Conditions.property.index">Index</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}. |
 
 ---
 
@@ -1007,7 +1007,7 @@ Category *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}.
 
 ---
 
@@ -1019,7 +1019,7 @@ LogicOperation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}.
 
 ---
 
@@ -1031,7 +1031,7 @@ Contents *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Index *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}.
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 &wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1Config {
 	Connection: interface{},
@@ -1066,10 +1066,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Domains: *[]*string,
 	PolicyId: *string,
 	Rule: *string,
-	AdvancedSettings: interface{},
+	AdvancedSettings: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts,
 }
 ```
 
@@ -1085,12 +1085,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.conditions">Conditions</a></code> | <code>interface{}</code> | conditions block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.advancedSettings">AdvancedSettings</a></code> | <code>interface{}</code> | advanced_settings block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.domains">Domains</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.rule">Rule</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.advancedSettings">AdvancedSettings</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a></code> | advanced_settings block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts">WafDedicatedAlarmMaskingRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1175,7 +1175,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#conditions WafDedicatedAlarmMaskingRuleV1#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#conditions WafDedicatedAlarmMaskingRuleV1#conditions}
 
 ---
 
@@ -1187,7 +1187,7 @@ Domains *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}.
 
 ---
 
@@ -1199,7 +1199,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}.
 
 ---
 
@@ -1211,21 +1211,21 @@ Rule *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}.
 
 ---
 
 ##### `AdvancedSettings`<sup>Optional</sup> <a name="AdvancedSettings" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Config.property.advancedSettings"></a>
 
 ```go
-AdvancedSettings interface{}
+AdvancedSettings WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a>
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#advanced_settings WafDedicatedAlarmMaskingRuleV1#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#advanced_settings WafDedicatedAlarmMaskingRuleV1#advanced_settings}
 
 ---
 
@@ -1237,7 +1237,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}.
 
 ---
 
@@ -1249,7 +1249,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ Timeouts WafDedicatedAlarmMaskingRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#timeouts WafDedicatedAlarmMaskingRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#timeouts WafDedicatedAlarmMaskingRuleV1#timeouts}
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 &wafdedicatedalarmmaskingrulev1.WafDedicatedAlarmMaskingRuleV1Timeouts {
 	Create: *string,
@@ -1288,9 +1288,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}.
 
 ---
 
@@ -1314,7 +1314,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}.
 
 ---
 
@@ -1326,188 +1326,26 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
-
-### WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList <a name="WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer"></a>
-
-```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
-
-wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* *string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.get">Get</a></code> | *No description.* |
-
----
-
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.allWithMapKey"></a>
-
-```go
-func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* *string
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.computeFqn"></a>
-
-```go
-func ComputeFqn() *string
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.resolve"></a>
-
-```go
-func Resolve(_context IResolveContext) interface{}
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.resolve.parameter._context"></a>
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.toString"></a>
-
-```go
-func ToString() *string
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.get"></a>
-
-```go
-func Get(index *f64) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
-```
-
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.get.parameter.index"></a>
-
-- *Type:* *f64
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.creationStack"></a>
-
-```go
-func CreationStack() *[]*string
-```
-
-- *Type:* *[]*string
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.fqn"></a>
-
-```go
-func Fqn() *string
-```
-
-- *Type:* *string
-
----
-
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList.property.internalValue"></a>
-
-```go
-func InternalValue() interface{}
-```
-
-- *Type:* interface{}
-
----
-
 
 ### WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference <a name="WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
-wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
+wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -1524,22 +1362,6 @@ The parent resource.
 - *Type:* *string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* *f64
-
-the index of this item in the list.
-
----
-
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* *bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -1738,7 +1560,7 @@ func ResetIndex()
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.indexInput">IndexInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.contents">Contents</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.index">Index</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a></code> | *No description.* |
 
 ---
 
@@ -1809,10 +1631,10 @@ func Index() *string
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() interface{}
+func InternalValue() WafDedicatedAlarmMaskingRuleV1AdvancedSettings
 ```
 
-- *Type:* interface{}
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1AdvancedSettings">WafDedicatedAlarmMaskingRuleV1AdvancedSettings</a>
 
 ---
 
@@ -1822,7 +1644,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1ConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1ConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WafDedicatedAlarmMaskingRuleV1ConditionsList
 ```
@@ -1982,7 +1804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1ConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WafDedicatedAlarmMaskingRuleV1ConditionsOutputReference
 ```
@@ -2351,7 +2173,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAlarmMaskingRuleV1.WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedalarmmaskingrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedalarmmaskingrulev1"
 
 wafdedicatedalarmmaskingrulev1.NewWafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference
 ```

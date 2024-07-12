@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,59 +8,59 @@ import * as cdktf from 'cdktf';
 
 export interface WafDedicatedAlarmMaskingRuleV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#description WafDedicatedAlarmMaskingRuleV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#domains WafDedicatedAlarmMaskingRuleV1#domains}
   */
   readonly domains: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#id WafDedicatedAlarmMaskingRuleV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#policy_id WafDedicatedAlarmMaskingRuleV1#policy_id}
   */
   readonly policyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#rule WafDedicatedAlarmMaskingRuleV1#rule}
   */
   readonly rule: string;
   /**
   * advanced_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#advanced_settings WafDedicatedAlarmMaskingRuleV1#advanced_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#advanced_settings WafDedicatedAlarmMaskingRuleV1#advanced_settings}
   */
-  readonly advancedSettings?: WafDedicatedAlarmMaskingRuleV1AdvancedSettings[] | cdktf.IResolvable;
+  readonly advancedSettings?: WafDedicatedAlarmMaskingRuleV1AdvancedSettings;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#conditions WafDedicatedAlarmMaskingRuleV1#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#conditions WafDedicatedAlarmMaskingRuleV1#conditions}
   */
   readonly conditions: WafDedicatedAlarmMaskingRuleV1Conditions[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#timeouts WafDedicatedAlarmMaskingRuleV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#timeouts WafDedicatedAlarmMaskingRuleV1#timeouts}
   */
   readonly timeouts?: WafDedicatedAlarmMaskingRuleV1Timeouts;
 }
 export interface WafDedicatedAlarmMaskingRuleV1AdvancedSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}
   */
   readonly contents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}
   */
   readonly index?: string;
 }
 
-export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform(struct?: WafDedicatedAlarmMaskingRuleV1AdvancedSettings | cdktf.IResolvable): any {
+export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform(struct?: WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference | WafDedicatedAlarmMaskingRuleV1AdvancedSettings): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +72,7 @@ export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform(struct
 }
 
 
-export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform(struct?: WafDedicatedAlarmMaskingRuleV1AdvancedSettings | cdktf.IResolvable): any {
+export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform(struct?: WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference | WafDedicatedAlarmMaskingRuleV1AdvancedSettings): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -103,22 +98,16 @@ export function wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform(str
 
 export class WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): WafDedicatedAlarmMaskingRuleV1AdvancedSettings | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): WafDedicatedAlarmMaskingRuleV1AdvancedSettings | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contents !== undefined) {
@@ -132,20 +121,14 @@ export class WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WafDedicatedAlarmMaskingRuleV1AdvancedSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WafDedicatedAlarmMaskingRuleV1AdvancedSettings | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
       this._contents = undefined;
       this._index = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
       this._contents = value.contents;
       this._index = value.index;
     }
@@ -183,41 +166,21 @@ export class WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference exten
     return this._index;
   }
 }
-
-export class WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList extends cdktf.ComplexList {
-  public internalValue? : WafDedicatedAlarmMaskingRuleV1AdvancedSettings[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference {
-    return new WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface WafDedicatedAlarmMaskingRuleV1Conditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#category WafDedicatedAlarmMaskingRuleV1#category}
   */
   readonly category: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#contents WafDedicatedAlarmMaskingRuleV1#contents}
   */
   readonly contents?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#index WafDedicatedAlarmMaskingRuleV1#index}
   */
   readonly index?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#logic_operation WafDedicatedAlarmMaskingRuleV1#logic_operation}
   */
   readonly logicOperation: string;
 }
@@ -414,15 +377,15 @@ export class WafDedicatedAlarmMaskingRuleV1ConditionsList extends cdktf.ComplexL
 }
 export interface WafDedicatedAlarmMaskingRuleV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#create WafDedicatedAlarmMaskingRuleV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#delete WafDedicatedAlarmMaskingRuleV1#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#update WafDedicatedAlarmMaskingRuleV1#update}
   */
   readonly update?: string;
 }
@@ -574,7 +537,7 @@ export class WafDedicatedAlarmMaskingRuleV1TimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1}
 */
 export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
 
@@ -590,7 +553,7 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WafDedicatedAlarmMaskingRuleV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WafDedicatedAlarmMaskingRuleV1 to import
-  * @param importFromId The id of the existing WafDedicatedAlarmMaskingRuleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WafDedicatedAlarmMaskingRuleV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WafDedicatedAlarmMaskingRuleV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -602,7 +565,7 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_alarm_masking_rule_v1 opentelekomcloud_waf_dedicated_alarm_masking_rule_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -613,7 +576,7 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_waf_dedicated_alarm_masking_rule_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.12',
+        providerVersion: '1.36.14',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -720,11 +683,11 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
   }
 
   // advanced_settings - computed: false, optional: true, required: false
-  private _advancedSettings = new WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList(this, "advanced_settings", false);
+  private _advancedSettings = new WafDedicatedAlarmMaskingRuleV1AdvancedSettingsOutputReference(this, "advanced_settings");
   public get advancedSettings() {
     return this._advancedSettings;
   }
-  public putAdvancedSettings(value: WafDedicatedAlarmMaskingRuleV1AdvancedSettings[] | cdktf.IResolvable) {
+  public putAdvancedSettings(value: WafDedicatedAlarmMaskingRuleV1AdvancedSettings) {
     this._advancedSettings.internalValue = value;
   }
   public resetAdvancedSettings() {
@@ -775,7 +738,7 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
       rule: cdktf.stringToTerraform(this._rule),
-      advanced_settings: cdktf.listMapper(wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform, true)(this._advancedSettings.internalValue),
+      advanced_settings: wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToTerraform(this._advancedSettings.internalValue),
       conditions: cdktf.listMapper(wafDedicatedAlarmMaskingRuleV1ConditionsToTerraform, true)(this._conditions.internalValue),
       timeouts: wafDedicatedAlarmMaskingRuleV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -814,7 +777,7 @@ export class WafDedicatedAlarmMaskingRuleV1 extends cdktf.TerraformResource {
         storageClassType: "string",
       },
       advanced_settings: {
-        value: cdktf.listMapperHcl(wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform, true)(this._advancedSettings.internalValue),
+        value: wafDedicatedAlarmMaskingRuleV1AdvancedSettingsToHclTerraform(this._advancedSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WafDedicatedAlarmMaskingRuleV1AdvancedSettingsList",

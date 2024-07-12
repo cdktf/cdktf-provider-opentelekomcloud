@@ -4,7 +4,7 @@
 
 ### LogtankTopicV2 <a name="LogtankTopicV2" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2 opentelekomcloud_logtank_topic_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer"></a>
 
@@ -40,9 +40,9 @@ LogtankTopicV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.topicName">topicName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.topicName">topicName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the LogtankTopicV2 to import.
 
 The id of the existing LogtankTopicV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -871,9 +871,9 @@ LogtankTopicV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.topicName">topicName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.topicName">topicName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankTopicV2.LogtankTopicV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}. |
 
 ---
 
@@ -955,7 +955,7 @@ public java.lang.String getGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#group_id LogtankTopicV2#group_id}.
 
 ---
 
@@ -967,7 +967,7 @@ public java.lang.String getTopicName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#topic_name LogtankTopicV2#topic_name}.
 
 ---
 
@@ -979,7 +979,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.12/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/logtank_topic_v2#id LogtankTopicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
