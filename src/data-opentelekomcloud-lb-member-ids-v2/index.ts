@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/lb_member_ids_v2
 // generated from terraform resource schema
 
