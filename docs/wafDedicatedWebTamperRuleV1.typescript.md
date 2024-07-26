@@ -4,7 +4,7 @@
 
 ### WafDedicatedWebTamperRuleV1 <a name="WafDedicatedWebTamperRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1 opentelekomcloud_waf_dedicated_web_tamper_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the WafDedicatedWebTamperRuleV
 
 The id of the existing WafDedicatedWebTamperRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,13 +900,13 @@ const wafDedicatedWebTamperRuleV1Config: wafDedicatedWebTamperRuleV1.WafDedicate
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.hostname">hostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#hostname WafDedicatedWebTamperRuleV1#hostname}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#policy_id WafDedicatedWebTamperRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#url WafDedicatedWebTamperRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#description WafDedicatedWebTamperRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#id WafDedicatedWebTamperRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.hostname">hostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#hostname WafDedicatedWebTamperRuleV1#hostname}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.policyId">policyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#policy_id WafDedicatedWebTamperRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.url">url</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#url WafDedicatedWebTamperRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#description WafDedicatedWebTamperRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#id WafDedicatedWebTamperRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts">WafDedicatedWebTamperRuleV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.updateCache">updateCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#update_cache WafDedicatedWebTamperRuleV1#update_cache}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Config.property.updateCache">updateCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#update_cache WafDedicatedWebTamperRuleV1#update_cache}. |
 
 ---
 
@@ -988,7 +988,7 @@ public readonly hostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#hostname WafDedicatedWebTamperRuleV1#hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#hostname WafDedicatedWebTamperRuleV1#hostname}.
 
 ---
 
@@ -1000,7 +1000,7 @@ public readonly policyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#policy_id WafDedicatedWebTamperRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#policy_id WafDedicatedWebTamperRuleV1#policy_id}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly url: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#url WafDedicatedWebTamperRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#url WafDedicatedWebTamperRuleV1#url}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#description WafDedicatedWebTamperRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#description WafDedicatedWebTamperRuleV1#description}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#id WafDedicatedWebTamperRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#id WafDedicatedWebTamperRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1053,7 +1053,7 @@ public readonly timeouts: WafDedicatedWebTamperRuleV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#timeouts WafDedicatedWebTamperRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#timeouts WafDedicatedWebTamperRuleV1#timeouts}
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly updateCache: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#update_cache WafDedicatedWebTamperRuleV1#update_cache}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#update_cache WafDedicatedWebTamperRuleV1#update_cache}.
 
 ---
 
@@ -1083,9 +1083,9 @@ const wafDedicatedWebTamperRuleV1Timeouts: wafDedicatedWebTamperRuleV1.WafDedica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#create WafDedicatedWebTamperRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#delete WafDedicatedWebTamperRuleV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#update WafDedicatedWebTamperRuleV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#create WafDedicatedWebTamperRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#delete WafDedicatedWebTamperRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedWebTamperRuleV1.WafDedicatedWebTamperRuleV1Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#update WafDedicatedWebTamperRuleV1#update}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#create WafDedicatedWebTamperRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#create WafDedicatedWebTamperRuleV1#create}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#delete WafDedicatedWebTamperRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#delete WafDedicatedWebTamperRuleV1#delete}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/resources/waf_dedicated_web_tamper_rule_v1#update WafDedicatedWebTamperRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/waf_dedicated_web_tamper_rule_v1#update WafDedicatedWebTamperRuleV1#update}.
 
 ---
 
