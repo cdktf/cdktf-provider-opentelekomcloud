@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudVpcRouteTableV1 <a name="DataOpentelekomcloudVpcRouteTableV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1 opentelekomcloud_vpc_route_table_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.NewDataOpentelekomcloudVpcRouteTableV1(scope Construct, id *string, config DataOpentelekomcloudVpcRouteTableV1Config) DataOpentelekomcloudVpcRouteTableV1
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcRou
 
 The id of the existing DataOpentelekomcloudVpcRouteTableV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -678,7 +678,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 &dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1Config {
 	Connection: interface{},
@@ -705,9 +705,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#vpc_id DataOpentelekomcloudVpcRouteTableV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#id DataOpentelekomcloudVpcRouteTableV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#name DataOpentelekomcloudVpcRouteTableV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#vpc_id DataOpentelekomcloudVpcRouteTableV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#id DataOpentelekomcloudVpcRouteTableV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#name DataOpentelekomcloudVpcRouteTableV1#name}. |
 
 ---
 
@@ -789,7 +789,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#vpc_id DataOpentelekomcloudVpcRouteTableV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#vpc_id DataOpentelekomcloudVpcRouteTableV1#vpc_id}.
 
 ---
 
@@ -801,7 +801,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#id DataOpentelekomcloudVpcRouteTableV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#id DataOpentelekomcloudVpcRouteTableV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -816,7 +816,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/vpc_route_table_v1#name DataOpentelekomcloudVpcRouteTableV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_route_table_v1#name DataOpentelekomcloudVpcRouteTableV1#name}.
 
 ---
 
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1Route.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 &dataopentelekomcloudvpcroutetablev1.DataOpentelekomcloudVpcRouteTableV1Route {
 
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1RouteList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.NewDataOpentelekomcloudVpcRouteTableV1RouteList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudVpcRouteTableV1RouteList
 ```
@@ -989,7 +989,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTableV1.DataOpentelekomcloudVpcRouteTableV1RouteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudvpcroutetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudvpcroutetablev1"
 
 dataopentelekomcloudvpcroutetablev1.NewDataOpentelekomcloudVpcRouteTableV1RouteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudVpcRouteTableV1RouteOutputReference
 ```

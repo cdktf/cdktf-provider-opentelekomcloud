@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudDcsProductV1 <a name="DataOpentelekomcloudDcsProductV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1 opentelekomcloud_dcs_product_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1 opentelekomcloud_dcs_product_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 dataopentelekomclouddcsproductv1.NewDataOpentelekomcloudDcsProductV1(scope Construct, id *string, config DataOpentelekomcloudDcsProductV1Config) DataOpentelekomcloudDcsProductV1
 ```
@@ -290,7 +290,7 @@ func ResetSpecCode()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudDcsPro
 
 The id of the existing DataOpentelekomcloudDcsProductV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,7 +601,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsproductv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsproductv1"
 
 &dataopentelekomclouddcsproductv1.DataOpentelekomcloudDcsProductV1Config {
 	Connection: interface{},
@@ -627,8 +627,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1#id DataOpentelekomcloudDcsProductV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.specCode">SpecCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1#spec_code DataOpentelekomcloudDcsProductV1#spec_code}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1#id DataOpentelekomcloudDcsProductV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsProductV1.DataOpentelekomcloudDcsProductV1Config.property.specCode">SpecCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1#spec_code DataOpentelekomcloudDcsProductV1#spec_code}. |
 
 ---
 
@@ -710,7 +710,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1#id DataOpentelekomcloudDcsProductV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1#id DataOpentelekomcloudDcsProductV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -725,7 +725,7 @@ SpecCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.14/docs/data-sources/dcs_product_v1#spec_code DataOpentelekomcloudDcsProductV1#spec_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/dcs_product_v1#spec_code DataOpentelekomcloudDcsProductV1#spec_code}.
 
 ---
 
