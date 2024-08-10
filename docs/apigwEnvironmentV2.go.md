@@ -4,12 +4,12 @@
 
 ### ApigwEnvironmentV2 <a name="ApigwEnvironmentV2" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2 opentelekomcloud_apigw_environment_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 apigwenvironmentv2.NewApigwEnvironmentV2(scope Construct, id *string, config ApigwEnvironmentV2Config) ApigwEnvironmentV2
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 apigwenvironmentv2.ApigwEnvironmentV2_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 apigwenvironmentv2.ApigwEnvironmentV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ apigwenvironmentv2.ApigwEnvironmentV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 apigwenvironmentv2.ApigwEnvironmentV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ apigwenvironmentv2.ApigwEnvironmentV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 apigwenvironmentv2.ApigwEnvironmentV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ApigwEnvironmentV2 to impo
 
 The id of the existing ApigwEnvironmentV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwenvironmentv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwenvironmentv2"
 
 &apigwenvironmentv2.ApigwEnvironmentV2Config {
 	Connection: interface{},
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#instance_id ApigwEnvironmentV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#name ApigwEnvironmentV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#description ApigwEnvironmentV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#id ApigwEnvironmentV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#region ApigwEnvironmentV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#instance_id ApigwEnvironmentV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#name ApigwEnvironmentV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#description ApigwEnvironmentV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#id ApigwEnvironmentV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentV2.ApigwEnvironmentV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#region ApigwEnvironmentV2#region}. |
 
 ---
 
@@ -924,7 +924,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#instance_id ApigwEnvironmentV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#instance_id ApigwEnvironmentV2#instance_id}.
 
 ---
 
@@ -936,7 +936,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#name ApigwEnvironmentV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#name ApigwEnvironmentV2#name}.
 
 ---
 
@@ -948,7 +948,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#description ApigwEnvironmentV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#description ApigwEnvironmentV2#description}.
 
 ---
 
@@ -960,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#id ApigwEnvironmentV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#id ApigwEnvironmentV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/resources/apigw_environment_v2#region ApigwEnvironmentV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_v2#region ApigwEnvironmentV2#region}.
 
 ---
 

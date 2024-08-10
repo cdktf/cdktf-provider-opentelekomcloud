@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudVpcSubnetIdsV1 <a name="DataOpentelekomcloudVpcSubnetIdsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1 opentelekomcloud_vpc_subnet_ids_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcSub
 
 The id of the existing DataOpentelekomcloudVpcSubnetIdsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,9 +661,9 @@ new DataOpentelekomcloudVpcSubnetIdsV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcSubnetIdsV1.DataOpentelekomcloudVpcSubnetIdsV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}. |
 
 ---
 
@@ -745,7 +745,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#vpc_id DataOpentelekomcloudVpcSubnetIdsV1#vpc_id}.
 
 ---
 
@@ -757,7 +757,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#id DataOpentelekomcloudVpcSubnetIdsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.15/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/data-sources/vpc_subnet_ids_v1#region DataOpentelekomcloudVpcSubnetIdsV1#region}.
 
 ---
 
