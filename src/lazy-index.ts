@@ -74,7 +74,11 @@ Object.defineProperty(exports, 'dnsZoneV2', { get: function () { return require(
 Object.defineProperty(exports, 'drsTaskV3', { get: function () { return require('./drs-task-v3'); } });
 Object.defineProperty(exports, 'dwsClusterV1', { get: function () { return require('./dws-cluster-v1'); } });
 Object.defineProperty(exports, 'ecsInstanceV1', { get: function () { return require('./ecs-instance-v1'); } });
+Object.defineProperty(exports, 'erAssociationV3', { get: function () { return require('./er-association-v3'); } });
 Object.defineProperty(exports, 'erInstanceV3', { get: function () { return require('./er-instance-v3'); } });
+Object.defineProperty(exports, 'erPropagationV3', { get: function () { return require('./er-propagation-v3'); } });
+Object.defineProperty(exports, 'erRouteTableV3', { get: function () { return require('./er-route-table-v3'); } });
+Object.defineProperty(exports, 'erStaticRouteV3', { get: function () { return require('./er-static-route-v3'); } });
 Object.defineProperty(exports, 'erVpcAttachmentV3', { get: function () { return require('./er-vpc-attachment-v3'); } });
 Object.defineProperty(exports, 'evsVolumeV3', { get: function () { return require('./evs-volume-v3'); } });
 Object.defineProperty(exports, 'fgsAsyncInvokeConfigV2', { get: function () { return require('./fgs-async-invoke-config-v2'); } });
