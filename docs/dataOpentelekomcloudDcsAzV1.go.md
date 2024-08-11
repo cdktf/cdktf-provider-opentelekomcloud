@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 dataopentelekomclouddcsazv1.NewDataOpentelekomcloudDcsAzV1(scope Construct, id *string, config DataOpentelekomcloudDcsAzV1Config) DataOpentelekomcloudDcsAzV1
 ```
@@ -304,7 +304,7 @@ func ResetPort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDcsAzV1.DataOpentelekomcloudDcsAzV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomclouddcsazv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouddcsazv1"
 
 &dataopentelekomclouddcsazv1.DataOpentelekomcloudDcsAzV1Config {
 	Connection: interface{},

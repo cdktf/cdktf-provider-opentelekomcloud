@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.NewVpcepEndpointV1(scope Construct, id *string, config VpcepEndpointV1Config) VpcepEndpointV1
 ```
@@ -454,7 +454,7 @@ func ResetWhitelist()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.VpcepEndpointV1_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.VpcepEndpointV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ vpcependpointv1.VpcepEndpointV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.VpcepEndpointV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ vpcependpointv1.VpcepEndpointV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.VpcepEndpointV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1040,7 +1040,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 &vpcependpointv1.VpcepEndpointV1Config {
 	Connection: interface{},
@@ -1059,7 +1059,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	RouteTables: *[]*string,
 	SubnetId: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.vpcepEndpointV1.VpcepEndpointV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Timeouts,
 	Whitelist: *[]*string,
 }
 ```
@@ -1301,7 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 &vpcependpointv1.VpcepEndpointV1Timeouts {
 	Default: *string,
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcepEndpointV1.VpcepEndpointV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vpcependpointv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/vpcependpointv1"
 
 vpcependpointv1.NewVpcepEndpointV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpcepEndpointV1TimeoutsOutputReference
 ```
