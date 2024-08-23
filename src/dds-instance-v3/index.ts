@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +8,82 @@ import * as cdktf from 'cdktf';
 
 export interface DdsInstanceV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#availability_zone DdsInstanceV3#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#availability_zone DdsInstanceV3#availability_zone}
   */
   readonly availabilityZone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#disk_encryption_id DdsInstanceV3#disk_encryption_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#disk_encryption_id DdsInstanceV3#disk_encryption_id}
   */
   readonly diskEncryptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#id DdsInstanceV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#id DdsInstanceV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#mode DdsInstanceV3#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#mode DdsInstanceV3#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#name DdsInstanceV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#name DdsInstanceV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#password DdsInstanceV3#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#password DdsInstanceV3#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#region DdsInstanceV3#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#port DdsInstanceV3#port}
+  */
+  readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#region DdsInstanceV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#security_group_id DdsInstanceV3#security_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#security_group_id DdsInstanceV3#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#ssl DdsInstanceV3#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#ssl DdsInstanceV3#ssl}
   */
   readonly ssl?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#subnet_id DdsInstanceV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#subnet_id DdsInstanceV3#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#tags DdsInstanceV3#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#tags DdsInstanceV3#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#vpc_id DdsInstanceV3#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#vpc_id DdsInstanceV3#vpc_id}
   */
   readonly vpcId: string;
   /**
   * backup_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#backup_strategy DdsInstanceV3#backup_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#backup_strategy DdsInstanceV3#backup_strategy}
   */
   readonly backupStrategy?: DdsInstanceV3BackupStrategy;
   /**
   * datastore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#datastore DdsInstanceV3#datastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#datastore DdsInstanceV3#datastore}
   */
   readonly datastore: DdsInstanceV3Datastore;
   /**
   * flavor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#flavor DdsInstanceV3#flavor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#flavor DdsInstanceV3#flavor}
   */
   readonly flavor: DdsInstanceV3Flavor[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#timeouts DdsInstanceV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#timeouts DdsInstanceV3#timeouts}
   */
   readonly timeouts?: DdsInstanceV3Timeouts;
 }
@@ -195,11 +194,15 @@ export class DdsInstanceV3NodesList extends cdktf.ComplexList {
 }
 export interface DdsInstanceV3BackupStrategy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#keep_days DdsInstanceV3#keep_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#keep_days DdsInstanceV3#keep_days}
   */
   readonly keepDays: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#start_time DdsInstanceV3#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#period DdsInstanceV3#period}
+  */
+  readonly period?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#start_time DdsInstanceV3#start_time}
   */
   readonly startTime: string;
 }
@@ -211,6 +214,7 @@ export function ddsInstanceV3BackupStrategyToTerraform(struct?: DdsInstanceV3Bac
   }
   return {
     keep_days: cdktf.numberToTerraform(struct!.keepDays),
+    period: cdktf.stringToTerraform(struct!.period),
     start_time: cdktf.stringToTerraform(struct!.startTime),
   }
 }
@@ -227,6 +231,12 @@ export function ddsInstanceV3BackupStrategyToHclTerraform(struct?: DdsInstanceV3
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    period: {
+      value: cdktf.stringToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     start_time: {
       value: cdktf.stringToHclTerraform(struct!.startTime),
@@ -258,6 +268,10 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.keepDays = this._keepDays;
     }
+    if (this._period !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
     if (this._startTime !== undefined) {
       hasAnyValues = true;
       internalValueResult.startTime = this._startTime;
@@ -269,11 +283,13 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
     if (value === undefined) {
       this.isEmptyObject = false;
       this._keepDays = undefined;
+      this._period = undefined;
       this._startTime = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._keepDays = value.keepDays;
+      this._period = value.period;
       this._startTime = value.startTime;
     }
   }
@@ -291,6 +307,22 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
     return this._keepDays;
   }
 
+  // period - computed: true, optional: true, required: false
+  private _period?: string; 
+  public get period() {
+    return this.getStringAttribute('period');
+  }
+  public set period(value: string) {
+    this._period = value;
+  }
+  public resetPeriod() {
+    this._period = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodInput() {
+    return this._period;
+  }
+
   // start_time - computed: false, optional: false, required: true
   private _startTime?: string; 
   public get startTime() {
@@ -306,15 +338,15 @@ export class DdsInstanceV3BackupStrategyOutputReference extends cdktf.ComplexObj
 }
 export interface DdsInstanceV3Datastore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#storage_engine DdsInstanceV3#storage_engine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#storage_engine DdsInstanceV3#storage_engine}
   */
   readonly storageEngine?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#type DdsInstanceV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#type DdsInstanceV3#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#version DdsInstanceV3#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#version DdsInstanceV3#version}
   */
   readonly version: string;
 }
@@ -450,23 +482,23 @@ export class DdsInstanceV3DatastoreOutputReference extends cdktf.ComplexObject {
 }
 export interface DdsInstanceV3Flavor {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#num DdsInstanceV3#num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#num DdsInstanceV3#num}
   */
   readonly num: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#size DdsInstanceV3#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#size DdsInstanceV3#size}
   */
   readonly size?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#spec_code DdsInstanceV3#spec_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#spec_code DdsInstanceV3#spec_code}
   */
   readonly specCode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#storage DdsInstanceV3#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#storage DdsInstanceV3#storage}
   */
   readonly storage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#type DdsInstanceV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#type DdsInstanceV3#type}
   */
   readonly type: string;
 }
@@ -689,15 +721,15 @@ export class DdsInstanceV3FlavorList extends cdktf.ComplexList {
 }
 export interface DdsInstanceV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#create DdsInstanceV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#create DdsInstanceV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#delete DdsInstanceV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#delete DdsInstanceV3#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#update DdsInstanceV3#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#update DdsInstanceV3#update}
   */
   readonly update?: string;
 }
@@ -849,7 +881,7 @@ export class DdsInstanceV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3}
 */
 export class DdsInstanceV3 extends cdktf.TerraformResource {
 
@@ -865,7 +897,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DdsInstanceV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DdsInstanceV3 to import
-  * @param importFromId The id of the existing DdsInstanceV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DdsInstanceV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DdsInstanceV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -877,7 +909,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/dds_instance_v3 opentelekomcloud_dds_instance_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -888,7 +920,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_dds_instance_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.16',
+        providerVersion: '1.36.17',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -905,6 +937,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     this._mode = config.mode;
     this._name = config.name;
     this._password = config.password;
+    this._port = config.port;
     this._region = config.region;
     this._securityGroupId = config.securityGroupId;
     this._ssl = config.ssl;
@@ -932,6 +965,11 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get availabilityZoneInput() {
     return this._availabilityZone;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
   }
 
   // db_username - computed: true, optional: false, required: false
@@ -1021,9 +1059,20 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('pay_mode');
   }
 
-  // port - computed: true, optional: false, required: false
+  // port - computed: true, optional: true, required: false
+  private _port?: number; 
   public get port() {
     return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
   }
 
   // region - computed: true, optional: true, required: false
@@ -1103,6 +1152,16 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // time_zone - computed: true, optional: false, required: false
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
   }
 
   // vpc_id - computed: false, optional: false, required: true
@@ -1188,6 +1247,7 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
       mode: cdktf.stringToTerraform(this._mode),
       name: cdktf.stringToTerraform(this._name),
       password: cdktf.stringToTerraform(this._password),
+      port: cdktf.numberToTerraform(this._port),
       region: cdktf.stringToTerraform(this._region),
       security_group_id: cdktf.stringToTerraform(this._securityGroupId),
       ssl: cdktf.booleanToTerraform(this._ssl),
@@ -1238,6 +1298,12 @@ export class DdsInstanceV3 extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      port: {
+        value: cdktf.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       region: {
         value: cdktf.stringToHclTerraform(this._region),
