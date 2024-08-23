@@ -4,7 +4,7 @@
 
 ### ApigwEnvironmentVariableV2 <a name="ApigwEnvironmentVariableV2" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2 opentelekomcloud_apigw_environment_variable_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2 opentelekomcloud_apigw_environment_variable_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ApigwEnvironmentVariableV2
 
 The id of the existing ApigwEnvironmentVariableV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,12 +847,12 @@ new ApigwEnvironmentVariableV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#environment_id ApigwEnvironmentVariableV2#environment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#gateway_id ApigwEnvironmentVariableV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#group_id ApigwEnvironmentVariableV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#name ApigwEnvironmentVariableV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#value ApigwEnvironmentVariableV2#value}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#id ApigwEnvironmentVariableV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.environmentId">EnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#environment_id ApigwEnvironmentVariableV2#environment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#gateway_id ApigwEnvironmentVariableV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#group_id ApigwEnvironmentVariableV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#name ApigwEnvironmentVariableV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#value ApigwEnvironmentVariableV2#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwEnvironmentVariableV2.ApigwEnvironmentVariableV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#id ApigwEnvironmentVariableV2#id}. |
 
 ---
 
@@ -934,7 +934,7 @@ public string EnvironmentId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#environment_id ApigwEnvironmentVariableV2#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#environment_id ApigwEnvironmentVariableV2#environment_id}.
 
 ---
 
@@ -946,7 +946,7 @@ public string GatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#gateway_id ApigwEnvironmentVariableV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#gateway_id ApigwEnvironmentVariableV2#gateway_id}.
 
 ---
 
@@ -958,7 +958,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#group_id ApigwEnvironmentVariableV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#group_id ApigwEnvironmentVariableV2#group_id}.
 
 ---
 
@@ -970,7 +970,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#name ApigwEnvironmentVariableV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#name ApigwEnvironmentVariableV2#name}.
 
 ---
 
@@ -982,7 +982,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#value ApigwEnvironmentVariableV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#value ApigwEnvironmentVariableV2#value}.
 
 ---
 
@@ -994,7 +994,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.16/docs/resources/apigw_environment_variable_v2#id ApigwEnvironmentVariableV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_environment_variable_v2#id ApigwEnvironmentVariableV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

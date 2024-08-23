@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'dcVirtualGatewayV2', { get: function () { return
 Object.defineProperty(exports, 'dcVirtualInterfaceV2', { get: function () { return require('./dc-virtual-interface-v2'); } });
 Object.defineProperty(exports, 'dcsInstanceV1', { get: function () { return require('./dcs-instance-v1'); } });
 Object.defineProperty(exports, 'dcsInstanceV2', { get: function () { return require('./dcs-instance-v2'); } });
+Object.defineProperty(exports, 'ddsBackupV3', { get: function () { return require('./dds-backup-v3'); } });
 Object.defineProperty(exports, 'ddsInstanceV3', { get: function () { return require('./dds-instance-v3'); } });
 Object.defineProperty(exports, 'dehHostV1', { get: function () { return require('./deh-host-v1'); } });
 Object.defineProperty(exports, 'directConnectV2', { get: function () { return require('./direct-connect-v2'); } });
@@ -89,6 +90,7 @@ Object.defineProperty(exports, 'fwFirewallGroupV2', { get: function () { return 
 Object.defineProperty(exports, 'fwPolicyV2', { get: function () { return require('./fw-policy-v2'); } });
 Object.defineProperty(exports, 'fwRuleV2', { get: function () { return require('./fw-rule-v2'); } });
 Object.defineProperty(exports, 'gaussdbMysqlInstanceV3', { get: function () { return require('./gaussdb-mysql-instance-v3'); } });
+Object.defineProperty(exports, 'identityAclV3', { get: function () { return require('./identity-acl-v3'); } });
 Object.defineProperty(exports, 'identityAgencyV3', { get: function () { return require('./identity-agency-v3'); } });
 Object.defineProperty(exports, 'identityCredentialV3', { get: function () { return require('./identity-credential-v3'); } });
 Object.defineProperty(exports, 'identityGroupMembershipV3', { get: function () { return require('./identity-group-membership-v3'); } });
@@ -266,6 +268,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudDmsProductV1', { get: functi
 Object.defineProperty(exports, 'dataOpentelekomcloudDnsNameserversV2', { get: function () { return require('./data-opentelekomcloud-dns-nameservers-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDnsZoneV2', { get: function () { return require('./data-opentelekomcloud-dns-zone-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDwsFlavorsV2', { get: function () { return require('./data-opentelekomcloud-dws-flavors-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudEvsVolumesV2', { get: function () { return require('./data-opentelekomcloud-evs-volumes-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityAgencyV3', { get: function () { return require('./data-opentelekomcloud-identity-agency-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityAuthScopeV3', { get: function () { return require('./data-opentelekomcloud-identity-auth-scope-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityCredentialV3', { get: function () { return require('./data-opentelekomcloud-identity-credential-v3'); } });
