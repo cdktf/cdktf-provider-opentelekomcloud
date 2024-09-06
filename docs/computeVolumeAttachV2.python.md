@@ -4,7 +4,7 @@
 
 ### ComputeVolumeAttachV2 <a name="ComputeVolumeAttachV2" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2 opentelekomcloud_compute_volume_attach_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer"></a>
 
@@ -41,11 +41,11 @@ computeVolumeAttachV2.ComputeVolumeAttachV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.device">device</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.device">device</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts">ComputeVolumeAttachV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
 
 ---
 
@@ -536,7 +536,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}.
 
 ---
 
@@ -544,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}.
 
 ---
 
@@ -686,7 +686,7 @@ The construct id used in the generated config for the ComputeVolumeAttachV2 to i
 
 The id of the existing ComputeVolumeAttachV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,11 +1048,11 @@ computeVolumeAttachV2.ComputeVolumeAttachV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.device">device</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.device">device</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts">ComputeVolumeAttachV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1135,7 +1135,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#instance_id ComputeVolumeAttachV2#instance_id}.
 
 ---
 
@@ -1147,7 +1147,7 @@ volume_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#volume_id ComputeVolumeAttachV2#volume_id}.
 
 ---
 
@@ -1159,7 +1159,7 @@ device: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#device ComputeVolumeAttachV2#device}.
 
 ---
 
@@ -1171,7 +1171,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#id ComputeVolumeAttachV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1186,7 +1186,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#region ComputeVolumeAttachV2#region}.
 
 ---
 
@@ -1200,7 +1200,7 @@ timeouts: ComputeVolumeAttachV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#timeouts ComputeVolumeAttachV2#timeouts}
 
 ---
 
@@ -1221,8 +1221,8 @@ computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}. |
 
 ---
 
@@ -1234,7 +1234,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#create ComputeVolumeAttachV2#create}.
 
 ---
 
@@ -1246,7 +1246,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/compute_volume_attach_v2#delete ComputeVolumeAttachV2#delete}.
 
 ---
 

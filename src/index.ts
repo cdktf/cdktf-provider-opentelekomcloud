@@ -162,6 +162,7 @@ export * as obsBucketReplication from './obs-bucket-replication';
 export * as rdsBackupV3 from './rds-backup-v3';
 export * as rdsInstanceV1 from './rds-instance-v1';
 export * as rdsInstanceV3 from './rds-instance-v3';
+export * as rdsMaintenanceV3 from './rds-maintenance-v3';
 export * as rdsParametergroupV3 from './rds-parametergroup-v3';
 export * as rdsReadReplicaV3 from './rds-read-replica-v3';
 export * as rtsSoftwareConfigV1 from './rts-software-config-v1';
@@ -287,7 +288,9 @@ export * as dataOpentelekomcloudLbFlavorsV3 from './data-opentelekomcloud-lb-fla
 export * as dataOpentelekomcloudLbListenerV3 from './data-opentelekomcloud-lb-listener-v3';
 export * as dataOpentelekomcloudLbLoadbalancerV3 from './data-opentelekomcloud-lb-loadbalancer-v3';
 export * as dataOpentelekomcloudLbMemberIdsV2 from './data-opentelekomcloud-lb-member-ids-v2';
+export * as dataOpentelekomcloudNatDnatRulesV2 from './data-opentelekomcloud-nat-dnat-rules-v2';
 export * as dataOpentelekomcloudNatGatewayV2 from './data-opentelekomcloud-nat-gateway-v2';
+export * as dataOpentelekomcloudNatSnatRulesV2 from './data-opentelekomcloud-nat-snat-rules-v2';
 export * as dataOpentelekomcloudNetworkingNetworkV2 from './data-opentelekomcloud-networking-network-v2';
 export * as dataOpentelekomcloudNetworkingPortIdsV2 from './data-opentelekomcloud-networking-port-ids-v2';
 export * as dataOpentelekomcloudNetworkingPortV2 from './data-opentelekomcloud-networking-port-v2';
