@@ -4,7 +4,7 @@
 
 ### IdentityRoleV3 <a name="IdentityRoleV3" id="@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3 opentelekomcloud_identity_role_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3.Initializer"></a>
 
@@ -487,7 +487,7 @@ The construct id used in the generated config for the IdentityRoleV3 to import.
 
 The id of the existing IdentityRoleV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,11 +846,11 @@ const identityRoleV3Config: identityRoleV3.IdentityRoleV3Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#description IdentityRoleV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.displayLayer">displayLayer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#display_layer IdentityRoleV3#display_layer}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#display_name IdentityRoleV3#display_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#description IdentityRoleV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.displayLayer">displayLayer</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#display_layer IdentityRoleV3#display_layer}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#display_name IdentityRoleV3#display_name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.statement">statement</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement">IdentityRoleV3Statement</a>[]</code> | statement block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#id IdentityRoleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#id IdentityRoleV3#id}. |
 
 ---
 
@@ -932,7 +932,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#description IdentityRoleV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#description IdentityRoleV3#description}.
 
 ---
 
@@ -944,7 +944,7 @@ public readonly displayLayer: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#display_layer IdentityRoleV3#display_layer}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#display_layer IdentityRoleV3#display_layer}.
 
 ---
 
@@ -956,7 +956,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#display_name IdentityRoleV3#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#display_name IdentityRoleV3#display_name}.
 
 ---
 
@@ -970,7 +970,7 @@ public readonly statement: IResolvable | IdentityRoleV3Statement[];
 
 statement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#statement IdentityRoleV3#statement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#statement IdentityRoleV3#statement}
 
 ---
 
@@ -982,7 +982,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#id IdentityRoleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#id IdentityRoleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1003,10 +1003,10 @@ const identityRoleV3Statement: identityRoleV3.IdentityRoleV3Statement = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.action">action</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#action IdentityRoleV3#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.effect">effect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.resource">resource</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.action">action</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#action IdentityRoleV3#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.effect">effect</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.condition">condition</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityRoleV3.IdentityRoleV3Statement.property.resource">resource</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ public readonly action: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#action IdentityRoleV3#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#action IdentityRoleV3#action}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly effect: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#effect IdentityRoleV3#effect}.
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly condition: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#condition IdentityRoleV3#condition}.
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly resource: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_role_v3#resource IdentityRoleV3#resource}.
 
 ---
 

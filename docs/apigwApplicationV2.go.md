@@ -4,12 +4,12 @@
 
 ### ApigwApplicationV2 <a name="ApigwApplicationV2" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2 opentelekomcloud_apigw_application_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2 opentelekomcloud_apigw_application_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 apigwapplicationv2.NewApigwApplicationV2(scope Construct, id *string, config ApigwApplicationV2Config) ApigwApplicationV2
 ```
@@ -406,7 +406,7 @@ func ResetSecretAction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 apigwapplicationv2.ApigwApplicationV2_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 apigwapplicationv2.ApigwApplicationV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ apigwapplicationv2.ApigwApplicationV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 apigwapplicationv2.ApigwApplicationV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ apigwapplicationv2.ApigwApplicationV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 apigwapplicationv2.ApigwApplicationV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ApigwApplicationV2 to impo
 
 The id of the existing ApigwApplicationV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationv2"
 
 &apigwapplicationv2.ApigwApplicationV2Config {
 	Connection: interface{},
@@ -912,12 +912,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#gateway_id ApigwApplicationV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#name ApigwApplicationV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.appCodes">AppCodes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#app_codes ApigwApplicationV2#app_codes}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#description ApigwApplicationV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#id ApigwApplicationV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.secretAction">SecretAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#secret_action ApigwApplicationV2#secret_action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#gateway_id ApigwApplicationV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#name ApigwApplicationV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.appCodes">AppCodes</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#app_codes ApigwApplicationV2#app_codes}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#description ApigwApplicationV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#id ApigwApplicationV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationV2.ApigwApplicationV2Config.property.secretAction">SecretAction</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#secret_action ApigwApplicationV2#secret_action}. |
 
 ---
 
@@ -999,7 +999,7 @@ GatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#gateway_id ApigwApplicationV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#gateway_id ApigwApplicationV2#gateway_id}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#name ApigwApplicationV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#name ApigwApplicationV2#name}.
 
 ---
 
@@ -1023,7 +1023,7 @@ AppCodes *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#app_codes ApigwApplicationV2#app_codes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#app_codes ApigwApplicationV2#app_codes}.
 
 ---
 
@@ -1035,7 +1035,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#description ApigwApplicationV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#description ApigwApplicationV2#description}.
 
 ---
 
@@ -1047,7 +1047,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#id ApigwApplicationV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#id ApigwApplicationV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1062,7 +1062,7 @@ SecretAction *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.17/docs/resources/apigw_application_v2#secret_action ApigwApplicationV2#secret_action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_application_v2#secret_action ApigwApplicationV2#secret_action}.
 
 ---
 
