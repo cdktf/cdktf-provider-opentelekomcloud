@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.NewFgsAsyncInvokeConfigV2(scope Construct, id *string, config FgsAsyncInvokeConfigV2Config) FgsAsyncInvokeConfigV2
 ```
@@ -425,7 +425,7 @@ func ResetOnSuccess()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 &fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2Config {
 	Connection: interface{},
@@ -871,8 +871,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgs
 	MaxAsyncEventAgeInSeconds: *f64,
 	MaxAsyncRetryAttempts: *f64,
 	Id: *string,
-	OnFailure: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnFailure,
-	OnSuccess: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnSuccess,
+	OnFailure: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnFailure,
+	OnSuccess: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnSuccess,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnFailure.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 &fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2OnFailure {
 	Destination: *string,
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 &fgsasyncinvokeconfigv2.FgsAsyncInvokeConfigV2OnSuccess {
 	Destination: *string,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnFailureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.NewFgsAsyncInvokeConfigV2OnFailureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsAsyncInvokeConfigV2OnFailureOutputReference
 ```
@@ -1437,7 +1437,7 @@ func InternalValue() FgsAsyncInvokeConfigV2OnFailure
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsAsyncInvokeConfigV2.FgsAsyncInvokeConfigV2OnSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsasyncinvokeconfigv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/fgsasyncinvokeconfigv2"
 
 fgsasyncinvokeconfigv2.NewFgsAsyncInvokeConfigV2OnSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsAsyncInvokeConfigV2OnSuccessOutputReference
 ```
