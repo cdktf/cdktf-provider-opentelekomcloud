@@ -4,7 +4,7 @@
 
 ### DcEndpointGroupV2 <a name="DcEndpointGroupV2" id="@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2 opentelekomcloud_dc_endpoint_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DcEndpointGroupV2 to impor
 
 The id of the existing DcEndpointGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -874,11 +874,11 @@ new DcEndpointGroupV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.endpoints">Endpoints</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#endpoints DcEndpointGroupV2#endpoints}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#project_id DcEndpointGroupV2#project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#type DcEndpointGroupV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#description DcEndpointGroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#name DcEndpointGroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.endpoints">Endpoints</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#endpoints DcEndpointGroupV2#endpoints}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#project_id DcEndpointGroupV2#project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#type DcEndpointGroupV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#description DcEndpointGroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#name DcEndpointGroupV2#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Timeouts">DcEndpointGroupV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -961,7 +961,7 @@ public string[] Endpoints { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#endpoints DcEndpointGroupV2#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#endpoints DcEndpointGroupV2#endpoints}.
 
 ---
 
@@ -973,7 +973,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#project_id DcEndpointGroupV2#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#project_id DcEndpointGroupV2#project_id}.
 
 ---
 
@@ -985,7 +985,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#type DcEndpointGroupV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#type DcEndpointGroupV2#type}.
 
 ---
 
@@ -997,7 +997,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#description DcEndpointGroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#description DcEndpointGroupV2#description}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#name DcEndpointGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#name DcEndpointGroupV2#name}.
 
 ---
 
@@ -1023,7 +1023,7 @@ public DcEndpointGroupV2Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#timeouts DcEndpointGroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#timeouts DcEndpointGroupV2#timeouts}
 
 ---
 
@@ -1044,8 +1044,8 @@ new DcEndpointGroupV2Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#create DcEndpointGroupV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#delete DcEndpointGroupV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#create DcEndpointGroupV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcEndpointGroupV2.DcEndpointGroupV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#delete DcEndpointGroupV2#delete}. |
 
 ---
 
@@ -1057,7 +1057,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#create DcEndpointGroupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#create DcEndpointGroupV2#create}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/dc_endpoint_group_v2#delete DcEndpointGroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/dc_endpoint_group_v2#delete DcEndpointGroupV2#delete}.
 
 ---
 

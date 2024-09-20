@@ -4,7 +4,7 @@
 
 ### NetworkingPortSecgroupAssociateV2 <a name="NetworkingPortSecgroupAssociateV2" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2 opentelekomcloud_networking_port_secgroup_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the NetworkingPortSecgroupAsso
 
 The id of the existing NetworkingPortSecgroupAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,11 +838,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#port_id NetworkingPortSecgroupAssociateV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#security_group_ids NetworkingPortSecgroupAssociateV2#security_group_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#force NetworkingPortSecgroupAssociateV2#force}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#id NetworkingPortSecgroupAssociateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#region NetworkingPortSecgroupAssociateV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#port_id NetworkingPortSecgroupAssociateV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.securityGroupIds">SecurityGroupIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#security_group_ids NetworkingPortSecgroupAssociateV2#security_group_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.force">Force</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#force NetworkingPortSecgroupAssociateV2#force}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#id NetworkingPortSecgroupAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#region NetworkingPortSecgroupAssociateV2#region}. |
 
 ---
 
@@ -924,7 +924,7 @@ PortId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#port_id NetworkingPortSecgroupAssociateV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#port_id NetworkingPortSecgroupAssociateV2#port_id}.
 
 ---
 
@@ -936,7 +936,7 @@ SecurityGroupIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#security_group_ids NetworkingPortSecgroupAssociateV2#security_group_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#security_group_ids NetworkingPortSecgroupAssociateV2#security_group_ids}.
 
 ---
 
@@ -948,7 +948,7 @@ Force interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#force NetworkingPortSecgroupAssociateV2#force}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#force NetworkingPortSecgroupAssociateV2#force}.
 
 ---
 
@@ -960,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#id NetworkingPortSecgroupAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#id NetworkingPortSecgroupAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/networking_port_secgroup_associate_v2#region NetworkingPortSecgroupAssociateV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/networking_port_secgroup_associate_v2#region NetworkingPortSecgroupAssociateV2#region}.
 
 ---
 

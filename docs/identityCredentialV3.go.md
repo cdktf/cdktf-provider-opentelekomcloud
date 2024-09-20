@@ -4,7 +4,7 @@
 
 ### IdentityCredentialV3 <a name="IdentityCredentialV3" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3 opentelekomcloud_identity_credential_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the IdentityCredentialV3 to im
 
 The id of the existing IdentityCredentialV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,11 +896,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#description IdentityCredentialV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#id IdentityCredentialV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#pgp_key IdentityCredentialV3#pgp_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#status IdentityCredentialV3#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#user_id IdentityCredentialV3#user_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#description IdentityCredentialV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#id IdentityCredentialV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.pgpKey">PgpKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#pgp_key IdentityCredentialV3#pgp_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.status">Status</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#status IdentityCredentialV3#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#user_id IdentityCredentialV3#user_id}. |
 
 ---
 
@@ -982,7 +982,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#description IdentityCredentialV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#description IdentityCredentialV3#description}.
 
 ---
 
@@ -994,7 +994,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#id IdentityCredentialV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#id IdentityCredentialV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1009,7 +1009,7 @@ PgpKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#pgp_key IdentityCredentialV3#pgp_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#pgp_key IdentityCredentialV3#pgp_key}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Status *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#status IdentityCredentialV3#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#status IdentityCredentialV3#status}.
 
 ---
 
@@ -1033,7 +1033,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/identity_credential_v3#user_id IdentityCredentialV3#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/identity_credential_v3#user_id IdentityCredentialV3#user_id}.
 
 ---
 

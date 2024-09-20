@@ -4,7 +4,7 @@
 
 ### ApigwAppcodeV2 <a name="ApigwAppcodeV2" id="@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2 opentelekomcloud_apigw_appcode_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the ApigwAppcodeV2 to import.
 
 The id of the existing ApigwAppcodeV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,10 +807,10 @@ const apigwAppcodeV2Config: apigwAppcodeV2.ApigwAppcodeV2Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#application_id ApigwAppcodeV2#application_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#gateway_id ApigwAppcodeV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#id ApigwAppcodeV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#value ApigwAppcodeV2#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#application_id ApigwAppcodeV2#application_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#gateway_id ApigwAppcodeV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#id ApigwAppcodeV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAppcodeV2.ApigwAppcodeV2Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#value ApigwAppcodeV2#value}. |
 
 ---
 
@@ -892,7 +892,7 @@ public readonly applicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#application_id ApigwAppcodeV2#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#application_id ApigwAppcodeV2#application_id}.
 
 ---
 
@@ -904,7 +904,7 @@ public readonly gatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#gateway_id ApigwAppcodeV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#gateway_id ApigwAppcodeV2#gateway_id}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#id ApigwAppcodeV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#id ApigwAppcodeV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.18/docs/resources/apigw_appcode_v2#value ApigwAppcodeV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/apigw_appcode_v2#value ApigwAppcodeV2#value}.
 
 ---
 
