@@ -4,12 +4,12 @@
 
 ### WafDedicatedGeoIpRuleV1 <a name="WafDedicatedGeoIpRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1 opentelekomcloud_waf_dedicated_geo_ip_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1 opentelekomcloud_waf_dedicated_geo_ip_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.NewWafDedicatedGeoIpRuleV1(scope Construct, id *string, config WafDedicatedGeoIpRuleV1Config) WafDedicatedGeoIpRuleV1
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the WafDedicatedGeoIpRuleV1 to
 
 The id of the existing WafDedicatedGeoIpRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 &wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1Config {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Description: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts,
 }
 ```
 
@@ -915,12 +915,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.action">Action</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#action WafDedicatedGeoIpRuleV1#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#policy_id WafDedicatedGeoIpRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.regionCode">RegionCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#region_code WafDedicatedGeoIpRuleV1#region_code}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#description WafDedicatedGeoIpRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#id WafDedicatedGeoIpRuleV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#name WafDedicatedGeoIpRuleV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.action">Action</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#action WafDedicatedGeoIpRuleV1#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.policyId">PolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#policy_id WafDedicatedGeoIpRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.regionCode">RegionCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#region_code WafDedicatedGeoIpRuleV1#region_code}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#description WafDedicatedGeoIpRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#id WafDedicatedGeoIpRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#name WafDedicatedGeoIpRuleV1#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts">WafDedicatedGeoIpRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1003,7 +1003,7 @@ Action *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#action WafDedicatedGeoIpRuleV1#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#action WafDedicatedGeoIpRuleV1#action}.
 
 ---
 
@@ -1015,7 +1015,7 @@ PolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#policy_id WafDedicatedGeoIpRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#policy_id WafDedicatedGeoIpRuleV1#policy_id}.
 
 ---
 
@@ -1027,7 +1027,7 @@ RegionCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#region_code WafDedicatedGeoIpRuleV1#region_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#region_code WafDedicatedGeoIpRuleV1#region_code}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#description WafDedicatedGeoIpRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#description WafDedicatedGeoIpRuleV1#description}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#id WafDedicatedGeoIpRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#id WafDedicatedGeoIpRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1066,7 +1066,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#name WafDedicatedGeoIpRuleV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#name WafDedicatedGeoIpRuleV1#name}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Timeouts WafDedicatedGeoIpRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#timeouts WafDedicatedGeoIpRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#timeouts WafDedicatedGeoIpRuleV1#timeouts}
 
 ---
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 &wafdedicatedgeoiprulev1.WafDedicatedGeoIpRuleV1Timeouts {
 	Create: *string,
@@ -1102,9 +1102,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#create WafDedicatedGeoIpRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#delete WafDedicatedGeoIpRuleV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#update WafDedicatedGeoIpRuleV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#create WafDedicatedGeoIpRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#delete WafDedicatedGeoIpRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#update WafDedicatedGeoIpRuleV1#update}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#create WafDedicatedGeoIpRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#create WafDedicatedGeoIpRuleV1#create}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#delete WafDedicatedGeoIpRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#delete WafDedicatedGeoIpRuleV1#delete}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/waf_dedicated_geo_ip_rule_v1#update WafDedicatedGeoIpRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/waf_dedicated_geo_ip_rule_v1#update WafDedicatedGeoIpRuleV1#update}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedGeoIpRuleV1.WafDedicatedGeoIpRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedgeoiprulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/wafdedicatedgeoiprulev1"
 
 wafdedicatedgeoiprulev1.NewWafDedicatedGeoIpRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WafDedicatedGeoIpRuleV1TimeoutsOutputReference
 ```

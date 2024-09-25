@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudComputeKeypairV2 <a name="DataOpentelekomcloudComputeKeypairV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2 opentelekomcloud_compute_keypair_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 dataopentelekomcloudcomputekeypairv2.NewDataOpentelekomcloudComputeKeypairV2(scope Construct, id *string, config DataOpentelekomcloudComputeKeypairV2Config) DataOpentelekomcloudComputeKeypairV2
 ```
@@ -304,7 +304,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataOpentelekomcloudComput
 
 The id of the existing DataOpentelekomcloudComputeKeypairV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcomputekeypairv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcomputekeypairv2"
 
 &dataopentelekomcloudcomputekeypairv2.DataOpentelekomcloudComputeKeypairV2Config {
 	Connection: interface{},
@@ -720,10 +720,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#id DataOpentelekomcloudComputeKeypairV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#name DataOpentelekomcloudComputeKeypairV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#name_regex DataOpentelekomcloudComputeKeypairV2#name_regex}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#region DataOpentelekomcloudComputeKeypairV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#id DataOpentelekomcloudComputeKeypairV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#name DataOpentelekomcloudComputeKeypairV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.nameRegex">NameRegex</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#name_regex DataOpentelekomcloudComputeKeypairV2#name_regex}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeKeypairV2.DataOpentelekomcloudComputeKeypairV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#region DataOpentelekomcloudComputeKeypairV2#region}. |
 
 ---
 
@@ -805,7 +805,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#id DataOpentelekomcloudComputeKeypairV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#id DataOpentelekomcloudComputeKeypairV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#name DataOpentelekomcloudComputeKeypairV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#name DataOpentelekomcloudComputeKeypairV2#name}.
 
 ---
 
@@ -832,7 +832,7 @@ NameRegex *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#name_regex DataOpentelekomcloudComputeKeypairV2#name_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#name_regex DataOpentelekomcloudComputeKeypairV2#name_regex}.
 
 ---
 
@@ -844,7 +844,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/compute_keypair_v2#region DataOpentelekomcloudComputeKeypairV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/compute_keypair_v2#region DataOpentelekomcloudComputeKeypairV2#region}.
 
 ---
 

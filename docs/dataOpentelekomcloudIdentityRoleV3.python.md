@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudIdentityRoleV3 <a name="DataOpentelekomcloudIdentityRoleV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3 opentelekomcloud_identity_role_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3 opentelekomcloud_identity_role_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.domainId">domain_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.domainId">domain_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}.
 
 ---
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the DataOpentelekomcloudIdenti
 
 The id of the existing DataOpentelekomcloudIdentityRoleV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,10 +811,10 @@ dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.domainId">domain_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.domainId">domain_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityRoleV3.DataOpentelekomcloudIdentityRoleV3Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}. |
 
 ---
 
@@ -896,7 +896,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#name DataOpentelekomcloudIdentityRoleV3#name}.
 
 ---
 
@@ -908,7 +908,7 @@ domain_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#domain_id DataOpentelekomcloudIdentityRoleV3#domain_id}.
 
 ---
 
@@ -920,7 +920,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#id DataOpentelekomcloudIdentityRoleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +935,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/identity_role_v3#region DataOpentelekomcloudIdentityRoleV3#region}.
 
 ---
 
