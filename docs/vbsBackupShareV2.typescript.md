@@ -4,7 +4,7 @@
 
 ### VbsBackupShareV2 <a name="VbsBackupShareV2" id="@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2 opentelekomcloud_vbs_backup_share_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2 opentelekomcloud_vbs_backup_share_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the VbsBackupShareV2 to import
 
 The id of the existing VbsBackupShareV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,10 +937,10 @@ const vbsBackupShareV2Config: vbsBackupShareV2.VbsBackupShareV2Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.backupId">backupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#backup_id VbsBackupShareV2#backup_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.toProjectIds">toProjectIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#to_project_ids VbsBackupShareV2#to_project_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#id VbsBackupShareV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#region VbsBackupShareV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.backupId">backupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#backup_id VbsBackupShareV2#backup_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.toProjectIds">toProjectIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#to_project_ids VbsBackupShareV2#to_project_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#id VbsBackupShareV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#region VbsBackupShareV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts">VbsBackupShareV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1023,7 +1023,7 @@ public readonly backupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#backup_id VbsBackupShareV2#backup_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#backup_id VbsBackupShareV2#backup_id}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly toProjectIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#to_project_ids VbsBackupShareV2#to_project_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#to_project_ids VbsBackupShareV2#to_project_ids}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#id VbsBackupShareV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#id VbsBackupShareV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1062,7 +1062,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#region VbsBackupShareV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#region VbsBackupShareV2#region}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly timeouts: VbsBackupShareV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#timeouts VbsBackupShareV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#timeouts VbsBackupShareV2#timeouts}
 
 ---
 
@@ -1094,8 +1094,8 @@ const vbsBackupShareV2Timeouts: vbsBackupShareV2.VbsBackupShareV2Timeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#create VbsBackupShareV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#delete VbsBackupShareV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#create VbsBackupShareV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vbsBackupShareV2.VbsBackupShareV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#delete VbsBackupShareV2#delete}. |
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#create VbsBackupShareV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#create VbsBackupShareV2#create}.
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.19/docs/resources/vbs_backup_share_v2#delete VbsBackupShareV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/vbs_backup_share_v2#delete VbsBackupShareV2#delete}.
 
 ---
 
