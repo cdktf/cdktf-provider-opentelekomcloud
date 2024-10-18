@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,156 +13,160 @@ import * as cdktf from 'cdktf';
 
 export interface CceNodePoolV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#agency_name CceNodePoolV3#agency_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#agency_name CceNodePoolV3#agency_name}
   */
   readonly agencyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#availability_zone CceNodePoolV3#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#availability_zone CceNodePoolV3#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#cluster_id CceNodePoolV3#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#cluster_id CceNodePoolV3#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#docker_base_size CceNodePoolV3#docker_base_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#docker_base_size CceNodePoolV3#docker_base_size}
   */
   readonly dockerBaseSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#docker_lvm_config_override CceNodePoolV3#docker_lvm_config_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#docker_lvm_config_override CceNodePoolV3#docker_lvm_config_override}
   */
   readonly dockerLvmConfigOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#flavor CceNodePoolV3#flavor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#flavor CceNodePoolV3#flavor}
   */
   readonly flavor: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#id CceNodePoolV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#id CceNodePoolV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#initial_node_count CceNodePoolV3#initial_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#initial_node_count CceNodePoolV3#initial_node_count}
   */
   readonly initialNodeCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#k8s_tags CceNodePoolV3#k8s_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#k8s_tags CceNodePoolV3#k8s_tags}
   */
   readonly k8STags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#key_pair CceNodePoolV3#key_pair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#key_pair CceNodePoolV3#key_pair}
   */
   readonly keyPair?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#max_node_count CceNodePoolV3#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#max_node_count CceNodePoolV3#max_node_count}
   */
   readonly maxNodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#max_pods CceNodePoolV3#max_pods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#max_pods CceNodePoolV3#max_pods}
   */
   readonly maxPods?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#min_node_count CceNodePoolV3#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#min_node_count CceNodePoolV3#min_node_count}
   */
   readonly minNodeCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#name CceNodePoolV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#name CceNodePoolV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#os CceNodePoolV3#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#os CceNodePoolV3#os}
   */
   readonly os?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#password CceNodePoolV3#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#password CceNodePoolV3#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#postinstall CceNodePoolV3#postinstall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#postinstall CceNodePoolV3#postinstall}
   */
   readonly postinstall?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#preinstall CceNodePoolV3#preinstall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#preinstall CceNodePoolV3#preinstall}
   */
   readonly preinstall?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#priority CceNodePoolV3#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#priority CceNodePoolV3#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#runtime CceNodePoolV3#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#runtime CceNodePoolV3#runtime}
   */
   readonly runtime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#scale_down_cooldown_time CceNodePoolV3#scale_down_cooldown_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#scale_down_cooldown_time CceNodePoolV3#scale_down_cooldown_time}
   */
   readonly scaleDownCooldownTime?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#scale_enable CceNodePoolV3#scale_enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#scale_enable CceNodePoolV3#scale_enable}
   */
   readonly scaleEnable?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#server_group_reference CceNodePoolV3#server_group_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#security_group_ids CceNodePoolV3#security_group_ids}
+  */
+  readonly securityGroupIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#server_group_reference CceNodePoolV3#server_group_reference}
   */
   readonly serverGroupReference?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#storage CceNodePoolV3#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#storage CceNodePoolV3#storage}
   */
   readonly storage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#subnet_id CceNodePoolV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#subnet_id CceNodePoolV3#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#user_tags CceNodePoolV3#user_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#user_tags CceNodePoolV3#user_tags}
   */
   readonly userTags?: { [key: string]: string };
   /**
   * data_volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#data_volumes CceNodePoolV3#data_volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#data_volumes CceNodePoolV3#data_volumes}
   */
   readonly dataVolumes: CceNodePoolV3DataVolumes[] | cdktf.IResolvable;
   /**
   * root_volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#root_volume CceNodePoolV3#root_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#root_volume CceNodePoolV3#root_volume}
   */
   readonly rootVolume: CceNodePoolV3RootVolume;
   /**
   * taints block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#taints CceNodePoolV3#taints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#taints CceNodePoolV3#taints}
   */
   readonly taints?: CceNodePoolV3Taints[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#timeouts CceNodePoolV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#timeouts CceNodePoolV3#timeouts}
   */
   readonly timeouts?: CceNodePoolV3Timeouts;
 }
 export interface CceNodePoolV3DataVolumes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#extend_param CceNodePoolV3#extend_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#extend_param CceNodePoolV3#extend_param}
   */
   readonly extendParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#extend_params CceNodePoolV3#extend_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#extend_params CceNodePoolV3#extend_params}
   */
   readonly extendParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}
   */
   readonly kmsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#size CceNodePoolV3#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#size CceNodePoolV3#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#volumetype CceNodePoolV3#volumetype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#volumetype CceNodePoolV3#volumetype}
   */
   readonly volumetype: string;
 }
@@ -388,23 +392,23 @@ export class CceNodePoolV3DataVolumesList extends cdktf.ComplexList {
 }
 export interface CceNodePoolV3RootVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#extend_param CceNodePoolV3#extend_param}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#extend_param CceNodePoolV3#extend_param}
   */
   readonly extendParam?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#extend_params CceNodePoolV3#extend_params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#extend_params CceNodePoolV3#extend_params}
   */
   readonly extendParams?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#kms_id CceNodePoolV3#kms_id}
   */
   readonly kmsId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#size CceNodePoolV3#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#size CceNodePoolV3#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#volumetype CceNodePoolV3#volumetype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#volumetype CceNodePoolV3#volumetype}
   */
   readonly volumetype: string;
 }
@@ -598,15 +602,15 @@ export class CceNodePoolV3RootVolumeOutputReference extends cdktf.ComplexObject 
 }
 export interface CceNodePoolV3Taints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#effect CceNodePoolV3#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#effect CceNodePoolV3#effect}
   */
   readonly effect: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#key CceNodePoolV3#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#key CceNodePoolV3#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#value CceNodePoolV3#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#value CceNodePoolV3#value}
   */
   readonly value: string;
 }
@@ -771,19 +775,19 @@ export class CceNodePoolV3TaintsList extends cdktf.ComplexList {
 }
 export interface CceNodePoolV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#create CceNodePoolV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#create CceNodePoolV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#default CceNodePoolV3#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#default CceNodePoolV3#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#delete CceNodePoolV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#delete CceNodePoolV3#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#update CceNodePoolV3#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#update CceNodePoolV3#update}
   */
   readonly update?: string;
 }
@@ -964,7 +968,7 @@ export class CceNodePoolV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3}
 */
 export class CceNodePoolV3 extends cdktf.TerraformResource {
 
@@ -980,7 +984,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CceNodePoolV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CceNodePoolV3 to import
-  * @param importFromId The id of the existing CceNodePoolV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CceNodePoolV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CceNodePoolV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -992,7 +996,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/cce_node_pool_v3 opentelekomcloud_cce_node_pool_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1003,7 +1007,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cce_node_pool_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.20',
+        providerVersion: '1.36.23',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1036,6 +1040,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
     this._runtime = config.runtime;
     this._scaleDownCooldownTime = config.scaleDownCooldownTime;
     this._scaleEnable = config.scaleEnable;
+    this._securityGroupIds = config.securityGroupIds;
     this._serverGroupReference = config.serverGroupReference;
     this._storage = config.storage;
     this._subnetId = config.subnetId;
@@ -1390,6 +1395,22 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
     return this._scaleEnable;
   }
 
+  // security_group_ids - computed: true, optional: true, required: false
+  private _securityGroupIds?: string[]; 
+  public get securityGroupIds() {
+    return this.getListAttribute('security_group_ids');
+  }
+  public set securityGroupIds(value: string[]) {
+    this._securityGroupIds = value;
+  }
+  public resetSecurityGroupIds() {
+    this._securityGroupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityGroupIdsInput() {
+    return this._securityGroupIds;
+  }
+
   // server_group_reference - computed: false, optional: true, required: false
   private _serverGroupReference?: string; 
   public get serverGroupReference() {
@@ -1545,6 +1566,7 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
       runtime: cdktf.stringToTerraform(this._runtime),
       scale_down_cooldown_time: cdktf.numberToTerraform(this._scaleDownCooldownTime),
       scale_enable: cdktf.booleanToTerraform(this._scaleEnable),
+      security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityGroupIds),
       server_group_reference: cdktf.stringToTerraform(this._serverGroupReference),
       storage: cdktf.stringToTerraform(this._storage),
       subnet_id: cdktf.stringToTerraform(this._subnetId),
@@ -1689,6 +1711,12 @@ export class CceNodePoolV3 extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      security_group_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityGroupIds),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       server_group_reference: {
         value: cdktf.stringToHclTerraform(this._serverGroupReference),

@@ -4,7 +4,7 @@
 
 ### ComputeServergroupV2 <a name="ComputeServergroupV2" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2 opentelekomcloud_compute_servergroup_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the ComputeServergroupV2 to im
 
 The id of the existing ComputeServergroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,11 +825,11 @@ const computeServergroupV2Config: computeServergroupV2.ComputeServergroupV2Confi
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.valueSpecs">valueSpecs</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.policies">policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.computeServergroupV2.ComputeServergroupV2Config.property.valueSpecs">valueSpecs</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}. |
 
 ---
 
@@ -911,7 +911,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#name ComputeServergroupV2#name}.
 
 ---
 
@@ -923,7 +923,7 @@ public readonly policies: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#policies ComputeServergroupV2#policies}.
 
 ---
 
@@ -935,7 +935,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#id ComputeServergroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -950,7 +950,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#region ComputeServergroupV2#region}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly valueSpecs: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/compute_servergroup_v2#value_specs ComputeServergroupV2#value_specs}.
 
 ---
 
