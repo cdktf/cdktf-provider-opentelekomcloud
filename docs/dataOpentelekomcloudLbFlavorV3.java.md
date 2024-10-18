@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudLbFlavorV3 <a name="DataOpentelekomcloudLbFlavorV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3 opentelekomcloud_lb_flavor_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer"></a>
 
@@ -39,8 +39,8 @@ DataOpentelekomcloudLbFlavorV3.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}.
 
 ---
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the DataOpentelekomcloudLbFlav
 
 The id of the existing DataOpentelekomcloudLbFlavorV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,8 +774,8 @@ DataOpentelekomcloudLbFlavorV3Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLbFlavorV3.DataOpentelekomcloudLbFlavorV3Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}. |
 
 ---
 
@@ -857,7 +857,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#id DataOpentelekomcloudLbFlavorV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -872,7 +872,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.20/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/lb_flavor_v3#name DataOpentelekomcloudLbFlavorV3#name}.
 
 ---
 
