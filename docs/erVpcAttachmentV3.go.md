@@ -4,12 +4,12 @@
 
 ### ErVpcAttachmentV3 <a name="ErVpcAttachmentV3" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3 opentelekomcloud_er_vpc_attachment_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.NewErVpcAttachmentV3(scope Construct, id *string, config ErVpcAttachmentV3Config) ErVpcAttachmentV3
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.ErVpcAttachmentV3_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.ErVpcAttachmentV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ervpcattachmentv3.ErVpcAttachmentV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.ErVpcAttachmentV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ ervpcattachmentv3.ErVpcAttachmentV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.ErVpcAttachmentV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ErVpcAttachmentV3 to impor
 
 The id of the existing ErVpcAttachmentV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 &ervpcattachmentv3.ErVpcAttachmentV3Config {
 	Connection: interface{},
@@ -945,7 +945,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	AutoCreateVpcRoutes: interface{},
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts,
 }
 ```
 
@@ -960,13 +960,13 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#instance_id ErVpcAttachmentV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#name ErVpcAttachmentV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#subnet_id ErVpcAttachmentV3#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#vpc_id ErVpcAttachmentV3#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.autoCreateVpcRoutes">AutoCreateVpcRoutes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#auto_create_vpc_routes ErVpcAttachmentV3#auto_create_vpc_routes}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#description ErVpcAttachmentV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#id ErVpcAttachmentV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#instance_id ErVpcAttachmentV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#name ErVpcAttachmentV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#subnet_id ErVpcAttachmentV3#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#vpc_id ErVpcAttachmentV3#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.autoCreateVpcRoutes">AutoCreateVpcRoutes</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#auto_create_vpc_routes ErVpcAttachmentV3#auto_create_vpc_routes}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#description ErVpcAttachmentV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#id ErVpcAttachmentV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts">ErVpcAttachmentV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1049,7 +1049,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#instance_id ErVpcAttachmentV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#instance_id ErVpcAttachmentV3#instance_id}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#name ErVpcAttachmentV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#name ErVpcAttachmentV3#name}.
 
 ---
 
@@ -1073,7 +1073,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#subnet_id ErVpcAttachmentV3#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#subnet_id ErVpcAttachmentV3#subnet_id}.
 
 ---
 
@@ -1085,7 +1085,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#vpc_id ErVpcAttachmentV3#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#vpc_id ErVpcAttachmentV3#vpc_id}.
 
 ---
 
@@ -1097,7 +1097,7 @@ AutoCreateVpcRoutes interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#auto_create_vpc_routes ErVpcAttachmentV3#auto_create_vpc_routes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#auto_create_vpc_routes ErVpcAttachmentV3#auto_create_vpc_routes}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#description ErVpcAttachmentV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#description ErVpcAttachmentV3#description}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#id ErVpcAttachmentV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#id ErVpcAttachmentV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ Timeouts ErVpcAttachmentV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#timeouts ErVpcAttachmentV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#timeouts ErVpcAttachmentV3#timeouts}
 
 ---
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 &ervpcattachmentv3.ErVpcAttachmentV3Timeouts {
 	Create: *string,
@@ -1160,9 +1160,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#create ErVpcAttachmentV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#delete ErVpcAttachmentV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#update ErVpcAttachmentV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#create ErVpcAttachmentV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#delete ErVpcAttachmentV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#update ErVpcAttachmentV3#update}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#create ErVpcAttachmentV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#create ErVpcAttachmentV3#create}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#delete ErVpcAttachmentV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#delete ErVpcAttachmentV3#delete}.
 
 ---
 
@@ -1198,7 +1198,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/resources/er_vpc_attachment_v3#update ErVpcAttachmentV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/er_vpc_attachment_v3#update ErVpcAttachmentV3#update}.
 
 ---
 
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erVpcAttachmentV3.ErVpcAttachmentV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ervpcattachmentv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ervpcattachmentv3"
 
 ervpcattachmentv3.NewErVpcAttachmentV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ErVpcAttachmentV3TimeoutsOutputReference
 ```
