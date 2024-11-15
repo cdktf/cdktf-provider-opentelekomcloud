@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/identity_projects_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/identity_projects_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudIdentityProjectsV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/identity_projects_v3#id DataOpentelekomcloudIdentityProjectsV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ export class DataOpentelekomcloudIdentityProjectsV3ProjectsList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3}
 */
 export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataSource {
 
@@ -143,7 +143,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
   * Generates CDKTF code for importing a DataOpentelekomcloudIdentityProjectsV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOpentelekomcloudIdentityProjectsV3 to import
-  * @param importFromId The id of the existing DataOpentelekomcloudIdentityProjectsV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/identity_projects_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOpentelekomcloudIdentityProjectsV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/identity_projects_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOpentelekomcloudIdentityProjectsV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -155,7 +155,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.23/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/data-sources/identity_projects_v3 opentelekomcloud_identity_projects_v3} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -166,7 +166,7 @@ export class DataOpentelekomcloudIdentityProjectsV3 extends cdktf.TerraformDataS
       terraformResourceType: 'opentelekomcloud_identity_projects_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.23',
+        providerVersion: '1.36.25',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
