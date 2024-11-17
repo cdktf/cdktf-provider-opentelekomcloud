@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.NewApigwThrottlingPolicyV2(scope Construct, id *string, config ApigwThrottlingPolicyV2Config) ApigwThrottlingPolicyV2
 ```
@@ -467,7 +467,7 @@ func ResetUserThrottles()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2AppThrottles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 &apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2AppThrottles {
 	MaxApiRequests: *f64,
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 &apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2Config {
 	Connection: interface{},
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2UserThrottles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 &apigwthrottlingpolicyv2.ApigwThrottlingPolicyV2UserThrottles {
 	MaxApiRequests: *f64,
@@ -1449,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2AppThrottlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.NewApigwThrottlingPolicyV2AppThrottlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigwThrottlingPolicyV2AppThrottlesList
 ```
@@ -1609,7 +1609,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2AppThrottlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.NewApigwThrottlingPolicyV2AppThrottlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigwThrottlingPolicyV2AppThrottlesOutputReference
 ```
@@ -1942,7 +1942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2UserThrottlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.NewApigwThrottlingPolicyV2UserThrottlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigwThrottlingPolicyV2UserThrottlesList
 ```
@@ -2102,7 +2102,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwThrottlingPolicyV2.ApigwThrottlingPolicyV2UserThrottlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwthrottlingpolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwthrottlingpolicyv2"
 
 apigwthrottlingpolicyv2.NewApigwThrottlingPolicyV2UserThrottlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigwThrottlingPolicyV2UserThrottlesOutputReference
 ```
