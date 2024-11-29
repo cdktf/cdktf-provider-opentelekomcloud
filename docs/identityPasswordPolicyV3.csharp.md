@@ -4,7 +4,7 @@
 
 ### IdentityPasswordPolicyV3 <a name="IdentityPasswordPolicyV3" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3 opentelekomcloud_identity_password_policy_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetMinimumPasswordAge">ResetMinimumPasswordAge</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetMinimumPasswordLength">ResetMinimumPasswordLength</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetNumberOfRecentPasswordsDisallowed">ResetNumberOfRecentPasswordsDisallowed</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetPasswordCharCombination">ResetPasswordCharCombination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetPasswordNotUsernameOrInvert">ResetPasswordNotUsernameOrInvert</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetPasswordValidityPeriod">ResetPasswordValidityPeriod</a></code> | *No description.* |
 
@@ -401,6 +402,12 @@ private void ResetMinimumPasswordLength()
 private void ResetNumberOfRecentPasswordsDisallowed()
 ```
 
+##### `ResetPasswordCharCombination` <a name="ResetPasswordCharCombination" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetPasswordCharCombination"></a>
+
+```csharp
+private void ResetPasswordCharCombination()
+```
+
 ##### `ResetPasswordNotUsernameOrInvert` <a name="ResetPasswordNotUsernameOrInvert" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.resetPasswordNotUsernameOrInvert"></a>
 
 ```csharp
@@ -516,7 +523,7 @@ The construct id used in the generated config for the IdentityPasswordPolicyV3 t
 
 The id of the existing IdentityPasswordPolicyV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -553,6 +560,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.minimumPasswordAgeInput">MinimumPasswordAgeInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.minimumPasswordLengthInput">MinimumPasswordLengthInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.numberOfRecentPasswordsDisallowedInput">NumberOfRecentPasswordsDisallowedInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordCharCombinationInput">PasswordCharCombinationInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordNotUsernameOrInvertInput">PasswordNotUsernameOrInvertInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordValidityPeriodInput">PasswordValidityPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -560,6 +568,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.minimumPasswordAge">MinimumPasswordAge</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.minimumPasswordLength">MinimumPasswordLength</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.numberOfRecentPasswordsDisallowed">NumberOfRecentPasswordsDisallowed</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordCharCombination">PasswordCharCombination</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordNotUsernameOrInvert">PasswordNotUsernameOrInvert</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordValidityPeriod">PasswordValidityPeriod</a></code> | <code>double</code> | *No description.* |
 
@@ -777,6 +786,16 @@ public double NumberOfRecentPasswordsDisallowedInput { get; }
 
 ---
 
+##### `PasswordCharCombinationInput`<sup>Optional</sup> <a name="PasswordCharCombinationInput" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordCharCombinationInput"></a>
+
+```csharp
+public double PasswordCharCombinationInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `PasswordNotUsernameOrInvertInput`<sup>Optional</sup> <a name="PasswordNotUsernameOrInvertInput" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordNotUsernameOrInvertInput"></a>
 
 ```csharp
@@ -847,6 +866,16 @@ public double NumberOfRecentPasswordsDisallowed { get; }
 
 ---
 
+##### `PasswordCharCombination`<sup>Required</sup> <a name="PasswordCharCombination" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordCharCombination"></a>
+
+```csharp
+public double PasswordCharCombination { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `PasswordNotUsernameOrInvert`<sup>Required</sup> <a name="PasswordNotUsernameOrInvert" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3.property.passwordNotUsernameOrInvert"></a>
 
 ```csharp
@@ -907,6 +936,7 @@ new IdentityPasswordPolicyV3Config {
     double MinimumPasswordAge = null,
     double MinimumPasswordLength = null,
     double NumberOfRecentPasswordsDisallowed = null,
+    double PasswordCharCombination = null,
     object PasswordNotUsernameOrInvert = null,
     double PasswordValidityPeriod = null
 };
@@ -923,13 +953,14 @@ new IdentityPasswordPolicyV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#id IdentityPasswordPolicyV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.maximumConsecutiveIdenticalChars">MaximumConsecutiveIdenticalChars</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#maximum_consecutive_identical_chars IdentityPasswordPolicyV3#maximum_consecutive_identical_chars}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.minimumPasswordAge">MinimumPasswordAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#minimum_password_age IdentityPasswordPolicyV3#minimum_password_age}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.minimumPasswordLength">MinimumPasswordLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#minimum_password_length IdentityPasswordPolicyV3#minimum_password_length}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.numberOfRecentPasswordsDisallowed">NumberOfRecentPasswordsDisallowed</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#number_of_recent_passwords_disallowed IdentityPasswordPolicyV3#number_of_recent_passwords_disallowed}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordNotUsernameOrInvert">PasswordNotUsernameOrInvert</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#password_not_username_or_invert IdentityPasswordPolicyV3#password_not_username_or_invert}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordValidityPeriod">PasswordValidityPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#password_validity_period IdentityPasswordPolicyV3#password_validity_period}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#id IdentityPasswordPolicyV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.maximumConsecutiveIdenticalChars">MaximumConsecutiveIdenticalChars</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#maximum_consecutive_identical_chars IdentityPasswordPolicyV3#maximum_consecutive_identical_chars}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.minimumPasswordAge">MinimumPasswordAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#minimum_password_age IdentityPasswordPolicyV3#minimum_password_age}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.minimumPasswordLength">MinimumPasswordLength</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#minimum_password_length IdentityPasswordPolicyV3#minimum_password_length}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.numberOfRecentPasswordsDisallowed">NumberOfRecentPasswordsDisallowed</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#number_of_recent_passwords_disallowed IdentityPasswordPolicyV3#number_of_recent_passwords_disallowed}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordCharCombination">PasswordCharCombination</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_char_combination IdentityPasswordPolicyV3#password_char_combination}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordNotUsernameOrInvert">PasswordNotUsernameOrInvert</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_not_username_or_invert IdentityPasswordPolicyV3#password_not_username_or_invert}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordValidityPeriod">PasswordValidityPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_validity_period IdentityPasswordPolicyV3#password_validity_period}. |
 
 ---
 
@@ -1011,7 +1042,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#id IdentityPasswordPolicyV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#id IdentityPasswordPolicyV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1026,7 +1057,7 @@ public double MaximumConsecutiveIdenticalChars { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#maximum_consecutive_identical_chars IdentityPasswordPolicyV3#maximum_consecutive_identical_chars}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#maximum_consecutive_identical_chars IdentityPasswordPolicyV3#maximum_consecutive_identical_chars}.
 
 ---
 
@@ -1038,7 +1069,7 @@ public double MinimumPasswordAge { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#minimum_password_age IdentityPasswordPolicyV3#minimum_password_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#minimum_password_age IdentityPasswordPolicyV3#minimum_password_age}.
 
 ---
 
@@ -1050,7 +1081,7 @@ public double MinimumPasswordLength { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#minimum_password_length IdentityPasswordPolicyV3#minimum_password_length}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#minimum_password_length IdentityPasswordPolicyV3#minimum_password_length}.
 
 ---
 
@@ -1062,7 +1093,19 @@ public double NumberOfRecentPasswordsDisallowed { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#number_of_recent_passwords_disallowed IdentityPasswordPolicyV3#number_of_recent_passwords_disallowed}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#number_of_recent_passwords_disallowed IdentityPasswordPolicyV3#number_of_recent_passwords_disallowed}.
+
+---
+
+##### `PasswordCharCombination`<sup>Optional</sup> <a name="PasswordCharCombination" id="@cdktf/provider-opentelekomcloud.identityPasswordPolicyV3.IdentityPasswordPolicyV3Config.property.passwordCharCombination"></a>
+
+```csharp
+public double PasswordCharCombination { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_char_combination IdentityPasswordPolicyV3#password_char_combination}.
 
 ---
 
@@ -1074,7 +1117,7 @@ public object PasswordNotUsernameOrInvert { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#password_not_username_or_invert IdentityPasswordPolicyV3#password_not_username_or_invert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_not_username_or_invert IdentityPasswordPolicyV3#password_not_username_or_invert}.
 
 ---
 
@@ -1086,7 +1129,7 @@ public double PasswordValidityPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.25/docs/resources/identity_password_policy_v3#password_validity_period IdentityPasswordPolicyV3#password_validity_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/identity_password_policy_v3#password_validity_period IdentityPasswordPolicyV3#password_validity_period}.
 
 ---
 
