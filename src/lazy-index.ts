@@ -56,6 +56,7 @@ Object.defineProperty(exports, 'dcEndpointGroupV2', { get: function () { return 
 Object.defineProperty(exports, 'dcHostedConnectV3', { get: function () { return require('./dc-hosted-connect-v3'); } });
 Object.defineProperty(exports, 'dcVirtualGatewayV2', { get: function () { return require('./dc-virtual-gateway-v2'); } });
 Object.defineProperty(exports, 'dcVirtualGatewayV3', { get: function () { return require('./dc-virtual-gateway-v3'); } });
+Object.defineProperty(exports, 'dcVirtualInterfacePeerV3', { get: function () { return require('./dc-virtual-interface-peer-v3'); } });
 Object.defineProperty(exports, 'dcVirtualInterfaceV2', { get: function () { return require('./dc-virtual-interface-v2'); } });
 Object.defineProperty(exports, 'dcVirtualInterfaceV3', { get: function () { return require('./dc-virtual-interface-v3'); } });
 Object.defineProperty(exports, 'dcsInstanceV1', { get: function () { return require('./dcs-instance-v1'); } });
@@ -70,6 +71,7 @@ Object.defineProperty(exports, 'disAppV2', { get: function () { return require('
 Object.defineProperty(exports, 'disCheckpointV2', { get: function () { return require('./dis-checkpoint-v2'); } });
 Object.defineProperty(exports, 'disDumpTaskV2', { get: function () { return require('./dis-dump-task-v2'); } });
 Object.defineProperty(exports, 'disStreamV2', { get: function () { return require('./dis-stream-v2'); } });
+Object.defineProperty(exports, 'dmsConsumerGroupV2', { get: function () { return require('./dms-consumer-group-v2'); } });
 Object.defineProperty(exports, 'dmsDedicatedInstanceV2', { get: function () { return require('./dms-dedicated-instance-v2'); } });
 Object.defineProperty(exports, 'dmsInstanceV1', { get: function () { return require('./dms-instance-v1'); } });
 Object.defineProperty(exports, 'dmsInstanceV2', { get: function () { return require('./dms-instance-v2'); } });
@@ -126,8 +128,11 @@ Object.defineProperty(exports, 'imagesImageAccessAcceptV2', { get: function () {
 Object.defineProperty(exports, 'imagesImageAccessV2', { get: function () { return require('./images-image-access-v2'); } });
 Object.defineProperty(exports, 'imagesImageV2', { get: function () { return require('./images-image-v2'); } });
 Object.defineProperty(exports, 'imsDataImageV2', { get: function () { return require('./ims-data-image-v2'); } });
+Object.defineProperty(exports, 'imsImageShareAcceptV1', { get: function () { return require('./ims-image-share-accept-v1'); } });
+Object.defineProperty(exports, 'imsImageShareV1', { get: function () { return require('./ims-image-share-v1'); } });
 Object.defineProperty(exports, 'imsImageV2', { get: function () { return require('./ims-image-v2'); } });
 Object.defineProperty(exports, 'kmsGrantV1', { get: function () { return require('./kms-grant-v1'); } });
+Object.defineProperty(exports, 'kmsKeyMaterialV1', { get: function () { return require('./kms-key-material-v1'); } });
 Object.defineProperty(exports, 'kmsKeyV1', { get: function () { return require('./kms-key-v1'); } });
 Object.defineProperty(exports, 'lbCertificateV2', { get: function () { return require('./lb-certificate-v2'); } });
 Object.defineProperty(exports, 'lbCertificateV3', { get: function () { return require('./lb-certificate-v3'); } });
@@ -271,6 +276,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudComputeInstancesV2', { get: 
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeKeypairV2', { get: function () { return require('./data-opentelekomcloud-compute-keypair-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCsbsBackupPolicyV1', { get: function () { return require('./data-opentelekomcloud-csbs-backup-policy-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCsbsBackupV1', { get: function () { return require('./data-opentelekomcloud-csbs-backup-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudCssCertificateV1', { get: function () { return require('./data-opentelekomcloud-css-certificate-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCssFlavorV1', { get: function () { return require('./data-opentelekomcloud-css-flavor-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCtsTrackerV1', { get: function () { return require('./data-opentelekomcloud-cts-tracker-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDcsAzV1', { get: function () { return require('./data-opentelekomcloud-dcs-az-v1'); } });
@@ -293,6 +299,9 @@ Object.defineProperty(exports, 'dataOpentelekomcloudDnsNameserversV2', { get: fu
 Object.defineProperty(exports, 'dataOpentelekomcloudDnsZoneV2', { get: function () { return require('./data-opentelekomcloud-dns-zone-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDwsFlavorsV2', { get: function () { return require('./data-opentelekomcloud-dws-flavors-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudEvsVolumesV2', { get: function () { return require('./data-opentelekomcloud-evs-volumes-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudHssHostGroupsV5', { get: function () { return require('./data-opentelekomcloud-hss-host-groups-v5'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudHssHostsV5', { get: function () { return require('./data-opentelekomcloud-hss-hosts-v5'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudHssQuotasV5', { get: function () { return require('./data-opentelekomcloud-hss-quotas-v5'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityAgencyV3', { get: function () { return require('./data-opentelekomcloud-identity-agency-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityAuthScopeV3', { get: function () { return require('./data-opentelekomcloud-identity-auth-scope-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityCredentialV3', { get: function () { return require('./data-opentelekomcloud-identity-credential-v3'); } });
@@ -304,6 +313,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudIdentityRoleV3', { get: func
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityUserV3', { get: function () { return require('./data-opentelekomcloud-identity-user-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudImagesImageV2', { get: function () { return require('./data-opentelekomcloud-images-image-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudKmsDataKeyV1', { get: function () { return require('./data-opentelekomcloud-kms-data-key-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudKmsKeyMaterialParametersV1', { get: function () { return require('./data-opentelekomcloud-kms-key-material-parameters-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudKmsKeyV1', { get: function () { return require('./data-opentelekomcloud-kms-key-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudLbCertificateV3', { get: function () { return require('./data-opentelekomcloud-lb-certificate-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudLbFlavorV3', { get: function () { return require('./data-opentelekomcloud-lb-flavor-v3'); } });
