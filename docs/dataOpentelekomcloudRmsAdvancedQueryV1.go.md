@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1(scope Construct, id *string, config DataOpentelekomcloudRmsAdvancedQueryV1Config) DataOpentelekomcloudRmsAdvancedQueryV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 &dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1Config {
 	Connection: interface{},
@@ -749,7 +749,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 &dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfo {
 
@@ -764,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList
 ```
@@ -913,7 +913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference
 ```
