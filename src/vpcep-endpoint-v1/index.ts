@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,66 @@ import * as cdktf from 'cdktf';
 
 export interface VpcepEndpointV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#description VpcepEndpointV1#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#enable_dns VpcepEndpointV1#enable_dns}
   */
   readonly enableDns?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#enable_whitelist VpcepEndpointV1#enable_whitelist}
   */
   readonly enableWhitelist?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#id VpcepEndpointV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#policy_statement VpcepEndpointV1#policy_statement}
+  */
+  readonly policyStatement?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#port_ip VpcepEndpointV1#port_ip}
   */
   readonly portIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#route_tables VpcepEndpointV1#route_tables}
   */
   readonly routeTables?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#service_id VpcepEndpointV1#service_id}
   */
   readonly serviceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#subnet_id VpcepEndpointV1#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#tags VpcepEndpointV1#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#vpc_id VpcepEndpointV1#vpc_id}
   */
   readonly vpcId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#whitelist VpcepEndpointV1#whitelist}
   */
   readonly whitelist?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#timeouts VpcepEndpointV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#timeouts VpcepEndpointV1#timeouts}
   */
   readonly timeouts?: VpcepEndpointV1Timeouts;
 }
 export interface VpcepEndpointV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#default VpcepEndpointV1#default}
   */
   readonly default?: string;
 }
@@ -158,7 +166,7 @@ export class VpcepEndpointV1TimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1}
 */
 export class VpcepEndpointV1 extends cdktf.TerraformResource {
 
@@ -174,7 +182,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpcepEndpointV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpcepEndpointV1 to import
-  * @param importFromId The id of the existing VpcepEndpointV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpcepEndpointV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpcepEndpointV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -186,7 +194,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/vpcep_endpoint_v1 opentelekomcloud_vpcep_endpoint_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -197,7 +205,7 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_vpcep_endpoint_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.26',
+        providerVersion: '1.36.27',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -208,9 +216,11 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._enableDns = config.enableDns;
     this._enableWhitelist = config.enableWhitelist;
     this._id = config.id;
+    this._policyStatement = config.policyStatement;
     this._portIp = config.portIp;
     this._routeTables = config.routeTables;
     this._serviceId = config.serviceId;
@@ -224,6 +234,22 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // description - computed: true, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
 
   // dns_names - computed: true, optional: false, required: false
   public get dnsNames() {
@@ -281,6 +307,22 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // marker_id - computed: true, optional: false, required: false
   public get markerId() {
     return this.getNumberAttribute('marker_id');
+  }
+
+  // policy_statement - computed: true, optional: true, required: false
+  private _policyStatement?: string; 
+  public get policyStatement() {
+    return this.getStringAttribute('policy_statement');
+  }
+  public set policyStatement(value: string) {
+    this._policyStatement = value;
+  }
+  public resetPolicyStatement() {
+    this._policyStatement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyStatementInput() {
+    return this._policyStatement;
   }
 
   // port_ip - computed: true, optional: true, required: false
@@ -341,6 +383,11 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
   // service_type - computed: true, optional: false, required: false
   public get serviceType() {
     return this.getStringAttribute('service_type');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // subnet_id - computed: true, optional: true, required: false
@@ -426,9 +473,11 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       enable_dns: cdktf.booleanToTerraform(this._enableDns),
       enable_whitelist: cdktf.booleanToTerraform(this._enableWhitelist),
       id: cdktf.stringToTerraform(this._id),
+      policy_statement: cdktf.stringToTerraform(this._policyStatement),
       port_ip: cdktf.stringToTerraform(this._portIp),
       route_tables: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routeTables),
       service_id: cdktf.stringToTerraform(this._serviceId),
@@ -442,6 +491,12 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       enable_dns: {
         value: cdktf.booleanToHclTerraform(this._enableDns),
         isBlock: false,
@@ -456,6 +511,12 @@ export class VpcepEndpointV1 extends cdktf.TerraformResource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      policy_statement: {
+        value: cdktf.stringToHclTerraform(this._policyStatement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
