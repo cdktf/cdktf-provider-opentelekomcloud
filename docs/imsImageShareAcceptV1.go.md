@@ -4,12 +4,12 @@
 
 ### ImsImageShareAcceptV1 <a name="ImsImageShareAcceptV1" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1 opentelekomcloud_ims_image_share_accept_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.NewImsImageShareAcceptV1(scope Construct, id *string, config ImsImageShareAcceptV1Config) ImsImageShareAcceptV1
 ```
@@ -412,7 +412,7 @@ func ResetVaultId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.ImsImageShareAcceptV1_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.ImsImageShareAcceptV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ imsimageshareacceptv1.ImsImageShareAcceptV1_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.ImsImageShareAcceptV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ imsimageshareacceptv1.ImsImageShareAcceptV1_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.ImsImageShareAcceptV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the ImsImageShareAcceptV1 to i
 
 The id of the existing ImsImageShareAcceptV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -800,7 +800,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 &imsimageshareacceptv1.ImsImageShareAcceptV1Config {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Provisioners: *[]interface{},
 	ImageId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts,
 	VaultId: *string,
 }
 ```
@@ -828,10 +828,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.imageId">ImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts">ImsImageShareAcceptV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.vaultId">VaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Config.property.vaultId">VaultId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}. |
 
 ---
 
@@ -913,7 +913,7 @@ ImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#image_id ImsImageShareAcceptV1#image_id}.
 
 ---
 
@@ -925,7 +925,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#id ImsImageShareAcceptV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -942,7 +942,7 @@ Timeouts ImsImageShareAcceptV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#timeouts ImsImageShareAcceptV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#timeouts ImsImageShareAcceptV1#timeouts}
 
 ---
 
@@ -954,7 +954,7 @@ VaultId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#vault_id ImsImageShareAcceptV1#vault_id}.
 
 ---
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 &imsimageshareacceptv1.ImsImageShareAcceptV1Timeouts {
 	Create: *string,
@@ -975,8 +975,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#create ImsImageShareAcceptV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#delete ImsImageShareAcceptV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#create ImsImageShareAcceptV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#delete ImsImageShareAcceptV1#delete}. |
 
 ---
 
@@ -988,7 +988,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#create ImsImageShareAcceptV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#create ImsImageShareAcceptV1#create}.
 
 ---
 
@@ -1000,7 +1000,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/ims_image_share_accept_v1#delete ImsImageShareAcceptV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/ims_image_share_accept_v1#delete ImsImageShareAcceptV1#delete}.
 
 ---
 
@@ -1011,7 +1011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsImageShareAcceptV1.ImsImageShareAcceptV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/imsimageshareacceptv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/imsimageshareacceptv1"
 
 imsimageshareacceptv1.NewImsImageShareAcceptV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ImsImageShareAcceptV1TimeoutsOutputReference
 ```

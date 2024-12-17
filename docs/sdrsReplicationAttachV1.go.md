@@ -4,12 +4,12 @@
 
 ### SdrsReplicationAttachV1 <a name="SdrsReplicationAttachV1" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1 opentelekomcloud_sdrs_replication_attach_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.NewSdrsReplicationAttachV1(scope Construct, id *string, config SdrsReplicationAttachV1Config) SdrsReplicationAttachV1
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.SdrsReplicationAttachV1_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.SdrsReplicationAttachV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ sdrsreplicationattachv1.SdrsReplicationAttachV1_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.SdrsReplicationAttachV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ sdrsreplicationattachv1.SdrsReplicationAttachV1_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.SdrsReplicationAttachV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the SdrsReplicationAttachV1 to
 
 The id of the existing SdrsReplicationAttachV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -826,7 +826,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 &sdrsreplicationattachv1.SdrsReplicationAttachV1Config {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	InstanceId: *string,
 	ReplicationId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts,
 }
 ```
 
@@ -855,10 +855,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.device">Device</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#device SdrsReplicationAttachV1#device}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#instance_id SdrsReplicationAttachV1#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.replicationId">ReplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#replication_id SdrsReplicationAttachV1#replication_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#id SdrsReplicationAttachV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.device">Device</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#device SdrsReplicationAttachV1#device}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#instance_id SdrsReplicationAttachV1#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.replicationId">ReplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#replication_id SdrsReplicationAttachV1#replication_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#id SdrsReplicationAttachV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts">SdrsReplicationAttachV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -941,7 +941,7 @@ Device *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#device SdrsReplicationAttachV1#device}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#device SdrsReplicationAttachV1#device}.
 
 ---
 
@@ -953,7 +953,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#instance_id SdrsReplicationAttachV1#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#instance_id SdrsReplicationAttachV1#instance_id}.
 
 ---
 
@@ -965,7 +965,7 @@ ReplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#replication_id SdrsReplicationAttachV1#replication_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#replication_id SdrsReplicationAttachV1#replication_id}.
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#id SdrsReplicationAttachV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#id SdrsReplicationAttachV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ Timeouts SdrsReplicationAttachV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#timeouts SdrsReplicationAttachV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#timeouts SdrsReplicationAttachV1#timeouts}
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 &sdrsreplicationattachv1.SdrsReplicationAttachV1Timeouts {
 	Create: *string,
@@ -1015,8 +1015,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#create SdrsReplicationAttachV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#delete SdrsReplicationAttachV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#create SdrsReplicationAttachV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#delete SdrsReplicationAttachV1#delete}. |
 
 ---
 
@@ -1028,7 +1028,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#create SdrsReplicationAttachV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#create SdrsReplicationAttachV1#create}.
 
 ---
 
@@ -1040,7 +1040,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/sdrs_replication_attach_v1#delete SdrsReplicationAttachV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/sdrs_replication_attach_v1#delete SdrsReplicationAttachV1#delete}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.sdrsReplicationAttachV1.SdrsReplicationAttachV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/sdrsreplicationattachv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/sdrsreplicationattachv1"
 
 sdrsreplicationattachv1.NewSdrsReplicationAttachV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SdrsReplicationAttachV1TimeoutsOutputReference
 ```

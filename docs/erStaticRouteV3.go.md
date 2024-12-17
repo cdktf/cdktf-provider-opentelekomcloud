@@ -4,12 +4,12 @@
 
 ### ErStaticRouteV3 <a name="ErStaticRouteV3" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3 opentelekomcloud_er_static_route_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.NewErStaticRouteV3(scope Construct, id *string, config ErStaticRouteV3Config) ErStaticRouteV3
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.ErStaticRouteV3_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.ErStaticRouteV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ erstaticroutev3.ErStaticRouteV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.ErStaticRouteV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ erstaticroutev3.ErStaticRouteV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.ErStaticRouteV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ErStaticRouteV3 to import.
 
 The id of the existing ErStaticRouteV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 &erstaticroutev3.ErStaticRouteV3Config {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	AttachmentId: *string,
 	Id: *string,
 	IsBlackhole: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.erStaticRouteV3.ErStaticRouteV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts,
 }
 ```
 
@@ -925,11 +925,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.attachmentId">AttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.isBlackhole">IsBlackhole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.destination">Destination</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.attachmentId">AttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.isBlackhole">IsBlackhole</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts">ErStaticRouteV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1012,7 +1012,7 @@ Destination *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#destination ErStaticRouteV3#destination}.
 
 ---
 
@@ -1024,7 +1024,7 @@ RouteTableId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#route_table_id ErStaticRouteV3#route_table_id}.
 
 ---
 
@@ -1036,7 +1036,7 @@ AttachmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#attachment_id ErStaticRouteV3#attachment_id}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#id ErStaticRouteV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ IsBlackhole interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#is_blackhole ErStaticRouteV3#is_blackhole}.
 
 ---
 
@@ -1077,7 +1077,7 @@ Timeouts ErStaticRouteV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#timeouts ErStaticRouteV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#timeouts ErStaticRouteV3#timeouts}
 
 ---
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 &erstaticroutev3.ErStaticRouteV3Timeouts {
 	Create: *string,
@@ -1099,9 +1099,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#create ErStaticRouteV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#delete ErStaticRouteV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#update ErStaticRouteV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#create ErStaticRouteV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#delete ErStaticRouteV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#update ErStaticRouteV3#update}. |
 
 ---
 
@@ -1113,7 +1113,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#create ErStaticRouteV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#create ErStaticRouteV3#create}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#delete ErStaticRouteV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#delete ErStaticRouteV3#delete}.
 
 ---
 
@@ -1137,7 +1137,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/resources/er_static_route_v3#update ErStaticRouteV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/er_static_route_v3#update ErStaticRouteV3#update}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erStaticRouteV3.ErStaticRouteV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/erstaticroutev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/erstaticroutev3"
 
 erstaticroutev3.NewErStaticRouteV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ErStaticRouteV3TimeoutsOutputReference
 ```

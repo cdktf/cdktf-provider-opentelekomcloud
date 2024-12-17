@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudRmsAdvancedQueryV1 <a name="DataOpentelekomcloudRmsAdvancedQueryV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -483,7 +483,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRmsAdv
 
 The id of the existing DataOpentelekomcloudRmsAdvancedQueryV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,8 +753,8 @@ dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Con
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
 
 ---
 
@@ -836,7 +836,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
 
 ---
 
@@ -848,7 +848,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.26/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
