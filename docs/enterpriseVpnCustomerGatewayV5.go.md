@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 enterprisevpncustomergatewayv5.NewEnterpriseVpnCustomerGatewayV5(scope Construct, id *string, config EnterpriseVpnCustomerGatewayV5Config) EnterpriseVpnCustomerGatewayV5
 ```
@@ -413,7 +413,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -889,7 +889,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.enterpriseVpnCustomerGatewayV5.EnterpriseVpnCustomerGatewayV5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpncustomergatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/enterprisevpncustomergatewayv5"
 
 &enterprisevpncustomergatewayv5.EnterpriseVpnCustomerGatewayV5Config {
 	Connection: interface{},
