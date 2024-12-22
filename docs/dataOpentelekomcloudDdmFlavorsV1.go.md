@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1(scope Construct, id *string, config DataOpentelekomcloudDdmFlavorsV1Config) DataOpentelekomcloudDdmFlavorsV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1Config {
 	Connection: interface{},
@@ -749,7 +749,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1FlavorGroups {
 
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList
 ```
@@ -926,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference
 ```
@@ -1303,7 +1303,7 @@ func InternalValue() DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsList
 ```
@@ -1452,7 +1452,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference
 ```
