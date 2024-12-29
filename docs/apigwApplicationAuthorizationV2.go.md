@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.NewApigwApplicationAuthorizationV2(scope Construct, id *string, config ApigwApplicationAuthorizationV2Config) ApigwApplicationAuthorizationV2
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 &apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2Config {
 	Connection: interface{},
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/api
 	EnvId: *string,
 	GatewayId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts,
 }
 ```
 
@@ -1028,7 +1028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 &apigwapplicationauthorizationv2.ApigwApplicationAuthorizationV2Timeouts {
 	Create: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwapplicationauthorizationv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwapplicationauthorizationv2"
 
 apigwapplicationauthorizationv2.NewApigwApplicationAuthorizationV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigwApplicationAuthorizationV2TimeoutsOutputReference
 ```
