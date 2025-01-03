@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface IdentityProviderV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3#description IdentityProviderV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3#description IdentityProviderV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3#enabled IdentityProviderV3#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3#enabled IdentityProviderV3#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3#id IdentityProviderV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3#id IdentityProviderV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3#name IdentityProviderV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3#name IdentityProviderV3#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3 opentelekomcloud_identity_provider_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3 opentelekomcloud_identity_provider_v3}
 */
 export class IdentityProviderV3 extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a IdentityProviderV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityProviderV3 to import
-  * @param importFromId The id of the existing IdentityProviderV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityProviderV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityProviderV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/identity_provider_v3 opentelekomcloud_identity_provider_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/identity_provider_v3 opentelekomcloud_identity_provider_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class IdentityProviderV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_identity_provider_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.27',
+        providerVersion: '1.36.28',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

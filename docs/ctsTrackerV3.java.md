@@ -4,7 +4,7 @@
 
 ### CtsTrackerV3 <a name="CtsTrackerV3" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3 opentelekomcloud_cts_tracker_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer"></a>
 
@@ -48,13 +48,13 @@ CtsTrackerV3.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.compressType">compressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.filePrefixName">filePrefixName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isLtsEnabled">isLtsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isObsCreated">isObsCreated</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isSortByService">isSortByService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.compressType">compressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.filePrefixName">filePrefixName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isLtsEnabled">isLtsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isObsCreated">isObsCreated</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.isSortByService">isSortByService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts">CtsTrackerV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -123,7 +123,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}.
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
 
 ---
 
@@ -670,7 +670,7 @@ The construct id used in the generated config for the CtsTrackerV3 to import.
 
 The id of the existing CtsTrackerV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1173,13 +1173,13 @@ CtsTrackerV3Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.compressType">compressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.filePrefixName">filePrefixName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isLtsEnabled">isLtsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isObsCreated">isObsCreated</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isSortByService">isSortByService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.bucketName">bucketName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.compressType">compressType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.filePrefixName">filePrefixName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isLtsEnabled">isLtsEnabled</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isObsCreated">isObsCreated</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.isSortByService">isSortByService</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts">CtsTrackerV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1262,7 +1262,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#status CtsTrackerV3#status}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public java.lang.String getBucketName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#bucket_name CtsTrackerV3#bucket_name}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public java.lang.String getCompressType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#compress_type CtsTrackerV3#compress_type}.
 
 ---
 
@@ -1298,7 +1298,7 @@ public java.lang.String getFilePrefixName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#file_prefix_name CtsTrackerV3#file_prefix_name}.
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.lang.Object getIsLtsEnabled();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_lts_enabled CtsTrackerV3#is_lts_enabled}.
 
 ---
 
@@ -1322,7 +1322,7 @@ public java.lang.Object getIsObsCreated();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_obs_created CtsTrackerV3#is_obs_created}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public java.lang.Object getIsSortByService();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#is_sort_by_service CtsTrackerV3#is_sort_by_service}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public CtsTrackerV3Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#timeouts CtsTrackerV3#timeouts}
 
 ---
 
@@ -1369,8 +1369,8 @@ CtsTrackerV3Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ctsTrackerV3.CtsTrackerV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}. |
 
 ---
 
@@ -1382,7 +1382,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#create CtsTrackerV3#create}.
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/cts_tracker_v3#delete CtsTrackerV3#delete}.
 
 ---
 

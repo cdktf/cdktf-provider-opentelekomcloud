@@ -4,7 +4,7 @@
 
 ### RdsMaintenanceV3 <a name="RdsMaintenanceV3" id="@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3 opentelekomcloud_rds_maintenance_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RdsMaintenanceV3 to import
 
 The id of the existing RdsMaintenanceV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,10 +778,10 @@ const rdsMaintenanceV3Config: rdsMaintenanceV3.RdsMaintenanceV3Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.endTime">endTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#end_time RdsMaintenanceV3#end_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#instance_id RdsMaintenanceV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#start_time RdsMaintenanceV3#start_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#id RdsMaintenanceV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.endTime">endTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#end_time RdsMaintenanceV3#end_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#instance_id RdsMaintenanceV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#start_time RdsMaintenanceV3#start_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsMaintenanceV3.RdsMaintenanceV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#id RdsMaintenanceV3#id}. |
 
 ---
 
@@ -863,7 +863,7 @@ public readonly endTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#end_time RdsMaintenanceV3#end_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#end_time RdsMaintenanceV3#end_time}.
 
 ---
 
@@ -875,7 +875,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#instance_id RdsMaintenanceV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#instance_id RdsMaintenanceV3#instance_id}.
 
 ---
 
@@ -887,7 +887,7 @@ public readonly startTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#start_time RdsMaintenanceV3#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#start_time RdsMaintenanceV3#start_time}.
 
 ---
 
@@ -899,7 +899,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.27/docs/resources/rds_maintenance_v3#id RdsMaintenanceV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_maintenance_v3#id RdsMaintenanceV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
