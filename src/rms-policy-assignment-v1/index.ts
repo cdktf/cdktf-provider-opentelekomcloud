@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rms_policy_assignment_v1
 // generated from terraform resource schema
 
