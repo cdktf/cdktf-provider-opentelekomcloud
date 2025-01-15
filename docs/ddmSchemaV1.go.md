@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1(scope Construct, id *string, config DdmSchemaV1Config) DdmSchemaV1
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.DdmSchemaV1_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.DdmSchemaV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ ddmschemav1.DdmSchemaV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.DdmSchemaV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ ddmschemav1.DdmSchemaV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.DdmSchemaV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -996,7 +996,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 &ddmschemav1.DdmSchemaV1Config {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddm
 	Id: *string,
 	PurgeRdsOnDelete: interface{},
 	ShardUnit: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.ddmSchemaV1.DdmSchemaV1Timeouts,
 }
 ```
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Databases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 &ddmschemav1.DdmSchemaV1Databases {
 
@@ -1244,7 +1244,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddm
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 &ddmschemav1.DdmSchemaV1Rds {
 	AdminPassword: *string,
@@ -1307,7 +1307,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 &ddmschemav1.DdmSchemaV1Timeouts {
 	Create: *string,
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1UsedRds.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 &ddmschemav1.DdmSchemaV1UsedRds {
 
@@ -1382,7 +1382,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddm
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1DatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1DatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdmSchemaV1DatabasesList
 ```
@@ -1531,7 +1531,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1DatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1DatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DdmSchemaV1DatabasesOutputReference
 ```
@@ -1875,7 +1875,7 @@ func InternalValue() DdmSchemaV1Databases
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1RdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1RdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdmSchemaV1RdsList
 ```
@@ -2035,7 +2035,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1RdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1RdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DdmSchemaV1RdsOutputReference
 ```
@@ -2368,7 +2368,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DdmSchemaV1TimeoutsOutputReference
 ```
@@ -2704,7 +2704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1UsedRdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1UsedRdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DdmSchemaV1UsedRdsList
 ```
@@ -2853,7 +2853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1UsedRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ddmschemav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ddmschemav1"
 
 ddmschemav1.NewDdmSchemaV1UsedRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DdmSchemaV1UsedRdsOutputReference
 ```
