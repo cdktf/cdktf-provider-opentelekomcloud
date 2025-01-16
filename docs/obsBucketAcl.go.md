@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAcl(scope Construct, id *string, config ObsBucketAclConfig) ObsBucketAcl
 ```
@@ -465,7 +465,7 @@ func ResetPublicPermission()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.ObsBucketAcl_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.ObsBucketAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ obsbucketacl.ObsBucketAcl_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.ObsBucketAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ obsbucketacl.ObsBucketAcl_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.ObsBucketAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclAccountPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 &obsbucketacl.ObsBucketAclAccountPermission {
 	AccountId: *string,
@@ -957,7 +957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 &obsbucketacl.ObsBucketAclConfig {
 	Connection: interface{},
@@ -970,9 +970,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obs
 	Bucket: *string,
 	AccountPermission: interface{},
 	Id: *string,
-	LogDeliveryUserPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.obsBucketAcl.ObsBucketAclLogDeliveryUserPermission,
-	OwnerPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.obsBucketAcl.ObsBucketAclOwnerPermission,
-	PublicPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.obsBucketAcl.ObsBucketAclPublicPermission,
+	LogDeliveryUserPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.obsBucketAcl.ObsBucketAclLogDeliveryUserPermission,
+	OwnerPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.obsBucketAcl.ObsBucketAclOwnerPermission,
+	PublicPermission: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.obsBucketAcl.ObsBucketAclPublicPermission,
 }
 ```
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclLogDeliveryUserPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 &obsbucketacl.ObsBucketAclLogDeliveryUserPermission {
 	AccessToAcl: *[]*string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclOwnerPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 &obsbucketacl.ObsBucketAclOwnerPermission {
 	AccessToAcl: *[]*string,
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclPublicPermission.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 &obsbucketacl.ObsBucketAclPublicPermission {
 	AccessToAcl: *[]*string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclAccountPermissionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAclAccountPermissionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ObsBucketAclAccountPermissionList
 ```
@@ -1454,7 +1454,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclAccountPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAclAccountPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ObsBucketAclAccountPermissionOutputReference
 ```
@@ -1801,7 +1801,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclLogDeliveryUserPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAclLogDeliveryUserPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObsBucketAclLogDeliveryUserPermissionOutputReference
 ```
@@ -2108,7 +2108,7 @@ func InternalValue() ObsBucketAclLogDeliveryUserPermission
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclOwnerPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAclOwnerPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObsBucketAclOwnerPermissionOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() ObsBucketAclOwnerPermission
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.obsBucketAcl.ObsBucketAclPublicPermissionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/obsbucketacl"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/obsbucketacl"
 
 obsbucketacl.NewObsBucketAclPublicPermissionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObsBucketAclPublicPermissionOutputReference
 ```
