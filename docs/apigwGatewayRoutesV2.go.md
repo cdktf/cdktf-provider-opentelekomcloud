@@ -4,12 +4,12 @@
 
 ### ApigwGatewayRoutesV2 <a name="ApigwGatewayRoutesV2" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 apigwgatewayroutesv2.NewApigwGatewayRoutesV2(scope Construct, id *string, config ApigwGatewayRoutesV2Config) ApigwGatewayRoutesV2
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 apigwgatewayroutesv2.ApigwGatewayRoutesV2_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 apigwgatewayroutesv2.ApigwGatewayRoutesV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ apigwgatewayroutesv2.ApigwGatewayRoutesV2_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 apigwgatewayroutesv2.ApigwGatewayRoutesV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ apigwgatewayroutesv2.ApigwGatewayRoutesV2_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 apigwgatewayroutesv2.ApigwGatewayRoutesV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ApigwGatewayRoutesV2 to im
 
 The id of the existing ApigwGatewayRoutesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/apigwgatewayroutesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwgatewayroutesv2"
 
 &apigwgatewayroutesv2.ApigwGatewayRoutesV2Config {
 	Connection: interface{},
@@ -778,9 +778,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.nexthops">Nexthops</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.nexthops">Nexthops</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ GatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}.
 
 ---
 
@@ -874,7 +874,7 @@ Nexthops *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}.
 
 ---
 
@@ -886,7 +886,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
