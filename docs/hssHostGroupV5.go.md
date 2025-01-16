@@ -4,7 +4,7 @@
 
 ### HssHostGroupV5 <a name="HssHostGroupV5" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5 opentelekomcloud_hss_host_group_v5}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5 opentelekomcloud_hss_host_group_v5}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the HssHostGroupV5 to import.
 
 The id of the existing HssHostGroupV5 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -872,9 +872,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#name HssHostGroupV5#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.hostIds">HostIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#host_ids HssHostGroupV5#host_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#id HssHostGroupV5#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#name HssHostGroupV5#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.hostIds">HostIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#host_ids HssHostGroupV5#host_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#id HssHostGroupV5#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts">HssHostGroupV5Timeouts</a></code> | timeouts block. |
 
 ---
@@ -957,7 +957,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#name HssHostGroupV5#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#name HssHostGroupV5#name}.
 
 ---
 
@@ -969,7 +969,7 @@ HostIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#host_ids HssHostGroupV5#host_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#host_ids HssHostGroupV5#host_ids}.
 
 ---
 
@@ -981,7 +981,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#id HssHostGroupV5#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#id HssHostGroupV5#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +998,7 @@ Timeouts HssHostGroupV5Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#timeouts HssHostGroupV5#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#timeouts HssHostGroupV5#timeouts}
 
 ---
 
@@ -1019,8 +1019,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#create HssHostGroupV5#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#update HssHostGroupV5#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#create HssHostGroupV5#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#update HssHostGroupV5#update}. |
 
 ---
 
@@ -1032,7 +1032,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#create HssHostGroupV5#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#create HssHostGroupV5#create}.
 
 ---
 
@@ -1044,7 +1044,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/hss_host_group_v5#update HssHostGroupV5#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/hss_host_group_v5#update HssHostGroupV5#update}.
 
 ---
 

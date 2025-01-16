@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,157 +13,34 @@ import * as cdktf from 'cdktf';
 
 export interface RdsBackupV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#description RdsBackupV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#databases RdsBackupV3#databases}
   */
-  readonly description?: string;
+  readonly databases?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#id RdsBackupV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#id RdsBackupV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#instance_id RdsBackupV3#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#instance_id RdsBackupV3#instance_id}
   */
   readonly instanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#name RdsBackupV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#name RdsBackupV3#name}
   */
   readonly name: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#type RdsBackupV3#type}
-  */
-  readonly type?: string;
-  /**
-  * databases block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#databases RdsBackupV3#databases}
-  */
-  readonly databases?: RdsBackupV3Databases[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#timeouts RdsBackupV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#timeouts RdsBackupV3#timeouts}
   */
   readonly timeouts?: RdsBackupV3Timeouts;
 }
-export interface RdsBackupV3Databases {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#name RdsBackupV3#name}
-  */
-  readonly name: string;
-}
-
-export function rdsBackupV3DatabasesToTerraform(struct?: RdsBackupV3Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    name: cdktf.stringToTerraform(struct!.name),
-  }
-}
-
-
-export function rdsBackupV3DatabasesToHclTerraform(struct?: RdsBackupV3Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class RdsBackupV3DatabasesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): RdsBackupV3Databases | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: RdsBackupV3Databases | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._name = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._name = value.name;
-    }
-  }
-
-  // name - computed: false, optional: false, required: true
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-}
-
-export class RdsBackupV3DatabasesList extends cdktf.ComplexList {
-  public internalValue? : RdsBackupV3Databases[] | cdktf.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): RdsBackupV3DatabasesOutputReference {
-    return new RdsBackupV3DatabasesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
 export interface RdsBackupV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#create RdsBackupV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#create RdsBackupV3#create}
   */
   readonly create?: string;
 }
@@ -257,7 +134,7 @@ export class RdsBackupV3TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3}
 */
 export class RdsBackupV3 extends cdktf.TerraformResource {
 
@@ -273,7 +150,7 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RdsBackupV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RdsBackupV3 to import
-  * @param importFromId The id of the existing RdsBackupV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RdsBackupV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RdsBackupV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -285,7 +162,7 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.28/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/rds_backup_v3 opentelekomcloud_rds_backup_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +173,7 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_rds_backup_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.28',
+        providerVersion: '1.36.29',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -307,12 +184,10 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._description = config.description;
+    this._databases = config.databases;
     this._id = config.id;
     this._instanceId = config.instanceId;
     this._name = config.name;
-    this._type = config.type;
-    this._databases.internalValue = config.databases;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -330,20 +205,20 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('begin_time');
   }
 
-  // description - computed: false, optional: true, required: false
-  private _description?: string; 
-  public get description() {
-    return this.getStringAttribute('description');
+  // databases - computed: false, optional: true, required: false
+  private _databases?: string[]; 
+  public get databases() {
+    return this.getListAttribute('databases');
   }
-  public set description(value: string) {
-    this._description = value;
+  public set databases(value: string[]) {
+    this._databases = value;
   }
-  public resetDescription() {
-    this._description = undefined;
+  public resetDatabases() {
+    this._databases = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get descriptionInput() {
-    return this._description;
+  public get databasesInput() {
+    return this._databases;
   }
 
   // id - computed: true, optional: true, required: false
@@ -398,36 +273,9 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
-  // type - computed: true, optional: true, required: false
-  private _type?: string; 
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
-  }
-  public set type(value: string) {
-    this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get typeInput() {
-    return this._type;
-  }
-
-  // databases - computed: false, optional: true, required: false
-  private _databases = new RdsBackupV3DatabasesList(this, "databases", false);
-  public get databases() {
-    return this._databases;
-  }
-  public putDatabases(value: RdsBackupV3Databases[] | cdktf.IResolvable) {
-    this._databases.internalValue = value;
-  }
-  public resetDatabases() {
-    this._databases.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databasesInput() {
-    return this._databases.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -452,23 +300,21 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
+      databases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._databases),
       id: cdktf.stringToTerraform(this._id),
       instance_id: cdktf.stringToTerraform(this._instanceId),
       name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
-      databases: cdktf.listMapper(rdsBackupV3DatabasesToTerraform, true)(this._databases.internalValue),
       timeouts: rdsBackupV3TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      description: {
-        value: cdktf.stringToHclTerraform(this._description),
+      databases: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._databases),
         isBlock: false,
-        type: "simple",
-        storageClassType: "string",
+        type: "list",
+        storageClassType: "stringList",
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
@@ -487,18 +333,6 @@ export class RdsBackupV3 extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      type: {
-        value: cdktf.stringToHclTerraform(this._type),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      databases: {
-        value: cdktf.listMapperHcl(rdsBackupV3DatabasesToHclTerraform, true)(this._databases.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "RdsBackupV3DatabasesList",
       },
       timeouts: {
         value: rdsBackupV3TimeoutsToHclTerraform(this._timeouts.internalValue),

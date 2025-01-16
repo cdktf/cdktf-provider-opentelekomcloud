@@ -77,6 +77,7 @@ export * as dmsConsumerGroupV2 from './dms-consumer-group-v2';
 export * as dmsDedicatedInstanceV2 from './dms-dedicated-instance-v2';
 export * as dmsInstanceV1 from './dms-instance-v1';
 export * as dmsInstanceV2 from './dms-instance-v2';
+export * as dmsSmartConnectTaskActionV2 from './dms-smart-connect-task-action-v2';
 export * as dmsSmartConnectTaskV2 from './dms-smart-connect-task-v2';
 export * as dmsSmartConnectV2 from './dms-smart-connect-v2';
 export * as dmsTopicV1 from './dms-topic-v1';
@@ -308,6 +309,7 @@ export * as dataOpentelekomcloudDwsFlavorsV2 from './data-opentelekomcloud-dws-f
 export * as dataOpentelekomcloudEvsVolumesV2 from './data-opentelekomcloud-evs-volumes-v2';
 export * as dataOpentelekomcloudHssHostGroupsV5 from './data-opentelekomcloud-hss-host-groups-v5';
 export * as dataOpentelekomcloudHssHostsV5 from './data-opentelekomcloud-hss-hosts-v5';
+export * as dataOpentelekomcloudHssIntrusionEventsV5 from './data-opentelekomcloud-hss-intrusion-events-v5';
 export * as dataOpentelekomcloudHssQuotasV5 from './data-opentelekomcloud-hss-quotas-v5';
 export * as dataOpentelekomcloudIdentityAgencyV3 from './data-opentelekomcloud-identity-agency-v3';
 export * as dataOpentelekomcloudIdentityAuthScopeV3 from './data-opentelekomcloud-identity-auth-scope-v3';
