@@ -12,6 +12,7 @@ Object.defineProperty(exports, 'apigwApiV2', { get: function () { return require
 Object.defineProperty(exports, 'apigwAppcodeV2', { get: function () { return require('./apigw-appcode-v2'); } });
 Object.defineProperty(exports, 'apigwApplicationAuthorizationV2', { get: function () { return require('./apigw-application-authorization-v2'); } });
 Object.defineProperty(exports, 'apigwApplicationV2', { get: function () { return require('./apigw-application-v2'); } });
+Object.defineProperty(exports, 'apigwCertificateV2', { get: function () { return require('./apigw-certificate-v2'); } });
 Object.defineProperty(exports, 'apigwCustomAuthorizerV2', { get: function () { return require('./apigw-custom-authorizer-v2'); } });
 Object.defineProperty(exports, 'apigwEnvironmentV2', { get: function () { return require('./apigw-environment-v2'); } });
 Object.defineProperty(exports, 'apigwEnvironmentVariableV2', { get: function () { return require('./apigw-environment-variable-v2'); } });
@@ -35,6 +36,7 @@ Object.defineProperty(exports, 'cbrPolicyV3', { get: function () { return requir
 Object.defineProperty(exports, 'cbrVaultV3', { get: function () { return require('./cbr-vault-v3'); } });
 Object.defineProperty(exports, 'cceAddonV3', { get: function () { return require('./cce-addon-v3'); } });
 Object.defineProperty(exports, 'cceClusterV3', { get: function () { return require('./cce-cluster-v3'); } });
+Object.defineProperty(exports, 'cceNodeAttachV3', { get: function () { return require('./cce-node-attach-v3'); } });
 Object.defineProperty(exports, 'cceNodePoolV3', { get: function () { return require('./cce-node-pool-v3'); } });
 Object.defineProperty(exports, 'cceNodeV3', { get: function () { return require('./cce-node-v3'); } });
 Object.defineProperty(exports, 'cesAlarmrule', { get: function () { return require('./ces-alarmrule'); } });
@@ -49,7 +51,9 @@ Object.defineProperty(exports, 'computeServergroupV2', { get: function () { retu
 Object.defineProperty(exports, 'computeVolumeAttachV2', { get: function () { return require('./compute-volume-attach-v2'); } });
 Object.defineProperty(exports, 'csbsBackupPolicyV1', { get: function () { return require('./csbs-backup-policy-v1'); } });
 Object.defineProperty(exports, 'csbsBackupV1', { get: function () { return require('./csbs-backup-v1'); } });
+Object.defineProperty(exports, 'cssClusterRestartV1', { get: function () { return require('./css-cluster-restart-v1'); } });
 Object.defineProperty(exports, 'cssClusterV1', { get: function () { return require('./css-cluster-v1'); } });
+Object.defineProperty(exports, 'cssConfigurationV1', { get: function () { return require('./css-configuration-v1'); } });
 Object.defineProperty(exports, 'cssSnapshotConfigurationV1', { get: function () { return require('./css-snapshot-configuration-v1'); } });
 Object.defineProperty(exports, 'ctsEventNotificationV3', { get: function () { return require('./cts-event-notification-v3'); } });
 Object.defineProperty(exports, 'ctsTrackerV1', { get: function () { return require('./cts-tracker-v1'); } });
@@ -77,6 +81,7 @@ Object.defineProperty(exports, 'dmsConsumerGroupV2', { get: function () { return
 Object.defineProperty(exports, 'dmsDedicatedInstanceV2', { get: function () { return require('./dms-dedicated-instance-v2'); } });
 Object.defineProperty(exports, 'dmsInstanceV1', { get: function () { return require('./dms-instance-v1'); } });
 Object.defineProperty(exports, 'dmsInstanceV2', { get: function () { return require('./dms-instance-v2'); } });
+Object.defineProperty(exports, 'dmsReassignPartitionsV2', { get: function () { return require('./dms-reassign-partitions-v2'); } });
 Object.defineProperty(exports, 'dmsSmartConnectTaskActionV2', { get: function () { return require('./dms-smart-connect-task-action-v2'); } });
 Object.defineProperty(exports, 'dmsSmartConnectTaskV2', { get: function () { return require('./dms-smart-connect-task-v2'); } });
 Object.defineProperty(exports, 'dmsSmartConnectV2', { get: function () { return require('./dms-smart-connect-v2'); } });

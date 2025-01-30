@@ -4,7 +4,7 @@
 
 ### ApigwSignatureAssociateV2 <a name="ApigwSignatureAssociateV2" id="@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2 opentelekomcloud_apigw_signature_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer"></a>
 
@@ -40,10 +40,10 @@ apigwSignatureAssociateV2.ApigwSignatureAssociateV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.publishIds">publish_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.signatureId">signature_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.publishIds">publish_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.signatureId">signature_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts">ApigwSignatureAssociateV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#timeouts ApigwSignatureAssociateV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#timeouts ApigwSignatureAssociateV2#timeouts}
 
 ---
 
@@ -525,7 +525,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}.
 
 ---
 
@@ -533,7 +533,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}.
 
 ---
 
@@ -541,7 +541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}.
 
 ---
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the ApigwSignatureAssociateV2 
 
 The id of the existing ApigwSignatureAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,10 +1021,10 @@ apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.publishIds">publish_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.signatureId">signature_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.publishIds">publish_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.signatureId">signature_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts">ApigwSignatureAssociateV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1107,7 +1107,7 @@ gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#gateway_id ApigwSignatureAssociateV2#gateway_id}.
 
 ---
 
@@ -1119,7 +1119,7 @@ publish_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#publish_ids ApigwSignatureAssociateV2#publish_ids}.
 
 ---
 
@@ -1131,7 +1131,7 @@ signature_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#signature_id ApigwSignatureAssociateV2#signature_id}.
 
 ---
 
@@ -1143,7 +1143,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#id ApigwSignatureAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1160,7 +1160,7 @@ timeouts: ApigwSignatureAssociateV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#timeouts ApigwSignatureAssociateV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#timeouts ApigwSignatureAssociateV2#timeouts}
 
 ---
 
@@ -1182,9 +1182,9 @@ apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureAssociateV2.ApigwSignatureAssociateV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}. |
 
 ---
 
@@ -1196,7 +1196,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#create ApigwSignatureAssociateV2#create}.
 
 ---
 
@@ -1208,7 +1208,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#delete ApigwSignatureAssociateV2#delete}.
 
 ---
 
@@ -1220,7 +1220,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.29/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/apigw_signature_associate_v2#update ApigwSignatureAssociateV2#update}.
 
 ---
 
