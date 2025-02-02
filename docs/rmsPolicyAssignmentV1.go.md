@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.NewRmsPolicyAssignmentV1(scope Construct, id *string, config RmsPolicyAssignmentV1Config) RmsPolicyAssignmentV1
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.RmsPolicyAssignmentV1_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.RmsPolicyAssignmentV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ rmspolicyassignmentv1.RmsPolicyAssignmentV1_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.RmsPolicyAssignmentV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ rmspolicyassignmentv1.RmsPolicyAssignmentV1_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.RmsPolicyAssignmentV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 &rmspolicyassignmentv1.RmsPolicyAssignmentV1Config {
 	Connection: interface{},
@@ -1033,15 +1033,15 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rms
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	CustomPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1CustomPolicy,
+	CustomPolicy: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1CustomPolicy,
 	Description: *string,
 	Id: *string,
 	Parameters: *map[string]*string,
 	Period: *string,
 	PolicyDefinitionId: *string,
-	PolicyFilter: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1PolicyFilter,
+	PolicyFilter: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1PolicyFilter,
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1Timeouts,
 }
 ```
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1CustomPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 &rmspolicyassignmentv1.RmsPolicyAssignmentV1CustomPolicy {
 	AuthType: *string,
@@ -1333,7 +1333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1PolicyFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 &rmspolicyassignmentv1.RmsPolicyAssignmentV1PolicyFilter {
 	Region: *string,
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 &rmspolicyassignmentv1.RmsPolicyAssignmentV1Timeouts {
 	Create: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1CustomPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.NewRmsPolicyAssignmentV1CustomPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsPolicyAssignmentV1CustomPolicyOutputReference
 ```
@@ -1805,7 +1805,7 @@ func InternalValue() RmsPolicyAssignmentV1CustomPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1PolicyFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.NewRmsPolicyAssignmentV1PolicyFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsPolicyAssignmentV1PolicyFilterOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() RmsPolicyAssignmentV1PolicyFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsPolicyAssignmentV1.RmsPolicyAssignmentV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmspolicyassignmentv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmspolicyassignmentv1"
 
 rmspolicyassignmentv1.NewRmsPolicyAssignmentV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsPolicyAssignmentV1TimeoutsOutputReference
 ```
