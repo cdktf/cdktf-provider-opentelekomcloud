@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,32 @@ import * as cdktf from 'cdktf';
 
 export interface DataOpentelekomcloudVpcBandwidthConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#enterprise_project_id DataOpentelekomcloudVpcBandwidth#enterprise_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#enterprise_project_id DataOpentelekomcloudVpcBandwidth#enterprise_project_id}
   */
   readonly enterpriseProjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#id DataOpentelekomcloudVpcBandwidth#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#id DataOpentelekomcloudVpcBandwidth#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#name DataOpentelekomcloudVpcBandwidth#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#name DataOpentelekomcloudVpcBandwidth#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#region DataOpentelekomcloudVpcBandwidth#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#region DataOpentelekomcloudVpcBandwidth#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#size DataOpentelekomcloudVpcBandwidth#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#size DataOpentelekomcloudVpcBandwidth#size}
   */
   readonly size?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth}
 */
 export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource {
 
@@ -54,7 +54,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   * Generates CDKTF code for importing a DataOpentelekomcloudVpcBandwidth resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataOpentelekomcloudVpcBandwidth to import
-  * @param importFromId The id of the existing DataOpentelekomcloudVpcBandwidth that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataOpentelekomcloudVpcBandwidth that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataOpentelekomcloudVpcBandwidth to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -66,7 +66,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_bandwidth opentelekomcloud_vpc_bandwidth} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class DataOpentelekomcloudVpcBandwidth extends cdktf.TerraformDataSource 
       terraformResourceType: 'opentelekomcloud_vpc_bandwidth',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.30',
+        providerVersion: '1.36.31',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -311,6 +311,9 @@ Object.defineProperty(exports, 'dataOpentelekomcloudDmsProductV1', { get: functi
 Object.defineProperty(exports, 'dataOpentelekomcloudDnsNameserversV2', { get: function () { return require('./data-opentelekomcloud-dns-nameservers-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDnsZoneV2', { get: function () { return require('./data-opentelekomcloud-dns-zone-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudDwsFlavorsV2', { get: function () { return require('./data-opentelekomcloud-dws-flavors-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudEnterpriseVpnConnectionV5', { get: function () { return require('./data-opentelekomcloud-enterprise-vpn-connection-v5'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudEnterpriseVpnCustomerGatewayV5', { get: function () { return require('./data-opentelekomcloud-enterprise-vpn-customer-gateway-v5'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudEnterpriseVpnGatewayV5', { get: function () { return require('./data-opentelekomcloud-enterprise-vpn-gateway-v5'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudEvsVolumesV2', { get: function () { return require('./data-opentelekomcloud-evs-volumes-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudHssHostGroupsV5', { get: function () { return require('./data-opentelekomcloud-hss-host-groups-v5'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudHssHostsV5', { get: function () { return require('./data-opentelekomcloud-hss-hosts-v5'); } });

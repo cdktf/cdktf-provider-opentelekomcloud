@@ -4,7 +4,7 @@
 
 ### CssClusterV1 <a name="CssClusterV1" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.Initializer"></a>
 
@@ -73,15 +73,19 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putBackupStrategy">PutBackupStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putDatastore">PutDatastore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putNodeConfig">PutNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putPublicAccess">PutPublicAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetAdminPass">ResetAdminPass</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetBackupStrategy">ResetBackupStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetDatastore">ResetDatastore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetEnableAuthority">ResetEnableAuthority</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetEnableHttps">ResetEnableHttps</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetExpectNodeNum">ResetExpectNodeNum</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetPublicAccess">ResetPublicAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -375,6 +379,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutBackupStrategy` <a name="PutBackupStrategy" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putBackupStrategy"></a>
+
+```csharp
+private void PutBackupStrategy(CssClusterV1BackupStrategy Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putBackupStrategy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a>
+
+---
+
 ##### `PutDatastore` <a name="PutDatastore" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putDatastore"></a>
 
 ```csharp
@@ -399,6 +415,18 @@ private void PutNodeConfig(CssClusterV1NodeConfig Value)
 
 ---
 
+##### `PutPublicAccess` <a name="PutPublicAccess" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putPublicAccess"></a>
+
+```csharp
+private void PutPublicAccess(CssClusterV1PublicAccess Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putPublicAccess.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.putTimeouts"></a>
 
 ```csharp
@@ -415,6 +443,12 @@ private void PutTimeouts(CssClusterV1Timeouts Value)
 
 ```csharp
 private void ResetAdminPass()
+```
+
+##### `ResetBackupStrategy` <a name="ResetBackupStrategy" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetBackupStrategy"></a>
+
+```csharp
+private void ResetBackupStrategy()
 ```
 
 ##### `ResetDatastore` <a name="ResetDatastore" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetDatastore"></a>
@@ -445,6 +479,12 @@ private void ResetExpectNodeNum()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetPublicAccess` <a name="ResetPublicAccess" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetPublicAccess"></a>
+
+```csharp
+private void ResetPublicAccess()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.resetTags"></a>
@@ -562,7 +602,7 @@ The construct id used in the generated config for the CssClusterV1 to import.
 
 The id of the existing CssClusterV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,14 +632,18 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupAvailable">BackupAvailable</a></code> | <code>HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupStrategy">BackupStrategy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference">CssClusterV1BackupStrategyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.created">Created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.datastore">Datastore</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1DatastoreOutputReference">CssClusterV1DatastoreOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.endpoint">Endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.nodeConfig">NodeConfig</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigOutputReference">CssClusterV1NodeConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.nodes">Nodes</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodesList">CssClusterV1NodesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference">CssClusterV1PublicAccessOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1TimeoutsOutputReference">CssClusterV1TimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.updated">Updated</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.adminPassInput">AdminPassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupStrategyInput">BackupStrategyInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.datastoreInput">DatastoreInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore">CssClusterV1Datastore</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.enableAuthorityInput">EnableAuthorityInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.enableHttpsInput">EnableHttpsInput</a></code> | <code>object</code> | *No description.* |
@@ -607,6 +651,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.nodeConfigInput">NodeConfigInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig">CssClusterV1NodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.publicAccessInput">PublicAccessInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.adminPass">AdminPass</a></code> | <code>string</code> | *No description.* |
@@ -761,6 +806,26 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `BackupAvailable`<sup>Required</sup> <a name="BackupAvailable" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupAvailable"></a>
+
+```csharp
+public IResolvable BackupAvailable { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.IResolvable
+
+---
+
+##### `BackupStrategy`<sup>Required</sup> <a name="BackupStrategy" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupStrategy"></a>
+
+```csharp
+public CssClusterV1BackupStrategyOutputReference BackupStrategy { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference">CssClusterV1BackupStrategyOutputReference</a>
+
+---
+
 ##### `Created`<sup>Required</sup> <a name="Created" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.created"></a>
 
 ```csharp
@@ -811,6 +876,16 @@ public CssClusterV1NodesList Nodes { get; }
 
 ---
 
+##### `PublicAccess`<sup>Required</sup> <a name="PublicAccess" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.publicAccess"></a>
+
+```csharp
+public CssClusterV1PublicAccessOutputReference PublicAccess { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference">CssClusterV1PublicAccessOutputReference</a>
+
+---
+
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.timeouts"></a>
 
 ```csharp
@@ -838,6 +913,16 @@ public string AdminPassInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `BackupStrategyInput`<sup>Optional</sup> <a name="BackupStrategyInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.backupStrategyInput"></a>
+
+```csharp
+public CssClusterV1BackupStrategy BackupStrategyInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a>
 
 ---
 
@@ -908,6 +993,16 @@ public CssClusterV1NodeConfig NodeConfigInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig">CssClusterV1NodeConfig</a>
+
+---
+
+##### `PublicAccessInput`<sup>Optional</sup> <a name="PublicAccessInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1.property.publicAccessInput"></a>
+
+```csharp
+public CssClusterV1PublicAccess PublicAccessInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a>
 
 ---
 
@@ -1021,6 +1116,66 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### CssClusterV1BackupStrategy <a name="CssClusterV1BackupStrategy" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new CssClusterV1BackupStrategy {
+    double KeepDays,
+    string Prefix,
+    string StartTime
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.keepDays">KeepDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#keep_days CssClusterV1#keep_days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.prefix">Prefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#prefix CssClusterV1#prefix}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.startTime">StartTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#start_time CssClusterV1#start_time}. |
+
+---
+
+##### `KeepDays`<sup>Required</sup> <a name="KeepDays" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.keepDays"></a>
+
+```csharp
+public double KeepDays { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#keep_days CssClusterV1#keep_days}.
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.prefix"></a>
+
+```csharp
+public string Prefix { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#prefix CssClusterV1#prefix}.
+
+---
+
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy.property.startTime"></a>
+
+```csharp
+public string StartTime { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#start_time CssClusterV1#start_time}.
+
+---
+
 ### CssClusterV1Config <a name="CssClusterV1Config" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.Initializer"></a>
@@ -1039,11 +1194,13 @@ new CssClusterV1Config {
     string Name,
     CssClusterV1NodeConfig NodeConfig,
     string AdminPass = null,
+    CssClusterV1BackupStrategy BackupStrategy = null,
     CssClusterV1Datastore Datastore = null,
     object EnableAuthority = null,
     object EnableHttps = null,
     double ExpectNodeNum = null,
     string Id = null,
+    CssClusterV1PublicAccess PublicAccess = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
     CssClusterV1Timeouts Timeouts = null
 };
@@ -1060,15 +1217,17 @@ new CssClusterV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#name CssClusterV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#name CssClusterV1#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.nodeConfig">NodeConfig</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig">CssClusterV1NodeConfig</a></code> | node_config block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.adminPass">AdminPass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.adminPass">AdminPass</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.backupStrategy">BackupStrategy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a></code> | backup_strategy block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.datastore">Datastore</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore">CssClusterV1Datastore</a></code> | datastore block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.enableAuthority">EnableAuthority</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.enableHttps">EnableHttps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.expectNodeNum">ExpectNodeNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#id CssClusterV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#tags CssClusterV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.enableAuthority">EnableAuthority</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.enableHttps">EnableHttps</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.expectNodeNum">ExpectNodeNum</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#id CssClusterV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.publicAccess">PublicAccess</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a></code> | public_access block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#tags CssClusterV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts">CssClusterV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1151,7 +1310,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#name CssClusterV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#name CssClusterV1#name}.
 
 ---
 
@@ -1165,7 +1324,7 @@ public CssClusterV1NodeConfig NodeConfig { get; set; }
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#node_config CssClusterV1#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#node_config CssClusterV1#node_config}
 
 ---
 
@@ -1177,7 +1336,21 @@ public string AdminPass { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}.
+
+---
+
+##### `BackupStrategy`<sup>Optional</sup> <a name="BackupStrategy" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.backupStrategy"></a>
+
+```csharp
+public CssClusterV1BackupStrategy BackupStrategy { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a>
+
+backup_strategy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#backup_strategy CssClusterV1#backup_strategy}
 
 ---
 
@@ -1191,7 +1364,7 @@ public CssClusterV1Datastore Datastore { get; set; }
 
 datastore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#datastore CssClusterV1#datastore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#datastore CssClusterV1#datastore}
 
 ---
 
@@ -1203,7 +1376,7 @@ public object EnableAuthority { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}.
 
 ---
 
@@ -1215,7 +1388,7 @@ public object EnableHttps { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}.
 
 ---
 
@@ -1227,7 +1400,7 @@ public double ExpectNodeNum { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}.
 
 ---
 
@@ -1239,10 +1412,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#id CssClusterV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#id CssClusterV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `PublicAccess`<sup>Optional</sup> <a name="PublicAccess" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Config.property.publicAccess"></a>
+
+```csharp
+public CssClusterV1PublicAccess PublicAccess { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a>
+
+public_access block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#public_access CssClusterV1#public_access}
 
 ---
 
@@ -1254,7 +1441,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#tags CssClusterV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#tags CssClusterV1#tags}.
 
 ---
 
@@ -1268,7 +1455,7 @@ public CssClusterV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#timeouts CssClusterV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#timeouts CssClusterV1#timeouts}
 
 ---
 
@@ -1289,8 +1476,8 @@ new CssClusterV1Datastore {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#type CssClusterV1#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#version CssClusterV1#version}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#type CssClusterV1#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Datastore.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#version CssClusterV1#version}. |
 
 ---
 
@@ -1302,7 +1489,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#type CssClusterV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#type CssClusterV1#type}.
 
 ---
 
@@ -1314,7 +1501,7 @@ public string Version { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#version CssClusterV1#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#version CssClusterV1#version}.
 
 ---
 
@@ -1337,10 +1524,10 @@ new CssClusterV1NodeConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.flavor">Flavor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.flavor">Flavor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.networkInfo">NetworkInfo</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo">CssClusterV1NodeConfigNetworkInfo</a></code> | network_info block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.volume">Volume</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume">CssClusterV1NodeConfigVolume</a></code> | volume block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}. |
 
 ---
 
@@ -1352,7 +1539,7 @@ public string Flavor { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}.
 
 ---
 
@@ -1366,7 +1553,7 @@ public CssClusterV1NodeConfigNetworkInfo NetworkInfo { get; set; }
 
 network_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#network_info CssClusterV1#network_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#network_info CssClusterV1#network_info}
 
 ---
 
@@ -1380,7 +1567,7 @@ public CssClusterV1NodeConfigVolume Volume { get; set; }
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#volume CssClusterV1#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#volume CssClusterV1#volume}
 
 ---
 
@@ -1392,7 +1579,7 @@ public string AvailabilityZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}.
 
 ---
 
@@ -1414,9 +1601,9 @@ new CssClusterV1NodeConfigNetworkInfo {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.networkId">NetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.securityGroupId">SecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.networkId">NetworkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.securityGroupId">SecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigNetworkInfo.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}. |
 
 ---
 
@@ -1428,7 +1615,7 @@ public string NetworkId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}.
 
 ---
 
@@ -1440,7 +1627,7 @@ public string SecurityGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}.
 
 ---
 
@@ -1452,7 +1639,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}.
 
 ---
 
@@ -1474,9 +1661,9 @@ new CssClusterV1NodeConfigVolume {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#size CssClusterV1#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.encryptionKey">EncryptionKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#size CssClusterV1#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.volumeType">VolumeType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1NodeConfigVolume.property.encryptionKey">EncryptionKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}. |
 
 ---
 
@@ -1488,7 +1675,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#size CssClusterV1#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#size CssClusterV1#size}.
 
 ---
 
@@ -1500,7 +1687,7 @@ public string VolumeType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}.
 
 ---
 
@@ -1512,7 +1699,7 @@ public string EncryptionKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}.
 
 ---
 
@@ -1528,6 +1715,66 @@ new CssClusterV1Nodes {
 };
 ```
 
+
+### CssClusterV1PublicAccess <a name="CssClusterV1PublicAccess" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new CssClusterV1PublicAccess {
+    double Bandwidth,
+    object WhitelistEnabled,
+    string Whitelist = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.bandwidth">Bandwidth</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#bandwidth CssClusterV1#bandwidth}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.whitelistEnabled">WhitelistEnabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist_enabled CssClusterV1#whitelist_enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.whitelist">Whitelist</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist CssClusterV1#whitelist}. |
+
+---
+
+##### `Bandwidth`<sup>Required</sup> <a name="Bandwidth" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.bandwidth"></a>
+
+```csharp
+public double Bandwidth { get; set; }
+```
+
+- *Type:* double
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#bandwidth CssClusterV1#bandwidth}.
+
+---
+
+##### `WhitelistEnabled`<sup>Required</sup> <a name="WhitelistEnabled" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.whitelistEnabled"></a>
+
+```csharp
+public object WhitelistEnabled { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist_enabled CssClusterV1#whitelist_enabled}.
+
+---
+
+##### `Whitelist`<sup>Optional</sup> <a name="Whitelist" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess.property.whitelist"></a>
+
+```csharp
+public string Whitelist { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist CssClusterV1#whitelist}.
+
+---
 
 ### CssClusterV1Timeouts <a name="CssClusterV1Timeouts" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts"></a>
 
@@ -1546,8 +1793,8 @@ new CssClusterV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#create CssClusterV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#update CssClusterV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#create CssClusterV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#update CssClusterV1#update}. |
 
 ---
 
@@ -1559,7 +1806,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#create CssClusterV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#create CssClusterV1#create}.
 
 ---
 
@@ -1571,11 +1818,326 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#update CssClusterV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#update CssClusterV1#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### CssClusterV1BackupStrategyOutputReference <a name="CssClusterV1BackupStrategyOutputReference" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new CssClusterV1BackupStrategyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.keepDaysInput">KeepDaysInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.prefixInput">PrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.startTimeInput">StartTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.keepDays">KeepDays</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.prefix">Prefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.startTime">StartTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeepDaysInput`<sup>Optional</sup> <a name="KeepDaysInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.keepDaysInput"></a>
+
+```csharp
+public double KeepDaysInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `PrefixInput`<sup>Optional</sup> <a name="PrefixInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.prefixInput"></a>
+
+```csharp
+public string PrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StartTimeInput`<sup>Optional</sup> <a name="StartTimeInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.startTimeInput"></a>
+
+```csharp
+public string StartTimeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeepDays`<sup>Required</sup> <a name="KeepDays" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.keepDays"></a>
+
+```csharp
+public double KeepDays { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Prefix`<sup>Required</sup> <a name="Prefix" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.prefix"></a>
+
+```csharp
+public string Prefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.startTime"></a>
+
+```csharp
+public string StartTime { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategyOutputReference.property.internalValue"></a>
+
+```csharp
+public CssClusterV1BackupStrategy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1BackupStrategy">CssClusterV1BackupStrategy</a>
+
+---
+
 
 ### CssClusterV1DatastoreOutputReference <a name="CssClusterV1DatastoreOutputReference" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1DatastoreOutputReference"></a>
 
@@ -3336,6 +3898,339 @@ public CssClusterV1Nodes InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1Nodes">CssClusterV1Nodes</a>
+
+---
+
+
+### CssClusterV1PublicAccessOutputReference <a name="CssClusterV1PublicAccessOutputReference" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new CssClusterV1PublicAccessOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.resetWhitelist">ResetWhitelist</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetWhitelist` <a name="ResetWhitelist" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.resetWhitelist"></a>
+
+```csharp
+private void ResetWhitelist()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.publicIp">PublicIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.bandwidthInput">BandwidthInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistEnabledInput">WhitelistEnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistInput">WhitelistInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.bandwidth">Bandwidth</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelist">Whitelist</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistEnabled">WhitelistEnabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PublicIp`<sup>Required</sup> <a name="PublicIp" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.publicIp"></a>
+
+```csharp
+public string PublicIp { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BandwidthInput`<sup>Optional</sup> <a name="BandwidthInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.bandwidthInput"></a>
+
+```csharp
+public double BandwidthInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `WhitelistEnabledInput`<sup>Optional</sup> <a name="WhitelistEnabledInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistEnabledInput"></a>
+
+```csharp
+public object WhitelistEnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `WhitelistInput`<sup>Optional</sup> <a name="WhitelistInput" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistInput"></a>
+
+```csharp
+public string WhitelistInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Bandwidth`<sup>Required</sup> <a name="Bandwidth" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.bandwidth"></a>
+
+```csharp
+public double Bandwidth { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Whitelist`<sup>Required</sup> <a name="Whitelist" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelist"></a>
+
+```csharp
+public string Whitelist { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `WhitelistEnabled`<sup>Required</sup> <a name="WhitelistEnabled" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.whitelistEnabled"></a>
+
+```csharp
+public object WhitelistEnabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccessOutputReference.property.internalValue"></a>
+
+```csharp
+public CssClusterV1PublicAccess InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.cssClusterV1.CssClusterV1PublicAccess">CssClusterV1PublicAccess</a>
 
 ---
 

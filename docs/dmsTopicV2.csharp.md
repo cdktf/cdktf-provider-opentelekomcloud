@@ -4,7 +4,7 @@
 
 ### DmsTopicV2 <a name="DmsTopicV2" id="@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2 opentelekomcloud_dms_topic_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2 opentelekomcloud_dms_topic_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DmsTopicV2 to import.
 
 The id of the existing DmsTopicV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1007,17 +1007,17 @@ new DmsTopicV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#instance_id DmsTopicV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#name DmsTopicV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#id DmsTopicV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.maxPartitions">MaxPartitions</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#max_partitions DmsTopicV2#max_partitions}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.partition">Partition</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#partition DmsTopicV2#partition}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.remainPartitions">RemainPartitions</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#remain_partitions DmsTopicV2#remain_partitions}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.replication">Replication</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#replication DmsTopicV2#replication}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.retentionTime">RetentionTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#retention_time DmsTopicV2#retention_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#size DmsTopicV2#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.syncMessageFlush">SyncMessageFlush</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#sync_message_flush DmsTopicV2#sync_message_flush}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.syncReplication">SyncReplication</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#sync_replication DmsTopicV2#sync_replication}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#instance_id DmsTopicV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#name DmsTopicV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#id DmsTopicV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.maxPartitions">MaxPartitions</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#max_partitions DmsTopicV2#max_partitions}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.partition">Partition</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#partition DmsTopicV2#partition}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.remainPartitions">RemainPartitions</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#remain_partitions DmsTopicV2#remain_partitions}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.replication">Replication</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#replication DmsTopicV2#replication}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.retentionTime">RetentionTime</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#retention_time DmsTopicV2#retention_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#size DmsTopicV2#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.syncMessageFlush">SyncMessageFlush</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#sync_message_flush DmsTopicV2#sync_message_flush}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsTopicV2.DmsTopicV2Config.property.syncReplication">SyncReplication</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#sync_replication DmsTopicV2#sync_replication}. |
 
 ---
 
@@ -1099,7 +1099,7 @@ public string InstanceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#instance_id DmsTopicV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#instance_id DmsTopicV2#instance_id}.
 
 ---
 
@@ -1111,7 +1111,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#name DmsTopicV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#name DmsTopicV2#name}.
 
 ---
 
@@ -1123,7 +1123,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#id DmsTopicV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#id DmsTopicV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ public double MaxPartitions { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#max_partitions DmsTopicV2#max_partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#max_partitions DmsTopicV2#max_partitions}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public double Partition { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#partition DmsTopicV2#partition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#partition DmsTopicV2#partition}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public double RemainPartitions { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#remain_partitions DmsTopicV2#remain_partitions}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#remain_partitions DmsTopicV2#remain_partitions}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public double Replication { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#replication DmsTopicV2#replication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#replication DmsTopicV2#replication}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public double RetentionTime { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#retention_time DmsTopicV2#retention_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#retention_time DmsTopicV2#retention_time}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#size DmsTopicV2#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#size DmsTopicV2#size}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public object SyncMessageFlush { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#sync_message_flush DmsTopicV2#sync_message_flush}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#sync_message_flush DmsTopicV2#sync_message_flush}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public object SyncReplication { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/dms_topic_v2#sync_replication DmsTopicV2#sync_replication}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/dms_topic_v2#sync_replication DmsTopicV2#sync_replication}.
 
 ---
 

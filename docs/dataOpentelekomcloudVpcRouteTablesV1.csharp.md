@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudVpcRouteTablesV1 <a name="DataOpentelekomcloudVpcRouteTablesV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1 opentelekomcloud_vpc_route_tables_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudVpcRou
 
 The id of the existing DataOpentelekomcloudVpcRouteTablesV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -668,9 +668,9 @@ new DataOpentelekomcloudVpcRouteTablesV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#id DataOpentelekomcloudVpcRouteTablesV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#subnet_id DataOpentelekomcloudVpcRouteTablesV1#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#vpc_id DataOpentelekomcloudVpcRouteTablesV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#id DataOpentelekomcloudVpcRouteTablesV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#subnet_id DataOpentelekomcloudVpcRouteTablesV1#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudVpcRouteTablesV1.DataOpentelekomcloudVpcRouteTablesV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#vpc_id DataOpentelekomcloudVpcRouteTablesV1#vpc_id}. |
 
 ---
 
@@ -752,7 +752,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#id DataOpentelekomcloudVpcRouteTablesV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#id DataOpentelekomcloudVpcRouteTablesV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#subnet_id DataOpentelekomcloudVpcRouteTablesV1#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#subnet_id DataOpentelekomcloudVpcRouteTablesV1#subnet_id}.
 
 ---
 
@@ -779,7 +779,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/data-sources/vpc_route_tables_v1#vpc_id DataOpentelekomcloudVpcRouteTablesV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/vpc_route_tables_v1#vpc_id DataOpentelekomcloudVpcRouteTablesV1#vpc_id}.
 
 ---
 
