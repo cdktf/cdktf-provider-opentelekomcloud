@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +8,64 @@ import * as cdktf from 'cdktf';
 
 export interface CssClusterV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#admin_pass CssClusterV1#admin_pass}
   */
   readonly adminPass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_authority CssClusterV1#enable_authority}
   */
   readonly enableAuthority?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#enable_https CssClusterV1#enable_https}
   */
   readonly enableHttps?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#expect_node_num CssClusterV1#expect_node_num}
   */
   readonly expectNodeNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#id CssClusterV1#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#id CssClusterV1#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#name CssClusterV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#name CssClusterV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#tags CssClusterV1#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#tags CssClusterV1#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
+  * backup_strategy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#backup_strategy CssClusterV1#backup_strategy}
+  */
+  readonly backupStrategy?: CssClusterV1BackupStrategy;
+  /**
   * datastore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#datastore CssClusterV1#datastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#datastore CssClusterV1#datastore}
   */
   readonly datastore?: CssClusterV1Datastore;
   /**
   * node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#node_config CssClusterV1#node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#node_config CssClusterV1#node_config}
   */
   readonly nodeConfig: CssClusterV1NodeConfig;
   /**
+  * public_access block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#public_access CssClusterV1#public_access}
+  */
+  readonly publicAccess?: CssClusterV1PublicAccess;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#timeouts CssClusterV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#timeouts CssClusterV1#timeouts}
   */
   readonly timeouts?: CssClusterV1Timeouts;
 }
@@ -147,13 +154,154 @@ export class CssClusterV1NodesList extends cdktf.ComplexList {
     return new CssClusterV1NodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CssClusterV1BackupStrategy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#keep_days CssClusterV1#keep_days}
+  */
+  readonly keepDays: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#prefix CssClusterV1#prefix}
+  */
+  readonly prefix: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#start_time CssClusterV1#start_time}
+  */
+  readonly startTime: string;
+}
+
+export function cssClusterV1BackupStrategyToTerraform(struct?: CssClusterV1BackupStrategyOutputReference | CssClusterV1BackupStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    keep_days: cdktf.numberToTerraform(struct!.keepDays),
+    prefix: cdktf.stringToTerraform(struct!.prefix),
+    start_time: cdktf.stringToTerraform(struct!.startTime),
+  }
+}
+
+
+export function cssClusterV1BackupStrategyToHclTerraform(struct?: CssClusterV1BackupStrategyOutputReference | CssClusterV1BackupStrategy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    keep_days: {
+      value: cdktf.numberToHclTerraform(struct!.keepDays),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    prefix: {
+      value: cdktf.stringToHclTerraform(struct!.prefix),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: cdktf.stringToHclTerraform(struct!.startTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CssClusterV1BackupStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CssClusterV1BackupStrategy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._keepDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keepDays = this._keepDays;
+    }
+    if (this._prefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefix = this._prefix;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1BackupStrategy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._keepDays = undefined;
+      this._prefix = undefined;
+      this._startTime = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._keepDays = value.keepDays;
+      this._prefix = value.prefix;
+      this._startTime = value.startTime;
+    }
+  }
+
+  // keep_days - computed: false, optional: false, required: true
+  private _keepDays?: number; 
+  public get keepDays() {
+    return this.getNumberAttribute('keep_days');
+  }
+  public set keepDays(value: number) {
+    this._keepDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keepDaysInput() {
+    return this._keepDays;
+  }
+
+  // prefix - computed: false, optional: false, required: true
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // start_time - computed: false, optional: false, required: true
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+}
 export interface CssClusterV1Datastore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#type CssClusterV1#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#type CssClusterV1#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#version CssClusterV1#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#version CssClusterV1#version}
   */
   readonly version?: string;
 }
@@ -266,15 +414,15 @@ export class CssClusterV1DatastoreOutputReference extends cdktf.ComplexObject {
 }
 export interface CssClusterV1NodeConfigNetworkInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#network_id CssClusterV1#network_id}
   */
   readonly networkId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#security_group_id CssClusterV1#security_group_id}
   */
   readonly securityGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#vpc_id CssClusterV1#vpc_id}
   */
   readonly vpcId: string;
 }
@@ -407,15 +555,15 @@ export class CssClusterV1NodeConfigNetworkInfoOutputReference extends cdktf.Comp
 }
 export interface CssClusterV1NodeConfigVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#encryption_key CssClusterV1#encryption_key}
   */
   readonly encryptionKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#size CssClusterV1#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#size CssClusterV1#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#volume_type CssClusterV1#volume_type}
   */
   readonly volumeType: string;
 }
@@ -551,23 +699,23 @@ export class CssClusterV1NodeConfigVolumeOutputReference extends cdktf.ComplexOb
 }
 export interface CssClusterV1NodeConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#availability_zone CssClusterV1#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#flavor CssClusterV1#flavor}
   */
   readonly flavor: string;
   /**
   * network_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#network_info CssClusterV1#network_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#network_info CssClusterV1#network_info}
   */
   readonly networkInfo: CssClusterV1NodeConfigNetworkInfo;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#volume CssClusterV1#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#volume CssClusterV1#volume}
   */
   readonly volume: CssClusterV1NodeConfigVolume;
 }
@@ -727,13 +875,162 @@ export class CssClusterV1NodeConfigOutputReference extends cdktf.ComplexObject {
     return this._volume.internalValue;
   }
 }
+export interface CssClusterV1PublicAccess {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#bandwidth CssClusterV1#bandwidth}
+  */
+  readonly bandwidth: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist CssClusterV1#whitelist}
+  */
+  readonly whitelist?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#whitelist_enabled CssClusterV1#whitelist_enabled}
+  */
+  readonly whitelistEnabled: boolean | cdktf.IResolvable;
+}
+
+export function cssClusterV1PublicAccessToTerraform(struct?: CssClusterV1PublicAccessOutputReference | CssClusterV1PublicAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bandwidth: cdktf.numberToTerraform(struct!.bandwidth),
+    whitelist: cdktf.stringToTerraform(struct!.whitelist),
+    whitelist_enabled: cdktf.booleanToTerraform(struct!.whitelistEnabled),
+  }
+}
+
+
+export function cssClusterV1PublicAccessToHclTerraform(struct?: CssClusterV1PublicAccessOutputReference | CssClusterV1PublicAccess): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    bandwidth: {
+      value: cdktf.numberToHclTerraform(struct!.bandwidth),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    whitelist: {
+      value: cdktf.stringToHclTerraform(struct!.whitelist),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    whitelist_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.whitelistEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CssClusterV1PublicAccessOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CssClusterV1PublicAccess | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bandwidth !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bandwidth = this._bandwidth;
+    }
+    if (this._whitelist !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whitelist = this._whitelist;
+    }
+    if (this._whitelistEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whitelistEnabled = this._whitelistEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CssClusterV1PublicAccess | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bandwidth = undefined;
+      this._whitelist = undefined;
+      this._whitelistEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bandwidth = value.bandwidth;
+      this._whitelist = value.whitelist;
+      this._whitelistEnabled = value.whitelistEnabled;
+    }
+  }
+
+  // bandwidth - computed: false, optional: false, required: true
+  private _bandwidth?: number; 
+  public get bandwidth() {
+    return this.getNumberAttribute('bandwidth');
+  }
+  public set bandwidth(value: number) {
+    this._bandwidth = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthInput() {
+    return this._bandwidth;
+  }
+
+  // public_ip - computed: true, optional: false, required: false
+  public get publicIp() {
+    return this.getStringAttribute('public_ip');
+  }
+
+  // whitelist - computed: false, optional: true, required: false
+  private _whitelist?: string; 
+  public get whitelist() {
+    return this.getStringAttribute('whitelist');
+  }
+  public set whitelist(value: string) {
+    this._whitelist = value;
+  }
+  public resetWhitelist() {
+    this._whitelist = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whitelistInput() {
+    return this._whitelist;
+  }
+
+  // whitelist_enabled - computed: false, optional: false, required: true
+  private _whitelistEnabled?: boolean | cdktf.IResolvable; 
+  public get whitelistEnabled() {
+    return this.getBooleanAttribute('whitelist_enabled');
+  }
+  public set whitelistEnabled(value: boolean | cdktf.IResolvable) {
+    this._whitelistEnabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whitelistEnabledInput() {
+    return this._whitelistEnabled;
+  }
+}
 export interface CssClusterV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#create CssClusterV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#create CssClusterV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#update CssClusterV1#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#update CssClusterV1#update}
   */
   readonly update?: string;
 }
@@ -856,7 +1153,7 @@ export class CssClusterV1TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1}
 */
 export class CssClusterV1 extends cdktf.TerraformResource {
 
@@ -872,7 +1169,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CssClusterV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CssClusterV1 to import
-  * @param importFromId The id of the existing CssClusterV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CssClusterV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CssClusterV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -884,7 +1181,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.30/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/css_cluster_v1 opentelekomcloud_css_cluster_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -895,7 +1192,7 @@ export class CssClusterV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_css_cluster_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.30',
+        providerVersion: '1.36.31',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -913,8 +1210,10 @@ export class CssClusterV1 extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._tags = config.tags;
+    this._backupStrategy.internalValue = config.backupStrategy;
     this._datastore.internalValue = config.datastore;
     this._nodeConfig.internalValue = config.nodeConfig;
+    this._publicAccess.internalValue = config.publicAccess;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -936,6 +1235,11 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get adminPassInput() {
     return this._adminPass;
+  }
+
+  // backup_available - computed: true, optional: false, required: false
+  public get backupAvailable() {
+    return this.getBooleanAttribute('backup_available');
   }
 
   // created - computed: true, optional: false, required: false
@@ -1052,6 +1356,22 @@ export class CssClusterV1 extends cdktf.TerraformResource {
     return this.getStringAttribute('updated');
   }
 
+  // backup_strategy - computed: false, optional: true, required: false
+  private _backupStrategy = new CssClusterV1BackupStrategyOutputReference(this, "backup_strategy");
+  public get backupStrategy() {
+    return this._backupStrategy;
+  }
+  public putBackupStrategy(value: CssClusterV1BackupStrategy) {
+    this._backupStrategy.internalValue = value;
+  }
+  public resetBackupStrategy() {
+    this._backupStrategy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupStrategyInput() {
+    return this._backupStrategy.internalValue;
+  }
+
   // datastore - computed: false, optional: true, required: false
   private _datastore = new CssClusterV1DatastoreOutputReference(this, "datastore");
   public get datastore() {
@@ -1079,6 +1399,22 @@ export class CssClusterV1 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nodeConfigInput() {
     return this._nodeConfig.internalValue;
+  }
+
+  // public_access - computed: false, optional: true, required: false
+  private _publicAccess = new CssClusterV1PublicAccessOutputReference(this, "public_access");
+  public get publicAccess() {
+    return this._publicAccess;
+  }
+  public putPublicAccess(value: CssClusterV1PublicAccess) {
+    this._publicAccess.internalValue = value;
+  }
+  public resetPublicAccess() {
+    this._publicAccess.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicAccessInput() {
+    return this._publicAccess.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1110,8 +1446,10 @@ export class CssClusterV1 extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      backup_strategy: cssClusterV1BackupStrategyToTerraform(this._backupStrategy.internalValue),
       datastore: cssClusterV1DatastoreToTerraform(this._datastore.internalValue),
       node_config: cssClusterV1NodeConfigToTerraform(this._nodeConfig.internalValue),
+      public_access: cssClusterV1PublicAccessToTerraform(this._publicAccess.internalValue),
       timeouts: cssClusterV1TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1160,6 +1498,12 @@ export class CssClusterV1 extends cdktf.TerraformResource {
         type: "map",
         storageClassType: "stringMap",
       },
+      backup_strategy: {
+        value: cssClusterV1BackupStrategyToHclTerraform(this._backupStrategy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CssClusterV1BackupStrategyList",
+      },
       datastore: {
         value: cssClusterV1DatastoreToHclTerraform(this._datastore.internalValue),
         isBlock: true,
@@ -1171,6 +1515,12 @@ export class CssClusterV1 extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CssClusterV1NodeConfigList",
+      },
+      public_access: {
+        value: cssClusterV1PublicAccessToHclTerraform(this._publicAccess.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CssClusterV1PublicAccessList",
       },
       timeouts: {
         value: cssClusterV1TimeoutsToHclTerraform(this._timeouts.internalValue),
