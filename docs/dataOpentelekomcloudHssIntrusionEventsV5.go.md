@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5(scope Construct, id *string, config DataOpentelekomcloudHssIntrusionEventsV5Config) DataOpentelekomcloudHssIntrusionEventsV5
 ```
@@ -360,7 +360,7 @@ func ResetSeverity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -935,7 +935,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5Config {
 	Connection: interface{},
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5Events.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5Events {
 
@@ -1284,7 +1284,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStruct {
 
@@ -1297,7 +1297,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStruct {
 
@@ -1310,7 +1310,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStruct {
 
@@ -1323,7 +1323,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfo {
 
@@ -1336,7 +1336,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 &dataopentelekomcloudhssintrusioneventsv5.DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStruct {
 
@@ -1351,7 +1351,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructList
 ```
@@ -1500,7 +1500,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListStructOutputReference
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() DataOpentelekomcloudHssIntrusionEventsV5EventsFileInfoListS
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsList
 ```
@@ -2147,7 +2147,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructList
 ```
@@ -2296,7 +2296,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetailListStructOutputReference
 ```
@@ -2684,7 +2684,7 @@ func InternalValue() DataOpentelekomcloudHssIntrusionEventsV5EventsOperateDetail
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsOutputReference
 ```
@@ -3292,7 +3292,7 @@ func InternalValue() DataOpentelekomcloudHssIntrusionEventsV5Events
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructList
 ```
@@ -3441,7 +3441,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoListStructOutputReference
 ```
@@ -4104,7 +4104,7 @@ func InternalValue() DataOpentelekomcloudHssIntrusionEventsV5EventsProcessInfoLi
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoList
 ```
@@ -4253,7 +4253,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfoOutputReference
 ```
@@ -4729,7 +4729,7 @@ func InternalValue() DataOpentelekomcloudHssIntrusionEventsV5EventsResourceInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructList
 ```
@@ -4878,7 +4878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudHssIntrusionEventsV5.DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudhssintrusioneventsv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudhssintrusioneventsv5"
 
 dataopentelekomcloudhssintrusioneventsv5.NewDataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudHssIntrusionEventsV5EventsUserInfoListStructOutputReference
 ```
