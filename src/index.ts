@@ -195,6 +195,7 @@ export * as rdsInstanceV1 from './rds-instance-v1';
 export * as rdsInstanceV3 from './rds-instance-v3';
 export * as rdsMaintenanceV3 from './rds-maintenance-v3';
 export * as rdsParametergroupV3 from './rds-parametergroup-v3';
+export * as rdsPublicIpAssociateV3 from './rds-public-ip-associate-v3';
 export * as rdsReadReplicaV3 from './rds-read-replica-v3';
 export * as rmsAdvancedQueryV1 from './rms-advanced-query-v1';
 export * as rmsPolicyAssignmentEvaluateV1 from './rms-policy-assignment-evaluate-v1';

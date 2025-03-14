@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface EnterpriseVpnConnectionMonitorV5Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}
   */
   readonly connectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface EnterpriseVpnConnectionMonitorV5Config extends cdktf.TerraformM
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5}
 */
 export class EnterpriseVpnConnectionMonitorV5 extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class EnterpriseVpnConnectionMonitorV5 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EnterpriseVpnConnectionMonitorV5 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnterpriseVpnConnectionMonitorV5 to import
-  * @param importFromId The id of the existing EnterpriseVpnConnectionMonitorV5 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnterpriseVpnConnectionMonitorV5 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnterpriseVpnConnectionMonitorV5 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -54,7 +54,7 @@ export class EnterpriseVpnConnectionMonitorV5 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class EnterpriseVpnConnectionMonitorV5 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_enterprise_vpn_connection_monitor_v5',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.31',
+        providerVersion: '1.36.33',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

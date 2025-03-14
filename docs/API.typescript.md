@@ -312,6 +312,7 @@ The following submodules are available:
 - [rdsInstanceV3](./rdsInstanceV3.typescript.md)
 - [rdsMaintenanceV3](./rdsMaintenanceV3.typescript.md)
 - [rdsParametergroupV3](./rdsParametergroupV3.typescript.md)
+- [rdsPublicIpAssociateV3](./rdsPublicIpAssociateV3.typescript.md)
 - [rdsReadReplicaV3](./rdsReadReplicaV3.typescript.md)
 - [rmsAdvancedQueryV1](./rmsAdvancedQueryV1.typescript.md)
 - [rmsPolicyAssignmentEvaluateV1](./rmsPolicyAssignmentEvaluateV1.typescript.md)

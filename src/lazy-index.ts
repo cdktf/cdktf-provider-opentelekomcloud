@@ -195,6 +195,7 @@ Object.defineProperty(exports, 'rdsInstanceV1', { get: function () { return requ
 Object.defineProperty(exports, 'rdsInstanceV3', { get: function () { return require('./rds-instance-v3'); } });
 Object.defineProperty(exports, 'rdsMaintenanceV3', { get: function () { return require('./rds-maintenance-v3'); } });
 Object.defineProperty(exports, 'rdsParametergroupV3', { get: function () { return require('./rds-parametergroup-v3'); } });
+Object.defineProperty(exports, 'rdsPublicIpAssociateV3', { get: function () { return require('./rds-public-ip-associate-v3'); } });
 Object.defineProperty(exports, 'rdsReadReplicaV3', { get: function () { return require('./rds-read-replica-v3'); } });
 Object.defineProperty(exports, 'rmsAdvancedQueryV1', { get: function () { return require('./rms-advanced-query-v1'); } });
 Object.defineProperty(exports, 'rmsPolicyAssignmentEvaluateV1', { get: function () { return require('./rms-policy-assignment-evaluate-v1'); } });
