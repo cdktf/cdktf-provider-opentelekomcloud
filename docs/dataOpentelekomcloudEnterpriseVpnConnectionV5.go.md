@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudEnterpriseVpnConnectionV5 <a name="DataOpentelekomcloudEnterpriseVpnConnectionV5" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5(scope Construct, id *string, config DataOpentelekomcloudEnterpriseVpnConnectionV5Config) DataOpentelekomcloudEnterpriseVpnConnectionV5
 ```
@@ -283,7 +283,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnC
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnC
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudEnterp
 
 The id of the existing DataOpentelekomcloudEnterpriseVpnConnectionV5 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -781,7 +781,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 &dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config {
 	Connection: interface{},
@@ -807,8 +807,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}. |
 
 ---
 
@@ -890,7 +890,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -905,7 +905,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}.
 
 ---
 
@@ -914,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Ikepolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 &dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5Ikepolicy {
 
@@ -927,7 +927,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 &dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpd {
 
@@ -940,7 +940,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Ipsecpolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 &dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5Ipsecpolicy {
 
@@ -953,7 +953,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 &dataopentelekomcloudenterprisevpnconnectionv5.DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRules {
 
@@ -968,7 +968,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdList
 ```
@@ -1117,7 +1117,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpdOutputReference
 ```
@@ -1417,7 +1417,7 @@ func InternalValue() DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyDpd
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyList
 ```
@@ -1566,7 +1566,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IkepolicyOutputReference
 ```
@@ -1965,7 +1965,7 @@ func InternalValue() DataOpentelekomcloudEnterpriseVpnConnectionV5Ikepolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyList
 ```
@@ -2114,7 +2114,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5IpsecpolicyOutputReference
 ```
@@ -2447,7 +2447,7 @@ func InternalValue() DataOpentelekomcloudEnterpriseVpnConnectionV5Ipsecpolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesList
 ```
@@ -2596,7 +2596,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudenterprisevpnconnectionv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudenterprisevpnconnectionv5"
 
 dataopentelekomcloudenterprisevpnconnectionv5.NewDataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudEnterpriseVpnConnectionV5PolicyRulesOutputReference
 ```

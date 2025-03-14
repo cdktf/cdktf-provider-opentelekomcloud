@@ -312,6 +312,7 @@ The following submodules are available:
 - [rdsInstanceV3](./rdsInstanceV3.csharp.md)
 - [rdsMaintenanceV3](./rdsMaintenanceV3.csharp.md)
 - [rdsParametergroupV3](./rdsParametergroupV3.csharp.md)
+- [rdsPublicIpAssociateV3](./rdsPublicIpAssociateV3.csharp.md)
 - [rdsReadReplicaV3](./rdsReadReplicaV3.csharp.md)
 - [rmsAdvancedQueryV1](./rmsAdvancedQueryV1.csharp.md)
 - [rmsPolicyAssignmentEvaluateV1](./rmsPolicyAssignmentEvaluateV1.csharp.md)

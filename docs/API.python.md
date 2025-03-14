@@ -312,6 +312,7 @@ The following submodules are available:
 - [rdsInstanceV3](./rdsInstanceV3.python.md)
 - [rdsMaintenanceV3](./rdsMaintenanceV3.python.md)
 - [rdsParametergroupV3](./rdsParametergroupV3.python.md)
+- [rdsPublicIpAssociateV3](./rdsPublicIpAssociateV3.python.md)
 - [rdsReadReplicaV3](./rdsReadReplicaV3.python.md)
 - [rmsAdvancedQueryV1](./rmsAdvancedQueryV1.python.md)
 - [rmsPolicyAssignmentEvaluateV1](./rmsPolicyAssignmentEvaluateV1.python.md)

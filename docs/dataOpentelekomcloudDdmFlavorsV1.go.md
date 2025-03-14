@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudDdmFlavorsV1 <a name="DataOpentelekomcloudDdmFlavorsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1 opentelekomcloud_ddm_flavors_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1 opentelekomcloud_ddm_flavors_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1(scope Construct, id *string, config DataOpentelekomcloudDdmFlavorsV1Config) DataOpentelekomcloudDdmFlavorsV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudDdmFla
 
 The id of the existing DataOpentelekomcloudDdmFlavorsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1Config {
 	Connection: interface{},
@@ -642,8 +642,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.engineId">EngineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1#engine_id DataOpentelekomcloudDdmFlavorsV1#engine_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1#id DataOpentelekomcloudDdmFlavorsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.engineId">EngineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1#engine_id DataOpentelekomcloudDdmFlavorsV1#engine_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1#id DataOpentelekomcloudDdmFlavorsV1#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ EngineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1#engine_id DataOpentelekomcloudDdmFlavorsV1#engine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1#engine_id DataOpentelekomcloudDdmFlavorsV1#engine_id}.
 
 ---
 
@@ -737,7 +737,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.31/docs/data-sources/ddm_flavors_v1#id DataOpentelekomcloudDdmFlavorsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/ddm_flavors_v1#id DataOpentelekomcloudDdmFlavorsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -749,7 +749,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1FlavorGroups {
 
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 &dataopentelekomcloudddmflavorsv1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsList
 ```
@@ -926,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavorsOutputReference
 ```
@@ -1303,7 +1303,7 @@ func InternalValue() DataOpentelekomcloudDdmFlavorsV1FlavorGroupsFlavors
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsList
 ```
@@ -1452,7 +1452,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDdmFlavorsV1.DataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudddmflavorsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudddmflavorsv1"
 
 dataopentelekomcloudddmflavorsv1.NewDataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudDdmFlavorsV1FlavorGroupsOutputReference
 ```
