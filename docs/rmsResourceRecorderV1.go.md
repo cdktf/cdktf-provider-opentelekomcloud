@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.NewRmsResourceRecorderV1(scope Construct, id *string, config RmsResourceRecorderV1Config) RmsResourceRecorderV1
 ```
@@ -438,7 +438,7 @@ func ResetSmnChannel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.RmsResourceRecorderV1_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.RmsResourceRecorderV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ rmsresourcerecorderv1.RmsResourceRecorderV1_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.RmsResourceRecorderV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ rmsresourcerecorderv1.RmsResourceRecorderV1_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.RmsResourceRecorderV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 &rmsresourcerecorderv1.RmsResourceRecorderV1Config {
 	Connection: interface{},
@@ -859,10 +859,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AgencyName: *string,
-	Selector: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsResourceRecorderV1.RmsResourceRecorderV1Selector,
+	Selector: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1Selector,
 	Id: *string,
-	ObsChannel: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsResourceRecorderV1.RmsResourceRecorderV1ObsChannel,
-	SmnChannel: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.rmsResourceRecorderV1.RmsResourceRecorderV1SmnChannel,
+	ObsChannel: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1ObsChannel,
+	SmnChannel: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1SmnChannel,
 }
 ```
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1ObsChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 &rmsresourcerecorderv1.RmsResourceRecorderV1ObsChannel {
 	Bucket: *string,
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1Selector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 &rmsresourcerecorderv1.RmsResourceRecorderV1Selector {
 	AllSupported: interface{},
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1SmnChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 &rmsresourcerecorderv1.RmsResourceRecorderV1SmnChannel {
 	TopicUrn: *string,
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1ObsChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.NewRmsResourceRecorderV1ObsChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsResourceRecorderV1ObsChannelOutputReference
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() RmsResourceRecorderV1ObsChannel
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1SelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.NewRmsResourceRecorderV1SelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsResourceRecorderV1SelectorOutputReference
 ```
@@ -1791,7 +1791,7 @@ func InternalValue() RmsResourceRecorderV1Selector
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsResourceRecorderV1.RmsResourceRecorderV1SmnChannelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/rmsresourcerecorderv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsresourcerecorderv1"
 
 rmsresourcerecorderv1.NewRmsResourceRecorderV1SmnChannelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RmsResourceRecorderV1SmnChannelOutputReference
 ```
