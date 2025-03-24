@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.NewLbPoolV2(scope Construct, id *string, config LbPoolV2Config) LbPoolV2
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.LbPoolV2_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.LbPoolV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ lbpoolv2.LbPoolV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.LbPoolV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ lbpoolv2.LbPoolV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.LbPoolV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1027,7 +1027,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 &lbpoolv2.LbPoolV2Config {
 	Connection: interface{},
@@ -1048,7 +1048,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Persistence: interface{},
 	Region: *string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.lbPoolV2.LbPoolV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbPoolV2.LbPoolV2Timeouts,
 }
 ```
 
@@ -1304,7 +1304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2Persistence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 &lbpoolv2.LbPoolV2Persistence {
 	CookieName: *string,
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 &lbpoolv2.LbPoolV2Timeouts {
 	Create: *string,
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2PersistenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.NewLbPoolV2PersistenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LbPoolV2PersistenceList
 ```
@@ -1572,7 +1572,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2PersistenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.NewLbPoolV2PersistenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LbPoolV2PersistenceOutputReference
 ```
@@ -1897,7 +1897,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbPoolV2.LbPoolV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbpoolv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbpoolv2"
 
 lbpoolv2.NewLbPoolV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbPoolV2TimeoutsOutputReference
 ```
