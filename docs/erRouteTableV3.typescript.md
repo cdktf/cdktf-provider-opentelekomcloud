@@ -4,7 +4,7 @@
 
 ### ErRouteTableV3 <a name="ErRouteTableV3" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3 opentelekomcloud_er_route_table_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -392,6 +393,12 @@ public resetDescription(): void
 public resetId(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.resetTimeouts"></a>
 
 ```typescript
@@ -501,7 +508,7 @@ The construct id used in the generated config for the ErRouteTableV3 to import.
 
 The id of the existing ErRouteTableV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,11 +549,13 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.instanceIdInput">instanceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts">ErRouteTableV3Timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.instanceId">instanceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -802,6 +811,16 @@ public readonly nameInput: string;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.timeoutsInput"></a>
 
 ```typescript
@@ -852,6 +871,16 @@ public readonly name: string;
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -893,10 +922,11 @@ const erRouteTableV3Config: erRouteTableV3.ErRouteTableV3Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#instance_id ErRouteTableV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#name ErRouteTableV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#description ErRouteTableV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#id ErRouteTableV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#instance_id ErRouteTableV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#name ErRouteTableV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#description ErRouteTableV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#id ErRouteTableV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#tags ErRouteTableV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts">ErRouteTableV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -979,7 +1009,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#instance_id ErRouteTableV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#instance_id ErRouteTableV3#instance_id}.
 
 ---
 
@@ -991,7 +1021,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#name ErRouteTableV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#name ErRouteTableV3#name}.
 
 ---
 
@@ -1003,7 +1033,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#description ErRouteTableV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#description ErRouteTableV3#description}.
 
 ---
 
@@ -1015,10 +1045,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#id ErRouteTableV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#id ErRouteTableV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Config.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#tags ErRouteTableV3#tags}.
 
 ---
 
@@ -1032,7 +1074,7 @@ public readonly timeouts: ErRouteTableV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#timeouts ErRouteTableV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#timeouts ErRouteTableV3#timeouts}
 
 ---
 
@@ -1050,9 +1092,9 @@ const erRouteTableV3Timeouts: erRouteTableV3.ErRouteTableV3Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#create ErRouteTableV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#delete ErRouteTableV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#update ErRouteTableV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#create ErRouteTableV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#delete ErRouteTableV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erRouteTableV3.ErRouteTableV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#update ErRouteTableV3#update}. |
 
 ---
 
@@ -1064,7 +1106,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#create ErRouteTableV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#create ErRouteTableV3#create}.
 
 ---
 
@@ -1076,7 +1118,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#delete ErRouteTableV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#delete ErRouteTableV3#delete}.
 
 ---
 
@@ -1088,7 +1130,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_route_table_v3#update ErRouteTableV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_route_table_v3#update ErRouteTableV3#update}.
 
 ---
 

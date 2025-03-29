@@ -4,7 +4,7 @@
 
 ### ApigwResponseV2 <a name="ApigwResponseV2" id="@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2 opentelekomcloud_apigw_response_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2 opentelekomcloud_apigw_response_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApigwResponseV2 to import.
 
 The id of the existing ApigwResponseV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,10 +866,10 @@ new ApigwResponseV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#gateway_id ApigwResponseV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#group_id ApigwResponseV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#name ApigwResponseV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#id ApigwResponseV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#gateway_id ApigwResponseV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.groupId">GroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#group_id ApigwResponseV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#name ApigwResponseV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#id ApigwResponseV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Config.property.rule">Rule</a></code> | <code>object</code> | rule block. |
 
 ---
@@ -952,7 +952,7 @@ public string GatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#gateway_id ApigwResponseV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#gateway_id ApigwResponseV2#gateway_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public string GroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#group_id ApigwResponseV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#group_id ApigwResponseV2#group_id}.
 
 ---
 
@@ -976,7 +976,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#name ApigwResponseV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#name ApigwResponseV2#name}.
 
 ---
 
@@ -988,7 +988,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#id ApigwResponseV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#id ApigwResponseV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ public object Rule { get; set; }
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#rule ApigwResponseV2#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#rule ApigwResponseV2#rule}
 
 ---
 
@@ -1027,9 +1027,9 @@ new ApigwResponseV2Rule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.body">Body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#body ApigwResponseV2#body}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.errorType">ErrorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#error_type ApigwResponseV2#error_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.statusCode">StatusCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#status_code ApigwResponseV2#status_code}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.body">Body</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#body ApigwResponseV2#body}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.errorType">ErrorType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#error_type ApigwResponseV2#error_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwResponseV2.ApigwResponseV2Rule.property.statusCode">StatusCode</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#status_code ApigwResponseV2#status_code}. |
 
 ---
 
@@ -1041,7 +1041,7 @@ public string Body { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#body ApigwResponseV2#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#body ApigwResponseV2#body}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public string ErrorType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#error_type ApigwResponseV2#error_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#error_type ApigwResponseV2#error_type}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public double StatusCode { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/apigw_response_v2#status_code ApigwResponseV2#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/apigw_response_v2#status_code ApigwResponseV2#status_code}.
 
 ---
 

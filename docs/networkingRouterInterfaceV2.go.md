@@ -4,7 +4,7 @@
 
 ### NetworkingRouterInterfaceV2 <a name="NetworkingRouterInterfaceV2" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2 opentelekomcloud_networking_router_interface_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the NetworkingRouterInterfaceV
 
 The id of the existing NetworkingRouterInterfaceV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,11 +877,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#router_id NetworkingRouterInterfaceV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#id NetworkingRouterInterfaceV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#port_id NetworkingRouterInterfaceV2#port_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#region NetworkingRouterInterfaceV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#subnet_id NetworkingRouterInterfaceV2#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.routerId">RouterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#router_id NetworkingRouterInterfaceV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#id NetworkingRouterInterfaceV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.portId">PortId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#port_id NetworkingRouterInterfaceV2#port_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#region NetworkingRouterInterfaceV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#subnet_id NetworkingRouterInterfaceV2#subnet_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts">NetworkingRouterInterfaceV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -964,7 +964,7 @@ RouterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#router_id NetworkingRouterInterfaceV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#router_id NetworkingRouterInterfaceV2#router_id}.
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#id NetworkingRouterInterfaceV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#id NetworkingRouterInterfaceV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ PortId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#port_id NetworkingRouterInterfaceV2#port_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#port_id NetworkingRouterInterfaceV2#port_id}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#region NetworkingRouterInterfaceV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#region NetworkingRouterInterfaceV2#region}.
 
 ---
 
@@ -1015,7 +1015,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#subnet_id NetworkingRouterInterfaceV2#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#subnet_id NetworkingRouterInterfaceV2#subnet_id}.
 
 ---
 
@@ -1029,7 +1029,7 @@ Timeouts NetworkingRouterInterfaceV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#timeouts NetworkingRouterInterfaceV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#timeouts NetworkingRouterInterfaceV2#timeouts}
 
 ---
 
@@ -1050,8 +1050,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#create NetworkingRouterInterfaceV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#delete NetworkingRouterInterfaceV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#create NetworkingRouterInterfaceV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterInterfaceV2.NetworkingRouterInterfaceV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#delete NetworkingRouterInterfaceV2#delete}. |
 
 ---
 
@@ -1063,7 +1063,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#create NetworkingRouterInterfaceV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#create NetworkingRouterInterfaceV2#create}.
 
 ---
 
@@ -1075,7 +1075,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/networking_router_interface_v2#delete NetworkingRouterInterfaceV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/networking_router_interface_v2#delete NetworkingRouterInterfaceV2#delete}.
 
 ---
 

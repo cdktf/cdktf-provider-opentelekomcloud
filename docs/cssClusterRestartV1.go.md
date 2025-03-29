@@ -4,7 +4,7 @@
 
 ### CssClusterRestartV1 <a name="CssClusterRestartV1" id="@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1 opentelekomcloud_css_cluster_restart_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the CssClusterRestartV1 to imp
 
 The id of the existing CssClusterRestartV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,8 +798,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#cluster_id CssClusterRestartV1#cluster_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#id CssClusterRestartV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#cluster_id CssClusterRestartV1#cluster_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#id CssClusterRestartV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Timeouts">CssClusterRestartV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -882,7 +882,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#cluster_id CssClusterRestartV1#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#cluster_id CssClusterRestartV1#cluster_id}.
 
 ---
 
@@ -894,7 +894,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#id CssClusterRestartV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#id CssClusterRestartV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -911,7 +911,7 @@ Timeouts CssClusterRestartV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#timeouts CssClusterRestartV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#timeouts CssClusterRestartV1#timeouts}
 
 ---
 
@@ -931,7 +931,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#create CssClusterRestartV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssClusterRestartV1.CssClusterRestartV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#create CssClusterRestartV1#create}. |
 
 ---
 
@@ -943,7 +943,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/css_cluster_restart_v1#create CssClusterRestartV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/css_cluster_restart_v1#create CssClusterRestartV1#create}.
 
 ---
 

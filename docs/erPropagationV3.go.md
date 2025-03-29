@@ -4,7 +4,7 @@
 
 ### ErPropagationV3 <a name="ErPropagationV3" id="@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3 opentelekomcloud_er_propagation_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3 opentelekomcloud_er_propagation_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ErPropagationV3 to import.
 
 The id of the existing ErPropagationV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,10 +888,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.attachmentId">AttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#attachment_id ErPropagationV3#attachment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#instance_id ErPropagationV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#route_table_id ErPropagationV3#route_table_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#id ErPropagationV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.attachmentId">AttachmentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#attachment_id ErPropagationV3#attachment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.instanceId">InstanceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#instance_id ErPropagationV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.routeTableId">RouteTableId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#route_table_id ErPropagationV3#route_table_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#id ErPropagationV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Timeouts">ErPropagationV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -974,7 +974,7 @@ AttachmentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#attachment_id ErPropagationV3#attachment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#attachment_id ErPropagationV3#attachment_id}.
 
 ---
 
@@ -986,7 +986,7 @@ InstanceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#instance_id ErPropagationV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#instance_id ErPropagationV3#instance_id}.
 
 ---
 
@@ -998,7 +998,7 @@ RouteTableId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#route_table_id ErPropagationV3#route_table_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#route_table_id ErPropagationV3#route_table_id}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#id ErPropagationV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#id ErPropagationV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1027,7 @@ Timeouts ErPropagationV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#timeouts ErPropagationV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#timeouts ErPropagationV3#timeouts}
 
 ---
 
@@ -1048,8 +1048,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#create ErPropagationV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#delete ErPropagationV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#create ErPropagationV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erPropagationV3.ErPropagationV3Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#delete ErPropagationV3#delete}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#create ErPropagationV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#create ErPropagationV3#create}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/resources/er_propagation_v3#delete ErPropagationV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/resources/er_propagation_v3#delete ErPropagationV3#delete}.
 
 ---
 

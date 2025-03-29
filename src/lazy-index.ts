@@ -100,6 +100,7 @@ Object.defineProperty(exports, 'enterpriseVpnConnectionV5', { get: function () {
 Object.defineProperty(exports, 'enterpriseVpnCustomerGatewayV5', { get: function () { return require('./enterprise-vpn-customer-gateway-v5'); } });
 Object.defineProperty(exports, 'enterpriseVpnGatewayV5', { get: function () { return require('./enterprise-vpn-gateway-v5'); } });
 Object.defineProperty(exports, 'erAssociationV3', { get: function () { return require('./er-association-v3'); } });
+Object.defineProperty(exports, 'erFlowLogV3', { get: function () { return require('./er-flow-log-v3'); } });
 Object.defineProperty(exports, 'erInstanceV3', { get: function () { return require('./er-instance-v3'); } });
 Object.defineProperty(exports, 'erPropagationV3', { get: function () { return require('./er-propagation-v3'); } });
 Object.defineProperty(exports, 'erRouteTableV3', { get: function () { return require('./er-route-table-v3'); } });
@@ -165,6 +166,9 @@ Object.defineProperty(exports, 'lbWhitelistV2', { get: function () { return requ
 Object.defineProperty(exports, 'logtankGroupV2', { get: function () { return require('./logtank-group-v2'); } });
 Object.defineProperty(exports, 'logtankTopicV2', { get: function () { return require('./logtank-topic-v2'); } });
 Object.defineProperty(exports, 'logtankTransferV2', { get: function () { return require('./logtank-transfer-v2'); } });
+Object.defineProperty(exports, 'ltsGroupV2', { get: function () { return require('./lts-group-v2'); } });
+Object.defineProperty(exports, 'ltsStreamV2', { get: function () { return require('./lts-stream-v2'); } });
+Object.defineProperty(exports, 'ltsTransferV2', { get: function () { return require('./lts-transfer-v2'); } });
 Object.defineProperty(exports, 'mrsClusterV1', { get: function () { return require('./mrs-cluster-v1'); } });
 Object.defineProperty(exports, 'mrsJobV1', { get: function () { return require('./mrs-job-v1'); } });
 Object.defineProperty(exports, 'natDnatRuleV2', { get: function () { return require('./nat-dnat-rule-v2'); } });
@@ -277,6 +281,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudCceAddonTemplateV3', { get: 
 Object.defineProperty(exports, 'dataOpentelekomcloudCceAddonTemplatesV3', { get: function () { return require('./data-opentelekomcloud-cce-addon-templates-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceClusterKubeconfigV3', { get: function () { return require('./data-opentelekomcloud-cce-cluster-kubeconfig-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceClusterV3', { get: function () { return require('./data-opentelekomcloud-cce-cluster-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudCceClustersV3', { get: function () { return require('./data-opentelekomcloud-cce-clusters-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceNodeIdsV3', { get: function () { return require('./data-opentelekomcloud-cce-node-ids-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceNodeV3', { get: function () { return require('./data-opentelekomcloud-cce-node-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeAvailabilityZonesV2', { get: function () { return require('./data-opentelekomcloud-compute-availability-zones-v2'); } });
