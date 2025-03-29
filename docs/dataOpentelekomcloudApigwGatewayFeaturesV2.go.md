@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudApigwGatewayFeaturesV2 <a name="DataOpentelekomcloudApigwGatewayFeaturesV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2 opentelekomcloud_apigw_gateway_features_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2 opentelekomcloud_apigw_gateway_features_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.NewDataOpentelekomcloudApigwGatewayFeaturesV2(scope Construct, id *string, config DataOpentelekomcloudApigwGatewayFeaturesV2Config) DataOpentelekomcloudApigwGatewayFeaturesV2
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeatu
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeatu
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudApigwG
 
 The id of the existing DataOpentelekomcloudApigwGatewayFeaturesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 &dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2Config {
 	Connection: interface{},
@@ -672,9 +672,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.gatewayId">GatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}. |
 
 ---
 
@@ -756,7 +756,7 @@ GatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}.
 
 ---
 
@@ -768,7 +768,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}.
 
 ---
 
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Features.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 &dataopentelekomcloudapigwgatewayfeaturesv2.DataOpentelekomcloudApigwGatewayFeaturesV2Features {
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2FeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.NewDataOpentelekomcloudApigwGatewayFeaturesV2FeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudApigwGatewayFeaturesV2FeaturesList
 ```
@@ -956,7 +956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2FeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudapigwgatewayfeaturesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwgatewayfeaturesv2"
 
 dataopentelekomcloudapigwgatewayfeaturesv2.NewDataOpentelekomcloudApigwGatewayFeaturesV2FeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudApigwGatewayFeaturesV2FeaturesOutputReference
 ```

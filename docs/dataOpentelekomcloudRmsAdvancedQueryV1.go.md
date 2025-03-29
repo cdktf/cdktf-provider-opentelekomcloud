@@ -4,12 +4,12 @@
 
 ### DataOpentelekomcloudRmsAdvancedQueryV1 <a name="DataOpentelekomcloudRmsAdvancedQueryV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1 opentelekomcloud_rms_advanced_query_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1(scope Construct, id *string, config DataOpentelekomcloudRmsAdvancedQueryV1Config) DataOpentelekomcloudRmsAdvancedQueryV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRmsAdv
 
 The id of the existing DataOpentelekomcloudRmsAdvancedQueryV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 &dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1Config {
 	Connection: interface{},
@@ -642,8 +642,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1#expression DataOpentelekomcloudRmsAdvancedQueryV1#expression}.
 
 ---
 
@@ -737,7 +737,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.33/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.34/docs/data-sources/rms_advanced_query_v1#id DataOpentelekomcloudRmsAdvancedQueryV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -749,7 +749,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 &dataopentelekomcloudrmsadvancedqueryv1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfo {
 
@@ -764,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoList
 ```
@@ -913,7 +913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueryV1.DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudrmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueryv1"
 
 dataopentelekomcloudrmsadvancedqueryv1.NewDataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRmsAdvancedQueryV1QueryInfoOutputReference
 ```
