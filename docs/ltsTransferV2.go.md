@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2(scope Construct, id *string, config LtsTransferV2Config) LtsTransferV2
 ```
@@ -411,7 +411,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.LtsTransferV2_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.LtsTransferV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ ltstransferv2.LtsTransferV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.LtsTransferV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ ltstransferv2.LtsTransferV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.LtsTransferV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 &ltstransferv2.LtsTransferV2Config {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lts
 	Provisioners: *[]interface{},
 	LogGroupId: *string,
 	LogStreams: interface{},
-	LogTransferInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfo,
+	LogTransferInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.ltsTransferV2.LtsTransferV2LogTransferInfo,
 	Id: *string,
 }
 ```
@@ -975,7 +975,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogStreams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 &ltstransferv2.LtsTransferV2LogStreams {
 	LogStreamId: *string,
@@ -1021,15 +1021,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 &ltstransferv2.LtsTransferV2LogTransferInfo {
 	LogStorageFormat: *string,
-	LogTransferDetail: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogTransferDetail,
+	LogTransferDetail: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.ltsTransferV2.LtsTransferV2LogTransferInfoLogTransferDetail,
 	LogTransferMode: *string,
 	LogTransferStatus: *string,
 	LogTransferType: *string,
-	LogAgencyTransfer: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogAgencyTransfer,
+	LogAgencyTransfer: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.ltsTransferV2.LtsTransferV2LogTransferInfoLogAgencyTransfer,
 }
 ```
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogAgencyTransfer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 &ltstransferv2.LtsTransferV2LogTransferInfoLogAgencyTransfer {
 	AgencyDomainId: *string,
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogTransferDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 &ltstransferv2.LtsTransferV2LogTransferInfoLogTransferDetail {
 	ObsBucketName: *string,
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogStreamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2LogStreamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LtsTransferV2LogStreamsList
 ```
@@ -1549,7 +1549,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogStreamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2LogStreamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LtsTransferV2LogStreamsOutputReference
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogAgencyTransferOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2LogTransferInfoLogAgencyTransferOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsTransferV2LogTransferInfoLogAgencyTransferOutputReference
 ```
@@ -2204,7 +2204,7 @@ func InternalValue() LtsTransferV2LogTransferInfoLogAgencyTransfer
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoLogTransferDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2LogTransferInfoLogTransferDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsTransferV2LogTransferInfoLogTransferDetailOutputReference
 ```
@@ -2801,7 +2801,7 @@ func InternalValue() LtsTransferV2LogTransferInfoLogTransferDetail
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsTransferV2.LtsTransferV2LogTransferInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltstransferv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/ltstransferv2"
 
 ltstransferv2.NewLtsTransferV2LogTransferInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsTransferV2LogTransferInfoOutputReference
 ```
