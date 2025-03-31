@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.NewLbLoadbalancerV2(scope Construct, id *string, config LbLoadbalancerV2Config) LbLoadbalancerV2
 ```
@@ -461,7 +461,7 @@ func ResetVipAddress()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ lbloadbalancerv2.LbLoadbalancerV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ lbloadbalancerv2.LbLoadbalancerV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.LbLoadbalancerV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1003,7 +1003,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 &lbloadbalancerv2.LbLoadbalancerV2Config {
 	Connection: interface{},
@@ -1022,7 +1022,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Region: *string,
 	Tags: *map[string]*string,
 	TenantId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.lbLoadbalancerV2.LbLoadbalancerV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts,
 	VipAddress: *string,
 }
 ```
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 &lbloadbalancerv2.LbLoadbalancerV2Timeouts {
 	Create: *string,
@@ -1326,7 +1326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLoadbalancerV2.LbLoadbalancerV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/lbloadbalancerv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lbloadbalancerv2"
 
 lbloadbalancerv2.NewLbLoadbalancerV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LbLoadbalancerV2TimeoutsOutputReference
 ```
