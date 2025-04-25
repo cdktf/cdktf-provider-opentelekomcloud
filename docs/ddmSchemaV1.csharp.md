@@ -4,7 +4,7 @@
 
 ### DdmSchemaV1 <a name="DdmSchemaV1" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1 opentelekomcloud_ddm_schema_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DdmSchemaV1 to import.
 
 The id of the existing DdmSchemaV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1029,14 +1029,14 @@ new DdmSchemaV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#instance_id DdmSchemaV1#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#name DdmSchemaV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#instance_id DdmSchemaV1#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#name DdmSchemaV1#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.rds">Rds</a></code> | <code>object</code> | rds block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardMode">ShardMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_mode DdmSchemaV1#shard_mode}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardNumber">ShardNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_number DdmSchemaV1#shard_number}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.purgeRdsOnDelete">PurgeRdsOnDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#purge_rds_on_delete DdmSchemaV1#purge_rds_on_delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardUnit">ShardUnit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_unit DdmSchemaV1#shard_unit}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardMode">ShardMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_mode DdmSchemaV1#shard_mode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardNumber">ShardNumber</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_number DdmSchemaV1#shard_number}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.purgeRdsOnDelete">PurgeRdsOnDelete</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#purge_rds_on_delete DdmSchemaV1#purge_rds_on_delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.shardUnit">ShardUnit</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_unit DdmSchemaV1#shard_unit}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts">DdmSchemaV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1119,7 +1119,7 @@ public string InstanceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#instance_id DdmSchemaV1#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#instance_id DdmSchemaV1#instance_id}.
 
 ---
 
@@ -1131,7 +1131,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#name DdmSchemaV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#name DdmSchemaV1#name}.
 
 ---
 
@@ -1145,7 +1145,7 @@ public object Rds { get; set; }
 
 rds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#rds DdmSchemaV1#rds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#rds DdmSchemaV1#rds}
 
 ---
 
@@ -1157,7 +1157,7 @@ public string ShardMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_mode DdmSchemaV1#shard_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_mode DdmSchemaV1#shard_mode}.
 
 ---
 
@@ -1169,7 +1169,7 @@ public double ShardNumber { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_number DdmSchemaV1#shard_number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_number DdmSchemaV1#shard_number}.
 
 ---
 
@@ -1181,7 +1181,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1196,7 @@ public object PurgeRdsOnDelete { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#purge_rds_on_delete DdmSchemaV1#purge_rds_on_delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#purge_rds_on_delete DdmSchemaV1#purge_rds_on_delete}.
 
 ---
 
@@ -1208,7 +1208,7 @@ public double ShardUnit { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#shard_unit DdmSchemaV1#shard_unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#shard_unit DdmSchemaV1#shard_unit}.
 
 ---
 
@@ -1222,7 +1222,7 @@ public DdmSchemaV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#timeouts DdmSchemaV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#timeouts DdmSchemaV1#timeouts}
 
 ---
 
@@ -1257,9 +1257,9 @@ new DdmSchemaV1Rds {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.adminPassword">AdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#admin_password DdmSchemaV1#admin_password}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.adminUsername">AdminUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#admin_username DdmSchemaV1#admin_username}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.adminPassword">AdminPassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#admin_password DdmSchemaV1#admin_password}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.adminUsername">AdminUsername</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#admin_username DdmSchemaV1#admin_username}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Rds.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}. |
 
 ---
 
@@ -1271,7 +1271,7 @@ public string AdminPassword { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#admin_password DdmSchemaV1#admin_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#admin_password DdmSchemaV1#admin_password}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public string AdminUsername { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#admin_username DdmSchemaV1#admin_username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#admin_username DdmSchemaV1#admin_username}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#id DdmSchemaV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1320,9 +1320,9 @@ new DdmSchemaV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#create DdmSchemaV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#delete DdmSchemaV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#update DdmSchemaV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#create DdmSchemaV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#delete DdmSchemaV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddmSchemaV1.DdmSchemaV1Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#update DdmSchemaV1#update}. |
 
 ---
 
@@ -1334,7 +1334,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#create DdmSchemaV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#create DdmSchemaV1#create}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#delete DdmSchemaV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#delete DdmSchemaV1#delete}.
 
 ---
 
@@ -1358,7 +1358,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/ddm_schema_v1#update DdmSchemaV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ddm_schema_v1#update DdmSchemaV1#update}.
 
 ---
 

@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/sdrs_protected_instance_v1
 // generated from terraform resource schema
 
