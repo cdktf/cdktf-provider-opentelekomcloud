@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,58 @@ import * as cdktf from 'cdktf';
 
 export interface LtsCceAccessV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#binary_collect LtsCceAccessV3#binary_collect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#binary_collect LtsCceAccessV3#binary_collect}
   */
   readonly binaryCollect?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#cluster_id LtsCceAccessV3#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#cluster_id LtsCceAccessV3#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#host_group_ids LtsCceAccessV3#host_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#host_group_ids LtsCceAccessV3#host_group_ids}
   */
   readonly hostGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#id LtsCceAccessV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#id LtsCceAccessV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_group_id LtsCceAccessV3#log_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_group_id LtsCceAccessV3#log_group_id}
   */
   readonly logGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_split LtsCceAccessV3#log_split}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_split LtsCceAccessV3#log_split}
   */
   readonly logSplit?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_stream_id LtsCceAccessV3#log_stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_stream_id LtsCceAccessV3#log_stream_id}
   */
   readonly logStreamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#name LtsCceAccessV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#name LtsCceAccessV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#tags LtsCceAccessV3#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#tags LtsCceAccessV3#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#access_config LtsCceAccessV3#access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#access_config LtsCceAccessV3#access_config}
   */
   readonly accessConfig: LtsCceAccessV3AccessConfig;
 }
 export interface LtsCceAccessV3AccessConfigMultiLogFormat {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}
   */
   readonly value?: string;
 }
@@ -174,11 +174,11 @@ export class LtsCceAccessV3AccessConfigMultiLogFormatOutputReference extends cdk
 }
 export interface LtsCceAccessV3AccessConfigSingleLogFormat {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#mode LtsCceAccessV3#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#value LtsCceAccessV3#value}
   */
   readonly value?: string;
 }
@@ -286,264 +286,87 @@ export class LtsCceAccessV3AccessConfigSingleLogFormatOutputReference extends cd
     return this._value;
   }
 }
-export interface LtsCceAccessV3AccessConfigWindowsLogInfo {
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#categories LtsCceAccessV3#categories}
-  */
-  readonly categories: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#event_level LtsCceAccessV3#event_level}
-  */
-  readonly eventLevel: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#time_offset LtsCceAccessV3#time_offset}
-  */
-  readonly timeOffset: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#time_offset_unit LtsCceAccessV3#time_offset_unit}
-  */
-  readonly timeOffsetUnit: string;
-}
-
-export function ltsCceAccessV3AccessConfigWindowsLogInfoToTerraform(struct?: LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference | LtsCceAccessV3AccessConfigWindowsLogInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    categories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.categories),
-    event_level: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventLevel),
-    time_offset: cdktf.numberToTerraform(struct!.timeOffset),
-    time_offset_unit: cdktf.stringToTerraform(struct!.timeOffsetUnit),
-  }
-}
-
-
-export function ltsCceAccessV3AccessConfigWindowsLogInfoToHclTerraform(struct?: LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference | LtsCceAccessV3AccessConfigWindowsLogInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    categories: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.categories),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    event_level: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventLevel),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    time_offset: {
-      value: cdktf.numberToHclTerraform(struct!.timeOffset),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    time_offset_unit: {
-      value: cdktf.stringToHclTerraform(struct!.timeOffsetUnit),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): LtsCceAccessV3AccessConfigWindowsLogInfo | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._categories !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.categories = this._categories;
-    }
-    if (this._eventLevel !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.eventLevel = this._eventLevel;
-    }
-    if (this._timeOffset !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeOffset = this._timeOffset;
-    }
-    if (this._timeOffsetUnit !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.timeOffsetUnit = this._timeOffsetUnit;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: LtsCceAccessV3AccessConfigWindowsLogInfo | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._categories = undefined;
-      this._eventLevel = undefined;
-      this._timeOffset = undefined;
-      this._timeOffsetUnit = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._categories = value.categories;
-      this._eventLevel = value.eventLevel;
-      this._timeOffset = value.timeOffset;
-      this._timeOffsetUnit = value.timeOffsetUnit;
-    }
-  }
-
-  // categories - computed: false, optional: false, required: true
-  private _categories?: string[]; 
-  public get categories() {
-    return this.getListAttribute('categories');
-  }
-  public set categories(value: string[]) {
-    this._categories = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get categoriesInput() {
-    return this._categories;
-  }
-
-  // event_level - computed: false, optional: false, required: true
-  private _eventLevel?: string[]; 
-  public get eventLevel() {
-    return this.getListAttribute('event_level');
-  }
-  public set eventLevel(value: string[]) {
-    this._eventLevel = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get eventLevelInput() {
-    return this._eventLevel;
-  }
-
-  // time_offset - computed: false, optional: false, required: true
-  private _timeOffset?: number; 
-  public get timeOffset() {
-    return this.getNumberAttribute('time_offset');
-  }
-  public set timeOffset(value: number) {
-    this._timeOffset = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeOffsetInput() {
-    return this._timeOffset;
-  }
-
-  // time_offset_unit - computed: false, optional: false, required: true
-  private _timeOffsetUnit?: string; 
-  public get timeOffsetUnit() {
-    return this.getStringAttribute('time_offset_unit');
-  }
-  public set timeOffsetUnit(value: string) {
-    this._timeOffsetUnit = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get timeOffsetUnitInput() {
-    return this._timeOffsetUnit;
-  }
-}
 export interface LtsCceAccessV3AccessConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#black_paths LtsCceAccessV3#black_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#black_paths LtsCceAccessV3#black_paths}
   */
   readonly blackPaths?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#container_name_regex LtsCceAccessV3#container_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#container_name_regex LtsCceAccessV3#container_name_regex}
   */
   readonly containerNameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#exclude_envs LtsCceAccessV3#exclude_envs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#exclude_envs LtsCceAccessV3#exclude_envs}
   */
   readonly excludeEnvs?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#exclude_k8s_labels LtsCceAccessV3#exclude_k8s_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#exclude_k8s_labels LtsCceAccessV3#exclude_k8s_labels}
   */
   readonly excludeK8SLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#exclude_labels LtsCceAccessV3#exclude_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#exclude_labels LtsCceAccessV3#exclude_labels}
   */
   readonly excludeLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#include_envs LtsCceAccessV3#include_envs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#include_envs LtsCceAccessV3#include_envs}
   */
   readonly includeEnvs?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#include_k8s_labels LtsCceAccessV3#include_k8s_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#include_k8s_labels LtsCceAccessV3#include_k8s_labels}
   */
   readonly includeK8SLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#include_labels LtsCceAccessV3#include_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#include_labels LtsCceAccessV3#include_labels}
   */
   readonly includeLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_envs LtsCceAccessV3#log_envs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_envs LtsCceAccessV3#log_envs}
   */
   readonly logEnvs?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_k8s LtsCceAccessV3#log_k8s}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_k8s LtsCceAccessV3#log_k8s}
   */
   readonly logK8S?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#log_labels LtsCceAccessV3#log_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#log_labels LtsCceAccessV3#log_labels}
   */
   readonly logLabels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#name_space_regex LtsCceAccessV3#name_space_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#name_space_regex LtsCceAccessV3#name_space_regex}
   */
   readonly nameSpaceRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#path_type LtsCceAccessV3#path_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#path_type LtsCceAccessV3#path_type}
   */
   readonly pathType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#paths LtsCceAccessV3#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#paths LtsCceAccessV3#paths}
   */
   readonly paths?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#pod_name_regex LtsCceAccessV3#pod_name_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#pod_name_regex LtsCceAccessV3#pod_name_regex}
   */
   readonly podNameRegex?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#stderr LtsCceAccessV3#stderr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#stderr LtsCceAccessV3#stderr}
   */
   readonly stderr?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#stdout LtsCceAccessV3#stdout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#stdout LtsCceAccessV3#stdout}
   */
   readonly stdout?: boolean | cdktf.IResolvable;
   /**
   * multi_log_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#multi_log_format LtsCceAccessV3#multi_log_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#multi_log_format LtsCceAccessV3#multi_log_format}
   */
   readonly multiLogFormat?: LtsCceAccessV3AccessConfigMultiLogFormat;
   /**
   * single_log_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#single_log_format LtsCceAccessV3#single_log_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#single_log_format LtsCceAccessV3#single_log_format}
   */
   readonly singleLogFormat?: LtsCceAccessV3AccessConfigSingleLogFormat;
-  /**
-  * windows_log_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#windows_log_info LtsCceAccessV3#windows_log_info}
-  */
-  readonly windowsLogInfo?: LtsCceAccessV3AccessConfigWindowsLogInfo;
 }
 
 export function ltsCceAccessV3AccessConfigToTerraform(struct?: LtsCceAccessV3AccessConfigOutputReference | LtsCceAccessV3AccessConfig): any {
@@ -571,7 +394,6 @@ export function ltsCceAccessV3AccessConfigToTerraform(struct?: LtsCceAccessV3Acc
     stdout: cdktf.booleanToTerraform(struct!.stdout),
     multi_log_format: ltsCceAccessV3AccessConfigMultiLogFormatToTerraform(struct!.multiLogFormat),
     single_log_format: ltsCceAccessV3AccessConfigSingleLogFormatToTerraform(struct!.singleLogFormat),
-    windows_log_info: ltsCceAccessV3AccessConfigWindowsLogInfoToTerraform(struct!.windowsLogInfo),
   }
 }
 
@@ -696,12 +518,6 @@ export function ltsCceAccessV3AccessConfigToHclTerraform(struct?: LtsCceAccessV3
       type: "list",
       storageClassType: "LtsCceAccessV3AccessConfigSingleLogFormatList",
     },
-    windows_log_info: {
-      value: ltsCceAccessV3AccessConfigWindowsLogInfoToHclTerraform(struct!.windowsLogInfo),
-      isBlock: true,
-      type: "list",
-      storageClassType: "LtsCceAccessV3AccessConfigWindowsLogInfoList",
-    },
   };
 
   // remove undefined attributes
@@ -798,10 +614,6 @@ export class LtsCceAccessV3AccessConfigOutputReference extends cdktf.ComplexObje
       hasAnyValues = true;
       internalValueResult.singleLogFormat = this._singleLogFormat?.internalValue;
     }
-    if (this._windowsLogInfo?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.windowsLogInfo = this._windowsLogInfo?.internalValue;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -827,7 +639,6 @@ export class LtsCceAccessV3AccessConfigOutputReference extends cdktf.ComplexObje
       this._stdout = undefined;
       this._multiLogFormat.internalValue = undefined;
       this._singleLogFormat.internalValue = undefined;
-      this._windowsLogInfo.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -850,7 +661,6 @@ export class LtsCceAccessV3AccessConfigOutputReference extends cdktf.ComplexObje
       this._stdout = value.stdout;
       this._multiLogFormat.internalValue = value.multiLogFormat;
       this._singleLogFormat.internalValue = value.singleLogFormat;
-      this._windowsLogInfo.internalValue = value.windowsLogInfo;
     }
   }
 
@@ -1154,26 +964,10 @@ export class LtsCceAccessV3AccessConfigOutputReference extends cdktf.ComplexObje
   public get singleLogFormatInput() {
     return this._singleLogFormat.internalValue;
   }
-
-  // windows_log_info - computed: false, optional: true, required: false
-  private _windowsLogInfo = new LtsCceAccessV3AccessConfigWindowsLogInfoOutputReference(this, "windows_log_info");
-  public get windowsLogInfo() {
-    return this._windowsLogInfo;
-  }
-  public putWindowsLogInfo(value: LtsCceAccessV3AccessConfigWindowsLogInfo) {
-    this._windowsLogInfo.internalValue = value;
-  }
-  public resetWindowsLogInfo() {
-    this._windowsLogInfo.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get windowsLogInfoInput() {
-    return this._windowsLogInfo.internalValue;
-  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3 opentelekomcloud_lts_cce_access_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3 opentelekomcloud_lts_cce_access_v3}
 */
 export class LtsCceAccessV3 extends cdktf.TerraformResource {
 
@@ -1189,7 +983,7 @@ export class LtsCceAccessV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a LtsCceAccessV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LtsCceAccessV3 to import
-  * @param importFromId The id of the existing LtsCceAccessV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LtsCceAccessV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LtsCceAccessV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1201,7 +995,7 @@ export class LtsCceAccessV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/lts_cce_access_v3 opentelekomcloud_lts_cce_access_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/lts_cce_access_v3 opentelekomcloud_lts_cce_access_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1212,7 +1006,7 @@ export class LtsCceAccessV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_lts_cce_access_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.35',
+        providerVersion: '1.36.37',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

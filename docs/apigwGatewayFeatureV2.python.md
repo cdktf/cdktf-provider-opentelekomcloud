@@ -4,7 +4,7 @@
 
 ### ApigwGatewayFeatureV2 <a name="ApigwGatewayFeatureV2" id="@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2 opentelekomcloud_apigw_gateway_feature_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2 opentelekomcloud_apigw_gateway_feature_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer"></a>
 
@@ -41,11 +41,11 @@ apigwGatewayFeatureV2.ApigwGatewayFeatureV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.config">config</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.config">config</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Timeouts">ApigwGatewayFeatureV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#timeouts ApigwGatewayFeatureV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#timeouts ApigwGatewayFeatureV2#timeouts}
 
 ---
 
@@ -535,7 +535,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the ApigwGatewayFeatureV2 to i
 
 The id of the existing ApigwGatewayFeatureV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1050,11 +1050,11 @@ apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.config">config</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.config">config</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.enabled">enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Timeouts">ApigwGatewayFeatureV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1137,7 +1137,7 @@ gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#gateway_id ApigwGatewayFeatureV2#gateway_id}.
 
 ---
 
@@ -1149,7 +1149,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#name ApigwGatewayFeatureV2#name}.
 
 ---
 
@@ -1161,7 +1161,7 @@ config: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#config ApigwGatewayFeatureV2#config}.
 
 ---
 
@@ -1173,7 +1173,7 @@ enabled: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#enabled ApigwGatewayFeatureV2#enabled}.
 
 ---
 
@@ -1185,7 +1185,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#id ApigwGatewayFeatureV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1202,7 @@ timeouts: ApigwGatewayFeatureV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#timeouts ApigwGatewayFeatureV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#timeouts ApigwGatewayFeatureV2#timeouts}
 
 ---
 
@@ -1222,7 +1222,7 @@ apigwGatewayFeatureV2.ApigwGatewayFeatureV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayFeatureV2.ApigwGatewayFeatureV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}. |
 
 ---
 
@@ -1234,7 +1234,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.35/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/apigw_gateway_feature_v2#create ApigwGatewayFeatureV2#create}.
 
 ---
 
