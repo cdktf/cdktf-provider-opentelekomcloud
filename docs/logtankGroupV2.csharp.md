@@ -4,7 +4,7 @@
 
 ### LogtankGroupV2 <a name="LogtankGroupV2" id="@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2 opentelekomcloud_logtank_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LogtankGroupV2 to import.
 
 The id of the existing LogtankGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,9 +778,9 @@ new LogtankGroupV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#group_name LogtankGroupV2#group_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.ttlInDays">TtlInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#ttl_in_days LogtankGroupV2#ttl_in_days}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#id LogtankGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.groupName">GroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#group_name LogtankGroupV2#group_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.ttlInDays">TtlInDays</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#ttl_in_days LogtankGroupV2#ttl_in_days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.logtankGroupV2.LogtankGroupV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#id LogtankGroupV2#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ public string GroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#group_name LogtankGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#group_name LogtankGroupV2#group_name}.
 
 ---
 
@@ -874,7 +874,7 @@ public double TtlInDays { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#ttl_in_days LogtankGroupV2#ttl_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#ttl_in_days LogtankGroupV2#ttl_in_days}.
 
 ---
 
@@ -886,7 +886,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/logtank_group_v2#id LogtankGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/logtank_group_v2#id LogtankGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
