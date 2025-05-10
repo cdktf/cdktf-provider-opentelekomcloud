@@ -41,8 +41,15 @@ Object.defineProperty(exports, 'cceNodePoolV3', { get: function () { return requ
 Object.defineProperty(exports, 'cceNodeV3', { get: function () { return require('./cce-node-v3'); } });
 Object.defineProperty(exports, 'cesAlarmrule', { get: function () { return require('./ces-alarmrule'); } });
 Object.defineProperty(exports, 'cfwAclRuleV1', { get: function () { return require('./cfw-acl-rule-v1'); } });
+Object.defineProperty(exports, 'cfwAddressGroupMemberV1', { get: function () { return require('./cfw-address-group-member-v1'); } });
 Object.defineProperty(exports, 'cfwAddressGroupV1', { get: function () { return require('./cfw-address-group-v1'); } });
+Object.defineProperty(exports, 'cfwBlacklistWhitelistRuleV1', { get: function () { return require('./cfw-blacklist-whitelist-rule-v1'); } });
+Object.defineProperty(exports, 'cfwDomainNameGroupV1', { get: function () { return require('./cfw-domain-name-group-v1'); } });
+Object.defineProperty(exports, 'cfwEipProtectionV1', { get: function () { return require('./cfw-eip-protection-v1'); } });
 Object.defineProperty(exports, 'cfwFirewallV1', { get: function () { return require('./cfw-firewall-v1'); } });
+Object.defineProperty(exports, 'cfwIpsProtectionV1', { get: function () { return require('./cfw-ips-protection-v1'); } });
+Object.defineProperty(exports, 'cfwServiceGroupMemberV1', { get: function () { return require('./cfw-service-group-member-v1'); } });
+Object.defineProperty(exports, 'cfwServiceGroupV1', { get: function () { return require('./cfw-service-group-v1'); } });
 Object.defineProperty(exports, 'computeBmsServerV2', { get: function () { return require('./compute-bms-server-v2'); } });
 Object.defineProperty(exports, 'computeBmsTagsV2', { get: function () { return require('./compute-bms-tags-v2'); } });
 Object.defineProperty(exports, 'computeFloatingipAssociateV2', { get: function () { return require('./compute-floatingip-associate-v2'); } });
@@ -156,6 +163,7 @@ Object.defineProperty(exports, 'lbListenerV2', { get: function () { return requi
 Object.defineProperty(exports, 'lbListenerV3', { get: function () { return require('./lb-listener-v3'); } });
 Object.defineProperty(exports, 'lbLoadbalancerV2', { get: function () { return require('./lb-loadbalancer-v2'); } });
 Object.defineProperty(exports, 'lbLoadbalancerV3', { get: function () { return require('./lb-loadbalancer-v3'); } });
+Object.defineProperty(exports, 'lbLtsLogV3', { get: function () { return require('./lb-lts-log-v3'); } });
 Object.defineProperty(exports, 'lbMemberV2', { get: function () { return require('./lb-member-v2'); } });
 Object.defineProperty(exports, 'lbMemberV3', { get: function () { return require('./lb-member-v3'); } });
 Object.defineProperty(exports, 'lbMonitorV2', { get: function () { return require('./lb-monitor-v2'); } });
@@ -175,6 +183,8 @@ Object.defineProperty(exports, 'ltsGroupV2', { get: function () { return require
 Object.defineProperty(exports, 'ltsHostAccessV3', { get: function () { return require('./lts-host-access-v3'); } });
 Object.defineProperty(exports, 'ltsHostGroupV3', { get: function () { return require('./lts-host-group-v3'); } });
 Object.defineProperty(exports, 'ltsKeywordsAlarmRuleV2', { get: function () { return require('./lts-keywords-alarm-rule-v2'); } });
+Object.defineProperty(exports, 'ltsNotificationTemplateV2', { get: function () { return require('./lts-notification-template-v2'); } });
+Object.defineProperty(exports, 'ltsQuickSearchCriteriaV1', { get: function () { return require('./lts-quick-search-criteria-v1'); } });
 Object.defineProperty(exports, 'ltsStreamV2', { get: function () { return require('./lts-stream-v2'); } });
 Object.defineProperty(exports, 'ltsTransferV2', { get: function () { return require('./lts-transfer-v2'); } });
 Object.defineProperty(exports, 'mrsClusterV1', { get: function () { return require('./mrs-cluster-v1'); } });
@@ -292,6 +302,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudCceClusterV3', { get: functi
 Object.defineProperty(exports, 'dataOpentelekomcloudCceClustersV3', { get: function () { return require('./data-opentelekomcloud-cce-clusters-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceNodeIdsV3', { get: function () { return require('./data-opentelekomcloud-cce-node-ids-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceNodeV3', { get: function () { return require('./data-opentelekomcloud-cce-node-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudCfwFirewallV1', { get: function () { return require('./data-opentelekomcloud-cfw-firewall-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeAvailabilityZonesV2', { get: function () { return require('./data-opentelekomcloud-compute-availability-zones-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeBmsFlavorsV2', { get: function () { return require('./data-opentelekomcloud-compute-bms-flavors-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudComputeBmsKeypairsV2', { get: function () { return require('./data-opentelekomcloud-compute-bms-keypairs-v2'); } });

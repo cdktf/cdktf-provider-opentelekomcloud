@@ -4,7 +4,7 @@
 
 ### EcsInstanceV1 <a name="EcsInstanceV1" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1 opentelekomcloud_ecs_instance_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putDataDisks">putDataDisks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putMetadata">putMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putNics">putNics</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putOsSchedulerHints">putOsSchedulerHints</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putTimeouts">putTimeouts</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetDeleteDisksOnTermination">resetDeleteDisksOnTermination</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetKeyName">resetKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetOsSchedulerHints">resetOsSchedulerHints</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetPassword">resetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetSecurityGroups">resetSecurityGroups</a></code> | *No description.* |
@@ -395,6 +397,18 @@ public putDataDisks(value: IResolvable | EcsInstanceV1DataDisks[]): void
 
 ---
 
+##### `putMetadata` <a name="putMetadata" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putMetadata"></a>
+
+```typescript
+public putMetadata(value: EcsInstanceV1Metadata): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putMetadata.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a>
+
+---
+
 ##### `putNics` <a name="putNics" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.putNics"></a>
 
 ```typescript
@@ -465,6 +479,12 @@ public resetId(): void
 
 ```typescript
 public resetKeyName(): void
+```
+
+##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetMetadata"></a>
+
+```typescript
+public resetMetadata(): void
 ```
 
 ##### `resetOsSchedulerHints` <a name="resetOsSchedulerHints" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.resetOsSchedulerHints"></a>
@@ -624,7 +644,7 @@ The construct id used in the generated config for the EcsInstanceV1 to import.
 
 The id of the existing EcsInstanceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -655,6 +675,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.dataDisks">dataDisks</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisksList">EcsInstanceV1DataDisksList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference">EcsInstanceV1MetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.nics">nics</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1NicsList">EcsInstanceV1NicsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.osSchedulerHints">osSchedulerHints</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHintsList">EcsInstanceV1OsSchedulerHintsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.systemDiskId">systemDiskId</a></code> | <code>string</code> | *No description.* |
@@ -668,6 +689,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.imageIdInput">imageIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.keyNameInput">keyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.nicsInput">nicsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics">EcsInstanceV1Nics</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.osSchedulerHintsInput">osSchedulerHintsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints">EcsInstanceV1OsSchedulerHints</a>[]</code> | *No description.* |
@@ -851,6 +873,16 @@ public readonly dataDisks: EcsInstanceV1DataDisksList;
 
 ---
 
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.metadata"></a>
+
+```typescript
+public readonly metadata: EcsInstanceV1MetadataOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference">EcsInstanceV1MetadataOutputReference</a>
+
+---
+
 ##### `nics`<sup>Required</sup> <a name="nics" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.nics"></a>
 
 ```typescript
@@ -978,6 +1010,16 @@ public readonly keyNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1.property.metadataInput"></a>
+
+```typescript
+public readonly metadataInput: EcsInstanceV1Metadata;
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a>
 
 ---
 
@@ -1302,26 +1344,27 @@ const ecsInstanceV1Config: ecsInstanceV1.EcsInstanceV1Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.flavor">flavor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#flavor EcsInstanceV1#flavor}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.imageId">imageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#image_id EcsInstanceV1#image_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#name EcsInstanceV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.flavor">flavor</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#flavor EcsInstanceV1#flavor}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.imageId">imageId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#image_id EcsInstanceV1#image_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#name EcsInstanceV1#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.nics">nics</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics">EcsInstanceV1Nics</a>[]</code> | nics block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#vpc_id EcsInstanceV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.autoRecovery">autoRecovery</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#auto_recovery EcsInstanceV1#auto_recovery}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#availability_zone EcsInstanceV1#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.vpcId">vpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#vpc_id EcsInstanceV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.autoRecovery">autoRecovery</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#auto_recovery EcsInstanceV1#auto_recovery}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#availability_zone EcsInstanceV1#availability_zone}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.dataDisks">dataDisks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks">EcsInstanceV1DataDisks</a>[]</code> | data_disks block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.deleteDisksOnTermination">deleteDisksOnTermination</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#id EcsInstanceV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.keyName">keyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#key_name EcsInstanceV1#key_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.deleteDisksOnTermination">deleteDisksOnTermination</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#id EcsInstanceV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.keyName">keyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#key_name EcsInstanceV1#key_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.metadata">metadata</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a></code> | metadata block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.osSchedulerHints">osSchedulerHints</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints">EcsInstanceV1OsSchedulerHints</a>[]</code> | os_scheduler_hints block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#password EcsInstanceV1#password}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.securityGroups">securityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#security_groups EcsInstanceV1#security_groups}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskKmsId">systemDiskKmsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskSize">systemDiskSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_size EcsInstanceV1#system_disk_size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskType">systemDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_type EcsInstanceV1#system_disk_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#tags EcsInstanceV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#password EcsInstanceV1#password}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.securityGroups">securityGroups</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#security_groups EcsInstanceV1#security_groups}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskKmsId">systemDiskKmsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskSize">systemDiskSize</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_size EcsInstanceV1#system_disk_size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.systemDiskType">systemDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_type EcsInstanceV1#system_disk_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#tags EcsInstanceV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts">EcsInstanceV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.userData">userData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#user_data EcsInstanceV1#user_data}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.userData">userData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#user_data EcsInstanceV1#user_data}. |
 
 ---
 
@@ -1403,7 +1446,7 @@ public readonly flavor: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#flavor EcsInstanceV1#flavor}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#flavor EcsInstanceV1#flavor}.
 
 ---
 
@@ -1415,7 +1458,7 @@ public readonly imageId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#image_id EcsInstanceV1#image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#image_id EcsInstanceV1#image_id}.
 
 ---
 
@@ -1427,7 +1470,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#name EcsInstanceV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#name EcsInstanceV1#name}.
 
 ---
 
@@ -1441,7 +1484,7 @@ public readonly nics: IResolvable | EcsInstanceV1Nics[];
 
 nics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#nics EcsInstanceV1#nics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#nics EcsInstanceV1#nics}
 
 ---
 
@@ -1453,7 +1496,7 @@ public readonly vpcId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#vpc_id EcsInstanceV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#vpc_id EcsInstanceV1#vpc_id}.
 
 ---
 
@@ -1465,7 +1508,7 @@ public readonly autoRecovery: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#auto_recovery EcsInstanceV1#auto_recovery}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#auto_recovery EcsInstanceV1#auto_recovery}.
 
 ---
 
@@ -1477,7 +1520,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#availability_zone EcsInstanceV1#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#availability_zone EcsInstanceV1#availability_zone}.
 
 ---
 
@@ -1491,7 +1534,7 @@ public readonly dataDisks: IResolvable | EcsInstanceV1DataDisks[];
 
 data_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#data_disks EcsInstanceV1#data_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#data_disks EcsInstanceV1#data_disks}
 
 ---
 
@@ -1503,7 +1546,7 @@ public readonly deleteDisksOnTermination: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#delete_disks_on_termination EcsInstanceV1#delete_disks_on_termination}.
 
 ---
 
@@ -1515,7 +1558,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#id EcsInstanceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#id EcsInstanceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1530,7 +1573,21 @@ public readonly keyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#key_name EcsInstanceV1#key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#key_name EcsInstanceV1#key_name}.
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Config.property.metadata"></a>
+
+```typescript
+public readonly metadata: EcsInstanceV1Metadata;
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#metadata EcsInstanceV1#metadata}
 
 ---
 
@@ -1544,7 +1601,7 @@ public readonly osSchedulerHints: IResolvable | EcsInstanceV1OsSchedulerHints[];
 
 os_scheduler_hints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#os_scheduler_hints EcsInstanceV1#os_scheduler_hints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#os_scheduler_hints EcsInstanceV1#os_scheduler_hints}
 
 ---
 
@@ -1556,7 +1613,7 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#password EcsInstanceV1#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#password EcsInstanceV1#password}.
 
 ---
 
@@ -1568,7 +1625,7 @@ public readonly securityGroups: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#security_groups EcsInstanceV1#security_groups}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#security_groups EcsInstanceV1#security_groups}.
 
 ---
 
@@ -1580,7 +1637,7 @@ public readonly systemDiskKmsId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_kms_id EcsInstanceV1#system_disk_kms_id}.
 
 ---
 
@@ -1592,7 +1649,7 @@ public readonly systemDiskSize: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_size EcsInstanceV1#system_disk_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_size EcsInstanceV1#system_disk_size}.
 
 ---
 
@@ -1604,7 +1661,7 @@ public readonly systemDiskType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#system_disk_type EcsInstanceV1#system_disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#system_disk_type EcsInstanceV1#system_disk_type}.
 
 ---
 
@@ -1616,7 +1673,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#tags EcsInstanceV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#tags EcsInstanceV1#tags}.
 
 ---
 
@@ -1630,7 +1687,7 @@ public readonly timeouts: EcsInstanceV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#timeouts EcsInstanceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#timeouts EcsInstanceV1#timeouts}
 
 ---
 
@@ -1642,7 +1699,7 @@ public readonly userData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#user_data EcsInstanceV1#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#user_data EcsInstanceV1#user_data}.
 
 ---
 
@@ -1660,10 +1717,10 @@ const ecsInstanceV1DataDisks: ecsInstanceV1.EcsInstanceV1DataDisks = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#size EcsInstanceV1#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#type EcsInstanceV1#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.kmsId">kmsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.snapshotId">snapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#snapshot_id EcsInstanceV1#snapshot_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.size">size</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#size EcsInstanceV1#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#type EcsInstanceV1#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.kmsId">kmsId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks.property.snapshotId">snapshotId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#snapshot_id EcsInstanceV1#snapshot_id}. |
 
 ---
 
@@ -1675,7 +1732,7 @@ public readonly size: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#size EcsInstanceV1#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#size EcsInstanceV1#size}.
 
 ---
 
@@ -1687,7 +1744,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#type EcsInstanceV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#type EcsInstanceV1#type}.
 
 ---
 
@@ -1699,7 +1756,7 @@ public readonly kmsId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#kms_id EcsInstanceV1#kms_id}.
 
 ---
 
@@ -1711,7 +1768,37 @@ public readonly snapshotId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#snapshot_id EcsInstanceV1#snapshot_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#snapshot_id EcsInstanceV1#snapshot_id}.
+
+---
+
+### EcsInstanceV1Metadata <a name="EcsInstanceV1Metadata" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata.Initializer"></a>
+
+```typescript
+import { ecsInstanceV1 } from '@cdktf/provider-opentelekomcloud'
+
+const ecsInstanceV1Metadata: ecsInstanceV1.EcsInstanceV1Metadata = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata.property.agencyName">agencyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#agency_name EcsInstanceV1#agency_name}. |
+
+---
+
+##### `agencyName`<sup>Optional</sup> <a name="agencyName" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata.property.agencyName"></a>
+
+```typescript
+public readonly agencyName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#agency_name EcsInstanceV1#agency_name}.
 
 ---
 
@@ -1729,8 +1816,8 @@ const ecsInstanceV1Nics: ecsInstanceV1.EcsInstanceV1Nics = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics.property.networkId">networkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#network_id EcsInstanceV1#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics.property.networkId">networkId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#network_id EcsInstanceV1#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Nics.property.ipAddress">ipAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}. |
 
 ---
 
@@ -1742,7 +1829,7 @@ public readonly networkId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#network_id EcsInstanceV1#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#network_id EcsInstanceV1#network_id}.
 
 ---
 
@@ -1754,7 +1841,7 @@ public readonly ipAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#ip_address EcsInstanceV1#ip_address}.
 
 ---
 
@@ -1772,9 +1859,9 @@ const ecsInstanceV1OsSchedulerHints: ecsInstanceV1.EcsInstanceV1OsSchedulerHints
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.dedicatedHostId">dedicatedHostId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#dedicated_host_id EcsInstanceV1#dedicated_host_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#group EcsInstanceV1#group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.tenancy">tenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#tenancy EcsInstanceV1#tenancy}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.dedicatedHostId">dedicatedHostId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#dedicated_host_id EcsInstanceV1#dedicated_host_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.group">group</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#group EcsInstanceV1#group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1OsSchedulerHints.property.tenancy">tenancy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#tenancy EcsInstanceV1#tenancy}. |
 
 ---
 
@@ -1786,7 +1873,7 @@ public readonly dedicatedHostId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#dedicated_host_id EcsInstanceV1#dedicated_host_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#dedicated_host_id EcsInstanceV1#dedicated_host_id}.
 
 ---
 
@@ -1798,7 +1885,7 @@ public readonly group: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#group EcsInstanceV1#group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#group EcsInstanceV1#group}.
 
 ---
 
@@ -1810,7 +1897,7 @@ public readonly tenancy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#tenancy EcsInstanceV1#tenancy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#tenancy EcsInstanceV1#tenancy}.
 
 ---
 
@@ -1828,9 +1915,9 @@ const ecsInstanceV1Timeouts: ecsInstanceV1.EcsInstanceV1Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#create EcsInstanceV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#delete EcsInstanceV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#update EcsInstanceV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#create EcsInstanceV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#delete EcsInstanceV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#update EcsInstanceV1#update}. |
 
 ---
 
@@ -1842,7 +1929,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#create EcsInstanceV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#create EcsInstanceV1#create}.
 
 ---
 
@@ -1854,7 +1941,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#delete EcsInstanceV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#delete EcsInstanceV1#delete}.
 
 ---
 
@@ -1866,7 +1953,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/ecs_instance_v1#update EcsInstanceV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/ecs_instance_v1#update EcsInstanceV1#update}.
 
 ---
 
@@ -2419,6 +2506,284 @@ public readonly internalValue: IResolvable | EcsInstanceV1DataDisks;
 ```
 
 - *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1DataDisks">EcsInstanceV1DataDisks</a>
+
+---
+
+
+### EcsInstanceV1MetadataOutputReference <a name="EcsInstanceV1MetadataOutputReference" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.Initializer"></a>
+
+```typescript
+import { ecsInstanceV1 } from '@cdktf/provider-opentelekomcloud'
+
+new ecsInstanceV1.EcsInstanceV1MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.resetAgencyName">resetAgencyName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAgencyName` <a name="resetAgencyName" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.resetAgencyName"></a>
+
+```typescript
+public resetAgencyName(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.agencyNameInput">agencyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.agencyName">agencyName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agencyNameInput`<sup>Optional</sup> <a name="agencyNameInput" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.agencyNameInput"></a>
+
+```typescript
+public readonly agencyNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `agencyName`<sup>Required</sup> <a name="agencyName" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.agencyName"></a>
+
+```typescript
+public readonly agencyName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1MetadataOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: EcsInstanceV1Metadata;
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.ecsInstanceV1.EcsInstanceV1Metadata">EcsInstanceV1Metadata</a>
 
 ---
 

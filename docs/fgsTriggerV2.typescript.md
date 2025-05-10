@@ -4,7 +4,7 @@
 
 ### FgsTriggerV2 <a name="FgsTriggerV2" id="@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2 opentelekomcloud_fgs_trigger_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the FgsTriggerV2 to import.
 
 The id of the existing FgsTriggerV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,11 +882,11 @@ const fgsTriggerV2Config: fgsTriggerV2.FgsTriggerV2Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.eventData">eventData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#event_data FgsTriggerV2#event_data}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.functionUrn">functionUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#function_urn FgsTriggerV2#function_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#type FgsTriggerV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#id FgsTriggerV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#status FgsTriggerV2#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.eventData">eventData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#event_data FgsTriggerV2#event_data}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.functionUrn">functionUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#function_urn FgsTriggerV2#function_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#type FgsTriggerV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#id FgsTriggerV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.status">status</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#status FgsTriggerV2#status}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Timeouts">FgsTriggerV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -969,7 +969,7 @@ public readonly eventData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#event_data FgsTriggerV2#event_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#event_data FgsTriggerV2#event_data}.
 
 ---
 
@@ -981,7 +981,7 @@ public readonly functionUrn: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#function_urn FgsTriggerV2#function_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#function_urn FgsTriggerV2#function_urn}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#type FgsTriggerV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#type FgsTriggerV2#type}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#id FgsTriggerV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#id FgsTriggerV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1020,7 +1020,7 @@ public readonly status: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#status FgsTriggerV2#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#status FgsTriggerV2#status}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly timeouts: FgsTriggerV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#timeouts FgsTriggerV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#timeouts FgsTriggerV2#timeouts}
 
 ---
 
@@ -1052,8 +1052,8 @@ const fgsTriggerV2Timeouts: fgsTriggerV2.FgsTriggerV2Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#delete FgsTriggerV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#update FgsTriggerV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#delete FgsTriggerV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsTriggerV2.FgsTriggerV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#update FgsTriggerV2#update}. |
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#delete FgsTriggerV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#delete FgsTriggerV2#delete}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/fgs_trigger_v2#update FgsTriggerV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/fgs_trigger_v2#update FgsTriggerV2#update}.
 
 ---
 

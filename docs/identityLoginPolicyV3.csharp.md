@@ -4,7 +4,7 @@
 
 ### IdentityLoginPolicyV3 <a name="IdentityLoginPolicyV3" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3 opentelekomcloud_identity_login_policy_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IdentityLoginPolicyV3 to i
 
 The id of the existing IdentityLoginPolicyV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,14 +931,14 @@ new IdentityLoginPolicyV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.accountValidityPeriod">AccountValidityPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#account_validity_period IdentityLoginPolicyV3#account_validity_period}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.customInfoForLogin">CustomInfoForLogin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#custom_info_for_login IdentityLoginPolicyV3#custom_info_for_login}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#id IdentityLoginPolicyV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.lockoutDuration">LockoutDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#lockout_duration IdentityLoginPolicyV3#lockout_duration}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.loginFailedTimes">LoginFailedTimes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#login_failed_times IdentityLoginPolicyV3#login_failed_times}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.periodWithLoginFailures">PeriodWithLoginFailures</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#period_with_login_failures IdentityLoginPolicyV3#period_with_login_failures}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.sessionTimeout">SessionTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#session_timeout IdentityLoginPolicyV3#session_timeout}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.showRecentLoginInfo">ShowRecentLoginInfo</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#show_recent_login_info IdentityLoginPolicyV3#show_recent_login_info}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.accountValidityPeriod">AccountValidityPeriod</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#account_validity_period IdentityLoginPolicyV3#account_validity_period}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.customInfoForLogin">CustomInfoForLogin</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#custom_info_for_login IdentityLoginPolicyV3#custom_info_for_login}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#id IdentityLoginPolicyV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.lockoutDuration">LockoutDuration</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#lockout_duration IdentityLoginPolicyV3#lockout_duration}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.loginFailedTimes">LoginFailedTimes</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#login_failed_times IdentityLoginPolicyV3#login_failed_times}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.periodWithLoginFailures">PeriodWithLoginFailures</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#period_with_login_failures IdentityLoginPolicyV3#period_with_login_failures}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.sessionTimeout">SessionTimeout</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#session_timeout IdentityLoginPolicyV3#session_timeout}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.property.showRecentLoginInfo">ShowRecentLoginInfo</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#show_recent_login_info IdentityLoginPolicyV3#show_recent_login_info}. |
 
 ---
 
@@ -1020,7 +1020,7 @@ public double AccountValidityPeriod { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#account_validity_period IdentityLoginPolicyV3#account_validity_period}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#account_validity_period IdentityLoginPolicyV3#account_validity_period}.
 
 ---
 
@@ -1032,7 +1032,7 @@ public string CustomInfoForLogin { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#custom_info_for_login IdentityLoginPolicyV3#custom_info_for_login}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#custom_info_for_login IdentityLoginPolicyV3#custom_info_for_login}.
 
 ---
 
@@ -1044,7 +1044,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#id IdentityLoginPolicyV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#id IdentityLoginPolicyV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1059,7 +1059,7 @@ public double LockoutDuration { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#lockout_duration IdentityLoginPolicyV3#lockout_duration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#lockout_duration IdentityLoginPolicyV3#lockout_duration}.
 
 ---
 
@@ -1071,7 +1071,7 @@ public double LoginFailedTimes { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#login_failed_times IdentityLoginPolicyV3#login_failed_times}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#login_failed_times IdentityLoginPolicyV3#login_failed_times}.
 
 ---
 
@@ -1083,7 +1083,7 @@ public double PeriodWithLoginFailures { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#period_with_login_failures IdentityLoginPolicyV3#period_with_login_failures}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#period_with_login_failures IdentityLoginPolicyV3#period_with_login_failures}.
 
 ---
 
@@ -1095,7 +1095,7 @@ public double SessionTimeout { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#session_timeout IdentityLoginPolicyV3#session_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#session_timeout IdentityLoginPolicyV3#session_timeout}.
 
 ---
 
@@ -1107,7 +1107,7 @@ public object ShowRecentLoginInfo { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/identity_login_policy_v3#show_recent_login_info IdentityLoginPolicyV3#show_recent_login_info}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/identity_login_policy_v3#show_recent_login_info IdentityLoginPolicyV3#show_recent_login_info}.
 
 ---
 

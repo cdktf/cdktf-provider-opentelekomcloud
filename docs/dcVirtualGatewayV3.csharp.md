@@ -4,7 +4,7 @@
 
 ### DcVirtualGatewayV3 <a name="DcVirtualGatewayV3" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3 opentelekomcloud_dc_virtual_gateway_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the DcVirtualGatewayV3 to impo
 
 The id of the existing DcVirtualGatewayV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -902,13 +902,13 @@ new DcVirtualGatewayV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.localEpGroup">LocalEpGroup</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#local_ep_group DcVirtualGatewayV3#local_ep_group}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#name DcVirtualGatewayV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#vpc_id DcVirtualGatewayV3#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.asn">Asn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#asn DcVirtualGatewayV3#asn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#description DcVirtualGatewayV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#id DcVirtualGatewayV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.localEpGroupIpv6">LocalEpGroupIpv6</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#local_ep_group_ipv6 DcVirtualGatewayV3#local_ep_group_ipv6}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.localEpGroup">LocalEpGroup</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#local_ep_group DcVirtualGatewayV3#local_ep_group}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#name DcVirtualGatewayV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#vpc_id DcVirtualGatewayV3#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.asn">Asn</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#asn DcVirtualGatewayV3#asn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#description DcVirtualGatewayV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#id DcVirtualGatewayV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcVirtualGatewayV3.DcVirtualGatewayV3Config.property.localEpGroupIpv6">LocalEpGroupIpv6</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#local_ep_group_ipv6 DcVirtualGatewayV3#local_ep_group_ipv6}. |
 
 ---
 
@@ -990,7 +990,7 @@ public string[] LocalEpGroup { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#local_ep_group DcVirtualGatewayV3#local_ep_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#local_ep_group DcVirtualGatewayV3#local_ep_group}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#name DcVirtualGatewayV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#name DcVirtualGatewayV3#name}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#vpc_id DcVirtualGatewayV3#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#vpc_id DcVirtualGatewayV3#vpc_id}.
 
 ---
 
@@ -1026,7 +1026,7 @@ public double Asn { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#asn DcVirtualGatewayV3#asn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#asn DcVirtualGatewayV3#asn}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#description DcVirtualGatewayV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#description DcVirtualGatewayV3#description}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#id DcVirtualGatewayV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#id DcVirtualGatewayV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1065,7 +1065,7 @@ public string[] LocalEpGroupIpv6 { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.37/docs/resources/dc_virtual_gateway_v3#local_ep_group_ipv6 DcVirtualGatewayV3#local_ep_group_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/dc_virtual_gateway_v3#local_ep_group_ipv6 DcVirtualGatewayV3#local_ep_group_ipv6}.
 
 ---
 
