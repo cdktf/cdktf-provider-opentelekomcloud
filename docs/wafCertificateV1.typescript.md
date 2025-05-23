@@ -4,7 +4,7 @@
 
 ### WafCertificateV1 <a name="WafCertificateV1" id="@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1 opentelekomcloud_waf_certificate_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the WafCertificateV1 to import
 
 The id of the existing WafCertificateV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,11 +860,11 @@ const wafCertificateV1Config: wafCertificateV1.WafCertificateV1Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#content WafCertificateV1#content}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#key WafCertificateV1#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#name WafCertificateV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#id WafCertificateV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#region WafCertificateV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#content WafCertificateV1#content}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#key WafCertificateV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#name WafCertificateV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#id WafCertificateV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#region WafCertificateV1#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts">WafCertificateV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -947,7 +947,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#content WafCertificateV1#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#content WafCertificateV1#content}.
 
 ---
 
@@ -959,7 +959,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#key WafCertificateV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#key WafCertificateV1#key}.
 
 ---
 
@@ -971,7 +971,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#name WafCertificateV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#name WafCertificateV1#name}.
 
 ---
 
@@ -983,7 +983,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#id WafCertificateV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#id WafCertificateV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -998,7 +998,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#region WafCertificateV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#region WafCertificateV1#region}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly timeouts: WafCertificateV1Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#timeouts WafCertificateV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#timeouts WafCertificateV1#timeouts}
 
 ---
 
@@ -1030,8 +1030,8 @@ const wafCertificateV1Timeouts: wafCertificateV1.WafCertificateV1Timeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#create WafCertificateV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#delete WafCertificateV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#create WafCertificateV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafCertificateV1.WafCertificateV1Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#delete WafCertificateV1#delete}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#create WafCertificateV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#create WafCertificateV1#create}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.38/docs/resources/waf_certificate_v1#delete WafCertificateV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/waf_certificate_v1#delete WafCertificateV1#delete}.
 
 ---
 
