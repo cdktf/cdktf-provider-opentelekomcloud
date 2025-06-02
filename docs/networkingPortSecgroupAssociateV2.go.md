@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 networkingportsecgroupassociatev2.NewNetworkingPortSecgroupAssociateV2(scope Construct, id *string, config NetworkingPortSecgroupAssociateV2Config) NetworkingPortSecgroupAssociateV2
 ```
@@ -399,7 +399,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.networkingPortSecgroupAssociateV2.NetworkingPortSecgroupAssociateV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/networkingportsecgroupassociatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/networkingportsecgroupassociatev2"
 
 &networkingportsecgroupassociatev2.NetworkingPortSecgroupAssociateV2Config {
 	Connection: interface{},

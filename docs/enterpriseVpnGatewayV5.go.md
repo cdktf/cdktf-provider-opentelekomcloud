@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.NewEnterpriseVpnGatewayV5(scope Construct, id *string, config EnterpriseVpnGatewayV5Config) EnterpriseVpnGatewayV5
 ```
@@ -550,7 +550,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.EnterpriseVpnGatewayV5_IsConstruct(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.EnterpriseVpnGatewayV5_IsTerraformElement(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ enterprisevpngatewayv5.EnterpriseVpnGatewayV5_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.EnterpriseVpnGatewayV5_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ enterprisevpngatewayv5.EnterpriseVpnGatewayV5_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.EnterpriseVpnGatewayV5_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1378,7 +1378,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 &enterprisevpngatewayv5.EnterpriseVpnGatewayV5Config {
 	Connection: interface{},
@@ -1398,8 +1398,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	AttachmentType: *string,
 	ConnectSubnet: *string,
 	DeleteEip: interface{},
-	Eip1: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip1,
-	Eip2: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip2,
+	Eip1: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip1,
+	Eip2: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip2,
 	ErId: *string,
 	Flavor: *string,
 	HaMode: *string,
@@ -1407,7 +1407,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	LocalSubnets: *[]*string,
 	NetworkType: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Timeouts,
 	VpcId: *string,
 }
 ```
@@ -1783,7 +1783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 &enterprisevpngatewayv5.EnterpriseVpnGatewayV5Eip1 {
 	BandwidthName: *string,
@@ -1874,7 +1874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 &enterprisevpngatewayv5.EnterpriseVpnGatewayV5Eip2 {
 	BandwidthName: *string,
@@ -1965,7 +1965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 &enterprisevpngatewayv5.EnterpriseVpnGatewayV5Timeouts {
 	Create: *string,
@@ -2027,7 +2027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip1OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.NewEnterpriseVpnGatewayV5Eip1OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnterpriseVpnGatewayV5Eip1OutputReference
 ```
@@ -2454,7 +2454,7 @@ func InternalValue() EnterpriseVpnGatewayV5Eip1
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5Eip2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.NewEnterpriseVpnGatewayV5Eip2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnterpriseVpnGatewayV5Eip2OutputReference
 ```
@@ -2881,7 +2881,7 @@ func InternalValue() EnterpriseVpnGatewayV5Eip2
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnGatewayV5.EnterpriseVpnGatewayV5TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/enterprisevpngatewayv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/enterprisevpngatewayv5"
 
 enterprisevpngatewayv5.NewEnterpriseVpnGatewayV5TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnterpriseVpnGatewayV5TimeoutsOutputReference
 ```
