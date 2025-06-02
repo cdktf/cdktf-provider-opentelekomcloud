@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.NewComputeVolumeAttachV2(scope Construct, id *string, config ComputeVolumeAttachV2Config) ComputeVolumeAttachV2
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.ComputeVolumeAttachV2_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.ComputeVolumeAttachV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ computevolumeattachv2.ComputeVolumeAttachV2_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.ComputeVolumeAttachV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ computevolumeattachv2.ComputeVolumeAttachV2_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.ComputeVolumeAttachV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 &computevolumeattachv2.ComputeVolumeAttachV2Config {
 	Connection: interface{},
@@ -855,7 +855,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Device: *string,
 	Id: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts,
 }
 ```
 
@@ -1031,7 +1031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 &computevolumeattachv2.ComputeVolumeAttachV2Timeouts {
 	Create: *string,
@@ -1079,7 +1079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.computeVolumeAttachV2.ComputeVolumeAttachV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/computevolumeattachv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/computevolumeattachv2"
 
 computevolumeattachv2.NewComputeVolumeAttachV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVolumeAttachV2TimeoutsOutputReference
 ```

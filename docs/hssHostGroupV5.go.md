@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.NewHssHostGroupV5(scope Construct, id *string, config HssHostGroupV5Config) HssHostGroupV5
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.HssHostGroupV5_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.HssHostGroupV5_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ hsshostgroupv5.HssHostGroupV5_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.HssHostGroupV5_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ hsshostgroupv5.HssHostGroupV5_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.HssHostGroupV5_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 &hsshostgroupv5.HssHostGroupV5Config {
 	Connection: interface{},
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Name: *string,
 	HostIds: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.hssHostGroupV5.HssHostGroupV5Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.hssHostGroupV5.HssHostGroupV5Timeouts,
 }
 ```
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 &hsshostgroupv5.HssHostGroupV5Timeouts {
 	Create: *string,
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.hssHostGroupV5.HssHostGroupV5TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/hsshostgroupv5"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/hsshostgroupv5"
 
 hsshostgroupv5.NewHssHostGroupV5TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HssHostGroupV5TimeoutsOutputReference
 ```

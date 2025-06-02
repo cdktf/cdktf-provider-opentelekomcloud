@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.NewVbsBackupPolicyV2(scope Construct, id *string, config VbsBackupPolicyV2Config) VbsBackupPolicyV2
 ```
@@ -474,7 +474,7 @@ func ResetWeekFrequency()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.VbsBackupPolicyV2_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.VbsBackupPolicyV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ vbsbackuppolicyv2.VbsBackupPolicyV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.VbsBackupPolicyV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ vbsbackuppolicyv2.VbsBackupPolicyV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.VbsBackupPolicyV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 &vbsbackuppolicyv2.VbsBackupPolicyV2Config {
 	Connection: interface{},
@@ -1081,7 +1081,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	Resources: *[]*string,
 	Status: *string,
 	Tags: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.vbsBackupPolicyV2.VbsBackupPolicyV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.vbsBackupPolicyV2.VbsBackupPolicyV2Timeouts,
 	WeekFrequency: *[]*string,
 }
 ```
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2Tags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 &vbsbackuppolicyv2.VbsBackupPolicyV2Tags {
 	Key: *string,
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 &vbsbackuppolicyv2.VbsBackupPolicyV2Timeouts {
 	Create: *string,
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2TagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.NewVbsBackupPolicyV2TagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VbsBackupPolicyV2TagsList
 ```
@@ -1605,7 +1605,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2TagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.NewVbsBackupPolicyV2TagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VbsBackupPolicyV2TagsOutputReference
 ```
@@ -1916,7 +1916,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vbsBackupPolicyV2.VbsBackupPolicyV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/vbsbackuppolicyv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/vbsbackuppolicyv2"
 
 vbsbackuppolicyv2.NewVbsBackupPolicyV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VbsBackupPolicyV2TimeoutsOutputReference
 ```

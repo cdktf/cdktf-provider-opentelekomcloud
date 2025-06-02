@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 dataopentelekomcloudcsscertificatev1.NewDataOpentelekomcloudCssCertificateV1(scope Construct, id *string, config DataOpentelekomcloudCssCertificateV1Config) DataOpentelekomcloudCssCertificateV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCssCertificateV1.DataOpentelekomcloudCssCertificateV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/dataopentelekomcloudcsscertificatev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcsscertificatev1"
 
 &dataopentelekomcloudcsscertificatev1.DataOpentelekomcloudCssCertificateV1Config {
 	Connection: interface{},

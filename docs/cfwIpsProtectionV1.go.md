@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.NewCfwIpsProtectionV1(scope Construct, id *string, config CfwIpsProtectionV1Config) CfwIpsProtectionV1
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.CfwIpsProtectionV1_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.CfwIpsProtectionV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ cfwipsprotectionv1.CfwIpsProtectionV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.CfwIpsProtectionV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ cfwipsprotectionv1.CfwIpsProtectionV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.CfwIpsProtectionV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 &cfwipsprotectionv1.CfwIpsProtectionV1Config {
 	Connection: interface{},
@@ -881,7 +881,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11
 	ObjectId: *string,
 	Id: *string,
 	IpsType: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11.cfwIpsProtectionV1.CfwIpsProtectionV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwIpsProtectionV1.CfwIpsProtectionV1Timeouts,
 }
 ```
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 &cfwipsprotectionv1.CfwIpsProtectionV1Timeouts {
 	Create: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwIpsProtectionV1.CfwIpsProtectionV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/cfwipsprotectionv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwipsprotectionv1"
 
 cfwipsprotectionv1.NewCfwIpsProtectionV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwIpsProtectionV1TimeoutsOutputReference
 ```

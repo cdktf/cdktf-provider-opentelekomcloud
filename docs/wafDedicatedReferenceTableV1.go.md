@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 wafdedicatedreferencetablev1.NewWafDedicatedReferenceTableV1(scope Construct, id *string, config WafDedicatedReferenceTableV1Config) WafDedicatedReferenceTableV1
 ```
@@ -406,7 +406,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.wafDedicatedReferenceTableV1.WafDedicatedReferenceTableV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v11/wafdedicatedreferencetablev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/wafdedicatedreferencetablev1"
 
 &wafdedicatedreferencetablev1.WafDedicatedReferenceTableV1Config {
 	Connection: interface{},
