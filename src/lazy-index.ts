@@ -365,6 +365,8 @@ Object.defineProperty(exports, 'dataOpentelekomcloudLbFlavorsV3', { get: functio
 Object.defineProperty(exports, 'dataOpentelekomcloudLbListenerV3', { get: function () { return require('./data-opentelekomcloud-lb-listener-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudLbLoadbalancerV3', { get: function () { return require('./data-opentelekomcloud-lb-loadbalancer-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudLbMemberIdsV2', { get: function () { return require('./data-opentelekomcloud-lb-member-ids-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudLtsGroupsV2', { get: function () { return require('./data-opentelekomcloud-lts-groups-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudLtsStreamsV2', { get: function () { return require('./data-opentelekomcloud-lts-streams-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudNatDnatRulesV2', { get: function () { return require('./data-opentelekomcloud-nat-dnat-rules-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudNatGatewayV2', { get: function () { return require('./data-opentelekomcloud-nat-gateway-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudNatSnatRulesV2', { get: function () { return require('./data-opentelekomcloud-nat-snat-rules-v2'); } });

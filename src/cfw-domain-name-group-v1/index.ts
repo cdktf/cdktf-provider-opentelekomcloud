@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface CfwDomainNameGroupV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#description CfwDomainNameGroupV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#description CfwDomainNameGroupV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#domain_set_type CfwDomainNameGroupV1#domain_set_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#domain_set_type CfwDomainNameGroupV1#domain_set_type}
   */
   readonly domainSetType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#firewall_id CfwDomainNameGroupV1#firewall_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#firewall_id CfwDomainNameGroupV1#firewall_id}
   */
   readonly firewallId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#name CfwDomainNameGroupV1#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#name CfwDomainNameGroupV1#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#object_id CfwDomainNameGroupV1#object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#object_id CfwDomainNameGroupV1#object_id}
   */
   readonly objectId: string;
   /**
   * domain_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#domain_names CfwDomainNameGroupV1#domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#domain_names CfwDomainNameGroupV1#domain_names}
   */
   readonly domainNames: CfwDomainNameGroupV1DomainNames[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#timeouts CfwDomainNameGroupV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#timeouts CfwDomainNameGroupV1#timeouts}
   */
   readonly timeouts?: CfwDomainNameGroupV1Timeouts;
 }
@@ -127,11 +127,11 @@ export class CfwDomainNameGroupV1RulesList extends cdktf.ComplexList {
 }
 export interface CfwDomainNameGroupV1DomainNames {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#description CfwDomainNameGroupV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#description CfwDomainNameGroupV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#domain_name CfwDomainNameGroupV1#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#domain_name CfwDomainNameGroupV1#domain_name}
   */
   readonly domainName: string;
 }
@@ -278,15 +278,15 @@ export class CfwDomainNameGroupV1DomainNamesList extends cdktf.ComplexList {
 }
 export interface CfwDomainNameGroupV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#create CfwDomainNameGroupV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#create CfwDomainNameGroupV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#delete CfwDomainNameGroupV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#delete CfwDomainNameGroupV1#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#update CfwDomainNameGroupV1#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#update CfwDomainNameGroupV1#update}
   */
   readonly update?: string;
 }
@@ -438,7 +438,7 @@ export class CfwDomainNameGroupV1TimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1 opentelekomcloud_cfw_domain_name_group_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1 opentelekomcloud_cfw_domain_name_group_v1}
 */
 export class CfwDomainNameGroupV1 extends cdktf.TerraformResource {
 
@@ -454,7 +454,7 @@ export class CfwDomainNameGroupV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CfwDomainNameGroupV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CfwDomainNameGroupV1 to import
-  * @param importFromId The id of the existing CfwDomainNameGroupV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CfwDomainNameGroupV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CfwDomainNameGroupV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -466,7 +466,7 @@ export class CfwDomainNameGroupV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_domain_name_group_v1 opentelekomcloud_cfw_domain_name_group_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_domain_name_group_v1 opentelekomcloud_cfw_domain_name_group_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -477,7 +477,7 @@ export class CfwDomainNameGroupV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cfw_domain_name_group_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.39',
+        providerVersion: '1.36.40',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

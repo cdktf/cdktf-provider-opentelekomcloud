@@ -365,6 +365,8 @@ export * as dataOpentelekomcloudLbFlavorsV3 from './data-opentelekomcloud-lb-fla
 export * as dataOpentelekomcloudLbListenerV3 from './data-opentelekomcloud-lb-listener-v3';
 export * as dataOpentelekomcloudLbLoadbalancerV3 from './data-opentelekomcloud-lb-loadbalancer-v3';
 export * as dataOpentelekomcloudLbMemberIdsV2 from './data-opentelekomcloud-lb-member-ids-v2';
+export * as dataOpentelekomcloudLtsGroupsV2 from './data-opentelekomcloud-lts-groups-v2';
+export * as dataOpentelekomcloudLtsStreamsV2 from './data-opentelekomcloud-lts-streams-v2';
 export * as dataOpentelekomcloudNatDnatRulesV2 from './data-opentelekomcloud-nat-dnat-rules-v2';
 export * as dataOpentelekomcloudNatGatewayV2 from './data-opentelekomcloud-nat-gateway-v2';
 export * as dataOpentelekomcloudNatSnatRulesV2 from './data-opentelekomcloud-nat-snat-rules-v2';
