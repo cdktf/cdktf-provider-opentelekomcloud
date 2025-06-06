@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface CfwAddressGroupMemberV1Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#address CfwAddressGroupMemberV1#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#address CfwAddressGroupMemberV1#address}
   */
   readonly address: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#address_type CfwAddressGroupMemberV1#address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#address_type CfwAddressGroupMemberV1#address_type}
   */
   readonly addressType?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#description CfwAddressGroupMemberV1#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#description CfwAddressGroupMemberV1#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#set_id CfwAddressGroupMemberV1#set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#set_id CfwAddressGroupMemberV1#set_id}
   */
   readonly setId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#timeouts CfwAddressGroupMemberV1#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#timeouts CfwAddressGroupMemberV1#timeouts}
   */
   readonly timeouts?: CfwAddressGroupMemberV1Timeouts;
 }
 export interface CfwAddressGroupMemberV1Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#create CfwAddressGroupMemberV1#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#create CfwAddressGroupMemberV1#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#delete CfwAddressGroupMemberV1#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#delete CfwAddressGroupMemberV1#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#update CfwAddressGroupMemberV1#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#update CfwAddressGroupMemberV1#update}
   */
   readonly update?: string;
 }
@@ -197,7 +197,7 @@ export class CfwAddressGroupMemberV1TimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1}
 */
 export class CfwAddressGroupMemberV1 extends cdktf.TerraformResource {
 
@@ -213,7 +213,7 @@ export class CfwAddressGroupMemberV1 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CfwAddressGroupMemberV1 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CfwAddressGroupMemberV1 to import
-  * @param importFromId The id of the existing CfwAddressGroupMemberV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CfwAddressGroupMemberV1 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CfwAddressGroupMemberV1 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -225,7 +225,7 @@ export class CfwAddressGroupMemberV1 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.39/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/cfw_address_group_member_v1 opentelekomcloud_cfw_address_group_member_v1} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,7 +236,7 @@ export class CfwAddressGroupMemberV1 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cfw_address_group_member_v1',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.39',
+        providerVersion: '1.36.40',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
