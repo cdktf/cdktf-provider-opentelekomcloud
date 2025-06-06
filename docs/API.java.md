@@ -142,6 +142,8 @@ The following submodules are available:
 - [dataOpentelekomcloudLbListenerV3](./dataOpentelekomcloudLbListenerV3.java.md)
 - [dataOpentelekomcloudLbLoadbalancerV3](./dataOpentelekomcloudLbLoadbalancerV3.java.md)
 - [dataOpentelekomcloudLbMemberIdsV2](./dataOpentelekomcloudLbMemberIdsV2.java.md)
+- [dataOpentelekomcloudLtsGroupsV2](./dataOpentelekomcloudLtsGroupsV2.java.md)
+- [dataOpentelekomcloudLtsStreamsV2](./dataOpentelekomcloudLtsStreamsV2.java.md)
 - [dataOpentelekomcloudNatDnatRulesV2](./dataOpentelekomcloudNatDnatRulesV2.java.md)
 - [dataOpentelekomcloudNatGatewayV2](./dataOpentelekomcloudNatGatewayV2.java.md)
 - [dataOpentelekomcloudNatSnatRulesV2](./dataOpentelekomcloudNatSnatRulesV2.java.md)

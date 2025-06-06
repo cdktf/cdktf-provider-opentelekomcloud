@@ -142,6 +142,8 @@ The following submodules are available:
 - [dataOpentelekomcloudLbListenerV3](./dataOpentelekomcloudLbListenerV3.csharp.md)
 - [dataOpentelekomcloudLbLoadbalancerV3](./dataOpentelekomcloudLbLoadbalancerV3.csharp.md)
 - [dataOpentelekomcloudLbMemberIdsV2](./dataOpentelekomcloudLbMemberIdsV2.csharp.md)
+- [dataOpentelekomcloudLtsGroupsV2](./dataOpentelekomcloudLtsGroupsV2.csharp.md)
+- [dataOpentelekomcloudLtsStreamsV2](./dataOpentelekomcloudLtsStreamsV2.csharp.md)
 - [dataOpentelekomcloudNatDnatRulesV2](./dataOpentelekomcloudNatDnatRulesV2.csharp.md)
 - [dataOpentelekomcloudNatGatewayV2](./dataOpentelekomcloudNatGatewayV2.csharp.md)
 - [dataOpentelekomcloudNatSnatRulesV2](./dataOpentelekomcloudNatSnatRulesV2.csharp.md)
