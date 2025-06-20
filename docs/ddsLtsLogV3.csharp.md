@@ -4,7 +4,7 @@
 
 ### DdsLtsLogV3 <a name="DdsLtsLogV3" id="@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3 opentelekomcloud_dds_lts_log_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DdsLtsLogV3 to import.
 
 The id of the existing DdsLtsLogV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,11 +867,11 @@ new DdsLtsLogV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#instance_id DdsLtsLogV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.logType">LogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#log_type DdsLtsLogV3#log_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.ltsGroupId">LtsGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#lts_group_id DdsLtsLogV3#lts_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.ltsStreamId">LtsStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#lts_stream_id DdsLtsLogV3#lts_stream_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#id DdsLtsLogV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#instance_id DdsLtsLogV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.logType">LogType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#log_type DdsLtsLogV3#log_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.ltsGroupId">LtsGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#lts_group_id DdsLtsLogV3#lts_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.ltsStreamId">LtsStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#lts_stream_id DdsLtsLogV3#lts_stream_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#id DdsLtsLogV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Timeouts">DdsLtsLogV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +954,7 @@ public string InstanceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#instance_id DdsLtsLogV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#instance_id DdsLtsLogV3#instance_id}.
 
 ---
 
@@ -966,7 +966,7 @@ public string LogType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#log_type DdsLtsLogV3#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#log_type DdsLtsLogV3#log_type}.
 
 ---
 
@@ -978,7 +978,7 @@ public string LtsGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#lts_group_id DdsLtsLogV3#lts_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#lts_group_id DdsLtsLogV3#lts_group_id}.
 
 ---
 
@@ -990,7 +990,7 @@ public string LtsStreamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#lts_stream_id DdsLtsLogV3#lts_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#lts_stream_id DdsLtsLogV3#lts_stream_id}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#id DdsLtsLogV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#id DdsLtsLogV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ public DdsLtsLogV3Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#timeouts DdsLtsLogV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#timeouts DdsLtsLogV3#timeouts}
 
 ---
 
@@ -1040,8 +1040,8 @@ new DdsLtsLogV3Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#create DdsLtsLogV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#delete DdsLtsLogV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#create DdsLtsLogV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ddsLtsLogV3.DdsLtsLogV3Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#delete DdsLtsLogV3#delete}. |
 
 ---
 
@@ -1053,7 +1053,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#create DdsLtsLogV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#create DdsLtsLogV3#create}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/dds_lts_log_v3#delete DdsLtsLogV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/dds_lts_log_v3#delete DdsLtsLogV3#delete}.
 
 ---
 
