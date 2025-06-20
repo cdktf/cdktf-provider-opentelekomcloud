@@ -4,7 +4,7 @@
 
 ### ImsImageShareV1 <a name="ImsImageShareV1" id="@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1 opentelekomcloud_ims_image_share_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1 opentelekomcloud_ims_image_share_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ImsImageShareV1 to import.
 
 The id of the existing ImsImageShareV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,9 +821,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.sourceImageId">SourceImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#source_image_id ImsImageShareV1#source_image_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.targetProjectIds">TargetProjectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#target_project_ids ImsImageShareV1#target_project_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#id ImsImageShareV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.sourceImageId">SourceImageId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#source_image_id ImsImageShareV1#source_image_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.targetProjectIds">TargetProjectIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#target_project_ids ImsImageShareV1#target_project_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#id ImsImageShareV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Timeouts">ImsImageShareV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +906,7 @@ SourceImageId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#source_image_id ImsImageShareV1#source_image_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#source_image_id ImsImageShareV1#source_image_id}.
 
 ---
 
@@ -918,7 +918,7 @@ TargetProjectIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#target_project_ids ImsImageShareV1#target_project_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#target_project_ids ImsImageShareV1#target_project_ids}.
 
 ---
 
@@ -930,7 +930,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#id ImsImageShareV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#id ImsImageShareV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ Timeouts ImsImageShareV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#timeouts ImsImageShareV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#timeouts ImsImageShareV1#timeouts}
 
 ---
 
@@ -968,8 +968,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#create ImsImageShareV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#delete ImsImageShareV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#create ImsImageShareV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.imsImageShareV1.ImsImageShareV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#delete ImsImageShareV1#delete}. |
 
 ---
 
@@ -981,7 +981,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#create ImsImageShareV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#create ImsImageShareV1#create}.
 
 ---
 
@@ -993,7 +993,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/ims_image_share_v1#delete ImsImageShareV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/ims_image_share_v1#delete ImsImageShareV1#delete}.
 
 ---
 

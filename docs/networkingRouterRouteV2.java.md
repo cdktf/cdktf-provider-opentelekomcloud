@@ -4,7 +4,7 @@
 
 ### NetworkingRouterRouteV2 <a name="NetworkingRouterRouteV2" id="@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2 opentelekomcloud_networking_router_route_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer"></a>
 
@@ -42,11 +42,11 @@ NetworkingRouterRouteV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.destinationCidr">destinationCidr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.nextHop">nextHop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.destinationCidr">destinationCidr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.nextHop">nextHop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
 
 ---
 
@@ -590,7 +590,7 @@ The construct id used in the generated config for the NetworkingRouterRouteV2 to
 
 The id of the existing NetworkingRouterRouteV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,11 +933,11 @@ NetworkingRouterRouteV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.destinationCidr">destinationCidr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.nextHop">nextHop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.destinationCidr">destinationCidr</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.nextHop">nextHop</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.networkingRouterRouteV2.NetworkingRouterRouteV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ public java.lang.String getDestinationCidr();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#destination_cidr NetworkingRouterRouteV2#destination_cidr}.
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.lang.String getNextHop();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#next_hop NetworkingRouterRouteV2#next_hop}.
 
 ---
 
@@ -1043,7 +1043,7 @@ public java.lang.String getRouterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#router_id NetworkingRouterRouteV2#router_id}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#id NetworkingRouterRouteV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/networking_router_route_v2#region NetworkingRouterRouteV2#region}.
 
 ---
 

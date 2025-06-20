@@ -4,7 +4,7 @@
 
 ### LtsHostGroupV3 <a name="LtsHostGroupV3" id="@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3 opentelekomcloud_lts_host_group_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3 opentelekomcloud_lts_host_group_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer"></a>
 
@@ -43,13 +43,13 @@ ltsHostGroupV3.LtsHostGroupV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.agentAccessType">agent_access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.hostIds">host_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.labels">labels</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.agentAccessType">agent_access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.hostIds">host_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.labels">labels</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts">LtsHostGroupV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#timeouts LtsHostGroupV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#timeouts LtsHostGroupV3#timeouts}
 
 ---
 
@@ -559,7 +559,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}.
 
 ---
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}.
 
 ---
 
@@ -575,7 +575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}.
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the LtsHostGroupV3 to import.
 
 The id of the existing LtsHostGroupV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1170,13 +1170,13 @@ ltsHostGroupV3.LtsHostGroupV3Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.agentAccessType">agent_access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.hostIds">host_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.labels">labels</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.agentAccessType">agent_access_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.hostIds">host_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.labels">labels</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts">LtsHostGroupV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1259,7 +1259,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#name LtsHostGroupV3#name}.
 
 ---
 
@@ -1271,7 +1271,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#type LtsHostGroupV3#type}.
 
 ---
 
@@ -1283,7 +1283,7 @@ agent_access_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#agent_access_type LtsHostGroupV3#agent_access_type}.
 
 ---
 
@@ -1295,7 +1295,7 @@ host_ids: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#host_ids LtsHostGroupV3#host_ids}.
 
 ---
 
@@ -1307,7 +1307,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#id LtsHostGroupV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1322,7 +1322,7 @@ labels: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#labels LtsHostGroupV3#labels}.
 
 ---
 
@@ -1334,7 +1334,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#tags LtsHostGroupV3#tags}.
 
 ---
 
@@ -1348,7 +1348,7 @@ timeouts: LtsHostGroupV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#timeouts LtsHostGroupV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#timeouts LtsHostGroupV3#timeouts}
 
 ---
 
@@ -1370,9 +1370,9 @@ ltsHostGroupV3.LtsHostGroupV3Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsHostGroupV3.LtsHostGroupV3Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}. |
 
 ---
 
@@ -1384,7 +1384,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#create LtsHostGroupV3#create}.
 
 ---
 
@@ -1396,7 +1396,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#delete LtsHostGroupV3#delete}.
 
 ---
 
@@ -1408,7 +1408,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.40/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/lts_host_group_v3#update LtsHostGroupV3#update}.
 
 ---
 
