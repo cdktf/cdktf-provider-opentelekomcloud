@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudKmsKeyMaterialParametersV1 <a name="DataOpentelekomcloudKmsKeyMaterialParametersV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1 opentelekomcloud_kms_key_material_parameters_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer"></a>
 
@@ -39,10 +39,10 @@ dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMateria
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.wrappingAlgorithm">wrapping_algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.sequence">sequence</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.wrappingAlgorithm">wrapping_algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1.Initializer.parameter.sequence">sequence</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
 
 ---
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the DataOpentelekomcloudKmsKey
 
 The id of the existing DataOpentelekomcloudKmsKeyMaterialParametersV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,10 +837,10 @@ dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMateria
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.wrappingAlgorithm">wrapping_algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.sequence">sequence</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.wrappingAlgorithm">wrapping_algorithm</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudKmsKeyMaterialParametersV1.DataOpentelekomcloudKmsKeyMaterialParametersV1Config.property.sequence">sequence</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}. |
 
 ---
 
@@ -922,7 +922,7 @@ key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#key_id DataOpentelekomcloudKmsKeyMaterialParametersV1#key_id}.
 
 ---
 
@@ -934,7 +934,7 @@ wrapping_algorithm: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#wrapping_algorithm DataOpentelekomcloudKmsKeyMaterialParametersV1#wrapping_algorithm}.
 
 ---
 
@@ -946,7 +946,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#id DataOpentelekomcloudKmsKeyMaterialParametersV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ sequence: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/kms_key_material_parameters_v1#sequence DataOpentelekomcloudKmsKeyMaterialParametersV1#sequence}.
 
 ---
 

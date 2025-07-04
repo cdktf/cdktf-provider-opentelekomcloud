@@ -4,7 +4,7 @@
 
 ### ApigwCertificateV2 <a name="ApigwCertificateV2" id="@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2 opentelekomcloud_apigw_certificate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ApigwCertificateV2 to impo
 
 The id of the existing ApigwCertificateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,13 +935,13 @@ new ApigwCertificateV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#content ApigwCertificateV2#content}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#name ApigwCertificateV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#private_key ApigwCertificateV2#private_key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#id ApigwCertificateV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#instance_id ApigwCertificateV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.trustedRootCa">TrustedRootCa</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#trusted_root_ca ApigwCertificateV2#trusted_root_ca}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#type ApigwCertificateV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.content">Content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#content ApigwCertificateV2#content}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#name ApigwCertificateV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.privateKey">PrivateKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#private_key ApigwCertificateV2#private_key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#id ApigwCertificateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.instanceId">InstanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#instance_id ApigwCertificateV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.trustedRootCa">TrustedRootCa</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#trusted_root_ca ApigwCertificateV2#trusted_root_ca}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwCertificateV2.ApigwCertificateV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#type ApigwCertificateV2#type}. |
 
 ---
 
@@ -1023,7 +1023,7 @@ public string Content { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#content ApigwCertificateV2#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#content ApigwCertificateV2#content}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#name ApigwCertificateV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#name ApigwCertificateV2#name}.
 
 ---
 
@@ -1047,7 +1047,7 @@ public string PrivateKey { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#private_key ApigwCertificateV2#private_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#private_key ApigwCertificateV2#private_key}.
 
 ---
 
@@ -1059,7 +1059,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#id ApigwCertificateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#id ApigwCertificateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1074,7 @@ public string InstanceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#instance_id ApigwCertificateV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#instance_id ApigwCertificateV2#instance_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public string TrustedRootCa { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#trusted_root_ca ApigwCertificateV2#trusted_root_ca}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#trusted_root_ca ApigwCertificateV2#trusted_root_ca}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/resources/apigw_certificate_v2#type ApigwCertificateV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/apigw_certificate_v2#type ApigwCertificateV2#type}.
 
 ---
 
