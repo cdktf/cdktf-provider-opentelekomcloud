@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudComputeAvailabilityZonesV2 <a name="DataOpentelekomcloudComputeAvailabilityZonesV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2 opentelekomcloud_compute_availability_zones_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2 opentelekomcloud_compute_availability_zones_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudComput
 
 The id of the existing DataOpentelekomcloudComputeAvailabilityZonesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -668,9 +668,9 @@ new DataOpentelekomcloudComputeAvailabilityZonesV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#id DataOpentelekomcloudComputeAvailabilityZonesV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#id DataOpentelekomcloudComputeAvailabilityZonesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudComputeAvailabilityZonesV2.DataOpentelekomcloudComputeAvailabilityZonesV2Config.property.state">State</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}. |
 
 ---
 
@@ -752,7 +752,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#id DataOpentelekomcloudComputeAvailabilityZonesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#id DataOpentelekomcloudComputeAvailabilityZonesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#region DataOpentelekomcloudComputeAvailabilityZonesV2#region}.
 
 ---
 
@@ -779,7 +779,7 @@ public string State { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.41/docs/data-sources/compute_availability_zones_v2#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/data-sources/compute_availability_zones_v2#state DataOpentelekomcloudComputeAvailabilityZonesV2#state}.
 
 ---
 
