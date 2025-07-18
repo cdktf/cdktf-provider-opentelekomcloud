@@ -4,7 +4,7 @@
 
 ### CfwEipProtectionV1 <a name="CfwEipProtectionV1" id="@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1 opentelekomcloud_cfw_eip_protection_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer"></a>
 
@@ -43,13 +43,13 @@ cfwEipProtectionV1.CfwEipProtectionV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.eipId">eip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.firewallId">firewall_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.status">status</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.publicIp">public_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.publicIpv6">public_ipv6</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.eipId">eip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.firewallId">firewall_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.status">status</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.publicIp">public_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.publicIpv6">public_ipv6</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Timeouts">CfwEipProtectionV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#timeouts CfwEipProtectionV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#timeouts CfwEipProtectionV1#timeouts}
 
 ---
 
@@ -555,7 +555,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
 
 ---
 
@@ -697,7 +697,7 @@ The construct id used in the generated config for the CfwEipProtectionV1 to impo
 
 The id of the existing CfwEipProtectionV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1105,13 +1105,13 @@ cfwEipProtectionV1.CfwEipProtectionV1Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.eipId">eip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.firewallId">firewall_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.status">status</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.publicIp">public_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.publicIpv6">public_ipv6</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.eipId">eip_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.firewallId">firewall_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.objectId">object_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.status">status</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.publicIp">public_ip</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.publicIpv6">public_ipv6</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Timeouts">CfwEipProtectionV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1194,7 +1194,7 @@ eip_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#eip_id CfwEipProtectionV1#eip_id}.
 
 ---
 
@@ -1206,7 +1206,7 @@ firewall_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#firewall_id CfwEipProtectionV1#firewall_id}.
 
 ---
 
@@ -1218,7 +1218,7 @@ object_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#object_id CfwEipProtectionV1#object_id}.
 
 ---
 
@@ -1230,7 +1230,7 @@ status: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#status CfwEipProtectionV1#status}.
 
 ---
 
@@ -1242,7 +1242,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#id CfwEipProtectionV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,7 +1257,7 @@ public_ip: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ip CfwEipProtectionV1#public_ip}.
 
 ---
 
@@ -1269,7 +1269,7 @@ public_ipv6: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#public_ipv6 CfwEipProtectionV1#public_ipv6}.
 
 ---
 
@@ -1283,7 +1283,7 @@ timeouts: CfwEipProtectionV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#timeouts CfwEipProtectionV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#timeouts CfwEipProtectionV1#timeouts}
 
 ---
 
@@ -1303,7 +1303,7 @@ cfwEipProtectionV1.CfwEipProtectionV1Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwEipProtectionV1.CfwEipProtectionV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}. |
 
 ---
 
@@ -1315,7 +1315,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cfw_eip_protection_v1#create CfwEipProtectionV1#create}.
 
 ---
 

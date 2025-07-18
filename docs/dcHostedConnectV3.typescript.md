@@ -4,7 +4,7 @@
 
 ### DcHostedConnectV3 <a name="DcHostedConnectV3" id="@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3 opentelekomcloud_dc_hosted_connect_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the DcHostedConnectV3 to impor
 
 The id of the existing DcHostedConnectV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,14 +951,14 @@ const dcHostedConnectV3Config: dcHostedConnectV3.DcHostedConnectV3Config = { ...
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.bandwidth">bandwidth</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#bandwidth DcHostedConnectV3#bandwidth}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.hostingId">hostingId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#hosting_id DcHostedConnectV3#hosting_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.resourceTenantId">resourceTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#resource_tenant_id DcHostedConnectV3#resource_tenant_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.vlan">vlan</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#vlan DcHostedConnectV3#vlan}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#description DcHostedConnectV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#id DcHostedConnectV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#name DcHostedConnectV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.peerLocation">peerLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#peer_location DcHostedConnectV3#peer_location}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.bandwidth">bandwidth</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#bandwidth DcHostedConnectV3#bandwidth}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.hostingId">hostingId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#hosting_id DcHostedConnectV3#hosting_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.resourceTenantId">resourceTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#resource_tenant_id DcHostedConnectV3#resource_tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.vlan">vlan</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#vlan DcHostedConnectV3#vlan}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#description DcHostedConnectV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#id DcHostedConnectV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#name DcHostedConnectV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.peerLocation">peerLocation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#peer_location DcHostedConnectV3#peer_location}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts">DcHostedConnectV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1041,7 +1041,7 @@ public readonly bandwidth: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#bandwidth DcHostedConnectV3#bandwidth}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#bandwidth DcHostedConnectV3#bandwidth}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly hostingId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#hosting_id DcHostedConnectV3#hosting_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#hosting_id DcHostedConnectV3#hosting_id}.
 
 ---
 
@@ -1065,7 +1065,7 @@ public readonly resourceTenantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#resource_tenant_id DcHostedConnectV3#resource_tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#resource_tenant_id DcHostedConnectV3#resource_tenant_id}.
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly vlan: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#vlan DcHostedConnectV3#vlan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#vlan DcHostedConnectV3#vlan}.
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#description DcHostedConnectV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#description DcHostedConnectV3#description}.
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#id DcHostedConnectV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#id DcHostedConnectV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1116,7 +1116,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#name DcHostedConnectV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#name DcHostedConnectV3#name}.
 
 ---
 
@@ -1128,7 +1128,7 @@ public readonly peerLocation: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#peer_location DcHostedConnectV3#peer_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#peer_location DcHostedConnectV3#peer_location}.
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly timeouts: DcHostedConnectV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#timeouts DcHostedConnectV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#timeouts DcHostedConnectV3#timeouts}
 
 ---
 
@@ -1160,9 +1160,9 @@ const dcHostedConnectV3Timeouts: dcHostedConnectV3.DcHostedConnectV3Timeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#create DcHostedConnectV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#delete DcHostedConnectV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#update DcHostedConnectV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#create DcHostedConnectV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#delete DcHostedConnectV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dcHostedConnectV3.DcHostedConnectV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#update DcHostedConnectV3#update}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#create DcHostedConnectV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#create DcHostedConnectV3#create}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#delete DcHostedConnectV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#delete DcHostedConnectV3#delete}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/dc_hosted_connect_v3#update DcHostedConnectV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/dc_hosted_connect_v3#update DcHostedConnectV3#update}.
 
 ---
 

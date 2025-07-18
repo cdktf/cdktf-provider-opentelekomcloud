@@ -4,7 +4,7 @@
 
 ### LtsQuickSearchCriteriaV1 <a name="LtsQuickSearchCriteriaV1" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1 opentelekomcloud_lts_quick_search_criteria_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LtsQuickSearchCriteriaV1 t
 
 The id of the existing LtsQuickSearchCriteriaV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,12 +833,12 @@ const ltsQuickSearchCriteriaV1Config: ltsQuickSearchCriteriaV1.LtsQuickSearchCri
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.criteria">criteria</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#criteria LtsQuickSearchCriteriaV1#criteria}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.logGroupId">logGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#log_group_id LtsQuickSearchCriteriaV1#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.logStreamId">logStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#log_stream_id LtsQuickSearchCriteriaV1#log_stream_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#name LtsQuickSearchCriteriaV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#type LtsQuickSearchCriteriaV1#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#id LtsQuickSearchCriteriaV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.criteria">criteria</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#criteria LtsQuickSearchCriteriaV1#criteria}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.logGroupId">logGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#log_group_id LtsQuickSearchCriteriaV1#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.logStreamId">logStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#log_stream_id LtsQuickSearchCriteriaV1#log_stream_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#name LtsQuickSearchCriteriaV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#type LtsQuickSearchCriteriaV1#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#id LtsQuickSearchCriteriaV1#id}. |
 
 ---
 
@@ -920,7 +920,7 @@ public readonly criteria: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#criteria LtsQuickSearchCriteriaV1#criteria}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#criteria LtsQuickSearchCriteriaV1#criteria}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly logGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#log_group_id LtsQuickSearchCriteriaV1#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#log_group_id LtsQuickSearchCriteriaV1#log_group_id}.
 
 ---
 
@@ -944,7 +944,7 @@ public readonly logStreamId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#log_stream_id LtsQuickSearchCriteriaV1#log_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#log_stream_id LtsQuickSearchCriteriaV1#log_stream_id}.
 
 ---
 
@@ -956,7 +956,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#name LtsQuickSearchCriteriaV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#name LtsQuickSearchCriteriaV1#name}.
 
 ---
 
@@ -968,7 +968,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#type LtsQuickSearchCriteriaV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#type LtsQuickSearchCriteriaV1#type}.
 
 ---
 
@@ -980,7 +980,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/lts_quick_search_criteria_v1#id LtsQuickSearchCriteriaV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/lts_quick_search_criteria_v1#id LtsQuickSearchCriteriaV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

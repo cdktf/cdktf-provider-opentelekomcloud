@@ -122,6 +122,7 @@ export * as erStaticRouteV3 from './er-static-route-v3';
 export * as erVpcAttachmentV3 from './er-vpc-attachment-v3';
 export * as evsVolumeV3 from './evs-volume-v3';
 export * as fgsAsyncInvokeConfigV2 from './fgs-async-invoke-config-v2';
+export * as fgsDependencyVersionV2 from './fgs-dependency-version-v2';
 export * as fgsEventV2 from './fgs-event-v2';
 export * as fgsFunctionV2 from './fgs-function-v2';
 export * as fgsTriggerV2 from './fgs-trigger-v2';
@@ -309,7 +310,9 @@ export * as dataOpentelekomcloudCceNodeIdsV3 from './data-opentelekomcloud-cce-n
 export * as dataOpentelekomcloudCceNodeV3 from './data-opentelekomcloud-cce-node-v3';
 export * as dataOpentelekomcloudCesEventDetailsV1 from './data-opentelekomcloud-ces-event-details-v1';
 export * as dataOpentelekomcloudCesEventsV1 from './data-opentelekomcloud-ces-events-v1';
+export * as dataOpentelekomcloudCesMetricDataV1 from './data-opentelekomcloud-ces-metric-data-v1';
 export * as dataOpentelekomcloudCesMetricsV1 from './data-opentelekomcloud-ces-metrics-v1';
+export * as dataOpentelekomcloudCesMultipleMetricDataV1 from './data-opentelekomcloud-ces-multiple-metric-data-v1';
 export * as dataOpentelekomcloudCesQuotasV1 from './data-opentelekomcloud-ces-quotas-v1';
 export * as dataOpentelekomcloudCfwFirewallV1 from './data-opentelekomcloud-cfw-firewall-v1';
 export * as dataOpentelekomcloudComputeAvailabilityZonesV2 from './data-opentelekomcloud-compute-availability-zones-v2';
@@ -349,7 +352,9 @@ export * as dataOpentelekomcloudEnterpriseVpnConnectionV5 from './data-opentelek
 export * as dataOpentelekomcloudEnterpriseVpnCustomerGatewayV5 from './data-opentelekomcloud-enterprise-vpn-customer-gateway-v5';
 export * as dataOpentelekomcloudEnterpriseVpnGatewayV5 from './data-opentelekomcloud-enterprise-vpn-gateway-v5';
 export * as dataOpentelekomcloudErAvailabilityZonesV3 from './data-opentelekomcloud-er-availability-zones-v3';
+export * as dataOpentelekomcloudErFlowLogsV3 from './data-opentelekomcloud-er-flow-logs-v3';
 export * as dataOpentelekomcloudErInstancesV3 from './data-opentelekomcloud-er-instances-v3';
+export * as dataOpentelekomcloudErQuotasV3 from './data-opentelekomcloud-er-quotas-v3';
 export * as dataOpentelekomcloudEvsVolumesV2 from './data-opentelekomcloud-evs-volumes-v2';
 export * as dataOpentelekomcloudHssHostGroupsV5 from './data-opentelekomcloud-hss-host-groups-v5';
 export * as dataOpentelekomcloudHssHostsV5 from './data-opentelekomcloud-hss-hosts-v5';

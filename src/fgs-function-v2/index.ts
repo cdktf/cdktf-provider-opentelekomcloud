@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,182 +13,200 @@ import * as cdktf from 'cdktf';
 
 export interface FgsFunctionV2Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}
   */
   readonly agency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#app FgsFunctionV2#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#app FgsFunctionV2#app}
   */
   readonly app?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}
   */
   readonly appAgency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}
   */
   readonly codeFilename?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}
   */
   readonly codeType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}
   */
   readonly codeUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#concurrency_num FgsFunctionV2#concurrency_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#concurrency_num FgsFunctionV2#concurrency_num}
   */
   readonly concurrencyNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}
   */
   readonly dependList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#description FgsFunctionV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#description FgsFunctionV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}
   */
   readonly encryptedUserData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}
   */
   readonly funcCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}
   */
   readonly functiongraphVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}
   */
   readonly gpuMemory?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}
   */
   readonly handler?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#id FgsFunctionV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#id FgsFunctionV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}
   */
   readonly initializerHandler?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}
   */
   readonly initializerTimeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}
   */
   readonly logGroupId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}
   */
   readonly logGroupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}
   */
   readonly logTopicId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}
   */
   readonly logTopicName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}
   */
   readonly maxInstanceNum?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}
   */
   readonly memorySize: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}
   */
   readonly mountUserGroupId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}
   */
   readonly mountUserId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}
   */
   readonly networkId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#peering_cidr FgsFunctionV2#peering_cidr}
+  */
+  readonly peeringCidr?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#pre_stop_handler FgsFunctionV2#pre_stop_handler}
+  */
+  readonly preStopHandler?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#pre_stop_timeout FgsFunctionV2#pre_stop_timeout}
+  */
+  readonly preStopTimeout?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}
   */
   readonly runtime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}
   */
   readonly timeout: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}
   */
   readonly userData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}
   */
   readonly vpcId?: string;
   /**
   * custom_image block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#custom_image FgsFunctionV2#custom_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#custom_image FgsFunctionV2#custom_image}
   */
   readonly customImage?: FgsFunctionV2CustomImage;
   /**
   * func_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#func_mounts FgsFunctionV2#func_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#func_mounts FgsFunctionV2#func_mounts}
   */
   readonly funcMounts?: FgsFunctionV2FuncMounts[] | cdktf.IResolvable;
   /**
+  * network_controller block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#network_controller FgsFunctionV2#network_controller}
+  */
+  readonly networkController?: FgsFunctionV2NetworkController;
+  /**
   * reserved_instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#reserved_instances FgsFunctionV2#reserved_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#reserved_instances FgsFunctionV2#reserved_instances}
   */
   readonly reservedInstances?: FgsFunctionV2ReservedInstances[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#timeouts FgsFunctionV2#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#timeouts FgsFunctionV2#timeouts}
   */
   readonly timeouts?: FgsFunctionV2Timeouts;
   /**
   * versions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#versions FgsFunctionV2#versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#versions FgsFunctionV2#versions}
   */
   readonly versions?: FgsFunctionV2Versions[] | cdktf.IResolvable;
 }
 export interface FgsFunctionV2CustomImage {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#args FgsFunctionV2#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#args FgsFunctionV2#args}
   */
   readonly args?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#command FgsFunctionV2#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#command FgsFunctionV2#command}
   */
   readonly command?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#url FgsFunctionV2#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#url FgsFunctionV2#url}
   */
   readonly url: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}
   */
   readonly workingDir?: string;
 }
@@ -356,19 +374,19 @@ export class FgsFunctionV2CustomImageOutputReference extends cdktf.ComplexObject
 }
 export interface FgsFunctionV2FuncMounts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}
   */
   readonly localMountPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}
   */
   readonly mountResource: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}
   */
   readonly mountSharePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}
   */
   readonly mountType: string;
 }
@@ -557,25 +575,293 @@ export class FgsFunctionV2FuncMountsList extends cdktf.ComplexList {
     return new FgsFunctionV2FuncMountsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface FgsFunctionV2NetworkControllerTriggerAccessVpcs {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}
+  */
+  readonly vpcId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#vpc_name FgsFunctionV2#vpc_name}
+  */
+  readonly vpcName?: string;
+}
+
+export function fgsFunctionV2NetworkControllerTriggerAccessVpcsToTerraform(struct?: FgsFunctionV2NetworkControllerTriggerAccessVpcs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
+    vpc_name: cdktf.stringToTerraform(struct!.vpcName),
+  }
+}
+
+
+export function fgsFunctionV2NetworkControllerTriggerAccessVpcsToHclTerraform(struct?: FgsFunctionV2NetworkControllerTriggerAccessVpcs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    vpc_name: {
+      value: cdktf.stringToHclTerraform(struct!.vpcName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): FgsFunctionV2NetworkControllerTriggerAccessVpcs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
+    if (this._vpcName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcName = this._vpcName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FgsFunctionV2NetworkControllerTriggerAccessVpcs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._vpcId = undefined;
+      this._vpcName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._vpcId = value.vpcId;
+      this._vpcName = value.vpcName;
+    }
+  }
+
+  // vpc_id - computed: true, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
+
+  // vpc_name - computed: true, optional: true, required: false
+  private _vpcName?: string; 
+  public get vpcName() {
+    return this.getStringAttribute('vpc_name');
+  }
+  public set vpcName(value: string) {
+    this._vpcName = value;
+  }
+  public resetVpcName() {
+    this._vpcName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcNameInput() {
+    return this._vpcName;
+  }
+}
+
+export class FgsFunctionV2NetworkControllerTriggerAccessVpcsList extends cdktf.ComplexList {
+  public internalValue? : FgsFunctionV2NetworkControllerTriggerAccessVpcs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference {
+    return new FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface FgsFunctionV2NetworkController {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#disable_public_network FgsFunctionV2#disable_public_network}
+  */
+  readonly disablePublicNetwork?: boolean | cdktf.IResolvable;
+  /**
+  * trigger_access_vpcs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#trigger_access_vpcs FgsFunctionV2#trigger_access_vpcs}
+  */
+  readonly triggerAccessVpcs?: FgsFunctionV2NetworkControllerTriggerAccessVpcs[] | cdktf.IResolvable;
+}
+
+export function fgsFunctionV2NetworkControllerToTerraform(struct?: FgsFunctionV2NetworkControllerOutputReference | FgsFunctionV2NetworkController): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disable_public_network: cdktf.booleanToTerraform(struct!.disablePublicNetwork),
+    trigger_access_vpcs: cdktf.listMapper(fgsFunctionV2NetworkControllerTriggerAccessVpcsToTerraform, true)(struct!.triggerAccessVpcs),
+  }
+}
+
+
+export function fgsFunctionV2NetworkControllerToHclTerraform(struct?: FgsFunctionV2NetworkControllerOutputReference | FgsFunctionV2NetworkController): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disable_public_network: {
+      value: cdktf.booleanToHclTerraform(struct!.disablePublicNetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    trigger_access_vpcs: {
+      value: cdktf.listMapperHcl(fgsFunctionV2NetworkControllerTriggerAccessVpcsToHclTerraform, true)(struct!.triggerAccessVpcs),
+      isBlock: true,
+      type: "set",
+      storageClassType: "FgsFunctionV2NetworkControllerTriggerAccessVpcsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FgsFunctionV2NetworkControllerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FgsFunctionV2NetworkController | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disablePublicNetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disablePublicNetwork = this._disablePublicNetwork;
+    }
+    if (this._triggerAccessVpcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.triggerAccessVpcs = this._triggerAccessVpcs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FgsFunctionV2NetworkController | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._disablePublicNetwork = undefined;
+      this._triggerAccessVpcs.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._disablePublicNetwork = value.disablePublicNetwork;
+      this._triggerAccessVpcs.internalValue = value.triggerAccessVpcs;
+    }
+  }
+
+  // disable_public_network - computed: false, optional: true, required: false
+  private _disablePublicNetwork?: boolean | cdktf.IResolvable; 
+  public get disablePublicNetwork() {
+    return this.getBooleanAttribute('disable_public_network');
+  }
+  public set disablePublicNetwork(value: boolean | cdktf.IResolvable) {
+    this._disablePublicNetwork = value;
+  }
+  public resetDisablePublicNetwork() {
+    this._disablePublicNetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disablePublicNetworkInput() {
+    return this._disablePublicNetwork;
+  }
+
+  // trigger_access_vpcs - computed: false, optional: true, required: false
+  private _triggerAccessVpcs = new FgsFunctionV2NetworkControllerTriggerAccessVpcsList(this, "trigger_access_vpcs", true);
+  public get triggerAccessVpcs() {
+    return this._triggerAccessVpcs;
+  }
+  public putTriggerAccessVpcs(value: FgsFunctionV2NetworkControllerTriggerAccessVpcs[] | cdktf.IResolvable) {
+    this._triggerAccessVpcs.internalValue = value;
+  }
+  public resetTriggerAccessVpcs() {
+    this._triggerAccessVpcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerAccessVpcsInput() {
+    return this._triggerAccessVpcs.internalValue;
+  }
+}
 export interface FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#count FgsFunctionV2#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#count FgsFunctionV2#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}
   */
   readonly cron: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}
   */
   readonly expiredTime: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}
   */
   readonly startTime: number;
 }
@@ -794,7 +1080,7 @@ export interface FgsFunctionV2ReservedInstancesTacticsConfig {
   /**
   * cron_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#cron_configs FgsFunctionV2#cron_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#cron_configs FgsFunctionV2#cron_configs}
   */
   readonly cronConfigs?: FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs[] | cdktf.IResolvable;
 }
@@ -878,25 +1164,25 @@ export class FgsFunctionV2ReservedInstancesTacticsConfigOutputReference extends 
 }
 export interface FgsFunctionV2ReservedInstances {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#count FgsFunctionV2#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#count FgsFunctionV2#count}
   */
   readonly count: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}
   */
   readonly idleMode?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}
   */
   readonly qualifierName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}
   */
   readonly qualifierType: string;
   /**
   * tactics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#tactics_config FgsFunctionV2#tactics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#tactics_config FgsFunctionV2#tactics_config}
   */
   readonly tacticsConfig?: FgsFunctionV2ReservedInstancesTacticsConfig;
 }
@@ -1119,11 +1405,11 @@ export class FgsFunctionV2ReservedInstancesList extends cdktf.ComplexList {
 }
 export interface FgsFunctionV2Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#create FgsFunctionV2#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#create FgsFunctionV2#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}
   */
   readonly delete?: string;
 }
@@ -1246,11 +1532,11 @@ export class FgsFunctionV2TimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface FgsFunctionV2VersionsAliases {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#description FgsFunctionV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#description FgsFunctionV2#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
   */
   readonly name: string;
 }
@@ -1362,13 +1648,13 @@ export interface FgsFunctionV2Versions {
   /**
   * The version name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
   */
   readonly name: string;
   /**
   * aliases block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
   */
   readonly aliases?: FgsFunctionV2VersionsAliases;
 }
@@ -1510,7 +1796,7 @@ export class FgsFunctionV2VersionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}
 */
 export class FgsFunctionV2 extends cdktf.TerraformResource {
 
@@ -1526,7 +1812,7 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a FgsFunctionV2 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FgsFunctionV2 to import
-  * @param importFromId The id of the existing FgsFunctionV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FgsFunctionV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FgsFunctionV2 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1538,7 +1824,7 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1549,7 +1835,7 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_fgs_function_v2',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.42',
+        providerVersion: '1.36.43',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1587,6 +1873,9 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
     this._mountUserId = config.mountUserId;
     this._name = config.name;
     this._networkId = config.networkId;
+    this._peeringCidr = config.peeringCidr;
+    this._preStopHandler = config.preStopHandler;
+    this._preStopTimeout = config.preStopTimeout;
     this._runtime = config.runtime;
     this._tags = config.tags;
     this._timeout = config.timeout;
@@ -1594,6 +1883,7 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
     this._vpcId = config.vpcId;
     this._customImage.internalValue = config.customImage;
     this._funcMounts.internalValue = config.funcMounts;
+    this._networkController.internalValue = config.networkController;
     this._reservedInstances.internalValue = config.reservedInstances;
     this._timeouts.internalValue = config.timeouts;
     this._versions.internalValue = config.versions;
@@ -2039,6 +2329,54 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
     return this._networkId;
   }
 
+  // peering_cidr - computed: false, optional: true, required: false
+  private _peeringCidr?: string; 
+  public get peeringCidr() {
+    return this.getStringAttribute('peering_cidr');
+  }
+  public set peeringCidr(value: string) {
+    this._peeringCidr = value;
+  }
+  public resetPeeringCidr() {
+    this._peeringCidr = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get peeringCidrInput() {
+    return this._peeringCidr;
+  }
+
+  // pre_stop_handler - computed: false, optional: true, required: false
+  private _preStopHandler?: string; 
+  public get preStopHandler() {
+    return this.getStringAttribute('pre_stop_handler');
+  }
+  public set preStopHandler(value: string) {
+    this._preStopHandler = value;
+  }
+  public resetPreStopHandler() {
+    this._preStopHandler = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preStopHandlerInput() {
+    return this._preStopHandler;
+  }
+
+  // pre_stop_timeout - computed: false, optional: true, required: false
+  private _preStopTimeout?: number; 
+  public get preStopTimeout() {
+    return this.getNumberAttribute('pre_stop_timeout');
+  }
+  public set preStopTimeout(value: number) {
+    this._preStopTimeout = value;
+  }
+  public resetPreStopTimeout() {
+    this._preStopTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preStopTimeoutInput() {
+    return this._preStopTimeout;
+  }
+
   // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
@@ -2160,6 +2498,22 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
     return this._funcMounts.internalValue;
   }
 
+  // network_controller - computed: false, optional: true, required: false
+  private _networkController = new FgsFunctionV2NetworkControllerOutputReference(this, "network_controller");
+  public get networkController() {
+    return this._networkController;
+  }
+  public putNetworkController(value: FgsFunctionV2NetworkController) {
+    this._networkController.internalValue = value;
+  }
+  public resetNetworkController() {
+    this._networkController.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkControllerInput() {
+    return this._networkController.internalValue;
+  }
+
   // reserved_instances - computed: false, optional: true, required: false
   private _reservedInstances = new FgsFunctionV2ReservedInstancesList(this, "reserved_instances", true);
   public get reservedInstances() {
@@ -2241,6 +2595,9 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
       mount_user_id: cdktf.numberToTerraform(this._mountUserId),
       name: cdktf.stringToTerraform(this._name),
       network_id: cdktf.stringToTerraform(this._networkId),
+      peering_cidr: cdktf.stringToTerraform(this._peeringCidr),
+      pre_stop_handler: cdktf.stringToTerraform(this._preStopHandler),
+      pre_stop_timeout: cdktf.numberToTerraform(this._preStopTimeout),
       runtime: cdktf.stringToTerraform(this._runtime),
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       timeout: cdktf.numberToTerraform(this._timeout),
@@ -2248,6 +2605,7 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
       vpc_id: cdktf.stringToTerraform(this._vpcId),
       custom_image: fgsFunctionV2CustomImageToTerraform(this._customImage.internalValue),
       func_mounts: cdktf.listMapper(fgsFunctionV2FuncMountsToTerraform, true)(this._funcMounts.internalValue),
+      network_controller: fgsFunctionV2NetworkControllerToTerraform(this._networkController.internalValue),
       reserved_instances: cdktf.listMapper(fgsFunctionV2ReservedInstancesToTerraform, true)(this._reservedInstances.internalValue),
       timeouts: fgsFunctionV2TimeoutsToTerraform(this._timeouts.internalValue),
       versions: cdktf.listMapper(fgsFunctionV2VersionsToTerraform, true)(this._versions.internalValue),
@@ -2418,6 +2776,24 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      peering_cidr: {
+        value: cdktf.stringToHclTerraform(this._peeringCidr),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pre_stop_handler: {
+        value: cdktf.stringToHclTerraform(this._preStopHandler),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pre_stop_timeout: {
+        value: cdktf.numberToHclTerraform(this._preStopTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       runtime: {
         value: cdktf.stringToHclTerraform(this._runtime),
         isBlock: false,
@@ -2459,6 +2835,12 @@ export class FgsFunctionV2 extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "FgsFunctionV2FuncMountsList",
+      },
+      network_controller: {
+        value: fgsFunctionV2NetworkControllerToHclTerraform(this._networkController.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FgsFunctionV2NetworkControllerList",
       },
       reserved_instances: {
         value: cdktf.listMapperHcl(fgsFunctionV2ReservedInstancesToHclTerraform, true)(this._reservedInstances.internalValue),
