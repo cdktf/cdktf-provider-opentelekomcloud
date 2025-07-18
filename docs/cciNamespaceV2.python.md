@@ -4,7 +4,7 @@
 
 ### CciNamespaceV2 <a name="CciNamespaceV2" id="@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2 opentelekomcloud_cci_namespace_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer"></a>
 
@@ -38,8 +38,8 @@ cciNamespaceV2.CciNamespaceV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts">CciNamespaceV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -129,7 +129,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#timeouts CciNamespaceV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#timeouts CciNamespaceV2#timeouts}
 
 ---
 
@@ -504,7 +504,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}.
 
 ---
 
@@ -512,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}.
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the CciNamespaceV2 to import.
 
 The id of the existing CciNamespaceV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1045,8 +1045,8 @@ cciNamespaceV2.CciNamespaceV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts">CciNamespaceV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1129,7 +1129,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#name CciNamespaceV2#name}.
 
 ---
 
@@ -1141,7 +1141,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#id CciNamespaceV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ timeouts: CciNamespaceV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#timeouts CciNamespaceV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#timeouts CciNamespaceV2#timeouts}
 
 ---
 
@@ -1179,8 +1179,8 @@ cciNamespaceV2.CciNamespaceV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cciNamespaceV2.CciNamespaceV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}. |
 
 ---
 
@@ -1192,7 +1192,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#create CciNamespaceV2#create}.
 
 ---
 
@@ -1204,7 +1204,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.42/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/cci_namespace_v2#delete CciNamespaceV2#delete}.
 
 ---
 
