@@ -4,7 +4,7 @@
 
 ### WafDedicatedAntiLeakageRuleV1 <a name="WafDedicatedAntiLeakageRuleV1" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1 opentelekomcloud_waf_dedicated_anti_leakage_rule_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer"></a>
 
@@ -21,6 +21,7 @@ wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  action: str,
   category: str,
   contents: typing.List[str],
   policy_id: str,
@@ -42,12 +43,13 @@ wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.contents">contents</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#action WafDedicatedAntiLeakageRuleV1#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.contents">contents</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts">WafDedicatedAntiLeakageRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -112,11 +114,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.action"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#action WafDedicatedAntiLeakageRuleV1#action}.
+
+---
+
 ##### `category`<sup>Required</sup> <a name="category" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.Initializer.parameter.category"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}.
 
 ---
 
@@ -124,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}.
 
 ---
 
@@ -132,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}.
 
 ---
 
@@ -140,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}.
 
 ---
 
@@ -148,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}.
 
 ---
 
@@ -156,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#timeouts WafDedicatedAntiLeakageRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#timeouts WafDedicatedAntiLeakageRuleV1#timeouts}
 
 ---
 
@@ -546,7 +556,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}.
 
 ---
 
@@ -554,7 +564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}.
 
 ---
 
@@ -562,7 +572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}.
 
 ---
 
@@ -698,7 +708,7 @@ The construct id used in the generated config for the WafDedicatedAntiLeakageRul
 
 The id of the existing WafDedicatedAntiLeakageRuleV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,6 +741,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.createdAt">created_at</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.status">status</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1TimeoutsOutputReference">WafDedicatedAntiLeakageRuleV1TimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.categoryInput">category_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.contentsInput">contents_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
@@ -738,6 +749,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.policyIdInput">policy_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts">WafDedicatedAntiLeakageRuleV1Timeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.action">action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.category">category</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.contents">contents</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -919,6 +931,16 @@ timeouts: WafDedicatedAntiLeakageRuleV1TimeoutsOutputReference
 
 ---
 
+##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.actionInput"></a>
+
+```python
+action_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `category_input`<sup>Optional</sup> <a name="category_input" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.categoryInput"></a>
 
 ```python
@@ -983,6 +1005,16 @@ timeouts_input: typing.Union[IResolvable, WafDedicatedAntiLeakageRuleV1Timeouts]
 
 ```python
 url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1.property.action"></a>
+
+```python
+action: str
 ```
 
 - *Type:* str
@@ -1084,6 +1116,7 @@ wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  action: str,
   category: str,
   contents: typing.List[str],
   policy_id: str,
@@ -1105,12 +1138,13 @@ wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.contents">contents</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.action">action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#action WafDedicatedAntiLeakageRuleV1#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.contents">contents</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.url">url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts">WafDedicatedAntiLeakageRuleV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1185,6 +1219,18 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.action"></a>
+
+```python
+action: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#action WafDedicatedAntiLeakageRuleV1#action}.
+
+---
+
 ##### `category`<sup>Required</sup> <a name="category" id="@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Config.property.category"></a>
 
 ```python
@@ -1193,7 +1239,7 @@ category: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#category WafDedicatedAntiLeakageRuleV1#category}.
 
 ---
 
@@ -1205,7 +1251,7 @@ contents: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#contents WafDedicatedAntiLeakageRuleV1#contents}.
 
 ---
 
@@ -1217,7 +1263,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#policy_id WafDedicatedAntiLeakageRuleV1#policy_id}.
 
 ---
 
@@ -1229,7 +1275,7 @@ url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#url WafDedicatedAntiLeakageRuleV1#url}.
 
 ---
 
@@ -1241,7 +1287,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#description WafDedicatedAntiLeakageRuleV1#description}.
 
 ---
 
@@ -1253,7 +1299,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#id WafDedicatedAntiLeakageRuleV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1270,7 +1316,7 @@ timeouts: WafDedicatedAntiLeakageRuleV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#timeouts WafDedicatedAntiLeakageRuleV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#timeouts WafDedicatedAntiLeakageRuleV1#timeouts}
 
 ---
 
@@ -1292,9 +1338,9 @@ wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.wafDedicatedAntiLeakageRuleV1.WafDedicatedAntiLeakageRuleV1Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}. |
 
 ---
 
@@ -1306,7 +1352,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#create WafDedicatedAntiLeakageRuleV1#create}.
 
 ---
 
@@ -1318,7 +1364,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#delete WafDedicatedAntiLeakageRuleV1#delete}.
 
 ---
 
@@ -1330,7 +1376,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.43/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.44/docs/resources/waf_dedicated_anti_leakage_rule_v1#update WafDedicatedAntiLeakageRuleV1#update}.
 
 ---
 
