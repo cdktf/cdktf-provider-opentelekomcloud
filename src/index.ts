@@ -351,10 +351,13 @@ export * as dataOpentelekomcloudDwsFlavorsV2 from './data-opentelekomcloud-dws-f
 export * as dataOpentelekomcloudEnterpriseVpnConnectionV5 from './data-opentelekomcloud-enterprise-vpn-connection-v5';
 export * as dataOpentelekomcloudEnterpriseVpnCustomerGatewayV5 from './data-opentelekomcloud-enterprise-vpn-customer-gateway-v5';
 export * as dataOpentelekomcloudEnterpriseVpnGatewayV5 from './data-opentelekomcloud-enterprise-vpn-gateway-v5';
+export * as dataOpentelekomcloudErAssociationsV3 from './data-opentelekomcloud-er-associations-v3';
 export * as dataOpentelekomcloudErAvailabilityZonesV3 from './data-opentelekomcloud-er-availability-zones-v3';
 export * as dataOpentelekomcloudErFlowLogsV3 from './data-opentelekomcloud-er-flow-logs-v3';
 export * as dataOpentelekomcloudErInstancesV3 from './data-opentelekomcloud-er-instances-v3';
+export * as dataOpentelekomcloudErPropagationsV3 from './data-opentelekomcloud-er-propagations-v3';
 export * as dataOpentelekomcloudErQuotasV3 from './data-opentelekomcloud-er-quotas-v3';
+export * as dataOpentelekomcloudErRouteTablesV3 from './data-opentelekomcloud-er-route-tables-v3';
 export * as dataOpentelekomcloudEvsVolumesV2 from './data-opentelekomcloud-evs-volumes-v2';
 export * as dataOpentelekomcloudHssHostGroupsV5 from './data-opentelekomcloud-hss-host-groups-v5';
 export * as dataOpentelekomcloudHssHostsV5 from './data-opentelekomcloud-hss-hosts-v5';
@@ -401,6 +404,7 @@ export * as dataOpentelekomcloudRmsAdvancedQuerySchemasV1 from './data-opentelek
 export * as dataOpentelekomcloudRmsAdvancedQueryV1 from './data-opentelekomcloud-rms-advanced-query-v1';
 export * as dataOpentelekomcloudRmsPolicyDefinitionsV1 from './data-opentelekomcloud-rms-policy-definitions-v1';
 export * as dataOpentelekomcloudRmsPolicyStatesV1 from './data-opentelekomcloud-rms-policy-states-v1';
+export * as dataOpentelekomcloudRmsRegionsV1 from './data-opentelekomcloud-rms-regions-v1';
 export * as dataOpentelekomcloudRtsSoftwareConfigV1 from './data-opentelekomcloud-rts-software-config-v1';
 export * as dataOpentelekomcloudRtsSoftwareDeploymentV1 from './data-opentelekomcloud-rts-software-deployment-v1';
 export * as dataOpentelekomcloudRtsStackResourceV1 from './data-opentelekomcloud-rts-stack-resource-v1';
@@ -409,9 +413,11 @@ export * as dataOpentelekomcloudS3BucketObject from './data-opentelekomcloud-s3-
 export * as dataOpentelekomcloudSdrsDomainV1 from './data-opentelekomcloud-sdrs-domain-v1';
 export * as dataOpentelekomcloudSfsFileSystemV2 from './data-opentelekomcloud-sfs-file-system-v2';
 export * as dataOpentelekomcloudSfsTurboShareV1 from './data-opentelekomcloud-sfs-turbo-share-v1';
+export * as dataOpentelekomcloudSmnMessageTemplatesV2 from './data-opentelekomcloud-smn-message-templates-v2';
 export * as dataOpentelekomcloudSmnSubscriptionV2 from './data-opentelekomcloud-smn-subscription-v2';
 export * as dataOpentelekomcloudSmnTopicSubscriptionV2 from './data-opentelekomcloud-smn-topic-subscription-v2';
 export * as dataOpentelekomcloudSmnTopicV2 from './data-opentelekomcloud-smn-topic-v2';
+export * as dataOpentelekomcloudTmsTagsV1 from './data-opentelekomcloud-tms-tags-v1';
 export * as dataOpentelekomcloudVbsBackupPolicyV2 from './data-opentelekomcloud-vbs-backup-policy-v2';
 export * as dataOpentelekomcloudVbsBackupV2 from './data-opentelekomcloud-vbs-backup-v2';
 export * as dataOpentelekomcloudVpcBandwidth from './data-opentelekomcloud-vpc-bandwidth';
