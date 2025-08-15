@@ -249,6 +249,7 @@ Object.defineProperty(exports, 'swrDomainV2', { get: function () { return requir
 Object.defineProperty(exports, 'swrOrganizationPermissionsV2', { get: function () { return require('./swr-organization-permissions-v2'); } });
 Object.defineProperty(exports, 'swrOrganizationV2', { get: function () { return require('./swr-organization-v2'); } });
 Object.defineProperty(exports, 'swrRepositoryV2', { get: function () { return require('./swr-repository-v2'); } });
+Object.defineProperty(exports, 'tmsResourceTagsV1', { get: function () { return require('./tms-resource-tags-v1'); } });
 Object.defineProperty(exports, 'tmsTagsV1', { get: function () { return require('./tms-tags-v1'); } });
 Object.defineProperty(exports, 'vbsBackupPolicyV2', { get: function () { return require('./vbs-backup-policy-v2'); } });
 Object.defineProperty(exports, 'vbsBackupShareV2', { get: function () { return require('./vbs-backup-share-v2'); } });
@@ -299,6 +300,7 @@ Object.defineProperty(exports, 'wafWhiteblackipRuleV1', { get: function () { ret
 Object.defineProperty(exports, 'dataOpentelekomcloudAntiddosV1', { get: function () { return require('./data-opentelekomcloud-antiddos-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudApigwApiHistoryV2', { get: function () { return require('./data-opentelekomcloud-apigw-api-history-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudApigwGatewayFeaturesV2', { get: function () { return require('./data-opentelekomcloud-apigw-gateway-features-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudApigwGroupsV2', { get: function () { return require('./data-opentelekomcloud-apigw-groups-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCbrBackupIdsV3', { get: function () { return require('./data-opentelekomcloud-cbr-backup-ids-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCbrBackupV3', { get: function () { return require('./data-opentelekomcloud-cbr-backup-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudCceAddonTemplateV3', { get: function () { return require('./data-opentelekomcloud-cce-addon-template-v3'); } });
@@ -405,6 +407,8 @@ Object.defineProperty(exports, 'dataOpentelekomcloudRmsAdvancedQueryV1', { get: 
 Object.defineProperty(exports, 'dataOpentelekomcloudRmsPolicyDefinitionsV1', { get: function () { return require('./data-opentelekomcloud-rms-policy-definitions-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudRmsPolicyStatesV1', { get: function () { return require('./data-opentelekomcloud-rms-policy-states-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudRmsRegionsV1', { get: function () { return require('./data-opentelekomcloud-rms-regions-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudRmsResourceRelationshipsV1', { get: function () { return require('./data-opentelekomcloud-rms-resource-relationships-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudRmsResourceTagsV1', { get: function () { return require('./data-opentelekomcloud-rms-resource-tags-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudRtsSoftwareConfigV1', { get: function () { return require('./data-opentelekomcloud-rts-software-config-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudRtsSoftwareDeploymentV1', { get: function () { return require('./data-opentelekomcloud-rts-software-deployment-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudRtsStackResourceV1', { get: function () { return require('./data-opentelekomcloud-rts-stack-resource-v1'); } });
@@ -417,6 +421,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudSmnMessageTemplatesV2', { ge
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnSubscriptionV2', { get: function () { return require('./data-opentelekomcloud-smn-subscription-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicSubscriptionV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-subscription-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsTagsV1', { get: function () { return require('./data-opentelekomcloud-tms-tags-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupPolicyV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-policy-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-v2'); } });
