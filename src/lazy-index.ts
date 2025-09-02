@@ -422,6 +422,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudSmnSubscriptionV2', { get: f
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicSubscriptionV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-subscription-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceInstancesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-instances-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsTagsV1', { get: function () { return require('./data-opentelekomcloud-tms-tags-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupPolicyV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-policy-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-v2'); } });
