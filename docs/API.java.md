@@ -196,6 +196,7 @@ The following submodules are available:
 - [dataOpentelekomcloudSmnTopicSubscriptionV2](./dataOpentelekomcloudSmnTopicSubscriptionV2.java.md)
 - [dataOpentelekomcloudSmnTopicV2](./dataOpentelekomcloudSmnTopicV2.java.md)
 - [dataOpentelekomcloudTmsQuotasV1](./dataOpentelekomcloudTmsQuotasV1.java.md)
+- [dataOpentelekomcloudTmsResourceInstancesV1](./dataOpentelekomcloudTmsResourceInstancesV1.java.md)
 - [dataOpentelekomcloudTmsTagsV1](./dataOpentelekomcloudTmsTagsV1.java.md)
 - [dataOpentelekomcloudVbsBackupPolicyV2](./dataOpentelekomcloudVbsBackupPolicyV2.java.md)
 - [dataOpentelekomcloudVbsBackupV2](./dataOpentelekomcloudVbsBackupV2.java.md)

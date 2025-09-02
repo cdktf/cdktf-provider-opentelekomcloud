@@ -4,7 +4,7 @@
 
 ### SwrRepositoryV2 <a name="SwrRepositoryV2" id="@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2 opentelekomcloud_swr_repository_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer"></a>
 
@@ -42,12 +42,12 @@ swrRepositoryV2.SwrRepositoryV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Timeouts">SwrRepositoryV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#timeouts SwrRepositoryV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#timeouts SwrRepositoryV2#timeouts}
 
 ---
 
@@ -545,7 +545,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}.
 
 ---
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the SwrRepositoryV2 to import.
 
 The id of the existing SwrRepositoryV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1127,12 +1127,12 @@ swrRepositoryV2.SwrRepositoryV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.isPublic">is_public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.category">category</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Timeouts">SwrRepositoryV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1215,7 +1215,7 @@ is_public: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#is_public SwrRepositoryV2#is_public}.
 
 ---
 
@@ -1227,7 +1227,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#name SwrRepositoryV2#name}.
 
 ---
 
@@ -1239,7 +1239,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#organization SwrRepositoryV2#organization}.
 
 ---
 
@@ -1251,7 +1251,7 @@ category: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#category SwrRepositoryV2#category}.
 
 ---
 
@@ -1263,7 +1263,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#description SwrRepositoryV2#description}.
 
 ---
 
@@ -1275,7 +1275,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#id SwrRepositoryV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1292,7 @@ timeouts: SwrRepositoryV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#timeouts SwrRepositoryV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#timeouts SwrRepositoryV2#timeouts}
 
 ---
 
@@ -1312,7 +1312,7 @@ swrRepositoryV2.SwrRepositoryV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Timeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.swrRepositoryV2.SwrRepositoryV2Timeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}. |
 
 ---
 
@@ -1324,7 +1324,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/swr_repository_v2#default SwrRepositoryV2#default}.
 
 ---
 

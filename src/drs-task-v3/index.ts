@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,154 +13,162 @@ import * as cdktf from 'cdktf';
 
 export interface DrsTaskV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#description DrsTaskV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#action DrsTaskV3#action}
+  */
+  readonly action?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#description DrsTaskV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#destination_db_readonly DrsTaskV3#destination_db_readonly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#destination_db_readonly DrsTaskV3#destination_db_readonly}
   */
   readonly destinationDbReadonly?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#direction DrsTaskV3#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#direction DrsTaskV3#direction}
   */
   readonly direction: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
   */
   readonly engineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#expired_days DrsTaskV3#expired_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#expired_days DrsTaskV3#expired_days}
   */
   readonly expiredDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#force_destroy DrsTaskV3#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#force_destroy DrsTaskV3#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#id DrsTaskV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#id DrsTaskV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#migrate_definer DrsTaskV3#migrate_definer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#migrate_definer DrsTaskV3#migrate_definer}
   */
   readonly migrateDefiner?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#migration_type DrsTaskV3#migration_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#migration_type DrsTaskV3#migration_type}
   */
   readonly migrationType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#multi_write DrsTaskV3#multi_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#multi_write DrsTaskV3#multi_write}
   */
   readonly multiWrite?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#name DrsTaskV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#name DrsTaskV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#net_type DrsTaskV3#net_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#net_type DrsTaskV3#net_type}
   */
   readonly netType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#node_num DrsTaskV3#node_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#node_num DrsTaskV3#node_num}
   */
   readonly nodeNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#start_time DrsTaskV3#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#start_time DrsTaskV3#start_time}
   */
   readonly startTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#tags DrsTaskV3#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#tags DrsTaskV3#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#type DrsTaskV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#type DrsTaskV3#type}
   */
   readonly type: string;
   /**
   * destination_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#destination_db DrsTaskV3#destination_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#destination_db DrsTaskV3#destination_db}
   */
   readonly destinationDb: DrsTaskV3DestinationDb;
   /**
   * limit_speed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#limit_speed DrsTaskV3#limit_speed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#limit_speed DrsTaskV3#limit_speed}
   */
   readonly limitSpeed?: DrsTaskV3LimitSpeed[] | cdktf.IResolvable;
   /**
   * source_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#source_db DrsTaskV3#source_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#source_db DrsTaskV3#source_db}
   */
   readonly sourceDb: DrsTaskV3SourceDb;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#timeouts DrsTaskV3#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#timeouts DrsTaskV3#timeouts}
   */
   readonly timeouts?: DrsTaskV3Timeouts;
 }
 export interface DrsTaskV3DestinationDb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
   */
   readonly engineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#instance_id DrsTaskV3#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#instance_id DrsTaskV3#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ip DrsTaskV3#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ip DrsTaskV3#ip}
   */
   readonly ip: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#name DrsTaskV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#name DrsTaskV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#password DrsTaskV3#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#password DrsTaskV3#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#port DrsTaskV3#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#port DrsTaskV3#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#region DrsTaskV3#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#region DrsTaskV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_check_sum DrsTaskV3#ssl_cert_check_sum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_check_sum DrsTaskV3#ssl_cert_check_sum}
   */
   readonly sslCertCheckSum?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_key DrsTaskV3#ssl_cert_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_key DrsTaskV3#ssl_cert_key}
   */
   readonly sslCertKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_name DrsTaskV3#ssl_cert_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_name DrsTaskV3#ssl_cert_name}
   */
   readonly sslCertName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_password DrsTaskV3#ssl_cert_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_password DrsTaskV3#ssl_cert_password}
   */
   readonly sslCertPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_enabled DrsTaskV3#ssl_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_enabled DrsTaskV3#ssl_enabled}
   */
   readonly sslEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#subnet_id DrsTaskV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#subnet_id DrsTaskV3#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#user DrsTaskV3#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#user DrsTaskV3#user}
   */
   readonly user: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#vpc_id DrsTaskV3#vpc_id}
+  */
+  readonly vpcId?: string;
 }
 
 export function drsTaskV3DestinationDbToTerraform(struct?: DrsTaskV3DestinationDbOutputReference | DrsTaskV3DestinationDb): any {
@@ -183,6 +191,7 @@ export function drsTaskV3DestinationDbToTerraform(struct?: DrsTaskV3DestinationD
     ssl_enabled: cdktf.booleanToTerraform(struct!.sslEnabled),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
     user: cdktf.stringToTerraform(struct!.user),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
 
@@ -277,6 +286,12 @@ export function drsTaskV3DestinationDbToHclTerraform(struct?: DrsTaskV3Destinati
       type: "simple",
       storageClassType: "string",
     },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
   };
 
   // remove undefined attributes
@@ -353,6 +368,10 @@ export class DrsTaskV3DestinationDbOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.user = this._user;
     }
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -373,6 +392,7 @@ export class DrsTaskV3DestinationDbOutputReference extends cdktf.ComplexObject {
       this._sslEnabled = undefined;
       this._subnetId = undefined;
       this._user = undefined;
+      this._vpcId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -390,6 +410,7 @@ export class DrsTaskV3DestinationDbOutputReference extends cdktf.ComplexObject {
       this._sslEnabled = value.sslEnabled;
       this._subnetId = value.subnetId;
       this._user = value.user;
+      this._vpcId = value.vpcId;
     }
   }
 
@@ -606,18 +627,34 @@ export class DrsTaskV3DestinationDbOutputReference extends cdktf.ComplexObject {
   public get userInput() {
     return this._user;
   }
+
+  // vpc_id - computed: true, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
 }
 export interface DrsTaskV3LimitSpeed {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#end_time DrsTaskV3#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#end_time DrsTaskV3#end_time}
   */
   readonly endTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#speed DrsTaskV3#speed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#speed DrsTaskV3#speed}
   */
   readonly speed: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#start_time DrsTaskV3#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#start_time DrsTaskV3#start_time}
   */
   readonly startTime: string;
 }
@@ -782,61 +819,65 @@ export class DrsTaskV3LimitSpeedList extends cdktf.ComplexList {
 }
 export interface DrsTaskV3SourceDb {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#engine_type DrsTaskV3#engine_type}
   */
   readonly engineType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#instance_id DrsTaskV3#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#instance_id DrsTaskV3#instance_id}
   */
   readonly instanceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ip DrsTaskV3#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ip DrsTaskV3#ip}
   */
   readonly ip: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#name DrsTaskV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#name DrsTaskV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#password DrsTaskV3#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#password DrsTaskV3#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#port DrsTaskV3#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#port DrsTaskV3#port}
   */
   readonly port: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#region DrsTaskV3#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#region DrsTaskV3#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_check_sum DrsTaskV3#ssl_cert_check_sum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_check_sum DrsTaskV3#ssl_cert_check_sum}
   */
   readonly sslCertCheckSum?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_key DrsTaskV3#ssl_cert_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_key DrsTaskV3#ssl_cert_key}
   */
   readonly sslCertKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_name DrsTaskV3#ssl_cert_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_name DrsTaskV3#ssl_cert_name}
   */
   readonly sslCertName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_cert_password DrsTaskV3#ssl_cert_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_cert_password DrsTaskV3#ssl_cert_password}
   */
   readonly sslCertPassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#ssl_enabled DrsTaskV3#ssl_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#ssl_enabled DrsTaskV3#ssl_enabled}
   */
   readonly sslEnabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#subnet_id DrsTaskV3#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#subnet_id DrsTaskV3#subnet_id}
   */
   readonly subnetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#user DrsTaskV3#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#user DrsTaskV3#user}
   */
   readonly user: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#vpc_id DrsTaskV3#vpc_id}
+  */
+  readonly vpcId?: string;
 }
 
 export function drsTaskV3SourceDbToTerraform(struct?: DrsTaskV3SourceDbOutputReference | DrsTaskV3SourceDb): any {
@@ -859,6 +900,7 @@ export function drsTaskV3SourceDbToTerraform(struct?: DrsTaskV3SourceDbOutputRef
     ssl_enabled: cdktf.booleanToTerraform(struct!.sslEnabled),
     subnet_id: cdktf.stringToTerraform(struct!.subnetId),
     user: cdktf.stringToTerraform(struct!.user),
+    vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
 
@@ -953,6 +995,12 @@ export function drsTaskV3SourceDbToHclTerraform(struct?: DrsTaskV3SourceDbOutput
       type: "simple",
       storageClassType: "string",
     },
+    vpc_id: {
+      value: cdktf.stringToHclTerraform(struct!.vpcId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
   };
 
   // remove undefined attributes
@@ -1029,6 +1077,10 @@ export class DrsTaskV3SourceDbOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.user = this._user;
     }
+    if (this._vpcId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vpcId = this._vpcId;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1049,6 +1101,7 @@ export class DrsTaskV3SourceDbOutputReference extends cdktf.ComplexObject {
       this._sslEnabled = undefined;
       this._subnetId = undefined;
       this._user = undefined;
+      this._vpcId = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1066,6 +1119,7 @@ export class DrsTaskV3SourceDbOutputReference extends cdktf.ComplexObject {
       this._sslEnabled = value.sslEnabled;
       this._subnetId = value.subnetId;
       this._user = value.user;
+      this._vpcId = value.vpcId;
     }
   }
 
@@ -1282,16 +1336,36 @@ export class DrsTaskV3SourceDbOutputReference extends cdktf.ComplexObject {
   public get userInput() {
     return this._user;
   }
+
+  // vpc_id - computed: true, optional: true, required: false
+  private _vpcId?: string; 
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
+  }
+  public set vpcId(value: string) {
+    this._vpcId = value;
+  }
+  public resetVpcId() {
+    this._vpcId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcIdInput() {
+    return this._vpcId;
+  }
 }
 export interface DrsTaskV3Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#create DrsTaskV3#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#create DrsTaskV3#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#delete DrsTaskV3#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#delete DrsTaskV3#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#update DrsTaskV3#update}
+  */
+  readonly update?: string;
 }
 
 export function drsTaskV3TimeoutsToTerraform(struct?: DrsTaskV3Timeouts | cdktf.IResolvable): any {
@@ -1302,6 +1376,7 @@ export function drsTaskV3TimeoutsToTerraform(struct?: DrsTaskV3Timeouts | cdktf.
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -1320,6 +1395,12 @@ export function drsTaskV3TimeoutsToHclTerraform(struct?: DrsTaskV3Timeouts | cdk
     },
     delete: {
       value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1356,6 +1437,10 @@ export class DrsTaskV3TimeoutsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1365,6 +1450,7 @@ export class DrsTaskV3TimeoutsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1375,6 +1461,7 @@ export class DrsTaskV3TimeoutsOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -1409,10 +1496,26 @@ export class DrsTaskV3TimeoutsOutputReference extends cdktf.ComplexObject {
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3}
 */
 export class DrsTaskV3 extends cdktf.TerraformResource {
 
@@ -1428,7 +1531,7 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DrsTaskV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DrsTaskV3 to import
-  * @param importFromId The id of the existing DrsTaskV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DrsTaskV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DrsTaskV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1440,7 +1543,7 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/drs_task_v3 opentelekomcloud_drs_task_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1451,7 +1554,7 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_drs_task_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.45',
+        providerVersion: '1.36.46',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1462,6 +1565,7 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._action = config.action;
     this._description = config.description;
     this._destinationDbReadonly = config.destinationDbReadonly;
     this._direction = config.direction;
@@ -1487,6 +1591,22 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // action - computed: false, optional: true, required: false
+  private _action?: string; 
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+  public set action(value: string) {
+    this._action = value;
+  }
+  public resetAction() {
+    this._action = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actionInput() {
+    return this._action;
+  }
 
   // created_at - computed: true, optional: false, required: false
   public get createdAt() {
@@ -1707,6 +1827,11 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('region');
   }
 
+  // security_group_id - computed: true, optional: false, required: false
+  public get securityGroupId() {
+    return this.getStringAttribute('security_group_id');
+  }
+
   // start_time - computed: false, optional: true, required: false
   private _startTime?: string; 
   public get startTime() {
@@ -1726,6 +1851,11 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // subnet_id - computed: true, optional: false, required: false
+  public get subnetId() {
+    return this.getStringAttribute('subnet_id');
   }
 
   // tags - computed: false, optional: true, required: false
@@ -1755,6 +1885,11 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
     return this._type;
+  }
+
+  // vpc_id - computed: true, optional: false, required: false
+  public get vpcId() {
+    return this.getStringAttribute('vpc_id');
   }
 
   // destination_db - computed: false, optional: false, required: true
@@ -1821,6 +1956,7 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      action: cdktf.stringToTerraform(this._action),
       description: cdktf.stringToTerraform(this._description),
       destination_db_readonly: cdktf.booleanToTerraform(this._destinationDbReadonly),
       direction: cdktf.stringToTerraform(this._direction),
@@ -1846,6 +1982,12 @@ export class DrsTaskV3 extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      action: {
+        value: cdktf.stringToHclTerraform(this._action),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       description: {
         value: cdktf.stringToHclTerraform(this._description),
         isBlock: false,

@@ -4,7 +4,7 @@
 
 ### LtsGroupV2 <a name="LtsGroupV2" id="@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2 opentelekomcloud_lts_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the LtsGroupV2 to import.
 
 The id of the existing LtsGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,11 +847,11 @@ const ltsGroupV2Config: ltsGroupV2.LtsGroupV2Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#group_name LtsGroupV2#group_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.ttlInDays">ttlInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#ttl_in_days LtsGroupV2#ttl_in_days}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.groupAlias">groupAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#group_alias LtsGroupV2#group_alias}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#id LtsGroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#tags LtsGroupV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.groupName">groupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#group_name LtsGroupV2#group_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.ttlInDays">ttlInDays</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#ttl_in_days LtsGroupV2#ttl_in_days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.groupAlias">groupAlias</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#group_alias LtsGroupV2#group_alias}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#id LtsGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsGroupV2.LtsGroupV2Config.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#tags LtsGroupV2#tags}. |
 
 ---
 
@@ -933,7 +933,7 @@ public readonly groupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#group_name LtsGroupV2#group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#group_name LtsGroupV2#group_name}.
 
 ---
 
@@ -945,7 +945,7 @@ public readonly ttlInDays: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#ttl_in_days LtsGroupV2#ttl_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#ttl_in_days LtsGroupV2#ttl_in_days}.
 
 ---
 
@@ -957,7 +957,7 @@ public readonly groupAlias: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#group_alias LtsGroupV2#group_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#group_alias LtsGroupV2#group_alias}.
 
 ---
 
@@ -969,7 +969,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#id LtsGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#id LtsGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -984,7 +984,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.45/docs/resources/lts_group_v2#tags LtsGroupV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_group_v2#tags LtsGroupV2#tags}.
 
 ---
 

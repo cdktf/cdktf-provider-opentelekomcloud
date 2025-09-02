@@ -196,6 +196,7 @@ The following submodules are available:
 - [dataOpentelekomcloudSmnTopicSubscriptionV2](./dataOpentelekomcloudSmnTopicSubscriptionV2.python.md)
 - [dataOpentelekomcloudSmnTopicV2](./dataOpentelekomcloudSmnTopicV2.python.md)
 - [dataOpentelekomcloudTmsQuotasV1](./dataOpentelekomcloudTmsQuotasV1.python.md)
+- [dataOpentelekomcloudTmsResourceInstancesV1](./dataOpentelekomcloudTmsResourceInstancesV1.python.md)
 - [dataOpentelekomcloudTmsTagsV1](./dataOpentelekomcloudTmsTagsV1.python.md)
 - [dataOpentelekomcloudVbsBackupPolicyV2](./dataOpentelekomcloudVbsBackupPolicyV2.python.md)
 - [dataOpentelekomcloudVbsBackupV2](./dataOpentelekomcloudVbsBackupV2.python.md)

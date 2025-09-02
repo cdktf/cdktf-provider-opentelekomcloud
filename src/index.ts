@@ -422,6 +422,7 @@ export * as dataOpentelekomcloudSmnSubscriptionV2 from './data-opentelekomcloud-
 export * as dataOpentelekomcloudSmnTopicSubscriptionV2 from './data-opentelekomcloud-smn-topic-subscription-v2';
 export * as dataOpentelekomcloudSmnTopicV2 from './data-opentelekomcloud-smn-topic-v2';
 export * as dataOpentelekomcloudTmsQuotasV1 from './data-opentelekomcloud-tms-quotas-v1';
+export * as dataOpentelekomcloudTmsResourceInstancesV1 from './data-opentelekomcloud-tms-resource-instances-v1';
 export * as dataOpentelekomcloudTmsTagsV1 from './data-opentelekomcloud-tms-tags-v1';
 export * as dataOpentelekomcloudVbsBackupPolicyV2 from './data-opentelekomcloud-vbs-backup-policy-v2';
 export * as dataOpentelekomcloudVbsBackupV2 from './data-opentelekomcloud-vbs-backup-v2';
