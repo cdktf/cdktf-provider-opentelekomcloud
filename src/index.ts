@@ -217,6 +217,9 @@ export * as obsBucketObject from './obs-bucket-object';
 export * as obsBucketObjectAcl from './obs-bucket-object-acl';
 export * as obsBucketPolicy from './obs-bucket-policy';
 export * as obsBucketReplication from './obs-bucket-replication';
+export * as privateNatDnatRuleV3 from './private-nat-dnat-rule-v3';
+export * as privateNatGatewayV3 from './private-nat-gateway-v3';
+export * as privateNatTransitIpV3 from './private-nat-transit-ip-v3';
 export * as rdsBackupV3 from './rds-backup-v3';
 export * as rdsInstanceV1 from './rds-instance-v1';
 export * as rdsInstanceV3 from './rds-instance-v3';
@@ -423,6 +426,7 @@ export * as dataOpentelekomcloudSmnTopicSubscriptionV2 from './data-opentelekomc
 export * as dataOpentelekomcloudSmnTopicV2 from './data-opentelekomcloud-smn-topic-v2';
 export * as dataOpentelekomcloudTmsQuotasV1 from './data-opentelekomcloud-tms-quotas-v1';
 export * as dataOpentelekomcloudTmsResourceInstancesV1 from './data-opentelekomcloud-tms-resource-instances-v1';
+export * as dataOpentelekomcloudTmsResourceTypesV1 from './data-opentelekomcloud-tms-resource-types-v1';
 export * as dataOpentelekomcloudTmsTagsV1 from './data-opentelekomcloud-tms-tags-v1';
 export * as dataOpentelekomcloudVbsBackupPolicyV2 from './data-opentelekomcloud-vbs-backup-policy-v2';
 export * as dataOpentelekomcloudVbsBackupV2 from './data-opentelekomcloud-vbs-backup-v2';

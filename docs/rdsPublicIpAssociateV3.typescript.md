@@ -4,7 +4,7 @@
 
 ### RdsPublicIpAssociateV3 <a name="RdsPublicIpAssociateV3" id="@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3 opentelekomcloud_rds_public_ip_associate_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the RdsPublicIpAssociateV3 to 
 
 The id of the existing RdsPublicIpAssociateV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -820,10 +820,10 @@ const rdsPublicIpAssociateV3Config: rdsPublicIpAssociateV3.RdsPublicIpAssociateV
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#instance_id RdsPublicIpAssociateV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.publicIp">publicIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#public_ip RdsPublicIpAssociateV3#public_ip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.publicIpId">publicIpId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#public_ip_id RdsPublicIpAssociateV3#public_ip_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#id RdsPublicIpAssociateV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#instance_id RdsPublicIpAssociateV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.publicIp">publicIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#public_ip RdsPublicIpAssociateV3#public_ip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.publicIpId">publicIpId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#public_ip_id RdsPublicIpAssociateV3#public_ip_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#id RdsPublicIpAssociateV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Timeouts">RdsPublicIpAssociateV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +906,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#instance_id RdsPublicIpAssociateV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#instance_id RdsPublicIpAssociateV3#instance_id}.
 
 ---
 
@@ -918,7 +918,7 @@ public readonly publicIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#public_ip RdsPublicIpAssociateV3#public_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#public_ip RdsPublicIpAssociateV3#public_ip}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly publicIpId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#public_ip_id RdsPublicIpAssociateV3#public_ip_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#public_ip_id RdsPublicIpAssociateV3#public_ip_id}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#id RdsPublicIpAssociateV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#id RdsPublicIpAssociateV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ public readonly timeouts: RdsPublicIpAssociateV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#timeouts RdsPublicIpAssociateV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#timeouts RdsPublicIpAssociateV3#timeouts}
 
 ---
 
@@ -977,8 +977,8 @@ const rdsPublicIpAssociateV3Timeouts: rdsPublicIpAssociateV3.RdsPublicIpAssociat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#create RdsPublicIpAssociateV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#update RdsPublicIpAssociateV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#create RdsPublicIpAssociateV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.rdsPublicIpAssociateV3.RdsPublicIpAssociateV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#update RdsPublicIpAssociateV3#update}. |
 
 ---
 
@@ -990,7 +990,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#create RdsPublicIpAssociateV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#create RdsPublicIpAssociateV3#create}.
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/rds_public_ip_associate_v3#update RdsPublicIpAssociateV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/rds_public_ip_associate_v3#update RdsPublicIpAssociateV3#update}.
 
 ---
 

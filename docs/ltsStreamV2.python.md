@@ -4,7 +4,7 @@
 
 ### LtsStreamV2 <a name="LtsStreamV2" id="@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2 opentelekomcloud_lts_stream_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer"></a>
 
@@ -41,12 +41,12 @@ ltsStreamV2.LtsStreamV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#id LtsStreamV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.streamAlias">stream_alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.ttlInDays">ttl_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#id LtsStreamV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.streamAlias">stream_alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2.Initializer.parameter.ttlInDays">ttl_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#id LtsStreamV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#id LtsStreamV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}.
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}.
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}.
 
 ---
 
@@ -658,7 +658,7 @@ The construct id used in the generated config for the LtsStreamV2 to import.
 
 The id of the existing LtsStreamV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1064,12 +1064,12 @@ ltsStreamV2.LtsStreamV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#id LtsStreamV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.streamAlias">stream_alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.ttlInDays">ttl_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.groupId">group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.streamName">stream_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#id LtsStreamV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.streamAlias">stream_alias</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.ltsStreamV2.LtsStreamV2Config.property.ttlInDays">ttl_in_days</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}. |
 
 ---
 
@@ -1151,7 +1151,7 @@ group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#group_id LtsStreamV2#group_id}.
 
 ---
 
@@ -1163,7 +1163,7 @@ stream_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_name LtsStreamV2#stream_name}.
 
 ---
 
@@ -1175,7 +1175,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#id LtsStreamV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#id LtsStreamV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1190,7 @@ stream_alias: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#stream_alias LtsStreamV2#stream_alias}.
 
 ---
 
@@ -1202,7 +1202,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#tags LtsStreamV2#tags}.
 
 ---
 
@@ -1214,7 +1214,7 @@ ttl_in_days: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lts_stream_v2#ttl_in_days LtsStreamV2#ttl_in_days}.
 
 ---
 
