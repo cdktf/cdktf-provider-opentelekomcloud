@@ -217,6 +217,9 @@ Object.defineProperty(exports, 'obsBucketObject', { get: function () { return re
 Object.defineProperty(exports, 'obsBucketObjectAcl', { get: function () { return require('./obs-bucket-object-acl'); } });
 Object.defineProperty(exports, 'obsBucketPolicy', { get: function () { return require('./obs-bucket-policy'); } });
 Object.defineProperty(exports, 'obsBucketReplication', { get: function () { return require('./obs-bucket-replication'); } });
+Object.defineProperty(exports, 'privateNatDnatRuleV3', { get: function () { return require('./private-nat-dnat-rule-v3'); } });
+Object.defineProperty(exports, 'privateNatGatewayV3', { get: function () { return require('./private-nat-gateway-v3'); } });
+Object.defineProperty(exports, 'privateNatTransitIpV3', { get: function () { return require('./private-nat-transit-ip-v3'); } });
 Object.defineProperty(exports, 'rdsBackupV3', { get: function () { return require('./rds-backup-v3'); } });
 Object.defineProperty(exports, 'rdsInstanceV1', { get: function () { return require('./rds-instance-v1'); } });
 Object.defineProperty(exports, 'rdsInstanceV3', { get: function () { return require('./rds-instance-v3'); } });
@@ -423,6 +426,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicSubscriptionV2', { g
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceInstancesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-instances-v1'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceTypesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-types-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsTagsV1', { get: function () { return require('./data-opentelekomcloud-tms-tags-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupPolicyV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-policy-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudVbsBackupV2', { get: function () { return require('./data-opentelekomcloud-vbs-backup-v2'); } });
