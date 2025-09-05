@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudApigwApiHistoryV2 <a name="DataOpentelekomcloudApigwApiHistoryV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2 opentelekomcloud_apigw_api_history_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.environmentId">environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.environmentName">environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.environmentId">environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.environmentName">environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -527,7 +527,7 @@ The construct id used in the generated config for the DataOpentelekomcloudApigwA
 
 The id of the existing DataOpentelekomcloudApigwApiHistoryV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,11 +866,11 @@ dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Confi
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.environmentId">environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.environmentName">environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.apiId">api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.gatewayId">gateway_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.environmentId">environment_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.environmentName">environment_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}. |
 
 ---
 
@@ -952,7 +952,7 @@ api_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#api_id DataOpentelekomcloudApigwApiHistoryV2#api_id}.
 
 ---
 
@@ -964,7 +964,7 @@ gateway_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#gateway_id DataOpentelekomcloudApigwApiHistoryV2#gateway_id}.
 
 ---
 
@@ -976,7 +976,7 @@ environment_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_id DataOpentelekomcloudApigwApiHistoryV2#environment_id}.
 
 ---
 
@@ -988,7 +988,7 @@ environment_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#environment_name DataOpentelekomcloudApigwApiHistoryV2#environment_name}.
 
 ---
 
@@ -1000,7 +1000,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.46/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/apigw_api_history_v2#id DataOpentelekomcloudApigwApiHistoryV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
