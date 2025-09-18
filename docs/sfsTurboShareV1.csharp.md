@@ -4,7 +4,7 @@
 
 ### SfsTurboShareV1 <a name="SfsTurboShareV1" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.Initializer"></a>
 
@@ -76,6 +76,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetCryptKeyId">ResetCryptKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetEnhanced">ResetEnhanced</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetExpandType">ResetExpandType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetHpcBw">ResetHpcBw</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetShareProto">ResetShareProto</a></code> | *No description.* |
@@ -396,6 +398,18 @@ private void ResetCryptKeyId()
 private void ResetEnhanced()
 ```
 
+##### `ResetExpandType` <a name="ResetExpandType" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetExpandType"></a>
+
+```csharp
+private void ResetExpandType()
+```
+
+##### `ResetHpcBw` <a name="ResetHpcBw" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetHpcBw"></a>
+
+```csharp
+private void ResetHpcBw()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.resetId"></a>
 
 ```csharp
@@ -529,7 +543,7 @@ The construct id used in the generated config for the SfsTurboShareV1 to import.
 
 The id of the existing SfsTurboShareV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -560,13 +574,14 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.availableCapacity">AvailableCapacity</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandType">ExpandType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.exportLocation">ExportLocation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1TimeoutsOutputReference">SfsTurboShareV1TimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.version">Version</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.availabilityZoneInput">AvailabilityZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.cryptKeyIdInput">CryptKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.enhancedInput">EnhancedInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandTypeInput">ExpandTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.hpcBwInput">HpcBwInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
@@ -580,6 +595,8 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.cryptKeyId">CryptKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.enhanced">Enhanced</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandType">ExpandType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.hpcBw">HpcBw</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.region">Region</a></code> | <code>string</code> | *No description.* |
@@ -744,16 +761,6 @@ public string AvailableCapacity { get; }
 
 ---
 
-##### `ExpandType`<sup>Required</sup> <a name="ExpandType" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandType"></a>
-
-```csharp
-public string ExpandType { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ExportLocation`<sup>Required</sup> <a name="ExportLocation" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.exportLocation"></a>
 
 ```csharp
@@ -811,6 +818,26 @@ public object EnhancedInput { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `ExpandTypeInput`<sup>Optional</sup> <a name="ExpandTypeInput" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandTypeInput"></a>
+
+```csharp
+public string ExpandTypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HpcBwInput`<sup>Optional</sup> <a name="HpcBwInput" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.hpcBwInput"></a>
+
+```csharp
+public string HpcBwInput { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -941,6 +968,26 @@ public object Enhanced { get; }
 ```
 
 - *Type:* object
+
+---
+
+##### `ExpandType`<sup>Required</sup> <a name="ExpandType" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.expandType"></a>
+
+```csharp
+public string ExpandType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HpcBw`<sup>Required</sup> <a name="HpcBw" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1.property.hpcBw"></a>
+
+```csharp
+public string HpcBw { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1077,6 +1124,8 @@ new SfsTurboShareV1Config {
     string VpcId,
     string CryptKeyId = null,
     object Enhanced = null,
+    string ExpandType = null,
+    string HpcBw = null,
     string Id = null,
     string Region = null,
     string ShareProto = null,
@@ -1096,18 +1145,20 @@ new SfsTurboShareV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#availability_zone SfsTurboShareV1#availability_zone}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#name SfsTurboShareV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.securityGroupId">SecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#security_group_id SfsTurboShareV1#security_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#size SfsTurboShareV1#size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#subnet_id SfsTurboShareV1#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#vpc_id SfsTurboShareV1#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.cryptKeyId">CryptKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#crypt_key_id SfsTurboShareV1#crypt_key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.enhanced">Enhanced</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#enhanced SfsTurboShareV1#enhanced}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#id SfsTurboShareV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#region SfsTurboShareV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.shareProto">ShareProto</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#share_proto SfsTurboShareV1#share_proto}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.shareType">ShareType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#share_type SfsTurboShareV1#share_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#availability_zone SfsTurboShareV1#availability_zone}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#name SfsTurboShareV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.securityGroupId">SecurityGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#security_group_id SfsTurboShareV1#security_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.size">Size</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#size SfsTurboShareV1#size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#subnet_id SfsTurboShareV1#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#vpc_id SfsTurboShareV1#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.cryptKeyId">CryptKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#crypt_key_id SfsTurboShareV1#crypt_key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.enhanced">Enhanced</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#enhanced SfsTurboShareV1#enhanced}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.expandType">ExpandType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#expand_type SfsTurboShareV1#expand_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.hpcBw">HpcBw</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#hpc_bw SfsTurboShareV1#hpc_bw}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#id SfsTurboShareV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#region SfsTurboShareV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.shareProto">ShareProto</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#share_proto SfsTurboShareV1#share_proto}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.shareType">ShareType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#share_type SfsTurboShareV1#share_type}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Timeouts">SfsTurboShareV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1190,7 +1241,7 @@ public string AvailabilityZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#availability_zone SfsTurboShareV1#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#availability_zone SfsTurboShareV1#availability_zone}.
 
 ---
 
@@ -1202,7 +1253,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#name SfsTurboShareV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#name SfsTurboShareV1#name}.
 
 ---
 
@@ -1214,7 +1265,7 @@ public string SecurityGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#security_group_id SfsTurboShareV1#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#security_group_id SfsTurboShareV1#security_group_id}.
 
 ---
 
@@ -1226,7 +1277,7 @@ public double Size { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#size SfsTurboShareV1#size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#size SfsTurboShareV1#size}.
 
 ---
 
@@ -1238,7 +1289,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#subnet_id SfsTurboShareV1#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#subnet_id SfsTurboShareV1#subnet_id}.
 
 ---
 
@@ -1250,7 +1301,7 @@ public string VpcId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#vpc_id SfsTurboShareV1#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#vpc_id SfsTurboShareV1#vpc_id}.
 
 ---
 
@@ -1262,7 +1313,7 @@ public string CryptKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#crypt_key_id SfsTurboShareV1#crypt_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#crypt_key_id SfsTurboShareV1#crypt_key_id}.
 
 ---
 
@@ -1274,7 +1325,31 @@ public object Enhanced { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#enhanced SfsTurboShareV1#enhanced}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#enhanced SfsTurboShareV1#enhanced}.
+
+---
+
+##### `ExpandType`<sup>Optional</sup> <a name="ExpandType" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.expandType"></a>
+
+```csharp
+public string ExpandType { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#expand_type SfsTurboShareV1#expand_type}.
+
+---
+
+##### `HpcBw`<sup>Optional</sup> <a name="HpcBw" id="@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Config.property.hpcBw"></a>
+
+```csharp
+public string HpcBw { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#hpc_bw SfsTurboShareV1#hpc_bw}.
 
 ---
 
@@ -1286,7 +1361,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#id SfsTurboShareV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#id SfsTurboShareV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1301,7 +1376,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#region SfsTurboShareV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#region SfsTurboShareV1#region}.
 
 ---
 
@@ -1313,7 +1388,7 @@ public string ShareProto { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#share_proto SfsTurboShareV1#share_proto}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#share_proto SfsTurboShareV1#share_proto}.
 
 ---
 
@@ -1325,7 +1400,7 @@ public string ShareType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#share_type SfsTurboShareV1#share_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#share_type SfsTurboShareV1#share_type}.
 
 ---
 
@@ -1339,7 +1414,7 @@ public SfsTurboShareV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#timeouts SfsTurboShareV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#timeouts SfsTurboShareV1#timeouts}
 
 ---
 
@@ -1360,8 +1435,8 @@ new SfsTurboShareV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#create SfsTurboShareV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#delete SfsTurboShareV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#create SfsTurboShareV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sfsTurboShareV1.SfsTurboShareV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#delete SfsTurboShareV1#delete}. |
 
 ---
 
@@ -1373,7 +1448,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#create SfsTurboShareV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#create SfsTurboShareV1#create}.
 
 ---
 
@@ -1385,7 +1460,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/sfs_turbo_share_v1#delete SfsTurboShareV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/sfs_turbo_share_v1#delete SfsTurboShareV1#delete}.
 
 ---
 

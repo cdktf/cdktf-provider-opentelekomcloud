@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudRmsResourceRelationshipsV1 <a name="DataOpentelekomcloudRmsResourceRelationshipsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1 opentelekomcloud_rms_resource_relationships_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRmsRes
 
 The id of the existing DataOpentelekomcloudRmsResourceRelationshipsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,9 +643,9 @@ const dataOpentelekomcloudRmsResourceRelationshipsV1Config: dataOpentelekomcloud
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.direction">direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#direction DataOpentelekomcloudRmsResourceRelationshipsV1#direction}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#resource_id DataOpentelekomcloudRmsResourceRelationshipsV1#resource_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#id DataOpentelekomcloudRmsResourceRelationshipsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.direction">direction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#direction DataOpentelekomcloudRmsResourceRelationshipsV1#direction}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#resource_id DataOpentelekomcloudRmsResourceRelationshipsV1#resource_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceRelationshipsV1.DataOpentelekomcloudRmsResourceRelationshipsV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#id DataOpentelekomcloudRmsResourceRelationshipsV1#id}. |
 
 ---
 
@@ -727,7 +727,7 @@ public readonly direction: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#direction DataOpentelekomcloudRmsResourceRelationshipsV1#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#direction DataOpentelekomcloudRmsResourceRelationshipsV1#direction}.
 
 ---
 
@@ -739,7 +739,7 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#resource_id DataOpentelekomcloudRmsResourceRelationshipsV1#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#resource_id DataOpentelekomcloudRmsResourceRelationshipsV1#resource_id}.
 
 ---
 
@@ -751,7 +751,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/rms_resource_relationships_v1#id DataOpentelekomcloudRmsResourceRelationshipsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/rms_resource_relationships_v1#id DataOpentelekomcloudRmsResourceRelationshipsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

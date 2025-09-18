@@ -4,7 +4,7 @@
 
 ### LbLtsLogV3 <a name="LbLtsLogV3" id="@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3 opentelekomcloud_lb_lts_log_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the LbLtsLogV3 to import.
 
 The id of the existing LbLtsLogV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -801,10 +801,10 @@ new LbLtsLogV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.loadbalancerId">LoadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#loadbalancer_id LbLtsLogV3#loadbalancer_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.logGroupId">LogGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#log_group_id LbLtsLogV3#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.logStreamId">LogStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#log_stream_id LbLtsLogV3#log_stream_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#id LbLtsLogV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.loadbalancerId">LoadbalancerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#loadbalancer_id LbLtsLogV3#loadbalancer_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.logGroupId">LogGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#log_group_id LbLtsLogV3#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.logStreamId">LogStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#log_stream_id LbLtsLogV3#log_stream_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbLtsLogV3.LbLtsLogV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#id LbLtsLogV3#id}. |
 
 ---
 
@@ -886,7 +886,7 @@ public string LoadbalancerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#loadbalancer_id LbLtsLogV3#loadbalancer_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#loadbalancer_id LbLtsLogV3#loadbalancer_id}.
 
 ---
 
@@ -898,7 +898,7 @@ public string LogGroupId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#log_group_id LbLtsLogV3#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#log_group_id LbLtsLogV3#log_group_id}.
 
 ---
 
@@ -910,7 +910,7 @@ public string LogStreamId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#log_stream_id LbLtsLogV3#log_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#log_stream_id LbLtsLogV3#log_stream_id}.
 
 ---
 
@@ -922,7 +922,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/lb_lts_log_v3#id LbLtsLogV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_lts_log_v3#id LbLtsLogV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

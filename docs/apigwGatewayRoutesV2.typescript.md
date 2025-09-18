@@ -4,7 +4,7 @@
 
 ### ApigwGatewayRoutesV2 <a name="ApigwGatewayRoutesV2" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2 opentelekomcloud_apigw_gateway_routes_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ApigwGatewayRoutesV2 to im
 
 The id of the existing ApigwGatewayRoutesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,9 +767,9 @@ const apigwGatewayRoutesV2Config: apigwGatewayRoutesV2.ApigwGatewayRoutesV2Confi
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.nexthops">nexthops</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.nexthops">nexthops</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwGatewayRoutesV2.ApigwGatewayRoutesV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ public readonly gatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#gateway_id ApigwGatewayRoutesV2#gateway_id}.
 
 ---
 
@@ -863,7 +863,7 @@ public readonly nexthops: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#nexthops ApigwGatewayRoutesV2#nexthops}.
 
 ---
 
@@ -875,7 +875,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/apigw_gateway_routes_v2#id ApigwGatewayRoutesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

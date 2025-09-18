@@ -4,7 +4,7 @@
 
 ### CesMetricDataV1 <a name="CesMetricDataV1" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1 opentelekomcloud_ces_metric_data_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.Initializer"></a>
 
@@ -521,7 +521,7 @@ The construct id used in the generated config for the CesMetricDataV1 to import.
 
 The id of the existing CesMetricDataV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -929,14 +929,14 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.collectTime">CollectTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#collect_time CesMetricDataV1#collect_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.collectTime">CollectTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#collect_time CesMetricDataV1#collect_time}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.metric">Metric</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric">CesMetricDataV1Metric</a></code> | metric block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#ttl CesMetricDataV1#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#id CesMetricDataV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.ttl">Ttl</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#ttl CesMetricDataV1#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.value">Value</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#id CesMetricDataV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts">CesMetricDataV1Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#type CesMetricDataV1#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#unit CesMetricDataV1#unit}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#type CesMetricDataV1#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.property.unit">Unit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#unit CesMetricDataV1#unit}. |
 
 ---
 
@@ -1018,7 +1018,7 @@ CollectTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#collect_time CesMetricDataV1#collect_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#collect_time CesMetricDataV1#collect_time}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Metric CesMetricDataV1Metric
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#metric CesMetricDataV1#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#metric CesMetricDataV1#metric}
 
 ---
 
@@ -1044,7 +1044,7 @@ Ttl *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#ttl CesMetricDataV1#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#ttl CesMetricDataV1#ttl}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Value *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#id CesMetricDataV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#id CesMetricDataV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1085,7 @@ Timeouts CesMetricDataV1Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#timeouts CesMetricDataV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#timeouts CesMetricDataV1#timeouts}
 
 ---
 
@@ -1097,7 +1097,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#type CesMetricDataV1#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#type CesMetricDataV1#type}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Unit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#unit CesMetricDataV1#unit}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#unit CesMetricDataV1#unit}.
 
 ---
 
@@ -1132,8 +1132,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.property.dimensions">Dimensions</a></code> | <code>interface{}</code> | dimensions block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.property.metricName">MetricName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.property.namespace">Namespace</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}. |
 
 ---
 
@@ -1147,7 +1147,7 @@ Dimensions interface{}
 
 dimensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#dimensions CesMetricDataV1#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#dimensions CesMetricDataV1#dimensions}
 
 ---
 
@@ -1159,7 +1159,7 @@ MetricName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#metric_name CesMetricDataV1#metric_name}.
 
 ---
 
@@ -1171,7 +1171,7 @@ Namespace *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#namespace CesMetricDataV1#namespace}.
 
 ---
 
@@ -1192,8 +1192,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#name CesMetricDataV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensions.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#name CesMetricDataV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensions.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#name CesMetricDataV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#name CesMetricDataV1#name}.
 
 ---
 
@@ -1217,7 +1217,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#value CesMetricDataV1#value}.
 
 ---
 
@@ -1238,8 +1238,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#create CesMetricDataV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#delete CesMetricDataV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#create CesMetricDataV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#delete CesMetricDataV1#delete}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#create CesMetricDataV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#create CesMetricDataV1#create}.
 
 ---
 
@@ -1263,7 +1263,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/ces_metric_data_v1#delete CesMetricDataV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/ces_metric_data_v1#delete CesMetricDataV1#delete}.
 
 ---
 

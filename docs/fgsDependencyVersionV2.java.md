@@ -4,7 +4,7 @@
 
 ### FgsDependencyVersionV2 <a name="FgsDependencyVersionV2" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2 opentelekomcloud_fgs_dependency_version_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer"></a>
 
@@ -43,12 +43,12 @@ FgsDependencyVersionV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.link">link</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer.parameter.link">link</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}.
 
 ---
 
@@ -614,7 +614,7 @@ The construct id used in the generated config for the FgsDependencyVersionV2 to 
 
 The id of the existing FgsDependencyVersionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,12 +1057,12 @@ FgsDependencyVersionV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.file">file</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.link">link</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.runtime">runtime</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.file">file</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.property.link">link</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#name FgsDependencyVersionV2#name}.
 
 ---
 
@@ -1156,7 +1156,7 @@ public java.lang.String getRuntime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#runtime FgsDependencyVersionV2#runtime}.
 
 ---
 
@@ -1168,7 +1168,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#description FgsDependencyVersionV2#description}.
 
 ---
 
@@ -1180,7 +1180,7 @@ public java.lang.String getFile();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#file FgsDependencyVersionV2#file}.
 
 ---
 
@@ -1192,7 +1192,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#id FgsDependencyVersionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1207,7 +1207,7 @@ public java.lang.String getLink();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/fgs_dependency_version_v2#link FgsDependencyVersionV2#link}.
 
 ---
 

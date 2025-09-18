@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudEnterpriseVpnGatewayV5 <a name="DataOpentelekomcloudEnterpriseVpnGatewayV5" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/enterprise_vpn_gateway_v5 opentelekomcloud_enterprise_vpn_gateway_v5}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataOpentelekomcloudEnterp
 
 The id of the existing DataOpentelekomcloudEnterpriseVpnGatewayV5 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/enterprise_vpn_gateway_v5#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/enterprise_vpn_gateway_v5#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ const dataOpentelekomcloudEnterpriseVpnGatewayV5Config: dataOpentelekomcloudEnte
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/enterprise_vpn_gateway_v5#id DataOpentelekomcloudEnterpriseVpnGatewayV5#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnGatewayV5.DataOpentelekomcloudEnterpriseVpnGatewayV5Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/enterprise_vpn_gateway_v5#id DataOpentelekomcloudEnterpriseVpnGatewayV5#id}. |
 
 ---
 
@@ -916,7 +916,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/enterprise_vpn_gateway_v5#id DataOpentelekomcloudEnterpriseVpnGatewayV5#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/enterprise_vpn_gateway_v5#id DataOpentelekomcloudEnterpriseVpnGatewayV5#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
