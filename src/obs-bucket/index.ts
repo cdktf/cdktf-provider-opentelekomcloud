@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,110 +13,110 @@ import * as cdktf from 'cdktf';
 
 export interface ObsBucketConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#acl ObsBucket#acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#acl ObsBucket#acl}
   */
   readonly acl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#bucket ObsBucket#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#bucket ObsBucket#bucket}
   */
   readonly bucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#force_destroy ObsBucket#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#id ObsBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#id ObsBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#parallel_fs ObsBucket#parallel_fs}
   */
   readonly parallelFs?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#region ObsBucket#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#region ObsBucket#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
   */
   readonly storageClass?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#tags ObsBucket#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#tags ObsBucket#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#user_domain_names ObsBucket#user_domain_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#user_domain_names ObsBucket#user_domain_names}
   */
   readonly userDomainNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#versioning ObsBucket#versioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#versioning ObsBucket#versioning}
   */
   readonly versioning?: boolean | cdktf.IResolvable;
   /**
   * cors_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#cors_rule ObsBucket#cors_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#cors_rule ObsBucket#cors_rule}
   */
   readonly corsRule?: ObsBucketCorsRule[] | cdktf.IResolvable;
   /**
   * event_notifications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#event_notifications ObsBucket#event_notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#event_notifications ObsBucket#event_notifications}
   */
   readonly eventNotifications?: ObsBucketEventNotifications[] | cdktf.IResolvable;
   /**
   * lifecycle_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#lifecycle_rule ObsBucket#lifecycle_rule}
   */
   readonly lifecycleRule?: ObsBucketLifecycleRule[] | cdktf.IResolvable;
   /**
   * logging block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#logging ObsBucket#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#logging ObsBucket#logging}
   */
   readonly logging?: ObsBucketLogging[] | cdktf.IResolvable;
   /**
   * server_side_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#server_side_encryption ObsBucket#server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#server_side_encryption ObsBucket#server_side_encryption}
   */
   readonly serverSideEncryption?: ObsBucketServerSideEncryption;
   /**
   * website block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#website ObsBucket#website}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#website ObsBucket#website}
   */
   readonly website?: ObsBucketWebsite;
   /**
   * worm_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#worm_policy ObsBucket#worm_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#worm_policy ObsBucket#worm_policy}
   */
   readonly wormPolicy?: ObsBucketWormPolicy;
 }
 export interface ObsBucketCorsRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#allowed_headers ObsBucket#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#allowed_methods ObsBucket#allowed_methods}
   */
   readonly allowedMethods: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#allowed_origins ObsBucket#allowed_origins}
   */
   readonly allowedOrigins: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#expose_headers ObsBucket#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#max_age_seconds ObsBucket#max_age_seconds}
   */
   readonly maxAgeSeconds?: number;
 }
@@ -342,11 +342,11 @@ export class ObsBucketCorsRuleList extends cdktf.ComplexList {
 }
 export interface ObsBucketEventNotificationsFilterRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#name ObsBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#name ObsBucket#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#value ObsBucket#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#value ObsBucket#value}
   */
   readonly value?: string;
 }
@@ -491,24 +491,24 @@ export class ObsBucketEventNotificationsFilterRuleList extends cdktf.ComplexList
 }
 export interface ObsBucketEventNotifications {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#events ObsBucket#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#events ObsBucket#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#id ObsBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#id ObsBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#topic ObsBucket#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#topic ObsBucket#topic}
   */
   readonly topic: string;
   /**
   * filter_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#filter_rule ObsBucket#filter_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#filter_rule ObsBucket#filter_rule}
   */
   readonly filterRule?: ObsBucketEventNotificationsFilterRule[] | cdktf.IResolvable;
 }
@@ -703,9 +703,122 @@ export class ObsBucketEventNotificationsList extends cdktf.ComplexList {
     return new ObsBucketEventNotificationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ObsBucketLifecycleRuleAbortIncompleteMultipartUpload {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
+  */
+  readonly days: number;
+}
+
+export function obsBucketLifecycleRuleAbortIncompleteMultipartUploadToTerraform(struct?: ObsBucketLifecycleRuleAbortIncompleteMultipartUpload | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    days: cdktf.numberToTerraform(struct!.days),
+  }
+}
+
+
+export function obsBucketLifecycleRuleAbortIncompleteMultipartUploadToHclTerraform(struct?: ObsBucketLifecycleRuleAbortIncompleteMultipartUpload | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.numberToHclTerraform(struct!.days),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObsBucketLifecycleRuleAbortIncompleteMultipartUploadOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObsBucketLifecycleRuleAbortIncompleteMultipartUpload | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._days !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.days = this._days;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObsBucketLifecycleRuleAbortIncompleteMultipartUpload | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._days = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._days = value.days;
+    }
+  }
+
+  // days - computed: false, optional: false, required: true
+  private _days?: number; 
+  public get days() {
+    return this.getNumberAttribute('days');
+  }
+  public set days(value: number) {
+    this._days = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get daysInput() {
+    return this._days;
+  }
+}
+
+export class ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList extends cdktf.ComplexList {
+  public internalValue? : ObsBucketLifecycleRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObsBucketLifecycleRuleAbortIncompleteMultipartUploadOutputReference {
+    return new ObsBucketLifecycleRuleAbortIncompleteMultipartUploadOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObsBucketLifecycleRuleExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#days ObsBucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
   */
   readonly days: number;
 }
@@ -818,7 +931,7 @@ export class ObsBucketLifecycleRuleExpirationList extends cdktf.ComplexList {
 }
 export interface ObsBucketLifecycleRuleNoncurrentVersionExpiration {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#days ObsBucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
   */
   readonly days: number;
 }
@@ -931,11 +1044,11 @@ export class ObsBucketLifecycleRuleNoncurrentVersionExpirationList extends cdktf
 }
 export interface ObsBucketLifecycleRuleNoncurrentVersionTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#days ObsBucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
   */
   readonly days: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
   */
   readonly storageClass: string;
 }
@@ -1074,11 +1187,11 @@ export class ObsBucketLifecycleRuleNoncurrentVersionTransitionList extends cdktf
 }
 export interface ObsBucketLifecycleRuleTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#key ObsBucket#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#key ObsBucket#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#value ObsBucket#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#value ObsBucket#value}
   */
   readonly value: string;
 }
@@ -1217,11 +1330,11 @@ export class ObsBucketLifecycleRuleTagList extends cdktf.ComplexList {
 }
 export interface ObsBucketLifecycleRuleTransition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#days ObsBucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
   */
   readonly days: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#storage_class ObsBucket#storage_class}
   */
   readonly storageClass: string;
 }
@@ -1360,45 +1473,51 @@ export class ObsBucketLifecycleRuleTransitionList extends cdktf.ComplexList {
 }
 export interface ObsBucketLifecycleRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#enabled ObsBucket#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#enabled ObsBucket#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#name ObsBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#name ObsBucket#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#prefix ObsBucket#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#prefix ObsBucket#prefix}
   */
   readonly prefix?: string;
   /**
+  * abort_incomplete_multipart_upload block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#abort_incomplete_multipart_upload ObsBucket#abort_incomplete_multipart_upload}
+  */
+  readonly abortIncompleteMultipartUpload?: ObsBucketLifecycleRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable;
+  /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#expiration ObsBucket#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#expiration ObsBucket#expiration}
   */
   readonly expiration?: ObsBucketLifecycleRuleExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#noncurrent_version_expiration ObsBucket#noncurrent_version_expiration}
   */
   readonly noncurrentVersionExpiration?: ObsBucketLifecycleRuleNoncurrentVersionExpiration[] | cdktf.IResolvable;
   /**
   * noncurrent_version_transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#noncurrent_version_transition ObsBucket#noncurrent_version_transition}
   */
   readonly noncurrentVersionTransition?: ObsBucketLifecycleRuleNoncurrentVersionTransition[] | cdktf.IResolvable;
   /**
   * tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#tag ObsBucket#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#tag ObsBucket#tag}
   */
   readonly tag?: ObsBucketLifecycleRuleTag[] | cdktf.IResolvable;
   /**
   * transition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#transition ObsBucket#transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#transition ObsBucket#transition}
   */
   readonly transition?: ObsBucketLifecycleRuleTransition[] | cdktf.IResolvable;
 }
@@ -1412,6 +1531,7 @@ export function obsBucketLifecycleRuleToTerraform(struct?: ObsBucketLifecycleRul
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     name: cdktf.stringToTerraform(struct!.name),
     prefix: cdktf.stringToTerraform(struct!.prefix),
+    abort_incomplete_multipart_upload: cdktf.listMapper(obsBucketLifecycleRuleAbortIncompleteMultipartUploadToTerraform, true)(struct!.abortIncompleteMultipartUpload),
     expiration: cdktf.listMapper(obsBucketLifecycleRuleExpirationToTerraform, true)(struct!.expiration),
     noncurrent_version_expiration: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionExpirationToTerraform, true)(struct!.noncurrentVersionExpiration),
     noncurrent_version_transition: cdktf.listMapper(obsBucketLifecycleRuleNoncurrentVersionTransitionToTerraform, true)(struct!.noncurrentVersionTransition),
@@ -1444,6 +1564,12 @@ export function obsBucketLifecycleRuleToHclTerraform(struct?: ObsBucketLifecycle
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    abort_incomplete_multipart_upload: {
+      value: cdktf.listMapperHcl(obsBucketLifecycleRuleAbortIncompleteMultipartUploadToHclTerraform, true)(struct!.abortIncompleteMultipartUpload),
+      isBlock: true,
+      type: "set",
+      storageClassType: "ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList",
     },
     expiration: {
       value: cdktf.listMapperHcl(obsBucketLifecycleRuleExpirationToHclTerraform, true)(struct!.expiration),
@@ -1513,6 +1639,10 @@ export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.prefix = this._prefix;
     }
+    if (this._abortIncompleteMultipartUpload?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.abortIncompleteMultipartUpload = this._abortIncompleteMultipartUpload?.internalValue;
+    }
     if (this._expiration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.expiration = this._expiration?.internalValue;
@@ -1543,6 +1673,7 @@ export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
       this._enabled = undefined;
       this._name = undefined;
       this._prefix = undefined;
+      this._abortIncompleteMultipartUpload.internalValue = undefined;
       this._expiration.internalValue = undefined;
       this._noncurrentVersionExpiration.internalValue = undefined;
       this._noncurrentVersionTransition.internalValue = undefined;
@@ -1559,6 +1690,7 @@ export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
       this._enabled = value.enabled;
       this._name = value.name;
       this._prefix = value.prefix;
+      this._abortIncompleteMultipartUpload.internalValue = value.abortIncompleteMultipartUpload;
       this._expiration.internalValue = value.expiration;
       this._noncurrentVersionExpiration.internalValue = value.noncurrentVersionExpiration;
       this._noncurrentVersionTransition.internalValue = value.noncurrentVersionTransition;
@@ -1607,6 +1739,22 @@ export class ObsBucketLifecycleRuleOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get prefixInput() {
     return this._prefix;
+  }
+
+  // abort_incomplete_multipart_upload - computed: false, optional: true, required: false
+  private _abortIncompleteMultipartUpload = new ObsBucketLifecycleRuleAbortIncompleteMultipartUploadList(this, "abort_incomplete_multipart_upload", true);
+  public get abortIncompleteMultipartUpload() {
+    return this._abortIncompleteMultipartUpload;
+  }
+  public putAbortIncompleteMultipartUpload(value: ObsBucketLifecycleRuleAbortIncompleteMultipartUpload[] | cdktf.IResolvable) {
+    this._abortIncompleteMultipartUpload.internalValue = value;
+  }
+  public resetAbortIncompleteMultipartUpload() {
+    this._abortIncompleteMultipartUpload.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get abortIncompleteMultipartUploadInput() {
+    return this._abortIncompleteMultipartUpload.internalValue;
   }
 
   // expiration - computed: false, optional: true, required: false
@@ -1711,15 +1859,15 @@ export class ObsBucketLifecycleRuleList extends cdktf.ComplexList {
 }
 export interface ObsBucketLogging {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#agency ObsBucket#agency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#agency ObsBucket#agency}
   */
   readonly agency?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#target_bucket ObsBucket#target_bucket}
   */
   readonly targetBucket: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#target_prefix ObsBucket#target_prefix}
   */
   readonly targetPrefix?: string;
 }
@@ -1890,15 +2038,15 @@ export class ObsBucketLoggingList extends cdktf.ComplexList {
 }
 export interface ObsBucketServerSideEncryption {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#algorithm ObsBucket#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#kms_key_id ObsBucket#kms_key_id}
   */
   readonly kmsKeyId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#kms_project_id ObsBucket#kms_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#kms_project_id ObsBucket#kms_project_id}
   */
   readonly kmsProjectId?: string;
 }
@@ -2034,19 +2182,19 @@ export class ObsBucketServerSideEncryptionOutputReference extends cdktf.ComplexO
 }
 export interface ObsBucketWebsite {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#error_document ObsBucket#error_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#error_document ObsBucket#error_document}
   */
   readonly errorDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#index_document ObsBucket#index_document}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#index_document ObsBucket#index_document}
   */
   readonly indexDocument?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#redirect_all_requests_to ObsBucket#redirect_all_requests_to}
   */
   readonly redirectAllRequestsTo?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#routing_rules ObsBucket#routing_rules}
   */
   readonly routingRules?: string;
 }
@@ -2217,11 +2365,11 @@ export class ObsBucketWebsiteOutputReference extends cdktf.ComplexObject {
 }
 export interface ObsBucketWormPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#days ObsBucket#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#days ObsBucket#days}
   */
   readonly days?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#years ObsBucket#years}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#years ObsBucket#years}
   */
   readonly years?: number;
 }
@@ -2334,7 +2482,7 @@ export class ObsBucketWormPolicyOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket opentelekomcloud_obs_bucket}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket opentelekomcloud_obs_bucket}
 */
 export class ObsBucket extends cdktf.TerraformResource {
 
@@ -2350,7 +2498,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ObsBucket resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObsBucket to import
-  * @param importFromId The id of the existing ObsBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObsBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObsBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2362,7 +2510,7 @@ export class ObsBucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/obs_bucket opentelekomcloud_obs_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2373,7 +2521,7 @@ export class ObsBucket extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_obs_bucket',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.47',
+        providerVersion: '1.36.48',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### EnterpriseVpnConnectionMonitorV5 <a name="EnterpriseVpnConnectionMonitorV5" id="@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5 opentelekomcloud_enterprise_vpn_connection_monitor_v5}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the EnterpriseVpnConnectionMon
 
 The id of the existing EnterpriseVpnConnectionMonitorV5 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,8 +778,8 @@ const enterpriseVpnConnectionMonitorV5Config: enterpriseVpnConnectionMonitorV5.E
 | <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.enterpriseVpnConnectionMonitorV5.EnterpriseVpnConnectionMonitorV5Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}. |
 
 ---
 
@@ -861,7 +861,7 @@ public readonly connectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5#connection_id EnterpriseVpnConnectionMonitorV5#connection_id}.
 
 ---
 
@@ -873,7 +873,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/enterprise_vpn_connection_monitor_v5#id EnterpriseVpnConnectionMonitorV5#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

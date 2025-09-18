@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudSfsTurboShareV1 <a name="DataOpentelekomcloudSfsTurboShareV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1 opentelekomcloud_sfs_turbo_share_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudSfsTur
 
 The id of the existing DataOpentelekomcloudSfsTurboShareV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -403,7 +403,9 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.availableCapacity">availableCapacity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.cryptKeyId">cryptKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.expandType">expandType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.exportLocation">exportLocation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.hpcBw">hpcBw</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.securityGroupId">securityGroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.shareProto">shareProto</a></code> | <code>string</code> | *No description.* |
@@ -571,10 +573,30 @@ public readonly cryptKeyId: string;
 
 ---
 
+##### `expandType`<sup>Required</sup> <a name="expandType" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.expandType"></a>
+
+```typescript
+public readonly expandType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `exportLocation`<sup>Required</sup> <a name="exportLocation" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.exportLocation"></a>
 
 ```typescript
 public readonly exportLocation: string;
+```
+
+- *Type:* string
+
+---
+
+##### `hpcBw`<sup>Required</sup> <a name="hpcBw" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1.property.hpcBw"></a>
+
+```typescript
+public readonly hpcBw: string;
 ```
 
 - *Type:* string
@@ -742,8 +764,8 @@ const dataOpentelekomcloudSfsTurboShareV1Config: dataOpentelekomcloudSfsTurboSha
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSfsTurboShareV1.DataOpentelekomcloudSfsTurboShareV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}. |
 
 ---
 
@@ -825,7 +847,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1#name DataOpentelekomcloudSfsTurboShareV1#name}.
 
 ---
 
@@ -837,7 +859,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/data-sources/sfs_turbo_share_v1#id DataOpentelekomcloudSfsTurboShareV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

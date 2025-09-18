@@ -4,7 +4,7 @@
 
 ### ErFlowLogV3 <a name="ErFlowLogV3" id="@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3 opentelekomcloud_er_flow_log_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the ErFlowLogV3 to import.
 
 The id of the existing ErFlowLogV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1010,16 +1010,16 @@ const erFlowLogV3Config: erFlowLogV3.ErFlowLogV3Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#instance_id ErFlowLogV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logGroupId">logGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_group_id ErFlowLogV3#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logStoreType">logStoreType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_store_type ErFlowLogV3#log_store_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logStreamId">logStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_stream_id ErFlowLogV3#log_stream_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#name ErFlowLogV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#resource_id ErFlowLogV3#resource_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#resource_type ErFlowLogV3#resource_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#description ErFlowLogV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#enabled ErFlowLogV3#enabled}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#id ErFlowLogV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.instanceId">instanceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#instance_id ErFlowLogV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logGroupId">logGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_group_id ErFlowLogV3#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logStoreType">logStoreType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_store_type ErFlowLogV3#log_store_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.logStreamId">logStreamId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_stream_id ErFlowLogV3#log_stream_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#name ErFlowLogV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#resource_id ErFlowLogV3#resource_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.resourceType">resourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#resource_type ErFlowLogV3#resource_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#description ErFlowLogV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#enabled ErFlowLogV3#enabled}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#id ErFlowLogV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts">ErFlowLogV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1102,7 +1102,7 @@ public readonly instanceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#instance_id ErFlowLogV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#instance_id ErFlowLogV3#instance_id}.
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly logGroupId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_group_id ErFlowLogV3#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_group_id ErFlowLogV3#log_group_id}.
 
 ---
 
@@ -1126,7 +1126,7 @@ public readonly logStoreType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_store_type ErFlowLogV3#log_store_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_store_type ErFlowLogV3#log_store_type}.
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly logStreamId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#log_stream_id ErFlowLogV3#log_stream_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#log_stream_id ErFlowLogV3#log_stream_id}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#name ErFlowLogV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#name ErFlowLogV3#name}.
 
 ---
 
@@ -1162,7 +1162,7 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#resource_id ErFlowLogV3#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#resource_id ErFlowLogV3#resource_id}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly resourceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#resource_type ErFlowLogV3#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#resource_type ErFlowLogV3#resource_type}.
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#description ErFlowLogV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#description ErFlowLogV3#description}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#enabled ErFlowLogV3#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#enabled ErFlowLogV3#enabled}.
 
 ---
 
@@ -1210,7 +1210,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#id ErFlowLogV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#id ErFlowLogV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1227,7 +1227,7 @@ public readonly timeouts: ErFlowLogV3Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#timeouts ErFlowLogV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#timeouts ErFlowLogV3#timeouts}
 
 ---
 
@@ -1245,9 +1245,9 @@ const erFlowLogV3Timeouts: erFlowLogV3.ErFlowLogV3Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#create ErFlowLogV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#delete ErFlowLogV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#update ErFlowLogV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#create ErFlowLogV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#delete ErFlowLogV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.erFlowLogV3.ErFlowLogV3Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#update ErFlowLogV3#update}. |
 
 ---
 
@@ -1259,7 +1259,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#create ErFlowLogV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#create ErFlowLogV3#create}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#delete ErFlowLogV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#delete ErFlowLogV3#delete}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.47/docs/resources/er_flow_log_v3#update ErFlowLogV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/er_flow_log_v3#update ErFlowLogV3#update}.
 
 ---
 
