@@ -254,6 +254,7 @@ export * as swrDomainV2 from './swr-domain-v2';
 export * as swrOrganizationPermissionsV2 from './swr-organization-permissions-v2';
 export * as swrOrganizationV2 from './swr-organization-v2';
 export * as swrRepositoryV2 from './swr-repository-v2';
+export * as taurusdbMysqlBackupV3 from './taurusdb-mysql-backup-v3';
 export * as taurusdbMysqlInstanceV3 from './taurusdb-mysql-instance-v3';
 export * as tmsResourceTagsV1 from './tms-resource-tags-v1';
 export * as tmsTagsV1 from './tms-tags-v1';
@@ -268,6 +269,8 @@ export * as vpcPeeringConnectionAccepterV2 from './vpc-peering-connection-accept
 export * as vpcPeeringConnectionV2 from './vpc-peering-connection-v2';
 export * as vpcRouteTableV1 from './vpc-route-table-v1';
 export * as vpcRouteV2 from './vpc-route-v2';
+export * as vpcSecgroupRuleV3 from './vpc-secgroup-rule-v3';
+export * as vpcSecgroupV3 from './vpc-secgroup-v3';
 export * as vpcSubnetV1 from './vpc-subnet-v1';
 export * as vpcV1 from './vpc-v1';
 export * as vpcepApprovalV1 from './vpcep-approval-v1';
@@ -305,6 +308,7 @@ export * as wafWebtamperprotectionRuleV1 from './waf-webtamperprotection-rule-v1
 export * as wafWhiteblackipRuleV1 from './waf-whiteblackip-rule-v1';
 export * as dataOpentelekomcloudAntiddosV1 from './data-opentelekomcloud-antiddos-v1';
 export * as dataOpentelekomcloudApigwApiHistoryV2 from './data-opentelekomcloud-apigw-api-history-v2';
+export * as dataOpentelekomcloudApigwEnvironmentsV2 from './data-opentelekomcloud-apigw-environments-v2';
 export * as dataOpentelekomcloudApigwGatewayFeaturesV2 from './data-opentelekomcloud-apigw-gateway-features-v2';
 export * as dataOpentelekomcloudApigwGroupsV2 from './data-opentelekomcloud-apigw-groups-v2';
 export * as dataOpentelekomcloudAsmServiceMeshV1 from './data-opentelekomcloud-asm-service-mesh-v1';
