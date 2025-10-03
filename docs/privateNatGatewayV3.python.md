@@ -4,7 +4,7 @@
 
 ### PrivateNatGatewayV3 <a name="PrivateNatGatewayV3" id="@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3 opentelekomcloud_private_nat_gateway_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer"></a>
 
@@ -43,11 +43,11 @@ privateNatGatewayV3.PrivateNatGatewayV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.downlinkVpcs">downlink_vpcs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs">PrivateNatGatewayV3DownlinkVpcs</a>]]</code> | downlink_vpcs block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.spec">spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.spec">spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts">PrivateNatGatewayV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 downlink_vpcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#downlink_vpcs PrivateNatGatewayV3#downlink_vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#downlink_vpcs PrivateNatGatewayV3#downlink_vpcs}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}.
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}.
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#timeouts PrivateNatGatewayV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#timeouts PrivateNatGatewayV3#timeouts}
 
 ---
 
@@ -561,7 +561,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}.
 
 ---
 
@@ -569,7 +569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}.
 
 ---
 
@@ -717,7 +717,7 @@ The construct id used in the generated config for the PrivateNatGatewayV3 to imp
 
 The id of the existing PrivateNatGatewayV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1180,11 +1180,11 @@ privateNatGatewayV3.PrivateNatGatewayV3Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.downlinkVpcs">downlink_vpcs</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs">PrivateNatGatewayV3DownlinkVpcs</a>]]</code> | downlink_vpcs block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.spec">spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.spec">spec</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts">PrivateNatGatewayV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1269,7 +1269,7 @@ downlink_vpcs: typing.Union[IResolvable, typing.List[PrivateNatGatewayV3Downlink
 
 downlink_vpcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#downlink_vpcs PrivateNatGatewayV3#downlink_vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#downlink_vpcs PrivateNatGatewayV3#downlink_vpcs}
 
 ---
 
@@ -1281,7 +1281,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#name PrivateNatGatewayV3#name}.
 
 ---
 
@@ -1293,7 +1293,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#description PrivateNatGatewayV3#description}.
 
 ---
 
@@ -1305,7 +1305,7 @@ enterprise_project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#enterprise_project_id PrivateNatGatewayV3#enterprise_project_id}.
 
 ---
 
@@ -1317,7 +1317,7 @@ spec: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#spec PrivateNatGatewayV3#spec}.
 
 ---
 
@@ -1329,7 +1329,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#tags PrivateNatGatewayV3#tags}.
 
 ---
 
@@ -1343,7 +1343,7 @@ timeouts: PrivateNatGatewayV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#timeouts PrivateNatGatewayV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#timeouts PrivateNatGatewayV3#timeouts}
 
 ---
 
@@ -1364,8 +1364,8 @@ privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs.property.virsubnetId">virsubnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#virsubnet_id PrivateNatGatewayV3#virsubnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs.property.ngportIpAddress">ngport_ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#ngport_ip_address PrivateNatGatewayV3#ngport_ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs.property.virsubnetId">virsubnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#virsubnet_id PrivateNatGatewayV3#virsubnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3DownlinkVpcs.property.ngportIpAddress">ngport_ip_address</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#ngport_ip_address PrivateNatGatewayV3#ngport_ip_address}. |
 
 ---
 
@@ -1377,7 +1377,7 @@ virsubnet_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#virsubnet_id PrivateNatGatewayV3#virsubnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#virsubnet_id PrivateNatGatewayV3#virsubnet_id}.
 
 ---
 
@@ -1389,7 +1389,7 @@ ngport_ip_address: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#ngport_ip_address PrivateNatGatewayV3#ngport_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#ngport_ip_address PrivateNatGatewayV3#ngport_ip_address}.
 
 ---
 
@@ -1410,8 +1410,8 @@ privateNatGatewayV3.PrivateNatGatewayV3Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatGatewayV3.PrivateNatGatewayV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}. |
 
 ---
 
@@ -1423,7 +1423,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#create PrivateNatGatewayV3#create}.
 
 ---
 
@@ -1435,7 +1435,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_gateway_v3#delete PrivateNatGatewayV3#delete}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TmsResourceTagsV1 <a name="TmsResourceTagsV1" id="@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1 opentelekomcloud_tms_resource_tags_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1 opentelekomcloud_tms_resource_tags_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the TmsResourceTagsV1 to impor
 
 The id of the existing TmsResourceTagsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,9 +811,9 @@ new TmsResourceTagsV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.resources">Resources</a></code> | <code>object</code> | resources block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Config.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}. |
 
 ---
 
@@ -897,7 +897,7 @@ public object Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#resources TmsResourceTagsV1#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#resources TmsResourceTagsV1#resources}
 
 ---
 
@@ -909,7 +909,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#tags TmsResourceTagsV1#tags}.
 
 ---
 
@@ -921,7 +921,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#id TmsResourceTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ public string ProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#project_id TmsResourceTagsV1#project_id}.
 
 ---
 
@@ -957,8 +957,8 @@ new TmsResourceTagsV1Resources {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Resources.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#resource_id TmsResourceTagsV1#resource_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Resources.property.resourceType">ResourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#resource_type TmsResourceTagsV1#resource_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Resources.property.resourceId">ResourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#resource_id TmsResourceTagsV1#resource_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.tmsResourceTagsV1.TmsResourceTagsV1Resources.property.resourceType">ResourceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#resource_type TmsResourceTagsV1#resource_type}. |
 
 ---
 
@@ -970,7 +970,7 @@ public string ResourceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#resource_id TmsResourceTagsV1#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#resource_id TmsResourceTagsV1#resource_id}.
 
 ---
 
@@ -982,7 +982,7 @@ public string ResourceType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/tms_resource_tags_v1#resource_type TmsResourceTagsV1#resource_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/tms_resource_tags_v1#resource_type TmsResourceTagsV1#resource_type}.
 
 ---
 

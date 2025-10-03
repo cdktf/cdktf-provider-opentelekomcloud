@@ -4,7 +4,7 @@
 
 ### LbMemberV2 <a name="LbMemberV2" id="@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2 opentelekomcloud_lb_member_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the LbMemberV2 to import.
 
 The id of the existing LbMemberV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,17 +1006,17 @@ new LbMemberV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#address LbMemberV2#address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.poolId">PoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#pool_id LbMemberV2#pool_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.protocolPort">ProtocolPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#protocol_port LbMemberV2#protocol_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#subnet_id LbMemberV2#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#admin_state_up LbMemberV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#id LbMemberV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#name LbMemberV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#region LbMemberV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#tenant_id LbMemberV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.address">Address</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#address LbMemberV2#address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.poolId">PoolId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#pool_id LbMemberV2#pool_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.protocolPort">ProtocolPort</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#protocol_port LbMemberV2#protocol_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#subnet_id LbMemberV2#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.adminStateUp">AdminStateUp</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#admin_state_up LbMemberV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#id LbMemberV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#name LbMemberV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#region LbMemberV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#tenant_id LbMemberV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts">LbMemberV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#weight LbMemberV2#weight}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Config.property.weight">Weight</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#weight LbMemberV2#weight}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Address { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#address LbMemberV2#address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#address LbMemberV2#address}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public string PoolId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#pool_id LbMemberV2#pool_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#pool_id LbMemberV2#pool_id}.
 
 ---
 
@@ -1122,7 +1122,7 @@ public double ProtocolPort { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#protocol_port LbMemberV2#protocol_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#protocol_port LbMemberV2#protocol_port}.
 
 ---
 
@@ -1134,7 +1134,7 @@ public string SubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#subnet_id LbMemberV2#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#subnet_id LbMemberV2#subnet_id}.
 
 ---
 
@@ -1146,7 +1146,7 @@ public object AdminStateUp { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#admin_state_up LbMemberV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#admin_state_up LbMemberV2#admin_state_up}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#id LbMemberV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#id LbMemberV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#name LbMemberV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#name LbMemberV2#name}.
 
 ---
 
@@ -1185,7 +1185,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#region LbMemberV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#region LbMemberV2#region}.
 
 ---
 
@@ -1197,7 +1197,7 @@ public string TenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#tenant_id LbMemberV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#tenant_id LbMemberV2#tenant_id}.
 
 ---
 
@@ -1211,7 +1211,7 @@ public LbMemberV2Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#timeouts LbMemberV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#timeouts LbMemberV2#timeouts}
 
 ---
 
@@ -1223,7 +1223,7 @@ public double Weight { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#weight LbMemberV2#weight}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#weight LbMemberV2#weight}.
 
 ---
 
@@ -1245,9 +1245,9 @@ new LbMemberV2Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#create LbMemberV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#delete LbMemberV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#update LbMemberV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#create LbMemberV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#delete LbMemberV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbMemberV2.LbMemberV2Timeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#update LbMemberV2#update}. |
 
 ---
 
@@ -1259,7 +1259,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#create LbMemberV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#create LbMemberV2#create}.
 
 ---
 
@@ -1271,7 +1271,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#delete LbMemberV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#delete LbMemberV2#delete}.
 
 ---
 
@@ -1283,7 +1283,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_member_v2#update LbMemberV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_member_v2#update LbMemberV2#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### VpnaasEndpointGroupV2 <a name="VpnaasEndpointGroupV2" id="@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2 opentelekomcloud_vpnaas_endpoint_group_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer"></a>
 
@@ -44,15 +44,15 @@ vpnaasEndpointGroupV2.VpnaasEndpointGroupV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.endpoints">endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.endpoints">endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts">VpnaasEndpointGroupV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2.Initializer.parameter.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}.
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#timeouts VpnaasEndpointGroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#timeouts VpnaasEndpointGroupV2#timeouts}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}.
 
 ---
 
@@ -572,7 +572,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}.
 
 ---
 
@@ -580,7 +580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}.
 
 ---
 
@@ -588,7 +588,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}.
 
 ---
 
@@ -760,7 +760,7 @@ The construct id used in the generated config for the VpnaasEndpointGroupV2 to i
 
 The id of the existing VpnaasEndpointGroupV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1191,15 +1191,15 @@ vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.endpoints">endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.endpoints">endpoints</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.region">region</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts">VpnaasEndpointGroupV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Config.property.valueSpecs">value_specs</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}. |
 
 ---
 
@@ -1281,7 +1281,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#description VpnaasEndpointGroupV2#description}.
 
 ---
 
@@ -1293,7 +1293,7 @@ endpoints: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#endpoints VpnaasEndpointGroupV2#endpoints}.
 
 ---
 
@@ -1305,7 +1305,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#id VpnaasEndpointGroupV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1320,7 +1320,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#name VpnaasEndpointGroupV2#name}.
 
 ---
 
@@ -1332,7 +1332,7 @@ region: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#region VpnaasEndpointGroupV2#region}.
 
 ---
 
@@ -1344,7 +1344,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#tenant_id VpnaasEndpointGroupV2#tenant_id}.
 
 ---
 
@@ -1358,7 +1358,7 @@ timeouts: VpnaasEndpointGroupV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#timeouts VpnaasEndpointGroupV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#timeouts VpnaasEndpointGroupV2#timeouts}
 
 ---
 
@@ -1370,7 +1370,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#type VpnaasEndpointGroupV2#type}.
 
 ---
 
@@ -1382,7 +1382,7 @@ value_specs: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#value_specs VpnaasEndpointGroupV2#value_specs}.
 
 ---
 
@@ -1404,9 +1404,9 @@ vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpnaasEndpointGroupV2.VpnaasEndpointGroupV2Timeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}. |
 
 ---
 
@@ -1418,7 +1418,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#create VpnaasEndpointGroupV2#create}.
 
 ---
 
@@ -1430,7 +1430,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#delete VpnaasEndpointGroupV2#delete}.
 
 ---
 
@@ -1442,7 +1442,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpnaas_endpoint_group_v2#update VpnaasEndpointGroupV2#update}.
 
 ---
 

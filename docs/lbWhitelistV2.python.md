@@ -4,7 +4,7 @@
 
 ### LbWhitelistV2 <a name="LbWhitelistV2" id="@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2 opentelekomcloud_lb_whitelist_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer"></a>
 
@@ -40,11 +40,11 @@ lbWhitelistV2.LbWhitelistV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.listenerId">listener_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.enableWhitelist">enable_whitelist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.whitelist">whitelist</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.listenerId">listener_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.enableWhitelist">enable_whitelist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2.Initializer.parameter.whitelist">whitelist</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}.
 
 ---
 
@@ -648,7 +648,7 @@ The construct id used in the generated config for the LbWhitelistV2 to import.
 
 The id of the existing LbWhitelistV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,11 +987,11 @@ lbWhitelistV2.LbWhitelistV2Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.listenerId">listener_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.enableWhitelist">enable_whitelist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.whitelist">whitelist</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.listenerId">listener_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.enableWhitelist">enable_whitelist</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.tenantId">tenant_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbWhitelistV2.LbWhitelistV2Config.property.whitelist">whitelist</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}. |
 
 ---
 
@@ -1073,7 +1073,7 @@ listener_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#listener_id LbWhitelistV2#listener_id}.
 
 ---
 
@@ -1085,7 +1085,7 @@ enable_whitelist: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#enable_whitelist LbWhitelistV2#enable_whitelist}.
 
 ---
 
@@ -1097,7 +1097,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#id LbWhitelistV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ tenant_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#tenant_id LbWhitelistV2#tenant_id}.
 
 ---
 
@@ -1124,7 +1124,7 @@ whitelist: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/lb_whitelist_v2#whitelist LbWhitelistV2#whitelist}.
 
 ---
 
