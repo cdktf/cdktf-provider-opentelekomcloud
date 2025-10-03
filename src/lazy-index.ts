@@ -254,6 +254,7 @@ Object.defineProperty(exports, 'swrDomainV2', { get: function () { return requir
 Object.defineProperty(exports, 'swrOrganizationPermissionsV2', { get: function () { return require('./swr-organization-permissions-v2'); } });
 Object.defineProperty(exports, 'swrOrganizationV2', { get: function () { return require('./swr-organization-v2'); } });
 Object.defineProperty(exports, 'swrRepositoryV2', { get: function () { return require('./swr-repository-v2'); } });
+Object.defineProperty(exports, 'taurusdbMysqlBackupV3', { get: function () { return require('./taurusdb-mysql-backup-v3'); } });
 Object.defineProperty(exports, 'taurusdbMysqlInstanceV3', { get: function () { return require('./taurusdb-mysql-instance-v3'); } });
 Object.defineProperty(exports, 'tmsResourceTagsV1', { get: function () { return require('./tms-resource-tags-v1'); } });
 Object.defineProperty(exports, 'tmsTagsV1', { get: function () { return require('./tms-tags-v1'); } });
@@ -268,6 +269,8 @@ Object.defineProperty(exports, 'vpcPeeringConnectionAccepterV2', { get: function
 Object.defineProperty(exports, 'vpcPeeringConnectionV2', { get: function () { return require('./vpc-peering-connection-v2'); } });
 Object.defineProperty(exports, 'vpcRouteTableV1', { get: function () { return require('./vpc-route-table-v1'); } });
 Object.defineProperty(exports, 'vpcRouteV2', { get: function () { return require('./vpc-route-v2'); } });
+Object.defineProperty(exports, 'vpcSecgroupRuleV3', { get: function () { return require('./vpc-secgroup-rule-v3'); } });
+Object.defineProperty(exports, 'vpcSecgroupV3', { get: function () { return require('./vpc-secgroup-v3'); } });
 Object.defineProperty(exports, 'vpcSubnetV1', { get: function () { return require('./vpc-subnet-v1'); } });
 Object.defineProperty(exports, 'vpcV1', { get: function () { return require('./vpc-v1'); } });
 Object.defineProperty(exports, 'vpcepApprovalV1', { get: function () { return require('./vpcep-approval-v1'); } });
@@ -305,6 +308,7 @@ Object.defineProperty(exports, 'wafWebtamperprotectionRuleV1', { get: function (
 Object.defineProperty(exports, 'wafWhiteblackipRuleV1', { get: function () { return require('./waf-whiteblackip-rule-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudAntiddosV1', { get: function () { return require('./data-opentelekomcloud-antiddos-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudApigwApiHistoryV2', { get: function () { return require('./data-opentelekomcloud-apigw-api-history-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudApigwEnvironmentsV2', { get: function () { return require('./data-opentelekomcloud-apigw-environments-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudApigwGatewayFeaturesV2', { get: function () { return require('./data-opentelekomcloud-apigw-gateway-features-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudApigwGroupsV2', { get: function () { return require('./data-opentelekomcloud-apigw-groups-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudAsmServiceMeshV1', { get: function () { return require('./data-opentelekomcloud-asm-service-mesh-v1'); } });

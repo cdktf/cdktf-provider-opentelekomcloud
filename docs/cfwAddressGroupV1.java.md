@@ -4,7 +4,7 @@
 
 ### CfwAddressGroupV1 <a name="CfwAddressGroupV1" id="@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1 opentelekomcloud_cfw_address_group_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1 opentelekomcloud_cfw_address_group_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer"></a>
 
@@ -42,10 +42,10 @@ CfwAddressGroupV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.addressType">addressType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.addressType">addressType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts">CfwAddressGroupV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#timeouts CfwAddressGroupV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#timeouts CfwAddressGroupV1#timeouts}
 
 ---
 
@@ -609,7 +609,7 @@ The construct id used in the generated config for the CfwAddressGroupV1 to impor
 
 The id of the existing CfwAddressGroupV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -974,10 +974,10 @@ CfwAddressGroupV1Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.addressType">addressType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.objectId">objectId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.addressType">addressType</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts">CfwAddressGroupV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +1060,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#name CfwAddressGroupV1#name}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getObjectId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#object_id CfwAddressGroupV1#object_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.lang.Number getAddressType();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#address_type CfwAddressGroupV1#address_type}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#description CfwAddressGroupV1#description}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public CfwAddressGroupV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#timeouts CfwAddressGroupV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#timeouts CfwAddressGroupV1#timeouts}
 
 ---
 
@@ -1132,9 +1132,9 @@ CfwAddressGroupV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#create CfwAddressGroupV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#delete CfwAddressGroupV1#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#update CfwAddressGroupV1#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#create CfwAddressGroupV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#delete CfwAddressGroupV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cfwAddressGroupV1.CfwAddressGroupV1Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#update CfwAddressGroupV1#update}. |
 
 ---
 
@@ -1146,7 +1146,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#create CfwAddressGroupV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#create CfwAddressGroupV1#create}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#delete CfwAddressGroupV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#delete CfwAddressGroupV1#delete}.
 
 ---
 
@@ -1170,7 +1170,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.48/docs/resources/cfw_address_group_v1#update CfwAddressGroupV1#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cfw_address_group_v1#update CfwAddressGroupV1#update}.
 
 ---
 
