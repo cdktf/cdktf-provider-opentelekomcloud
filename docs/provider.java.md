@@ -16,8 +16,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 //  .agencyDomainName(java.lang.String)
 //  .agencyName(java.lang.String)
 //  .alias(java.lang.String)
-//  .allowReauth(java.lang.Boolean)
-//  .allowReauth(IResolvable)
+//  .allowReauth(java.lang.Boolean|IResolvable)
 //  .authUrl(java.lang.String)
 //  .backoffRetryTimeout(java.lang.Number)
 //  .cacertFile(java.lang.String)
@@ -27,8 +26,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 //  .domainId(java.lang.String)
 //  .domainName(java.lang.String)
 //  .endpointType(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .key(java.lang.String)
 //  .maxBackoffRetries(java.lang.Number)
 //  .maxRetries(java.lang.Number)
@@ -37,8 +35,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 //  .region(java.lang.String)
 //  .secretKey(java.lang.String)
 //  .securityToken(java.lang.String)
-//  .swauth(java.lang.Boolean)
-//  .swauth(IResolvable)
+//  .swauth(java.lang.Boolean|IResolvable)
 //  .tenantId(java.lang.String)
 //  .tenantName(java.lang.String)
 //  .token(java.lang.String)
@@ -55,7 +52,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.agencyDomainName">agencyDomainName</a></code> | <code>java.lang.String</code> | The name of domain who created the agency (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.agencyName">agencyName</a></code> | <code>java.lang.String</code> | The name of agency. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.authUrl">authUrl</a></code> | <code>java.lang.String</code> | The Identity authentication URL. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.backoffRetryTimeout">backoffRetryTimeout</a></code> | <code>java.lang.Number</code> | Timeout in seconds for backoff retry. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | A Custom CA certificate. |
@@ -65,7 +62,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.domainId">domainId</a></code> | <code>java.lang.String</code> | The ID of the Domain to scope to (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.domainName">domainName</a></code> | <code>java.lang.String</code> | The name of the Domain to scope to (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.endpointType">endpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#endpoint_type OpentelekomcloudProvider#endpoint_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Trust self-signed certificates. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Trust self-signed certificates. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | A client private key to authenticate with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.maxBackoffRetries">maxBackoffRetries</a></code> | <code>java.lang.Number</code> | How many times HTTP request should be retried when rate limit reached. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | How many times HTTP connection should be retried until giving up. |
@@ -74,7 +71,7 @@ OpentelekomcloudProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The OpenTelekomCloud region to connect to. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.secretKey">secretKey</a></code> | <code>java.lang.String</code> | The secret key for API operations. You can retrieve this from the 'My Credential' section of the console. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.securityToken">securityToken</a></code> | <code>java.lang.String</code> | Security token to use for OBS federated authentication. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.swauth">swauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use Swift's authentication system instead of Keystone. Only used for interaction with Swift. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.swauth">swauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Use Swift's authentication system instead of Keystone. Only used for interaction with Swift. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.tenantId">tenantId</a></code> | <code>java.lang.String</code> | The ID of the Tenant (Identity v2) or Project (Identity v3) to login with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.tenantName">tenantName</a></code> | <code>java.lang.String</code> | The name of the Tenant (Identity v2) or Project (Identity v3) to login with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.token">token</a></code> | <code>java.lang.String</code> | Authentication token to use as an alternative to username/password. |
@@ -143,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `allowReauth`<sup>Optional</sup> <a name="allowReauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.allowReauth"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}.
 
@@ -239,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Trust self-signed certificates.
 
@@ -329,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `swauth`<sup>Optional</sup> <a name="swauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.Initializer.parameter.swauth"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Use Swift's authentication system instead of Keystone. Only used for interaction with Swift.
 
@@ -806,7 +803,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.agencyDomainNameInput">agencyDomainNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.agencyNameInput">agencyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauthInput">allowReauthInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauthInput">allowReauthInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.authUrlInput">authUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.backoffRetryTimeoutInput">backoffRetryTimeoutInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.cacertFileInput">cacertFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -816,7 +813,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.domainIdInput">domainIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.domainNameInput">domainNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.endpointTypeInput">endpointTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.maxBackoffRetriesInput">maxBackoffRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.maxRetriesInput">maxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -825,7 +822,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.secretKeyInput">secretKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.securityTokenInput">securityTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauthInput">swauthInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauthInput">swauthInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.tenantIdInput">tenantIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.tenantNameInput">tenantNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.tokenInput">tokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -834,7 +831,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.accessKey">accessKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.agencyDomainName">agencyDomainName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.agencyName">agencyName</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.authUrl">authUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.backoffRetryTimeout">backoffRetryTimeout</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -844,7 +841,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.domainId">domainId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.domainName">domainName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.endpointType">endpointType</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.maxBackoffRetries">maxBackoffRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -853,7 +850,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.securityToken">securityToken</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauth">swauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauth">swauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.tenantName">tenantName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.token">token</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -997,10 +994,10 @@ public java.lang.String getAliasInput();
 ##### `allowReauthInput`<sup>Optional</sup> <a name="allowReauthInput" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauthInput"></a>
 
 ```java
-public java.lang.Object getAllowReauthInput();
+public java.lang.Boolean|IResolvable getAllowReauthInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1097,10 +1094,10 @@ public java.lang.String getEndpointTypeInput();
 ##### `insecureInput`<sup>Optional</sup> <a name="insecureInput" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecureInput"></a>
 
 ```java
-public java.lang.Object getInsecureInput();
+public java.lang.Boolean|IResolvable getInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1187,10 +1184,10 @@ public java.lang.String getSecurityTokenInput();
 ##### `swauthInput`<sup>Optional</sup> <a name="swauthInput" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauthInput"></a>
 
 ```java
-public java.lang.Object getSwauthInput();
+public java.lang.Boolean|IResolvable getSwauthInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1277,10 +1274,10 @@ public java.lang.String getAgencyName();
 ##### `allowReauth`<sup>Optional</sup> <a name="allowReauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.allowReauth"></a>
 
 ```java
-public java.lang.Object getAllowReauth();
+public java.lang.Boolean|IResolvable getAllowReauth();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1377,10 +1374,10 @@ public java.lang.String getEndpointType();
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1467,10 +1464,10 @@ public java.lang.String getSecurityToken();
 ##### `swauth`<sup>Optional</sup> <a name="swauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProvider.property.swauth"></a>
 
 ```java
-public java.lang.Object getSwauth();
+public java.lang.Boolean|IResolvable getSwauth();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1556,8 +1553,7 @@ OpentelekomcloudProviderConfig.builder()
 //  .agencyDomainName(java.lang.String)
 //  .agencyName(java.lang.String)
 //  .alias(java.lang.String)
-//  .allowReauth(java.lang.Boolean)
-//  .allowReauth(IResolvable)
+//  .allowReauth(java.lang.Boolean|IResolvable)
 //  .authUrl(java.lang.String)
 //  .backoffRetryTimeout(java.lang.Number)
 //  .cacertFile(java.lang.String)
@@ -1567,8 +1563,7 @@ OpentelekomcloudProviderConfig.builder()
 //  .domainId(java.lang.String)
 //  .domainName(java.lang.String)
 //  .endpointType(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .key(java.lang.String)
 //  .maxBackoffRetries(java.lang.Number)
 //  .maxRetries(java.lang.Number)
@@ -1577,8 +1572,7 @@ OpentelekomcloudProviderConfig.builder()
 //  .region(java.lang.String)
 //  .secretKey(java.lang.String)
 //  .securityToken(java.lang.String)
-//  .swauth(java.lang.Boolean)
-//  .swauth(IResolvable)
+//  .swauth(java.lang.Boolean|IResolvable)
 //  .tenantId(java.lang.String)
 //  .tenantName(java.lang.String)
 //  .token(java.lang.String)
@@ -1595,7 +1589,7 @@ OpentelekomcloudProviderConfig.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.agencyDomainName">agencyDomainName</a></code> | <code>java.lang.String</code> | The name of domain who created the agency (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.agencyName">agencyName</a></code> | <code>java.lang.String</code> | The name of agency. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.allowReauth">allowReauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.authUrl">authUrl</a></code> | <code>java.lang.String</code> | The Identity authentication URL. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.backoffRetryTimeout">backoffRetryTimeout</a></code> | <code>java.lang.Number</code> | Timeout in seconds for backoff retry. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.cacertFile">cacertFile</a></code> | <code>java.lang.String</code> | A Custom CA certificate. |
@@ -1605,7 +1599,7 @@ OpentelekomcloudProviderConfig.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.domainId">domainId</a></code> | <code>java.lang.String</code> | The ID of the Domain to scope to (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.domainName">domainName</a></code> | <code>java.lang.String</code> | The name of the Domain to scope to (Identity v3). |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.endpointType">endpointType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#endpoint_type OpentelekomcloudProvider#endpoint_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Trust self-signed certificates. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Trust self-signed certificates. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.key">key</a></code> | <code>java.lang.String</code> | A client private key to authenticate with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.maxBackoffRetries">maxBackoffRetries</a></code> | <code>java.lang.Number</code> | How many times HTTP request should be retried when rate limit reached. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | How many times HTTP connection should be retried until giving up. |
@@ -1614,7 +1608,7 @@ OpentelekomcloudProviderConfig.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | The OpenTelekomCloud region to connect to. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.secretKey">secretKey</a></code> | <code>java.lang.String</code> | The secret key for API operations. You can retrieve this from the 'My Credential' section of the console. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.securityToken">securityToken</a></code> | <code>java.lang.String</code> | Security token to use for OBS federated authentication. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.swauth">swauth</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Use Swift's authentication system instead of Keystone. Only used for interaction with Swift. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.swauth">swauth</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Use Swift's authentication system instead of Keystone. Only used for interaction with Swift. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.tenantId">tenantId</a></code> | <code>java.lang.String</code> | The ID of the Tenant (Identity v2) or Project (Identity v3) to login with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.tenantName">tenantName</a></code> | <code>java.lang.String</code> | The name of the Tenant (Identity v2) or Project (Identity v3) to login with. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.token">token</a></code> | <code>java.lang.String</code> | Authentication token to use as an alternative to username/password. |
@@ -1682,10 +1676,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `allowReauth`<sup>Optional</sup> <a name="allowReauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.allowReauth"></a>
 
 ```java
-public java.lang.Object getAllowReauth();
+public java.lang.Boolean|IResolvable getAllowReauth();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs#allow_reauth OpentelekomcloudProvider#allow_reauth}.
 
@@ -1818,10 +1812,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Trust self-signed certificates.
 
@@ -1944,10 +1938,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `swauth`<sup>Optional</sup> <a name="swauth" id="@cdktf/provider-opentelekomcloud.provider.OpentelekomcloudProviderConfig.property.swauth"></a>
 
 ```java
-public java.lang.Object getSwauth();
+public java.lang.Boolean|IResolvable getSwauth();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Use Swift's authentication system instead of Keystone. Only used for interaction with Swift.
 

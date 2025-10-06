@@ -14,15 +14,15 @@ from cdktf_cdktf_provider_opentelekomcloud import data_opentelekomcloud_dms_main
 dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   begin: str = None,
-  default: typing.Union[bool, IResolvable] = None,
+  default: bool | IResolvable = None,
   end: str = None,
   id: str = None,
   seq: typing.Union[int, float] = None
@@ -33,15 +33,15 @@ dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.begin">begin</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.default">default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.default">default</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.seq">seq</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}. |
@@ -68,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `default`<sup>Optional</sup> <a name="default" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.Initializer.parameter.default"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
 
@@ -564,18 +564,18 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.beginInput">begin_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.defaultInput">default_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.defaultInput">default_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.endInput">end_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.seqInput">seq_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.begin">begin</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.default">default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.default">default</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.end">end</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.seq">seq</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -657,10 +657,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -717,10 +717,10 @@ begin_input: str
 ##### `default_input`<sup>Optional</sup> <a name="default_input" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.defaultInput"></a>
 
 ```python
-default_input: typing.Union[bool, IResolvable]
+default_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -767,10 +767,10 @@ begin: str
 ##### `default`<sup>Required</sup> <a name="default" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1.property.default"></a>
 
 ```python
-default: typing.Union[bool, IResolvable]
+default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -832,15 +832,15 @@ tfResourceType: str
 from cdktf_cdktf_provider_opentelekomcloud import data_opentelekomcloud_dms_maintainwindow_v1
 
 dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   begin: str = None,
-  default: typing.Union[bool, IResolvable] = None,
+  default: bool | IResolvable = None,
   end: str = None,
   id: str = None,
   seq: typing.Union[int, float] = None
@@ -851,15 +851,15 @@ dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1C
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.begin">begin</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#begin DataOpentelekomcloudDmsMaintainwindowV1#begin}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.default">default</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.default">default</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#end DataOpentelekomcloudDmsMaintainwindowV1#end}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#id DataOpentelekomcloudDmsMaintainwindowV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.seq">seq</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#seq DataOpentelekomcloudDmsMaintainwindowV1#seq}. |
@@ -869,20 +869,20 @@ dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1C
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -929,10 +929,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -951,10 +951,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `default`<sup>Optional</sup> <a name="default" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudDmsMaintainwindowV1.DataOpentelekomcloudDmsMaintainwindowV1Config.property.default"></a>
 
 ```python
-default: typing.Union[bool, IResolvable]
+default: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/dms_maintainwindow_v1#default DataOpentelekomcloudDmsMaintainwindowV1#default}.
 

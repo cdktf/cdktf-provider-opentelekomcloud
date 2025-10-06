@@ -12,21 +12,16 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 import com.hashicorp.cdktf.providers.opentelekomcloud.data_opentelekomcloud_ces_multiple_metric_data_v1.DataOpentelekomcloudCesMultipleMetricDataV1;
 
 DataOpentelekomcloudCesMultipleMetricDataV1.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filter(java.lang.String)
     .from(java.lang.Number)
-    .metrics(IResolvable)
-    .metrics(java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics>)
+    .metrics(IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics>)
     .period(java.lang.String)
     .to(java.lang.Number)
 //  .id(java.lang.String)
@@ -37,16 +32,16 @@ DataOpentelekomcloudCesMultipleMetricDataV1.Builder.create(Construct scope, java
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#filter DataOpentelekomcloudCesMultipleMetricDataV1#filter}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.from">from</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#from DataOpentelekomcloudCesMultipleMetricDataV1#from}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.metrics">metrics</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | metrics block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.metrics">metrics</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | metrics block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.period">period</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#period DataOpentelekomcloudCesMultipleMetricDataV1#period}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.to">to</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#to DataOpentelekomcloudCesMultipleMetricDataV1#to}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#id DataOpentelekomcloudCesMultipleMetricDataV1#id}. |
@@ -73,13 +68,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -109,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -131,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 ##### `metrics`<sup>Required</sup> <a name="metrics" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.Initializer.parameter.metrics"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
 
 metrics block.
 
@@ -387,12 +382,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putMetrics` <a name="putMetrics" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.putMetrics"></a>
 
 ```java
-public void putMetrics(IResolvable OR java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics> value)
+public void putMetrics(IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.putMetrics.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
 
 ---
 
@@ -528,7 +523,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -537,7 +532,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.filterInput">filterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.fromInput">fromInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.metricsInput">metricsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.metricsInput">metricsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.periodInput">periodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.toInput">toInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.filter">filter</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -623,10 +618,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -713,10 +708,10 @@ public java.lang.String getIdInput();
 ##### `metricsInput`<sup>Optional</sup> <a name="metricsInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1.property.metricsInput"></a>
 
 ```java
-public java.lang.Object getMetricsInput();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics> getMetricsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
 
 ---
 
@@ -818,21 +813,16 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.opentelekomcloud.data_opentelekomcloud_ces_multiple_metric_data_v1.DataOpentelekomcloudCesMultipleMetricDataV1Config;
 
 DataOpentelekomcloudCesMultipleMetricDataV1Config.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .filter(java.lang.String)
     .from(java.lang.Number)
-    .metrics(IResolvable)
-    .metrics(java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics>)
+    .metrics(IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics>)
     .period(java.lang.String)
     .to(java.lang.Number)
 //  .id(java.lang.String)
@@ -843,16 +833,16 @@ DataOpentelekomcloudCesMultipleMetricDataV1Config.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.filter">filter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#filter DataOpentelekomcloudCesMultipleMetricDataV1#filter}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.from">from</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#from DataOpentelekomcloudCesMultipleMetricDataV1#from}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.metrics">metrics</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | metrics block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.metrics">metrics</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | metrics block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.period">period</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#period DataOpentelekomcloudCesMultipleMetricDataV1#period}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.to">to</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#to DataOpentelekomcloudCesMultipleMetricDataV1#to}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#id DataOpentelekomcloudCesMultipleMetricDataV1#id}. |
@@ -862,20 +852,20 @@ DataOpentelekomcloudCesMultipleMetricDataV1Config.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -922,10 +912,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -956,10 +946,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `metrics`<sup>Required</sup> <a name="metrics" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Config.property.metrics"></a>
 
 ```java
-public java.lang.Object getMetrics();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics> getMetrics();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
 
 metrics block.
 
@@ -1014,8 +1004,7 @@ If you experience problems setting this value it might not be settable. Please t
 import com.hashicorp.cdktf.providers.opentelekomcloud.data_opentelekomcloud_ces_multiple_metric_data_v1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics;
 
 DataOpentelekomcloudCesMultipleMetricDataV1Metrics.builder()
-    .dimensions(IResolvable)
-    .dimensions(java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions>)
+    .dimensions(IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions>)
     .metricName(java.lang.String)
     .namespace(java.lang.String)
     .build();
@@ -1025,7 +1014,7 @@ DataOpentelekomcloudCesMultipleMetricDataV1Metrics.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics.property.dimensions">dimensions</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | dimensions block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics.property.dimensions">dimensions</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | dimensions block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics.property.metricName">metricName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#metric_name DataOpentelekomcloudCesMultipleMetricDataV1#metric_name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/ces_multiple_metric_data_v1#namespace DataOpentelekomcloudCesMultipleMetricDataV1#namespace}. |
 
@@ -1034,10 +1023,10 @@ DataOpentelekomcloudCesMultipleMetricDataV1Metrics.builder()
 ##### `dimensions`<sup>Required</sup> <a name="dimensions" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics.property.dimensions"></a>
 
 ```java
-public java.lang.Object getDimensions();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions> getDimensions();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
 
 dimensions block.
 
@@ -1732,7 +1721,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | *No description.* |
 
 ---
 
@@ -1763,10 +1752,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
 
 ---
 
@@ -2003,7 +1992,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a></code> | *No description.* |
 
 ---
 
@@ -2074,10 +2063,10 @@ public java.lang.String getValue();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>
 
 ---
 
@@ -2203,7 +2192,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>></code> | *No description.* |
 
 ---
 
@@ -2234,10 +2223,10 @@ public java.lang.String getFqn();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsList.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1Metrics> getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>>
 
 ---
 
@@ -2467,12 +2456,12 @@ Returns a reversible string representation.
 ##### `putDimensions` <a name="putDimensions" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.putDimensions"></a>
 
 ```java
-public void putDimensions(IResolvable OR java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions> value)
+public void putDimensions(IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.putDimensions.parameter.value"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
 
 ---
 
@@ -2486,12 +2475,12 @@ public void putDimensions(IResolvable OR java.util.List<DataOpentelekomcloudCesM
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.datapoints">datapoints</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDatapointsList">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDatapointsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.dimensions">dimensions</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.unit">unit</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.dimensionsInput">dimensionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.dimensionsInput">dimensionsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.metricNameInput">metricNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.metricName">metricName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a></code> | *No description.* |
 
 ---
 
@@ -2552,10 +2541,10 @@ public java.lang.String getUnit();
 ##### `dimensionsInput`<sup>Optional</sup> <a name="dimensionsInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.dimensionsInput"></a>
 
 ```java
-public java.lang.Object getDimensionsInput();
+public IResolvable|java.util.List<DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions> getDimensionsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions">DataOpentelekomcloudCesMultipleMetricDataV1MetricsDimensions</a>>
 
 ---
 
@@ -2602,10 +2591,10 @@ public java.lang.String getNamespace();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1MetricsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|DataOpentelekomcloudCesMultipleMetricDataV1Metrics getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesMultipleMetricDataV1.DataOpentelekomcloudCesMultipleMetricDataV1Metrics">DataOpentelekomcloudCesMultipleMetricDataV1Metrics</a>
 
 ---
 

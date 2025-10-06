@@ -269,12 +269,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 ##### `PutTags` <a name="PutTags" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.putTags"></a>
 
 ```csharp
-private void PutTags(object Value)
+private void PutTags(IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.putTags.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]
 
 ---
 
@@ -422,7 +422,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -432,12 +432,12 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.resourceTypesInput">ResourceTypesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.tagsInput">TagsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTagInput">WithoutAnyTagInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.tagsInput">TagsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTagInput">WithoutAnyTagInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.resourceTypes">ResourceTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTag">WithoutAnyTag</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTag">WithoutAnyTag</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -516,10 +516,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -616,20 +616,20 @@ public string[] ResourceTypesInput { get; }
 ##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.tagsInput"></a>
 
 ```csharp
-public object TagsInput { get; }
+public IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags[] TagsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]
 
 ---
 
 ##### `WithoutAnyTagInput`<sup>Optional</sup> <a name="WithoutAnyTagInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTagInput"></a>
 
 ```csharp
-public object WithoutAnyTagInput { get; }
+public bool|IResolvable WithoutAnyTagInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -666,10 +666,10 @@ public string[] ResourceTypes { get; }
 ##### `WithoutAnyTag`<sup>Required</sup> <a name="WithoutAnyTag" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.property.withoutAnyTag"></a>
 
 ```csharp
-public object WithoutAnyTag { get; }
+public bool|IResolvable WithoutAnyTag { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -701,18 +701,18 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Opentelekomcloud;
 
 new DataOpentelekomcloudTmsResourceInstancesV1Config {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string[] ResourceTypes,
-    object Tags,
+    IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags[] Tags,
     string Id = null,
     string ProjectId = null,
-    object WithoutAnyTag = null
+    bool|IResolvable WithoutAnyTag = null
 };
 ```
 
@@ -720,38 +720,38 @@ new DataOpentelekomcloudTmsResourceInstancesV1Config {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.resourceTypes">ResourceTypes</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#resource_types DataOpentelekomcloudTmsResourceInstancesV1#resource_types}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.tags">Tags</a></code> | <code>object</code> | tags block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.tags">Tags</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]</code> | tags block. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#id DataOpentelekomcloudTmsResourceInstancesV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.projectId">ProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#project_id DataOpentelekomcloudTmsResourceInstancesV1#project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.withoutAnyTag">WithoutAnyTag</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#without_any_tag DataOpentelekomcloudTmsResourceInstancesV1#without_any_tag}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.withoutAnyTag">WithoutAnyTag</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#without_any_tag DataOpentelekomcloudTmsResourceInstancesV1#without_any_tag}. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -798,10 +798,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -820,10 +820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.tags"></a>
 
 ```csharp
-public object Tags { get; set; }
+public IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags[] Tags { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]
 
 tags block.
 
@@ -861,10 +861,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 ##### `WithoutAnyTag`<sup>Optional</sup> <a name="WithoutAnyTag" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.property.withoutAnyTag"></a>
 
 ```csharp
-public object WithoutAnyTag { get; set; }
+public bool|IResolvable WithoutAnyTag { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/tms_resource_instances_v1#without_any_tag DataOpentelekomcloudTmsResourceInstancesV1#without_any_tag}.
 
@@ -1534,7 +1534,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]</code> | *No description.* |
 
 ---
 
@@ -1565,10 +1565,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>[]
 
 ---
 
@@ -1805,7 +1805,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.valuesInput">ValuesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.values">Values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a></code> | *No description.* |
 
 ---
 
@@ -1876,10 +1876,10 @@ public string[] Values { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|DataOpentelekomcloudTmsResourceInstancesV1Tags InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags">DataOpentelekomcloudTmsResourceInstancesV1Tags</a>
 
 ---
 
